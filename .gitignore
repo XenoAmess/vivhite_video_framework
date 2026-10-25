@@ -41,3 +41,8 @@ Desktop.ini
 *.swo
 *~
 *.tmp
+
+# Local media inference environments and Python worker caches
+.venv/
+__pycache__/
+.pytest_cache/

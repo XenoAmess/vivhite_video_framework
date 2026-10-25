@@ -2,11 +2,42 @@
 
 Java 包前缀：`com.xenoamess.vivhite_video_framework.analyzer`。
 
-本模块读取视频，结合本地分析与 GPT 分析，解释作品的内容及创作方法，并输出制作器能够执行的详细建议。目前仅建立 Maven 模块与包结构，以下为后续实现的职责约定。
+本模块读取视频，输出带来源指纹、时间窗、全文转写段和画面证据的分析报告。当前 Java CLI 已实现完整媒体任务调度、连续证据包、辅助审查导入、Responses API 审查入口和覆盖校验；本地模型通过 Python worker 运行。
 
 ## 实战设计
 
 - [BV1AV411V7SJ 全量文案检查与全片审查设计](docs/BV1AV411V7SJ-analysis-design.md)：包含本地音视频框架调研、全文转写与逐句检查、全片视听审查、制作器输出及覆盖验收。
+- [两部视频实跑结果](docs/cases/puzzle-restyle/README.md)：已完成内容分析、风格提炼与导演稿；说明实际范围及未完成的音频校准。
+
+## 当前命令
+
+在仓库根目录安装依赖并构建后：
+
+```powershell
+$caseWork = 'D:/workspace/vivhite-analysis-output/puzzle-restyle'
+$analyzerJar = 'video-analyzer/target/video-analyzer-0.1.0-SNAPSHOT.jar'
+java -jar $analyzerJar prepare video-analyzer/examples/puzzle-restyle.case.json $caseWork
+```
+
+`prepare` 顺序运行 ffprobe、全文 ASR、全帧解码/变化测量、可选字幕 OCR、完整音轨 RMS，并生成覆盖全时长的 30 秒窗口。`--reuse` 只使用已有产物，检查源文件指纹、模型名称、OCR 开关、取帧间隔与解码覆盖，不重新推理；模型 worker 正常执行时也按输入及参数缓存。每个窗口包含全部相交 ASR 段、所属选帧、字幕观测和 RMS bins。
+
+产物主要为 `workspace.json`、`content/`、`style/`、`packets/`。视频不复制；原始转写和选帧保存在工作目录。帧间差异大只称为转场候选，不等价于完整镜头检测；5 秒画面与变化候选用于语义输入。OCR 有 200ms 冷却和 1500ms 刷新上限，不能宣称全部字幕都已识别。
+
+```powershell
+# 自动语义审查；需本地配置 API key 和支持图像/结构化输出的模型
+$env:OPENAI_MODEL = '填入可用模型名称'
+java -jar $analyzerJar review $caseWork
+
+# 或导入已经编写的完整辅助审查包
+java -jar $analyzerJar import-review $caseWork "$caseWork/review-bundle.json"
+
+# 实战案例数学核验：输出最短路线、行尾两块示例及两种小棋盘全状态图
+java -jar $analyzerJar verify-puzzle "$caseWork/math-verification.json"
+```
+
+API 使用环境变量 `OPENAI_API_KEY`、`OPENAI_MODEL`；可选 `OPENAI_BASE_URL`（默认 `https://api.openai.com/v1`）、`OPENAI_MAX_REQUESTS`（每次进程默认最多 200 次，重试也计数）。`review` 将每个窗口的转写、OCR、音量数值和所属选帧发送给配置的服务，不发送音轨/视频文件，不具备听音能力；`store=false`。每窗结果按请求内容、端点及图像内容缓存；429/5xx 最多重试 3 次，5 分钟超时，失败保留已完成窗并报错。
+
+`analysis-report.json` 契约版本为 `1.0`：`sourceHashes` 分别标记内容和风格源；`windowReviews` 对应所有窗口和原始语音段 ID；`contentAnalysis.knowledgePoints` 只引用内容源语音段；`styleAnalysis.rules` 只引用风格源窗口/帧；`provenance` 与 `coverage` 记录审查方式及局限。导入验证所有窗口和语音段是否遗漏、重复或错引；结构覆盖通过不保证事实正确，也不将 ASR 索引当作听音核对。
 
 ## 分析流程
 
@@ -15,7 +46,7 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.analyzer`。
 3. 核对全部文案，并由 GPT 按原顺序逐句检查含义、作用、事实和论证；每句保留检查状态及证据。
 4. 逐段覆盖全片视听内容，结合文案审查分镜、创作风格和音画关系，随后跨段归纳主题、叙事及改进建议。
 5. 分别记录解码、识别、全文检查、视频语义审查和人工复核的范围，标记事实、推断及缺失信息。短样本仅用于技术校准。
-6. 输出完整文案、详细审查报告，以及供制作器消费的带版本标识的结构化报告；具体字段及序列化契约将在接入时确定。
+6. 输出完整机器转写、分析报告及制作器消费的结构化报告。当前机器转写仍是待核对文本；逐句听音校准、第二 ASR、强制对齐和每个瞬时事件的语义识别仍待补齐。
 
 ## 报告要求
 
@@ -47,4 +78,4 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.analyzer`。
 .\mvnw.cmd -pl video-analyzer -am verify
 ```
 
-macOS / Linux 使用 `./mvnw -pl video-analyzer -am verify`。当前尚无应用入口、本地视频处理或 GPT 调用功能。
+macOS / Linux 使用 `./mvnw -pl video-analyzer -am verify`。Java 入口为 `AnalyzerMain`；案例配置的 Python 路径使用 Windows 格式，其他平台需调整。实际采用 faster-whisper、PyAV/OpenCV、RapidOCR/ONNX Runtime；JavaCV、WhisperX、FunASR 的调研不代表已集成。

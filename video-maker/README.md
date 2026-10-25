@@ -2,7 +2,32 @@
 
 Java 包前缀：`com.xenoamess.vivhite_video_framework.maker`。
 
-本模块负责将数学选题制作成完整的科普视频，并利用分析器提炼的风格和改进建议优化成片。目前仅建立 Maven 模块与包结构，以下为后续实现的职责约定。
+本模块负责将数学选题制作成科普视频。当前阶段实现从已验证分析报告到导演稿：完整旁白、分镜构图、屏幕文字、动画顺序、声音与停顿。动画渲染、配音合成及成片导出属于后续阶段。
+
+## 当前命令与案例
+
+[首个完整导演稿：滑块拼图的奇偶不变量](docs/cases/puzzle-restyle/director.md)，20 镜，12 分 20 秒。对应原创稿源文件为 [director-template.json](examples/puzzle-restyle/director-template.json)，包含全片制作设定；内容来自第一部视频，表达规则来自第二部。
+
+```powershell
+$analysisFile = 'D:/workspace/vivhite-analysis-output/puzzle-restyle/analysis-report.json'
+$directorOut = 'D:/workspace/vivhite-analysis-output/puzzle-restyle/director'
+$makerJar = 'video-maker/target/video-maker-0.1.0-SNAPSHOT.jar'
+
+# 离线输出任务说明和 Responses API 请求 JSON
+java -jar $makerJar prepare $analysisFile $directorOut
+
+# 配置 OPENAI_API_KEY、OPENAI_MODEL 后可请求模型写完整导演稿
+java -jar $makerJar generate $analysisFile $directorOut
+
+# 导入既有原创导演 JSON 并校验、输出 Markdown
+java -jar $makerJar render $analysisFile "$directorOut/director-plan.json" $directorOut
+```
+
+`prepare` 输出 `director-prompt.md`、`director-request.json`；`generate` 输出模型原始返回和导演计划，验证后才产出 `director.json`、`director.md`、`director-validation.json`。API 使用与分析器相同的环境变量（此命令单次请求、5 分钟超时，不自动重试）；本例实际使用助手创作稿，未执行付费 API 请求。独立 API 路径尚未联网验证。
+
+校验要求：分析文件 SHA-256 完全一致；所有镜头从 0 连续计时到片尾；所有知识点均被引用；每镜都有旁白、构图、动作、音频说明、风格规则与内容源语音段；拒绝未知引用。旁白字母/数字字符计数不得超过 6.5/秒，作为过载防线；这不是实际 TTS 时长测量。画面与数学是否正确仍需专门验证，不能从 JSON 合法推断。
+
+本例一键重建见根目录 `scripts/run-puzzle-case.ps1`；案例辅助脚本只绑定同一对视频指纹，不对其他主题套用模板。
 
 ## 输入与输出
 
@@ -32,4 +57,4 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.maker`。
 .\mvnw.cmd -pl video-maker -am verify
 ```
 
-macOS / Linux 使用 `./mvnw -pl video-maker -am verify`。当前尚无应用入口或视频渲染功能。
+macOS / Linux 使用 `./mvnw -pl video-maker -am verify`。入口为 `DirectorMain`；当前输出导演稿，不输出渲染视频。

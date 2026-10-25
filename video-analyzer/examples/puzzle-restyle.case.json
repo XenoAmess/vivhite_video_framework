@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "caseId": "puzzle-restyle",
+  "contentVideo": "Z:\\workspace\\bilibili-download-skill\\downloads\\BV1AV411V7SJ\\此视频的所有收益均捐给我用来买拼图 [BV1AV411V7SJ].mkv",
+  "styleVideo": "Z:\\workspace\\bilibili-download-skill\\downloads\\BV1i4aS6SEBR\\【数学】怎么动动尺子就能算 BMI 和解方程？从计算尺到列线图 [BV1i4aS6SEBR].mkv",
+  "python": "video-analyzer/.venv/Scripts/python.exe",
+  "worker": "video-analyzer/tools/media_worker.py",
+  "asrModel": "large-v3-turbo",
+  "device": "cpu",
+  "computeType": "int8",
+  "threads": 12,
+  "windowSeconds": 30,
+  "frameSampleSeconds": 5,
+  "contentOcr": true,
+  "styleOcr": false,
+  "contentSubtitleBox": [0.03, 0.84, 0.83, 0.96],
+  "styleSubtitleBox": [0.1, 0.84, 0.9, 0.96]
+}

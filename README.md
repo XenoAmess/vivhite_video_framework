@@ -16,7 +16,33 @@
 - 两个子项目通过带版本标识的分析报告交换信息，目前不互相添加 Maven 依赖。
 - 分析报告应将时间戳、关键帧和文案等证据，与风格参数、逐镜头建议及优化动作对应起来，支持制作器模仿创作方法并验证改进效果。
 
-当前已建立可构建的模块骨架及职责约定；视频制作、本地分析、GPT 接入和报告格式尚待实现。
+当前已实现从完整媒体处理、内容/风格分析到导演稿的命令行流程。Java 负责调度、证据契约与校验；Python worker 运行本地 ASR、连续视频解码、字幕 OCR 和音量测量。制作器输出可配音旁白与逐镜动作指令，尚未合成成片。
+
+## 已完成的实战案例
+
+- 内容来源：`BV1AV411V7SJ`，分析滑块拼图的搜索、复原方法与奇偶不变量。
+- 风格来源：`BV1i4aS6SEBR`，提炼先操作后解释、持续图形对象、纸色细线与章节/结论条。
+- [案例分析与覆盖说明](video-analyzer/docs/cases/puzzle-restyle/README.md)。
+- [20 镜、12 分 20 秒导演稿](video-maker/docs/cases/puzzle-restyle/director.md)。
+
+本例完整处理了两部音轨并阅读全部转写，连续解码 58,808 帧；语义画面输入是贯穿全片的 415 张选帧。逐窗摘要由本次助手编写，逐句条目保留 ASR 与关键修订，不是逐句听音校准。本机没有配置 OpenAI API 凭据，实际交付使用 `assisted` 导入路径；独立 API 路径已实现，尚未联网验证。
+
+## 运行本例
+
+先安装 JDK 21、Python 3.12 和带 `ffprobe` 的 FFmpeg，确保 `java`、`ffmpeg`、`ffprobe` 在 PATH 中。在仓库根目录执行：
+
+```powershell
+py -3.12 -m venv video-analyzer/.venv
+video-analyzer/.venv/Scripts/python.exe -m pip install -r video-analyzer/tools/requirements-lock.txt
+.\mvnw.cmd clean verify
+.\scripts\run-puzzle-case.ps1 -Extract
+```
+
+也可用 `uv venv --python 3.12 video-analyzer/.venv` 和 `uv pip install --python video-analyzer/.venv/Scripts/python.exe -r video-analyzer/tools/requirements-lock.txt` 创建相同环境。首次运行会下载 ASR 模型，OCR 使用安装包内模型；本例以 CPU/int8 实跑，内容片 OCR 需要较长时间。
+
+视频位置及角色见 [案例配置](video-analyzer/examples/puzzle-restyle.case.json)。默认将运行产物写到仓库同级 `../vivhite-analysis-output/puzzle-restyle/`，可用 `-WorkDirectory` 改变。已完成媒体提取后，执行 `./scripts/run-puzzle-case.ps1` 即可重建证据包、导入案例注释、核验数学算例和生成导演稿；`-Build` 会先构建。该脚本复用已编写的案例注释，检查两个视频的 SHA-256，不是对任意视频自动套用同一结论。
+
+一般视频的自动模型审查使用分析器 `review` 和制作器 `generate`，需要自行设置 `OPENAI_API_KEY` 与 `OPENAI_MODEL`；不写死模型名称。运行方法、传输范围和失败行为见两个模块 README。`prepare`、案例辅助导入、数学验证及导演稿校验可在没有 API 凭据时运行。
 
 ## 构建与验证
 
@@ -38,7 +64,13 @@ macOS / Linux：
 ./mvnw -pl video-analyzer -am verify
 ```
 
-第一条命令构建并验证全部模块，后两条分别选择单个子项目及其所需的上游项目。子项目采用 Maven 标准源码布局；后续测试放在各自的 `src/test/java` 中。当前尚无测试用例或可运行的应用入口，构建产物位于各子项目的 `target/` 下。
+第一条命令构建并验证全部模块，后两条分别选择单个子项目。两个 `target/*-0.1.0-SNAPSHOT.jar` 均可用 `java -jar` 运行。Java 测试覆盖丢失文案/窗口、错误来源、非法时间轴、过密旁白、模型不完整返回，以及 2×2 / 2×3 全排列数学验证。
+
+Python 的真实编解码集成检查：
+
+```powershell
+video-analyzer/.venv/Scripts/python.exe -m unittest discover -s video-analyzer/tools -p test_media_worker.py -v
+```
 
 ## 开发约定
 
@@ -52,3 +84,5 @@ macOS / Linux：
 本项目采用 GNU General Public License v3.0，SPDX 标识为 `GPL-3.0-only`。完整协议见 [LICENSE](LICENSE)。
 
 Maven Wrapper 脚本保留 Apache License 2.0 授权，协议见 [.mvn/wrapper/LICENSE](.mvn/wrapper/LICENSE)。
+
+新增依赖及模型说明见 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)。
