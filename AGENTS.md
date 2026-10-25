@@ -6,6 +6,9 @@
 
 - 项目名称：`vivhite_video_framework`。
 - 主要开发语言：Java。
+- 构建环境：JDK 21 或以上版本，Java 编译目标为 21；使用 Maven Wrapper 固定的 Maven 3.9.16。
+- 仓库为 Maven 多模块项目：根目录 `pom.xml` 是共享父 POM，子项目为 `video-maker` 和 `video-analyzer`。
+- 父 package 和 Maven groupId 为 `com.xenoamess.vivhite_video_framework`；制作器使用 `.maker` 子包，分析器使用 `.analyzer` 子包。
 - 许可证：GNU GPL v3.0（`GPL-3.0-only`），完整文本保存在根目录 `LICENSE`。
 - 默认分支：`main`；默认远程仓库：`origin`。
 - 使用中文与用户沟通；代码标识符使用清晰的英文名称。
@@ -20,8 +23,8 @@
 ## Java 开发
 
 - 优先沿用仓库已有的 JDK 版本、构建工具、模块结构和代码风格。
-- 仓库初始化时尚未选择 JDK 和构建工具。首次引入时选择适合需求的受支持版本，并在 `README.md` 记录版本、构建、测试和运行命令。
-- 若使用 Maven 或 Gradle，优先提供并使用对应 Wrapper；提交 Wrapper 所需脚本及文件，确保 Windows 和其他平台均可运行。
+- 使用仓库中的 Maven Wrapper 构建；版本、构建和运行方式发生变更时同步更新 `README.md`。
+- 公共编译配置、插件版本和跨模块依赖版本统一放在父 POM，子 POM 继承父配置并按需声明依赖。不要为方便构建而给两个子项目添加无关依赖。
 - 使用 UTF-8、4 个空格缩进，遵守 `.editorconfig` 与 `.gitattributes`。
 - 类名使用 `UpperCamelCase`，方法和变量使用 `lowerCamelCase`，常量使用 `UPPER_SNAKE_CASE`，包名使用小写。
 - 对外接口保持清晰；仅在有助于理解行为、约束或取舍时添加注释或 Javadoc。
@@ -31,9 +34,18 @@
 - 不提交密钥、访问令牌、密码、本地配置、构建产物或未经明确要求的大型媒体文件。
 - 保留 GPL-3.0-only 的授权约定及已有版权声明；未经用户要求不要更换许可证。
 
+## 子项目职责
+
+- `video-maker`：自动制作数学科普视频，负责选题、数学正确性、文案、分镜、素材、配音、字幕和渲染，消费分析器提供的风格与优化建议。
+- `video-analyzer`：读取视频，组合本地分析和 GPT 分析，提供主题、创作风格、分镜、文案及可执行的优化报告。
+- 分析器结论应关联时间戳和证据，区分观察结果与推断；建议应能转换为制作器的具体参数或制作步骤。
+- 两个子项目通过带版本标识的报告契约协作；当前不互相依赖。引入新的共享模块或修改报告契约时说明必要性并同步文档。
+- 各模块的进一步职责约定见对应子目录的 `README.md`。不要将尚未实现的功能描述为已经可用。
+
 ## 验证
 
 - 对代码变更执行与影响范围相称的构建、测试和已有静态检查；新增行为或修复缺陷时，按需要补充有意义的测试。
+- 全量构建与验证：Windows 使用 `.\mvnw.cmd clean verify`，macOS / Linux 使用 `./mvnw clean verify`。单模块验证增加 `-pl video-maker -am` 或 `-pl video-analyzer -am`；父 POM 变更需验证两个模块。
 - 纯文档或 Git 配置变更进行内容及格式检查即可，无需为此添加应用代码或测试。
 - 提交前检查差异并执行 `git diff --check`；暂存后也检查 `git diff --cached --check`。
 - 若必要检查失败，先排查并修复本次任务引入的问题；存在环境限制或既有失败时，说明实际执行结果与影响，不宣称验证通过。
