@@ -1,0 +1,43 @@
+# Java build output and diagnostics
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+target/
+build/
+out/
+bin/
+
+# Build tool caches; keep Maven and Gradle Wrapper files tracked
+.gradle/
+.mvn/timing.properties
+
+# IDE and editor local files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+.metadata/
+nbproject/private/
+nbbuild/
+nbdist/
+
+# Local configuration and secrets; allow example files
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.template
+
+# Operating system and temporary files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+*.tmp

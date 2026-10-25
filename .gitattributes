@@ -1,0 +1,4 @@
+# Store text files with LF; Windows command scripts use CRLF.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
