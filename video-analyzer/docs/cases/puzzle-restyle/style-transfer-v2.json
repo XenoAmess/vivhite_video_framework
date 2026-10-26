@@ -1,0 +1,68 @@
+{
+  "schemaVersion":"1.0",
+  "artifactKind":"style_reanalysis_and_rewrite_brief",
+  "reviewRevision":2,
+  "caseId":"puzzle-restyle",
+  "reviewedBaseline":"3abf5c9",
+  "referenceVideoSha256":"0aac566c037a04aff4d6e2a7f499ed198982d9b20f8d62863bfbd7b19186fd02",
+  "reviewedDirector":{
+    "path":"video-maker/examples/puzzle-restyle/director-template.json",
+    "sha256":"082a26e5c9857e4c746b0a25c87b8b9c3b7c75e0e818ad352be434afd4a31e52",
+    "status":"requires_structural_rewrite",
+    "mathematicalValidation":"Existing finite-state and legal-move checks remain useful; they do not certify style similarity.",
+    "renderedVideoReviewed":false
+  },
+  "reviewBasis":{
+    "fullReferenceAsrSegmentsReread":441,
+    "referenceFrameSelectionsRereviewed":188,
+    "referenceContactSheetsRereviewed":16,
+    "additionalFrameSelectionsReviewed":214,
+    "additionalContactSheetsReviewed":14,
+    "additionalIntervalMs":[[37000,114000],[379000,411000],[689000,745000],[801000,850000]],
+    "additionalSampleIntervalMs":1000,
+    "denseManifest":"style-dense-evidence-v2.json",
+    "localEvidenceDirectory":"D:/workspace/vivhite-analysis-output/puzzle-restyle/style-reanalysis-v2",
+    "fullAudioPlayback":false,
+    "claims":"Text and selected-image observations plus explicit interpretation; no music, timbre, easing or full-frame semantic certification. Additional selections overlap the earlier selections."
+  },
+  "centralMechanism":"以同一数学对象为可改造的工具：先使用一个具体例子，再改变一个参数或表示，观察新结果，解释为何成立；当现有工具遇到限制，下一种表示由该限制引出，最后把整条构造链收回开场的实际问题。",
+  "transferPriorities":["叙事依赖与工具构造","画面承担推理和读数","操作动词驱动的旁白与局部节拍","主持/小角色的指示和反应","可阅读的多层信息","配色、纹理、章卡等视觉包装"],
+  "mechanisms":[
+    {"id":"SR01","name":"开场交付一个可操作的结果","evidence":{"startMs":0,"endMs":18600,"segmentIds":["s00001","s00005","s00007","s00008","s00013"],"frameTimesMs":[5000,10000,15000]},"observation":"开场的 BMI 不是只宣布可计算，而是定位两个输入、连线、读出约 20.8；观众先看到工具有用。","v1Mismatch":{"sceneIds":["01","02"],"finding":"先宣布可解/无解，再花 65 秒解释玩法和问题分类，实际判别工具仍未呈现。"},"rewriteAction":"先给原例与反例做一次可见的判断演示，再追问该标记从何而来；演示输出用本地验证值驱动。","reviewQuestion":"不听旁白，开场的关键输入、操作和结果是否仍能辨认？"},
+    {"id":"SR02","name":"下一章由上一种表示的局限推出","evidence":{"startMs":131840,"endMs":405000,"segmentIds":["s00062","s00063","s00065","s00067","s00183","s00187","s00192"],"frameTimesMs":[135000,145000,390000,400000]},"observation":"一输入尺→需要两个输入→增加滑动；一自由度→需要两个自由度→两张图平移，存在明确的能力递进。","v1Mismatch":{"sceneIds":["03","04","05","06","07"],"finding":"DFS/BFS、A*、逐行复原、2×2、逆序数依知识目录依次登场，未说明为何当前画面必须变成下一幅。"},"rewriteAction":"用“棋盘回路→排列顺序→交叉计数→空格修正→可达类别→找路线”的依赖链组织全文；搜索放在判定之后回答如何找到走法。","reviewQuestion":"每次转场能否说清当前对象哪里不够，以及下一步只改变了什么？"},
+    {"id":"SR03","name":"图形的改变直接生成数学结论","evidence":{"startMs":48840,"endMs":113880,"segmentIds":["s00029","s00031","s00032","s00037","s00040","s00055"],"frameTimesMs":[54000,58000,64000,73000,77000,82000]},"observation":"刻度沿曲线投影搬运，数字标签不改，尺上位置改变；拆下两轴后直接读平方。动画中的关系本身就是解释。","v1Mismatch":{"sceneIds":["09","10","11","12","13"],"finding":"虽然有 tile ID 与变换文字，旁白主要先给定义和解释，动画负责高亮或复述；尚缺贯穿推导的图形装置。"},"rewriteAction":"研究将当前排列接到排序位置的交叉图，使“逆序对=相交线对”可见，再把实际滑动同步到连线变化；双灯只作辅助指示。","reviewQuestion":"动画若删掉只剩字幕，是否会丢失一条关键推理？"},
+    {"id":"SR04","name":"长场景内连续改变参数而非等时讲知识点","evidence":{"startMs":689500,"endMs":744380,"segmentIds":["s00342","s00349","s00351","s00354","s00361","s00365","s00367"],"frameTimesMs":[694000,700000,713000,728000,738000]},"observation":"同一三轴图依次压缩输出轴、拉伸输入轴、翻转右轴、平移结果轴，公式跟随改变；一个场景中有多轮操作和读数。","v1Mismatch":{"sceneIds":["01","02","09","10","11","12","13","14","15","16"],"finding":"旧稿大量场景被预算成 30–40 秒的单段落，常以解释后停顿收尾；40 秒场景中位数本身并不能证明镜头慢，缺失的是内部推演节拍。"},"rewriteAction":"每个长场景列出多个“问题/动作/新状态/结论”节点，按配音与动作需求分配时间，不规定每几秒必须切镜。","reviewQuestion":"每个有意停留期间，观众究竟在观察、比较或预测什么？"},
+    {"id":"SR05","name":"用具体操作动词建立讲述口吻","evidence":{"startMs":146140,"endMs":273680,"segmentIds":["s00074","s00075","s00107","s00111","s00113","s00124","s00128"],"frameTimesMs":[160000,165000,235000,260000]},"observation":"定位、对齐、读出、换刻度等动词带着观众做事；局部惊喜和随口反问穿插其中。","v1Mismatch":{"sceneIds":["02","04","06","14","15","18","20"],"finding":"“两件事分开”“不能直接下结论”“原视频的一基编号”“完整验证放文档”等审查/说明性话语抢占主线。"},"rewriteAction":"先写手和眼正在做的操作，再解释；仅需一句的条件随动作点出，审计说明、原片勘误和工程术语放侧栏或制作备注。","reviewQuestion":"旁白的指示词能否精确指向此刻的对象和动作，而不是只指向抽象知识分类？"},
+    {"id":"SR06","name":"角色承担指示、操作和轻微喜剧","evidence":{"startMs":41000,"endMs":850000,"segmentIds":["s00027","s00042","s00217","s00411"],"frameTimesMs":[45000,80000,93000,112000,295000,455000,650000,840000]},"observation":"小角色在读数、逆函数、借位、复杂根和射影变换中反复出现；大主持与小角色有不同任务，并非只在章间露面。","v1Mismatch":{"sceneIds":["08","18","19"],"finding":"原 productionDesign 与 S07 把新角色限定在疑问/总结约 2–3 秒，删除了目标片鲜明的交互和反应。"},"rewriteAction":"使用原创角色，按“指出目标、做一次动作、出现一个反应”编排角色节拍；数学图仍是读数主体，角色的出现时长服务动作。","reviewQuestion":"角色若出现，是在帮助定位/改变/回应某个数学事件，还是仅作角落贴纸？"},
+    {"id":"SR07","name":"多层信息分工而非全片低信息密度","evidence":{"startMs":490020,"endMs":652280,"segmentIds":["s00236","s00242","s00297","s00298","s00317","s00318"],"frameTimesMs":[495000,505000,610000,615000,650000]},"observation":"复杂代数推导、变换矩阵可在次层呈现，口播继续围绕看得懂的操作；参考片保留数学密度，也允许观众选择深读。","v1Mismatch":{"sceneIds":["11","14","15","18"],"finding":"把正确性说明逐项完整口播，又普遍加等待，形成讲义式低密度；仅规定“不遮挡”没有规划哪些信息需要读、看或略过。"},"rewriteAction":"区分 narrated、visual、optional-note 三层；关键不变量推理必须讲清，一般化条件和实现核验放可读侧栏/片尾；不删去必要的数学前提。","reviewQuestion":"观众此刻必须理解的内容只有一个焦点吗，次层信息是否明确可选？"},
+    {"id":"SR08","name":"结尾回收的是构造过程而不只是同一画面","evidence":{"startMs":745000,"endMs":849320,"segmentIds":["s00368","s00371","s00379","s00390","s00395","s00399","s00405","s00414"],"frameTimesMs":[750000,770000,800000,809000,833000,843000,846000]},"observation":"平均数尺经过对数、缩放、翻转等步骤得到体重/身高²，再重排为开头的 BMI 图；前文操作能力在回收中全部有用途。","v1Mismatch":{"sceneIds":["14","16","17","18","19"],"finding":"旧稿回到原棋盘，但观众主要等旁白公布结果；缺少把构造出的图形判别器组装回开场的过程，且有两轮总结。"},"rewriteAction":"让展开图、交叉计数、空格颜色和组合标记逐步装回原棋盘，再检验反例与路径；最后只保留一次短总结。","reviewQuestion":"结尾能否直接复用中途造出的对象，而非重新画一个结果牌？"},
+    {"id":"SR09","name":"包装元素有数学职能与层级","evidence":{"startMs":37000,"endMs":744380,"segmentIds":["s00024","s00055","s00349","s00354","s00366"],"frameTimesMs":[40000,110000,695000,715000,740000]},"observation":"章名兼有具体对象与本章新能力，挂签命名、绿条解释变换后的关系、右上小示意维持当前规则；配色服务变量身份。","v1Mismatch":{"sceneIds":["02","03","09","12","14"],"finding":"“看清局面/找路线/数一数”等泛化过程标题加固定配色，很容易得到通用教育视频外观，缺少数学工具被逐步发明的辨识度。"},"rewriteAction":"章名写对象与作用，标签随新能力出现；以原图对象和变量映射决定颜色/位置，减少大块总结卡对演示的替代。","reviewQuestion":"这张卡片是否在指认一个新对象、新操作或刚得到的关系？"}
+  ],
+  "workedSequences":[
+    {"id":"EX01","referenceMs":[48840,113880],"name":"函数图变成可使用的函数尺","beats":[{"rangeMs":[48840,60940],"operation":"投影搬刻度，保留标签"},{"rangeMs":[60940,70920],"operation":"比较数值与实际高度"},{"rangeMs":[71420,83420],"operation":"取下两尺，对齐读平方"},{"rangeMs":[87180,100580],"operation":"反向读开方"},{"rangeMs":[101420,113880],"operation":"固定两尺并加入游标，命名工具"}]},
+    {"id":"EX02","referenceMs":[379820,410240],"name":"自由度不足引出新计算图","beats":[{"rangeMs":[379820,388280],"operation":"回顾滑动为第二个输入提供自由度"},{"rangeMs":[388820,393920],"operation":"提出更多输入需求"},{"rangeMs":[393920,403800],"operation":"叠放两张图，演示二维平移"},{"rangeMs":[404360,410240],"operation":"引入可解二次方程的新对象"}]},
+    {"id":"EX03","referenceMs":[689500,744380],"name":"同一三轴图连续生长","beats":[{"rangeMs":[689500,704860],"operation":"压缩中轴，平均值读数变为和"},{"rangeMs":[705260,724300],"operation":"拉伸输入轴，引入系数"},{"rangeMs":[724780,732100],"operation":"翻转右轴，得到负系数"},{"rangeMs":[732580,744380],"operation":"平移结果尺，添加常数"}]},
+    {"id":"EX04","referenceMs":[745000,849320],"name":"用已经获得的操作组装开场 BMI 图","beats":[{"rangeMs":[745000,777000],"operation":"回到平均数，换对数刻度再缩放，得到乘积"},{"rangeMs":[777900,801200],"operation":"交换输入输出或翻转右轴得到除法"},{"rangeMs":[801620,813920],"operation":"拉伸右轴，得到除以平方"},{"rangeMs":[813920,824360],"operation":"赋予体重与身高含义"},{"rangeMs":[824920,849320],"operation":"变换版式，保持共线关系，成为片头图"}]}
+  ],
+  "rewriteBrief":{
+    "goal":"把滑块拼图的规则逐步转为一件能看懂、能使用的图形判别工具。",
+    "candidateObjectChain":["滑块棋盘与回路","局部缩小与2×2循环次序","展开排列及连接排序位置的线","交叉计数及对换奇偶","空格棋盘颜色","组合标记与可达类别","状态图找路并回到原棋盘"],
+    "contentCoverage":"保留 K01–K09 的核心含义；允许重排、合并和分配为旁白/图形/次层注释。保持关键证明与条件，不要求沿用旧场景顺序。",
+    "durationPolicy":"从实际操作与口播重新定时，20 镜和12:20仅为v1预算。文本密度只用于诊断，不设风格通过阈值。",
+    "continuityPolicy":"允许有动机地重置画面或换例，继承的是需求和可复用操作；离散滑动、排列证明和表示变换须明确区分，不要求强行几何变形。",
+    "sceneBeatFields":["carriedObject","localQuestion","operation","visibleResult","narrationCue","onScreenFocus","nextNeed","referenceMechanismIds"],
+    "productionStatus":"v2 full director draft not written; opening-direction example is separate and unrendered.",
+    "nextStep":"重写完整导演稿并逐段与参考演示机制对照，然后再进入制作。"
+  },
+  "acceptanceQuestions":[
+    "开场是否实际展示输入、操作、结果，而非只宣称答案？",
+    "每次换表示是否从当前工具的局限自然推出？",
+    "主要结论能否从对象的变化和读数中看见？",
+    "同一对象是否至少经历多轮有新结论的操作，而非只重复高亮？",
+    "旁白、图形和可选注释的职责是否清楚？",
+    "角色或轻松反应是否与某个具体数学事件相关？",
+    "结尾是否组装并使用前文造出的工具，只做一次收束？",
+    "条件、证明与合法滑动是否仍然准确？",
+    "对照检查是否给出参考片时码与新稿的实际动作，而非仅列styleRuleIds？"
+  ]
+}

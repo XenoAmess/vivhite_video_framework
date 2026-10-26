@@ -6,7 +6,9 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.maker`。
 
 ## 当前命令与案例
 
-[首个完整导演稿：滑块拼图的奇偶不变量](docs/cases/puzzle-restyle/director.md)，20 镜，12 分 20 秒。对应原创稿源文件为 [director-template.json](examples/puzzle-restyle/director-template.json)，包含全片制作设定；内容来自第一部视频，表达规则来自第二部。
+[v1 导演草稿：滑块拼图的奇偶不变量](docs/cases/puzzle-restyle/director.md)，20 镜，计划 12 分 20 秒。对应原创稿源文件为 [director-template.json](examples/puzzle-restyle/director-template.json)，包含全片制作设定；内容来自第一部视频，表达规则来自第二部。
+
+风格复核结论为需要结构重写，详见 [复分析与改稿依据](../video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md) 和 [90 秒方向样稿](examples/puzzle-restyle/opening-direction-v2.json)。两者不是已完成的 v2 全文或成片。当前 `render` 的结构校验、既有 `styleRuleIds` 和重建脚本均不代表风格相似度通过。独立的 v2 重写依据需要作为下一稿的额外输入；现有 `DirectorPlanner` 尚未自动读取它。
 
 ```powershell
 $analysisFile = 'D:/workspace/vivhite-analysis-output/puzzle-restyle/analysis-report.json'

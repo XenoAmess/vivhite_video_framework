@@ -1,0 +1,205 @@
+{
+  "schemaVersion": "1.0",
+  "caseId": "puzzle-restyle",
+  "reviewRevision": 2,
+  "method": "Unicode letters/decimal digits divided by full interval, including pauses; not measured articulation rate",
+  "boundaryMethod": "Crossing ASR segments apportioned linearly by overlapping duration",
+  "reference": {
+    "sourceSha256": "0aac566c037a04aff4d6e2a7f499ed198982d9b20f8d62863bfbd7b19186fd02",
+    "transcriptSha256": "60da3e2ca439a41f7f76a246b9e75463b197df777fc322bee177eb7995214d8d",
+    "bodyEndMs": 900240,
+    "includedAsrSegments": 440,
+    "characters": 4718.0,
+    "grossCharactersPerSecond": 5.240825,
+    "excludedSegments": [
+      "s00441"
+    ]
+  },
+  "reviewedDraft": {
+    "path": "video-maker/examples/puzzle-restyle/director-template.json",
+    "sha256": "082a26e5c9857e4c746b0a25c87b8b9c3b7c75e0e818ad352be434afd4a31e52",
+    "bodyEndMs": 715000,
+    "excludedSceneIds": [
+      "20"
+    ],
+    "characters": 2310,
+    "grossCharactersPerSecond": 3.230769,
+    "sceneCount": 20,
+    "medianSceneDurationMs": 40000.0,
+    "sceneStatistics": [
+      {
+        "id": "01",
+        "startMs": 0,
+        "endMs": 30000,
+        "characters": 88
+      },
+      {
+        "id": "02",
+        "startMs": 30000,
+        "endMs": 65000,
+        "characters": 107
+      },
+      {
+        "id": "03",
+        "startMs": 65000,
+        "endMs": 105000,
+        "characters": 130
+      },
+      {
+        "id": "04",
+        "startMs": 105000,
+        "endMs": 145000,
+        "characters": 124
+      },
+      {
+        "id": "05",
+        "startMs": 145000,
+        "endMs": 185000,
+        "characters": 126
+      },
+      {
+        "id": "06",
+        "startMs": 185000,
+        "endMs": 225000,
+        "characters": 128
+      },
+      {
+        "id": "07",
+        "startMs": 225000,
+        "endMs": 260000,
+        "characters": 135
+      },
+      {
+        "id": "08",
+        "startMs": 260000,
+        "endMs": 290000,
+        "characters": 95
+      },
+      {
+        "id": "09",
+        "startMs": 290000,
+        "endMs": 330000,
+        "characters": 127
+      },
+      {
+        "id": "10",
+        "startMs": 330000,
+        "endMs": 370000,
+        "characters": 119
+      },
+      {
+        "id": "11",
+        "startMs": 370000,
+        "endMs": 410000,
+        "characters": 134
+      },
+      {
+        "id": "12",
+        "startMs": 410000,
+        "endMs": 450000,
+        "characters": 124
+      },
+      {
+        "id": "13",
+        "startMs": 450000,
+        "endMs": 490000,
+        "characters": 134
+      },
+      {
+        "id": "14",
+        "startMs": 490000,
+        "endMs": 530000,
+        "characters": 128
+      },
+      {
+        "id": "15",
+        "startMs": 530000,
+        "endMs": 565000,
+        "characters": 144
+      },
+      {
+        "id": "16",
+        "startMs": 565000,
+        "endMs": 605000,
+        "characters": 125
+      },
+      {
+        "id": "17",
+        "startMs": 605000,
+        "endMs": 650000,
+        "characters": 84
+      },
+      {
+        "id": "18",
+        "startMs": 650000,
+        "endMs": 685000,
+        "characters": 133
+      },
+      {
+        "id": "19",
+        "startMs": 685000,
+        "endMs": 715000,
+        "characters": 125
+      },
+      {
+        "id": "20",
+        "startMs": 715000,
+        "endMs": 740000,
+        "characters": 67
+      }
+    ]
+  },
+  "comparison": {
+    "draftToReferenceGrossDensityRatio": 0.616462,
+    "interpretation": "Draft has lower written narration density; this alone does not establish pacing or perceived similarity"
+  },
+  "referenceSections": [
+    {
+      "startMs": 0,
+      "endMs": 37000,
+      "characters": 192.0,
+      "grossCharactersPerSecond": 5.189189
+    },
+    {
+      "startMs": 37460,
+      "endMs": 135600,
+      "characters": 510.0,
+      "grossCharactersPerSecond": 5.196658
+    },
+    {
+      "startMs": 146140,
+      "endMs": 218300,
+      "characters": 378.0,
+      "grossCharactersPerSecond": 5.238359
+    },
+    {
+      "startMs": 218300,
+      "endMs": 379340,
+      "characters": 851.0,
+      "grossCharactersPerSecond": 5.284401
+    },
+    {
+      "startMs": 379820,
+      "endMs": 530940,
+      "characters": 812.0,
+      "grossCharactersPerSecond": 5.373213
+    },
+    {
+      "startMs": 534600,
+      "endMs": 661480,
+      "characters": 667.0,
+      "grossCharactersPerSecond": 5.256936
+    },
+    {
+      "startMs": 668700,
+      "endMs": 849320,
+      "characters": 921.0,
+      "grossCharactersPerSecond": 5.099103
+    }
+  ],
+  "limitations": [
+    "Reference text is unverified ASR; draft text has no synthesized voice recording.",
+    "ASR segments, semantic beats, director scenes and camera cuts are different units.",
+    "No inference about timbre, music, prosody or easing from text/image statistics."
+  ]
+}

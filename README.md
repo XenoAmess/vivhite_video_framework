@@ -23,7 +23,8 @@
 - 内容来源：`BV1AV411V7SJ`，分析滑块拼图的搜索、复原方法与奇偶不变量。
 - 风格来源：`BV1i4aS6SEBR`，提炼先操作后解释、持续图形对象、纸色细线与章节/结论条。
 - [案例分析与覆盖说明](video-analyzer/docs/cases/puzzle-restyle/README.md)。
-- [20 镜、12 分 20 秒导演稿](video-maker/docs/cases/puzzle-restyle/director.md)。
+- [v1 导演草稿](video-maker/docs/cases/puzzle-restyle/director.md)：20 镜、计划 12 分 20 秒；风格复核后需要重写。
+- [目标片风格复分析与改稿依据](video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md)：逐段对照、文本密度统计、工具构造主线及 90 秒方向样稿。
 - [后续视频制作任务交接](docs/video-production-handoff.md)：下一会话的必读材料、本地产物、实现任务与验收标准。
 
 本例完整处理了两部音轨并阅读全部转写，连续解码 58,808 帧；语义画面输入是贯穿全片的 415 张选帧。逐窗摘要由本次助手编写，逐句条目保留 ASR 与关键修订，不是逐句听音校准。本机没有配置 OpenAI API 凭据，实际交付使用 `assisted` 导入路径；独立 API 路径已实现，尚未联网验证。

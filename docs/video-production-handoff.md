@@ -2,15 +2,17 @@
 
 更新日期：2026-10-26。分析与导演稿实现基线：`76e1435`，位于 `main` 分支；该提交之后的变更以新会话实际读取的工作区为准。
 
-本交接用于下一会话继续完成：消费现有导演稿，实现可复用的视频制作流程，输出《这块拼图真的无解吗？用两个奇偶开关判断滑块拼图》的完整首版视频。
+本交接用于下一会话继续完成：先依据风格复分析重写导演稿，再实现可复用的视频制作流程，输出滑块拼图主题的完整首版视频。
+
+**最新变化：现有 v1 导演稿被评价为不像目标片，复核结论是需要结构重写。** 优先阅读 [风格复分析 v2](../video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md) 和 [机器可读改稿依据](../video-analyzer/docs/cases/puzzle-restyle/style-transfer-v2.json)。它们补充工具构造、跨段依赖、角色和节拍要求；尚未产生完整 v2 导演稿。旧稿的结构校验通过不能替代风格复核。
 
 ## 1. 接手后先明确的状态
 
-- 已有完整首版导演稿：20 镜，计划 12 分 20 秒，含原创旁白、画面、屏幕文字、动作顺序、音频与停顿安排。
+- 已有完整 v1 导演稿：20 镜，计划 12 分 20 秒，含原创旁白、画面、屏幕文字、动作顺序、音频与停顿安排；其风格需要重写，镜头数和时长按新稿重新规划。
 - 已有内容分析、风格分析和独立数学验证；本例由本地媒体处理加当前会话助手辅助分析完成。
-- 待实现：动画渲染、配音、字幕与音画同步、成片合成、成片检查及可重复执行的制作入口。
+- 先完成依据 v2 复分析的全文改稿与风格对照；随后实现动画渲染、配音、字幕与音画同步、成片合成、成片检查及可重复执行的制作入口。
 - 当前 `video-maker` 的 `render` 命令只校验并导出导演稿 JSON/Markdown，**不生成视频**。`scripts/run-puzzle-case.ps1` 也只运行到导演稿。
-- 当前用户要求交接文档；本文件描述的是后续视频制作任务，当前尚无已完成的成片或技术样片。
+- 已交付交接文档和风格复分析；本文件描述后续改稿与视频制作任务，当前尚无已完成的成片或技术样片。
 
 ## 2. 必读材料与阅读顺序
 
@@ -20,12 +22,13 @@
 | --- | --- | --- |
 | 1 | [AGENTS.md](../AGENTS.md)、[根 README](../README.md) | Java 21、父 POM、模块边界、GPL-3.0-only、验证及默认自动提交推送约定 |
 | 2 | [制作器 README](../video-maker/README.md) | 已实现的命令、导演稿契约、当前能力边界 |
-| 3 | [完整导演稿](../video-maker/docs/cases/puzzle-restyle/director.md) | 逐镜阅读，理解全片叙事与具体制作要求 |
-| 4 | [原创稿源文件](../video-maker/examples/puzzle-restyle/director-template.json)、[绑定后的导演数据](../video-maker/docs/cases/puzzle-restyle/director.json) | 前者用于修改创作稿；后者为当前已绑定分析指纹的结构化快照 |
-| 5 | [案例分析说明](../video-analyzer/docs/cases/puzzle-restyle/README.md)、[分析摘要](../video-analyzer/docs/cases/puzzle-restyle/analysis-summary.json) | 内容主线、风格规则、证据位置、改编决策与分析局限 |
-| 6 | [数学验证](../video-analyzer/docs/cases/puzzle-restyle/math-verification.json) | 原例 14 步路径、行尾两块的合法动作、枚举规模 |
-| 7 | [2×2 全状态图](../video-analyzer/docs/cases/puzzle-restyle/puzzle-2x2-graph.json)、[2×3 全状态图](../video-analyzer/docs/cases/puzzle-restyle/puzzle-2x3-graph.json) | 状态图动画的数据，按需读取，不以模型猜测替代合法邻居 |
-| 8 | [第三方声明](../THIRD-PARTY-NOTICES.md) | 现有依赖与模型来源；新增配音、字体、音乐和渲染依赖时补充声明 |
+| 3 | [风格复分析 v2](../video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md)、[改稿依据](../video-analyzer/docs/cases/puzzle-restyle/style-transfer-v2.json)、[开场方向示例](../video-maker/examples/puzzle-restyle/opening-direction-v2.json) | 新稿优先依据；示例不等于已完成的 v2 导演稿 |
+| 4 | [v1 导演稿](../video-maker/docs/cases/puzzle-restyle/director.md) | 对照复分析阅读，识别需要保留的数学信息和需要重排的表达 |
+| 5 | [原创稿源文件](../video-maker/examples/puzzle-restyle/director-template.json)、[绑定后的导演数据](../video-maker/docs/cases/puzzle-restyle/director.json) | 前者用于修改创作稿；后者为旧稿已绑定分析指纹的结构化快照 |
+| 6 | [案例分析说明](../video-analyzer/docs/cases/puzzle-restyle/README.md)、[分析摘要](../video-analyzer/docs/cases/puzzle-restyle/analysis-summary.json) | 首轮内容分析、证据位置、改编决策与分析局限；风格判断已由 v2 复分析补充 |
+| 7 | [数学验证](../video-analyzer/docs/cases/puzzle-restyle/math-verification.json) | 原例 14 步路径、行尾两块的合法动作、枚举规模 |
+| 8 | [2×2 全状态图](../video-analyzer/docs/cases/puzzle-restyle/puzzle-2x2-graph.json)、[2×3 全状态图](../video-analyzer/docs/cases/puzzle-restyle/puzzle-2x3-graph.json) | 状态图动画的数据，按需读取，不以模型猜测替代合法邻居 |
+| 9 | [第三方声明](../THIRD-PARTY-NOTICES.md) | 现有依赖与模型来源；新增配音、字体、音乐和渲染依赖时补充声明 |
 
 需要追查原视频证据时，再读 [逐窗分析注释](../video-analyzer/examples/puzzle-restyle/review-notes.json)、[分析器 README](../video-analyzer/README.md) 及本地完整报告。[早期分析设计](../video-analyzer/docs/BV1AV411V7SJ-analysis-design.md) 是目标设计和框架调研，当前实施情况以案例说明与代码为准。
 
@@ -106,9 +109,9 @@ Z:\workspace\bilibili-download-skill\downloads\BV1i4aS6SEBR\【数学】怎么�
 
 内容来自 BV1AV411V7SJ：滑块拼图的搜索、复原策略和奇偶不变量。风格来自 BV1i4aS6SEBR：先操作后解释、纸色背景、细线图形、固定颜色职责、对象连续变换、章节卡和结论条。
 
-全片画面与旁白按现有 20 镜推进。计划规格为 1920×1080、30fps；12:20 是导演预算，实际配音后可调整镜头时间，同时更新结构化导演稿与导出文件。优先制作干净的二维数学动画。图形、角色和音频使用新建或授权素材，片尾分别注明内容与表达参考来源。
+先按 v2 复分析建立“棋盘回路→顺序与交叉→空格修正→组合标记→可达类别→找路线”的对象依赖链，再分配镜头与旁白，保持原有知识核心及数学正确性。计划规格为 1920×1080、30fps；20 镜与 12:20 都是 v1 预算，依据新稿和实际配音调整，同时更新结构化导演稿与导出文件。图形、角色和音频使用新建或授权素材，片尾分别注明内容与表达参考来源。
 
-可先选择棋盘滑动、逆序计数、双灯不变量等代表镜头做总计 60–90 秒的技术样片，检查清晰度与音画同步；验证后继续完成整片。样片可由多个镜头节选组成，正式视频仍按 01–20 镜的完整叙事排列。
+改稿后，可选择棋盘滑动、交叉计数、空格修正等代表演示做总计 60–90 秒的技术样片，检查图形推理、角色作用、清晰度与音画同步；验证后继续完成整片。样片可由多个镜头节选组成，正式视频按新稿的完整叙事排列。
 
 ### 必须保持正确的数学信息
 
@@ -136,6 +139,8 @@ video-analyzer/.venv/Scripts/python.exe -m unittest discover -s video-analyzer/t
 .\scripts\run-puzzle-case.ps1 -Build
 ```
 
+该脚本当前重建 v1 历史结果，不会自动应用独立的 v2 风格改稿依据。重新生成时应明确注入新要求，并重新做语义风格对照。
+
 首次重建媒体证据时使用 `-Extract`；需要原视频、Python 环境和模型，内容片 OCR 较慢。已有人工注释绑定源文件指纹与语音段 ID，换视频或重新识别导致切分变化时应重新核对注释及引用。
 
 修改旁白、镜头或时间后，以 `director-template.json` 为稿源，绑定当前完整分析报告再导出：
@@ -158,14 +163,14 @@ java -jar video-maker/target/video-maker-0.1.0-SNAPSHOT.jar render `
 
 下一会话交付完整首版视频时，应同时提供：
 
-1. 可播放的完整 MP4，覆盖全部 20 镜知识内容，数学、文字和动作正确；建议 H.264 视频、AAC 音频、1080p、30fps。
+1. 可播放的完整 MP4，覆盖经重写导演稿的全部知识内容，数学、文字和动作正确；建议 H.264 视频、AAC 音频、1080p、30fps。
 2. 清晰普通话配音、与实际配音对齐的字幕文件及成片字幕；公式与字幕使用各自阅读区域。
 3. 可重复运行的制作入口、配置、素材来源记录和实际时间轴；支持分镜重做及失败定位。
 4. 本地产物保存在 `production/` 等仓库外目录，包括成片、字幕、音轨、中间产物及制作清单；源码、配置示例、原创稿和说明纳入 Git。
 5. 整片检查记录：片头片尾、镜头衔接、每个数学演示、字幕可读性、音画同步、源引用和素材署名。结构校验、实际渲染、机器检测、人工/模型观看分别记录。
 6. 新增实现对应的检查通过，文档说明实际运行方法与仍存在的局限，按 `AGENTS.md` 自动提交并推送。
 
-历史工时粗估为首版 16–24 工程工时、较精细版本 30–50 工时，仅作规划；技术样片完成后按实际后端和同步效果更新估算。
+基于 v1 的历史工时粗估为首版 16–24 工程工时、较精细版本 30–50 工时；加入全文改稿后，应依据新稿、实际后端和技术样片重新估算。
 
 ## 9. 可复制给下一会话的指令
 
@@ -173,12 +178,13 @@ java -jar video-maker/target/video-maker-0.1.0-SNAPSHOT.jar render `
 请接手 D:\workspace\vivhite_video_framework，先阅读 AGENTS.md 和
 docs/video-production-handoff.md，并按交接文档的顺序阅读导演稿、分析和数学验证数据。
 
-目标：在现有分析与导演稿基础上，实现可重复执行的视频制作流程，完成 puzzle-restyle
-全部 20 镜的首版视频，包含二维数学动画、普通话配音、字幕和成片合成。
+目标：先依据 style-reanalysis-v2.md 和 style-transfer-v2.json 重写完整导演稿，再实现可重复
+执行的视频制作流程，完成 puzzle-restyle 首版视频，包含二维数学动画、普通话配音、字幕和成片合成。
 
 当前 video-maker 的 render 只输出导演稿 JSON/Markdown；动画、配音和成片渲染尚待实现。
-请复用现有分析、原创导演稿和已验证的数学动作，先核对本地产物与环境，选定实现方案，
-通过代表镜头验证后继续完成整片，交付可运行代码、完整视频及制作/检查记录。
+v1 的风格复核结论是需要结构重写；其20镜和12:20只是旧预算。请复用内容分析和已验证的数学动作，
+先改稿并与目标片演示机制对照，再核对环境、选定实现方案，通过代表镜头验证后继续完成整片。
+交付可运行代码、完整视频及制作/检查记录；独立v2复分析尚未由现有生成器自动加载，需明确注入。
 
 涉及数学内容时，以交接文档中的定义和验证数据为依据；依据实际配音调整时间轴并同步稿源。
 遵守项目 Java 主干、模块边界和 GPL-3.0-only 约定。完成任务后按 AGENTS.md 自动提交、推送，

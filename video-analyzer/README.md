@@ -8,6 +8,7 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.analyzer`。
 
 - [BV1AV411V7SJ 全量文案检查与全片审查设计](docs/BV1AV411V7SJ-analysis-design.md)：包含本地音视频框架调研、全文转写与逐句检查、全片视听审查、制作器输出及覆盖验收。
 - [两部视频实跑结果](docs/cases/puzzle-restyle/README.md)：已完成内容分析、风格提炼与导演稿；说明实际范围及未完成的音频校准。
+- [风格复分析 v2](docs/cases/puzzle-restyle/style-reanalysis-v2.md)：纠正 v1 对叙事、图形推演、角色和节奏的提炼；现有导演稿需要结构重写。
 
 ## 当前命令
 

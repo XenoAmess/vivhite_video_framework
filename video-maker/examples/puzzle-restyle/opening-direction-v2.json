@@ -1,0 +1,24 @@
+{
+  "schemaVersion":"1.0",
+  "artifactKind":"unrendered_opening_direction_example",
+  "status":"rewrite_example_not_full_director",
+  "durationMs":90000,
+  "purpose":"用完整可读旁白和操作示范说明风格修订方向；时间为规划值，未做配音排练。",
+  "referenceProfile":"video-analyzer/docs/cases/puzzle-restyle/style-transfer-v2.json",
+  "beats":[
+    {"id":"O01","startMs":0,"endMs":10000,"narration":"假设我们想把这块滑块拼图，拼成右边这个样子。通常要一块一块地试，不过今天先用一个更省事的办法。","carriedObject":"棋盘 [2,3,1;4,5,0] 与目标 [1,2,3;4,5,0]","operation":"主棋盘出现后，数字保持身份向右展开，原棋盘保留淡影。","visibleResult":"同一组数字变成待测排列；目标缩小保留。","onScreenFocus":"当前布局如何转成可计算的表示","referenceMechanismIds":["SR01","SR03"]},
+    {"id":"O02","startMs":10000,"endMs":23000,"narration":"把数字排成一行，数一数有多少对连线相交，再看空格落在什么颜色的格子上，就能算出一个零或一的标记。只要它和目标不同，这局就不用再试了。","carriedObject":"展开排列、排序参照排 0,1,2,3,4,5 与空格棋盘色","operation":"连接相同数字，预览交叉奇偶与空格颜色合成 I=(τ+r+c) mod2 的读数。数值由已验证局面计算，具体构造稍后展开。","visibleResult":"原例与目标 I 都是0；观众先看到判别器输入和输出。","onScreenFocus":"看交叉、看空格、读标记三个具体动作；排序参照不是目标棋盘，使用独立标签。","referenceMechanismIds":["SR01","SR03","SR08"]},
+    {"id":"O03","startMs":23000,"endMs":34000,"narration":"比如这一局，算出来是一，目标是零，靠正常滑动就到不了。旁边这一局则和目标一样，都是零，它确实能还原，等会儿我们把路线走给你看。","carriedObject":"增加反例 [2,1,3;4,5,0]；原例与目标仍可见","operation":"在同一个图形判别器上切换两个输入；反例 τ=6、r+c=3，I=1；原例 τ=7、r+c=3，I=0。","visibleResult":"一个被排除，一个保留并承诺后文合法路线。","onScreenFocus":"不同标记只推出不可达；本例同标记可达另有验证。","referenceMechanismIds":["SR01","SR04"]},
+    {"id":"O04","startMs":34000,"endMs":43000,"narration":"奇怪的是，这个标记根本不记录你走了几步，却知道你能去哪一类局面。它是怎么做到的呢？我们先从最小的拼图开始。","carriedObject":"刚得到的判别器缩成角落预告，小棋盘进入","operation":"以刚才的结果引出其机制，展示“1 小棋盘：藏在回路里的顺序”；原创角色把注意力指向四格棋盘。","visibleResult":"有明确动机去研究最小例子。","onScreenFocus":"先演示后构造；角色参与指示，不单作装饰。","referenceMechanismIds":["SR02","SR06","SR09"]},
+    {"id":"O05","startMs":43000,"endMs":55000,"narration":"这里有三个数字和一个空格。让一块滑进空格，下一块再跟上，走过一圈后，空格回来了，三个数字的位置却轮换了一次。","carriedObject":"2×2 棋盘 [1,2;3,0]","operation":"播放下方 smallBoardLoop 的四次合法动作，只让共边块滑入空格。","visibleResult":"空格回到原位，非空滑块循环换位。","onScreenFocus":"眼睛追踪三个数字的相对次序，先不写逆序定义。","referenceMechanismIds":["SR03","SR04","SR05"]},
+    {"id":"O06","startMs":55000,"endMs":69000,"narration":"把四个位置画成一个环，就能看清这个过程。滑动可以改变它们的位置，却改变不了一、二、三沿着环排列的先后顺序。再怎么绕，也不会把顺时针的一二三变成一三二。","carriedObject":"上一节四格及原位置映射，顺时针沿四格外圈读取","operation":"四格外圈的边伸展为环，节点身份保持；合法滑动继续沿环演示，原有非空块的循环次序留下轨迹。","visibleResult":"能看到顺序保留，而不只听到一句定理。","onScreenFocus":"环的节点次序来自棋盘外圈；表示变换不算一次拼图动作。","referenceMechanismIds":["SR03","SR05","SR09"]},
+    {"id":"O07","startMs":69000,"endMs":80000,"narration":"四个位置一共有二十四种排列，而每个圈子各有十二种。可是，总不能每次都把全部局面画出来吧？这个顺序，能不能用一个数来记住？","carriedObject":"四格棋盘的两个可达分量","operation":"用现有2×2图数据展开两个12态环；从一个状态沿合法边移动，另一环保持可见。","visibleResult":"顺序差异对应两个可达类别，产生压缩表示的需求。","onScreenFocus":"不是只绕四步就得到12态；数量来自完整状态图。","referenceMechanismIds":["SR02","SR04"]},
+    {"id":"O08","startMs":80000,"endMs":90000,"narration":"换成大棋盘，光看圆环就不够了。我们把棋盘摊成一行，再让每个数字接到排好序的位置，看看这些线会怎样交叉。","carriedObject":"从2×2过桥回到原2×3棋盘和开场连线装置","operation":"原棋盘与相同数字连接线回到画面，准备从具体交叉引入逆序。","visibleResult":"下一段是对开场工具的构造，承接已有对象与问题。","onScreenFocus":"改变表示解决观察局限，不重新开始一节独立定义课。","referenceMechanismIds":["SR02","SR03","SR08"]}
+  ],
+  "smallBoardLoop":[[1,2,3,0],[1,2,0,3],[0,2,1,3],[2,0,1,3],[2,3,1,0]],
+  "mathNotes":[
+    "连线图采用两条平行位置线，上排为当前行优先排列，下排为升序0..5；同数字相连，相交线对数等于包含0的逆序数。按线对计数，多线共点时应分开展示各对或调整间距，不能把屏幕上的不同交点数当逆序数。它是新方案，不是参考片原图。",
+    "0保留为青色虚线空格对象；符号I在开场是功能预告，后文必须构造并证明。",
+    "同标记可达在本例由完整2×3状态图及14步路径支持；开场话语不作为一般棋盘充分性证明。"
+  ]
+}
