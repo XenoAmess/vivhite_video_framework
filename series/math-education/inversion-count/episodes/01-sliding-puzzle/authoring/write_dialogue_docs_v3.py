@@ -23,7 +23,7 @@ def stamp(seconds: float) -> str:
 
 def director_text(plan: dict) -> str:
     lines = ["# 第一期 v3：完整台词修订导演稿", "",
-             "这是基于已交付 v2 的独立改稿，包含全部39段最终拟用旁白和画面文字；尚未重新配音、排程或渲染。第一期不追加第二、三期承担的完整证明。", "",
+             "这是基于已交付 v2 的独立改稿，包含全部39段旁白和画面文字；实际成片及新版时码见[制作记录](production-v3.md)。第一期不追加第二、三期承担的完整证明。", "",
              "声音暂用 Edge TTS 晓晓；人物仍为图片占位。短操作指令由旁白与现有提示线、高亮配合，不假称已具备 Live2D 表情、动作或口型。", "",
              "段落顺序沿用原39个动作段。以下没有借用 v2 的实测时码；新版时长、停顿与动作完成时间，须在新配音后按真实词边界重新排程。", "",
              "稿源：[逐段修订数据](../authoring/dialogue-v3.json)；执行输入：[v3 制作计划](../authoring/production-plan-v3.json)；修改依据：[全量台词复审](dialogue-review-v3.md)。人格一致性与信息披露的详细复审另存私有库，审核结论须绑定本文件及实际制作计划的各自哈希。", ""]
@@ -40,7 +40,8 @@ def director_text(plan: dict) -> str:
             lines += [f"次层注释：{beat['note']}", ""]
         if beat.get("moveCues"):
             lines += ["动作触发短语（按序，每次对应一个状态转换）：" +
-                      " → ".join(f"「{cue['phrase']}」" for cue in beat["moveCues"]), ""]
+                      " → ".join(f"「{cue['phrase']}」" + (f"+{cue['delay']:g}秒" if cue.get("delay") else "")
+                                 for cue in beat["moveCues"]), ""]
         if beat.get("focusPairs"):
             lines += ["连线高亮触发：" + "；".join(
                 f"「{cue['phrase']}」+{cue.get('delay', 0):g}秒 → {cue['pair'][0]}/{cue['pair'][1]}"

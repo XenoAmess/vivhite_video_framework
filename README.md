@@ -22,6 +22,8 @@
 
 后续视频任务必须执行[角色参与及文案审核规约](docs/character-workflow.md)：创作前读取独立私有角色仓库中的唯一完整人格文档，成稿后分别审核人格一致性与信息披露。公开项目只保存角色 ID、必要版本引用及审核状态，不保存人格副本。
 
+用户说“做视频”时的[默认制作约定](docs/video-production-defaults.md)已固定：先补齐制作器再交付完整影片，参考 XAR 工具链，默认 Edge 晓晓和可替换的人物图片占位，多期并行且冲突时第一期优先。
+
 ## 已完成的实战案例
 
 - 内容来源：`BV1AV411V7SJ`，分析滑块拼图的搜索、复原方法与奇偶不变量。
@@ -31,7 +33,7 @@
 - [目标片风格复分析与改稿依据](series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-reanalysis-v2.md)：逐段对照、文本密度统计、工具构造主线及 90 秒方向样稿。
 - [后续视频制作任务交接](docs/video-production-handoff.md)：下一会话的必读材料、本地产物、实现任务与验收标准。
 - [实际视频制作流程](video-maker/docs/production.md) 与 [v2 制作计划](series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/production-plan-v2.json)：39 段新版文案，先展示判别器再逐步构造，消费真实数学状态生成动画。
-- [第一期 v3 台词修订稿](series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director-v3.md)与[39 段审查及改前改后对照](series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/dialogue-review-v3.md)：从真实成片台词修掉模板化表达，重写人物反应、逐步动作与配音触发；尚未重新配音或渲染。
+- [第一期 v3 台词修订稿](series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director-v3.md)与[39 段审查及改前改后对照](series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/dialogue-review-v3.md)：从真实成片台词修掉模板化表达，重写人物反应与逐步动作；已重新制作为10分55秒的1080p30影片，详见[制作记录](series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v3.md)。
 
 本例完整处理了两部音轨并阅读全部转写，连续解码 58,808 帧；语义画面输入是贯穿全片的 415 张选帧。逐窗摘要由本次助手编写，逐句条目保留 ASR 与关键修订，不是逐句听音校准。本机没有配置 OpenAI API 凭据，实际交付使用 `assisted` 导入路径；独立 API 路径已实现，尚未联网验证。
 
@@ -45,7 +47,7 @@ uv pip install --python video-maker/.venv/Scripts/python.exe -r video-maker/tool
 .\scripts\produce-puzzle-video.ps1 -Build -VideoCodec h264_nvenc
 ```
 
-默认采用最新 v3 台词，输出到 `production-v3-cued/`；`-Revision 2` 选择历史 v2。无 NVIDIA 编码器时省略 `-VideoCodec`，使用 CPU `libx264`。默认 Edge TTS 晓晓 `zh-CN-XiaoxiaoNeural`，音色、语速、输出目录和人物可由参数改变。首次联网合成旁白，之后按内容哈希复用配音。已交付的 v2 实测片长 11分01.4秒、1080p30，保存在仓库外 `../vivhite-analysis-output/puzzle-restyle/production-v2-cued/`；v3 当前只有新稿及计划，没有新成片。详见 [制作器说明](video-maker/docs/production.md)。
+默认采用最新 v3 台词；`-Revision 2` 选择历史 v2。无 NVIDIA 编码器时省略 `-VideoCodec`，使用 CPU `libx264`。默认 Edge TTS 晓晓 `zh-CN-XiaoxiaoNeural`，音色、语速、输出目录和人物可由参数改变。首次联网合成旁白，之后按内容哈希复用配音。新 v3 成片实测10分55秒，位于仓库外 `../vivhite-analysis-output/math-education/inversion-count/01-sliding-puzzle/production-v3/`；历史v2仍保存在 `../vivhite-analysis-output/puzzle-restyle/production-v2-cued/`。详见 [制作器说明](video-maker/docs/production.md)。
 
 新增的制作前检查会保留本次 `authored-plan.json`，并在缺少匹配的人格/披露审核时停止正式配音与渲染。按[规约](docs/character-workflow.md)实际审阅完整计划与人物素材、导出收据后重试；不需要另行请求用户批准，也不能伪造审核通过。`-PreviewOnly` 可先生成技术预览。
 

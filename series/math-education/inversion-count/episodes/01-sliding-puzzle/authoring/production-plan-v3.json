@@ -24,7 +24,7 @@
     "analysisSha256": "d84fc5eb00826c392557903e6894ad7ba3690f7adfa52de87415dc46480ddcc7",
     "styleProfile": "series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-transfer-v2.json",
     "styleProfileSha256": "f20c8369a1b6756eceea6edfc4fe83ebe3c7d86055f19d3853adf540f1002050",
-    "mathVerificationSha256": "569cd038ff671368f00ff0cfe2c021d9e8aae2adeee97e3b3f7ed12cb1a45551",
+    "mathVerificationSha256": "c834b0ae23fd6425a058ecce0c3ff19a1d5ffbb8ca739d0d958baed3ecaeecdd",
     "contentVideoSha256": [
       "0aac566c037a04aff4d6e2a7f499ed198982d9b20f8d62863bfbd7b19186fd02",
       "c0ee37461026f0c23254c57b85f2858592f03a2fa89db75e81102ad5102eec3d"
@@ -32,7 +32,7 @@
     "authoring": "assistant_authored_v3",
     "styleSimilarity": "pending_viewer_feedback",
     "baseProductionPlanSha256": "6e72b0a5d205b2fcb6183cd7faf7cc7a2a34e4904e6d7356995f5bbccfa6b602",
-    "dialogueRevisionSha256": "8f7b7bb70bcec608f0badc777643e26ae07360209064a535afb12e15eb6da0ed"
+    "dialogueRevisionSha256": "bd8491aac369d87c13efaaf487a9502826cdb753db14a162502424dbc61a42fc"
   },
   "beats": [
     {
@@ -293,7 +293,8 @@
           "phrase": "一跟上"
         },
         {
-          "phrase": "接着是二"
+          "phrase": "接着是二",
+          "delay": 0.04
         },
         {
           "phrase": "三再回来"
