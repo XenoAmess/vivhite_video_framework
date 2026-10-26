@@ -7,7 +7,7 @@
 - [机器可读的复分析与重写要求](style-transfer-v2.json)。
 - [可复算的文本密度统计](style-pacing-v2.json)。
 - [逐秒补充取帧索引](style-dense-evidence-v2.json)，图片保存在本地工作目录。
-- [90 秒方向样稿及动作数据](../../../../video-maker/examples/puzzle-restyle/opening-direction-v2.json)。
+- [90 秒方向样稿及动作数据](../authoring/opening-direction-v2.json)。
 
 ## 1. 本轮重新检查了什么
 
@@ -171,7 +171,7 @@ v1 约为目标片正文文本密度的 **61.6%**。目标片七个不同讲解�
 
 ## 9. 90 秒方向样稿
 
-以下是可直接阅读的方向示例，完整动作与数学备注见 [JSON](../../../../video-maker/examples/puzzle-restyle/opening-direction-v2.json)。它先使用判别器，再回到最小棋盘构造原理；后续正文必须补齐交叉计数、空格修正与可达性依据。
+以下是可直接阅读的方向示例，完整动作与数学备注见 [JSON](../authoring/opening-direction-v2.json)。它先使用判别器，再回到最小棋盘构造原理；后续正文必须补齐交叉计数、空格修正与可达性依据。
 
 **00:00–00:10**
 
@@ -229,9 +229,9 @@ v1 约为目标片正文文本密度的 **61.6%**。目标片七个不同讲解�
 ```powershell
 $env:PYTHONUTF8 = '1'
 video-analyzer/.venv/Scripts/python.exe `
-  video-analyzer/examples/puzzle-restyle/review_style_evidence.py `
+  series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis-authoring/review_style_evidence.py `
   --case-directory D:/workspace/vivhite-analysis-output/puzzle-restyle `
-  --director video-maker/examples/puzzle-restyle/director-template.json `
+  --director series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/director-template.json `
   --output D:/workspace/vivhite-analysis-output/puzzle-restyle/style-reanalysis-v2 `
   --extract
 ```

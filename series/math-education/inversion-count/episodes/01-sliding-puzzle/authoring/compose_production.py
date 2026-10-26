@@ -10,7 +10,16 @@ import hashlib
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]
+
+def find_repository_root() -> Path:
+    for candidate in Path(__file__).resolve().parents:
+        if ((candidate / "video-maker/pom.xml").is_file()
+                and (candidate / "video-analyzer/pom.xml").is_file()):
+            return candidate
+    raise RuntimeError("Cannot locate the video framework repository root")
+
+
+ROOT = find_repository_root()
 START = [2, 3, 1, 4, 5, 0]
 GOAL = [1, 2, 3, 4, 5, 0]
 BAD = [2, 1, 3, 4, 5, 0]
@@ -30,7 +39,7 @@ def compose(analysis_path: Path, math_path: Path, voice: str = "zh-CN-XiaoxiaoNe
     math = json.loads(math_path.read_text(encoding="utf-8"))
     if math["start"] != START or math["goal"] != GOAL or math["moveCount"] != 14:
         raise ValueError("Unexpected mathematical verification")
-    style_file = ROOT / "video-analyzer/docs/cases/puzzle-restyle/style-transfer-v2.json"
+    style_file = ROOT / "series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-transfer-v2.json"
     beats = []
 
     def add(chapter, heading, narration, view="board", states=None, **kwargs):

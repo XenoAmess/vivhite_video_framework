@@ -4,13 +4,15 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.maker`。
 
 本模块负责将数学选题制作成科普视频。已实现从已验证分析报告到导演稿，并增加 Java 数学动画、Edge TTS 配音、实测音频排程、字幕与完整 MP4 导出。新制作入口与动态音色/人物配置详见 [制作流程](docs/production.md)。
 
-当前案例使用 [v2 制作计划](examples/puzzle-restyle/production-plan-v2.json)，包含39段原创旁白和可执行数学状态；配音为晓晓，人物为可替换的图片占位。`produce` 生成成片，`preview` 生成预览；历史 `render` 命令仍仅导出导演稿文档。
+具体创作材料按[系列、课题和期号](../series/README.md)管理，本模块保存可复用的制作能力。任何新文案或改稿先读取外部私有角色仓库的完整人格，再按[角色与文案审核规约](../docs/character-workflow.md)检查人格一致性及信息披露；审核状态必须对应当前文案和人格版本。
+
+当前案例使用 [v2 制作计划](../series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/production-plan-v2.json)，包含39段原创旁白和可执行数学状态；配音为晓晓，人物为可替换的图片占位。`produce` 生成成片，`preview` 生成预览；历史 `render` 命令仍仅导出导演稿文档。
 
 ## 当前命令与案例
 
-[v1 导演草稿：滑块拼图的奇偶不变量](docs/cases/puzzle-restyle/director.md)，20 镜，计划 12 分 20 秒。对应原创稿源文件为 [director-template.json](examples/puzzle-restyle/director-template.json)，包含全片制作设定；内容来自第一部视频，表达规则来自第二部。
+[v1 导演草稿：滑块拼图的奇偶不变量](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director.md)，20 镜，计划 12 分 20 秒。对应原创稿源文件为 [director-template.json](../series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/director-template.json)，包含全片制作设定；内容来自第一部视频，表达规则来自第二部。
 
-v1 风格复核结论为需要结构重写，详见 [复分析与改稿依据](../video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md) 和 [90 秒方向样稿](examples/puzzle-restyle/opening-direction-v2.json)。本次由案例适配器消费这些创作要求，完成独立的 v2 全文与制作计划。当前 `render` 的结构校验、规则 ID 及实际成片技术检查均不代表风格相似度通过；现有 API `DirectorPlanner` 仍未自动读取独立的复分析文件。
+v1 风格复核结论为需要结构重写，详见 [复分析与改稿依据](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-reanalysis-v2.md) 和 [90 秒方向样稿](../series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/opening-direction-v2.json)。本次由案例适配器消费这些创作要求，完成独立的 v2 全文与制作计划。当前 `render` 的结构校验、规则 ID 及实际成片技术检查均不代表风格相似度通过；现有 API `DirectorPlanner` 仍未自动读取独立的复分析文件。
 
 ```powershell
 $analysisFile = 'D:/workspace/vivhite-analysis-output/puzzle-restyle/analysis-report.json'
@@ -33,6 +35,8 @@ java -jar $makerJar render $analysisFile "$directorOut/director-plan.json" $dire
 
 本例一键重建见根目录 `scripts/run-puzzle-case.ps1`；案例辅助脚本只绑定同一对视频指纹，不对其他主题套用模板。
 
+第一期后续[台词复审](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/dialogue-review-v3.md)已逐段改写实际成片的全部 39 段，完整新稿见 [director-v3.md](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director-v3.md)。v3 使用独立稿源与适配器，不覆盖历史 v2；制作脚本默认选择 v3，新稿尚未配音或渲染。配音与渲染前须检查对应实际计划、完整人格及外部素材的审核绑定。
+
 ## 输入与输出
 
 - 输入：数学主题、目标受众、目标时长、语言、画面规格，以及可选的视频分析报告或风格配置。
@@ -40,11 +44,11 @@ java -jar $makerJar render $analysisFile "$directorOut/director-plan.json" $dire
 
 ## 制作流程
 
-1. 明确主题、受众、学习目标和需要解释的数学概念，核验公式、推导与示例。
-2. 规划叙事结构，生成文案和逐镜头分镜，为每段讲解分配时长。
-3. 根据风格配置生成或选择图形、公式、动画、配音、字幕和音效。
-4. 按时间轴合成、渲染视频，检查数学表达、音画同步、字幕、时长和导出规格。
-5. 根据质量检查及分析器反馈调整制作参数，记录可复现的制作过程。
+1. 从系列、课题和本期清单确定角色，读取每个角色的唯一完整人格文档；明确主题、受众、学习目标和需要解释的数学概念，核验公式、推导与示例。
+2. 结合完整人格规划叙事结构，生成文案和逐镜头分镜，为每段讲解分配时长。
+3. 对成稿分别进行人格一致性与信息披露语义审核；将详细依据保存在私有角色仓库，将必要版本引用和结果保存在本期。文案或人格变化后重新审核。
+4. 审核通过后，根据风格配置生成或选择图形、公式、动画、配音、字幕和音效，并按时间轴合成、渲染视频。
+5. 检查数学表达、音画同步、字幕、时长和导出规格；根据质量检查及分析器反馈调整制作参数，记录可复现的制作过程。
 
 ## 与分析器协作
 

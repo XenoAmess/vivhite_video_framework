@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "vivhite-rectangle-verification-1",
+  "passed": true,
+  "proofScope": "The universal result is proved in proof.md. Finite checks validate identities and production data only.",
+  "geometry": {
+    "rows": [
+      2,
+      8
+    ],
+    "columns": [
+      2,
+      8
+    ],
+    "boardsChecked": 49,
+    "facesChecked": 784,
+    "movesChecked": 9408,
+    "allPositionActionsAndSupportsCorrect": true
+  },
+  "algebra": {
+    "composition": "right-to-left",
+    "threeCycleGluingIdentity": true,
+    "disjointTranspositionPairIdentity": true,
+    "overlappingTranspositionPairIdentity": true,
+    "bubbleSortPermutationsChecked": 5912,
+    "twoTriangleOverlapTwoGeneratedGroupOrder": 12,
+    "twoTriangleOverlapOneGeneratedGroupOrder": 60
+  },
+  "smallBoards": [
+    {
+      "rows": 2,
+      "columns": 2,
+      "allStates": 24,
+      "allDirectedLegalEdges": 48,
+      "components": [
+        {
+          "states": 12,
+          "invariant": 0
+        },
+        {
+          "states": 12,
+          "invariant": 1
+        }
+      ],
+      "invariantHistogram": {
+        "0": 12,
+        "1": 12
+      },
+      "reachabilityIffInvariantEqual": true
+    },
+    {
+      "rows": 2,
+      "columns": 3,
+      "allStates": 720,
+      "allDirectedLegalEdges": 1680,
+      "components": [
+        {
+          "states": 360,
+          "invariant": 0
+        },
+        {
+          "states": 360,
+          "invariant": 1
+        }
+      ],
+      "invariantHistogram": {
+        "0": 360,
+        "1": 360
+      },
+      "reachabilityIffInvariantEqual": true
+    },
+    {
+      "rows": 3,
+      "columns": 2,
+      "allStates": 720,
+      "allDirectedLegalEdges": 1680,
+      "components": [
+        {
+          "states": 360,
+          "invariant": 0
+        },
+        {
+          "states": 360,
+          "invariant": 1
+        }
+      ],
+      "invariantHistogram": {
+        "0": 360,
+        "1": 360
+      },
+      "reachabilityIffInvariantEqual": true
+    }
+  ],
+  "openingAndClosing": {
+    "rows": 3,
+    "columns": 4,
+    "goal": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "reachableOpening": [
+      0,
+      1,
+      5,
+      3,
+      4,
+      6,
+      2,
+      10,
+      8,
+      9,
+      11,
+      7
+    ],
+    "unreachableOpening": [
+      0,
+      1,
+      5,
+      3,
+      4,
+      6,
+      2,
+      10,
+      9,
+      8,
+      11,
+      7
+    ],
+    "blankWalkFromGoalToOpening": [
+      0,
+      1,
+      5,
+      6,
+      2,
+      1,
+      0,
+      1,
+      2,
+      6,
+      10,
+      11,
+      7,
+      6,
+      2,
+      1,
+      0
+    ],
+    "blankWalkFromOpeningToGoal": [
+      0,
+      1,
+      2,
+      6,
+      7,
+      11,
+      10,
+      6,
+      2,
+      1,
+      0,
+      1,
+      2,
+      6,
+      5,
+      1,
+      0
+    ],
+    "legalMoveCount": 16,
+    "goalInvariant": 0,
+    "reachableInvariant": 0,
+    "unreachableInvariant": 1
+  },
+  "director": {
+    "sceneCount": 28,
+    "narrationCharacters": 4332,
+    "budgetDurationSeconds": 997,
+    "measuredAudio": false,
+    "continuousTimelineAndMatchingPacing": true,
+    "localMarkdownLinksExist": true
+  }
+}

@@ -4,6 +4,7 @@ param(
     [string]$Presenter = 'C:/Users/xenoa/Pictures/718c36bc01a173d0c42c0d1131f67e31055244c7.jpg',
     [string]$Python = '',
     [string]$Voice = 'zh-CN-XiaoxiaoNeural',
+    [ValidateSet(2, 3)][int]$Revision = 3,
     [ValidatePattern('^[+-]\d{1,2}%$')][string]$Rate = '+8%',
     [ValidateSet('libx264', 'h264_nvenc')][string]$VideoCodec = 'libx264',
     [string]$TtsCacheDirectory = '',
@@ -14,7 +15,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $repoRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
-if (-not $OutputDirectory) { $OutputDirectory = Join-Path $CaseDirectory 'production-v2-cued' }
+if (-not $OutputDirectory) { $OutputDirectory = Join-Path $CaseDirectory "production-v$Revision-cued" }
 if (-not $Python) { $Python = Join-Path $repoRoot 'video-maker/.venv/Scripts/python.exe' }
 $OutputDirectory = [IO.Path]::GetFullPath($OutputDirectory)
 $CaseDirectory = [IO.Path]::GetFullPath($CaseDirectory)
@@ -35,7 +36,9 @@ try {
     if (-not (Test-Path -LiteralPath $jar)) { throw 'Run with -Build first' }
     New-Item -ItemType Directory -Path $OutputDirectory -Force | Out-Null
     $planFile = Join-Path $OutputDirectory 'authored-plan.json'
-    & $Python video-maker/examples/puzzle-restyle/compose_production.py `
+    $composerName = if ($Revision -eq 2) { 'compose_production.py' } else { 'compose_production_v3.py' }
+    $composerFile = Join-Path $repoRoot "series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/$composerName"
+    & $Python $composerFile `
         (Join-Path $CaseDirectory 'analysis-report.json') (Join-Path $CaseDirectory 'math-verification.json') $planFile `
         --voice $Voice "--rate=$Rate" --video-codec $VideoCodec
     if ($LASTEXITCODE -ne 0) { throw 'Case evidence binding failed' }
@@ -44,6 +47,10 @@ try {
     if ($PreviewOnly) {
         & java -jar $jar preview $planFile (Join-Path $OutputDirectory 'preview') $Presenter
     } else {
+        & $Python (Join-Path $repoRoot 'scripts/character_review.py') check `
+            --episode (Join-Path $repoRoot 'series/math-education/inversion-count/episodes/01-sliding-puzzle/episode.json') `
+            --document $planFile --asset $Presenter
+        if ($LASTEXITCODE -ne 0) { throw 'Complete both semantic character reviews for the retained authored-plan.json before production.' }
         & java -jar $jar produce $planFile $OutputDirectory $Presenter $Python
     }
     if ($LASTEXITCODE -ne 0) { throw 'Video production failed; inspect retained attempt and partial outputs.' }

@@ -15,10 +15,10 @@ D:/workspace/vivhite-analysis-output/puzzle-restyle/production-v2-cued/film.mp4
 仓库内材料：
 
 - [完整实测导演稿](director-v2.md)。
-- [制作计划快照](../../../examples/puzzle-restyle/production-plan-v2.json)。
-- [案例适配器与原创全文](../../../examples/puzzle-restyle/compose_production.py)。
+- [制作计划快照](../authoring/production-plan-v2.json)。
+- [案例适配器与原创全文](../authoring/compose_production.py)。
 - [机器可读的实跑结果](production-result-v2.json)。
-- [制作器配置、契约和实现边界](../../production.md)。
+- [制作器配置、契约和实现边界](../../../../../../video-maker/docs/production.md)。
 
 ## 本次重写
 

@@ -4,11 +4,13 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.analyzer`。
 
 本模块读取视频，输出带来源指纹、时间窗、全文转写段和画面证据的分析报告。当前 Java CLI 已实现完整媒体任务调度、连续证据包、辅助审查导入、Responses API 审查入口和覆盖校验；本地模型通过 Python worker 运行。
 
+具体案例的分析材料归入[系列 → 课题 → 对应期](../series/README.md)，通用分析程序仍在本模块。为新视频提供建议或审查成稿时，按[角色与文案审核规约](../docs/character-workflow.md)读取所用角色的完整私有人格，分别审查人格一致性和信息披露；不要把角色档案混入公开视频分析报告。
+
 ## 实战设计
 
-- [BV1AV411V7SJ 全量文案检查与全片审查设计](docs/BV1AV411V7SJ-analysis-design.md)：包含本地音视频框架调研、全文转写与逐句检查、全片视听审查、制作器输出及覆盖验收。
-- [两部视频实跑结果](docs/cases/puzzle-restyle/README.md)：已完成内容分析、风格提炼与导演稿；说明实际范围及未完成的音频校准。
-- [风格复分析 v2](docs/cases/puzzle-restyle/style-reanalysis-v2.md)：纠正 v1 对叙事、图形推演、角色和节奏的提炼；现有导演稿需要结构重写。
+- [BV1AV411V7SJ 全量文案检查与全片审查设计](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/BV1AV411V7SJ-analysis-design.md)：包含本地音视频框架调研、全文转写与逐句检查、全片视听审查、制作器输出及覆盖验收。
+- [两部视频实跑结果](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/README.md)：已完成内容分析、风格提炼与导演稿；说明实际范围及未完成的音频校准。
+- [风格复分析 v2](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-reanalysis-v2.md)：纠正 v1 对叙事、图形推演、角色和节奏的提炼；后续 v2 已据此重写并成片，实际状态见本期制作记录。
 
 ## 当前命令
 
@@ -17,7 +19,7 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.analyzer`。
 ```powershell
 $caseWork = 'D:/workspace/vivhite-analysis-output/puzzle-restyle'
 $analyzerJar = 'video-analyzer/target/video-analyzer-0.1.0-SNAPSHOT.jar'
-java -jar $analyzerJar prepare video-analyzer/examples/puzzle-restyle.case.json $caseWork
+java -jar $analyzerJar prepare series/math-education/inversion-count/episodes/01-sliding-puzzle/case.json $caseWork
 ```
 
 `prepare` 顺序运行 ffprobe、全文 ASR、全帧解码/变化测量、可选字幕 OCR、完整音轨 RMS，并生成覆盖全时长的 30 秒窗口。`--reuse` 只使用已有产物，检查源文件指纹、模型名称、OCR 开关、取帧间隔与解码覆盖，不重新推理；模型 worker 正常执行时也按输入及参数缓存。每个窗口包含全部相交 ASR 段、所属选帧、字幕观测和 RMS bins。

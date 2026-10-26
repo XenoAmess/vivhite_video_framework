@@ -2,7 +2,7 @@
 
 更新日期：2026-10-26。本文包含本地音视频分析框架的搜索调研、推荐组合与实战实施方案。
 
-实施状态：本文保留调研与目标设计；当前可运行版本、两部视频的实际覆盖及导演稿见 [实跑案例](cases/puzzle-restyle/README.md)。首版采用 Java 调度与 Python faster-whisper / PyAV / RapidOCR worker；本文提到的其他框架不代表均已集成，完整听音校准仍待完成。
+实施状态：本文保留调研与目标设计；当前可运行版本、两部视频的实际覆盖及导演稿见 [实跑案例](README.md)。首版采用 Java 调度与 Python faster-whisper / PyAV / RapidOCR worker；本文提到的其他框架不代表均已集成，完整听音校准仍待完成。
 
 ## 1. 目标与当前状态
 

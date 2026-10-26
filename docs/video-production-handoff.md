@@ -2,9 +2,15 @@
 
 更新日期：2026-10-27。历史分析与导演稿基线为 `76e1435`，风格复分析为 `6d0ecf2`；制作器与完整首版视频已经完成，后续以工作区最新提交为准。
 
-本交接用于下一会话继续优化已生成的视频。当前已先实现 `video-maker` 制作链路，再重写 v2 全文并生成滑块拼图主题的完整首版视频。运行方式见 [制作流程](../video-maker/docs/production.md)，实跑结果见 [成片记录](../video-maker/docs/cases/puzzle-restyle/production-v2.md)。
+创作材料已按[系列 → 课题 → 多期](../series/README.md)重组，本交接对应[数学教育系列 · 逆序数课题 · 第一期](../series/math-education/inversion-count/episodes/01-sliding-puzzle/README.md)。第二、三期分别承担完整矩形证明与 Wilson 一般图定理证明，第一期不追加这些内容。旧路径不保留兼容入口；外部既有运行目录和历史输入快照保持原样。
 
-**最新变化：v2 已按“先借用判别器，再逐步构造并装回原例”的主线重写并渲染。** 完整稿为 [director-v2.md](../video-maker/docs/cases/puzzle-restyle/director-v2.md)，源头是 [案例适配器](../video-maker/examples/puzzle-restyle/compose_production.py) 和 [制作计划快照](../video-maker/examples/puzzle-restyle/production-plan-v2.json)。仍须阅读 [风格复分析 v2](../video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md)；技术检查和规则引用不能替代风格相似度反馈。
+继续任何文案工作前，必须执行[角色与文案审核规约](character-workflow.md)，读取独立私有角色仓库中的唯一完整人格文档。成稿后分别检查人格一致性与信息披露，绑定当前稿件和人格版本；历史成片的技术检查不能替代新增审核。
+
+第一期最新台词稿已更新为 [v3 完整导演稿](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director-v3.md)，[审查记录](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/dialogue-review-v3.md)逐段列出实际成片39段的改前改后。v3 保留数学数据，重写模板化台词与操作反应，同步配音触发，尚未重新配音或渲染。制作脚本默认选择 v3 并写入独立目录；下文的11分01.4秒与成片检查均属于历史v2。
+
+本交接用于下一会话继续优化已生成的视频。当前已先实现 `video-maker` 制作链路，再重写 v2 全文并生成滑块拼图主题的完整首版视频。运行方式见 [制作流程](../video-maker/docs/production.md)，实跑结果见 [成片记录](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v2.md)。
+
+**最新变化：v2 已按“先借用判别器，再逐步构造并装回原例”的主线重写并渲染。** 完整稿为 [director-v2.md](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director-v2.md)，源头是 [案例适配器](../series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/compose_production.py) 和 [制作计划快照](../series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/production-plan-v2.json)。仍须阅读 [风格复分析 v2](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-reanalysis-v2.md)；技术检查和规则引用不能替代风格相似度反馈。
 
 ## 1. 接手后先明确的状态
 
@@ -22,16 +28,16 @@
 | --- | --- | --- |
 | 1 | [AGENTS.md](../AGENTS.md)、[根 README](../README.md) | Java 21、父 POM、模块边界、GPL-3.0-only、验证及默认自动提交推送约定 |
 | 2 | [制作器 README](../video-maker/README.md) | 已实现的命令、导演稿契约、当前能力边界 |
-| 2a | [制作流程](../video-maker/docs/production.md)、[v2 完整稿](../video-maker/docs/cases/puzzle-restyle/director-v2.md)、[成片记录](../video-maker/docs/cases/puzzle-restyle/production-v2.md) | 实际制作器、当前成片、复现方式及检查范围 |
-| 3 | [风格复分析 v2](../video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md)、[改稿依据](../video-analyzer/docs/cases/puzzle-restyle/style-transfer-v2.json)、[开场方向示例](../video-maker/examples/puzzle-restyle/opening-direction-v2.json) | 新稿优先依据；示例不等于已完成的 v2 导演稿 |
-| 4 | [v1 导演稿](../video-maker/docs/cases/puzzle-restyle/director.md) | 对照复分析阅读，识别需要保留的数学信息和需要重排的表达 |
-| 5 | [原创稿源文件](../video-maker/examples/puzzle-restyle/director-template.json)、[绑定后的导演数据](../video-maker/docs/cases/puzzle-restyle/director.json) | 前者用于修改创作稿；后者为旧稿已绑定分析指纹的结构化快照 |
-| 6 | [案例分析说明](../video-analyzer/docs/cases/puzzle-restyle/README.md)、[分析摘要](../video-analyzer/docs/cases/puzzle-restyle/analysis-summary.json) | 首轮内容分析、证据位置、改编决策与分析局限；风格判断已由 v2 复分析补充 |
-| 7 | [数学验证](../video-analyzer/docs/cases/puzzle-restyle/math-verification.json) | 原例 14 步路径、行尾两块的合法动作、枚举规模 |
-| 8 | [2×2 全状态图](../video-analyzer/docs/cases/puzzle-restyle/puzzle-2x2-graph.json)、[2×3 全状态图](../video-analyzer/docs/cases/puzzle-restyle/puzzle-2x3-graph.json) | 状态图动画的数据，按需读取，不以模型猜测替代合法邻居 |
+| 2a | [制作流程](../video-maker/docs/production.md)、[v2 完整稿](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director-v2.md)、[成片记录](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v2.md) | 实际制作器、当前成片、复现方式及检查范围 |
+| 3 | [风格复分析 v2](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-reanalysis-v2.md)、[改稿依据](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-transfer-v2.json)、[开场方向示例](../series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/opening-direction-v2.json) | 新稿优先依据；示例不等于已完成的 v2 导演稿 |
+| 4 | [v1 导演稿](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director.md) | 对照复分析阅读，识别需要保留的数学信息和需要重排的表达 |
+| 5 | [原创稿源文件](../series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/director-template.json)、[绑定后的导演数据](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director.json) | 前者用于修改创作稿；后者为旧稿已绑定分析指纹的结构化快照 |
+| 6 | [案例分析说明](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/README.md)、[分析摘要](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/analysis-summary.json) | 首轮内容分析、证据位置、改编决策与分析局限；风格判断已由 v2 复分析补充 |
+| 7 | [数学验证](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/math-verification.json) | 原例 14 步路径、行尾两块的合法动作、枚举规模 |
+| 8 | [2×2 全状态图](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/puzzle-2x2-graph.json)、[2×3 全状态图](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/puzzle-2x3-graph.json) | 状态图动画的数据，按需读取，不以模型猜测替代合法邻居 |
 | 9 | [第三方声明](../THIRD-PARTY-NOTICES.md) | 现有依赖与模型来源；新增配音、字体、音乐和渲染依赖时补充声明 |
 
-需要追查原视频证据时，再读 [逐窗分析注释](../video-analyzer/examples/puzzle-restyle/review-notes.json)、[分析器 README](../video-analyzer/README.md) 及本地完整报告。[早期分析设计](../video-analyzer/docs/BV1AV411V7SJ-analysis-design.md) 是目标设计和框架调研，当前实施情况以案例说明与代码为准。
+需要追查原视频证据时，再读 [逐窗分析注释](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis-authoring/review-notes.json)、[分析器 README](../video-analyzer/README.md) 及本地完整报告。[早期分析设计](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/BV1AV411V7SJ-analysis-design.md) 是目标设计和框架调研，当前实施情况以案例说明与代码为准。
 
 ## 3. 本地工作区与仓库外材料
 
@@ -64,7 +70,7 @@ director/director-validation.json     导演稿结构校验结果
 
 完整分析报告的文件 SHA-256 被写入导演稿。`analysis-summary.json` 是摘要，不能代替它执行既有导演稿指纹校验；复制完整报告时保留原始字节，避免换行转换造成指纹改变。
 
-源视频路径在 [案例配置](../video-analyzer/examples/puzzle-restyle.case.json) 中：
+源视频路径在 [案例配置](../series/math-education/inversion-count/episodes/01-sliding-puzzle/case.json) 中：
 
 ```text
 内容源：
@@ -152,8 +158,8 @@ $caseWork = 'D:/workspace/vivhite-analysis-output/puzzle-restyle'
 $analysisFile = "$caseWork/analysis-report.json"
 $directorPlan = "$caseWork/director/director-plan.json"
 
-video-analyzer/.venv/Scripts/python.exe video-maker/examples/puzzle-restyle/bind_director.py `
-  $analysisFile video-maker/examples/puzzle-restyle/director-template.json $directorPlan
+video-analyzer/.venv/Scripts/python.exe series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/bind_director.py `
+  $analysisFile series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/director-template.json $directorPlan
 
 java -jar video-maker/target/video-maker-0.1.0-SNAPSHOT.jar render `
   $analysisFile $directorPlan "$caseWork/director"
@@ -180,8 +186,11 @@ java -jar video-maker/target/video-maker-0.1.0-SNAPSHOT.jar render `
 请接手 D:\workspace\vivhite_video_framework，先阅读 AGENTS.md 和
 docs/video-production-handoff.md，并按交接文档的顺序阅读导演稿、分析和数学验证数据。
 
-当前已实现 Java video-maker，并完成 v2 全片。先阅读 video-maker/docs/production.md、
-docs/cases/puzzle-restyle/production-v2.md 与 director-v2.md（后两者在 video-maker 下）。
+当前已实现 Java video-maker，并完成 v2 全片。先阅读 video-maker/docs/production.md，
+再阅读 series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/ 下的
+production-v2.md 与 director-v2.md。创作材料已按系列、课题、多期归档，不保留旧路径入口。
+改稿前按 docs/character-workflow.md 读取私有角色仓库中的完整人格，
+成稿后分别审核人格一致性与信息披露，并将审核绑定当前稿件及人格版本。
 当前成片：D:/workspace/vivhite-analysis-output/puzzle-restyle/production-v2-cued/film.mp4。
 依据用户新反馈优化当前成片，继续对照 style-reanalysis-v2.md；不要把旧v1的20镜和12:20当新稿。
 文案稿源为 compose_production.py，制作入口 scripts/produce-puzzle-video.ps1。

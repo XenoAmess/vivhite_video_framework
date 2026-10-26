@@ -1,0 +1,2290 @@
+{
+  "schemaVersion": "vivhite-wilson-proof-certificate-1",
+  "permutationConvention": "left-to-right",
+  "generalIdentitySpotChecks": {
+    "maximumN": 16,
+    "cases": 149,
+    "provesInfiniteFamily": false
+  },
+  "longCycleExceptionalGroups": [
+    {
+      "n": 2,
+      "m": 1,
+      "order": 20,
+      "threeCycles": 0
+    },
+    {
+      "n": 2,
+      "m": 2,
+      "order": 60,
+      "threeCycles": 0
+    },
+    {
+      "n": 4,
+      "m": 2,
+      "order": 1344,
+      "threeCycles": 0
+    }
+  ],
+  "legalThetaWordSpotChecks": {
+    "cases": 243,
+    "allThreeLoopsLegalAndMatchStatedCycles": true,
+    "provesInfiniteFamily": false
+  },
+  "specialThetaGraphs": [
+    {
+      "internalArmLengths": [
+        2,
+        2,
+        2
+      ],
+      "threeCycleSupport": [
+        "y",
+        "z",
+        "c1"
+      ],
+      "conjugateSupports": 35,
+      "connected": true
+    },
+    {
+      "internalArmLengths": [
+        4,
+        2,
+        2
+      ],
+      "threeCycleSupport": [
+        "a1",
+        "a4",
+        "z"
+      ],
+      "conjugateSupports": 84,
+      "connected": true
+    }
+  ],
+  "thetaZero": {
+    "vertices": 7,
+    "armEdges": [
+      3,
+      3,
+      2
+    ],
+    "rootGroupOrder": 120,
+    "equalsPgl2F5": true,
+    "orderedTripleOrbit": 120,
+    "puzzleComponents": 6,
+    "statesPerComponent": 840
+  },
+  "thetaZeroShortEarCases": [
+    {
+      "ends": [
+        "0",
+        "1"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "0",
+        "e1",
+        "1"
+      ],
+      "thetaBranches": [
+        "0",
+        "1"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "e1",
+          "1"
+        ],
+        [
+          "0",
+          "inf",
+          "4",
+          "3",
+          "2",
+          "1"
+        ]
+      ],
+      "thetaArmEdges": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "1"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "0",
+        "e1",
+        "e2",
+        "1"
+      ],
+      "thetaBranches": [
+        "0",
+        "1"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "e1",
+          "e2",
+          "1"
+        ],
+        [
+          "0",
+          "inf",
+          "4",
+          "3",
+          "2",
+          "1"
+        ]
+      ],
+      "thetaArmEdges": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "2"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "0",
+        "2"
+      ],
+      "thetaBranches": [
+        "0",
+        "2"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "2"
+        ],
+        [
+          "0",
+          "inf",
+          "4",
+          "3",
+          "2"
+        ]
+      ],
+      "thetaArmEdges": [
+        2,
+        1,
+        4
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "2"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "0",
+        "e1",
+        "2"
+      ],
+      "thetaBranches": [
+        "0",
+        "2"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "e1",
+          "2"
+        ],
+        [
+          "0",
+          "inf",
+          "4",
+          "3",
+          "2"
+        ]
+      ],
+      "thetaArmEdges": [
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "2"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "0",
+        "e1",
+        "e2",
+        "2"
+      ],
+      "thetaBranches": [
+        "0",
+        "2"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "e1",
+          "e2",
+          "2"
+        ],
+        [
+          "0",
+          "inf",
+          "4",
+          "3",
+          "2"
+        ]
+      ],
+      "thetaArmEdges": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "3"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "0",
+        "3"
+      ],
+      "thetaBranches": [
+        "0",
+        "3"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "0",
+          "3"
+        ],
+        [
+          "0",
+          "inf",
+          "4",
+          "3"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        1,
+        3
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "3"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "0",
+        "e1",
+        "3"
+      ],
+      "thetaBranches": [
+        "0",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2",
+          "x",
+          "inf"
+        ],
+        [
+          "0",
+          "e1",
+          "3",
+          "4",
+          "inf"
+        ],
+        [
+          "0",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        4,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "3"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "0",
+        "e1",
+        "e2",
+        "3"
+      ],
+      "thetaBranches": [
+        "0",
+        "3"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "0",
+          "e1",
+          "e2",
+          "3"
+        ],
+        [
+          "0",
+          "inf",
+          "4",
+          "3"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "4"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "0",
+        "4"
+      ],
+      "thetaBranches": [
+        "0",
+        "4"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "0",
+          "4"
+        ],
+        [
+          "0",
+          "inf",
+          "4"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        1,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "4"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "0",
+        "e1",
+        "4"
+      ],
+      "thetaBranches": [
+        "0",
+        "4"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "0",
+          "e1",
+          "4"
+        ],
+        [
+          "0",
+          "inf",
+          "4"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "4"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "0",
+        "e1",
+        "e2",
+        "4"
+      ],
+      "thetaBranches": [
+        "0",
+        "4"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "0",
+          "e1",
+          "e2",
+          "4"
+        ],
+        [
+          "0",
+          "inf",
+          "4"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "inf"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "0",
+        "e1",
+        "inf"
+      ],
+      "thetaBranches": [
+        "0",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "inf"
+        ],
+        [
+          "0",
+          "e1",
+          "inf"
+        ],
+        [
+          "0",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        5,
+        2,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "inf"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "0",
+        "e1",
+        "e2",
+        "inf"
+      ],
+      "thetaBranches": [
+        "0",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "inf"
+        ],
+        [
+          "0",
+          "e1",
+          "e2",
+          "inf"
+        ],
+        [
+          "0",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        5,
+        3,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "x"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "0",
+        "x"
+      ],
+      "thetaBranches": [
+        "0",
+        "x"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2",
+          "x"
+        ],
+        [
+          "0",
+          "inf",
+          "x"
+        ],
+        [
+          "0",
+          "x"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "x"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "0",
+        "e1",
+        "x"
+      ],
+      "thetaBranches": [
+        "0",
+        "x"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2",
+          "x"
+        ],
+        [
+          "0",
+          "e1",
+          "x"
+        ],
+        [
+          "0",
+          "inf",
+          "x"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "0",
+        "x"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "0",
+        "e1",
+        "e2",
+        "x"
+      ],
+      "thetaBranches": [
+        "0",
+        "2"
+      ],
+      "thetaPaths": [
+        [
+          "0",
+          "1",
+          "2"
+        ],
+        [
+          "0",
+          "e1",
+          "e2",
+          "x",
+          "2"
+        ],
+        [
+          "0",
+          "inf",
+          "4",
+          "3",
+          "2"
+        ]
+      ],
+      "thetaArmEdges": [
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "2"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "1",
+        "e1",
+        "2"
+      ],
+      "thetaBranches": [
+        "1",
+        "2"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf",
+          "4",
+          "3",
+          "2"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "1",
+          "e1",
+          "2"
+        ]
+      ],
+      "thetaArmEdges": [
+        5,
+        1,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "2"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "1",
+        "e1",
+        "e2",
+        "2"
+      ],
+      "thetaBranches": [
+        "1",
+        "2"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf",
+          "4",
+          "3",
+          "2"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "1",
+          "e1",
+          "e2",
+          "2"
+        ]
+      ],
+      "thetaArmEdges": [
+        5,
+        1,
+        3
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "3"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "1",
+        "3"
+      ],
+      "thetaBranches": [
+        "1",
+        "3"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf",
+          "4",
+          "3"
+        ],
+        [
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "1",
+          "3"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "3"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "1",
+        "e1",
+        "3"
+      ],
+      "thetaBranches": [
+        "1",
+        "3"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf",
+          "4",
+          "3"
+        ],
+        [
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "1",
+          "e1",
+          "3"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "3"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "1",
+        "e1",
+        "e2",
+        "3"
+      ],
+      "thetaBranches": [
+        "1",
+        "3"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf",
+          "4",
+          "3"
+        ],
+        [
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "1",
+          "e1",
+          "e2",
+          "3"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        3
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "4"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "1",
+        "4"
+      ],
+      "thetaBranches": [
+        "1",
+        "4"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf",
+          "4"
+        ],
+        [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "1",
+          "4"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "4"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "1",
+        "e1",
+        "4"
+      ],
+      "thetaBranches": [
+        "1",
+        "2"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf",
+          "x",
+          "2"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "1",
+          "e1",
+          "4",
+          "3",
+          "2"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        1,
+        4
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "4"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "1",
+        "e1",
+        "e2",
+        "4"
+      ],
+      "thetaBranches": [
+        "1",
+        "4"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf",
+          "4"
+        ],
+        [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "1",
+          "e1",
+          "e2",
+          "4"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "inf"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "1",
+        "inf"
+      ],
+      "thetaBranches": [
+        "1",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf"
+        ],
+        [
+          "1",
+          "2",
+          "3",
+          "4",
+          "inf"
+        ],
+        [
+          "1",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "inf"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "1",
+        "e1",
+        "inf"
+      ],
+      "thetaBranches": [
+        "1",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf"
+        ],
+        [
+          "1",
+          "2",
+          "3",
+          "4",
+          "inf"
+        ],
+        [
+          "1",
+          "e1",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "inf"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "1",
+        "e1",
+        "e2",
+        "inf"
+      ],
+      "thetaBranches": [
+        "1",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf"
+        ],
+        [
+          "1",
+          "2",
+          "3",
+          "4",
+          "inf"
+        ],
+        [
+          "1",
+          "e1",
+          "e2",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        2,
+        4,
+        3
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "x"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "1",
+        "x"
+      ],
+      "thetaBranches": [
+        "1",
+        "x"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf",
+          "x"
+        ],
+        [
+          "1",
+          "2",
+          "x"
+        ],
+        [
+          "1",
+          "x"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "x"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "1",
+        "e1",
+        "x"
+      ],
+      "thetaBranches": [
+        "1",
+        "x"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf",
+          "x"
+        ],
+        [
+          "1",
+          "2",
+          "x"
+        ],
+        [
+          "1",
+          "e1",
+          "x"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "1",
+        "x"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "1",
+        "e1",
+        "e2",
+        "x"
+      ],
+      "thetaBranches": [
+        "1",
+        "2"
+      ],
+      "thetaPaths": [
+        [
+          "1",
+          "0",
+          "inf",
+          "4",
+          "3",
+          "2"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "1",
+          "e1",
+          "e2",
+          "x",
+          "2"
+        ]
+      ],
+      "thetaArmEdges": [
+        5,
+        1,
+        4
+      ]
+    },
+    {
+      "ends": [
+        "2",
+        "3"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "2",
+        "e1",
+        "3"
+      ],
+      "thetaBranches": [
+        "2",
+        "3"
+      ],
+      "thetaPaths": [
+        [
+          "2",
+          "1",
+          "0",
+          "inf",
+          "4",
+          "3"
+        ],
+        [
+          "2",
+          "3"
+        ],
+        [
+          "2",
+          "e1",
+          "3"
+        ]
+      ],
+      "thetaArmEdges": [
+        5,
+        1,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "2",
+        "3"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "2",
+        "e1",
+        "e2",
+        "3"
+      ],
+      "thetaBranches": [
+        "2",
+        "3"
+      ],
+      "thetaPaths": [
+        [
+          "2",
+          "1",
+          "0",
+          "inf",
+          "4",
+          "3"
+        ],
+        [
+          "2",
+          "3"
+        ],
+        [
+          "2",
+          "e1",
+          "e2",
+          "3"
+        ]
+      ],
+      "thetaArmEdges": [
+        5,
+        1,
+        3
+      ]
+    },
+    {
+      "ends": [
+        "2",
+        "4"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "2",
+        "4"
+      ],
+      "thetaBranches": [
+        "2",
+        "4"
+      ],
+      "thetaPaths": [
+        [
+          "2",
+          "1",
+          "0",
+          "inf",
+          "4"
+        ],
+        [
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "2",
+          "4"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "2",
+        "4"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "2",
+        "e1",
+        "4"
+      ],
+      "thetaBranches": [
+        "2",
+        "4"
+      ],
+      "thetaPaths": [
+        [
+          "2",
+          "1",
+          "0",
+          "inf",
+          "4"
+        ],
+        [
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "2",
+          "e1",
+          "4"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "2",
+        "4"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "2",
+        "e1",
+        "e2",
+        "4"
+      ],
+      "thetaBranches": [
+        "2",
+        "4"
+      ],
+      "thetaPaths": [
+        [
+          "2",
+          "1",
+          "0",
+          "inf",
+          "4"
+        ],
+        [
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "2",
+          "e1",
+          "e2",
+          "4"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        3
+      ]
+    },
+    {
+      "ends": [
+        "2",
+        "inf"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "2",
+        "inf"
+      ],
+      "thetaBranches": [
+        "2",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "2",
+          "1",
+          "0",
+          "inf"
+        ],
+        [
+          "2",
+          "3",
+          "4",
+          "inf"
+        ],
+        [
+          "2",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "2",
+        "inf"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "2",
+        "e1",
+        "inf"
+      ],
+      "thetaBranches": [
+        "2",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "2",
+          "1",
+          "0",
+          "inf"
+        ],
+        [
+          "2",
+          "e1",
+          "inf"
+        ],
+        [
+          "2",
+          "x",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "2",
+        "inf"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "2",
+        "e1",
+        "e2",
+        "inf"
+      ],
+      "thetaBranches": [
+        "2",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "2",
+          "1",
+          "0",
+          "inf"
+        ],
+        [
+          "2",
+          "3",
+          "4",
+          "inf"
+        ],
+        [
+          "2",
+          "e1",
+          "e2",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "ends": [
+        "2",
+        "x"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "2",
+        "e1",
+        "x"
+      ],
+      "thetaBranches": [
+        "2",
+        "x"
+      ],
+      "thetaPaths": [
+        [
+          "2",
+          "1",
+          "0",
+          "inf",
+          "x"
+        ],
+        [
+          "2",
+          "e1",
+          "x"
+        ],
+        [
+          "2",
+          "x"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "2",
+        "x"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "2",
+        "e1",
+        "e2",
+        "x"
+      ],
+      "thetaBranches": [
+        "2",
+        "x"
+      ],
+      "thetaPaths": [
+        [
+          "2",
+          "1",
+          "0",
+          "inf",
+          "x"
+        ],
+        [
+          "2",
+          "e1",
+          "e2",
+          "x"
+        ],
+        [
+          "2",
+          "x"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "3",
+        "4"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "3",
+        "e1",
+        "4"
+      ],
+      "thetaBranches": [
+        "3",
+        "4"
+      ],
+      "thetaPaths": [
+        [
+          "3",
+          "2",
+          "1",
+          "0",
+          "inf",
+          "4"
+        ],
+        [
+          "3",
+          "4"
+        ],
+        [
+          "3",
+          "e1",
+          "4"
+        ]
+      ],
+      "thetaArmEdges": [
+        5,
+        1,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "3",
+        "4"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "3",
+        "e1",
+        "e2",
+        "4"
+      ],
+      "thetaBranches": [
+        "3",
+        "4"
+      ],
+      "thetaPaths": [
+        [
+          "3",
+          "2",
+          "1",
+          "0",
+          "inf",
+          "4"
+        ],
+        [
+          "3",
+          "4"
+        ],
+        [
+          "3",
+          "e1",
+          "e2",
+          "4"
+        ]
+      ],
+      "thetaArmEdges": [
+        5,
+        1,
+        3
+      ]
+    },
+    {
+      "ends": [
+        "3",
+        "inf"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "3",
+        "inf"
+      ],
+      "thetaBranches": [
+        "3",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "3",
+          "2",
+          "1",
+          "0",
+          "inf"
+        ],
+        [
+          "3",
+          "4",
+          "inf"
+        ],
+        [
+          "3",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "3",
+        "inf"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "3",
+        "e1",
+        "inf"
+      ],
+      "thetaBranches": [
+        "3",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "3",
+          "2",
+          "1",
+          "0",
+          "inf"
+        ],
+        [
+          "3",
+          "4",
+          "inf"
+        ],
+        [
+          "3",
+          "e1",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "3",
+        "inf"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "3",
+        "e1",
+        "e2",
+        "inf"
+      ],
+      "thetaBranches": [
+        "3",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "3",
+          "2",
+          "1",
+          "0",
+          "inf"
+        ],
+        [
+          "3",
+          "4",
+          "inf"
+        ],
+        [
+          "3",
+          "e1",
+          "e2",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        3
+      ]
+    },
+    {
+      "ends": [
+        "3",
+        "x"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "3",
+        "x"
+      ],
+      "thetaBranches": [
+        "3",
+        "x"
+      ],
+      "thetaPaths": [
+        [
+          "3",
+          "2",
+          "x"
+        ],
+        [
+          "3",
+          "4",
+          "inf",
+          "x"
+        ],
+        [
+          "3",
+          "x"
+        ]
+      ],
+      "thetaArmEdges": [
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "3",
+        "x"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "3",
+        "e1",
+        "x"
+      ],
+      "thetaBranches": [
+        "3",
+        "x"
+      ],
+      "thetaPaths": [
+        [
+          "3",
+          "2",
+          "x"
+        ],
+        [
+          "3",
+          "4",
+          "inf",
+          "x"
+        ],
+        [
+          "3",
+          "e1",
+          "x"
+        ]
+      ],
+      "thetaArmEdges": [
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "3",
+        "x"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "3",
+        "e1",
+        "e2",
+        "x"
+      ],
+      "thetaBranches": [
+        "2",
+        "3"
+      ],
+      "thetaPaths": [
+        [
+          "2",
+          "1",
+          "0",
+          "inf",
+          "4",
+          "3"
+        ],
+        [
+          "2",
+          "3"
+        ],
+        [
+          "2",
+          "x",
+          "e2",
+          "e1",
+          "3"
+        ]
+      ],
+      "thetaArmEdges": [
+        5,
+        1,
+        4
+      ]
+    },
+    {
+      "ends": [
+        "4",
+        "inf"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "4",
+        "e1",
+        "inf"
+      ],
+      "thetaBranches": [
+        "4",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "4",
+          "3",
+          "2",
+          "1",
+          "0",
+          "inf"
+        ],
+        [
+          "4",
+          "e1",
+          "inf"
+        ],
+        [
+          "4",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        5,
+        2,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "4",
+        "inf"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "4",
+        "e1",
+        "e2",
+        "inf"
+      ],
+      "thetaBranches": [
+        "4",
+        "inf"
+      ],
+      "thetaPaths": [
+        [
+          "4",
+          "3",
+          "2",
+          "1",
+          "0",
+          "inf"
+        ],
+        [
+          "4",
+          "e1",
+          "e2",
+          "inf"
+        ],
+        [
+          "4",
+          "inf"
+        ]
+      ],
+      "thetaArmEdges": [
+        5,
+        3,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "4",
+        "x"
+      ],
+      "earEdges": 1,
+      "newEar": [
+        "4",
+        "x"
+      ],
+      "thetaBranches": [
+        "4",
+        "x"
+      ],
+      "thetaPaths": [
+        [
+          "4",
+          "3",
+          "2",
+          "x"
+        ],
+        [
+          "4",
+          "inf",
+          "x"
+        ],
+        [
+          "4",
+          "x"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "4",
+        "x"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "4",
+        "e1",
+        "x"
+      ],
+      "thetaBranches": [
+        "4",
+        "x"
+      ],
+      "thetaPaths": [
+        [
+          "4",
+          "3",
+          "2",
+          "x"
+        ],
+        [
+          "4",
+          "e1",
+          "x"
+        ],
+        [
+          "4",
+          "inf",
+          "x"
+        ]
+      ],
+      "thetaArmEdges": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "ends": [
+        "4",
+        "x"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "4",
+        "e1",
+        "e2",
+        "x"
+      ],
+      "thetaBranches": [
+        "2",
+        "4"
+      ],
+      "thetaPaths": [
+        [
+          "2",
+          "1",
+          "0",
+          "inf",
+          "4"
+        ],
+        [
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "2",
+          "x",
+          "e2",
+          "e1",
+          "4"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        4
+      ]
+    },
+    {
+      "ends": [
+        "inf",
+        "x"
+      ],
+      "earEdges": 2,
+      "newEar": [
+        "inf",
+        "e1",
+        "x"
+      ],
+      "thetaBranches": [
+        "inf",
+        "x"
+      ],
+      "thetaPaths": [
+        [
+          "inf",
+          "0",
+          "1",
+          "2",
+          "x"
+        ],
+        [
+          "inf",
+          "e1",
+          "x"
+        ],
+        [
+          "inf",
+          "x"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "ends": [
+        "inf",
+        "x"
+      ],
+      "earEdges": 3,
+      "newEar": [
+        "inf",
+        "e1",
+        "e2",
+        "x"
+      ],
+      "thetaBranches": [
+        "inf",
+        "x"
+      ],
+      "thetaPaths": [
+        [
+          "inf",
+          "0",
+          "1",
+          "2",
+          "x"
+        ],
+        [
+          "inf",
+          "e1",
+          "e2",
+          "x"
+        ],
+        [
+          "inf",
+          "x"
+        ]
+      ],
+      "thetaArmEdges": [
+        4,
+        3,
+        1
+      ]
+    }
+  ],
+  "mathematicalProof": "proof.md",
+  "scope": "Finite certificate for bounded cases; general proof is symbolic, not inferred from spot checks."
+}

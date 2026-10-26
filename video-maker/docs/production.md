@@ -2,6 +2,8 @@
 
 `produce` 已实现实际配音、动画渲染与 MP4 导出。Java 负责计划校验、数学图形、资源与进程生命周期、分段编码、复用缓存、合成和整片解码检查；Python worker 只负责在线 Edge TTS、配音缓存、字幕时间和 PCM 拼接。案例适配器负责本例文案与叙事，不写在通用 CLI 中。两个 Maven 模块仍不互相依赖。
 
+具体文案、分析和计划放在[系列 → 课题 → 多期](../../series/README.md)目录。所有新制作或改稿先按[角色与文案审核规约](../../docs/character-workflow.md)读取私有角色仓库中的完整人格，完成成稿的人格一致性与信息披露审核，再进入正式配音与制作。程序的结构、哈希和动作校验不能替代这两项语义审核；历史制作快照也不自动取得新增审核状态。
+
 ## 环境与运行
 
 需要 JDK 21、Python 3.12、FFmpeg/ffprobe 和可显示中文的字体。本机使用 Windows 自带 `Microsoft YaHei UI`；其他系统需安装合适字体并修改计划的 `fontFamily`。不分发字体文件。默认编码器 `libx264` 可在普通 CPU 上使用；本次成片选用 RTX 3080 的 `h264_nvenc`。
@@ -21,18 +23,27 @@ uv pip install --python video-maker/.venv/Scripts/python.exe -r video-maker/tool
 
 本例脚本从已有案例分析生成计划，核对源视频指纹及知识点覆盖，不会重新下载或识别原视频。仅重建旧 v1 导演稿的脚本 `run-puzzle-case.ps1` 与这里的制作入口分开。
 
+制作脚本默认 `-Revision 3`，消费[全部台词修订](../../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/dialogue-review-v3.md)对应的新稿源，默认写入 `production-v3-cued/`；`-Revision 2` 可选历史稿。历史成片目录、v2 快照和稿源保持独立，v3 当前未进行 TTS 或视频渲染，不能沿用 v2 的时码或实测片长。
+
+正式制作增加文案审核检查：脚本先保留本次 `authored-plan.json`，核对其全部文案、动作及外部人物素材的审核绑定后才调用 `produce`。缺审核时先按[规约](../../docs/character-workflow.md)完成实际语义审阅，再用相同 `--document` 和 `--asset` 导出收据；新计划、新人格或更换人物素材都需复审。`-PreviewOnly` 可先作技术预览，不代表语义审核通过。
+
 直接消费其他已编写计划时，在仓库根目录执行：
 
 ```powershell
 $jar = 'video-maker/target/video-maker-0.1.0-SNAPSHOT.jar'
-$plan = 'video-maker/examples/puzzle-restyle/production-plan-v2.json'
+$plan = 'series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/production-plan-v3.json'
 $avatar = 'C:/Users/xenoa/Pictures/718c36bc01a173d0c42c0d1131f67e31055244c7.jpg'
 java -jar $jar validate-production $plan
 java -jar $jar preview $plan D:/renders/puzzle/preview $avatar
+$episode = 'series/math-education/inversion-count/episodes/01-sliding-puzzle/episode.json'
+video-maker/.venv/Scripts/python.exe scripts/character_review.py check --episode $episode --document $plan --asset $avatar
+if ($LASTEXITCODE -ne 0) { throw 'Complete both semantic reviews for this exact plan and asset first.' }
 java -jar $jar produce $plan D:/renders/puzzle $avatar video-maker/.venv/Scripts/python.exe
 ```
 
 现有 `render ANALYSIS DIRECTOR OUT` 仍只导出旧导演契约的文档；实际制作命令是 `produce`。`preview` 输出每段一张技术预览，不能当作已生成完整视频。
+
+底层 Java `produce` 自身尚未实现人物仓库或审核门禁，因此直接调用时必须保留上面的检查步骤，不能以 Java 技术检查成功推断人物审核已完成。
 
 ## 计划契约与动态配置
 
