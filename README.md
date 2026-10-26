@@ -20,6 +20,8 @@
 
 视频创作材料按[系列 → 课题 → 多期](series/README.md)组织，当前课题为[数学教育系列 · 逆序数](series/math-education/inversion-count/README.md)：第一期保留已交付内容，第二期证明完整矩形棋盘结论，第三期从头证明 Wilson 一般图定理。案例材料已直接移动到各期目录，原模块下不保留兼容入口。
 
+三期当前成片均已完成，规格1080p30、晓晓配音、中文字幕及可替换人物图片：第一期[10分55秒](series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v3.md)、第二期[18分29.3秒](series/math-education/inversion-count/episodes/02-rectangle-proof/docs/production-v1.md)、第三期[32分24秒](series/math-education/inversion-count/episodes/03-wilson-theorem/docs/production-v1.md)。制作器新增通用证明动画后端，后两期保留全部证明、合法移动和分阶段推导。成片与缓存放在仓库外，检查范围见各期制作记录及[独立复核](docs/three-episode-production-review.md)。
+
 后续视频任务必须执行[角色参与及文案审核规约](docs/character-workflow.md)：创作前读取独立私有角色仓库中的唯一完整人格文档，成稿后分别审核人格一致性与信息披露。公开项目只保存角色 ID、必要版本引用及审核状态，不保存人格副本。
 
 用户说“做视频”时的[默认制作约定](docs/video-production-defaults.md)已固定：先补齐制作器再交付完整影片，参考 XAR 工具链，默认 Edge 晓晓和可替换的人物图片占位，多期并行且冲突时第一期优先。
@@ -45,6 +47,10 @@
 uv venv --python 3.12 video-maker/.venv
 uv pip install --python video-maker/.venv/Scripts/python.exe -r video-maker/tools/requirements-lock.txt
 .\scripts\produce-puzzle-video.ps1 -Build -VideoCodec h264_nvenc
+
+# 第二、三期有独立入口，复用同一制作器
+& 'series/math-education/inversion-count/episodes/02-rectangle-proof/authoring/produce.ps1'
+& 'series/math-education/inversion-count/episodes/03-wilson-theorem/authoring/produce.ps1'
 ```
 
 默认采用最新 v3 台词；`-Revision 2` 选择历史 v2。无 NVIDIA 编码器时省略 `-VideoCodec`，使用 CPU `libx264`。默认 Edge TTS 晓晓 `zh-CN-XiaoxiaoNeural`，音色、语速、输出目录和人物可由参数改变。首次联网合成旁白，之后按内容哈希复用配音。新 v3 成片实测10分55秒，位于仓库外 `../vivhite-analysis-output/math-education/inversion-count/01-sliding-puzzle/production-v3/`；历史v2仍保存在 `../vivhite-analysis-output/puzzle-restyle/production-v2-cued/`。详见 [制作器说明](video-maker/docs/production.md)。

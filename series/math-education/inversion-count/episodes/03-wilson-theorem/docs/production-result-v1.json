@@ -1,0 +1,228 @@
+{
+  "schemaVersion": "vivhite-episode-production-result-1",
+  "startedAt": "2026-10-26T21:36:20.748383800Z",
+  "planSha256": "d64e75c3ad9cd70e2da537cf643734d196d49e27f8d8bd4c7065cdcbc40ca8f0",
+  "presenterSha256": "b52b0624a3c2b2114f66a6c7ba839880d1dc89adaa91de0f5ca6bfc302160ca6",
+  "status": "rendered_and_fully_decoded",
+  "finishedAt": "2026-10-26T21:37:37.400931400Z",
+  "filmSha256": "2fd6864f74170c261d57554048f4ed5f470329978c4d2d251fc2cbcc462dd995",
+  "bytes": 142683079,
+  "durationSeconds": 1943.9666666666667,
+  "totalFrames": 58319,
+  "renderEngineSha256": "91c89344be60eb5fb5e6eadc98c394a6379647a5279fdf52c86768124ff9e83b",
+  "humanReview": "not_recorded",
+  "styleSimilarity": "not_certified",
+  "presenterMode": "image_placeholder",
+  "series": "math-education",
+  "topic": "inversion-count",
+  "episode": "03-wilson-theorem",
+  "revision": 1,
+  "directory": "D:/workspace/vivhite-analysis-output/math-education/inversion-count/03-wilson-theorem/production-v1",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "codec": "h264",
+    "encoder": "h264_nvenc",
+    "audioCodec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "burnedChineseSubtitles": true,
+    "embeddedSubtitleTracks": 0
+  },
+  "voice": {
+    "provider": "edge-tts",
+    "name": "zh-CN-XiaoxiaoNeural",
+    "rate": "+8%",
+    "pitch": "+0Hz",
+    "volume": "+0%"
+  },
+  "sceneCount": 38,
+  "beatCount": 43,
+  "proofSteps": 183,
+  "legalBlankMovesVerified": 432,
+  "algebraCyclesVerified": 52,
+  "exactCardChecks": [
+    "w18",
+    "w19a",
+    "w19b",
+    "w28"
+  ],
+  "narrationCharacters": 8343,
+  "normalizedNarrationCharacters": 7083,
+  "captionCues": 785,
+  "allBeatCaptionTextMatches": true,
+  "allProofStagesPreviewed": 183,
+  "encodedFrameEvidence": {
+    "selectedFrames": 660,
+    "proofStageFrames": 183,
+    "legalSlideResultFrames": 432,
+    "beatMidpointFrames": 43,
+    "openingAndClosingFrames": 2,
+    "all660FramesViewedByAssistantInContactSheets": true,
+    "fullResolutionMathDenseFramesSpotChecked": true,
+    "humanFullPlayback": false,
+    "coverage": "every beat, explicit action result, proof stage, proof walk result, first/last frame",
+    "previouslyViewedFramesVerifiedByteIdentical": 637,
+    "changedFinalFramesViewed": 23,
+    "frameIdentityEvidence": "encoded-changed-frame-evidence.json"
+  },
+  "renderJarSha256": "e493775c755f1a6589da379dfe99a511680062d4f485114d8873e3898020bd53",
+  "workerSha256": "f8f3c65f30478edf22dff9613d2d6b091266c0a2ab5c4f22e75a3740d6358671",
+  "blackDetection": {
+    "allFramesProcessed": 58319,
+    "minimumSeconds": 0.1,
+    "pixelThreshold": 0.05,
+    "pictureBlackRatio": 0.98,
+    "detectedIntervals": 0
+  },
+  "audioMetrics": {
+    "integratedLufs": -16.0,
+    "loudnessRangeLu": 2.6,
+    "truePeakDbfs": -4.3,
+    "silenceThresholdDb": -45,
+    "longestSilenceSeconds": 8.776104
+  },
+  "pacing": {
+    "originalRehearsalBudgetSeconds": 2970,
+    "budgetIsDurationFloor": false,
+    "fullNarrationAndProofPreserved": true,
+    "allPostWordObservationAtMost9Seconds": true,
+    "maximumPostWordObservationSeconds": 8.468,
+    "minimumSecondsPerLegalEdgeSwapIncludingSettledHold": 0.3,
+    "originalNarrationTimingsPreservedInFinalVisualFix": true
+  },
+  "wholeEncodedAudioAsr": {
+    "status": "complete-transcript-read-with-recognition-limitations-documented",
+    "sourceFilmSha256": "f4f1fcba79f51e5f2c6c54deb87af17bb295e23cc2183da7ab4e11bbd28b6b6f",
+    "asrTranscriptSha256": "cb2c3c06ed92fa342963e46f48fc8c1bab304ef6d037948bcc98a11a50f3b078",
+    "model": "large-v3-turbo",
+    "modelSnapshot": "C:/Users/xenoa/.cache/huggingface/hub/models--mobiuslabsgmbh--faster-whisper-large-v3-turbo/snapshots/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+    "device": "cpu",
+    "computeType": "int8",
+    "cpuThreads": 4,
+    "elapsedSeconds": 560.781,
+    "durationMs": 1943979,
+    "segments": 804,
+    "all43BeatsRepresented": true,
+    "allTranscriptTextReadByAssistant": true,
+    "humanAudioListening": false,
+    "silentTailHallucinationSegments": 1,
+    "silentTailCheckedPcmSamples": 104107,
+    "silentTailCheckedAllDigitalZero": true,
+    "actualMissingOrIncorrectNarrationFound": false,
+    "evidence": "encoded-asr/semantic-review.json",
+    "sourceFilmRetained": "history/film-before-cumulative-formula-fix.mp4",
+    "finalFilmSha256": "2fd6864f74170c261d57554048f4ed5f470329978c4d2d251fc2cbcc462dd995",
+    "finalEncodedAudioBitIdentical": true,
+    "finalAsrInputPcmBitIdentical": true,
+    "encodedAacSha256": "76892c7df9825c0b52c4ec8f1361c1504b15d1b78ad401a579a0ab82575970d3",
+    "asrInputPcm16kMonoSha256": "80fad2d8fbe244d2408f5e358f96510554e38dafca4bb121844db4227a526e8e",
+    "identityEvidence": "encoded-asr/final-audio-identity.json"
+  },
+  "readabilityLimits": [
+    {
+      "beatId": "w19b",
+      "detail": "In the support-transport context, a4/a1 unchanged means tau^4 fixes these support positions. The final conjugate card moves c1/a4/a1, as shown and independently verified. This local referent requires contextual attention."
+    }
+  ],
+  "externalArtifacts": [
+    "film.mp4",
+    "subtitles.srt",
+    "narration.wav",
+    "timeline.json",
+    "director-timed.md",
+    "production-plan.json",
+    "production-report.json",
+    "ffprobe.json",
+    "engine.jar",
+    "production_worker.py",
+    "technical-review.json",
+    "technical-ffmpeg.log",
+    "pacing-check.json",
+    "encoded-frame-evidence.json",
+    "encoded-review-frames/",
+    "encoded-contact-sheets/",
+    "encoded-asr/",
+    "tts-cache/",
+    "segments/",
+    "technical-ffmpeg-final.log",
+    "formula-readability-check.json",
+    "encoded-changed-frame-evidence.json",
+    "encoded-changed-contact/",
+    "encoded-asr/final-audio-identity.json",
+    "history/film-before-cumulative-formula-fix.mp4"
+  ],
+  "cumulativeFormulaReadability": {
+    "schemaVersion": "vivhite-formula-readability-check-1",
+    "planSha256": "d64e75c3ad9cd70e2da537cf643734d196d49e27f8d8bd4c7065cdcbc40ca8f0",
+    "timelineAndVoiceUnchanged": true,
+    "allCumulativeIdentitiesVisibleAtLeast8Seconds": true,
+    "ninthIdentityAlsoPermanentlyShownInFormulaBand": true,
+    "identities": [
+      {
+        "beatId": "w13",
+        "identity": "σ₁",
+        "visibleSeconds": 38.77175066666667,
+        "firstVisible": 12.094916,
+        "lastVisible": 50.86666666666667
+      },
+      {
+        "beatId": "w13",
+        "identity": "σ₂",
+        "visibleSeconds": 27.568041666666666,
+        "firstVisible": 23.298625,
+        "lastVisible": 50.86666666666667
+      },
+      {
+        "beatId": "w13",
+        "identity": "σ₃",
+        "visibleSeconds": 25.681479166666662,
+        "firstVisible": 25.185187500000005,
+        "lastVisible": 50.86666666666667
+      },
+      {
+        "beatId": "w13",
+        "identity": "σ₄",
+        "visibleSeconds": 23.794916666666666,
+        "firstVisible": 27.07175,
+        "lastVisible": 50.86666666666667
+      },
+      {
+        "beatId": "w14",
+        "identity": "σ₅",
+        "visibleSeconds": 47.48983333333333,
+        "firstVisible": 0.4435,
+        "lastVisible": 47.93333333333333
+      },
+      {
+        "beatId": "w14",
+        "identity": "σ₆",
+        "visibleSeconds": 39.94720833333333,
+        "firstVisible": 7.986125,
+        "lastVisible": 47.93333333333333
+      },
+      {
+        "beatId": "w14",
+        "identity": "σ₇",
+        "visibleSeconds": 36.90325033333333,
+        "firstVisible": 11.030083,
+        "lastVisible": 47.93333333333333
+      },
+      {
+        "beatId": "w14",
+        "identity": "σ₈",
+        "visibleSeconds": 34.58841733333333,
+        "firstVisible": 13.344916,
+        "lastVisible": 47.93333333333333
+      },
+      {
+        "beatId": "w14",
+        "identity": "σ₉",
+        "visibleSeconds": 12.997665999999999,
+        "firstVisible": 16.794,
+        "lastVisible": 29.791666
+      }
+    ]
+  }
+}

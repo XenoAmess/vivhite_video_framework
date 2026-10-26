@@ -6,7 +6,7 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.maker`。
 
 具体创作材料按[系列、课题和期号](../series/README.md)管理，本模块保存可复用的制作能力。任何新文案或改稿先读取外部私有角色仓库的完整人格，再按[角色与文案审核规约](../docs/character-workflow.md)检查人格一致性及信息披露；审核状态必须对应当前文案和人格版本。
 
-当前案例使用 [v2 制作计划](../series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/production-plan-v2.json)，包含39段原创旁白和可执行数学状态；配音为晓晓，人物为可替换的图片占位。`produce` 生成成片，`preview` 生成预览；历史 `render` 命令仍仅导出导演稿文档。
+逆序数课题已制作三期完整视频：第一期 [v3 制作记录](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v3.md)（10:55）、第二期 [矩形棋盘证明](../series/math-education/inversion-count/episodes/02-rectangle-proof/docs/production-v1.md)（18:29.3）、第三期 [Wilson 定理证明](../series/math-education/inversion-count/episodes/03-wilson-theorem/docs/production-v1.md)（32:24）。配音为晓晓，人物为可替换的图片占位。`produce` 生成成片，`preview` 生成技术预览；历史 `render` 命令仍仅导出导演稿文档。未来制作沿用[默认约定](../docs/video-production-defaults.md)。
 
 ## 当前命令与案例
 
@@ -35,7 +35,7 @@ java -jar $makerJar render $analysisFile "$directorOut/director-plan.json" $dire
 
 本例一键重建见根目录 `scripts/run-puzzle-case.ps1`；案例辅助脚本只绑定同一对视频指纹，不对其他主题套用模板。
 
-第一期后续[台词复审](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/dialogue-review-v3.md)已逐段改写实际成片的全部 39 段，完整新稿见 [director-v3.md](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director-v3.md)。v3 使用独立稿源与适配器，不覆盖历史 v2；制作脚本默认选择 v3，新稿尚未配音或渲染。配音与渲染前须检查对应实际计划、完整人格及外部素材的审核绑定。
+第一期[台词复审](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/dialogue-review-v3.md)已逐段改写全部 39 段，完整稿见 [director-v3.md](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director-v3.md)，实际配音时码见 [director-timed-v3.md](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director-timed-v3.md)。v3 使用独立稿源与适配器，不覆盖历史 v2；制作脚本默认选择 v3。第二、三期使用新增的[通用证明动画场景](docs/proof-scene.md)，执行真实图上滑动、代数置换和分阶段表格/矩阵，而非把证明稿直接铺成静态幻灯片。配音与渲染前须检查对应实际计划、完整人格及外部素材的审核绑定。
 
 ## 输入与输出
 

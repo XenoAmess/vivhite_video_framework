@@ -29,6 +29,7 @@ final class MathCanvas {
     private final BufferedImage background;
     private final PresenterAsset presenter;
     private final String font;
+    private final ProofCanvas proofCanvas;
     private Graphics2D g;
     private JsonNode activeTiming;
     private double activeSeconds;
@@ -38,6 +39,7 @@ final class MathCanvas {
         this.background = new BufferedImage(width, height, BufferedImage.TYPE_3BYTE_BGR);
         this.presenter = presenter;
         this.font = font;
+        this.proofCanvas = new ProofCanvas(font, width, height);
         Graphics2D bg = background.createGraphics();
         bg.setColor(PAPER);
         bg.fillRect(0, 0, width, height);
@@ -64,7 +66,7 @@ final class MathCanvas {
             double progress = Math.max(0, Math.min(1, (seconds - 0.25) / Math.max(1, duration - 1.2)));
             box(48, 27, 360, 36, PURPLE);
             text(beat.path("chapter").asText(), 65, 53, 23, Color.WHITE, true, 330);
-            text("滑块拼图 · 奇偶实验室", 976, 53, 19, PURPLE, false, 260);
+            text(beat.path("seriesLabel").asText("滑块拼图 · 奇偶实验室"), 976, 53, 19, PURPLE, false, 260);
             text(beat.path("heading").asText(), 66, 127, 42, INK, true, 1120);
             g.setColor(new Color(192, 180, 155));
             g.drawLine(66, 150, 1215, 150);
@@ -80,6 +82,7 @@ final class MathCanvas {
                 case "cycle" -> cycles(beat, progress);
                 case "search" -> search(beat, progress);
                 case "credits" -> credits(beat, progress);
+                case "proof" -> proofCanvas.render(g, beat, timing, seconds, progress);
                 default -> throw new IllegalArgumentException("Unknown view: " + view);
             }
             if (!beat.path("formula").asText().isBlank()) {
@@ -417,7 +420,7 @@ final class MathCanvas {
         int row = 0;
         g.setFont(new Font(font, Font.PLAIN, size));
         for (char character : value.toCharArray()) {
-            if (g.getFontMetrics().stringWidth(line.toString() + character) > width) {
+            if (MathText.width(g, line.toString() + character) > width) {
                 text(line.toString(), x, y + row++ * (size + 8), size, color, false, width);
                 line.setLength(0);
                 if (row >= maxLines) { return; }
@@ -468,18 +471,18 @@ final class MathCanvas {
     private void center(String value, double x, double y, int size, Color color, boolean bold, int maxWidth) {
         fit(value, size, bold, maxWidth);
         g.setColor(color);
-        g.drawString(value, (float) (x - g.getFontMetrics().stringWidth(value) / 2.0), (float) y);
+        MathText.draw(g, value, x - MathText.width(g, value) / 2.0, y);
     }
 
     private void text(String value, double x, double y, int size, Color color, boolean bold, int maxWidth) {
         fit(value, size, bold, maxWidth);
         g.setColor(color);
-        g.drawString(value, (float) x, (float) y);
+        MathText.draw(g, value, x, y);
     }
 
     private void fit(String value, int size, boolean bold, int width) {
         do { g.setFont(new Font(font, bold ? Font.BOLD : Font.PLAIN, size--)); }
-        while (g.getFontMetrics().stringWidth(value) > width && size > 11);
+        while (MathText.width(g, value) > width && size > 11);
     }
 
     private static int indexOf(int[] values, int value) {

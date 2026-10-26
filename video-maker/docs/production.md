@@ -23,7 +23,16 @@ uv pip install --python video-maker/.venv/Scripts/python.exe -r video-maker/tool
 
 本例脚本从已有案例分析生成计划，核对源视频指纹及知识点覆盖，不会重新下载或识别原视频。仅重建旧 v1 导演稿的脚本 `run-puzzle-case.ps1` 与这里的制作入口分开。
 
-制作脚本默认 `-Revision 3`，消费[全部台词修订](../../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/dialogue-review-v3.md)对应的新稿源，默认写入 `production-v3-cued/`；`-Revision 2` 可选历史稿。历史成片目录、v2 快照和稿源保持独立，v3 当前未进行 TTS 或视频渲染，不能沿用 v2 的时码或实测片长。
+制作脚本默认 `-Revision 3`，消费[全部台词修订](../../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/dialogue-review-v3.md)对应的新稿源，默认写入仓库外 `../vivhite-analysis-output/math-education/inversion-count/01-sliding-puzzle/production-v3/`；`-Revision 2` 可选历史稿。v3 已实际制作，片长10分55秒；历史成片目录、v2 快照和稿源保持独立。
+
+第二、三期各有独立编译器和制作入口，共用同一 Java 制作器；默认输出分别为同级 `02-rectangle-proof/production-v1/` 和 `03-wilson-theorem/production-v1/`：
+
+```powershell
+& 'series/math-education/inversion-count/episodes/02-rectangle-proof/authoring/produce.ps1'
+& 'series/math-education/inversion-count/episodes/03-wilson-theorem/authoring/produce.ps1'
+```
+
+三期可以在独立进程并发制作，使用各自运行目录、TTS 缓存和分段缓存；发生资源冲突时第一期优先。入口会按 SHA-256 冻结本次 JAR 和 worker，后续构建不能改变正在运行的版本。先完成共享制作器的实现和测试，再启动依赖它的成片生产。完整默认要求见[长期制作约定](../../docs/video-production-defaults.md)。
 
 正式制作增加文案审核检查：脚本先保留本次 `authored-plan.json`，核对其全部文案、动作及外部人物素材的审核绑定后才调用 `produce`。缺审核时先按[规约](../../docs/character-workflow.md)完成实际语义审阅，再用相同 `--document` 和 `--asset` 导出收据；新计划、新人格或更换人物素材都需复审。`-PreviewOnly` 可先作技术预览，不代表语义审核通过。
 
@@ -41,7 +50,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Complete both semantic reviews for this exact 
 java -jar $jar produce $plan D:/renders/puzzle $avatar video-maker/.venv/Scripts/python.exe
 ```
 
-现有 `render ANALYSIS DIRECTOR OUT` 仍只导出旧导演契约的文档；实际制作命令是 `produce`。`preview` 输出每段一张技术预览，不能当作已生成完整视频。
+现有 `render ANALYSIS DIRECTOR OUT` 仍只导出旧导演契约的文档；实际制作命令是 `produce`。`preview` 输出每段中间图、全部证明阶段落稳图及清单，不能当作已生成完整视频。
 
 底层 Java `produce` 自身尚未实现人物仓库或审核门禁，因此直接调用时必须保留上面的检查步骤，不能以 Java 技术检查成功推断人物审核已完成。
 
@@ -57,11 +66,11 @@ Edge 是联网服务，会接收新片旁白与声音参数；不上传人物图
 
 ## 图形与排程
 
-目前提供棋盘滑动、数组连线/交叉计数、抽象对换、棋盘染色与奇偶读数、四格可达环、搜索层展开、路径回放和片尾图层。它们是当前数学图形后端的有限类型集合；新数学主题需要增加图形 primitive 或新的后端，不是输入任意旁白就能自动得到任意动画。
+目前提供棋盘滑动、数组连线/交叉计数、抽象对换、棋盘染色与奇偶读数、四格可达环、搜索层展开、路径回放、片尾图层和通用 `proof` 场景。后者支持图上逐边滑动、位置置换、增量加耳、分阶段表格/矩阵以及人物指示，完整输入约束见[证明场景契约](proof-scene.md)。它们是当前数学图形后端的有限类型集合；新数学主题需要增加图形 primitive 或新的后端，不是输入任意旁白就能自动得到任意动画。
 
 棋盘状态包含 `0`，每一步都检查是否仅把相邻滑块滑入空格；抽象对换单独标记和校验。显示的逆序数、空格坐标与标记均从数组实时计算。状态图从真实邻居生成，四格环由合法移动遍历生成。输入示例的十四步路线消费分析器已经验证的数据，制作器另用 BFS 核对步数。
 
-每段配音得到真实 PCM 长度后，向上取整到完整视频帧，并增加约 0.42 秒阅读间隔。48kHz 可被支持的 fps 整除，整片音轨按帧数精确补零拼接，避免分段累计漂移。字幕使用服务词边界，匹配文本时恢复原创文案标点；不凭字数估计字幕时间。
+每段配音得到真实 PCM 长度后，向上取整到完整视频帧；`tailSeconds` 默认增加0.42秒阅读间隔，确有操作需要时可配置 `minDurationSeconds`。证明阶段用真实词锚点对齐，并按路径操作量分配时间。导演稿预算保留为参考，不能直接设为硬下限后用长静帧补足。48kHz 可被支持的 fps 整除，整片音轨按帧数精确补零拼接，避免分段累计漂移。字幕使用服务词边界，匹配文本时恢复原创文案标点；不凭字数估计字幕时间。
 
 关键动作可声明 `moveCues: [{phrase, delay}]`，动作时间绑定旁白中该短语的实际词边界，单步用 0.75 秒完成后保留结果。缺短语、边界文本不匹配、动作重叠或超出段长都会失败。连线可用 `focusPairs: [{phrase, delay, pair}]`，在实际讲到某一对数字时高亮它们，也可展示不交叉的对照。本例四格绕圈、行末归位、五次对换、部分路线及关键连线使用词时间；其余动画按本段实际时长均匀排程，不声称全片所有视觉细节都有音素级绑定。
 
@@ -74,7 +83,7 @@ narration.wav                 48kHz 单声道合成音轨
 subtitles.srt                 全片外置中文字幕
 segments/                     H.264 分段及带哈希的缓存收据
 segments.ffconcat             合成清单
-review-frames/                每段一张实际排程对应帧
+review-frames/                渲染期间生成的每段中间帧
 director-timed.md             按真实时间导出的完整导演稿
 film.mp4                      H.264/AAC；已烧中文字幕，SRT另行交付
 ffprobe.json                  实际成片媒体信息
@@ -89,7 +98,7 @@ tts-cache/                    配音、请求参数、词时间、内容哈希
 
 输出前核对每段帧数、最终尺寸/帧数/时长，再完整解码全片音视频。它证明实际文件可解码及排程一致，不能证明审美、风格相似度或人工完整观看通过。当前不伪造人工签字，也不要求用户批准才能生成可审阅成片。
 
-`video-maker/tools/review_film.py OUTPUT_DIR` 直接从实际 MP4 提取逐段、动作结束及片头片尾证据帧，写出与成片 SHA-256 绑定的清单。它与渲染器内的预览帧分开，不把选帧冒充全片审查。
+`video-maker/tools/review_film.py OUTPUT_DIR` 直接从实际 MP4 提取逐段、全部证明阶段及路径子步结果、旧动作结束及片头片尾证据帧，保存到 `encoded-review-frames/`，写出与成片 SHA-256 绑定的 `encoded-frame-evidence.json`。它与渲染器内的预览帧分开，不把选帧冒充全片审查。全音轨识别、字幕逐段比对、数学动作验证及独立内容审阅另外记录；各期实测报告说明实际覆盖与限制。
 
 验证：
 
@@ -98,7 +107,7 @@ tts-cache/                    配音、请求参数、词时间、内容哈希
 video-maker/.venv/Scripts/python.exe -m unittest discover -s video-maker/tools/tests -v
 ```
 
-Java 测试覆盖实际 360 态可达分量、动作合法性与奇偶、14步最短解、12态环和堵塞编码管道的超时清理；Python 测试验证真实词时间、动作绑定失败和 51 段 PCM 拼接无累计漂移。真实全片制作另形成媒体检查收据。
+Java 测试覆盖实际 360 态可达分量、动作合法性与奇偶、14步最短解、12态环、堵塞编码管道的超时清理，以及证明场景的交换、置换、加耳、布局与状态校验；Python 测试验证真实词时间、操作量排程、动作绑定失败、51 段 PCM 拼接无累计漂移及实际成片选帧覆盖。真实全片制作另形成媒体检查收据。
 
 ## 参考工程的使用方式
 

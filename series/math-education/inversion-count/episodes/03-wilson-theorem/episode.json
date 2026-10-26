@@ -5,16 +5,35 @@
   "id": "03-wilson-theorem",
   "number": 3,
   "title": "把棋盘拆成图：从头证明 Wilson 滑块定理",
-  "cast": ["vivhite"],
+  "cast": [
+    "vivhite"
+  ],
   "director": "director.md",
-  "status": "director-draft",
+  "status": "rendered",
   "proof": "proof.md",
   "verification": "verification.json",
   "plannedDurationSeconds": 2970,
-  "durationStatus": "unmeasured-budget",
+  "durationStatus": "measured-encoded-film",
   "voice": {
     "provider": "edge-tts",
+    "name": "zh-CN-XiaoxiaoNeural",
+    "rate": "+8%",
+    "pitch": "+0Hz",
+    "volume": "+0%",
     "voice": "zh-CN-XiaoxiaoNeural",
     "replaceable": true
+  },
+  "productionPlan": "authoring/production-plan-v1.json",
+  "actualDirector": "docs/director-timed-v1.md",
+  "productionResult": "docs/production-result-v1.json",
+  "productionNotes": "docs/production-v1.md",
+  "actualDurationSeconds": 1943.9666666666667,
+  "budgetStatus": "rehearsal-budget-only-not-duration-floor",
+  "productionDirectory": "D:/workspace/vivhite-analysis-output/math-education/inversion-count/03-wilson-theorem/production-v1",
+  "presenter": {
+    "mode": "image_placeholder",
+    "replaceable": true,
+    "supportedReplacement": "image_or_prerendered_video",
+    "live2dRuntimeImplemented": false
   }
 }

@@ -1,203 +1,103 @@
-# 视频制作任务交接：puzzle-restyle
+# 视频制作交接
 
-更新日期：2026-10-27。历史分析与导演稿基线为 `76e1435`，风格复分析为 `6d0ecf2`；制作器与完整首版视频已经完成，后续以工作区最新提交为准。
+更新日期：2026-10-27。当前已实现 Java `video-maker`，并完成数学教育系列·逆序数课题的三期完整视频。第一期使用去除模板化表达的 v3 台词；第二期完整证明矩形棋盘结论；第三期从头证明 Wilson 一般图定理。接手时以实际成片、实测时间轴和对应稿源为准。
 
-创作材料已按[系列 → 课题 → 多期](../series/README.md)重组，本交接对应[数学教育系列 · 逆序数课题 · 第一期](../series/math-education/inversion-count/episodes/01-sliding-puzzle/README.md)。第二、三期分别承担完整矩形证明与 Wilson 一般图定理证明，第一期不追加这些内容。旧路径不保留兼容入口；外部既有运行目录和历史输入快照保持原样。
+## 当前交付
 
-继续任何文案工作前，必须执行[角色与文案审核规约](character-workflow.md)，读取独立私有角色仓库中的唯一完整人格文档。成稿后分别检查人格一致性与信息披露，绑定当前稿件和人格版本；历史成片的技术检查不能替代新增审核。
+本机输出根目录为 `D:/workspace/vivhite-analysis-output/math-education/inversion-count/`。各目录包含 `film.mp4`、`subtitles.srt`、`narration.wav`、`timeline.json`、`director-timed.md`、配音/分段缓存、工具快照和媒体检查记录；大型媒体不进入 Git。
 
-第一期最新台词稿已更新为 [v3 完整导演稿](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director-v3.md)，[审查记录](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/dialogue-review-v3.md)逐段列出实际成片39段的改前改后。v3 保留数学数据，重写模板化台词与操作反应，同步配音触发，尚未重新配音或渲染。制作脚本默认选择 v3 并写入独立目录；下文的11分01.4秒与成片检查均属于历史v2。
+| 期数 | 输出子目录 | 实测片长 | 仓库制作记录 |
+| --- | --- | --- | --- |
+| 1，v3 | `01-sliding-puzzle/production-v3/` | 10:55 | [制作记录](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v3.md) |
+| 2，v1 | `02-rectangle-proof/production-v1/` | 18:29.3 | [制作记录](../series/math-education/inversion-count/episodes/02-rectangle-proof/docs/production-v1.md) |
+| 3，v1 | `03-wilson-theorem/production-v1/` | 32:24 | [制作记录](../series/math-education/inversion-count/episodes/03-wilson-theorem/docs/production-v1.md) |
 
-本交接用于下一会话继续优化已生成的视频。当前已先实现 `video-maker` 制作链路，再重写 v2 全文并生成滑块拼图主题的完整首版视频。运行方式见 [制作流程](../video-maker/docs/production.md)，实跑结果见 [成片记录](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v2.md)。
+三期均为1920×1080、30fps、H.264/AAC，中文字幕已烧录并另附SRT。当前人物是用户指定JPEG占位，配音是 Edge TTS 晓晓 `zh-CN-XiaoxiaoNeural`，基准语速 `+8%`；可修改声音参数及人物素材。现在可消费已渲染的人物视频，不直接驱动 Live2D，也没有图片口型或表情映射。
 
-**最新变化：v2 已按“先借用判别器，再逐步构造并装回原例”的主线重写并渲染。** 完整稿为 [director-v2.md](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director-v2.md)，源头是 [案例适配器](../series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/compose_production.py) 和 [制作计划快照](../series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/production-plan-v2.json)。仍须阅读 [风格复分析 v2](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-reanalysis-v2.md)；技术检查和规则引用不能替代风格相似度反馈。
+独立审核摘要见[三期制作复核](three-episode-production-review.md)。技术检查、模型内容审阅、人工整片播放和用户认可风格相似度分别记录，不能互相替代。
 
-## 1. 接手后先明确的状态
+## 必读材料
 
-- 已有完整 v1 导演稿：20 镜，计划 12 分 20 秒，含原创旁白、画面、屏幕文字、动作顺序、音频与停顿安排；其风格需要重写，镜头数和时长按新稿重新规划。
-- 已有内容分析、风格分析和独立数学验证；本例由本地媒体处理加当前会话助手辅助分析完成。
-- v2 为39段、实际661.4秒、1920×1080/30fps，配音为 Edge 晓晓 `zh-CN-XiaoxiaoNeural`。人物使用用户指定的 JPEG 占位，已有可替换的视频人物素材接口；不直接驱动 Live2D。
-- 当前 `video-maker` 的 `render` 命令仍只导出历史导演稿；`produce` 才生成视频。`scripts/run-puzzle-case.ps1` 重建 v1 分析/导演历史结果，`scripts/produce-puzzle-video.ps1` 制作 v2 视频。
-- 完整视频位于 `D:/workspace/vivhite-analysis-output/puzzle-restyle/production-v2-cued/film.mp4`，附字幕、音轨、实测导演稿、配音缓存和制作收据。没有记录人工完整观看或风格批准。
+1. [AGENTS.md](../AGENTS.md)、[根README](../README.md)、[默认制作要求](video-production-defaults.md)：Java21、模块边界、默认声音/人物、并发与第一期优先、自动提交推送。
+2. [角色与文案规约](character-workflow.md)：创作前完整读取外部私有角色库的唯一人格文档，成稿后分别检查人格一致性与信息披露。不能仅凭哈希、关键词或旧审核继续制作。
+3. [课题说明](../series/math-education/inversion-count/README.md)与本期 `episode.json`：内容边界、角色ID和当前产物路径。
+4. [制作器README](../video-maker/README.md)、[生产流程](../video-maker/docs/production.md)、[证明场景契约](../video-maker/docs/proof-scene.md)：通用命令、配音提供方、实际词时间、合法动作、缓存和检查。
+5. 各期 `authoring/README.md`、制作计划、完整证明和 `docs/production-*.md`：实际稿源、运行命令、指纹和检查范围。第一期另读[逐段台词修订](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/dialogue-review-v3.md)及[风格复分析](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-reanalysis-v2.md)。
 
-## 2. 必读材料与阅读顺序
+角色人格只存 `D:/workspace/vivhite_characters` 对应的独立私有GitHub仓库。公开仓库只保留角色ID和审核版本收据；详细审核依据仍在私有库。不得把完整人格或敏感审查理由复制进本项目。文案、人格或实际人物素材改变后，都需重新绑定双项语义审核。
 
-以下路径均相对仓库根目录。
+## 复现与并发
 
-| 顺序 | 材料 | 用途 |
-| --- | --- | --- |
-| 1 | [AGENTS.md](../AGENTS.md)、[根 README](../README.md) | Java 21、父 POM、模块边界、GPL-3.0-only、验证及默认自动提交推送约定 |
-| 2 | [制作器 README](../video-maker/README.md) | 已实现的命令、导演稿契约、当前能力边界 |
-| 2a | [制作流程](../video-maker/docs/production.md)、[v2 完整稿](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director-v2.md)、[成片记录](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v2.md) | 实际制作器、当前成片、复现方式及检查范围 |
-| 3 | [风格复分析 v2](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-reanalysis-v2.md)、[改稿依据](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-transfer-v2.json)、[开场方向示例](../series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/opening-direction-v2.json) | 新稿优先依据；示例不等于已完成的 v2 导演稿 |
-| 4 | [v1 导演稿](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director.md) | 对照复分析阅读，识别需要保留的数学信息和需要重排的表达 |
-| 5 | [原创稿源文件](../series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/director-template.json)、[绑定后的导演数据](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/director.json) | 前者用于修改创作稿；后者为旧稿已绑定分析指纹的结构化快照 |
-| 6 | [案例分析说明](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/README.md)、[分析摘要](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/analysis-summary.json) | 首轮内容分析、证据位置、改编决策与分析局限；风格判断已由 v2 复分析补充 |
-| 7 | [数学验证](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/math-verification.json) | 原例 14 步路径、行尾两块的合法动作、枚举规模 |
-| 8 | [2×2 全状态图](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/puzzle-2x2-graph.json)、[2×3 全状态图](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/puzzle-2x3-graph.json) | 状态图动画的数据，按需读取，不以模型猜测替代合法邻居 |
-| 9 | [第三方声明](../THIRD-PARTY-NOTICES.md) | 现有依赖与模型来源；新增配音、字体、音乐和渲染依赖时补充声明 |
-
-需要追查原视频证据时，再读 [逐窗分析注释](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis-authoring/review-notes.json)、[分析器 README](../video-analyzer/README.md) 及本地完整报告。[早期分析设计](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/BV1AV411V7SJ-analysis-design.md) 是目标设计和框架调研，当前实施情况以案例说明与代码为准。
-
-## 3. 本地工作区与仓库外材料
-
-当前机器：Windows / PowerShell。
-
-```text
-代码仓库：D:\workspace\vivhite_video_framework
-GitHub：https://github.com/XenoAmess/vivhite_video_framework
-案例工作目录：D:\workspace\vivhite-analysis-output\puzzle-restyle
-当前视频制作目录：D:\workspace\vivhite-analysis-output\puzzle-restyle\production-v2-cued
-```
-
-交接时已核对以下本地文件存在；新会话应再次检查：
-
-```text
-analysis-report.json / .md           完整分析报告，包含逐窗及逐段记录
-workspace.json                       两个来源、指纹与 67 个窗口索引
-content/、style/                     全文机器转写、选帧、联系表、OCR、音量指标
-packets/                             67 个连续证据窗口
-review-bundle.json                    辅助分析导入数据
-math-verification.json                数学验证及路径
-puzzle-2x2-graph.json                 小棋盘完整状态图
-puzzle-2x3-graph.json
-director/director-plan.json           已绑定分析文件指纹的原创导演计划
-director/director.json / .md          已导出的导演稿
-director/director-validation.json     导演稿结构校验结果
-```
-
-这些运行产物、虚拟环境、模型和原始视频不在 Git 中。同一机器的新会话可直接复用；换机器时复制案例工作目录及人物素材，按根 README 重建环境。v2 目录还包含 `film.mp4`、`subtitles.srt`、`narration.wav`、`timeline.json`、`director-timed.md`、分段与检查记录。配音缓存当前复用 `production-v2/tts-cache`；该目录的旧 `film.mp4` 是同步改进前的中间版本，查看当前成片请使用 `production-v2-cued`。
-
-完整分析报告的文件 SHA-256 被写入导演稿。`analysis-summary.json` 是摘要，不能代替它执行既有导演稿指纹校验；复制完整报告时保留原始字节，避免换行转换造成指纹改变。
-
-源视频路径在 [案例配置](../series/math-education/inversion-count/episodes/01-sliding-puzzle/case.json) 中：
-
-```text
-内容源：
-Z:\workspace\bilibili-download-skill\downloads\BV1AV411V7SJ\此视频的所有收益均捐给我用来买拼图 [BV1AV411V7SJ].mkv
-
-风格源：
-Z:\workspace\bilibili-download-skill\downloads\BV1i4aS6SEBR\【数学】怎么动动尺子就能算 BMI 和解方程？从计算尺到列线图 [BV1i4aS6SEBR].mkv
-```
-
-制作原创图形视频可先使用现有导演稿和验证数据；需要复核原片或重建完整分析时，再访问源视频。原片图像、角色、音轨不是新片已获授权的制作素材。
-
-## 4. 已有架构与可复用代码
-
-项目主干为 Java。父 package / groupId：`com.xenoamess.vivhite_video_framework`；共享父 POM，两个模块当前没有相互添加 Maven 依赖。
-
-| 部分 | 现有实现 | 后续用途 |
-| --- | --- | --- |
-| `video-analyzer` / `.analyzer` | Java 调度、来源指纹、证据包、报告导入与覆盖校验；Python worker 执行 FFmpeg、faster-whisper、PyAV/OpenCV、RapidOCR | 复用既有分析与数学数据，需要时复核证据 |
-| `video-maker` / `.maker` | Java 导演任务、数学动画、配音调度、排程、编码合成、整片解码检查；独立 Python Edge worker | 修改案例适配器、图形或素材后重做对应生产步骤 |
-| 模型语义层 | 本例由助手阅读完整机器转写与联系表，写逐窗摘要、关键修订、风格规则及原创导演稿 | 下一会话负责把镜头要求细化为可执行画面，判断阅读节奏与表达质量 |
-| 本地计算层 | 完整媒体解码、识别、数学枚举、路径搜索、结构与引用检查 | 渲染、配音处理、字幕生成、合成及可测量的成片检查 |
-
-优先阅读的代码入口：
-
-- [DirectorMain.java](../video-maker/src/main/java/com/xenoamess/vivhite_video_framework/maker/DirectorMain.java)：当前 CLI。
-- [DirectorScript.java](../video-maker/src/main/java/com/xenoamess/vivhite_video_framework/maker/DirectorScript.java)：导演稿校验与导出。
-- [DirectorPlanner.java](../video-maker/src/main/java/com/xenoamess/vivhite_video_framework/maker/DirectorPlanner.java)：模型任务导出及 API 调用。
-- [SlidingPuzzle.java](../video-analyzer/src/main/java/com/xenoamess/vivhite_video_framework/analyzer/SlidingPuzzle.java)、[PuzzleExample.java](../video-analyzer/src/main/java/com/xenoamess/vivhite_video_framework/analyzer/PuzzleExample.java)：数学验证与动画用数据生成。
-
-渲染后端是 Java2D 经 raw BGR 管道送入 FFmpeg，支持 libx264 与 h264_nvenc。当前案例使用后者。新的数学图形类型继续在制作器添加，不把案例叙事写进通用 CLI。参考工程 `Z:/workspace/xar_promo_toolchain` 的配置/执行分离、缓存与检查分层，没有引入它的发布审批流程。
-
-## 5. 已有分析的范围
-
-两片完整音轨已机器转写，共 1002 段；连续解码 58,808 帧，语义输入为贯穿全片的 415 张选帧、35 张联系表。已编写内容片 35 窗、风格片 32 窗的上下文摘要。
-
-这次实际采用 `assisted` 导入。独立 Responses API 分析/导演稿入口已实现，但实跑时没有配置 API 凭据，尚未联网端到端验证。新会话按实际环境检查凭据，不假设有可用的模型或配音服务。
-
-逐句条目只有关键句被改写，其余保留 ASR 和疑点标记；逐句回听校准、第二 ASR、全部字幕/公式识别、完整人工听音和逐帧语义审查仍待完成。已确定的制作决策可以复用；影响新片数学含义的疑点应在制作前解决。配音声线、背景音乐及停顿是新方案，不是经过完整听音确认的参考片特征。
-
-## 6. 后续制作要求与数学约束
-
-### 内容与表达
-
-内容来自 BV1AV411V7SJ：滑块拼图的搜索、复原策略和奇偶不变量。风格来自 BV1i4aS6SEBR：先操作后解释、纸色背景、细线图形、固定颜色职责、对象连续变换、章节卡和结论条。
-
-v2 已按“棋盘回路→顺序与交叉→空格修正→组合标记→可达类别→找路线”建立对象依赖链。规格1920×1080、30fps；39段与11:01.4来自实际配音排程。图形和旁白重新制作，人物为指定占位图；未使用参考片原画面、原配音或背景音乐，片尾分别注明内容与表达参考来源。
-
-后续改进优先基于当前成片反馈与参考片逐段对照，避免仅修改颜色或加速口播。人物目前只做图片出场、位移和指示，不应误写成已完成Live2D口型或表情。切换音色/语速可直接使用脚本参数；新增TTS提供方仍须实现worker适配。
-
-### 必须保持正确的数学信息
-
-- 按行展开棋盘，逆序数 `τ` **包含空格 0**；行列索引 `r,c` 均从 0 开始。
-- 不变量为 `I=(τ+r+c) mod2`。保持的是奇偶性；整数和本身可以变化。
-- 原例起点 `[2,3,1;4,5,0]` 的 `τ=7`、`r+c=3`、`I=0`；目标 `[1,2,3;4,5,0]` 的 `τ=5`、`I=0`。
-- 无解反例 `[2,1,3;4,5,0]` 的 `τ=6`、`I=1`；目标仍为 `I=0`。
-- 一次合法动作只交换 `0` 和共边滑块；行尾收尾示例与 14 步最短路径直接消费验证 JSON。序列如 `023451` 的前导 0 必须保留。
-- 排列证明中的任意对换或相邻交换，与棋盘合法动作使用不同视觉标签。
-- 不变量不同必不可达；相同可达需要额外连通性依据。本例完整枚举 2×2 的 24 态、2×3 的 720 态，分别得到 12+12、360+360；一般尺寸条件与有限枚举分开陈述。
-- 适用范围为完整矩形、至少两行两列、一个空格、滑块互异、仅共边移动；一维、有障碍或其他规则单独处理。
-
-## 7. 构建、复用和修改导演稿
-
-在仓库根目录执行。制作器新增4个Java测试与3个Python排程测试，并已真实制作完整视频；详细结果见成片记录。
+在仓库根目录安装环境后先构建制作器，再生产视频：
 
 ```powershell
-.\mvnw.cmd clean verify
-video-analyzer/.venv/Scripts/python.exe -m unittest discover -s video-analyzer/tools -p test_media_worker.py -v
+uv venv --python 3.12 video-maker/.venv
+uv pip install --python video-maker/.venv/Scripts/python.exe -r video-maker/tools/requirements-lock.txt
+.\mvnw.cmd -pl video-maker -am verify
+
+# 第一期默认v3；有NVIDIA编码器时使用此参数
+.\scripts\produce-puzzle-video.ps1 -VideoCodec h264_nvenc
+
+# 第二、三期使用各自的编译器和入口
+& 'series/math-education/inversion-count/episodes/02-rectangle-proof/authoring/produce.ps1'
+& 'series/math-education/inversion-count/episodes/03-wilson-theorem/authoring/produce.ps1'
+```
+
+这些命令顺序列出便于复制；实际多期生产可以在独立进程中并行。每期保留独立输出、TTS和分段缓存，并按哈希冻结当前JAR/worker；共享制作器实现与构建要统一协调，发生资源或代码冲突时优先第一期。不要同时向同一输出或TTS缓存写入。
+
+入口先编译计划并保存实际输入，检查该计划、完整人格和外部图片/视频素材的审核绑定，再正式配音渲染。缺审核时按规约完成真实语义审阅，无需新增用户批准流程。`-PreviewOnly` 只生成技术预览。声音、人物、编码器和输出参数见各入口及稿源README；改参数后重新核对实际计划收据。
+
+导演稿时长只是排练预算。先测真实口播，再分配操作及阅读时间，不能把原预算作为硬下限，用几十秒静帧补时。第三期保留全部证明后，按实际配音及合法移动重排为32:24；原49:30预算不再作为交付时长。
+
+## 架构与修改入口
+
+| 层 | 职责与入口 |
+| --- | --- |
+| 分析器 | Java调度来源指纹、证据包和报告；Python执行FFmpeg、faster-whisper、PyAV/OpenCV、OCR。详见[分析器README](../video-analyzer/README.md)。 |
+| 创作层 | 助手阅读完整人格、内容/风格证据，编写和审阅旁白、证明、镜头与可执行计划。各期适配器在 `series/math-education/inversion-count/episodes/<本期>/authoring/`。 |
+| 制作器 | [VideoProduction.java](../video-maker/src/main/java/com/xenoamess/vivhite_video_framework/maker/VideoProduction.java)调度实际配音、排程、分段编码、缓存、合成和整片解码；Java2D图形通过raw BGR管道送入FFmpeg。 |
+| 证明动画 | [ProofScene.java](../video-maker/src/main/java/com/xenoamess/vivhite_video_framework/maker/ProofScene.java)预计算合法滑动和置换；[ProofCanvas.java](../video-maker/src/main/java/com/xenoamess/vivhite_video_framework/maker/ProofCanvas.java)绘制图、代数层、分阶段表格/矩阵，保留标号身份。 |
+| 配音与字幕 | [production_worker.py](../video-maker/tools/production_worker.py)调用Edge、缓存音频与词边界、按视频帧补齐PCM并生成字幕；证明动作使用真实词锚点与操作量排程。 |
+| 检查 | [review_film.py](../video-maker/tools/review_film.py)从编码成片提取所有阶段和路径子步结果；全文字幕/配音、数学动作、黑场和响度检查另有绑定成片指纹的报告。 |
+
+当前 `render ANALYSIS DIRECTOR OUT` 只导出历史导演稿；`produce` 才生成完整影片，`preview` 输出技术预览。新的数学主题仍需编写可执行画面及验证程序，不能靠输入任意文案自动得到任意正确动画。
+
+参考工程 `Z:/workspace/xar_promo_toolchain` 是只读架构依据：提供方隔离、内容哈希缓存、失败材料保留及媒体检查分层。没有引入它的发布/人工签字流程，不向参考工程写入。
+
+## 数学与覆盖边界
+
+- 第一期逆序数 `τ` 包含空格0，行列 `r,c` 从0计数，保持 `I=(τ+r+c) mod2`。两种不变量不同一定不可达；相同可达的全尺寸证明放在第二期。2×2/2×3枚举和14步路径不是一般证明。
+- 第二期限定有限、完整矩形、至少两行两列、一个空格、互异滑块、仅共边移动；必要性与充分性都进入成片，不以Wilson定理作黑箱。
+- 第三期逐项处理图前提、群论引理、耳分解、环及七点例外，相关恒等式和有限证书可复算；不能把有限检验当作一般图定理的证明。
+- 图上合法空格边、代数置换的支持连线必须有不同标识。合法路径由制作器预先逐步执行，不能用最终快照代替动作。
+- 全片解码、全音轨ASR、全部字幕和数学阶段审阅分别记录。编码证据选帧覆盖所有阶段/动作结果，仍不代表每帧语义审查或人工整片观看。ASR同音误写及静音幻听需结合原字幕、词时间和实际PCM核实，不能直接改成片台词。
+
+## 来源、历史材料与验证
+
+来源视频路径见[案例配置](../series/math-education/inversion-count/episodes/01-sliding-puzzle/case.json)。内容来自BV1AV411V7SJ；表达方法参考BV1i4aS6SEBR。原片图像、声音或角色不自动成为新片素材授权。
+
+原完整分析在 `D:/workspace/vivhite-analysis-output/puzzle-restyle/`：两片全音轨1002段，连续解码58,808帧，语义输入为415选帧/35联系表，35个内容窗和32个风格窗。逐句条目保留ASR及关键修订，没有完成源片逐句回听、全帧语义审阅或完整OCR。实际采用助手辅助导入；独立API路径存在，但未联网端到端验证。源分析和第一期历史v2目录保持原样，当前三期成片请使用本交接首表。
+
+代码验证：
+
+```powershell
+.\mvnw.cmd -pl video-maker -am verify
 video-maker/.venv/Scripts/python.exe -m unittest discover -s video-maker/tools/tests -v
+git diff --check
 ```
 
-环境安装见根 README。同机已有媒体产物时，如需重建分析包和导演稿，可运行：
+各期完整证明/有限证书另按本期README运行。修改公共POM需验证两个模块；只改文档检查内容、JSON和链接。提交前复核所有实际指纹及私有库可见性，分别提交并推送两个仓库；不要提交媒体、虚拟环境、模型、密钥或完整私人背景。
 
-```powershell
-.\scripts\run-puzzle-case.ps1 -Build
-```
-
-该脚本当前重建 v1 历史结果，不会自动应用独立的 v2 风格改稿依据。重新生成时应明确注入新要求，并重新做语义风格对照。
-
-首次重建媒体证据时使用 `-Extract`；需要原视频、Python 环境和模型，内容片 OCR 较慢。已有人工注释绑定源文件指纹与语音段 ID，换视频或重新识别导致切分变化时应重新核对注释及引用。
-
-制作 v2 使用 `scripts/produce-puzzle-video.ps1`，改全文请先修改 `compose_production.py`，同步生成 `production-plan-v2.json`，重做真实配音排程与导演稿快照。以下命令仅用于历史 v1，`director-template.json` 不是当前成片稿源：
-
-```powershell
-$caseWork = 'D:/workspace/vivhite-analysis-output/puzzle-restyle'
-$analysisFile = "$caseWork/analysis-report.json"
-$directorPlan = "$caseWork/director/director-plan.json"
-
-video-analyzer/.venv/Scripts/python.exe series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/bind_director.py `
-  $analysisFile series/math-education/inversion-count/episodes/01-sliding-puzzle/authoring/director-template.json $directorPlan
-
-java -jar video-maker/target/video-maker-0.1.0-SNAPSHOT.jar render `
-  $analysisFile $directorPlan "$caseWork/director"
-```
-
-命令失败时停止依赖该结果的后续步骤。同步更新仓库中的导演稿快照，避免只改 Markdown 后被下一次导出覆盖。
-
-## 8. 完成标准
-
-完整首版视频及后续版本均保留以下交付标准：
-
-1. 可播放的完整 MP4，覆盖经重写导演稿的全部知识内容，数学、文字和动作正确；建议 H.264 视频、AAC 音频、1080p、30fps。
-2. 清晰普通话配音、与实际配音对齐的字幕文件及成片字幕；公式与字幕使用各自阅读区域。
-3. 可重复运行的制作入口、配置、素材来源记录和实际时间轴；支持分镜重做及失败定位。
-4. 本地产物保存在 `production/` 等仓库外目录，包括成片、字幕、音轨、中间产物及制作清单；源码、配置示例、原创稿和说明纳入 Git。
-5. 整片检查记录：片头片尾、镜头衔接、每个数学演示、字幕可读性、音画同步、源引用和素材署名。结构校验、实际渲染、机器检测、人工/模型观看分别记录。
-6. 新增实现对应的检查通过，文档说明实际运行方法与仍存在的局限，按 `AGENTS.md` 自动提交并推送。
-
-基于 v1 的历史工时粗估为首版 16–24 工程工时、较精细版本 30–50 工时；加入全文改稿后，应依据新稿、实际后端和技术样片重新估算。
-
-## 9. 可复制给下一会话的指令
+## 给下一会话的接手指令
 
 ```text
-请接手 D:\workspace\vivhite_video_framework，先阅读 AGENTS.md 和
-docs/video-production-handoff.md，并按交接文档的顺序阅读导演稿、分析和数学验证数据。
-
-当前已实现 Java video-maker，并完成 v2 全片。先阅读 video-maker/docs/production.md，
-再阅读 series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/ 下的
-production-v2.md 与 director-v2.md。创作材料已按系列、课题、多期归档，不保留旧路径入口。
-改稿前按 docs/character-workflow.md 读取私有角色仓库中的完整人格，
-成稿后分别审核人格一致性与信息披露，并将审核绑定当前稿件及人格版本。
-当前成片：D:/workspace/vivhite-analysis-output/puzzle-restyle/production-v2-cued/film.mp4。
-依据用户新反馈优化当前成片，继续对照 style-reanalysis-v2.md；不要把旧v1的20镜和12:20当新稿。
-文案稿源为 compose_production.py，制作入口 scripts/produce-puzzle-video.ps1。
-声音暂用 Edge TTS 晓晓，音色/语速配置可变；人物为用户指定图片，后续可消费渲染视频。
-不要把图片占位误说成Live2D或口型已实现。保留真实数学状态、音频排程、字幕与检查证据。
-
-涉及数学内容时，以交接文档中的定义和验证数据为依据；依据实际配音调整时间轴并同步稿源。
-遵守项目 Java 主干、模块边界和 GPL-3.0-only 约定。完成任务后按 AGENTS.md 自动提交、推送，
-并说明成片路径、复现命令、验证结果和实际未完成项。
+请接手 D:/workspace/vivhite_video_framework，先读AGENTS.md、
+docs/video-production-handoff.md及docs/video-production-defaults.md。
+逆序数课题三期已制成，当前片长10:55、18:29.3和32:24，实际输出路径见交接首表。
+先读对应期制作记录、实测导演稿、authoring/README.md，再依据新反馈修改稿源及画面。
+创作前完整读取外部私有库中的唯一人格，改完分别复审人格一致性与信息披露，
+绑定实际计划和人物素材。默认Edge晓晓、用户指定JPEG占位，声音/人物保留替换配置。
+先补齐并验证video-maker再重做影片；并发使用独立目录和冻结工具，冲突时第一期优先。
+保留完整证明和真实动作，不用长静帧凑原导演预算。说明机器/语义/人工实际覆盖。
+完成后按AGENTS.md自动提交推送，交付实际成片、字幕、检查结果与限制。
 ```

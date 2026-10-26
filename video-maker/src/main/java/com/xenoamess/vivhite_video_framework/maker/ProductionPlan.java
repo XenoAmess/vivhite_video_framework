@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public final class ProductionPlan {
-    static final Set<String> VIEWS = Set.of("board", "wires", "swap", "parity", "cycle", "search", "route", "credits");
+    static final Set<String> VIEWS = Set.of("board", "wires", "swap", "parity", "cycle", "search", "route", "credits", "proof");
     private ProductionPlan() { }
 
     static JsonNode load(Path path) throws Exception {
@@ -39,7 +39,10 @@ public final class ProductionPlan {
             require(beat.path("action").isTextual() && !beat.path("action").asText().isBlank(), "Missing action direction");
             int columns = beat.path("columns").asInt(3);
             JsonNode states = beat.path("states");
-            if (!beat.path("view").asText().equals("credits")) {
+            if (beat.path("view").asText().equals("proof")) {
+                ProofScene.parse(beat.path("proof"), narration);
+                require(!beat.has("moveCues"), "Proof actions use step cues, not board moveCues");
+            } else if (!beat.path("view").asText().equals("credits")) {
                 require(states.isArray() && !states.isEmpty(), "Visual beat needs states");
                 int[] previous = null;
                 for (JsonNode state : states) {

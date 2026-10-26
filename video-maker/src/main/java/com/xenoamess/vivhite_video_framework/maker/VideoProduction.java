@@ -13,6 +13,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HexFormat;
 import java.util.List;
 import javax.imageio.ImageIO;
@@ -39,13 +40,32 @@ public final class VideoProduction {
         var presenter = PresenterAsset.open(avatar, directory, executable("FFMPEG", "ffmpeg"));
         var canvas = new MathCanvas(plan.path("width").asInt(), plan.path("height").asInt(), presenter, font(plan));
         int i = 0;
+        var manifest = DirectorScript.JSON.createObjectNode().put("kind", "technical_preview_not_encoded_film");
+        var samples = manifest.putArray("samples");
         for (JsonNode beat : plan.path("beats")) {
             ObjectNode timing = DirectorScript.JSON.createObjectNode().put("frames", 300).put("fps", 30);
             timing.putArray("captions").addObject().put("start", 0).put("end", 10)
                     .put("text", beat.path("narration").asText().substring(0, Math.min(22, beat.path("narration").asText().length())));
             ImageIO.write(canvas.render(beat, timing, 5.2, 5.2, i++, plan.path("beats").size()), "png",
                     directory.resolve(beat.path("id").asText() + ".png").toFile());
+            if (beat.path("view").asText().equals("proof")) {
+                int steps = beat.path("proof").path("steps").size();
+                double duration = Math.max(10, steps * 4);
+                timing.put("frames", (int) (duration * 30));
+                ((ObjectNode) timing.path("captions").get(0)).put("end", duration);
+                var moments = timing.putArray("visualTimes");
+                for (int step = 0; step < steps; step++) { moments.add(step * 4.0); }
+                for (int step = 0; step < steps; step++) {
+                    String file = beat.path("id").asText() + "-proof-step-" + String.format(java.util.Locale.ROOT, "%03d", step + 1) + ".png";
+                    double seconds = (step + 0.90) * 4;
+                    ImageIO.write(canvas.render(beat, timing, seconds, seconds, i - 1, plan.path("beats").size()),
+                            "png", directory.resolve(file).toFile());
+                    samples.addObject().put("beatId", beat.path("id").asText()).put("proofStep", step)
+                            .put("file", file);
+                }
+            }
         }
+        write(directory.resolve("preview-manifest.json"), manifest);
         System.out.println("Preview frames: " + directory);
     }
 
@@ -190,13 +210,21 @@ public final class VideoProduction {
 
     private static String engineHash() throws Exception {
         MessageDigest digest = MessageDigest.getInstance("SHA-256");
-        for (Class<?> type : List.of(VideoProduction.class, MathCanvas.class, PresenterAsset.class, PuzzleMath.class, ProductionPlan.class)) {
-            try (var stream = type.getResourceAsStream(type.getSimpleName() + ".class")) {
-                if (stream == null) { throw new IllegalStateException("Missing class fingerprint"); }
-                digest.update(stream.readAllBytes());
-            }
+        for (Class<?> type : List.of(VideoProduction.class, MathCanvas.class, ProofCanvas.class, ProofScene.class, MathText.class,
+                PresenterAsset.class, PuzzleMath.class, ProductionPlan.class)) {
+            classFingerprint(digest, type);
         }
         return HexFormat.of().formatHex(digest.digest());
+    }
+
+    private static void classFingerprint(MessageDigest digest, Class<?> type) throws Exception {
+        try (var stream = type.getResourceAsStream("/" + type.getName().replace('.', '/') + ".class")) {
+            if (stream == null) { throw new IllegalStateException("Missing class fingerprint"); }
+            digest.update(stream.readAllBytes());
+        }
+        for (Class<?> nested : Arrays.stream(type.getDeclaredClasses()).sorted(Comparator.comparing(Class::getName)).toList()) {
+            classFingerprint(digest, nested);
+        }
     }
 
     private static String hash(byte[] bytes) throws Exception {

@@ -59,6 +59,37 @@ class ProductionWorkerTest(unittest.TestCase):
             for previous, following in zip(timeline["beats"], timeline["beats"][1:]):
                 self.assertEqual(previous["startFrame"] + previous["frames"], following["startFrame"])
 
+    def test_observation_budget_cannot_truncate_measured_speech(self):
+        self.assertEqual(worker.beat_frames({"id": "b1", "minDurationSeconds": 30}, 8, 30), 900)
+        self.assertEqual(worker.beat_frames({"id": "b1", "minDurationSeconds": 2, "tailSeconds": 3}, 8, 30), 330)
+        for invalid in (float("nan"), -1, True, "30"):
+            with self.subTest(value=invalid), self.assertRaises(ValueError):
+                worker.beat_frames({"id": "b1", "minDurationSeconds": invalid}, 8, 30)
+
+    def test_proof_steps_bind_real_words_and_leave_time_for_actions(self):
+        beat = {"id": "p1", "view": "proof", "narration": "先看，再转，最后。",
+                "proof": {"steps": [{"text": "初始"}, {}, {"cue": "再转", "cycles": [["a", "b", "c"]]}, {}]}}
+        words = [{"text": "先看", "start": 0.2, "end": 1}, {"text": "再转", "start": 8, "end": 9},
+                 {"text": "最后", "start": 10, "end": 11}]
+        times = worker.visual_times(beat, words, 20, 30)
+        self.assertEqual(times[:3], [0, 4, 8])
+        self.assertGreater(times[3], 14, "The animated cycle receives extra time before unanchored static content")
+        beat["proof"]["steps"][1] = {"cue": "最后"}
+        with self.assertRaisesRegex(ValueError, "Out-of-order"):
+            worker.visual_times(beat, words, 20, 30)
+        beat["proof"]["steps"] = [{"walk": ["x", "a", "b", "x"]}, {"cue": "先看"}]
+        with self.assertRaisesRegex(ValueError, "insufficient display"):
+            worker.visual_times(beat, words, 20, 30)
+
+    def test_long_legal_walk_receives_time_without_moving_word_anchors(self):
+        beat = {"id": "long", "view": "proof", "narration": "观察，最后。", "proof": {"steps": [
+            {"walk": ["a", "b"] * 61}, {}, {}, {"cue": "最后"}, {}]}}
+        words = [{"text": "观察", "start": 0.1, "end": 2}, {"text": "最后", "start": 70, "end": 72}]
+        times = worker.visual_times(beat, words, 80, 30)
+        self.assertGreaterEqual(times[1], 121 * 0.4)
+        self.assertAlmostEqual(times[3], 70)
+        self.assertGreater(times[4], times[3])
+
 
 if __name__ == "__main__":
     unittest.main()

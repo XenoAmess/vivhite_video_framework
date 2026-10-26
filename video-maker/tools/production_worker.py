@@ -118,6 +118,45 @@ def action_times(beat: dict, words: list[dict], duration: float) -> list[float]:
     return result
 
 
+def beat_frames(beat: dict, speech_seconds: float, fps: int) -> int:
+    """Keep real speech intact and reserve authored observation/action time."""
+    minimum = beat.get("minDurationSeconds", 0)
+    tail = beat.get("tailSeconds", 0.42)
+    for name, value in (("minDurationSeconds", minimum), ("tailSeconds", tail)):
+        if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or not 0 <= value <= 3600:
+            raise ValueError(f"Invalid {name}: {beat['id']}")
+    return math.ceil(max(speech_seconds + tail, minimum) * fps)
+
+
+def visual_times(beat: dict, words: list[dict], duration: float, fps: int) -> list[float]:
+    """Anchor proof steps to real words and interpolate unanchored operations."""
+    if beat.get("view") != "proof":
+        return []
+    steps = beat["proof"]["steps"]
+    if not steps:
+        raise ValueError(f"Proof needs observable steps: {beat['id']}")
+    anchors = {0: 0.0, len(steps): duration}
+    for index, step in enumerate(steps):
+        if "cue" in step:
+            anchors[index] = phrase_times(beat, words, [{"phrase": step["cue"]}])[0]
+    needs = [max(2 / fps, max(0, len(step.get("walk", [])) - 1) * 0.30 / 0.75,
+                 0.8 if step.get("cycles") else 0) for step in steps]
+    times = [0.0] * (len(steps) + 1)
+    points = sorted(anchors.items())
+    for (left, begin), (right, end) in zip(points, points[1:]):
+        if not 0 <= begin < end <= duration:
+            raise ValueError(f"Out-of-order proof word anchors: {beat['id']}")
+        minimum = sum(needs[left:right])
+        if end - begin + 1e-9 < minimum:
+            raise ValueError(f"Proof operation has insufficient display time: {beat['id']} steps {left}..{right - 1}")
+        extra = (end - begin - minimum) / (right - left)
+        times[left] = begin
+        for index in range(left, right):
+            times[index + 1] = times[index] + needs[index] + extra
+        times[right] = end
+    return times[:-1]
+
+
 async def synthesize_one(beat: dict, voice: dict, cache: Path, semaphore: asyncio.Semaphore,
                          ffmpeg: str, offline: bool) -> dict:
     request = {"schema": 1, "providerVersion": importlib.metadata.version("edge-tts"),
@@ -198,7 +237,7 @@ async def produce(plan_path: Path, output: Path, ffmpeg: str, offline: bool, cac
     with wave.open(str(output / "narration.partial.wav"), "wb") as target:
         target.setparams((1, 2, 48000, 0, "NONE", "not compressed"))
         for beat, speech in zip(plan["beats"], results, strict=True):
-            frames = math.ceil((speech["samples"] / 48000 + 0.42) * fps)
+            frames = beat_frames(beat, speech["samples"] / 48000, fps)
             # All supported frame rates divide 48 kHz. No per-beat rounding drift.
             target_samples = frames * (48000 // fps)
             with wave.open(speech["audio"], "rb") as source:
@@ -221,6 +260,7 @@ async def produce(plan_path: Path, output: Path, ffmpeg: str, offline: bool, cac
             timeline["beats"].append({"id": beat["id"], "startFrame": offset, "frames": frames,
                                       "speechSeconds": speech["samples"] / 48000, "cacheKey": speech["cacheKey"],
                                       "moveTimes": action_times(beat, speech["wordBoundaries"], frames / fps),
+                                      "visualTimes": visual_times(beat, speech["wordBoundaries"], frames / fps, fps),
                                       "pairFocus": [{"time": t, "pair": cue["pair"]} for t, cue in zip(pair_times, pair_cues)],
                                       "captions": local_captions})
             offset += frames
