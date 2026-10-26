@@ -2,13 +2,15 @@
 
 Java 包前缀：`com.xenoamess.vivhite_video_framework.maker`。
 
-本模块负责将数学选题制作成科普视频。当前阶段实现从已验证分析报告到导演稿：完整旁白、分镜构图、屏幕文字、动画顺序、声音与停顿。动画渲染、配音合成及成片导出属于后续阶段。
+本模块负责将数学选题制作成科普视频。已实现从已验证分析报告到导演稿，并增加 Java 数学动画、Edge TTS 配音、实测音频排程、字幕与完整 MP4 导出。新制作入口与动态音色/人物配置详见 [制作流程](docs/production.md)。
+
+当前案例使用 [v2 制作计划](examples/puzzle-restyle/production-plan-v2.json)，包含39段原创旁白和可执行数学状态；配音为晓晓，人物为可替换的图片占位。`produce` 生成成片，`preview` 生成预览；历史 `render` 命令仍仅导出导演稿文档。
 
 ## 当前命令与案例
 
 [v1 导演草稿：滑块拼图的奇偶不变量](docs/cases/puzzle-restyle/director.md)，20 镜，计划 12 分 20 秒。对应原创稿源文件为 [director-template.json](examples/puzzle-restyle/director-template.json)，包含全片制作设定；内容来自第一部视频，表达规则来自第二部。
 
-风格复核结论为需要结构重写，详见 [复分析与改稿依据](../video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md) 和 [90 秒方向样稿](examples/puzzle-restyle/opening-direction-v2.json)。两者不是已完成的 v2 全文或成片。当前 `render` 的结构校验、既有 `styleRuleIds` 和重建脚本均不代表风格相似度通过。独立的 v2 重写依据需要作为下一稿的额外输入；现有 `DirectorPlanner` 尚未自动读取它。
+v1 风格复核结论为需要结构重写，详见 [复分析与改稿依据](../video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md) 和 [90 秒方向样稿](examples/puzzle-restyle/opening-direction-v2.json)。本次由案例适配器消费这些创作要求，完成独立的 v2 全文与制作计划。当前 `render` 的结构校验、规则 ID 及实际成片技术检查均不代表风格相似度通过；现有 API `DirectorPlanner` 仍未自动读取独立的复分析文件。
 
 ```powershell
 $analysisFile = 'D:/workspace/vivhite-analysis-output/puzzle-restyle/analysis-report.json'
@@ -59,4 +61,4 @@ java -jar $makerJar render $analysisFile "$directorOut/director-plan.json" $dire
 .\mvnw.cmd -pl video-maker -am verify
 ```
 
-macOS / Linux 使用 `./mvnw -pl video-maker -am verify`。入口为 `DirectorMain`；当前输出导演稿，不输出渲染视频。
+macOS / Linux 使用 `./mvnw -pl video-maker -am verify`。入口为 `DirectorMain`；通用命令及本例完整制作方法见 [production.md](docs/production.md)。

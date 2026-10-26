@@ -1,18 +1,18 @@
 # 视频制作任务交接：puzzle-restyle
 
-更新日期：2026-10-26。分析与导演稿实现基线：`76e1435`，位于 `main` 分支；该提交之后的变更以新会话实际读取的工作区为准。
+更新日期：2026-10-27。历史分析与导演稿基线为 `76e1435`，风格复分析为 `6d0ecf2`；制作器与完整首版视频已经完成，后续以工作区最新提交为准。
 
-本交接用于下一会话继续完成：先依据风格复分析重写导演稿，再实现可复用的视频制作流程，输出滑块拼图主题的完整首版视频。
+本交接用于下一会话继续优化已生成的视频。当前已先实现 `video-maker` 制作链路，再重写 v2 全文并生成滑块拼图主题的完整首版视频。运行方式见 [制作流程](../video-maker/docs/production.md)，实跑结果见 [成片记录](../video-maker/docs/cases/puzzle-restyle/production-v2.md)。
 
-**最新变化：现有 v1 导演稿被评价为不像目标片，复核结论是需要结构重写。** 优先阅读 [风格复分析 v2](../video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md) 和 [机器可读改稿依据](../video-analyzer/docs/cases/puzzle-restyle/style-transfer-v2.json)。它们补充工具构造、跨段依赖、角色和节拍要求；尚未产生完整 v2 导演稿。旧稿的结构校验通过不能替代风格复核。
+**最新变化：v2 已按“先借用判别器，再逐步构造并装回原例”的主线重写并渲染。** 完整稿为 [director-v2.md](../video-maker/docs/cases/puzzle-restyle/director-v2.md)，源头是 [案例适配器](../video-maker/examples/puzzle-restyle/compose_production.py) 和 [制作计划快照](../video-maker/examples/puzzle-restyle/production-plan-v2.json)。仍须阅读 [风格复分析 v2](../video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md)；技术检查和规则引用不能替代风格相似度反馈。
 
 ## 1. 接手后先明确的状态
 
 - 已有完整 v1 导演稿：20 镜，计划 12 分 20 秒，含原创旁白、画面、屏幕文字、动作顺序、音频与停顿安排；其风格需要重写，镜头数和时长按新稿重新规划。
 - 已有内容分析、风格分析和独立数学验证；本例由本地媒体处理加当前会话助手辅助分析完成。
-- 先完成依据 v2 复分析的全文改稿与风格对照；随后实现动画渲染、配音、字幕与音画同步、成片合成、成片检查及可重复执行的制作入口。
-- 当前 `video-maker` 的 `render` 命令只校验并导出导演稿 JSON/Markdown，**不生成视频**。`scripts/run-puzzle-case.ps1` 也只运行到导演稿。
-- 已交付交接文档和风格复分析；本文件描述后续改稿与视频制作任务，当前尚无已完成的成片或技术样片。
+- v2 为39段、实际661.4秒、1920×1080/30fps，配音为 Edge 晓晓 `zh-CN-XiaoxiaoNeural`。人物使用用户指定的 JPEG 占位，已有可替换的视频人物素材接口；不直接驱动 Live2D。
+- 当前 `video-maker` 的 `render` 命令仍只导出历史导演稿；`produce` 才生成视频。`scripts/run-puzzle-case.ps1` 重建 v1 分析/导演历史结果，`scripts/produce-puzzle-video.ps1` 制作 v2 视频。
+- 完整视频位于 `D:/workspace/vivhite-analysis-output/puzzle-restyle/production-v2-cued/film.mp4`，附字幕、音轨、实测导演稿、配音缓存和制作收据。没有记录人工完整观看或风格批准。
 
 ## 2. 必读材料与阅读顺序
 
@@ -22,6 +22,7 @@
 | --- | --- | --- |
 | 1 | [AGENTS.md](../AGENTS.md)、[根 README](../README.md) | Java 21、父 POM、模块边界、GPL-3.0-only、验证及默认自动提交推送约定 |
 | 2 | [制作器 README](../video-maker/README.md) | 已实现的命令、导演稿契约、当前能力边界 |
+| 2a | [制作流程](../video-maker/docs/production.md)、[v2 完整稿](../video-maker/docs/cases/puzzle-restyle/director-v2.md)、[成片记录](../video-maker/docs/cases/puzzle-restyle/production-v2.md) | 实际制作器、当前成片、复现方式及检查范围 |
 | 3 | [风格复分析 v2](../video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md)、[改稿依据](../video-analyzer/docs/cases/puzzle-restyle/style-transfer-v2.json)、[开场方向示例](../video-maker/examples/puzzle-restyle/opening-direction-v2.json) | 新稿优先依据；示例不等于已完成的 v2 导演稿 |
 | 4 | [v1 导演稿](../video-maker/docs/cases/puzzle-restyle/director.md) | 对照复分析阅读，识别需要保留的数学信息和需要重排的表达 |
 | 5 | [原创稿源文件](../video-maker/examples/puzzle-restyle/director-template.json)、[绑定后的导演数据](../video-maker/docs/cases/puzzle-restyle/director.json) | 前者用于修改创作稿；后者为旧稿已绑定分析指纹的结构化快照 |
@@ -40,7 +41,7 @@
 代码仓库：D:\workspace\vivhite_video_framework
 GitHub：https://github.com/XenoAmess/vivhite_video_framework
 案例工作目录：D:\workspace\vivhite-analysis-output\puzzle-restyle
-建议后续制作目录：D:\workspace\vivhite-analysis-output\puzzle-restyle\production
+当前视频制作目录：D:\workspace\vivhite-analysis-output\puzzle-restyle\production-v2-cued
 ```
 
 交接时已核对以下本地文件存在；新会话应再次检查：
@@ -59,7 +60,7 @@ director/director.json / .md          已导出的导演稿
 director/director-validation.json     导演稿结构校验结果
 ```
 
-这些运行产物、虚拟环境、模型和原始视频不在 Git 中。同一机器的新会话可直接复用；换机器时，建议另行复制整个案例工作目录，按根 README 重建环境。继续视频制作最直接的输入是导演数据、数学验证数据，以及用于保持来源可追溯的完整 `analysis-report.json`。
+这些运行产物、虚拟环境、模型和原始视频不在 Git 中。同一机器的新会话可直接复用；换机器时复制案例工作目录及人物素材，按根 README 重建环境。v2 目录还包含 `film.mp4`、`subtitles.srt`、`narration.wav`、`timeline.json`、`director-timed.md`、分段与检查记录。配音缓存当前复用 `production-v2/tts-cache`；该目录的旧 `film.mp4` 是同步改进前的中间版本，查看当前成片请使用 `production-v2-cued`。
 
 完整分析报告的文件 SHA-256 被写入导演稿。`analysis-summary.json` 是摘要，不能代替它执行既有导演稿指纹校验；复制完整报告时保留原始字节，避免换行转换造成指纹改变。
 
@@ -82,7 +83,7 @@ Z:\workspace\bilibili-download-skill\downloads\BV1i4aS6SEBR\【数学】怎么�
 | 部分 | 现有实现 | 后续用途 |
 | --- | --- | --- |
 | `video-analyzer` / `.analyzer` | Java 调度、来源指纹、证据包、报告导入与覆盖校验；Python worker 执行 FFmpeg、faster-whisper、PyAV/OpenCV、RapidOCR | 复用既有分析与数学数据，需要时复核证据 |
-| `video-maker` / `.maker` | Java 导演任务导出、模型请求入口、导演稿校验和 JSON/Markdown 导出 | 在此模块继续建立制作和渲染流程 |
+| `video-maker` / `.maker` | Java 导演任务、数学动画、配音调度、排程、编码合成、整片解码检查；独立 Python Edge worker | 修改案例适配器、图形或素材后重做对应生产步骤 |
 | 模型语义层 | 本例由助手阅读完整机器转写与联系表，写逐窗摘要、关键修订、风格规则及原创导演稿 | 下一会话负责把镜头要求细化为可执行画面，判断阅读节奏与表达质量 |
 | 本地计算层 | 完整媒体解码、识别、数学枚举、路径搜索、结构与引用检查 | 渲染、配音处理、字幕生成、合成及可测量的成片检查 |
 
@@ -93,7 +94,7 @@ Z:\workspace\bilibili-download-skill\downloads\BV1i4aS6SEBR\【数学】怎么�
 - [DirectorPlanner.java](../video-maker/src/main/java/com/xenoamess/vivhite_video_framework/maker/DirectorPlanner.java)：模型任务导出及 API 调用。
 - [SlidingPuzzle.java](../video-analyzer/src/main/java/com/xenoamess/vivhite_video_framework/analyzer/SlidingPuzzle.java)、[PuzzleExample.java](../video-analyzer/src/main/java/com/xenoamess/vivhite_video_framework/analyzer/PuzzleExample.java)：数学验证与动画用数据生成。
 
-渲染后端尚未选定。接手会话应根据当前环境和镜头需求调研、选择后端，保持 Java 调度、清晰的数据契约与可独立运行的 worker 边界。需要新依赖时核对官方文档和许可证。
+渲染后端是 Java2D 经 raw BGR 管道送入 FFmpeg，支持 libx264 与 h264_nvenc。当前案例使用后者。新的数学图形类型继续在制作器添加，不把案例叙事写进通用 CLI。参考工程 `Z:/workspace/xar_promo_toolchain` 的配置/执行分离、缓存与检查分层，没有引入它的发布审批流程。
 
 ## 5. 已有分析的范围
 
@@ -109,9 +110,9 @@ Z:\workspace\bilibili-download-skill\downloads\BV1i4aS6SEBR\【数学】怎么�
 
 内容来自 BV1AV411V7SJ：滑块拼图的搜索、复原策略和奇偶不变量。风格来自 BV1i4aS6SEBR：先操作后解释、纸色背景、细线图形、固定颜色职责、对象连续变换、章节卡和结论条。
 
-先按 v2 复分析建立“棋盘回路→顺序与交叉→空格修正→组合标记→可达类别→找路线”的对象依赖链，再分配镜头与旁白，保持原有知识核心及数学正确性。计划规格为 1920×1080、30fps；20 镜与 12:20 都是 v1 预算，依据新稿和实际配音调整，同时更新结构化导演稿与导出文件。图形、角色和音频使用新建或授权素材，片尾分别注明内容与表达参考来源。
+v2 已按“棋盘回路→顺序与交叉→空格修正→组合标记→可达类别→找路线”建立对象依赖链。规格1920×1080、30fps；39段与11:01.4来自实际配音排程。图形和旁白重新制作，人物为指定占位图；未使用参考片原画面、原配音或背景音乐，片尾分别注明内容与表达参考来源。
 
-改稿后，可选择棋盘滑动、交叉计数、空格修正等代表演示做总计 60–90 秒的技术样片，检查图形推理、角色作用、清晰度与音画同步；验证后继续完成整片。样片可由多个镜头节选组成，正式视频按新稿的完整叙事排列。
+后续改进优先基于当前成片反馈与参考片逐段对照，避免仅修改颜色或加速口播。人物目前只做图片出场、位移和指示，不应误写成已完成Live2D口型或表情。切换音色/语速可直接使用脚本参数；新增TTS提供方仍须实现worker适配。
 
 ### 必须保持正确的数学信息
 
@@ -126,11 +127,12 @@ Z:\workspace\bilibili-download-skill\downloads\BV1i4aS6SEBR\【数学】怎么�
 
 ## 7. 构建、复用和修改导演稿
 
-在仓库根目录执行。当前已有的验证记录为 9 个 Java 测试及 1 个真实编解码 Python 集成测试通过；新实现按影响范围补充验证。
+在仓库根目录执行。制作器新增4个Java测试与3个Python排程测试，并已真实制作完整视频；详细结果见成片记录。
 
 ```powershell
 .\mvnw.cmd clean verify
 video-analyzer/.venv/Scripts/python.exe -m unittest discover -s video-analyzer/tools -p test_media_worker.py -v
+video-maker/.venv/Scripts/python.exe -m unittest discover -s video-maker/tools/tests -v
 ```
 
 环境安装见根 README。同机已有媒体产物时，如需重建分析包和导演稿，可运行：
@@ -143,7 +145,7 @@ video-analyzer/.venv/Scripts/python.exe -m unittest discover -s video-analyzer/t
 
 首次重建媒体证据时使用 `-Extract`；需要原视频、Python 环境和模型，内容片 OCR 较慢。已有人工注释绑定源文件指纹与语音段 ID，换视频或重新识别导致切分变化时应重新核对注释及引用。
 
-修改旁白、镜头或时间后，以 `director-template.json` 为稿源，绑定当前完整分析报告再导出：
+制作 v2 使用 `scripts/produce-puzzle-video.ps1`，改全文请先修改 `compose_production.py`，同步生成 `production-plan-v2.json`，重做真实配音排程与导演稿快照。以下命令仅用于历史 v1，`director-template.json` 不是当前成片稿源：
 
 ```powershell
 $caseWork = 'D:/workspace/vivhite-analysis-output/puzzle-restyle'
@@ -161,7 +163,7 @@ java -jar video-maker/target/video-maker-0.1.0-SNAPSHOT.jar render `
 
 ## 8. 完成标准
 
-下一会话交付完整首版视频时，应同时提供：
+完整首版视频及后续版本均保留以下交付标准：
 
 1. 可播放的完整 MP4，覆盖经重写导演稿的全部知识内容，数学、文字和动作正确；建议 H.264 视频、AAC 音频、1080p、30fps。
 2. 清晰普通话配音、与实际配音对齐的字幕文件及成片字幕；公式与字幕使用各自阅读区域。
@@ -178,13 +180,13 @@ java -jar video-maker/target/video-maker-0.1.0-SNAPSHOT.jar render `
 请接手 D:\workspace\vivhite_video_framework，先阅读 AGENTS.md 和
 docs/video-production-handoff.md，并按交接文档的顺序阅读导演稿、分析和数学验证数据。
 
-目标：先依据 style-reanalysis-v2.md 和 style-transfer-v2.json 重写完整导演稿，再实现可重复
-执行的视频制作流程，完成 puzzle-restyle 首版视频，包含二维数学动画、普通话配音、字幕和成片合成。
-
-当前 video-maker 的 render 只输出导演稿 JSON/Markdown；动画、配音和成片渲染尚待实现。
-v1 的风格复核结论是需要结构重写；其20镜和12:20只是旧预算。请复用内容分析和已验证的数学动作，
-先改稿并与目标片演示机制对照，再核对环境、选定实现方案，通过代表镜头验证后继续完成整片。
-交付可运行代码、完整视频及制作/检查记录；独立v2复分析尚未由现有生成器自动加载，需明确注入。
+当前已实现 Java video-maker，并完成 v2 全片。先阅读 video-maker/docs/production.md、
+docs/cases/puzzle-restyle/production-v2.md 与 director-v2.md（后两者在 video-maker 下）。
+当前成片：D:/workspace/vivhite-analysis-output/puzzle-restyle/production-v2-cued/film.mp4。
+依据用户新反馈优化当前成片，继续对照 style-reanalysis-v2.md；不要把旧v1的20镜和12:20当新稿。
+文案稿源为 compose_production.py，制作入口 scripts/produce-puzzle-video.ps1。
+声音暂用 Edge TTS 晓晓，音色/语速配置可变；人物为用户指定图片，后续可消费渲染视频。
+不要把图片占位误说成Live2D或口型已实现。保留真实数学状态、音频排程、字幕与检查证据。
 
 涉及数学内容时，以交接文档中的定义和验证数据为依据；依据实际配音调整时间轴并同步稿源。
 遵守项目 Java 主干、模块边界和 GPL-3.0-only 约定。完成任务后按 AGENTS.md 自动提交、推送，

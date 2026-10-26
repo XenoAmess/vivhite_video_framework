@@ -16,7 +16,7 @@
 - 两个子项目通过带版本标识的分析报告交换信息，目前不互相添加 Maven 依赖。
 - 分析报告应将时间戳、关键帧和文案等证据，与风格参数、逐镜头建议及优化动作对应起来，支持制作器模仿创作方法并验证改进效果。
 
-当前已实现从完整媒体处理、内容/风格分析到导演稿的命令行流程。Java 负责调度、证据契约与校验；Python worker 运行本地 ASR、连续视频解码、字幕 OCR 和音量测量。制作器输出可配音旁白与逐镜动作指令，尚未合成成片。
+当前已实现从完整媒体处理、内容/风格分析、导演稿到配音、二维数学动画与 MP4 的命令行流程。Java 负责调度、证据与数学校验、图形动画及合成；独立 Python worker 分别运行媒体分析和 Edge TTS。人物先用用户提供的图片占位，可替换为已渲染的视频形象。
 
 ## 已完成的实战案例
 
@@ -26,10 +26,23 @@
 - [v1 导演草稿](video-maker/docs/cases/puzzle-restyle/director.md)：20 镜、计划 12 分 20 秒；风格复核后需要重写。
 - [目标片风格复分析与改稿依据](video-analyzer/docs/cases/puzzle-restyle/style-reanalysis-v2.md)：逐段对照、文本密度统计、工具构造主线及 90 秒方向样稿。
 - [后续视频制作任务交接](docs/video-production-handoff.md)：下一会话的必读材料、本地产物、实现任务与验收标准。
+- [实际视频制作流程](video-maker/docs/production.md) 与 [v2 制作计划](video-maker/examples/puzzle-restyle/production-plan-v2.json)：39 段新版文案，先展示判别器再逐步构造，消费真实数学状态生成动画。
 
 本例完整处理了两部音轨并阅读全部转写，连续解码 58,808 帧；语义画面输入是贯穿全片的 415 张选帧。逐窗摘要由本次助手编写，逐句条目保留 ASR 与关键修订，不是逐句听音校准。本机没有配置 OpenAI API 凭据，实际交付使用 `assisted` 导入路径；独立 API 路径已实现，尚未联网验证。
 
-## 运行本例
+## 制作完整视频
+
+在已有案例分析产物的本机，安装独立配音环境后执行：
+
+```powershell
+uv venv --python 3.12 video-maker/.venv
+uv pip install --python video-maker/.venv/Scripts/python.exe -r video-maker/tools/requirements-lock.txt
+.\scripts\produce-puzzle-video.ps1 -Build -VideoCodec h264_nvenc
+```
+
+无 NVIDIA 编码器时省略 `-VideoCodec`，使用 CPU `libx264`。默认 Edge TTS 晓晓 `zh-CN-XiaoxiaoNeural`，音色、语速、输出目录和人物可由参数改变。首次联网合成旁白，之后按内容哈希复用配音；本次实测片长 11分01.4秒，1080p30，完整产物保存在仓库外的 `../vivhite-analysis-output/puzzle-restyle/production-v2-cued/`。详见 [制作器说明](video-maker/docs/production.md)。
+
+## 重建分析与历史导演稿
 
 先安装 JDK 21、Python 3.12 和带 `ffprobe` 的 FFmpeg，确保 `java`、`ffmpeg`、`ffprobe` 在 PATH 中。在仓库根目录执行：
 

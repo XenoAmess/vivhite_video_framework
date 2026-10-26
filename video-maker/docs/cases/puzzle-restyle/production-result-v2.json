@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "vivhite-run-1",
+  "startedAt": "2026-10-26T18:31:21.851814700Z",
+  "planSha256": "6e72b0a5d205b2fcb6183cd7faf7cc7a2a34e4904e6d7356995f5bbccfa6b602",
+  "presenterSha256": "b52b0624a3c2b2114f66a6c7ba839880d1dc89adaa91de0f5ca6bfc302160ca6",
+  "status": "rendered_and_fully_decoded",
+  "finishedAt": "2026-10-26T18:31:48.822213700Z",
+  "filmSha256": "5cea3623bcc930f56c4aad7dedd6381ff38f012214a6ddf4fb733c158aff2686",
+  "bytes": 51329283,
+  "durationSeconds": 661.4,
+  "totalFrames": 19842,
+  "renderEngineSha256": "46d9381f6a7ac7e8ee071b401a10de4f00754a24e600f81bc5cf2ff1eeb6d59f",
+  "humanReview": "not_recorded",
+  "styleSimilarity": "not_certified",
+  "presenterMode": "image_placeholder",
+  "artifactKind": "completed_case_production",
+  "localDirectory": "D:/workspace/vivhite-analysis-output/puzzle-restyle/production-v2-cued",
+  "beatCount": 39,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "subtitleMode": "burned_plus_external_srt",
+  "voice": {
+    "provider": "edge-tts",
+    "name": "zh-CN-XiaoxiaoNeural",
+    "rate": "+8%",
+    "pitch": "+0Hz",
+    "volume": "+0%"
+  },
+  "narrationCharacters": 3243,
+  "narrationLetterNumberCharacters": 2901,
+  "subtitleCueCount": 326,
+  "captionTextCoverage": "all_39_beats_match_authored_letter_number_content",
+  "decodedVideoFrames": 19842,
+  "encodedFrameEvidenceCount": 61,
+  "asr": {
+    "model": "large-v3-turbo",
+    "fullAudioSeconds": 661.4,
+    "segments": 314,
+    "audioSha256": "67011ae78063ec85e80dfcfaa0dff167aea0f79ca2e283c704daed74f0e1ce2d",
+    "allTranscriptSegmentsReadByAssistant": true,
+    "status": "machine_transcript_read_not_human_listening",
+    "notes": "Homophone ASR errors remain; no full human 1x playback claim"
+  },
+  "technicalChecks": {
+    "fullDecode": "passed",
+    "blackSegments": [],
+    "integratedLufs": -16.1,
+    "truePeakDbfs": -4.5
+  },
+  "verification": {
+    "javaTests": 13,
+    "pythonTimingTests": 3,
+    "cpuEncoderAndVideoPresenterSmoke": "passed",
+    "alternateVoiceRateAndCreditsConfiguration": "passed",
+    "offlineTtsCache": "passed",
+    "renderCacheReusedBeats": 39
+  },
+  "coverageLimits": {
+    "selectedImageReview": true,
+    "fullHumanPlayback": false,
+    "allFramesSemanticReview": false,
+    "styleSimilarityApproval": false
+  },
+  "provenance": {
+    "analysisSha256": "d84fc5eb00826c392557903e6894ad7ba3690f7adfa52de87415dc46480ddcc7",
+    "styleProfile": "video-analyzer/docs/cases/puzzle-restyle/style-transfer-v2.json",
+    "styleProfileSha256": "f20c8369a1b6756eceea6edfc4fe83ebe3c7d86055f19d3853adf540f1002050",
+    "mathVerificationSha256": "c834b0ae23fd6425a058ecce0c3ff19a1d5ffbb8ca739d0d958baed3ecaeecdd",
+    "contentVideoSha256": [
+      "0aac566c037a04aff4d6e2a7f499ed198982d9b20f8d62863bfbd7b19186fd02",
+      "c0ee37461026f0c23254c57b85f2858592f03a2fa89db75e81102ad5102eec3d"
+    ],
+    "authoring": "assistant_authored_v2",
+    "styleSimilarity": "pending_viewer_feedback"
+  }
+}
