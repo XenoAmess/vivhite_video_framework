@@ -183,7 +183,7 @@ def transcribe(args):
     output.mkdir(parents=True, exist_ok=True)
     source_hash = fingerprint(args.input)
     identity = {"sourceSha256": source_hash, "model": args.model, "device": args.device,
-                "computeType": args.compute_type, "language": "zh", "beamSize": 5,
+                "computeType": args.compute_type, "language": args.language, "beamSize": 5,
                 "vadFilter": False, "wordTimestamps": True,
                 "audioDecoder": "ffmpeg_pcm_s16le_16000_mono",
                 "fasterWhisperVersion": importlib.metadata.version("faster-whisper")}
@@ -198,7 +198,7 @@ def transcribe(args):
     model = WhisperModel(args.model, device=args.device, compute_type=args.compute_type,
                          cpu_threads=args.threads, num_workers=1)
     audio = decode_audio(args.input)
-    segments, info = model.transcribe(audio, language="zh", beam_size=5,
+    segments, info = model.transcribe(audio, language=args.language, beam_size=5,
                                       word_timestamps=True, vad_filter=False,
                                       condition_on_previous_text=False)
     results = []
@@ -268,6 +268,7 @@ def main():
     transcription.add_argument("--input", required=True, type=Path)
     transcription.add_argument("--output", required=True, type=Path)
     transcription.add_argument("--model", default="large-v3-turbo")
+    transcription.add_argument("--language", default="zh")
     transcription.add_argument("--device", default="cpu", choices=["cpu", "cuda"])
     transcription.add_argument("--compute-type", default="int8")
     transcription.add_argument("--threads", default=12, type=int)

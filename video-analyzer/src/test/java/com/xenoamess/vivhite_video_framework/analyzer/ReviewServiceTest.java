@@ -69,6 +69,21 @@ class ReviewServiceTest {
     }
 
     @Test
+    void validatesAsrLanguageCacheAndKeepsChineseDefault() throws Exception {
+        ObjectNode transcript = (ObjectNode) JSON.readTree("""
+                {"identity":{"model":"large-v3-turbo","language":"zh"}}
+                """);
+        ObjectNode config = JSON.createObjectNode();
+        AnalysisPipeline.validateAsrConfiguration(transcript, config);
+        config.put("asrLanguage", "en");
+        assertThrows(java.io.IOException.class, () -> AnalysisPipeline.validateAsrConfiguration(transcript, config));
+        ((ObjectNode) transcript.path("identity")).put("language", "en");
+        AnalysisPipeline.validateAsrConfiguration(transcript, config);
+        config.put("asrModel", "base");
+        assertThrows(java.io.IOException.class, () -> AnalysisPipeline.validateAsrConfiguration(transcript, config));
+    }
+
+    @Test
     void detectsDecodeGapsInsteadOfDeclaringFullCoverage() throws Exception {
         var transcript = JSON.readTree("""
                 {"durationMs":1000,"segments":[{"id":"c1","startMs":0,"endMs":1000}]}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0",
+  "caseId": "arknights-lime-letter-BV1nB3u6tEHD",
+  "analysisDate": "2026-10-28",
+  "source": {
+    "fileName": "《明日方舟》EP - 酸橙色信笺 [BV1nB3u6tEHD].mkv",
+    "sizeBytes": 54538597,
+    "sha256": "bcff1a458229576af244e527e0b014fcb11ea4faa0cca04f2238f41da86a98cf",
+    "containerDurationMs": 241429,
+    "mainVideo": {
+      "codec": "av1",
+      "width": 1920,
+      "height": 1080,
+      "framesPerSecond": 25,
+      "decodedFrames": 6035,
+      "decodedEndMs": 241400,
+      "decodeGaps": [],
+      "nonMonotonicPts": []
+    },
+    "sourceAudio": {
+      "codec": "aac",
+      "sampleRate": 48000,
+      "channels": 2,
+      "durationMs": 241429
+    },
+    "attachedCoverExcluded": true
+  },
+  "processing": {
+    "engineBaseCommit": "405ae59",
+    "engineWorkingTreeChange": "ASR language option, default zh, explicitly en for this source",
+    "engineHashes": {
+      "video-analyzer/tools/media_worker.py": "85ea12675bf2b2fb7ab58b8a0c476bfa7b7ac32c20d3e77244ac7515e386aa2b",
+      "video-analyzer/target/video-analyzer-0.1.0-SNAPSHOT.jar": "f3362f9448fb1a613270a424833465faf07ca05b664dfef322d9b3af0c1a8490"
+    },
+    "versions": {
+      "java": "Temurin 21.0.10+7-LTS",
+      "maven": "3.9.16 via Maven Wrapper",
+      "ffmpeg": "8.1.1-full_build-www.gyan.dev",
+      "python": "3.12.6",
+      "av": "19.0.2",
+      "opencv-python-headless": "5.0.0.93",
+      "rapidocr": "3.10.0",
+      "onnxruntime": "1.31.0",
+      "faster-whisper": "1.2.1",
+      "ctranslate2": "4.8.3"
+    },
+    "asr": {
+      "sourceSha256": "bcff1a458229576af244e527e0b014fcb11ea4faa0cca04f2238f41da86a98cf",
+      "model": "large-v3-turbo",
+      "device": "cpu",
+      "computeType": "int8",
+      "language": "en",
+      "beamSize": 5,
+      "vadFilter": false,
+      "wordTimestamps": true,
+      "audioDecoder": "ffmpeg_pcm_s16le_16000_mono",
+      "fasterWhisperVersion": "1.2.1"
+    },
+    "asrUniqueSegments": 48,
+    "asrQuality": "asr_unverified_with_assistant_semantic_corrections_in_review_bundle",
+    "secondaryAsr": "not_run",
+    "forcedAlignment": "not_run",
+    "vision": {
+      "sampleSeconds": 1,
+      "selectedFrames": 540,
+      "contactSheets": 45,
+      "maximumSelectedFrameGapMs": 1000,
+      "cutCandidates": 313,
+      "cutCandidatesAreShotCount": false,
+      "ocrObservations": 54,
+      "ocrPolicy": {
+        "enabled": true,
+        "triggerMeanDifference": 2,
+        "cooldownMs": 200,
+        "maximumRefreshMs": 1500,
+        "allFramesInspected": true,
+        "recognitionCompleteness": "not_certified"
+      },
+      "subtitleBox": [
+        0,
+        0.92,
+        1,
+        1
+      ]
+    },
+    "audio": {
+      "decodedMonoSampleRate": 16000,
+      "decodedMonoChannels": 1,
+      "fullDurationMs": 241429,
+      "bins": 242,
+      "maximumRmsBin": {
+        "startMs": 83000,
+        "endMs": 84000,
+        "rmsDbfs": -9.733,
+        "samplePeak": 0.957672
+      },
+      "measurement": "1s RMS dBFS on decoded 16kHz mono PCM, last bin partial; not LUFS/true peak/stereo analysis"
+    }
+  },
+  "semanticReview": {
+    "mode": "assisted",
+    "reviewer": "Codex assistant",
+    "uniqueTimeWindows": 9,
+    "roleWindows": 18,
+    "contentAndStyleUseSameSource": true,
+    "roleArtifacts": "copied from the same complete inference outputs; unique coverage counts must not be doubled",
+    "asrUnitsRead": 48,
+    "asrUnitWindowReferences": 108,
+    "unitReviewLocations": "review-bundle.json / windowReviews[*].unitReviews",
+    "contactSheetsViewed": 45,
+    "selectedFramesViewed": 540,
+    "enlargedEvidenceFrames": [
+      "f000230000",
+      "f000236000",
+      "f000193960",
+      "f000167600"
+    ],
+    "initialCalibrationImage": "45s original-resolution image",
+    "directorGroups": 44,
+    "groupIntervals": "continuous editorial groups with approximate boundaries, not frame-accurate EDL",
+    "nonLyricText": "semantic categories of signing cards and surrounding visible text, plus enlarged final thank-you and credits; not exhaustive word-for-word review of every handwriting or every split-screen cell",
+    "allUnselectedFramesSemanticallyReviewed": false,
+    "fullAudiovisualReviewAcceptance": false,
+    "audioListening": "not_performed",
+    "humanFullPlayback": false,
+    "humanAestheticAcceptance": false,
+    "apiReviewInvoked": false
+  },
+  "validation": {
+    "deliveryIntegrity": "passed: 44 contiguous groups, in-range evidence, source hashes, 18 windows, 48 unique units, Markdown links and UTF-8 whitespace",
+    "analyzerImport": "structural_and_evidence_coverage_passed",
+    "factualCorrectnessGuarantee": false,
+    "windowsReviewed": 18,
+    "expectedWindows": 18,
+    "javaVerify": {
+      "command": ".\\mvnw.cmd -pl video-analyzer -am verify",
+      "status": "passed",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0
+    },
+    "pythonCodecIntegration": {
+      "command": "video-analyzer/.venv/Scripts/python.exe -m unittest discover -s video-analyzer/tools -p test_media_worker.py -v",
+      "status": "passed",
+      "tests": 1
+    },
+    "reproductionScript": {
+      "command": "docs/analysis/BV1nB3u6tEHD/reproduce.ps1 -SourceVideo <same local source>",
+      "status": "passed_using_existing_inference_cache",
+      "steps": [
+        "reused English ASR",
+        "reused complete visual inference",
+        "remeasured full audio",
+        "rebuilt 18 windows",
+        "validated imported review"
+      ]
+    }
+  },
+  "limitations": [
+    "同一源文件兼任内容与风格来源；两角色共用一次完整推理的相同证据副本，18窗对应9个唯一时间窗，计数不得翻倍。",
+    "全音轨解码并做英文 ASR、逐条审查全部48段；不是逐句听音校准，也未进行第二 ASR 或强制对齐。",
+    "全片6035帧连续解码；语义输入为每秒选帧加变化候选，共540帧，不能认证所有瞬时动作、每次切点或全部小字。",
+    "54条OCR观测含残词与漏识别，不代表54句歌词；逐帧差异阈值产生313个转场候选，非镜头总数。",
+    "黑边歌词之外的纸页、签收与署名按证据图审阅；没有对每格小字和每条签名做全量OCR或逐字复核。",
+    "未进行人工完整播放、听音、审美验收；乐器、BPM、调性、每拍同步与制作软件保持未知。",
+    "公开文档为参考成片的逆向导演案，不是官方原始导演脚本，不新增本项目主人公设定或待制作角色台词。"
+  ],
+  "artifacts": {
+    "externalWorkDirectory": "D:/workspace/vivhite-analysis-output/arknights-lime-letter-BV1nB3u6tEHD",
+    "workspace": "workspace.json",
+    "fullRawTranscript": "content/transcript.json",
+    "fullRawOcrAndFrameIndex": "content/vision.json",
+    "frameMeasurements": "content/frame-metrics.jsonl",
+    "contactSheets": "content/sheets/",
+    "audioMeasurements": "content/audio-metrics.json",
+    "validatedReport": "analysis-report.json",
+    "validatedReadableReport": "analysis-report.md",
+    "committedFiles": [
+      "director.md",
+      "director-plan.json",
+      "review-bundle.json",
+      "reproduce.ps1",
+      "coverage.json"
+    ]
+  }
+}

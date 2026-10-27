@@ -28,6 +28,7 @@
 
 ## 已完成的实战案例
 
+- [《明日方舟》EP《酸橙色信笺》导演案](docs/analysis/BV1nB3u6tEHD/director.md)：使用 analyzer 分析全片，按44个镜群还原旅行影像、群体签收与角色回信结构；附证据引用、审查范围及复现脚本。
 - 内容来源：`BV1AV411V7SJ`，分析滑块拼图的搜索、复原方法与奇偶不变量。
 - 风格来源：`BV1i4aS6SEBR`，提炼先操作后解释、持续图形对象、纸色细线与章节/结论条。
 - [案例分析与覆盖说明](series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/README.md)。

@@ -57,6 +57,7 @@ public final class AnalysisPipeline {
                 String worker = requiredText(config, "worker");
                 Processes.live(List.of(python, worker, "transcribe", "--input", sourcePath.toString(),
                         "--output", roleDirectory.toString(), "--model", config.path("asrModel").asText("large-v3-turbo"),
+                        "--language", config.path("asrLanguage").asText("zh"),
                         "--device", config.path("device").asText("cpu"), "--compute-type",
                         config.path("computeType").asText("int8"), "--threads", config.path("threads").asText("12")),
                         Duration.ofHours(4));
@@ -75,12 +76,12 @@ public final class AnalysisPipeline {
                         "--output", roleDirectory.toString()), Duration.ofMinutes(10));
             }
             JsonNode transcript = requireArtifact(roleDirectory.resolve("transcript.json"), sha256);
+            validateAsrConfiguration(transcript, config);
             JsonNode vision = requireArtifact(roleDirectory.resolve("vision.json"), sha256);
             if (vision.at("/identity/ocr").asBoolean() != config.path(role + "Ocr").asBoolean(true)
                     || Double.compare(vision.at("/identity/sampleSeconds").asDouble(),
-                            config.path("frameSampleSeconds").asDouble(5)) != 0
-                    || !transcript.at("/identity/model").asText().equals(config.path("asrModel").asText("large-v3-turbo"))) {
-                throw new IOException("Cached model/OCR/frame interval differs from case configuration; rerun without --reuse");
+                            config.path("frameSampleSeconds").asDouble(5)) != 0) {
+                throw new IOException("Cached OCR/frame interval differs from case configuration; rerun without --reuse");
             }
             JsonNode audio = JsonFiles.read(roleDirectory.resolve("audio-metrics.json"));
             if (!audio.path("status").asText().equals("complete")
@@ -130,6 +131,13 @@ public final class AnalysisPipeline {
             throw new IOException("Incomplete artifact or source fingerprint mismatch: " + file);
         }
         return artifact;
+    }
+
+    static void validateAsrConfiguration(JsonNode transcript, JsonNode config) throws IOException {
+        if (!transcript.at("/identity/model").asText().equals(config.path("asrModel").asText("large-v3-turbo"))
+                || !transcript.at("/identity/language").asText().equals(config.path("asrLanguage").asText("zh"))) {
+            throw new IOException("Cached ASR model/language differs from case configuration; rerun without --reuse");
+        }
     }
 
     static void validateMediaCoverage(JsonNode transcript, JsonNode vision, long durationMs) {

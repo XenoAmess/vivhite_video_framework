@@ -1,0 +1,1753 @@
+{
+  "schemaVersion": "1.0",
+  "caseId": "arknights-lime-letter-BV1nB3u6tEHD",
+  "sourceHashes": {
+    "content": "bcff1a458229576af244e527e0b014fcb11ea4faa0cca04f2238f41da86a98cf",
+    "style": "bcff1a458229576af244e527e0b014fcb11ea4faa0cca04f2238f41da86a98cf"
+  },
+  "provenance": {
+    "mode": "assisted",
+    "reviewer": "Codex assistant semantic review, 2026-10-28",
+    "semanticReviewStatus": "all_windows_and_asr_units_reviewed_with_selected_frame_and_audio_limits",
+    "audioListeningStatus": "not_performed",
+    "visualInput": "all 45 contact sheets / all 540 selected evidence frames; four original evidence images enlarged",
+    "sameSourceRoles": true,
+    "limitations": [
+      "同一源文件兼任内容与风格来源；两角色共用一次完整推理的相同证据副本，18窗对应9个唯一时间窗，计数不得翻倍。",
+      "全音轨解码并做英文 ASR、逐条审查全部48段；不是逐句听音校准，也未进行第二 ASR 或强制对齐。",
+      "全片6035帧连续解码；语义输入为每秒选帧加变化候选，共540帧，不能认证所有瞬时动作、每次切点或全部小字。",
+      "54条OCR观测含残词与漏识别，不代表54句歌词；逐帧差异阈值产生313个转场候选，非镜头总数。",
+      "黑边歌词之外的纸页、签收与署名按证据图审阅；没有对每格小字和每条签名做全量OCR或逐字复核。",
+      "未进行人工完整播放、听音、审美验收；乐器、BPM、调性、每拍同步与制作软件保持未知。",
+      "公开文档为参考成片的逆向导演案，不是官方原始导演脚本，不新增本项目主人公设定或待制作角色台词。"
+    ]
+  },
+  "windowReviews": [
+    {
+      "windowId": "content-w0001",
+      "summary": "00:00–00:30：品牌前导后由橙色车内挂饰进入角色、照片与抬眼回应，再展开树冠、海天、交通和玩偶旅行镜群。角色名称取自内嵌简介；照片承接夏日素材是叙事解读。s00001 没有可见歌词支持，不能用来新增对白；开唱的第一个明确歌词观察在约29秒。",
+      "unitReviews": [
+        {
+          "segmentId": "s00001",
+          "meaning": "前奏区机器疑似插入独立口语；不能用作人物对白或故事事件。",
+          "issues": [
+            "未见对应画面歌词，低置信转写；需听音判断是否幻觉。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00002",
+          "meaning": "开唱建立轻盈的城市移动与当下体验。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000001000",
+          "observation": "黑底中央依次出现 bilibili 游戏、鹰角网络等标识。",
+          "directorGroupId": "D01",
+          "inference": "以小尺度居中标识建立发行入口，随后把注意力交给旅途。"
+        },
+        {
+          "frameId": "f000005000",
+          "observation": "车内橙片与花朵挂饰近景，蓝天作底，MONSTER SIREN 标识叠入。",
+          "directorGroupId": "D02",
+          "inference": "用橙色物件同时引出片名色彩与车辆空间。"
+        },
+        {
+          "frameId": "f000010000",
+          "observation": "俯视角色手中的多张照片及纸页。",
+          "directorGroupId": "D04",
+          "inference": "提前设置承接众多现实影像的容器。"
+        },
+        {
+          "frameId": "f000015000",
+          "observation": "侧脸由低头状态转为面向镜头，发丝与光影有变化。",
+          "directorGroupId": "D05",
+          "inference": "由看照片转向看观众；邀请感是导演解读。"
+        },
+        {
+          "frameId": "f000019000",
+          "observation": "树冠逆光、雪山前纸飞机角色、日落海滩、车窗铁路、云、湖岸、山野、鸟与玩偶。",
+          "directorGroupId": "D07",
+          "inference": "快速铺开空间跨度；纸飞机与角色小物保持同一旅行主题。"
+        },
+        {
+          "frameId": "f000028000",
+          "observation": "树冠逆光、雪山前纸飞机角色、日落海滩、车窗铁路、云、湖岸、山野、鸟与玩偶。",
+          "directorGroupId": "D07",
+          "inference": "快速铺开空间跨度；纸飞机与角色小物保持同一旅行主题。"
+        }
+      ]
+    },
+    {
+      "windowId": "content-w0002",
+      "summary": "00:30–01:00：花园、风铃、饮品、列车、云和日落，与角色贴片及周边反复同框；约56–59秒出现鸟翼前景与角色朝镜头伸手。歌词从日常感受到珍惜时间，再提出信件隐喻。按画面歌词修正多处 ASR 错词；未听音验证乐器、声线或逐拍同步。",
+      "unitReviews": [
+        {
+          "segmentId": "s00002",
+          "meaning": "开唱建立轻盈的城市移动与当下体验。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00003",
+          "meaning": "以再次见到笑容衔接花园日常。",
+          "issues": [
+            "ASR 错词；语义参照 t00002。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00004",
+          "meaning": "强调眼前日常不可替代，角色周边与生活同框。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00005",
+          "meaning": "风的意象把视线带向湖面和天空。",
+          "issues": [
+            "ASR 错词；参照 t00004；时间边界未强制对齐。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00006",
+          "meaning": "日光与休息意象连接明亮景观。",
+          "issues": [
+            "ASR 末词有误；参照 t00005。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00007",
+          "meaning": "为当下的平凡时光赋予情感重量。",
+          "issues": [
+            "ASR 句首有误；参照 t00006。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00008",
+          "meaning": "对美好时光消逝的眷恋引向角色回应。",
+          "issues": [
+            "ASR 句首与画面歌词不同，参照 t00007。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00009",
+          "meaning": "首次提出信件承载心意的核心隐喻。",
+          "issues": [
+            "冠词等细节与 t00008 不同；本案只保留叙事功能。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000033000",
+          "observation": "玻璃风铃、树叶、框景、花园长椅、睡莲与蜜蜂，开始出现英文歌词。",
+          "directorGroupId": "D08",
+          "inference": "把旅行体验收回到可触摸的小事。"
+        },
+        {
+          "frameId": "f000036000",
+          "observation": "饮品旁角色立牌、草地小物、玩偶背影、列车旁持相机的角色贴片、绿廊与花。",
+          "directorGroupId": "D09",
+          "inference": "让角色进入真实生活的尺度，形成陪伴关系。"
+        },
+        {
+          "frameId": "f000038000",
+          "observation": "饮品旁角色立牌、草地小物、玩偶背影、列车旁持相机的角色贴片、绿廊与花。",
+          "directorGroupId": "D09",
+          "inference": "让角色进入真实生活的尺度，形成陪伴关系。"
+        },
+        {
+          "frameId": "f000043000",
+          "observation": "湖景、荷花、积云、空中角色贴片、城市建筑及浅色海浪。",
+          "directorGroupId": "D10",
+          "inference": "以相近的蓝绿和明亮天空维持跨地点连续性。"
+        },
+        {
+          "frameId": "f000050000",
+          "observation": "车窗晚霞、多个落日海岸、波光，接手持发光棒的角色贴片。",
+          "directorGroupId": "D11",
+          "inference": "由明亮日常过渡到对夏日将逝的眷恋。"
+        },
+        {
+          "frameId": "f000058000",
+          "observation": "蓝天下鸟掠过前景，角色在高处回望并伸手朝镜头。",
+          "directorGroupId": "D13",
+          "inference": "作为第一次明显的角色回应与情绪抬升。"
+        }
+      ]
+    },
+    {
+      "windowId": "content-w0003",
+      "summary": "01:00–01:30：活动场馆、森林手作、海底贴片、沙漠出行、饮食、牵手/戒指细节、飞机与列车并置，歌词承载心意、情绪明暗和寄往远处。约86秒以后可见歌词暂退，旅途镜头仍持续更新；不把字幕消失等同无人声。",
+      "unitReviews": [
+        {
+          "segmentId": "s00009",
+          "meaning": "首次提出信件承载心意的核心隐喻。",
+          "issues": [
+            "冠词等细节与 t00008 不同；本案只保留叙事功能。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00010",
+          "meaning": "把共同经历引向故事的起点。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00011",
+          "meaning": "向收件人递出心意；与海底贴片、沙漠与日常镜头连接。",
+          "issues": [
+            "ASR 合并了画面分开的称呼；字幕分句不等于声学对齐。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00012",
+          "meaning": "感受中的温暖一面，画面包含日常交往与手部细节。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00013",
+          "meaning": "容纳情感中的脆弱一面；画面随后出现雨窗。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00014",
+          "meaning": "多种感受在心中共存，不能按机器错词解释成具体纸张动作。",
+          "issues": [
+            "严重错词，参照 t00014。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00015",
+          "meaning": "把这些心意寄向远方，以反复句形成段落收束。",
+          "issues": [
+            "ASR 丢词、合并句；参照 t00015–t00016；后续无字幕镜群不能据此认定无人声。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000060000",
+          "observation": "夜路、场馆与舞台、车窗玩偶、林地手作、马车、池塘和建筑。",
+          "directorGroupId": "D14",
+          "inference": "把歌词中的信件主题连到共同经历；活动具体名称不作外推。"
+        },
+        {
+          "frameId": "f000065000",
+          "observation": "海底角色贴片、沙漠车辆、峡谷、餐桌玩偶及公路。",
+          "directorGroupId": "D15",
+          "inference": "把递送与旅行的想象扩大到不同地貌。"
+        },
+        {
+          "frameId": "f000073000",
+          "observation": "骑行、海边晚霞、食物、热气球、成对戴戒指的手、人与猫、花及雨窗。",
+          "directorGroupId": "D16",
+          "inference": "从地理跨度转向情绪跨度；戒指不用于推断人物身份关系。"
+        },
+        {
+          "frameId": "f000077000",
+          "observation": "机场飞机、蛋糕饮品、列车窗景、水边街巷与石岸扫动。",
+          "directorGroupId": "D17",
+          "inference": "用交通和视线移动连接寄送意象。"
+        },
+        {
+          "frameId": "f000084000",
+          "observation": "玩偶与粉色湖山、树冠、骑行、水果、晚霞行人、机翼、海面、灯塔角色、草原与竹筒流水。",
+          "directorGroupId": "D18",
+          "inference": "歌词暂退后仍持续更换事件，提供视觉呼吸。"
+        },
+        {
+          "frameId": "f000089000",
+          "observation": "玩偶与粉色湖山、树冠、骑行、水果、晚霞行人、机翼、海面、灯塔角色、草原与竹筒流水。",
+          "directorGroupId": "D18",
+          "inference": "歌词暂退后仍持续更换事件，提供视觉呼吸。"
+        }
+      ]
+    },
+    {
+      "windowId": "content-w0004",
+      "summary": "01:30–02:00：灯塔与海天接回桌面挂件、冰饮、工作电脑和手工，再进入滑道入水与漂浮玩偶；随后旅行、花朵、朋友及角色扮演镜头增加。歌词由流逝转向自我接纳和主动生活。人与物的关系只描述可见动作，不外推现实身份。",
+      "unitReviews": [
+        {
+          "segmentId": "s00016",
+          "meaning": "承认好时光会流逝，画面返回室内与工作日常。",
+          "issues": [
+            "画面歌词较 ASR 起点晚，参照 t00017；起唱时间待听音。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00017",
+          "meaning": "对上述流逝的内在自觉。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00018",
+          "meaning": "继续认真生活，画面用出行与入水动作承接。",
+          "issues": [
+            "ASR 动词和时态偏差，参照 t00019。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00019",
+          "meaning": "独一性与自我接纳；画面保留轻巧玩乐。",
+          "issues": [
+            "合并了两个字幕句，参照 t00020–t00021。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00020",
+          "meaning": "面向未来的自我期许，以车行与旅行小物支撑。",
+          "issues": [
+            "ASR 与 t00022 措辞不同。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00021",
+          "meaning": "主动生活与减少遗憾，接朋友、毕业和角色合影。",
+          "issues": [
+            "ASR 末尾语法有误，参照 t00023。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000096000",
+          "observation": "窗前挂件、冰饮与角色立牌、键盘、电脑工作台、加班屏幕及手工拼珠。",
+          "directorGroupId": "D19",
+          "inference": "承认时间流逝，并把热爱放回普通生活。"
+        },
+        {
+          "frameId": "f000100000",
+          "observation": "窗前挂件、冰饮与角色立牌、键盘、电脑工作台、加班屏幕及手工拼珠。",
+          "directorGroupId": "D19",
+          "inference": "承认时间流逝，并把热爱放回普通生活。"
+        },
+        {
+          "frameId": "f000104000",
+          "observation": "湖面日光、沙漠车行、两只玩偶从滑道入水，随后转俯拍漂浮状态。",
+          "directorGroupId": "D20",
+          "inference": "连续动作把抽象积极态度转为具体体验。"
+        },
+        {
+          "frameId": "f000106000",
+          "observation": "湖面日光、沙漠车行、两只玩偶从滑道入水，随后转俯拍漂浮状态。",
+          "directorGroupId": "D20",
+          "inference": "连续动作把抽象积极态度转为具体体验。"
+        },
+        {
+          "frameId": "f000114000",
+          "observation": "湖边人的裙摆与玩偶、车内山路、黄色花朵、彩旗装饰及摩天轮前角色立牌。",
+          "directorGroupId": "D22",
+          "inference": "以仍在前行的人和路承接面向未来的内容。"
+        },
+        {
+          "frameId": "f000118000",
+          "observation": "手持双人立牌、角色扮演与车、聚餐、海边小卡、毕业合影及图书馆读书，接角色合影。",
+          "directorGroupId": "D23",
+          "inference": "由一个人的旅行转向朋友与人生节点。"
+        }
+      ]
+    },
+    {
+      "windowId": "content-w0005",
+      "summary": "02:00–02:30：真实毕业/阅读镜头接角色群像，再返回朋友合影、持玩偶出行、跷跷板、浮潜、聚餐、摸猫、自然景与群体高举玩偶。歌词鼓励共同前行、容纳不同感受并交换记忆。群体参与是可见事实，官方征集来源只由内嵌简介支持。",
+      "unitReviews": [
+        {
+          "segmentId": "s00021",
+          "meaning": "主动生活与减少遗憾，接朋友、毕业和角色合影。",
+          "issues": [
+            "ASR 末尾语法有误，参照 t00023。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00022",
+          "meaning": "言语具有鼓励作用，角色群像成为回应。",
+          "issues": [
+            "严重错词，参照 t00024。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00023",
+          "meaning": "勇气与出发意象，引向真实参与者的镜头。",
+          "issues": [
+            "ASR 错词，参照 t00025。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00024",
+          "meaning": "明确邀请共同前行，拆在两个短字幕中。",
+          "issues": [
+            "画面分出同行补句，OCR 未稳定记录第二短句；不视为完整歌词识别。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00025",
+          "meaning": "承接快乐的声音，画面有浮潜、聚餐与毕业同伴。",
+          "issues": [
+            "ASR 修饰词误识别，参照 t00027。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00026",
+          "meaning": "同时容纳低落情绪；不把每个素材机械解释成悲伤证据。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00027",
+          "meaning": "由不同感受产生表达，周边、展板和自然景物共同承载。",
+          "issues": [
+            "严重错词，参照 t00029。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00028",
+          "meaning": "把心意送向更远空间；烟花与群体举玩偶动作扩大尺度。",
+          "issues": [
+            "ASR 丢失寄送主语与动词，参照 t00030。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00029",
+          "meaning": "向观众索取记忆，画面以落日海边角色卡作承接。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000120000",
+          "observation": "手持双人立牌、角色扮演与车、聚餐、海边小卡、毕业合影及图书馆读书，接角色合影。",
+          "directorGroupId": "D23",
+          "inference": "由一个人的旅行转向朋友与人生节点。"
+        },
+        {
+          "frameId": "f000123000",
+          "observation": "多位角色在浅蓝底合影，逐步扩展构图并加入彩色手绘符号。",
+          "directorGroupId": "D24",
+          "inference": "虚拟角色群像回应现实朋友的合影。"
+        },
+        {
+          "frameId": "f000130000",
+          "observation": "山路、朋友镜前合影、海边卡片、毕业合影、校服与玩偶、建筑内玩偶。",
+          "directorGroupId": "D25",
+          "inference": "把邀请交给真实参与者。"
+        },
+        {
+          "frameId": "f000136000",
+          "observation": "沙滩角色贴片、跷跷板、浮潜、持玩偶的人、朋友聚餐、毕业动作与摸猫。",
+          "directorGroupId": "D26",
+          "inference": "以动作与交往呈现快乐，不靠解释性旁白。"
+        },
+        {
+          "frameId": "f000146000",
+          "observation": "草坡与云、夕阳水面、掠过树影、玩偶与水鸟、双人立牌、角色展板、池水、烟花及高举玩偶的群体。",
+          "directorGroupId": "D27",
+          "inference": "把明暗情绪都纳入同一封回信；个别镜头不逐字图解歌词。"
+        },
+        {
+          "frameId": "f000149000",
+          "observation": "落日海边的透明角色卡、海岸玩偶、白云下的建筑和机场候机大厅。",
+          "directorGroupId": "D28",
+          "inference": "由展示经历转成向观众索取、倾听记忆。"
+        }
+      ]
+    },
+    {
+      "windowId": "content-w0006",
+      "summary": "02:30–03:00：角色卡、云景、机场、收藏、猫及玩偶聚拢之后，用树冠、行李和手机拍摄把邀请具体化；约166.92–178.52秒进入连续四宫格旅行汇总。四格同时有内容不表示同一地点或同时拍摄；这是剪辑组织。",
+      "unitReviews": [
+        {
+          "segmentId": "s00029",
+          "meaning": "向观众索取记忆，画面以落日海边角色卡作承接。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00030",
+          "meaning": "邀请分享快乐，云下建筑和候机空间接续。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00031",
+          "meaning": "愿意跨越距离追寻并传递记忆。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00032",
+          "meaning": "把远处经验带给收件人，收藏与玩偶聚拢作视觉回应。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00033",
+          "meaning": "保留陪伴承诺，树冠光束成为停顿点。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00034",
+          "meaning": "第一次短问把旅途邀请交给观众。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00035",
+          "meaning": "完整重复同行邀请，拉行李与拿手机拍摄动作使邀请具体化。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00036",
+          "meaning": "重新拼合片段记忆，四宫格退出后回到可读单幅。",
+          "issues": [
+            "ASR 合并两条字幕，参照 t00038–t00039。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000154000",
+          "observation": "热爱生活字样的小旗与玩偶、白色庭院、收藏柜前猫及众人把玩偶聚在一起。",
+          "directorGroupId": "D29",
+          "inference": "以收藏与聚拢动作将经历变成可以带回的东西。"
+        },
+        {
+          "frameId": "f000158000",
+          "observation": "热爱生活字样的小旗与玩偶、白色庭院、收藏柜前猫及众人把玩偶聚在一起。",
+          "directorGroupId": "D29",
+          "inference": "以收藏与聚拢动作将经历变成可以带回的东西。"
+        },
+        {
+          "frameId": "f000163000",
+          "observation": "树冠光束、芦苇、拉行李背影、海边举手机拍摄玩偶。",
+          "directorGroupId": "D30",
+          "inference": "让观看者从看风景转到拿起相机、走进旅途。"
+        },
+        {
+          "frameId": "f000165000",
+          "observation": "树冠光束、芦苇、拉行李背影、海边举手机拍摄玩偶。",
+          "directorGroupId": "D30",
+          "inference": "让观看者从看风景转到拿起相机、走进旅途。"
+        },
+        {
+          "frameId": "f000170000",
+          "observation": "连续四宫格汇集草原、山水、交通、雨天、动物、周边与日常，多个格子分别变化。",
+          "directorGroupId": "D31",
+          "inference": "把分散的个人经历同时呈现，形成群体记忆的规模。"
+        },
+        {
+          "frameId": "f000177000",
+          "observation": "连续四宫格汇集草原、山水、交通、雨天、动物、周边与日常，多个格子分别变化。",
+          "directorGroupId": "D31",
+          "inference": "把分散的个人经历同时呈现，形成群体记忆的规模。"
+        }
+      ]
+    },
+    {
+      "windowId": "content-w0007",
+      "summary": "03:00–03:30：单幅角色透明卡与景观恢复可读尺度，树冠回返并短暗场；随后包裹与签收卡、多人落笔和个性化博士称呼成为主线，约208.40秒扩展十六宫格。此段把信件意象落实到真实收件与回应，签收纸上的内容不等同歌词字幕。",
+      "unitReviews": [
+        {
+          "segmentId": "s00036",
+          "meaning": "重新拼合片段记忆，四宫格退出后回到可读单幅。",
+          "issues": [
+            "ASR 合并两条字幕，参照 t00038–t00039。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00037",
+          "meaning": "邀请观看并将对方包括在内，角色卡和树冠意象回返。",
+          "issues": [
+            "ASR 将两个可见短句混读；参照 t00040 与 f000188000 画面文字。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00038",
+          "meaning": "核心信件意象再次出现，这次画面落到实际包裹与签收。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00039",
+          "meaning": "同一主题被签收动作重新解释，众多书写者开始并置。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00040",
+          "meaning": "向不同收件人致意，签收卡上的个人化称呼成为主要信息。",
+          "issues": [
+            "机器在称呼后添加词；不据此另设新台词。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00041",
+          "meaning": "温暖情绪主题复现，由不同桌面签收场景承担。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00042",
+          "meaning": "明暗情绪主题复现，与多种生活场景同在。",
+          "issues": [
+            "ASR 句法和实词错误，参照 t00047。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00043",
+          "meaning": "让不同感受共同留下痕迹，画面扩展为十六宫格签收。",
+          "issues": [
+            "严重错词，参照 t00048。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000181000",
+          "observation": "红色夕阳与角色透明卡、窗前挂件、室内向外的窗景。",
+          "directorGroupId": "D32",
+          "inference": "从密集拼贴收回单幅景物，让具体记忆重新可读。"
+        },
+        {
+          "frameId": "f000186000",
+          "observation": "高山湖泊前角色透明卡、夕阳中的双人剪影卡、树冠逆光，末端短暂暗场。",
+          "directorGroupId": "D33",
+          "inference": "以同一图形容器连接不同风景，再回收开头树冠意象。"
+        },
+        {
+          "frameId": "f000191000",
+          "observation": "桌面上的包裹、小物、剪刀与角色签收卡，出现开盒和持笔准备动作。",
+          "directorGroupId": "D34",
+          "inference": "把信件隐喻落实为可完成的收件动作。"
+        },
+        {
+          "frameId": "f000194000",
+          "observation": "四宫格中多人在同款签收卡上落笔，随后回到单幅书写。",
+          "directorGroupId": "D35",
+          "inference": "同一版式成为不同人的共同入口。"
+        },
+        {
+          "frameId": "f000199000",
+          "observation": "连续特写显示签收人用愿望、爱好、日常状态等方式自称为博士。",
+          "directorGroupId": "D36",
+          "inference": "把泛化的粉丝群体拆回具体的人。"
+        },
+        {
+          "frameId": "f000209000",
+          "observation": "签收动作扩展为十六宫格，多人书写与手持纸页同时呈现。",
+          "directorGroupId": "D38",
+          "inference": "以数量累积呈现回应规模，回收此前四宫格语法。"
+        }
+      ]
+    },
+    {
+      "windowId": "content-w0008",
+      "summary": "03:30–04:00：十六宫格签收转镜面世界、角色在青色前景笔迹后看向观众并书写/微笑，拉远到同伴与车辆，亮场后转角色图与信纸致谢、歌曲署名、标识。s00045–s00048 的道歉等识别没有画面字幕支持，不建立道歉情节；致谢页属于另一个可读文案通道。",
+      "unitReviews": [
+        {
+          "segmentId": "s00043",
+          "meaning": "让不同感受共同留下痕迹，画面扩展为十六宫格签收。",
+          "issues": [
+            "严重错词，参照 t00048。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00044",
+          "meaning": "寄往各处的主题复现，签收拼贴转回角色世界。",
+          "issues": [
+            "严重错词，参照 t00049–t00050。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00045",
+          "meaning": "此区间屏幕仍是上一段远方主题的延长字幕，角色隔着笔迹回应观众。",
+          "issues": [
+            "ASR 识别成道歉，缺乏字幕支持；排除该叙事解释，需听音校准。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00046",
+          "meaning": "角色在前景笔迹后看向观众；此机器独立短句不作为新文案。",
+          "issues": [
+            "ASR 与持续字幕 t00050 不符，不能当作新歌词。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00047",
+          "meaning": "延长主题下的角色书写、微笑及拉远。",
+          "issues": [
+            "ASR 识别成道歉，与持续字幕不符；声学内容尚未核实。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00048",
+          "meaning": "最后角色倾斜构图至致谢页之前的过渡，不建立道歉情节。",
+          "issues": [
+            "无对应道歉字幕；须听音判定残留人声或幻觉，不能宣称此处歌词已确认。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000211000",
+          "observation": "签收动作扩展为十六宫格，多人书写与手持纸页同时呈现。",
+          "directorGroupId": "D38",
+          "inference": "以数量累积呈现回应规模，回收此前四宫格语法。"
+        },
+        {
+          "frameId": "f000217000",
+          "observation": "角色隔着前景青色笔迹看向镜头、书写并微笑，画面逐渐拉远到同伴与车辆。",
+          "directorGroupId": "D40",
+          "inference": "把观众真实落笔与角色的回望、书写组成双向回应。"
+        },
+        {
+          "frameId": "f000220000",
+          "observation": "角色隔着前景青色笔迹看向镜头、书写并微笑，画面逐渐拉远到同伴与车辆。",
+          "directorGroupId": "D40",
+          "inference": "把观众真实落笔与角色的回望、书写组成双向回应。"
+        },
+        {
+          "frameId": "f000225000",
+          "observation": "亮场、镜面世界中的车辆与同伴漂浮，接角色在蓝天下的倾斜构图。",
+          "directorGroupId": "D41",
+          "inference": "以失重般的视觉释放收束旅行想象；具体动画技术无法从成片确证。"
+        },
+        {
+          "frameId": "f000230000",
+          "observation": "满幅横线信纸叠加浅海浪，手写中文感谢观众分享夏天，并约定继续交换信件，带角色简笔画。",
+          "directorGroupId": "D42",
+          "inference": "把此前歌词、照片、旅行和签收统一成一封明确的回信。"
+        },
+        {
+          "frameId": "f000236000",
+          "observation": "浅海浪与信纸底，列出曲名、词曲编曲、演唱、混音及制作人。",
+          "directorGroupId": "D43",
+          "inference": "交代歌曲来源并保留尾声。"
+        },
+        {
+          "frameId": "f000239000",
+          "observation": "海浪上的明日方舟标识，亮场后转黑，末段无可见新内容。",
+          "directorGroupId": "D44",
+          "inference": "以轻的视觉收尾结束回信。"
+        }
+      ]
+    },
+    {
+      "windowId": "content-w0009",
+      "summary": "04:00–04:01.429：证据图显示黑尾；主视频解码止于241.400秒，音轨及容器止于241.429秒，相差29ms。没有新的可见叙事。",
+      "unitReviews": [],
+      "visualFindings": [
+        {
+          "frameId": "f000240000",
+          "observation": "海浪上的明日方舟标识，亮场后转黑，末段无可见新内容。",
+          "directorGroupId": "D44",
+          "inference": "以轻的视觉收尾结束回信。"
+        },
+        {
+          "frameId": "f000241000",
+          "observation": "海浪上的明日方舟标识，亮场后转黑，末段无可见新内容。",
+          "directorGroupId": "D44",
+          "inference": "以轻的视觉收尾结束回信。"
+        }
+      ]
+    },
+    {
+      "windowId": "style-w0001",
+      "summary": "橙色挂饰/红车与蓝天形成冷暖主色；照片特写先建立容器，角色视线再邀请观看，随后开阔景观快速接续。保留品牌小尺度和物件近景到环境远景的尺度变化。",
+      "unitReviews": [
+        {
+          "segmentId": "s00001",
+          "meaning": "前奏区机器疑似插入独立口语；不能用作人物对白或故事事件。",
+          "issues": [
+            "未见对应画面歌词，低置信转写；需听音判断是否幻觉。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00002",
+          "meaning": "开唱建立轻盈的城市移动与当下体验。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000001000",
+          "observation": "黑底中央依次出现 bilibili 游戏、鹰角网络等标识。",
+          "directorGroupId": "D01",
+          "inference": "以小尺度居中标识建立发行入口，随后把注意力交给旅途。"
+        },
+        {
+          "frameId": "f000005000",
+          "observation": "车内橙片与花朵挂饰近景，蓝天作底，MONSTER SIREN 标识叠入。",
+          "directorGroupId": "D02",
+          "inference": "用橙色物件同时引出片名色彩与车辆空间。"
+        },
+        {
+          "frameId": "f000010000",
+          "observation": "俯视角色手中的多张照片及纸页。",
+          "directorGroupId": "D04",
+          "inference": "提前设置承接众多现实影像的容器。"
+        },
+        {
+          "frameId": "f000015000",
+          "observation": "侧脸由低头状态转为面向镜头，发丝与光影有变化。",
+          "directorGroupId": "D05",
+          "inference": "由看照片转向看观众；邀请感是导演解读。"
+        },
+        {
+          "frameId": "f000019000",
+          "observation": "树冠逆光、雪山前纸飞机角色、日落海滩、车窗铁路、云、湖岸、山野、鸟与玩偶。",
+          "directorGroupId": "D07",
+          "inference": "快速铺开空间跨度；纸飞机与角色小物保持同一旅行主题。"
+        },
+        {
+          "frameId": "f000028000",
+          "observation": "树冠逆光、雪山前纸飞机角色、日落海滩、车窗铁路、云、湖岸、山野、鸟与玩偶。",
+          "directorGroupId": "D07",
+          "inference": "快速铺开空间跨度；纸飞机与角色小物保持同一旅行主题。"
+        }
+      ]
+    },
+    {
+      "windowId": "style-w0002",
+      "summary": "真实拍摄的浅景深物件、自然空镜与角色贴片/周边共同组成旅行视点。英文歌词位于下部黑边；天空与水面的相近颜色承担跨地点衔接。伸手角色镜头承担情绪锚点。",
+      "unitReviews": [
+        {
+          "segmentId": "s00002",
+          "meaning": "开唱建立轻盈的城市移动与当下体验。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00003",
+          "meaning": "以再次见到笑容衔接花园日常。",
+          "issues": [
+            "ASR 错词；语义参照 t00002。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00004",
+          "meaning": "强调眼前日常不可替代，角色周边与生活同框。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00005",
+          "meaning": "风的意象把视线带向湖面和天空。",
+          "issues": [
+            "ASR 错词；参照 t00004；时间边界未强制对齐。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00006",
+          "meaning": "日光与休息意象连接明亮景观。",
+          "issues": [
+            "ASR 末词有误；参照 t00005。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00007",
+          "meaning": "为当下的平凡时光赋予情感重量。",
+          "issues": [
+            "ASR 句首有误；参照 t00006。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00008",
+          "meaning": "对美好时光消逝的眷恋引向角色回应。",
+          "issues": [
+            "ASR 句首与画面歌词不同，参照 t00007。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00009",
+          "meaning": "首次提出信件承载心意的核心隐喻。",
+          "issues": [
+            "冠词等细节与 t00008 不同；本案只保留叙事功能。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000033000",
+          "observation": "玻璃风铃、树叶、框景、花园长椅、睡莲与蜜蜂，开始出现英文歌词。",
+          "directorGroupId": "D08",
+          "inference": "把旅行体验收回到可触摸的小事。"
+        },
+        {
+          "frameId": "f000036000",
+          "observation": "饮品旁角色立牌、草地小物、玩偶背影、列车旁持相机的角色贴片、绿廊与花。",
+          "directorGroupId": "D09",
+          "inference": "让角色进入真实生活的尺度，形成陪伴关系。"
+        },
+        {
+          "frameId": "f000038000",
+          "observation": "饮品旁角色立牌、草地小物、玩偶背影、列车旁持相机的角色贴片、绿廊与花。",
+          "directorGroupId": "D09",
+          "inference": "让角色进入真实生活的尺度，形成陪伴关系。"
+        },
+        {
+          "frameId": "f000043000",
+          "observation": "湖景、荷花、积云、空中角色贴片、城市建筑及浅色海浪。",
+          "directorGroupId": "D10",
+          "inference": "以相近的蓝绿和明亮天空维持跨地点连续性。"
+        },
+        {
+          "frameId": "f000050000",
+          "observation": "车窗晚霞、多个落日海岸、波光，接手持发光棒的角色贴片。",
+          "directorGroupId": "D11",
+          "inference": "由明亮日常过渡到对夏日将逝的眷恋。"
+        },
+        {
+          "frameId": "f000058000",
+          "observation": "蓝天下鸟掠过前景，角色在高处回望并伸手朝镜头。",
+          "directorGroupId": "D13",
+          "inference": "作为第一次明显的角色回应与情绪抬升。"
+        }
+      ]
+    },
+    {
+      "windowId": "style-w0003",
+      "summary": "大景观和饮食/手部细节不断交替；交通窗框带来框中框，玩偶与远景有景深转移。明暗变化与情绪歌词是联想关系，不认定每镜是逐字对应。",
+      "unitReviews": [
+        {
+          "segmentId": "s00009",
+          "meaning": "首次提出信件承载心意的核心隐喻。",
+          "issues": [
+            "冠词等细节与 t00008 不同；本案只保留叙事功能。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00010",
+          "meaning": "把共同经历引向故事的起点。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00011",
+          "meaning": "向收件人递出心意；与海底贴片、沙漠与日常镜头连接。",
+          "issues": [
+            "ASR 合并了画面分开的称呼；字幕分句不等于声学对齐。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00012",
+          "meaning": "感受中的温暖一面，画面包含日常交往与手部细节。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00013",
+          "meaning": "容纳情感中的脆弱一面；画面随后出现雨窗。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00014",
+          "meaning": "多种感受在心中共存，不能按机器错词解释成具体纸张动作。",
+          "issues": [
+            "严重错词，参照 t00014。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00015",
+          "meaning": "把这些心意寄向远方，以反复句形成段落收束。",
+          "issues": [
+            "ASR 丢词、合并句；参照 t00015–t00016；后续无字幕镜群不能据此认定无人声。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000060000",
+          "observation": "夜路、场馆与舞台、车窗玩偶、林地手作、马车、池塘和建筑。",
+          "directorGroupId": "D14",
+          "inference": "把歌词中的信件主题连到共同经历；活动具体名称不作外推。"
+        },
+        {
+          "frameId": "f000065000",
+          "observation": "海底角色贴片、沙漠车辆、峡谷、餐桌玩偶及公路。",
+          "directorGroupId": "D15",
+          "inference": "把递送与旅行的想象扩大到不同地貌。"
+        },
+        {
+          "frameId": "f000073000",
+          "observation": "骑行、海边晚霞、食物、热气球、成对戴戒指的手、人与猫、花及雨窗。",
+          "directorGroupId": "D16",
+          "inference": "从地理跨度转向情绪跨度；戒指不用于推断人物身份关系。"
+        },
+        {
+          "frameId": "f000077000",
+          "observation": "机场飞机、蛋糕饮品、列车窗景、水边街巷与石岸扫动。",
+          "directorGroupId": "D17",
+          "inference": "用交通和视线移动连接寄送意象。"
+        },
+        {
+          "frameId": "f000084000",
+          "observation": "玩偶与粉色湖山、树冠、骑行、水果、晚霞行人、机翼、海面、灯塔角色、草原与竹筒流水。",
+          "directorGroupId": "D18",
+          "inference": "歌词暂退后仍持续更换事件，提供视觉呼吸。"
+        },
+        {
+          "frameId": "f000089000",
+          "observation": "玩偶与粉色湖山、树冠、骑行、水果、晚霞行人、机翼、海面、灯塔角色、草原与竹筒流水。",
+          "directorGroupId": "D18",
+          "inference": "歌词暂退后仍持续更换事件，提供视觉呼吸。"
+        }
+      ]
+    },
+    {
+      "windowId": "style-w0004",
+      "summary": "桌面细节向移动与入水动作切换，先看滑道前的玩偶、再看水花、最后看俯拍漂浮结果，构成可复用的动作链。之后花朵、车行与群体镜头逐渐扩展尺度。",
+      "unitReviews": [
+        {
+          "segmentId": "s00016",
+          "meaning": "承认好时光会流逝，画面返回室内与工作日常。",
+          "issues": [
+            "画面歌词较 ASR 起点晚，参照 t00017；起唱时间待听音。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00017",
+          "meaning": "对上述流逝的内在自觉。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00018",
+          "meaning": "继续认真生活，画面用出行与入水动作承接。",
+          "issues": [
+            "ASR 动词和时态偏差，参照 t00019。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00019",
+          "meaning": "独一性与自我接纳；画面保留轻巧玩乐。",
+          "issues": [
+            "合并了两个字幕句，参照 t00020–t00021。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00020",
+          "meaning": "面向未来的自我期许，以车行与旅行小物支撑。",
+          "issues": [
+            "ASR 与 t00022 措辞不同。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00021",
+          "meaning": "主动生活与减少遗憾，接朋友、毕业和角色合影。",
+          "issues": [
+            "ASR 末尾语法有误，参照 t00023。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000096000",
+          "observation": "窗前挂件、冰饮与角色立牌、键盘、电脑工作台、加班屏幕及手工拼珠。",
+          "directorGroupId": "D19",
+          "inference": "承认时间流逝，并把热爱放回普通生活。"
+        },
+        {
+          "frameId": "f000100000",
+          "observation": "窗前挂件、冰饮与角色立牌、键盘、电脑工作台、加班屏幕及手工拼珠。",
+          "directorGroupId": "D19",
+          "inference": "承认时间流逝，并把热爱放回普通生活。"
+        },
+        {
+          "frameId": "f000104000",
+          "observation": "湖面日光、沙漠车行、两只玩偶从滑道入水，随后转俯拍漂浮状态。",
+          "directorGroupId": "D20",
+          "inference": "连续动作把抽象积极态度转为具体体验。"
+        },
+        {
+          "frameId": "f000106000",
+          "observation": "湖面日光、沙漠车行、两只玩偶从滑道入水，随后转俯拍漂浮状态。",
+          "directorGroupId": "D20",
+          "inference": "连续动作把抽象积极态度转为具体体验。"
+        },
+        {
+          "frameId": "f000114000",
+          "observation": "湖边人的裙摆与玩偶、车内山路、黄色花朵、彩旗装饰及摩天轮前角色立牌。",
+          "directorGroupId": "D22",
+          "inference": "以仍在前行的人和路承接面向未来的内容。"
+        },
+        {
+          "frameId": "f000118000",
+          "observation": "手持双人立牌、角色扮演与车、聚餐、海边小卡、毕业合影及图书馆读书，接角色合影。",
+          "directorGroupId": "D23",
+          "inference": "由一个人的旅行转向朋友与人生节点。"
+        }
+      ]
+    },
+    {
+      "windowId": "style-w0005",
+      "summary": "现实合影与角色群像在相近构图上衔接，手绘符号和浅蓝色底保持轻松质感；浮潜、跷跷板、摸猫和高举玩偶增加主动动作。无需为每句歌词加入解释性屏幕文字。",
+      "unitReviews": [
+        {
+          "segmentId": "s00021",
+          "meaning": "主动生活与减少遗憾，接朋友、毕业和角色合影。",
+          "issues": [
+            "ASR 末尾语法有误，参照 t00023。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00022",
+          "meaning": "言语具有鼓励作用，角色群像成为回应。",
+          "issues": [
+            "严重错词，参照 t00024。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00023",
+          "meaning": "勇气与出发意象，引向真实参与者的镜头。",
+          "issues": [
+            "ASR 错词，参照 t00025。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00024",
+          "meaning": "明确邀请共同前行，拆在两个短字幕中。",
+          "issues": [
+            "画面分出同行补句，OCR 未稳定记录第二短句；不视为完整歌词识别。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00025",
+          "meaning": "承接快乐的声音，画面有浮潜、聚餐与毕业同伴。",
+          "issues": [
+            "ASR 修饰词误识别，参照 t00027。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00026",
+          "meaning": "同时容纳低落情绪；不把每个素材机械解释成悲伤证据。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00027",
+          "meaning": "由不同感受产生表达，周边、展板和自然景物共同承载。",
+          "issues": [
+            "严重错词，参照 t00029。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00028",
+          "meaning": "把心意送向更远空间；烟花与群体举玩偶动作扩大尺度。",
+          "issues": [
+            "ASR 丢失寄送主语与动词，参照 t00030。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00029",
+          "meaning": "向观众索取记忆，画面以落日海边角色卡作承接。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000120000",
+          "observation": "手持双人立牌、角色扮演与车、聚餐、海边小卡、毕业合影及图书馆读书，接角色合影。",
+          "directorGroupId": "D23",
+          "inference": "由一个人的旅行转向朋友与人生节点。"
+        },
+        {
+          "frameId": "f000123000",
+          "observation": "多位角色在浅蓝底合影，逐步扩展构图并加入彩色手绘符号。",
+          "directorGroupId": "D24",
+          "inference": "虚拟角色群像回应现实朋友的合影。"
+        },
+        {
+          "frameId": "f000130000",
+          "observation": "山路、朋友镜前合影、海边卡片、毕业合影、校服与玩偶、建筑内玩偶。",
+          "directorGroupId": "D25",
+          "inference": "把邀请交给真实参与者。"
+        },
+        {
+          "frameId": "f000136000",
+          "observation": "沙滩角色贴片、跷跷板、浮潜、持玩偶的人、朋友聚餐、毕业动作与摸猫。",
+          "directorGroupId": "D26",
+          "inference": "以动作与交往呈现快乐，不靠解释性旁白。"
+        },
+        {
+          "frameId": "f000146000",
+          "observation": "草坡与云、夕阳水面、掠过树影、玩偶与水鸟、双人立牌、角色展板、池水、烟花及高举玩偶的群体。",
+          "directorGroupId": "D27",
+          "inference": "把明暗情绪都纳入同一封回信；个别镜头不逐字图解歌词。"
+        },
+        {
+          "frameId": "f000149000",
+          "observation": "落日海边的透明角色卡、海岸玩偶、白云下的建筑和机场候机大厅。",
+          "directorGroupId": "D28",
+          "inference": "由展示经历转成向观众索取、倾听记忆。"
+        }
+      ]
+    },
+    {
+      "windowId": "style-w0006",
+      "summary": "单幅景观和持物近景过渡到四宫格，信息规模显著增加；容器稳定、内部画面持续变化。长镜和快切共同组成段落，不能把帧差阈值计数当实际镜头数。",
+      "unitReviews": [
+        {
+          "segmentId": "s00029",
+          "meaning": "向观众索取记忆，画面以落日海边角色卡作承接。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00030",
+          "meaning": "邀请分享快乐，云下建筑和候机空间接续。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00031",
+          "meaning": "愿意跨越距离追寻并传递记忆。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00032",
+          "meaning": "把远处经验带给收件人，收藏与玩偶聚拢作视觉回应。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00033",
+          "meaning": "保留陪伴承诺，树冠光束成为停顿点。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00034",
+          "meaning": "第一次短问把旅途邀请交给观众。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00035",
+          "meaning": "完整重复同行邀请，拉行李与拿手机拍摄动作使邀请具体化。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00036",
+          "meaning": "重新拼合片段记忆，四宫格退出后回到可读单幅。",
+          "issues": [
+            "ASR 合并两条字幕，参照 t00038–t00039。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000154000",
+          "observation": "热爱生活字样的小旗与玩偶、白色庭院、收藏柜前猫及众人把玩偶聚在一起。",
+          "directorGroupId": "D29",
+          "inference": "以收藏与聚拢动作将经历变成可以带回的东西。"
+        },
+        {
+          "frameId": "f000158000",
+          "observation": "热爱生活字样的小旗与玩偶、白色庭院、收藏柜前猫及众人把玩偶聚在一起。",
+          "directorGroupId": "D29",
+          "inference": "以收藏与聚拢动作将经历变成可以带回的东西。"
+        },
+        {
+          "frameId": "f000163000",
+          "observation": "树冠光束、芦苇、拉行李背影、海边举手机拍摄玩偶。",
+          "directorGroupId": "D30",
+          "inference": "让观看者从看风景转到拿起相机、走进旅途。"
+        },
+        {
+          "frameId": "f000165000",
+          "observation": "树冠光束、芦苇、拉行李背影、海边举手机拍摄玩偶。",
+          "directorGroupId": "D30",
+          "inference": "让观看者从看风景转到拿起相机、走进旅途。"
+        },
+        {
+          "frameId": "f000170000",
+          "observation": "连续四宫格汇集草原、山水、交通、雨天、动物、周边与日常，多个格子分别变化。",
+          "directorGroupId": "D31",
+          "inference": "把分散的个人经历同时呈现，形成群体记忆的规模。"
+        },
+        {
+          "frameId": "f000177000",
+          "observation": "连续四宫格汇集草原、山水、交通、雨天、动物、周边与日常，多个格子分别变化。",
+          "directorGroupId": "D31",
+          "inference": "把分散的个人经历同时呈现，形成群体记忆的规模。"
+        }
+      ]
+    },
+    {
+      "windowId": "style-w0007",
+      "summary": "由四宫格回到单幅，再由相同签收卡串联不同场景；相近手部动作、纸页版式和手写字成为连接点。十六宫格让个体回应累积成整体，同时牺牲单格文字可读性。",
+      "unitReviews": [
+        {
+          "segmentId": "s00036",
+          "meaning": "重新拼合片段记忆，四宫格退出后回到可读单幅。",
+          "issues": [
+            "ASR 合并两条字幕，参照 t00038–t00039。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00037",
+          "meaning": "邀请观看并将对方包括在内，角色卡和树冠意象回返。",
+          "issues": [
+            "ASR 将两个可见短句混读；参照 t00040 与 f000188000 画面文字。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00038",
+          "meaning": "核心信件意象再次出现，这次画面落到实际包裹与签收。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00039",
+          "meaning": "同一主题被签收动作重新解释，众多书写者开始并置。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00040",
+          "meaning": "向不同收件人致意，签收卡上的个人化称呼成为主要信息。",
+          "issues": [
+            "机器在称呼后添加词；不据此另设新台词。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00041",
+          "meaning": "温暖情绪主题复现，由不同桌面签收场景承担。",
+          "issues": [],
+          "reviewStatus": "semantic_function_reviewed_not_audio_aligned"
+        },
+        {
+          "segmentId": "s00042",
+          "meaning": "明暗情绪主题复现，与多种生活场景同在。",
+          "issues": [
+            "ASR 句法和实词错误，参照 t00047。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00043",
+          "meaning": "让不同感受共同留下痕迹，画面扩展为十六宫格签收。",
+          "issues": [
+            "严重错词，参照 t00048。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000181000",
+          "observation": "红色夕阳与角色透明卡、窗前挂件、室内向外的窗景。",
+          "directorGroupId": "D32",
+          "inference": "从密集拼贴收回单幅景物，让具体记忆重新可读。"
+        },
+        {
+          "frameId": "f000186000",
+          "observation": "高山湖泊前角色透明卡、夕阳中的双人剪影卡、树冠逆光，末端短暂暗场。",
+          "directorGroupId": "D33",
+          "inference": "以同一图形容器连接不同风景，再回收开头树冠意象。"
+        },
+        {
+          "frameId": "f000191000",
+          "observation": "桌面上的包裹、小物、剪刀与角色签收卡，出现开盒和持笔准备动作。",
+          "directorGroupId": "D34",
+          "inference": "把信件隐喻落实为可完成的收件动作。"
+        },
+        {
+          "frameId": "f000194000",
+          "observation": "四宫格中多人在同款签收卡上落笔，随后回到单幅书写。",
+          "directorGroupId": "D35",
+          "inference": "同一版式成为不同人的共同入口。"
+        },
+        {
+          "frameId": "f000199000",
+          "observation": "连续特写显示签收人用愿望、爱好、日常状态等方式自称为博士。",
+          "directorGroupId": "D36",
+          "inference": "把泛化的粉丝群体拆回具体的人。"
+        },
+        {
+          "frameId": "f000209000",
+          "observation": "签收动作扩展为十六宫格，多人书写与手持纸页同时呈现。",
+          "directorGroupId": "D38",
+          "inference": "以数量累积呈现回应规模，回收此前四宫格语法。"
+        }
+      ]
+    },
+    {
+      "windowId": "style-w0008",
+      "summary": "实拍签收动作接角色在画面前方书写的视觉动作，构成双向回信。大远景、白闪、倾斜画面后收为可读信纸和低对比浪花；片尾署名落在横线排版中。不能从成片确证 Live2D、三维制作软件或合成工程。",
+      "unitReviews": [
+        {
+          "segmentId": "s00043",
+          "meaning": "让不同感受共同留下痕迹，画面扩展为十六宫格签收。",
+          "issues": [
+            "严重错词，参照 t00048。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00044",
+          "meaning": "寄往各处的主题复现，签收拼贴转回角色世界。",
+          "issues": [
+            "严重错词，参照 t00049–t00050。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00045",
+          "meaning": "此区间屏幕仍是上一段远方主题的延长字幕，角色隔着笔迹回应观众。",
+          "issues": [
+            "ASR 识别成道歉，缺乏字幕支持；排除该叙事解释，需听音校准。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00046",
+          "meaning": "角色在前景笔迹后看向观众；此机器独立短句不作为新文案。",
+          "issues": [
+            "ASR 与持续字幕 t00050 不符，不能当作新歌词。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00047",
+          "meaning": "延长主题下的角色书写、微笑及拉远。",
+          "issues": [
+            "ASR 识别成道歉，与持续字幕不符；声学内容尚未核实。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        },
+        {
+          "segmentId": "s00048",
+          "meaning": "最后角色倾斜构图至致谢页之前的过渡，不建立道歉情节。",
+          "issues": [
+            "无对应道歉字幕；须听音判定残留人声或幻觉，不能宣称此处歌词已确认。"
+          ],
+          "reviewStatus": "reviewed_with_recognition_limits"
+        }
+      ],
+      "visualFindings": [
+        {
+          "frameId": "f000211000",
+          "observation": "签收动作扩展为十六宫格，多人书写与手持纸页同时呈现。",
+          "directorGroupId": "D38",
+          "inference": "以数量累积呈现回应规模，回收此前四宫格语法。"
+        },
+        {
+          "frameId": "f000217000",
+          "observation": "角色隔着前景青色笔迹看向镜头、书写并微笑，画面逐渐拉远到同伴与车辆。",
+          "directorGroupId": "D40",
+          "inference": "把观众真实落笔与角色的回望、书写组成双向回应。"
+        },
+        {
+          "frameId": "f000220000",
+          "observation": "角色隔着前景青色笔迹看向镜头、书写并微笑，画面逐渐拉远到同伴与车辆。",
+          "directorGroupId": "D40",
+          "inference": "把观众真实落笔与角色的回望、书写组成双向回应。"
+        },
+        {
+          "frameId": "f000225000",
+          "observation": "亮场、镜面世界中的车辆与同伴漂浮，接角色在蓝天下的倾斜构图。",
+          "directorGroupId": "D41",
+          "inference": "以失重般的视觉释放收束旅行想象；具体动画技术无法从成片确证。"
+        },
+        {
+          "frameId": "f000230000",
+          "observation": "满幅横线信纸叠加浅海浪，手写中文感谢观众分享夏天，并约定继续交换信件，带角色简笔画。",
+          "directorGroupId": "D42",
+          "inference": "把此前歌词、照片、旅行和签收统一成一封明确的回信。"
+        },
+        {
+          "frameId": "f000236000",
+          "observation": "浅海浪与信纸底，列出曲名、词曲编曲、演唱、混音及制作人。",
+          "directorGroupId": "D43",
+          "inference": "交代歌曲来源并保留尾声。"
+        },
+        {
+          "frameId": "f000239000",
+          "observation": "海浪上的明日方舟标识，亮场后转黑，末段无可见新内容。",
+          "directorGroupId": "D44",
+          "inference": "以轻的视觉收尾结束回信。"
+        }
+      ]
+    },
+    {
+      "windowId": "style-w0009",
+      "summary": "黑尾为结束留白；不为其配置新的剪辑事件。",
+      "unitReviews": [],
+      "visualFindings": [
+        {
+          "frameId": "f000240000",
+          "observation": "海浪上的明日方舟标识，亮场后转黑，末段无可见新内容。",
+          "directorGroupId": "D44",
+          "inference": "以轻的视觉收尾结束回信。"
+        },
+        {
+          "frameId": "f000241000",
+          "observation": "海浪上的明日方舟标识，亮场后转黑，末段无可见新内容。",
+          "directorGroupId": "D44",
+          "inference": "以轻的视觉收尾结束回信。"
+        }
+      ]
+    }
+  ],
+  "contentAnalysis": {
+    "title": "《明日方舟》EP - 酸橙色信笺：夏日影像与双向回信",
+    "thesis": "由角色看照片出发，把现实夏日、角色周边和观众的人生片段汇为群体记忆，再以签收动作和角色书写回望构成双向回信；这一叙事结构为基于成片的导演解读。",
+    "knowledgePoints": [
+      {
+        "id": "K1",
+        "title": "照片与信件作为记忆容器",
+        "explanation": "开头照片特写为后续多地点夏日镜群提供统一容器，歌词中的信件意象在后段包裹签收中变成可见动作。",
+        "sourceSegmentIds": [
+          "s00009",
+          "s00038",
+          "s00039"
+        ]
+      },
+      {
+        "id": "K2",
+        "title": "普通生活也具有情感价值",
+        "explanation": "花园、桌面、手工、出行和生活事件与宏大景观并列；内容接受时光流逝和情绪的明暗。",
+        "sourceSegmentIds": [
+          "s00004",
+          "s00007",
+          "s00016",
+          "s00018"
+        ]
+      },
+      {
+        "id": "K3",
+        "title": "从个人观景到群体参与",
+        "explanation": "朋友、毕业、聚餐、真实书写者逐步增加，四宫格和十六宫格将个体经历扩成群体回应。",
+        "sourceSegmentIds": [
+          "s00021",
+          "s00024",
+          "s00035",
+          "s00039"
+        ]
+      },
+      {
+        "id": "K4",
+        "title": "最终让送信者回应观众",
+        "explanation": "真实签收的落笔动作与后段角色在前景笔迹后书写/微笑并置，信纸致谢将关系明确为继续交换记忆。",
+        "sourceSegmentIds": [
+          "s00038",
+          "s00040",
+          "s00044"
+        ]
+      }
+    ]
+  },
+  "styleAnalysis": {
+    "rules": [
+      {
+        "id": "S1",
+        "dimension": "色彩与物件",
+        "observation": "橙片挂饰、红车和暖色人物与蓝天海面反复对照；片尾签收纸页以蓝黄复现明亮色系。",
+        "reuseInstruction": "复用关系时以蓝绿环境为底、暖色人物或物件作锚；颜色值需从自己的素材定，不能把建议色号当原片测量。",
+        "evidenceWindowIds": [
+          "style-w0001",
+          "style-w0007",
+          "style-w0008"
+        ],
+        "evidenceFrameIds": [
+          "f000005000",
+          "f000010000",
+          "f000194000"
+        ]
+      },
+      {
+        "id": "S2",
+        "dimension": "景别与尺度",
+        "observation": "物件特写、人物/周边同框与开阔景观持续交替。",
+        "reuseInstruction": "每一组旅行素材同时选细节、同行物和环境远景，避免只堆同尺度风景。",
+        "evidenceWindowIds": [
+          "style-w0002",
+          "style-w0003"
+        ],
+        "evidenceFrameIds": [
+          "f000036000",
+          "f000065000",
+          "f000084000"
+        ]
+      },
+      {
+        "id": "S3",
+        "dimension": "角色存在方式",
+        "observation": "角色动画、实拍周边和真实参与者均出现，群像与现实合影互相回应。",
+        "reuseInstruction": "分开组织动画角色、实体周边与实拍人物素材；以对应视线或构图连接，别把静态素材宣称为口型或Live2D。",
+        "evidenceWindowIds": [
+          "style-w0002",
+          "style-w0005"
+        ],
+        "evidenceFrameIds": [
+          "f000058000",
+          "f000120000",
+          "f000123000"
+        ]
+      },
+      {
+        "id": "S4",
+        "dimension": "剪辑与动作",
+        "observation": "先出现滑道前玩偶，接入水水花，再给漂浮结果；现实落笔后来与角色书写相接。",
+        "reuseInstruction": "优先保留动作准备、发生、结果，按实际动作长度裁剪；以相同动作或图形转接不同场景。",
+        "evidenceWindowIds": [
+          "style-w0004",
+          "style-w0007",
+          "style-w0008"
+        ],
+        "evidenceFrameIds": [
+          "f000104000",
+          "f000106000",
+          "f000194000",
+          "f000220000"
+        ]
+      },
+      {
+        "id": "S5",
+        "dimension": "信息规模",
+        "observation": "约166.92–178.52秒四宫格汇流，约208.40–213.80秒十六宫格签收。",
+        "reuseInstruction": "四格用于同时汇集经历，十六格用于累计参与规模；关键可读手写文案须放在单幅近景，勿要求观众逐格阅读。",
+        "evidenceWindowIds": [
+          "style-w0006",
+          "style-w0008"
+        ],
+        "evidenceFrameIds": [
+          "f000170000",
+          "f000177000",
+          "f000211000"
+        ]
+      },
+      {
+        "id": "S6",
+        "dimension": "字幕与版式",
+        "observation": "英文歌词居下部黑边；后段签收文字属于画面道具，末尾信纸致谢变为满幅可读文案。",
+        "reuseInstruction": "区分歌词、道具文字和片尾信息三种阅读层级；按最终字体实测阅读时长与边距。",
+        "evidenceWindowIds": [
+          "style-w0002",
+          "style-w0007",
+          "style-w0008"
+        ],
+        "evidenceFrameIds": [
+          "f000043000",
+          "f000199000",
+          "f000230000",
+          "f000236000"
+        ]
+      },
+      {
+        "id": "S7",
+        "dimension": "结构与回收",
+        "observation": "开头照片、反复树冠与海天，最终汇到签收、角色回望和信纸致谢。",
+        "reuseInstruction": "开场预埋具体物件，结尾让它被使用并改变意义；让中途一处自然景物回返作情绪停顿。",
+        "evidenceWindowIds": [
+          "style-w0001",
+          "style-w0007",
+          "style-w0008"
+        ],
+        "evidenceFrameIds": [
+          "f000010000",
+          "f000188000",
+          "f000230000"
+        ]
+      },
+      {
+        "id": "S8",
+        "dimension": "节奏与可测量边界",
+        "observation": "许多短景片段与角色锚点、暂退字幕的旅行镜群、片尾文字停留共同存在。",
+        "reuseInstruction": "先按歌词语义、动作链和阅读需求分段，再听音对齐音乐；不要用自动帧差候选、RMS或导演解读伪造BPM和精确踩点。",
+        "evidenceWindowIds": [
+          "style-w0003",
+          "style-w0006",
+          "style-w0008"
+        ],
+        "evidenceFrameIds": [
+          "f000084000",
+          "f000170000",
+          "f000230000"
+        ]
+      }
+    ]
+  },
+  "adaptationNotes": [
+    "本任务按用户要求将参考视频导演案存入根docs/analysis，不归入数学教育系列，不创建新一期制作任务。",
+    "报告契约仍为1.0；knowledgePoints在本音乐影像案例中表示内容主题，不表示数学知识。",
+    "未配置独立 OpenAI API 凭据，使用本会话助手实际审阅后的 assisted 导入路径。"
+  ]
+}

@@ -8,6 +8,7 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.analyzer`。
 
 ## 实战设计
 
+- [《酸橙色信笺》导演案](../docs/analysis/BV1nB3u6tEHD/director.md)：英文歌曲、实拍与角色混合影像的44个镜群，包含全片证据、识别纠错、辅助审查包和复现入口；尚未完成逐句听音或人工全片验收。
 - [BV1AV411V7SJ 全量文案检查与全片审查设计](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/BV1AV411V7SJ-analysis-design.md)：包含本地音视频框架调研、全文转写与逐句检查、全片视听审查、制作器输出及覆盖验收。
 - [两部视频实跑结果](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/README.md)：已完成内容分析、风格提炼与导演稿；说明实际范围及未完成的音频校准。
 - [风格复分析 v2](../series/math-education/inversion-count/episodes/01-sliding-puzzle/analysis/style-reanalysis-v2.md)：纠正 v1 对叙事、图形推演、角色和节奏的提炼；后续 v2 已据此重写并成片，实际状态见本期制作记录。
@@ -23,6 +24,8 @@ java -jar $analyzerJar prepare series/math-education/inversion-count/episodes/01
 ```
 
 `prepare` 顺序运行 ffprobe、全文 ASR、全帧解码/变化测量、可选字幕 OCR、完整音轨 RMS，并生成覆盖全时长的 30 秒窗口。`--reuse` 只使用已有产物，检查源文件指纹、模型名称、OCR 开关、取帧间隔与解码覆盖，不重新推理；模型 worker 正常执行时也按输入及参数缓存。每个窗口包含全部相交 ASR 段、所属选帧、字幕观测和 RMS bins。
+
+案例配置可设置 `asrLanguage`（默认 `zh`，英文歌曲使用 `en`）；语言会传给 Whisper 并参与缓存校验，改变语言后需重新转写。直接运行 worker 时使用 `transcribe --language en`。歌曲的延长音、伴奏和多语混唱仍可能造成识别或对齐错误，需要结合画面歌词审查。
 
 产物主要为 `workspace.json`、`content/`、`style/`、`packets/`。视频不复制；原始转写和选帧保存在工作目录。帧间差异大只称为转场候选，不等价于完整镜头检测；5 秒画面与变化候选用于语义输入。OCR 有 200ms 冷却和 1500ms 刷新上限，不能宣称全部字幕都已识别。
 
