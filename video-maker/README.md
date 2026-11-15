@@ -4,6 +4,8 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.maker`。
 
 本模块负责将数学选题制作成科普视频。已实现从已验证分析报告到导演稿，并增加 Java 数学动画、Edge TTS 配音、实测音频排程、字幕与完整 MP4 导出。新制作入口与动态音色/人物配置详见 [制作流程](docs/production.md)。
 
+旅行等无对白影像新增[参考图视频入口](docs/reference-video-production.md)：调用 FastH3 Omni Ref2VA、保留可恢复任务与失败材料、裁剪 2–10 秒镜头并装配画面。当前装配产物是待声音合成与语义验收的中间文件；远端生成状态见具体制作记录。
+
 具体创作材料按[系列、课题和期号](../series/README.md)管理，本模块保存可复用的制作能力。任何新文案或改稿先读取外部私有角色仓库的完整人格，再按[角色与文案审核规约](../docs/character-workflow.md)检查人格一致性及信息披露；审核状态必须对应当前文案和人格版本。
 
 逆序数课题已制作三期完整视频：第一期 [v3 制作记录](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v3.md)（10:55）、第二期 [矩形棋盘证明](../series/math-education/inversion-count/episodes/02-rectangle-proof/docs/production-v1.md)（18:29.3）、第三期 [Wilson 定理证明](../series/math-education/inversion-count/episodes/03-wilson-theorem/docs/production-v1.md)（32:24）。配音为晓晓，人物为可替换的图片占位。`produce` 生成成片，`preview` 生成技术预览；历史 `render` 命令仍仅导出导演稿文档。未来制作沿用[默认约定](../docs/video-production-defaults.md)。

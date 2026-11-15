@@ -7,7 +7,13 @@ public final class DirectorMain {
 
     public static void main(String[] args) {
         try {
-            if ((args.length == 4 || args.length == 5) && args[0].equals("produce")) {
+            if ((args.length == 5 || args.length == 6) && args[0].equals("produce-reference")) {
+                ReferenceVideoProduction.produce(Path.of(args[1]), Path.of(args[2]), Path.of(args[3]),
+                        java.net.URI.create(args[4]), args.length == 6 ? args[5] : VideoProduction.executable("MAKER_PYTHON", "python"));
+            } else if (args.length == 2 && args[0].equals("validate-reference-production")) {
+                ReferenceVideoProduction.load(Path.of(args[1]));
+                System.out.println("Reference-video production plan is valid");
+            } else if ((args.length == 4 || args.length == 5) && args[0].equals("produce")) {
                 VideoProduction.produce(Path.of(args[1]), Path.of(args[2]), Path.of(args[3]),
                         args.length == 5 ? args[4] : VideoProduction.executable("MAKER_PYTHON", "python"));
             } else if (args.length == 4 && args[0].equals("preview")) {
@@ -24,7 +30,8 @@ public final class DirectorMain {
             } else {
                 throw new IllegalArgumentException("Usage: prepare ANALYSIS.json OUT_DIR | generate ANALYSIS.json OUT_DIR | "
                         + "render ANALYSIS.json DIRECTOR.json OUT_DIR | validate-production PLAN.json | "
-                        + "preview PLAN.json OUT_DIR PRESENTER | produce PLAN.json OUT_DIR PRESENTER [PYTHON]");
+                        + "preview PLAN.json OUT_DIR PRESENTER | produce PLAN.json OUT_DIR PRESENTER [PYTHON] | "
+                        + "validate-reference-production PLAN.json | produce-reference EPISODE.json PLAN.json OUT_DIR API_BASE [PYTHON]");
             }
         } catch (Exception exception) {
             System.err.println("Video maker failed: " + exception.getMessage());
