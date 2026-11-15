@@ -3,6 +3,7 @@
 创作材料按“系列 → 课题 → 多期”存放。`video-maker` 与 `video-analyzer` 保存可复用的程序和模块文档；具体视频的选题、分析、导演稿与制作计划归入本目录，不按处理模块分散。
 
 - [数学教育系列](math-education/README.md)：用可操作的数学图形解释问题、展示推导与证明。
+- [白绮系列](vivhite/README.md)：白绮（Vivhite）的原创角色影像；当前子项目为[秋日旅程](vivhite/autumn-journey/README.md)。
 
 ```text
 series/
