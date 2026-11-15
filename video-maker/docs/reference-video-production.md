@@ -2,7 +2,7 @@
 
 `produce-reference` 为旅行等影像提供独立的参考图视频制作路径：Java 校验计划和实际参考图，运行人格／披露绑定检查，再调用 FastH3 Omni Ref2VA，保存异步任务、下载源视频、按导演时长裁剪并统一为 1080p30。数学动画与 TTS 路径继续使用原命令。
 
-本入口当前输出 **无声画面装配中间文件** `picture-assembly.mp4`。它保留模型原始音视频作为源素材，画面装配阶段不接入未经审核的生成音轨。最终环境声、器乐、标题合成及全片语义验收是后续步骤；不得将此中间文件标为正式成片。
+本 Java 入口输出 **无声画面装配中间文件** `picture-assembly.mp4`。它保留模型原始音视频作为源素材，画面装配阶段不接入未经审核的生成音轨。独立 `reference_finisher.py` 负责原创非语言音轨、镜内片名／署名和正式 MP4 合成；它另行检查实际最终计划和全部源文件的审核绑定。不得将无声中间文件标为正式成片。
 
 ## 计划与运行
 
@@ -47,3 +47,24 @@ FastH3 的请求使用 `task=ref2va`、有序的 `image_reference: [{image_url: 
 - 成功装配也只记为 `picture-assembly-completed-audio-and-semantic-review-pending`；后续必须检查所有实际画面、音轨与标题，并完整解码最终影片。
 
 新增测试用本地 HTTP stub 验证 typed reference 实际传输和服务失败保留，并检查单镜时长、时间轴连续性与参考路径越界。它们验证客户端，不证明远端 GPU 已成功渲染。
+
+## 原创音轨与最后合成
+
+可选依赖见 `tools/requirements-reference.txt`（NumPy），不影响 Edge TTS 和 Java 数学渲染依赖。NumPy 使用 BSD-3-Clause，版本沿用本机已实跑环境；来源与授权见根目录第三方声明。
+
+```powershell
+uv pip install --python video-maker/.venv/Scripts/python.exe -r video-maker/tools/requirements-reference.txt
+$sourcePlan = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/production-plan-v3.json'
+$finalPlan = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/final-assembly-plan-v3.json'
+video-maker/.venv/Scripts/python.exe video-maker/tools/reference_finisher.py soundtrack --plan $sourcePlan --output $output
+# 等全部真实源片和 picture-assembly.mp4 到齐：
+video-maker/.venv/Scripts/python.exe video-maker/tools/reference_finisher.py prepare --source-plan $sourcePlan --directory $output --destination $finalPlan
+# 实际审阅音轨、全部镜头、标题、署名与组合，绑定 finalPlan 及其中 files 的全部实际文件，再导出收据。
+video-maker/.venv/Scripts/python.exe video-maker/tools/reference_finisher.py finish --episode $episode --plan $finalPlan --directory $output
+```
+
+音轨按真实时间轴生成 48kHz 立体声 PCM：96 BPM、D 大调器乐和按镜头分配的合成环境声。没有采样音乐、录音人声或 TTS；不使用模型原生音轨。收据保存具体音符事件、环境声来源、随机种子、样本数、代码和波形哈希。环境声为程序合成，不能称作现场实录。
+
+`prepare` 只准备待审核的最终实际计划。`finish` 在编码前核对所有文件哈希、限制文件留在运行目录、执行人格／披露绑定检查，然后添加标题和镜内淡出，完整解码并核对 1080p30、总帧数和音轨时长；成功状态只证明编码技术检查，不自动填写语义或人工验收结论。ASS 中的 `Dialogue` 是格式的事件字段，实际内容仅为片名、副题与制作署名；无对白字幕。
+
+`review_reference_clips.py` 可逐帧连续解码并测量运动、突变和 YuNet 面孔候选，另存每半秒及末帧的检查拼图。模型来自 [OpenCV Zoo YuNet](https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet)，权重放仓库外并记录 SHA-256。面孔检测可能漏检，也会识别周边的绘制脸，不能自动宣布“无人脸”或语义通过。实际逐镜审阅需读取这些时间序列与候选，并按需补帧；检查拼图按本任务要求保存在内容项目并提交 Git。

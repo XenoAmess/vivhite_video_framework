@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen",
+  "asset": "S05-real-world-v2",
+  "prompt": "Use case: precise-object-edit. Image 1 is the edit target, an ordinary natural bicycle travel photograph. Image 2 is the authoritative front-facing Vivhite character sticker design. Change ONLY the small printed sticker on the bicycle frame tube: make it match the FRONT-FACING sticker from Image 2, with drawn magenta eyes and round gold glasses visible on its printed cartoon face. Keep its size small, correct perspective and flat attachment to the tube. Preserve exactly the bicycle, cropped adult female lower legs, opaque white legwear, purple boots, skirt edge, ordinary path, trees, daylight and camera angle in Image 1. No live human head or face, no added person, no words or extra objects. Do not change the realistic world or add decorative flowers.",
+  "referenceImages": [
+    "assets/generated/production-v3-realism-001/scenes/S05-v1.png",
+    "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png"
+  ],
+  "transparentBackground": false,
+  "destination": "assets/generated/production-v3-realism-001/scenes/S05-v2.png"
+}

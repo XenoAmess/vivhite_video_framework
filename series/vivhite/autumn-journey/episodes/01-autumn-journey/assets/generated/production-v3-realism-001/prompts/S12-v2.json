@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen",
+  "asset": "S12-real-world-v2",
+  "prompt": "Use case: precise-object-edit. Image 1 is the edit target. Image 2 is the authoritative front-facing character sticker design. Preserve the entire realistic location photograph, hands, female clothing, lighting, physical objects, camera framing and scale from Image 1. Change ONLY the small printed cartoon sticker on the boat gunwale or paper cup: replace its rear-view character print with the exact FRONT-FACING design from Image 2, with visible drawn magenta eyes and thin round gold glasses. The print stays small and flat on that existing surface with correct perspective. Do not turn or add any live person; all real human heads and faces remain entirely outside the frame and reflections. Keep the natural ordinary setting and restrained photographic colors unchanged. Add no writing or extra objects.",
+  "referenceImages": [
+    "assets/generated/production-v3-realism-001/scenes/S12-v1.png",
+    "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png"
+  ],
+  "transparentBackground": false,
+  "destination": "assets/generated/production-v3-realism-001/scenes/S12-v2.png"
+}

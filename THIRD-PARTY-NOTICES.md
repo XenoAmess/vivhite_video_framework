@@ -16,6 +16,9 @@
 | RapidOCR / ONNX Runtime | 3.10.0 / 1.31.0，字幕 ROI OCR | [RapidOCR](https://github.com/RapidAI/RapidOCR)，Apache-2.0；[ONNX Runtime](https://github.com/microsoft/onnxruntime)，MIT |
 | RapidOCR 内置 OCR 权重 | 本次包内 PP-OCRv6 det/rec 与 ch_ppocr_mobile_v2.0 cls 的 ONNX 模型 | 来自 RapidOCR 包及其 PaddleOCR 模型来源；随包元数据/模型授权保留，不重新分发 |
 | OpenCV / NumPy / Pillow | 5.0.0.93 / 2.5.4 / 13.0.0，逐帧差异、数组与联系表 | [OpenCV](https://github.com/opencv/opencv)，Apache-2.0；[NumPy](https://github.com/numpy/numpy)，BSD-3-Clause；[Pillow](https://github.com/python-pillow/Pillow)，MIT-CMU |
+| YuNet 2023mar | 参考图视频全帧面孔候选，不自动作语义结论；模型缓存不入库 | [OpenCV Zoo](https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet)，该模型目录 MIT；SHA-256 `8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4` |
+
+参考图旅行路径的可选 NumPy 依赖用于原创器乐／环境声的数值合成；不复制其他歌曲或人声录音。标题使用系统 Microsoft YaHei，通过 FFmpeg/libass 渲染，不分发字体。FastH3 服务由用户提供；本项目不分发其权重。
 
 Python 完整实跑版本见 `video-analyzer/tools/requirements-lock.txt`；其中传递依赖的许可证以各安装包元数据为准。运行中模型会由上游缓存下载，本次未把模型文件写入 Git。默认模型别名不保证未来上游修订不变；要求位级复现时，应将 `asrModel` 改为固定的本地模型快照路径并保留其指纹。
 
