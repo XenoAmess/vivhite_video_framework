@@ -1,0 +1,45 @@
+{
+  "id": "S07",
+  "sourceSha256": "d4ee7c8af048f4285d5c1e6413c79d3f2e87f08c273899792335e95d7e4fe99d",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-16T14:38:10.687658+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 96,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S07-d4ee7c8af0-all-frames-01.png",
+      "sha256": "74f109abfdc9dad7e63df48b51841bfa5676ef3fb6b4131432fcabf2d49ac675",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S07-d4ee7c8af0-all-frames-02.png",
+      "sha256": "986095a0ec2fc303ee1d72c2a5d1dfa1c19140672ef19a2711e024febde1945f",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S07-d4ee7c8af0-all-frames-03.png",
+      "sha256": "a711694dcb706b52f67c8fae0108ed9086c57a207f78aa056864ba2b99bfb1f3",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S07-d4ee7c8af0-all-frames-04.png",
+      "sha256": "57c19c7b6eb577059d352d935a9dca9a6e50250adc3953370e7d4ee6c2bf41e8",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S07-d4ee7c8af0-face-candidates.png",
+    "sha256": "5ba7f78b1015db42efebeac47346730869a5a719e44ca20cb18c526a1a1d28ce",
+    "items": 16
+  },
+  "observation": "Actually viewed all 120 full frames, temporal sheet, all 16 face-candidate crops, both native endpoints and the complete tracked original-pixel printed-face sheet. Exactly one cropped female body in matching feminine white/violet/gold dress, white legwear and violet boots; no head, human face, unrelated body or reflected person appears. Leaves/rocks and one printed pouch image produce detector candidates. However the printed face narrows and closes its eyes around frames 65-76, roughly three seconds into the source, then reopens, while the fabric stays in view. This is unacceptable animated print behavior. Reject this original for film and 2K; preserve it and create a distinct original-texture correction before a new all-frame review.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "failed"
+}
