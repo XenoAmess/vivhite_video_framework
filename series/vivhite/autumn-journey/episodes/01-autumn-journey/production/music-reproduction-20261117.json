@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "version": "202s",
+      "sha256": "5101e5ac754abf98fc3f96fab598b062a2465d9bf4bfd182dbb1cfb483241d06",
+      "sameAsExisting": true,
+      "sampleRate": 48000,
+      "samplesPerChannel": 9696000,
+      "channels": 2,
+      "sampleWidth": 2
+    },
+    {
+      "version": "196s",
+      "sha256": "6fbbfd56d51ad56bcdd63be12287ffced445f64f2d810441ef2b650fa4dff9d0",
+      "sameAsExisting": true,
+      "sampleRate": 48000,
+      "samplesPerChannel": 9408000,
+      "channels": 2,
+      "sampleWidth": 2
+    }
+  ],
+  "v4UsesSame202sMaster": true,
+  "schemaVersion": "vivhite-soundtrack-reproduction-check-1",
+  "method": "actual fresh synthesis and byte-hash comparison",
+  "recipe": "autumn-instrumental-1",
+  "seed": 20261116,
+  "python": "3.12.6",
+  "numpy": "2.5.4",
+  "ffmpeg": "ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+  "synthesisFunctionAstMatchesHistoricalWorkers": true,
+  "historicalWorkers": [
+    {
+      "version": "202s",
+      "commit": "a36b93b8a6b8d5f36a565277fad6ccc9489bb957",
+      "sha256": "bb6bbb98df43e06eca940e0319bf04821ecbd9e1bd4d12a3e40ab8beff3152f7"
+    },
+    {
+      "version": "196s",
+      "commit": "bb9c06e223e72fc0de39a946798dc62a9b3255d7",
+      "sha256": "50af06c739c94963d34202e630c574844374b2ae7611a8b2b62706ea0544e1cb"
+    }
+  ],
+  "audioSources": "oscillators and procedural noise only",
+  "nativeModelAudioInMix": false,
+  "independentHumanListening": false
+}

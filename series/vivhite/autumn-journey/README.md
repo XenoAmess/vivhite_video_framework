@@ -12,6 +12,7 @@
 - [第一期清单](episodes/01-autumn-journey/episode.json)。
 - [当前导演案 v5](episodes/01-autumn-journey/director-v5.md)与[历史导演案 v3](episodes/01-autumn-journey/director.md)。
 - [周边与图像生成说明](episodes/01-autumn-journey/image-briefs.md)。
+- [背景音乐实际生成方法与复现](../../../docs/autumn-journey-music-generation.md)。
 - [参考导演案](../../../docs/analysis/BV1nB3u6tEHD/director.md)。
 
 周边母版、场景参考图和全部保留版本已保存到项目并提交 Git；[生成计划](episodes/01-autumn-journey/production-plan-v4.json)用于本地 Ref2VA 视频渲染。[美术修订记录](episodes/01-autumn-journey/production/realism-revision-001.md)解释真实世界的调整。成片为 202 秒／48 镜／1080p30，具体选片、声音、失败版本与审阅范围见[制作记录](episodes/01-autumn-journey/production/production-v3.md)及[最终合成计划](episodes/01-autumn-journey/final-assembly-plan-v4.json)。周边是生成图像中的拟制设计，未生产实物。用户提供的 `character.zip` 共 11 张图已逐张查看；[素材清单](episodes/01-autumn-journey/reference-assets.json)记录版本与用途，原图留在公开仓库外。
