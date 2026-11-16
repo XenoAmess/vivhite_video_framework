@@ -37,6 +37,7 @@ def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destinati
     directory.mkdir(parents=True,exist_ok=True)
     (directory/'input-sources').mkdir(exist_ok=True)
     plan = copy.deepcopy(original)
+    plan.pop('reusedSources',None)
     plan['draftGenerationMetadata'] = {key:plan.pop(key) for key in
         ('numInferenceSteps','decoderLayers','decoderVerification') if key in plan}
     plan.update(stage='refine',model='open-h3-2k',width=2560,height=1440,sourceSize='2560x1440',

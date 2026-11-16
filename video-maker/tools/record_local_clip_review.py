@@ -9,7 +9,7 @@ from local_video_pipeline import read,save,now
 from reference_finisher import sha
 
 
-def record(plan_file,directory,identity,observation,accepted,all_frames_viewed):
+def record(plan_file,directory,identity,observation,accepted,all_frames_viewed,failed_checks=None):
     if not all_frames_viewed or not observation.strip():
         raise ValueError('Actual all-frame review and its concrete observation are required')
     plan = read(plan_file)
@@ -24,12 +24,15 @@ def record(plan_file,directory,identity,observation,accepted,all_frames_viewed):
         'sourcePlanSha256':sha(plan_file),'shots':[]}
     if decisions['sourcePlanSha256'] != sha(plan_file):
         raise ValueError('Changed source plan requires independent new review records')
+    checks = ('noHumanFaces','noAddedPeople','allCharactersFemale','costumeStyle','motionAndContinuity','merchandiseBehavior')
+    if not accepted and (not failed_checks or any(key not in checks for key in failed_checks)):
+        raise ValueError('A rejection must name the actually failed checks')
     row = {'id':identity,'sourceSha256':sha(source),'method':'assistant-frame-review','reviewedAt':now(),
         'allSourceFrameReview':True,'allUsedFrameReview':True,'reviewedNativeFrames':120,
         'actualFinalUsedNativeFrames':shot['seconds']*24,'frameEvidence':report['allUsedFrameEvidence'],
         'faceEvidence':report['faceEvidence'],'observation':observation,
-        **{key:'passed' if accepted else 'failed' for key in ('noHumanFaces','noAddedPeople','allCharactersFemale',
-                                                            'costumeStyle','motionAndContinuity','merchandiseBehavior')}}
+        'decision':'accepted' if accepted else 'rejected',
+        **{key:'failed' if key in (failed_checks or []) else 'passed' for key in checks}}
     existing = next((item for item in decisions['shots'] if item['id']==identity),None)
     if existing:
         history = Path(directory)/'review-history'/f'{identity}-{sha(file)[:12]}.json'
@@ -50,5 +53,7 @@ if __name__ == '__main__':
     parser.add_argument('--observation',required=True)
     parser.add_argument('--decision',choices=('accept','reject'),required=True)
     parser.add_argument('--all-frames-viewed',action='store_true',required=True)
+    parser.add_argument('--failed-check',action='append',choices=('noHumanFaces','noAddedPeople','allCharactersFemale',
+        'costumeStyle','motionAndContinuity','merchandiseBehavior'),default=[])
     args = parser.parse_args()
-    record(args.plan,args.directory,args.shot,args.observation,args.decision=='accept',args.all_frames_viewed)
+    record(args.plan,args.directory,args.shot,args.observation,args.decision=='accept',args.all_frames_viewed,args.failed_check)

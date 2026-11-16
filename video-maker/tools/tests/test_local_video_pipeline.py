@@ -16,6 +16,18 @@ import local_video_pipeline as worker
 
 
 class LocalPipelineTest(unittest.TestCase):
+    def test_reused_source_is_bound_and_a_changed_copy_cannot_be_reused(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            source = directory/'accepted.mp4'
+            source.write_bytes(b'previously reviewed source bytes')
+            plan = {'stage':'refine','shots':[],
+                    'reusedSources':[{'path':'accepted.mp4','sha256':worker.sha(source)}]}
+            self.assertEqual(worker.input_assets(plan,directory/'episode.json',directory),[source])
+            source.write_bytes(b'different unreviewed source')
+            with self.assertRaisesRegex(ValueError,'reused reviewed source changed'):
+                worker.input_assets(plan,directory/'episode.json',directory)
+
     def plan(self):
         return {'schemaVersion':'vivhite-local-two-stage-video-1','stage':'draft',
                 'model':'fasth3-omni-bf16','width':1344,'height':768,'fps':30,'sourceFps':24,

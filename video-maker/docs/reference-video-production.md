@@ -82,7 +82,7 @@ video-maker/.venv/Scripts/python.exe video-maker/tools/reference_finisher.py fin
 ```powershell
 $episodeRoot = 'series/vivhite/autumn-journey/episodes/01-autumn-journey'
 $episode = "$episodeRoot/episode.json"
-$plan = "$episodeRoot/production-plan-v5-bf16-768p.json"
+$plan = "$episodeRoot/production-plan-v5-bf16-768p-r2.json"
 $run = '<本轮独立运行目录>'
 $faceModel = '<YuNet 2023mar 权重>'
 # 正式生成前，实际审阅最终计划、每张场景图和每段运动参考，并导出全部素材的匹配收据。

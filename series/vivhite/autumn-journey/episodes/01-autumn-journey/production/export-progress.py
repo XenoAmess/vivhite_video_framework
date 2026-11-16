@@ -32,7 +32,8 @@ def export(directory):
     progress = {'schemaVersion':'vivhite-local-production-progress-1','snapshotAt':datetime.now(timezone.utc).isoformat(),
         'sourcePlanSha256':state['planSha256'],'model':state['model'],'status':state['status'],
         'completedSources':sum(bool(row['sourceSha256']) for row in jobs),'acceptedSources':len(accepted),
-        'totalShots':49,'finalFilmDelivered':False,'humanFullPlayback':False,
+        'totalShots':49,'generationPercent':round(100*sum(bool(row['sourceSha256']) for row in jobs)/49,2),
+        'acceptedPercent':round(100*len(accepted)/49,2),'finalFilmDelivered':False,'humanFullPlayback':False,
         'runRelativeToRepositoryParent':directory.relative_to(ROOT.parent).as_posix(),'jobs':jobs,
         'semanticScope':'Only recorded actual source decisions count as accepted. No final film acceptance is implied.'}
     write_json(EP/'production/run-progress-v5.json',progress)

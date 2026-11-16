@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "vivhite-production-schedule-1",
+  "timezone": "Asia/Shanghai",
+  "estimatedAt": "2026-11-16T20:23:00+08:00",
+  "status": "recalibrated-after-first-three-actual-outputs",
+  "shotCount": 49,
+  "filmSeconds": 196,
+  "draftMeasuredInferenceSeconds": [744.8738181700464, 799.0319360219873, 796.8239319729619],
+  "draftSecondsPerFiveSecondClip": 780.2432287216652,
+  "refinementSecondsPerFiveSecondClip": 1500,
+  "refinementTimingBasis": "Client documentation; no project-specific 2K timing yet.",
+  "sharedGpu": true,
+  "acceptedSources": 2,
+  "rejectedSourcesPreserved": 1,
+  "remainingDraftSourcesIncludingRetake": 47,
+  "remainingDraftInferenceHours": 10.19,
+  "draftDeliveryWindow": ["2026-11-17T09:00:00+08:00", "2026-11-17T13:00:00+08:00"],
+  "refinementDeliveryWindow": ["2026-11-18T12:00:00+08:00", "2026-11-18T20:00:00+08:00"],
+  "assumptions": [
+    "Both accepted 768P sources are reused byte-for-byte after reviewing all 120 frames each.",
+    "Rejected S48 remains archived and is excluded from film and 2K inputs.",
+    "Delivery windows include source review, final assembly and a rework allowance.",
+    "Other users' GPU jobs, downtime and additional rejected outputs can move these windows.",
+    "Start per-shot 2K only after actual 768P film delivery and its binding checks."
+  ]
+}

@@ -1,6 +1,7 @@
 # 第一期：秋日旅程
 
-- [当前导演案 v5](director-v5.md)：49镜、每镜2–5秒、196秒；S20A/S20B各5秒。正在制作1344×768版，完成后逐镜做2560×1440版；[预计节点](production/schedule-768p-2k-v1.json)以北京时间记录。
+- [当前导演案 v5](director-v5.md)：49镜、每镜2–5秒、196秒；S20A/S20B各5秒。正在制作1344×768版，完成后逐镜做2560×1440版；[按首三段实测更新的预计节点](production/schedule-768p-2k-v2.json)以北京时间记录，[开工前估算](production/schedule-768p-2k-v1.json)保留。
+- [当前768P制作计划](production-plan-v5-bf16-768p-r2.json)、[进度快照](production/run-progress-v5.json)及[全部保留图片清单](production/image-inventory-v5-768p.json)。首轮三段中S15、S20A的全部120源帧已实际审阅通过，逐字节复用；[S48拒收记录](production/rejected-S48-v5-001.json)保留。原计划、失败片与新版请求均独立留档，未交付新成片。
 - [历史导演案 v3](director.md)：旧版48镜、202秒，原文件和已交付影片完整保留。
 - [周边图像生成说明 v3](image-briefs.md)：角色原图绑定、贴纸／玩偶／周边／意象设计，以及真实感人物不露脸的场景任务卡。
 - [真实世界美术修订](production/realism-revision-001.md)、[实际生成图](assets/generated/production-v3-realism-001/README.md)及[当前制作计划](production-plan-v4.json)。

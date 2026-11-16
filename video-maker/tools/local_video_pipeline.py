@@ -82,6 +82,11 @@ def input_assets(plan, episode, directory):
             if sha(source) != shot['inputSourceSha256']:
                 raise ValueError('Reviewed 2K input changed')
             assets.append(source)
+    for item in plan.get('reusedSources',[]):
+        source = contained(directory,item['path'])
+        if sha(source) != item['sha256']:
+            raise ValueError('Explicitly reused reviewed source changed')
+        assets.append(source)
     return list(dict.fromkeys(assets))
 
 
