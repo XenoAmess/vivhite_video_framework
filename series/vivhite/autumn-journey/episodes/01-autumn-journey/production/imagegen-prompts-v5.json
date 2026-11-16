@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "vivhite-imagegen-record-1",
+  "tool": "image_gen",
+  "mode": "built-in edit with two local image references",
+  "outputs": [{
+    "path": "assets/generated/production-v5-bf16-001/scenes/S20B-v1.png",
+    "references": ["assets/generated/production-v3-realism-001/scenes/S20-v2.png", "assets/generated/production-v2-fasth3-001/masters/M04-plush-v1.png"],
+    "transparentBackground": false,
+    "prompt": "Use case: photorealistic-natural, precise-object-edit. Create a new wider second-shot reference frame for an unhurried travel film, landscape 16:9. Image 1 is the exact location and existing physical objects to preserve: ordinary overcast alpine lake with patchy snow on barren rocky mountains, dry sparse grass, a gray rock foreground, ONE Vivhite plush sitting immediately left of ONE worn dark charcoal travel bag with a round illustrated badge. Image 2 is only the plush's identity/material reference. Move the camera substantially backward from Image 1 so the lake and mountains occupy most of the frame and the same plush and bag are small, together on the lower-left foreground rock. Preserve mountain silhouettes, lake shore geometry, weather, neutral natural light, plush silver lavender bob, white beret with blue butterfly, gold round glasses, embroidered pink violet eyes, white/deep-purple/gold feminine costume; preserve bag structure and badge. Plush remains an inert fabricated toy with drawn/embroidered face. The subject is the broad real landscape and two small travel objects. No humans, no human body parts, no human faces, no bystanders or silhouettes, no animals, no additional dolls or bags, no magical glow, no flowers, no fantasy beauty, no sunset or oversaturated lake, no text or logo, no watermark. Match the restrained realistic textures of Image 1. Single still camera view, no collage.",
+    "assistantImageReview": "Viewed actual image: one inert plush and one bag on foreground rock, ordinary alpine lake and clouded mountains, no humans, extra people or readable text. Wider framing supports an independent second five-second shot.",
+    "scope": "Reference artwork only. Does not approve future generated video. Original tool image also retained."
+  }]
+}

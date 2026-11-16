@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "vivhite-local-production-progress-1",
+  "snapshotAt": "2026-11-16T11:53:45.495294+00:00",
+  "sourcePlanSha256": "313bf0fee439b98c65d038d9b8b302ce4e73f0161055d903cc60cee2d93ce075",
+  "model": "fasth3-omni-bf16",
+  "status": "generating",
+  "completedSources": 2,
+  "acceptedSources": 2,
+  "totalShots": 49,
+  "finalFilmDelivered": false,
+  "humanFullPlayback": false,
+  "runRelativeToRepositoryParent": "vivhite-analysis-output/vivhite/autumn-journey/production-v5-bf16-768p-001",
+  "jobs": [
+    {
+      "shotId": "S15",
+      "status": "completed",
+      "jobId": "video_gen_82d3b2e5040c4ef78b2bec83cb342705",
+      "submittedAt": "2026-11-16T11:23:38.678325+00:00",
+      "firstInProgressAt": "2026-11-16T11:24:19.030100+00:00",
+      "downloadedAt": "2026-11-16T11:36:46.413649+00:00",
+      "rawSha256": "028aba22f9bc9cd73d54b16715d48874b999ba1b0f37166e355d731aeda460dd",
+      "sourceSha256": "17a0fd9fb3198360092aa2422b3682b867cc4528d60564c8bb80b8c711899e05",
+      "requestSha256": "584b8653affec30d3a28e486203dffba3cf286b0c46276bd3830a88735b176a0",
+      "inferenceSeconds": 744.8738181700464
+    },
+    {
+      "shotId": "S20A",
+      "status": "completed",
+      "jobId": "video_gen_26786a332f8a4ce68eb93210e7389274",
+      "submittedAt": "2026-11-16T11:23:38.797821+00:00",
+      "firstInProgressAt": "2026-11-16T11:36:55.472057+00:00",
+      "downloadedAt": "2026-11-16T11:50:02.890811+00:00",
+      "rawSha256": "7d7f6f3e34ad8e10709d5f5746ffcaec2739788c5ebe901c1579730c7c1dbb0e",
+      "sourceSha256": "3aa49806d6452a42a0f3bfe9b33eacd36cd1eb60e38d31aa3b4c4552edc6af5c",
+      "requestSha256": "13eaceae7526793cb5346ceefad2f99dada8a905847714e6c8036c6ed87ac087",
+      "inferenceSeconds": 799.0319360219873
+    },
+    {
+      "shotId": "S48",
+      "status": "in_progress",
+      "jobId": "video_gen_155e40b966c8470db17d533c9e3d1d7b",
+      "submittedAt": "2026-11-16T11:23:38.873117+00:00",
+      "firstInProgressAt": "2026-11-16T11:50:11.745884+00:00",
+      "downloadedAt": null,
+      "rawSha256": null,
+      "sourceSha256": null,
+      "requestSha256": "19fe19af3e3ea315c43235577f8b462983a66098dd0a1ba27bf35f69dce3697d",
+      "inferenceSeconds": null
+    }
+  ],
+  "semanticScope": "Only recorded actual source decisions count as accepted. No final film acceptance is implied."
+}

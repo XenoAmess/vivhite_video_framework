@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "vivhite-production-schedule-1",
+  "timezone": "Asia/Shanghai",
+  "estimatedAt": "2026-11-16T19:10:00+08:00",
+  "status": "initial-estimate-before-production",
+  "shotCount": 49,
+  "filmSeconds": 196,
+  "draftSecondsPerFiveSecondClip": 759.21,
+  "refinementSecondsPerFiveSecondClip": 1500,
+  "sharedGpu": true,
+  "existingOtherRunningJobs": 2,
+  "draftDeliveryWindow": [
+    "2026-11-17T09:00:00+08:00",
+    "2026-11-17T13:00:00+08:00"
+  ],
+  "refinementDeliveryWindow": [
+    "2026-11-18T12:00:00+08:00",
+    "2026-11-18T20:00:00+08:00"
+  ],
+  "assumptions": [
+    "Historical timings supplied in client docs, not new benchmark results.",
+    "Includes preparation, inspection, assembly and a rework allowance.",
+    "Recalculate after the first three completed jobs; queue and rework can change delivery windows."
+  ]
+}

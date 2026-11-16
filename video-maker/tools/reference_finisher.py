@@ -195,6 +195,13 @@ def ass_time(seconds):
     return f"{cs // 360000}:{cs // 6000 % 60:02}:{cs // 100 % 60:02}.{cs % 100:02}"
 
 
+def output_dimensions(plan):
+    dimensions = (plan.get("width",1920),plan.get("height",1080))
+    if dimensions not in ((1920,1080),(1344,768),(2560,1440)):
+        raise ValueError("Unsupported final output dimensions")
+    return dimensions
+
+
 def titles(plan):
     text = """[Script Info]
 ScriptType: v4.00+
@@ -230,6 +237,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 def prepare(source_plan, directory, destination):
     directory = Path(directory).resolve()
     plan = json.loads(Path(source_plan).read_text(encoding="utf-8"))
+    width,height = output_dimensions(plan)
     (directory / "titles.ass").write_text(titles(plan), encoding="utf-8-sig", newline="\n")
     selections_path = directory/"source-selections.json"
     selections = json.loads(selections_path.read_text(encoding="utf-8"))["selections"] if selections_path.exists() else {}
@@ -253,7 +261,7 @@ def prepare(source_plan, directory, destination):
             segment = corrected_segments/f"{shot['id']}-{selected['sha256'][:10]}.mp4"
             if not segment.exists():
                 run(["ffmpeg","-v","error","-y","-i",str(directory/path),"-an","-vf",
-                     "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30",
+                     f"scale={width}:{height}:force_original_aspect_ratio=increase,crop={width}:{height},fps=30",
                      "-frames:v",str(shot["seconds"]*30),"-c:v","libx264","-preset","fast","-crf","18",
                      "-pix_fmt","yuv420p",str(segment)])
         concat += "file '"+segment.as_posix().replace("'","'\\''")+"'\n"
@@ -268,7 +276,7 @@ def prepare(source_plan, directory, destination):
     paths = list(dict.fromkeys(paths))
     files = [{"path":path, "sha256":sha(directory/path)} for path in paths]
     final = {"schemaVersion":"vivhite-reference-finish-1", "sourcePlanSha256":sha(source_plan),
-             "fps":plan["fps"], "width":1920, "height":1080, "totalFrames":plan["totalFrames"],
+             "fps":plan["fps"], "width":width, "height":height, "totalFrames":plan["totalFrames"],
              "noSpeech":True, "noHumanFaces":True, "allCharactersFemale":True, "noAddedPeople":True,
              "sourceSize":plan["sourceSize"], "files":files, "shots":plan["shots"], "pictureFile":picture,
              "titleOverlays":plan["titleOverlays"], "nativeAudioInFinalMix":False,
@@ -316,6 +324,7 @@ def finish(episode, plan_file, directory, review_python):
     directory = Path(directory).resolve()
     plan_file = Path(plan_file).resolve()
     plan = json.loads(plan_file.read_text(encoding="utf-8"))
+    width,height = output_dimensions(plan)
     if (plan["schemaVersion"] != "vivhite-reference-finish-1" or plan["fps"] != 30
             or not all(plan.get(k) is True for k in ("noSpeech", "noHumanFaces", "allCharactersFemale", "noAddedPeople"))
             or plan.get("nativeAudioInFinalMix") is not False):
@@ -340,8 +349,8 @@ def finish(episode, plan_file, directory, review_python):
     probe = json.loads(run(["ffprobe", "-v", "error", "-count_frames", "-show_streams", "-show_format", "-of", "json", str(partial)]))
     video = next(s for s in probe["streams"] if s["codec_type"] == "video")
     audio = next(s for s in probe["streams"] if s["codec_type"] == "audio")
-    if (int(video["nb_read_frames"]) != plan["totalFrames"] or video["width"] != 1920
-            or video["height"] != 1080 or video["avg_frame_rate"] != "30/1"
+    if (int(video["nb_read_frames"]) != plan["totalFrames"] or video["width"] != width
+            or video["height"] != height or video["avg_frame_rate"] != "30/1"
             or abs(float(audio["duration"]) - duration) > .03):
         raise ValueError("Final encoded timing or stream format mismatch")
     film = directory / "film.mp4"

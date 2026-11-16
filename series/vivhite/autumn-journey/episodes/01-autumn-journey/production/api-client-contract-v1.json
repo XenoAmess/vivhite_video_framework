@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "vivhite-local-video-client-contract-1",
+  "inspectedAt": "2026-11-16T19:10:00+08:00",
+  "suppliedArchiveUrl": "http://192.168.1.11:7860/gradio_api/file=/home/ubuntu/workspace/xenoamess_bake_videos/omni-web/outputs/video-http-client-20261116.zip",
+  "archiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "readInFull": ["README.txt", "docs/video-http-api.md", "docs/video-http-queue.md", "tools/video_http_client.py", "deployment/video-queue/validation.json"],
+  "draft": {"model": "fasth3-omni-bf16", "port": 8001, "endpoint": "/v1/videos", "task": "ref2va", "size": "1344x768", "requestedSeconds": 5, "steps": 8, "decoderLayers": 36, "decoderEvidence": "Actual GET /v1/models response"},
+  "refinement": {"model": "open-h3-2k", "port": 8002, "endpoint": "/v1/videos/regenerations", "input": "uploaded actual reviewed draft video", "size": "2560x1440", "sampler": "up3", "seed": 1234, "implementation": "Local NVlabs/Sana alternative route described by supplied server documentation; not the full MiniMax H3 teacher model."},
+  "sharedGpu": true,
+  "maximumUnfinishedJobsPerModel": 32,
+  "clientDispatchWindow": 3,
+  "rawAlignmentTailPolicy": "Keep original model output unchanged. Make exact five-second video-only inputs; final cuts are 2-5 seconds.",
+  "referencePolicy": "Scene image fixes first-frame composition; previously reviewed video supplies restrained motion. No persona text is uploaded.",
+  "acceptancePolicy": "All actual generated source frames and final inputs require independent semantic review. HTTP success and face detection are not approval.",
+  "preservation": "Keep all requests, upload receipts, polls, original downloads, failed attempts, corrected versions and final films outside Git. Save every generated artwork and inspection image in this episode and commit it."
+}

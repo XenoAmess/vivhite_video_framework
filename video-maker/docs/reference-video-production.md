@@ -74,3 +74,27 @@ video-maker/.venv/Scripts/python.exe video-maker/tools/reference_finisher.py fin
 标题计划可通过 `closingCredit` 指定片尾署名；显式设为 `""` 时不生成署名事件。省略该字段仍沿用历史署名。`titleOverlays` 的 `text` 与 `subtitle` 分别控制第一行和第二行，也可用于标题与献词；所有实际文字均须参与最终计划和素材的独立审核。
 
 `source-selections.json` 可以选择修订源片，必须同时绑定其原文件与修订收据，旧版保留。`stabilize_printed_patch.py` 只允许将首帧已有的周边印花跟踪回物体表面，遇到跟踪不明确即失败；`--used-seconds` 限定实际使用区间。它不用于盖住人物或消除新增路人。修订完成后仍须逐帧重审，不能沿用原视频的通过记录。
+
+## BF16 768P 与逐镜2K接入
+
+新增 `tools/local_video_pipeline.py` 对接用户提供的持久队列客户端契约：BF16模型名为 `fasth3-omni-bf16`，每次请求5秒、1344×768、8步；运行时通过 `/v1/models` 核实36层解码器。图片固定首帧构图，旧版已审核的实际入片区间提供运动参考。全程不上传人格正文。旧Java参考图入口继续保留原协议，新BF16／2K制作使用下面的独立worker，不把旧模型名自动替换成不同提供方。
+
+```powershell
+$episodeRoot = 'series/vivhite/autumn-journey/episodes/01-autumn-journey'
+$episode = "$episodeRoot/episode.json"
+$plan = "$episodeRoot/production-plan-v5-bf16-768p.json"
+$run = '<本轮独立运行目录>'
+$faceModel = '<YuNet 2023mar 权重>'
+# 正式生成前，实际审阅最终计划、每张场景图和每段运动参考，并导出全部素材的匹配收据。
+video-maker/.venv/Scripts/python.exe video-maker/tools/local_video_pipeline.py --episode $episode --plan $plan --directory $run --api 'http://<服务器>:8001/v1' --evidence "$episodeRoot/assets/generated/production-v5-bf16-001/review/video-768p" --face-model $faceModel --window 3
+```
+
+worker只依赖Python标准库进行HTTP上传、提交、轮询与下载；检查图像沿用可选OpenCV／NumPy／Pillow环境。它记录完整请求、实际上传文件指纹、上传回执、每次轮询、原始输出、服务器日志和下载校验。提交超时记为不确定，恢复时拒绝盲目重复提交；429才作为明确未受理而可重试。退出客户端不取消服务器任务，重跑读取已保存的任务ID；计划变更要求新运行目录。生产运行须保存实际采用的worker副本及指纹，后续源码更新不改变运行中的引擎。
+
+原始输出的帧对齐尾部保留在 `sources-raw/`；另存精确120帧／24fps、无音轨的5秒源片到 `sources/`。所有5秒都进入逐帧检查，因为后续2K输入包括最终剪辑未使用的部分。`record_local_clip_review.py` 只记录审阅者明确提供的实际结论；检测候选不自动放行。角色／披露审核与正式合成检查仍分别执行。
+
+49镜全部审阅后，`local_video_finisher.py` 按原生目标尺寸与每镜实际时长准备画面，拒绝错误分辨率或指纹不符的缓存。随后审阅实际最终计划、声音、标题和所有输入，再调用 `reference_finisher.py finish`。它支持1344×768、1920×1080和2560×1440，不再把所有影片固定导出1080p。`inspect_local_video_film.py` 对最终全片逐帧解码、对照所选画面并输出面孔候选，仍需独立解释证据。
+
+768P成片实际交付并通过绑定检查后，`prepare_local_refinement.py` 从全部已审阅5秒源片准备2K输入和新计划；新计划须再次独立审核。之后使用同一生成worker调用8002的 `POST /v1/videos/regenerations`：`model=open-h3-2k`、`size=2560x1440`、`sampler=up3`。2K采用相同种子以便兼容队列的小批次，建议窗口2；每段结果重新检查、选择、合成和交付。该接口按所供文档为本地NVlabs/Sana替代重生成路线，不称作完整MiniMax H3教师模型。两阶段共享GPU，不能把耗时按两块GPU并行计算。
+
+本轮的初始预计节点见本期 `production/schedule-768p-2k-v1.json`；进度必须分别记录实际生成、语义接受和最终交付，不能将HTTP成功或仅源片到齐写成成片验收通过。
