@@ -76,8 +76,31 @@ class PrintedPatch:
         return result,{"scale":scale,"center":[float(v) for v in center],"inliers":int(inliers.sum())}
 
 
-def stabilize(source,destination,center,radius,used_seconds=None,max_scale=2.5):
+def project_reference_texture(first, reference, reference_box, target_box):
+    """Register existing artwork onto its own video prop; no artwork is generated."""
     import cv2
+    import numpy as np
+
+    def corners(box, image):
+        if (box is None or len(box) != 4
+                or any(not math.isfinite(value) for value in box)):
+            raise ValueError('Reference registration requires finite rectangles')
+        left, top, right, bottom = box
+        if not (0 <= left < right <= image.shape[1] and 0 <= top < bottom <= image.shape[0]):
+            raise ValueError('Reference registration rectangle escaped the image')
+        return np.float32([[left,top],[right,top],[right,bottom],[left,bottom]])
+
+    matrix = cv2.getPerspectiveTransform(corners(reference_box,reference),corners(target_box,first))
+    return cv2.warpPerspective(reference,matrix,(first.shape[1],first.shape[0]),flags=cv2.INTER_LINEAR)
+
+
+def stabilize(source,destination,center,radius,used_seconds=None,max_scale=2.5,
+              texture_reference=None,reference_box=None,target_box=None):
+    import cv2
+    import numpy as np
+    if any(value is not None for value in (texture_reference,reference_box,target_box)) and not all(
+            value is not None for value in (texture_reference,reference_box,target_box)):
+        raise ValueError('Reference texture and both registration rectangles are required together')
     cap = cv2.VideoCapture(str(source))
     ok,first = cap.read()
     if not ok:
@@ -89,6 +112,19 @@ def stabilize(source,destination,center,radius,used_seconds=None,max_scale=2.5):
     frame_limit = math.ceil(used_seconds*fps) if used_seconds is not None else None
     try:
         tracker = PrintedPatch(first,center,radius,max_scale)
+        if texture_reference is not None:
+            # Track the actual unmodified rim, not the registered artwork.
+            reference = cv2.imread(str(texture_reference))
+            if reference is None:
+                raise ValueError('Cannot read original reference artwork')
+            tracker.first = project_reference_texture(first,reference,reference_box,target_box)
+            left,top,right,bottom = target_box
+            x,y = center
+            if not (left <= x-radius and x+radius <= right and top <= y-radius and y+radius <= bottom):
+                raise ValueError('Reference registration must cover the complete printed patch')
+        first_output = first if texture_reference is None else (
+            tracker.first.astype(np.float32)*tracker.mask[:,:,None]
+            +first*(1-tracker.mask[:,:,None])).clip(0,255).astype(np.uint8)
     except Exception:
         cap.release()
         raise
@@ -106,7 +142,7 @@ def stabilize(source,destination,center,radius,used_seconds=None,max_scale=2.5):
             '-map','0:v:0','-map','1:a:0?','-c:v','libx264','-preset','fast','-crf','16',
             '-pix_fmt','yuv420p','-c:a','copy',str(partial)],stdin=subprocess.PIPE,stderr=errors)
         try:
-            encoder.stdin.write(first.tobytes());frames=1
+            encoder.stdin.write(first_output.tobytes());frames=1
             while frame_limit is None or frames < frame_limit:
                 ok,image = cap.read()
                 if not ok:
@@ -130,6 +166,12 @@ def stabilize(source,destination,center,radius,used_seconds=None,max_scale=2.5):
              'method':'Forward/backward LK on stable surface rim; robust partial-affine projection of original printed texture.',
              'scope':'Only a printed merchandise surface; no new person is removed or covered.',
              'status':'technical-correction-completed-review-required','tracking':tracking}
+    if texture_reference is not None:
+        receipt.update(schemaVersion='vivhite-printed-patch-2',
+            referenceTextureSha256=fingerprint(texture_reference),referenceBox=list(reference_box),
+            targetBox=list(target_box),
+            method='Register original reference artwork onto the same printed prop; track its original rim with forward/backward LK. No new artwork or person removal.',
+            firstFrameAlsoCorrected=True)
     destination.with_suffix('.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8')
     print(frames,'frames corrected; original retained; complete review required',flush=True)
     return receipt
@@ -144,5 +186,10 @@ if __name__=='__main__':
     parser.add_argument('--used-seconds',type=float)
     parser.add_argument('--max-scale',type=float,default=2.5,
                         help='Explicit observed zoom bound; default 2.5. Full visual review is still required.')
+    parser.add_argument('--texture-reference',type=Path,
+                        help='Existing original artwork for video compositing, never generated artwork')
+    parser.add_argument('--reference-box',type=float,nargs=4,metavar=('LEFT','TOP','RIGHT','BOTTOM'))
+    parser.add_argument('--target-box',type=float,nargs=4,metavar=('LEFT','TOP','RIGHT','BOTTOM'))
     args=parser.parse_args()
-    stabilize(args.source,args.destination,tuple(args.center),args.radius,args.used_seconds,args.max_scale)
+    stabilize(args.source,args.destination,tuple(args.center),args.radius,args.used_seconds,args.max_scale,
+              args.texture_reference,args.reference_box,args.target_box)

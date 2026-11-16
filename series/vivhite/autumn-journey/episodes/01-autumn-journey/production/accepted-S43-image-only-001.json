@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "vivhite-accepted-image-only-source-1",
+  "generationPlanSha256": "36f49601cf94d8c297017f5dfc5134ee36a50498dd8f9e4fcde8f26864b103d6",
+  "jobId": "video_gen_0f2a2200397b4297886cb0faec6c298b",
+  "requestSha256": "6ce71f6e11f878663dfe20469a0121a52cceedbd7be433225ac878a7954d9fed",
+  "rawSha256": "ebc2b3cc7c0b6f1eb99d58a05f60f9f79c815ac932052ef2897c1d5ea8e4fe17",
+  "sourceSha256": "4a2c416885294f8c459c112e1ed4eef3c2491ea22122d56c8280aeefeba8f856",
+  "inferenceSeconds": 598.4939151010476,
+  "nativeSize": [
+    1344,
+    768
+  ],
+  "nativeFrames": 120,
+  "fps": 24,
+  "seconds": 5,
+  "motionReferenceUsed": false,
+  "decision": {
+    "id": "S43",
+    "sourceSha256": "4a2c416885294f8c459c112e1ed4eef3c2491ea22122d56c8280aeefeba8f856",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-16T20:10:59.689443+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 120,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S43-image-only-001\\S43-4a2c416885-all-frames-01.png",
+        "sha256": "5b132c4503be1247bed05ffa199189ffbaedb619d2378b4208b4e3920f317b9e",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S43-image-only-001\\S43-4a2c416885-all-frames-02.png",
+        "sha256": "f1ecad889b46482f7ebdc12629a83dba36718359867f0270b9a6f389b99e0728",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S43-image-only-001\\S43-4a2c416885-all-frames-03.png",
+        "sha256": "5653cba955f0e96c0bb11cac5192ad59140898cc74e5a753f5f497fc3aa22f6d",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S43-image-only-001\\S43-4a2c416885-all-frames-04.png",
+        "sha256": "e20a965e7e0791266a8ef0949c8640b31aa41b32516ca0013524db0ddaba56c6",
+        "items": 24
+      }
+    ],
+    "faceEvidence": null,
+    "observation": "Viewed all 120 complete native frames, four scene sheets, temporal overview, native first frame, all 120 tracked printed-face crops and original-pixel comparison against the complete original S43 scene and M03 clear-card design. The original single clear acrylic panel remains on its supports beside the same lamp and mug, with real background visible through the unprinted area. No person, human face, body, reflection or tent silhouette appears. Both violet-pink printed eyes remain open and fixed; recognizable iris outlines, thin round gold glasses and original face layout are coherent at this small native size, without the old closed/narrow expression, blinking or animated print. The printed face is soft and low in native detail, not a pixel-identical high-detail reproduction. Faint original tent/grass and light variation remain continuous, no cut, extra panel, floating prop or generated lettering. No detector candidate does not itself establish this conclusion. Source-only assistant acceptance; later 2K and full-film review remain separate.",
+    "decision": "accepted",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "passed"
+  },
+  "originalsPreserved": true,
+  "fullFilmDelivered": false,
+  "humanFullPlayback": false
+}

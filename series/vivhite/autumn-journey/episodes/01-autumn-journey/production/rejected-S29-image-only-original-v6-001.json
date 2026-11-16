@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "vivhite-rejected-source-1",
+  "decision": {
+    "id": "S29",
+    "sourceSha256": "91fe0e5f737cb82f95543a02305318150e4130c1be6df450e926d72960c1a3f9",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-16T20:29:20.058605+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 96,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S29-image-only-001\\S29-91fe0e5f73-all-frames-01.png",
+        "sha256": "6b44b2b78755bea50dc67877e73ac00b37f93d63ac258f9ab935ae6a52ab8aa8",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S29-image-only-001\\S29-91fe0e5f73-all-frames-02.png",
+        "sha256": "6d9590e4e5c47eb59d2cf894e289f38d811a27b29fee77551661be31a0d324aa",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S29-image-only-001\\S29-91fe0e5f73-all-frames-03.png",
+        "sha256": "78f3a6a6d37fc8d01bc6653dfa3f426cde85c8b1a2fecdb1dd459fd354d65dd6",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S29-image-only-001\\S29-91fe0e5f73-all-frames-04.png",
+        "sha256": "f7b9b60ae9dce60b8d642c93b75b730373b2894712fd99fd4ea63faf48bd836d",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S29-image-only-001\\S29-91fe0e5f73-face-candidates.png",
+      "sha256": "d4348470b9212f36f2451b80c427c1388cda253c0a8b90eb0582be632f21b3ad",
+      "items": 2
+    },
+    "observation": "All 120 full native frames, temporal sheet, detector crops and native first frame viewed. The sewn plush eyes visibly close around frames 32-36 then reopen. This is an inert doll and violates the original open eyes, so the unmodified candidate is rejected. No source or raw version is deleted. Original illustration comparison and a corrected candidate require separate review.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "failed",
+    "referenceAppearance": "failed"
+  },
+  "sourcePlanSha256": "55a28e68724ec3646154f04d6e32b55f59cd101a4802f7b89b2ed74ad0b20fb7",
+  "originalsPreserved": true
+}

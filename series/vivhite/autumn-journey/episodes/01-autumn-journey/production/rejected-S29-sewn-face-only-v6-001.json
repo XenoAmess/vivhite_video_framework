@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "vivhite-rejected-source-1",
+  "decision": {
+    "id": "S29",
+    "sourceSha256": "1f50b7646ee352560081118b5eacd93deb872af17af414ce5bea7dcc3f8deb1a",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-16T20:34:06.519731+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 96,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S29-image-only-001\\S29-1f50b7646e-all-frames-01.png",
+        "sha256": "051c9b4198269c844ed35858ae9cca0635e912bcc9ffc14adb33f8276cd4754f",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S29-image-only-001\\S29-1f50b7646e-all-frames-02.png",
+        "sha256": "070edb0de83727e713222ef31c5b076a538310076dab6abcb54de4bb02083857",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S29-image-only-001\\S29-1f50b7646e-all-frames-03.png",
+        "sha256": "c833ac8f49ec7cb92edc0afb15ae1e34798c78ac2fb49da8eb0d80a5ec01cc51",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S29-image-only-001\\S29-1f50b7646e-all-frames-04.png",
+        "sha256": "2abfa58301d4e8efa730fb46afd533628f5097a40949fb4e2965a7666253fb61",
+        "items": 24
+      }
+    ],
+    "faceEvidence": null,
+    "observation": "Viewed all 120 corrected native frames, temporal overview, native first frame, all 120 sewn-face crops and all 120 badge crops, complete original S29 scene, M05 master and original-pixel comparison. The sewn plush correction removes the observed blink and keeps the original open eyes and glasses, but the badge still has narrowed angular eyes and altered face proportions compared with the original S29 badge. A stable inaccurate badge is not sufficient. This candidate remains rejected for reference appearance. All versions and evidence remain retained.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "sourcePlanSha256": "55a28e68724ec3646154f04d6e32b55f59cd101a4802f7b89b2ed74ad0b20fb7",
+  "originalsPreserved": true
+}
