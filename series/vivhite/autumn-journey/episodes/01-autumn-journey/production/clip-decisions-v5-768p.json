@@ -134,6 +134,51 @@
       "merchandiseBehavior": "passed"
     },
     {
+      "id": "S04",
+      "sourceSha256": "fc8c936f1f124042ae160ff7d006f47267f0191f1ff9d5ea5a562c38155580eb",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-16T13:58:32.831350+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S04-fc8c936f1f-all-frames-01.png",
+          "sha256": "7216f8bb2de565cef88aad24048631b2675346aaa41edfbb2f086d940a9e5411",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S04-fc8c936f1f-all-frames-02.png",
+          "sha256": "0d01a54aa4a909349f425b7ff02fb467a644e7e1197b44fdd413d8c6b66540b8",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S04-fc8c936f1f-all-frames-03.png",
+          "sha256": "f01029b3722afd5be5ee12b95ffd0a6caf487e9a594fc46ba0ea959ee6aa221f",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S04-fc8c936f1f-all-frames-04.png",
+          "sha256": "f2326bd92db05a2f008633b0851757cdb9fd3b071098cd6068c00eff2c0e339e",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S04-fc8c936f1f-face-candidates.png",
+        "sha256": "d3815bbe4168a8de0efaa42241125ca870da402bcec5caf7a21cdd4121aa5e27",
+        "items": 5
+      },
+      "observation": "Actually viewed all 120 full-source frames on four complete sheets, temporal evidence, five candidate crops and both native endpoint frames. A first manually positioned detail crop missed the moving print and is preserved without treating it as full print coverage. Instead, actually viewed all 120 tracked original-pixel print crops in tracked-print-region-v2; the source video remains unchanged. The same dark bag rests on the worn wet station bench, with one physical acrylic Vivhite charm and chain moving naturally during a continuous camera push. Printed eyes remain open; no blink, speech, autonomous pose or changed costume. Detector candidates are printed character faces. The platform, rails, background building and wet surfaces contain no human, extra body part or reflected face. No new object, readable generated lettering or cut. Accept the complete five-second native source; final cut uses three seconds, with all five reviewed seconds eligible for 2K.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed"
+    },
+    {
       "id": "S08",
       "sourceSha256": "2bfd30a8602d311a04b0d69651cded4554a02d947b82ed0af29f20d51e834c91",
       "method": "assistant-frame-review",
