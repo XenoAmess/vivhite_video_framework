@@ -48,6 +48,51 @@
       "merchandiseBehavior": "passed"
     },
     {
+      "id": "S08",
+      "sourceSha256": "2bfd30a8602d311a04b0d69651cded4554a02d947b82ed0af29f20d51e834c91",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-16T13:21:42.069977+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S08-2bfd30a860-all-frames-01.png",
+          "sha256": "2d7784dbf10bc719a655979f079cde0268f3c1b26542e7bd1cae43bc423dfafe",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S08-2bfd30a860-all-frames-02.png",
+          "sha256": "e6d64aa7a3a974016f5558c1215c8115fcc61566a5a2b78c939d0e88eef19ae2",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S08-2bfd30a860-all-frames-03.png",
+          "sha256": "68057f698d4b8cf73d74e76e01689a19b7712b1119ec57b96e2db6feff17c4f3",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S08-2bfd30a860-all-frames-04.png",
+          "sha256": "9294bfd3c9ed6f4b8c85037f9eac8d88091cfd6b466da625f456454adfa05ee2",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S08-2bfd30a860-face-candidates.png",
+        "sha256": "82032281ca46ff293b01f7dee43afd6814a78e8245c947251e6de3f20a038422",
+        "items": 3
+      },
+      "observation": "Actually viewed all 120 full-source frames on four complete sheets, temporal sheet, all three detector candidate crops, both endpoint frames at native size, and separate all-120-frame native-region sheets for the doll face and round badge. Ordinary worn forest bench beside an empty leaf-covered path; exactly the original one inert Vivhite doll, canvas bag and printed badge remain. The camera continuously pushes closer. The original brown leaf gradually slips from the doll hat across one eye near the end, revealing the existing blue hat ornament; this is physical occlusion, not blinking. Sewn eyes and mouth keep the same pattern; the badge illustration stays fixed. No human, reflected face, extra body part, unrelated figure, generated lettering or cut appears. Detector candidates are the doll fabric face. Accept the complete native five-second source and its gentle scene action for final use and later 2K input.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed"
+    },
+    {
       "id": "S15",
       "sourceSha256": "17a0fd9fb3198360092aa2422b3682b867cc4528d60564c8bb80b8c711899e05",
       "method": "assistant-frame-review",

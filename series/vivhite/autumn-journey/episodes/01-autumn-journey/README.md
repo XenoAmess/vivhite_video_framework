@@ -5,9 +5,9 @@
 - [本轮制作与完整中间材料位置](production/production-v5.md)：模型、计时、返工、768P／2K检查范围及跨机器恢复要求。
 - [历史导演案 v3](director.md)：旧版48镜、202秒，原文件和已交付影片完整保留。
 - [周边图像生成说明 v3](image-briefs.md)：角色原图绑定、贴纸／玩偶／周边／意象设计，以及真实感人物不露脸的场景任务卡。
-- [真实世界美术修订](production/realism-revision-001.md)、[实际生成图](assets/generated/production-v3-realism-001/README.md)及[当前制作计划](production-plan-v4.json)。
+- [真实世界美术修订](production/realism-revision-001.md)、[实际生成图](assets/generated/production-v3-realism-001/README.md)及[历史真实感版制作计划](production-plan-v4.json)。
 - [成片制作记录](production/production-v3.md)、[最终合成计划](final-assembly-plan-v4.json)及[交付验收](delivery-plan-v3.json)。
-- [片尾修订 v4](production/production-v4.md)、[最新合成计划 v5](final-assembly-plan-v5.json)及[最新交付](delivery-plan-v4.json)：蓝蝶八倍慢放，只保留标题与献词两行，完整保留 v3。
+- [片尾修订 v4](production/production-v4.md)、[最近已交付版合成计划](final-assembly-plan-v5.json)及[最近交付验收](delivery-plan-v4.json)：蓝蝶八倍慢放，只保留标题与献词两行，完整保留 v3。
 - [素材清单](reference-assets.json)：用户 ZIP 中 11 张图的指纹与使用范围。
 - [期清单](episode.json)：稳定 ID、角色与导演稿入口。
 
