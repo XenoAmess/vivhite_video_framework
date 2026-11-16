@@ -22,6 +22,7 @@ def export(directory):
     decisions = json.loads(decisions_file.read_text(encoding='utf-8'))['shots'] if decisions_file.exists() else []
     keys = ('noHumanFaces','noAddedPeople','allCharactersFemale','costumeStyle','motionAndContinuity','merchandiseBehavior')
     accepted = [row for row in decisions if row.get('allSourceFrameReview') is True
+                and row.get('decision') != 'rejected' and row.get('referenceAppearance') != 'failed'
                 and all(row.get(key)=='passed' for key in keys)]
     jobs = []
     selections_file = directory/'source-selections.json'

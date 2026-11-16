@@ -1,0 +1,46 @@
+{
+  "id": "S32",
+  "sourceSha256": "c64b6c00a05c75a79ac96494ab8fc07d158f428eecaecd708fa5a0e5326277a7",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-16T19:39:26.803832+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 96,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S32-c64b6c00a0-all-frames-01.png",
+      "sha256": "c1b90b7ea0591abc0e87aac06a9aa79dbb0ab3ca627642f7be90a6cec061c332",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S32-c64b6c00a0-all-frames-02.png",
+      "sha256": "885cfc13ed07709b5fcef8d3ede3ef9c6b14dad02164de5cf76e5b0aeb0f2eb9",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S32-c64b6c00a0-all-frames-03.png",
+      "sha256": "f4af650ee957932ef5b9cb863abbe91bb295722df7322bd976a7b436ab7bbe68",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S32-c64b6c00a0-all-frames-04.png",
+      "sha256": "4064fe4b52a7d7eaf786553febea9b5c75738dbdf087f4aeb1b923b7d5f0cbf3",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S32-c64b6c00a0-face-candidates.png",
+    "sha256": "b771dcdd2a50e6a88d0a0ba64f6487c37b93f42421b2f5136b6ac4e6e28d3bc3",
+    "items": 5
+  },
+  "observation": "Viewed all 120 full frames, four sheets, temporal overview, all five detector crops and all 120 tracked sticker-face crops; compared the complete original S32-v2 reference. Same original female hands with white/violet/gold cuffs operate the camera by the empty seaside rail; the second hand belongs to the same woman and no new person or real face appears. However early sticker eyes are markedly narrowed and simplified compared with the round open-eye original; camera-plane perspective may contribute, so no autonomous blink is asserted. Later frontal frames show the faithful open-eye design. Reject the complete source under the strengthened fidelity requirement; inspect a separate later clear interval without including the uncertain early frames.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "passed",
+  "referenceAppearance": "failed"
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "649f6669f40ec985fe7a5226143f1b7fb311f1fd030825258e85b34d9e2f1dde",
+  "shots": [
+    {
+      "id": "S20",
+      "sourceSha256": "306f21f2add75f671dc891b838b1031a15e07d3fa6ce94bff36093a02f95c914",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-16T19:30:08.806795+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 240,
+      "actualFinalUsedNativeFrames": 240,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S20-continuous-10s-001\\S20-306f21f2ad-all-frames-01.png",
+          "sha256": "5fd652a4f64cdfb59a1cc8d135aedcf9604eb6f76dd6521576d71be74e9b010c",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S20-continuous-10s-001\\S20-306f21f2ad-all-frames-02.png",
+          "sha256": "6e82f86884dcd7ccf651371ba5aca3ff04805a7101480983cf01da6aec99833b",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S20-continuous-10s-001\\S20-306f21f2ad-all-frames-03.png",
+          "sha256": "d8381c17c86bb0d2b720b88b98143f46298163395d1b1cc3d087d9978cd2dd32",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S20-continuous-10s-001\\S20-306f21f2ad-all-frames-04.png",
+          "sha256": "e48cae9b3adb2992860443df34ec1a052cc52937eb167c03f3baea0d79d6b8c3",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S20-continuous-10s-001\\S20-306f21f2ad-all-frames-05.png",
+          "sha256": "5802e590251a7216bd1f78dec79634b213c7f7655fa77433596fb0aaa0ad4824",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S20-continuous-10s-001\\S20-306f21f2ad-all-frames-06.png",
+          "sha256": "a788d8eecfae7b8ad894cb60f6132fe73d574b7db7f61589dc7d44df7fdae0c8",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S20-continuous-10s-001\\S20-306f21f2ad-all-frames-07.png",
+          "sha256": "57f93bb951254b8d966e10172545825de2295523a19e89c441257f2c9ed848b8",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S20-continuous-10s-001\\S20-306f21f2ad-all-frames-08.png",
+          "sha256": "a6d19d408663c3690652958340642aea7af07301fcea0603e813051319f58ed6",
+          "items": 16
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\S20-continuous-10s-001\\S20-306f21f2ad-face-candidates.png",
+        "sha256": "269505399254bab16a7d6a71e0f226f25493ed991131bd7847575a33b3ecc360",
+        "items": 19
+      },
+      "observation": "Viewed all 240 full scene frames, eight sheets, temporal overview, all 19 detector crops, both native endpoints and all 240 separate plush and badge detail frames; compared the original S20-v2 scene. The single ten-second slow pullback, ordinary mountain lake and inert plush are continuous and no person or face appears. Plush eyes and gold glasses remain coherent. The small badge loses faithful eye/glasses contours as the camera pulls back, and its late narrowed appearance cannot confidently pass original-artwork comparison. This is not asserted to be a living blink; low native detail also contributes. Preserve this raw ten-second generation and prepare a separate same-first-print surface stabilization candidate, without splitting or retiming the shot.",
+      "decision": "rejected",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "failed"
+    }
+  ]
+}

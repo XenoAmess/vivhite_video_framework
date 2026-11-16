@@ -49,6 +49,12 @@ class LocalClipCorrectionTest(unittest.TestCase):
             decision = json.loads((directory/'clip-decisions.json').read_text())['shots'][0]
             self.assertEqual(decision['sourceSha256'],sha(corrected))
             self.assertEqual(decision['referenceAppearance'],'passed')
+            record(directory/'plan.json',directory,'S48','The fixture print differs from the artwork.',False,True,
+                   failed_checks=['referenceAppearance'],reference_fidelity_reviewed=True)
+            rejected = json.loads((directory/'clip-decisions.json').read_text())['shots'][0]
+            self.assertEqual(rejected['referenceAppearance'],'failed')
+            self.assertEqual(rejected['decision'],'rejected')
+            self.assertTrue(list((directory/'review-history').glob('*.json')))
             original.write_bytes(b'changed fixture parent')
             with self.assertRaisesRegex(ValueError,'parent changed'):
                 record(directory/'plan.json',directory,'S48','Cannot reuse changed evidence.',True,True)

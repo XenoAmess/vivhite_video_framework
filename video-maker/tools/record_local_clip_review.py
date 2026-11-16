@@ -36,7 +36,7 @@ def record(plan_file,directory,identity,observation,accepted,all_frames_viewed,f
     if decisions['sourcePlanSha256'] != sha(plan_file):
         raise ValueError('Changed source plan requires independent new review records')
     checks = ('noHumanFaces','noAddedPeople','allCharactersFemale','costumeStyle','motionAndContinuity','merchandiseBehavior')
-    if plan.get('referenceAppearanceRequired'):
+    if plan.get('referenceAppearanceRequired') or reference_fidelity_reviewed:
         checks += ('referenceAppearance',)
     if not accepted and (not failed_checks or any(key not in checks for key in failed_checks)):
         raise ValueError('A rejection must name the actually failed checks')

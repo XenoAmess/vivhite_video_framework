@@ -33,6 +33,7 @@ class ReferenceFinisherTest(unittest.TestCase):
             worker.verify_clip_decisions(plan, root)
             plan.pop('referenceAppearanceRequired')
             for field, bad in (("noHumanFaces","failed"),("noAddedPeople","failed"),
+                               ("decision","rejected"),("referenceAppearance","failed"),
                                ("sourceSha256","replaced"),("allUsedFrameReview",False)):
                 altered = json.loads(json.dumps(decisions))
                 altered["shots"][0][field] = bad

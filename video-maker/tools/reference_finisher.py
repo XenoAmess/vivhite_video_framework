@@ -316,6 +316,7 @@ def verify_clip_decisions(plan, directory):
         if plan.get('referenceAppearanceRequired') and (row is None or row.get('referenceAppearance') != 'passed'):
             raise ValueError(f"Original artwork appearance review is unresolved for {shot['id']}")
         if (row is None or row.get("sourceSha256") != source_hashes[shot.get("sourceFile",f"sources/{shot['id']}.mp4")]
+                or row.get('decision') == 'rejected' or row.get('referenceAppearance') == 'failed'
                 or row.get("method") != "assistant-frame-review" or row.get("allUsedFrameReview") is not True
                 or row.get("reviewedNativeFrames",0) < shot["seconds"]*24
                 or any(row.get(k) != "passed" for k in ("noHumanFaces","noAddedPeople","allCharactersFemale","costumeStyle",

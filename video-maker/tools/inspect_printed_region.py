@@ -13,13 +13,16 @@ from reference_finisher import sha,write_json
 from stabilize_printed_patch import PrintedPatch
 
 
-def inspect(source,evidence,identity,center,radius,max_scale=2.5):
+def inspect(source,evidence,identity,center,radius,max_scale=2.5,frame_count=120):
+    if frame_count not in (120,240):
+        raise ValueError('Inspection must cover a complete five- or ten-second source')
     evidence = Path(evidence).resolve()
     evidence.mkdir(parents=True,exist_ok=True)
     digest = sha(source)
     stem = f'{identity}-{digest[:10]}-tracked-print-region-v2'
-    destination = evidence/(stem+'.png')
-    if destination.exists():
+    destinations = [evidence/(stem+(f'-p{index+1:02}' if frame_count>120 else '')+'.png')
+                    for index in range(frame_count//120)]
+    if any(path.exists() for path in destinations):
         raise ValueError('Preserve the existing inspection; choose another identity')
     cap = cv2.VideoCapture(str(source))
     ok,frame = cap.read()
@@ -31,15 +34,14 @@ def inspect(source,evidence,identity,center,radius,max_scale=2.5):
     except Exception:
         cap.release()
         raise
-    sheet = Image.new('RGB',(1680,2304),'#242424')
-    draw = ImageDraw.Draw(sheet)
+    sheets = [Image.new('RGB',(1680,2304),'#242424') for _ in destinations]
     metrics = []
     try:
-        for index in range(120):
+        for index in range(frame_count):
             if index:
                 ok,frame = cap.read()
                 if not ok:
-                    raise ValueError('Source does not cover all 120 frames')
+                    raise ValueError(f'Source does not cover all {frame_count} frames')
                 # Reuse tested surface tracking. Discard the corrected buffer;
                 # every saved pixel below comes from the unaltered original frame.
                 _,metric = tracker.frame(frame)
@@ -50,26 +52,31 @@ def inspect(source,evidence,identity,center,radius,max_scale=2.5):
             area = frame[max(0,round(y)-extent):min(frame.shape[0],round(y)+extent),
                          max(0,round(x)-extent):min(frame.shape[1],round(x)+extent)]
             picture = Image.fromarray(cv2.cvtColor(area,cv2.COLOR_BGR2RGB)).resize((168,168))
-            sheet.paste(picture,((index%10)*168,(index//10)*192+24))
-            draw.text(((index%10)*168+3,(index//10)*192+4),f'f{index}',fill='white')
+            sheet = sheets[index//120]
+            local_index = index%120
+            sheet.paste(picture,((local_index%10)*168,(local_index//10)*192+24))
+            ImageDraw.Draw(sheet).text(((local_index%10)*168+3,(local_index//10)*192+4),f'f{index}',fill='white')
             metrics.append({'frame':index,**metric})
     finally:
         cap.release()
-    sheet.save(destination)
     proxies = evidence/'proxies'
     proxies.mkdir(exist_ok=True)
-    proxy = proxies/(stem+'.jpg')
-    sheet.thumbnail((1248,2200))
-    sheet.save(proxy,'JPEG',quality=90)
-    write_json(evidence/(stem+'.json'),{'sourceSha256':digest,'frames':120,'center':list(center),
+    images = []
+    for sheet,destination in zip(sheets,destinations):
+        sheet.save(destination)
+        proxy = proxies/(destination.stem+'.jpg')
+        sheet.thumbnail((1248,2200))
+        sheet.save(proxy,'JPEG',quality=90)
+        images.extend((destination,proxy))
+    write_json(evidence/(stem+'.json'),{'sourceSha256':digest,'frames':frame_count,'center':list(center),
         'radius':radius,'maximumTrackedScale':max_scale,
         'workerSha256':sha(__file__),
         'trackingWorkerSha256':sha(Path(__file__).with_name('stabilize_printed_patch.py')),
         'originalVideoUnchanged':True,'semanticReview':'pending',
         'scope':'Tracked crops of original pixels only; no corrected frame or modified video is saved.',
-        'images':[{'path':p.relative_to(evidence).as_posix(),'sha256':sha(p)} for p in (destination,proxy)],
+        'images':[{'path':p.relative_to(evidence).as_posix(),'sha256':sha(p)} for p in images],
         'tracking':metrics})
-    print(json.dumps({'png':str(destination),'proxy':str(proxy),'frames':120}))
+    print(json.dumps({'images':[str(path) for path in images],'frames':frame_count}))
 
 
 if __name__ == '__main__':
@@ -80,5 +87,6 @@ if __name__ == '__main__':
     parser.add_argument('--center',required=True,type=int,nargs=2)
     parser.add_argument('--radius',required=True,type=int)
     parser.add_argument('--max-scale',type=float,default=2.5)
+    parser.add_argument('--frames',type=int,choices=(120,240),default=120)
     args = parser.parse_args()
-    inspect(args.source,args.evidence,args.identity,tuple(args.center),args.radius,args.max_scale)
+    inspect(args.source,args.evidence,args.identity,tuple(args.center),args.radius,args.max_scale,args.frames)

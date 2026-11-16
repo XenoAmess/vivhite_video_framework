@@ -27,6 +27,7 @@ def export(base):
     for shot in plan['shots']:
         identity = shot['id']
         run_name = {'S20': 'production-v6-bf16-768p-S20-001',
+                    'S29': 'production-v6-bf16-768p-S29-image-only-001',
                     'S43': 'production-v6-bf16-768p-S43-image-only-001'}.get(
                         identity, 'production-v5-bf16-768p-002')
         run = base / run_name

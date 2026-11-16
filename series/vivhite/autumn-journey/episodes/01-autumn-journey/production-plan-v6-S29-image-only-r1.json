@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 6,
+  "model": "fasth3-omni-bf16",
+  "stage": "draft",
+  "fps": 30,
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 120,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "numInferenceSteps": 8,
+  "decoderLayers": 36,
+  "decoderVerification": "GET /v1/models on 2026-11-16",
+  "titleOverlays": [],
+  "closingCredit": "",
+  "shots": [
+    {
+      "id": "S29",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "seed": 202611170029,
+      "mode": "O",
+      "action": "海港木台上的白绮玩偶面对几只彩色小船，轻微浪影映到台边，玩偶被包侧稳稳支住。",
+      "soundDescription": "船绳、水拍木桩。",
+      "prompt": "One uninterrupted locked-off realistic harbor shot, exactly the original scene of <Picture 1>. Keep the same single seated inert plush doll beside the same canvas bag and single round badge, existing ropes, weathered quay, bollard, unoccupied fishing boats, working buildings, gray clouds and ordinary water. <Picture 2> defines only the original illustration printed on that same small badge, not a second badge or object. Preserve both open violet-pink eyes, iris and eyelid shapes, thin round gold glasses and original face proportions exactly on the badge and sewn plush face. The print and sewn face remain unchanged throughout: no blinking, squinting, eye shift, expression change or animated body. Keep the stationary bag and doll in the same medium-wide framing, no zoom. Only gentle harbor ripples and slight existing moored-boat bobbing move. No person, crew, passerby, silhouette, body part, human face or human reflection anywhere, including boat windows and sheds. No new prop, readable text, titles, credits, cuts, speech, singing, humming or voices.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S29-v2.png",
+        "assets/generated/production-v2-fasth3-001/masters/M05-badge-v1.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M05-badge-v1.png",
+      "generationAction": "海港木台上的白绮玩偶面对几只彩色小船，轻微浪影映到台边，玩偶被包侧稳稳支住。"
+    }
+  ],
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "2560x1440",
+    "sampler": "up3",
+    "seed": 1234,
+    "startCondition": "768p film delivered and every complete actual input independently reviewed: S20 ten seconds, other sources five seconds",
+    "scope": "Local video regeneration through port 8002; not a closed-source MiniMax teacher model."
+  },
+  "baselinePlanSha256": "340d08e908a1315aec57d4834c995afec91cc7018040461ae89023fccd298e01",
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "Preserve raw alignment tail; normalize exactly 120 frames at 24fps for the complete five-second source.",
+  "promptRevision": {
+    "id": "continuous-S20-and-reference-appearance-006",
+    "reason": "User restored S20 to one continuous ten-second lake shot and requires faithful original open-eye merchandise, especially acrylic artwork."
+  },
+  "referenceAppearanceRequired": true,
+  "scope": "Single S29 image-only badge-fidelity replacement candidate; not a completed film",
+  "director": "director-v6.md",
+  "previousProductionPlanSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
+  "sourceContinuation": "The rejected old S29 source remains archived. This generation uses only the original scene and badge master, never the old motion video."
+}

@@ -1,0 +1,46 @@
+{
+  "id": "S29",
+  "sourceSha256": "26d86a269ea00d00985999349fe0353e56bd3ccd2c18c774521b69a5da3cf806",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-16T19:20:03.940072+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 96,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S29-26d86a269e-all-frames-01.png",
+      "sha256": "6414559d0e6b59b4ffefd65ab9619d9b44a10463cc75e4bd233e8db4ac19afe2",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S29-26d86a269e-all-frames-02.png",
+      "sha256": "cab9e8c10945d8c4ef8551db4b973312b5217dfb39c45f317ffe76e69a64a63b",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S29-26d86a269e-all-frames-03.png",
+      "sha256": "244fbad2bbb0b8ea6cc88cf8919fa5ca83046381b45fdb634491d7a2b70f06ca",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S29-26d86a269e-all-frames-04.png",
+      "sha256": "2b9683b1871f34f45b76a81374af9b20247552098ad7ad34127b027889dadb7c",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S29-26d86a269e-face-candidates.png",
+    "sha256": "a5ee969db34d833f2bb82e18b30a8001a80bc40cad8c35588ac888280952ac5e",
+    "items": 14
+  },
+  "observation": "Viewed all 120 complete frames, four sheets, temporal overview, all 14 detector crops, native first frame, all 120 plush-face crops and all 120 separate badge crops; compared the complete original S29-v2 scene and a nearest-neighbor original-pixel badge comparison. The inert plush keeps coherent open violet eyes and gold glasses, and no real person or cut appears. However the adjacent badge print is already narrowed and distorted relative to the original round open-eye design, with displaced or simplified eye/glasses contours. Stable wrong artwork is insufficient. Reject the whole source for the strengthened original-artwork requirement; preserve it and generate a separate image-only replacement.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "passed",
+  "referenceAppearance": "failed"
+}

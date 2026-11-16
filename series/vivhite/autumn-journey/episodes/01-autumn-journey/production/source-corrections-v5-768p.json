@@ -68,6 +68,14 @@
       "parentSha256": "423c1c09712a6c98c8cda8a6a07c712860c25ea24dc2b6fc58522d1026c85be5",
       "receipt": "corrections/S13-open-eyes-slow2-v2.json",
       "inspectionReport": "clip-inspection-open-eyes/S13.json"
+    },
+    "S32": {
+      "path": "corrections/S32-open-eyes-slow4-v1.mp4",
+      "sha256": "7fd14f4dff61f7538a78c9a98a78866c15844939f6676bd3bdefc8b414d31bf0",
+      "parent": "sources/S32.mp4",
+      "parentSha256": "c64b6c00a05c75a79ac96494ab8fc07d158f428eecaecd708fa5a0e5326277a7",
+      "receipt": "corrections/S32-open-eyes-slow4-v1.json",
+      "inspectionReport": "clip-inspection-open-eyes/S32.json"
     }
   },
   "receipts": {
@@ -3458,6 +3466,32 @@
       "sourceIntervalSeconds": [
         0,
         2.5
+      ],
+      "originalPreserved": true,
+      "semanticReview": "pending",
+      "entersFilm": false
+    },
+    "S32": {
+      "schemaVersion": "vivhite-local-retime-candidate-1",
+      "identity": {
+        "parentSha256": "c64b6c00a05c75a79ac96494ab8fc07d158f428eecaecd708fa5a0e5326277a7",
+        "factor": 4.0,
+        "frames": 120,
+        "fps": 24,
+        "recipe": "trim-start-setpts-mci-aobmc-bidir-vsbmc-crf16-2",
+        "workerSha256": "62dd4cd4b6eeec8177c5cf7bc8d294aa91205b2414c8fa40e856f6313f01e9cd",
+        "startSeconds": 3.5
+      },
+      "sha256": "7fd14f4dff61f7538a78c9a98a78866c15844939f6676bd3bdefc8b414d31bf0",
+      "reason": "Use only the later frontal camera and original open-eye sticker interval from 3.5 to 4.75 seconds. Both hands already hold the camera. Preserve the rejected complete original and inspect all 120 candidate frames independently before selection.",
+      "nativeSize": [
+        1344,
+        768
+      ],
+      "durationSeconds": 5,
+      "sourceIntervalSeconds": [
+        3.5,
+        4.75
       ],
       "originalPreserved": true,
       "semanticReview": "pending",
