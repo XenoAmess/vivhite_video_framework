@@ -1,0 +1,45 @@
+{
+  "id": "S17",
+  "sourceSha256": "363c1893211998fdb9300bbb977105c5c75687b053cf0a018058b4f844e31a1e",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-16T16:07:33.519075+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 72,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-363c189321-all-frames-01.png",
+      "sha256": "e0a67b9f942c5200fc7561d5910f6668651ebf84e77635a788b98fd66cead0bf",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-363c189321-all-frames-02.png",
+      "sha256": "bbafbbb83484522f19e5ee2abd9ce7ec0f2df4f097f6735a5e29d430558793a7",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-363c189321-all-frames-03.png",
+      "sha256": "5885d52a2cfdc89349ef27708d315662d18b8d99037c3fc20488ad72675a0a94",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-363c189321-all-frames-04.png",
+      "sha256": "b0cda1bcfc4947d0c9c4bce1c31627bc3a0e35e44984a92a292af2f1d58c0a1a",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-363c189321-face-candidates.png",
+    "sha256": "8e50f71ee9e08349dace08a3d89ba18601b42cbd16c4087d29397d4c078a6f1d",
+    "items": 6
+  },
+  "observation": "Viewed all 120 original frames in four complete full-scene sheets, temporal sheet, all six exported candidate crops, native full frames 0/119, supplied reference image, and tracked printed-head details for all 120 frames. One rigid acrylic stand on its base, plants, spray bottle, tray, shears and greenhouse remain ordinary and unoccupied. No real person, hand, human face or reflection is present; candidates are the print or plant/structure false positives. Camera makes a continuous strong approach, enlarging the printed head roughly threefold. However the same printed head begins with narrowed/closed eyes and opens them around frames 50-65 without occlusion or any turnover of the stand. This autonomous change violates fixed printed merchandise, so the original is rejected for merchandise behavior and preserved. Other checks passed; no film acceptance implied.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "failed"
+}

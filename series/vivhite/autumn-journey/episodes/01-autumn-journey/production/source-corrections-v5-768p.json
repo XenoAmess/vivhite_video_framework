@@ -34,6 +34,14 @@
       "parentSha256": "c4ddeed750895e4ffe04d80e4017b8ad5f506401be227785b55b4a8c2f0c2d41",
       "receipt": "corrections/S16-print-v1.json",
       "inspectionReport": "clip-inspection-corrected/S16.json"
+    },
+    "S17": {
+      "path": "corrections/S17-slow4-v2.mp4",
+      "sha256": "75225f74ad1c40a34264c2c5defc422db5c1e03d888d1371aa75d5bbe7a7af52",
+      "parent": "sources/S17.mp4",
+      "parentSha256": "363c1893211998fdb9300bbb977105c5c75687b053cf0a018058b4f844e31a1e",
+      "receipt": "corrections/S17-slow4-v2.json",
+      "inspectionReport": "clip-inspection-slowed/S17.json"
     }
   },
   "receipts": {
@@ -3334,8 +3342,33 @@
           "inliers": 100
         }
       ]
+    },
+    "S17": {
+      "schemaVersion": "vivhite-local-retime-candidate-1",
+      "identity": {
+        "parentSha256": "363c1893211998fdb9300bbb977105c5c75687b053cf0a018058b4f844e31a1e",
+        "factor": 4.0,
+        "frames": 120,
+        "fps": 24,
+        "recipe": "setpts-mci-aobmc-bidir-vsbmc-crf16-1",
+        "workerSha256": "4d1d37ede53b6d24006e04822d9d6a95ae72b5a80db8881707d678448a791404"
+      },
+      "sha256": "75225f74ad1c40a34264c2c5defc422db5c1e03d888d1371aa75d5bbe7a7af52",
+      "reason": "Use the original early steady printed expression and a gentler camera approach. The full-speed original opens its printed eyes later, while the first tracked texture candidate loses detail and exposes a head-neck seam at large magnification. Preserve both failures; this separate slowed candidate still requires full 120-frame review.",
+      "nativeSize": [
+        1344,
+        768
+      ],
+      "durationSeconds": 5,
+      "sourceIntervalSeconds": [
+        0,
+        1.25
+      ],
+      "originalPreserved": true,
+      "semanticReview": "pending",
+      "entersFilm": false
     }
   },
   "acceptance": "Every selected corrected source was independently viewed across all 120 frames before recording its actual acceptance. Processing receipts retain their initial pending status; later decisions are recorded separately.",
-  "originalSourceDisposition": "The second unretimed S48 preserves the scene but is rejected for excessive wing speed; first-round unrelated-bear failure also remains archived. Neither uncorrected source enters film or 2K. S07 original printed-face blink is rejected and archived separately; only its independently reviewed original-texture correction enters film or 2K. S11 original card print morphs from a face into the back of a head; it is rejected and retained, and only its independently reviewed original-texture correction enters the film and 2K. S16 original printed-eye blink is rejected and retained; only its separately reviewed original-texture correction enters film and 2K."
+  "originalSourceDisposition": "The second unretimed S48 preserves the scene but is rejected for excessive wing speed; first-round unrelated-bear failure also remains archived. Neither uncorrected source enters film or 2K. S07 original printed-face blink is rejected and archived separately; only its independently reviewed original-texture correction enters film or 2K. S11 original card print morphs from a face into the back of a head; it is rejected and retained, and only its independently reviewed original-texture correction enters the film and 2K. S16 original printed-eye blink is rejected and retained; only its separately reviewed original-texture correction enters film and 2K. S17 original printed-eye opening and first texture correction with a visible blurred seam are rejected and preserved. Only the independently reviewed slowed early interval, without a texture patch, enters film and 2K."
 }

@@ -14,6 +14,33 @@ SPEC.loader.exec_module(worker)
 
 
 class PrintedSurfaceTest(unittest.TestCase):
+    def test_observed_large_zoom_requires_an_explicit_bound(self):
+        rng=np.random.default_rng(59)
+        first=rng.integers(30,220,(240,320,3),dtype=np.uint8)
+        cv2.circle(first,(160,120),30,(210,190,60),2)
+        tracker=worker.PrintedPatch(first,(160,120),30,max_scale=3.5)
+        guarded=worker.PrintedPatch(first,(160,120),30)
+        default_rejected=False
+        for scale in np.linspace(1.02,3.1,105):
+            matrix=cv2.getRotationMatrix2D((160,120),0,float(scale))
+            frame=cv2.warpAffine(first,matrix,(320,240))
+            _,metric=tracker.frame(frame)
+            self.assertLess(abs(metric['scale']-scale),.12)
+            self.assertLess(np.linalg.norm(np.array(metric['center'])-[160,120]),2)
+            if not default_rejected:
+                try:
+                    guarded.frame(frame)
+                except ValueError as error:
+                    self.assertIn('scale',str(error))
+                    default_rejected=True
+        self.assertTrue(default_rejected)
+
+    def test_invalid_zoom_limits_are_rejected(self):
+        image=np.zeros((100,100,3),dtype=np.uint8)
+        for limit in (1,0,-2,float('nan'),float('inf')):
+            with self.subTest(limit=limit), self.assertRaisesRegex(ValueError,'scale'):
+                worker.PrintedPatch(image,(50,50),20,max_scale=limit)
+
     @unittest.skipUnless(shutil.which('ffmpeg'), 'FFmpeg is required for the encoded interval test')
     def test_unused_untrackable_tail_does_not_block_the_used_interval(self):
         rng=np.random.default_rng(29)

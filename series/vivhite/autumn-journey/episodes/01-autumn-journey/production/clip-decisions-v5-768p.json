@@ -707,6 +707,51 @@
       "merchandiseBehavior": "passed"
     },
     {
+      "id": "S17",
+      "sourceSha256": "75225f74ad1c40a34264c2c5defc422db5c1e03d888d1371aa75d5bbe7a7af52",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-16T16:13:23.010210+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-75225f74ad-all-frames-01.png",
+          "sha256": "e263c013aab4f094e25f3c249bfc68dbcc6a4376299e3f70fbbae07ab53ccc69",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-75225f74ad-all-frames-02.png",
+          "sha256": "4816d287c8c6224250626a7ef46e1f2477b561650c2ab5c45cd73e5e27450504",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-75225f74ad-all-frames-03.png",
+          "sha256": "57a0fe1fc40bec657d9e7009190aa25799a25f57adc5d5ebd31188030b9320c5",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-75225f74ad-all-frames-04.png",
+          "sha256": "7fceeb481aef7915210d9a76d872608c26c324bee66f3603da4e424a6ddf57c3",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-75225f74ad-face-candidates.png",
+        "sha256": "d39c3bb51fe2ab23a654354c60f5329809ced252cb51b55b09b9fa17fca23955",
+        "items": 4
+      },
+      "observation": "Independently viewed all 120 frames of the separate four-times-slowed original early interval: four complete full-scene sheets, temporal sheet, all four exported face-candidate crops, native final context and all 120 tracked print-detail crops. The full five-second candidate uses approximately the original first 1.25 seconds, preserving the original narrowed/closed printed eye design without the later opening event. The stand remains an inert physical object on its clear base; no eye opening/closing, head turn, talking, changing body pose or added character is observed across the candidate. Its slower restrained camera approach retains the full acrylic stand and ordinary greenhouse table, pots, foliage, spray bottle, tray and shears. No real people, hands, human facial fragments or reflections anywhere. Candidate faces are the printed design and plants/structure false positives. No inserted print patch, halo or head-neck seam: this candidate changes timing only with motion-compensated interpolation. Original and first rejected texture correction preserved. Full five seconds reviewed for 2K, final edit uses three seconds.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed"
+    },
+    {
       "id": "S20A",
       "sourceSha256": "3aa49806d6452a42a0f3bfe9b33eacd36cd1eb60e38d31aa3b4c4552edc6af5c",
       "method": "assistant-frame-review",

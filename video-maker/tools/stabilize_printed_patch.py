@@ -17,10 +17,13 @@ def fingerprint(path):
 
 
 class PrintedPatch:
-    def __init__(self, first, center, radius):
+    def __init__(self, first, center, radius, max_scale=2.5):
         import cv2
         import numpy as np
         self.cv2, self.np = cv2, np
+        if not math.isfinite(max_scale) or max_scale <= 1:
+            raise ValueError("Maximum tracked scale must be finite and greater than one")
+        self.max_scale = max_scale
         self.height, self.width = first.shape[:2]
         x,y = center
         if not (radius >= 10 and radius < x < self.width-radius and radius < y < self.height-radius):
@@ -59,7 +62,7 @@ class PrintedPatch:
         step = np.vstack((matrix,[0,0,1]))
         candidate = step@self.transform
         scale = float(np.sqrt(abs(np.linalg.det(candidate[:2,:2]))))
-        if not .1<scale<2.5:
+        if not .1<scale<self.max_scale:
             raise ValueError("Unreasonable printed-surface scale")
         patch = cv2.warpPerspective(self.first,candidate,(self.width,self.height),flags=cv2.INTER_LINEAR)
         mask = cv2.warpPerspective(self.mask,candidate,(self.width,self.height),flags=cv2.INTER_LINEAR)
@@ -73,7 +76,7 @@ class PrintedPatch:
         return result,{"scale":scale,"center":[float(v) for v in center],"inliers":int(inliers.sum())}
 
 
-def stabilize(source,destination,center,radius,used_seconds=None):
+def stabilize(source,destination,center,radius,used_seconds=None,max_scale=2.5):
     import cv2
     cap = cv2.VideoCapture(str(source))
     ok,first = cap.read()
@@ -84,7 +87,11 @@ def stabilize(source,destination,center,radius,used_seconds=None):
         cap.release()
         raise ValueError("Used seconds must be finite and positive")
     frame_limit = math.ceil(used_seconds*fps) if used_seconds is not None else None
-    tracker = PrintedPatch(first,center,radius)
+    try:
+        tracker = PrintedPatch(first,center,radius,max_scale)
+    except Exception:
+        cap.release()
+        raise
     destination = Path(destination)
     destination.parent.mkdir(parents=True,exist_ok=True)
     if destination.exists():
@@ -119,7 +126,7 @@ def stabilize(source,destination,center,radius,used_seconds=None):
     receipt={'schemaVersion':'vivhite-printed-patch-1','sourceSha256':fingerprint(source),
              'correctedSha256':fingerprint(destination),'workerSha256':fingerprint(__file__),
              'center':list(center),'radius':radius,'sourceFrame':0,'frames':frames,'fps':fps,
-             'requestedUsedSeconds':used_seconds,
+             'requestedUsedSeconds':used_seconds,'maximumTrackedScale':max_scale,
              'method':'Forward/backward LK on stable surface rim; robust partial-affine projection of original printed texture.',
              'scope':'Only a printed merchandise surface; no new person is removed or covered.',
              'status':'technical-correction-completed-review-required','tracking':tracking}
@@ -135,5 +142,7 @@ if __name__=='__main__':
     parser.add_argument('--center',required=True,type=int,nargs=2)
     parser.add_argument('--radius',required=True,type=int)
     parser.add_argument('--used-seconds',type=float)
+    parser.add_argument('--max-scale',type=float,default=2.5,
+                        help='Explicit observed zoom bound; default 2.5. Full visual review is still required.')
     args=parser.parse_args()
-    stabilize(args.source,args.destination,tuple(args.center),args.radius,args.used_seconds)
+    stabilize(args.source,args.destination,tuple(args.center),args.radius,args.used_seconds,args.max_scale)

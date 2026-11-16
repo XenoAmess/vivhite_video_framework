@@ -13,7 +13,7 @@ from reference_finisher import sha,write_json
 from stabilize_printed_patch import PrintedPatch
 
 
-def inspect(source,evidence,identity,center,radius):
+def inspect(source,evidence,identity,center,radius,max_scale=2.5):
     evidence = Path(evidence).resolve()
     evidence.mkdir(parents=True,exist_ok=True)
     digest = sha(source)
@@ -26,7 +26,11 @@ def inspect(source,evidence,identity,center,radius):
     if not ok:
         cap.release()
         raise ValueError('Cannot decode actual source')
-    tracker = PrintedPatch(frame,center,radius)
+    try:
+        tracker = PrintedPatch(frame,center,radius,max_scale)
+    except Exception:
+        cap.release()
+        raise
     sheet = Image.new('RGB',(1680,2304),'#242424')
     draw = ImageDraw.Draw(sheet)
     metrics = []
@@ -58,7 +62,10 @@ def inspect(source,evidence,identity,center,radius):
     sheet.thumbnail((1248,2200))
     sheet.save(proxy,'JPEG',quality=90)
     write_json(evidence/(stem+'.json'),{'sourceSha256':digest,'frames':120,'center':list(center),
-        'radius':radius,'originalVideoUnchanged':True,'semanticReview':'pending',
+        'radius':radius,'maximumTrackedScale':max_scale,
+        'workerSha256':sha(__file__),
+        'trackingWorkerSha256':sha(Path(__file__).with_name('stabilize_printed_patch.py')),
+        'originalVideoUnchanged':True,'semanticReview':'pending',
         'scope':'Tracked crops of original pixels only; no corrected frame or modified video is saved.',
         'images':[{'path':p.relative_to(evidence).as_posix(),'sha256':sha(p)} for p in (destination,proxy)],
         'tracking':metrics})
@@ -72,5 +79,6 @@ if __name__ == '__main__':
     parser.add_argument('--identity',required=True)
     parser.add_argument('--center',required=True,type=int,nargs=2)
     parser.add_argument('--radius',required=True,type=int)
+    parser.add_argument('--max-scale',type=float,default=2.5)
     args = parser.parse_args()
-    inspect(args.source,args.evidence,args.identity,tuple(args.center),args.radius)
+    inspect(args.source,args.evidence,args.identity,tuple(args.center),args.radius,args.max_scale)
