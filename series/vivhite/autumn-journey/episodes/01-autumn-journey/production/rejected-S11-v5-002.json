@@ -1,0 +1,45 @@
+{
+  "id": "S11",
+  "sourceSha256": "e7a468605ff0a288c6ebb130de5f724e86b83dd31adfa42f719318ed933cff43",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-16T15:06:14.077029+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 48,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S11-e7a468605f-all-frames-01.png",
+      "sha256": "ab0b5b50f30d2dcbb52d1d50a85a1e39b43b8ac0145428216178dc909e9a8fee",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S11-e7a468605f-all-frames-02.png",
+      "sha256": "605c5d5b34b1d63ef008157306eda0ce1c500e5efcb8270071cffc2838f3bcf9",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S11-e7a468605f-all-frames-03.png",
+      "sha256": "be82a359aa94ce6ba061b2d3a3219aa6f5ccc7e6457d5d23b40bda532c005cb0",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S11-e7a468605f-all-frames-04.png",
+      "sha256": "4bd5b99f034ddfad98285c08af2443681362fbb7112292d4fb8d18640d07d3f1",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S11-e7a468605f-face-candidates.png",
+    "sha256": "11360d4bcb6035d66bc3ce7fdf00ca2bbacf731eaddf28ed47dc5ce017f3a3fd",
+    "items": 2
+  },
+  "observation": "Viewed all 120 native-source frames, four complete sheets, temporal sheet, both exported false-positive leaf/ground face-candidate crops, native context frames 0 and 119, and tracked original print crops across every frame. One existing female cropped hand, lap, white legwear, feminine white/violet/gold sleeve/skirt and violet boot remain within the original crop; head is never present and no added people or human reflections appear. Ordinary riverside vegetation, rail, water and original yellow leaf remain consistent. However the card stays front-facing while its small printed character changes from a forward-facing face during frames 0-9 to a back-of-head drawing from approximately frame 10 onward, with the printed body still forward-facing. This is animated/morphing merchandise, not a physical card turn or occlusion, so the source is rejected for merchandise behavior. No cut or real human face observed. Original preserved; no acceptance or final-film claim.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "failed"
+}
