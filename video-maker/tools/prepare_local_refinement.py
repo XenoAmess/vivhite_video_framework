@@ -71,6 +71,11 @@ def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destinati
                        if shot.get('designMaster','').endswith('M04-plush-v1.png') else
                        'The existing printed illustration remains identical and fixed to its original surface. '
                        if shot['mode'] not in ('A','W') and shot['id'] not in ('S18','S39','S48') else '')
+        if merchandise:
+            merchandise += ('Every existing printed or sewn character face, including any small badge beside the doll, '
+                            'keeps its original open violet-pink eyes, iris and eyelid contours, thin round gold glasses '
+                            'and original face proportions throughout. No blink, squint, eye shift, facial redraw, '
+                            'expression change or turning illustration. Preserve transparent acrylic areas as real background. ')
         ending = ('The existing tiny corner butterfly makes just one calm, smooth wing cycle over about four seconds. '
                   if shot['id']=='S48' else '')
         shot['prompt'] = (

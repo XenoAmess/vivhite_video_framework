@@ -273,6 +273,8 @@ def prepare(source_plan, directory, destination):
              str(directory/"selected-segments.ffconcat"),"-c","copy","-movflags","+faststart",str(directory/picture)])
         provenance.append("source-selections.json")
     paths += [picture, "soundtrack.wav", "titles.ass", "clip-decisions.json", *provenance]
+    if (directory/"source-imports.json").exists():
+        paths.append("source-imports.json")
     paths = list(dict.fromkeys(paths))
     files = [{"path":path, "sha256":sha(directory/path)} for path in paths]
     final = {"schemaVersion":"vivhite-reference-finish-1", "sourcePlanSha256":sha(source_plan),
@@ -284,6 +286,7 @@ def prepare(source_plan, directory, destination):
              "closingCredit":plan.get("closingCredit", LEGACY_CLOSING_CREDIT),
              "closingFadeSeconds":.8, "spokenSubtitles":[],
              "referenceAppearanceRequired":plan.get("referenceAppearanceRequired",False),
+             "shotDurationExceptions":plan.get("shotDurationExceptions",{}),
              "scope":"Final assembly plan; input/source review does not assert final encoded or human aesthetic acceptance."}
     write_json(destination, final)
     verify_clip_decisions(final, directory)

@@ -16,6 +16,14 @@ from PIL import Image,ImageDraw,ImageFont
 from reference_finisher import sha,write_json,output_dimensions
 
 
+def validate_timing(plan):
+    exceptions = plan.get('shotDurationExceptions', {})
+    if (plan['fps'] != 30 or exceptions not in ({}, {'S20': 10})
+            or any(not 2 <= shot['seconds'] <= exceptions.get(shot['id'], 5) for shot in plan['shots'])
+            or (exceptions and not any(shot['id'] == 'S20' and shot['seconds'] == 10 for shot in plan['shots']))):
+        raise ValueError('Expected short shots with only the explicitly requested continuous ten-second S20 exception')
+
+
 def inspect(plan_file,directory,evidence,face_model):
     plan_file,directory,evidence = Path(plan_file).resolve(),Path(directory).resolve(),Path(evidence).resolve()
     episode = plan_file.parent
@@ -25,8 +33,7 @@ def inspect(plan_file,directory,evidence,face_model):
     plan = json.loads(plan_file.read_text(encoding='utf-8'))
     width,height = output_dimensions(plan)
     total,fps = plan['totalFrames'],plan['fps']
-    if fps != 30 or any(not 2 <= s['seconds'] <= 5 for s in plan['shots']):
-        raise ValueError('Expected the reviewed five-second-maximum cut')
+    validate_timing(plan)
     font = ImageFont.truetype('C:/Windows/Fonts/arial.ttf',16)
     caps = [cv2.VideoCapture(str(path)) for path in (directory/'film.mp4',directory/plan['pictureFile'])]
     if not all(cap.isOpened() for cap in caps):
