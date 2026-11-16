@@ -1,14 +1,14 @@
 {
   "schemaVersion": "vivhite-local-production-progress-1",
-  "snapshotAt": "2026-11-16T15:32:36.972769+00:00",
+  "snapshotAt": "2026-11-16T15:42:37.343426+00:00",
   "sourcePlanSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
   "model": "fasth3-omni-bf16",
   "status": "generating",
-  "completedSources": 17,
-  "acceptedSources": 17,
+  "completedSources": 18,
+  "acceptedSources": 18,
   "totalShots": 49,
-  "generationPercent": 34.69,
-  "acceptedPercent": 34.69,
+  "generationPercent": 36.73,
+  "acceptedPercent": 36.73,
   "finalFilmDelivered": false,
   "humanFullPlayback": false,
   "runRelativeToRepositoryParent": "vivhite-analysis-output/vivhite/autumn-journey/production-v5-bf16-768p-002",
@@ -175,15 +175,15 @@
     },
     {
       "shotId": "S14",
-      "status": "in_progress",
+      "status": "completed",
       "jobId": "video_gen_a1c56e63056441c48730467b52ae288e",
       "submittedAt": "2026-11-16T15:04:34.584866+00:00",
       "firstInProgressAt": "2026-11-16T15:30:06.918435+00:00",
-      "downloadedAt": null,
-      "rawSha256": null,
-      "sourceSha256": null,
+      "downloadedAt": "2026-11-16T15:40:30.952892+00:00",
+      "rawSha256": "a0f8ed197f96ac32964a90953993acf0d3fefb3aa71973e59c60101f8b020eaa",
+      "sourceSha256": "6c04016b789bc449c386816cd5116594db58c94eb8aa85f026cb5b28736ea592",
       "requestSha256": "301c729748207bf1e4500127ebdae1004e3c577744d3001e9c2bf8529e30aa10",
-      "inferenceSeconds": null
+      "inferenceSeconds": 629.7101447249297
     },
     {
       "shotId": "S15",
@@ -199,10 +199,10 @@
     },
     {
       "shotId": "S16",
-      "status": "queued",
+      "status": "in_progress",
       "jobId": "video_gen_b047a143e60d4064af5942298b7bf436",
       "submittedAt": "2026-11-16T15:17:56.345024+00:00",
-      "firstInProgressAt": null,
+      "firstInProgressAt": "2026-11-16T15:40:38.929323+00:00",
       "downloadedAt": null,
       "rawSha256": null,
       "sourceSha256": null,
@@ -219,6 +219,18 @@
       "rawSha256": null,
       "sourceSha256": null,
       "requestSha256": "431bce01e9012a07c985b76b8a9c36dcfaeedae70217449b451b7f77757bc6c8",
+      "inferenceSeconds": null
+    },
+    {
+      "shotId": "S18",
+      "status": "queued",
+      "jobId": "video_gen_11fef7c845b643f4b4f6e6c3d7b7bba2",
+      "submittedAt": "2026-11-16T15:40:39.107895+00:00",
+      "firstInProgressAt": null,
+      "downloadedAt": null,
+      "rawSha256": null,
+      "sourceSha256": null,
+      "requestSha256": "9d7b157faf245defa8cb63bba0b600bf21130cb925c3f41326ad25690b92d79b",
       "inferenceSeconds": null
     },
     {
