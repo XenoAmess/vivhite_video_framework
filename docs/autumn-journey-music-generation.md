@@ -16,6 +16,8 @@
 | 收据中的音符事件 | 1,232 | 1,195 |
 | 按镜头排程的环境声事件 | 48 | 49 |
 
+这是本文复现时的两份实际母带快照。其后用户将S20改回连续10秒，导演案v6恢复48镜，总长仍为196秒；新的环境声排程需要另存母带，不能覆盖这里已核验并提供的196秒文件。主题、音色和和声配方保持。
+
 v4 沿用 v3 的同一份 202 秒 WAV，修改片尾画面没有改音乐。v5 依据新的 196 秒时间轴重新运行同一配方，镜头环境声重新排程；它不是把 202 秒音乐整体加速。768P 和后续 2K 计划使用同一份 196 秒母带，分辨率变化不要求重写音乐。
 
 母带相对仓库同级输出根目录 `../vivhite-analysis-output/vivhite/autumn-journey/` 的位置：
@@ -233,3 +235,29 @@ video-maker/.venv/Scripts/python.exe video-maker/tools/reference_finisher.py sou
 ```
 
 复现核对收据见[本期制作记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/music-reproduction-20261117.json)。本次核对证明代码可生成相同的 WAV，不代替新成片的全量音频解码、混音比对或听感验收。
+
+## 可选：交给Suno保留风格地优化
+
+以下是2026-11-17结合 `suno-engineer` skill及Suno官方帮助文档整理的操作建议，尚未上传或生成Suno版本，也没有替换影片配乐。
+
+先通过 Audio Upload 上传选定母带。官方帮助列出的免费上传长度为60秒，Pro／Premier为8分钟，因此这两份完整母带需要支持长音频上传的套餐。[音频上传说明](https://help.suno.com/en/articles/6141569)
+
+如果已经喜欢旋律和结构，只想改善声音质感，上传条目提供 Remaster 时先试 `Subtle`。官方将它定位为尽量贴近原曲的轻微声音和制作细节调整；Cover用于更明显地改变音色、风格或音乐细节。[Remaster说明](https://help.suno.com/en/articles/8105281)
+
+需要重新配器时，使用Cover并开启Instrumental；只上传实际原曲比单独填写风格描述更有利于保留旋律依据。若界面提供相应高级滑杆，可从Audio Influence 90%、Weirdness 10%、Style Influence 60%起步。这是本曲的试验建议，不是官方最佳值或旋律锁定保证；Remaster的Subtle选项与Cover滑杆是不同控制，不要混为一谈。[滑杆含义](https://help.suno.com/en/articles/6141377)
+
+Style可填写：
+
+```text
+Gentle ambient electronica, cinematic travel instrumental. Preserve the uploaded melody, chord progression, phrasing, tempo and quiet emotional arc. 96 BPM, D major, 4/4. Delicate warm plucked arpeggios, soft bell-like lead, airy pads, restrained rounded bass and very light percussion. Improve note definition, instrument separation, natural dynamics and stereo depth. Short transparent reverb, sparse arrangement, intimate atmosphere and a smooth soft ending.
+```
+
+Exclude Styles：
+
+```text
+no vocals, no humming, no choir, no heavy drums
+```
+
+歌词框不填写歌词或散文制作要求；需要内容时只使用纯器乐结构标签。排除项不能代替成品检查，输出仍需确认没有歌声、哼唱和人声，并对照原曲检查主题旋律、速度、和声、配器密度和结尾。
+
+这两份母带含程序环境声，Remaster可以直接试用。若重新配器，建议先另导独立音乐轨，待Suno音乐定稿后再混回原环境声，避免风、车声被模型解释成乐器。当前源码尚未输出这种独立分轨；原WAV和影片继续保留，Suno输出应使用新目录。新音乐最终还需按196秒时间轴重新核对与合成，不能假定生成后恰好匹配所有镜头。

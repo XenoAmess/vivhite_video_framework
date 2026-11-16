@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 5,
+  "model": "fasth3-omni-bf16",
+  "stage": "draft",
+  "fps": 30,
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 90,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "numInferenceSteps": 8,
+  "decoderLayers": 36,
+  "decoderVerification": "GET /v1/models on 2026-11-16",
+  "titleOverlays": [],
+  "closingCredit": "",
+  "shots": [
+    {
+      "id": "S17",
+      "seconds": 3,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "seed": 202611170017,
+      "mode": "O",
+      "action": "温室长台上的白绮立牌保持原图的睁眼印花；固定中远景保留完整立牌和底座，叶影轻缓掠过，背景植物微动。",
+      "soundDescription": "滴水、细风。",
+      "prompt": "One continuous realistic locked-off medium-wide product shot in the ordinary greenhouse of <Picture 1>. <Picture 1> defines the complete location and the single existing acrylic stand. <Picture 2> is only the exact original artwork printed on that same stand, not another object. Preserve the original open violet-pink irises, almond-shaped eyelid outlines, thin round gold glasses, eye positions, face proportions, pale bob haircut and original white/deep-violet/gold costume exactly. The entire print is a rigid inert flat illustration attached to the acrylic: its eye shapes, expression, glasses, face and body never change. Keep the whole original stand and clear base visible at the original size throughout; a stationary camera, no zoom or framing change. Only faint natural leaf shadows drift over the table and background leaves move gently. The stand and printed character do not move. Keep the same pots, foliage, weathered table, tray, spray bottle and shears. The greenhouse remains unoccupied. No extra person, hand, body part or human facial fragment, including background and reflections. No new object, second stand, cut, readable letters, speech, singing, humming or other voice.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S17-v1.png",
+        "assets/generated/production-v2-fasth3-001/masters/M02-standee-v1.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M02-standee-v1.png",
+      "generationAction": "温室长台上的白绮立牌保持原图的睁眼印花；固定中远景保留完整立牌和底座，叶影轻缓掠过，背景植物微动。"
+    }
+  ],
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "2560x1440",
+    "sampler": "up3",
+    "seed": 1234,
+    "startCondition": "768p film delivered and every actual five-second input video independently reviewed",
+    "scope": "Local video regeneration through port 8002; not a closed-source MiniMax teacher model."
+  },
+  "baselinePlanSha256": "340d08e908a1315aec57d4834c995afec91cc7018040461ae89023fccd298e01",
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "Requested five-second model outputs can include alignment tail frames. Preserve raw output; final shots remain 2-5 seconds.",
+  "reusedSources": [],
+  "promptRevision": {
+    "id": "S17-image-only-open-eyes-003",
+    "previousPlanSha256": "313bf0fee439b98c65d038d9b8b302ce4e73f0161055d903cc60cee2d93ce075",
+    "reason": "Omit the faulty old motion reference and preserve the exact original open-eye acrylic artwork and gold glasses using only the scene image and design master."
+  },
+  "scope": "S17 image-only replacement candidate; not a full film",
+  "revisionReason": "Reject generated closed or deformed eyes and omit the faulty old motion reference. Preserve open-eye artwork from the actual original scene and standee master."
+}

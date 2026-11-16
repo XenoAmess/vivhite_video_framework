@@ -9,7 +9,7 @@ from pathlib import Path
 import shutil
 import sys
 
-from local_video_pipeline import validate,read,save
+from local_video_pipeline import validate,read,save,source_frame_count
 from reference_finisher import sha,run,verify_clip_decisions
 
 
@@ -48,12 +48,12 @@ def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destinati
         source = draft_directory/selected['sourceFile']
         decision = decisions[shot['id']]
         if (sha(source) != source_hashes[selected['sourceFile']] or decision.get('allSourceFrameReview') is not True
-                or decision.get('reviewedNativeFrames',0) < 120):
-            raise ValueError('Every full five-second 2K input requires actual semantic review, including unused draft tails')
+                or decision.get('reviewedNativeFrames',0) < source_frame_count(shot)):
+            raise ValueError('Every complete 2K input requires actual semantic review, including unused draft tails')
         probe = json.loads(run(['ffprobe','-v','error','-count_frames','-show_streams','-of','json',str(source)]))
-        if (len(probe['streams']) != 1 or int(probe['streams'][0]['nb_read_frames']) != 120
+        if (len(probe['streams']) != 1 or int(probe['streams'][0]['nb_read_frames']) != source_frame_count(shot)
                 or probe['streams'][0]['avg_frame_rate'] != '24/1'):
-            raise ValueError('2K input must be the exact reviewed five-second video-only source')
+            raise ValueError('2K input must be the exact complete reviewed video-only source')
         target = directory/'input-sources'/f"{shot['id']}.mp4"
         if target.exists() and sha(target) != sha(source):
             raise ValueError('Preserve existing 2K inputs; use a new directory')
@@ -90,7 +90,7 @@ def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destinati
     shutil.copyfile(delivery_file,directory/'source-draft-delivery.json')
     validate(plan)
     save(destination,plan)
-    print('Prepared separate 2K plan and 49 reviewed inputs. New plan requires both independent reviews before submission.')
+    print(f"Prepared separate 2K plan and {len(plan['shots'])} reviewed inputs. New plan requires both independent reviews before submission.")
 
 
 if __name__ == '__main__':

@@ -47,6 +47,9 @@ def contained(owner, relative):
 
 def validate(plan):
     draft = plan.get('stage') == 'draft'
+    exceptions = plan.get('shotDurationExceptions',{})
+    if exceptions not in ({},{'S20':10}):
+        raise ValueError('Only the explicitly requested S20 ten-second exception is allowed')
     expected = ('fasth3-omni-bf16',1344,768) if draft else ('open-h3-2k',2560,1440)
     if (plan.get('schemaVersion') != 'vivhite-local-two-stage-video-1'
             or plan.get('stage') not in ('draft','refine')
@@ -58,14 +61,24 @@ def validate(plan):
     frame = 0
     for shot in plan['shots']:
         if (not re.fullmatch(r'S\d{2}[A-Z]?',shot['id']) or shot['id'] in identities
-                or not isinstance(shot['seconds'],int) or not 2 <= shot['seconds'] <= 5
-                or shot.get('sourceSeconds') != 5 or shot.get('startFrame') != frame
+                or not isinstance(shot['seconds'],int) or not 2 <= shot['seconds'] <= exceptions.get(shot['id'],5)
+                or shot.get('sourceSeconds') != (10 if shot['id'] in exceptions else 5)
+                or shot.get('startFrame') != frame
                 or not shot.get('prompt','').strip()):
             raise ValueError('Invalid shot identity, duration or contiguous timing')
         identities.add(shot['id'])
         frame += shot['seconds']*30
     if not identities or frame != plan['totalFrames']:
         raise ValueError('Timeline does not match total frames')
+    if exceptions and not any(shot['id']=='S20' and shot['seconds']==10 for shot in plan['shots']):
+        raise ValueError('The declared S20 exception must be an actual continuous ten-second shot')
+
+
+def source_frame_count(shot):
+    seconds = shot.get('sourceSeconds',5)
+    if not isinstance(seconds,int) or isinstance(seconds,bool) or seconds not in (5,10):
+        raise ValueError('Unsupported source duration')
+    return seconds*24
 
 
 def input_assets(plan, episode, directory):
@@ -73,10 +86,11 @@ def input_assets(plan, episode, directory):
     for shot in plan['shots']:
         if plan['stage'] == 'draft':
             assets.extend(contained(Path(episode).parent,path) for path in shot['references'])
-            motion = contained(directory,shot['motionReference'])
-            if sha(motion) != shot['motionReferenceSha256']:
-                raise ValueError('Motion reference changed')
-            assets.append(motion)
+            if shot.get('motionReference'):
+                motion = contained(directory,shot['motionReference'])
+                if sha(motion) != shot['motionReferenceSha256']:
+                    raise ValueError('Motion reference changed')
+                assets.append(motion)
         else:
             source = contained(directory,shot['inputSource'])
             if sha(source) != shot['inputSourceSha256']:
@@ -135,10 +149,12 @@ class Api:
 
 def payload_for(plan, shot, upload):
     if plan['stage'] == 'draft':
-        return {'model':'fasth3-omni-bf16','task':'ref2va','seconds':5,'size':'1344x768',
+        payload = {'model':'fasth3-omni-bf16','task':'ref2va','seconds':shot.get('sourceSeconds',5),'size':'1344x768',
                 'num_inference_steps':8,'guidance_scale':1.0,'seed':shot['seed'],'prompt':shot['prompt'],
-                'image_reference':[upload(path) for path in shot['references']],
-                'video_reference':[upload(shot['motionReference'])]}
+                'image_reference':[upload(path) for path in shot['references']]}
+        if shot.get('motionReference'):
+            payload['video_reference'] = [upload(shot['motionReference'])]
+        return payload
     return {'model':'open-h3-2k','size':'2560x1440','sampler':plan.get('sampler','up3'),
             'seed':plan.get('refinementSeed',1234),'prompt':shot['prompt'],
             'input_video':upload(shot['inputSource'])}
@@ -171,6 +187,7 @@ def submit(api, endpoint, payload, receipt_file, receipt):
 
 
 def publish_result(api, remote, shot, directory, size):
+    expected_frames = source_frame_count(shot)
     identity = remote['id']
     raw = directory/'sources-raw'/f"{shot['id']}-{identity}.mp4"
     raw.parent.mkdir(exist_ok=True)
@@ -190,16 +207,16 @@ def publish_result(api, remote, shot, directory, size):
     video = next(item for item in probe['streams'] if item['codec_type']=='video')
     width,height = map(int,size.split('x'))
     if ((video['width'],video['height']) != (width,height) or video['avg_frame_rate'] != '24/1'
-            or int(video['nb_read_frames']) < 120):
+            or int(video['nb_read_frames']) < expected_frames):
         raise ValueError('Native result has unexpected dimensions, frame rate or insufficient frames; original retained')
     source = directory/'sources'/f"{shot['id']}.mp4"
     source.parent.mkdir(exist_ok=True)
     if not source.exists():
-        run(['ffmpeg','-v','error','-y','-i',str(raw),'-map','0:v:0','-an','-frames:v','120',
+        run(['ffmpeg','-v','error','-y','-i',str(raw),'-map','0:v:0','-an','-frames:v',str(expected_frames),
              '-c:v','copy','-movflags','+faststart',str(source)])
     normalized = json.loads(run(['ffprobe','-v','error','-count_frames','-show_streams','-of','json',str(source)]))
-    if len(normalized['streams']) != 1 or int(normalized['streams'][0]['nb_read_frames']) != 120:
-        raise ValueError('Exact five-second source normalization failed')
+    if len(normalized['streams']) != 1 or int(normalized['streams'][0]['nb_read_frames']) != expected_frames:
+        raise ValueError('Exact requested source normalization failed')
     return raw,source,probe
 
 
@@ -243,7 +260,8 @@ def generate(args):
         if plan['stage']=='draft':
             for relative in shot['references']:
                 upload_paths[relative] = contained(args.episode.resolve().parent,relative)
-            upload_paths[shot['motionReference']] = contained(directory,shot['motionReference'])
+            if shot.get('motionReference'):
+                upload_paths[shot['motionReference']] = contained(directory,shot['motionReference'])
         else:
             upload_paths[shot['inputSource']] = contained(directory,shot['inputSource'])
 
@@ -266,7 +284,7 @@ def generate(args):
 
     def inspect_source(shot, source):
         import review_reference_clips
-        review_reference_clips.inspect(source,{**shot,'seconds':5},args.evidence.resolve(),
+        review_reference_clips.inspect(source,{**shot,'seconds':shot.get('sourceSeconds',5)},args.evidence.resolve(),
                                        directory/'clip-inspection',args.face_model.resolve())
 
     try:
@@ -322,7 +340,7 @@ def generate(args):
                         row['serverLogFetchError'] = str(error)
                     save(receipt_file,row)
                     running -= 1
-                    # All five seconds are inspected, including material that is
+                    # The full source is inspected, including material that is
                     # shortened in the final cut but may be passed to 2K.
                     inspect_source(shot,source)
                 elif remote['status'] in ('failed','cancelled'):

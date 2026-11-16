@@ -26,7 +26,7 @@
 
 配乐的实际旋律、和声、程序合成音色、环境声、混音与复现方式见[《秋日旅程》背景音乐生成说明](docs/autumn-journey-music-generation.md)。202秒与196秒母带均已独立重生成并核对文件指纹一致。
 
-正在制作[旅行导演案 v5](series/vivhite/autumn-journey/episodes/01-autumn-journey/director-v5.md)：49镜、每镜2–5秒、196秒，高山湖拆成两个5秒镜头；按[制作计划](series/vivhite/autumn-journey/episodes/01-autumn-journey/production-plan-v5-bf16-768p-r2.json)先重新生成1344×768，再逐镜调用本地接口制作2560×1440版。旧版完整保留，新版完成状态以实际制作记录为准。
+正在制作[旅行导演案 v6](series/vivhite/autumn-journey/episodes/01-autumn-journey/director-v6.md)：按用户最新指示恢复48镜、196秒，S20高山湖为一个连续10秒镜头，其余镜头2–5秒；按[新版计划](series/vivhite/autumn-journey/episodes/01-autumn-journey/production-plan-v6-bf16-768p.json)制作1344×768，再逐镜调用本地接口制作2560×1440版。追加检查周边眼睛、眼镜与脸部比例是否忠于原图，不能只检查表情是否稳定。旧版与中间材料完整保留，新版完成状态以实际制作记录为准。
 
 三期当前成片均已完成，规格1080p30、晓晓配音、中文字幕及可替换人物图片：第一期[10分55秒](series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v3.md)、第二期[18分29.3秒](series/math-education/inversion-count/episodes/02-rectangle-proof/docs/production-v1.md)、第三期[32分24秒](series/math-education/inversion-count/episodes/03-wilson-theorem/docs/production-v1.md)。制作器新增通用证明动画后端，后两期保留全部证明、合法移动和分阶段推导。成片与缓存放在仓库外，检查范围见各期制作记录及[独立复核](docs/three-episode-production-review.md)。
 

@@ -51,6 +51,29 @@ class LocalClipCorrectionTest(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'parent changed'):
                 record(directory/'plan.json',directory,'S48','Cannot reuse changed evidence.',True,True)
 
+    def test_long_source_needs_all_frames_and_explicit_artwork_comparison(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            (directory/'sources').mkdir()
+            source = directory/'sources/S20.mp4'
+            source.write_bytes(b'ten second fixture')
+            plan = directory/'plan.json'
+            save(plan,{'referenceAppearanceRequired':True,'shots':[{'id':'S20','seconds':10,'sourceSeconds':10}]})
+            report = {'identity':{'sourceSha256':sha(source),'usedSeconds':10},
+                      'usedFramesAnalysed':120,'allUsedFrameEvidence':[],'faceEvidence':None}
+            save(directory/'clip-inspection/S20.json',report)
+            with self.assertRaisesRegex(ValueError,'original artwork'):
+                record(plan,directory,'S20','Explicit fixture review.',True,True)
+            with self.assertRaisesRegex(ValueError,'complete actual source'):
+                record(plan,directory,'S20','Explicit fixture review.',True,True,reference_fidelity_reviewed=True)
+            report['usedFramesAnalysed'] = 240
+            save(directory/'clip-inspection/S20.json',report)
+            record(plan,directory,'S20','All fixture frames and reference explicitly compared.',True,True,
+                   reference_fidelity_reviewed=True)
+            row = json.loads((directory/'clip-decisions.json').read_text())['shots'][0]
+            self.assertEqual(row['reviewedNativeFrames'],240)
+            self.assertEqual(row['referenceAppearance'],'passed')
+
 
 if __name__ == '__main__':
     unittest.main()

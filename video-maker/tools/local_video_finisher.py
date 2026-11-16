@@ -42,6 +42,7 @@ def prepare(plan_file,directory,destination):
         shot['sourceFile'] = path
         files.append({'path':path,'sha256':reference_finisher.sha(source)})
     reference_finisher.verify_clip_decisions({'sourcePlanSha256':reference_finisher.sha(plan_file),
+                                            'referenceAppearanceRequired':plan.get('referenceAppearanceRequired',False),
                                             'shots':selected_shots,'files':files},directory)
     for shot in selected_shots:
         segment = segments/f"{shot['id']}.mp4"

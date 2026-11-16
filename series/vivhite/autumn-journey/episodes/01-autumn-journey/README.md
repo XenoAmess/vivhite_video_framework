@@ -1,7 +1,8 @@
 # 第一期：秋日旅程
 
-- [当前导演案 v5](director-v5.md)：49镜、每镜2–5秒、196秒；S20A/S20B各5秒。正在制作1344×768版，完成后逐镜做2560×1440版；[按首三段实测更新的预计节点](production/schedule-768p-2k-v2.json)以北京时间记录，[开工前估算](production/schedule-768p-2k-v1.json)保留。
-- [当前768P制作计划](production-plan-v5-bf16-768p-r2.json)、[进度快照](production/run-progress-v5.json)及[全部保留图片清单](production/image-inventory-v5-768p.json)。S15、S20A及[S48独立慢放修订片](production/source-corrections-v5-768p.json)各自全部120源帧已实际审阅通过；[首轮S48拒收记录](production/rejected-S48-v5-001.json)保留。原计划、失败片、修订片与新版请求均独立留档，未交付新成片。
+- [当前导演案 v6](director-v6.md)：48镜、196秒；S20恢复一个连续10秒镜头，其余47镜2–5秒。正在制作1344×768版，完成后逐镜做2560×1440版；[按首三段实测更新的预计节点](production/schedule-768p-2k-v2.json)以北京时间记录，[开工前估算](production/schedule-768p-2k-v1.json)保留。
+- [新版768P计划](production-plan-v6-bf16-768p.json)、[S20单次10秒生成计划](production-plan-v6-S20-image-only-r1.json)。[旧批次进度快照](production/run-progress-v5.json)仍对应49镜v5，不能直接当作新版48镜进度。旧片段按原字节与全帧检查结果筛选沿用；原片、失败版本及S20A/S20B全部保留，新成片尚未交付。
+- [S17按原画重做计划](production-plan-v5-S17-image-only-r3.json)：旧闭眼慢放片已撤销通过，不能用于成片或2K；追加核对所有周边的眼睛、眼镜及脸部比例。处理收据不代表实际外观审核通过。
 - [本轮制作与完整中间材料位置](production/production-v5.md)：模型、计时、返工、768P／2K检查范围及跨机器恢复要求。
 - [历史导演案 v3](director.md)：旧版48镜、202秒，原文件和已交付影片完整保留。
 - [周边图像生成说明 v3](image-briefs.md)：角色原图绑定、贴纸／玩偶／周边／意象设计，以及真实感人物不露脸的场景任务卡。
@@ -11,7 +12,7 @@
 - [素材清单](reference-assets.json)：用户 ZIP 中 11 张图的指纹与使用范围。
 - [期清单](episode.json)：稳定 ID、角色与导演稿入口。
 
-本期要求：白绮全程不说话，不设旁白、内心独白或对白字幕；用音乐与环境声连接世界各处的旅行片段。新制作版每个连续镜头均为2–5秒，真实感人物只拍不露脸的局部，反射和背景也不能带出真人面孔。周边印刷角色图与二维贴纸可以显示白绮的绘制面孔。
+本期要求：白绮全程不说话，不设旁白、内心独白或对白字幕；用音乐与环境声连接世界各处的旅行片段。S20连续10秒，其余每镜2–5秒；真实感人物只拍不露脸的局部，反射和背景也不能带出真人面孔。周边印刷角色图与二维贴纸可以显示白绮的绘制面孔，必须保持原图的睁眼与稳定印花。
 
 所有出场人物为女性，真人局部的女性化服装贴近白绮设定图；已生成的普通旅行衣着版本保留归档，但不作为制作输入。原图中没有的无关人员即使不露脸也拒收，范围包括远景、身体局部与倒影。
 
@@ -26,8 +27,7 @@
 ```powershell
 $episode = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/episode.json'
 $referenceZip = '<本地 character.zip 路径>'
-$wideLake = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v5-bf16-001/scenes/S20B-v1.png'
-video-maker/.venv/Scripts/python.exe scripts/character_review.py check --episode $episode --asset $referenceZip --asset $wideLake
+video-maker/.venv/Scripts/python.exe scripts/character_review.py check --episode $episode
 video-maker/.venv/Scripts/python.exe scripts/character_review.py check --episode $episode --document series/vivhite/autumn-journey/episodes/01-autumn-journey/image-briefs.md --asset $referenceZip
 ```
 

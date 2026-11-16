@@ -538,7 +538,7 @@
       "id": "S13",
       "sourceSha256": "423c1c09712a6c98c8cda8a6a07c712860c25ea24dc2b6fc58522d1026c85be5",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-16T15:32:36.431562+00:00",
+      "reviewedAt": "2026-11-16T18:33:32.065335+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
@@ -566,14 +566,14 @@
         }
       ],
       "faceEvidence": null,
-      "observation": "Viewed all 120 native source frames in four complete full-scene sheets, temporal sheet, native contexts 0/119 and all 120 tracked charm-head detail crops. One original cropped woman in white/violet/gold feminine skirt and sleeves holds the umbrella. From approximately 2.1 seconds her own other sleeved arm moves continuously from the same torso into view and steadies the existing hanging acrylic charm; this is the same womans natural arm movement, not a new person or disconnected hand. Neck/body crop never includes chin, mouth, eyes or other facial fragment. Empty wet shuttered street and puddle reflections remain free of other people. The charm sways, then tilts physically under her fingers; the entire head drawing foreshortens and softens with that tilt, with both purple irises still present. No complete blink, independent head turn, talking print or newly invented character observed. No face candidates or cuts; real rain/umbrella/worn pavement remain consistent. Five-second source reviewed fully; approved final edit uses four seconds.",
-      "decision": "accepted",
+      "observation": "Acceptance withdrawn under the strengthened original-artwork fidelity requirement. All 120 source frames and all 120 tracked original-pixel print crops were rechecked against the original image. During the later hand contact and charm tilt the printed eyes become markedly narrower; the earlier conclusion relied on some violet iris remaining visible, which is not enough to certify that eyelid and iris shapes preserve the original print. The whole charm also tilts, so this does not assert that every apparent narrowing is an autonomous blink; the late interval is declined because faithful fixed eye geometry cannot be confidently verified. One existing woman remains in the original cropped feminine costume with no face, added person or hard cut. Preserve raw and previous decision; a clearly open-eye early interval requires independent new review before any selection.",
+      "decision": "rejected",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
       "allCharactersFemale": "passed",
       "costumeStyle": "passed",
       "motionAndContinuity": "passed",
-      "merchandiseBehavior": "passed"
+      "merchandiseBehavior": "failed"
     },
     {
       "id": "S14",
@@ -710,7 +710,7 @@
       "id": "S17",
       "sourceSha256": "75225f74ad1c40a34264c2c5defc422db5c1e03d888d1371aa75d5bbe7a7af52",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-16T16:13:23.010210+00:00",
+      "reviewedAt": "2026-11-16T17:39:50.580866+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
@@ -742,14 +742,14 @@
         "sha256": "d39c3bb51fe2ab23a654354c60f5329809ced252cb51b55b09b9fa17fca23955",
         "items": 4
       },
-      "observation": "Independently viewed all 120 frames of the separate four-times-slowed original early interval: four complete full-scene sheets, temporal sheet, all four exported face-candidate crops, native final context and all 120 tracked print-detail crops. The full five-second candidate uses approximately the original first 1.25 seconds, preserving the original narrowed/closed printed eye design without the later opening event. The stand remains an inert physical object on its clear base; no eye opening/closing, head turn, talking, changing body pose or added character is observed across the candidate. Its slower restrained camera approach retains the full acrylic stand and ordinary greenhouse table, pots, foliage, spray bottle, tray and shears. No real people, hands, human facial fragments or reflections anywhere. Candidate faces are the printed design and plants/structure false positives. No inserted print patch, halo or head-neck seam: this candidate changes timing only with motion-compensated interpolation. Original and first rejected texture correction preserved. Full five seconds reviewed for 2K, final edit uses three seconds.",
-      "decision": "accepted",
+      "observation": "Acceptance withdrawn after direct comparison with the actual greenhouse reference and standee design master: both reference prints have visibly open purple eyes. This previously viewed 120-frame candidate preserves a narrowed or closed generated expression from the raw early interval and therefore does not preserve the reference print. Treating the generated early expression as the original design was incorrect. No real people, face fragments or new characters are present, and timing is continuous, but reference fidelity fails. Preserve this failed slow candidate and all prior records; it must not enter the film or 2K.",
+      "decision": "rejected",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
       "allCharactersFemale": "passed",
       "costumeStyle": "passed",
       "motionAndContinuity": "passed",
-      "merchandiseBehavior": "passed"
+      "merchandiseBehavior": "failed"
     },
     {
       "id": "S18",

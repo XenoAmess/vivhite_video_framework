@@ -1,0 +1,45 @@
+{
+  "id": "S17",
+  "sourceSha256": "75225f74ad1c40a34264c2c5defc422db5c1e03d888d1371aa75d5bbe7a7af52",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-16T17:39:50.580866+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 72,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-75225f74ad-all-frames-01.png",
+      "sha256": "e263c013aab4f094e25f3c249bfc68dbcc6a4376299e3f70fbbae07ab53ccc69",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-75225f74ad-all-frames-02.png",
+      "sha256": "4816d287c8c6224250626a7ef46e1f2477b561650c2ab5c45cd73e5e27450504",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-75225f74ad-all-frames-03.png",
+      "sha256": "57a0fe1fc40bec657d9e7009190aa25799a25f57adc5d5ebd31188030b9320c5",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-75225f74ad-all-frames-04.png",
+      "sha256": "7fceeb481aef7915210d9a76d872608c26c324bee66f3603da4e424a6ddf57c3",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S17-75225f74ad-face-candidates.png",
+    "sha256": "d39c3bb51fe2ab23a654354c60f5329809ced252cb51b55b09b9fa17fca23955",
+    "items": 4
+  },
+  "observation": "Acceptance withdrawn after direct comparison with the actual greenhouse reference and standee design master: both reference prints have visibly open purple eyes. This previously viewed 120-frame candidate preserves a narrowed or closed generated expression from the raw early interval and therefore does not preserve the reference print. Treating the generated early expression as the original design was incorrect. No real people, face fragments or new characters are present, and timing is continuous, but reference fidelity fails. Preserve this failed slow candidate and all prior records; it must not enter the film or 2K.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "failed"
+}

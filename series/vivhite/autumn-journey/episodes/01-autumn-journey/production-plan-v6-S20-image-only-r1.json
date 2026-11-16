@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 6,
+  "model": "fasth3-omni-bf16",
+  "stage": "draft",
+  "fps": 30,
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 300,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "numInferenceSteps": 8,
+  "decoderLayers": 36,
+  "decoderVerification": "GET /v1/models on 2026-11-16",
+  "titleOverlays": [],
+  "closingCredit": "",
+  "shots": [
+    {
+      "id": "S20",
+      "seconds": 10,
+      "sourceSeconds": 10,
+      "startFrame": 0,
+      "seed": 202611170020,
+      "mode": "O",
+      "action": "高山湖远景，近处岩石上坐着小小的白绮玩偶；镜头缓慢后移，云影持续掠过湖面，空间越来越开阔。",
+      "soundDescription": "高处风声、水声，音乐保留长线条。",
+      "prompt": "One uninterrupted ten-second realistic autumn travel shot at the ordinary overcast alpine lake of <Picture 1>. <Picture 1> defines the complete original location, single small fabric doll on the foreground rock, dark backpack and its badge. <Picture 2> defines the same doll design only, not another object. Begin with the pictured foreground doll and backpack and gently move the camera backward for the entire ten seconds, smoothly revealing more lake and mountain space. Keep natural slow cloud shadows and subtle water ripples. The doll is an inert sewn object: preserve its original open violet-pink eyes, thin round gold glasses, fixed facial proportions, pale bob hair and white/deep-violet/gold costume; no expression or pose change. The badge illustration also remains identical and fixed. Maintain ordinary grey weather, patchy snow, dry mountain slopes and physical contact shadows. Preserve the original exact object count and empty landscape. No person, body part, human face or reflection anywhere. No added doll, animal, flower, cut, new scene, rapid movement, readable letters, subtitle, credits, speech, singing, humming or voice.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S20-v2.png",
+        "assets/generated/production-v2-fasth3-001/masters/M04-plush-v1.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M04-plush-v1.png",
+      "generationAction": "高山湖远景，近处岩石上坐着小小的白绮玩偶；镜头缓慢后移，云影持续掠过湖面，空间越来越开阔。"
+    }
+  ],
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "2560x1440",
+    "sampler": "up3",
+    "seed": 1234,
+    "startCondition": "768p film delivered and every complete actual input independently reviewed: S20 ten seconds, other sources five seconds",
+    "scope": "Local video regeneration through port 8002; not a closed-source MiniMax teacher model."
+  },
+  "baselinePlanSha256": "340d08e908a1315aec57d4834c995afec91cc7018040461ae89023fccd298e01",
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "Preserve all raw alignment tails; normalize S20 to 240 native frames / 10 seconds and other sources to 120 frames / 5 seconds at 24fps. Final S20 is one continuous ten-second shot; all other final shots remain 2 to 5 seconds.",
+  "promptRevision": {
+    "id": "continuous-S20-and-reference-appearance-006",
+    "reason": "User restored S20 to one continuous ten-second lake shot and requires faithful original open-eye merchandise, especially acrylic artwork."
+  },
+  "shotDurationExceptions": {
+    "S20": 10
+  },
+  "referenceAppearanceRequired": true,
+  "scope": "Single continuous ten-second S20 candidate, not a completed film",
+  "director": "director-v6.md",
+  "previousProductionPlanSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
+  "sourceContinuation": "Reuse unchanged sources only after exact-byte full-source review and original-artwork comparison. Keep all prior runs, including S20A/S20B. S17 has a separately reviewed image-only generation plan; S20 is a new continuous ten-second generation."
+}

@@ -283,6 +283,7 @@ def prepare(source_plan, directory, destination):
              "soundtrackCredit":"原创器乐与环境声：程序合成", "soundtrackRecipe":RECIPE,
              "closingCredit":plan.get("closingCredit", LEGACY_CLOSING_CREDIT),
              "closingFadeSeconds":.8, "spokenSubtitles":[],
+             "referenceAppearanceRequired":plan.get("referenceAppearanceRequired",False),
              "scope":"Final assembly plan; input/source review does not assert final encoded or human aesthetic acceptance."}
     write_json(destination, final)
     verify_clip_decisions(final, directory)
@@ -312,6 +313,8 @@ def verify_clip_decisions(plan, directory):
         raise ValueError("Every final shot requires its own actual acceptance decision")
     for shot in plan["shots"]:
         row = next((r for r in rows if r["id"] == shot["id"]), None)
+        if plan.get('referenceAppearanceRequired') and (row is None or row.get('referenceAppearance') != 'passed'):
+            raise ValueError(f"Original artwork appearance review is unresolved for {shot['id']}")
         if (row is None or row.get("sourceSha256") != source_hashes[shot.get("sourceFile",f"sources/{shot['id']}.mp4")]
                 or row.get("method") != "assistant-frame-review" or row.get("allUsedFrameReview") is not True
                 or row.get("reviewedNativeFrames",0) < shot["seconds"]*24

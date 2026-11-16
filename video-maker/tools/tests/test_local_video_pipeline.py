@@ -57,6 +57,39 @@ class LocalPipelineTest(unittest.TestCase):
         self.assertEqual(refined['size'],'2560x1440')
         self.assertNotIn('image_reference',refined)
 
+    def test_ten_second_lake_requires_its_specific_declared_exception(self):
+        plan = self.plan()
+        plan['shots'][0].update(id='S20',seconds=10,sourceSeconds=10,seed=20,references=['lake.png'])
+        plan['shots'][1].update(id='S21',startFrame=300)
+        plan['totalFrames'] = 450
+        with self.assertRaises(ValueError):
+            worker.validate(plan)
+        plan['shotDurationExceptions'] = {'S20':10}
+        worker.validate(plan)
+        self.assertEqual(worker.source_frame_count(plan['shots'][0]),240)
+        request = worker.payload_for(plan,plan['shots'][0],lambda path:{'file_id':'file_lake'})
+        self.assertEqual(request['seconds'],10)
+        for exceptions in ({'S21':10},{'S20':15},{'S20':10,'S21':10}):
+            with self.subTest(exceptions=exceptions), self.assertRaises(ValueError):
+                worker.validate({**plan,'shotDurationExceptions':exceptions})
+
+    def test_image_only_generation_never_uploads_an_old_motion_reference(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            for name in ('scene.png','master.png'):
+                (directory/name).write_bytes(name.encode('ascii'))
+            shot = {'seed':17,'prompt':'Keep the original print.','references':['scene.png','master.png']}
+            assets = worker.input_assets({'stage':'draft','shots':[shot]},directory/'episode.json',directory)
+            self.assertEqual(assets,[directory/'scene.png',directory/'master.png'])
+            uploaded = []
+            def upload(path):
+                uploaded.append(path)
+                return {'file_id':'file_'+path}
+            request = worker.payload_for({'stage':'draft'},shot,upload)
+            self.assertEqual(uploaded,['scene.png','master.png'])
+            self.assertNotIn('video_reference',request)
+            self.assertEqual(request['task'],'ref2va')
+
     def test_disconnect_after_post_is_retained_and_cannot_duplicate_submission(self):
         with tempfile.TemporaryDirectory() as temporary:
             path = Path(temporary)/'job.json'
@@ -130,6 +163,24 @@ class LocalPipelineTest(unittest.TestCase):
             actual = json.loads(worker.run(['ffprobe','-v','error','-count_frames','-show_streams','-of','json',str(source)]))
             self.assertEqual(int(actual['streams'][0]['nb_read_frames']),120)
             self.assertEqual(float(actual['streams'][0]['duration']),5)
+
+    def test_ten_second_result_preserves_raw_and_keeps_all_240_review_frames(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            original = root/'original.mp4'
+            worker.run(['ffmpeg','-v','error','-f','lavfi','-i','color=c=blue:s=64x32:r=24',
+                        '-frames:v','244','-c:v','libx264',str(original)])
+            contents = original.read_bytes()
+            class Download:
+                def request(self,*args,**kwargs):
+                    return original.open('rb')
+            raw,source,probe = worker.publish_result(Download(),{'id':'video_long','result':{'sha256':worker.sha(original)}},
+                                                     {'id':'S20','sourceSeconds':10},root,'64x32')
+            self.assertEqual(raw.read_bytes(),contents)
+            self.assertEqual(int(probe['streams'][0]['nb_read_frames']),244)
+            actual = json.loads(worker.run(['ffprobe','-v','error','-count_frames','-show_streams','-of','json',str(source)]))
+            self.assertEqual(int(actual['streams'][0]['nb_read_frames']),240)
+            self.assertEqual(float(actual['streams'][0]['duration']),10)
 
 
 if __name__ == '__main__':

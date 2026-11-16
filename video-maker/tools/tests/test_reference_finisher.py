@@ -25,6 +25,13 @@ class ReferenceFinisherTest(unittest.TestCase):
             file = root/"clip-decisions.json"
             file.write_text(json.dumps(decisions), encoding="utf-8")
             worker.verify_clip_decisions(plan, root)
+            plan['referenceAppearanceRequired'] = True
+            with self.assertRaisesRegex(ValueError,'artwork appearance'):
+                worker.verify_clip_decisions(plan, root)
+            row['referenceAppearance'] = 'passed'
+            file.write_text(json.dumps(decisions), encoding='utf-8')
+            worker.verify_clip_decisions(plan, root)
+            plan.pop('referenceAppearanceRequired')
             for field, bad in (("noHumanFaces","failed"),("noAddedPeople","failed"),
                                ("sourceSha256","replaced"),("allUsedFrameReview",False)):
                 altered = json.loads(json.dumps(decisions))
