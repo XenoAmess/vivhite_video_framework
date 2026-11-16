@@ -1,0 +1,45 @@
+{
+  "id": "S24",
+  "sourceSha256": "38ab1e902fdbf1fbd93032b327cc1c6579bc2725da7b6384215d252fd719b476",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-16T17:30:44.226968+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 96,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S24-38ab1e902f-all-frames-01.png",
+      "sha256": "5695f18257f51a6916df262e80e361c502100d5de0712dcfb7589b2b3a52490b",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S24-38ab1e902f-all-frames-02.png",
+      "sha256": "0f68cf8820531bf86af5045f45108c5e3748c1805cad64d6f677896f9d822e22",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S24-38ab1e902f-all-frames-03.png",
+      "sha256": "0e5522fc31fccbd13bbf831790e83fb1857792cb8a866108e4bf191f1d48ea2b",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S24-38ab1e902f-all-frames-04.png",
+      "sha256": "ab18d5974559b4eaca9c795682b486063100cfc1d7952bcf6a63f6a15deefbe6",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S24-38ab1e902f-face-candidates.png",
+    "sha256": "6d79d027be2f263fd3b9ee42e8e42d67a73de1074c15822f360daa4554b6871a",
+    "items": 1
+  },
+  "observation": "Viewed all 120 original frames in four full-scene sheets, temporal sheet, candidate, native frames 0/39 and a segmented original-pixel print-detail sheet covering every frame on both sides of the cut. Only one existing kneeling cropped woman appears, head and neck outside frame, in white violet gold feminine skirt, white legwear and violet boots. No unrelated person or real face appears; candidate is knee and hand. The acrylic charm retains its open printed eyes and fixed pose throughout all 120 frames; only physical camera framing changes. No generated letters. However frame 39 abruptly cuts from a wider view to a closer hand and bag view. Reject motion and continuity, preserve raw and evidence. Other checks passed.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "failed",
+  "merchandiseBehavior": "passed"
+}

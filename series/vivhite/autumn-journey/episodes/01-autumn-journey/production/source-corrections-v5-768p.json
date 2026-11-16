@@ -50,6 +50,14 @@
       "parentSha256": "8ce48ed198e429d59dfacf34632c1274d5263d630e6a6ccb5cf3583d31de201e",
       "receipt": "corrections/S19-slow2-v1.json",
       "inspectionReport": "clip-inspection-slowed/S19.json"
+    },
+    "S24": {
+      "path": "corrections/S24-slow4-v1.mp4",
+      "sha256": "5dea106d23199d1c5c0689e452d670e40ecbc2f78cc576a9fbfed9db1a64a952",
+      "parent": "sources/S24.mp4",
+      "parentSha256": "38ab1e902fdbf1fbd93032b327cc1c6579bc2725da7b6384215d252fd719b476",
+      "receipt": "corrections/S24-slow4-v1.json",
+      "inspectionReport": "clip-inspection-slowed/S24.json"
     }
   },
   "receipts": {
@@ -3400,8 +3408,33 @@
       "originalPreserved": true,
       "semanticReview": "pending",
       "entersFilm": false
+    },
+    "S24": {
+      "schemaVersion": "vivhite-local-retime-candidate-1",
+      "identity": {
+        "parentSha256": "38ab1e902fdbf1fbd93032b327cc1c6579bc2725da7b6384215d252fd719b476",
+        "factor": 4.0,
+        "frames": 120,
+        "fps": 24,
+        "recipe": "setpts-mci-aobmc-bidir-vsbmc-crf16-1",
+        "workerSha256": "4d1d37ede53b6d24006e04822d9d6a95ae72b5a80db8881707d678448a791404"
+      },
+      "sha256": "5dea106d23199d1c5c0689e452d670e40ecbc2f78cc576a9fbfed9db1a64a952",
+      "reason": "Preserve continuous falling sand and a single framing by slowing the original first 1.25 seconds to five seconds. The raw source has an abrupt hard framing cut at frame 39. Keep the raw and all processing; independently inspect all 120 frames before any selection.",
+      "nativeSize": [
+        1344,
+        768
+      ],
+      "durationSeconds": 5,
+      "sourceIntervalSeconds": [
+        0,
+        1.25
+      ],
+      "originalPreserved": true,
+      "semanticReview": "pending",
+      "entersFilm": false
     }
   },
   "acceptance": "Every selected corrected source was independently viewed across all 120 frames before recording its actual acceptance. Processing receipts retain their initial pending status; later decisions are recorded separately.",
-  "originalSourceDisposition": "The second unretimed S48 preserves the scene but is rejected for excessive wing speed; first-round unrelated-bear failure also remains archived. Neither uncorrected source enters film or 2K. S07 original printed-face blink is rejected and archived separately; only its independently reviewed original-texture correction enters film or 2K. S11 original card print morphs from a face into the back of a head; it is rejected and retained, and only its independently reviewed original-texture correction enters the film and 2K. S16 original printed-eye blink is rejected and retained; only its separately reviewed original-texture correction enters film and 2K. S17 original printed-eye opening and first texture correction with a visible blurred seam are rejected and preserved. Only the independently reviewed slowed early interval, without a texture patch, enters film and 2K. S19 raw framing cut at frame 78 is rejected; the separately reviewed slowed first 2.5-second interval provides the selected continuous five-second source. Original and all intermediate files retained."
+  "originalSourceDisposition": "The second unretimed S48 preserves the scene but is rejected for excessive wing speed; first-round unrelated-bear failure also remains archived. Neither uncorrected source enters film or 2K. S07 original printed-face blink is rejected and archived separately; only its independently reviewed original-texture correction enters film or 2K. S11 original card print morphs from a face into the back of a head; it is rejected and retained, and only its independently reviewed original-texture correction enters the film and 2K. S16 original printed-eye blink is rejected and retained; only its separately reviewed original-texture correction enters film and 2K. S17 original printed-eye opening and first texture correction with a visible blurred seam are rejected and preserved. Only the independently reviewed slowed early interval, without a texture patch, enters film and 2K. S19 raw framing cut at frame 78 is rejected; the separately reviewed slowed first 2.5-second interval provides the selected continuous five-second source. Original and all intermediate files retained. S24 original hard framing cut at frame 39 is rejected and retained. The independently reviewed four-times-slowed first 1.25-second interval is selected as a continuous five-second source; final edit remains four seconds."
 }
