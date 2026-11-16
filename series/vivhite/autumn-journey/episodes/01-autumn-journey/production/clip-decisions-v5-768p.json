@@ -3,6 +3,51 @@
   "sourcePlanSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
   "shots": [
     {
+      "id": "S01",
+      "sourceSha256": "9d354d51be5410f9dacc083d46ee9dfc24b5595c0857374ac228969d5082fc8b",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-16T13:07:16.771275+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S01-9d354d51be-all-frames-01.png",
+          "sha256": "b3a705534f87d70765f8483c078c62dde5133d1763f3ff49e227cd1752b3639e",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S01-9d354d51be-all-frames-02.png",
+          "sha256": "313e27d5a9c8efad5e36dbb88bc0686e826344d1ee1fd8a019f1dd9d1f7679f7",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S01-9d354d51be-all-frames-03.png",
+          "sha256": "c285c7e28523da52ae7941b11ec52bb574747ba1a7afd1ae023751df85151daa",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S01-9d354d51be-all-frames-04.png",
+          "sha256": "5ef522d569f973de4ad3bf74479daa555bb19fb787dd883e6d7ad72548241272",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S01-9d354d51be-face-candidates.png",
+        "sha256": "04246ab474b03f147a3e38337b6d5888587630919af3c9999286c938f49e2a08",
+        "items": 4
+      },
+      "observation": "Actually viewed all 120 source frames across four complete sheets, temporal sheet, all four detector candidate crops, both endpoint frames at native resolution, all 120 native charm-region frames and enlarged eye-pattern details. One woman is visible only as torso, one arm and covered legs in the original feminine white/violet/gold outfit; her entire head, chin and face remain outside the image. She gently moves the curtain; rural fields, buildings, poles and a passing tree move outside the train. No extra person or reflected face appears. Detector candidates are chain links and sleeve folds. The same physical acrylic charm sways with the bag; its illustrated eyes remain open with no blink or talking, and the printed character costume stays fixed. No extra body part, generated text or cut appears. Accept the complete five-second native source; final cut uses four seconds, while later 2K input uses all five.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed"
+    },
+    {
       "id": "S15",
       "sourceSha256": "17a0fd9fb3198360092aa2422b3682b867cc4528d60564c8bb80b8c711899e05",
       "method": "assistant-frame-review",
