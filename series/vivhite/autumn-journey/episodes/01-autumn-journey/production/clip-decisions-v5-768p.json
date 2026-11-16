@@ -179,6 +179,51 @@
       "merchandiseBehavior": "passed"
     },
     {
+      "id": "S05",
+      "sourceSha256": "b7c808a5bed1c387eee72e54dd89f1d89f6fcfe9134089bb402de3b29696a023",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-16T14:09:20.895988+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S05-b7c808a5be-all-frames-01.png",
+          "sha256": "c1667e50ebb6637779eae5beca5cb0f34d0b221428be524de80361a2ab995c74",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S05-b7c808a5be-all-frames-02.png",
+          "sha256": "f3f3b2b838b08d087b53b2acefe9fe4648a6b73b5c934be9c3241a9b562fdae6",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S05-b7c808a5be-all-frames-03.png",
+          "sha256": "2aa3f028fbedaa01f19590d1020d07953dfa8b9c6d70e60c8d8fb62f8b22f167",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S05-b7c808a5be-all-frames-04.png",
+          "sha256": "15b7a1694989b57ce45b5bd3d322823abd606b5893f1975d3b95a9867774df23",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S05-b7c808a5be-face-candidates.png",
+        "sha256": "2ead47e13c156b3a05dc71082a3f41a31e98a4fbc8e6599d05e42ac0356f52c6",
+        "items": 1
+      },
+      "observation": "Actually viewed every one of the 120 source frames on four complete sheets, temporal evidence including all seven cut-candidate times, the sole face crop, native contexts at frames 0/26/70 and all 120 tracked original-pixel sticker-face crops. Exactly the same female rider is visible only as her skirt edge, white legwear and violet boots, with no head or face in frame. Pedalling is followed by coasting; camera remains beside the same bicycle on the tree-lined road. Large leg/pedal foreground movement produced the cut candidates; the full frame sequence shows no actual scene cut. No unrelated person, extra limb, reflected face or new figure. The original Vivhite sticker stays on the down tube with open printed eyes and unchanged costume; the detector crop is that printed face. No generated lettering. Accept the complete exact five-second native source for the five-second final shot and later 2K input.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed"
+    },
+    {
       "id": "S08",
       "sourceSha256": "2bfd30a8602d311a04b0d69651cded4554a02d947b82ed0af29f20d51e834c91",
       "method": "assistant-frame-review",
