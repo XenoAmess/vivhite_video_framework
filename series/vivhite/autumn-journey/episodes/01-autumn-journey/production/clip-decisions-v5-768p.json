@@ -224,6 +224,51 @@
       "merchandiseBehavior": "passed"
     },
     {
+      "id": "S06",
+      "sourceSha256": "7e1cda0492e54c1a99d2468a46f5744a4d63bdaba9092527f23a387c1401aae0",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-16T14:22:49.047867+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S06-7e1cda0492-all-frames-01.png",
+          "sha256": "867f4b3871b0d4b5980f9406550271aa1d66d6c3b5b7844dc713b94375258845",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S06-7e1cda0492-all-frames-02.png",
+          "sha256": "03f27b26afa3f6da6b56470d44b884240d08e8a1101ae0500a00f8f3183261dc",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S06-7e1cda0492-all-frames-03.png",
+          "sha256": "180ce486e0d1fa1d0045f1ab51f1c9f0f686aaf6ac1cb8f6e1eb70b451f684f9",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S06-7e1cda0492-all-frames-04.png",
+          "sha256": "a15fce90011a79d8b6304fd56a09acdd8f24cc60cbd44cdefad3eb33c3a4f201",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S06-7e1cda0492-face-candidates.png",
+        "sha256": "444dbc9ec7ad4901523d8515938d33c9c0e84186c0a227fd8b8903e3ab05a8e3",
+        "items": 3
+      },
+      "observation": "Actually viewed all 120 source frames on four complete sheets, temporal evidence, all three candidate crops, both native endpoints and all 120 tracked original-pixel sticker regions. Empty tram seats, glass and pole stay in view while ordinary worn apartment fronts, parked bicycles, laundry and trees slide outside. No passenger, pedestrian, unrelated body part, real face or reflected person appears; the hanging clothes are empty laundry, not bodies. Detector candidates are facade/window/air-conditioner geometry and an interior lamp. The same small Vivhite sticker remains attached to the glass with open fixed printed eyes and unchanged costume, without blinking or speech. No generated title, subtitle or credit appears; opening titles remain a later assembly layer. No scene cut. Accept the complete exact five-second native source; use the planned final cut duration and the fully reviewed five-second source for later 2K.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed"
+    },
+    {
       "id": "S08",
       "sourceSha256": "2bfd30a8602d311a04b0d69651cded4554a02d947b82ed0af29f20d51e834c91",
       "method": "assistant-frame-review",
