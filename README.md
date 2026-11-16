@@ -22,6 +22,8 @@
 
 新增内容子项目[白绮／秋日旅程](series/vivhite/autumn-journey/README.md)：v3 成片为无对白的多地点自由旅行蒙太奇，48 镜、202 秒、每镜 2–10 秒；全员女性，服装贴近白绮，真人不露脸，不允许新增原图没有的无关人员，配合贴纸、玩偶、周边与意象。按用户反馈重做 42 镜为更接近实拍的普通世界，全部生成与检查图片入库。源片 832×480／24fps，最终上采样为 1080p30；实际成片、修订与审核覆盖见[制作记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v3.md)。
 
+该片新增[片尾修订 v4](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v4.md)：蓝蝶八倍慢放，片尾仅显示“白绮|秋日旅程”“献给最可爱的你”，移除画面制作署名；完整影片和单独片尾另存，v3 完整保留。
+
 三期当前成片均已完成，规格1080p30、晓晓配音、中文字幕及可替换人物图片：第一期[10分55秒](series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v3.md)、第二期[18分29.3秒](series/math-education/inversion-count/episodes/02-rectangle-proof/docs/production-v1.md)、第三期[32分24秒](series/math-education/inversion-count/episodes/03-wilson-theorem/docs/production-v1.md)。制作器新增通用证明动画后端，后两期保留全部证明、合法移动和分阶段推导。成片与缓存放在仓库外，检查范围见各期制作记录及[独立复核](docs/three-episode-production-review.md)。
 
 后续视频任务必须执行[角色参与及文案审核规约](docs/character-workflow.md)：创作前读取独立私有角色仓库中的唯一完整人格文档，成稿后分别审核人格一致性与信息披露。公开项目只保存角色 ID、必要版本引用及审核状态，不保存人格副本。

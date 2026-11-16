@@ -70,6 +70,19 @@ class ReferenceFinisherTest(unittest.TestCase):
             self.assertEqual(receipt["speechSource"], "none")
             self.assertIs(receipt["nativeModelAudioInFinalMix"], False)
 
+    def test_closing_dedication_can_replace_subtitle_and_suppress_credits(self):
+        plan = {"fps":30, "shots":[{"id":"S48", "startFrame":5880, "seconds":6}],
+                "titleOverlays":[{"shotId":"S48", "text":"白绮|秋日旅程", "subtitle":"献给最可爱的你"}],
+                "closingCredit":""}
+        events = [line for line in worker.titles(plan).splitlines() if line.startswith("Dialogue:")]
+        self.assertEqual(len(events), 2)
+        self.assertTrue(events[0].endswith("白绮|秋日旅程"))
+        self.assertTrue(events[1].endswith("献给最可爱的你"))
+        self.assertFalse(any(",Credit," in line for line in events))
+        plan["closingCredit"] = "bad{\\pos(1,2)}"
+        with self.assertRaises(ValueError):
+            worker.titles(plan)
+
 
 if __name__ == "__main__":
     unittest.main()

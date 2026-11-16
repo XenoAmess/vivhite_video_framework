@@ -71,4 +71,6 @@ video-maker/.venv/Scripts/python.exe video-maker/tools/reference_finisher.py fin
 
 最终合成还要求 `clip-decisions.json`：每镜绑定实际选用视频的 SHA-256，审阅方式为 `assistant-frame-review`，明确记录全部入片帧的查看范围，以及静默画面、无真人脸、无新增人员、全女性、服装、动作连续性和周边行为的结论。`prepare` 和 `finish` 拒绝缺失、未通过或绑定旧文件的记录；脚本本身不代替审阅者作出结论。原图没有的路人、远景剪影、额外身体局部与倒影，即使不露脸，也不能放行。
 
+标题计划可通过 `closingCredit` 指定片尾署名；显式设为 `""` 时不生成署名事件。省略该字段仍沿用历史署名。`titleOverlays` 的 `text` 与 `subtitle` 分别控制第一行和第二行，也可用于标题与献词；所有实际文字均须参与最终计划和素材的独立审核。
+
 `source-selections.json` 可以选择修订源片，必须同时绑定其原文件与修订收据，旧版保留。`stabilize_printed_patch.py` 只允许将首帧已有的周边印花跟踪回物体表面，遇到跟踪不明确即失败；`--used-seconds` 限定实际使用区间。它不用于盖住人物或消除新增路人。修订完成后仍须逐帧重审，不能沿用原视频的通过记录。

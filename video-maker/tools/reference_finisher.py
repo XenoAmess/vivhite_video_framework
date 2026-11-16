@@ -13,6 +13,7 @@ import wave
 
 RATE = 48000
 RECIPE = "autumn-instrumental-1"
+LEGACY_CLOSING_CREDIT = "影像：imagegen × FastH3 Omni  ·  原创器乐与环境声：程序合成"
 
 
 def sha(path):
@@ -218,8 +219,11 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             if any(c in value for c in "{}\n\r\\"):
                 raise ValueError("Title text cannot contain ASS control characters")
             text += f"Dialogue: 0,{ass_time(start)},{ass_time(end)},{style},,0,0,0,,{{\\fad(350,400)}}{value}\n"
-        if shot["id"] == "S48":
-            text += f"Dialogue: 0,{ass_time(start + .5)},{ass_time(end)},Credit,,0,0,0,,{{\\fad(350,400)}}影像：imagegen × FastH3 Omni  ·  原创器乐与环境声：程序合成\n"
+        credit = plan.get("closingCredit", LEGACY_CLOSING_CREDIT) if shot["id"] == "S48" else ""
+        if any(c in credit for c in "{}\n\r\\"):
+            raise ValueError("Credit text cannot contain ASS control characters")
+        if credit:
+            text += f"Dialogue: 0,{ass_time(start + .5)},{ass_time(end)},Credit,,0,0,0,,{{\\fad(350,400)}}{credit}\n"
     return text
 
 
@@ -269,7 +273,7 @@ def prepare(source_plan, directory, destination):
              "sourceSize":plan["sourceSize"], "files":files, "shots":plan["shots"], "pictureFile":picture,
              "titleOverlays":plan["titleOverlays"], "nativeAudioInFinalMix":False,
              "soundtrackCredit":"原创器乐与环境声：程序合成", "soundtrackRecipe":RECIPE,
-             "closingCredit":"影像：imagegen × FastH3 Omni · 原创器乐与环境声：程序合成",
+             "closingCredit":plan.get("closingCredit", LEGACY_CLOSING_CREDIT),
              "closingFadeSeconds":.8, "spokenSubtitles":[],
              "scope":"Final assembly plan; input/source review does not assert final encoded or human aesthetic acceptance."}
     write_json(destination, final)

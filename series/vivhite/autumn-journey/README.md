@@ -6,6 +6,8 @@
 
 制作补充：所有出场人物均为女性，女性化服装贴近白绮设定图；静默、不露脸与短镜头要求适用于成片全部帧。原图中没有的无关人员，即使不露脸也拒收。
 
+最新[片尾修订 v4](episodes/01-autumn-journey/production/production-v4.md)将 S48 蓝蝶放慢到原速的 1/8，天空只显示“白绮|秋日旅程”和“献给最可爱的你”，不显示制作署名。完整影片与单独片尾已另存；原 v3 成片与导演稿保持归档，新片尾以[合成计划 v5](episodes/01-autumn-journey/final-assembly-plan-v5.json)为准。
+
 - 主人公：白绮，英文名 Vivhite；角色 ID 为 `vivhite`。
 - [第一期清单](episodes/01-autumn-journey/episode.json)。
 - [导演案](episodes/01-autumn-journey/director.md)。

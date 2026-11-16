@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "vivhite-closing-retime-1",
+  "parent": "clean-text-001/sources/S48.mp4",
+  "parentSha256": "ad54040751becd07fc83a49820639d93e6b5b71c3e39d3fc44a85ed8070fdb3b",
+  "output": "retimed/S48-slow-v1.mp4",
+  "outputSha256": "1ad921d52c00d760d96785af9b01d82aee373d5fe70ce179e0cb35efca76f9d6",
+  "speedMultiplier": 0.125,
+  "timeStretchFactor": 8,
+  "filter": "trim=end_frame=22,setpts=8*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:vsbmc=1:scd=none",
+  "outputFrames": 144,
+  "fps": 24,
+  "durationSeconds": 6,
+  "wholeSceneSlowed": true,
+  "audioUsed": false,
+  "scope": "Technical transform only; all output frames require semantic review."
+}
