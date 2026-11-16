@@ -62,18 +62,24 @@ def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destinati
         shot.update(inputSource=target.relative_to(directory).as_posix(),inputSourceSha256=sha(target))
         for key in ('motionReference','motionReferenceSha256','motionReferenceSeconds','references'):
             shot.pop(key,None)
+        framing = ('The same one woman stays in exactly the original crop with her entire head outside the picture; '
+                   'preserve her feminine white/deep-violet/gold clothes. '
+                   if shot['mode']=='H' else
+                   'The same one illustrated woman remains strictly back-facing throughout. '
+                   if shot['mode']=='A' else 'The existing environment stays unoccupied by people. ')
+        merchandise = ('The exact existing fabric doll remains an inert object with its same sewn face, expression and costume. '
+                       if shot.get('designMaster','').endswith('M04-plush-v1.png') else
+                       'The existing printed illustration remains identical and fixed to its original surface. '
+                       if shot['mode'] not in ('A','W') and shot['id'] not in ('S18','S39','S48') else '')
+        ending = ('The existing tiny corner butterfly makes just one calm, smooth wing cycle over about four seconds. '
+                  if shot['id']=='S48' else '')
         shot['prompt'] = (
-            'Regenerate this same uninterrupted travel shot in clear 2560x1440 detail. '
-            'Preserve the exact framing, camera motion, timing, ordinary weather, terrain and existing objects. '
-            'Preserve the exact existing number and identity of people; add no person, human body part, hand, silhouette or reflected person. '
-            'All existing people are adult women in feminine white/deep violet-black/gold costumes. '
-            'Keep every real head and face outside all frames, including reflections, backgrounds, posters and screens. '
-            'Any illustrated character already facing away must remain strictly back-facing. '
-            'Existing faces drawn or embroidered on inert plushes and printed merchandise remain exactly the same; '
-            'no blinking, mouth motion, morphing print, costume change or living toy. '
-            'No readable text, subtitles, credits, voices, speech, singing, humming or laughter. '
-            'No beautifying the location, invented flowers or magical lighting. '
-            'Keep the existing gentle action: '+shot['generationAction'])
+            'Regenerate this same uninterrupted quiet travel shot in clear 2560x1440 detail. '
+            'The input video defines every scene element. Preserve its exact framing, camera tempo, natural light, '
+            'ordinary weather, colors, terrain and object count. '+framing+merchandise+ending+
+            'Introduce no extra person or body part. No real human face or facial fragment anywhere, including reflections and background. '
+            'No readable lettering, subtitles, credits, speech, singing or other voices. '
+            'Keep the original gentle action: '+shot['generationAction'])
     for name in ('soundtrack.wav','soundtrack-receipt.json'):
         target = directory/name
         if target.exists() and sha(target) != sha(draft_directory/name):
