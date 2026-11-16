@@ -24,11 +24,17 @@ def export(directory):
     accepted = [row for row in decisions if row.get('allSourceFrameReview') is True
                 and all(row.get(key)=='passed' for key in keys)]
     jobs = []
+    selections_file = directory/'source-selections.json'
+    selections = json.loads(selections_file.read_text(encoding='utf-8'))['selections'] if selections_file.exists() else {}
     for file in sorted((directory/'jobs').glob('S*.json')):
         row = json.loads(file.read_text(encoding='utf-8'))
         jobs.append({key:row.get(key) for key in ('shotId','status','jobId','submittedAt','firstInProgressAt',
                                                 'downloadedAt','rawSha256','sourceSha256','requestSha256')})
         jobs[-1]['inferenceSeconds'] = row.get('remote',{}).get('result',{}).get('inference_time_s')
+        selected = selections.get(row.get('shotId'))
+        if selected:
+            jobs[-1]['selectedSourceSha256'] = selected['sha256']
+            jobs[-1]['selectedSourceFile'] = selected['path']
     progress = {'schemaVersion':'vivhite-local-production-progress-1','snapshotAt':datetime.now(timezone.utc).isoformat(),
         'sourcePlanSha256':state['planSha256'],'model':state['model'],'status':state['status'],
         'completedSources':sum(bool(row['sourceSha256']) for row in jobs),'acceptedSources':len(accepted),

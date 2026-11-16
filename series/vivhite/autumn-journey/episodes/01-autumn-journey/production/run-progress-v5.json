@@ -1,18 +1,42 @@
 {
   "schemaVersion": "vivhite-local-production-progress-1",
-  "snapshotAt": "2026-11-16T12:23:23.260132+00:00",
+  "snapshotAt": "2026-11-16T12:41:56.434874+00:00",
   "sourcePlanSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
   "model": "fasth3-omni-bf16",
   "status": "generating",
-  "completedSources": 2,
-  "acceptedSources": 2,
+  "completedSources": 3,
+  "acceptedSources": 3,
   "totalShots": 49,
-  "generationPercent": 4.08,
-  "acceptedPercent": 4.08,
+  "generationPercent": 6.12,
+  "acceptedPercent": 6.12,
   "finalFilmDelivered": false,
   "humanFullPlayback": false,
   "runRelativeToRepositoryParent": "vivhite-analysis-output/vivhite/autumn-journey/production-v5-bf16-768p-002",
   "jobs": [
+    {
+      "shotId": "S01",
+      "status": "queued",
+      "jobId": "video_gen_0d7f96e847ca41a69bde502035f46a02",
+      "submittedAt": "2026-11-16T12:37:41.603763+00:00",
+      "firstInProgressAt": null,
+      "downloadedAt": null,
+      "rawSha256": null,
+      "sourceSha256": null,
+      "requestSha256": "11011a6616a31bb431f78a6631d2ded2b45c8e6a39df3fbd1532261992692d0b",
+      "inferenceSeconds": null
+    },
+    {
+      "shotId": "S08",
+      "status": "queued",
+      "jobId": "video_gen_3951781e00164251afea89cc46def192",
+      "submittedAt": "2026-11-16T12:37:41.827351+00:00",
+      "firstInProgressAt": null,
+      "downloadedAt": null,
+      "rawSha256": null,
+      "sourceSha256": null,
+      "requestSha256": "27ee1db3d96a86d1b3c692013160891737a3a577cf88e472f2b2c22648564c68",
+      "inferenceSeconds": null
+    },
     {
       "shotId": "S15",
       "status": "completed",
@@ -38,16 +62,30 @@
       "inferenceSeconds": 799.0319360219873
     },
     {
-      "shotId": "S48",
+      "shotId": "S20B",
       "status": "in_progress",
-      "jobId": "video_gen_687f33294c044a1e9ce73ee71ebcb9d4",
-      "submittedAt": "2026-11-16T12:22:31.624258+00:00",
-      "firstInProgressAt": "2026-11-16T12:22:47.871653+00:00",
+      "jobId": "video_gen_ce313b205cc746be8dd7eaaf7ebdc188",
+      "submittedAt": "2026-11-16T12:37:41.502499+00:00",
+      "firstInProgressAt": "2026-11-16T12:37:50.120020+00:00",
       "downloadedAt": null,
       "rawSha256": null,
       "sourceSha256": null,
-      "requestSha256": "f8ae95ca739490095286d4802f6b2284663de8991e295a82248cd0a006025f8b",
+      "requestSha256": "d8c7114c982a6ac842748dc52b489d3491c154c50e24d1c8ebb88aa5357a8cb4",
       "inferenceSeconds": null
+    },
+    {
+      "shotId": "S48",
+      "status": "completed",
+      "jobId": "video_gen_687f33294c044a1e9ce73ee71ebcb9d4",
+      "submittedAt": "2026-11-16T12:22:31.624258+00:00",
+      "firstInProgressAt": "2026-11-16T12:22:47.871653+00:00",
+      "downloadedAt": "2026-11-16T12:36:12.346848+00:00",
+      "rawSha256": "cf27de7dac0301c7a02d1cdb41d421cbaecb979fe5144475c20cf8fa98518c1b",
+      "sourceSha256": "b5039aafc96b23eac6fc36ad57dec17092664ea520d7d3cae0156b7642e157ce",
+      "requestSha256": "f8ae95ca739490095286d4802f6b2284663de8991e295a82248cd0a006025f8b",
+      "inferenceSeconds": 803.3339299540967,
+      "selectedSourceSha256": "a5dc756dd7d803b0cad9d80e86c28b5613e359f11ef2b8de1f4308bc360e7233",
+      "selectedSourceFile": "corrections/S48-slow3-v1.mp4"
     }
   ],
   "semanticScope": "Only recorded actual source decisions count as accepted. No final film acceptance is implied."

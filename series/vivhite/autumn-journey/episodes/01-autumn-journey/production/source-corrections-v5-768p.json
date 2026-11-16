@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "vivhite-local-source-corrections-1",
+  "sourcePlanSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
+  "run": "../vivhite-analysis-output/vivhite/autumn-journey/production-v5-bf16-768p-002",
+  "selections": {
+    "S48": {
+      "path": "corrections/S48-slow3-v1.mp4",
+      "sha256": "a5dc756dd7d803b0cad9d80e86c28b5613e359f11ef2b8de1f4308bc360e7233",
+      "parent": "sources/S48.mp4",
+      "parentSha256": "b5039aafc96b23eac6fc36ad57dec17092664ea520d7d3cae0156b7642e157ce",
+      "receipt": "corrections/S48-slow3-v1.json",
+      "inspectionReport": "clip-inspection-corrected/S48.json"
+    }
+  },
+  "receipts": {
+    "S48": {
+      "schemaVersion": "vivhite-local-retime-candidate-1",
+      "identity": {
+        "parentSha256": "b5039aafc96b23eac6fc36ad57dec17092664ea520d7d3cae0156b7642e157ce",
+        "factor": 3.0,
+        "frames": 120,
+        "fps": 24,
+        "recipe": "setpts-mci-aobmc-bidir-vsbmc-crf16-1",
+        "workerSha256": "4d1d37ede53b6d24006e04822d9d6a95ae72b5a80db8881707d678448a791404"
+      },
+      "sha256": "a5dc756dd7d803b0cad9d80e86c28b5613e359f11ef2b8de1f4308bc360e7233",
+      "reason": "The actual native 768P source preserves the empty coast and original graphic, but its blue wings cycle about every 1.4 seconds. Slow the entire uninterrupted shot threefold for a calm cycle near four seconds. Keep every original file and review this distinct five-second candidate before use.",
+      "nativeSize": [
+        1344,
+        768
+      ],
+      "durationSeconds": 5,
+      "sourceIntervalSeconds": [
+        0,
+        1.6666666666666667
+      ],
+      "originalPreserved": true,
+      "semanticReview": "pending",
+      "entersFilm": false
+    }
+  },
+  "acceptance": "The separate corrected source was actually reviewed across all 120 frames before recording acceptance. Candidate receipt retains its original pending status; the actual later decision is separate.",
+  "originalSourceDisposition": "The second unretimed S48 preserves the scene but is rejected for excessive wing speed; first-round unrelated-bear failure also remains archived. Neither uncorrected source enters film or 2K."
+}

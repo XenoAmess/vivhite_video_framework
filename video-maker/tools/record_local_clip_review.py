@@ -5,7 +5,7 @@ No face detector or threshold supplies semantic acceptance. GPL-3.0-only.
 import argparse
 from pathlib import Path
 
-from local_video_pipeline import read,save,now
+from local_video_pipeline import read,save,now,contained
 from reference_finisher import sha
 
 
@@ -14,8 +14,16 @@ def record(plan_file,directory,identity,observation,accepted,all_frames_viewed,f
         raise ValueError('Actual all-frame review and its concrete observation are required')
     plan = read(plan_file)
     shot = next(row for row in plan['shots'] if row['id']==identity)
-    source = Path(directory)/'sources'/f'{identity}.mp4'
-    report = read(Path(directory)/'clip-inspection'/f'{identity}.json')
+    selections_file = Path(directory)/'source-selections.json'
+    selected = read(selections_file)['selections'].get(identity) if selections_file.exists() else None
+    source = contained(directory,selected['path'] if selected else f'sources/{identity}.mp4')
+    if selected:
+        parent = contained(directory,selected['parent'])
+        contained(directory,selected['receipt'])
+        if sha(source) != selected['sha256'] or sha(parent) != selected['parentSha256']:
+            raise ValueError('Selected correction or parent changed')
+    report = read(contained(directory,selected.get('inspectionReport',f'clip-inspection/{identity}.json')
+                            if selected else f'clip-inspection/{identity}.json'))
     if (report['identity']['sourceSha256'] != sha(source) or report['usedFramesAnalysed'] != 120
             or report['identity']['usedSeconds'] != 5):
         raise ValueError('Review evidence must cover the exact actual five-second source')
