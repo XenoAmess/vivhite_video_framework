@@ -89,6 +89,51 @@
       "merchandiseBehavior": "passed"
     },
     {
+      "id": "S03",
+      "sourceSha256": "1fab55e138623b5f3efbafd5fb9c424a009404a47d5382812a9722c46750bba6",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-16T13:44:45.940457+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S03-1fab55e138-all-frames-01.png",
+          "sha256": "45ff2199b3d4d988a206cf5f97038ce74c35b84d6fb22a1c6f7ba57f7b0129e8",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S03-1fab55e138-all-frames-02.png",
+          "sha256": "9a37e24dc35e25a1d1100ceb8c341ea662f727d259bdbbefb5bda406379c5557",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S03-1fab55e138-all-frames-03.png",
+          "sha256": "e81dd7df0033a1d836b9f9e177f1cc047cdb3f9c9f578bbd8df43ec6c6464599",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S03-1fab55e138-all-frames-04.png",
+          "sha256": "557f609886476fe7521e4adc4c6afd2be8794b97bb6b2ef189f3131c49a950f5",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S03-1fab55e138-face-candidates.png",
+        "sha256": "b2f3e7885f03e8d8c6dc8cb6fcacc14e08daa22504f085ec2bcdfaef5416bdd3",
+        "items": 1
+      },
+      "observation": "Actually viewed all 120 source frames on four complete sheets, temporal evidence, the sole face-candidate crop, both endpoints at native resolution, and two native-region sheets covering every badge frame. Exactly one woman walks along the otherwise empty rural platform, framed below the waist; no head, chin or human face enters. Her violet skirt, white legwear, violet boots and gold trim remain consistent. Her own hands and legs move naturally with her stride; no disconnected limb or unrelated person appears. Camera follows the walk continuously, with the same bag and round badge swinging physically; its printed character face remains fixed without blink or speech. The detector candidate is background building/roof geometry. Platform, tracks, houses and glass show no extra person or reflected face. No generated lettering or cut. Accept the complete five-second native source; final cut uses four seconds, with all five reviewed seconds eligible for 2K input.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed"
+    },
+    {
       "id": "S08",
       "sourceSha256": "2bfd30a8602d311a04b0d69651cded4554a02d947b82ed0af29f20d51e834c91",
       "method": "assistant-frame-review",
