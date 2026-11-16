@@ -10,7 +10,7 @@
   "maximumUnfinishedJobsPerModel": 32,
   "clientDispatchWindow": 3,
   "rawAlignmentTailPolicy": "Keep original model output unchanged. Make exact five-second video-only inputs; final cuts are 2-5 seconds.",
-  "referencePolicy": "Scene image fixes first-frame composition; previously reviewed video supplies restrained motion. No persona text is uploaded.",
+  "referencePolicy": "Scene image guides composition and appearance; previously reviewed video supplies restrained motion. Current OpenAPI exposes task=ref2va only, without a separate first-frame-lock parameter. Prompt intention is not a guarantee of a strictly fixed first frame. No persona text is uploaded.",
   "acceptancePolicy": "All actual generated source frames and final inputs require independent semantic review. HTTP success and face detection are not approval.",
   "preservation": "Keep all requests, upload receipts, polls, original downloads, failed attempts, corrected versions and final films outside Git. Save every generated artwork and inspection image in this episode and commit it."
 }

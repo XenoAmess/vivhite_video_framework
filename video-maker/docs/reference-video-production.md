@@ -77,7 +77,7 @@ video-maker/.venv/Scripts/python.exe video-maker/tools/reference_finisher.py fin
 
 ## BF16 768P 与逐镜2K接入
 
-新增 `tools/local_video_pipeline.py` 对接用户提供的持久队列客户端契约：BF16模型名为 `fasth3-omni-bf16`，每次请求5秒、1344×768、8步；运行时通过 `/v1/models` 核实36层解码器。图片固定首帧构图，旧版已审核的实际入片区间提供运动参考。全程不上传人格正文。旧Java参考图入口继续保留原协议，新BF16／2K制作使用下面的独立worker，不把旧模型名自动替换成不同提供方。
+新增 `tools/local_video_pipeline.py` 对接用户提供的持久队列客户端契约：BF16模型名为 `fasth3-omni-bf16`，每次请求5秒、1344×768、8步；运行时通过 `/v1/models` 核实36层解码器。场景图提供构图与外观参考，旧版已审核的实际入片区间提供运动参考。当前 OpenAPI 的 `task` 固定为 `ref2va`，没有独立首帧锁定参数；提示词要求从参考图构图开始，不等于接口保证严格锁定首帧。全程不上传人格正文。旧Java参考图入口继续保留原协议，新BF16／2K制作使用下面的独立worker，不把旧模型名自动替换成不同提供方。
 
 ```powershell
 $episodeRoot = 'series/vivhite/autumn-journey/episodes/01-autumn-journey'
