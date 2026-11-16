@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "vivhite-final-audio-review-1",
+  "filmSha256": "204570851392316fe7e3f797388464227b61662288aa2a32c0a078d657e7ed22",
+  "soundtrackSha256": "5101e5ac754abf98fc3f96fab598b062a2465d9bf4bfd182dbb1cfb483241d06",
+  "asrResultSha256": "b2272f130960c0f57aa4c27df64a760d24d8a4499bc340c3260199b3e910d89a",
+  "asrDurationMs": 202005,
+  "model": "large-v3-turbo",
+  "vadFilter": false,
+  "asrSegmentCount": 7,
+  "segmentDispositions": [
+    {
+      "id": "s00001",
+      "startMs": 28580,
+      "endMs": 29980,
+      "disposition": "Caption-template hallucination on oscillator/noise music; no recorded speech source. Reviewed in full transcript; do not turn into subtitles."
+    },
+    {
+      "id": "s00002",
+      "startMs": 58580,
+      "endMs": 59980,
+      "disposition": "Caption-template hallucination on oscillator/noise music; no recorded speech source. Reviewed in full transcript; do not turn into subtitles."
+    },
+    {
+      "id": "s00003",
+      "startMs": 88580,
+      "endMs": 89980,
+      "disposition": "Caption-template hallucination on oscillator/noise music; no recorded speech source. Reviewed in full transcript; do not turn into subtitles."
+    },
+    {
+      "id": "s00004",
+      "startMs": 118580,
+      "endMs": 119980,
+      "disposition": "Caption-template hallucination on oscillator/noise music; no recorded speech source. Reviewed in full transcript; do not turn into subtitles."
+    },
+    {
+      "id": "s00005",
+      "startMs": 148580,
+      "endMs": 149980,
+      "disposition": "Caption-template hallucination on oscillator/noise music; no recorded speech source. Reviewed in full transcript; do not turn into subtitles."
+    },
+    {
+      "id": "s00006",
+      "startMs": 178580,
+      "endMs": 179980,
+      "disposition": "Caption-template hallucination on oscillator/noise music; no recorded speech source. Reviewed in full transcript; do not turn into subtitles."
+    },
+    {
+      "id": "s00007",
+      "startMs": 200580,
+      "endMs": 201980,
+      "disposition": "Caption-template hallucination on oscillator/noise music; no recorded speech source. Reviewed in full transcript; do not turn into subtitles."
+    }
+  ],
+  "syntheticSourceOnly": true,
+  "nativeModelAudioInFinalMix": false,
+  "ttsOrRecordedVoiceSource": false,
+  "waveformComparison": {
+    "schemaVersion": "vivhite-final-audio-comparison-1",
+    "comparedSamplesPerChannel": 9696000,
+    "comparedSeconds": 202.0,
+    "waveformCorrelation": 0.9997185027160524,
+    "signalToEncodingErrorDb": 32.49040985107422,
+    "encodedSamplePeak": 0.7382695078849792,
+    "encodedClippedSamples": 0,
+    "measuredIntegratedLufs": -16.93,
+    "measuredTruePeakDbtp": -2.57,
+    "measuredLoudnessRangeLu": 6.0,
+    "scope": "Full decoded final AAC compared with the approved synthetic stereo PCM; no native model audio is mixed.",
+    "filmSha256": "204570851392316fe7e3f797388464227b61662288aa2a32c0a078d657e7ed22",
+    "soundtrackSha256": "5101e5ac754abf98fc3f96fab598b062a2465d9bf4bfd182dbb1cfb483241d06"
+  },
+  "humanFullListening": false,
+  "scope": "Full 202-second AAC decoded and compared with the approved deterministic PCM. Full ASR transcript reviewed; seven flags are retained, not described as zero detection."
+}

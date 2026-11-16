@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "vivhite-reference-video-1",
+  "title": "白绮／秋日旅程",
+  "directorRevision": 3,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "sourceSize": "832x480",
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "totalFrames": 300,
+  "titleOverlays": [],
+  "audioStatus": "Pending actual generation, complete audio review and final nonverbal mix.",
+  "shots": [
+    {
+      "id": "S06",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "seed": 2026111605,
+      "mode": "I",
+      "action": "城市电车窗角贴着白绮小贴纸，窗外彩色立面掠过；片名在空白玻璃区叠入。",
+      "soundDescription": "电车运行声、器乐进入较明亮段落。",
+      "prompt": "Single continuous documentary travel shot matching Picture 1. View from an empty moving city tram through its window, with the same small fixed printed character sticker on the glass corner and the same ordinary blue woven seat. Residential facades, drainpipes, bicycles and pavement slide gently sideways outside. The sticker is inert ink on a physical surface, with no autonomous facial motion. Keep the ordinary cloudy daylight and existing framing. The tram and street contain zero people, bodies, heads or faces, including reflections. Generate only photographic scenery and the existing objects. Absolutely no writing, captions, subtitles, labels, lettering, logos or watermarks. Nonverbal tram-wheel sound only, no voices, narration, singing or laughter. No cuts.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S06-v1.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png"
+    },
+    {
+      "id": "S48",
+      "seconds": 6,
+      "sourceSeconds": 10,
+      "startFrame": 120,
+      "seed": 2026111647,
+      "mode": "I",
+      "action": "空旷岸边的浪与远处道路构成宽景，小蓝蝶轮廓在画面角落停留；标题和实际署名叠在留白天空，末尾随画面淡下。",
+      "soundDescription": "海声与器乐尾音。",
+      "prompt": "Single continuous documentary landscape shot matching Picture 1. A quiet ordinary coast with grey-blue waves, a modest uneven beach and the existing practical distant coastal road and guardrail. A small flat blue butterfly graphic stays in its existing corner, unchanged. Only gentle wave and cloud motion; preserve the normal light and natural muted colors. The entire scene is empty of people, human body parts, heads, faces or additional characters. Generate only the existing coast and graphic. Keep the sky empty of writing. Absolutely no captions, subtitles, text, lettering, credits, logos, labels or watermarks. Nonverbal sea and wind only, no voices or music vocals. No cuts.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S48-v2.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/I01-butterfly-v1.png"
+    }
+  ],
+  "allCharactersFemale": true,
+  "costumeStyle": "Feminine clothing closely inspired by Vivhite: white, deep violet-black, gold trim, skirt, white legwear and purple boots.",
+  "sourceResolutionNote": "Native FastH3 sources are 832x480 at 24fps; final 1920x1080 at 30fps is spatial upsampling and frame-rate normalization, not native 1080p.",
+  "visualRevision": "real-world-001",
+  "realismRequirements": [
+    "Natural weather and photographic exposure",
+    "Locally plausible vegetation and ordinary infrastructure",
+    "Use wear, dirt and uneven details where appropriate",
+    "No systematic flowers, perfect sunset, fantasy villages or excessively polished styling",
+    "Retain female clothing and the character merchandise design"
+  ],
+  "seedRevisionNote": "Seeds retained for traceability; image content and prompts changed, so requests use a new independent run directory.",
+  "referencePolicy": "One complete scene reference per video request. Merchandise masters were used to generate and review the scene images; do not introduce additional people from a separate product photograph.",
+  "promptRevision": 2,
+  "outputConstraints": "The exact no-face, no-speech, all-female, feminine-costume and 2-10-second constraints apply to every final video frame; still-image approval does not approve generated footage. Object/landscape prompts contain no positive human casting instructions.",
+  "correctionReason": "Regenerate clean scenery without model-added lettering. Actual titles and credits are composed separately."
+}

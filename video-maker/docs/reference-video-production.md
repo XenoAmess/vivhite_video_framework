@@ -15,7 +15,7 @@
 ```powershell
 .\mvnw.cmd -pl video-maker -am verify
 $episode = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/episode.json'
-$plan = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/production-plan-v2.json'
+$plan = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/production-plan-v4.json'
 $output = '<仓库外的独立运行目录>'
 $apiBase = 'http://<模型服务器>:8001/v1'
 $python = 'video-maker/.venv/Scripts/python.exe'
@@ -54,8 +54,8 @@ FastH3 的请求使用 `task=ref2va`、有序的 `image_reference: [{image_url: 
 
 ```powershell
 uv pip install --python video-maker/.venv/Scripts/python.exe -r video-maker/tools/requirements-reference.txt
-$sourcePlan = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/production-plan-v3.json'
-$finalPlan = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/final-assembly-plan-v3.json'
+$sourcePlan = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/production-plan-v4.json'
+$finalPlan = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/final-assembly-plan-v4.json'
 video-maker/.venv/Scripts/python.exe video-maker/tools/reference_finisher.py soundtrack --plan $sourcePlan --output $output
 # 等全部真实源片和 picture-assembly.mp4 到齐：
 video-maker/.venv/Scripts/python.exe video-maker/tools/reference_finisher.py prepare --source-plan $sourcePlan --directory $output --destination $finalPlan
@@ -67,4 +67,8 @@ video-maker/.venv/Scripts/python.exe video-maker/tools/reference_finisher.py fin
 
 `prepare` 只准备待审核的最终实际计划。`finish` 在编码前核对所有文件哈希、限制文件留在运行目录、执行人格／披露绑定检查，然后添加标题和镜内淡出，完整解码并核对 1080p30、总帧数和音轨时长；成功状态只证明编码技术检查，不自动填写语义或人工验收结论。ASS 中的 `Dialogue` 是格式的事件字段，实际内容仅为片名、副题与制作署名；无对白字幕。
 
-`review_reference_clips.py` 可逐帧连续解码并测量运动、突变和 YuNet 面孔候选，另存每半秒及末帧的检查拼图。模型来自 [OpenCV Zoo YuNet](https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet)，权重放仓库外并记录 SHA-256。面孔检测可能漏检，也会识别周边的绘制脸，不能自动宣布“无人脸”或语义通过。实际逐镜审阅需读取这些时间序列与候选，并按需补帧；检查拼图按本任务要求保存在内容项目并提交 Git。
+`review_reference_clips.py` 可逐帧连续解码并测量运动、突变和 YuNet 面孔候选，保存全部实际入片原生帧的检查拼图，另存每半秒、末帧和候选局部。模型来自 [OpenCV Zoo YuNet](https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet)，权重放仓库外并记录 SHA-256。面孔检测可能漏检，也会识别周边的绘制脸，不能自动宣布“无人脸”或语义通过。实际逐镜审阅需读取全部入片帧与候选；检查拼图按本任务要求保存在内容项目并提交 Git。
+
+最终合成还要求 `clip-decisions.json`：每镜绑定实际选用视频的 SHA-256，审阅方式为 `assistant-frame-review`，明确记录全部入片帧的查看范围，以及静默画面、无真人脸、无新增人员、全女性、服装、动作连续性和周边行为的结论。`prepare` 和 `finish` 拒绝缺失、未通过或绑定旧文件的记录；脚本本身不代替审阅者作出结论。原图没有的路人、远景剪影、额外身体局部与倒影，即使不露脸，也不能放行。
+
+`source-selections.json` 可以选择修订源片，必须同时绑定其原文件与修订收据，旧版保留。`stabilize_printed_patch.py` 只允许将首帧已有的周边印花跟踪回物体表面，遇到跟踪不明确即失败；`--used-seconds` 限定实际使用区间。它不用于盖住人物或消除新增路人。修订完成后仍须逐帧重审，不能沿用原视频的通过记录。

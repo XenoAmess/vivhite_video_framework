@@ -20,7 +20,7 @@
 
 视频创作材料按[系列 → 课题 → 多期](series/README.md)组织，当前课题为[数学教育系列 · 逆序数](series/math-education/inversion-count/README.md)：第一期保留已交付内容，第二期证明完整矩形棋盘结论，第三期从头证明 Wilson 一般图定理。案例材料已直接移动到各期目录，原模块下不保留兼容入口。
 
-新增内容子项目[白绮／秋日旅程](series/vivhite/autumn-journey/README.md)：v3 为无对白的多地点自由旅行蒙太奇，48 镜、每镜 2–10 秒；全员女性，服装贴近白绮，真人不露脸，配合贴纸、玩偶、周边与意象。母版与场景图已生成并入库，按用户反馈重做 42 镜为更接近实拍的普通世界；本地 Ref2VA 视频正在生成。实际成片与审核状态见该子项目记录。
+新增内容子项目[白绮／秋日旅程](series/vivhite/autumn-journey/README.md)：v3 成片为无对白的多地点自由旅行蒙太奇，48 镜、202 秒、每镜 2–10 秒；全员女性，服装贴近白绮，真人不露脸，不允许新增原图没有的无关人员，配合贴纸、玩偶、周边与意象。按用户反馈重做 42 镜为更接近实拍的普通世界，全部生成与检查图片入库。源片 832×480／24fps，最终上采样为 1080p30；实际成片、修订与审核覆盖见[制作记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v3.md)。
 
 三期当前成片均已完成，规格1080p30、晓晓配音、中文字幕及可替换人物图片：第一期[10分55秒](series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v3.md)、第二期[18分29.3秒](series/math-education/inversion-count/episodes/02-rectangle-proof/docs/production-v1.md)、第三期[32分24秒](series/math-education/inversion-count/episodes/03-wilson-theorem/docs/production-v1.md)。制作器新增通用证明动画后端，后两期保留全部证明、合法移动和分阶段推导。成片与缓存放在仓库外，检查范围见各期制作记录及[独立复核](docs/three-episode-production-review.md)。
 

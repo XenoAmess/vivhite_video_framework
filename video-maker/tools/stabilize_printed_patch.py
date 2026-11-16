@@ -7,6 +7,7 @@ GPL-3.0-only.
 import argparse
 import hashlib
 import json
+import math
 from pathlib import Path
 import subprocess
 
@@ -58,7 +59,7 @@ class PrintedPatch:
         step = np.vstack((matrix,[0,0,1]))
         candidate = step@self.transform
         scale = float(np.sqrt(abs(np.linalg.det(candidate[:2,:2]))))
-        if not .25<scale<2.5:
+        if not .1<scale<2.5:
             raise ValueError("Unreasonable printed-surface scale")
         patch = cv2.warpPerspective(self.first,candidate,(self.width,self.height),flags=cv2.INTER_LINEAR)
         mask = cv2.warpPerspective(self.mask,candidate,(self.width,self.height),flags=cv2.INTER_LINEAR)
@@ -72,13 +73,17 @@ class PrintedPatch:
         return result,{"scale":scale,"center":[float(v) for v in center],"inliers":int(inliers.sum())}
 
 
-def stabilize(source,destination,center,radius):
+def stabilize(source,destination,center,radius,used_seconds=None):
     import cv2
     cap = cv2.VideoCapture(str(source))
     ok,first = cap.read()
     if not ok:
         raise ValueError("Cannot read printed-surface source")
     fps = cap.get(cv2.CAP_PROP_FPS)
+    if used_seconds is not None and (not math.isfinite(used_seconds) or used_seconds <= 0):
+        cap.release()
+        raise ValueError("Used seconds must be finite and positive")
+    frame_limit = math.ceil(used_seconds*fps) if used_seconds is not None else None
     tracker = PrintedPatch(first,center,radius)
     destination = Path(destination)
     destination.parent.mkdir(parents=True,exist_ok=True)
@@ -95,7 +100,7 @@ def stabilize(source,destination,center,radius):
             '-pix_fmt','yuv420p','-c:a','copy',str(partial)],stdin=subprocess.PIPE,stderr=errors)
         try:
             encoder.stdin.write(first.tobytes());frames=1
-            while True:
+            while frame_limit is None or frames < frame_limit:
                 ok,image = cap.read()
                 if not ok:
                     break
@@ -114,6 +119,7 @@ def stabilize(source,destination,center,radius):
     receipt={'schemaVersion':'vivhite-printed-patch-1','sourceSha256':fingerprint(source),
              'correctedSha256':fingerprint(destination),'workerSha256':fingerprint(__file__),
              'center':list(center),'radius':radius,'sourceFrame':0,'frames':frames,'fps':fps,
+             'requestedUsedSeconds':used_seconds,
              'method':'Forward/backward LK on stable surface rim; robust partial-affine projection of original printed texture.',
              'scope':'Only a printed merchandise surface; no new person is removed or covered.',
              'status':'technical-correction-completed-review-required','tracking':tracking}
@@ -128,5 +134,6 @@ if __name__=='__main__':
     parser.add_argument('--destination',required=True,type=Path)
     parser.add_argument('--center',required=True,type=int,nargs=2)
     parser.add_argument('--radius',required=True,type=int)
+    parser.add_argument('--used-seconds',type=float)
     args=parser.parse_args()
-    stabilize(args.source,args.destination,tuple(args.center),args.radius)
+    stabilize(args.source,args.destination,tuple(args.center),args.radius,args.used_seconds)

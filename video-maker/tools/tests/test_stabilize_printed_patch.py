@@ -1,6 +1,9 @@
 """A printed design must stay fixed despite changing simulated source eyes."""
 import importlib.util
+import json
 from pathlib import Path
+import shutil
+import tempfile
 import unittest
 import cv2
 import numpy as np
@@ -11,6 +14,37 @@ SPEC.loader.exec_module(worker)
 
 
 class PrintedSurfaceTest(unittest.TestCase):
+    @unittest.skipUnless(shutil.which('ffmpeg'), 'FFmpeg is required for the encoded interval test')
+    def test_unused_untrackable_tail_does_not_block_the_used_interval(self):
+        rng=np.random.default_rng(29)
+        first=np.full((160,220,3),70,dtype=np.uint8)
+        first[48:112,78:142]=rng.integers(25,220,(64,64,3),dtype=np.uint8)
+        with tempfile.TemporaryDirectory(prefix='vivhite-print-interval-') as temporary:
+            source=Path(temporary)/'source.mp4'
+            destination=Path(temporary)/'corrected.mp4'
+            writer=cv2.VideoWriter(str(source),cv2.VideoWriter_fourcc(*'mp4v'),10,(220,160))
+            self.assertTrue(writer.isOpened())
+            try:
+                for frame in range(10):
+                    writer.write(first if frame<5 else np.zeros_like(first))
+            finally:
+                writer.release()
+            original=worker.fingerprint(source)
+            receipt=worker.stabilize(source,destination,(110,80),28,used_seconds=.5)
+            self.assertEqual(worker.fingerprint(source),original)
+            self.assertEqual(receipt['frames'],5)
+            cap=cv2.VideoCapture(str(destination))
+            try:
+                decoded=0
+                while cap.read()[0]:
+                    decoded+=1
+            finally:
+                cap.release()
+            self.assertEqual(decoded,5)
+            saved=json.loads(destination.with_suffix('.json').read_text(encoding='utf-8'))
+            self.assertEqual(saved['requestedUsedSeconds'],.5)
+            self.assertEqual(saved['sourceSha256'],original)
+
     def test_tracking_preserves_a_print_while_the_surface_translates(self):
         rng=np.random.default_rng(23)
         first=np.full((160,220,3),70,dtype=np.uint8)

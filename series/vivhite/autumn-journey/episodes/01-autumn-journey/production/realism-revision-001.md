@@ -18,4 +18,4 @@
 
 新图使用内置 `image_gen.imagegen`，保存于 [production-v3-realism-001](../assets/generated/production-v3-realism-001/)。每次请求与所有结果都保留，包括生成器误加人物的废选版本；旧批次保留在原目录。v2 已下载视频源片与完整请求也保留，状态标为美术修订前版本。
 
-实际选择以 [production-plan-v3.json](../production-plan-v3.json) 为准。视频每次只上传该镜完整场景图作为参考；周边母版用于图像生成及审阅。仍使用 Ref2VA、8 步，源片 832×480／24fps，最终上采样并统一为 1920×1080／30fps。计划与新素材重新审核后再正式渲染。
+实际选图以 [production-plan-v4.json](../production-plan-v4.json) 为准，最终选片与修订链见[最终合成计划](../final-assembly-plan-v4.json)及[制作记录](production-v3.md)。视频每次只上传该镜完整场景图作为参考；周边母版用于图像生成及审阅。仍使用 Ref2VA、8 步，源片 832×480／24fps，最终上采样并统一为 1920×1080／30fps。计划与新素材重新审核后再正式渲染。
