@@ -93,6 +93,47 @@
       "reviewReuseFromPlanSha256": "313bf0fee439b98c65d038d9b8b302ce4e73f0161055d903cc60cee2d93ce075"
     },
     {
+      "id": "S20B",
+      "sourceSha256": "9de0989417c29475d288573380f5afd581e6f12c627d44621accf7dca6b58756",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-16T12:54:11.781365+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S20B-9de0989417-all-frames-01.png",
+          "sha256": "1c60afe33d5f5060e9db2832f3abe0bf5308773638f5621100aedbae6280f5fc",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S20B-9de0989417-all-frames-02.png",
+          "sha256": "804837f007d6f239f040f3d9b9c9a322248be5f9e2c791feec4c6674b2ffb074",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S20B-9de0989417-all-frames-03.png",
+          "sha256": "92cb6ed5dc62e6d06b4b85919c9ab36f567cb31045b5b425b9b84a8e8a1ec06e",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S20B-9de0989417-all-frames-04.png",
+          "sha256": "09bc86d8701844e80111c7fada17df96b31f358cde408787ee26dd1223603d98",
+          "items": 24
+        }
+      ],
+      "faceEvidence": null,
+      "observation": "Actually viewed all 120 source frames on four complete frame sheets, the temporal sheet, a native full-frame context, eight native bag-and-doll detail crops and a separate sheet of all 120 native doll-region frames. Wide ordinary cloudy alpine lake, rocky brown banks, small snow patches and fine water ripples. Exactly the original one inert Vivhite doll and dark bag remain on the foreground rock; sewn eyes stay open without blinking, expression and feminine costume remain stable, badge stays fixed. No human, human face, unrelated person, new object, generated lettering or scene cut appears. Gentle camera drift preserves the broad landscape and provides a clear wider framing after S20A. Accept the entire exact five-second native source for final use and later 2K input.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed"
+    },
+    {
       "id": "S48",
       "sourceSha256": "a5dc756dd7d803b0cad9d80e86c28b5613e359f11ef2b8de1f4308bc360e7233",
       "method": "assistant-frame-review",

@@ -1,28 +1,40 @@
 {
   "schemaVersion": "vivhite-local-production-progress-1",
-  "snapshotAt": "2026-11-16T12:41:56.434874+00:00",
+  "snapshotAt": "2026-11-16T12:54:11.977256+00:00",
   "sourcePlanSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
   "model": "fasth3-omni-bf16",
   "status": "generating",
-  "completedSources": 3,
-  "acceptedSources": 3,
+  "completedSources": 4,
+  "acceptedSources": 4,
   "totalShots": 49,
-  "generationPercent": 6.12,
-  "acceptedPercent": 6.12,
+  "generationPercent": 8.16,
+  "acceptedPercent": 8.16,
   "finalFilmDelivered": false,
   "humanFullPlayback": false,
   "runRelativeToRepositoryParent": "vivhite-analysis-output/vivhite/autumn-journey/production-v5-bf16-768p-002",
   "jobs": [
     {
       "shotId": "S01",
-      "status": "queued",
+      "status": "in_progress",
       "jobId": "video_gen_0d7f96e847ca41a69bde502035f46a02",
       "submittedAt": "2026-11-16T12:37:41.603763+00:00",
-      "firstInProgressAt": null,
+      "firstInProgressAt": "2026-11-16T12:51:44.266879+00:00",
       "downloadedAt": null,
       "rawSha256": null,
       "sourceSha256": null,
       "requestSha256": "11011a6616a31bb431f78a6631d2ded2b45c8e6a39df3fbd1532261992692d0b",
+      "inferenceSeconds": null
+    },
+    {
+      "shotId": "S02",
+      "status": "queued",
+      "jobId": "video_gen_8c505ed8a73a4e779450593c654b2c66",
+      "submittedAt": "2026-11-16T12:51:44.374697+00:00",
+      "firstInProgressAt": null,
+      "downloadedAt": null,
+      "rawSha256": null,
+      "sourceSha256": null,
+      "requestSha256": "7432087e74eff26c22bd2aba51a527e79edf6c8ac910318d1fc6d7831e9a5bd5",
       "inferenceSeconds": null
     },
     {
@@ -63,15 +75,15 @@
     },
     {
       "shotId": "S20B",
-      "status": "in_progress",
+      "status": "completed",
       "jobId": "video_gen_ce313b205cc746be8dd7eaaf7ebdc188",
       "submittedAt": "2026-11-16T12:37:41.502499+00:00",
       "firstInProgressAt": "2026-11-16T12:37:50.120020+00:00",
-      "downloadedAt": null,
-      "rawSha256": null,
-      "sourceSha256": null,
+      "downloadedAt": "2026-11-16T12:51:35.180883+00:00",
+      "rawSha256": "7e614a0c0d7182d72789c0551aa70fd7b2e8e8c6c42b8379f86e0a62220a7346",
+      "sourceSha256": "9de0989417c29475d288573380f5afd581e6f12c627d44621accf7dca6b58756",
       "requestSha256": "d8c7114c982a6ac842748dc52b489d3491c154c50e24d1c8ebb88aa5357a8cb4",
-      "inferenceSeconds": null
+      "inferenceSeconds": 823.7981551080011
     },
     {
       "shotId": "S48",
