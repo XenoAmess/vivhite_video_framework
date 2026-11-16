@@ -1,0 +1,45 @@
+{
+  "id": "S19",
+  "sourceSha256": "8ce48ed198e429d59dfacf34632c1274d5263d630e6a6ccb5cf3583d31de201e",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-16T16:33:41.860173+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 96,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S19-8ce48ed198-all-frames-01.png",
+      "sha256": "21246e65a8c20f37fa01e9bb274b37b69148bcee40233b54871ab91e45ca5ac0",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S19-8ce48ed198-all-frames-02.png",
+      "sha256": "63073611d5607b791eaa30a791d952b2358bc09689f2db819157a478f9af0ff4",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S19-8ce48ed198-all-frames-03.png",
+      "sha256": "db28072331d210099830a5ab0316596ad8b13a42b644123c234537ab8f8b0d46",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S19-8ce48ed198-all-frames-04.png",
+      "sha256": "7fbcecb1153d13a0cd13426f7b765d7b0ab15323b7d0aeeda4b7d8fc83c6c4a1",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S19-8ce48ed198-face-candidates.png",
+    "sha256": "0f9d7c59fa07a03bf4c0c3a1e3c2da9ed1800328583b68d5449a4a44f3736613",
+    "items": 5
+  },
+  "observation": "Viewed all 120 source frames in four complete full-scene sheets, temporal sheet, all five exported printed-face candidates, native full contexts 0/78 and a piecewise original-pixel print-detail sheet covering every frame before/after the cut. One existing cropped woman in feminine white/violet/gold sleeves/skirt and white legwear sits by the original window, with one hand on the sill and her own other hand on her lap. No head, facial fragment, unrelated person or human reflection appears. Original pouch illustration remains fixed with both purple eyes open across visible print regions; candidate faces are the print only. Ordinary trees, road barrier and mountain scenery pass the window. However frame 78 abruptly switches from close hand/window framing to a wider torso/lap/seat framing, violating the uninterrupted single-shot request and creating an extra final edit point. Reject motion/continuity; preserve original and evidence. Other checks passed.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "failed",
+  "merchandiseBehavior": "passed"
+}
