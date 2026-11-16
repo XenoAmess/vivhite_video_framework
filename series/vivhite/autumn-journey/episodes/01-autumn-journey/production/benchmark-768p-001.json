@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "vivhite-benchmark-status-1",
+  "status": "stopped-at-user-request",
+  "recordedAt": "2026-11-16T03:49:15.460890+00:00",
+  "plan": "benchmark-plan-v1.json",
+  "planSha256": "1c043c0281adc5fad78af366bbe7269bfcb29a708bddd6dbad41a86bec97b1be",
+  "requestedSize": "1344x768",
+  "model": "fasth3-omni",
+  "task": "ref2va",
+  "steps": 8,
+  "submittedShots": [
+    "S15"
+  ],
+  "notSubmittedShots": [
+    "S03",
+    "S20"
+  ],
+  "completedSamples": 0,
+  "remoteTaskId": "video_gen_88c287d02ded42688a95973965cb40f8",
+  "remoteTaskResourceDeleted": true,
+  "localGenerationAndInspectionProcesses": "stopped",
+  "remoteCancellationLimit": "The API resource is deleted and no later shots are submitted. FastVideo cannot preempt an already-started synchronous CUDA call; immediate GPU termination is not confirmed.",
+  "decoderVerification": {
+    "layers": 36,
+    "method": "service-owner-confirmation",
+    "continuouslyUsed": true,
+    "decoderChangedDuringBenchmark": false
+  },
+  "fullFilmTimeEstimate": "not-issued; the test was stopped before a complete timing sample",
+  "baselineFilmSha256": "204570851392316fe7e3f797388464227b61662288aa2a32c0a078d657e7ed22",
+  "baselineFileUnchanged": true,
+  "retention": "All previous films, generated images, benchmark request and local job records retained. No new clip or high-resolution film is delivered."
+}

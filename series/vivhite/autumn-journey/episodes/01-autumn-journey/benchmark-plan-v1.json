@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "vivhite-reference-video-1",
+  "title": "白绮／秋日旅程",
+  "directorRevision": 3,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "sourceSize": "1344x768",
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "totalFrames": 540,
+  "titleOverlays": [],
+  "audioStatus": "Pending actual generation, complete audio review and final nonverbal mix.",
+  "shots": [
+    {
+      "id": "S15",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "seed": 2026111715,
+      "mode": "H",
+      "action": "只见手转动热茶杯，杯套上的白绮贴纸从侧面转到可辨角度，蒸汽向窗光里飘。",
+      "soundDescription": "杯底轻擦桌面、柔和室内声底。",
+      "prompt": "One uninterrupted locked-camera close travel shot matching Picture 1. EXACTLY ONE woman exists in the entire scene: the same seated woman already shown in Picture 1. Preserve the original single torso, two attached arms and crossed legs, their positions and the exact crop. No other person, body, torso, skirt, leg, hand, head, silhouette, reflection or passenger may appear at any time. The entire human head and face remain outside the top of the frame. No face or face fragment anywhere. Do not zoom out, pan, track, rotate the camera or reveal any unseen part of the room. Animate only a very slight turn of the existing paper cup by her existing hands, and faint steam. Keep her body seated and still. No standing up, no duplicating limbs, no additional clothing figure. The small Vivhite sticker is fixed inert ink on the cup; its face never blinks or speaks. Keep the same ordinary room and roadside window, natural neutral light and white/deep-violet/gold feminine dress. No dialogue, voices, singing, humming, laughter, mouth movement, subtitles, letters or camera cuts.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S15-v2.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png"
+    },
+    {
+      "id": "S03",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 120,
+      "seed": 2026111602,
+      "mode": "H",
+      "action": "站台腰部以下跟拍，旅者拎包向前走，包面白绮徽章随着步伐起伏。",
+      "soundDescription": "鞋底与站台回声。",
+      "prompt": "Create one uninterrupted natural travel film shot. <Picture 1> is the scene and composition reference; preserve its framing and all object identities, animate only the described subtle action. No shot changes or internal edits, no speech, no narration, no singing, no laughter, no voices, no text. Any plush or printed character is an inert physical object, never animate its face or make it speak. No human faces or facial fragments anywhere, including reflections, background and screens. When an anime character is present directly, keep her strictly turned away throughout. Action: 站台腰部以下跟拍，旅者拎包向前走，包面白绮徽章随着步伐起伏。 Sound: only nonverbal environmental sound: 鞋底与站台回声。 All appearing people are adult women only, with feminine white/deep-violet/gold clothing closely inspired by Vivhite. No men or masculine clothing. All human faces stay outside the entire shot, including reflections and background. Preserve ordinary real-world textures and neutral natural lighting from Picture 1. Do not beautify the location, add flowers, replace the weather, or invent a scenic fantasy backdrop.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S03-v1.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M05-badge-v1.png"
+    },
+    {
+      "id": "S20",
+      "seconds": 10,
+      "sourceSeconds": 10,
+      "startFrame": 240,
+      "seed": 2026111619,
+      "mode": "O",
+      "action": "高山湖远景，近处岩石上坐着小小的白绮玩偶；镜头缓慢后移，云影持续掠过湖面，空间越来越开阔。",
+      "soundDescription": "高处风声、水声，音乐保留长线条。",
+      "prompt": "A single uninterrupted OBJECT-AND-ENVIRONMENT shot matching reference Picture 1 exactly. There are NO LIVING PEOPLE in this scene, and no human body parts, hands, heads or faces in background, reflections or foreground. Preserve only the existing objects and their exact scale and placement; do not add another toy or person. The small sewn plush is an inert physical toy with embroidered features, supported by the bag. It cannot blink, move its limbs or behave autonomously. Animate only this action: 高山湖远景，近处岩石上坐着小小的白绮玩偶；镜头缓慢后移，云影持续掠过湖面，空间越来越开阔。 Keep the ordinary world, weather and restrained light from the reference unchanged. No cuts, no re-framing to reveal unseen people, no text. Sound: 高处风声、水声，音乐保留长线条。 Nonverbal environmental sound only; no voices, speech, singing or laughter.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S20-v2.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M04-plush-v1.png"
+    }
+  ],
+  "allCharactersFemale": true,
+  "costumeStyle": "Feminine clothing closely inspired by Vivhite: white, deep violet-black, gold trim, skirt, white legwear and purple boots.",
+  "sourceResolutionNote": "Requested native output 1344x768 at 24fps; any 1080p30 intermediate is upsampled and resampled.",
+  "visualRevision": "real-world-001",
+  "realismRequirements": [
+    "Natural weather and photographic exposure",
+    "Locally plausible vegetation and ordinary infrastructure",
+    "Use wear, dirt and uneven details where appropriate",
+    "No systematic flowers, perfect sunset, fantasy villages or excessively polished styling",
+    "Retain female clothing and the character merchandise design"
+  ],
+  "seedRevisionNote": "Seeds retained for traceability; image content and prompts changed, so requests use a new independent run directory.",
+  "referencePolicy": "One complete scene reference per video request. Merchandise masters were used to generate and review the scene images; do not introduce additional people from a separate product photograph.",
+  "promptRevision": 2,
+  "outputConstraints": "The exact no-face, no-speech, all-female, feminine-costume and 2-10-second constraints apply to every final video frame; still-image approval does not approve generated footage. Object/landscape prompts contain no positive human casting instructions.",
+  "benchmarkOnly": true,
+  "noAddedPeople": true,
+  "decoderVerification": {
+    "requiredLayers": 36,
+    "status": "pending-server-deployment-evidence",
+    "httpLayerSelectionAvailable": false
+  },
+  "scope": "Three real timing/quality trials before a 48-shot estimate. No final-film or 36-layer decoder approval is implied."
+}
