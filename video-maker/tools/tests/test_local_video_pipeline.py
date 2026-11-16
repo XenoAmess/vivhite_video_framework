@@ -73,6 +73,15 @@ class LocalPipelineTest(unittest.TestCase):
             with self.subTest(exceptions=exceptions), self.assertRaises(ValueError):
                 worker.validate({**plan,'shotDurationExceptions':exceptions})
 
+    def test_explicit_target_skip_never_submits_a_rejected_reference_shot(self):
+        shots = [{'id':identity} for identity in ('S41','S42','S43','S44')]
+        target = worker.select_target_shots(shots,'S44',None,'S43')
+        self.assertEqual([shot['id'] for shot in target],['S44','S41','S42'])
+        self.assertEqual([shot['id'] for shot in shots],['S41','S42','S43','S44'])
+        for skip in ('S99','S41,S42,S43,S44'):
+            with self.subTest(skip=skip), self.assertRaises(ValueError):
+                worker.select_target_shots(shots,skip=skip)
+
     def test_image_only_generation_never_uploads_an_old_motion_reference(self):
         with tempfile.TemporaryDirectory() as temporary:
             directory = Path(temporary)

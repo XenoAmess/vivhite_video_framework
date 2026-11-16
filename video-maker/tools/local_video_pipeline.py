@@ -81,6 +81,20 @@ def source_frame_count(shot):
     return seconds*24
 
 
+def select_target_shots(shots,order='',limit=None,skip=''):
+    priorities = order.split(',') if order else []
+    excluded = set(skip.split(',')) if skip else set()
+    known = {shot['id'] for shot in shots}
+    if excluded-known or set(priorities)-known or (limit is not None and limit <= 0):
+        raise ValueError('Target selection must name actual shots and a positive limit')
+    ordered = [shot for shot in shots if shot['id'] not in excluded]
+    ordered.sort(key=lambda shot:priorities.index(shot['id']) if shot['id'] in priorities else len(priorities))
+    target = ordered[:limit] if limit else ordered
+    if not target:
+        raise ValueError('Target selection contains no shots')
+    return target
+
+
 def input_assets(plan, episode, directory):
     assets = []
     for shot in plan['shots']:
@@ -247,10 +261,8 @@ def generate(args):
         raise ValueError('Use a new run directory for changed plans')
     state.update(status='generating',stage=plan['stage'],model=plan['model'],workerSha256=sha(__file__))
     save(state_file,state)
-    ordered = list(plan['shots'])
-    priorities = args.order.split(',') if args.order else []
-    ordered.sort(key=lambda shot:priorities.index(shot['id']) if shot['id'] in priorities else len(priorities))
-    target = ordered[:args.limit] if args.limit else ordered
+    target = select_target_shots(plan['shots'],args.order,args.limit,args.skip)
+    state['excludedShots'] = args.skip.split(',') if args.skip else []
     receipts = {}
     for shot in target:
         path = directory/'jobs'/f"{shot['id']}.json"
@@ -375,6 +387,7 @@ if __name__ == '__main__':
     parser.add_argument('--window',type=int,default=3,choices=range(1,9))
     parser.add_argument('--limit',type=int)
     parser.add_argument('--order',default='')
+    parser.add_argument('--skip',default='',help='Preserve but do not submit these shots; replacement plans are reviewed separately')
     parser.add_argument('--poll-seconds',type=float,default=8)
     args = parser.parse_args()
     generate(args)

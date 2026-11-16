@@ -44,9 +44,11 @@ class LocalClipCorrectionTest(unittest.TestCase):
             save(directory/'source-selections.json',{'selections':{'S48':{'path':'corrected.mp4',
                 'sha256':sha(corrected),'parent':'original.mp4','parentSha256':sha(original),
                 'receipt':'correction.json','inspectionReport':'inspection.json'}}})
-            record(directory/'plan.json',directory,'S48','All fixture frames explicitly reviewed.',True,True)
+            record(directory/'plan.json',directory,'S48','All fixture frames explicitly reviewed.',True,True,
+                   reference_fidelity_reviewed=True)
             decision = json.loads((directory/'clip-decisions.json').read_text())['shots'][0]
             self.assertEqual(decision['sourceSha256'],sha(corrected))
+            self.assertEqual(decision['referenceAppearance'],'passed')
             original.write_bytes(b'changed fixture parent')
             with self.assertRaisesRegex(ValueError,'parent changed'):
                 record(directory/'plan.json',directory,'S48','Cannot reuse changed evidence.',True,True)

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 6,
+  "model": "fasth3-omni-bf16",
+  "stage": "draft",
+  "fps": 30,
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 150,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "numInferenceSteps": 8,
+  "decoderLayers": 36,
+  "decoderVerification": "GET /v1/models on 2026-11-16",
+  "titleOverlays": [],
+  "closingCredit": "",
+  "shots": [
+    {
+      "id": "S43",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "seed": 202611170043,
+      "mode": "O",
+      "action": "帐外小灯照着透明片，片外远处是真实感星空；微风让帐布慢慢起伏，透明片稳放不漂浮。",
+      "soundDescription": "草风、虫声，器乐留空。",
+      "prompt": "One uninterrupted locked-off realistic night camping shot in the original unoccupied landscape of <Picture 1>. Preserve the exact original single clear acrylic panel, its little supports, camping table, lamp, metal mug, storage box, tent, dark hills and ordinary night sky. <Picture 2> defines only the fixed original character illustration printed on the same panel, not another panel or object. Keep the original two open violet-pink eyes, iris and eyelid outlines, thin round gold glasses, face proportions, pale bob hair, white hat, blue butterfly and white/deep-violet/gold costume identical throughout. This is an inert flat printed illustration, not a living character: the eyes, glasses, expression, head and body never change. The panel and print remain stationary. See the real original background through the clear unprinted area. Only the existing tent fabric and grass move softly in a faint breeze; warm lamp illumination stays gentle. Keep the same medium-wide framing, no zoom or cut. No person, body part, human face, silhouette or human reflection anywhere, including tent shadows and metal surfaces. No new prop, extra panel, animated character, readable letters, subtitles, credits, speech, singing, humming or voices.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S43-v1.png",
+        "assets/generated/production-v2-fasth3-001/masters/M03-clearcard-v1.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M03-clearcard-v1.png",
+      "generationAction": "帐外小灯照着透明片，片外远处是真实感星空；微风让帐布慢慢起伏，透明片稳放不漂浮。"
+    }
+  ],
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "2560x1440",
+    "sampler": "up3",
+    "seed": 1234,
+    "startCondition": "768p film delivered and every complete actual input independently reviewed: S20 ten seconds, other sources five seconds",
+    "scope": "Local video regeneration through port 8002; not a closed-source MiniMax teacher model."
+  },
+  "baselinePlanSha256": "340d08e908a1315aec57d4834c995afec91cc7018040461ae89023fccd298e01",
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "Preserve raw alignment tail; normalize exactly 120 frames at 24fps for the complete five-second source.",
+  "promptRevision": {
+    "id": "continuous-S20-and-reference-appearance-006",
+    "reason": "User restored S20 to one continuous ten-second lake shot and requires faithful original open-eye merchandise, especially acrylic artwork."
+  },
+  "referenceAppearanceRequired": true,
+  "scope": "Single S43 image-only original-artwork replacement candidate; no completed film",
+  "director": "director-v6.md",
+  "previousProductionPlanSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
+  "sourceContinuation": "Reuse unchanged sources only after exact-byte full-source review and original-artwork comparison. Keep all prior runs, including S20A/S20B. S17 has a separately reviewed image-only generation plan; S20 is a new continuous ten-second generation. S43 excludes its faulty old motion reference and is generated under production-plan-v6-S43-image-only-r1.json using the original scene and clear-card master."
+}

@@ -950,21 +950,16 @@
       "seconds": 5,
       "sourceSeconds": 5,
       "startFrame": 5130,
-      "seed": 2026111642,
+      "seed": 202611170043,
       "mode": "O",
       "action": "帐外小灯照着透明片，片外远处是真实感星空；微风让帐布慢慢起伏，透明片稳放不漂浮。",
       "soundDescription": "草风、虫声，器乐留空。",
-      "prompt": "One uninterrupted, quiet realistic travel shot. Picture 1 defines the first-frame composition and all scene contents. Video 1 supplies the restrained camera tempo. Keep the same ordinary location, natural lighting, colors and physical objects. The original environment remains unoccupied by people throughout. The same little lamp illuminates the existing transparent character plate outside the tent. Ordinary night sky remains beyond it; the original tent cloth moves softly in the breeze. Any existing printed illustration stays fixed to its original surface. Preserve the exact original population and object count. No extra person or body part, no real face or facial fragment anywhere, including reflections and background. No cuts, readable lettering, subtitles, credits, speech, singing or other voices.",
+      "prompt": "One uninterrupted locked-off realistic night camping shot in the original unoccupied landscape of <Picture 1>. Preserve the exact original single clear acrylic panel, its little supports, camping table, lamp, metal mug, storage box, tent, dark hills and ordinary night sky. <Picture 2> defines only the fixed original character illustration printed on the same panel, not another panel or object. Keep the original two open violet-pink eyes, iris and eyelid outlines, thin round gold glasses, face proportions, pale bob hair, white hat, blue butterfly and white/deep-violet/gold costume identical throughout. This is an inert flat printed illustration, not a living character: the eyes, glasses, expression, head and body never change. The panel and print remain stationary. See the real original background through the clear unprinted area. Only the existing tent fabric and grass move softly in a faint breeze; warm lamp illumination stays gentle. Keep the same medium-wide framing, no zoom or cut. No person, body part, human face, silhouette or human reflection anywhere, including tent shadows and metal surfaces. No new prop, extra panel, animated character, readable letters, subtitles, credits, speech, singing, humming or voices.",
       "references": [
-        "assets/generated/production-v3-realism-001/scenes/S43-v1.png"
+        "assets/generated/production-v3-realism-001/scenes/S43-v1.png",
+        "assets/generated/production-v2-fasth3-001/masters/M03-clearcard-v1.png"
       ],
       "designMaster": "assets/generated/production-v2-fasth3-001/masters/M03-clearcard-v1.png",
-      "motionReference": "motion-reference/S43.mp4",
-      "motionReferenceSha256": "623eef8d23d7b6bd94e6a4b438c5f6b14dd7b0b47577fdbc527c9989b5ca6887",
-      "motionReferenceSeconds": 5,
-      "motionParentSha256": "d2b09f8e8e07d6cbbde8b129dc4204a58000dbaa3aaf4a00a2019ae0651f6dcc",
-      "motionParentStartSeconds": 0,
-      "motionParentSourceFile": "sources/S43.mp4",
       "generationAction": "帐外小灯照着透明片，片外远处是真实感星空；微风让帐布慢慢起伏，透明片稳放不漂浮。"
     },
     {
@@ -1100,5 +1095,5 @@
   "scope": "Full 48-shot film plan; continuous 10-second S20 is the sole duration exception; all other shots 2 to 5 seconds",
   "director": "director-v6.md",
   "previousProductionPlanSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
-  "sourceContinuation": "Reuse unchanged sources only after exact-byte full-source review and original-artwork comparison. Keep all prior runs, including S20A/S20B. S17 has a separately reviewed image-only generation plan; S20 is a new continuous ten-second generation."
+  "sourceContinuation": "Reuse unchanged sources only after exact-byte full-source review and original-artwork comparison. Keep all prior runs, including S20A/S20B. S17 has a separately reviewed image-only generation plan; S20 is a new continuous ten-second generation. S43 excludes its faulty old motion reference and is generated under production-plan-v6-S43-image-only-r1.json using the original scene and clear-card master."
 }

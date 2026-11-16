@@ -1,14 +1,14 @@
 {
   "schemaVersion": "vivhite-local-production-progress-1",
-  "snapshotAt": "2026-11-16T18:41:34.492423+00:00",
+  "snapshotAt": "2026-11-16T19:13:29.156093+00:00",
   "sourcePlanSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
   "model": "fasth3-omni-bf16",
   "status": "generating",
-  "completedSources": 32,
-  "acceptedSources": 25,
+  "completedSources": 34,
+  "acceptedSources": 28,
   "totalShots": 49,
-  "generationPercent": 65.31,
-  "acceptedPercent": 51.02,
+  "generationPercent": 69.39,
+  "acceptedPercent": 57.14,
   "finalFilmDelivered": false,
   "humanFullPlayback": false,
   "runRelativeToRepositoryParent": "vivhite-analysis-output/vivhite/autumn-journey/production-v5-bf16-768p-002",
@@ -171,7 +171,9 @@
       "rawSha256": "212f413ca5c503cf5aaf3ffcfe039c6be1790ff660446bd6504cf6a629fca4e2",
       "sourceSha256": "423c1c09712a6c98c8cda8a6a07c712860c25ea24dc2b6fc58522d1026c85be5",
       "requestSha256": "c2ac6a95e3951e5d89d25cf00ffb4ef83974213eb46826fc01ab21e0655b6b00",
-      "inferenceSeconds": 731.269071387127
+      "inferenceSeconds": 731.269071387127,
+      "selectedSourceSha256": "f17a81d0bdd38dbaa80667b5ed5a39eaecf7f5c1953d5b2925363710bab03fc9",
+      "selectedSourceFile": "corrections/S13-open-eyes-slow2-v2.mp4"
     },
     {
       "shotId": "S14",
@@ -222,8 +224,8 @@
       "sourceSha256": "363c1893211998fdb9300bbb977105c5c75687b053cf0a018058b4f844e31a1e",
       "requestSha256": "431bce01e9012a07c985b76b8a9c36dcfaeedae70217449b451b7f77757bc6c8",
       "inferenceSeconds": 629.6478129539173,
-      "selectedSourceSha256": "75225f74ad1c40a34264c2c5defc422db5c1e03d888d1371aa75d5bbe7a7af52",
-      "selectedSourceFile": "corrections/S17-slow4-v2.mp4"
+      "selectedSourceSha256": "75fcbf85738af14e68d128cd3877a032c82c6fa16818e454bc606983ef86ee97",
+      "selectedSourceFile": "corrections/S17-image-only-r3.mp4"
     },
     {
       "shotId": "S18",
@@ -399,27 +401,27 @@
     },
     {
       "shotId": "S31",
-      "status": "in_progress",
+      "status": "completed",
       "jobId": "video_gen_e90aafed7c4d4948a67181a4db3193e3",
       "submittedAt": "2026-11-16T18:06:51.871292+00:00",
       "firstInProgressAt": "2026-11-16T18:39:53.963647+00:00",
-      "downloadedAt": null,
-      "rawSha256": null,
-      "sourceSha256": null,
+      "downloadedAt": "2026-11-16T18:53:10.966439+00:00",
+      "rawSha256": "cb54149a534aae633c6031fa103dd6115e2a2712a84bf5b2a288634dbd8b925d",
+      "sourceSha256": "7343e9a678c2f9013782f06f922d29e6c0a9c5b7a02eda4fb5fd3bd1e7e4d587",
       "requestSha256": "745025063bd3c3dbd08756d19d4d5dccf5d150c1b4503a4a48924e9aae3044f9",
-      "inferenceSeconds": null
+      "inferenceSeconds": 794.131310925819
     },
     {
       "shotId": "S32",
-      "status": "queued",
+      "status": "completed",
       "jobId": "video_gen_0e32d208465a40419bb17b44999981b7",
       "submittedAt": "2026-11-16T18:19:02.852395+00:00",
-      "firstInProgressAt": null,
-      "downloadedAt": null,
-      "rawSha256": null,
-      "sourceSha256": null,
+      "firstInProgressAt": "2026-11-16T18:53:17.445168+00:00",
+      "downloadedAt": "2026-11-16T19:04:31.859146+00:00",
+      "rawSha256": "dc2c09e46eef3a4d464c323708b1f0e409728a12aea0e1abf004729538441afd",
+      "sourceSha256": "c64b6c00a05c75a79ac96494ab8fc07d158f428eecaecd708fa5a0e5326277a7",
       "requestSha256": "7105c98f71a3381552371ad3b174a6fa89b07c9b867a7525ca4144fdd734468a",
-      "inferenceSeconds": null
+      "inferenceSeconds": 682.9791899060365
     },
     {
       "shotId": "S33",
@@ -431,6 +433,30 @@
       "rawSha256": null,
       "sourceSha256": null,
       "requestSha256": "a0986c003dcd40ef9d65180a91579f60ac1c1546c89bdbb970d65456e8a683e3",
+      "inferenceSeconds": null
+    },
+    {
+      "shotId": "S34",
+      "status": "queued",
+      "jobId": "video_gen_36cfbba35a7d409eb0ab10d2d64e8f64",
+      "submittedAt": "2026-11-16T18:53:17.638056+00:00",
+      "firstInProgressAt": null,
+      "downloadedAt": null,
+      "rawSha256": null,
+      "sourceSha256": null,
+      "requestSha256": "083b18cfe4538ed06086f20c3041ad3095f1bce698b28d8ee13f99e4171af163",
+      "inferenceSeconds": null
+    },
+    {
+      "shotId": "S35",
+      "status": "queued",
+      "jobId": "video_gen_8534139d020a432a9d5cae571e9c8634",
+      "submittedAt": "2026-11-16T19:04:38.405004+00:00",
+      "firstInProgressAt": null,
+      "downloadedAt": null,
+      "rawSha256": null,
+      "sourceSha256": null,
+      "requestSha256": "05e7257280162c3089abd5b22e3392bc2d806880df11967d2fe59db8592a391d",
       "inferenceSeconds": null
     },
     {

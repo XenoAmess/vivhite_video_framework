@@ -46,6 +46,8 @@ def record(plan_file,directory,identity,observation,accepted,all_frames_viewed,f
         'faceEvidence':report['faceEvidence'],'observation':observation,
         'decision':'accepted' if accepted else 'rejected',
         **{key:'failed' if key in (failed_checks or []) else 'passed' for key in checks}}
+    if reference_fidelity_reviewed:
+        row['referenceAppearance'] = 'failed' if 'referenceAppearance' in (failed_checks or []) else 'passed'
     if plan.get('referenceAppearanceRequired') and not reference_fidelity_reviewed and 'referenceAppearance' not in (failed_checks or []):
         row['referenceAppearance'] = 'pending'
     existing = next((item for item in decisions['shots'] if item['id']==identity),None)

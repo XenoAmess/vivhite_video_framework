@@ -36,12 +36,14 @@
       "inspectionReport": "clip-inspection-corrected/S16.json"
     },
     "S17": {
-      "path": "corrections/S17-slow4-v2.mp4",
-      "sha256": "75225f74ad1c40a34264c2c5defc422db5c1e03d888d1371aa75d5bbe7a7af52",
-      "parent": "sources/S17.mp4",
-      "parentSha256": "363c1893211998fdb9300bbb977105c5c75687b053cf0a018058b4f844e31a1e",
-      "receipt": "corrections/S17-slow4-v2.json",
-      "inspectionReport": "clip-inspection-slowed/S17.json"
+      "path": "corrections/S17-image-only-r3.mp4",
+      "sha256": "75fcbf85738af14e68d128cd3877a032c82c6fa16818e454bc606983ef86ee97",
+      "parent": "generation-revisions/S17-image-only-003/raw.mp4",
+      "parentSha256": "ecaa7b9885d9e9d51c69da6ef98aeb7d59f8c1534d63a23a58f632aaf4051faa",
+      "receipt": "generation-revisions/S17-image-only-003/import-receipt.json",
+      "inspectionReport": "clip-inspection-image-only/S17.json",
+      "generationPlanSha256": "cb08b9e8c02e2df4512d5669aeaa285323f33ed1d9628df41451ca961f7861bd",
+      "supersedesRejectedSourceSha256": "75225f74ad1c40a34264c2c5defc422db5c1e03d888d1371aa75d5bbe7a7af52"
     },
     "S19": {
       "path": "corrections/S19-slow2-v1.mp4",
@@ -58,6 +60,14 @@
       "parentSha256": "38ab1e902fdbf1fbd93032b327cc1c6579bc2725da7b6384215d252fd719b476",
       "receipt": "corrections/S24-slow4-v1.json",
       "inspectionReport": "clip-inspection-slowed/S24.json"
+    },
+    "S13": {
+      "path": "corrections/S13-open-eyes-slow2-v2.mp4",
+      "sha256": "f17a81d0bdd38dbaa80667b5ed5a39eaecf7f5c1953d5b2925363710bab03fc9",
+      "parent": "sources/S13.mp4",
+      "parentSha256": "423c1c09712a6c98c8cda8a6a07c712860c25ea24dc2b6fc58522d1026c85be5",
+      "receipt": "corrections/S13-open-eyes-slow2-v2.json",
+      "inspectionReport": "clip-inspection-open-eyes/S13.json"
     }
   },
   "receipts": {
@@ -3360,29 +3370,23 @@
       ]
     },
     "S17": {
-      "schemaVersion": "vivhite-local-retime-candidate-1",
-      "identity": {
-        "parentSha256": "363c1893211998fdb9300bbb977105c5c75687b053cf0a018058b4f844e31a1e",
-        "factor": 4.0,
-        "frames": 120,
-        "fps": 24,
-        "recipe": "setpts-mci-aobmc-bidir-vsbmc-crf16-1",
-        "workerSha256": "4d1d37ede53b6d24006e04822d9d6a95ae72b5a80db8881707d678448a791404"
-      },
-      "sha256": "75225f74ad1c40a34264c2c5defc422db5c1e03d888d1371aa75d5bbe7a7af52",
-      "reason": "Use the original early steady printed expression and a gentler camera approach. The full-speed original opens its printed eyes later, while the first tracked texture candidate loses detail and exposes a head-neck seam at large magnification. Preserve both failures; this separate slowed candidate still requires full 120-frame review.",
+      "schemaVersion": "vivhite-independent-generated-replacement-1",
+      "sourcePlanSha256": "cb08b9e8c02e2df4512d5669aeaa285323f33ed1d9628df41451ca961f7861bd",
+      "requestSha256": "1d7d64ddecc5bb92c2bfb9b1514d4c00dbd86612d89356a13ae63df7d363dadc",
+      "jobId": "video_gen_c097403e48344f57956841834fb724ce",
+      "actualRun": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v5-bf16-768p-S17-image-only-003",
+      "parentRawSha256": "ecaa7b9885d9e9d51c69da6ef98aeb7d59f8c1534d63a23a58f632aaf4051faa",
+      "sourceSha256": "75fcbf85738af14e68d128cd3877a032c82c6fa16818e454bc606983ef86ee97",
+      "model": "fasth3-omni-bf16",
       "nativeSize": [
         1344,
         768
       ],
-      "durationSeconds": 5,
-      "sourceIntervalSeconds": [
-        0,
-        1.25
-      ],
-      "originalPreserved": true,
-      "semanticReview": "pending",
-      "entersFilm": false
+      "frames": 120,
+      "fps": 24,
+      "method": "Independent scene-and-design-image-only generation, no old motion video",
+      "semanticReview": "pending at import; actual decisions recorded separately",
+      "originalsPreserved": true
     },
     "S19": {
       "schemaVersion": "vivhite-local-retime-candidate-1",
@@ -3433,11 +3437,44 @@
       "originalPreserved": true,
       "semanticReview": "pending",
       "entersFilm": false
+    },
+    "S13": {
+      "schemaVersion": "vivhite-local-retime-candidate-1",
+      "identity": {
+        "parentSha256": "423c1c09712a6c98c8cda8a6a07c712860c25ea24dc2b6fc58522d1026c85be5",
+        "factor": 2.0,
+        "frames": 120,
+        "fps": 24,
+        "recipe": "setpts-mci-aobmc-bidir-vsbmc-crf16-1",
+        "workerSha256": "62dd4cd4b6eeec8177c5cf7bc8d294aa91205b2414c8fa40e856f6313f01e9cd"
+      },
+      "sha256": "f17a81d0bdd38dbaa80667b5ed5a39eaecf7f5c1953d5b2925363710bab03fc9",
+      "reason": "Use the original early interval before the late charm tilt and pronounced eye narrowing. The original reference has open eyes; violet iris remaining visible alone is insufficient to certify fixed printed eye geometry. Preserve raw and require actual full-source comparison for this separate candidate.",
+      "nativeSize": [
+        1344,
+        768
+      ],
+      "durationSeconds": 5,
+      "sourceIntervalSeconds": [
+        0,
+        2.5
+      ],
+      "originalPreserved": true,
+      "semanticReview": "pending",
+      "entersFilm": false
     }
   },
-  "acceptance": "Processing receipts retain their initial pending status. Actual later decisions are separate and can be withdrawn. S17 slow4-v2 acceptance has been withdrawn for original-artwork mismatch; it is not eligible for film or 2K. Consult current clip-decisions and eye-reference audit, not presence in this preserved selection history.",
-  "originalSourceDisposition": "The second unretimed S48 preserves the scene but is rejected for excessive wing speed; first-round unrelated-bear failure also remains archived. Neither uncorrected source enters film or 2K. S07 original printed-face blink is rejected and archived separately; only its independently reviewed original-texture correction enters film or 2K. S11 original card print morphs from a face into the back of a head; it is rejected and retained, and only its independently reviewed original-texture correction enters the film and 2K. S16 original printed-eye blink is rejected and retained; only its separately reviewed original-texture correction enters film and 2K. S17 original printed-eye opening and first texture correction with a visible blurred seam are rejected and preserved. Only the independently reviewed slowed early interval, without a texture patch, enters film and 2K. S19 raw framing cut at frame 78 is rejected; the separately reviewed slowed first 2.5-second interval provides the selected continuous five-second source. Original and all intermediate files retained. S24 original hard framing cut at frame 39 is rejected and retained. The independently reviewed four-times-slowed first 1.25-second interval is selected as a continuous five-second source; final edit remains four seconds. CORRECTION: earlier statements calling the generated S17 closed/narrow expression an original design were incorrect. Original scene and master have open eyes. The previous slow4-v2 acceptance is withdrawn; it must not enter film or 2K. Image-only replacement pending. S13 late eye geometry acceptance also withdrawn for fidelity re-review.",
-  "currentIneligibleSelections": [
-    "S17"
+  "acceptance": "Each current source requires its exact matching actual clip decision. The earlier S17 closed-eye slow4-v2 acceptance was withdrawn. Its new independently generated image-only replacement has been compared with original artwork across all 120 frames and separately accepted. Initial processing receipts remain pending; they are not later semantic decisions.",
+  "originalSourceDisposition": "All raw originals, retimes, texture candidates and prior decisions remain archived. Current selected S48 uses the separately reviewed calm wing timing; S07/S11/S16 use separately reviewed original-texture corrections; S19/S24 use separately reviewed continuous early intervals. S17 now uses its independently generated image-only replacement, with a new actual raw parent, exact job/request provenance and separately recorded original-artwork comparison. Earlier S17 closed/narrow and blurred-patch versions are rejected. S13 original late eye geometry acceptance is withdrawn; its independently reviewed early open-eye interval is now selected.",
+  "currentIneligibleSelections": [],
+  "supersededS17Selections": [
+    {
+      "path": "corrections/S17-slow4-v2.mp4",
+      "sha256": "75225f74ad1c40a34264c2c5defc422db5c1e03d888d1371aa75d5bbe7a7af52",
+      "parent": "sources/S17.mp4",
+      "parentSha256": "363c1893211998fdb9300bbb977105c5c75687b053cf0a018058b4f844e31a1e",
+      "receipt": "corrections/S17-slow4-v2.json",
+      "inspectionReport": "clip-inspection-slowed/S17.json"
+    }
   ]
 }
