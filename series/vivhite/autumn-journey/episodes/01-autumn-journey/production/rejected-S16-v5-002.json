@@ -1,0 +1,45 @@
+{
+  "id": "S16",
+  "sourceSha256": "c4ddeed750895e4ffe04d80e4017b8ad5f506401be227785b55b4a8c2f0c2d41",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-16T15:55:22.066015+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 120,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S16-c4ddeed750-all-frames-01.png",
+      "sha256": "1d99c22c0ab4277f8f152e149215e121b10ddfc2855bf32e06ee5583f3223814",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S16-c4ddeed750-all-frames-02.png",
+      "sha256": "740e6e999b3ca872fed0dd16bae991f45576c18b0ad6aaa17416729ccb1f9e2c",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S16-c4ddeed750-all-frames-03.png",
+      "sha256": "2f4525eac50d90a71a8cd5185b45b20b43eec4dd1a462c9af07fe8ee6d90c7b1",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S16-c4ddeed750-all-frames-04.png",
+      "sha256": "8869bf9145472c5e48ed71ec640a7cec22c9d549a8d71a949cdb44214cffa415",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S16-c4ddeed750-face-candidates.png",
+    "sha256": "4418d5661a34bf02185ecc69bd576aad720c23c86720b8925cfcf17ad64fa39b",
+    "items": 11
+  },
+  "observation": "Viewed all 120 full-source frames, four complete full-scene sheets, temporal sheet, all eleven exported candidate crops, native contexts 0/119 and every tracked printed-head crop. Same single woman remains cropped from waist/skirt down, in white/violet/gold feminine clothes, white legwear and the same attached printed pouch, moving along ordinary wooded stone stairs. No head, face fragment, extra person or disconnected limb appears; candidates are the print and one leaf/rail false positive. Actual framing follows waist, bag and legs, with boot tips only briefly at the lower edge, rather than the proposed below-knee framing. Camera/bag motion remains continuous. However the printed eyes briefly close around frames 85-88 before reopening without an occlusion or physical turnover of the bag. This autonomous printed-face blink violates inert merchandise behavior, so the original source is rejected and preserved; other checks passed.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "failed"
+}

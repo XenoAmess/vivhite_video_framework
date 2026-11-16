@@ -662,6 +662,51 @@
       "reviewReuseFromPlanSha256": "313bf0fee439b98c65d038d9b8b302ce4e73f0161055d903cc60cee2d93ce075"
     },
     {
+      "id": "S16",
+      "sourceSha256": "1b490e9c9957ac61365b79854e2a88cd3383eb8cab59299f8e8b47818996acc8",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-16T15:56:55.406854+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S16-1b490e9c99-all-frames-01.png",
+          "sha256": "7b032d8e5f2c254d0404a3f87d18af27d601337363951c74500d54f91438b3b5",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S16-1b490e9c99-all-frames-02.png",
+          "sha256": "590c90903e99229eafed692985e4e1aab57a184a280664540514af75bff3919b",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S16-1b490e9c99-all-frames-03.png",
+          "sha256": "4ef3793074eb1eaa4d3a8885a76105aa99eb6ed37b942b2386875b9ccf2d8375",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S16-1b490e9c99-all-frames-04.png",
+          "sha256": "151c2d336bf7e105c63dd7df13c368c6cf2b947c6b9f7917ce6fc6da383387db",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S16-1b490e9c99-face-candidates.png",
+        "sha256": "53a1b1fed006636597c1c483e39f8544a229b02c52909a6d3cde7de4821eabd5",
+        "items": 10
+      },
+      "observation": "Independently viewed all 120 frames of the separate original-print-texture correction: four complete full-scene sheets, temporal sheet, all ten exported candidate crops, native full context frame 86 and 120 tracked original-pixel pouch-head crops. Both printed eyes now remain open and fixed at the original expression across the complete five seconds; no blink or independent head turn. Same woman in feminine white/violet/gold skirt, white legwear and attached pouch remains cropped from waist down while moving along the leaf-strewn stone stairs. Boot tips appear briefly at the bottom; actual crop emphasizes the bag rather than the proposed below-knee detail. No real human head or facial fragment, added people or disconnected limbs; candidates are the pouch illustration and leaves/rail false positives. Original continuous camera, clothing, bag, steps and environment movement retained. Only the printed surface was stabilized; no human removed or covered. Raw rejection and processing receipt preserved separately. All five seconds actually reviewed and selected for final film and later 2K.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed"
+    },
+    {
       "id": "S20A",
       "sourceSha256": "3aa49806d6452a42a0f3bfe9b33eacd36cd1eb60e38d31aa3b4c4552edc6af5c",
       "method": "assistant-frame-review",
