@@ -76,6 +76,8 @@ $postCorrected = "$postRun/corrections/S15-original-face-reuse-example-001.mp4"
 
 `--used-seconds` 决定**修订源片覆盖范围**，不修改导演稿时长。例如S15生成源片5秒／120帧，成片仍只使用4秒；S44同样是5秒源片、4秒成片。若检查策略要求全部源帧，就处理并检查完整5秒，不能只检查成片截取部分。
 
+复用时还需核对实际输出帧数：输入提前结束不会由该参数补足画面；若输入自带音轨，当前工具会可选复制原音轨，没有按这个画面区间单独裁剪音频。本项目使用已规范化的无音轨源片，最终另配WAV，因此不能把这些示例直接当作带原声短视频的通用音视频裁剪器。
+
 ## 处理后如何复核和采用
 
 1. 用 [`review_reference_clips.py`](../video-maker/tools/review_reference_clips.py) 的 `inspect(source, shot, evidence, output, face_model)` 导出完整帧图、时序图、检测候选和逐帧指标。这里 `shot['seconds']` 控制被统计的使用范围；检查完整源片时传入独立的镜头副本，将其设为实际 `sourceSeconds`，不修改正式计划。修订版本使用独立检查输出目录，保留原报告。
