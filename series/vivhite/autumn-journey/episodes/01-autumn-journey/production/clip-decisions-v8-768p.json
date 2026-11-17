@@ -93,6 +93,52 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S15",
+      "sourceSha256": "e35f2e874c25dffc4cee82fb05c77b1bb87f1cb6642458e45b46ee29c5a83b47",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-17T13:32:46.397289+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S15-e35f2e874c-all-frames-01.png",
+          "sha256": "69560f9ee8ef287f4c57f61da8090564b7c92b356a1ea8c94af0178830f95124",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S15-e35f2e874c-all-frames-02.png",
+          "sha256": "a2d21e3883240fb2fdb38692b4c37d912fd0acb39fcbff59022151a9114990ce",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S15-e35f2e874c-all-frames-03.png",
+          "sha256": "b7cc7865354d27b4563700182c31cb458111f773c42b753ab96fa30ffc8abe73",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S15-e35f2e874c-all-frames-04.png",
+          "sha256": "d516fc066e1d387d9601ef197b202b9f9dd237db68f357478fb488abc75ccebf",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S15-e35f2e874c-face-candidates.png",
+        "sha256": "81e34c89a530320fbeb95fd2f517c9ae1d367bb0c689509bd7ae1dd67d2d4df7",
+        "items": 8
+      },
+      "observation": "Actually viewed all 120 source frames on four complete scene sheets, the complete temporal sheet and all eight detector crops. The original two hands lift the cup clear of the tabletop, but the action lowers again slightly instead of a clean stable hold. More importantly, two unrelated casually dressed pedestrians enter the original empty exterior behind the window around the last two source seconds; detector evidence and complete scene frames show their heads and facial fragments. They were not present in the original image and their appearance is not the required feminine character costume. Reject the entire output for new people, human facial fragments, uncontrolled cast/costume and imperfect hold. No covering, cropping out or source reuse can approve it; a new empty-background generation is required. Original output and every evidence frame remain preserved. Printed face is also soft and should receive a stricter original-artwork comparison on the next attempt. No new corrected output is accepted here.",
+      "decision": "rejected",
+      "noHumanFaces": "failed",
+      "noAddedPeople": "failed",
+      "allCharactersFemale": "failed",
+      "costumeStyle": "failed",
+      "motionAndContinuity": "failed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "pending"
     }
   ]
 }

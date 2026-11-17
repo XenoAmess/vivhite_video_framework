@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 8,
+  "model": "fasth3-omni-bf16",
+  "stage": "draft",
+  "fps": 30,
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 120,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "numInferenceSteps": 8,
+  "decoderLayers": 36,
+  "decoderVerification": "GET /v1/models on 2026-11-16",
+  "titleOverlays": [
+    {
+      "shotId": "S06",
+      "text": "白绮／秋日旅程",
+      "subtitle": "Vivhite · Autumn Journey"
+    },
+    {
+      "shotId": "S48",
+      "text": "白绮／秋日旅程",
+      "subtitle": "Vivhite · Autumn Journey",
+      "dedication": "献给世界上最可爱的你",
+      "dedicationDelaySeconds": 3,
+      "dedicationFadeInMs": 1800
+    }
+  ],
+  "closingCredit": "",
+  "shots": [
+    {
+      "id": "S15",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "seed": 2026111915,
+      "mode": "H",
+      "action": "两只原有手自然握稳杯身，在镜头前半段将杯子从桌面缓缓提起约8厘米，随后稳定捧住欣赏窗外；不反复摸杯、不送到嘴边、不抬机位。",
+      "soundDescription": "杯底轻擦桌面、柔和室内声底。",
+      "prompt": "The entire view outside the window is the EMPTY original street: only the same road, white guardrail, wall and buildings. Keep that exterior completely still for all five seconds. NO pedestrian, passerby, passenger, person, human head, body, reflected figure or new vehicle may enter any window area or background at any time. One uninterrupted locked tabletop shot, camera never moves. Only the original head-out adult woman and her original TWO hands are inside. Start with her two hands holding the original cup at the table. She smoothly lifts the same cup eight centimetres clear of the tabletop during seconds zero to two, then keeps it steadily suspended in the same position until the end at five seconds. No rubbing, fidgeting, setting down, second lift, lid movement or sipping. Her entire head remains outside the crop, with no face or facial fragment. Both hands stay attached to her own original forearms and remain on the cup, no extra finger, hand or limb. Preserve exactly the original feminine white/deep-violet/gold clothing and opaque white legwear. The cup and lid remain rigid and unchanged, with the exact original fixed printed open violet eyes, thin gold round glasses, iris/eyelid outlines and face proportions. No print blinking, face morphing, cut, new object, camera reframe, letters, speech, voice, singing, humming or credits.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S15-v2.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "generationAction": "One simple purposeful action in a locked five-second tabletop close-up. From the exact original two-hand grip, she closes both hands around the same paper coffee cup, gently lifts it vertically eight centimetres clear of the table during the first two seconds, then holds it steadily at lower-chest height within the existing crop for the remaining three seconds. Both hands and the cup move together as one physical unit; fingers maintain their grip and the lid stays attached. The original cup sticker remains visible, fixed and unchanged. No rubbing, stroking, finger fidgeting, turning the lid, circular movement, setting down again, repeated lift, sipping, head entering frame, cup duplication or floating object. Camera, table and background stay fixed.",
+      "acceptanceCriteria": "Cup bottom visibly separates from tabletop in first two seconds and remains supported by exactly two original hands; no repetitive touch or head/face reveal; fixed original open-eye illustration."
+    }
+  ],
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "2560x1440",
+    "sampler": "up3",
+    "seed": 1234,
+    "startCondition": "Disabled until a new explicit user request; do not automatically resume.",
+    "scope": "Local video regeneration through port 8002; not a closed-source MiniMax teacher model.",
+    "status": "stopped-by-user"
+  },
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "S20 has 240 native frames; S48 has 336 native frames. Every other complete source has 120. Final target exactly 205 seconds, 6150 frames at 30fps. First 47 final durations unchanged from v7.",
+  "promptRevision": {
+    "id": "purposeful-continuous-motion-008",
+    "reason": "Seven user-reported motion defects. ONLY S48 duration changes, to fourteen seconds; first 47 durations locked to v7. Exactly 205 seconds."
+  },
+  "shotDurationExceptions": {},
+  "referenceAppearanceRequired": true,
+  "scope": "Second image-only S15 attempt only. Previous output rejected for an unrelated background pedestrian. Five-second new source for unchanged four-second final S15. Original empty exterior must remain empty. All 2K work stays stopped.",
+  "director": "director-v8.md",
+  "previousProductionPlanSha256": "6f043b3649bdc69ad62aa55e11dae3a30acbf054b4999b6b0c9c6e6633a5fd18",
+  "sourceContinuation": "Reuse unchanged approved v7 bytes for the other 41 shots only. All seven user-rejected sources are ineligible for v8. Actual new video outputs require independent complete frame and motion review before selection."
+}

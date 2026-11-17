@@ -1,7 +1,7 @@
 {
   "schemaVersion": "vivhite-motion-revision-progress-1",
   "revision": 8,
-  "snapshotAt": "2026-11-17T13:28:22.672749+00:00",
+  "snapshotAt": "2026-11-17T13:34:11.690477+00:00",
   "newShots": 7,
   "completedSources": 2,
   "acceptedNewSources": 2,
@@ -19,6 +19,7 @@
     {
       "id": "S05",
       "status": "completed",
+      "originRun": "production-v8-motion-768p-001",
       "jobId": "video_gen_3123470d00294946af2196e4da3c469e",
       "sourceSha256": "a495e29aac57d1badc8ceaba52055d8039f28164fec366ff13803cec6a4a3353",
       "selectedSourceSha256": "a495e29aac57d1badc8ceaba52055d8039f28164fec366ff13803cec6a4a3353",
@@ -28,6 +29,7 @@
     {
       "id": "S07",
       "status": "completed",
+      "originRun": "production-v8-motion-768p-001",
       "jobId": "video_gen_68205b941d774adfafa63fa7c7bc8b6d",
       "sourceSha256": "b4e22b52c2867513bd826f0b9a90e642c7aacd3b2605a921d9d1f26e49ee520b",
       "selectedSourceSha256": "ea52ba6ff18da72133440c7dd720615dc8cf2df2a8e16f76902cc4e5fd5e5fab",
@@ -36,25 +38,28 @@
     },
     {
       "id": "S15",
-      "status": "in_progress",
-      "jobId": "video_gen_bfa30032fc9e4f72af493266a450319f",
-      "sourceSha256": null,
-      "selectedSourceSha256": null,
-      "serverProgress": 1,
-      "completeSourceAccepted": false
-    },
-    {
-      "id": "S28",
       "status": "queued",
-      "jobId": "video_gen_f421605b6bde48b7b20ca9b4c2059cd1",
+      "originRun": "production-v8-motion-768p-S15-002",
+      "jobId": "video_gen_68b011631d3b4a3c8396aae749342a35",
       "sourceSha256": null,
       "selectedSourceSha256": null,
       "serverProgress": 0,
       "completeSourceAccepted": false
     },
     {
+      "id": "S28",
+      "status": "in_progress",
+      "originRun": "production-v8-motion-768p-001",
+      "jobId": "video_gen_f421605b6bde48b7b20ca9b4c2059cd1",
+      "sourceSha256": null,
+      "selectedSourceSha256": null,
+      "serverProgress": 1,
+      "completeSourceAccepted": false
+    },
+    {
       "id": "S44",
       "status": "queued",
+      "originRun": "production-v8-motion-768p-001",
       "jobId": "video_gen_e158e4759ff144118779207c6d2a89b9",
       "sourceSha256": null,
       "selectedSourceSha256": null,
@@ -63,16 +68,18 @@
     },
     {
       "id": "S47",
-      "status": "not-submitted",
-      "jobId": null,
+      "status": "queued",
+      "originRun": "production-v8-motion-768p-001",
+      "jobId": "video_gen_ae3a1ca205944218893d0842a0a237c3",
       "sourceSha256": null,
       "selectedSourceSha256": null,
-      "serverProgress": null,
+      "serverProgress": 0,
       "completeSourceAccepted": false
     },
     {
       "id": "S48",
       "status": "not-submitted",
+      "originRun": "production-v8-motion-768p-001",
       "jobId": null,
       "sourceSha256": null,
       "selectedSourceSha256": null,

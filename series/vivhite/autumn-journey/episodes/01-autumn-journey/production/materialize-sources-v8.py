@@ -16,6 +16,7 @@ REPLACEMENTS = ('S05', 'S07', 'S15', 'S28', 'S44', 'S47', 'S48')
 ORIGINS = {**worker.ORIGINS, **{
     identity: ('production-v8-motion-768p-001', 'production-plan-v8-motion-image-only-r1.json')
     for identity in REPLACEMENTS}}
+ORIGINS['S15'] = ('production-v8-motion-768p-S15-002', 'production-plan-v8-S15-image-only-r2.json')
 
 
 def validate_locked_timing(plan, baseline):
