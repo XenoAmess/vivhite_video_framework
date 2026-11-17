@@ -1,0 +1,46 @@
+{
+  "id": "S07",
+  "sourceSha256": "b4e22b52c2867513bd826f0b9a90e642c7aacd3b2605a921d9d1f26e49ee520b",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-17T13:25:55.003071+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 96,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S07-b4e22b52c2-all-frames-01.png",
+      "sha256": "6b9748bcb0e2e1af17a8cac53c765eae8e69f6cc191429b70f11b930a26aac5b",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S07-b4e22b52c2-all-frames-02.png",
+      "sha256": "bd8a63f8dae2f891a89b4a8f05931c6de7b0bea766f2169237be8e1c911be129",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S07-b4e22b52c2-all-frames-03.png",
+      "sha256": "b37b60fc3d4dca0e79b0c8ab9711f4d90dd74dbda30ff8b7c70de71cca82bd4c",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S07-b4e22b52c2-all-frames-04.png",
+      "sha256": "66bb9a58a2d4d00b514d73be9974bc49c79476ae1e0c98a441f9c3eb46e31a33",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S07-b4e22b52c2-face-candidates.png",
+    "sha256": "5290e9e667f23b69fd442d99e98b3b4a24c0a714a349cde5acbdfccd394dc074",
+    "items": 9
+  },
+  "observation": "Actually viewed all 120 scene frames, temporal sheet, nine detector crops, native endpoints, all 120 tracked print crops and original-artwork comparison. Normal alternating walking and weight transfer now continues through the source without the old long frozen pose. Head remains entirely out, only the original feminine body crop, two legs and two original hands; no added person, real face, reflection or cut. Detector crops are leaves, original cuff and permitted pouch illustration. However the generated pouch eyes and face proportions are narrower and less faithful than the original, with small shape variation as the bag swings. Reject this uncorrected source for reference appearance despite improved walking; preserve it and restore only the original printed surface onto the same prop before a separate complete review.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "passed",
+  "referenceAppearance": "failed"
+}

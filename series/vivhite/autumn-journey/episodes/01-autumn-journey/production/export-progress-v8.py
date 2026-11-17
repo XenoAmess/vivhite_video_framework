@@ -4,6 +4,7 @@ GPL-3.0-only.
 """
 import argparse
 from datetime import datetime, timezone
+import hashlib
 import json
 from pathlib import Path
 
@@ -18,11 +19,20 @@ def read(path, default=None):
 def export(base):
     run = base / 'production-v8-motion-768p-001'
     decisions = read(run / 'clip-decisions.json', {}).get('shots', [])
+    selections = read(run / 'source-selections.json', {}).get('selections', {})
     rows = []
     for identity in SHOT_IDS:
         job = read(run / 'jobs' / f'{identity}.json', {})
         decision = next((item for item in decisions if item['id'] == identity), {})
-        accepted = (decision.get('sourceSha256') == job.get('sourceSha256')
+        selection = selections.get(identity, {})
+        selected_sha = selection.get('sha256', job.get('sourceSha256'))
+        source = (run / selection.get('path', f'sources/{identity}.mp4')).resolve()
+        actual_sha = None
+        if source.is_relative_to(run.resolve()) and source.is_file():
+            with source.open('rb') as content:
+                actual_sha = hashlib.file_digest(content, 'sha256').hexdigest()
+        accepted = (actual_sha == selected_sha == decision.get('sourceSha256')
+                    and actual_sha is not None
                     and decision.get('allSourceFrameReview') is True
                     and decision.get('decision') != 'rejected'
                     and all(decision.get(key) == 'passed' for key in (
@@ -30,6 +40,7 @@ def export(base):
                         'motionAndContinuity', 'merchandiseBehavior', 'referenceAppearance')))
         rows.append({'id': identity, 'status': job.get('status', 'not-submitted'),
                      'jobId': job.get('jobId'), 'sourceSha256': job.get('sourceSha256'),
+                     'selectedSourceSha256': selected_sha,
                      'serverProgress': job.get('remote', {}).get('progress'),
                      'completeSourceAccepted': accepted})
     completed = sum(bool(row['sourceSha256']) for row in rows)

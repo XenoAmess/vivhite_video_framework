@@ -1,0 +1,80 @@
+{
+  "production-v7-bf16-768p-001": {
+    "scope": "Right-edge fixed original-pixel ROI, includes background and a small edge of bicycle; numerical diagnostic only, not semantic continuity approval.",
+    "frames": 120,
+    "maximum": 26.444,
+    "highestFrames": [
+      {
+        "frame": 44,
+        "backgroundMeanAbsDiff": 26.444
+      },
+      {
+        "frame": 68,
+        "backgroundMeanAbsDiff": 24.512
+      },
+      {
+        "frame": 42,
+        "backgroundMeanAbsDiff": 24.307
+      },
+      {
+        "frame": 36,
+        "backgroundMeanAbsDiff": 21.943
+      },
+      {
+        "frame": 43,
+        "backgroundMeanAbsDiff": 21.529
+      },
+      {
+        "frame": 46,
+        "backgroundMeanAbsDiff": 21.183
+      },
+      {
+        "frame": 34,
+        "backgroundMeanAbsDiff": 20.985
+      },
+      {
+        "frame": 69,
+        "backgroundMeanAbsDiff": 20.282
+      }
+    ]
+  },
+  "production-v8-motion-768p-001": {
+    "scope": "Right-edge fixed original-pixel ROI, includes background and a small edge of bicycle; numerical diagnostic only, not semantic continuity approval.",
+    "frames": 120,
+    "maximum": 27.069,
+    "highestFrames": [
+      {
+        "frame": 60,
+        "backgroundMeanAbsDiff": 27.069
+      },
+      {
+        "frame": 106,
+        "backgroundMeanAbsDiff": 22.516
+      },
+      {
+        "frame": 58,
+        "backgroundMeanAbsDiff": 21.592
+      },
+      {
+        "frame": 62,
+        "backgroundMeanAbsDiff": 21.398
+      },
+      {
+        "frame": 110,
+        "backgroundMeanAbsDiff": 21.112
+      },
+      {
+        "frame": 42,
+        "backgroundMeanAbsDiff": 20.831
+      },
+      {
+        "frame": 59,
+        "backgroundMeanAbsDiff": 20.609
+      },
+      {
+        "frame": 104,
+        "backgroundMeanAbsDiff": 20.404
+      }
+    ]
+  }
+}

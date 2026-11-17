@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "fbf09900eb1dbcc55ffc4e282a0b633b328bdffdcb7faa4c6207d5fa514bc071",
+  "shots": [
+    {
+      "id": "S05",
+      "sourceSha256": "a495e29aac57d1badc8ceaba52055d8039f28164fec366ff13803cec6a4a3353",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-17T13:17:29.308236+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S05-a495e29aac-all-frames-01.png",
+          "sha256": "8040f073d8fbca6b20ccfa6ce4967376bb229c631fc8d7b702036d88903240d2",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S05-a495e29aac-all-frames-02.png",
+          "sha256": "4695373069f45e61917a9c8ac654cb5ed6d79d57ecdaf8b6fa3836871c3ade3a",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S05-a495e29aac-all-frames-03.png",
+          "sha256": "0ffc1b75d98ef36e0088d2a32bc82287fedf10e863cc962edd80ee791429299a",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S05-a495e29aac-all-frames-04.png",
+          "sha256": "ba859a8cb81681a669f11f18743a6a50bddd3b313a76a9b1c701592a45648e16",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S05-a495e29aac-face-candidates.png",
+        "sha256": "4fd49cfefd6ba54423e676bfedf967cb0d26f0a7d2dbf218aadb04c5df677f48",
+        "items": 1
+      },
+      "observation": "Actually viewed all 120 source frames across four complete scene sheets, the full temporal sheet including every numerical cut candidate, the detector crop, native first and last frames, all 120 tracked print-face crops and the original-reference versus new-print comparison. The same woman remains cropped to feminine white/deep-violet/gold skirt, two white-covered legs and two violet boots, with no head, face, hand, unrelated body part, background person or reflection. After a short sub-second settling interval the two original legs pedal in continuous alternation through the remaining shot, without the old late freeze. The same road and tree geometry remains continuous with modest background drift and a slight downward framing drift; no abrupt scene reset, new location or internal cut is visible, including the initial one-second interval reported by the user. Large leg, crank and wheel movement accounts for numerical cut candidates; these do not themselves show an edit. Do not claim exact bicycle physics or a perfectly locked camera. The original frame sticker keeps open violet eyes, thin gold round glasses and the same face layout with no blink or living expression. Its small native print detail is soft, not pixel-identical to the larger reference. Accept this complete five-second replacement for the unchanged five-second final shot. Numerical background-ROI statistics alone are not semantic evidence; no human full playback or final-film approval claimed.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    },
+    {
+      "id": "S07",
+      "sourceSha256": "ea52ba6ff18da72133440c7dd720615dc8cf2df2a8e16f76902cc4e5fd5e5fab",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-17T13:27:45.443370+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S07-ea52ba6ff1-all-frames-01.png",
+          "sha256": "b1b290755f0ece04d5a19681f69c2b3a46a3acb14332e5288939bb3856b5f0ae",
+          "items": 32
+        },
+        {
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S07-ea52ba6ff1-all-frames-02.png",
+          "sha256": "69e3de5959c5c1248dc60daa02c0d0202bd74992da162246eabb63ceea17f72e",
+          "items": 32
+        },
+        {
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S07-ea52ba6ff1-all-frames-03.png",
+          "sha256": "f76b92447f4bec7a4616df63152f57596cc584a33ef096ba262fd454321fcc8c",
+          "items": 32
+        },
+        {
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S07-ea52ba6ff1-all-frames-04.png",
+          "sha256": "af7b94ccbbe22cdf783f953f0977eaa55b7481918f60d1b06e48081b137d7e32",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S07-ea52ba6ff1-face-candidates.png",
+        "sha256": "7c84fc6339aabf9249efb5a14a3979013699c4c6280a00e731f7abdb4c54c57e",
+        "items": 8
+      },
+      "observation": "Actually viewed all 120 corrected source frames across four complete scene sheets, temporal sheet, all nine detector crops, native first and last frames, all 120 tracked corrected print crops and original-scene versus restored-print comparison. The same single woman walks throughout the shot in alternating natural strides with heel contact, weight transfer and push-off, with moving skirt and gently swinging pouch; there is no old multi-second frozen starting pose, limp, hop, sliding stance or late isolated step. A short initial settling interval is under a third of a second. The camera tracks the original head-out feminine body crop, two legs and original hands without revealing a head, facial fragment, new person, detached limb, reflection, lettering or cut. Numerical scene-change candidates are foreground walking and leaves. Detector crops are foliage, original cuff and permitted fixed pouch illustration. The original reference artwork restores the round open violet eyes, original iris/eyelid outline, thin gold round glasses and face proportions on the same pouch; no blink, visible tracking slip, duplicate features, halo or neck seam was identified in the complete corrected evidence. The original generated narrower-face clip and its rejection remain preserved. Accept this full five-second corrected source; the final walking shot retains its original four-second duration. No final-film or human continuous playback approval implied.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    }
+  ]
+}
