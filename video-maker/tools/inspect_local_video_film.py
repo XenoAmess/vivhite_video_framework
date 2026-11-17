@@ -18,11 +18,13 @@ from reference_finisher import sha,write_json,output_dimensions
 
 def validate_timing(plan):
     exceptions = plan.get('shotDurationExceptions', {})
-    if (plan['fps'] != 30 or exceptions not in ({}, {'S20': 10}, {'S48': 10}, {'S20': 10, 'S48': 10})
+    if (plan['fps'] != 30 or exceptions not in ({}, {'S20': 10}, {'S48': 10}, {'S20': 10, 'S48': 10},
+                                               {'S48': 14}, {'S20': 10, 'S48': 14},
+                                               {'S48': 15}, {'S20': 10, 'S48': 15})
             or any(not 2 <= shot['seconds'] <= exceptions.get(shot['id'], 5) for shot in plan['shots'])
             or any(not any(shot['id'] == identity and shot['seconds'] == seconds for shot in plan['shots'])
                    for identity,seconds in exceptions.items())):
-        raise ValueError('Expected short shots with only the explicitly requested ten-second S20/S48 exceptions')
+        raise ValueError('Expected short shots with only the explicitly requested S20/S48 duration exceptions')
 
 
 def inspect(plan_file,directory,evidence,face_model):

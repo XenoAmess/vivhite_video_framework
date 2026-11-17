@@ -55,6 +55,31 @@ class LocalFinisherTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'exception'):
             validate_timing({**plan,'shots':[{'id':'S20','seconds':10}]})
 
+    def test_fifteen_second_closing_is_explicit_and_survives_native_450_frame_assembly(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root/'sources').mkdir()
+            worker.run(['ffmpeg','-v','error','-f','lavfi','-i','testsrc2=s=1344x768:r=24:d=15',
+                        '-frames:v','360','-c:v','libx264','-preset','ultrafast',str(root/'sources/S48.mp4')])
+            plan = {'schemaVersion':'vivhite-local-two-stage-video-1','stage':'draft','model':'fasth3-omni-bf16',
+                'width':1344,'height':768,'sourceSize':'1344x768','fps':30,'sourceFps':24,'maxShotSeconds':5,
+                'shotDurationExceptions':{'S48':15},'totalFrames':450,'titleOverlays':[],'closingCredit':'',
+                **{key:True for key in ('noSpeech','noHumanFaces','noAddedPeople','allCharactersFemale')},
+                'shots':[{'id':'S48','seconds':15,'sourceSeconds':15,'startFrame':0,'prompt':'Unit fixture.'}]}
+            worker.write_json(root/'plan.json',plan)
+            (root/'clip-decisions.json').write_text('{}')
+            (root/'soundtrack.wav').write_bytes(b'unit fixture audio')
+            with patch.object(worker,'verify_clip_decisions'):
+                final = finisher.prepare(root/'plan.json',root,root/'final.json')
+            validate_timing(final)
+            self.assertEqual(final['shotDurationExceptions'],{'S48':15})
+            probe = json.loads(worker.run(['ffprobe','-v','error','-count_frames','-show_streams','-of','json',
+                                           str(root/'picture-assembly.mp4')]))
+            self.assertEqual(int(probe['streams'][0]['nb_read_frames']),450)
+            for exceptions in ({},{'S48':10},{'S20':15,'S48':15}):
+                with self.subTest(exceptions=exceptions), self.assertRaises(ValueError):
+                    validate_timing({**final,'shotDurationExceptions':exceptions})
+
     def test_native_size_assembly_preserves_old_result_when_a_source_changes(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

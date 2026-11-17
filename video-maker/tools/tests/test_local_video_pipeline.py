@@ -99,6 +99,33 @@ class LocalPipelineTest(unittest.TestCase):
             with self.subTest(skip=skip), self.assertRaises(ValueError):
                 worker.select_target_shots(shots,skip=skip)
 
+    def test_fifteen_second_closing_has_native_360_frames_and_no_implicit_other_exception(self):
+        plan = self.plan()
+        plan['shots'][0].update(id='S20',seconds=10,sourceSeconds=10)
+        plan['shots'][1].update(id='S48',seconds=15,sourceSeconds=15,startFrame=300,
+                                seed=48,references=['coast.png'])
+        plan.update(totalFrames=750,shotDurationExceptions={'S20':10,'S48':15})
+        worker.validate(plan)
+        self.assertEqual(worker.source_frame_count(plan['shots'][1]),360)
+        request = worker.payload_for(plan,plan['shots'][1],lambda _: {'file_id':'coast'})
+        self.assertEqual(request['seconds'],15)
+        for changes in ({'shotDurationExceptions':{'S20':15,'S48':15}},
+                        {'shotDurationExceptions':{'S20':10,'S48':10}},
+                        {'shots':[plan['shots'][0],{**plan['shots'][1],'sourceSeconds':10}]}):
+            with self.subTest(changes=changes), self.assertRaises(ValueError):
+                worker.validate({**plan,**changes})
+
+    def test_fourteen_second_closing_matches_user_locked_205_second_timeline(self):
+        plan = self.plan()
+        plan['shots'] = [{'id':'S48','seconds':14,'sourceSeconds':14,'startFrame':0,
+                          'prompt':'Empty original coast.','seed':48,'references':['coast.png']}]
+        plan.update(totalFrames=420,shotDurationExceptions={'S48':14})
+        worker.validate(plan)
+        self.assertEqual(worker.source_frame_count(plan['shots'][0]),336)
+        self.assertEqual(worker.payload_for(plan,plan['shots'][0],lambda _: {})['seconds'],14)
+        with self.assertRaises(ValueError):
+            worker.validate({**plan,'shotDurationExceptions':{'S48':15}})
+
     def test_image_only_generation_never_uploads_an_old_motion_reference(self):
         with tempfile.TemporaryDirectory() as temporary:
             directory = Path(temporary)

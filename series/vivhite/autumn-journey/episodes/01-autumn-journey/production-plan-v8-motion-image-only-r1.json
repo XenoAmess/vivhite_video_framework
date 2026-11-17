@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 8,
+  "model": "fasth3-omni-bf16",
+  "stage": "draft",
+  "fps": 30,
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 1200,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "numInferenceSteps": 8,
+  "decoderLayers": 36,
+  "decoderVerification": "GET /v1/models on 2026-11-16",
+  "titleOverlays": [
+    {
+      "shotId": "S06",
+      "text": "白绮／秋日旅程",
+      "subtitle": "Vivhite · Autumn Journey"
+    },
+    {
+      "shotId": "S48",
+      "text": "白绮／秋日旅程",
+      "subtitle": "Vivhite · Autumn Journey",
+      "dedication": "献给世界上最可爱的你",
+      "dedicationDelaySeconds": 3,
+      "dedicationFadeInMs": 1800
+    }
+  ],
+  "closingCredit": "",
+  "shots": [
+    {
+      "id": "S05",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "seed": 2026111805,
+      "mode": "H",
+      "action": "骑行从第一帧便持续自然踩踏，左右腿规律交替；低位机位与车架同步平稳前进，林木与路面连续掠过，不出现背景重置或跳变。",
+      "soundDescription": "链条与轮胎沙沙声。",
+      "prompt": "A five-second uninterrupted bicycle-mounted low side close-up, already in forward motion from frame one. Her two original boots remain on the opposite pedals and alternate smoothly through three relaxed complete crank rotations over the shot. Knees bend and extend naturally. The camera travels at exactly the bicycle's speed and keeps the same frame tube and original sticker in the same part of the image. The same asphalt road, trunks and leaf litter slide backward continuously with consistent depth and parallax, never teleporting, resetting, dissolving or changing location. Spokes and ground motion agree with forward travel. No initial still hold, coasting freeze, sudden sprint, reverse pedal, duplicated leg, extra bicycle or background transition. Use Picture 1 as the composition and exact physical contents of this single continuous realistic shot. Preserve its ordinary location, natural light and existing white/deep-violet/gold feminine costume. Only the original woman may appear, cropped entirely below her head throughout; no real human face or facial fragment, added person, unrelated limb, bystander, silhouette or reflected person. Every visible hand remains attached to one of her original two forearms. Existing Vivhite merchandise is inert: retain the original open violet eyes, iris contours, thin gold round glasses, face proportions, costume and print layout without blinking or changing expression. No scene cut, time jump, camera reframe that reveals a head, readable lettering, voice, speech, singing, humming or production credits. Keep the reference world believable and unchanged.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S05-v2.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "generationAction": "A five-second uninterrupted bicycle-mounted low side close-up, already in forward motion from frame one. Her two original boots remain on the opposite pedals and alternate smoothly through three relaxed complete crank rotations over the shot. Knees bend and extend naturally. The camera travels at exactly the bicycle's speed and keeps the same frame tube and original sticker in the same part of the image. The same asphalt road, trunks and leaf litter slide backward continuously with consistent depth and parallax, never teleporting, resetting, dissolving or changing location. Spokes and ground motion agree with forward travel. No initial still hold, coasting freeze, sudden sprint, reverse pedal, duplicated leg, extra bicycle or background transition.",
+      "acceptanceCriteria": "All source frames: uninterrupted background optical flow and persistent tree/road geometry; regular alternation of both original legs from beginning through end; fixed original sticker. Reject any background reset, cut, frozen pedalling or new limb."
+    },
+    {
+      "id": "S07",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 150,
+      "seed": 2026111807,
+      "mode": "H",
+      "action": "从第一帧开始正常向前散步，左右靴交替完成连续步伐并自然承重，裙摆与布袋随走路轻摆，不先僵住再突然迈步。",
+      "soundDescription": "脆叶、鞋底摩擦。",
+      "prompt": "A continuous five-second low frontal tracking view of normal walking on the same autumn woodland path. She is already mid-stride at frame one and takes five unhurried alternating footfalls throughout the shot, left then right then left then right then left. Each foot lifts, swings forward, touches heel then sole, bears weight and pushes off while the other leg advances. Both knees bend naturally; regular even cadence and real forward progress. Camera tracks backward at her walking speed, framing the same skirt, two legs and boots, never rising toward her head. The original pouch swings gently with each step. No standing pose at the start, long frozen leg, sliding planted boot, hopping, limping, late single step, slow-motion freeze or walking in place. Use Picture 1 as the composition and exact physical contents of this single continuous realistic shot. Preserve its ordinary location, natural light and existing white/deep-violet/gold feminine costume. Only the original woman may appear, cropped entirely below her head throughout; no real human face or facial fragment, added person, unrelated limb, bystander, silhouette or reflected person. Every visible hand remains attached to one of her original two forearms. Existing Vivhite merchandise is inert: retain the original open violet eyes, iris contours, thin gold round glasses, face proportions, costume and print layout without blinking or changing expression. No scene cut, time jump, camera reframe that reveals a head, readable lettering, voice, speech, singing, humming or production credits. Keep the reference world believable and unchanged.",
+      "references": [
+        "assets/generated/production-v2-fasth3-001/scenes/S07-v2.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M08-pouch-v1.png",
+      "generationAction": "A continuous five-second low frontal tracking view of normal walking on the same autumn woodland path. She is already mid-stride at frame one and takes five unhurried alternating footfalls throughout the shot, left then right then left then right then left. Each foot lifts, swings forward, touches heel then sole, bears weight and pushes off while the other leg advances. Both knees bend naturally; regular even cadence and real forward progress. Camera tracks backward at her walking speed, framing the same skirt, two legs and boots, never rising toward her head. The original pouch swings gently with each step. No standing pose at the start, long frozen leg, sliding planted boot, hopping, limping, late single step, slow-motion freeze or walking in place.",
+      "acceptanceCriteria": "View every frame plus foot-region sequence. Both original legs must advance with continuous alternating weight transfer in the actual four-second cut, without freeze, slide, hop or limp; pouch print stays faithful and open-eyed."
+    },
+    {
+      "id": "S15",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 270,
+      "seed": 2026111815,
+      "mode": "H",
+      "action": "两只原有手自然握稳杯身，在镜头前半段将杯子从桌面缓缓提起约8厘米，随后稳定捧住欣赏窗外；不反复摸杯、不送到嘴边、不抬机位。",
+      "soundDescription": "杯底轻擦桌面、柔和室内声底。",
+      "prompt": "One simple purposeful action in a locked five-second tabletop close-up. From the exact original two-hand grip, she closes both hands around the same paper coffee cup, gently lifts it vertically eight centimetres clear of the table during the first two seconds, then holds it steadily at lower-chest height within the existing crop for the remaining three seconds. Both hands and the cup move together as one physical unit; fingers maintain their grip and the lid stays attached. The original cup sticker remains visible, fixed and unchanged. No rubbing, stroking, finger fidgeting, turning the lid, circular movement, setting down again, repeated lift, sipping, head entering frame, cup duplication or floating object. Camera, table and background stay fixed. Use Picture 1 as the composition and exact physical contents of this single continuous realistic shot. Preserve its ordinary location, natural light and existing white/deep-violet/gold feminine costume. Only the original woman may appear, cropped entirely below her head throughout; no real human face or facial fragment, added person, unrelated limb, bystander, silhouette or reflected person. Every visible hand remains attached to one of her original two forearms. Existing Vivhite merchandise is inert: retain the original open violet eyes, iris contours, thin gold round glasses, face proportions, costume and print layout without blinking or changing expression. No scene cut, time jump, camera reframe that reveals a head, readable lettering, voice, speech, singing, humming or production credits. Keep the reference world believable and unchanged.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S15-v2.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "generationAction": "One simple purposeful action in a locked five-second tabletop close-up. From the exact original two-hand grip, she closes both hands around the same paper coffee cup, gently lifts it vertically eight centimetres clear of the table during the first two seconds, then holds it steadily at lower-chest height within the existing crop for the remaining three seconds. Both hands and the cup move together as one physical unit; fingers maintain their grip and the lid stays attached. The original cup sticker remains visible, fixed and unchanged. No rubbing, stroking, finger fidgeting, turning the lid, circular movement, setting down again, repeated lift, sipping, head entering frame, cup duplication or floating object. Camera, table and background stay fixed.",
+      "acceptanceCriteria": "Cup bottom visibly separates from tabletop in first two seconds and remains supported by exactly two original hands; no repetitive touch or head/face reveal; fixed original open-eye illustration."
+    },
+    {
+      "id": "S28",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 390,
+      "seed": 2026111828,
+      "mode": "H",
+      "action": "把点心包装纸从面包两侧缓慢向外向下摊平，纸张最终贴住桌面，两手停在纸边；面包上方保持干净，不生成蒸汽、漂浮白片或白色阴影。",
+      "soundDescription": "纸响、杯碟、无可辨人声的环境底。",
+      "prompt": "A locked five-second close-up of opening the existing pastry wrapper once. Her two original hands gently lower the two existing paper edges outward and downward away from the bun during the first two seconds, flattening the paper against the wooden tabletop. Both hands then rest lightly on the outer paper edges for the remaining three seconds. The same bun stays in the centre and the same lidded cup stays on the right. The space directly above the bread remains completely clear throughout. No steam, smoke, floating white sheet, translucent veil, waving paper, dissolving wrapper, opaque white shadow, extra napkin, extra hand or newly invented food. Paper remains attached and obeys gravity, with only ordinary soft contact shadows on the table. The bun and cup never morph. Use Picture 1 as the composition and exact physical contents of this single continuous realistic shot. Preserve its ordinary location, natural light and existing white/deep-violet/gold feminine costume. Only the original woman may appear, cropped entirely below her head throughout; no real human face or facial fragment, added person, unrelated limb, bystander, silhouette or reflected person. Every visible hand remains attached to one of her original two forearms. Existing Vivhite merchandise is inert: retain the original open violet eyes, iris contours, thin gold round glasses, face proportions, costume and print layout without blinking or changing expression. No scene cut, time jump, camera reframe that reveals a head, readable lettering, voice, speech, singing, humming or production credits. Keep the reference world believable and unchanged.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S28-v2.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "generationAction": "A locked five-second close-up of opening the existing pastry wrapper once. Her two original hands gently lower the two existing paper edges outward and downward away from the bun during the first two seconds, flattening the paper against the wooden tabletop. Both hands then rest lightly on the outer paper edges for the remaining three seconds. The same bun stays in the centre and the same lidded cup stays on the right. The space directly above the bread remains completely clear throughout. No steam, smoke, floating white sheet, translucent veil, waving paper, dissolving wrapper, opaque white shadow, extra napkin, extra hand or newly invented food. Paper remains attached and obeys gravity, with only ordinary soft contact shadows on the table. The bun and cup never morph.",
+      "acceptanceCriteria": "Inspect every frame and bread/wrapper crops: two attached hands, wrapper continuously lowers and lies flat; air above bun clear, no white haze, extra paper, shadow artifact or steam; cup print unchanged."
+    },
+    {
+      "id": "S44",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 540,
+      "seed": 2026111844,
+      "mode": "H",
+      "action": "帐内固定机位，原有一只手沿同一方向连续拉开帐门拉链，使开口逐渐扩大，再将已解开的门布带到右侧，露出并保留外面的草地与树景；不回拉、不重新关门。",
+      "soundDescription": "拉链与布料声。",
+      "prompt": "A locked five-second first-person view from inside the same tent. Begin with the partly open doorway shown in Picture 1. The single original right hand keeps hold of the existing zipper slider and pulls it DOWNWARD in ONE continuous opening direction along the curved right-hand zipper track toward the bottom-right corner during seconds zero to three. The two zipper edges separate behind the slider and the opening grows steadily wider, progressively revealing the same empty grass, trees and distant beige tent. During seconds three to five the same hand holds the already released right flap to the right and leaves the view open. The slider never goes upward, reverses, recloses the teeth or returns to its starting point. No extra hand, self-moving zipper, duplicate flap, view change, head, person outside or jump in scenery. The original left hanging pouch stays attached and fixed. Use Picture 1 as the composition and exact physical contents of this single continuous realistic shot. Preserve its ordinary location, natural light and existing white/deep-violet/gold feminine costume. Only the original woman may appear, cropped entirely below her head throughout; no real human face or facial fragment, added person, unrelated limb, bystander, silhouette or reflected person. Every visible hand remains attached to one of her original two forearms. Existing Vivhite merchandise is inert: retain the original open violet eyes, iris contours, thin gold round glasses, face proportions, costume and print layout without blinking or changing expression. No scene cut, time jump, camera reframe that reveals a head, readable lettering, voice, speech, singing, humming or production credits. Keep the reference world believable and unchanged.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S44-v1.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M08-pouch-v1.png",
+      "generationAction": "A locked five-second first-person view from inside the same tent. Begin with the partly open doorway shown in Picture 1. The single original right hand keeps hold of the existing zipper slider and pulls it DOWNWARD in ONE continuous opening direction along the curved right-hand zipper track toward the bottom-right corner during seconds zero to three. The two zipper edges separate behind the slider and the opening grows steadily wider, progressively revealing the same empty grass, trees and distant beige tent. During seconds three to five the same hand holds the already released right flap to the right and leaves the view open. The slider never goes upward, reverses, recloses the teeth or returns to its starting point. No extra hand, self-moving zipper, duplicate flap, view change, head, person outside or jump in scenery. The original left hanging pouch stays attached and fixed.",
+      "acceptanceCriteria": "Track single original hand and zipper slider on every frame: opening increases in only one direction, exterior remains exposed at end; no close-then-open, reversal, extra arm or added exterior person; pouch artwork remains fixed."
+    },
+    {
+      "id": "S47",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 660,
+      "seed": 2026111847,
+      "mode": "H",
+      "action": "两只原有手从玩偶两侧握稳，将坐姿玩偶小幅旋转约15度并挪动约3厘米，使它朝向镜头的角度更好；摆稳后双手各沿原路径退出，不凭空多出第三只手。",
+      "soundDescription": "布料轻落、海风。",
+      "prompt": "One five-second locked close-up of intentionally arranging the same inert plush for a photograph. Exactly TWO original female hands, continuously connected to the two original visible forearms, hold the doll at its left and right sides. During seconds zero to two they turn its entire seated body about fifteen degrees toward the camera and shift it three centimetres on the bench, improving its upright frontal pose. During seconds two to three they settle its base securely on the bench. During seconds three to five both hands release together and each withdraws back along its own forearm path to the left of frame. No third hand, extra wrist, detached fingers or hand entering from another edge. The doll moves only as a rigid soft physical object under those hands; its sewn open eyes, gold glasses, face and costume never blink or morph. The bag, bench, sea and wall stay unchanged. No patting or touching without repositioning, no camera pan toward the woman's head. Use Picture 1 as the composition and exact physical contents of this single continuous realistic shot. Preserve its ordinary location, natural light and existing white/deep-violet/gold feminine costume. Only the original woman may appear, cropped entirely below her head throughout; no real human face or facial fragment, added person, unrelated limb, bystander, silhouette or reflected person. Every visible hand remains attached to one of her original two forearms. Existing Vivhite merchandise is inert: retain the original open violet eyes, iris contours, thin gold round glasses, face proportions, costume and print layout without blinking or changing expression. No scene cut, time jump, camera reframe that reveals a head, readable lettering, voice, speech, singing, humming or production credits. Keep the reference world believable and unchanged.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S47-v1.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M04-plush-v1.png",
+      "generationAction": "One five-second locked close-up of intentionally arranging the same inert plush for a photograph. Exactly TWO original female hands, continuously connected to the two original visible forearms, hold the doll at its left and right sides. During seconds zero to two they turn its entire seated body about fifteen degrees toward the camera and shift it three centimetres on the bench, improving its upright frontal pose. During seconds two to three they settle its base securely on the bench. During seconds three to five both hands release together and each withdraws back along its own forearm path to the left of frame. No third hand, extra wrist, detached fingers or hand entering from another edge. The doll moves only as a rigid soft physical object under those hands; its sewn open eyes, gold glasses, face and costume never blink or morph. The bag, bench, sea and wall stay unchanged. No patting or touching without repositioning, no camera pan toward the woman's head.",
+      "acceptanceCriteria": "Count exactly two original attached hands in every source frame, inspect arm/hand overlap especially during release; confirm measurable small whole-body rotation and repositioning before release, stable original plush face and upright final pose."
+    },
+    {
+      "id": "S48",
+      "seconds": 14,
+      "sourceSeconds": 14,
+      "startFrame": 780,
+      "seed": 2026111848,
+      "mode": "I",
+      "action": "固定海岸宽景连续14秒，保留原海浪、道路与房屋；右下蓝蝶保持同一位置和清晰身体结构，两侧翅膀围绕身体根部自然对称开合，每约4秒完成一次舒缓周期，短暂停歇；不翻转、不扭曲、不拖出重影。片尾文字仍由后期叠加。",
+      "soundDescription": "海声与器乐尾音。",
+      "prompt": "A single uninterrupted FOURTEEN-SECOND locked wide view of the exact empty original coast. The original horizon, shore, road, houses and utility poles remain perfectly stable; only ordinary small waves roll gently onto the same beach. The ONE small original blue butterfly stays in the same lower-right corner, resting calmly in place. Give it one coherent slender body and a consistent pair of attached patterned wings. Its wings slowly open and close together from their natural hinges at the body, with relaxed easing and a brief pause when open, roughly one complete gentle cycle every four seconds. The wing shapes and blue pattern remain coherent during each fold. Preserve its small scale. No rapid flutter, spinning body, flipping whole butterfly, rubbery deformation, melting wing, trail, ghost duplicate, extra wing or second insect. No zoom, pan, scene cut, close-up insert, meadow, flowers, new tree, new object, person or human face. Stay on this same coast for all fourteen seconds. No on-screen letters or credits: titles will be added separately. No sound, voices, letters or credits.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S48-v2.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/I01-butterfly-v1.png",
+      "generationAction": "A single uninterrupted FOURTEEN-SECOND locked wide view of the exact empty original coast. The original horizon, shore, road, houses and utility poles remain perfectly stable; only ordinary small waves roll gently onto the same beach. The ONE small original blue butterfly stays in the same lower-right corner, resting calmly in place. Give it one coherent slender body and a consistent pair of attached patterned wings. Its wings slowly open and close together from their natural hinges at the body, with relaxed easing and a brief pause when open, roughly one complete gentle cycle every four seconds. The wing shapes and blue pattern remain coherent during each fold. Preserve its small scale. No rapid flutter, spinning body, flipping whole butterfly, rubbery deformation, melting wing, trail, ghost duplicate, extra wing or second insect. No zoom, pan, scene cut, close-up insert, meadow, flowers, new tree, new object, person or human face. Stay on this same coast for all fourteen seconds. No on-screen letters or credits: titles will be added separately.",
+      "acceptanceCriteria": "View all 336 native frames including enlarged butterfly sequence. Stable empty coast for all fourteen seconds, no cuts or invented scenery; one coherent butterfly with attached paired wings, smooth hinged opening/closing and no flip, ghost, duplicate or rapid flutter. Titles separately reproduce v7 opening style and delayed dedication."
+    }
+  ],
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "2560x1440",
+    "sampler": "up3",
+    "seed": 1234,
+    "startCondition": "Disabled until a new explicit user request; do not automatically resume.",
+    "scope": "Local video regeneration through port 8002; not a closed-source MiniMax teacher model.",
+    "status": "stopped-by-user"
+  },
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "S20 has 240 native frames; S48 has 336 native frames. Every other complete source has 120. Final target exactly 205 seconds, 6150 frames at 30fps. First 47 final durations unchanged from v7.",
+  "promptRevision": {
+    "id": "purposeful-continuous-motion-008",
+    "reason": "Seven user-reported motion defects. ONLY S48 duration changes, to fourteen seconds; first 47 durations locked to v7. Exactly 205 seconds."
+  },
+  "shotDurationExceptions": {
+    "S48": 14
+  },
+  "referenceAppearanceRequired": true,
+  "scope": "Seven new image-only motion replacements, with native fourteen-second S48. Not a full-film timeline. First 47 final film durations unchanged; final target 205 seconds.",
+  "director": "director-v8.md",
+  "previousProductionPlanSha256": "6f043b3649bdc69ad62aa55e11dae3a30acbf054b4999b6b0c9c6e6633a5fd18",
+  "sourceContinuation": "Reuse unchanged approved v7 bytes for the other 41 shots only. All seven user-rejected sources are ineligible for v8. Actual new video outputs require independent complete frame and motion review before selection."
+}

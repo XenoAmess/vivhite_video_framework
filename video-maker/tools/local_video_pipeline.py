@@ -48,8 +48,9 @@ def contained(owner, relative):
 def validate(plan):
     draft = plan.get('stage') == 'draft'
     exceptions = plan.get('shotDurationExceptions',{})
-    if exceptions not in ({},{'S20':10},{'S48':10},{'S20':10,'S48':10}):
-        raise ValueError('Only the explicitly requested S20/S48 ten-second exceptions are allowed')
+    if exceptions not in ({},{'S20':10},{'S48':10},{'S20':10,'S48':10},
+                          {'S48':14},{'S20':10,'S48':14},{'S48':15},{'S20':10,'S48':15}):
+        raise ValueError('Only the explicitly requested S20 ten-second and S48 ten/fifteen-second exceptions are allowed')
     expected = ('fasth3-omni-bf16',1344,768) if draft else ('open-h3-2k',2560,1440)
     if (plan.get('schemaVersion') != 'vivhite-local-two-stage-video-1'
             or plan.get('stage') not in ('draft','refine')
@@ -62,7 +63,7 @@ def validate(plan):
     for shot in plan['shots']:
         if (not re.fullmatch(r'S\d{2}[A-Z]?',shot['id']) or shot['id'] in identities
                 or not isinstance(shot['seconds'],int) or not 2 <= shot['seconds'] <= exceptions.get(shot['id'],5)
-                or shot.get('sourceSeconds') != (10 if shot['id'] in exceptions else 5)
+                or shot.get('sourceSeconds') != exceptions.get(shot['id'],5)
                 or shot.get('startFrame') != frame
                 or not shot.get('prompt','').strip()):
             raise ValueError('Invalid shot identity, duration or contiguous timing')
@@ -72,12 +73,12 @@ def validate(plan):
         raise ValueError('Timeline does not match total frames')
     if any(not any(shot['id']==identity and shot['seconds']==seconds for shot in plan['shots'])
            for identity,seconds in exceptions.items()):
-        raise ValueError('Every declared exception must be an actual continuous ten-second shot')
+        raise ValueError('Every declared exception must match an actual continuous shot')
 
 
 def source_frame_count(shot):
     seconds = shot.get('sourceSeconds',5)
-    if not isinstance(seconds,int) or isinstance(seconds,bool) or seconds not in (5,10):
+    if not isinstance(seconds,int) or isinstance(seconds,bool) or seconds not in (5,10,14,15):
         raise ValueError('Unsupported source duration')
     return seconds*24
 
