@@ -32,7 +32,7 @@
 
 已完成[片尾修订 v7的原生768P成片](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v7-768p.md)：48镜、201秒、1344×768／30fps，S20高山湖与S48片尾各连续10秒，其余镜头2–5秒。片尾前两行完全复用片头文字与样式，再缓慢浮现“献给世界上最可爱的你”；6030个最终帧完成解码与画面轨对照。[v7 GitHub Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v7-768p-20261117)供用户审阅。全部2K任务已按用户要求停止，不自动恢复；v6 Release、旧影片与中间材料完整保留。
 
-[v8七处动作返工](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v8-motion-768p.md)已完成7/7素材采用与205秒原生768P编码。六处动作重新生成；片尾采用第五轮无新增前景树木的14秒原片，用户取消减速后保留原生蝶翼动作，两份局部减速候选不入片。前47镜仍共191秒，全片6150帧；旧影片、请求、失败版本与全部检查图片保留。最终核验和新Release进度见制作记录。
+[v8七处动作返工](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v8-motion-768p.md)已完成7/7素材采用、205秒原生768P成片与全部编码检查，[v8 Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v8-768p-20261118)供审片。六处动作重新生成；片尾采用第五轮无新增前景树木的14秒原片，用户取消减速后保留原生蝶翼动作，两份局部减速候选不入片。前47镜仍共191秒，全片6150帧；旧影片、请求、失败版本与全部2465张生成和检查图片保留。
 
 三期当前成片均已完成，规格1080p30、晓晓配音、中文字幕及可替换人物图片：第一期[10分55秒](series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v3.md)、第二期[18分29.3秒](series/math-education/inversion-count/episodes/02-rectangle-proof/docs/production-v1.md)、第三期[32分24秒](series/math-education/inversion-count/episodes/03-wilson-theorem/docs/production-v1.md)。制作器新增通用证明动画后端，后两期保留全部证明、合法移动和分阶段推导。成片与缓存放在仓库外，检查范围见各期制作记录及[独立复核](docs/three-episode-production-review.md)。
 

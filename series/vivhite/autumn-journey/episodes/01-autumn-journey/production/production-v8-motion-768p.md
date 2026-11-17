@@ -77,3 +77,5 @@ S48首轮原生14秒片已完成实际336帧查看，但在第44帧（1.833秒�
 已实际查看6张成片分镜图中的全部48个样图、20张检测候选图中的全部87个裁图，以及13个原生尺寸标题／献词／淡出帧。候选为既有印花、绣脸、衣袖、手部、车轮背景几何和草穗，没有识别出真人脸或无关人员；完整源帧审阅另有对应记录。片尾前三行的文字、样式及先后淡入已核对，无制作署名。原生蝶翼保持用户选择的原速度，不宣称慢放修复。
 
 完整AAC解码与实际205秒程序WAV数值对照，相关度0.9997195853；每声道目标9,840,000个采样，解码额外640个采样属于不足一帧AAC的尾部填充，容器音轨时长仍为205秒。全部4秒区间检查电平，模型原声未混入。没有人工听音或连续观看的宣称。[最终复核](final-review-v8-768p.json)、[交付计划](../delivery-plan-v8-768p.json)和[全部2465张图片清单](image-inventory-v8-768p.json)分别记录范围、真实指纹与保留状态。相关21项Python测试已通过；未修改Java或Maven配置。
+
+新版已独立发布至[v8 GitHub Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v8-768p-20261118)，提供[完整768P影片](https://github.com/XenoAmess/vivhite_video_framework/releases/download/autumn-journey-v8-768p-20261118/vivhite-autumn-journey-v8-1344x768.mp4)、导演稿、交付计划及SHA256SUMS。发布前核对远端四个文件的字节数与SHA-256，旧v7 Release保留。具体发布ID和下载验证见[发布收据](release-v8-768p.json)。素材、成片与发布均完成，等待用户审片；未新建2K或4K任务。

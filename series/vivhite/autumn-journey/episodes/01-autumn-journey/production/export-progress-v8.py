@@ -72,9 +72,9 @@ def export(base):
              'finalEvidenceReviewComplete': film_matches,
              'nativeWingMotionKeptByUser': True,
              'butterflySlowdownApplied': False,
-             'scope': 'Seven new replacements only. Server progress is not source acceptance or film completion.'}
+             'scope': 'Actual source adoption, encoded film checks and published release are separate milestones; server progress alone grants no acceptance.'}
     (EP / 'production/run-progress-v8-768p.json').write_text(
-        json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
     print(json.dumps({key: value[key] for key in (
         'completedSources', 'acceptedNewSources', 'generationPercent', 'acceptancePercent', 'releasePublished')}))
 
