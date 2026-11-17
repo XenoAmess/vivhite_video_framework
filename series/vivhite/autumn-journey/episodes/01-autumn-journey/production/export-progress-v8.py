@@ -22,7 +22,7 @@ def export(base):
     for identity in SHOT_IDS:
         origin = base / {
             'S15': 'production-v8-motion-768p-S15-002',
-            'S48': 'production-v8-motion-768p-S48-004',
+            'S48': 'production-v8-motion-768p-S48-005',
         }.get(identity, run.name)
         decisions = read(origin / 'clip-decisions.json', {}).get('shots', [])
         selections = read(origin / 'source-selections.json', {}).get('selections', {})

@@ -118,6 +118,7 @@ v7实际来源收据中有10个镜头经过局部处理：S07、S11、S16、S20�
 | --- | --- |
 | [`stabilize_printed_patch.py`](../video-maker/tools/stabilize_printed_patch.py) | `PrintedPatch`跟踪；`project_reference_texture`映射原图；`stabilize`合成、编码、保存处理参数与哈希 |
 | [`inspect_printed_region.py`](../video-maker/tools/inspect_printed_region.py) | 跟踪裁出原始视频局部，供实际查看 |
+| [`inspect-closing-details.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/inspect-closing-details.py) | S48固定区域原生像素检查；完整336帧分页、原生首尾、输入与代码哈希，不编辑视频、不自动验收 |
 | [`review_reference_clips.py`](../video-maker/tools/review_reference_clips.py) | 完整源帧、时序、运动与真人脸候选证据 |
 | [`record_local_clip_review.py`](../video-maker/tools/record_local_clip_review.py) | 显式采用／拒收、原图一致性与旧结论归档 |
 | [`retime_local_clip.py`](../video-maker/tools/retime_local_clip.py) | 明确源区间的慢放候选与插帧收据 |

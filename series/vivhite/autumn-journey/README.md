@@ -6,7 +6,7 @@
 
 制作补充：所有出场人物均为女性，女性化服装贴近白绮设定图；静默、不露脸与短镜头要求适用于成片全部帧。原图中没有的无关人员，即使不露脸也拒收。
 
-当前后续路线仅为[原始768P与原生4K](../../../docs/local-video-768p-4k.md)，不新建2K任务。[v8返工导演稿](episodes/01-autumn-journey/director-v8.md)尚未交付成片；固定205秒时间线见本期[工作流策略](episodes/01-autumn-journey/production/workflow-policy.json)：第三轮15秒片尾请求因服务端显存不足失败后，用户明确改回14秒源片，取代此前15秒规则。第四轮14秒任务已提交，禁止新增树枝并要求蓝蝶一次极缓开合；片尾入片14秒，前47镜不变。可采用新素材为6/7，实际状态见[返工记录](episodes/01-autumn-journey/production/production-v8-motion-768p.md)。
+当前后续路线仅为[原始768P与原生4K](../../../docs/local-video-768p-4k.md)，不新建2K任务。[v8返工导演稿](episodes/01-autumn-journey/director-v8.md)尚未交付成片；固定205秒时间线见本期[工作流策略](episodes/01-autumn-journey/production/workflow-policy.json)：第三轮15秒片尾请求显存不足后，用户明确改回14秒源片，取代此前15秒规则。第四轮增画树干树冠且翼动过快，已拒收；第五轮改为正向描述原图的开阔海岸与单次缓慢翼动，仍生成14秒，任务已提交。片尾入片14秒，前47镜不变。可采用新素材为6/7，实际状态见[返工记录](episodes/01-autumn-journey/production/production-v8-motion-768p.md)。
 
 历史[片尾修订 v4](episodes/01-autumn-journey/production/production-v4.md)与原v3成片保持归档。当前v7片尾以[实际合成计划](episodes/01-autumn-journey/final-assembly-plan-v7-768p.json)为准；采用已通过的v6海岸连续慢放至10秒，蓝蝶周期约8秒，无制作署名。
 

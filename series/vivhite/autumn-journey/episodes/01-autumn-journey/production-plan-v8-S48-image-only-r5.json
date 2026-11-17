@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 8,
+  "model": "fasth3-omni-bf16",
+  "stage": "draft",
+  "fps": 30,
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 420,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "numInferenceSteps": 8,
+  "decoderLayers": 36,
+  "decoderVerification": "GET /v1/models on 2026-11-16",
+  "titleOverlays": [],
+  "closingCredit": "",
+  "shots": [
+    {
+      "id": "S48",
+      "seconds": 14,
+      "sourceSeconds": 14,
+      "startFrame": 0,
+      "seed": 2026112348,
+      "mode": "I",
+      "action": "固定原海岸宽景，天空与左侧海面保持原图无遮挡构图，禁止新增前景树枝、树叶；保留原海浪、道路与房屋，右下蓝蝶近乎静止地沿身体根部极缓慢舒展和合拢，全段只作一次从容开合并有停歇，不快速拍翼、翻转、扭曲或拖影。生成14秒连续源片，片尾文字仍由后期叠加。",
+      "soundDescription": "海声与器乐尾音。",
+      "prompt": "An unobstructed open view of the exact pebble beach in <Picture 1>. A locked wide camera stands on the open beach and looks directly at the sea. At every frame the entire upper half is clear pale sky, the left edge is open water and sky, the lower-left edge is beach stones and surf, and the right side contains exactly the pictured road, white railing, houses and distant low hillside. Match this exact open layout and clear frame margins. One continuous fourteen-second realistic coastal take, with gentle small waves along the same shoreline. The existing tiny blue corner graphic stays fixed at its original bottom-right position and original size. Its original blue wing pattern and central body stay coherent. In ultra-slow motion its two wing surfaces hinge gently around that fixed body: first four seconds resting, next six seconds one very gradual unfolding, final four seconds one very gradual folding. This is a single breathing gesture across the whole take, with long quiet pauses. The body position and orientation stay steady. The camera, horizon, coastal geography, natural light and composition remain steady throughout. The scene remains completely unoccupied. Clean plain sky. Gentle sea ambience without voices.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S48-v2.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/I01-butterfly-v1.png",
+      "generationAction": "An unobstructed open view of the exact pebble beach in <Picture 1>. A locked wide camera stands on the open beach and looks directly at the sea. At every frame the entire upper half is clear pale sky, the left edge is open water and sky, the lower-left edge is beach stones and surf, and the right side contains exactly the pictured road, white railing, houses and distant low hillside. Match this exact open layout and clear frame margins. One continuous fourteen-second realistic coastal take, with gentle small waves along the same shoreline. The existing tiny blue corner graphic stays fixed at its original bottom-right position and original size. Its original blue wing pattern and central body stay coherent. In ultra-slow motion its two wing surfaces hinge gently around that fixed body: first four seconds resting, next six seconds one very gradual unfolding, final four seconds one very gradual folding. This is a single breathing gesture across the whole take, with long quiet pauses. The body position and orientation stay steady. The camera, horizon, coastal geography, natural light and composition remain steady throughout. The scene remains completely unoccupied. Clean plain sky. Gentle sea ambience without voices.",
+      "acceptanceCriteria": "Review all 336 native source frames and all wing crops. Continuous original unobstructed coast and one nearly resting slow wing-opening/folding gesture. No added branch, leaf, person, real face, scene cut, rapid flutter, duplicate or distorted butterfly. The entire fourteen-second source is used in the fourteen-second closing segment; all first 47 final shot timings remain unchanged."
+    }
+  ],
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "3840x2160",
+    "sampler": "up3",
+    "seed": 1234,
+    "submissionWindow": 1,
+    "status": "not-started",
+    "scope": "Native UHD only for future separate refinement, historical API model identifier retained. New 2K jobs forbidden."
+  },
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "S48 has 336 native source frames, fourteen seconds; final closing is 420 frames at 30fps. Full film remains 205 seconds, 6150 frames.",
+  "promptRevision": {
+    "id": "coast-S48-r5-affirmative-open-layout",
+    "reason": "R4 again added a foreground trunk/canopy and produced fast repeated wing motion despite negative constraints. The uploaded original image was verified correct. Change to concise affirmative descriptions of the existing open frame and a single time-distributed slow gesture, with the explicit <Picture 1> marker. Keep fourteen seconds, native 1344x768, eight steps and unchanged first 47 final timings."
+  },
+  "shotDurationExceptions": {
+    "S48": 14
+  },
+  "referenceAppearanceRequired": true,
+  "scope": "Single fourteen-second source retry explicitly authorized after fifteen-second CUDA OOM. Full 336-frame review required. No 2K or 4K submission.",
+  "director": "director-v8.md",
+  "previousProductionPlanSha256": "c95e2d4eb26b8bf425a0140e6cbdbf44534fd4eaf0990e1b2ca6881ce7d12a0a",
+  "sourceContinuation": "Reuse unchanged approved v7 bytes for the other 41 shots only. All seven user-rejected sources are ineligible for v8. Actual new video outputs require independent complete frame and motion review before selection.",
+  "revisionReason": "R4 again added a foreground trunk/canopy and produced fast repeated wing motion despite negative constraints. The uploaded original image was verified correct. Change to concise affirmative descriptions of the existing open frame and a single time-distributed slow gesture, with the explicit <Picture 1> marker. Keep fourteen seconds, native 1344x768, eight steps and unchanged first 47 final timings."
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "vivhite-production-policy-1",
-  "updatedOn": "2026-11-17",
+  "updatedOn": "2026-11-18",
   "authority": "Explicit user instructions in this episode conversation",
   "resolutionStages": {
     "allowedNewOutputs": [
@@ -33,13 +33,13 @@
   },
   "closingGeneration": {
     "activeAttempt": {
-      "run": "production-v8-motion-768p-S48-004",
+      "run": "production-v8-motion-768p-S48-005",
       "sourceSeconds": 14,
-      "statusAtPolicyUpdate": "queued",
-      "jobId": "video_gen_02ad424463c848219eeb1764957de6ab"
+      "statusAtPolicyUpdate": "in_progress",
+      "jobId": "video_gen_6675fcddd5db4d28a67b425026575e72"
     },
     "fallbackActivated": false,
-    "nextAttemptPlan": "production-plan-v8-S48-image-only-r4.json",
+    "nextAttemptPlan": "production-plan-v8-S48-image-only-r5.json",
     "sourceSecondsFromNowOn": 14,
     "forbiddenAddedForeground": [
       "tree branches",
@@ -64,7 +64,7 @@
       "triggerAttemptJobId": "video_gen_bc1628d450e04c759499c30f10b1f97f",
       "triggerAlreadySatisfied": true
     },
-    "resumeCondition": "Dispatch the user-authorized fourteen-second retry after the service queue is restored. Do not requeue the failed fifteen-second job.",
+    "resumeCondition": "Submit the reviewed affirmative fourteen-second retry normally; preserve old failed and rejected jobs.",
     "supersededFifteenSecondPolicy": {
       "sourceSeconds": 15,
       "completeSourceReviewFramesAt24Fps": 360,
@@ -78,6 +78,15 @@
       },
       "supersededBy": "Latest explicit user instruction to return to fourteen-second generation after server OOM."
     },
-    "fifteenSecondRuleSuperseded": true
+    "fifteenSecondRuleSuperseded": true,
+    "rejectedAttempts": [
+      {
+        "run": "production-v8-motion-768p-S48-004",
+        "jobId": "video_gen_02ad424463c848219eeb1764957de6ab",
+        "sourceSeconds": 14,
+        "status": "completed-rejected",
+        "receipt": "production/rejected-S48-invented-tree-v8-004.json"
+      }
+    ]
   }
 }
