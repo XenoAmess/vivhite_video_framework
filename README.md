@@ -32,7 +32,9 @@
 
 已完成[片尾修订 v7的原生768P成片](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v7-768p.md)：48镜、201秒、1344×768／30fps，S20高山湖与S48片尾各连续10秒，其余镜头2–5秒。片尾前两行完全复用片头文字与样式，再缓慢浮现“献给世界上最可爱的你”；6030个最终帧完成解码与画面轨对照。[v7 GitHub Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v7-768p-20261117)供用户审阅。全部2K任务已按用户要求停止，不自动恢复；v6 Release、旧影片与中间材料完整保留。
 
-当前为[v9闭帐门与手部修订](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v9-motion-768p.md)：S44从全闭帐门开始拉开拉链与门帘，S47改为同一女性在椅后用自然连接的双臂摆正玩偶并松手。仅替换两段新源片，全部48镜时长与起点、其他46镜、音乐、标题及14秒原生蝶翼不变；成片1344×768、30fps、205秒／6150帧。[v9 Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v9-768p-20261118)供审片，实际覆盖范围见[交付计划](series/vivhite/autumn-journey/episodes/01-autumn-journey/delivery-plan-v9-768p.json)。全部2632张生成和检查图片保存在项目并入Git；旧版与中间产物保留。
+当前为[v10左手反手拉帘修订](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v10-left-hand-768p.md)：仅重做00:00–00:04首镜，纠正左臂、腕部与左手的对应关系，保留手背朝镜头的自然反手捏帘姿势。两张翻掌候选被用户拒收，不进入影片。其他47镜源片、全部48镜时长／起点、音乐、标题和原生14秒蝶翼保持v9；成片1344×768、30fps、205秒／6150帧。[v10 Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v10-768p-20261118)供审片，完整覆盖与实际动作限制见[交付计划](series/vivhite/autumn-journey/episodes/01-autumn-journey/delivery-plan-v10-768p.json)。全部首帧候选和检查图片保存在项目并入Git，清单见[v10图片记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/image-inventory-v10-768p.json)。
+
+历史[v9闭帐门与手部修订](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v9-motion-768p.md)及[v9 Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v9-768p-20261118)保留。该版S44从全闭帐门开始拉开拉链与门帘，S47用自然连接的双臂摆正玩偶；这两镜在v10原样复用。旧版影片与全部中间产物保留。
 
 历史[v8七处动作返工](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v8-motion-768p.md)及[v8 Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v8-768p-20261118)保持原样。其S44/S47随后被用户拒收，由v9替换；两份未采用的蝶翼减速候选继续留档。
 

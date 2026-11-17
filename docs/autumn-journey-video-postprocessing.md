@@ -116,6 +116,8 @@ v8试做的第一份局部候选出现可见翼缘重影，已拒收；第二份
 
 v9进一步用 [`materialize-sources-v9.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/materialize-sources-v9.py) 锁定与v8相同的**全部48镜时长和起点**，仅允许S44/S47源片指令及对应素材变化。闭帐门起点和手臂空间错误均重新生成，不用印花回贴修补人体；实际两段新片没有回贴、遮罩、换帧或变速。原生手臂局部检查与采用范围见[v9记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v9-motion-768p.md)。用户已确认3:25显示正确，因此未用补帧或改其他镜头长度处理播放器差异。
 
+v10的S01检查暴露另一种漏检：同一条手臂上只有一只手，并不代表左右手接对。必须从肘、前臂、腕部跟到手掌，结合拇指侧、掌背、指关节与实际捏布接触核对，不能仅相信提示词的LEFT标签。用户要左手反手拉帘时，把掌心翻向镜头展示属于改错动作；本轮前两张翻掌候选被拒收。应先生成可辨认的自然反手首帧，再检查完整源片是否出现翻掌、换手或扭腕，详见[v10记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v10-left-hand-768p.md)。首帧选定不等于视频已验收；局部纹理回贴不能修复左右手错误。
+
 ## 实际案例与代码索引
 
 v7实际来源收据中有10个镜头经过局部处理：S07、S11、S16、S20仅锁定首帧；S29、S37、S42、S44、S45、S46包含场景图回贴，S29另外串联首帧锁定。v8的S07、S15、S28、S44均另存场景图回贴版本；S47未用回贴。v8已发布，随后用户拒收其S44/S47，v9以新生成片替换两镜；旧版记录和素材保留。完整状态以[v8记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v8-motion-768p.md)、[v9记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v9-motion-768p.md)及各版本实际收据为准。

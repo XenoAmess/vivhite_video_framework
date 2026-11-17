@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "f898d736c69990bd5aaf23c9d5902387a42f297917d5b5674b269c2dbb67dd31",
+  "shots": [
+    {
+      "id": "S01",
+      "sourceSha256": "325fbf2b4467902ba0c637198389a2a66128f3e98a5cae42b2208a343d04a8d3",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-17T19:35:08.953121+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v10-motion-768p-001\\review\\video-768p\\S01-325fbf2b44-all-frames-01.png",
+          "sha256": "c050b0333aa7fa160b6fc36ff62590ad4b4536fdaa4fcd4586f9c383fe7c1ecd",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v10-motion-768p-001\\review\\video-768p\\S01-325fbf2b44-all-frames-02.png",
+          "sha256": "d3a3e15311383a1e385ff1351cde9dbd8331419b535bbafb742c9d2b2466f861",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v10-motion-768p-001\\review\\video-768p\\S01-325fbf2b44-all-frames-03.png",
+          "sha256": "ffab788e825dad83921994e6ca4c42b3afa328779a0fda72ce8bdd7798f9a402",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v10-motion-768p-001\\review\\video-768p\\S01-325fbf2b44-all-frames-04.png",
+          "sha256": "b230fedd32e1eef28cd995311c4d5e0573cb0c4af6dd1890d3ea5efee9cfc153",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v10-motion-768p-001\\review\\video-768p\\S01-325fbf2b44-face-candidates.png",
+        "sha256": "0a14bd960b138a8e3e6be758b2c441555c703ed3ffb181c4bde74aee877fa0ad",
+        "items": 6
+      },
+      "observation": "Actually viewed all 120 complete native scene frames across four full sheets; temporal sheet; all six detector crops; original scene, rejected palm alternatives and selected fourth imagegen reference; native full frames 0, 24, 48, 72, 95 and 119; all 120 tracked original charm-face regions; early hand pages 1-3 and late hand pages 3-8. Early frames 0-31 show the complete hand in the first ROI, overlap 32-47 combines both ROIs, and frames 48-119 use the late ROI as the camera pushes in. The same LEFT upper arm, elbow and forearm lead continuously to a left wrist and LEFT backhand curtain grip: dorsal/knuckle side toward camera, thumb opposing the curved index from the lower/near side, palm toward the cloth/window. The same thumb side, ordinary knuckles and wrist connection remain coherent in every reviewed hand frame; no open-palm flip, handedness swap, third hand, detached limb or fabric penetration. Only a small grip/fabric movement is visible; the model also makes a continuous gentle push-in instead of a perfectly locked camera. Do not claim a measured curtain-travel distance or a wide opening. The feminine white/deep-violet/gold cropped woman, covered legs, original purple bag, worn seat, beige curtain and ordinary passing fields/poles/buildings remain continuous, with no head, chin, real face, reflection, added unrelated person, lettering or internal cut. Detector crops are original chain/zipper geometry, not real faces. The original acrylic charm is inert with coherent OPEN violet eyes and thin round gold glasses while visible; the push-in progressively crops its lower body and, near the unused source tail, the lower face at the bottom edge. Cropped tracked regions are resized by the inspection tool and can look vertically stretched after frame-edge clipping; native full frames were checked to distinguish that display effect from source deformation. No blink or autonomous expression identified, and native fine print remains soft rather than pixel-identical. No anatomy mask, print patch, frame replacement or motion retiming applied. Accept the complete five-second source for the unchanged four-second opening interval; this is assistant frame evidence review, not human continuous playback or user aesthetic approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed",
+      "handDetailCoverage": {
+        "frames0to31": "early ROI pages 1-2",
+        "frames32to47": "early page 3 plus late page 3",
+        "frames48to119": "late ROI pages 4-8",
+        "all120ActuallyViewed": true,
+        "handCountOnly": false
+      }
+    }
+  ]
+}

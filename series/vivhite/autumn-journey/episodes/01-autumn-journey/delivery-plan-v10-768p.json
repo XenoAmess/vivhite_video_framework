@@ -1,0 +1,507 @@
+{
+  "schemaVersion": "vivhite-delivery-plan-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 10,
+  "stage": "native-768p-motion-revision",
+  "film": {
+    "relativeToRepositoryParent": "vivhite-analysis-output/vivhite/autumn-journey/production-v10-bf16-768p-001/film.mp4",
+    "sha256": "19f15cb2ceea266f53f9f0a5d5c32276b90c31928bc49d0d2687bd1e93701a6c",
+    "bytes": 145069754,
+    "seconds": 205,
+    "frames": 6150,
+    "width": 1344,
+    "height": 768,
+    "fps": 30,
+    "nativeSource": "1344x768 at 24fps"
+  },
+  "finalAssemblyPlan": "final-assembly-plan-v10-768p.json",
+  "finalAssemblyPlanSha256": "c39dcc66aceaa367cfff9b58599b131a4761bd35f46c0cdc25bc9afb9eef05b4",
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "minimumShotSeconds": 2,
+  "maximumShotSeconds": 14,
+  "shotDurationExceptions": {
+    "S20": 10,
+    "S48": 14
+  },
+  "first47ShotTimingsLockedToV7": true,
+  "all48ShotTimingsLockedToV9": true,
+  "spokenSubtitles": [],
+  "titleOverlays": [
+    {
+      "shotId": "S06",
+      "text": "白绮／秋日旅程",
+      "subtitle": "Vivhite · Autumn Journey"
+    },
+    {
+      "shotId": "S48",
+      "text": "白绮／秋日旅程",
+      "subtitle": "Vivhite · Autumn Journey",
+      "dedication": "献给世界上最可爱的你",
+      "dedicationDelaySeconds": 3,
+      "dedicationFadeInMs": 1800
+    }
+  ],
+  "closingCredit": "",
+  "nativeModelAudioInFinalMix": false,
+  "soundtrackRecipe": "autumn-instrumental-1",
+  "soundtrackSha256": "46ef587715d277e778c805e566d643ce7b8430d3486ee8143b36dda34a74205b",
+  "machineDecodedFinalFrames": 6150,
+  "assistantSourceReviewCompleteNativeFrames": 6096,
+  "assistantSourceReviewUsedNativeFrames": 4920,
+  "humanFullPlayback": false,
+  "humanListening": false,
+  "sourceReviewReuse": "All 48 exact selected sources retain separate complete native-frame decisions. S01 was newly generated and all 120 native scene frames, hand/wrist details and merchandise-face frames actually viewed in v10. The other 47 sources reuse historical complete reviews of identical bytes; no claim of fresh viewing of every old frame this turn.",
+  "nativeWingMotionAcceptedByUser": true,
+  "butterflySlowdownApplied": false,
+  "finalReview": "production/final-review-v10-768p.json",
+  "finalReviewSha256": "86cb1994fc446cfc88cf610f8a0ddc2b36c1b0df5c534c0eb3083407309f3539",
+  "shots": [
+    {
+      "id": "S01",
+      "startFrame": 0,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "325fbf2b4467902ba0c637198389a2a66128f3e98a5cae42b2208a343d04a8d3",
+      "sourceObservation": "Actually viewed all 120 complete native scene frames across four full sheets; temporal sheet; all six detector crops; original scene, rejected palm alternatives and selected fourth imagegen reference; native full frames 0, 24, 48, 72, 95 and 119; all 120 tracked original charm-face regions; early hand pages 1-3 and late hand pages 3-8. Early frames 0-31 show the complete hand in the first ROI, overlap 32-47 combines both ROIs, and frames 48-119 use the late ROI as the camera pushes in. The same LEFT upper arm, elbow and forearm lead continuously to a left wrist and LEFT backhand curtain grip: dorsal/knuckle side toward camera, thumb opposing the curved index from the lower/near side, palm toward the cloth/window. The same thumb side, ordinary knuckles and wrist connection remain coherent in every reviewed hand frame; no open-palm flip, handedness swap, third hand, detached limb or fabric penetration. Only a small grip/fabric movement is visible; the model also makes a continuous gentle push-in instead of a perfectly locked camera. Do not claim a measured curtain-travel distance or a wide opening. The feminine white/deep-violet/gold cropped woman, covered legs, original purple bag, worn seat, beige curtain and ordinary passing fields/poles/buildings remain continuous, with no head, chin, real face, reflection, added unrelated person, lettering or internal cut. Detector crops are original chain/zipper geometry, not real faces. The original acrylic charm is inert with coherent OPEN violet eyes and thin round gold glasses while visible; the push-in progressively crops its lower body and, near the unused source tail, the lower face at the bottom edge. Cropped tracked regions are resized by the inspection tool and can look vertically stretched after frame-edge clipping; native full frames were checked to distinguish that display effect from source deformation. No blink or autonomous expression identified, and native fine print remains soft rather than pixel-identical. No anatomy mask, print patch, frame replacement or motion retiming applied. Accept the complete five-second source for the unchanged four-second opening interval; this is assistant frame evidence review, not human continuous playback or user aesthetic approval.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S02",
+      "startFrame": 120,
+      "seconds": 3,
+      "mode": "W",
+      "sourceSha256": "768490c596ae51576c58779ca47d14e2c0023b5f196798a4259f3607fe87943e",
+      "sourceObservation": "Actually viewed all 120 frames on four complete full-frame sheets, the temporal sheet and a native context frame to inspect the curved shore, meadow, tree line, distant terrain and lake. Entire landscape stays unoccupied: no person, human body part, human face, reflected person, boat occupant or invented figure. Gentle water ripples and cloud-reflection/shadow changes preserve the original bank and mountains with no cut. Existing foreground flower patches match the reference; the sunny saturated palette is brighter than the cloudy alpine shot, without new fantasy objects or vegetation. No generated lettering appears. No character, costume or animated merchandise is present in this intended world-only shot. Accept the full exact five-second native source; final cut uses three seconds, and the complete reviewed five seconds may enter 2K.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S03",
+      "startFrame": 210,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "1fab55e138623b5f3efbafd5fb9c424a009404a47d5382812a9722c46750bba6",
+      "sourceObservation": "Actually viewed all 120 source frames on four complete sheets, temporal evidence, the sole face-candidate crop, both endpoints at native resolution, and two native-region sheets covering every badge frame. Exactly one woman walks along the otherwise empty rural platform, framed below the waist; no head, chin or human face enters. Her violet skirt, white legwear, violet boots and gold trim remain consistent. Her own hands and legs move naturally with her stride; no disconnected limb or unrelated person appears. Camera follows the walk continuously, with the same bag and round badge swinging physically; its printed character face remains fixed without blink or speech. The detector candidate is background building/roof geometry. Platform, tracks, houses and glass show no extra person or reflected face. No generated lettering or cut. Accept the complete five-second native source; final cut uses four seconds, with all five reviewed seconds eligible for 2K input.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S04",
+      "startFrame": 330,
+      "seconds": 3,
+      "mode": "O",
+      "sourceSha256": "fc8c936f1f124042ae160ff7d006f47267f0191f1ff9d5ea5a562c38155580eb",
+      "sourceObservation": "Actually viewed all 120 full-source frames on four complete sheets, temporal evidence, five candidate crops and both native endpoint frames. A first manually positioned detail crop missed the moving print and is preserved without treating it as full print coverage. Instead, actually viewed all 120 tracked original-pixel print crops in tracked-print-region-v2; the source video remains unchanged. The same dark bag rests on the worn wet station bench, with one physical acrylic Vivhite charm and chain moving naturally during a continuous camera push. Printed eyes remain open; no blink, speech, autonomous pose or changed costume. Detector candidates are printed character faces. The platform, rails, background building and wet surfaces contain no human, extra body part or reflected face. No new object, readable generated lettering or cut. Accept the complete five-second native source; final cut uses three seconds, with all five reviewed seconds eligible for 2K.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S05",
+      "startFrame": 420,
+      "seconds": 5,
+      "mode": "H",
+      "sourceSha256": "a495e29aac57d1badc8ceaba52055d8039f28164fec366ff13803cec6a4a3353",
+      "sourceObservation": "Actually viewed all 120 source frames across four complete scene sheets, the full temporal sheet including every numerical cut candidate, the detector crop, native first and last frames, all 120 tracked print-face crops and the original-reference versus new-print comparison. The same woman remains cropped to feminine white/deep-violet/gold skirt, two white-covered legs and two violet boots, with no head, face, hand, unrelated body part, background person or reflection. After a short sub-second settling interval the two original legs pedal in continuous alternation through the remaining shot, without the old late freeze. The same road and tree geometry remains continuous with modest background drift and a slight downward framing drift; no abrupt scene reset, new location or internal cut is visible, including the initial one-second interval reported by the user. Large leg, crank and wheel movement accounts for numerical cut candidates; these do not themselves show an edit. Do not claim exact bicycle physics or a perfectly locked camera. The original frame sticker keeps open violet eyes, thin gold round glasses and the same face layout with no blink or living expression. Its small native print detail is soft, not pixel-identical to the larger reference. Accept this complete five-second replacement for the unchanged five-second final shot. Numerical background-ROI statistics alone are not semantic evidence; no human full playback or final-film approval claimed.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S06",
+      "startFrame": 570,
+      "seconds": 4,
+      "mode": "I",
+      "sourceSha256": "7e1cda0492e54c1a99d2468a46f5744a4d63bdaba9092527f23a387c1401aae0",
+      "sourceObservation": "Actually viewed all 120 source frames on four complete sheets, temporal evidence, all three candidate crops, both native endpoints and all 120 tracked original-pixel sticker regions. Empty tram seats, glass and pole stay in view while ordinary worn apartment fronts, parked bicycles, laundry and trees slide outside. No passenger, pedestrian, unrelated body part, real face or reflected person appears; the hanging clothes are empty laundry, not bodies. Detector candidates are facade/window/air-conditioner geometry and an interior lamp. The same small Vivhite sticker remains attached to the glass with open fixed printed eyes and unchanged costume, without blinking or speech. No generated title, subtitle or credit appears; opening titles remain a later assembly layer. No scene cut. Accept the complete exact five-second native source; use the planned final cut duration and the fully reviewed five-second source for later 2K.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S07",
+      "startFrame": 690,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "ea52ba6ff18da72133440c7dd720615dc8cf2df2a8e16f76902cc4e5fd5e5fab",
+      "sourceObservation": "Actually viewed all 120 corrected source frames across four complete scene sheets, temporal sheet, all nine detector crops, native first and last frames, all 120 tracked corrected print crops and original-scene versus restored-print comparison. The same single woman walks throughout the shot in alternating natural strides with heel contact, weight transfer and push-off, with moving skirt and gently swinging pouch; there is no old multi-second frozen starting pose, limp, hop, sliding stance or late isolated step. A short initial settling interval is under a third of a second. The camera tracks the original head-out feminine body crop, two legs and original hands without revealing a head, facial fragment, new person, detached limb, reflection, lettering or cut. Numerical scene-change candidates are foreground walking and leaves. Detector crops are foliage, original cuff and permitted fixed pouch illustration. The original reference artwork restores the round open violet eyes, original iris/eyelid outline, thin gold round glasses and face proportions on the same pouch; no blink, visible tracking slip, duplicate features, halo or neck seam was identified in the complete corrected evidence. The original generated narrower-face clip and its rejection remain preserved. Accept this full five-second corrected source; the final walking shot retains its original four-second duration. No final-film or human continuous playback approval implied.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S08",
+      "startFrame": 810,
+      "seconds": 5,
+      "mode": "O",
+      "sourceSha256": "2bfd30a8602d311a04b0d69651cded4554a02d947b82ed0af29f20d51e834c91",
+      "sourceObservation": "Actually viewed all 120 full-source frames on four complete sheets, temporal sheet, all three detector candidate crops, both endpoint frames at native size, and separate all-120-frame native-region sheets for the doll face and round badge. Ordinary worn forest bench beside an empty leaf-covered path; exactly the original one inert Vivhite doll, canvas bag and printed badge remain. The camera continuously pushes closer. The original brown leaf gradually slips from the doll hat across one eye near the end, revealing the existing blue hat ornament; this is physical occlusion, not blinking. Sewn eyes and mouth keep the same pattern; the badge illustration stays fixed. No human, reflected face, extra body part, unrelated figure, generated lettering or cut appears. Detector candidates are the doll fabric face. Accept the complete native five-second source and its gentle scene action for final use and later 2K input.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S09",
+      "startFrame": 960,
+      "seconds": 3,
+      "mode": "H",
+      "sourceSha256": "4d5a8de9cb7514454bdf79eb47309bbf0c9cff4cf8b27efce2da2439b370184f",
+      "sourceObservation": "Viewed all 120 native-source frames across four complete sheets, temporal sheet, all nine face candidates, native full frames 0 and 119, and tracked original bottle-print crops for all 120 frames. One cropped female forearm and hand in the existing white/violet feminine sleeve rests and slides slightly on a weathered timber railing beside one printed bottle. Head and face stay outside frame; no added people, disconnected hands, silhouettes, or human reflections. Ordinary brown-green pond, reeds and trees remain unoccupied. Candidate faces are the inert bottle illustration only. Printed eyes remain open and unchanged throughout all 120 detailed crops; no speech, animation of the design, cut or invented object. Gentle camera approach and hand movement remain continuous; final duration follows the approved plan.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S10",
+      "startFrame": 1050,
+      "seconds": 5,
+      "mode": "A",
+      "sourceSha256": "abb19f4abf0cedce218a2041cfa9989d6cdf62125b3ca79ad57397bc6c06e469",
+      "sourceObservation": "Viewed all 120 source frames in four complete sheets, the temporal sheet, native full frames 0 and 119, and the actual supplied reference image for population comparison. One illustrated woman in the existing white/violet/gold dress, white legwear and violet boots remains strictly back-facing at the worn bridge railing. Back of head and hat remain toward camera, with no turn, face or facial fragment in any frame. Two original arms rest on the railing; no new body parts, passersby or human reflections appear. Opposite bank remains empty, with trees, utility posts, railings and ordinary apartments matching the reference. No face candidates were exported. Quiet restrained hair/ribbon, water and camera motion; no cut, animated merchandise, generated lettering or invented objects. All five seconds reviewed and selected.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S11",
+      "startFrame": 1200,
+      "seconds": 2,
+      "mode": "H",
+      "sourceSha256": "d3cf007fc32175da269f982f1c3fb3a8ce26f2df09dced89a7d8977922f071e4",
+      "sourceObservation": "Independently viewed all 120 frames of the separately saved printed-texture correction in four complete full-scene sheets, temporal sheet, exported leaf false-positive candidate, native full frame 50, and all 120 tracked original-pixel printed-head crops. The existing front-facing printed head and eyes now remain fixed to the transparent card throughout all five seconds; no head turn, blink, speech, morphing or new illustration. One cropped female hand holds the card, with the same feminine sleeve, skirt, white legwear and violet boot. Head remains outside frame; no added people or facial fragments, background figures or human reflections. Same ordinary riverside, original yellow leaf, water and gentle camera motion retained. Only the small printed surface was stabilized; no human was removed or covered. Original rejected clip and receipt preserved. All 120 corrected frames reviewed for later 2K, with final edit using the approved two seconds.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S12",
+      "startFrame": 1260,
+      "seconds": 5,
+      "mode": "H",
+      "sourceSha256": "e993484211ea09cead2897d39a64111d171910e3a488d3f2db23201ef6b7cd09",
+      "sourceObservation": "Viewed all 120 native frames in four full-scene sheets, temporal sheet, all six exported printed-face candidate crops, native context 0/119, and every tracked boat-sticker head crop across all 120 frames. Same one female cropped hand and arm in feminine violet/gold sleeve, with the existing white legwear/skirt edge at lower left, hold and move the original oar; head stays entirely outside frame and no extra hand, person, facial fragment or human reflection appears. Boat, wooded/reed bank and water remain ordinary and unoccupied. Oar lifts and dips in a restrained repeated rowing action rather than the single stroke proposed; continuous ripples and boat/camera motion remain physically coherent, with no cut or invented object. Fixed original boat sticker remains front-facing with open eyes throughout the detailed crops; no blink, speech or animated drawing. All five seconds reviewed and selected.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S13",
+      "startFrame": 1410,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "f17a81d0bdd38dbaa80667b5ed5a39eaecf7f5c1953d5b2925363710bab03fc9",
+      "sourceObservation": "Viewed all 120 candidate frames, four complete scene sheets, temporal overview, the one printed-face detector crop and all 120 tracked print crops, and compared the original S13 scene and M01 design. The earlier clear open-eye interval is slowed twofold. Both violet-pink irises, round gold glasses and face proportions remain recognizable and stable; the late narrowing in the rejected complete original is excluded. The same head-out adult female holds the umbrella; her own other hand enters below the charm near the end, without an added person. Ordinary wet empty street, feminine white/violet/gold costume, no real face or reflection, no cut. Native small print remains soft; this is not a pixel-identical restoration. Original raw and rejected review are preserved.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S14",
+      "startFrame": 1530,
+      "seconds": 3,
+      "mode": "O",
+      "sourceSha256": "6c04016b789bc449c386816cd5116594db58c94eb8aa85f026cb5b28736ea592",
+      "sourceObservation": "Viewed all 120 source frames in four complete full-scene sheets, temporal sheet, native context frames 0/119, and all 120 tracked badge-detail crops. One original worn canvas bag and fixed round printed character badge remain under the ordinary wet shelter. No human, hand, face fragment, added passerby or human reflection in glass or puddles appears anywhere. Street, trees, canopy supports and fabric retain the original object count. Both printed purple eyes and mouth stay fixed throughout every detailed crop, with no blink, head turn or talking. Actual water trail runs down the canvas immediately beside/below the badge, rather than across the badge as proposed; restrained rain and surface-water movement provide the action. No camera cut, added fantasy object or generated lettering. Full five-second source reviewed for later 2K; final edit uses three seconds.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S15",
+      "startFrame": 1620,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "2a461bda9bae0b504565c892bd7a2bd0d592787cea5c8b04381afec84bd77acb",
+      "sourceObservation": "Actually viewed all 120 original and all 120 corrected native source frames, complete temporal sheets, both original and corrected native endpoints, all 120 tracked original and corrected face crops, original reference at native resolution and both original-versus-new artwork comparisons. The original two attached female hands lift the same cup clear of the table during approximately the first 1.5 seconds, then hold it steadily through the unchanged four-second final interval and the complete retained five-second source. No repeated rubbing or cup return to table occurs. The outside road, guardrail, wall and houses remain empty in every full scene frame: no added pedestrian, real human face, reflection, unrelated limb or extra hand. The same feminine white/deep-violet/gold costume remains head-out. Original violet-pink open eyes, iris/eyelid contours, round thin gold glasses and face proportions are restored onto this same cup. All corrected print crops remain open and inert without visible slip, duplicated features, edge halo or seam during the lift. Raw R1 with pedestrians and raw R2 with narrowed print eyes are rejected and retained. Zero face detector candidates alone do not establish the scene result; actual full scene review does. Accept the complete five-second corrected source for the unchanged four-second final S15. No final-film or human playback approval implied.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S16",
+      "startFrame": 1740,
+      "seconds": 5,
+      "mode": "H",
+      "sourceSha256": "1b490e9c9957ac61365b79854e2a88cd3383eb8cab59299f8e8b47818996acc8",
+      "sourceObservation": "Independently viewed all 120 frames of the separate original-print-texture correction: four complete full-scene sheets, temporal sheet, all ten exported candidate crops, native full context frame 86 and 120 tracked original-pixel pouch-head crops. Both printed eyes now remain open and fixed at the original expression across the complete five seconds; no blink or independent head turn. Same woman in feminine white/violet/gold skirt, white legwear and attached pouch remains cropped from waist down while moving along the leaf-strewn stone stairs. Boot tips appear briefly at the bottom; actual crop emphasizes the bag rather than the proposed below-knee detail. No real human head or facial fragment, added people or disconnected limbs; candidates are the pouch illustration and leaves/rail false positives. Original continuous camera, clothing, bag, steps and environment movement retained. Only the printed surface was stabilized; no human removed or covered. Raw rejection and processing receipt preserved separately. All five seconds actually reviewed and selected for final film and later 2K.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S17",
+      "startFrame": 1890,
+      "seconds": 3,
+      "mode": "O",
+      "sourceSha256": "75fcbf85738af14e68d128cd3877a032c82c6fa16818e454bc606983ef86ee97",
+      "sourceObservation": "Viewed all 120 full source frames in four complete sheets, temporal sheet, both exported printed-face candidates, native full contexts 0/119, all 120 tracked original-pixel face regions and a direct original-scene/master-versus-generated comparison. This is a new image-only generation, not a retime or texture patch. The original almond-shaped open violet-pink irises, round gold glasses and face layout remain recognizable and fixed at the available native print size; neither eye closes, slides, turns or changes expression across the full five seconds. No extra eyes or independent facial motion observed. This is visual comparison at actual resolution, not a claim of pixel-identical reproduction or restoration of absent fine detail. One rigid original stand and clear base remain on the ordinary greenhouse table; background leaves and light move subtly while framing stays nearly fixed. No real person, hand, facial fragment, reflection, added stand, generated letter or cut appears. White violet gold feminine printed costume unchanged. The older closed-eye raw, patch and slowed candidates remain rejected and preserved. Final edit uses three seconds; the full five-second source has been reviewed for later 2K.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S18",
+      "startFrame": 1980,
+      "seconds": 5,
+      "mode": "I",
+      "sourceSha256": "42253080c7292b3fafb3f38a376a45b4aab9c1c1b438e17c3df03023757e909d",
+      "sourceObservation": "Viewed all 120 source frames in four full-scene sheets, temporal sheet, all three exported stem/grass false-positive face candidates, and native full contexts 0/119. Empty ordinary autumn field of dry tan grasses, subdued pink-brown seed heads and patchy green ground; wind bends the grass naturally as the camera gently approaches. No people, bodies, silhouettes, real facial fragments or human reflections anywhere. No printed face, doll or newly invented object; the proposed tiny blue corner graphic is not meaningfully retained, so this shot is accepted as an unoccupied landscape pause rather than a merchandise view. Vegetation remains grounded in ordinary physical terrain, with no surreal glow or fantasy vegetation. No cut or generated lettering. All five seconds actually viewed and selected.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S19",
+      "startFrame": 2130,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "b4fbe1630600a80b1b311385447720fb3d27153ecd8f579fd16992e9db14cf0f",
+      "sourceObservation": "Independently viewed all 120 frames of the separate two-times-slowed original first 2.5-second interval: four complete full-scene sheets, temporal sheet, both exported printed-face candidate crops, native full final frame and every fixed-region original-pixel printed-eye crop. The five-second candidate is one continuous hand/window/pouch view, with no original late framing cut or extra edit point. Same woman in feminine white/violet sleeve, one hand on the sill and her original other hand/lap edge at lower left; no head, real facial fragment, extra person, disconnected limb or human reflection appears. Ordinary forest, mountain and road barrier move continuously outside the glass at a calm vehicle-travel speed. Existing pouch remains partly cropped at the lower edge; both visible printed eyes remain open and unchanged throughout all detailed frames. No inserted print patch, new object, lettering, blink or talking illustration. Timing-only optical-flow interpolation retains native size and exact 120-frame/24fps five seconds; original rejected source and receipt preserved. Final edit uses four seconds, and all five seconds reviewed for later 2K.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S20",
+      "startFrame": 2250,
+      "seconds": 10,
+      "mode": "O",
+      "sourceSha256": "025d002be5f23377e55054b29db8688b944d0e71cc6066cbdbb0eec9696ae901",
+      "sourceObservation": "Viewed all 240 corrected full-scene frames in eight complete sheets, temporal overview, all twenty detector crops, all 240 corrected badge-detail frames, original full-source plush-detail frames and both native endpoints; compared original S20-v2 scene and original-pixel badge comparison. One continuous native ten-second slow pullback reveals the ordinary overcast mountain lake around the same inert female-character plush and black bag. No cut, added person, real face, reflection, text or character animation. The badge uses its same original open-eye first-frame texture projected onto its own tracked surface for all 240 frames; it does not use a different expression, a later interval or two stitched shots. Gold glasses, paired violet eyes and face layout stay coherent at available native size. The tiny final badge loses fine detail through real minification; no claim of pixel-identical high-detail restoration. No visible patch halo, separation or floating edge. All raw, rejected and corrected versions preserved; source-only approval, not final-film or 2K approval.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S21",
+      "startFrame": 2550,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "5537b2795e1e94b2f0e0b4b04f5eddc67aded4b018505d60e2588b7755f1731b",
+      "sourceObservation": "Viewed all 120 native source frames in four complete full-scene sheets, temporal sheet, all ten exported doll-face candidate crops, native full contexts 0/119 and every tracked doll-face crop across all 120 frames. One cropped woman sits inside the same worn cable-car cabin in a white/violet/gold feminine skirt, white legwear and violet boots. Her head, neck and face remain entirely out of frame; no added person, disconnected limb or human reflection appears. One existing fabric doll peeks from the same bag; sewn purple eyes, smile, hair, glasses and pose remain inert throughout all detailed frames, without blink, talking or autonomous head movement. Forest, patchy snow, cable and supports move slowly outside; a sliver of another cabin edge appears at the far right near the end with no visible occupant or human shape. No cut, surreal scenery, new merchandise or lettering. Full five-second source reviewed; final edit uses four seconds.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S22",
+      "startFrame": 2670,
+      "seconds": 3,
+      "mode": "O",
+      "sourceSha256": "f6c6ac51ba386cd1ad9870d84e0acec35bdbe75d7a89be42702f82c24778ca07",
+      "sourceObservation": "Viewed all 120 native source frames in four complete full-scene sheets, temporal sheet, all ten exported printed-badge face crops, native contexts 0/119 and all 120 tracked original badge-detail crops. One original dark fabric backpack and round character badge sit beside an empty wet mountain path with patchy snow, leafless trees and subdued gray hillside. No people, hands, silhouettes, human facial fragments or reflections appear. Several soft snow clumps fall and collect on the badge rim and bag seams; actual five seconds show accumulation, not a clearly resolved melt, so do not claim a completed melting action. Bag and ground remain coherent, with restrained continuous framing and no cut. Both printed eyes, mouth and hairstyle stay fixed throughout all detailed frames, without blink, talking or head turn; all face candidates are the badge illustration. No invented fantasy scenery, new merchandise or lettering. Full five seconds reviewed for 2K; final edit uses three seconds.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S23",
+      "startFrame": 2760,
+      "seconds": 5,
+      "mode": "A",
+      "sourceSha256": "f9dcdce3eee5517a7fe3b8c7569f38ce9c893a167d551d0bb734ab3fef611c79",
+      "sourceObservation": "Viewed all 120 native source frames in four complete full-scene sheets, temporal sheet, and native full contexts 0/119. One existing illustrated woman stands strictly back-facing on the same rough mountain path. Back of the silver-blue bob and white hat remains toward camera in every frame, with no head turn, face or facial fragment. Original feminine white/violet/gold skirt, white legwear and violet boots remain consistent; arms, hands and legs retain their count and coherent pose. Ordinary overcast mountain ridges, dry grass, loose stones, fence posts and wires remain unoccupied by other people, with no silhouettes or human reflections. Motion is intentionally restrained: light hair/ribbon/cloth drift, with nearly fixed camera; no cut, teleport, added fantasy object, merchandise animation or lettering. No face candidates were exported. Full five seconds reviewed and selected.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S24",
+      "startFrame": 2910,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "5dea106d23199d1c5c0689e452d670e40ecbc2f78cc576a9fbfed9db1a64a952",
+      "sourceObservation": "Viewed every frame of this separate five-second candidate in four full-scene sheets, temporal sheet, all 120 original-pixel acrylic-print crops and native final frame 119. Original first 1.25 seconds slowed four times with optical flow retains one continuous wider framing and gently falling sand with no hard cut or visible interpolation discontinuity. One existing cropped kneeling woman remains in white violet gold feminine skirt, white legwear and violet boots; no head, face, unrelated person or reflection appears. Both eyes and pose of the acrylic print remain fixed across all 120 frames; no autonomous blink, mouth motion or head turn. Ordinary dry sand and shrubs, no added letters or fantasy objects. The original abrupt-cut source remains rejected and retained. Final edit uses four seconds; the full five-second candidate is reviewed for subsequent 2K input.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S25",
+      "startFrame": 3030,
+      "seconds": 3,
+      "mode": "W",
+      "sourceSha256": "aa7b931b1a8f6f6e6d41de451edd5c6f3487a120d47c5500d6890ccc3225078f",
+      "sourceObservation": "Viewed all 120 source frames in all four complete full-scene sheets and the temporal sheet. An empty sandstone canyon with layered red ochre cliffs, ordinary loose ground rocks and sparse dry shrubs remains continuous while a low dust veil drifts across the canyon floor and the camera gently moves sideways. No person, human face, silhouette, reflection, inserted merchandise, generated lettering or fantasy glow appears. No hard cut or abrupt geometry change observed; no face candidates. This is a landscape pause, with people and printed-face behavior checks inapplicable because neither is present. Final edit remains three seconds; the entire five-second source is reviewed for later 2K.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S26",
+      "startFrame": 3120,
+      "seconds": 5,
+      "mode": "O",
+      "sourceSha256": "e9fbe321cc09ecce3c411090994b946fdb1cf832c431df3ed747087b081a97c7",
+      "sourceObservation": "Viewed all 120 complete native frames in four sheets, temporal overview, all 13 detector crops, and all 120 tracked face-detail crops, and compared the original S26 scene artwork. Empty car passenger seat with the same lilac pouch; ordinary dry roadside and fence move past the window continuously. No occupant, passerby, real face, reflection or added body part. Pouch seam and zipper cause false face detections. Printed forward-facing violet eyes, round gold glasses and face proportions stay open, coherent and fixed on the fabric; no blink or expression change. Native print is small and soft rather than pixel-identical to the reference. No internal cut or impossible background event.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S27",
+      "startFrame": 3270,
+      "seconds": 2,
+      "mode": "O",
+      "sourceSha256": "f1dce035f0d7921b44afddfe77799dfbfbd10547080232abe77ee0afde47067d",
+      "sourceObservation": "Viewed all 120 complete frames, four sheets, temporal overview, all ten detector crops, and all 120 tracked print-detail crops; compared original S27 scene and M01 charm design. An inert acrylic charm swings slightly from the brown bag over the patterned empty seat. Ordinary lake, roadside trees and rail move outside; soft light and the same charm shadow move on fabric. Shadow is the existing object, not a human silhouette. No person, human face, reflected body or new passenger appears. Both violet eyes remain open; round gold glasses, face proportions and printed costume remain coherent without blink or head turn. No cut. Final edit uses two seconds, later 2K input remains the fully reviewed five seconds.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S28",
+      "startFrame": 3330,
+      "seconds": 5,
+      "mode": "H",
+      "sourceSha256": "e0a65ab5e03af81383c83289ef5048d6242ce0a118eb3bfc7e7dd1062afaa59a",
+      "sourceObservation": "Actually viewed all 120 original and all 120 corrected native source frames on complete scene sheets, the raw temporal overview, all four raw detector crops, both corrected native endpoints, all 120 tracked original and corrected cup-face crops, and original-artwork versus corrected-print comparisons. Exactly the two original attached female hands lower the existing pastry wrapper outward and downward, flattening it on the same wooden table, then rest at its edges. The lifted original wrapper edge at the beginning remains physically held by those hands and is not a floating veil. No new loose white sheet, translucent shadow, steam, smoke, dissolving paper, food mutation, extra hand, unrelated person, real human face, reflected figure, lettering or cut is visible. The same feminine white/deep-violet/gold head-out crop remains. Original open violet-pink eye/iris and eyelid shapes, thin round gold glasses and face proportions are restored on the same existing cup; all corrected print frames stay fixed and open-eyed with no visible tracking drift, halo, duplicated features or seam. The raw narrower-face generation is rejected and retained. Zero corrected detector candidates alone do not prove absence of human faces; full scene evidence supplies that review. Accept the complete five-second correction for the unchanged five-second final S28. No final-film or human playback approval implied.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S29",
+      "startFrame": 3480,
+      "seconds": 4,
+      "mode": "O",
+      "sourceSha256": "de3fc022e54e70d3c7b55ea979450a46f31c2ef39eff6530490e81e0926b21c1",
+      "sourceObservation": "Viewed all 120 final corrected native frames, all four full-frame sheets, temporal overview, native first frame, all 120 badge crops, all 120 sewn-face crops and actual original-pixel comparisons. The same original S29 badge artwork is registered onto its own existing badge and tracked through the complete source; its original round open eyes, irises, gold round glasses and face proportions are retained. The plush uses its own initially open sewn expression tracked on the same face, removing the observed generated blink. No visible halo, double rim, face-neck seam, floating print or sliding badge appears in the reviewed frames. The original single bag, plush, rope, bollard, empty harbor boats, working buildings, gray sky and water remain, with gentle continuous water and boat motion. No real human face, person, silhouette, body part, reflection, new prop, text or cut. Original sources and both rejected versions are retained. This is video compositing of existing artwork, not newly generated eyes. All five source seconds reviewed; final uses four. Source-only assistant review, no final film or later 2K acceptance.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S30",
+      "startFrame": 3600,
+      "seconds": 3,
+      "mode": "H",
+      "sourceSha256": "3ac2834bd756086cc6b5452b31938b28db88c81c758a0c643685558db586994c",
+      "sourceObservation": "Viewed all 120 complete frames in four sheets, temporal overview, all eleven detector crops, native first frame and all 120 tracked pouch-print crops; compared the complete original S30 scene. Same original head-out female waist and covered legs in feminine white/violet/gold costume on the boat; one hand rests on the existing rope, the other stays at her own side. Water and slight body/cloth motion remain continuous. Bollard causes false detector candidates. No person, human face, reflection or extra limb appears. Pouch illustration keeps coherent open violet eyes, gold round glasses, original face proportions and fixed clothing as its fabric moves slightly; no expression animation, head turn, lettering or internal cut. Native print detail is limited rather than pixel-identical.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S31",
+      "startFrame": 3690,
+      "seconds": 5,
+      "mode": "H",
+      "sourceSha256": "7343e9a678c2f9013782f06f922d29e6c0a9c5b7a02eda4fb5fd3bd1e7e4d587",
+      "sourceObservation": "Viewed all 120 complete frames, four sheets, temporal overview, both detector crops and all 120 tracked acrylic-print face crops; compared the original full S31 scene. One woman is cropped below the head in the original white/violet/gold feminine dress; her hand rests on the ferry rail while the same bag and acrylic charm move slightly. Ordinary wake, distant low coast and empty ship corridor remain continuous; no passenger, real face, reflection or added limb appears. The original paired violet eyes stay open and coherent with gold round glasses and the original face layout. No blink, printed head turn or speaking character; print remains fixed to the physical charm. Small native print details soften with movement without the severe closed-eye mismatch. No internal cut or generated lettering.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S32",
+      "startFrame": 3840,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "7fd14f4dff61f7538a78c9a98a78866c15844939f6676bd3bdefc8b414d31bf0",
+      "sourceObservation": "Viewed all 120 later-interval candidate frames, four complete sheets, temporal overview, all five detector crops, native first frame and all 120 tracked sticker-face detail crops; compared original S32-v2 and M09 artwork. Only the original source interval 3.5 to 4.75 seconds is retimed fourfold into a five-second source, keeping a frontal camera and the same two female hands in original white/violet/gold cuffs. Round open violet eyes, gold glasses and face proportions remain faithful and stable with no blink or printed-character motion. No real face or human reflection is visible in the lens or water; pier and sea remain empty. Continuous gentle camera settling and water, no interpolation tear, internal cut, extra limb or generated text. Palm and lower finger create false detector candidates. Reject the original uncertain early-eye interval; raw and all prior evidence retained. Source-only assistant review, not full-film or human-playback acceptance.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S33",
+      "startFrame": 3960,
+      "seconds": 3,
+      "mode": "W",
+      "sourceSha256": "c97b13608b72696469715568c99e1df356a0317675992d930f40e2430ba76050",
+      "sourceObservation": "Viewed all 120 complete source frames in four sheets and the temporal overview, and compared the original S33 scene. Continuous locked shoreline sunset: ordinary foamy waves advance and recede over wet dark rocks below the low coastal vegetation. No person, human face, reflection, body, character print, text or imaginary object appears anywhere. No visible character eyes exist to distort. Warm sunset color is bright but physically consistent with the original shoreline, without a new fantasy landscape or impossible event. No internal cut; three-second final pause, full five-second source reviewed for later 2K.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S34",
+      "startFrame": 4050,
+      "seconds": 5,
+      "mode": "A",
+      "sourceSha256": "daa401207c3ce2021c69aa35c6820d9c8b04c93db3a8b7fcc5e9debca0c1d44c",
+      "sourceObservation": "Viewed all 120 complete source frames, four sheets, temporal overview and all three detector crops; compared the complete original S34 coastal-path scene. The sole original illustrated female character walks away from the camera, strictly back-facing in all frames, with no cheek, eye or facial fragment. Original white/violet/gold short dress, white legwear, violet boots, pale bob, hat and blue butterfly remain coherent. Arms, alternating walking steps and cloth movement stay continuous on an ordinary dry grassy coastal path. Grass, branches and a rock create false face candidates. No new person or silhouette appears on the path or water; no printed face, lettering, impossible event or internal cut. No visible character eyes are present to compare beyond the strict original back view.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S35",
+      "startFrame": 4200,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "136b01211af838c360633b22d6f68426f62d0aa2f423cb2fe5aea086fa011302",
+      "sourceObservation": "Viewed all 120 complete source frames, four scene sheets, temporal overview, the single printed-face detector crop and all 120 tracked bottle-print crops; compared original full S35-v2 scene. Same head-out crouching female in white/violet/gold skirt, white legwear and violet butterfly boots touches ordinary clear stream water with her own right hand, while her other hand stays on her knee. Ripples and hand motion remain continuous; no human face appears in the water, background or crop, and no added person or limb. Same worn bottle remains on its rock. Its paired purple eyes remain open with coherent gold round glasses, face layout and fixed costume; print is small and soft with limited fine detail, not pixel-identical. No blinking print, internal cut, impossible new event or generated text.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S36",
+      "startFrame": 4320,
+      "seconds": 3,
+      "mode": "O",
+      "sourceSha256": "6ce161206e17a52f38adb334eacc7312e36e4eb93eb8d967d3a0f9019efadba5",
+      "sourceObservation": "Viewed all 120 native frames in four complete sheets, temporal overview, native first frame, all 120 tracked original-pixel face crops and the complete original S36 scene. Both printed violet-pink eyes remain open with coherent iris and eyelid outlines, thin round gold glasses and the original face layout; no blink or eye morph. The existing single clear card remains supported by the wet wooden rail; real plants, rocks and flowing waterfall remain visible through its clear area. Only continuous water and small droplets move. No person, real human face, body part, reflection, silhouette, extra prop, text or cut. Small native print is soft, not an exact high-detail reprint. All five source seconds are reviewed although the final uses three. Source-only assistant acceptance; subsequent 2K and final encoded-film checks remain separate.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S37",
+      "startFrame": 4410,
+      "seconds": 5,
+      "mode": "H",
+      "sourceSha256": "8efb5d995fd3384428c35acb6f0390970fce00072b14ee59f7f7637ffe999e2e",
+      "sourceObservation": "Viewed all 120 corrected native frames in four complete scene sheets, temporal overview, all five detector crops, all 120 tracked printed-face crops, native last frame and original-pixel comparison. The existing pouch uses its same original S37 printed face registered onto the existing illustration; round open violet eyes, iris and eyelid contours, gold round glasses and face proportions remain fixed and coherent. No visible registration halo, edge seam, sliding face or redraw. The original one head-out woman continues walking naturally in a white and deep-violet gold-trimmed dress, opaque white legwear and violet butterfly boots, holding the same pouch. Her head remains entirely out of frame; no extra person, face, reflection, silhouette, cut or text. Ordinary dry field, rough path, wire fence and overcast light remain. Complete five seconds reviewed and retained with unchanged motion, all five enter final film. Source-only assistant acceptance; later 2K and final encoded review remain required.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S38",
+      "startFrame": 4560,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "d244e0f5881fe5337262cc676cb6b104560a5bba5644ec64b41acfbd505c34cd",
+      "sourceObservation": "Viewed all 120 complete native frames in four full-scene sheets, temporal overview, the single detector crop, native first frame, all 120 tracked charm-face crops and complete original S38 scene. The same one woman remains cropped below the head, in feminine white/deep-violet/gold clothing and white legwear, with her existing hand on the worn railing and original bag/charm. Printed violet eyes remain open with coherent eyelid and iris outlines, gold round glasses and original face layout; no blink or changing expression. The charm moves passively with small camera/body motion. Canal reflections and opposite buildings remain unoccupied; no human face, new person, silhouette or reflected body appears. The detector candidate is costume detail. Original twilight acquires a gradual warm illumination on the same foreground arm and rail, without a cut or strobe. No readable text. Small print has native detail limits. Complete five seconds reviewed although final uses four. Source-only assistant acceptance; final film and 2K require separate checks.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S39",
+      "startFrame": 4680,
+      "seconds": 3,
+      "mode": "I",
+      "sourceSha256": "3c24bc082c3f553d23d7eb1f67cd80099171d466e01296303bde06488c29d458",
+      "sourceObservation": "Viewed all 120 complete native frames across four full-scene sheets, temporal overview and the complete original S39 scene. The ordinary blue-hour alley, weathered walls, wet stone slabs, one warm lantern and window shelves with baskets and ceramic vessels remain continuous. No person, human face, body part, silhouette or reflected person appears in the alley, shop window or distant openings. The existing single blue butterfly graphic remains at the original window corner with small gentle movement, without extra figures or objects. There is no printed character face requiring an eye comparison here. No legible generated lettering or internal cut. No detector candidate is used as proof on its own. Complete five seconds reviewed; final uses three. Assistant source acceptance only, no final-film, later 2K or human-playback approval.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S40",
+      "startFrame": 4770,
+      "seconds": 5,
+      "mode": "I",
+      "sourceSha256": "ccdea9582412de63a2431fe03bb83889f1d0c60e293d30e15d767ce79eb286f2",
+      "sourceObservation": "Viewed all 120 native frames on four complete scene sheets, temporal overview, all four detector crops, native first frame, all 120 tracked printed-face crops, complete original S40 image and original-pixel eye comparison. The original window sticker stays attached and inert with open violet-pink eyes, coherent iris and eyelid contours, thin round gold glasses and original face proportions; no blink, squint or expression drift. Exterior blue/pink light bands move continuously, with original empty seats reflected in the glass. No passenger, unrelated person, body part, real human face, reflected face or silhouette appears. Detector candidates are the drawn sticker face. The existing graphic remains a flat print, not a living character; no added text, object or cut. Small native iris detail is softer than the original, not pixel-identical. All five seconds reviewed and used. Assistant source acceptance only; actual final encoded film and later 2K remain separate.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S41",
+      "startFrame": 4920,
+      "seconds": 4,
+      "mode": "O",
+      "sourceSha256": "e0d133e24f05fcf01fd887a6ab0c7acddd23b0f018efb28432a0d59be611cebd",
+      "sourceObservation": "Viewed all 120 native frames in four complete full-scene sheets, temporal overview, all six detector crops, native first frame, all 120 sewn-face crops, all 120 badge-face crops, complete original S41 scene and separate original-pixel comparisons for both objects. Both the original inert plush and existing round badge keep open violet-pink eyes, coherent iris and eyelid outlines, thin round gold glasses and original face proportions; no blink, squint or changing expression. The small badge has low native iris detail and is not a pixel-identical fine reprint, but the original open-eye geometry and glasses remain recognizable. One bag and doll rest on the worn bench, with ordinary dim town lights, cloudy mountains, rough ground, fence and subtle nearby foliage variation; no new person, real face, body part, silhouette, reflected figure, readable lettering or cut. Detector candidates are drawn or sewn faces. All five source seconds reviewed, final uses four. Assistant source acceptance only; later 2K and full-film review remain separate.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S42",
+      "startFrame": 5040,
+      "seconds": 3,
+      "mode": "H",
+      "sourceSha256": "cc71b58558c2b7d109b84b164c2f8893c50e4b4e69636e9d8a998e893a1bc072",
+      "sourceObservation": "Viewed all 120 corrected native frames in four complete scene sheets, temporal overview, both detector crops, native first and last frames, all 120 tracked print-face crops, the complete original S42 scene and original-pixel face comparison. The same original cup artwork is registered and tracked onto its existing printed face, preserving original round open violet eyes, iris and eyelid contours, thin gold round glasses and face proportions. No visible tracking slip, halo, duplicated face or neck seam appears in the reviewed output. The one head-out woman in matching feminine white/deep-violet/gold clothing and opaque legwear continuously places the same cup on the worn wooden table and releases it, with the other original hand resting on her own lap. The original lamp, tent, plant, metal cup and background remain; no new person, real human face, reflection, silhouette, extra hand, text or cut. Final uses three seconds; all five seconds including hand release have been reviewed for later 2K. Original and rejected video retained. Assistant source acceptance only; no final-film or later 2K approval.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S43",
+      "startFrame": 5130,
+      "seconds": 5,
+      "mode": "O",
+      "sourceSha256": "4a2c416885294f8c459c112e1ed4eef3c2491ea22122d56c8280aeefeba8f856",
+      "sourceObservation": "Viewed all 120 complete native frames, four scene sheets, temporal overview, native first frame, all 120 tracked printed-face crops and original-pixel comparison against the complete original S43 scene and M03 clear-card design. The original single clear acrylic panel remains on its supports beside the same lamp and mug, with real background visible through the unprinted area. No person, human face, body, reflection or tent silhouette appears. Both violet-pink printed eyes remain open and fixed; recognizable iris outlines, thin round gold glasses and original face layout are coherent at this small native size, without the old closed/narrow expression, blinking or animated print. The printed face is soft and low in native detail, not a pixel-identical high-detail reproduction. Faint original tent/grass and light variation remain continuous, no cut, extra panel, floating prop or generated lettering. No detector candidate does not itself establish this conclusion. Source-only assistant acceptance; later 2K and full-film review remain separate.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S44",
+      "startFrame": 5280,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "722660288d885b9c94c45f463588fc85b843c2085433459c220eca8d0bfb7eaf",
+      "sourceObservation": "Actually viewed all 120 complete native scene frames across four sheets, the temporal sheet and all six detector crops; the original closed-door imagegen reference; native full frames 0, 24, 95 and 119; all 120 tracked pouch-face crops; and every hand frame using zipper-region pages 1-4 (frames 0-63) plus curtain-region pages 5-8 (64-119). The first frame is a fully closed opaque tent door with no exterior visible. The same attached right hand pulls the one brass zipper downward to the floor, releases the slider, grasps the unlocked cloth edge and draws it aside, revealing empty grass and trees before the unchanged four-second cut. The view stays open through the complete five-second source. No reversal, reclose, transparent fabric, cut or background figure occurs. The same right thumb/palm identity and wrist-to-cuff connection remain plausible throughout the reviewed trajectory, without an extra hand or detached/stretching limb. Original head-out feminine white/deep-violet/gold sleeve and white-covered knee remain; no head, chin, face, reflected figure or unrelated person appears. The same hanging pouch keeps coherent open violet eyes, iris outlines, thin round gold glasses and fixed costume in all 120 detail frames; native fine detail is soft and not pixel-identical to the input. Pouch follows ordinary cloth movement without independent blinking. No artwork patch or body masking applied. Accept the complete source for its original four-second final interval. This is assistant frame-evidence review, not human continuous playback or user aesthetic approval.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S45",
+      "startFrame": 5400,
+      "seconds": 2,
+      "mode": "H",
+      "sourceSha256": "53ec165d33cd2275975302fbcd3f10a769d1b9f6b06077fc09642f2688245929",
+      "sourceObservation": "Viewed all 120 corrected native frames in four full scene sheets, temporal overview, all 120 tracked printed-face crops, native final frame and the actual original S45 artwork and face comparison. Registered original artwork restores the same keychain open violet eyes, original eyelid and iris shape, thin gold round glasses and face proportions, without blink, visible slip, halo or double edges. The same head-out woman walks continuously beside her original suitcase in feminine white/deep-violet/gold skirt, opaque white legwear and violet boots. Existing worn pavement, wall, flowers and wheel remain, with no new person, real human face, reflection, silhouette, text or cut. Final uses two seconds; all five source seconds reviewed for later 2K. Original retained. Source acceptance only, without final-film or later 2K approval.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S46",
+      "startFrame": 5460,
+      "seconds": 5,
+      "mode": "H",
+      "sourceSha256": "0adb37dc12b49d312e4baece9357f98dca4078a051685fc50b652011edf25340",
+      "sourceObservation": "Viewed all 120 corrected native frames in four full-scene sheets, temporal overview, all 120 tracked sticker-face crops, native final frame and original S46 artwork and actual restored-print comparison. Original round open violet-pink eyes, original eyelid and iris contours, thin gold round glasses and face proportions remain fixed to the same sticker through all five seconds. No visible slip, halo, duplicate features or blink. Only the original cropped feminine forearm and relaxed hand in white/deep-violet/gold clothing remain inside the train, as the ordinary coast, trees and buildings pass outside. No added person, human face, reflection, silhouette, lettering or cut. All five seconds are used. Original retained. Source acceptance only, without final-film or later 2K approval.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S47",
+      "startFrame": 5610,
+      "seconds": 4,
+      "mode": "H",
+      "sourceSha256": "b782478832d2ba23472e0aa8b649d4bddb62497a32e79b054090c5349c5d858a",
+      "sourceObservation": "Actually viewed all 120 complete native frames across four sheets, the temporal sheet, all nine detector crops, all 120 tracked plush-face crops, both original image references, native full frames 0 and 95, and all 120 image-left and image-right arm detail frames across eight pages per arm. The same head-out woman remains behind the bench with uncrossed forearms visible to their sleeve connections. Both hands support the lower plush sides and make a small real straightening adjustment, then release and move outward onto the bench before the unchanged four-second final cut. There is no wrap behind the plush, hand-side swap, third hand, detached limb or implausibly twisted wrist. Thumb/palm direction and wrist-to-forearm continuity remain coherent; the detail ROIs are supplemented by the complete scene/native frames where a fingertip reaches the crop boundary. The plush remains seated after release; embroidered open violet eyes and thin round gold glasses keep coherent outlines and proportions throughout all 120 tracked detail frames, with ordinary native softness rather than pixel identity. White/deep-violet/gold feminine sleeves and torso remain; the original woman is the only person, and no head, chin, real face or reflected person appears. The original bag, bench and sea remain continuous. No anatomy mask, artwork patch, motion retiming or frame replacement applied. Accept this source for its unchanged four-second final interval. This is assistant frame-evidence review, not human continuous playback or user aesthetic approval.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    },
+    {
+      "id": "S48",
+      "startFrame": 5730,
+      "seconds": 14,
+      "mode": "I",
+      "sourceSha256": "8ac2c450a4b919086f365fbb4cc7df8e98cefece6e0c2cf913f7aabad4c31d9b",
+      "sourceObservation": "Actually viewed all 336 original native source frames on eleven full-scene sheets, the temporal overview, both native endpoints, all 336 original-pixel wing crops, and the original reference. The complete fourteen-second coast stays uninterrupted, open and unoccupied, with the same original sky, sea, beach, road, houses, hills and small blue corner motif. No invented foreground tree/trunk/canopy/branch, person, real human face, reflected figure, body part, text or cut is visible. The blue motif remains coherent and single, with the native faster wing motion. That motion does NOT meet the earlier slow-cycle brief; the user now explicitly says to stop butterfly slowdown and keep the original. Accept this exact ORIGINAL R5 source under that new user choice; neither local timing candidate is selected. No claim of slow wings, human full playback or final-film approval. All raw failures, earlier speed rejection and local candidate files remain preserved.",
+      "observationScope": "Exact selected source with existing separate complete frame review; encoded evidence and user native-wing choice documented separately."
+    }
+  ],
+  "retainedHistoricalFilms": [
+    "production-v3-realism-002/film.mp4",
+    "production-v4-closing-001/film.mp4",
+    "production-v6-bf16-768p-001/film.mp4",
+    "production-v7-bf16-768p-001/film.mp4",
+    "production-v8-bf16-768p-001/film.mp4",
+    "production-v9-bf16-768p-001/film.mp4"
+  ],
+  "twoKStatus": "stopped-by-user",
+  "automaticTwoKResumeAllowed": false,
+  "fourKStatus": "not-submitted",
+  "scope": "Actual completed 205-second native 768p film for user review. Only S01 is replaced with the newly generated natural LEFT backhand curtain source. All 48 timings, other 47 source bytes, titles, soundtrack and native closing wings remain identical to v9; every historical source/failure/candidate/film is preserved. Assistant evidence review is not human aesthetic acceptance."
+}
