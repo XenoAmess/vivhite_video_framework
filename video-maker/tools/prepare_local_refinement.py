@@ -13,6 +13,61 @@ from local_video_pipeline import validate,read,save,source_frame_count
 from reference_finisher import sha,run,verify_clip_decisions
 
 
+def refinement_prompt(shot):
+    """Describe preservation of the selected video, without replaying draft instructions."""
+    framing = ('The same one woman stays in exactly the original body crop with her entire head outside the picture. '
+               'Preserve her feminine white/deep-violet/gold clothes and the anatomical identity, '
+               'orientation and continuous joints of each original arm and hand. '
+               if shot['mode'] == 'H' else
+               'The same one illustrated woman remains strictly back-facing throughout. '
+               if shot['mode'] == 'A' else 'The existing environment stays unoccupied by people. ')
+    merchandise = ('The exact existing fabric doll remains an inert object with its same sewn face, expression and costume. '
+                   if shot.get('designMaster','').endswith('M04-plush-v1.png') else
+                   'The existing printed illustration remains identical and fixed to its original surface. '
+                   if shot['mode'] not in ('A','W') and shot['id'] not in ('S18','S39','S48') else '')
+    if merchandise:
+        merchandise += ('Every existing printed or sewn character face, including any small badge beside the doll, '
+                        'keeps its original OPEN violet-pink eyes, iris and eyelid contours, thin round gold glasses '
+                        'and original face proportions throughout. No blink, squint, eye shift, facial redraw, '
+                        'expression change or turning illustration. Preserve transparent acrylic areas as real background. ')
+    details = {
+        'S01': 'Keep the same anatomical LEFT backhand grip: knuckles and the back of the hand face the camera, '
+               'palm faces the curtain and window, thumb opposes the curved index on the lower near side. '
+               'Preserve the small existing grip and fabric motion and the input camera movement. '
+               'Do not turn the palm towards the camera, exchange hands or twist the wrist. ',
+        'S05': 'Keep the existing alternating pedalling and continuous road and tree motion; '
+               'no background reset, spatial jump or scene transition. ',
+        'S07': 'Keep the input continuous walking and alternating weight-bearing steps from the first frame. ',
+        'S15': 'Keep the existing slow lifting and holding of the cup with the same two hands; '
+               'no repeated stroking, extra hand or movement towards a visible mouth. ',
+        'S20': 'Keep the entire continuous lake shot, existing camera movement and stationary supported doll; '
+               'do not restart, freeze, loop or replace the view at a window boundary. ',
+        'S28': 'Keep the existing hands spreading the wrapper beside the bread. '
+               'The space immediately above the bread stays clear, without invented white shapes or steam. ',
+        'S44': 'Preserve the exact input action and timing: begin with the opaque tent door fully CLOSED, '
+               'then the same attached right hand unzips once and draws the released cloth aside, '
+               'revealing the outside before the four-second cut and keeping the door open. '
+               'No reversed zipper travel, second closure or transparent cloth. ',
+        'S47': 'Preserve the same two uncrossed attached arms and anatomically coherent hands, '
+               'each staying on its original side of the doll. Keep the small whole-doll straightening, '
+               'settling and release in the input, with stable sewn OPEN eyes and glasses. '
+               'No extra hand, reversed thumb, wrist folding, stretched limb or hand passing through the doll. ',
+        'S48': 'Preserve the input butterfly wing motion at its EXACT ORIGINAL SPEED and cadence. '
+               'Do not slow down, accelerate, retime or add wing cycles. Keep the same single blue motif '
+               'at its original bottom-right position and size. Preserve the unobstructed coast, plain sky '
+               'and original clear frame margins. No new foreground tree, branch, leaf or vegetation. '
+    }
+    return ('Regenerate this same uninterrupted quiet travel video in clear native 3840x2160 detail. '
+            'The INPUT VIDEO is the sole definition of scene contents, action, motion speed and camera trajectory. '
+            'Keep every original moment in its original temporal order and preserve the complete input duration. '
+            'Preserve exact framing, natural light, ordinary weather, colors, terrain and object count. '
+            + framing + merchandise + details.get(shot['id'],'') +
+            'Introduce no extra person or body part. No real human face or facial fragment anywhere, '
+            'including reflections and background. No new readable lettering, subtitles, credits, '
+            'speech, singing or other voices. No cuts, synthetic beautification, scene replacement, '
+            'invented props, frozen padding or looping. Preserve the input action without performing it again.')
+
+
 def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destination,root):
     draft_directory,directory = Path(draft_directory).resolve(),Path(directory).resolve()
     if draft_directory == directory or directory.is_relative_to(draft_directory) or draft_directory.is_relative_to(directory):
@@ -22,9 +77,18 @@ def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destinati
     if (delivery.get('schemaVersion') != 'vivhite-delivery-plan-1' or sha(film) != delivery['film']['sha256']
             or delivery.get('machineDecodedFinalFrames') != delivery['film']['frames']):
         raise ValueError('An actual completed 768p delivery is required before 4K')
-    print(run([sys.executable,str(Path(root).resolve()/'scripts/character_review.py'),'check',
-               '--episode',str(Path(episode).resolve()),'--document',str(Path(delivery_file).resolve()),
-               '--asset',str(film)],timeout=120))
+    delivery_assets = [film]
+    if delivery.get('finalReview'):
+        review_file = Path(delivery_file).resolve().parent/delivery['finalReview']
+        if sha(review_file) != delivery['finalReviewSha256']:
+            raise ValueError('768p final review binding changed')
+        delivery_assets.extend([draft_directory/'soundtrack.wav',draft_directory/'titles.ass',
+                                review_file,Path(delivery_file).resolve().parent/delivery['finalAssemblyPlan']])
+    gate = [sys.executable,str(Path(root).resolve()/'scripts/character_review.py'),'check',
+            '--episode',str(Path(episode).resolve()),'--document',str(Path(delivery_file).resolve())]
+    for asset in delivery_assets:
+        gate.extend(['--asset',str(asset)])
+    print(run(gate,timeout=120))
     original = read(draft_plan)
     validate(original)
     final_file = Path(delivery_file).resolve().parent/delivery['finalAssemblyPlan']
@@ -45,6 +109,9 @@ def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destinati
                 draftDeliverySha256=sha(delivery_file),draftFilmSha256=sha(film))
     plan['scope'] = ('Separate native UHD 4K refinement plan bound to the delivered 768p film and '
                      'its complete reviewed sources. Preparation submits no job; exact new input review is required.')
+    plan['sourceContinuation'] = 'Regenerate all selected input videos in native UHD; preserve every final shot duration, title and original soundtrack.'
+    plan['sourceAlignmentNote'] = 'Preserve the exact reviewed source frame count at 24fps and the unchanged final 30fps timeline; no temporal padding or retiming.'
+    plan.pop('promptRevision',None)
     plan['refinement'] = {'model':'open-h3-2k','size':'3840x2160','sampler':'up3',
                           'submissionWindow':1,'scope':'Native UHD regeneration; historical provider model ID retained. No 2K output.'}
     for shot,selected in zip(plan['shots'],final['shots']):
@@ -64,32 +131,16 @@ def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destinati
         if not target.exists():
             shutil.copyfile(source,target)
         shot.update(inputSource=target.relative_to(directory).as_posix(),inputSourceSha256=sha(target))
-        for key in ('motionReference','motionReferenceSha256','motionReferenceSeconds','references'):
+        for key in ('motionReference','motionReferenceSha256','motionReferenceSeconds','references',
+                    'generationAction','firstFrameRequirement','motionParentSha256',
+                    'motionParentStartSeconds','motionParentSourceFile'):
             shot.pop(key,None)
-        framing = ('The same one woman stays in exactly the original crop with her entire head outside the picture; '
-                   'preserve her feminine white/deep-violet/gold clothes. '
-                   if shot['mode']=='H' else
-                   'The same one illustrated woman remains strictly back-facing throughout. '
-                   if shot['mode']=='A' else 'The existing environment stays unoccupied by people. ')
-        merchandise = ('The exact existing fabric doll remains an inert object with its same sewn face, expression and costume. '
-                       if shot.get('designMaster','').endswith('M04-plush-v1.png') else
-                       'The existing printed illustration remains identical and fixed to its original surface. '
-                       if shot['mode'] not in ('A','W') and shot['id'] not in ('S18','S39','S48') else '')
-        if merchandise:
-            merchandise += ('Every existing printed or sewn character face, including any small badge beside the doll, '
-                            'keeps its original open violet-pink eyes, iris and eyelid contours, thin round gold glasses '
-                            'and original face proportions throughout. No blink, squint, eye shift, facial redraw, '
-                            'expression change or turning illustration. Preserve transparent acrylic areas as real background. ')
-        ending = ('Preserve the input butterfly\'s very slow natural wing motion and long pauses exactly. '
-                  'Do not accelerate its wings, add wing cycles or invent foreground branches or leaves. '
-                  if shot['id']=='S48' else '')
-        shot['prompt'] = (
-            'Regenerate this same uninterrupted quiet travel shot in clear native 3840x2160 detail. '
-            'The input video defines every scene element. Preserve its exact framing, camera tempo, natural light, '
-            'ordinary weather, colors, terrain and object count. '+framing+merchandise+ending+
-            'Introduce no extra person or body part. No real human face or facial fragment anywhere, including reflections and background. '
-            'No readable lettering, subtitles, credits, speech, singing or other voices. '
-            'Keep the original gentle action: '+shot['generationAction'])
+        shot['acceptanceCriteria'] = ('Actually review all native UHD source frames and native-resolution hand, '
+            'eye/glasses and window-boundary details against the selected input video. Preserve the original '
+            'population, anatomy, fixed artwork and actual motion timing; reject invented people, real faces, '
+            'changed printed eyes, cuts, window seams, extra limbs or new props. Preserve the locked final duration. '
+            'Source review does not approve the later encoded film or claim human continuous playback.')
+        shot['prompt'] = refinement_prompt(shot)
     for name in ('soundtrack.wav','soundtrack-receipt.json'):
         target = directory/name
         if target.exists() and sha(target) != sha(draft_directory/name):

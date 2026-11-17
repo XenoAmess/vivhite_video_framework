@@ -106,7 +106,7 @@
       "v2Review": "Rendered before user stopped slowdown; not semantically reviewed or selected"
     }
   },
-  "currentRevision": 10,
+  "currentRevision": 11,
   "motionRevision": {
     "shots": [
       "S01"
@@ -123,5 +123,21 @@
     "durationDisplayConfirmedCorrectByUser": true,
     "finalSeconds": 205,
     "finalFrames": 6150
+  },
+  "refinementProduction": {
+    "revision": 11,
+    "status": "generating-native-4k",
+    "authorizedBy": "Explicit user request on 2026-11-18 to start LAN 4K and continue until completed",
+    "sourceRevision": 10,
+    "plan": "production-plan-v11-native-4k.json",
+    "run": "production-v11-native-4k-001",
+    "size": "3840x2160",
+    "submissionWindow": 1,
+    "all48TimingsLockedToV10": true,
+    "seconds": 205,
+    "frames": 6150,
+    "originalClosingWingCadenceRequired": true,
+    "preserve768pRelease": true,
+    "automaticTwoKResumeAllowed": false
   }
 }

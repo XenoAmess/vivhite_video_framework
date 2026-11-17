@@ -33,6 +33,8 @@ class NativeFourKPreparationTest(unittest.TestCase):
             (draft / 'film.mp4').write_bytes(b'unit fixture, not a delivered film')
             for name in ('soundtrack.wav', 'soundtrack-receipt.json'):
                 (draft / name).write_bytes(b'unit audio fixture')
+            (draft/'titles.ass').write_text('unit titles',encoding='utf-8')
+            (root/'review.json').write_text('{}',encoding='utf-8')
             plan = {'schemaVersion':'vivhite-local-two-stage-video-1', 'stage':'draft',
                     'model':'fasth3-omni-bf16', 'width':1344, 'height':768,
                     'sourceSize':'1344x768', 'sourceFps':24, 'fps':30, 'maxShotSeconds':5,
@@ -54,10 +56,14 @@ class NativeFourKPreparationTest(unittest.TestCase):
             save(delivery_file, {'schemaVersion':'vivhite-delivery-plan-1',
                  'film':{'sha256':worker.sha(draft / 'film.mp4'),'frames':420},
                  'machineDecodedFinalFrames':420,'finalAssemblyPlan':final_file.name,
+                 'finalReview':'review.json','finalReviewSha256':worker.sha(root/'review.json'),
                  'finalAssemblyPlanSha256':worker.sha(final_file)})
             real_run = worker.run
             def unit_run(command, **kwargs):
                 if len(command)>1 and str(command[1]).endswith('character_review.py'):
+                    self.assertEqual(command.count('--asset'),5)
+                    self.assertIn(str(draft/'titles.ass'),command)
+                    self.assertIn(str(root/'review.json'),command)
                     return 'Unit-only semantic gate stub; no production approval'
                 return real_run(command, **kwargs)
             with patch.object(worker,'run',side_effect=unit_run), patch.object(worker,'verify_clip_decisions'):
@@ -78,7 +84,9 @@ class NativeFourKPreparationTest(unittest.TestCase):
             self.assertNotIn('historical-stopped', json.dumps(result['refinement']))
             self.assertEqual((result['shots'][0]['seconds'], result['shots'][0]['sourceSeconds']), (14,15))
             self.assertIn('3840x2160',result['shots'][0]['prompt'])
-            self.assertIn('very slow natural wing motion and long pauses exactly',result['shots'][0]['prompt'])
+            self.assertIn('EXACT ORIGINAL SPEED',result['shots'][0]['prompt'])
+            self.assertNotIn('Slow wings.',result['shots'][0]['prompt'])
+            self.assertNotIn('very slow',result['shots'][0]['prompt'])
             self.assertNotIn('four seconds',result['shots'][0]['prompt'])
             self.assertNotIn('references',result['shots'][0])
             self.assertEqual(worker.sha(refined/'input-sources/S48.mp4'),digest)
@@ -89,6 +97,22 @@ class NativeFourKPreparationTest(unittest.TestCase):
 
     def test_unreviewed_last_source_second_blocks_4k_preparation(self):
         self.exercise(336)
+
+
+class SelectedVideoPromptTest(unittest.TestCase):
+    def test_refinement_does_not_reenact_historical_image_prompt(self):
+        for identity in ('S01','S05','S07','S15','S20','S28','S44','S47','S48'):
+            with self.subTest(identity=identity):
+                prompt = worker.refinement_prompt({'id':identity,'mode':'H',
+                    'generationAction':'REJECTED historical action <Picture 1> <Video 1>'})
+                self.assertIn('INPUT VIDEO',prompt)
+                self.assertNotIn('REJECTED',prompt)
+                self.assertNotIn('<Picture',prompt)
+                self.assertNotIn('<Video',prompt)
+                self.assertIn('No real human face',prompt)
+        self.assertIn('LEFT backhand',worker.refinement_prompt({'id':'S01','mode':'H'}))
+        self.assertIn('CLOSED',worker.refinement_prompt({'id':'S44','mode':'H'}))
+        self.assertIn('two uncrossed attached arms',worker.refinement_prompt({'id':'S47','mode':'H'}))
 
 
 if __name__ == '__main__':
