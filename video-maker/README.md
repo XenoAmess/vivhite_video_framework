@@ -8,6 +8,8 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.maker`。
 
 同一文档另列 BF16 原生1344×768与逐镜2560×1440重生成入口，以及印花细节检查和另存修订工具。印花跟踪的 `--max-scale` 可显式适配已观察到的镜头推近，默认上限2.5倍；技术成功仍须实际逐帧检查，不能自动作为成片内容通过的结论。
 
+局部纹理稳定、场景原图回贴、慢放插帧、完整源帧复核、标题和固定时长装配，另见[后处理方法与代码索引](../docs/autumn-journey-video-postprocessing.md)。
+
 具体创作材料按[系列、课题和期号](../series/README.md)管理，本模块保存可复用的制作能力。任何新文案或改稿先读取外部私有角色仓库的完整人格，再按[角色与文案审核规约](../docs/character-workflow.md)检查人格一致性及信息披露；审核状态必须对应当前文案和人格版本。
 
 逆序数课题已制作三期完整视频：第一期 [v3 制作记录](../series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v3.md)（10:55）、第二期 [矩形棋盘证明](../series/math-education/inversion-count/episodes/02-rectangle-proof/docs/production-v1.md)（18:29.3）、第三期 [Wilson 定理证明](../series/math-education/inversion-count/episodes/03-wilson-theorem/docs/production-v1.md)（32:24）。配音为晓晓，人物为可替换的图片占位。`produce` 生成成片，`preview` 生成技术预览；历史 `render` 命令仍仅导出导演稿文档。未来制作沿用[默认约定](../docs/video-production-defaults.md)。
