@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "vivhite-rejected-source-1",
+  "sourcePlanSha256": "a3dfb2aca6f99cd6101ac326b9ea50cb62bc2268d09bbe791a602afde0c9b699",
+  "decision": {
+    "id": "S48",
+    "sourceSha256": "aae9a63c263dda096a4a26edf52835a3391bce12c7ddf4330bde57ff56c4722c",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-17T03:45:12.075052+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 240,
+    "actualFinalUsedNativeFrames": 240,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-aae9a63c26-all-frames-01.png",
+        "sha256": "690f719cddfa9c8abd3378a646ee2d76f0bf97ef3ebdfad796c3fe5640925b63",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-aae9a63c26-all-frames-02.png",
+        "sha256": "3df03e114a7c8319d037aa751417087e049047d1127b6917754b4e0583dafb87",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-aae9a63c26-all-frames-03.png",
+        "sha256": "1ccabfc7e4932619ecb916a51395e8fb4303d9f72d708197e82bcc7a8f155325",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-aae9a63c26-all-frames-04.png",
+        "sha256": "5d3bbcbba2591393919dd623684db4ac19225cd4093ad230ca207d64f671e3e3",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-aae9a63c26-all-frames-05.png",
+        "sha256": "0149eabbf0fa75b6080390ccbcfd5ed8beb13831765f3f9e9d6a19e529d3a733",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-aae9a63c26-all-frames-06.png",
+        "sha256": "6ab23ee36c81be0862f1cfa0270bc611a07361d1b0a34ade93c9f4b60370e694",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-aae9a63c26-all-frames-07.png",
+        "sha256": "38f062d3b00e107e1174400712f6a022d0bc36932313b9c1d1042291329758c6",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-aae9a63c26-all-frames-08.png",
+        "sha256": "732f98dc3c48b122172bd0cd2833855e93bb5123cb1ccb54792e554a82bc5a66",
+        "items": 16
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-aae9a63c26-face-candidates.png",
+      "sha256": "c14a88e2ed9aefbb51b2c6ffcc364a3a6825b1dd8f131938ec88e77a913d3488",
+      "items": 6
+    },
+    "observation": "Viewed all 240 native frames in eight complete scene sheets and all six detector crops, and compared the actual original S48-v2 scene. The empty coast abruptly cuts to an invented flower bed at frame 67 and back to the coast at frame 199. Butterfly wings also flutter rapidly instead of the required calm motion. No actual person or human face is visible; candidate crops are flowers and vegetation. Reject the complete native ten-second generation for continuity and reference appearance. All raw, canonical and inspection evidence retained. No final-film approval.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "failed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "originalsPreserved": true
+}

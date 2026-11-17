@@ -73,6 +73,23 @@ class LocalPipelineTest(unittest.TestCase):
             with self.subTest(exceptions=exceptions), self.assertRaises(ValueError):
                 worker.validate({**plan,'shotDurationExceptions':exceptions})
 
+    def test_ten_second_closing_keeps_native_request_and_both_declared_exceptions(self):
+        plan = self.plan()
+        plan['shots'][0].update(id='S20',seconds=10,sourceSeconds=10)
+        plan['shots'][1].update(id='S48',seconds=10,sourceSeconds=10,startFrame=300,
+                                seed=48,references=['closing.png'])
+        plan.update(totalFrames=600,shotDurationExceptions={'S20':10,'S48':10})
+        worker.validate(plan)
+        self.assertEqual(worker.source_frame_count(plan['shots'][1]),240)
+        self.assertEqual(worker.payload_for(plan,plan['shots'][1],lambda _: {'file_id':'closing'})['seconds'],10)
+        single = {**plan,'shots':[{**plan['shots'][1],'startFrame':0}],
+                  'totalFrames':300,'shotDurationExceptions':{'S48':10}}
+        worker.validate(single)
+        with self.assertRaises(ValueError):
+            worker.validate({**single,'shotDurationExceptions':{'S20':10,'S48':10}})
+        with self.assertRaises(ValueError):
+            worker.validate({**plan,'shotDurationExceptions':{'S20':10}})
+
     def test_explicit_target_skip_never_submits_a_rejected_reference_shot(self):
         shots = [{'id':identity} for identity in ('S41','S42','S43','S44')]
         target = worker.select_target_shots(shots,'S44',None,'S43')

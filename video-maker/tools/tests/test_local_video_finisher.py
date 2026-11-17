@@ -46,6 +46,15 @@ class LocalFinisherTest(unittest.TestCase):
             self.assertEqual(int(probe['streams'][0]['nb_read_frames']),300)
             self.assertEqual(float(probe['streams'][0]['duration']),10)
 
+    def test_final_inspection_accepts_both_real_long_shots_but_not_undeclared_closing(self):
+        plan = {'fps':30,'shotDurationExceptions':{'S20':10,'S48':10},
+                'shots':[{'id':'S20','seconds':10},{'id':'S48','seconds':10}]}
+        validate_timing(plan)
+        with self.assertRaisesRegex(ValueError,'exception'):
+            validate_timing({**plan,'shotDurationExceptions':{'S20':10}})
+        with self.assertRaisesRegex(ValueError,'exception'):
+            validate_timing({**plan,'shots':[{'id':'S20','seconds':10}]})
+
     def test_native_size_assembly_preserves_old_result_when_a_source_changes(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

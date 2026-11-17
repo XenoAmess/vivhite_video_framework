@@ -48,8 +48,8 @@ def contained(owner, relative):
 def validate(plan):
     draft = plan.get('stage') == 'draft'
     exceptions = plan.get('shotDurationExceptions',{})
-    if exceptions not in ({},{'S20':10}):
-        raise ValueError('Only the explicitly requested S20 ten-second exception is allowed')
+    if exceptions not in ({},{'S20':10},{'S48':10},{'S20':10,'S48':10}):
+        raise ValueError('Only the explicitly requested S20/S48 ten-second exceptions are allowed')
     expected = ('fasth3-omni-bf16',1344,768) if draft else ('open-h3-2k',2560,1440)
     if (plan.get('schemaVersion') != 'vivhite-local-two-stage-video-1'
             or plan.get('stage') not in ('draft','refine')
@@ -70,8 +70,9 @@ def validate(plan):
         frame += shot['seconds']*30
     if not identities or frame != plan['totalFrames']:
         raise ValueError('Timeline does not match total frames')
-    if exceptions and not any(shot['id']=='S20' and shot['seconds']==10 for shot in plan['shots']):
-        raise ValueError('The declared S20 exception must be an actual continuous ten-second shot')
+    if any(not any(shot['id']==identity and shot['seconds']==seconds for shot in plan['shots'])
+           for identity,seconds in exceptions.items()):
+        raise ValueError('Every declared exception must be an actual continuous ten-second shot')
 
 
 def source_frame_count(shot):

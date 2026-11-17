@@ -1,8 +1,8 @@
 # 第一期：秋日旅程
 
-- [下载原生768P完整影片及导演稿（GitHub Release）](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v6-768p-20261117)。
-- [当前导演案 v6](director-v6.md)：48镜、196秒；S20恢复一个连续10秒镜头，其余47镜2–5秒。[1344×768成片已交付](production/production-v6-768p.md)，正在逐镜制作2560×1440版；[此前预计节点](production/schedule-768p-2k-v2.json)与[开工前估算](production/schedule-768p-2k-v1.json)保留。
-- [实际768P交付清单](delivery-plan-v6-768p.json)、[最终768P合成计划](final-assembly-plan-v6-768p.json)、[2K逐镜输入计划](production-plan-v6-local-2k.json)。[旧批次进度快照](production/run-progress-v5.json)对应49镜v5，新版48镜进度见[当前快照](production/run-progress-v6.json)。原片、失败版本及S20A/S20B全部保留。
+- [下载v7原生768P完整影片及导演稿（GitHub Release）](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v7-768p-20261117)；[v6 Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v6-768p-20261117)完整保留。
+- [当前导演案 v7](director-v7.md)：48镜、201秒；S20与片尾S48各连续10秒，其余46镜2–5秒。片尾中英文标题与片头完全一致，第三行献词延迟缓慢浮现。[实际制作记录](production/production-v7-768p.md)保留源片和编码检查范围。全部2K任务已取消，自动续跑关闭；[停止收据](production/stopped-2k-20261117.json)。此前预计节点仅作历史记录，不再作为2K交付承诺。
+- [实际768P交付清单](delivery-plan-v7-768p.json)、[最终768P合成计划](final-assembly-plan-v7-768p.json)与[最终编码复核](production/final-review-v7-768p.json)。[2K旧输入计划](production-plan-v6-local-2k.json)、[v5旧进度](production/run-progress-v5.json)和[v6进度与取消状态](production/run-progress-v6.json)归档保留。原片、失败版本及S20A/S20B全部保留。
 - [S17按原画重做计划](production-plan-v5-S17-image-only-r3.json)：旧闭眼慢放片已撤销通过，不能用于成片或2K；追加核对所有周边的眼睛、眼镜及脸部比例。处理收据不代表实际外观审核通过。
 - [本轮制作与完整中间材料位置](production/production-v5.md)：模型、计时、返工、768P／2K检查范围及跨机器恢复要求。
 - [历史导演案 v3](director.md)：旧版48镜、202秒，原文件和已交付影片完整保留。
@@ -13,13 +13,13 @@
 - [素材清单](reference-assets.json)：用户 ZIP 中 11 张图的指纹与使用范围。
 - [期清单](episode.json)：稳定 ID、角色与导演稿入口。
 
-本期要求：白绮全程不说话，不设旁白、内心独白或对白字幕；用音乐与环境声连接世界各处的旅行片段。S20连续10秒，其余每镜2–5秒；真实感人物只拍不露脸的局部，反射和背景也不能带出真人面孔。周边印刷角色图与二维贴纸可以显示白绮的绘制面孔，必须保持原图的睁眼与稳定印花。
+本期要求：白绮全程不说话，不设旁白、内心独白或对白字幕；用音乐与环境声连接世界各处的旅行片段。S20、S48各连续10秒，其余每镜2–5秒；真实感人物只拍不露脸的局部，反射和背景也不能带出真人面孔。周边印刷角色图与二维贴纸可以显示白绮的绘制面孔，必须保持原图的睁眼与稳定印花。
 
 所有出场人物为女性，真人局部的女性化服装贴近白绮设定图；已生成的普通旅行衣着版本保留归档，但不作为制作输入。原图中没有的无关人员即使不露脸也拒收，范围包括远景、身体局部与倒影。
 
 本地 Ref2VA 源片、修订源片及带音轨与片名的完整 MP4 已制作，时间轴为 202 秒／6060 帧。源片 832×480／24fps，最终上采样并统一为 1920×1080／30fps。成片在仓库外 `../vivhite-analysis-output/vivhite/autumn-journey/production-v3-realism-002/film.mp4`。原图解压副本留在仓库外，公开工程不保存原 ZIP 或原图。
 
-最新 v4 影片在仓库外 `../vivhite-analysis-output/vivhite/autumn-journey/production-v4-closing-001/film.mp4`；同目录 `closing-preview.mp4` 为最后 6 秒。S48 为平静慢放的无人海岸与蓝蝶，文字严格为“白绮|秋日旅程”“献给最可爱的你”；不显示模型、工具或音乐制作署名。其他 47 镜沿用 v3，原导演稿的旧 S48 说明由本次合成计划覆盖。
+历史 v4 影片在仓库外 `../vivhite-analysis-output/vivhite/autumn-journey/production-v4-closing-001/film.mp4`；同目录 `closing-preview.mp4` 为当时的最后6秒。此旧版两行文字和时间不适用于v7。当前v7成片位于 `../vivhite-analysis-output/vivhite/autumn-journey/production-v7-bf16-768p-001/film.mp4`，48镜、201秒／6030帧、1344×768／30fps。
 
 导演案、图像说明与实际制作计划独立审核，`reviews/` 保存脚本导出的绑定收据，详细依据只在私有角色库维护。以每个文件的实际 SHA-256 选取收据；历史收据只属于对应旧稿。审核方式为 `assistant-semantic-review`，不代表人工看过影片或最终美术验收。
 

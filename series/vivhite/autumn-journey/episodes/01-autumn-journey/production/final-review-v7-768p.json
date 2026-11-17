@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "vivhite-final-film-review-1",
+  "filmSha256": "80acb7f079e121b4d56f92db17e72e1d12024449b24c6c6c56a999121c5dd21e",
+  "planSha256": "bfa1ecaec66c8e1a0bb255d6874dc3a484f9e8bac4c28150d0149fac3216cf35",
+  "reviewedAt": "2026-11-17T04:09:54.928649+00:00",
+  "method": "assistant-source-and-encoded-evidence-review",
+  "completeSourceNativeFrames": 6000,
+  "usedSourceNativeFrames": 4824,
+  "machineDecodedAndComparedFinalFrames": 6030,
+  "finalFrameMinimumPsnrOutsideTitles": 39.468,
+  "lowSimilarityFrames": 0,
+  "viewedFinalShotSamples": 48,
+  "viewedDetectorCrops": 84,
+  "viewedAllCandidateSheets": 18,
+  "viewedTitleFadeSamples": 13,
+  "observation": "Complete selected native sources have separate actual frame-sheet, original artwork and tracked-print reviews. First 47 clips remain byte-identical to delivered v6; all 240 frames of the new continuous ten-second S48 were actually viewed. All 6030 encoded frames were decoded and compared with the selected picture outside the declared title region. All 48 final scene samples, all 84 exported detector crops across 18 sheets, and all 13 title/fade samples were actually viewed for this final film. Candidate crops show permitted illustrated merchandise faces, pouch and costume details, grass and leaves; no real human facial fragment or unrelated person was identified. Native final frames verify exactly shared opening/closing first two lines, no dedication immediately before 194 seconds, half-opacity dedication at 194.9 seconds and full dedication at 196.3 seconds. The original coast remains continuous with slow butterfly wings; inherited soft graphic motion trail remains and is not claimed repaired. No production credit is displayed. This evidence review is not continuous human playback or listening.",
+  "humanFullPlayback": false,
+  "humanListening": false,
+  "audioEvidence": {
+    "schemaVersion": "vivhite-final-audio-comparison-1",
+    "filmSha256": "80acb7f079e121b4d56f92db17e72e1d12024449b24c6c6c56a999121c5dd21e",
+    "soundtrackSha256": "a1abbe86907be13d9e48b94cfb26ca11ac08876c7b7cff57736fd935cedc7eec",
+    "expectedSamplesPerChannel": 9648000,
+    "decodedAacSamplesPerChannel": 9648128,
+    "decodedPcmCorrelationWithBoundProceduralWav": 0.9997140442416577,
+    "allFourSecondIntervalsAnalysed": [
+      {
+        "startSeconds": 0,
+        "peak": 0.477112,
+        "rms": 0.102494
+      },
+      {
+        "startSeconds": 4,
+        "peak": 0.421844,
+        "rms": 0.112149
+      },
+      {
+        "startSeconds": 8,
+        "peak": 0.490234,
+        "rms": 0.111643
+      },
+      {
+        "startSeconds": 12,
+        "peak": 0.54071,
+        "rms": 0.1156
+      },
+      {
+        "startSeconds": 16,
+        "peak": 0.470612,
+        "rms": 0.108849
+      },
+      {
+        "startSeconds": 20,
+        "peak": 0.576752,
+        "rms": 0.135401
+      },
+      {
+        "startSeconds": 24,
+        "peak": 0.624878,
+        "rms": 0.12969
+      },
+      {
+        "startSeconds": 28,
+        "peak": 0.604614,
+        "rms": 0.114614
+      },
+      {
+        "startSeconds": 32,
+        "peak": 0.65799,
+        "rms": 0.127825
+      },
+      {
+        "startSeconds": 36,
+        "peak": 0.489136,
+        "rms": 0.104384
+      },
+      {
+        "startSeconds": 40,
+        "peak": 0.749207,
+        "rms": 0.160195
+      },
+      {
+        "startSeconds": 44,
+        "peak": 0.759918,
+        "rms": 0.154598
+      },
+      {
+        "startSeconds": 48,
+        "peak": 0.765015,
+        "rms": 0.142604
+      },
+      {
+        "startSeconds": 52,
+        "peak": 0.759949,
+        "rms": 0.135694
+      },
+      {
+        "startSeconds": 56,
+        "peak": 0.539703,
+        "rms": 0.124244
+      },
+      {
+        "startSeconds": 60,
+        "peak": 0.632385,
+        "rms": 0.130594
+      },
+      {
+        "startSeconds": 64,
+        "peak": 0.633453,
+        "rms": 0.127854
+      },
+      {
+        "startSeconds": 68,
+        "peak": 0.584961,
+        "rms": 0.113208
+      },
+      {
+        "startSeconds": 72,
+        "peak": 0.549347,
+        "rms": 0.117541
+      },
+      {
+        "startSeconds": 76,
+        "peak": 0.44931,
+        "rms": 0.101259
+      },
+      {
+        "startSeconds": 80,
+        "peak": 0.442688,
+        "rms": 0.0855
+      },
+      {
+        "startSeconds": 84,
+        "peak": 0.372284,
+        "rms": 0.082107
+      },
+      {
+        "startSeconds": 88,
+        "peak": 0.437286,
+        "rms": 0.07936
+      },
+      {
+        "startSeconds": 92,
+        "peak": 0.367126,
+        "rms": 0.08
+      },
+      {
+        "startSeconds": 96,
+        "peak": 0.3927,
+        "rms": 0.080425
+      },
+      {
+        "startSeconds": 100,
+        "peak": 0.343994,
+        "rms": 0.072809
+      },
+      {
+        "startSeconds": 104,
+        "peak": 0.367828,
+        "rms": 0.087874
+      },
+      {
+        "startSeconds": 108,
+        "peak": 0.460754,
+        "rms": 0.076673
+      },
+      {
+        "startSeconds": 112,
+        "peak": 0.453827,
+        "rms": 0.082465
+      },
+      {
+        "startSeconds": 116,
+        "peak": 0.414215,
+        "rms": 0.076054
+      },
+      {
+        "startSeconds": 120,
+        "peak": 0.603363,
+        "rms": 0.131161
+      },
+      {
+        "startSeconds": 124,
+        "peak": 0.630859,
+        "rms": 0.132329
+      },
+      {
+        "startSeconds": 128,
+        "peak": 0.577362,
+        "rms": 0.119923
+      },
+      {
+        "startSeconds": 132,
+        "peak": 0.669678,
+        "rms": 0.125879
+      },
+      {
+        "startSeconds": 136,
+        "peak": 0.507141,
+        "rms": 0.112867
+      },
+      {
+        "startSeconds": 140,
+        "peak": 0.539551,
+        "rms": 0.125238
+      },
+      {
+        "startSeconds": 144,
+        "peak": 0.650696,
+        "rms": 0.126801
+      },
+      {
+        "startSeconds": 148,
+        "peak": 0.606873,
+        "rms": 0.112243
+      },
+      {
+        "startSeconds": 152,
+        "peak": 0.650269,
+        "rms": 0.119272
+      },
+      {
+        "startSeconds": 156,
+        "peak": 0.408722,
+        "rms": 0.098963
+      },
+      {
+        "startSeconds": 160,
+        "peak": 0.525848,
+        "rms": 0.116932
+      },
+      {
+        "startSeconds": 164,
+        "peak": 0.56781,
+        "rms": 0.12078
+      },
+      {
+        "startSeconds": 168,
+        "peak": 0.562805,
+        "rms": 0.113637
+      },
+      {
+        "startSeconds": 172,
+        "peak": 0.53891,
+        "rms": 0.115052
+      },
+      {
+        "startSeconds": 176,
+        "peak": 0.503815,
+        "rms": 0.107894
+      },
+      {
+        "startSeconds": 180,
+        "peak": 0.547424,
+        "rms": 0.117008
+      },
+      {
+        "startSeconds": 184,
+        "peak": 0.568359,
+        "rms": 0.11725
+      },
+      {
+        "startSeconds": 188,
+        "peak": 0.402985,
+        "rms": 0.089836
+      },
+      {
+        "startSeconds": 192,
+        "peak": 0.395325,
+        "rms": 0.07467
+      },
+      {
+        "startSeconds": 196,
+        "peak": 0.32666,
+        "rms": 0.063211
+      },
+      {
+        "startSeconds": 200,
+        "peak": 0.11322,
+        "rms": 0.019013
+      }
+    ],
+    "modelAudioInMix": false,
+    "method": "Complete AAC decode and numerical comparison to the exact bound procedural WAV; no claim of human listening."
+  },
+  "twoKStatus": "stopped-by-user",
+  "automaticTwoKResumeAllowed": false,
+  "noSpeech": "passed",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "referenceAppearance": "passed",
+  "merchandiseBehavior": "passed",
+  "motionAndContinuity": "passed",
+  "titleAndClosing": "passed"
+}

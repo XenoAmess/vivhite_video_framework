@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 7,
+  "model": "fasth3-omni-bf16",
+  "stage": "draft",
+  "fps": 30,
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 300,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "numInferenceSteps": 8,
+  "decoderLayers": 36,
+  "decoderVerification": "GET /v1/models on 2026-11-16",
+  "titleOverlays": [],
+  "closingCredit": "",
+  "shots": [
+    {
+      "id": "S48",
+      "seconds": 10,
+      "sourceSeconds": 10,
+      "startFrame": 0,
+      "seed": 2026111748,
+      "mode": "I",
+      "action": "One continuous ten-second unoccupied coast with the same tiny blue corner butterfly. Opening title and English subtitle are repeated in the same style, then a third dedication line fades in slowly below them. Text is added only during finishing.",
+      "soundDescription": "海声与器乐尾音。",
+      "prompt": "One uninterrupted ten-second realistic travel shot of the exact original ordinary coast in <Picture 1>. Preserve the same empty stony and sandy shore, natural sea, distant coastal houses, roadside rail, utility poles, cloud patterns and subdued dusk light. Preserve the exact original tiny blue butterfly graphic in its lower-right corner; it is not a new animal and does not fly away or move around. Its two wings open and close extremely slowly and smoothly, approximately four seconds per complete cycle, with a peaceful almost-still rhythm and gentle pauses at the open and closed positions. No rapid flutter, vibration or flicker. The camera is completely steady. Only restrained natural waves move continuously. Keep the same exact object count and ordinary real-world colors; no scenic beautification, invented flowers, toys, magical light or new object. The scene is unoccupied by any person throughout. No person, body, hand, human face or facial fragment, silhouette or reflected person anywhere, including houses and road. No camera cut, new scene, zoom, readable text, title, subtitle, credits, speech, singing, humming, laughter or other voice. Keep the broad sky clean and unlettered for later typography.",
+      "references": [
+        "assets/generated/production-v3-realism-001/scenes/S48-v2.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/I01-butterfly-v1.png",
+      "generationAction": "Keep the same original empty coast in one continuous locked ten-second view. The existing tiny blue butterfly stays anchored in the same lower-right corner, opening and closing its two wings very slowly over approximately four seconds per complete cycle. Gentle ordinary waves continue. No lettering."
+    }
+  ],
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "2560x1440",
+    "sampler": "up3",
+    "seed": 1234,
+    "startCondition": "Disabled until a new explicit user request; do not automatically resume.",
+    "scope": "Local video regeneration through port 8002; not a closed-source MiniMax teacher model.",
+    "status": "stopped-by-user"
+  },
+  "baselinePlanSha256": "340d08e908a1315aec57d4834c995afec91cc7018040461ae89023fccd298e01",
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "Preserve raw alignment tails. S20 and S48 each have 240 native frames at 24fps; other sources have 120. Final film is 6030 frames at 30fps, 201 seconds.",
+  "promptRevision": {
+    "id": "continuous-S20-and-reference-appearance-006",
+    "reason": "User restored S20 to one continuous ten-second lake shot and requires faithful original open-eye merchandise, especially acrylic artwork."
+  },
+  "shotDurationExceptions": {
+    "S48": 10
+  },
+  "referenceAppearanceRequired": true,
+  "scope": "Single continuous ten-second S48 source generation for the revised native 768p closing. No 2K submission.",
+  "director": "director-v7.md",
+  "previousProductionPlanSha256": "969f073bced763c04b0ce44de4094218521ac37e79fcd2012101968fafbe41c8",
+  "sourceContinuation": "Reuse the exact reviewed S01-S47 sources from v6 with their full provenance. Generate a new continuous ten-second S48 using its original scene only, with no faulty old motion reference. All previous films and assets remain unchanged."
+}

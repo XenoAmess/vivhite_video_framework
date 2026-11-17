@@ -2,17 +2,17 @@
 
 本目录是内容子项目，沿用“系列／课题／期”的组织方式。
 
-当前[导演案 v6](episodes/01-autumn-journey/director-v6.md)以无对白的多地点旅行蒙太奇展示白绮在多彩世界中的自由旅行；48镜、196秒，S20为一个连续10秒高山湖长镜，其余47镜2–5秒。此前两个5秒湖景及导演案v5归档保留。BF16 FastH3、36层解码器制作的原生1344×768全片已交付，正在逐镜调用本地2K接口制作2560×1440版，2K输出另行审核。真实感人物以手、衣袖、腿脚等不露脸局部，与白绮贴纸、玩偶、周边及意象同框；场景保留普通世界的天气、植被、日常设施和使用痕迹。
+当前[导演案 v7](episodes/01-autumn-journey/director-v7.md)以无对白的多地点旅行蒙太奇展示白绮在多彩世界中的自由旅行；48镜、201秒，S20为一个连续10秒高山湖长镜，S48片尾也为10秒，其余46镜2–5秒。片尾完全复用片头中英文标题，再缓慢浮现“献给世界上最可爱的你”。BF16 FastH3、36层解码器制作的原生1344×768素材组成新版完整影片，[制作与审核记录](episodes/01-autumn-journey/production/production-v7-768p.md)区分完整源帧、编码对照和人工验收。全部2K任务已停止，不自动恢复；旧版与中间材料保留。真实感人物以手、衣袖、腿脚等不露脸局部，与白绮贴纸、玩偶、周边及意象同框；场景保留普通世界的天气、植被、日常设施和使用痕迹。
 
 制作补充：所有出场人物均为女性，女性化服装贴近白绮设定图；静默、不露脸与短镜头要求适用于成片全部帧。原图中没有的无关人员，即使不露脸也拒收。
 
-最新[片尾修订 v4](episodes/01-autumn-journey/production/production-v4.md)将 S48 蓝蝶放慢到原速的 1/8，天空只显示“白绮|秋日旅程”和“献给最可爱的你”，不显示制作署名。完整影片与单独片尾已另存；原 v3 成片与导演稿保持归档，新片尾以[合成计划 v5](episodes/01-autumn-journey/final-assembly-plan-v5.json)为准。
+历史[片尾修订 v4](episodes/01-autumn-journey/production/production-v4.md)与原v3成片保持归档。当前v7片尾以[实际合成计划](episodes/01-autumn-journey/final-assembly-plan-v7-768p.json)为准；采用已通过的v6海岸连续慢放至10秒，蓝蝶周期约8秒，无制作署名。
 
 - 主人公：白绮，英文名 Vivhite；角色 ID 为 `vivhite`。
-- [原生768P新版成片](episodes/01-autumn-journey/production/production-v6-768p.md)：1344×768、196秒、48镜；2K逐镜重生成正在运行。
+- [v7原生768P成片与交付记录](episodes/01-autumn-journey/production/production-v7-768p.md)：1344×768、201秒、48镜；[新版Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v7-768p-20261117)。[v6 Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v6-768p-20261117)保留；2K已停止。
 
 - [第一期清单](episodes/01-autumn-journey/episode.json)。
-- [当前导演案 v6](episodes/01-autumn-journey/director-v6.md)、[两段湖景版v5](episodes/01-autumn-journey/director-v5.md)与[历史导演案 v3](episodes/01-autumn-journey/director.md)。
+- [当前导演案 v7](episodes/01-autumn-journey/director-v7.md)、[历史v6](episodes/01-autumn-journey/director-v6.md)、[两段湖景版v5](episodes/01-autumn-journey/director-v5.md)与[历史导演案 v3](episodes/01-autumn-journey/director.md)。
 - [周边与图像生成说明](episodes/01-autumn-journey/image-briefs.md)。
 - [背景音乐实际生成方法与复现](../../../docs/autumn-journey-music-generation.md)。
 - [参考导演案](../../../docs/analysis/BV1nB3u6tEHD/director.md)。

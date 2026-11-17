@@ -1,6 +1,6 @@
 {
   "schemaVersion": "vivhite-local-production-progress-v6-1",
-  "snapshotAt": "2026-11-17T02:02:33.567746+00:00",
+  "snapshotAt": "2026-11-17T04:01:10.785655+00:00",
   "targetPlanSha256": "969f073bced763c04b0ce44de4094218521ac37e79fcd2012101968fafbe41c8",
   "totalShots": 48,
   "totalSeconds": 196,
@@ -11,6 +11,8 @@
   "final768FilmDelivered": true,
   "final2KFilmDelivered": false,
   "refinement2K": {
+    "status": "stopped-by-user",
+    "automaticResumeAllowed": false,
     "totalShots": 48,
     "completedSources": 0,
     "acceptedSources": 0,
@@ -180,9 +182,9 @@
       {
         "id": "S17",
         "jobId": "video_gen_7970e0d49fd5465489b48602211456a2",
-        "status": "in_progress",
-        "serverStage": "准备同模型批量重生成",
-        "serverReportedJobProgress": 10,
+        "status": "cancelled",
+        "serverStage": "任务已取消",
+        "serverReportedJobProgress": 0,
         "inferenceSeconds": null,
         "sourceSha256": null,
         "acceptedWithReferenceComparison": false
@@ -210,9 +212,9 @@
       {
         "id": "S20",
         "jobId": "video_gen_4a26b1e5d44a4731b0c5565dc4b3e713",
-        "status": "in_progress",
-        "serverStage": "2K 同模型批量计算（本批 2 个窗口）",
-        "serverReportedJobProgress": 35,
+        "status": "cancelled",
+        "serverStage": "任务已取消",
+        "serverReportedJobProgress": 0,
         "inferenceSeconds": null,
         "sourceSha256": null,
         "acceptedWithReferenceComparison": false

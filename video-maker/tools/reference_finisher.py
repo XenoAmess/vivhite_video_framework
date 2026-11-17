@@ -218,6 +218,9 @@ Style: Credit,Microsoft YaHei,24,&H00FFFFFF,&H00FFFFFF,&H50251B30,&H80251B30,0,0
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
+    if any(overlay.get('dedication') for overlay in plan['titleOverlays']):
+        style = 'Style: Dedication,Microsoft YaHei,30,&H00F4EBE6,&H00FFFFFF,&H50251B30,&H80251B30,0,0,0,0,100,100,2,0,1,1,1,7,114,80,260,1\n'
+        text = text.replace('\n[Events]\n','\n'+style+'\n[Events]\n')
     for overlay in plan["titleOverlays"]:
         shot = next(s for s in plan["shots"] if s["id"] == overlay["shotId"])
         start = shot["startFrame"] / plan["fps"] + .4
@@ -226,6 +229,17 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             if any(c in value for c in "{}\n\r\\"):
                 raise ValueError("Title text cannot contain ASS control characters")
             text += f"Dialogue: 0,{ass_time(start)},{ass_time(end)},{style},,0,0,0,,{{\\fad(350,400)}}{value}\n"
+        if overlay.get('dedication'):
+            value = overlay['dedication']
+            delay = overlay.get('dedicationDelaySeconds',3)
+            fade_in = overlay.get('dedicationFadeInMs',1800)
+            if (not isinstance(value,str) or any(c in value for c in '{}\n\r\\')
+                    or not isinstance(delay,(int,float)) or isinstance(delay,bool) or not math.isfinite(delay)
+                    or delay < .75 or not isinstance(fade_in,int) or isinstance(fade_in,bool)
+                    or not 350 <= fade_in <= 5000 or delay+fade_in/1000+1.5 > shot['seconds']-.35):
+                raise ValueError('Dedication must appear after the title and leave sufficient reading time inside its shot')
+            dedication_start = shot['startFrame']/plan['fps']+delay
+            text += f"Dialogue: 0,{ass_time(dedication_start)},{ass_time(end)},Dedication,,0,0,0,,{{\\fad({fade_in},400)}}{value}\n"
         credit = plan.get("closingCredit", LEGACY_CLOSING_CREDIT) if shot["id"] == "S48" else ""
         if any(c in credit for c in "{}\n\r\\"):
             raise ValueError("Credit text cannot contain ASS control characters")

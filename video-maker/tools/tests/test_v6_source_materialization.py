@@ -92,6 +92,28 @@ class SourceMaterializationTest(unittest.TestCase):
                         worker.materialize(base, target)
                 self.assertFalse(target.exists())
 
+    def test_imported_source_keeps_its_real_job_instead_of_a_new_rejected_attempt(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory=Path(temporary)
+            episode,base,origin,source,_=self.fixture(directory)
+            write_json(origin/'generation-plan.json',{'origin':'real earlier generation'})
+            write_json(origin/'generation-job.json',{'jobId':'real-earlier-job',
+                'planSha256':sha(origin/'generation-plan.json')})
+            write_json(origin/'processing.json',{'scope':'Unit fixture, no semantic approval'})
+            write_json(origin/'source-selections.json',{'selections':{'S20':{
+                'path':'sources/S20.mp4','sha256':sha(source),'parent':'sources/S20.mp4',
+                'parentSha256':sha(source),'receipt':'processing.json',
+                'generationJobReceipt':'generation-job.json','generationPlan':'generation-plan.json'}}})
+            with patch.object(worker,'EP',episode),patch.object(worker,'ORIGINS',{'S20':('long-source','long.json')}):
+                target=base/'first-assembly'
+                worker.materialize(base,target)
+                imported=json.loads((target/'source-imports.json').read_text())
+                self.assertEqual(imported['shots'][0]['originJobReceipt']['jobId'],'real-earlier-job')
+                write_json(origin/'generation-plan.json',{'origin':'changed'})
+                with self.assertRaisesRegex(ValueError,'generation plan'):
+                    worker.materialize(base,base/'must-not-exist')
+                self.assertFalse((base/'must-not-exist').exists())
+
 
 if __name__ == '__main__':
     unittest.main()

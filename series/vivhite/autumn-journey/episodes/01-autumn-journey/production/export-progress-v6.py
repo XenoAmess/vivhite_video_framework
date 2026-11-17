@@ -61,7 +61,10 @@ def refinement_progress(base, plan, checks):
                      'sourceSha256': digest, 'acceptedWithReferenceComparison': accepted})
     completed = sum(bool(row['sourceSha256']) for row in rows)
     accepted = sum(row['acceptedWithReferenceComparison'] for row in rows)
-    return {'totalShots': len(rows), 'completedSources': completed, 'acceptedSources': accepted,
+    state = read(directory / 'run.json', {})
+    return {'status': state.get('status', 'not-started'),
+            'automaticResumeAllowed': state.get('automaticResumeAllowed', False),
+            'totalShots': len(rows), 'completedSources': completed, 'acceptedSources': accepted,
             'generationPercent': round(100 * completed / len(rows), 2),
             'acceptedPercent': round(100 * accepted / len(rows), 2), 'shots': rows,
             'scope': 'Actual 2K bytes and independent decisions only. Server job progress is not film completion.'}

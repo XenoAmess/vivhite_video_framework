@@ -102,3 +102,13 @@ worker只依赖Python标准库进行HTTP上传、提交、轮询与下载；检�
 768P成片实际交付并通过绑定检查后，`prepare_local_refinement.py` 从全部已审阅源片准备2K输入和新计划；S20保留完整10秒，其余为完整5秒，新计划须再次独立审核。之后使用同一生成worker调用8002的 `POST /v1/videos/regenerations`：`model=open-h3-2k`、`size=2560x1440`、`sampler=up3`。2K采用相同种子以便兼容队列的小批次，建议窗口2；每段结果重新检查、选择、合成和交付。10秒镜头须额外检查重生成窗口的连续性，不能仅凭接口支持该长度就宣称实际通过。该接口按所供文档为本地NVlabs/Sana替代重生成路线，不称作完整MiniMax H3教师模型。两阶段共享GPU，不能把耗时按两块GPU并行计算。
 
 本轮的初始预计节点见本期 `production/schedule-768p-2k-v1.json`；进度必须分别记录实际生成、语义接受和最终交付，不能将HTTP成功或仅源片到齐写成成片验收通过。
+
+## v7片尾10秒与延迟献词
+
+当前worker允许在 `shotDurationExceptions` 中分别显式声明 `S20: 10`、`S48: 10`；声明的镜头必须实际存在且恰为10秒，其他镜头仍限2–5秒。历史计划的默认行为不变。v7为48镜、201秒，两个例外均为连续单镜头。
+
+`titleOverlays` 的片尾项可增加 `dedication`、`dedicationDelaySeconds` 和 `dedicationFadeInMs`。前两行仍使用与片头相同的Title／Subtitle样式；献词另用Dedication样式，在镜头内延迟淡入，并保留完整阅读时间。没有献词的旧计划不新增该样式。实际v7使用3秒延迟、1800毫秒淡入；最终检查工具导出献词出现前、淡入中和完全显示的编码帧。
+
+`retime_local_clip.py --output-seconds 10` 可将已通过的连续素材另存为240帧／24fps的10秒候选，原默认仍为5秒。处理收据明确记录末端短暂边缘填充，不自动赋予外观或内容通过。v7素材导入由本期 `production/materialize-sources-v7.py` 调用共用校验器，保留原真实生成任务、原计划和完整修订链；不把被拒收的新生成任务写成沿用素材的来源。
+
+本项目全部2K任务已按用户最新要求停止，取消收据保存在本期 `production/stopped-2k-20261117.json`；上文2K命令和估算为历史接入记录，不代表继续执行授权。当前v7仅交付新版768P，旧版Release及所有中间文件保留。

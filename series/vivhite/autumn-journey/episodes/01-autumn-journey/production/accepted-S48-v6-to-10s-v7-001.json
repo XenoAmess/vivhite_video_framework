@@ -1,0 +1,316 @@
+{
+  "schemaVersion": "vivhite-accepted-source-correction-1",
+  "sourcePlanSha256": "a3dfb2aca6f99cd6101ac326b9ea50cb62bc2268d09bbe791a602afde0c9b699",
+  "selection": {
+    "path": "corrections/S48-v6-slow2-10s-v1.mp4",
+    "sha256": "361c1d66448a0ece1fd62d9b71440958d6ce1d4bf8dcb44b984e2a9eb728d226",
+    "parent": "generation-revisions/S48-v6-accepted-5s/source.mp4",
+    "parentSha256": "a5dc756dd7d803b0cad9d80e86c28b5613e359f11ef2b8de1f4308bc360e7233",
+    "receipt": "corrections/S48-v6-slow2-10s-v1.json",
+    "processingChain": [
+      "generation-revisions/S48-v6-accepted-5s/old-retime-receipt.json"
+    ],
+    "inspectionReport": "clip-inspection-corrected/S48.json",
+    "generationJobReceipt": "generation-revisions/S48-v6-accepted-5s/origin-job.json",
+    "generationPlan": "generation-revisions/S48-v6-accepted-5s/origin-generation-plan.json",
+    "unusedRejectedLocalJobReceipt": "jobs/S48.json",
+    "scope": "Selected coast originates in the previously accepted v6 five-second source and its real original job, not in the rejected new ten-second API attempt."
+  },
+  "processingReceipts": [
+    {
+      "schemaVersion": "vivhite-local-retime-candidate-1",
+      "identity": {
+        "parentSha256": "a5dc756dd7d803b0cad9d80e86c28b5613e359f11ef2b8de1f4308bc360e7233",
+        "factor": 2.0,
+        "frames": 240,
+        "fps": 24,
+        "recipe": "trim-setpts-edgepad-mci-ten-seconds-3",
+        "workerSha256": "304893b947165c76acb6fa8dd03e00eabe494130ba3dc0d654c9d5ca92e6dd8b",
+        "edgePaddingSeconds": 0.25
+      },
+      "sha256": "361c1d66448a0ece1fd62d9b71440958d6ce1d4bf8dcb44b984e2a9eb728d226",
+      "reason": "Extend the exact previously accepted uninterrupted v6 coast from five to ten seconds with optical flow. The new native ten-second attempt has hard cuts and invented flowers and is rejected. Preserve every original; no loop, stitched shot, new scenery or person is introduced. The existing calm butterfly cycle becomes approximately eight seconds.",
+      "nativeSize": [
+        1344,
+        768
+      ],
+      "durationSeconds": 10,
+      "sourceIntervalSeconds": [
+        0,
+        5.0
+      ],
+      "originalPreserved": true,
+      "semanticReview": "pending",
+      "entersFilm": false
+    },
+    {
+      "schemaVersion": "vivhite-local-retime-candidate-1",
+      "identity": {
+        "parentSha256": "b5039aafc96b23eac6fc36ad57dec17092664ea520d7d3cae0156b7642e157ce",
+        "factor": 3.0,
+        "frames": 120,
+        "fps": 24,
+        "recipe": "setpts-mci-aobmc-bidir-vsbmc-crf16-1",
+        "workerSha256": "4d1d37ede53b6d24006e04822d9d6a95ae72b5a80db8881707d678448a791404"
+      },
+      "sha256": "a5dc756dd7d803b0cad9d80e86c28b5613e359f11ef2b8de1f4308bc360e7233",
+      "reason": "The actual native 768P source preserves the empty coast and original graphic, but its blue wings cycle about every 1.4 seconds. Slow the entire uninterrupted shot threefold for a calm cycle near four seconds. Keep every original file and review this distinct five-second candidate before use.",
+      "nativeSize": [
+        1344,
+        768
+      ],
+      "durationSeconds": 5,
+      "sourceIntervalSeconds": [
+        0,
+        1.6666666666666667
+      ],
+      "originalPreserved": true,
+      "semanticReview": "pending",
+      "entersFilm": false
+    }
+  ],
+  "originGenerationJob": {
+    "shotId": "S48",
+    "status": "completed",
+    "requestSha256": "f8ae95ca739490095286d4802f6b2284663de8991e295a82248cd0a006025f8b",
+    "planSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
+    "submittedAt": "2026-11-16T12:22:31.624258+00:00",
+    "jobId": "video_gen_687f33294c044a1e9ce73ee71ebcb9d4",
+    "remote": {
+      "id": "video_gen_687f33294c044a1e9ce73ee71ebcb9d4",
+      "object": "video",
+      "model": "fasth3-omni-bf16",
+      "status": "completed",
+      "created_at": 1794831751,
+      "size": "1344x768",
+      "seconds": "5",
+      "progress": 100,
+      "stage": "生成完成",
+      "url": "/v1/videos/video_gen_687f33294c044a1e9ce73ee71ebcb9d4/content",
+      "result": {
+        "inference_time_s": 803.3339299540967,
+        "stage_durations": {
+          "input_preparation_stage": 1.4108585028443485,
+          "conditioning_stage": 44.9526307079941,
+          "latent_preparation_stage": 49.28800157806836,
+          "denoising_stage": 689.300091407029,
+          "video_decoding_stage": 16.178799391957,
+          "audio_decoding_stage": 0.9755222999956459,
+          "PostDecodeFrameProcessStage": 0.06295531918294728,
+          "VideoSaveStage": 0.23616471304558218,
+          "AudioMuxStage": 0.0
+        },
+        "size": "1344x768",
+        "seconds": "5",
+        "model": "fasth3-omni-bf16",
+        "backend_job": "video_gen_b5b83604ac1c4d17b23f3e2c6b5a83a9",
+        "sha256": "cf27de7dac0301c7a02d1cdb41d421cbaecb979fe5144475c20cf8fa98518c1b",
+        "cloud_used": false
+      },
+      "inference_time_s": 803.3339299540967,
+      "stage_durations": {
+        "input_preparation_stage": 1.4108585028443485,
+        "conditioning_stage": 44.9526307079941,
+        "latent_preparation_stage": 49.28800157806836,
+        "denoising_stage": 689.300091407029,
+        "video_decoding_stage": 16.178799391957,
+        "audio_decoding_stage": 0.9755222999956459,
+        "PostDecodeFrameProcessStage": 0.06295531918294728,
+        "VideoSaveStage": 0.23616471304558218,
+        "AudioMuxStage": 0.0
+      }
+    },
+    "updatedAt": "2026-11-16T12:36:11.759301+00:00",
+    "firstInProgressAt": "2026-11-16T12:22:47.871653+00:00",
+    "rawFile": "sources-raw/S48-video_gen_687f33294c044a1e9ce73ee71ebcb9d4.mp4",
+    "rawSha256": "cf27de7dac0301c7a02d1cdb41d421cbaecb979fe5144475c20cf8fa98518c1b",
+    "sourceFile": "sources/S48.mp4",
+    "sourceSha256": "b5039aafc96b23eac6fc36ad57dec17092664ea520d7d3cae0156b7642e157ce",
+    "downloadedAt": "2026-11-16T12:36:12.346848+00:00",
+    "nativeProbe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "Constrained Baseline",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "mime_codec_string": "avc1.42c020",
+          "width": 1344,
+          "height": 768,
+          "coded_width": 1344,
+          "coded_height": 768,
+          "has_b_frames": 0,
+          "pix_fmt": "yuv420p",
+          "level": 32,
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "time_base": "1/12288",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 63488,
+          "duration": "5.166667",
+          "bit_rate": "4179276",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "124",
+          "nb_read_frames": "124",
+          "extradata_size": 37,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "encoder": "Lavc62.11.100 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "mime_codec_string": "mp4a.40.2",
+          "sample_fmt": "fltp",
+          "sample_rate": "32000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/32000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 165344,
+          "duration": "5.167000",
+          "bit_rate": "127334",
+          "nb_frames": "163",
+          "nb_read_frames": "162",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler"
+          }
+        }
+      ]
+    },
+    "semanticReview": "pending",
+    "serverLogSha256": "193bf8c9a6fcfde790b85ae92b039ad3b4c20cd475f8a40c3d3044e05642ed8c"
+  },
+  "decision": {
+    "id": "S48",
+    "sourceSha256": "361c1d66448a0ece1fd62d9b71440958d6ce1d4bf8dcb44b984e2a9eb728d226",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-17T03:50:48.133985+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 240,
+    "actualFinalUsedNativeFrames": 240,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-361c1d6644-all-frames-01.png",
+        "sha256": "807bcd26e48d1ca95ef41f23f05ee6ad277acb7e19f8757d623d1b286f8320fa",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-361c1d6644-all-frames-02.png",
+        "sha256": "efe74359dc7f60e47fcb2a8b9836fa5e111a200c201b53e7adafdb2a5a362ec2",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-361c1d6644-all-frames-03.png",
+        "sha256": "bb401ecf9926c656d683b335f5324f88cd56fc6230eb1ee296473a56f0c62377",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-361c1d6644-all-frames-04.png",
+        "sha256": "8fc24091fb4fa8ec673439ef50067e71cd202fe4247f6364723bf5e1749d7087",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-361c1d6644-all-frames-05.png",
+        "sha256": "a05a01ed5c0b1538d2f3c43b793d6d94ccfc9b6285a40b4183ebc85a5f17fcd6",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-361c1d6644-all-frames-06.png",
+        "sha256": "dc68a4b4ad1c0c58e49c6df3827139f368344c95a8d60133e90d73c4ab65cec6",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-361c1d6644-all-frames-07.png",
+        "sha256": "7b836fc9257b441fe5041a45d9a44b4dc65f5b3afbc20c542f9d3b4212074a8d",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v7-bf16-768p-S48-001\\review\\video-768p\\S48-361c1d6644-all-frames-08.png",
+        "sha256": "b7eedabadd369d456dfd947f026cc7ac0f97d97a8159ee4eacbb91f173ff83dd",
+        "items": 16
+      }
+    ],
+    "faceEvidence": null,
+    "observation": "Viewed all 240 actual candidate frames in eight complete full-scene sheets, temporal overview, native frame 170 and a direct original-versus-extended butterfly comparison; compared the complete original S48-v2 scene. This is the exact previously accepted v6 coast slowed twofold with optical flow into ten continuous seconds, not the rejected new native generation. The same original empty sea, shore, houses, roadside rails, poles, sky and single corner blue graphic remain. Waves continue very gently and the original butterfly opens and closes calmly over approximately eight seconds. No scene cut, invented flowers, new toy, person, human face, silhouette, reflected person or lettering appears. The soft graphic motion trail around the wing transition already exists in the original accepted frame and is not claimed as restored fine detail. There is no added scene, loop or concatenation; the processing receipt records brief edge padding needed by optical flow at the end. Exact 240 frames at 24fps, native 1344x768. Original v6 input, original job, prior retime receipt and rejected new ten-second attempt are retained separately with truthful provenance. Source-only assistant acceptance, not final-film or human-playback approval.",
+    "decision": "accepted",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "passed"
+  },
+  "originalsPreserved": true,
+  "humanFullPlayback": false,
+  "fullFilmDelivered": false
+}

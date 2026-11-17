@@ -18,6 +18,24 @@ class RetimeIntervalTest(unittest.TestCase):
         for value in (float('nan'), float('inf')):
             with self.subTest(factor=value), self.assertRaises(ValueError):
                 retime(Path('missing.mp4'), Path('separate.mp4'), value, 'inspection')
+        for value in (6,10.0,True):
+            with self.subTest(output_seconds=value),self.assertRaises(ValueError):
+                retime(Path('missing.mp4'),Path('separate.mp4'),2,'inspection',output_seconds=value)
+
+    @unittest.skipUnless(shutil.which('ffmpeg') and shutil.which('ffprobe'),'FFmpeg required')
+    def test_complete_five_second_source_extends_to_240_frames_without_a_loop(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory=Path(temporary)
+            source,output=directory/'source.mp4',directory/'extended.mp4'
+            subprocess.run(['ffmpeg','-v','error','-f','lavfi','-i','testsrc2=s=128x64:r=24:d=5',
+                            '-frames:v','120','-c:v','libx264',str(source)],check=True)
+            before=source.read_bytes()
+            receipt=retime(source,output,2,'Extend the original continuous coast',output_seconds=10)
+            self.assertEqual(receipt['identity']['frames'],240)
+            self.assertEqual(receipt['durationSeconds'],10)
+            self.assertEqual(receipt['sourceIntervalSeconds'],[0,5])
+            self.assertEqual(source.read_bytes(),before)
+            self.assertEqual(receipt['semanticReview'],'pending')
 
     @unittest.skipUnless(shutil.which('ffmpeg') and shutil.which('ffprobe'), 'FFmpeg required')
     def test_candidate_starts_inside_requested_later_interval(self):

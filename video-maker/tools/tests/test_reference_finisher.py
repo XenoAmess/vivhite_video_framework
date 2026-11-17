@@ -98,6 +98,27 @@ class ReferenceFinisherTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"dimensions"):
             worker.output_dimensions({"width":1344,"height":1080})
 
+    def test_closing_reuses_opening_style_and_delays_dedication_with_reading_time(self):
+        opening = {'shotId':'S06','text':'白绮／秋日旅程','subtitle':'Vivhite · Autumn Journey'}
+        ending = {**opening,'shotId':'S48','dedication':'献给世界上最可爱的你',
+                  'dedicationDelaySeconds':3,'dedicationFadeInMs':1800}
+        plan = {'fps':30,'closingCredit':'',
+                'shots':[{'id':'S06','startFrame':570,'seconds':4},
+                         {'id':'S48','startFrame':5730,'seconds':10}],
+                'titleOverlays':[opening,ending]}
+        result = worker.titles(plan)
+        events = [line for line in result.splitlines() if line.startswith('Dialogue:')]
+        self.assertEqual(len(events),5)
+        for start,last in zip(events[:2],events[2:4]):
+            self.assertEqual(start.split(',')[3:],last.split(',')[3:])
+        self.assertIn('0:03:14.00,0:03:20.65,Dedication',events[4])
+        self.assertTrue(events[4].endswith('{\\fad(1800,400)}献给世界上最可爱的你'))
+        self.assertFalse(any(',Credit,' in event for event in events))
+        for invalid in ({'dedicationDelaySeconds':.5},{'dedicationDelaySeconds':8},
+                        {'dedicationFadeInMs':float('nan')},{'dedication':'bad{\\pos(1,2)}'}):
+            with self.subTest(invalid=invalid),self.assertRaises(ValueError):
+                worker.titles({**plan,'titleOverlays':[opening,{**ending,**invalid}]})
+
 
 if __name__ == "__main__":
     unittest.main()

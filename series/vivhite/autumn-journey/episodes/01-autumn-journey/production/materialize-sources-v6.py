@@ -27,14 +27,15 @@ CHECKS = ('noHumanFaces', 'noAddedPeople', 'allCharactersFemale', 'costumeStyle'
           'motionAndContinuity', 'merchandiseBehavior', 'referenceAppearance')
 
 
-def collect(base):
-    plan_file = EP / 'production-plan-v6-bf16-768p.json'
+def collect(base, plan_file=None, origins=None):
+    plan_file = Path(plan_file) if plan_file is not None else EP / 'production-plan-v6-bf16-768p.json'
+    origins = ORIGINS if origins is None else origins
     plan = read(plan_file)
     validate(plan)
     rows = []
     for shot in plan['shots']:
         identity = shot['id']
-        run_name, original_plan_name = ORIGINS.get(identity, DEFAULT)
+        run_name, original_plan_name = origins.get(identity, DEFAULT)
         origin = base / run_name
         original_plan = EP / original_plan_name
         decisions = read(origin / 'clip-decisions.json')
@@ -73,19 +74,26 @@ def collect(base):
         if (inspected['identity']['sourceSha256'] != digest
                 or inspected['usedFramesAnalysed'] != expected):
             raise ValueError(f'Stale inspection report for {identity}')
+        generation_job = contained(origin, selection.get('generationJobReceipt', f'jobs/{identity}.json')
+                                   if selection else f'jobs/{identity}.json')
+        job = read(generation_job)
+        if selection and selection.get('generationPlan'):
+            if sha(contained(origin, selection['generationPlan'])) != job.get('planSha256'):
+                raise ValueError(f'Changed imported original generation plan for {identity}')
         rows.append({'id': identity, 'source': source, 'sha256': digest,
                      'originRun': run_name, 'originPlan': original_plan_name,
                      'originPlanSha256': sha(original_plan), 'originSource': source.relative_to(origin).as_posix(),
                      'originalVisualDecision': row, 'selection': selection,
                      'processingReceipts': processing, 'inspectionReportSha256': sha(report),
-                     'originJobReceipt': read(origin / f'jobs/{identity}.json')})
+                     'originJobReceipt': job,
+                     'generationJobReceiptSha256': sha(generation_job)})
     return plan_file, plan, rows
 
 
-def materialize(base, directory):
+def materialize(base, directory, plan_file=None, origins=None):
     base, directory = Path(base).resolve(), Path(directory).resolve()
     # Validate the complete batch before creating or copying anything.
-    plan_file, plan, rows = collect(base)
+    plan_file, plan, rows = collect(base, plan_file, origins)
     if directory.exists():
         raise ValueError('Preserve the existing run; choose a new assembly directory')
     if any(directory.is_relative_to(base / row['originRun']) for row in rows):

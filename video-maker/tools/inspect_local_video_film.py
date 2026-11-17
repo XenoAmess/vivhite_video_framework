@@ -18,10 +18,11 @@ from reference_finisher import sha,write_json,output_dimensions
 
 def validate_timing(plan):
     exceptions = plan.get('shotDurationExceptions', {})
-    if (plan['fps'] != 30 or exceptions not in ({}, {'S20': 10})
+    if (plan['fps'] != 30 or exceptions not in ({}, {'S20': 10}, {'S48': 10}, {'S20': 10, 'S48': 10})
             or any(not 2 <= shot['seconds'] <= exceptions.get(shot['id'], 5) for shot in plan['shots'])
-            or (exceptions and not any(shot['id'] == 'S20' and shot['seconds'] == 10 for shot in plan['shots']))):
-        raise ValueError('Expected short shots with only the explicitly requested continuous ten-second S20 exception')
+            or any(not any(shot['id'] == identity and shot['seconds'] == seconds for shot in plan['shots'])
+                   for identity,seconds in exceptions.items())):
+        raise ValueError('Expected short shots with only the explicitly requested ten-second S20/S48 exceptions')
 
 
 def inspect(plan_file,directory,evidence,face_model):
@@ -51,6 +52,14 @@ def inspect(plan_file,directory,evidence,face_model):
     for shot in title_shots:
         for offset,label in ((0,'before'),(21,'in'),(60,'visible'),(shot['seconds']*30-16,'out')):
             specials[shot['startFrame']+offset] = shot['id']+'-'+label
+    for overlay in plan['titleOverlays']:
+        if overlay.get('dedication'):
+            shot = next(item for item in plan['shots'] if item['id']==overlay['shotId'])
+            begin = shot['startFrame']+round(overlay.get('dedicationDelaySeconds',3)*fps)
+            fade = round(overlay.get('dedicationFadeInMs',1800)*fps/1000)
+            for frame,label in ((begin-1,'before-dedication'),(begin+fade//2,'dedication-in'),
+                                (begin+fade+15,'dedication-visible')):
+                specials[frame] = shot['id']+'-'+label
     metrics,samples,details,candidates = [],[],[],{}
     next_candidate = {}
     count = 0
