@@ -105,5 +105,22 @@
       "v1Review": "Rejected for visible wing ghosting after partial detail review",
       "v2Review": "Rendered before user stopped slowdown; not semantically reviewed or selected"
     }
+  },
+  "currentRevision": 9,
+  "motionRevision": {
+    "shots": [
+      "S44",
+      "S47"
+    ],
+    "all48DurationsAndStartsLockedToV8": true,
+    "fullTargetPlan": "production-plan-v9-bf16-768p.json",
+    "generationPlan": "production-plan-v9-motion-image-only-r1.json",
+    "nativeSourceSeconds": 5,
+    "finalShotSeconds": 4,
+    "other46SourceBytesUnchanged": true,
+    "handCountAloneIsInsufficient": true,
+    "durationDisplayConfirmedCorrectByUser": true,
+    "finalSeconds": 205,
+    "finalFrames": 6150
   }
 }

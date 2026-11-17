@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "vivhite-user-shot-rejection-1",
+  "revision": 9,
+  "supersedesFutureUseOnly": true,
+  "oldFilmAndRecordsPreserved": true,
+  "shots": [
+    {
+      "id": "S44",
+      "sourceSha256": "86ee994738c7dd979738a02a48c715c610e01e528e5e00edb53627370231b7e6",
+      "reason": "User requires a fully CLOSED start, unzip, draw curtain aside, then reveal scenery. V8 prompt explicitly began partly open and did not satisfy that start."
+    },
+    {
+      "id": "S47",
+      "sourceSha256": "9fb2ca7dc428e435a8363448e1e4f01d676ad29845b83efef84b2c51f44f900f",
+      "reason": "User rejects implausible hand orientation and spatial deformation. Previous two-hand count was insufficient anatomical validation."
+    }
+  ],
+  "other46SourceBytesUnchanged": true,
+  "all48FinalTimingsUnchanged": true,
+  "targetSeconds": 205,
+  "targetFrames": 6150
+}

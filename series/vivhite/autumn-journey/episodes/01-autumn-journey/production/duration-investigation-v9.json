@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "vivhite-duration-investigation-1",
+  "releaseFilmSha256": "bb80401bc9ddb95f2aa4a80a6a1686bc7560d8202d3bac56b4cbfc0e148590d4",
+  "downloadedReleaseBytesMatch": true,
+  "downloadBytes": 143723281,
+  "formatDuration": "205.000000",
+  "streamDurations": [
+    {
+      "codec_type": "video",
+      "duration": "205.000000",
+      "duration_ts": 3148800,
+      "time_base": "1/15360",
+      "nb_frames": "6150"
+    },
+    {
+      "codec_type": "audio",
+      "duration": "205.000000",
+      "duration_ts": 9840000,
+      "time_base": "1/48000",
+      "nb_frames": "9611"
+    }
+  ],
+  "lastVideoFrameStartSeconds": "204.966667",
+  "lastVideoFrameDurationSeconds": "0.033333",
+  "endOfVideoSeconds": "205.000000",
+  "playerDisplayCause": "Not established without specific player evidence. A playhead showing the start of the final frame can display 3:24 when integer seconds are floored; that is not a 204-second duration.",
+  "userReportedDisplay": "3:24",
+  "requestedFinalSeconds": 205,
+  "requestedFinalFramesAt30Fps": 6150,
+  "noOtherShotDurationChange": true,
+  "userConfirmedDisplayIsThreeMinutesTwentyFive": true,
+  "durationIssueResolved": true,
+  "newTimelineDurationChangeNeeded": false
+}

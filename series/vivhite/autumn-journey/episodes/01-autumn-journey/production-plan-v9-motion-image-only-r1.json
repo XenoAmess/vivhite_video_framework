@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 9,
+  "model": "fasth3-omni-bf16",
+  "stage": "draft",
+  "fps": 30,
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 240,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "numInferenceSteps": 8,
+  "decoderLayers": 36,
+  "decoderVerification": "GET /v1/models on 2026-11-16",
+  "titleOverlays": [],
+  "closingCredit": "",
+  "shots": [
+    {
+      "id": "S44",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "seed": 2026111944,
+      "mode": "H",
+      "action": "第一帧帐门完全闭合、不露外景；原有右手先向下单向拉开右侧拉链，再牵开已经解锁的门帘，逐渐露出无人的草地和树景，最后保持打开。四秒入片内完成开门，不回拉、不合上。",
+      "soundDescription": "拉链与布料声。",
+      "prompt": "Use <Picture 1> as the exact starting frame: the opaque pale-gray tent door is FULLY ZIPPED CLOSED and covers the whole doorway. For the first 0.4 seconds keep it closed with no exterior visible. The existing single RIGHT female hand pinches the one brass slider on the right-side purple zipper. During 0.4 to 2.0 seconds the thumb and index keep the same pinch while pulling that slider smoothly DOWN to the floor stop in one opening direction. The zipper teeth separate behind the slider. During 2.0 to 3.2 seconds that SAME hand grasps the now-free fabric edge and draws the released curtain aside, progressively exposing an ordinary quiet grassy campsite with scattered trees under overcast sky. By 3.2 seconds the centre doorway is wide OPEN and the outside view stays exposed through the end. One simple physical unzip-then-open action, never close again. The opaque fabric stays opaque and folds into the side, never dissolves or turns transparent. Locked camera inside the tent, original knee and bedding stationary, original hanging purple pouch stays fixed. Keep the hand continuously attached to the same right forearm, relaxed wrist, normal fingers and continuous thumb orientation. Head and face remain outside the crop. One original woman only, no new person, extra hand, disconnected wrist, human face, reflection or scene cut. Keep original open-eyed pouch illustration and gold glasses fixed and inert. Quiet cloth/zipper ambience only, no voice, text or credits.",
+      "references": [
+        "assets/generated/production-v9-firstframes-001/scenes/S44-closed-v1.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M08-pouch-v1.png",
+      "generationAction": "Use <Picture 1> as the exact starting frame: the opaque pale-gray tent door is FULLY ZIPPED CLOSED and covers the whole doorway. For the first 0.4 seconds keep it closed with no exterior visible. The existing single RIGHT female hand pinches the one brass slider on the right-side purple zipper. During 0.4 to 2.0 seconds the thumb and index keep the same pinch while pulling that slider smoothly DOWN to the floor stop in one opening direction. The zipper teeth separate behind the slider. During 2.0 to 3.2 seconds that SAME hand grasps the now-free fabric edge and draws the released curtain aside, progressively exposing an ordinary quiet grassy campsite with scattered trees under overcast sky. By 3.2 seconds the centre doorway is wide OPEN and the outside view stays exposed through the end. One simple physical unzip-then-open action, never close again. The opaque fabric stays opaque and folds into the side, never dissolves or turns transparent. Locked camera inside the tent, original knee and bedding stationary, original hanging purple pouch stays fixed. Keep the hand continuously attached to the same right forearm, relaxed wrist, normal fingers and continuous thumb orientation. Head and face remain outside the crop. One original woman only, no new person, extra hand, disconnected wrist, human face, reflection or scene cut. Keep original open-eyed pouch illustration and gold glasses fixed and inert. Quiet cloth/zipper ambience only, no voice, text or credits.",
+      "acceptanceCriteria": "Actually review all 120 native frames plus native first frame and zipper/hand detail. First frame and initial interval must show the fully opaque CLOSED door, without a view through it. Follow the same attached right hand and one slider downwards, then released cloth aside; by the four-second final cut the outside is revealed and remains open. Reject an already open start, reversal, transparent fabric, scene transition, extra hand/person/face, or deformed hand.",
+      "firstFrameRequirement": "fully-closed-opaque-tent-door"
+    },
+    {
+      "id": "S47",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 120,
+      "seed": 2026111947,
+      "mode": "H",
+      "action": "同一女性在长椅后方，用自然连接的两条手臂和双手从玩偶下部两侧轻扶，将略倾斜的坐姿小幅摆正，底部稳放后松开；左右手不交叉、不翻面、不绕过玩偶，不改变手腕朝向。四秒内完成摆正和松手，脸始终在画外。",
+      "soundDescription": "布料轻落、海风。",
+      "prompt": "Use <Picture 1> as the exact start of a locked five-second photograph-like seaside bench shot. The SAME one woman stands BEHIND the bench, visible only below the collarbone, with two separate uncrossed arms descending from her torso. Her RIGHT arm and RIGHT hand stay on the LEFT of the image; her LEFT arm and LEFT hand stay on the RIGHT. Keep both elbows, forearms, wrists and hands connected and in their original natural palm/thumb orientation for the entire take. Her original fingertips already gently cup the doll's two lower side seams. During the first two seconds, move the WHOLE inert plush a few centimetres as a supported physical object, gently correct its slight sideways lean to an upright seated pose, and settle its base on the SAME bench. Do not lift its head, touch its face or change its expression. During seconds two to three, open both grips naturally and release the seated doll. During seconds three to four, move each hand a short distance outward along its OWN side and rest it lightly on the bench, palms oriented naturally, wrists straight. Hold the final arrangement through second five. Exactly two hands and two attached arms remain separate and visible; no crossing, swapping sides, inverted palm, backward thumb, folding wrist, stretching limb, extra finger, duplicated hand, hand passing through plush or forearm hidden behind its body. The sewn OPEN eyes, iris pattern, round gold glasses, hat, hair, face proportions and costume stay exactly fixed. Preserve the original bag, worn bench, empty sea and seawall. No head, chin, real human face or reflected person, no additional person or object, no generated text, no cut, no speech or singing.",
+      "references": [
+        "assets/generated/production-v9-firstframes-001/scenes/S47-anatomy-v1.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M04-plush-v1.png",
+      "generationAction": "Use <Picture 1> as the exact start of a locked five-second photograph-like seaside bench shot. The SAME one woman stands BEHIND the bench, visible only below the collarbone, with two separate uncrossed arms descending from her torso. Her RIGHT arm and RIGHT hand stay on the LEFT of the image; her LEFT arm and LEFT hand stay on the RIGHT. Keep both elbows, forearms, wrists and hands connected and in their original natural palm/thumb orientation for the entire take. Her original fingertips already gently cup the doll's two lower side seams. During the first two seconds, move the WHOLE inert plush a few centimetres as a supported physical object, gently correct its slight sideways lean to an upright seated pose, and settle its base on the SAME bench. Do not lift its head, touch its face or change its expression. During seconds two to three, open both grips naturally and release the seated doll. During seconds three to four, move each hand a short distance outward along its OWN side and rest it lightly on the bench, palms oriented naturally, wrists straight. Hold the final arrangement through second five. Exactly two hands and two attached arms remain separate and visible; no crossing, swapping sides, inverted palm, backward thumb, folding wrist, stretching limb, extra finger, duplicated hand, hand passing through plush or forearm hidden behind its body. The sewn OPEN eyes, iris pattern, round gold glasses, hat, hair, face proportions and costume stay exactly fixed. Preserve the original bag, worn bench, empty sea and seawall. No head, chin, real human face or reflected person, no additional person or object, no generated text, no cut, no speech or singing.",
+      "acceptanceCriteria": "Actually review all 120 native frames and native-resolution separate left/right elbow-forearm-wrist-finger contact sequences. Count alone is insufficient: anatomical left/right identity, palm and thumb orientation, wrist bend and arm connectivity must remain plausible across time. Confirm real small whole-doll straightening and release before the four-second cut. Reject twisting, stretching, spatial discontinuity, occluded arm swapping, extra fingers/hands, or changed sewn eyes.",
+      "firstFrameRequirement": "separate-anatomically-clear-attached-arms"
+    }
+  ],
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "3840x2160",
+    "sampler": "up3",
+    "seed": 1234,
+    "submissionWindow": 1,
+    "status": "not-started",
+    "scope": "Native UHD only for future separate refinement, historical API model identifier retained. New 2K jobs forbidden."
+  },
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "S20 has 240 native source frames, S48 has 336, every other complete source has 120. Complete source review covers 6096 frames; final used native frames 4920; final film 6150 frames at 30fps.",
+  "promptRevision": {
+    "id": "v9-closed-tent-and-anatomical-hands-r1",
+    "reason": "User rejects the partly open start and anatomically implausible plush hands in v8."
+  },
+  "shotDurationExceptions": {},
+  "referenceAppearanceRequired": true,
+  "scope": "Two image-reference-only source-generation jobs, each five seconds native, each four seconds in final film. Start frames here are local to this request subset; full target preserves 205 seconds. No motion video uploaded, no final video approval.",
+  "director": "director-v9.md",
+  "previousProductionPlanSha256": "7ccc63fc2887d6a4caa2adf19ba2ccb0dde68f08470e28acf8251589207f55b8",
+  "sourceContinuation": "Reuse exactly the other 46 accepted v8 source bytes. User rejection supersedes prior S44/S47 acceptance for future editions; preserve v8 film and all old records.",
+  "fullTargetPlan": "production-plan-v9-bf16-768p.json"
+}
