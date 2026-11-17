@@ -13,6 +13,20 @@ SPEC.loader.exec_module(worker)
 
 
 class LockedTimingTest(unittest.TestCase):
+    def test_current_retry_uses_fourteen_source_seconds_and_preserves_failed_fifteen_second_history(self):
+        plan = worker.worker.read(worker.PLAN_FILE)
+        policy = worker.worker.read(worker.EP / 'production/workflow-policy.json')['closingGeneration']
+        retry = worker.worker.read(worker.EP / policy['nextAttemptPlan'])
+        self.assertEqual(policy['sourceSecondsFromNowOn'], 14)
+        self.assertTrue(policy['fifteenSecondRuleSuperseded'])
+        self.assertEqual(policy['supersededFifteenSecondPolicy']['lastAttempt']['sourceSeconds'], 15)
+        self.assertEqual((plan['shots'][-1]['seconds'], plan['shots'][-1]['sourceSeconds']), (14, 14))
+        self.assertEqual((retry['shots'][0]['seconds'], retry['shots'][0]['sourceSeconds']), (14, 14))
+        self.assertEqual(retry['shots'][0]['prompt'], plan['shots'][-1]['prompt'])
+        self.assertNotIn('fifteen', retry['shots'][0]['prompt'].lower())
+        previous = worker.worker.read(worker.EP / 'production-plan-v8-bf16-768p-r2.json')
+        self.assertEqual(plan['shots'][:-1], previous['shots'][:-1])
+
     def test_director_contains_one_complete_timeline_matching_the_locked_plan(self):
         plan = worker.worker.read(worker.PLAN_FILE)
         document = (worker.EP / 'director-v8.md').read_text(encoding='utf-8')

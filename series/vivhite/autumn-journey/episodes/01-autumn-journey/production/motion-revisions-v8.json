@@ -52,10 +52,10 @@
     },
     {
       "id": "S48",
-      "action": "固定原海岸宽景，天空与左侧海面保持原图无遮挡构图，禁止新增前景树枝、树叶；保留原海浪、道路与房屋，右下蓝蝶近乎静止地沿身体根部极缓慢舒展和合拢，全段只作一次从容开合并有停歇，不快速拍翼、翻转、扭曲或拖影。生成15秒源片后仅裁本镜至14秒，片尾文字仍由后期叠加。",
-      "generationAction": "One uninterrupted fifteen-second very wide coastal landscape shot from Picture 1, filmed in extreme slow motion with an absolutely fixed camera. Match the original unobstructed view from the open beach: the upper and left portions are clear open sky and sea exactly as in Picture 1. There is NO foreground tree, NO overhanging branch and NO foreground leaf anywhere in this frame. The original sea, distant horizon, pebble beach, road, poles, houses and sky remain visible at the same scale for the entire take. Gentle small waves breathe along the shore. The original small blue wing ornament at the bottom right is nearly at rest: across the ENTIRE FIFTEEN SECONDS it makes only ONE very gradual opening followed by ONE very gradual closing, a single calm breathing gesture, with long pauses. Both wings bend only at their shared central root. Keep its blue markings, original small size and corner location. Its motion is almost imperceptibly slow, never a rapidly beating flying insect. Keep the complete coast in view while it moves, with no camera approach, focus pull, pan, zoom, transition, cut or alternative scene. No added vegetation, object, person, human body, reflection, lettering, narration, voice, singing or humming. Leave the sky open for later titles.",
-      "acceptance": "Review all 360 native source frames and all wing crops. Continuous original coast, coherent single slow wing-opening/folding gesture and no added people or real faces. Final cut uses only fourteen seconds; first 47 final shot timings remain exactly unchanged. The user explicitly rejects the invented foreground branches; none may appear in any frame.",
-      "sourceSeconds": 15,
+      "action": "固定原海岸宽景，天空与左侧海面保持原图无遮挡构图，禁止新增前景树枝、树叶；保留原海浪、道路与房屋，右下蓝蝶近乎静止地沿身体根部极缓慢舒展和合拢，全段只作一次从容开合并有停歇，不快速拍翼、翻转、扭曲或拖影。生成14秒连续源片，片尾文字仍由后期叠加。",
+      "generationAction": "One uninterrupted fourteen-second very wide coastal landscape shot from Picture 1, filmed in extreme slow motion with an absolutely fixed camera. Match the original unobstructed view from the open beach: the upper and left portions are clear open sky and sea exactly as in Picture 1. There is NO foreground tree, NO overhanging branch and NO foreground leaf anywhere in this frame. The original sea, distant horizon, pebble beach, road, poles, houses and sky remain visible at the same scale for the entire take. Gentle small waves breathe along the shore. The original small blue wing ornament at the bottom right is nearly at rest: across the ENTIRE FOURTEEN SECONDS it makes only ONE very gradual opening followed by ONE very gradual closing, a single calm breathing gesture, with long pauses. Both wings bend only at their shared central root. Keep its blue markings, original small size and corner location. Its motion is almost imperceptibly slow, never a rapidly beating flying insect. Keep the complete coast in view while it moves, with no camera approach, focus pull, pan, zoom, transition, cut or alternative scene. No added vegetation, object, person, human body, reflection, lettering, narration, voice, singing or humming. Leave the sky open for later titles.",
+      "acceptance": "Review all 336 native source frames and all wing crops. Continuous original unobstructed coast and one nearly resting slow wing-opening/folding gesture. No added branch, leaf, person, real face, scene cut, rapid flutter, duplicate or distorted butterfly. The entire fourteen-second source is used in the fourteen-second closing segment; all first 47 final shot timings remain unchanged.",
+      "sourceSeconds": 14,
       "finalSeconds": 14
     }
   ],
@@ -64,5 +64,5 @@
     "3840x2160"
   ],
   "workflowPolicy": "workflow-policy.json",
-  "closingRetryPlan": "../production-plan-v8-S48-image-only-r3.json"
+  "closingRetryPlan": "../production-plan-v8-S48-image-only-r4.json"
 }

@@ -33,16 +33,14 @@
   },
   "closingGeneration": {
     "activeAttempt": {
-      "run": "production-v8-motion-768p-S48-003",
-      "jobId": "video_gen_14a0e40b4bdd45c48666c9f9503d382c",
-      "sourceSeconds": 15,
-      "statusAtPolicyUpdate": "failed-no-output-cuda-oom",
-      "failureReceipt": "production/failed-S48-15s-oom-v8-003.json",
-      "queueStateObserved": "paused_after_memory_failure"
+      "run": "production-v8-motion-768p-S48-004",
+      "sourceSeconds": 14,
+      "statusAtPolicyUpdate": "queued",
+      "jobId": "video_gen_02ad424463c848219eeb1764957de6ab"
     },
-    "fallbackActivated": true,
-    "nextAttemptPlan": "production-plan-v8-S48-image-only-r3.json",
-    "sourceSecondsFromNowOn": 15,
+    "fallbackActivated": false,
+    "nextAttemptPlan": "production-plan-v8-S48-image-only-r4.json",
+    "sourceSecondsFromNowOn": 14,
     "forbiddenAddedForeground": [
       "tree branches",
       "overhanging leaves",
@@ -55,17 +53,31 @@
       "statusAtPolicyUpdate": "completed-raw-rejected-for-fast-wings"
     },
     "subsequentAttempts": {
-      "subsequentSourceSeconds": 15,
-      "completeSourceReviewFramesAt24Fps": 360,
+      "subsequentSourceSeconds": 14,
+      "completeSourceReviewFramesAt24Fps": 336,
       "finalClosingSeconds": 14,
       "finalFilmSeconds": 205,
       "finalFilmFramesAt30Fps": 6150,
       "first47ShotTimings": "Exactly unchanged from v7; sum is 191 seconds",
-      "trimScope": "S48 only; crop its reviewed 15-second source to the 14-second remaining final timeline budget",
+      "trimScope": "Use the full reviewed fourteen-second S48 source; only remove any provider frame-alignment tail. All other final shot timings remain unchanged.",
       "automaticLoopOrFreezeToFillTime": false,
       "triggerAttemptJobId": "video_gen_bc1628d450e04c759499c30f10b1f97f",
       "triggerAlreadySatisfied": true
     },
-    "resumeCondition": "Server memory issue fixed and paused queue restored; preserve fifteen-second source and all locked final timings. No blind automatic retry."
+    "resumeCondition": "Dispatch the user-authorized fourteen-second retry after the service queue is restored. Do not requeue the failed fifteen-second job.",
+    "supersededFifteenSecondPolicy": {
+      "sourceSeconds": 15,
+      "completeSourceReviewFramesAt24Fps": 360,
+      "lastAttempt": {
+        "run": "production-v8-motion-768p-S48-003",
+        "jobId": "video_gen_14a0e40b4bdd45c48666c9f9503d382c",
+        "sourceSeconds": 15,
+        "statusAtPolicyUpdate": "failed-no-output-cuda-oom",
+        "failureReceipt": "production/failed-S48-15s-oom-v8-003.json",
+        "queueStateObserved": "paused_after_memory_failure"
+      },
+      "supersededBy": "Latest explicit user instruction to return to fourteen-second generation after server OOM."
+    },
+    "fifteenSecondRuleSuperseded": true
   }
 }
