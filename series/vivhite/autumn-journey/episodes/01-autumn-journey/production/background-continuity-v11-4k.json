@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "vivhite-background-continuity-proof-1",
+  "recordedAtUnix": 1794951549.5987182,
+  "schedulerTask": "Vivhite-Autumn-Journey-v11-4K",
+  "executionTimeLimit": "PT0S",
+  "onDemandTriggerCount": 0,
+  "multipleInstancesPolicy": "IgnoreNew",
+  "schedulerFailureRestartCount": 3,
+  "schedulerFailureRestartIntervalSeconds": 60,
+  "controllerPid": 214584,
+  "controllerAncestry": [
+    {
+      "ProcessId": 214584,
+      "ParentProcessId": 194636,
+      "Name": "pythonw.exe"
+    },
+    {
+      "ProcessId": 194636,
+      "ParentProcessId": 2328,
+      "Name": "pythonw.exe"
+    },
+    {
+      "ProcessId": 2328,
+      "ParentProcessId": 1980,
+      "Name": "svchost.exe"
+    }
+  ],
+  "liveClientPid": 42248,
+  "abruptChatClientInterruptionTestPassed": true,
+  "sameRemoteJobContinued": true,
+  "serverJobId": "video_gen_d9e799b6cbfd4b91a34d71e006dbb267",
+  "sameRequestSha256": "b4b5ce89e58b093136c45184b4e4ddefd7bb56fd3e431fd9189bf47d2f974a95",
+  "clientRestartUpperBoundSeconds": 14.875,
+  "remoteCancellationRequested": false,
+  "duplicateVideoSubmissionObserved": false,
+  "repeatStartKeptSameControllerAndClient": true,
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "generationWindow": 1,
+  "outputSize": "3840x2160",
+  "filmSeconds": 205,
+  "filmFrames": 6150,
+  "automaticStages": [
+    "generate-next-shot",
+    "poll-known-job",
+    "download",
+    "verify-native-size-and-frames",
+    "inspect-all-source-frames",
+    "preserve-images-to-git",
+    "render-full-unreviewed-technical-preview"
+  ],
+  "semanticApprovalsAutomatic": false,
+  "formalReleaseAutomaticWithoutReview": false,
+  "twoKTasksResumed": false,
+  "technicalPreviewVerification": "Real native-UHD two-second fixture encoded and completely decoded; not a production approval",
+  "unitChecksPassed": 7,
+  "production4kFilmCompleted": false,
+  "periodicWatchdogTriggerCount": 1,
+  "periodicWatchdogSeconds": 60,
+  "noBootOrLogonTrigger": true,
+  "previousFailureRestartSettingAlonePassed": false,
+  "controllerInterruptionRecoveryTestPassed": true,
+  "controllerRecoveryUpperBoundSeconds": 61.535,
+  "actualRuntimeVersion": "controller-003",
+  "completionOrExplicitStopDisablesWatchdog": true,
+  "completedSources": 1,
+  "totalSources": 48,
+  "secondSourceJobId": "video_gen_d9aeeb23a57d48c5a9d66b0eaf208a62",
+  "relatedChecksPassed": 26,
+  "newDurabilityChecksPassed": 7,
+  "firstSourceImagesAutonomouslyCommittedAndPushed": true,
+  "firstSourceImageCommit": "191ee56804d40314f24abd3668ee4dc183e7a5da"
+}

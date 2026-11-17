@@ -1,13 +1,13 @@
 {
   "schemaVersion": "vivhite-native-4k-progress-1",
   "revision": 11,
-  "snapshotAt": "2026-11-17T20:17:25.481064+00:00",
-  "overallPercent": 5.0,
+  "snapshotAt": "2026-11-17T21:52:18.491510+00:00",
+  "overallPercent": 6.18,
   "totalShots": 48,
-  "completedSources": 0,
+  "completedSources": 1,
   "acceptedSources": 0,
   "expectedCompleteSourceFrames": 6096,
-  "completedSourceFrames": 0,
+  "completedSourceFrames": 120,
   "acceptedSourceFrames": 0,
   "filmEncoded": false,
   "encodedFrameInspectionPercent": 0.0,
@@ -27,18 +27,18 @@
     {
       "id": "S01",
       "jobId": "video_gen_d9e799b6cbfd4b91a34d71e006dbb267",
-      "status": "in_progress",
-      "reportedRemoteProgress": 35,
-      "reportedRemoteStage": "4K 同模型计算（本次 1 个窗口）",
-      "completedSource": false,
+      "status": "completed",
+      "reportedRemoteProgress": 100,
+      "reportedRemoteStage": "生成完成",
+      "completedSource": true,
       "acceptedSource": false
     },
     {
       "id": "S02",
-      "jobId": null,
-      "status": "not-submitted",
-      "reportedRemoteProgress": null,
-      "reportedRemoteStage": null,
+      "jobId": "video_gen_d9aeeb23a57d48c5a9d66b0eaf208a62",
+      "status": "in_progress",
+      "reportedRemoteProgress": 35,
+      "reportedRemoteStage": "4K 同模型计算（本次 1 个窗口）",
       "completedSource": false,
       "acceptedSource": false
     },
@@ -457,5 +457,7 @@
       "acceptedSource": false
     }
   ],
-  "scope": "Weighted completed work. Server progress is coarse and is not a timing estimate or semantic approval."
+  "scope": "Weighted completed work. Server progress is coarse and is not a timing estimate or semantic approval.",
+  "technicalPreviewEncoded": false,
+  "technicalPreviewIsFormalDelivery": false
 }

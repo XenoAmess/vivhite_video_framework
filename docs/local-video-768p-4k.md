@@ -34,9 +34,13 @@
 
 4K与768P共用GPU队列，按普通队列执行。4K每次一个任务、每次加载一个窗口，不能沿用旧2K并发窗口2的做法，也不能按两块GPU估算耗时。服务端OOM暂停后保留现场，不自动提高内存限制或反复重试。
 
+数日运行可使用本期已实测的[Windows独立执行器](autumn-journey-background-rendering.md)。它由按需任务承载，保留任务ID、冻结代码、下载与机器检查、图片Git检查点和技术合成，不依赖GPT对话存活；其自动恢复不等于自动通过内容审核。
+
 ## 已验证范围与恢复边界
 
 服务端[4K验收记录](https://github.com/XenoAmess/local-model-operations/blob/main/deployments/video-generation/deployment/video-queue/4k-validation.json)报告：首条完整样片为3840×2160、124帧、24fps、约5.167秒，完成下载、哈希、音轨及全量解码；端到端约77分47秒。该记录只有首、中、尾选帧查看，不能称为完整时序或画质对比验收；它也不是本片48镜的实测速度或确定交付时间。
+
+2026-11-18本片S01另已完成实际3840×2160、120帧／24fps／5秒生成、下载、哈希与完整解码，提交至下载规范化约77分45秒；后续S02自动进入队列。具体源片指纹、检查范围及未通过内容审核的边界见[v11记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v11-native-4k.md)。这不是长镜头或全片4K验收。
 
 服务接口沿用约4.7–15.1秒输入范围，长源片通过重叠窗口处理；截至所读记录，15秒4K尚未完成真实成片验收。后续长镜头必须单独记录实际成败、窗口接缝、完整帧数、音频与耗时，不由接口范围推断已经可用。
 

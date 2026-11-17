@@ -139,5 +139,21 @@
     "originalClosingWingCadenceRequired": true,
     "preserve768pRelease": true,
     "automaticTwoKResumeAllowed": false
+  },
+  "backgroundExecution": {
+    "schedulerTask": "Vivhite-Autumn-Journey-v11-4K",
+    "runtimeVersion": "controller-003",
+    "watchdogIntervalSeconds": 60,
+    "executionTimeLimit": "PT0S",
+    "conversationConnectionRequired": false,
+    "singleInstancePolicy": "IgnoreNew",
+    "automaticSemanticApproval": false,
+    "automaticUnreviewedFullPreview": true,
+    "formalReleaseRequiresActualReview": true,
+    "sameRemoteTaskResumeActuallyTested": true,
+    "controllerWatchdogRecoveryActuallyTested": true,
+    "stopMarker": "control/stop.json",
+    "disableWatchdogAfterCompletionOrExplicitStop": true,
+    "twoKResumeAllowed": false
   }
 }

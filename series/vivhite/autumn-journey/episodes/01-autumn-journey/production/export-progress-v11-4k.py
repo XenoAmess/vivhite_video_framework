@@ -7,6 +7,7 @@ import argparse
 from datetime import datetime, timezone
 import hashlib
 import json
+import os
 from pathlib import Path
 
 EP = Path(__file__).resolve().parents[1]
@@ -21,9 +22,10 @@ def sha(path):
         return hashlib.file_digest(stream,'sha256').hexdigest()
 
 
-def export(base):
+def export(base,episode_directory=EP,emit=True):
+    episode_directory = Path(episode_directory).resolve()
     directory = base/'production-v11-native-4k-001'
-    plan = read(EP/'production-plan-v11-native-4k.json')
+    plan = read(episode_directory/'production-plan-v11-native-4k.json')
     decisions = {s['id']:s for s in read(directory/'clip-decisions.json').get('shots',[])}
     rows = []
     completed_frames = accepted_frames = 0
@@ -48,9 +50,9 @@ def export(base):
             'completedSource':completed,'acceptedSource':accepted})
     finish = read(directory/'final-assembly-receipt.json')
     inspection = read(directory/'encoded-film-inspection.json')
-    qa = read(EP/'production/final-review-v11-4k.json')
-    release = read(EP/'production/release-v11-4k.json')
-    final_file = EP/'final-assembly-plan-v11-4k.json'
+    qa = read(episode_directory/'production/final-review-v11-4k.json')
+    release = read(episode_directory/'production/release-v11-4k.json')
+    final_file = episode_directory/'final-assembly-plan-v11-4k.json'
     final_plan = read(final_file)
     encoded = (finish.get('frames') == 6150 and finish.get('fullAudioVideoDecode') == 'passed'
         and final_plan.get('width') == 3840 and final_plan.get('height') == 2160
@@ -73,9 +75,16 @@ def export(base):
         'preserved768pRelease':'autumn-journey-v10-768p-20261118',
         'twoKStatus':'stopped-by-user','humanFullPlayback':False,'shots':rows,
         'scope':'Weighted completed work. Server progress is coarse and is not a timing estimate or semantic approval.'}
-    destination = EP/'production/run-progress-v11-4k.json'
-    destination.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
-    print({k:result[k] for k in ('overallPercent','completedSources','acceptedSources','filmEncoded','releasePublished')})
+    technical = read(directory/'technical-preview/receipt.json')
+    result['technicalPreviewEncoded'] = technical.get('status') == 'encoded-technical-checks-passed-awaiting-semantic-review'
+    result['technicalPreviewIsFormalDelivery'] = False
+    destination = episode_directory/'production/run-progress-v11-4k.json'
+    partial = destination.with_name(destination.name+f'.{os.getpid()}.partial')
+    partial.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
+    partial.replace(destination)
+    if emit:
+        print({k:result[k] for k in ('overallPercent','completedSources','acceptedSources','filmEncoded','releasePublished')})
+    return result
 
 
 if __name__ == '__main__':
