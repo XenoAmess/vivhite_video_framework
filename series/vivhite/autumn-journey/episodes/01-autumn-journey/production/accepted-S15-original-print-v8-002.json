@@ -1,0 +1,1161 @@
+{
+  "schemaVersion": "vivhite-selected-correction-1",
+  "id": "S15",
+  "sourceSelection": {
+    "path": "corrections/S15-original-face-v1.mp4",
+    "sha256": "2a461bda9bae0b504565c892bd7a2bd0d592787cea5c8b04381afec84bd77acb",
+    "parent": "sources/S15.mp4",
+    "parentSha256": "910b5566f0d45bd1fa2543ec7c8ee4c08ad8877e9b17a8a4755993ffa8898974",
+    "receipt": "corrections/S15-original-face-v1.json",
+    "inspectionReport": "correction-inspection/S15-original-face-v1/S15.json",
+    "reason": "Preserve the new single lift and empty exterior; restore the same cup original open-eye artwork instead of generated eye narrowing."
+  },
+  "processingReceipt": {
+    "schemaVersion": "vivhite-printed-patch-2",
+    "sourceSha256": "910b5566f0d45bd1fa2543ec7c8ee4c08ad8877e9b17a8a4755993ffa8898974",
+    "correctedSha256": "2a461bda9bae0b504565c892bd7a2bd0d592787cea5c8b04381afec84bd77acb",
+    "workerSha256": "2ebeb3119289113d0b71b051e71a156eca61f10a0b8ed2784990400a702d1018",
+    "center": [
+      540,
+      448
+    ],
+    "radius": 33,
+    "sourceFrame": 0,
+    "frames": 120,
+    "fps": 24.0,
+    "requestedUsedSeconds": 5.0,
+    "maximumTrackedScale": 2.5,
+    "method": "Register original reference artwork onto the same printed prop; track its original rim with forward/backward LK. No new artwork or person removal.",
+    "scope": "Only a printed merchandise surface; no new person is removed or covered.",
+    "status": "technical-correction-completed-review-required",
+    "tracking": [
+      {
+        "frame": 1,
+        "scale": 1.0004251363696273,
+        "center": [
+          539.998046875,
+          447.9822692871094
+        ],
+        "inliers": 84
+      },
+      {
+        "frame": 2,
+        "scale": 1.0005868549745882,
+        "center": [
+          540.0382080078125,
+          447.95867919921875
+        ],
+        "inliers": 78
+      },
+      {
+        "frame": 3,
+        "scale": 1.0002143088890427,
+        "center": [
+          540.0903930664062,
+          447.9256286621094
+        ],
+        "inliers": 77
+      },
+      {
+        "frame": 4,
+        "scale": 0.9995870365909811,
+        "center": [
+          540.1094360351562,
+          447.8587951660156
+        ],
+        "inliers": 81
+      },
+      {
+        "frame": 5,
+        "scale": 0.9977364511323679,
+        "center": [
+          539.9963989257812,
+          447.8078308105469
+        ],
+        "inliers": 88
+      },
+      {
+        "frame": 6,
+        "scale": 0.9963719216176027,
+        "center": [
+          539.73486328125,
+          447.6612548828125
+        ],
+        "inliers": 82
+      },
+      {
+        "frame": 7,
+        "scale": 0.9954043502751022,
+        "center": [
+          539.5037231445312,
+          447.5321350097656
+        ],
+        "inliers": 85
+      },
+      {
+        "frame": 8,
+        "scale": 0.9938899467077859,
+        "center": [
+          539.1498413085938,
+          447.33734130859375
+        ],
+        "inliers": 82
+      },
+      {
+        "frame": 9,
+        "scale": 0.9932012426568659,
+        "center": [
+          538.5800170898438,
+          447.1170959472656
+        ],
+        "inliers": 85
+      },
+      {
+        "frame": 10,
+        "scale": 0.9929912096882579,
+        "center": [
+          538.2575073242188,
+          446.8627014160156
+        ],
+        "inliers": 80
+      },
+      {
+        "frame": 11,
+        "scale": 0.9928062139312339,
+        "center": [
+          538.095947265625,
+          446.5870361328125
+        ],
+        "inliers": 75
+      },
+      {
+        "frame": 12,
+        "scale": 0.9917769300171222,
+        "center": [
+          538.1187133789062,
+          446.09490966796875
+        ],
+        "inliers": 71
+      },
+      {
+        "frame": 13,
+        "scale": 0.990438992804338,
+        "center": [
+          538.7091064453125,
+          445.64801025390625
+        ],
+        "inliers": 79
+      },
+      {
+        "frame": 14,
+        "scale": 0.9901651557107173,
+        "center": [
+          539.9855346679688,
+          444.14984130859375
+        ],
+        "inliers": 77
+      },
+      {
+        "frame": 15,
+        "scale": 0.9889909137859355,
+        "center": [
+          541.2052001953125,
+          442.1280212402344
+        ],
+        "inliers": 77
+      },
+      {
+        "frame": 16,
+        "scale": 0.9881145026214359,
+        "center": [
+          542.6587524414062,
+          438.60467529296875
+        ],
+        "inliers": 80
+      },
+      {
+        "frame": 17,
+        "scale": 0.9894459333185572,
+        "center": [
+          544.06396484375,
+          435.27581787109375
+        ],
+        "inliers": 70
+      },
+      {
+        "frame": 18,
+        "scale": 0.9848347704268318,
+        "center": [
+          545.8746337890625,
+          427.8493957519531
+        ],
+        "inliers": 78
+      },
+      {
+        "frame": 19,
+        "scale": 0.9846058294691463,
+        "center": [
+          546.8323974609375,
+          422.8387756347656
+        ],
+        "inliers": 84
+      },
+      {
+        "frame": 20,
+        "scale": 0.9850142529762407,
+        "center": [
+          548.2905883789062,
+          414.54864501953125
+        ],
+        "inliers": 79
+      },
+      {
+        "frame": 21,
+        "scale": 0.9907742139030729,
+        "center": [
+          549.3554077148438,
+          408.5246887207031
+        ],
+        "inliers": 89
+      },
+      {
+        "frame": 22,
+        "scale": 0.9852277793550833,
+        "center": [
+          551.2858276367188,
+          397.0339660644531
+        ],
+        "inliers": 80
+      },
+      {
+        "frame": 23,
+        "scale": 0.9828459457043424,
+        "center": [
+          552.6713256835938,
+          389.5646057128906
+        ],
+        "inliers": 90
+      },
+      {
+        "frame": 24,
+        "scale": 0.989120670875643,
+        "center": [
+          554.6713256835938,
+          377.810302734375
+        ],
+        "inliers": 83
+      },
+      {
+        "frame": 25,
+        "scale": 0.9903014151204342,
+        "center": [
+          556.1307373046875,
+          370.662841796875
+        ],
+        "inliers": 83
+      },
+      {
+        "frame": 26,
+        "scale": 0.9854493217835963,
+        "center": [
+          558.8177490234375,
+          358.56585693359375
+        ],
+        "inliers": 82
+      },
+      {
+        "frame": 27,
+        "scale": 0.9890445883890722,
+        "center": [
+          560.7012939453125,
+          351.2546081542969
+        ],
+        "inliers": 89
+      },
+      {
+        "frame": 28,
+        "scale": 0.9945590583989399,
+        "center": [
+          563.252197265625,
+          340.5613708496094
+        ],
+        "inliers": 76
+      },
+      {
+        "frame": 29,
+        "scale": 1.0068351408174958,
+        "center": [
+          565.397216796875,
+          333.7928771972656
+        ],
+        "inliers": 83
+      },
+      {
+        "frame": 30,
+        "scale": 1.0167927638109522,
+        "center": [
+          569.4179077148438,
+          322.44757080078125
+        ],
+        "inliers": 90
+      },
+      {
+        "frame": 31,
+        "scale": 1.0121818431034943,
+        "center": [
+          571.7801513671875,
+          316.56298828125
+        ],
+        "inliers": 94
+      },
+      {
+        "frame": 32,
+        "scale": 1.0171846750100408,
+        "center": [
+          575.3858032226562,
+          308.39019775390625
+        ],
+        "inliers": 88
+      },
+      {
+        "frame": 33,
+        "scale": 1.020393256796351,
+        "center": [
+          577.700439453125,
+          303.5104064941406
+        ],
+        "inliers": 86
+      },
+      {
+        "frame": 34,
+        "scale": 1.0270588623584906,
+        "center": [
+          581.899658203125,
+          295.6463928222656
+        ],
+        "inliers": 78
+      },
+      {
+        "frame": 35,
+        "scale": 1.0285838523890172,
+        "center": [
+          584.5342407226562,
+          291.3088073730469
+        ],
+        "inliers": 88
+      },
+      {
+        "frame": 36,
+        "scale": 1.030384188432112,
+        "center": [
+          587.91845703125,
+          284.9790344238281
+        ],
+        "inliers": 88
+      },
+      {
+        "frame": 37,
+        "scale": 1.0344932896798615,
+        "center": [
+          589.9904174804688,
+          281.0154724121094
+        ],
+        "inliers": 88
+      },
+      {
+        "frame": 38,
+        "scale": 1.041411422028907,
+        "center": [
+          592.9710693359375,
+          276.1358642578125
+        ],
+        "inliers": 91
+      },
+      {
+        "frame": 39,
+        "scale": 1.047906716452542,
+        "center": [
+          594.95849609375,
+          273.4096984863281
+        ],
+        "inliers": 78
+      },
+      {
+        "frame": 40,
+        "scale": 1.0558080328826247,
+        "center": [
+          597.6132202148438,
+          270.05029296875
+        ],
+        "inliers": 82
+      },
+      {
+        "frame": 41,
+        "scale": 1.0618845138303152,
+        "center": [
+          599.2883911132812,
+          268.060302734375
+        ],
+        "inliers": 84
+      },
+      {
+        "frame": 42,
+        "scale": 1.067508122424749,
+        "center": [
+          601.5121459960938,
+          265.66485595703125
+        ],
+        "inliers": 95
+      },
+      {
+        "frame": 43,
+        "scale": 1.0741645415547845,
+        "center": [
+          603.1060180664062,
+          264.5187072753906
+        ],
+        "inliers": 84
+      },
+      {
+        "frame": 44,
+        "scale": 1.0804127441078215,
+        "center": [
+          604.9466552734375,
+          263.2075500488281
+        ],
+        "inliers": 89
+      },
+      {
+        "frame": 45,
+        "scale": 1.085049225849597,
+        "center": [
+          606.1417236328125,
+          262.4655456542969
+        ],
+        "inliers": 83
+      },
+      {
+        "frame": 46,
+        "scale": 1.0915210946538882,
+        "center": [
+          608.2095947265625,
+          261.8560485839844
+        ],
+        "inliers": 75
+      },
+      {
+        "frame": 47,
+        "scale": 1.0936772083521762,
+        "center": [
+          609.3903198242188,
+          261.8752136230469
+        ],
+        "inliers": 80
+      },
+      {
+        "frame": 48,
+        "scale": 1.0997154556878173,
+        "center": [
+          611.18994140625,
+          262.21868896484375
+        ],
+        "inliers": 79
+      },
+      {
+        "frame": 49,
+        "scale": 1.1037951218902236,
+        "center": [
+          612.2123413085938,
+          262.62286376953125
+        ],
+        "inliers": 91
+      },
+      {
+        "frame": 50,
+        "scale": 1.1071122017864352,
+        "center": [
+          614.007080078125,
+          264.32464599609375
+        ],
+        "inliers": 79
+      },
+      {
+        "frame": 51,
+        "scale": 1.1133082367076135,
+        "center": [
+          614.8931274414062,
+          265.66827392578125
+        ],
+        "inliers": 96
+      },
+      {
+        "frame": 52,
+        "scale": 1.1157442087138314,
+        "center": [
+          615.8487548828125,
+          268.7904968261719
+        ],
+        "inliers": 84
+      },
+      {
+        "frame": 53,
+        "scale": 1.1183911949716892,
+        "center": [
+          616.1299438476562,
+          270.8892517089844
+        ],
+        "inliers": 83
+      },
+      {
+        "frame": 54,
+        "scale": 1.1193052782379518,
+        "center": [
+          616.4310913085938,
+          274.5266418457031
+        ],
+        "inliers": 100
+      },
+      {
+        "frame": 55,
+        "scale": 1.12039056031595,
+        "center": [
+          616.5296630859375,
+          276.5307922363281
+        ],
+        "inliers": 93
+      },
+      {
+        "frame": 56,
+        "scale": 1.1265636410303945,
+        "center": [
+          616.4057006835938,
+          280.2544860839844
+        ],
+        "inliers": 91
+      },
+      {
+        "frame": 57,
+        "scale": 1.1276753443559533,
+        "center": [
+          616.7933349609375,
+          282.5001525878906
+        ],
+        "inliers": 87
+      },
+      {
+        "frame": 58,
+        "scale": 1.1291810153786273,
+        "center": [
+          617.48828125,
+          285.83856201171875
+        ],
+        "inliers": 100
+      },
+      {
+        "frame": 59,
+        "scale": 1.1297699114795055,
+        "center": [
+          618.0785522460938,
+          288.0855712890625
+        ],
+        "inliers": 93
+      },
+      {
+        "frame": 60,
+        "scale": 1.1305857118640978,
+        "center": [
+          618.7484741210938,
+          291.0386047363281
+        ],
+        "inliers": 93
+      },
+      {
+        "frame": 61,
+        "scale": 1.1310874351465272,
+        "center": [
+          619.5515747070312,
+          292.4850769042969
+        ],
+        "inliers": 100
+      },
+      {
+        "frame": 62,
+        "scale": 1.1305609251936553,
+        "center": [
+          620.5278930664062,
+          294.5032043457031
+        ],
+        "inliers": 89
+      },
+      {
+        "frame": 63,
+        "scale": 1.1298440852332787,
+        "center": [
+          621.33642578125,
+          295.7307434082031
+        ],
+        "inliers": 92
+      },
+      {
+        "frame": 64,
+        "scale": 1.1286634672447307,
+        "center": [
+          622.169189453125,
+          297.30419921875
+        ],
+        "inliers": 87
+      },
+      {
+        "frame": 65,
+        "scale": 1.1287170189405977,
+        "center": [
+          622.77197265625,
+          298.2353515625
+        ],
+        "inliers": 94
+      },
+      {
+        "frame": 66,
+        "scale": 1.1278941350438125,
+        "center": [
+          623.5860595703125,
+          299.3312683105469
+        ],
+        "inliers": 100
+      },
+      {
+        "frame": 67,
+        "scale": 1.1272003077012445,
+        "center": [
+          624.2020874023438,
+          299.9952392578125
+        ],
+        "inliers": 91
+      },
+      {
+        "frame": 68,
+        "scale": 1.126882525726427,
+        "center": [
+          625.0012817382812,
+          300.2974853515625
+        ],
+        "inliers": 90
+      },
+      {
+        "frame": 69,
+        "scale": 1.1243369565522892,
+        "center": [
+          625.5294799804688,
+          300.2173156738281
+        ],
+        "inliers": 78
+      },
+      {
+        "frame": 70,
+        "scale": 1.1206748075104644,
+        "center": [
+          625.8345336914062,
+          299.7306823730469
+        ],
+        "inliers": 91
+      },
+      {
+        "frame": 71,
+        "scale": 1.1188036273566193,
+        "center": [
+          625.9473266601562,
+          299.16265869140625
+        ],
+        "inliers": 86
+      },
+      {
+        "frame": 72,
+        "scale": 1.1169562971049016,
+        "center": [
+          626.0809326171875,
+          297.8536682128906
+        ],
+        "inliers": 89
+      },
+      {
+        "frame": 73,
+        "scale": 1.1164369604874702,
+        "center": [
+          626.02734375,
+          296.6485900878906
+        ],
+        "inliers": 94
+      },
+      {
+        "frame": 74,
+        "scale": 1.1149962053615818,
+        "center": [
+          625.9110717773438,
+          294.9440002441406
+        ],
+        "inliers": 93
+      },
+      {
+        "frame": 75,
+        "scale": 1.1142542054734423,
+        "center": [
+          625.8782348632812,
+          293.779296875
+        ],
+        "inliers": 92
+      },
+      {
+        "frame": 76,
+        "scale": 1.1121814105891321,
+        "center": [
+          625.8347778320312,
+          292.4149475097656
+        ],
+        "inliers": 98
+      },
+      {
+        "frame": 77,
+        "scale": 1.1120513979203537,
+        "center": [
+          625.7367553710938,
+          291.7265625
+        ],
+        "inliers": 94
+      },
+      {
+        "frame": 78,
+        "scale": 1.1117485575975603,
+        "center": [
+          625.5048217773438,
+          291.3987731933594
+        ],
+        "inliers": 87
+      },
+      {
+        "frame": 79,
+        "scale": 1.1111514714077633,
+        "center": [
+          625.172607421875,
+          291.32708740234375
+        ],
+        "inliers": 97
+      },
+      {
+        "frame": 80,
+        "scale": 1.1103005937621102,
+        "center": [
+          624.8203125,
+          291.6634521484375
+        ],
+        "inliers": 89
+      },
+      {
+        "frame": 81,
+        "scale": 1.109748459265447,
+        "center": [
+          624.4224243164062,
+          292.1208190917969
+        ],
+        "inliers": 91
+      },
+      {
+        "frame": 82,
+        "scale": 1.1099334551878544,
+        "center": [
+          623.7327880859375,
+          293.3523864746094
+        ],
+        "inliers": 89
+      },
+      {
+        "frame": 83,
+        "scale": 1.109210805890963,
+        "center": [
+          623.0122680664062,
+          294.2886962890625
+        ],
+        "inliers": 92
+      },
+      {
+        "frame": 84,
+        "scale": 1.1090404594606271,
+        "center": [
+          621.8883666992188,
+          295.9746398925781
+        ],
+        "inliers": 80
+      },
+      {
+        "frame": 85,
+        "scale": 1.1081767356812628,
+        "center": [
+          621.0708618164062,
+          296.83929443359375
+        ],
+        "inliers": 97
+      },
+      {
+        "frame": 86,
+        "scale": 1.1074138076569369,
+        "center": [
+          619.50537109375,
+          298.1129455566406
+        ],
+        "inliers": 84
+      },
+      {
+        "frame": 87,
+        "scale": 1.1056147232155762,
+        "center": [
+          618.5436401367188,
+          298.881103515625
+        ],
+        "inliers": 95
+      },
+      {
+        "frame": 88,
+        "scale": 1.104211964926524,
+        "center": [
+          617.0404663085938,
+          299.70709228515625
+        ],
+        "inliers": 92
+      },
+      {
+        "frame": 89,
+        "scale": 1.103250514150383,
+        "center": [
+          616.1989135742188,
+          299.93939208984375
+        ],
+        "inliers": 87
+      },
+      {
+        "frame": 90,
+        "scale": 1.101700103350398,
+        "center": [
+          614.6751708984375,
+          299.99774169921875
+        ],
+        "inliers": 86
+      },
+      {
+        "frame": 91,
+        "scale": 1.1008736890830124,
+        "center": [
+          613.54248046875,
+          299.8587341308594
+        ],
+        "inliers": 92
+      },
+      {
+        "frame": 92,
+        "scale": 1.1003058806335826,
+        "center": [
+          612.3751220703125,
+          299.30279541015625
+        ],
+        "inliers": 90
+      },
+      {
+        "frame": 93,
+        "scale": 1.0999928508706998,
+        "center": [
+          611.8602905273438,
+          298.7616882324219
+        ],
+        "inliers": 94
+      },
+      {
+        "frame": 94,
+        "scale": 1.0976270915751685,
+        "center": [
+          611.3920288085938,
+          297.79302978515625
+        ],
+        "inliers": 88
+      },
+      {
+        "frame": 95,
+        "scale": 1.0972075621863295,
+        "center": [
+          611.1672973632812,
+          297.18280029296875
+        ],
+        "inliers": 91
+      },
+      {
+        "frame": 96,
+        "scale": 1.0972496771929756,
+        "center": [
+          611.002197265625,
+          296.22894287109375
+        ],
+        "inliers": 93
+      },
+      {
+        "frame": 97,
+        "scale": 1.0968937038009747,
+        "center": [
+          611.1954956054688,
+          295.5574035644531
+        ],
+        "inliers": 95
+      },
+      {
+        "frame": 98,
+        "scale": 1.0968218989078333,
+        "center": [
+          611.663818359375,
+          294.8358154296875
+        ],
+        "inliers": 99
+      },
+      {
+        "frame": 99,
+        "scale": 1.0973232134202096,
+        "center": [
+          612.1072387695312,
+          294.4260559082031
+        ],
+        "inliers": 92
+      },
+      {
+        "frame": 100,
+        "scale": 1.09679895455552,
+        "center": [
+          613.177001953125,
+          293.9734802246094
+        ],
+        "inliers": 96
+      },
+      {
+        "frame": 101,
+        "scale": 1.0970357571003047,
+        "center": [
+          613.848876953125,
+          293.8113708496094
+        ],
+        "inliers": 85
+      },
+      {
+        "frame": 102,
+        "scale": 1.0984804982765668,
+        "center": [
+          614.9310913085938,
+          293.9225769042969
+        ],
+        "inliers": 89
+      },
+      {
+        "frame": 103,
+        "scale": 1.0978450099609218,
+        "center": [
+          615.5590209960938,
+          294.1520080566406
+        ],
+        "inliers": 89
+      },
+      {
+        "frame": 104,
+        "scale": 1.097184002243275,
+        "center": [
+          616.419189453125,
+          294.26239013671875
+        ],
+        "inliers": 94
+      },
+      {
+        "frame": 105,
+        "scale": 1.0963890748644718,
+        "center": [
+          616.823486328125,
+          294.6407470703125
+        ],
+        "inliers": 91
+      },
+      {
+        "frame": 106,
+        "scale": 1.095996537561024,
+        "center": [
+          617.0582275390625,
+          295.1041259765625
+        ],
+        "inliers": 92
+      },
+      {
+        "frame": 107,
+        "scale": 1.0958640563316586,
+        "center": [
+          616.9415893554688,
+          295.82269287109375
+        ],
+        "inliers": 96
+      },
+      {
+        "frame": 108,
+        "scale": 1.0959085852325128,
+        "center": [
+          616.5553588867188,
+          296.7561950683594
+        ],
+        "inliers": 87
+      },
+      {
+        "frame": 109,
+        "scale": 1.0950971073908344,
+        "center": [
+          616.3425903320312,
+          297.45208740234375
+        ],
+        "inliers": 94
+      },
+      {
+        "frame": 110,
+        "scale": 1.0943738174547455,
+        "center": [
+          616.0292358398438,
+          298.5560607910156
+        ],
+        "inliers": 98
+      },
+      {
+        "frame": 111,
+        "scale": 1.0950887130645746,
+        "center": [
+          615.863037109375,
+          299.0922546386719
+        ],
+        "inliers": 85
+      },
+      {
+        "frame": 112,
+        "scale": 1.0942672895819858,
+        "center": [
+          615.486328125,
+          299.6981201171875
+        ],
+        "inliers": 83
+      },
+      {
+        "frame": 113,
+        "scale": 1.092967099714678,
+        "center": [
+          615.2066040039062,
+          300.1313781738281
+        ],
+        "inliers": 96
+      },
+      {
+        "frame": 114,
+        "scale": 1.091735497960027,
+        "center": [
+          614.7144165039062,
+          300.56414794921875
+        ],
+        "inliers": 86
+      },
+      {
+        "frame": 115,
+        "scale": 1.0910768699998836,
+        "center": [
+          614.2594604492188,
+          300.6606140136719
+        ],
+        "inliers": 95
+      },
+      {
+        "frame": 116,
+        "scale": 1.091184678665618,
+        "center": [
+          613.5005493164062,
+          300.50390625
+        ],
+        "inliers": 93
+      },
+      {
+        "frame": 117,
+        "scale": 1.0902040570874914,
+        "center": [
+          612.6719360351562,
+          300.20379638671875
+        ],
+        "inliers": 100
+      },
+      {
+        "frame": 118,
+        "scale": 1.0903117431231457,
+        "center": [
+          611.520263671875,
+          299.6573181152344
+        ],
+        "inliers": 83
+      },
+      {
+        "frame": 119,
+        "scale": 1.0909181624117148,
+        "center": [
+          610.8964233398438,
+          299.5127868652344
+        ],
+        "inliers": 97
+      }
+    ],
+    "referenceTextureSha256": "8d4b6bd8530fe9094f87ea57caa58d453c853a4692e09fc0907c0cb48d719898",
+    "referenceBox": [
+      610.0,
+      500.0,
+      740.0,
+      600.0
+    ],
+    "targetBox": [
+      490.0,
+      402.0,
+      594.0,
+      485.0
+    ],
+    "firstFrameAlsoCorrected": true
+  },
+  "actualDecision": {
+    "id": "S15",
+    "sourceSha256": "2a461bda9bae0b504565c892bd7a2bd0d592787cea5c8b04381afec84bd77acb",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-17T14:05:22.396128+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 96,
+    "frameEvidence": [
+      {
+        "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-S15-002\\review\\video-768p\\S15-2a461bda9b-all-frames-01.png",
+        "sha256": "b03a70e239cac68854f2c92d9574b9dab491a0eb825b8925edf878f92245ede9",
+        "items": 32
+      },
+      {
+        "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-S15-002\\review\\video-768p\\S15-2a461bda9b-all-frames-02.png",
+        "sha256": "98b416cf59da4c99d9419fec4eeae217fd530684d57ca080a45a29095a269ee4",
+        "items": 32
+      },
+      {
+        "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-S15-002\\review\\video-768p\\S15-2a461bda9b-all-frames-03.png",
+        "sha256": "4843252eda7edf9506c5fd5c06cd6ff2ebe28a090b04a2d9c63596f6ed5177bf",
+        "items": 32
+      },
+      {
+        "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-S15-002\\review\\video-768p\\S15-2a461bda9b-all-frames-04.png",
+        "sha256": "f355c0d0743fa6793db5cf2a2b52ff7d9115ec47dc5e771c5389d4561f37555f",
+        "items": 24
+      }
+    ],
+    "faceEvidence": null,
+    "observation": "Actually viewed all 120 original and all 120 corrected native source frames, complete temporal sheets, both original and corrected native endpoints, all 120 tracked original and corrected face crops, original reference at native resolution and both original-versus-new artwork comparisons. The original two attached female hands lift the same cup clear of the table during approximately the first 1.5 seconds, then hold it steadily through the unchanged four-second final interval and the complete retained five-second source. No repeated rubbing or cup return to table occurs. The outside road, guardrail, wall and houses remain empty in every full scene frame: no added pedestrian, real human face, reflection, unrelated limb or extra hand. The same feminine white/deep-violet/gold costume remains head-out. Original violet-pink open eyes, iris/eyelid contours, round thin gold glasses and face proportions are restored onto this same cup. All corrected print crops remain open and inert without visible slip, duplicated features, edge halo or seam during the lift. Raw R1 with pedestrians and raw R2 with narrowed print eyes are rejected and retained. Zero face detector candidates alone do not establish the scene result; actual full scene review does. Accept the complete five-second corrected source for the unchanged four-second final S15. No final-film or human playback approval implied.",
+    "decision": "accepted",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "passed"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "S15",
+  "sourceSha256": "910b5566f0d45bd1fa2543ec7c8ee4c08ad8877e9b17a8a4755993ffa8898974",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-17T14:03:51.478454+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 96,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-S15-002\\review\\video-768p\\S15-910b5566f0-all-frames-01.png",
+      "sha256": "5b52bdba410f3158588a0f970c7ad4cab631919d1fb39a09a92ecc1a50c7e065",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-S15-002\\review\\video-768p\\S15-910b5566f0-all-frames-02.png",
+      "sha256": "d8fe2e986f6892dfd9f0178bc6ef45147279a5d1b0fde7c6cb74f51b6c28e0cf",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-S15-002\\review\\video-768p\\S15-910b5566f0-all-frames-03.png",
+      "sha256": "e4f614036bb55e383116759c9ee58d44a80015e5d613dd8050f348be0936af2b",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-S15-002\\review\\video-768p\\S15-910b5566f0-all-frames-04.png",
+      "sha256": "3f89c876d7f1b54f5fda7f6babe13d6945b5d8a987eca83f12f8220e67282e19",
+      "items": 24
+    }
+  ],
+  "faceEvidence": null,
+  "observation": "Actually viewed all 120 full scene source frames, temporal evidence, native endpoints, the original scene, all 120 tracked face crops and the original-versus-new print comparison. The two original attached female hands lift the cup clear of the table during approximately the first 1.5 seconds and hold it steadily. The original road, wall, fence and buildings outside remain empty throughout; no added person, real face, reflection or extra hand is visible. The feminine costume stays head-out. However the cup print narrows its eyes and changes glasses/face proportions during the lift, especially frames 20-30. This physical printed illustration must remain identical to its original open-eyed drawing. Reject raw reference appearance and inert-merchandise behavior; preserve raw generation and independently review a same-prop original-texture composite.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "failed",
+  "referenceAppearance": "failed"
+}
