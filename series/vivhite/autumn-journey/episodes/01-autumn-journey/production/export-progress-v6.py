@@ -37,6 +37,36 @@ def delivered(base, name):
                 and receipt.get('informationDisclosure') == 'passed')
 
 
+def refinement_progress(base, plan, checks):
+    directory = base / 'production-v6-local-2k-001'
+    decisions = read(directory / 'clip-decisions.json', {'shots': []})
+    selections = read(directory / 'source-selections.json', {'selections': {}})['selections']
+    rows = []
+    for shot in plan['shots']:
+        identity = shot['id']
+        job = read(directory / 'jobs' / f'{identity}.json', {})
+        selected = selections.get(identity)
+        source = directory / (selected['path'] if selected else f'sources/{identity}.mp4')
+        digest = sha(source) if source.is_file() else None
+        decision = next((item for item in decisions['shots'] if item['id'] == identity), {})
+        accepted = bool(digest and decision.get('sourceSha256') == digest
+                        and decision.get('decision') != 'rejected'
+                        and decision.get('allSourceFrameReview') is True
+                        and decision.get('reviewedNativeFrames') == shot['sourceSeconds'] * 24
+                        and all(decision.get(key) == 'passed' for key in checks))
+        rows.append({'id': identity, 'jobId': job.get('jobId'), 'status': job.get('status', 'not-submitted'),
+                     'serverStage': job.get('remote', {}).get('stage'),
+                     'serverReportedJobProgress': job.get('remote', {}).get('progress'),
+                     'inferenceSeconds': job.get('remote', {}).get('result', {}).get('inference_time_s'),
+                     'sourceSha256': digest, 'acceptedWithReferenceComparison': accepted})
+    completed = sum(bool(row['sourceSha256']) for row in rows)
+    accepted = sum(row['acceptedWithReferenceComparison'] for row in rows)
+    return {'totalShots': len(rows), 'completedSources': completed, 'acceptedSources': accepted,
+            'generationPercent': round(100 * completed / len(rows), 2),
+            'acceptedPercent': round(100 * accepted / len(rows), 2), 'shots': rows,
+            'scope': 'Actual 2K bytes and independent decisions only. Server job progress is not film completion.'}
+
+
 def export(base):
     plan_file = EP / 'production-plan-v6-bf16-768p.json'
     plan = read(plan_file, {})
@@ -82,6 +112,7 @@ def export(base):
               'acceptedPercent': round(100 * accepted / len(shots), 2),
               'final768FilmDelivered': delivered(base, 'delivery-plan-v6-768p.json'),
               'final2KFilmDelivered': delivered(base, 'delivery-plan-v6-2k.json'),
+              'refinement2K': refinement_progress(base, plan, checks),
               'humanFullPlayback': False, 'excludedHistoricalSources': ['S20A', 'S20B'],
               'scope': 'Source availability and actual matching review records only. '
                        'This snapshot grants no review, new-plan binding or film approval.',
