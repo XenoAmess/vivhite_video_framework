@@ -51,6 +51,11 @@ def export(base):
     completed = sum(bool(row['sourceSha256']) for row in rows)
     accepted = sum(row['completeSourceAccepted'] for row in rows)
     receipt = read(EP / 'production/release-v8-768p.json', {})
+    finished = read(base / 'production-v8-bf16-768p-001/final-assembly-receipt.json', {})
+    inspected = read(base / 'production-v8-bf16-768p-001/encoded-film-inspection.json', {})
+    final_review = read(EP / 'production/final-review-v8-768p.json', {})
+    film_matches = (finished.get('filmSha256') is not None
+                    and finished.get('filmSha256') == inspected.get('filmSha256') == final_review.get('filmSha256'))
     value = {'schemaVersion': 'vivhite-motion-revision-progress-1', 'revision': 8,
              'snapshotAt': datetime.now(timezone.utc).isoformat(), 'newShots': 7,
              'completedSources': completed, 'acceptedNewSources': accepted,
@@ -61,6 +66,12 @@ def export(base):
              'automaticTwoKResumeAllowed': False, 'releasePublished': bool(receipt.get('releaseId')),
              'newResolutionStages': ['1344x768', '3840x2160'], 'fourKStatus': 'not-submitted',
              'humanFullPlayback': False, 'shots': rows,
+             'filmEncoded': finished.get('frames') == 6150,
+             'filmFullDecodePassed': finished.get('fullAudioVideoDecode') == 'passed',
+             'encodedFrameInspectionPercent': round(inspected.get('decodedAndComparedFrames', 0) * 100 / 6150, 2),
+             'finalEvidenceReviewComplete': film_matches,
+             'nativeWingMotionKeptByUser': True,
+             'butterflySlowdownApplied': False,
              'scope': 'Seven new replacements only. Server progress is not source acceptance or film completion.'}
     (EP / 'production/run-progress-v8-768p.json').write_text(
         json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

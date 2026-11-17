@@ -104,6 +104,10 @@ $postEvidence = "$postEpisode/assets/generated/postprocess-reuse-example-001/rev
 
 此前v7片尾曾使用该慢放路线；v8当前提交的是**原生14秒重新生成**，不能把历史慢放说明当成本轮已采用结论。任何源内变速也须保留既定成片镜头长度，改导演稿时长需要明确授权。
 
+另有 [`retime_local_region.py`](../video-maker/tools/retime_local_region.py)，将指定矩形内部按真实源区间慢放、光流插帧并羽化融合，外围保持原时间线；不循环、无末帧克隆。收据记录局部源区间、倍率、羽化范围、完整命令和代码快照。它需要足够的真实前后帧，缩小源区间、降采样或关闭场景变化回退也可能产生翼缘重影，必须检查完整局部及边界；合成后的外围因有损编码不保证逐像素相同。两个真实编码测试核对源片未改、完整帧数、局部确实变化及外围同时刻运动保留，不能替代美术验收。
+
+v8试做的第一份局部候选出现可见翼缘重影，已拒收；第二份完成编码但没有语义验收。用户随后明确取消蝴蝶减速，最终S48采用第五轮原生14秒视频，两份局部候选均不采用、不继续处理。普通24→30fps转换仍保留原动作速度，不能称为蝴蝶慢放。
+
 [`reference_finisher.py`](../video-maker/tools/reference_finisher.py) 的 `titles()` 统一生成ASS标题，片头片尾共享Title／Subtitle样式，献词独立延迟淡入。`local_video_finisher.py` 按计划把24fps源片转为精确帧数的30fps镜段，再做画面装配；此处普通 `fps=30` 不是MCI运动插帧。`reference_finisher.finish()` 绑定实际声音与标题，检查角色收据，输出真实MP4并全量音视频解码；模型原生音轨没有进入本片最终混音。
 
 [`inspect_local_video_film.py`](../video-maker/tools/inspect_local_video_film.py) 对成片所有编码帧与所选画面轨做对照，另输出检测候选、各镜样图、标题与献词淡入帧。它用于核对后期是否引入意外改动，不证明所选源片本来就正确；仍要解释全部候选，并区分机器覆盖、助手帧图审阅、人工连续观看和听音。
@@ -122,6 +126,7 @@ v7实际来源收据中有10个镜头经过局部处理：S07、S11、S16、S20�
 | [`review_reference_clips.py`](../video-maker/tools/review_reference_clips.py) | 完整源帧、时序、运动与真人脸候选证据 |
 | [`record_local_clip_review.py`](../video-maker/tools/record_local_clip_review.py) | 显式采用／拒收、原图一致性与旧结论归档 |
 | [`retime_local_clip.py`](../video-maker/tools/retime_local_clip.py) | 明确源区间的慢放候选与插帧收据 |
+| [`retime_local_region.py`](../video-maker/tools/retime_local_region.py)、[`test_retime_local_region.py`](../video-maker/tools/tests/test_retime_local_region.py) | 局部慢放候选、外围时间线保留与真实编解码测试；本期未采用 |
 | [`local_video_finisher.py`](../video-maker/tools/local_video_finisher.py) | 原生尺寸、固定镜头时长与精确帧数装配 |
 | [`reference_finisher.py`](../video-maker/tools/reference_finisher.py) | 原创配乐、ASS标题、实际文件绑定及最终合成；音乐详见[专文](autumn-journey-music-generation.md) |
 | [`inspect_local_video_film.py`](../video-maker/tools/inspect_local_video_film.py) | 成片全部编码帧对照、检测候选和标题淡入检查 |
@@ -130,3 +135,5 @@ v7实际来源收据中有10个镜头经过局部处理：S07、S11、S16、S20�
 | [`test_retime_local_clip.py`](../video-maker/tools/tests/test_retime_local_clip.py)、[`test_v8_locked_timing.py`](../video-maker/tools/tests/test_v8_locked_timing.py) | 慢放源区间、帧数、历史保留与前47镜时长锁验证 |
 
 这些能力为Python后处理worker，位于以Java为主的制作框架中；不将它们描述成Java渲染器已经内置的自动修复模型。
+
+2026-11-18实读8001的OpenAPI还确认：FastH3的`negative_prompt`固定为空，`guidance_scale`固定1.0，`num_inference_steps`固定8，`task`固定`ref2va`，没有独立的像素级首帧锁定参数。正文写“不要某物”不是独立负向控制，也不能保证参考图里没有的物体不会生成。应使用清晰的正向构图与动作描述，再按真实结果验收；不虚构负向参数、不将语义提示称为强制锁帧。这个接口事实不证明某个具体幻觉一定由某个词造成。

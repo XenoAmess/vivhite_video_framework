@@ -13,6 +13,17 @@ SPEC.loader.exec_module(worker)
 
 
 class LockedTimingTest(unittest.TestCase):
+    def test_native_closing_choice_keeps_raw_origin_and_excludes_slowdown(self):
+        plan = worker.worker.read(worker.PLAN_FILE)
+        policy = worker.worker.read(worker.EP / 'production/workflow-policy.json')['closingGeneration']
+        self.assertEqual(worker.ORIGINS['S48'], ('production-v8-motion-768p-S48-005',
+                                                'production-plan-v8-S48-image-only-r5.json'))
+        self.assertTrue(plan['shots'][-1]['nativeWingMotionAcceptedByUser'])
+        self.assertFalse(plan['shots'][-1]['butterflySlowdownRequested'])
+        self.assertFalse(policy['furtherClosingGenerationRequested'])
+        self.assertFalse(policy['localTimingCandidates']['adopted'])
+        self.assertEqual(policy['activeAttempt']['selectedSource'], 'sources/S48.mp4')
+
     def test_current_retry_uses_fourteen_source_seconds_and_preserves_failed_fifteen_second_history(self):
         plan = worker.worker.read(worker.PLAN_FILE)
         policy = worker.worker.read(worker.EP / 'production/workflow-policy.json')['closingGeneration']

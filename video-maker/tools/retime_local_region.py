@@ -36,7 +36,7 @@ def retime_region(source, destination, box, factor, start_seconds, output_second
         raise ValueError('Selected motion interval lacks real interpolation context')
     identity = {'parentSha256': sha(source), 'box': list(box), 'factor': factor, 'startSeconds': start_seconds,
                 'frames': output_seconds * 24, 'fps': 24, 'motionSampleFps': motion_fps, 'featherPixels': feather,
-                'recipe': 'local-setpts-mci-feather-original-timeline-crf16-1', 'workerSha256': sha(__file__)}
+                'recipe': 'local-setpts-mci-no-scd-feather-original-timeline-crf16-2', 'workerSha256': sha(__file__)}
     receipt_file = destination.with_suffix('.json')
     if destination.exists():
         record = json.loads(receipt_file.read_text(encoding='utf-8'))
@@ -52,7 +52,7 @@ def retime_region(source, destination, box, factor, start_seconds, output_second
     filters = (
         f'[0:v]split=2[base][region];'
         f'[region]crop={width}:{height}:{x1}:{y1},{timing},'
-        'minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,'
+        'minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1:scd=none,'
         f"format=yuva420p,geq=lum='lum(X,Y)':cb='cb(X,Y)':cr='cr(X,Y)':a='{alpha}'[slow];"
         f'[base][slow]overlay=x={x1}:y={y1}:shortest=1:eof_action=endall:format=yuv420[out]')
     command = ['ffmpeg', '-v', 'error', '-n', '-i', str(source), '-filter_complex', filters,
@@ -63,8 +63,15 @@ def retime_region(source, destination, box, factor, start_seconds, output_second
     if snapshot.exists() and snapshot.read_bytes() != Path(__file__).read_bytes():
         raise ValueError('Preserve the existing processing worker snapshot')
     snapshot.write_bytes(Path(__file__).read_bytes())
-    completed = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-                               text=True, encoding='utf-8', errors='replace', timeout=1800)
+    try:
+        completed = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                                   text=True, encoding='utf-8', errors='replace', timeout=1800)
+    except subprocess.TimeoutExpired as error:
+        captured = error.stdout or ''
+        if isinstance(captured, bytes):
+            captured = captured.decode('utf-8', errors='replace')
+        destination.with_suffix('.ffmpeg.log').write_text(captured, encoding='utf-8', newline='\n')
+        raise TimeoutError('Local retiming timed out; partial output, command, worker and log retained') from error
     destination.with_suffix('.ffmpeg.log').write_text(completed.stdout, encoding='utf-8', newline='\n')
     if completed.returncode:
         raise RuntimeError(f'Local retiming failed; output and complete log retained: {completed.stdout[-2000:]}')

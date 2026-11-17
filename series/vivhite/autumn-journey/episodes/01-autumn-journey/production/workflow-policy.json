@@ -35,8 +35,10 @@
     "activeAttempt": {
       "run": "production-v8-motion-768p-S48-005",
       "sourceSeconds": 14,
-      "statusAtPolicyUpdate": "in_progress",
-      "jobId": "video_gen_6675fcddd5db4d28a67b425026575e72"
+      "statusAtPolicyUpdate": "completed-native-adopted-by-user",
+      "jobId": "video_gen_6675fcddd5db4d28a67b425026575e72",
+      "sourceSha256": "8ac2c450a4b919086f365fbb4cc7df8e98cefece6e0c2cf913f7aabad4c31d9b",
+      "selectedSource": "sources/S48.mp4"
     },
     "fallbackActivated": false,
     "nextAttemptPlan": "production-plan-v8-S48-image-only-r5.json",
@@ -64,7 +66,7 @@
       "triggerAttemptJobId": "video_gen_bc1628d450e04c759499c30f10b1f97f",
       "triggerAlreadySatisfied": true
     },
-    "resumeCondition": "Submit the reviewed affirmative fourteen-second retry normally; preserve old failed and rejected jobs.",
+    "resumeCondition": "Proceed with original native R5 source assembly only. User stopped butterfly slowdown; do not resume either local candidate.",
     "supersededFifteenSecondPolicy": {
       "sourceSeconds": 15,
       "completeSourceReviewFramesAt24Fps": 360,
@@ -87,6 +89,21 @@
         "status": "completed-rejected",
         "receipt": "production/rejected-S48-invented-tree-v8-004.json"
       }
-    ]
+    ],
+    "nativeWingMotionAcceptedByUser": true,
+    "butterflySlowdownRequested": false,
+    "furtherClosingGenerationRequested": false,
+    "nextAttemptPlanIsHistoricalOrigin": true,
+    "localTimingCandidates": {
+      "status": "stopped-by-user",
+      "adopted": false,
+      "files": [
+        "corrections/S48-wing-slow-v1.mp4",
+        "corrections/S48-wing-slow-v2.mp4"
+      ],
+      "preserved": true,
+      "v1Review": "Rejected for visible wing ghosting after partial detail review",
+      "v2Review": "Rendered before user stopped slowdown; not semantically reviewed or selected"
+    }
   }
 }

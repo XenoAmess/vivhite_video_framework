@@ -34,9 +34,11 @@ def picture(path, value, quality=None):
     preserve(path, output.getvalue())
 
 
-def inspect(directory, box, expected_frames):
+def inspect(directory, box, expected_frames, source=None):
     directory = Path(directory).resolve()
-    source = directory / 'sources/S48.mp4'
+    source = Path(source).resolve() if source is not None else directory / 'sources/S48.mp4'
+    if not source.is_relative_to(directory):
+        raise ValueError('Inspect an actual source or candidate inside its own run')
     digest = sha(source)
     prefix = f'S48-{digest[:10]}'
     evidence = EPISODE / 'assets/generated' / directory.name / 'review/video-768p'
@@ -97,5 +99,6 @@ if __name__ == '__main__':
     parser.add_argument('--directory', required=True, type=Path)
     parser.add_argument('--box', required=True, nargs=4, type=int)
     parser.add_argument('--expected-frames', required=True, type=int)
+    parser.add_argument('--source', type=Path, help='Optional selected candidate inside the same run')
     args = parser.parse_args()
-    inspect(args.directory, tuple(args.box), args.expected_frames)
+    inspect(args.directory, tuple(args.box), args.expected_frames, args.source)

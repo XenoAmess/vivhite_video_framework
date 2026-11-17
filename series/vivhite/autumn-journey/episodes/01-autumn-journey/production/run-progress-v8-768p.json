@@ -1,12 +1,12 @@
 {
   "schemaVersion": "vivhite-motion-revision-progress-1",
   "revision": 8,
-  "snapshotAt": "2026-11-17T16:04:18.189158+00:00",
+  "snapshotAt": "2026-11-17T17:03:00.185985+00:00",
   "newShots": 7,
-  "completedSources": 6,
-  "acceptedNewSources": 6,
-  "generationPercent": 85.71,
-  "acceptancePercent": 85.71,
+  "completedSources": 7,
+  "acceptedNewSources": 7,
+  "generationPercent": 100.0,
+  "acceptancePercent": 100.0,
   "first47TimingsLockedToV7": true,
   "closingSeconds": 14,
   "targetSeconds": 205,
@@ -83,14 +83,20 @@
     },
     {
       "id": "S48",
-      "status": "in_progress",
+      "status": "completed",
       "originRun": "production-v8-motion-768p-S48-005",
       "jobId": "video_gen_6675fcddd5db4d28a67b425026575e72",
-      "sourceSha256": null,
-      "selectedSourceSha256": null,
-      "serverProgress": 1,
-      "completeSourceAccepted": false
+      "sourceSha256": "8ac2c450a4b919086f365fbb4cc7df8e98cefece6e0c2cf913f7aabad4c31d9b",
+      "selectedSourceSha256": "8ac2c450a4b919086f365fbb4cc7df8e98cefece6e0c2cf913f7aabad4c31d9b",
+      "serverProgress": 100,
+      "completeSourceAccepted": true
     }
   ],
+  "filmEncoded": true,
+  "filmFullDecodePassed": true,
+  "encodedFrameInspectionPercent": 100.0,
+  "finalEvidenceReviewComplete": true,
+  "nativeWingMotionKeptByUser": true,
+  "butterflySlowdownApplied": false,
   "scope": "Seven new replacements only. Server progress is not source acceptance or film completion."
 }

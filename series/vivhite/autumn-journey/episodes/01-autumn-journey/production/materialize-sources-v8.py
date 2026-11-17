@@ -13,7 +13,7 @@ worker = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(worker)
 
 REPLACEMENTS = ('S05', 'S07', 'S15', 'S28', 'S44', 'S47', 'S48')
-PLAN_FILE = EP / 'production-plan-v8-bf16-768p-r4.json'
+PLAN_FILE = EP / 'production-plan-v8-bf16-768p-r5.json'
 ORIGINS = {**worker.ORIGINS, **{
     identity: ('production-v8-motion-768p-001', 'production-plan-v8-motion-image-only-r1.json')
     for identity in REPLACEMENTS}}

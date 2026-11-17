@@ -52,11 +52,14 @@
     },
     {
       "id": "S48",
-      "action": "固定原海岸宽景，天空与左侧海面保持原图无遮挡构图，禁止新增前景树枝、树叶；保留原海浪、道路与房屋，右下蓝蝶近乎静止地沿身体根部极缓慢舒展和合拢，全段只作一次从容开合并有停歇，不快速拍翼、翻转、扭曲或拖影。生成14秒连续源片，片尾文字仍由后期叠加。",
-      "generationAction": "An unobstructed open view of the exact pebble beach in <Picture 1>. A locked wide camera stands on the open beach and looks directly at the sea. At every frame the entire upper half is clear pale sky, the left edge is open water and sky, the lower-left edge is beach stones and surf, and the right side contains exactly the pictured road, white railing, houses and distant low hillside. Match this exact open layout and clear frame margins. One continuous fourteen-second realistic coastal take, with gentle small waves along the same shoreline. The existing tiny blue corner graphic stays fixed at its original bottom-right position and original size. Its original blue wing pattern and central body stay coherent. In ultra-slow motion its two wing surfaces hinge gently around that fixed body: first four seconds resting, next six seconds one very gradual unfolding, final four seconds one very gradual folding. This is a single breathing gesture across the whole take, with long quiet pauses. The body position and orientation stay steady. The camera, horizon, coastal geography, natural light and composition remain steady throughout. The scene remains completely unoccupied. Clean plain sky. Gentle sea ambience without voices.",
-      "acceptance": "Review all 336 native source frames and all wing crops. Continuous original unobstructed coast and one nearly resting slow wing-opening/folding gesture. No added branch, leaf, person, real face, scene cut, rapid flutter, duplicate or distorted butterfly. The entire fourteen-second source is used in the fourteen-second closing segment; all first 47 final shot timings remain unchanged.",
+      "action": "固定原海岸宽景，天空与左侧海面保持原图无遮挡构图，不新增前景树干、树枝或树叶；保留原海浪、道路与房屋，右下蓝蝶保留本次R5生成的原生开合动作和速度，不做减速、插帧或局部替换。原生连续14秒完整入片，片尾文字由后期叠加。",
+      "generationAction": "Use the original completed fourteen-second R5 source unchanged, including its native wing motion. No further generation, retiming or corner replacement. Titles are assembled separately.",
+      "acceptance": "The user explicitly chooses the original native R5 wing motion and cancels butterfly slowdown. Review all 336 original native frames for an uninterrupted unobstructed coast, no added foreground tree, person, real face, reflection, text or scene cut, and the same single coherent blue motif. The earlier one-slow-gesture speed target is superseded; do not claim it was achieved. Use sources/S48.mp4 unchanged, not either local retiming candidate. Final closing remains fourteen seconds.",
       "sourceSeconds": 14,
-      "finalSeconds": 14
+      "finalSeconds": 14,
+      "nativeWingMotionAcceptedByUser": true,
+      "butterflySlowdownRequested": false,
+      "originalGenerationAction": "An unobstructed open view of the exact pebble beach in <Picture 1>. A locked wide camera stands on the open beach and looks directly at the sea. At every frame the entire upper half is clear pale sky, the left edge is open water and sky, the lower-left edge is beach stones and surf, and the right side contains exactly the pictured road, white railing, houses and distant low hillside. Match this exact open layout and clear frame margins. One continuous fourteen-second realistic coastal take, with gentle small waves along the same shoreline. The existing tiny blue corner graphic stays fixed at its original bottom-right position and original size. Its original blue wing pattern and central body stay coherent. In ultra-slow motion its two wing surfaces hinge gently around that fixed body: first four seconds resting, next six seconds one very gradual unfolding, final four seconds one very gradual folding. This is a single breathing gesture across the whole take, with long quiet pauses. The body position and orientation stay steady. The camera, horizon, coastal geography, natural light and composition remain steady throughout. The scene remains completely unoccupied. Clean plain sky. Gentle sea ambience without voices."
     }
   ],
   "resolutionStages": [
@@ -64,5 +67,6 @@
     "3840x2160"
   ],
   "workflowPolicy": "workflow-policy.json",
-  "closingRetryPlan": "../production-plan-v8-S48-image-only-r5.json"
+  "closingRetryPlan": "../production-plan-v8-S48-image-only-r5.json",
+  "closingSourceAdoptionPlan": "../production-plan-v8-bf16-768p-r5.json"
 }
