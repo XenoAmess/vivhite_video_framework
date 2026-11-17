@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "vivhite-image-edit-request-1",
+  "revision": 10,
+  "mode": "built-in-imagegen",
+  "shotId": "S01",
+  "variants": [
+    {
+      "schemaVersion": "vivhite-image-edit-request-1",
+      "revision": 10,
+      "mode": "built-in-imagegen",
+      "status": "rejected-not-adopted",
+      "shotId": "S01",
+      "editTarget": "assets/generated/production-v3-realism-001/scenes/S01-v1.png",
+      "destination": "assets/generated/production-v10-firstframes-001/scenes/S01-left-hand-v1.png",
+      "prompt": "Use case: precise-object-edit. Asset type: corrected photographic first frame for a quiet train-travel film. Input image 1 is the EDIT TARGET, not a style suggestion. Preserve this same woman, train compartment, crop, white/deep-violet/gold feminine costume, white legwear, worn blue seat, purple travel bag, small existing acrylic Vivhite charm, window, ordinary rural landscape, overcast daylight and photographic texture. Change ONLY the visible arm/hand pose enough to correct anatomical handedness. The visible arm is the woman's anatomical LEFT arm: show one continuous left upper arm to elbow to forearm to wrist to a clearly LEFT hand. Her left forearm reaches diagonally right toward the beige curtain with a relaxed elbow and a naturally supinated wrist. Show the LEFT PALM and its subtle palm creases toward the camera, so the hand's identity can be checked, rather than repeating the old back-of-hand pose. The four relaxed fingers point diagonally up and right and gently curl around the curtain edge; the correctly opposed LEFT thumb pinches the cloth below and nearer the viewer than the index finger. Five normal fingers total, coherent left-thumb placement, ordinary joints and proportions, no twisted wrist. Keep a small visible fabric fold between thumb and index. Her other arm and hand stay completely outside the crop. Make this an easy, anatomically plausible LEFT-handed curtain grip, not a right hand grafted onto a left forearm, and do not mirror the whole scene. Keep the entire head, neck-to-chin region, face and all human reflections outside the image exactly as cropped. No added person, hand, arm or silhouette. Preserve the exact charm artwork, its OPEN violet eyes, thin round gold glasses, blue ornament, face proportions and white/violet outfit; it remains an inert printed acrylic object. Keep the ordinary scene realism and original composition. No lettering, subtitles, watermark or credits. Save a single landscape photograph with the same composition.",
+      "generatedSha256": "220282cb45529d477470ee095785492941b214f7e55c2916a1a3250fbe02aa29",
+      "observation": "Palm is visible but the thumb remains above/on the wrong side relative to the stacked fingers; an anatomical LEFT label in a prompt does not establish a correct output. Preserve this candidate, do not submit it to video generation.",
+      "userSteering": "Keep a natural left-handed backhand curtain pull. Palm-facing-camera alternatives are rejected."
+    },
+    {
+      "editTarget": "assets/generated/production-v3-realism-001/scenes/S01-v1.png",
+      "destination": "assets/generated/production-v10-firstframes-001/scenes/S01-left-hand-v2.png",
+      "prompt": "Use case: precise-object-edit. Input image 1 is the edit target, the original cropped train photograph. Preserve the entire photograph EXCEPT the visible hand and a small natural adjustment of its wrist. This is the LEFT arm of the seated woman and it must end in an anatomically LEFT hand. IMPORTANT EXPLICIT SCREEN GEOMETRY: the LEFT PALM faces the CAMERA and the FOUR FINGERS point HORIZONTALLY toward SCREEN RIGHT, not vertically up. With this palm-to-camera and fingers-to-right orientation, the LEFT THUMB must lie on the LOWER edge of the hand, BELOW the four fingers; the little-finger edge is on the UPPER edge. Draw the correct opposed left thumb BELOW the index finger, near the bottom-right of the palm. The four gently bent fingers wrap the vertical beige curtain edge from left to right; their order from top to bottom on screen is LITTLE, RING, MIDDLE, INDEX, with the THUMB clearly BELOW the INDEX. Show realistic palm creases and the thenar pad at the LOWER side, ordinary five-digit anatomy and a relaxed continuous left wrist. This is a small, easy LEFT-handed pinch of the curtain, not a mirrored right hand and not a wrist twisted through 180 degrees. Preserve the continuous visible LEFT upper arm, elbow and forearm in the same white/deep-violet/gold sleeve, and keep the hand near its original place. Keep the other hand completely outside the frame. Do not mirror the whole scene or put the thumb back on the top of the grip. Preserve the same head-out female torso and covered legs, worn blue seat, purple bag, existing acrylic Vivhite charm, beige curtain, train window, ordinary rural scenery, natural daylight and photographic texture. Keep all real heads, chins, faces and human reflections outside the crop. No new person, limb, object, text, watermark or credits. Preserve the existing inert charm illustration, OPEN violet eyes, thin round gold glasses, face proportions and costume. One realistic landscape photograph, same composition.",
+      "status": "rejected-not-adopted",
+      "generatedSha256": "9ce0d1305f7ed0b907b1c3d6e92b2dc9c0620ee686264371c1ebcc903af9b0c3",
+      "observation": "Actually viewed the complete generated photograph. One visible palm faces the camera with four curled fingers toward image right and the opposed thumb along the lower edge below the index; thenar pad and wrist join the same forearm continuously. No extra hand, person, head, face or reflected figure. Original white/violet/gold outfit, covered legs, bag, blue seat, curtain, window and open-eyed inert charm retained. The first candidate is preserved but not selected.",
+      "userSteering": "Keep a natural left-handed backhand curtain pull. Palm-facing-camera alternatives are rejected."
+    },
+    {
+      "editTarget": "assets/generated/production-v3-realism-001/scenes/S01-v1.png",
+      "destination": "assets/generated/production-v10-firstframes-001/scenes/S01-left-hand-v3.png",
+      "poseReference": {
+        "url": "https://unsplash.com/photos/person-holding-window-curtain-during-daytime-92ZQFrntgwA",
+        "photographer": "britt gaiser",
+        "localRelativeToRepositoryParent": "vivhite-analysis-output/vivhite/autumn-journey/validation-v10/gesture-references/curtain-real-photo-01.jpg",
+        "sha256": "30cd5bf9904455fb67430a40d3578156172fbff6f4c3533da3313b9d447672bf",
+        "role": "Real hand pose only; no scene/identity/style transfer"
+      },
+      "prompt": "Use case: precise-object-edit. Image 1 is the ONLY scene edit target: preserve this exact cropped seated woman, costume, train, seat, bag, charm, curtain, window and ordinary rural daylight scene. Image 2 is a REAL HAND POSE REFERENCE ONLY. Use its natural anatomical LEFT-hand backhand/three-quarter dorsal curtain-pulling grip; do not copy its room, lighting, fabric, jewelry, skin details or accessories. Correct the visible hand on the woman's LEFT forearm in Image 1 by adapting that real hand pose. Her palm faces away toward the window/cloth, her knuckles and BACK OF THE LEFT HAND face the camera in a natural three-quarter angle. The curled fingers reach over and around the curtain edge, while the LEFT thumb opposes them from the LOWER/near side as in Image 2. Keep the correct left-handed chirality, not a right-handed dorsal grip. Do NOT turn the palm toward the camera or display an open palm. Use a relaxed slight inward wrist turn appropriate for a LEFT-handed BACKHAND pull of a curtain, with a coherent continuous left elbow, forearm and wrist; the thumb must match that left forearm, not look grafted onto it. A small pinch of fabric between thumb and fingers is enough. This is an ordinary physically possible curtain grip, with five normal fingers, gently curved joints, no bent-back fingers or corkscrew wrist. Retain the original modest reach and composition, allowing only the small hand/wrist/cloth-fold change needed for the natural backhand grip. Do not mirror the whole scene. Keep the other hand out of frame; all real heads, chins, facial fragments, reflections and unrelated people stay absent. Preserve the white/deep-violet/gold feminine clothes, covered legs and the same existing inert acrylic Vivhite charm with OPEN violet eyes, thin round gold glasses, original face proportions, blue ornament and fixed costume. Keep the ordinary photographed textures and overcast rural train mood. No new props, fingers, limbs, jewelry, chain from Image 2, lettering, subtitles, watermark or credits. A single landscape photograph, original composition.",
+      "status": "preserved-not-selected-thumb-contact-not-clear-enough",
+      "generatedSha256": "0d24c1ed7015cecba068398c0e0fa5a673d724d1a923ca555d27766fadedf396",
+      "observation": "Backhand posture restored; palm no longer faces the camera. Thumb contact is too occluded to clearly verify left-handed grip before video submission. Preserve this candidate and make the thumb contact legible without turning the palm."
+    },
+    {
+      "editTarget": "assets/generated/production-v10-firstframes-001/scenes/S01-left-hand-v3.png",
+      "destination": "assets/generated/production-v10-firstframes-001/scenes/S01-left-hand-v4.png",
+      "poseReference": {
+        "url": "https://unsplash.com/photos/person-holding-window-curtain-during-daytime-92ZQFrntgwA",
+        "photographer": "britt gaiser",
+        "localRelativeToRepositoryParent": "vivhite-analysis-output/vivhite/autumn-journey/validation-v10/gesture-references/curtain-real-photo-01.jpg",
+        "sha256": "30cd5bf9904455fb67430a40d3578156172fbff6f4c3533da3313b9d447672bf",
+        "role": "Real hand pose only; no scene/identity/style transfer"
+      },
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target, the cropped train scene with the new BACKHAND pose. Image 2 is only a real anatomical LEFT hand pose reference. Keep the whole train photograph and the BACK OF THE LEFT HAND facing the camera; DO NOT flip to a palm-facing-camera grip. Make one small correction in the hand: reproduce the natural thumb-to-index pinch in real reference Image 2, with the LEFT thumb rising from the LOWER/near side of the hand and its thumbnail visible below and opposite the curved index finger. A small fold of the SAME beige curtain is held between the index fingertip and thumb tip. The back of the left hand and its knuckles remain visible, palm toward the window/cloth. The index and middle fingers gently arch over the grip, ring and little fingers remain relaxed and anatomically connected. Five digits total, normal finger lengths, coherent left-thumb side, wrist and left forearm continuous with no twist. Do not hide the whole thumb behind the curtain and do not add a sixth finger. Preserve the original head-out woman, white/deep-violet/gold costume, covered legs, train, blue seat, bag, fixed open-eyed Vivhite charm, curtain, window, rural scenery, lighting and image layout. No jewelry or chain from reference Image 2, no added person, face, reflection, limb, text or watermark. One realistic landscape photograph. Preserve the new backhand posture; correct ONLY the small thumb/index contact needed for a real LEFT-handed backhand curtain pull.",
+      "status": "selected-first-frame-only-video-review-still-required",
+      "generatedSha256": "8a5814b593f2ba9292190bbeca40ad1057b84e0cc173b164e4bb9385146add1f",
+      "observation": "Actually viewed full generated scene: left dorsal/knuckle side faces camera, left thumb is on the lower/near opposing side of the curved index grip, thumbnail is visible, palm stays toward cloth/window. The left elbow, forearm, wrist and hand join naturally with no open-palm flip. Exactly one hand is present; other hand and all real heads/faces remain out of frame. Original feminine costume, bag, inert open-eyed charm, seat, window and rural scene retained. All prior candidates preserved but not selected. This selection does not approve a generated video."
+    }
+  ],
+  "selectedDestination": "assets/generated/production-v10-firstframes-001/scenes/S01-left-hand-v4.png"
+}

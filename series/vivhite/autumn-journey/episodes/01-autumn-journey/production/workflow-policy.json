@@ -106,18 +106,19 @@
       "v2Review": "Rendered before user stopped slowdown; not semantically reviewed or selected"
     }
   },
-  "currentRevision": 9,
+  "currentRevision": 10,
   "motionRevision": {
     "shots": [
-      "S44",
-      "S47"
+      "S01"
     ],
-    "all48DurationsAndStartsLockedToV8": true,
-    "fullTargetPlan": "production-plan-v9-bf16-768p.json",
-    "generationPlan": "production-plan-v9-motion-image-only-r1.json",
+    "all48DurationsAndStartsLockedToV9": true,
+    "fullTargetPlan": "production-plan-v10-bf16-768p.json",
+    "generationPlan": "production-plan-v10-S01-image-only-r1.json",
     "nativeSourceSeconds": 5,
     "finalShotSeconds": 4,
-    "other46SourceBytesUnchanged": true,
+    "other47SourceBytesUnchanged": true,
+    "leftHandBackhandRequired": true,
+    "palmFacingCameraAlternativesRejected": true,
     "handCountAloneIsInsufficient": true,
     "durationDisplayConfirmedCorrectByUser": true,
     "finalSeconds": 205,

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 10,
+  "model": "fasth3-omni-bf16",
+  "stage": "draft",
+  "fps": 30,
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 120,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "numInferenceSteps": 8,
+  "decoderLayers": 36,
+  "decoderVerification": "GET /v1/models on 2026-11-16",
+  "titleOverlays": [],
+  "closingCredit": "",
+  "shots": [
+    {
+      "id": "S01",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "seed": 2026112001,
+      "mode": "H",
+      "action": "同一女性的左臂自然伸向窗边，左手反手捏住帘边向左轻拉；手背朝镜头、掌心朝布帘和窗户，拇指在下侧与食指相对，腕部不翻掌。挂件随列车轻晃，窗外普通田野连续后移。",
+      "soundDescription": "车轮低鸣、布帘摩擦。",
+      "prompt": "Use <Picture 1> as the starting composition and preserve its anatomically LEFT-HANDED BACKHAND curtain grip. The same seated woman's visible LEFT upper arm, elbow, forearm, wrist and LEFT hand remain continuously connected. BACK OF THE LEFT HAND and knuckles face camera at the same natural three-quarter angle; palm stays toward the curtain/window. The LEFT thumb remains on the LOWER/near opposing side of the curved index finger, with a visible thumbnail and a small cloth fold held between thumb and index. During the first three seconds she gently draws the beige curtain edge a few centimetres toward image LEFT in one smooth useful pull, revealing slightly more of the same window. Then she keeps the same relaxed grip. Do not roll the wrist or turn an open palm toward camera, switch handedness, regrip, pass a finger through fabric, detach a wrist or add a hand. Four normal fingers and one left thumb retain coherent joints and proportions throughout. Locked camera, same head-out crop and feminine white/deep-violet/gold sleeve and covered legs. The other arm/hand and all heads, chins and human faces stay outside frame. Original purple travel bag remains on the blue seat; its existing acrylic charm moves only slightly with train vibration. Preserve the charm's original OPEN violet eyes, iris/eyelid outline, thin round gold glasses, face proportions and fixed outfit, no blink or autonomous expression. Ordinary overcast fields, poles and buildings slide continuously outside the train without reset or cut. No extra person, limb, reflected human, new prop, readable lettering, subtitle or credits. Only quiet train and cloth ambience, no voice, speech, humming or singing.",
+      "references": [
+        "assets/generated/production-v10-firstframes-001/scenes/S01-left-hand-v4.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M01-keychain-v1.png",
+      "generationAction": "Use <Picture 1> as the starting composition and preserve its anatomically LEFT-HANDED BACKHAND curtain grip. The same seated woman's visible LEFT upper arm, elbow, forearm, wrist and LEFT hand remain continuously connected. BACK OF THE LEFT HAND and knuckles face camera at the same natural three-quarter angle; palm stays toward the curtain/window. The LEFT thumb remains on the LOWER/near opposing side of the curved index finger, with a visible thumbnail and a small cloth fold held between thumb and index. During the first three seconds she gently draws the beige curtain edge a few centimetres toward image LEFT in one smooth useful pull, revealing slightly more of the same window. Then she keeps the same relaxed grip. Do not roll the wrist or turn an open palm toward camera, switch handedness, regrip, pass a finger through fabric, detach a wrist or add a hand. Four normal fingers and one left thumb retain coherent joints and proportions throughout. Locked camera, same head-out crop and feminine white/deep-violet/gold sleeve and covered legs. The other arm/hand and all heads, chins and human faces stay outside frame. Original purple travel bag remains on the blue seat; its existing acrylic charm moves only slightly with train vibration. Preserve the charm's original OPEN violet eyes, iris/eyelid outline, thin round gold glasses, face proportions and fixed outfit, no blink or autonomous expression. Ordinary overcast fields, poles and buildings slide continuously outside the train without reset or cut. No extra person, limb, reflected human, new prop, readable lettering, subtitle or credits. Only quiet train and cloth ambience, no voice, speech, humming or singing.",
+      "firstFrameRequirement": "anatomically-left-backhand-curtain-grip-not-open-palm",
+      "acceptanceCriteria": "Actually view all 120 native scene frames, every hand/wrist crop, original reference and native checkpoints. Left elbow/forearm/wrist/left hand must remain anatomically coherent: dorsal/knuckle side toward camera, opposed left thumb on lower/near side, palm toward cloth/window, continuous gentle curtain pull without palm flip or handedness swap. No extra hand/person, real face/reflection, cut, print-eye distortion or autonomous blink. Final shot remains four seconds. Labels in a prompt and hand count alone do not establish correct handedness."
+    }
+  ],
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "3840x2160",
+    "sampler": "up3",
+    "seed": 1234,
+    "submissionWindow": 1,
+    "status": "not-started",
+    "scope": "Native UHD only for future separate refinement, historical API model identifier retained. New 2K jobs forbidden."
+  },
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "S20 has 240 native source frames, S48 has 336, every other complete source has 120. Complete source review covers 6096 frames; final used native frames 4920; final film 6150 frames at 30fps.",
+  "promptRevision": {
+    "id": "v10-left-backhand-S01-r1",
+    "reason": "User rejects the right-handed-looking hand on S01 left arm; palm-facing-camera alternatives are also explicitly rejected."
+  },
+  "shotDurationExceptions": {},
+  "referenceAppearanceRequired": true,
+  "scope": "One actual image-reference-only S01 retry, five-second native source, four-second final use. No old motion video is uploaded; no final-film approval implied.",
+  "director": "director-v10.md",
+  "previousProductionPlanSha256": "833e87d8df9ccb09c260c82b98fb5e6835c123e4e746a346d7df8f35eae62280",
+  "sourceContinuation": "Reuse the exact other 47 accepted v9 source bytes, including v9 S44/S47. Preserve v9 release and all candidates. User rejection supersedes old S01 anatomy acceptance for future versions."
+}
