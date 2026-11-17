@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "vivhite-rejected-source-1",
+  "decision": {
+    "id": "S44",
+    "sourceSha256": "9fd8dc80bcaae2f1bd16f471647b4da3db4b00cf6597102473c2c7cb19387490",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-17T01:01:58.354090+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 96,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S44-9fd8dc80bc-all-frames-01.png",
+        "sha256": "d603812be5afe200fd2b12c6629ec2121929c2ad647c80051d1d254f3542b83f",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S44-9fd8dc80bc-all-frames-02.png",
+        "sha256": "d4fae1bd106bbc1419aa6a7d764b0cca51f955f0a99e3985f1480a8dad785165",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S44-9fd8dc80bc-all-frames-03.png",
+        "sha256": "2c0b4081989bc0c628fba787978a9c869b72bf1a20192897449740c6d3c7028f",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S44-9fd8dc80bc-all-frames-04.png",
+        "sha256": "19158561343c4a428319eefa7167c4571bd608f26ccd86df3282590fc9a6286a",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S44-9fd8dc80bc-face-candidates.png",
+      "sha256": "ade74b0a13b6199194558519c4aecc3cc9f7bfd206fa64360e556d23fdd970ed",
+      "items": 7
+    },
+    "observation": "Viewed all 120 native frames in four complete scene sheets, temporal overview, seven detector crops, native first frame, all 120 printed-face crops, original S44 scene and original-pixel comparison. No human face or new person enters while the original female hand operates the tent zip; only the same sleeve and covered knee appear. However, the printed eyelid contours remain narrowed and less faithful than the original round open-eye design, with unstable iris/glasses detail. This is not accepted merely because the print stays mostly stable. The original complete source is rejected for reference appearance; all versions and evidence retained.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "sourcePlanSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
+  "originalsPreserved": true
+}

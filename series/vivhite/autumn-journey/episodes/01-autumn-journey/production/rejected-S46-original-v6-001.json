@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "vivhite-rejected-source-1",
+  "decision": {
+    "id": "S46",
+    "sourceSha256": "8ac38a0ecebd49f5a9ae7af89c012b4d821496e3268d52fa787c5385b1cef695",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-17T01:17:48.356871+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 120,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S46-8ac38a0ece-all-frames-01.png",
+        "sha256": "7b47b6dbb9402ce53b5834782139bb2285aa76494104fd714ed52140e7de1bce",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S46-8ac38a0ece-all-frames-02.png",
+        "sha256": "3785e9c40b71ff99a0502a7e8889e20cbb11c8d1147e0839804341f6f8d1f90b",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S46-8ac38a0ece-all-frames-03.png",
+        "sha256": "b6148e8b0544645353d925227d7874192187cd33a2a5a2b614b04462f6a021e4",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v5-bf16-001\\review\\video-768p\\S46-8ac38a0ece-all-frames-04.png",
+        "sha256": "4a713e9e5604a9a18d8025f4a96e536f7e4ee1e5c6dd01c615aaf47d4d91c687",
+        "items": 24
+      }
+    ],
+    "faceEvidence": null,
+    "observation": "Viewed all 120 source frames in four full-scene sheets, temporal overview, native first frame, all 120 tracked print-face crops and original S46 sticker comparison. One original cropped feminine forearm stays at the moving train window, with no human face, reflection or additional person. The sticker remains open-eyed and inert, but its upper eyelid and iris proportions are softened and flattened relative to the original round open eyes. Reject this source for reference appearance to preserve the original artwork, without falsely describing an original closed eye or a living blink. Originals retained.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "sourcePlanSha256": "8006c5e25860bbcc7e1faeb981fc8230c74de357cf0652391414aa1a905a1eec",
+  "originalsPreserved": true
+}
