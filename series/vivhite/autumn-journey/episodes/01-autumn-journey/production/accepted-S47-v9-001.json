@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "f13a9bc8cc59c18a9acaa1f81f91a6e1a54ba7ead36998ec5f7298d36879b6f2",
+  "shots": [
+    {
+      "id": "S47",
+      "sourceSha256": "b782478832d2ba23472e0aa8b649d4bddb62497a32e79b054090c5349c5d858a",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-17T18:31:37.658831+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v9-motion-768p-001\\review\\video-768p\\S47-b782478832-all-frames-01.png",
+          "sha256": "83e236001b78ddc4d107d857dee7453d7c7ad88cce373985865e0c704306030d",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v9-motion-768p-001\\review\\video-768p\\S47-b782478832-all-frames-02.png",
+          "sha256": "1756c5feaa52fcf6a193213830fefc646568dc254244d3ebefae5374aed8ffb1",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v9-motion-768p-001\\review\\video-768p\\S47-b782478832-all-frames-03.png",
+          "sha256": "f709a9af2a83518725d1fe5f7c0bb2b240d3350d3c7574fe4c3489af11b5d2f7",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v9-motion-768p-001\\review\\video-768p\\S47-b782478832-all-frames-04.png",
+          "sha256": "a3c3e13b831c6a455cffbfe912e0285e78897efe250d32258c52fb19cd44d340",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v9-motion-768p-001\\review\\video-768p\\S47-b782478832-face-candidates.png",
+        "sha256": "958e28fd866d347db74b38a7cb63a65288b3f230f5a68e71caff04c2d9602aef",
+        "items": 9
+      },
+      "observation": "Actually viewed all 120 complete native frames across four sheets, the temporal sheet, all nine detector crops, all 120 tracked plush-face crops, both original image references, native full frames 0 and 95, and all 120 image-left and image-right arm detail frames across eight pages per arm. The same head-out woman remains behind the bench with uncrossed forearms visible to their sleeve connections. Both hands support the lower plush sides and make a small real straightening adjustment, then release and move outward onto the bench before the unchanged four-second final cut. There is no wrap behind the plush, hand-side swap, third hand, detached limb or implausibly twisted wrist. Thumb/palm direction and wrist-to-forearm continuity remain coherent; the detail ROIs are supplemented by the complete scene/native frames where a fingertip reaches the crop boundary. The plush remains seated after release; embroidered open violet eyes and thin round gold glasses keep coherent outlines and proportions throughout all 120 tracked detail frames, with ordinary native softness rather than pixel identity. White/deep-violet/gold feminine sleeves and torso remain; the original woman is the only person, and no head, chin, real face or reflected person appears. The original bag, bench and sea remain continuous. No anatomy mask, artwork patch, motion retiming or frame replacement applied. Accept this source for its unchanged four-second final interval. This is assistant frame-evidence review, not human continuous playback or user aesthetic approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed",
+      "handDetailCoverage": {
+        "imageLeftAndRight": {
+          "frames": 120,
+          "pagesPerArm": 8,
+          "actuallyViewed": true
+        },
+        "fullSceneFrames": 120,
+        "handCountOnly": false
+      }
+    }
+  ]
+}

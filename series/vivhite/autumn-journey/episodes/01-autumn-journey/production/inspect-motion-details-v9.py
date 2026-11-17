@@ -41,7 +41,7 @@ def inspect(source,run_name,identity,box,expected_frames):
             ok,frame=cap.read()
             if not ok:break
             rgb=Image.fromarray(cv2.cvtColor(frame,cv2.COLOR_BGR2RGB))
-            if count in (0,48,72,95,119):
+            if count in (0,24,48,72,95,119):
                 path=evidence/f'{identity}-{digest[:10]}-native-f{count:03}.png'
                 save_image(path,rgb);endpoints.append({'path':path.relative_to(EP).as_posix(),'sha256':sha(path),'frame':count})
             local=count%16

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "f13a9bc8cc59c18a9acaa1f81f91a6e1a54ba7ead36998ec5f7298d36879b6f2",
+  "shots": [
+    {
+      "id": "S44",
+      "sourceSha256": "722660288d885b9c94c45f463588fc85b843c2085433459c220eca8d0bfb7eaf",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-17T18:21:54.735282+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v9-motion-768p-001\\review\\video-768p\\S44-722660288d-all-frames-01.png",
+          "sha256": "3e53ba76994d77ce6fa4da463a2e3bf741cdead233a50480e824d071f9e8c330",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v9-motion-768p-001\\review\\video-768p\\S44-722660288d-all-frames-02.png",
+          "sha256": "e161feea38253166904ca8486b4a900b52d964451219caba3b45e570ed7eebd3",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v9-motion-768p-001\\review\\video-768p\\S44-722660288d-all-frames-03.png",
+          "sha256": "1e81463074c68f3499a3c06656ce86e3a09a1e85872b54023c1d114433c2751e",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v9-motion-768p-001\\review\\video-768p\\S44-722660288d-all-frames-04.png",
+          "sha256": "ce1bdb0fff9fd344f96fa60514ea076f34ae4e47c27c9635922719549d2b3583",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v9-motion-768p-001\\review\\video-768p\\S44-722660288d-face-candidates.png",
+        "sha256": "0c08ba1f5b6f973ac5c30777bce53cf49e50baf90e371879a80fee662b964c4f",
+        "items": 6
+      },
+      "observation": "Actually viewed all 120 complete native scene frames across four sheets, the temporal sheet and all six detector crops; the original closed-door imagegen reference; native full frames 0, 24, 95 and 119; all 120 tracked pouch-face crops; and every hand frame using zipper-region pages 1-4 (frames 0-63) plus curtain-region pages 5-8 (64-119). The first frame is a fully closed opaque tent door with no exterior visible. The same attached right hand pulls the one brass zipper downward to the floor, releases the slider, grasps the unlocked cloth edge and draws it aside, revealing empty grass and trees before the unchanged four-second cut. The view stays open through the complete five-second source. No reversal, reclose, transparent fabric, cut or background figure occurs. The same right thumb/palm identity and wrist-to-cuff connection remain plausible throughout the reviewed trajectory, without an extra hand or detached/stretching limb. Original head-out feminine white/deep-violet/gold sleeve and white-covered knee remain; no head, chin, face, reflected figure or unrelated person appears. The same hanging pouch keeps coherent open violet eyes, iris outlines, thin round gold glasses and fixed costume in all 120 detail frames; native fine detail is soft and not pixel-identical to the input. Pouch follows ordinary cloth movement without independent blinking. No artwork patch or body masking applied. Accept the complete source for its original four-second final interval. This is assistant frame-evidence review, not human continuous playback or user aesthetic approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed",
+      "handDetailCoverage": {
+        "frames0to63": "S44-zipper-hand pages 1-4",
+        "frames64to119": "S44-curtain-hand pages 5-8",
+        "all120HandFramesActuallyViewed": true,
+        "handCountOnly": false
+      }
+    }
+  ]
+}

@@ -114,15 +114,19 @@ v8试做的第一份局部候选出现可见翼缘重影，已拒收；第二份
 
 本期 [`materialize-sources-v8.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/materialize-sources-v8.py) 的 `validate_locked_timing()` 将前47镜时长及起点逐项锁定v7，仅允许S48变为14秒，总计205秒／6150帧。它调用共用导入器核对原任务、所选源片、完整证据与修订链，不负责生成或自动批准内容。
 
+v9进一步用 [`materialize-sources-v9.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/materialize-sources-v9.py) 锁定与v8相同的**全部48镜时长和起点**，仅允许S44/S47源片指令及对应素材变化。闭帐门起点和手臂空间错误均重新生成，不用印花回贴修补人体；实际两段新片没有回贴、遮罩、换帧或变速。原生手臂局部检查与采用范围见[v9记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v9-motion-768p.md)。用户已确认3:25显示正确，因此未用补帧或改其他镜头长度处理播放器差异。
+
 ## 实际案例与代码索引
 
-v7实际来源收据中有10个镜头经过局部处理：S07、S11、S16、S20仅锁定首帧；S29、S37、S42、S44、S45、S46包含场景图回贴，S29另外串联首帧锁定。v8本轮S07、S15、S28、S44均另存场景图回贴版本；S47新玩偶镜头未用回贴。完整状态以[当期制作记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v8-motion-768p.md)及实际处理收据为准，本文不宣称尚未完成的v8成片已通过。
+v7实际来源收据中有10个镜头经过局部处理：S07、S11、S16、S20仅锁定首帧；S29、S37、S42、S44、S45、S46包含场景图回贴，S29另外串联首帧锁定。v8的S07、S15、S28、S44均另存场景图回贴版本；S47未用回贴。v8已发布，随后用户拒收其S44/S47，v9以新生成片替换两镜；旧版记录和素材保留。完整状态以[v8记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v8-motion-768p.md)、[v9记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v9-motion-768p.md)及各版本实际收据为准。
 
 | 复用入口 | 职责 |
 | --- | --- |
 | [`stabilize_printed_patch.py`](../video-maker/tools/stabilize_printed_patch.py) | `PrintedPatch`跟踪；`project_reference_texture`映射原图；`stabilize`合成、编码、保存处理参数与哈希 |
 | [`inspect_printed_region.py`](../video-maker/tools/inspect_printed_region.py) | 跟踪裁出原始视频局部，供实际查看 |
 | [`inspect-closing-details.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/inspect-closing-details.py) | S48固定区域原生像素检查；完整336帧分页、原生首尾、输入与代码哈希，不编辑视频、不自动验收 |
+| [`inspect-motion-details-v9.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/inspect-motion-details-v9.py) | 120帧原生局部分页、六个完整原生帧、JPEG查看副本；核对掌背、拇指、手腕、手臂连接和接触，检查图不改变源片 |
+| [`inspect-audio-v9.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/inspect-audio-v9.py) | 完整AAC解码、205秒流时长／样本数、与实际WAV数值相关性；不替代听音验收 |
 | [`review_reference_clips.py`](../video-maker/tools/review_reference_clips.py) | 完整源帧、时序、运动与真人脸候选证据 |
 | [`record_local_clip_review.py`](../video-maker/tools/record_local_clip_review.py) | 显式采用／拒收、原图一致性与旧结论归档 |
 | [`retime_local_clip.py`](../video-maker/tools/retime_local_clip.py) | 明确源区间的慢放候选与插帧收据 |
@@ -133,6 +137,7 @@ v7实际来源收据中有10个镜头经过局部处理：S07、S11、S16、S20�
 | [`materialize-sources-v6.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/materialize-sources-v6.py) | 多批次真实源片与修订链的共用校验、独立复制 |
 | [`test_stabilize_printed_patch.py`](../video-maker/tools/tests/test_stabilize_printed_patch.py)、[`test_local_clip_correction.py`](../video-maker/tools/tests/test_local_clip_correction.py) | 原图首帧回贴、运动跟踪、输入不变、边界及版本绑定验证 |
 | [`test_retime_local_clip.py`](../video-maker/tools/tests/test_retime_local_clip.py)、[`test_v8_locked_timing.py`](../video-maker/tools/tests/test_v8_locked_timing.py) | 慢放源区间、帧数、历史保留与前47镜时长锁验证 |
+| [`test_v9_locked_timing.py`](../video-maker/tools/tests/test_v9_locked_timing.py) | 拒绝任一镜头时长变化及其余46镜指令变动 |
 
 这些能力为Python后处理worker，位于以Java为主的制作框架中；不将它们描述成Java渲染器已经内置的自动修复模型。
 

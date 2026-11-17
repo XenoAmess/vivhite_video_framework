@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "vivhite-two-shot-revision-progress-1",
+  "snapshotAt": "2026-11-17T18:41:24.319193+00:00",
+  "revision": 9,
+  "shots": [
+    {
+      "id": "S44",
+      "jobId": "video_gen_00649f8d49154a20a05c44b867b4bab9",
+      "status": "completed",
+      "selectedSourceSha256": "722660288d885b9c94c45f463588fc85b843c2085433459c220eca8d0bfb7eaf",
+      "completeSourceAccepted": true,
+      "finalSeconds": 4,
+      "sourceSeconds": 5
+    },
+    {
+      "id": "S47",
+      "jobId": "video_gen_981d127e02de421986c0fac13b2324f4",
+      "status": "completed",
+      "selectedSourceSha256": "b782478832d2ba23472e0aa8b649d4bddb62497a32e79b054090c5349c5d858a",
+      "completeSourceAccepted": true,
+      "finalSeconds": 4,
+      "sourceSeconds": 5
+    }
+  ],
+  "completedSources": 2,
+  "acceptedNewSources": 2,
+  "generationPercent": 100,
+  "acceptancePercent": 100,
+  "all48TimingsUnchangedFromV8": true,
+  "targetSeconds": 205,
+  "targetFrames": 6150,
+  "durationDisplayConfirmedCorrectByUser": true,
+  "nativeClosingWingsUnchanged": true,
+  "filmEncoded": true,
+  "fullFilmDecodePassed": true,
+  "encodedFrameInspectionPercent": 100.0,
+  "releasePublished": false,
+  "twoKStatus": "stopped-by-user",
+  "fourKStatus": "not-submitted",
+  "humanFullPlayback": false,
+  "scope": "Source generation, source acceptance, encoded film and published release are separate milestones."
+}
