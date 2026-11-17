@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "vivhite-server-generation-failure-1",
+  "id": "S48",
+  "run": "production-v8-motion-768p-S48-003",
+  "jobId": "video_gen_14a0e40b4bdd45c48666c9f9503d382c",
+  "sourcePlanSha256": "8851c9fd5ad4f9792e42aa781f94fb4aecd8e6917d33af6d05792795d2056056",
+  "requestSha256": "102e738bd862ea05136289e8f8785dc61e5014c5817c95c14adab399d2d24189",
+  "status": "failed-no-output",
+  "sourceSeconds": 15,
+  "size": "1344x768",
+  "finalClosingSecondsUnchanged": 14,
+  "finalFilmSecondsUnchanged": 205,
+  "errorCode": "inference_failed",
+  "reason": "CUDA out of memory in VSA attention forward; attempted 1.88 GiB with 1.86 GiB reported free.",
+  "requestedPolicyRetained": true,
+  "blindRetryPerformed": false,
+  "allPriorFailuresRetained": true,
+  "reviewedNativeFrames": 0,
+  "observedAt": "2026-11-17T15:01:10.564884+00:00",
+  "queueObservation": {
+    "scheduler": {
+      "active_model": null,
+      "consecutive": 0,
+      "phase": "paused_after_memory_failure",
+      "running_jobs": [],
+      "backend_unit": null,
+      "heartbeat": 1794927671.3027942
+    },
+    "paused": true,
+    "policy": {
+      "max_consecutive_jobs_with_competition": 3,
+      "max_other_model_wait_seconds": 1800,
+      "note": "Switches at task or dispatched-cohort boundaries; running inference is not preempted"
+    },
+    "running": [],
+    "queued": [],
+    "waiting_for_source": []
+  },
+  "serverLogSha256": "fe3dc53f82aa0706526c4a3bc5b068c585f63cf7d7d0276c50638e8da8ba0382"
+}

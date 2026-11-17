@@ -114,10 +114,10 @@ class LocalFinisherTest(unittest.TestCase):
                     finisher.prepare(plan_file,root,root/'replacement.json')
                 self.assertEqual(worker.sha(root/'picture-assembly.mp4'),old_picture)
                 bad = copy.deepcopy(plan)
-                bad.update(stage='refine',model='open-h3-2k',width=2560,height=1440,sourceSize='2560x1440')
-                worker.write_json(root/'2k-plan.json',bad)
+                bad.update(stage='refine',model='open-h3-2k',width=3840,height=2160,sourceSize='3840x2160')
+                worker.write_json(root/'4k-plan.json',bad)
                 with self.assertRaisesRegex(ValueError,'native resolution'):
-                    finisher.prepare(root/'2k-plan.json',root,root/'false-2k.json')
+                    finisher.prepare(root/'4k-plan.json',root,root/'false-4k.json')
 
 
 if __name__ == '__main__':

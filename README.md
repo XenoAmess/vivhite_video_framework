@@ -28,7 +28,11 @@
 
 周边印花的首帧稳定、场景原图纹理回贴、慢放候选、全源帧复核与精确时长装配见[视频后处理方法与代码索引](docs/autumn-journey-video-postprocessing.md)，包含适用边界、实际案例和可复用命令。
 
+本地生成式旅行视频后续只制作[原始768P与原生4K](docs/local-video-768p-4k.md)，不再新建2K任务。4K沿用8002接口与历史模型ID，明确请求3840×2160，单任务执行；旧2K资料仅作归档。
+
 已完成[片尾修订 v7的原生768P成片](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v7-768p.md)：48镜、201秒、1344×768／30fps，S20高山湖与S48片尾各连续10秒，其余镜头2–5秒。片尾前两行完全复用片头文字与样式，再缓慢浮现“献给世界上最可爱的你”；6030个最终帧完成解码与画面轨对照。[v7 GitHub Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v7-768p-20261117)供用户审阅。全部2K任务已按用户要求停止，不自动恢复；v6 Release、旧影片与中间材料完整保留。
+
+[v8七处动作返工](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v8-motion-768p.md)目前6/7新素材通过，尚未完成成片。片尾新增树枝与快速拍翼版本已拒收；新15秒源片请求因服务端显存不足失败，队列暂停。最终时间线只调整S48为14秒，前47镜仍共191秒，全片固定205秒；源片长度与成片长度分开记录。
 
 三期当前成片均已完成，规格1080p30、晓晓配音、中文字幕及可替换人物图片：第一期[10分55秒](series/math-education/inversion-count/episodes/01-sliding-puzzle/docs/production-v3.md)、第二期[18分29.3秒](series/math-education/inversion-count/episodes/02-rectangle-proof/docs/production-v1.md)、第三期[32分24秒](series/math-education/inversion-count/episodes/03-wilson-theorem/docs/production-v1.md)。制作器新增通用证明动画后端，后两期保留全部证明、合法移动和分阶段推导。成片与缓存放在仓库外，检查范围见各期制作记录及[独立复核](docs/three-episode-production-review.md)。
 

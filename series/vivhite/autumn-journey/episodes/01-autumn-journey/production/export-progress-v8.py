@@ -22,7 +22,7 @@ def export(base):
     for identity in SHOT_IDS:
         origin = base / {
             'S15': 'production-v8-motion-768p-S15-002',
-            'S48': 'production-v8-motion-768p-S48-002',
+            'S48': 'production-v8-motion-768p-S48-003',
         }.get(identity, run.name)
         decisions = read(origin / 'clip-decisions.json', {}).get('shots', [])
         selections = read(origin / 'source-selections.json', {}).get('selections', {})
@@ -59,6 +59,7 @@ def export(base):
              'first47TimingsLockedToV7': True, 'closingSeconds': 14,
              'targetSeconds': 205, 'targetFrames': 6150, 'twoKStatus': 'stopped-by-user',
              'automaticTwoKResumeAllowed': False, 'releasePublished': bool(receipt.get('releaseId')),
+             'newResolutionStages': ['1344x768', '3840x2160'], 'fourKStatus': 'not-submitted',
              'humanFullPlayback': False, 'shots': rows,
              'scope': 'Seven new replacements only. Server progress is not source acceptance or film completion.'}
     (EP / 'production/run-progress-v8-768p.json').write_text(

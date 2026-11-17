@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "vivhite-production-policy-1",
+  "updatedOn": "2026-11-17",
+  "authority": "Explicit user instructions in this episode conversation",
+  "resolutionStages": {
+    "allowedNewOutputs": [
+      "1344x768",
+      "3840x2160"
+    ],
+    "draft": {
+      "model": "fasth3-omni-bf16",
+      "api": "http://192.168.1.11:8001/v1",
+      "size": "1344x768",
+      "task": "ref2va",
+      "numInferenceSteps": 8,
+      "decoderLayers": 36
+    },
+    "refinement": {
+      "model": "open-h3-2k",
+      "modelNameIsHistoricalApiIdentifier": true,
+      "api": "http://192.168.1.11:8002/v1",
+      "endpoint": "/videos/regenerations",
+      "size": "3840x2160",
+      "sampler": "up3",
+      "seed": 1234,
+      "submissionWindow": 1,
+      "startCondition": "Separate reviewed 4K production after the current 768p film is delivered; this policy update submits no 4K job."
+    },
+    "newTwoKJobsAllowed": false,
+    "historicalTwoKRuns": "Preserved, stopped, never automatically resumed",
+    "sourceDocument": "https://github.com/XenoAmess/local-model-operations/blob/main/deployments/video-generation/docs/open-h3-4k-http.md",
+    "liveModelSizesVerifiedOn": "2026-11-17"
+  },
+  "closingGeneration": {
+    "activeAttempt": {
+      "run": "production-v8-motion-768p-S48-003",
+      "jobId": "video_gen_14a0e40b4bdd45c48666c9f9503d382c",
+      "sourceSeconds": 15,
+      "statusAtPolicyUpdate": "failed-no-output-cuda-oom",
+      "failureReceipt": "production/failed-S48-15s-oom-v8-003.json",
+      "queueStateObserved": "paused_after_memory_failure"
+    },
+    "fallbackActivated": true,
+    "nextAttemptPlan": "production-plan-v8-S48-image-only-r3.json",
+    "sourceSecondsFromNowOn": 15,
+    "forbiddenAddedForeground": [
+      "tree branches",
+      "overhanging leaves",
+      "new vegetation not in the reference"
+    ],
+    "triggerAttempt": {
+      "run": "production-v8-motion-768p-S48-002",
+      "jobId": "video_gen_bc1628d450e04c759499c30f10b1f97f",
+      "sourceSeconds": 14,
+      "statusAtPolicyUpdate": "completed-raw-rejected-for-fast-wings"
+    },
+    "subsequentAttempts": {
+      "subsequentSourceSeconds": 15,
+      "completeSourceReviewFramesAt24Fps": 360,
+      "finalClosingSeconds": 14,
+      "finalFilmSeconds": 205,
+      "finalFilmFramesAt30Fps": 6150,
+      "first47ShotTimings": "Exactly unchanged from v7; sum is 191 seconds",
+      "trimScope": "S48 only; crop its reviewed 15-second source to the 14-second remaining final timeline budget",
+      "automaticLoopOrFreezeToFillTime": false,
+      "triggerAttemptJobId": "video_gen_bc1628d450e04c759499c30f10b1f97f",
+      "triggerAlreadySatisfied": true
+    },
+    "resumeCondition": "Server memory issue fixed and paused queue restored; preserve fifteen-second source and all locked final timings. No blind automatic retry."
+  }
+}

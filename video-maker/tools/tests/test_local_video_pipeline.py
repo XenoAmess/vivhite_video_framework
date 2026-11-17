@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import threading
+from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 
@@ -54,7 +55,8 @@ class LocalPipelineTest(unittest.TestCase):
         self.assertIsInstance(draft['seconds'],int)
         refined = worker.payload_for({'stage':'refine'}, {'prompt':'Preserve.','inputSource':'draft'},upload)
         self.assertEqual(refined['input_video'],{'file_id':'file_draft'})
-        self.assertEqual(refined['size'],'2560x1440')
+        self.assertEqual(refined['size'],'3840x2160')
+        self.assertEqual(refined['model'],'open-h3-2k')
         self.assertNotIn('image_reference',refined)
 
     def test_ten_second_lake_requires_its_specific_declared_exception(self):
@@ -125,6 +127,33 @@ class LocalPipelineTest(unittest.TestCase):
         self.assertEqual(worker.payload_for(plan,plan['shots'][0],lambda _: {})['seconds'],14)
         with self.assertRaises(ValueError):
             worker.validate({**plan,'shotDurationExceptions':{'S48':15}})
+
+    def test_fifteen_second_closing_source_can_be_cut_to_fourteen_without_changing_timeline(self):
+        plan = self.plan()
+        plan['shots'] = [{'id':'S48','seconds':14,'sourceSeconds':15,'startFrame':0,
+                          'prompt':'Continuous original coast.','seed':48,'references':['coast.png']}]
+        plan.update(totalFrames=420,shotDurationExceptions={'S48':14})
+        worker.validate(plan)
+        self.assertEqual(worker.source_frame_count(plan['shots'][0]),360)
+        self.assertEqual(worker.payload_for(plan,plan['shots'][0],lambda _: {})['seconds'],15)
+        for source_seconds in (10,13,16):
+            with self.subTest(source_seconds=source_seconds),self.assertRaises(ValueError):
+                worker.validate({**plan,'shots':[{**plan['shots'][0],'sourceSeconds':source_seconds}]})
+
+    def test_new_refinement_requires_uhd_and_single_submission_window(self):
+        plan = {**self.plan(),'stage':'refine','model':'open-h3-2k',
+                'width':3840,'height':2160,'sourceSize':'3840x2160'}
+        worker.validate(plan)
+        with self.assertRaises(ValueError):
+            worker.validate({**plan,'width':2560,'height':1440,'sourceSize':'2560x1440'})
+        worker.validate_server_model(plan,{'data':[{'id':'open-h3-2k','sizes':['3840x2160']}]})
+        with self.assertRaisesRegex(ValueError,'advertise native 4K'):
+            worker.validate_server_model(plan,{'data':[{'id':'open-h3-2k','sizes':['2560x1440']}]})
+        args = SimpleNamespace(plan=Path('fixture-plan.json'),directory=Path('fixture-run'),window=2)
+        with patch.object(worker,'read',return_value=plan),patch.object(worker,'input_assets') as assets:
+            with self.assertRaisesRegex(ValueError,'4K requires --window 1'):
+                worker.generate(args)
+            assets.assert_not_called()
 
     def test_image_only_generation_never_uploads_an_old_motion_reference(self):
         with tempfile.TemporaryDirectory() as temporary:

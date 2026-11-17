@@ -94,7 +94,9 @@ class ReferenceFinisherTest(unittest.TestCase):
     def test_native_delivery_dimensions_do_not_silently_fall_back_to_1080p(self):
         self.assertEqual(worker.output_dimensions({}),(1920,1080))
         self.assertEqual(worker.output_dimensions({"width":1344,"height":768}),(1344,768))
-        self.assertEqual(worker.output_dimensions({"width":2560,"height":1440}),(2560,1440))
+        self.assertEqual(worker.output_dimensions({"width":3840,"height":2160}),(3840,2160))
+        with self.assertRaisesRegex(ValueError,"dimensions"):
+            worker.output_dimensions({"width":2560,"height":1440})
         with self.assertRaisesRegex(ValueError,"dimensions"):
             worker.output_dimensions({"width":1344,"height":1080})
 

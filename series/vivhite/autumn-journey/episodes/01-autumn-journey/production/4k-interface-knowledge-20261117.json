@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "vivhite-interface-knowledge-1",
+  "observedAt": "2026-11-17T14:49:18.959420+00:00",
+  "sourceUrl": "https://github.com/XenoAmess/local-model-operations/blob/main/deployments/video-generation/docs/open-h3-4k-http.md",
+  "sourceBlobSha": "74abf1c5fd206e862a00c7794d6af2d109b1a90c",
+  "sourceDocumentSha256": "6f79557b20c007d19614e7d2d5118db7fea9d8487722560d67be5dc39d563b43",
+  "sourceFileCommit": "875e60977cd96a694fcfa410c4c8f160dda7fb52",
+  "permalink": "https://github.com/XenoAmess/local-model-operations/blob/875e60977cd96a694fcfa410c4c8f160dda7fb52/deployments/video-generation/docs/open-h3-4k-http.md",
+  "actualModelsResponse": {
+    "object": "list",
+    "data": [
+      {
+        "id": "open-h3-2k",
+        "object": "model",
+        "owned_by": "local",
+        "shared_gpu_queue": true,
+        "root": "/home/ubuntu/workspace/xenoamess_bake_videos/models/Open-H3-Regenerate-2K-IC",
+        "sizes": [
+          "2560x1440",
+          "1440x2560",
+          "3840x2160"
+        ],
+        "draft_generation": false,
+        "native_resolutions": true,
+        "four_k_max_windows_per_load": 1
+      }
+    ]
+  },
+  "newOutputs": [
+    "1344x768",
+    "3840x2160"
+  ],
+  "newTwoKJobsAllowed": false,
+  "fourKJobsSubmittedByThisKnowledgeUpdate": 0,
+  "fourKSubmissionWindow": 1,
+  "evidenceBoundary": "The external service has its own approximately five-second 4K validation. This project performed a read-only model query, not its own 4K generation or full-film validation."
+}

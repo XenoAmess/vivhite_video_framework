@@ -1,7 +1,7 @@
 {
   "schemaVersion": "vivhite-motion-revision-progress-1",
   "revision": 8,
-  "snapshotAt": "2026-11-17T14:21:05.942615+00:00",
+  "snapshotAt": "2026-11-17T15:08:57.314756+00:00",
   "newShots": 7,
   "completedSources": 6,
   "acceptedNewSources": 6,
@@ -14,6 +14,11 @@
   "twoKStatus": "stopped-by-user",
   "automaticTwoKResumeAllowed": false,
   "releasePublished": false,
+  "newResolutionStages": [
+    "1344x768",
+    "3840x2160"
+  ],
+  "fourKStatus": "not-submitted",
   "humanFullPlayback": false,
   "shots": [
     {
@@ -78,9 +83,9 @@
     },
     {
       "id": "S48",
-      "status": "in_progress",
-      "originRun": "production-v8-motion-768p-S48-002",
-      "jobId": "video_gen_bc1628d450e04c759499c30f10b1f97f",
+      "status": "failed",
+      "originRun": "production-v8-motion-768p-S48-003",
+      "jobId": "video_gen_14a0e40b4bdd45c48666c9f9503d382c",
       "sourceSha256": null,
       "selectedSourceSha256": null,
       "serverProgress": 1,

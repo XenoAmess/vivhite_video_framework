@@ -2,3 +2,9 @@
 * text=auto eol=lf
 *.bat text eol=crlf
 *.cmd text eol=crlf
+
+# Preserve exact bytes already bound to model requests and semantic reviews.
+# New documents should use LF before hashing; do not normalize submitted bytes.
+series/vivhite/autumn-journey/episodes/01-autumn-journey/production-plan-v8*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+series/vivhite/autumn-journey/episodes/01-autumn-journey/director-v8.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+series/vivhite/autumn-journey/episodes/01-autumn-journey/production/motion-revisions-v8.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

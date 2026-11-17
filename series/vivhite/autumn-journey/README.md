@@ -6,6 +6,8 @@
 
 制作补充：所有出场人物均为女性，女性化服装贴近白绮设定图；静默、不露脸与短镜头要求适用于成片全部帧。原图中没有的无关人员，即使不露脸也拒收。
 
+当前后续路线仅为[原始768P与原生4K](../../../docs/local-video-768p-4k.md)，不新建2K任务。[v8返工导演稿](episodes/01-autumn-journey/director-v8.md)尚未交付成片；片尾重试条件及固定205秒时间线见本期[工作流策略](episodes/01-autumn-journey/production/workflow-policy.json)：第二轮14秒片尾已拒收，后续改为生成15秒源片，仅裁片尾至14秒，前47镜不变。第三轮15秒请求因服务端显存不足失败，服务队列暂停；可采用新素材为6/7，实际状态见[返工记录](episodes/01-autumn-journey/production/production-v8-motion-768p.md)。
+
 历史[片尾修订 v4](episodes/01-autumn-journey/production/production-v4.md)与原v3成片保持归档。当前v7片尾以[实际合成计划](episodes/01-autumn-journey/final-assembly-plan-v7-768p.json)为准；采用已通过的v6海岸连续慢放至10秒，蓝蝶周期约8秒，无制作署名。
 
 - 主人公：白绮，英文名 Vivhite；角色 ID 为 `vivhite`。

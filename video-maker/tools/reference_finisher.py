@@ -197,7 +197,7 @@ def ass_time(seconds):
 
 def output_dimensions(plan):
     dimensions = (plan.get("width",1920),plan.get("height",1080))
-    if dimensions not in ((1920,1080),(1344,768),(2560,1440)):
+    if dimensions not in ((1920,1080),(1344,768),(3840,2160)):
         raise ValueError("Unsupported final output dimensions")
     return dimensions
 

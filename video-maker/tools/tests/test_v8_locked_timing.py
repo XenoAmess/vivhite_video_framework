@@ -14,7 +14,7 @@ SPEC.loader.exec_module(worker)
 
 class LockedTimingTest(unittest.TestCase):
     def test_director_contains_one_complete_timeline_matching_the_locked_plan(self):
-        plan = worker.worker.read(worker.EP / 'production-plan-v8-bf16-768p.json')
+        plan = worker.worker.read(worker.PLAN_FILE)
         document = (worker.EP / 'director-v8.md').read_text(encoding='utf-8')
         rows = re.findall(r'^\| (S\d{2}) \| (\d{2}):(\d{2})-(\d{2}):(\d{2}) \| (\d+) \|',
                           document, re.MULTILINE)
@@ -29,14 +29,17 @@ class LockedTimingTest(unittest.TestCase):
 
     def test_actual_first_47_timings_remain_unchanged_and_other_trims_are_rejected(self):
         baseline = worker.worker.read(worker.EP / 'production-plan-v7-bf16-768p.json')
-        plan = worker.worker.read(worker.EP / 'production-plan-v8-bf16-768p.json')
+        plan = worker.worker.read(worker.PLAN_FILE)
         worker.validate_locked_timing(plan, baseline)
         for index in range(47):
             changed = copy.deepcopy(plan)
             changed['shots'][index]['seconds'] -= 1
             with self.subTest(shot=changed['shots'][index]['id']), self.assertRaisesRegex(ValueError, 'Only S48'):
                 worker.validate_locked_timing(changed, baseline)
-        for field, value in [('seconds', 15), ('startFrame', 5700), ('sourceSeconds', 15)]:
+        fallback = copy.deepcopy(plan)
+        fallback['shots'][-1]['sourceSeconds'] = 15
+        worker.validate_locked_timing(fallback, baseline)
+        for field, value in [('seconds', 15), ('startFrame', 5700), ('sourceSeconds', 16)]:
             changed = copy.deepcopy(plan)
             changed['shots'][-1][field] = value
             with self.subTest(field=field), self.assertRaises(ValueError):

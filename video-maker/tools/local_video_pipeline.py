@@ -1,4 +1,4 @@
-"""Version-bound, resumable BF16 generation and local 2K regeneration.
+"""Version-bound, resumable native 768p generation and local UHD 4K regeneration.
 
 Uploads real files and archives every request, poll, original result and error.
 Generated media is never automatically semantically approved. GPL-3.0-only.
@@ -50,8 +50,9 @@ def validate(plan):
     exceptions = plan.get('shotDurationExceptions',{})
     if exceptions not in ({},{'S20':10},{'S48':10},{'S20':10,'S48':10},
                           {'S48':14},{'S20':10,'S48':14},{'S48':15},{'S20':10,'S48':15}):
-        raise ValueError('Only the explicitly requested S20 ten-second and S48 ten/fifteen-second exceptions are allowed')
-    expected = ('fasth3-omni-bf16',1344,768) if draft else ('open-h3-2k',2560,1440)
+        raise ValueError('Only the explicitly requested S20 ten-second and S48 ten/fourteen/fifteen-second exceptions are allowed')
+    # The provider retains its historical model ID for native UHD requests.
+    expected = ('fasth3-omni-bf16',1344,768) if draft else ('open-h3-2k',3840,2160)
     if (plan.get('schemaVersion') != 'vivhite-local-two-stage-video-1'
             or plan.get('stage') not in ('draft','refine')
             or (plan.get('model'),plan.get('width'),plan.get('height')) != expected
@@ -61,9 +62,13 @@ def validate(plan):
     identities = set()
     frame = 0
     for shot in plan['shots']:
+        source_seconds = shot.get('sourceSeconds')
+        expected_source_seconds = exceptions.get(shot['id'],5)
+        source_duration_valid = source_seconds == expected_source_seconds or (
+            shot['id'] == 'S48' and expected_source_seconds == 14 and source_seconds == 15)
         if (not re.fullmatch(r'S\d{2}[A-Z]?',shot['id']) or shot['id'] in identities
                 or not isinstance(shot['seconds'],int) or not 2 <= shot['seconds'] <= exceptions.get(shot['id'],5)
-                or shot.get('sourceSeconds') != exceptions.get(shot['id'],5)
+                or not source_duration_valid
                 or shot.get('startFrame') != frame
                 or not shot.get('prompt','').strip()):
             raise ValueError('Invalid shot identity, duration or contiguous timing')
@@ -110,7 +115,7 @@ def input_assets(plan, episode, directory):
         else:
             source = contained(directory,shot['inputSource'])
             if sha(source) != shot['inputSourceSha256']:
-                raise ValueError('Reviewed 2K input changed')
+                raise ValueError('Reviewed 4K input changed')
             assets.append(source)
     for item in plan.get('reusedSources',[]):
         source = contained(directory,item['path'])
@@ -171,7 +176,7 @@ def payload_for(plan, shot, upload):
         if shot.get('motionReference'):
             payload['video_reference'] = [upload(shot['motionReference'])]
         return payload
-    return {'model':'open-h3-2k','size':'2560x1440','sampler':plan.get('sampler','up3'),
+    return {'model':'open-h3-2k','size':'3840x2160','sampler':plan.get('sampler','up3'),
             'seed':plan.get('refinementSeed',1234),'prompt':shot['prompt'],
             'input_video':upload(shot['inputSource'])}
 
@@ -236,10 +241,23 @@ def publish_result(api, remote, shot, directory, size):
     return raw,source,probe
 
 
+def validate_server_model(plan, models):
+    actual = next((model for model in models['data'] if model['id']==plan['model']),None)
+    if actual is None or (plan['stage']=='draft' and actual.get('decoder_layers') != 36):
+        raise ValueError('Expected model/36-layer decoder is not reported by the actual endpoint')
+    if plan['stage']=='refine' and '3840x2160' not in actual.get('sizes',[]):
+        raise ValueError('The actual endpoint does not advertise native 4K output')
+    return actual
+
+
 def generate(args):
     plan_file, directory = args.plan.resolve(),args.directory.resolve()
     plan = read(plan_file)
     validate(plan)
+    if args.window is None:
+        args.window = 3 if plan['stage']=='draft' else 1
+    if plan['stage']=='refine' and args.window != 1:
+        raise ValueError('Native 4K requires --window 1; preserve the shared GPU single-job queue')
     assets = input_assets(plan,args.episode.resolve(),directory)
     snapshots = {path:sha(path) for path in assets}
     gate = [sys.executable,str(args.root.resolve()/'scripts/character_review.py'),'check',
@@ -249,9 +267,7 @@ def generate(args):
     print(run(gate,timeout=120),flush=True)
     api = Api(args.api)
     models = api.json('GET','/models')
-    actual = next((model for model in models['data'] if model['id']==plan['model']),None)
-    if actual is None or (plan['stage']=='draft' and actual.get('decoder_layers') != 36):
-        raise ValueError('Expected model/36-layer decoder is not reported by the actual endpoint')
+    validate_server_model(plan,models)
     for folder in ('jobs','requests','uploads','metadata','logs'):
         (directory/folder).mkdir(parents=True,exist_ok=True)
     save(directory/'metadata/models.json',models)
@@ -355,7 +371,7 @@ def generate(args):
                     save(receipt_file,row)
                     running -= 1
                     # The full source is inspected, including material that is
-                    # shortened in the final cut but may be passed to 2K.
+                    # shortened in the final cut but may be passed to 4K.
                     inspect_source(shot,source)
                 elif remote['status'] in ('failed','cancelled'):
                     raise RuntimeError(f"{shot['id']} remote {remote['status']}: {remote.get('error')}")
@@ -386,7 +402,8 @@ if __name__ == '__main__':
     parser.add_argument('--api',required=True)
     parser.add_argument('--evidence',required=True,type=Path)
     parser.add_argument('--face-model',required=True,type=Path)
-    parser.add_argument('--window',type=int,default=3,choices=range(1,9))
+    parser.add_argument('--window',type=int,default=None,choices=range(1,9),
+                        help='Defaults to three draft jobs or one native 4K job; 4K requires one')
     parser.add_argument('--limit',type=int)
     parser.add_argument('--order',default='')
     parser.add_argument('--skip',default='',help='Preserve but do not submit these shots; replacement plans are reviewed separately')

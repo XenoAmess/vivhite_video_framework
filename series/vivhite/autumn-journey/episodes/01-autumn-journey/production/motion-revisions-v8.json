@@ -52,9 +52,17 @@
     },
     {
       "id": "S48",
-      "action": "固定海岸宽景连续14秒，保留原海浪、道路与房屋；右下蓝蝶保持同一位置和清晰身体结构，两侧翅膀围绕身体根部自然对称开合，每约4秒完成一次舒缓周期，短暂停歇；不翻转、不扭曲、不拖出重影。片尾文字仍由后期叠加。",
-      "generationAction": "A single uninterrupted FOURTEEN-SECOND locked wide view of the exact empty original coast. The original horizon, shore, road, houses and utility poles remain perfectly stable; only ordinary small waves roll gently onto the same beach. The ONE small original blue butterfly stays in the same lower-right corner, resting calmly in place. Give it one coherent slender body and a consistent pair of attached patterned wings. Its wings slowly open and close together from their natural hinges at the body, with relaxed easing and a brief pause when open, roughly one complete gentle cycle every four seconds. The wing shapes and blue pattern remain coherent during each fold. Preserve its small scale. No rapid flutter, spinning body, flipping whole butterfly, rubbery deformation, melting wing, trail, ghost duplicate, extra wing or second insect. No zoom, pan, scene cut, close-up insert, meadow, flowers, new tree, new object, person or human face. Stay on this same coast for all fourteen seconds. No on-screen letters or credits: titles will be added separately.",
-      "acceptance": "View all 336 native frames including enlarged butterfly sequence. Stable empty coast for all fourteen seconds, no cuts or invented scenery; one coherent butterfly with attached paired wings, smooth hinged opening/closing and no flip, ghost, duplicate or rapid flutter. Titles separately reproduce v7 opening style and delayed dedication."
+      "action": "固定原海岸宽景，天空与左侧海面保持原图无遮挡构图，禁止新增前景树枝、树叶；保留原海浪、道路与房屋，右下蓝蝶近乎静止地沿身体根部极缓慢舒展和合拢，全段只作一次从容开合并有停歇，不快速拍翼、翻转、扭曲或拖影。生成15秒源片后仅裁本镜至14秒，片尾文字仍由后期叠加。",
+      "generationAction": "One uninterrupted fifteen-second very wide coastal landscape shot from Picture 1, filmed in extreme slow motion with an absolutely fixed camera. Match the original unobstructed view from the open beach: the upper and left portions are clear open sky and sea exactly as in Picture 1. There is NO foreground tree, NO overhanging branch and NO foreground leaf anywhere in this frame. The original sea, distant horizon, pebble beach, road, poles, houses and sky remain visible at the same scale for the entire take. Gentle small waves breathe along the shore. The original small blue wing ornament at the bottom right is nearly at rest: across the ENTIRE FIFTEEN SECONDS it makes only ONE very gradual opening followed by ONE very gradual closing, a single calm breathing gesture, with long pauses. Both wings bend only at their shared central root. Keep its blue markings, original small size and corner location. Its motion is almost imperceptibly slow, never a rapidly beating flying insect. Keep the complete coast in view while it moves, with no camera approach, focus pull, pan, zoom, transition, cut or alternative scene. No added vegetation, object, person, human body, reflection, lettering, narration, voice, singing or humming. Leave the sky open for later titles.",
+      "acceptance": "Review all 360 native source frames and all wing crops. Continuous original coast, coherent single slow wing-opening/folding gesture and no added people or real faces. Final cut uses only fourteen seconds; first 47 final shot timings remain exactly unchanged. The user explicitly rejects the invented foreground branches; none may appear in any frame.",
+      "sourceSeconds": 15,
+      "finalSeconds": 14
     }
-  ]
+  ],
+  "resolutionStages": [
+    "1344x768",
+    "3840x2160"
+  ],
+  "workflowPolicy": "workflow-policy.json",
+  "closingRetryPlan": "../production-plan-v8-S48-image-only-r3.json"
 }

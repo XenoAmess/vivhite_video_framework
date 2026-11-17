@@ -1,4 +1,4 @@
-"""Prepare per-shot 2K inputs after the reviewed 768p film has been delivered.
+"""Prepare per-shot native 4K inputs after the reviewed 768p film is delivered.
 
 Does not submit jobs or manufacture review decisions. GPL-3.0-only.
 """
@@ -16,12 +16,12 @@ from reference_finisher import sha,run,verify_clip_decisions
 def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destination,root):
     draft_directory,directory = Path(draft_directory).resolve(),Path(directory).resolve()
     if draft_directory == directory or directory.is_relative_to(draft_directory) or draft_directory.is_relative_to(directory):
-        raise ValueError('Keep 2K and draft runs separate')
+        raise ValueError('Keep 4K and draft runs separate')
     delivery = read(delivery_file)
     film = draft_directory/'film.mp4'
     if (delivery.get('schemaVersion') != 'vivhite-delivery-plan-1' or sha(film) != delivery['film']['sha256']
             or delivery.get('machineDecodedFinalFrames') != delivery['film']['frames']):
-        raise ValueError('An actual completed 768p delivery is required before 2K')
+        raise ValueError('An actual completed 768p delivery is required before 4K')
     print(run([sys.executable,str(Path(root).resolve()/'scripts/character_review.py'),'check',
                '--episode',str(Path(episode).resolve()),'--document',str(Path(delivery_file).resolve()),
                '--asset',str(film)],timeout=120))
@@ -40,23 +40,27 @@ def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destinati
     plan.pop('reusedSources',None)
     plan['draftGenerationMetadata'] = {key:plan.pop(key) for key in
         ('numInferenceSteps','decoderLayers','decoderVerification') if key in plan}
-    plan.update(stage='refine',model='open-h3-2k',width=2560,height=1440,sourceSize='2560x1440',
+    plan.update(stage='refine',model='open-h3-2k',width=3840,height=2160,sourceSize='3840x2160',
                 refinementSeed=1234,sampler='up3',draftPlanSha256=sha(draft_plan),
                 draftDeliverySha256=sha(delivery_file),draftFilmSha256=sha(film))
+    plan['scope'] = ('Separate native UHD 4K refinement plan bound to the delivered 768p film and '
+                     'its complete reviewed sources. Preparation submits no job; exact new input review is required.')
+    plan['refinement'] = {'model':'open-h3-2k','size':'3840x2160','sampler':'up3',
+                          'submissionWindow':1,'scope':'Native UHD regeneration; historical provider model ID retained. No 2K output.'}
     for shot,selected in zip(plan['shots'],final['shots']):
         assert shot['id'] == selected['id']
         source = draft_directory/selected['sourceFile']
         decision = decisions[shot['id']]
         if (sha(source) != source_hashes[selected['sourceFile']] or decision.get('allSourceFrameReview') is not True
                 or decision.get('reviewedNativeFrames',0) < source_frame_count(shot)):
-            raise ValueError('Every complete 2K input requires actual semantic review, including unused draft tails')
+            raise ValueError('Every complete 4K input requires actual semantic review, including unused draft tails')
         probe = json.loads(run(['ffprobe','-v','error','-count_frames','-show_streams','-of','json',str(source)]))
         if (len(probe['streams']) != 1 or int(probe['streams'][0]['nb_read_frames']) != source_frame_count(shot)
                 or probe['streams'][0]['avg_frame_rate'] != '24/1'):
-            raise ValueError('2K input must be the exact complete reviewed video-only source')
+            raise ValueError('4K input must be the exact complete reviewed video-only source')
         target = directory/'input-sources'/f"{shot['id']}.mp4"
         if target.exists() and sha(target) != sha(source):
-            raise ValueError('Preserve existing 2K inputs; use a new directory')
+            raise ValueError('Preserve existing 4K inputs; use a new directory')
         if not target.exists():
             shutil.copyfile(source,target)
         shot.update(inputSource=target.relative_to(directory).as_posix(),inputSourceSha256=sha(target))
@@ -76,10 +80,11 @@ def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destinati
                             'keeps its original open violet-pink eyes, iris and eyelid contours, thin round gold glasses '
                             'and original face proportions throughout. No blink, squint, eye shift, facial redraw, '
                             'expression change or turning illustration. Preserve transparent acrylic areas as real background. ')
-        ending = ('The existing tiny corner butterfly makes just one calm, smooth wing cycle over about four seconds. '
+        ending = ('Preserve the input butterfly\'s very slow natural wing motion and long pauses exactly. '
+                  'Do not accelerate its wings, add wing cycles or invent foreground branches or leaves. '
                   if shot['id']=='S48' else '')
         shot['prompt'] = (
-            'Regenerate this same uninterrupted quiet travel shot in clear 2560x1440 detail. '
+            'Regenerate this same uninterrupted quiet travel shot in clear native 3840x2160 detail. '
             'The input video defines every scene element. Preserve its exact framing, camera tempo, natural light, '
             'ordinary weather, colors, terrain and object count. '+framing+merchandise+ending+
             'Introduce no extra person or body part. No real human face or facial fragment anywhere, including reflections and background. '
@@ -95,7 +100,7 @@ def prepare(episode,draft_plan,draft_directory,delivery_file,directory,destinati
     shutil.copyfile(delivery_file,directory/'source-draft-delivery.json')
     validate(plan)
     save(destination,plan)
-    print(f"Prepared separate 2K plan and {len(plan['shots'])} reviewed inputs. New plan requires both independent reviews before submission.")
+    print(f"Prepared separate native 4K plan and {len(plan['shots'])} reviewed inputs. New plan requires both independent reviews before submission.")
 
 
 if __name__ == '__main__':
