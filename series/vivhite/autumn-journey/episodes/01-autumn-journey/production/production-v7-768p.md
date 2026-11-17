@@ -21,4 +21,6 @@ Vivhite · Autumn Journey
 
 大型媒体及全部中间文件位于仓库同级 `vivhite-analysis-output/vivhite/autumn-journey/production-v7-bf16-768p-001/`，新片尾尝试与处理链在 `production-v7-bf16-768p-S48-001/`。本期所有新检查图片继续保存在项目并提交Git。
 
-用户明确停止全部2K任务。两个服务端任务已取消，本地提交进程已停止，服务端确认空闲；[停止收据](stopped-2k-20261117.json)记录实际状态。当前任务只交付新版768P Release，不自动恢复2K。已发布v6 Release和旧影片均保留。
+用户明确停止全部本项目2K任务。两个服务端任务已取消，本地提交进程已停止，取消当时服务端确认空闲；发布前再次查询两个任务仍为cancelled。[停止收据](stopped-2k-20261117.json)记录实际状态。当前任务只交付新版768P Release，不自动恢复2K。已发布v6 Release和旧影片均保留。
+
+GitHub Release已发布，四个附件的远端SHA256与字节数均和本地一致；[发布回执](release-v7-768p.json)记录实际发布ID、时间、固定提交和下载地址。[进度快照](run-progress-v7-768p.json)为本轮交付100%，不等同于用户审美验收。代码变更的38项针对性测试已通过，全部2083张项目图片均已入Git；本轮新增91张图，另有对应说明文件。旧v3、v4、v6影片的SHA256复核未变。
