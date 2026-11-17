@@ -1,5 +1,6 @@
 # 第一期：秋日旅程
 
+- [下载原生768P完整影片及导演稿（GitHub Release）](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v6-768p-20261117)。
 - [当前导演案 v6](director-v6.md)：48镜、196秒；S20恢复一个连续10秒镜头，其余47镜2–5秒。[1344×768成片已交付](production/production-v6-768p.md)，正在逐镜制作2560×1440版；[此前预计节点](production/schedule-768p-2k-v2.json)与[开工前估算](production/schedule-768p-2k-v1.json)保留。
 - [实际768P交付清单](delivery-plan-v6-768p.json)、[最终768P合成计划](final-assembly-plan-v6-768p.json)、[2K逐镜输入计划](production-plan-v6-local-2k.json)。[旧批次进度快照](production/run-progress-v5.json)对应49镜v5，新版48镜进度见[当前快照](production/run-progress-v6.json)。原片、失败版本及S20A/S20B全部保留。
 - [S17按原画重做计划](production-plan-v5-S17-image-only-r3.json)：旧闭眼慢放片已撤销通过，不能用于成片或2K；追加核对所有周边的眼睛、眼镜及脸部比例。处理收据不代表实际外观审核通过。
