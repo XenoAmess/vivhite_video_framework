@@ -1,14 +1,14 @@
 # 第一期：秋日旅程
 
-- [当前导演案 v6](director-v6.md)：48镜、196秒；S20恢复一个连续10秒镜头，其余47镜2–5秒。正在制作1344×768版，完成后逐镜做2560×1440版；[按首三段实测更新的预计节点](production/schedule-768p-2k-v2.json)以北京时间记录，[开工前估算](production/schedule-768p-2k-v1.json)保留。
-- [新版768P计划](production-plan-v6-bf16-768p.json)、[S20单次10秒生成计划](production-plan-v6-S20-image-only-r1.json)。[旧批次进度快照](production/run-progress-v5.json)仍对应49镜v5，不能直接当作新版48镜进度。旧片段按原字节与全帧检查结果筛选沿用；原片、失败版本及S20A/S20B全部保留，新成片尚未交付。
+- [当前导演案 v6](director-v6.md)：48镜、196秒；S20恢复一个连续10秒镜头，其余47镜2–5秒。[1344×768成片已交付](production/production-v6-768p.md)，正在逐镜制作2560×1440版；[此前预计节点](production/schedule-768p-2k-v2.json)与[开工前估算](production/schedule-768p-2k-v1.json)保留。
+- [实际768P交付清单](delivery-plan-v6-768p.json)、[最终768P合成计划](final-assembly-plan-v6-768p.json)、[2K逐镜输入计划](production-plan-v6-local-2k.json)。[旧批次进度快照](production/run-progress-v5.json)对应49镜v5，新版48镜进度见[当前快照](production/run-progress-v6.json)。原片、失败版本及S20A/S20B全部保留。
 - [S17按原画重做计划](production-plan-v5-S17-image-only-r3.json)：旧闭眼慢放片已撤销通过，不能用于成片或2K；追加核对所有周边的眼睛、眼镜及脸部比例。处理收据不代表实际外观审核通过。
 - [本轮制作与完整中间材料位置](production/production-v5.md)：模型、计时、返工、768P／2K检查范围及跨机器恢复要求。
 - [历史导演案 v3](director.md)：旧版48镜、202秒，原文件和已交付影片完整保留。
 - [周边图像生成说明 v3](image-briefs.md)：角色原图绑定、贴纸／玩偶／周边／意象设计，以及真实感人物不露脸的场景任务卡。
 - [真实世界美术修订](production/realism-revision-001.md)、[实际生成图](assets/generated/production-v3-realism-001/README.md)及[历史真实感版制作计划](production-plan-v4.json)。
 - [成片制作记录](production/production-v3.md)、[最终合成计划](final-assembly-plan-v4.json)及[交付验收](delivery-plan-v3.json)。
-- [片尾修订 v4](production/production-v4.md)、[最近已交付版合成计划](final-assembly-plan-v5.json)及[最近交付验收](delivery-plan-v4.json)：蓝蝶八倍慢放，只保留标题与献词两行，完整保留 v3。
+- [历史片尾修订 v4](production/production-v4.md)、[旧版合成计划](final-assembly-plan-v5.json)及[旧版交付验收](delivery-plan-v4.json)：蓝蝶八倍慢放，只保留标题与献词两行，完整保留 v3。
 - [素材清单](reference-assets.json)：用户 ZIP 中 11 张图的指纹与使用范围。
 - [期清单](episode.json)：稳定 ID、角色与导演稿入口。
 

@@ -18,6 +18,25 @@ def read(path, default):
     return json.loads(path.read_text(encoding='utf-8')) if path.exists() else default
 
 
+def delivered(base, name):
+    document = EP / name
+    delivery = read(document, {})
+    if delivery.get('schemaVersion') != 'vivhite-delivery-plan-1':
+        return False
+    film = (ROOT.parent / delivery['film']['relativeToRepositoryParent']).resolve()
+    receipt = read(EP / 'reviews' / f'{sha(document)}.json', {})
+    inspection = read(film.parent / 'encoded-film-inspection.json', {})
+    return bool(film.is_relative_to(base) and film.is_file()
+                and sha(film) == delivery['film']['sha256']
+                and delivery.get('machineDecodedFinalFrames') == 5880
+                and inspection.get('filmSha256') == delivery['film']['sha256']
+                and inspection.get('decodedAndComparedFrames') == 5880
+                and receipt.get('documentSha256') == sha(document)
+                and receipt.get('assets') == [{'sha256': delivery['film']['sha256']}]
+                and receipt.get('personalityConsistency') == 'passed'
+                and receipt.get('informationDisclosure') == 'passed')
+
+
 def export(base):
     plan_file = EP / 'production-plan-v6-bf16-768p.json'
     plan = read(plan_file, {})
@@ -26,7 +45,8 @@ def export(base):
     shots = []
     for shot in plan['shots']:
         identity = shot['id']
-        run_name = {'S20': 'production-v6-bf16-768p-S20-001',
+        run_name = {'S17': 'production-v5-bf16-768p-S17-image-only-003',
+                    'S20': 'production-v6-bf16-768p-S20-001',
                     'S29': 'production-v6-bf16-768p-S29-image-only-001',
                     'S43': 'production-v6-bf16-768p-S43-image-only-001'}.get(
                         identity, 'production-v5-bf16-768p-002')
@@ -60,7 +80,8 @@ def export(base):
               'completedSources': generated, 'acceptedSources': accepted,
               'generationPercent': round(100 * generated / len(shots), 2),
               'acceptedPercent': round(100 * accepted / len(shots), 2),
-              'final768FilmDelivered': False, 'final2KFilmDelivered': False,
+              'final768FilmDelivered': delivered(base, 'delivery-plan-v6-768p.json'),
+              'final2KFilmDelivered': delivered(base, 'delivery-plan-v6-2k.json'),
               'humanFullPlayback': False, 'excludedHistoricalSources': ['S20A', 'S20B'],
               'scope': 'Source availability and actual matching review records only. '
                        'This snapshot grants no review, new-plan binding or film approval.',

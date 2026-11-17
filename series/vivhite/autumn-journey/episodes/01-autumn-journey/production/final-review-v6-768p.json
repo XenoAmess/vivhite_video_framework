@@ -1,0 +1,486 @@
+{
+  "schemaVersion": "vivhite-final-film-review-1",
+  "filmSha256": "ca94194be9262835120164567322dda83c4e35d5f4884fe6baf50275876487e4",
+  "planSha256": "86117262ca58ddc70408774ba269fa0bb1655c4cfdae86af7c2a81c463d9bfed",
+  "reviewedAt": "2026-11-17T01:41:05.883109+00:00",
+  "method": "assistant-source-and-encoded-evidence-review",
+  "completeSourceNativeFrames": 5880,
+  "usedSourceNativeFrames": 4704,
+  "machineDecodedAndComparedFinalFrames": 5880,
+  "finalFrameMinimumPsnrOutsideTitles": 39.468,
+  "lowSimilarityFrames": 0,
+  "viewedFinalShotSamples": 48,
+  "viewedDetectorCrops": 84,
+  "viewedAllCandidateSheets": 18,
+  "viewedTitleFadeSamples": 10,
+  "observation": "Every complete native source was separately viewed and compared with original artwork. All final encoded frames were decoded and compared with the selected picture. All 48 final scene samples, 84 exported detector crops across 18 sheets and ten title/fade samples were actually viewed; crops are permitted merchandise faces, pouch/zipper detail, costume, leaves and grass, with no real human facial fragment. The opening title remains on S06; S48 shows only the exact title and dedication, with calm butterfly motion and no production credits. No new human or face was introduced by finishing. Source review and numerical final-frame comparison support complete coverage; final samples alone are not claimed as full-frame semantic viewing or continuous human playback.",
+  "noSpeech": "passed",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "referenceAppearance": "passed",
+  "merchandiseBehavior": "passed",
+  "motionAndContinuity": "passed",
+  "titleAndClosing": "passed",
+  "humanFullPlayback": false,
+  "humanListening": false,
+  "audioEvidence": {
+    "schemaVersion": "vivhite-final-audio-comparison-1",
+    "filmSha256": "ca94194be9262835120164567322dda83c4e35d5f4884fe6baf50275876487e4",
+    "soundtrackSha256": "23b41dce5b25c40b114ab77590a6544fae221f2f354ba25cfad4e9ee337c90d3",
+    "expectedSamplesPerChannel": 9408000,
+    "decodedAacSamplesPerChannel": 9408512,
+    "decodedPcmCorrelationWithBoundProceduralWav": 0.9997054607811985,
+    "allFourSecondIntervalsAnalysed": [
+      {
+        "startSeconds": 0,
+        "peak": 0.463654,
+        "rms": 0.102636
+      },
+      {
+        "startSeconds": 4,
+        "peak": 0.419403,
+        "rms": 0.112349
+      },
+      {
+        "startSeconds": 8,
+        "peak": 0.509644,
+        "rms": 0.111278
+      },
+      {
+        "startSeconds": 12,
+        "peak": 0.556946,
+        "rms": 0.115706
+      },
+      {
+        "startSeconds": 16,
+        "peak": 0.466675,
+        "rms": 0.109279
+      },
+      {
+        "startSeconds": 20,
+        "peak": 0.597565,
+        "rms": 0.135512
+      },
+      {
+        "startSeconds": 24,
+        "peak": 0.606323,
+        "rms": 0.129651
+      },
+      {
+        "startSeconds": 28,
+        "peak": 0.567719,
+        "rms": 0.114793
+      },
+      {
+        "startSeconds": 32,
+        "peak": 0.626129,
+        "rms": 0.127025
+      },
+      {
+        "startSeconds": 36,
+        "peak": 0.510193,
+        "rms": 0.10421
+      },
+      {
+        "startSeconds": 40,
+        "peak": 0.751495,
+        "rms": 0.159794
+      },
+      {
+        "startSeconds": 44,
+        "peak": 0.780701,
+        "rms": 0.154672
+      },
+      {
+        "startSeconds": 48,
+        "peak": 0.692139,
+        "rms": 0.142377
+      },
+      {
+        "startSeconds": 52,
+        "peak": 0.767853,
+        "rms": 0.136714
+      },
+      {
+        "startSeconds": 56,
+        "peak": 0.539673,
+        "rms": 0.124593
+      },
+      {
+        "startSeconds": 60,
+        "peak": 0.608002,
+        "rms": 0.130078
+      },
+      {
+        "startSeconds": 64,
+        "peak": 0.632019,
+        "rms": 0.127433
+      },
+      {
+        "startSeconds": 68,
+        "peak": 0.602478,
+        "rms": 0.113182
+      },
+      {
+        "startSeconds": 72,
+        "peak": 0.571808,
+        "rms": 0.117625
+      },
+      {
+        "startSeconds": 76,
+        "peak": 0.46402,
+        "rms": 0.101349
+      },
+      {
+        "startSeconds": 80,
+        "peak": 0.439545,
+        "rms": 0.085579
+      },
+      {
+        "startSeconds": 84,
+        "peak": 0.390472,
+        "rms": 0.082106
+      },
+      {
+        "startSeconds": 88,
+        "peak": 0.405975,
+        "rms": 0.079399
+      },
+      {
+        "startSeconds": 92,
+        "peak": 0.365265,
+        "rms": 0.07975
+      },
+      {
+        "startSeconds": 96,
+        "peak": 0.404449,
+        "rms": 0.08037
+      },
+      {
+        "startSeconds": 100,
+        "peak": 0.383514,
+        "rms": 0.073154
+      },
+      {
+        "startSeconds": 104,
+        "peak": 0.385681,
+        "rms": 0.088488
+      },
+      {
+        "startSeconds": 108,
+        "peak": 0.388947,
+        "rms": 0.076239
+      },
+      {
+        "startSeconds": 112,
+        "peak": 0.487885,
+        "rms": 0.082263
+      },
+      {
+        "startSeconds": 116,
+        "peak": 0.365417,
+        "rms": 0.075614
+      },
+      {
+        "startSeconds": 120,
+        "peak": 0.588684,
+        "rms": 0.131035
+      },
+      {
+        "startSeconds": 124,
+        "peak": 0.631134,
+        "rms": 0.132025
+      },
+      {
+        "startSeconds": 128,
+        "peak": 0.56604,
+        "rms": 0.12044
+      },
+      {
+        "startSeconds": 132,
+        "peak": 0.647095,
+        "rms": 0.125537
+      },
+      {
+        "startSeconds": 136,
+        "peak": 0.51413,
+        "rms": 0.11282
+      },
+      {
+        "startSeconds": 140,
+        "peak": 0.536774,
+        "rms": 0.125237
+      },
+      {
+        "startSeconds": 144,
+        "peak": 0.636261,
+        "rms": 0.127109
+      },
+      {
+        "startSeconds": 148,
+        "peak": 0.576202,
+        "rms": 0.112588
+      },
+      {
+        "startSeconds": 152,
+        "peak": 0.63324,
+        "rms": 0.119588
+      },
+      {
+        "startSeconds": 156,
+        "peak": 0.431427,
+        "rms": 0.098536
+      },
+      {
+        "startSeconds": 160,
+        "peak": 0.554443,
+        "rms": 0.117039
+      },
+      {
+        "startSeconds": 164,
+        "peak": 0.559387,
+        "rms": 0.121211
+      },
+      {
+        "startSeconds": 168,
+        "peak": 0.545074,
+        "rms": 0.11407
+      },
+      {
+        "startSeconds": 172,
+        "peak": 0.555725,
+        "rms": 0.115125
+      },
+      {
+        "startSeconds": 176,
+        "peak": 0.556549,
+        "rms": 0.10819
+      },
+      {
+        "startSeconds": 180,
+        "peak": 0.531128,
+        "rms": 0.117193
+      },
+      {
+        "startSeconds": 184,
+        "peak": 0.403412,
+        "rms": 0.086627
+      },
+      {
+        "startSeconds": 188,
+        "peak": 0.363647,
+        "rms": 0.073431
+      },
+      {
+        "startSeconds": 192,
+        "peak": 0.374817,
+        "rms": 0.055374
+      }
+    ],
+    "modelAudioInMix": false,
+    "method": "Complete AAC decode and numerical comparison to the exact bound procedural WAV; no claim of human listening."
+  },
+  "machineInspection": {
+    "schemaVersion": "vivhite-encoded-film-inspection-2",
+    "filmSha256": "ca94194be9262835120164567322dda83c4e35d5f4884fe6baf50275876487e4",
+    "selectedPictureSha256": "3e98c3d647adba0beb142cfa6f9e960d9cc7c030ee7310422fcb6e6753220fe9",
+    "planSha256": "86117262ca58ddc70408774ba269fa0bb1655c4cfdae86af7c2a81c463d9bfed",
+    "workerSha256": "c00b751a17f3d75325a5ddb0978efb73e7a36acac237e5209f016661ebcdb7f8",
+    "width": 1344,
+    "height": 768,
+    "fps": 30,
+    "decodedAndComparedFrames": 5880,
+    "faceDetectorFrames": 5880,
+    "faceDetectorInputSize": [
+      832,
+      468
+    ],
+    "faceModelSha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+    "faceScoreThreshold": 0.6,
+    "minimumOutsideTitlePsnrDb": 39.468,
+    "lowSimilarityFrames": [],
+    "candidateFrames": 620,
+    "candidateEvidence": [
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S06-final-candidates.png",
+        "sha256": "8559daede113fc90188e327e5e6b98583e0021f45c5be93dda89291142ed804b",
+        "items": 5
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S07-final-candidates.png",
+        "sha256": "02db28afc13098d297eccd7e425fc354c579c0d440aa4f7e9eaec40b40ac4de6",
+        "items": 4
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S08-final-candidates.png",
+        "sha256": "8a107ce50f624a41c1c4706161d652d607db413fc9c9b0610be215861a56d96c",
+        "items": 5
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S09-final-candidates.png",
+        "sha256": "264d38a95d639e1e32337cef9b56858484d2da503372885606eeb9c9902f68a5",
+        "items": 4
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S12-final-candidates.png",
+        "sha256": "94301e70895232bc973d689c28ddeac52f556ff44c4a22fc9932ba2637c09ce3",
+        "items": 4
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S16-final-candidates.png",
+        "sha256": "bdb4812bb645b001db45d62531321ea5ec195a696b743bcaee4f4d5ed914f858",
+        "items": 9
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S18-final-candidates.png",
+        "sha256": "c8ef46c4bf0b0c99095fcf6857dc1ea0c2bcce0fc1546250f6fa5e8cd4b54e91",
+        "items": 2
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S20-final-candidates.png",
+        "sha256": "ac6a184c9f12cdda9195339061984a4081a87a8a76f7175d4e08d115690897c7",
+        "items": 6
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S21-final-candidates.png",
+        "sha256": "73202eba449e8f90c5eb00664b3a3c4149ccdbe384f2ec0d6bf46a9f97fd0de5",
+        "items": 4
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S22-final-candidates.png",
+        "sha256": "700ff4831442cc7dd125bb720f61b3a9682d4365e6105946eff04d6a8c6817c3",
+        "items": 5
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S26-final-candidates.png",
+        "sha256": "858180a14ab6ce4349f6194083bc3a515970b16aff41925d1da4f6e0494eeea8",
+        "items": 18
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S27-final-candidates.png",
+        "sha256": "3d6e7845cfc96156e04099b67f62add31811c6d32a345fd52e04d5ecc20538b9",
+        "items": 2
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S28-final-candidates.png",
+        "sha256": "f5518a2f9564f9b68639079d7a32e9321aa110a738a661f4c17e036308bd036b",
+        "items": 1
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S30-final-candidates.png",
+        "sha256": "a3b262ffec6d8d18b7765b6ea9a2d85011f4c5fb7f5779e72eb8a18b010ac66d",
+        "items": 1
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S35-final-candidates.png",
+        "sha256": "beeac096b46419d0ff5a2f114d41d525d2d8bd4c06464f151e0c1431a927a54c",
+        "items": 1
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S37-final-candidates.png",
+        "sha256": "b55a381d0e79122905cc2f9f4782da20b04ffe3eab51272e5c1169c859c5d19d",
+        "items": 2
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S44-final-candidates.png",
+        "sha256": "84628dcd35a7a31b3365ffe428a776eaed4d212ea38a8e16c96d68ef1dbf1800",
+        "items": 8
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/S47-final-candidates.png",
+        "sha256": "210a5b84447e03cdb6911fedb02bd3163eb8c1da4a97c33ac1ec2105af480ee1",
+        "items": 3
+      }
+    ],
+    "shotEvidence": [
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/shots-01-08.png",
+        "sha256": "29f6b528af2d3e2698eef80a7368e489c6c8d32a4364228154cb6c87aacd7d7d",
+        "items": 8
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/shots-09-16.png",
+        "sha256": "b123ef5ed164ebaf9ee3fc63391cd3734ec4d2cfc78d7fbcb665caffa676b1bc",
+        "items": 8
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/shots-17-24.png",
+        "sha256": "da4f284eba04ed33b1c307569f92f1ed924b5424cb9126b7d1ca09d802abd3bd",
+        "items": 8
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/shots-25-32.png",
+        "sha256": "01eb6547a94f9b6ed88bf7c8530ec952917774e548b9a35a9b8336ff768e4039",
+        "items": 8
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/shots-33-40.png",
+        "sha256": "c49812439fda658fb442f7c180bdbff09b5427b6e1668b3d343083e94ad9659f",
+        "items": 8
+      },
+      {
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/shots-41-48.png",
+        "sha256": "025b3561812b8eabfa47e5c67bff009fcfe8ef8be0a3f264e6c8c24115b4ef45",
+        "items": 8
+      }
+    ],
+    "titleFadeEvidence": [
+      {
+        "frame": 570,
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/0570-S06-before.png",
+        "sha256": "bcab965219ab65921053fff047913b72c9d2c44c3b043f49c25a8978a1e9a6db"
+      },
+      {
+        "frame": 591,
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/0591-S06-in.png",
+        "sha256": "7f393a75cd668cdddc0dcdd2fbf24e0d40936224f445233596481617580b7384"
+      },
+      {
+        "frame": 630,
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/0630-S06-visible.png",
+        "sha256": "dfaefcb2077e186d85fae2eb9deb798484d75ce7426d74c82b8e0eedd088289e"
+      },
+      {
+        "frame": 674,
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/0674-S06-out.png",
+        "sha256": "91fdd27cd059bcfaf991499935d232004b0557eabf92354d88a04dad97063462"
+      },
+      {
+        "frame": 5730,
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/5730-S48-before.png",
+        "sha256": "6d4b515534e555e4785ff8d1039cfcc5d1bec01c704c6214e3b876bde0747949"
+      },
+      {
+        "frame": 5751,
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/5751-S48-in.png",
+        "sha256": "ac6154f51f8c62e087d9f84c65374b35d938b81d02570cd914220674a74efbe9"
+      },
+      {
+        "frame": 5790,
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/5790-S48-visible.png",
+        "sha256": "42dec0edeca8fd66fcd6636dc217c36965c41700e40b4484f06fbd464cd6007d"
+      },
+      {
+        "frame": 5864,
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/5864-S48-out.png",
+        "sha256": "9db3bef6a355331a83681d57d5ad9d5f64add3dd47b4487ef6d5672e2f384698"
+      },
+      {
+        "frame": 5868,
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/5868-closing-fade.png",
+        "sha256": "f4728530ed507d63f3852de9f3405642c5ca23e3e0b21a8960e4941ee9359466"
+      },
+      {
+        "frame": 5879,
+        "path": "assets/generated/production-v6-bf16-768p-001/review/final-film/5879-last-frame.png",
+        "sha256": "65f9e94f258ec13d8914adfcc76a10e44719092f7cf0569de5328f6cbaaf02a3"
+      }
+    ],
+    "machineCoverage": "All final frames decoded, compared with selected picture outside known title bounds, and passed through the stated face detector. Source clips have separate native-size inspections.",
+    "semanticReview": "Separate all-source-frame and candidate interpretation required; never automatically approved.",
+    "humanFullPlayback": false,
+    "elapsedSeconds": 152.984
+  }
+}
