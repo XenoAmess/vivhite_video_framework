@@ -139,6 +139,48 @@
       "motionAndContinuity": "failed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "pending"
+    },
+    {
+      "id": "S28",
+      "sourceSha256": "e0a65ab5e03af81383c83289ef5048d6242ce0a118eb3bfc7e7dd1062afaa59a",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-17T13:43:33.019477+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S28-e0a65ab5e0-all-frames-01.png",
+          "sha256": "32d4c88b7af00db1ef826015f30ed3e2b940ea27fb080b18e2047675ce49b0af",
+          "items": 32
+        },
+        {
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S28-e0a65ab5e0-all-frames-02.png",
+          "sha256": "0ff9260e4cf2728d5427043ca76d6dfafe199be68dce0a65ab55d5374155c03c",
+          "items": 32
+        },
+        {
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S28-e0a65ab5e0-all-frames-03.png",
+          "sha256": "88efe831365f6aa62e99aa35b8b39250570a79814a6f55b5aa749ed357482272",
+          "items": 32
+        },
+        {
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S28-e0a65ab5e0-all-frames-04.png",
+          "sha256": "bcca38d27501357bc3e75e239f17e76552429ff4676c29a5c04f53a4f51a67b1",
+          "items": 24
+        }
+      ],
+      "faceEvidence": null,
+      "observation": "Actually viewed all 120 original and all 120 corrected native source frames on complete scene sheets, the raw temporal overview, all four raw detector crops, both corrected native endpoints, all 120 tracked original and corrected cup-face crops, and original-artwork versus corrected-print comparisons. Exactly the two original attached female hands lower the existing pastry wrapper outward and downward, flattening it on the same wooden table, then rest at its edges. The lifted original wrapper edge at the beginning remains physically held by those hands and is not a floating veil. No new loose white sheet, translucent shadow, steam, smoke, dissolving paper, food mutation, extra hand, unrelated person, real human face, reflected figure, lettering or cut is visible. The same feminine white/deep-violet/gold head-out crop remains. Original open violet-pink eye/iris and eyelid shapes, thin round gold glasses and face proportions are restored on the same existing cup; all corrected print frames stay fixed and open-eyed with no visible tracking drift, halo, duplicated features or seam. The raw narrower-face generation is rejected and retained. Zero corrected detector candidates alone do not prove absence of human faces; full scene evidence supplies that review. Accept the complete five-second correction for the unchanged five-second final S28. No final-film or human playback approval implied.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ]
 }

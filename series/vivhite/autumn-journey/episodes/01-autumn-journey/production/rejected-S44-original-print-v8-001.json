@@ -1,0 +1,46 @@
+{
+  "id": "S44",
+  "sourceSha256": "5645200a669b93a54494d1017c1a52d0c97deff5858495e50555aad220619cd3",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-17T13:46:58.028121+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 96,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S44-5645200a66-all-frames-01.png",
+      "sha256": "7eaf247cd3c6bbe41ae144c3fc57a3e5fc38690290a7d0bac59bda12165d5bcf",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S44-5645200a66-all-frames-02.png",
+      "sha256": "0b8a6167a41d5cd6cf9649be14997d18d6bb76b4cf790867b70f27c5753a168c",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S44-5645200a66-all-frames-03.png",
+      "sha256": "9cb556f3c39f35814380dd53f3ea61793965e8529b4e0c8a18a51e4892fa87a0",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S44-5645200a66-all-frames-04.png",
+      "sha256": "730a08c23273890ad4389aebb1130b84bca4b0562fdc3fd74003dc6dc272186c",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S44-5645200a66-face-candidates.png",
+    "sha256": "b4d133376db472a130a652707ac64a3947aeb1de5e723a11821df91e5477012a",
+    "items": 1
+  },
+  "observation": "Actually viewed all 120 source frames on four complete scene sheets, temporal evidence, the detector crop, native endpoints, all 120 tracked pouch-face crops and original-artwork comparison. The single original hand draws the zipper downward to its bottom stop, then changes grip to the released flap and pulls the fabric aside, leaving the same empty grass, tree line and distant beige tent clearly visible. The later hand lift is a fabric grip, not a zipper reclose; the opening grows and stays open. No added hand, person, real face, reflection, lettering or cut. However the generated pouch face has asymmetric narrower eye and gold-glasses proportions relative to the original. Reject the uncorrected print, keep the new single-direction opening action and restore the original artwork on this same pouch before a new complete review.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "passed",
+  "referenceAppearance": "failed"
+}

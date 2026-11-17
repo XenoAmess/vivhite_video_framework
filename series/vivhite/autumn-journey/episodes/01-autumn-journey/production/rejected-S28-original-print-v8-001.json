@@ -1,0 +1,46 @@
+{
+  "id": "S28",
+  "sourceSha256": "3273b92eb8875f1d5866e6ffb59646be63f34b955159038fbbe678d7ee45f0eb",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-17T13:39:50.075918+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 120,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S28-3273b92eb8-all-frames-01.png",
+      "sha256": "e5b52b16fb46cf57e402dfa0fdcb9beeb9d4135f6de0485f998e8f0e1f805c85",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S28-3273b92eb8-all-frames-02.png",
+      "sha256": "d8b6681a826b8faec042702924250d0eb7e66b06a655c5c6915eb175ccced0fd",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S28-3273b92eb8-all-frames-03.png",
+      "sha256": "9521ab891f3961e76db5a713676a2d7f5708b56a23e814ea2c4ae14971284239",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S28-3273b92eb8-all-frames-04.png",
+      "sha256": "e975ef5a44464677e0f44ed8a58dfb800c8ef314825dad62d1d74c563ae83f16",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v8-motion-768p-001\\review\\video-768p\\S28-3273b92eb8-face-candidates.png",
+    "sha256": "f3865a72c23fc2de1d9528085c06550924de6dafe2c8a12953084f37b8503c0d",
+    "items": 4
+  },
+  "observation": "Actually viewed all 120 complete scene frames, temporal evidence, four detector crops, native endpoints, all 120 tracked printed-face crops and original-scene comparison. The two original hands lower the same wrapper outward and downward, then rest at its flat edges; there is no floating white veil, smoke, new paper, duplicated food, unrelated person, real face or cut. Original feminine costume and body crop remain. However the cup illustration has generated narrower eye and glasses proportions than the actual original artwork. It stays open-eyed but stable deformation is not sufficient fidelity. Reject the uncorrected print and restore the original artwork on this same static cup while preserving the newly generated purposeful wrapper action, then review all corrected frames separately.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "passed",
+  "referenceAppearance": "failed"
+}
