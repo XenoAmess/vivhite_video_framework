@@ -20,7 +20,10 @@ def export(base):
     run = base / 'production-v8-motion-768p-001'
     rows = []
     for identity in SHOT_IDS:
-        origin = base / 'production-v8-motion-768p-S15-002' if identity == 'S15' else run
+        origin = base / {
+            'S15': 'production-v8-motion-768p-S15-002',
+            'S48': 'production-v8-motion-768p-S48-002',
+        }.get(identity, run.name)
         decisions = read(origin / 'clip-decisions.json', {}).get('shots', [])
         selections = read(origin / 'source-selections.json', {}).get('selections', {})
         job = read(origin / 'jobs' / f'{identity}.json', {})
