@@ -369,14 +369,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S09",
+      "sourceSha256": "dc71a1b950b22907d74a5248ef1744b89ce58a8c4ab9a5f594a6502262183df4",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T12:18:55.345940+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S09-v1/S09-dc71a1b950-all-frames-01.png",
+          "sha256": "ec00bc9a82e0d7b12a59433cd0b79d24aa692e75e198202e551beb29a48114df",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S09-v1/S09-dc71a1b950-all-frames-02.png",
+          "sha256": "d3c84a04121ed7d384fa0fb36976be5e7d610ed9e6e31ec807f5d2d0b708b404",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S09-v1/S09-dc71a1b950-all-frames-03.png",
+          "sha256": "b71e395923d65e280cc179a09db21ab6bbced4c60224a1bca4fc6844a294e86f",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S09-v1/S09-dc71a1b950-all-frames-04.png",
+          "sha256": "c5bd493dce853f8ab2f90dcf1fa47b9f4b2577e4aa4c5c8bd78deb16b223aebb",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/corrected-S09-v1/S09-dc71a1b950-face-candidates.png",
+        "sha256": "6fcaeb27f5a1fcc5d168547a6347ce5943f2d48c8757d1dc1bb64d8e808438d1",
+        "items": 14
+      },
+      "observation": "Actually viewed every one of 120 corrected whole-scene source frames through four bound JPEG pages, all 120 native-derived eye/glasses crops through eight JPEG pages, the 14-example corrected face candidate sheet and corrected native context frame 119. Compared original M09 RGBA artwork, actual 768P input first frame and four first-frame registration candidates before adopting candidate 02 parameters. Original whole scene and wide attached-hand crops were separately reviewed across all 120 frames. Restored open pink/violet star irises and thin gold round glasses remain attached to the same bottle sticker without autonomous expression, visible slip or blinking. Original and corrected eyes were OPEN; original rejection concerned lost iris/glasses detail. One original hand rests palm-down on the railing with gentle finger motion, connected to the same feminine sleeved forearm. No added hand/person, human head/face, scene reset or impossible wrist observed. River, reflection, railing and bottle motion stay continuous. Native-derived candidate examples are distant bank/foliage, railing and bottle edges, not real people. Only eye/glasses texture restored; hair and body print remain softer, and the complete frame was re-encoded at CRF16. All 120 frames reviewed though only original 3 seconds / 72 native frames enter the film. Assistant image-sequence review, not human continuous playback or final-film approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Eight current source selections reviewed; original S03, S06 and S07 rejections retained independently.",
-  "reviewedSourceCount": 8,
-  "acceptedSourceCount": 8,
+  "scope": "Nine current source selections reviewed; original S03, S06, S07 and S09 rejections retained independently.",
+  "reviewedSourceCount": 9,
+  "acceptedSourceCount": 9,
   "rejectedCurrentSourceCount": 0,
-  "rejectedHistoricalSourceCount": 3,
-  "pendingSources": 40,
+  "rejectedHistoricalSourceCount": 4,
+  "pendingSources": 39,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -414,9 +460,21 @@
       "inspectionReportSha256": "f2be4c56682cd79bc0cf69120aa08c7e5cf397c610db5f2fd2fbe1e34e3ea000",
       "selectedAt": "2026-11-18T09:29:46.488869+00:00",
       "reason": "Actual full-120-frame whole-scene and native eye review, compared with original M08 artwork; original hand crops separately reviewed across all 120 frames."
+    },
+    "S09": {
+      "path": "corrections/S09-reference-eyes-v1.mp4",
+      "parent": "sources/S09.mp4",
+      "receipt": "corrections/S09-reference-eyes-v1.json",
+      "inspectionReport": "correction-inspections/S09-reference-eyes-v1/S09.json",
+      "selectedAt": "2026-11-18T12:18:55.222344+00:00",
+      "reason": "Actual complete 120-frame whole-scene and native eye/glasses review; original hand separately reviewed in a sufficiently wide crop across all 120 frames; compared again with M09 artwork.",
+      "sha256": "dc71a1b950b22907d74a5248ef1744b89ce58a8c4ab9a5f594a6502262183df4",
+      "parentSha256": "fa45f62b63f90ab53b57a9252ad3c702f1a8697653c94409163f896b6b414437",
+      "receiptSha256": "6d82fd596e623b6cac542c94269a710af917b37b2a24b553674c1ed70ec6c9fb",
+      "inspectionReportSha256": "1d7a3a38865a3e04fcaad4ac919f0a6ad2d058ea0a8e3e4f8c2c0f0f5721706d"
     }
   },
-  "snapshotAt": "2026-11-18T10:44:06.546496+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 1320,
+  "snapshotAt": "2026-11-18T12:18:55.428566+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 1560,
   "rejectedCorrectionCandidateCount": 2
 }

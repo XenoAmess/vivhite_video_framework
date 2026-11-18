@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "shots": [
+    {
+      "id": "S09",
+      "sourceSha256": "fa45f62b63f90ab53b57a9252ad3c702f1a8697653c94409163f896b6b414437",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T12:03:48.394418+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S09-fa45f62b63-all-frames-01.png",
+          "sha256": "379246ec1fc11c6b212398ad05cca15d3c65e0f7916e47cb42ec2e117a831245",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S09-fa45f62b63-all-frames-02.png",
+          "sha256": "df96798fbaefc7a2c2336b82c47f735e8db470054bf1c46d72926c2ada3315ff",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S09-fa45f62b63-all-frames-03.png",
+          "sha256": "21f26bc47c82daaa7208ec2346ad40b4e1b711e8bf34b549582292474cfcd2fc",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S09-fa45f62b63-all-frames-04.png",
+          "sha256": "0dc678f048d29fba0fa2c7dbb813b3c11df874191a48bf9f711fcb764dc3dfbf",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S09-fa45f62b63-face-candidates.png",
+        "sha256": "59ec3a280b206d631833753d476e8f9a00cabc7fcbdafa3a3381484dd5c4a3d2",
+        "items": 14
+      },
+      "observation": "Actually viewed all 120 whole-scene source thumbnails through four bound JPEG pages, all 120 wide native-derived hand crops through eight JPEG pages, original narrow hand crop pages 1 to 4 (64 frames; some fingertips leave this crop, not counted as complete-hand coverage), the first 32 native-derived bottle sticker crops, the 14-example face candidate sheet, native full frames 0 and 119 and the actual 768P input first frame. Compared again with original M09 RGBA artwork. One original attached hand rests palm-down on the railing with gentle finger motion; wrist and forearm stay connected, no added person, human face or hand observed. River, reflection, bottle and railing remain continuous. The sticker eyes are OPEN, but star iris detail is lost and thin round gold glasses are replaced by a broad purple outline. This artwork mismatch already exists in the input; not a closed-eye or blinking defect. First 32 print crops suffice to reject reference appearance; remaining six print pages are preserved but not counted as viewed. All scene/hand source frames reviewed; not formal film or human playback approval.",
+      "decision": "rejected",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "failed"
+    }
+  ],
+  "scope": "Actual original S09 rejection retained before generating a correction; no corrected source accepted yet."
+}
