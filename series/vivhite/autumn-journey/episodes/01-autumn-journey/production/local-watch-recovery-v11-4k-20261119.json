@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "vivhite-local-watch-recovery-1",
+  "at": "2026-11-18T20:25:17.196483+00:00",
+  "incidentAt": "2026-11-18T20:10:55.930302+00:00",
+  "cause": "Queue GET connection timeout WinError10060; durable controller resumed the client with existing saved jobs. Old local event watcher then misclassified the fresh started-generation transition.",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "configSha256": "92eec1a0dea7a0a78b4dfe2b879d3272407c0235def5310d97a675d2951aff49",
+  "controllerRuntime": "controller-008",
+  "frozenWorkersAndPlanRechecked": true,
+  "controllerPid": 64692,
+  "generationWorker": {
+    "pid": 201936,
+    "creationTicks": 134395062559242000
+  },
+  "resumeAttempts": 2,
+  "controllerStatus": "watching-active-worker",
+  "completedSources": 15,
+  "submittedRequestsRechecked": 47,
+  "allRequestsExplicitly3840x2160": true,
+  "S16": {
+    "jobId": "video_gen_c6ea9a59c17b45d9ba52444c387f079d",
+    "requestSha256": "4b6ca275b02a0978d59e5e94b65bd1a28da695215ad0836f580338e129bf4a09",
+    "status": "in_progress",
+    "originalJobIdPreserved": true
+  },
+  "localEventWatcher": {
+    "path": "production/watch-local-source-v11.py",
+    "sha256": "b7d8684efd361c1605f25597c7f1605cb422526cdce44b957308764e5f0991d0",
+    "tests": "production/test_watch_local_source_v11.py",
+    "testSha256": "385e57a01b70532b5e0932d9f257b9977d0c995ec4fc389f3a5df269702d49fa",
+    "passedTests": 5,
+    "actualCompletedSourceS15EventVerified": true,
+    "actualS16WatchStarted": true,
+    "localPollSeconds": 20,
+    "heartbeatAndUnreadableGraceSeconds": 180,
+    "transitionGraceSeconds": 360,
+    "extraHttpQueries": 0,
+    "remoteMutations": 0
+  },
+  "generationClientRestartedByExistingRecovery": true,
+  "frozenRenderingCodeChanged": false,
+  "oldLogsAndSourcesRetained": true,
+  "semanticAcceptanceGrantedByWatcher": false
+}

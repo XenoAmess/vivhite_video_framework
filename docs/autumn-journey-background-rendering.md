@@ -41,7 +41,7 @@
 
 - `metadata/durable-controller-config.json`：本机路径、固定版本指纹和启动参数，不提交这份本地配置。
 - `metadata/scheduled-task.xml`：实际Windows任务定义的导出副本。
-- `runtime/controller-007/`：当前控制器、生成客户端、进度导出和技术预览的冻结代码。001至006全部保留，配置核对保留的实际文件。后续仓库改代码不会热改正在运行的任务。
+- `runtime/controller-008/`：当前控制器、生成客户端、进度导出和技术预览的冻结代码。001至007全部保留，配置核对保留的实际文件。后续仓库改代码不会热改正在运行的任务。
 - `controller.json`：控制器及客户端PID、创建时间、心跳、重启次数和当前阶段。
 - `logs/durable-controller.log`与`logs/durable-generation-*.log`：独立日志，不依赖对话输出。
 - `recovery-test/`：实际中断实验前后记录；`attention.json`出现时应阅读具体失败，不把它视为通过。
@@ -88,3 +88,13 @@ S03原画修复实际复审后，另部署005以支持已审核的修订源片�
 15:36按用户新要求部署007：客户端旧逻辑把4K推理单窗口误当成只能排一个HTTP任务，已解除这一排队限制。新客户端保留S06既有服务端任务，补入S07、S08、S09，实际队列已核对为1个运行＋3个等待，轮询间隔60秒。为应用参数，只重启本机轮询客户端；没有取消或重做服务端推理。守护继续作为兜底，助手主要处理出片审核、修订和异常，不再反复查询或汇报模型块数。
 
 17:03按用户“尽可能将剩余任务全部排队”的后续要求部署008。核实服务端同模型未完成任务上限为32后，扩大客户端预排窗口至32，实际为S07运行、S08–S38共31镜等待；S39–S48随空位补入。保留所有既有任务ID及计划字节，未取消服务端推理。批量轮询合并读取等待队列，429只作为明确未受理的退压信号，停止本轮后续新提交并继续下载已完成任务。冻结007及旧配置保留于恢复历史；新代码、配置和PID绑定另行记录，不热改运行快照。
+
+11月19日04:10:55，查询队列时出现一次`WinError 10060`连接超时。控制器008自动接续新客户端，S16仍使用原任务ID，随后本地记录继续更新为`in_progress`；47份已提交请求的哈希与原生4K参数重新核对。旧客户端日志、完整请求及所有视频保留，没有取消或重新提交S16。此次没有更新冻结渲染程序。
+
+助手的旧本地监听脚本把短暂的`started-generation`状态误判成异常而退出，已用[独立本地事件监听器](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/watch-local-source-v11.py)修复并恢复实际S16监听。它只读本地文件，每20秒检查一次，不增加HTTP查询，不提交、取消或自动批准镜头。新鲜启动及重试状态最多容忍360秒，心跳过期180秒、持续不可读超过180秒、实际需检查状态均会报警；已完成且指纹匹配的源片先于正常控制器收尾状态处理。源码及[5项恢复边界测试](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/test_watch_local_source_v11.py)入库，完整收据见[本次监听修复记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/local-watch-recovery-v11-4k-20261119.json)。
+
+```powershell
+video-maker/.venv/Scripts/python.exe -X utf8 series/vivhite/autumn-journey/episodes/01-autumn-journey/production/watch-local-source-v11.py `
+  --directory D:/workspace/vivhite-analysis-output/vivhite/autumn-journey/production-v11-native-4k-001 `
+  --shot S16
+```
