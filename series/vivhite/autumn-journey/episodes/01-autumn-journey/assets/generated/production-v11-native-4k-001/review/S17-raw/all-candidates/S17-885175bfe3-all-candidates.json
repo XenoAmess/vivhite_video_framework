@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "vivhite-all-native-candidate-crops-1",
+  "shotId": "S17",
+  "sourceSha256": "885175bfe3f341067c36aa5ac90086a3c67a5d4006948da063ae066df4037f1a",
+  "inspectionReportSha256": "b2c685907f3ca374ac89aedfd1d0a6d4ff57ed06d028462e73eb561771bac0b1",
+  "workerSha256": "a8701bef967755c92b0f8e8bec2e403384b110e42c2f1c49e554505e94ec9a38",
+  "nativeSize": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "decodedFrames": 120,
+  "candidateFrames": 3,
+  "candidateBoxes": 3,
+  "nativeCrops": [
+    {
+      "frame": 61,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 3759,
+        "y": 676,
+        "width": 38,
+        "height": 46,
+        "score": 0.60209,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        3744,
+        661,
+        3812,
+        737
+      ],
+      "path": "S17-885175bfe3-all-candidates-f061-b00.png",
+      "sha256": "008d7f742204a480ad38b709c366cbe994bc68495b385da9de518cb3e1ff83d3"
+    },
+    {
+      "frame": 62,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 3759,
+        "y": 675,
+        "width": 38,
+        "height": 46,
+        "score": 0.6159,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        3744,
+        660,
+        3812,
+        736
+      ],
+      "path": "S17-885175bfe3-all-candidates-f062-b00.png",
+      "sha256": "44dc57ab7dd8da0762fcaee9dc2034f4dee5ee0727b188253b583bcd9f74e673"
+    },
+    {
+      "frame": 69,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 3759,
+        "y": 675,
+        "width": 38,
+        "height": 47,
+        "score": 0.61529,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        3744,
+        660,
+        3812,
+        737
+      ],
+      "path": "S17-885175bfe3-all-candidates-f069-b00.png",
+      "sha256": "541c29820ec0d1abb079d37684bd66d1b8ce9b0aba4ffa9ededdc93c64efe4d6"
+    }
+  ],
+  "viewingPages": [
+    {
+      "path": "S17-885175bfe3-all-candidates-p01.jpg",
+      "sha256": "4ce2ac34f8a56e77670e5d12f7aed82f2dcb51bcbf81c5457cd234d3d5fad66f",
+      "items": 3
+    }
+  ],
+  "scope": "All detector boxes exported. Exported does not mean viewed or semantically approved.",
+  "humanFullPlayback": false,
+  "semanticDecision": "not-automatically-decided"
+}

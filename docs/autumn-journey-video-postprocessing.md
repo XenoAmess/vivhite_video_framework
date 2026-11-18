@@ -87,6 +87,8 @@ S15提杯的原生4K版本使用M09母版，四张首帧试样逐一查看后采
 
 S16石阶布袋的M08印花中，原眼睛睁开，但虹膜／镜片被粗灰紫线替代。六张首帧试样均保留并查看，采用02，只做一份完整修订：`--reference-eyes 809 463 904 450 --target-eyes 1887 900 1957 880 --tracking-center 673 321 --tracking-radius 65 --mask-scale 0.55 --gain-rgb 0.90 0.88 0.84 --frames 120`。过窄试样残留旧镜片线，过宽试样影响头发／领口，因此不能只按“越大覆盖越全”选遮罩。实际采用遮罩也涉及相邻刘海、脸颊和嘴部，保留嘴下原布料褶皱；其余未恢复印花仍偏软。两版整景／印花各120帧、原始可见腿部120帧、原始299框和修订276框均实际复核后才采用，见[S16收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S16-reference-restoration-v11-4k.json)。腿部交替迈动可见，但脚多在画外，不把局部序列检查扩写成完整足部触地验收。
 
+S17温室立牌使用非Q版M02母版，不能复用M09或M08的眼部坐标。六张首帧试样均查看后选择05：`--reference-eyes 474 208 548 205 --target-eyes 2432 917 2494 914 --tracking-center 858 326 --tracking-radius 50 --mask-scale 0.65 --gain-rgb 0.82 0.82 0.76 --frames 120`。原眼睛一直睁开，虹膜／镜片却变成粗粉紫线；较窄遮罩留下旧嘴／下巴碎片，较宽06影响领口。实际采用范围包括眼睛、镜框及邻近刘海、脸颊、鼻、嘴和下巴，不能称为只恢复虹膜。亚克力外缘与透明底座保留，不往透明区域投影母版背景。两版整景和面部各120帧、全部3／4个检测框实际查看后才采用；原定3秒及所有其他镜头长度不变，见[S17收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S17-reference-restoration-v11-4k.json)。身体印花仍软，整帧重新编码；这不是整张立牌重绘或真人面部修复。
+
 ## 可复用的处理命令
 
 在仓库根目录使用已配置的Python环境，FFmpeg／FFprobe须在PATH中。以下参数来自实际S15提杯镜头，但输出使用新的示例文件名，不覆盖既有采用版本。迁移到其他镜头时必须重新标定坐标。

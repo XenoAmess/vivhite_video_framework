@@ -1,0 +1,46 @@
+{
+  "id": "S17",
+  "sourceSha256": "885175bfe3f341067c36aa5ac90086a3c67a5d4006948da063ae066df4037f1a",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-18T22:13:15.251092+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 72,
+  "frameEvidence": [
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S17-885175bfe3-all-frames-01.png",
+      "sha256": "cebe7601a6262dc4c1a7dfdd7965927459db3587e7da4f4633f5ebbeb01d0503",
+      "items": 32
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S17-885175bfe3-all-frames-02.png",
+      "sha256": "be6c14ff073b2db6858ea76256152f636d19ce48c31858aab2c6ded63f741df6",
+      "items": 32
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S17-885175bfe3-all-frames-03.png",
+      "sha256": "33690d829638e6b37d2d5e444209bde129df4d60557ffd7cc1d739ff93a30e5a",
+      "items": 32
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S17-885175bfe3-all-frames-04.png",
+      "sha256": "7727a292b62bcbf7a586a3edd11847c4f8eddfea0f9242d7a6c30fb7c27f8a74",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S17-885175bfe3-face-candidates.png",
+    "sha256": "79cf75a50c68ecaebb1a95f368bc1cbd6a6b117d3f0ce2c656a922a2d4b6c0b7",
+    "items": 1
+  },
+  "observation": "Actually viewed all120 raw whole-scene frames through four JPEG pages, all120 native standee-face crops through eight JPEG pages, native whole frames0/119 and native print frame0, all three detector boxes through one page, actual input frame0, original non-chibi M02 standee master, both coordinate grids and all six first-frame trials. Same empty greenhouse, plants, damp glass, wooden table, spray bottle, tools and fixed transparent standee base; subtle continuous camera and foliage motion, no observed added person, real human face or cut. Printed eyes remain OPEN throughout, but iris/lens contours are replaced by coarse pink-purple bands and gold glasses are lost. No closed-to-open transition. This is reference-fidelity rejection, not a human-face rejection. Chosen trial05 uses the original M02 face/glasses with mask.65; narrower trials leave fragmented old mouth/chin pixels and broader trial06 reaches the collar. Actual mask includes neighboring printed fringe, cheeks, nose, mouth and chin, not iris-only. No complete correction accepted yet. Every source, trial and all locked shot durations retained.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "passed",
+  "referenceAppearance": "failed"
+}

@@ -729,14 +729,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S17",
+      "sourceSha256": "286b4b99d0601eb9eb235f212fff18b03f2281668a3d1278aac32e3a1d2514f6",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T22:23:33.286745+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S17-corrected-v1/S17-286b4b99d0-all-frames-01.png",
+          "sha256": "7f1ecd796fe976e53ab4b6c33911a057bc97c9192ad49371966a9a1448b98b4d",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S17-corrected-v1/S17-286b4b99d0-all-frames-02.png",
+          "sha256": "206fac420eac99df57c9a13aaec903e9efa86b60d42dad349cde5bab13da7735",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S17-corrected-v1/S17-286b4b99d0-all-frames-03.png",
+          "sha256": "5f7e727c0750c7995450d0302c76d4064b82b49e7e6ff1a78fa9f7034216af36",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S17-corrected-v1/S17-286b4b99d0-all-frames-04.png",
+          "sha256": "c916672df23f8b9ced6398408721792795fde49d11e26f08cd4bfd48e3fa94f4",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/S17-corrected-v1/S17-286b4b99d0-face-candidates.png",
+        "sha256": "68deef5ce84e7403b9ff263c437533a24d04b453b086d9776b6e67c50d08fbe1",
+        "items": 1
+      },
+      "observation": "Actually viewed all120 raw and all120 corrected whole-scene frames through eight JPEG pages, all120 raw and all120 corrected native standee-face crops through sixteen JPEG pages, both native whole frames0/119, raw native print0 and corrected native print119. Original non-chibi M02 RGBA master, actual768P input frame0, both coordinate grids and all six first-frame trials actually viewed. Chosen trial05, mask.65, used for the only full correction. Narrower trials left old mouth/chin fragments and broader trial06 reached the collar; all stills retained. Raw three boxes/three frames and corrected four boxes/four frames viewed through one page each, concerning defocused foliage/window texture, no observed real human face or added person. Empty greenhouse, potted plants, damp glass, original wooden table, spray bottle, tray/tools and transparent standee/base remain. Subtle foliage/camera motion is continuous, zero cut flags in both versions, no autonomous standee movement. Both raw eyes remained OPEN; original iris/lens contours had coarse pink-purple bands and lost fine gold glasses, not a closed-to-open change. Original M02 texture now preserves fixed open violet-pink irises, eyelid contours and thin gold round glasses throughout120 corrected crops, without observed blink, double contour or tracking slide. Actual feathered mask includes neighboring printed fringe, cheeks, nose, mouth and chin; not iris-only. Outer acrylic rim, base and real background are preserved, with no physical object crossing the restored face. Remaining body/clothing print is softer than the mother artwork; whole-source CRF16 re-encoding means mask-exterior pixels are not claimed bit-identical. Only original three-second final interval/native0-71 is used; all shot timings and all process files retained. Assistant frame-sequence QA, not human continuous playback, hearing, user aesthetic acceptance or final-film/persona approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Sixteen current source selections reviewed; ten original reference-appearance rejections retained.",
-  "reviewedSourceCount": 16,
-  "acceptedSourceCount": 16,
+  "scope": "Seventeen current source selections reviewed; eleven original reference-appearance rejections retained.",
+  "reviewedSourceCount": 17,
+  "acceptedSourceCount": 17,
   "rejectedCurrentSourceCount": 0,
-  "rejectedHistoricalSourceCount": 10,
-  "pendingSources": 32,
+  "rejectedHistoricalSourceCount": 11,
+  "pendingSources": 31,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -858,9 +904,21 @@
       "receiptSha256": "0111808ce9505a7ec8e147b2030e4227297e6a5e2bf29d3ab354accd4fd36eed",
       "inspectionReportSha256": "eaff863a4ed0e8c42195328354fc69fd5db9fdb8a4dd3795ab5cd5902bef79ba",
       "reason": "Both complete 120-frame whole-scene/print versions, all visible-leg crops and all raw/corrected detector boxes actually reviewed against original M08."
+    },
+    "S17": {
+      "path": "corrections/S17-reference-eyes-v1.mp4",
+      "parent": "sources/S17.mp4",
+      "receipt": "corrections/S17-reference-eyes-v1.json",
+      "inspectionReport": "correction-inspections/S17-reference-eyes-v1/S17.json",
+      "selectedAt": "2026-11-18T22:23:33.193104+00:00",
+      "sha256": "286b4b99d0601eb9eb235f212fff18b03f2281668a3d1278aac32e3a1d2514f6",
+      "parentSha256": "885175bfe3f341067c36aa5ac90086a3c67a5d4006948da063ae066df4037f1a",
+      "receiptSha256": "98c35e680203d26045fc6fa4edeb76b536d75bf9e73eb64df4d14d56371de47a",
+      "inspectionReportSha256": "ed26715363e4a984119853cb77a187b3f59fcce65a79d5a632f18012e77a266f",
+      "reason": "Both complete120-frame whole-scene and standee-face sequences, all raw/corrected detector boxes and original non-chibi M02 actually reviewed."
     }
   },
-  "snapshotAt": "2026-11-18T21:13:31.857089+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 3120,
+  "snapshotAt": "2026-11-18T22:23:33.405367+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 3360,
   "rejectedCorrectionCandidateCount": 2
 }
