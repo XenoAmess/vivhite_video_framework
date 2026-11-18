@@ -12,12 +12,41 @@ import subprocess
 import sys
 import time
 
-from local_video_pipeline import read, save, input_assets, validate, now, source_frame_count
+from local_video_pipeline import read, save, input_assets, validate, now, source_frame_count, contained
 from reference_finisher import sha, run, titles
 
 
 def probe(path):
     return json.loads(run(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(path)],timeout=1800))
+
+
+def selected_source(directory, shot, job, plan_digest):
+    original = contained(directory,f"sources/{shot['id']}.mp4")
+    selection_file = directory/'source-selections.json'
+    selections = read(selection_file) if selection_file.exists() else {}
+    selected = selections.get('selections',{}).get(shot['id'])
+    if not selected:
+        return original,directory/'clip-inspection'/f"{shot['id']}.json"
+    if selections.get('sourcePlanSha256') != plan_digest:
+        raise ValueError('Corrected selection belongs to another source plan')
+    source = contained(directory,selected['path'])
+    parent = contained(directory,selected['parent'])
+    receipt = read(contained(directory,selected['receipt']))
+    digest = sha(source)
+    decisions = read(directory/'clip-decisions.json')
+    decision = next((row for row in decisions.get('shots',[]) if row['id'] == shot['id']),{})
+    if (parent != original or sha(parent) != job.get('sourceSha256')
+            or selected['parentSha256'] != job.get('sourceSha256') or selected['sha256'] != digest
+            or receipt.get('sourceSha256') != selected['parentSha256']
+            or receipt.get('correctedSha256') != digest
+            or decisions.get('sourcePlanSha256') != plan_digest
+            or decision.get('decision') != 'accepted' or decision.get('sourceSha256') != digest
+            or decision.get('allSourceFrameReview') is not True
+            or decision.get('reviewedNativeFrames') != source_frame_count(shot)
+            or any(decision.get(key) != 'passed' for key in ('noHumanFaces','noAddedPeople',
+                'allCharactersFemale','costumeStyle','motionAndContinuity','merchandiseBehavior','referenceAppearance'))):
+        raise ValueError('Correction requires unchanged parent, receipt and actual complete-frame acceptance')
+    return source,contained(directory,selected['inspectionReport'])
 
 
 def build(config_file):
@@ -32,9 +61,12 @@ def build(config_file):
     preview = directory/'technical-preview'
     preview.mkdir(exist_ok=True)
     output = preview/'film-unreviewed.mp4'
+    selection_file = directory/'source-selections.json'
+    selection_digest = sha(selection_file) if selection_file.exists() else None
     if output.exists():
         receipt = read(preview/'receipt.json') if (preview/'receipt.json').exists() else {}
-        if receipt.get('sourcePlanSha256') == sha(plan_file) and receipt.get('filmSha256') == sha(output):
+        if (receipt.get('sourcePlanSha256') == sha(plan_file) and receipt.get('filmSha256') == sha(output)
+                and receipt.get('sourceSelectionsSha256') == selection_digest):
             print('Retaining the same completed unreviewed technical preview.',flush=True)
             return
         output.rename(preview/f'film-unreviewed-unbound-{time.time_ns()}.mp4')
@@ -55,10 +87,11 @@ def build(config_file):
         (preview/'segments').mkdir(exist_ok=True)
         for shot in plan['shots']:
             job = read(directory/'jobs'/f"{shot['id']}.json")
-            source = directory/'sources'/f"{shot['id']}.mp4"
-            report = read(directory/'clip-inspection'/f"{shot['id']}.json")
+            original = contained(directory,f"sources/{shot['id']}.mp4")
+            source,report_file = selected_source(directory,shot,job,sha(plan_file))
+            report = read(report_file)
             digest = sha(source)
-            if (job.get('status') != 'completed' or job.get('sourceSha256') != digest
+            if (job.get('status') != 'completed' or job.get('sourceSha256') != sha(original)
                     or job.get('planSha256') != sha(plan_file)
                     or report.get('status') != 'decoded' or report['identity']['sourceSha256'] != digest
                     or report['decodedFrames'] != source_frame_count(shot)):
@@ -136,12 +169,15 @@ def build(config_file):
             raise ValueError('Technical preview length, geometry or frame count differs from the locked plan')
         if output.exists():
             raise ValueError('Preserve the existing complete preview before creating another version')
+        if (sha(selection_file) if selection_file.exists() else None) != selection_digest:
+            raise ValueError('Source selections changed during preview; preserve the partial result')
         partial.replace(output)
         receipt = {'schemaVersion':'vivhite-unreviewed-4k-preview-1',
             'status':'encoded-technical-checks-passed-awaiting-semantic-review','filmSha256':sha(output),
             'bytes':output.stat().st_size,'width':3840,'height':2160,'fps':30,
             'frames':plan['totalFrames'],'seconds':duration,'fullAudioVideoDecode':'passed',
             'sourcePlanSha256':sha(plan_file),'workerSha256':sha(__file__),'sources':sources,
+            'sourceSelectionsSha256':selection_digest,
             'soundtrackSha256':sha(soundtrack),'titlesSha256':sha(preview/'titles.ass'),
             'noSpatialUpscaling':True,'formalDelivery':False,'semanticReview':'pending',
             'humanFullPlayback':False,'releasePublished':False,'finishedAt':now()}

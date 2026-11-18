@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "vivhite-native-4k-recovery-1",
+  "observedAt": "2026-11-18T05:51:00.581374+00:00",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "failureAt": "2026-11-18T00:50:30.343416+00:00",
+  "failure": "WinError 5 while atomically replacing jobs/S04.json; old controller did not classify local state write failure as resumable.",
+  "previousStatus": "attention-required",
+  "restoredRuntime": "controller-004",
+  "configSha256": "8e8759d9824c44040943ad06326554b86763f27bbc29296cf197967db1cbf8c6",
+  "controllerPid": 30072,
+  "worker": {
+    "pid": 13016,
+    "creationTicks": 134394527671947866
+  },
+  "controllerStatus": "watching-active-worker",
+  "S04": {
+    "sameOriginalJobId": "video_gen_da693a3a45344196940fa5e3eb225f6d",
+    "submittedAt": "2026-11-18T00:09:13.881780+00:00",
+    "downloadedAt": "2026-11-18T05:19:47.854004+00:00",
+    "rawSha256": "c826a3e182165b7d16bd72ba2ba68817ca727a4e6beeeac1cb820160921ae0f6",
+    "sourceSha256": "442e2acdd9b085c2d3fbdfa2cff63b00a135d7dc09e020b1d499b0039ba3654b",
+    "completedRemoteUnix": 1794965170.7638824
+  },
+  "S05": {
+    "jobId": "video_gen_693dae4e6e9948c0967597f67c049c0d",
+    "submittedAt": "2026-11-18T05:20:41.753191+00:00",
+    "status": "in_progress"
+  },
+  "remoteQueuePaused": null,
+  "noRemoteCancellation": true,
+  "noS04Resubmission": true,
+  "originalFailureEvidencePreserved": true,
+  "actualWindowsReaderSharingRecoveryTestPassed": true,
+  "persistentReplaceFailureBoundedTestPassed": true,
+  "ambiguousPostProtectionTestPassed": true,
+  "maxAtomicReplaceAttemptsPerSave": 10,
+  "taskName": "Vivhite-Autumn-Journey-v11-4K",
+  "automaticQualityAcceptance": false,
+  "subsequentControllerUpgrade": {
+    "at": "2026-11-18T06:33:34.678137+00:00",
+    "runtime": "controller-005",
+    "generationRuntime": "controller-004",
+    "sameClientPid": 13016,
+    "controllerPid": 202908,
+    "configSha256": "705072db8d5b0878de64527234c35e72f476782373eff53b60f374a88a50e009",
+    "S05JobId": "video_gen_693dae4e6e9948c0967597f67c049c0d",
+    "remoteJobUnchanged": true,
+    "purpose": "Consume only explicitly reviewed correction selections in progress and technical preview."
+  },
+  "validation": {
+    "passedTests": 33,
+    "suites": [
+      "atomic-video-state",
+      "durable-controller",
+      "local-video-pipeline",
+      "durable-git-checkpoint",
+      "native-technical-preview",
+      "refinement-preparation",
+      "corrected-source-selection"
+    ]
+  }
+}

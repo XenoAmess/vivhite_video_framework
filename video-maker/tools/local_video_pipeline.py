@@ -27,9 +27,19 @@ def now():
 def save(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    partial = path.with_name(path.name+'.partial')
+    # Keep writers separate. On Windows, a short-lived reader or scanner may
+    # deny replacement even though both the directory and file are writable.
+    partial = path.with_name(path.name+'.'+uuid.uuid4().hex+'.partial')
     partial.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
-    partial.replace(path)
+    for attempt in range(10):
+        try:
+            partial.replace(path)
+            return
+        except OSError as error:
+            if getattr(error,'winerror',None) not in (5,32,33) or attempt == 9:
+                # Retain the complete journal if replacement remains blocked.
+                raise
+            time.sleep(min(0.05*2**attempt,2))
 
 
 def read(path):

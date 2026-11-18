@@ -24,6 +24,16 @@ class DurableRecoveryTest(unittest.TestCase):
             with self.subTest(state=state):
                 self.assertFalse(worker.can_resume({'status':'generating'},[{'status':state}]))
 
+    def test_local_atomic_json_sharing_failure_resumes_only_a_known_task(self):
+        state = {'status':'interrupted-or-failed',
+            'error':"[WinError 5] Access denied: 'jobs/S04.json.partial' -> 'jobs/S04.json'"}
+        self.assertTrue(worker.can_resume(state,[{'status':'in_progress','jobId':'existing'}]))
+        for status in ('submitting','submission-uncertain','failed','cancelled'):
+            self.assertFalse(worker.can_resume(state,[{'status':status}]))
+        for message in ('HTTP 403: Access denied','[WinError 5] Access denied: input.mp4',
+                        "[WinError 5] Access denied: 'jobs/S04.json'"):
+            self.assertFalse(worker.can_resume({**state,'error':message},[]))
+
     def test_content_binding_and_native_media_errors_require_inspection(self):
         for error in ('Native dimensions differ','HTTP 422: invalid input',
                       'Character review blocked','CUDA out of memory'):

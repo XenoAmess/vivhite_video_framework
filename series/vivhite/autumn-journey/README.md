@@ -8,7 +8,7 @@
 
 制作补充：所有出场人物均为女性，女性化服装贴近白绮设定图；静默、不露脸与短镜头要求适用于成片全部帧。原图中没有的无关人员，即使不露脸也拒收。
 
-当前后续路线仅为[原始768P与原生4K](../../../docs/local-video-768p-4k.md)，不新建2K任务；本轮未提交4K。当前[导演稿v10](episodes/01-autumn-journey/director-v10.md)仅重做S01，其余47镜相同源片全部复用，包括v9修订后的S44/S47。第五轮14秒片尾保持开阔海岸、没有新增前景树木；用户取消减速后保留原生蝶翼，两份局部减速候选留档但不入片。片尾入片14秒，前47镜共191秒且全部时长不变，详见[工作流策略](episodes/01-autumn-journey/production/workflow-policy.json)和[v10记录](episodes/01-autumn-journey/production/production-v10-left-hand-768p.md)。第三轮15秒显存失败与第四轮树木拒收均保留历史。
+当前后续路线仅为[原始768P与原生4K](../../../docs/local-video-768p-4k.md)，不新建2K任务；[v11原生4K](episodes/01-autumn-journey/production/production-v11-native-4k.md)已经开始生成，采用[独立守护与直接看护](../../../docs/autumn-journey-background-rendering.md)，实际画面结论见[阶段审计](episodes/01-autumn-journey/production/quality-audit-v11-4k.md)。当前[导演稿v10](episodes/01-autumn-journey/director-v10.md)仅重做S01，其余47镜相同源片全部复用，包括v9修订后的S44/S47。第五轮14秒片尾保持开阔海岸、没有新增前景树木；用户取消减速后保留原生蝶翼，两份局部减速候选留档但不入片。片尾入片14秒，前47镜共191秒且全部时长不变，详见[工作流策略](episodes/01-autumn-journey/production/workflow-policy.json)和[v10记录](episodes/01-autumn-journey/production/production-v10-left-hand-768p.md)。第三轮15秒显存失败与第四轮树木拒收均保留历史。
 
 历史[片尾修订 v4](episodes/01-autumn-journey/production/production-v4.md)与原v3成片保持归档。历史v7片尾见[该版合成计划](episodes/01-autumn-journey/final-assembly-plan-v7-768p.json)：采用v6海岸慢放至10秒，蓝蝶周期约8秒；该慢放路线不用于当前v9。
 

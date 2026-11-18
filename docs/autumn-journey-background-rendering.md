@@ -41,7 +41,7 @@
 
 - `metadata/durable-controller-config.json`：本机路径、固定版本指纹和启动参数，不提交这份本地配置。
 - `metadata/scheduled-task.xml`：实际Windows任务定义的导出副本。
-- `runtime/controller-003/`：当前实际执行的冻结代码；001／002保留。后续仓库改代码不会热改正在运行的任务。
+- `runtime/controller-005/`：当前控制器、进度导出和技术预览的冻结代码；正在生成的客户端仍运行004。001至004全部保留，配置同时核对两套实际文件。后续仓库改代码不会热改正在运行的任务。
 - `controller.json`：控制器及客户端PID、创建时间、心跳、重启次数和当前阶段。
 - `logs/durable-controller.log`与`logs/durable-generation-*.log`：独立日志，不依赖对话输出。
 - `recovery-test/`：实际中断实验前后记录；`attention.json`出现时应阅读具体失败，不把它视为通过。
@@ -68,3 +68,15 @@ Get-ScheduledTaskInfo -TaskName Vivhite-Autumn-Journey-v11-4K
 电脑、当前Windows登录会话及局域网模型服务仍须运行；对话关闭与关机／注销不是同一个条件。执行器只临时防止本机空闲休眠，不修改永久电源计划。服务端OOM暂停、硬件故障和服务重启丢失任务索引属于需单独处理的条件，不承诺这些事件都能无条件自动恢复。实际输入、请求和成品始终保留。
 
 实现入口：[Windows按需任务](../scripts/start-durable-video-task.ps1)、[独立控制器](../video-maker/tools/durable_video_controller.py)、[技术预览合成](../video-maker/tools/render_4k_technical_preview.py)、[当前生成器](../video-maker/tools/local_video_pipeline.py)。正式4K尺寸与质量路线继续遵守[768P／4K规约](local-video-768p-4k.md)，不恢复2K，不改现有768P成片。
+
+## 2026-11-18实际故障与修复
+
+北京时间08:50:30，客户端替换`jobs/S04.json`时发生Windows `WinError 5`，留下完整`.partial`记录后退出。旧控制器只自动恢复网络错误，漏掉了本地JSON替换失败，因而停在`attention-required`。S04仍在服务端继续运行，09:26左右完成；此后GPU队列未被继续推进，直至13:19本次直接检查时恢复。不能把这段空转描述成持续正常渲染。
+
+本次保留旧状态、失败临时文件、控制器配置及原任务，归档于运行目录的`recovery-history/20261118-atomic-json-sharing-failure/`。修复为每个JSON写入使用独立临时文件，对Windows短暂拒绝替换（5／32／33）进行最多10次退避重试；持续失败时保留新旧记录并抛错。控制器仅对明确的JSON临时文件替换错误恢复，仍禁止重复提交受理不明的POST、失败或取消任务。
+
+实际Windows测试用打开的读取句柄阻止文件替换，稍后释放后成功保存；另验证持续拒绝时有界失败、不覆盖其他临时记录，以及本地错误恢复不会绕过受理不明限制。已部署冻结版本004，13:19:47下载同一S04原任务，13:20:41正常提交S05，没有重做S04或改变已提交计划。
+
+后台守护仅作兜底。助手连接期间直接核对真实队列、任务日志、下载文件与质量证据，发现守护缺陷就修复。[本次恢复收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/recovery-v11-4k-20261118.json)及[阶段审计](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/quality-audit-v11-4k.md)分别记录运行恢复与实际画面结论。
+
+S03原画修复实际复审后，另部署005以支持已审核的修订源片选择。只替换控制器，续接同一004客户端PID `13016`与同一S05服务端任务，生成进程未停止。技术预览对修订文件、原始父文件、修订收据、完整帧检查和实际通过结论逐一绑定；原始问题源片不会被修订文件覆盖。修改选择后不能静默复用旧预览缓存，源片选择在合成中变化则保留中间文件并报错。

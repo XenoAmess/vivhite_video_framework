@@ -27,6 +27,7 @@ def export(base,episode_directory=EP,emit=True):
     directory = base/'production-v11-native-4k-001'
     plan = read(episode_directory/'production-plan-v11-native-4k.json')
     decisions = {s['id']:s for s in read(directory/'clip-decisions.json').get('shots',[])}
+    selections = read(directory/'source-selections.json')
     rows = []
     completed_frames = accepted_frames = 0
     total_frames = sum(s['sourceSeconds']*24 for s in plan['shots'])
@@ -34,8 +35,16 @@ def export(base,episode_directory=EP,emit=True):
         job = read(directory/'jobs'/f"{shot['id']}.json")
         completed = job.get('status') == 'completed' and bool(job.get('sourceSha256'))
         decision = decisions.get(shot['id'],{})
+        source_digest = job.get('sourceSha256')
+        selected = selections.get('selections',{}).get(shot['id'])
+        if selected:
+            source = (directory/selected['path']).resolve()
+            source_digest = (selected['sha256'] if source.is_relative_to(directory.resolve())
+                and source.is_file() and sha(source) == selected['sha256']
+                and selections.get('sourcePlanSha256') == sha(episode_directory/'production-plan-v11-native-4k.json')
+                and selected['parentSha256'] == job.get('sourceSha256') else None)
         accepted = (completed and decision.get('decision') == 'accepted'
-            and decision.get('sourceSha256') == job.get('sourceSha256')
+            and source_digest is not None and decision.get('sourceSha256') == source_digest
             and decision.get('allSourceFrameReview') is True
             and decision.get('reviewedNativeFrames',0) >= shot['sourceSeconds']*24
             and all(decision.get(key) == 'passed' for key in (
@@ -47,7 +56,8 @@ def export(base,episode_directory=EP,emit=True):
             'status':job.get('status','not-submitted'),
             'reportedRemoteProgress':job.get('remote',{}).get('progress'),
             'reportedRemoteStage':job.get('remote',{}).get('stage'),
-            'completedSource':completed,'acceptedSource':accepted})
+            'completedSource':completed,'acceptedSource':accepted,
+            'selectedCorrection':bool(selected),'reviewedSourceSha256':source_digest})
     finish = read(directory/'final-assembly-receipt.json')
     inspection = read(directory/'encoded-film-inspection.json')
     qa = read(episode_directory/'production/final-review-v11-4k.json')

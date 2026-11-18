@@ -142,7 +142,7 @@
   },
   "backgroundExecution": {
     "schedulerTask": "Vivhite-Autumn-Journey-v11-4K",
-    "runtimeVersion": "controller-003",
+    "runtimeVersion": "controller-005",
     "watchdogIntervalSeconds": 60,
     "executionTimeLimit": "PT0S",
     "conversationConnectionRequired": false,
@@ -154,6 +154,10 @@
     "controllerWatchdogRecoveryActuallyTested": true,
     "stopMarker": "control/stop.json",
     "disableWatchdogAfterCompletionOrExplicitStop": true,
-    "twoKResumeAllowed": false
+    "twoKResumeAllowed": false,
+    "windowsAtomicStateRetryActuallyTested": true,
+    "localStateFailureResumeActuallyTested": true,
+    "generationRuntimeVersion": "controller-004",
+    "reviewedCorrectionSelectionSupported": true
   }
 }

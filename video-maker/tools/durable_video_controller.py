@@ -31,7 +31,12 @@ def can_resume(state, jobs):
         return True
     if state.get('status') != 'interrupted-or-failed':
         return False
-    return any(part in state.get('error','').lower() for part in (
+    error = state.get('error','').lower()
+    local_json_replacement = (any(f'[winerror {code}]' in error for code in (5,32,33))
+        and '.json' in error and '.partial' in error and ' -> ' in error)
+    if local_json_replacement:
+        return True
+    return any(part in error for part in (
         'timed out','connection reset','connection aborted','connection refused',
         'remote end closed','temporary failure','urlopen error','winerror 100',
         'http 408','http 429','http 502','http 503','http 504'))
