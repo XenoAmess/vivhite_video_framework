@@ -323,14 +323,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S08",
+      "sourceSha256": "355114318092092a7bdd859aa43560ab3e0995630861921329703ca413d38eae",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T10:44:06.465099+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S08-3551143180-all-frames-01.png",
+          "sha256": "eed71d711d910639e61fbc57acc61e51ad516a8692b68c774d8e521242617f54",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S08-3551143180-all-frames-02.png",
+          "sha256": "8ce78ada11973af2678b135efa999e7235d8f0df9ef87d0494103729e3341a24",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S08-3551143180-all-frames-03.png",
+          "sha256": "03c7259b5f0a989d33b4f3faf0646cae86e174599d31c16ae73ecb2b5630104a",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S08-3551143180-all-frames-04.png",
+          "sha256": "9f25e98d220e3eca9b1c79737077cff3dedfa176b72178056924cd006f349d52",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S08-3551143180-face-candidates.png",
+        "sha256": "f729084427366e3fd0f4447d944ed2fdb41c57220b62236a5be0a84e890a1172",
+        "items": 30
+      },
+      "observation": "Actually viewed all 120 whole-scene source frames through four bound JPEG contact pages, all 120 native-derived plush face crops and all 120 native-derived badge crops through eight JPEG pages each, the 30-example face candidate sheet and native full frames 0 and 119. Compared with actual 768P input frames 0, 96 and 119 and original M04 plush/M05 badge artwork read in this session. Both merchandise faces retain open violet-pink eyes and round gold glasses, fixed to their surfaces, with no blink or autonomous toy motion. The maple leaf falls across the plush eye then clears it; this is physical occlusion already present in the actual input, not a closed-eye expression. Badge colors are paler and detail softer than the master, but its open eye shape, irises and round frames remain readable and stable; no repair selected. Empty woodland, bag and bench remain continuous throughout the slow push-in; no real person, human face, added hand or observed shot cut. Candidate examples are merchandise, bag fittings and woodland texture. Source-image sequence acceptance only, not human continuous playback or formal final-film/persona approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Seven current source selections reviewed; original S03, S06 and S07 rejections retained independently.",
-  "reviewedSourceCount": 7,
-  "acceptedSourceCount": 7,
+  "scope": "Eight current source selections reviewed; original S03, S06 and S07 rejections retained independently.",
+  "reviewedSourceCount": 8,
+  "acceptedSourceCount": 8,
   "rejectedCurrentSourceCount": 0,
   "rejectedHistoricalSourceCount": 3,
-  "pendingSources": 41,
+  "pendingSources": 40,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -370,7 +416,7 @@
       "reason": "Actual full-120-frame whole-scene and native eye review, compared with original M08 artwork; original hand crops separately reviewed across all 120 frames."
     }
   },
-  "snapshotAt": "2026-11-18T09:34:31.944822+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 1200,
+  "snapshotAt": "2026-11-18T10:44:06.546496+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 1320,
   "rejectedCorrectionCandidateCount": 2
 }
