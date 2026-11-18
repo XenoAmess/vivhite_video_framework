@@ -1,6 +1,6 @@
 {
   "schemaVersion": "vivhite-input-first-frame-review-preparation-1",
-  "at": "2026-11-18T09:57:24.637827+00:00",
+  "at": "2026-11-18T10:49:27.106621+00:00",
   "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
   "shots": [
     {
@@ -101,6 +101,202 @@
         }
       ],
       "inputFrameActuallyViewed": true,
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S11",
+      "inputSha256": "d3cf007fc32175da269f982f1c3fb3a8ce26f2df09dced89a7d8977922f071e4",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S11-input-f000.jpg",
+      "imageSha256": "fee52f604680b1d2300a9bee27ec78481d34e9b6660c8bc895ec0370c21fb10c",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M03-clearcard-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "transparent-card-print",
+          "proxyCenter": [
+            491,
+            406
+          ],
+          "proxyRadius": 66,
+          "master": "M03-clearcard-v1.png"
+        },
+        {
+          "kind": "original-card-holding-hand",
+          "proxyCenter": [
+            312,
+            505
+          ],
+          "proxyRadius": 150
+        }
+      ],
+      "observationForFutureReview": "One attached hand holds the transparent card; face stays outside input first frame. Confirm grip and every printed feature over full native output.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S12",
+      "inputSha256": "e993484211ea09cead2897d39a64111d171910e3a488d3f2db23201ef6b7cd09",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S12-input-f000.jpg",
+      "imageSha256": "ecb45996a32032439328cc578615020a368ff4b036ecae67bece8aa09c892fd9",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "boat-side-sticker",
+          "proxyCenter": [
+            585,
+            600
+          ],
+          "proxyRadius": 90,
+          "master": "M09-sticker-v1.png"
+        },
+        {
+          "kind": "original-oar-grip",
+          "proxyCenter": [
+            94,
+            242
+          ],
+          "proxyRadius": 110
+        }
+      ],
+      "observationForFutureReview": "Original hand grips the oar; sticker is fixed to the boat. Check full rowing motion, blade/water continuity and distant shore for additional people.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S13",
+      "inputSha256": "f17a81d0bdd38dbaa80667b5ed5a39eaecf7f5c1953d5b2925363710bab03fc9",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S13-input-f000.jpg",
+      "imageSha256": "33d7635b92e4ef92358dc683b825acff4099881afda94cb0418476f2e0e76b1c",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M01-keychain-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "umbrella-keychain",
+          "proxyCenter": [
+            710,
+            516
+          ],
+          "proxyRadius": 100,
+          "master": "M01-keychain-v1.png"
+        },
+        {
+          "kind": "original-umbrella-grip",
+          "proxyCenter": [
+            573,
+            242
+          ],
+          "proxyRadius": 125
+        }
+      ],
+      "observationForFutureReview": "Original hand holds umbrella with attached keychain. Check head crop at upper boundary, wet-road reflections, empty street and printed eyes throughout output.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S14",
+      "inputSha256": "6c04016b789bc449c386816cd5116594db58c94eb8aa85f026cb5b28736ea592",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S14-input-f000.jpg",
+      "imageSha256": "68491a97d8799e9bf8eebd7774320d7db7c779ff3614d33bbf01b7dc3591e6f4",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M05-badge-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "travel-bag-badge",
+          "proxyCenter": [
+            956,
+            505
+          ],
+          "proxyRadius": 115,
+          "master": "M05-badge-v1.png"
+        }
+      ],
+      "observationForFutureReview": "Badge on bag, wet shelter and road. Check reflections and full badge eye/glasses sequence; input has softer and paler print than the original reference.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S15",
+      "inputSha256": "2a461bda9bae0b504565c892bd7a2bd0d592787cea5c8b04381afec84bd77acb",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S15-input-f000.jpg",
+      "imageSha256": "261b94e45b757dd415ab43841c7abe1c7488a21da1abfcbc7872c7da04151917",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "cup-sticker",
+          "proxyCenter": [
+            541,
+            466
+          ],
+          "proxyRadius": 70,
+          "master": "M09-sticker-v1.png"
+        },
+        {
+          "kind": "left-screen-original-cup-hand",
+          "proxyCenter": [
+            457,
+            353
+          ],
+          "proxyRadius": 125
+        },
+        {
+          "kind": "right-screen-original-cup-hand",
+          "proxyCenter": [
+            722,
+            460
+          ],
+          "proxyRadius": 125
+        }
+      ],
+      "observationForFutureReview": "Two attached hands and one cup. Confirm a meaningful gradual lift, normal wrists/fingers, sticker preservation and no reflected people in the actual output.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S16",
+      "inputSha256": "1b490e9c9957ac61365b79854e2a88cd3383eb8cab59299f8e8b47818996acc8",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S16-input-f000.jpg",
+      "imageSha256": "e9143abaddc8fc349d1127e128e19e23d83f60a0b5fe215a583ddd4cdd5ce48d",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M08-pouch-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "swinging-pouch-print",
+          "proxyCenter": [
+            673,
+            336
+          ],
+          "proxyRadius": 105,
+          "master": "M08-pouch-v1.png"
+        }
+      ],
+      "observationForFutureReview": "Original clothed lower body and attached pouch beside stairs. Check continuous climbing/body motion and printed eyes/glasses; no output conclusion from this single frame.",
       "actual4KReview": "not performed by this input check"
     }
   ],
