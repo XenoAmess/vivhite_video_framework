@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "vivhite-all-native-candidate-crops-1",
+  "shotId": "S13",
+  "sourceSha256": "ffa84bef0ce79eeaaa0ef9805a950384f393870067130321f7e272d6a8511031",
+  "inspectionReportSha256": "06c05995e73c5f62c98d688c294229cb227e7e1941a7ee4fb7e30362b3fcd672",
+  "workerSha256": "a8701bef967755c92b0f8e8bec2e403384b110e42c2f1c49e554505e94ec9a38",
+  "nativeSize": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "decodedFrames": 120,
+  "candidateFrames": 2,
+  "candidateBoxes": 2,
+  "nativeCrops": [
+    {
+      "frame": 20,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1881,
+        "y": 1248,
+        "width": 255,
+        "height": 276,
+        "score": 0.66099,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1779,
+        1146,
+        2238,
+        1626
+      ],
+      "path": "S13-ffa84bef0c-all-candidates-f020-b00.png",
+      "sha256": "d59012f0801b8ddc1e6bb26dc17752641a7d6dd94479eef203f1f6c171ca6943"
+    },
+    {
+      "frame": 57,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1917,
+        "y": 1236,
+        "width": 272,
+        "height": 351,
+        "score": 0.61966,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1808,
+        1127,
+        2298,
+        1696
+      ],
+      "path": "S13-ffa84bef0c-all-candidates-f057-b00.png",
+      "sha256": "d1567772692f2e1fbcfb954149b3f3b8d2ab0ef609235c75831ea4b4c6281a5b"
+    }
+  ],
+  "viewingPages": [
+    {
+      "path": "S13-ffa84bef0c-all-candidates-p01.jpg",
+      "sha256": "5bf5829bf8b65ce7f7b1625252ef6aabac66ec38ea0f957a1a22776d1a25888e",
+      "items": 2
+    }
+  ],
+  "scope": "All detector boxes exported. Exported does not mean viewed or semantically approved.",
+  "humanFullPlayback": false,
+  "semanticDecision": "not-automatically-decided"
+}
