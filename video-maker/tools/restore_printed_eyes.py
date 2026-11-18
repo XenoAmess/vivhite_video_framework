@@ -29,26 +29,29 @@ def eye_registration(reference_eyes, target_eyes):
     return np.column_stack((rotation,target[0]-rotation@original[0]))
 
 
-def projected_eyes(reference, reference_eyes, target_eyes, size, gain_rgb):
+def projected_eyes(reference, reference_eyes, target_eyes, size, gain_rgb, mask_scale=1):
     if reference is None or reference.ndim != 3 or reference.shape[2] != 4:
         raise ValueError('Original RGBA merchandise artwork required')
     gain = np.asarray(gain_rgb,dtype=np.float32)
     if gain.shape != (3,) or not np.isfinite(gain).all() or np.any(gain <= 0) or np.any(gain > 1.5):
         raise ValueError('Explicit finite RGB lighting gains required')
+    if not np.isfinite(mask_scale) or not .05 <= mask_scale <= 4:
+        raise ValueError('Finite reference mask scale from .05 to four required')
     matrix = eye_registration(reference_eyes,target_eyes)
     mask = np.zeros(reference.shape[:2],dtype=np.float32)
     eyes = np.asarray(reference_eyes).reshape(2,2)
     for x,y in eyes:
-        cv2.ellipse(mask,(round(x),round(y+23)),(95,78),0,0,360,1,-1)
-    cv2.rectangle(mask,(round(eyes[0,0]+85),round(min(eyes[:,1])-5)),
-        (round(eyes[1,0]-85),round(max(eyes[:,1])+45)),1,-1)
-    mask = cv2.GaussianBlur(mask,(0,0),18)*reference[:,:,3].astype(np.float32)/255
+        cv2.ellipse(mask,(round(x),round(y+23*mask_scale)),
+            (round(95*mask_scale),round(78*mask_scale)),0,0,360,1,-1)
+    cv2.rectangle(mask,(round(eyes[0,0]+85*mask_scale),round(min(eyes[:,1])-5*mask_scale)),
+        (round(eyes[1,0]-85*mask_scale),round(max(eyes[:,1])+45*mask_scale)),1,-1)
+    mask = cv2.GaussianBlur(mask,(0,0),18*mask_scale)*reference[:,:,3].astype(np.float32)/255
     texture = np.clip(reference[:,:,:3].astype(np.float32)*gain[::-1],0,255)
     return (cv2.warpAffine(texture,matrix,size),
         cv2.warpAffine(mask,matrix,size),matrix)
 
 
-def restore(source, destination, reference_file, reference_eyes, target_eyes, center, radius, frames, gain_rgb):
+def restore(source, destination, reference_file, reference_eyes, target_eyes, center, radius, frames, gain_rgb, mask_scale=1):
     source,destination,reference_file = Path(source),Path(destination),Path(reference_file)
     if destination.exists() or destination.with_suffix('.partial.mp4').exists():
         raise ValueError('Use a new correction version; preserve existing candidates')
@@ -64,7 +67,7 @@ def restore(source, destination, reference_file, reference_eyes, target_eyes, ce
         if not ok:
             raise ValueError('Cannot read original source')
         texture,mask,registration = projected_eyes(cv2.imread(str(reference_file),cv2.IMREAD_UNCHANGED),
-            reference_eyes,target_eyes,(3840,2160),gain_rgb)
+            reference_eyes,target_eyes,(3840,2160),gain_rgb,mask_scale)
         tracker = PrintedPatch(cv2.resize(first,(1344,768)),tuple(center),radius)
         scaling = np.diag([1344/3840,768/2160,1])
         inverse = np.linalg.inv(scaling)
@@ -103,6 +106,7 @@ def restore(source, destination, reference_file, reference_eyes, target_eyes, ce
             'workerSha256':fingerprint(__file__),'trackingWorkerSha256':fingerprint(Path(__file__).with_name('stabilize_printed_patch.py')),
             'frames':frames,'fps':24,'nativeSize':[3840,2160],'referenceEyes':list(reference_eyes),
             'targetEyes':list(target_eyes),'registration':registration.tolist(),'gainRgb':list(gain_rgb),
+            'referenceMaskScale':mask_scale,
             'trackingCenter':list(center),'trackingRadius':radius,'tracking':tracking,
             'method':'Original RGBA eye/glasses texture, two-landmark similarity registration, feathered lens masks and original prop tracking.',
             'scope':'Local printed eye/glasses pixels before whole-frame CRF16 re-encoding. No person removed; original head outline and scene retained.',
@@ -135,6 +139,8 @@ if __name__ == '__main__':
     parser.add_argument('--tracking-radius',required=True,type=int)
     parser.add_argument('--frames',required=True,type=int,choices=(120,240,336))
     parser.add_argument('--gain-rgb',type=float,nargs=3,default=(1,1,1))
+    parser.add_argument('--mask-scale',type=float,default=1,
+        help='Scale lens masks in reference-image pixels; retain one for the original M09 coordinates')
     args = parser.parse_args()
     restore(args.source,args.destination,args.reference,args.reference_eyes,args.target_eyes,
-        args.tracking_center,args.tracking_radius,args.frames,args.gain_rgb)
+        args.tracking_center,args.tracking_radius,args.frames,args.gain_rgb,args.mask_scale)

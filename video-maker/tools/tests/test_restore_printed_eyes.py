@@ -20,6 +20,18 @@ class PrintedEyeRestorationTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             worker.eye_registration([1,1,1,1],[1,1,2,2])
 
+    def test_smaller_reference_masks_stay_near_the_eyes(self):
+        reference = np.full((256,256,4),255,dtype=np.uint8)
+        eyes = [80,120,170,120]
+        _,small,_ = worker.projected_eyes(reference,eyes,eyes,(256,256),[1,1,1],.36)
+        _,original,_ = worker.projected_eyes(reference,eyes,eyes,(256,256),[1,1,1])
+        self.assertGreater(small[120,80],.95)
+        self.assertLess(small[70,80],.001)
+        self.assertGreater(original[70,80],.1)
+        for scale in (0,float('nan'),float('inf'),5):
+            with self.subTest(scale=scale),self.assertRaises(ValueError):
+                worker.projected_eyes(reference,eyes,eyes,(256,256),[1,1,1],scale)
+
     def test_mask_does_not_replace_the_whole_head_or_transparent_areas(self):
         reference = np.full((900,1100,4),255,dtype=np.uint8)
         reference[:100,:,3] = 0
