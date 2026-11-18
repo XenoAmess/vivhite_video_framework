@@ -112,11 +112,16 @@ def restore(source, destination, reference_file, reference_eyes, target_eyes, ce
         return receipt
     finally:
         capture.release()
-        if encoder is not None and encoder.poll() is None:
-            if encoder.stdin:
-                encoder.stdin.close()
-            encoder.kill()
-            encoder.wait()
+        if encoder is not None:
+            try:
+                if encoder.stdin and not encoder.stdin.closed:
+                    encoder.stdin.close()
+            except BrokenPipeError:
+                pass  # The original encoder failure remains the primary error.
+            finally:
+                if encoder.poll() is None:
+                    encoder.kill()
+                    encoder.wait()
 
 
 if __name__ == '__main__':

@@ -13,6 +13,7 @@ import cv2
 from PIL import Image
 
 EP = Path(__file__).resolve().parents[1]
+ROOT = EP.parents[4]
 
 
 def sha(path):
@@ -54,12 +55,13 @@ def prepare(directory, identity, source=None, report_file=None):
     evidence.mkdir(parents=True,exist_ok=True)
     pages = []
     for index, entry in enumerate(report['allUsedFrameEvidence']):
-        original = Path(entry['path'])
-        if not original.is_absolute():
-            original = EP/original
-        original = original.resolve()
-        if not original.is_relative_to(EP) or sha(original) != entry['sha256']:
+        recorded = Path(entry['path'])
+        candidates = (recorded,) if recorded.is_absolute() else (EP/recorded,ROOT/recorded)
+        matches = {path.resolve() for path in candidates if path.resolve().is_relative_to(EP)
+            and path.is_file() and sha(path) == entry['sha256']}
+        if len(matches) != 1:
             raise ValueError('Original complete-frame evidence changed')
+        original = matches.pop()
         with Image.open(original) as picture:
             viewing = picture.convert('RGB')
             viewing.thumbnail((1680,2400))

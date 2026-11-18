@@ -231,14 +231,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S06",
+      "sourceSha256": "d98afe098930a8acff4ac369064203bd308ed5679370dd355f9410852c0de534",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T08:23:34.785981+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S06-v2\\S06-d98afe0989-all-frames-01.png",
+          "sha256": "9dcbbd4145ec00bc5311aeff2bbbefd2e0d2bd6cdfab238cb34884b00f0c89ee",
+          "items": 32
+        },
+        {
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S06-v2\\S06-d98afe0989-all-frames-02.png",
+          "sha256": "91d6cd00a4858046bc1d4608c3cb1cb7ed815207a78cc7f53ab12ce675e32e5d",
+          "items": 32
+        },
+        {
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S06-v2\\S06-d98afe0989-all-frames-03.png",
+          "sha256": "e834c3eb4b7275326236af0585182fd5d6e3cb7a665523536b0eeb354b2216dd",
+          "items": 32
+        },
+        {
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S06-v2\\S06-d98afe0989-all-frames-04.png",
+          "sha256": "b7280bac8d12a7b68f2006d4fd11f615e83c8dde33d6e8fb4bab1309c2904216",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S06-v2\\S06-d98afe0989-face-candidates.png",
+        "sha256": "ab9d393d5901c1630aad3a23355f542cb92562ad5a80ffb33bd24cef1e63466d",
+        "items": 8
+      },
+      "observation": "After rejecting the original iris and glasses degradation, viewed all 120 corrected whole-scene frames through four bound JPEG pages, all 120 native printed eye crops (first PNG page and seven native-derived JPEG pages), the corrected face-candidate sheet, corrected native full-frame f119, original native f000/f119, original input crop and M09 reference artwork. The M09 open violet-pink irises and thin gold round frames remain fixed across the full source, following the same sticker without blinking, facial animation or visible sliding. The local feathered eye/glasses masks avoid the visibly circular whole-face boundary that caused candidate v1 to be rejected at f000. The existing head outline, body and street motion remain present; no real person or human face appears in the scene/reflection. Candidate detections are print/clothing, trees and building texture. Native texture around the restored graphic remains processed; this is assistant source image-sequence acceptance, not human continuous playback or final-film aesthetic approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Five current source selections reviewed; original S03 rejection retained in the initial audit and review history.",
-  "reviewedSourceCount": 5,
-  "acceptedSourceCount": 5,
+  "scope": "Six current source selections reviewed; original S03 and S06 rejections retained independently.",
+  "reviewedSourceCount": 6,
+  "acceptedSourceCount": 6,
   "rejectedCurrentSourceCount": 0,
-  "rejectedHistoricalSourceCount": 1,
-  "pendingSources": 43,
+  "rejectedHistoricalSourceCount": 2,
+  "pendingSources": 42,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -252,8 +298,21 @@
       "inspectionReportSha256": "ceb6b0245e11d80605c1c1a75402674daa0929cdec9fde2cc5a029206504231a",
       "selectedAt": "2026-11-18T06:26:47.828430+00:00",
       "reason": "Actual all-120-frame and native print review after restoration from the original M05 artwork."
+    },
+    "S06": {
+      "path": "corrections/S06-reference-eyes-v2.mp4",
+      "sha256": "d98afe098930a8acff4ac369064203bd308ed5679370dd355f9410852c0de534",
+      "parent": "sources/S06.mp4",
+      "parentSha256": "656dd19150267bc95d8cad6887ba48b1fe759187ac9716ad37ee469364d20b06",
+      "receipt": "corrections/S06-reference-eyes-v2.json",
+      "receiptSha256": "47e6fe6881a35e62706d90304f4641cb0ea1dcbd81b5e10e389b343f8e53b31f",
+      "inspectionReport": "correction-inspections/S06-reference-eyes-v2/S06.json",
+      "inspectionReportSha256": "0e8a7964824ac74447944974dfca5e9d1b7c6e08f4b8c15fdcf5249d799d1778",
+      "selectedAt": "2026-11-18T08:23:34.295336+00:00",
+      "reason": "Actual all-120-frame whole-scene and all-120-frame printed eye/glasses review of the original M09 texture restoration."
     }
   },
-  "snapshotAt": "2026-11-18T06:56:22.191397+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 720
+  "snapshotAt": "2026-11-18T08:29:15.053397+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 960,
+  "rejectedCorrectionCandidateCount": 2
 }

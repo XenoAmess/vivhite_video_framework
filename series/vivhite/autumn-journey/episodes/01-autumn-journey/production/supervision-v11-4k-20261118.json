@@ -83,6 +83,32 @@
         "newQueuePrefillTransportTestPassed": true,
         "testScope": "Unit fixture replaces only the formal gate; actual queue rows above are live service evidence."
       }
+    },
+    {
+      "at": "2026-11-18T08:29:15.797038+00:00",
+      "method": "Actual frame/candidate/print review plus local client journals and controller heartbeat; no additional server polling.",
+      "completedSources": 6,
+      "acceptedSourceSelections": 6,
+      "running": [
+        "S07"
+      ],
+      "queued": [
+        "S08",
+        "S09",
+        "S10"
+      ],
+      "controllerRuntime": "controller-007",
+      "controllerPid": 60456,
+      "generationWorker": {
+        "pid": 158728,
+        "creationTicks": 134394610049589516
+      },
+      "controllerStatus": "watching-active-worker",
+      "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+      "submissionWindow": 4,
+      "pollSeconds": 60,
+      "formalFilmReady": false,
+      "humanFullPlayback": false
     }
   ],
   "scope": "Recorded direct assistant checks only. Gaps between checkpoints do not imply continuous human or GPT observation."
