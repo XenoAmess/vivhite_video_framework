@@ -200,5 +200,25 @@
     "humanContinuousPlayback": false,
     "formalPersonaAndDisclosureReviewOfSelected4KFilm": "still required for final delivery",
     "knownBoundary": "Frame 678 legacy filename says closing-fade; this partial prefix actually has no full-picture fade."
+  },
+  "encodedAudioComparison": {
+    "schemaVersion": "vivhite-encoded-prefix-music-comparison-1",
+    "at": "2026-11-18T09:36:26.227134+00:00",
+    "filmSha256": "1a7bbec502262523ee3c7913e2670673ed649c8a9ac9b7f33d339d961a8219bf",
+    "soundtrackSha256": "46ef587715d277e778c805e566d643ce7b8430d3486ee8143b36dda34a74205b",
+    "expectedFramesPerChannel": 1104000,
+    "decodedFramesPerChannel": 1104896,
+    "sampleRate": 48000,
+    "channels": 2,
+    "perChannelCorrelation": [
+      0.9999940194212398,
+      0.9999939995539874
+    ],
+    "differenceRms": 0.000398165261300864,
+    "signalToDifferenceDb": 49.172633161398934,
+    "aacAlignmentPaddingFrames": 896,
+    "nativeModelAudioMapped": false,
+    "scope": "Decoded actual AAC compared at zero offset with the original WAV first 23 seconds. Padding only in AAC decode; container/audio stream duration remains 23 seconds. Not a listening review.",
+    "humanListening": false
   }
 }

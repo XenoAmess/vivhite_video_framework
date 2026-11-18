@@ -1,0 +1,328 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "shots": [
+    {
+      "id": "S01",
+      "sourceSha256": "c82a37222cced4f64c47d9784929c340e3ad4a149976dbc65b7013ddaeb29255",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T05:44:25.925146+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S01-c82a37222c-all-frames-01.png",
+          "sha256": "671377fec0f7c4fb1a73577b3529daaf50e28c254e56a6bbda56002c0ddb40c9",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S01-c82a37222c-all-frames-02.png",
+          "sha256": "ec0ddfb47fbbe0406485fdb738514751a470d66e313ea5027006bd884f22f4a0",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S01-c82a37222c-all-frames-03.png",
+          "sha256": "d5626aeb7d8c3a93ba9a94176dd945c8786640f4b9e6e8cf38dd99beb21568c8",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S01-c82a37222c-all-frames-04.png",
+          "sha256": "ec801b7437462fe1b252878a49fbdb046f9ff8a65c3158dfad4264f248570f45",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S01-c82a37222c-face-candidates.png",
+        "sha256": "4b385affff37e7529b4ebbdc121932f3252569713f41b8c75639c1d19b29bc94",
+        "items": 101
+      },
+      "observation": "Reviewed all 120 whole-scene frame thumbnails across the previous and current audit, all 120 native hand crops, all 120 native print crops, the face-candidate sheet, the actual 768p input and M01 artwork. The left dorsal hand, lower opposing thumb, wrist and original arm remain coherent; no palm reversal, extra hand or real head/face was observed. Inert printed eyes stay open and glasses remain present. This preserves the v10 small grip/fabric motion with camera push-in; it is not a large curtain-opening action. The charm is cropped by the lower image edge late in the unused tail. Assistant image-sequence review, not human continuous playback.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    },
+    {
+      "id": "S02",
+      "sourceSha256": "9e09730946789a95a20d0d80239e589662d3a3c390455a566da7a8fa89e251e8",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T05:44:25.967396+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S02-9e09730946-all-frames-01.png",
+          "sha256": "172f08e3aded9a44fe665c3054573bc37556d453bd0cd47eec362c05e89e5403",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S02-9e09730946-all-frames-02.png",
+          "sha256": "c3db1bae1b946892b4247b1dd49df518bee84592bd7ee98c9708f2b54cbdd29d",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S02-9e09730946-all-frames-03.png",
+          "sha256": "eb6e21b2bad05b3ed2fe13cf29fab9efc84ec72bdd8e8b110c4cfd4ae607d0eb",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S02-9e09730946-all-frames-04.png",
+          "sha256": "5f110ff59b4f50c0d60d375dcd585cd8dac5f49c549750fc4ab8a44c3c271412",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S02-9e09730946-face-candidates.png",
+        "sha256": "e5d2789f45b3bd1bcce87470ebff8fe9d3c860acef92f243c8d76082945c461e",
+        "items": 1
+      },
+      "observation": "Reviewed all 120 whole-scene frame thumbnails, native first/last full-scene viewing copies, the sole face candidate and actual input. The candidate is tree-bark texture, not a human. The lake shore, mountains, rocks, cloud shadows and water evolve continuously without a scene reset or added person. No character print, costume or hand occurs, so artwork-specific anatomy checks do not apply. Some distant foliage remains soft; native dimensions alone are not a claim of perfect photographic texture. Assistant image-sequence review, not human continuous playback.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    },
+    {
+      "id": "S03",
+      "sourceSha256": "635d770cbc472a2803a2cc64bab96b45b159a723519265a63ee296114c3f6eee",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T06:26:47.969027+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S03-v2/S03-635d770cbc-all-frames-01.png",
+          "sha256": "4c60ee41153f4fbd0ccfa6d28f8077fe03ea4034411f51a2a0c46287389e6c25",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S03-v2/S03-635d770cbc-all-frames-02.png",
+          "sha256": "a2092f7df9010e0275dd834f50039daa8a55bd0b5dbcba0d52b5838c3ce5bf46",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S03-v2/S03-635d770cbc-all-frames-03.png",
+          "sha256": "9a98b351672a3cd6ac3cd53b777a9604ccad1f67d61b26acd70581cbb0c56620",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S03-v2/S03-635d770cbc-all-frames-04.png",
+          "sha256": "04989f582ad2ff359a085b66dfb80bc051caa4bc77790fbe1614b4ee13c49d69",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/corrected-S03-v2/S03-635d770cbc-face-candidates.png",
+        "sha256": "94e43de96e973511e748f449b4241d37d24b6de67cf561b8a464a8b93ac8d136",
+        "items": 13
+      },
+      "observation": "Reviewed corrected v2 all 120 whole-scene frames, all 120 native badge crops in eight original PNG pages, face candidates and native first-frame crop against M05 original artwork. Open eye contours, iris detail and fine round gold glasses now match the artwork and remain inert; the graphic follows the same original physical badge, its rim and chain. No new real person, human face, limb or scene discontinuity observed. Existing leg/arm motion is retained. v1 remains rejected for an incomplete replacement boundary; original and both correction versions are preserved. Assistant image-sequence acceptance, not human continuous playback or final-film approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    },
+    {
+      "id": "S04",
+      "sourceSha256": "442e2acdd9b085c2d3fbdfa2cff63b00a135d7dc09e020b1d499b0039ba3654b",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T05:44:26.169188+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S04-442e2acdd9-all-frames-01.png",
+          "sha256": "2023e8c12ec394e4cc69ec57e5bf73b7edd1e3a61e0aff757fa5d9c253be1689",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S04-442e2acdd9-all-frames-02.png",
+          "sha256": "83f45767aab63bca80e93355215001930676796a627ca20bf520509b72839b15",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S04-442e2acdd9-all-frames-03.png",
+          "sha256": "130d5674528a28df9816a8a78b793f5ef6c0c3a0e4c1dbc32cd31a862291b54f",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S04-442e2acdd9-all-frames-04.png",
+          "sha256": "9e905bf461de93f2a5ab237ea86e54ca5578355846f4d3fb9d67e6ff1cd7ea6c",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S04-442e2acdd9-face-candidates.png",
+        "sha256": "e283f37f2d1d74f47eebbc9b2154b418f3446c13d93de145e7d0eee7bd2d6a08",
+        "items": 4
+      },
+      "observation": "Reviewed all 120 whole-scene frame thumbnails, all 120 print-region frames (native first page and native-derived viewing proxies for the remaining seven pages), face candidates, actual input and M01/original chibi artwork. No real person is present. The charm remains a rigid printed object attached to the original chain; the open eye outlines, round glasses, hair and costume remain stable with no blink or autonomous limb motion. Bag/bench/background motion remains continuous. Face candidates are charm, station fixture and bench texture. This is assistant image-sequence acceptance of this source, not final-film or human aesthetic acceptance.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    },
+    {
+      "id": "S05",
+      "sourceSha256": "62aa1dab5b48ad7093b294a442c595418e427f3389918065c1c487bd12b3f318",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T06:53:42.592857+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S05-62aa1dab5b-all-frames-01.png",
+          "sha256": "b0da65fdece9e7e92072f2e70cb03e8fe77903fe0c1dd466858b20b0c468e7a4",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S05-62aa1dab5b-all-frames-02.png",
+          "sha256": "09aadc7bd993a75ec71d67f64948c06eb6373339980f261f6e739bb610c06fa3",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S05-62aa1dab5b-all-frames-03.png",
+          "sha256": "b9bb403a109a57f64a6f6f31de1acba5b50b6a9f24be7d7ae7586350b908031b",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S05-62aa1dab5b-all-frames-04.png",
+          "sha256": "f3f2a12b3ddfb3999f0261b23fdf26af284e7cf37683318999d12c6f9ddf041c",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S05-62aa1dab5b-face-candidates.png",
+        "sha256": "31667584ec6d4a413985d528ed9e80406633effdba6d4ca6074b33e0f6ee204f",
+        "items": 10
+      },
+      "observation": "Viewed all 120 whole-scene frame thumbnails through four JPEG viewing copies, all 120 tracked native sticker crops (first two PNG pages and six native-derived JPEG pages), the face-candidate sheet, native full-frame f048 and f119, the actual 768p input f000 and its sticker crop, and compared with the original chibi artwork reviewed in this session. Only the original female cyclist is present, framed below the head, in the established white/violet/gold clothing. Both legs pedal continuously; road, trees, bicycle and background remain continuous with no observed scene reset. The 49 machine cut candidates occur within this cycling motion and are not observed shot changes. The sticker stays fixed to the same frame tube, its eyes remain open and round glasses persist without blinking or autonomous movement. Face candidates include printed artwork, bike parts and background texture; none is a real human face. Native texture remains somewhat processed and wheel spokes have motion blur. Assistant image-sequence source review, not human continuous playback or final-film acceptance.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    },
+    {
+      "id": "S06",
+      "sourceSha256": "d98afe098930a8acff4ac369064203bd308ed5679370dd355f9410852c0de534",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T08:23:34.785981+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S06-v2/S06-d98afe0989-all-frames-01.png",
+          "sha256": "9dcbbd4145ec00bc5311aeff2bbbefd2e0d2bd6cdfab238cb34884b00f0c89ee",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S06-v2/S06-d98afe0989-all-frames-02.png",
+          "sha256": "91d6cd00a4858046bc1d4608c3cb1cb7ed815207a78cc7f53ab12ce675e32e5d",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S06-v2/S06-d98afe0989-all-frames-03.png",
+          "sha256": "e834c3eb4b7275326236af0585182fd5d6e3cb7a665523536b0eeb354b2216dd",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S06-v2/S06-d98afe0989-all-frames-04.png",
+          "sha256": "b7280bac8d12a7b68f2006d4fd11f615e83c8dde33d6e8fb4bab1309c2904216",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/corrected-S06-v2/S06-d98afe0989-face-candidates.png",
+        "sha256": "ab9d393d5901c1630aad3a23355f542cb92562ad5a80ffb33bd24cef1e63466d",
+        "items": 8
+      },
+      "observation": "After rejecting the original iris and glasses degradation, viewed all 120 corrected whole-scene frames through four bound JPEG pages, all 120 native printed eye crops (first PNG page and seven native-derived JPEG pages), the corrected face-candidate sheet, corrected native full-frame f119, original native f000/f119, original input crop and M09 reference artwork. The M09 open violet-pink irises and thin gold round frames remain fixed across the full source, following the same sticker without blinking, facial animation or visible sliding. The local feathered eye/glasses masks avoid the visibly circular whole-face boundary that caused candidate v1 to be rejected at f000. The existing head outline, body and street motion remain present; no real person or human face appears in the scene/reflection. Candidate detections are print/clothing, trees and building texture. Native texture around the restored graphic remains processed; this is assistant source image-sequence acceptance, not human continuous playback or final-film aesthetic approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    },
+    {
+      "id": "S07",
+      "sourceSha256": "95cd6741cbb93238643d6bc2f56cd4f3c1950db29077d5310ca379c49336feea",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T09:24:12.054142+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S07-95cd6741cb-all-frames-01.png",
+          "sha256": "60e332e85593bc2d2b3d3dcd99b0803c827af26b6ee6d7cc13e695d864bf123b",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S07-95cd6741cb-all-frames-02.png",
+          "sha256": "9dc1317852835e2ddc6ccb2aca6cdc1c44e1aad8fb36bccb48aad59e4894a58b",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S07-95cd6741cb-all-frames-03.png",
+          "sha256": "c16e0a19a7fad5dbe1caafb8f6331d588cf73af8bba4195fee74e1f22f0abd45",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S07-95cd6741cb-all-frames-04.png",
+          "sha256": "427813bb53c5a7ab884f151e90c9c6e2cd2f39676a043978494fb8a668ef8f9d",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S07-95cd6741cb-face-candidates.png",
+        "sha256": "715603ee09270cc8b44ff4933811f2bf7dbbb2c34bb1ccc4e839d971dcd3ce26",
+        "items": 32
+      },
+      "observation": "Actually viewed all 120 whole-scene frames, all 120 native-derived pouch crops, all 120 native-derived crops of each original hand, candidate contact sheet (32 entries), native full frame 0, actual 768P input frame 0 and original M08 artwork. Walking alternates continuously from the beginning, with continuous scenery and attached original hands; no observed human face or added person. Printed eyes remain OPEN, but iris details are compressed with blue-tinted centers and thin gold lens outlines weakened compared with M08; reject reference appearance. Candidate examples are foliage, rocks, boots, clothing and printed illustration. Nineteen cut flags are walking/foreground-leaf motion; no scene cut observed. This is source review, not final-film/persona/human-playback approval.",
+      "decision": "rejected",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "failed"
+    }
+  ]
+}

@@ -77,6 +77,8 @@ video-maker/.venv/Scripts/python.exe video-maker/tools/restore_printed_eyes.py `
 
 实际S06-v2由提交`6cad868`中的worker生成。两项单元检查覆盖双点配准不镜像，以及遮罩不覆盖整头／透明区；真实v2另经120帧完整解码、120帧整景和120帧原生印花复审，之后才接入采用清单。代码后来补强断管时的编码器清理，不热改正在运行的生成器。源片、取样图、处理代码、跟踪代码、参数和修订结果指纹见[本次收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S06-reference-restoration-v11-4k.json)。这一路线不能用于遮盖新增真人、修手臂或补救错误动作。
 
+S07的M08布袋母版中，眼睛间距比M09贴纸母版小，因此不能照搬95×78像素的镜片遮罩。提交`f5651ce`增加显式`--mask-scale`，同步缩放镜片椭圆、桥部、纵向偏移与羽化；默认1保留旧配方。S07实际使用`--reference-eyes 809 463 904 450 --target-eyes 3328 925 3412 932 --tracking-center 1185 331 --tracking-radius 43 --mask-scale 0.39 --gain-rgb 0.98 0.88 0.80 --frames 120`，引用M08原始RGBA文件。先检查首帧配准，再处理120帧；修订v1的全部整景、全部原生眼部裁切及候选页实际复核通过后才采用。原始片两只手分别检查了全部120帧局部，未用眼部修补掩盖手部问题。对应[处理与复核收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S07-reference-restoration-v11-4k.json)记录实际代码和素材哈希。新增的小尺寸遮罩范围测试与原有两项测试均通过；此方法不保证恢复未覆盖的身体或头发印花细节。
+
 ## 可复用的处理命令
 
 在仓库根目录使用已配置的Python环境，FFmpeg／FFprobe须在PATH中。以下参数来自实际S15提杯镜头，但输出使用新的示例文件名，不覆盖既有采用版本。迁移到其他镜头时必须重新标定坐标。
