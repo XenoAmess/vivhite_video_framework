@@ -8,6 +8,8 @@
 
 11月19日凌晨，已完成前十二镜采用源片的整景序列与相关细节审阅，另存[47秒／1410帧技术预览](technical-prefix-v11-first12.md)，完整音视频解码、全部编码帧的画面对照以及关键周边裁切检查通过。它仍是阶段预览，最终205秒影片和正式审核尚未完成。等待出片时还保存了[S13—S18输入动作基准](input-motion-baselines-v11-S13-S18.md)与[关键长镜头／动作输入基准](input-motion-baselines-v11-key-motions.md)；这些输入对照不计为4K输出验收。
 
+随后完成前14镜采用源片的画面序列审阅；S14原始徽章的睁眼虹膜和细金框保真不足，修订v1在完整120帧复核后采用，原始与全部试样保留，详见[阶段质量记录](quality-audit-v11-4k.md)。S13—S48共36份输入的完整运动对照已补齐，总4656帧、155页整景JPEG；各批实际范围见[S21—S27](input-motion-baselines-v11-S21-S27.md)、[S29—S34](input-motion-baselines-v11-S29-S34.md)、[S35—S40](input-motion-baselines-v11-S35-S40.md)、[S41／S42／S43／S45／S46](input-motion-baselines-v11-S41-S46.md)及前述两份记录。输入基准不代替后续4K源片的手部、印花、检测候选及成片审核。
+
 已按用户后续要求移交给Windows独立按需任务`Vivhite-Autumn-Journey-v11-4K`，任务无运行时间上限。实际终止原对话客户端后，约15秒自动续接同一个服务端任务，没有取消或重复提交。生成、下载、完整源帧机器检查、图片Git检查点及完整未审技术预览均可脱离对话推进；[独立执行说明](../../../../../../docs/autumn-journey-background-rendering.md)及[实测收据](background-continuity-v11-4k.json)保留过程。正式内容审核和Release不由守护程序伪造通过。
 
 ## 实际输入与请求

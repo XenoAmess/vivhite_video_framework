@@ -79,6 +79,10 @@ video-maker/.venv/Scripts/python.exe video-maker/tools/restore_printed_eyes.py `
 
 S07的M08布袋母版中，眼睛间距比M09贴纸母版小，因此不能照搬95×78像素的镜片遮罩。提交`f5651ce`增加显式`--mask-scale`，同步缩放镜片椭圆、桥部、纵向偏移与羽化；默认1保留旧配方。S07实际使用`--reference-eyes 809 463 904 450 --target-eyes 3328 925 3412 932 --tracking-center 1185 331 --tracking-radius 43 --mask-scale 0.39 --gain-rgb 0.98 0.88 0.80 --frames 120`，引用M08原始RGBA文件。先检查首帧配准，再处理120帧；修订v1的全部整景、全部原生眼部裁切及候选页实际复核通过后才采用。原始片两只手分别检查了全部120帧局部，未用眼部修补掩盖手部问题。对应[处理与复核收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S07-reference-restoration-v11-4k.json)记录实际代码和素材哈希。新增的小尺寸遮罩范围测试与原有两项测试均通过；此方法不保证恢复未覆盖的身体或头发印花细节。
 
+S14的M05徽章还暴露了遮罩过小的另一种问题：前四张首帧试样保留了部分旧镜框，形成重影，均未用于完整视频。扩大遮罩后另看四张试样，采用06参数制作唯一一份完整修订：`--reference-eyes 530 714 775 690 --target-eyes 2653 1476 2802 1459 --tracking-center 956 505 --tracking-radius 115 --mask-scale 1.6 --gain-rgb 0.83 0.83 0.78 --frames 120`。原始与修订的120帧整景、120帧徽章局部及全部检测候选分别实际查看后才采用，原始片和八张试样均保留，详见[S14收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S14-reference-restoration-v11-4k.json)。
+
+这个较大遮罩也覆盖了母版嘴部及相邻刘海，实际范围不能再写成“只改虹膜像素”；脚本名称或通用收据的eye/glasses描述不能替代逐案观察。徽章外圈、衣服和真实场景保留，其他未恢复印花仍偏软，全源片仍经过CRF16重编码。该镜原水迹沿徽章边侧及包面经过，没有穿过眼部；遇到实际遮挡穿过恢复区域时，应单独处理遮挡关系，不能直接照抄本镜参数。
+
 ## 可复用的处理命令
 
 在仓库根目录使用已配置的Python环境，FFmpeg／FFprobe须在PATH中。以下参数来自实际S15提杯镜头，但输出使用新的示例文件名，不覆盖既有采用版本。迁移到其他镜头时必须重新标定坐标。
