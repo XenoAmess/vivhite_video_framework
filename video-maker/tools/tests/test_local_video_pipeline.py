@@ -140,7 +140,7 @@ class LocalPipelineTest(unittest.TestCase):
             with self.subTest(source_seconds=source_seconds),self.assertRaises(ValueError):
                 worker.validate({**plan,'shots':[{**plan['shots'][0],'sourceSeconds':source_seconds}]})
 
-    def test_new_refinement_requires_uhd_and_single_submission_window(self):
+    def test_new_refinement_requires_uhd_and_valid_submission_window(self):
         plan = {**self.plan(),'stage':'refine','model':'open-h3-2k',
                 'width':3840,'height':2160,'sourceSize':'3840x2160'}
         worker.validate(plan)
@@ -149,11 +149,62 @@ class LocalPipelineTest(unittest.TestCase):
         worker.validate_server_model(plan,{'data':[{'id':'open-h3-2k','sizes':['3840x2160']}]})
         with self.assertRaisesRegex(ValueError,'advertise native 4K'):
             worker.validate_server_model(plan,{'data':[{'id':'open-h3-2k','sizes':['2560x1440']}]})
-        args = SimpleNamespace(plan=Path('fixture-plan.json'),directory=Path('fixture-run'),window=2)
-        with patch.object(worker,'read',return_value=plan),patch.object(worker,'input_assets') as assets:
-            with self.assertRaisesRegex(ValueError,'4K requires --window 1'):
-                worker.generate(args)
-            assets.assert_not_called()
+        for window in (0,9,True):
+            args = SimpleNamespace(plan=Path('fixture-plan.json'),directory=Path('fixture-run'),window=window)
+            with patch.object(worker,'read',return_value=plan),patch.object(worker,'input_assets') as assets:
+                with self.assertRaisesRegex(ValueError,'Submission window'):
+                    worker.generate(args)
+                assets.assert_not_called()
+
+    def test_refinement_prefills_three_waiting_jobs_without_resubmitting_running_job(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            (directory/'input-sources').mkdir()
+            (directory/'jobs').mkdir()
+            shots = []
+            for index in range(1,6):
+                identity = f'S{index:02}'
+                source = directory/'input-sources'/f'{identity}.mp4'
+                source.write_bytes(f'unit transport fixture {identity}'.encode())
+                shots.append({'id':identity,'seconds':5,'sourceSeconds':5,'startFrame':(index-1)*150,
+                    'prompt':'Transport fixture; no production approval.',
+                    'inputSource':source.relative_to(directory).as_posix(),'inputSourceSha256':worker.sha(source)})
+            plan = {**self.plan(),'stage':'refine','model':'open-h3-2k','width':3840,'height':2160,
+                'sourceSize':'3840x2160','shots':shots,'totalFrames':750}
+            worker.save(directory/'plan.json',plan)
+            worker.save(directory/'jobs/S01.json',{'shotId':'S01','status':'in_progress','jobId':'known-running'})
+            posted = []
+            class Queue:
+                base = 'http://unit.invalid/v1'
+                def upload(self,path):
+                    return {'id':'file_'+path.stem}
+                def json(self,method,path,payload=None):
+                    if path == '/models':
+                        return {'data':[{'id':'open-h3-2k','sizes':['3840x2160'],'four_k_max_windows_per_load':1}]}
+                    if path == '/../health':
+                        return {'status':'ok'}
+                    if method == 'POST':
+                        if path != '/videos/regenerations':
+                            raise AssertionError('Refinement posted to the wrong endpoint')
+                        posted.append(payload)
+                        return {'id':f'queued-{len(posted)}','status':'queued'}
+                    return {'id':path.rsplit('/',1)[-1],
+                        'status':'in_progress' if path.endswith('/known-running') else 'queued'}
+            args = SimpleNamespace(plan=directory/'plan.json',directory=directory,window=4,
+                episode=directory/'episode.json',root=directory,api='http://unit.invalid/v1',
+                order='',limit=None,skip='',poll_seconds=60)
+            # Only the formal character gate is a unit stub. Real files, input
+            # hashes, queue receipts, payloads and resume logic are exercised.
+            with patch.object(worker,'Api',return_value=Queue()),patch.object(worker,'run',return_value='unit gate stub'), \
+                    patch.object(worker.time,'sleep',side_effect=InterruptedError('end first unit poll')):
+                with self.assertRaises(InterruptedError):
+                    worker.generate(args)
+            self.assertEqual(len(posted),3)
+            self.assertTrue(all(row['size'] == '3840x2160' and row['sampler'] == 'up3' for row in posted))
+            self.assertEqual([row['input_video']['file_id'] for row in posted],['file_S02','file_S03','file_S04'])
+            self.assertEqual(worker.read(directory/'jobs/S01.json')['jobId'],'known-running')
+            self.assertFalse((directory/'jobs/S05.json').exists())
+            self.assertEqual(worker.read(directory/'run.json')['pollSeconds'],60)
 
     def test_image_only_generation_never_uploads_an_old_motion_reference(self):
         with tempfile.TemporaryDirectory() as temporary:

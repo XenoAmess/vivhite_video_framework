@@ -266,8 +266,8 @@ def generate(args):
     validate(plan)
     if args.window is None:
         args.window = 3 if plan['stage']=='draft' else 1
-    if plan['stage']=='refine' and args.window != 1:
-        raise ValueError('Native 4K requires --window 1; preserve the shared GPU single-job queue')
+    if not isinstance(args.window,int) or isinstance(args.window,bool) or not 1 <= args.window <= 8:
+        raise ValueError('Submission window must be an integer from one to eight')
     assets = input_assets(plan,args.episode.resolve(),directory)
     snapshots = {path:sha(path) for path in assets}
     gate = [sys.executable,str(args.root.resolve()/'scripts/character_review.py'),'check',
@@ -288,6 +288,8 @@ def generate(args):
     if state['planSha256'] != plan_hash:
         raise ValueError('Use a new run directory for changed plans')
     state.update(status='generating',stage=plan['stage'],model=plan['model'],workerSha256=sha(__file__))
+    state['submissionWindow'] = args.window
+    state['pollSeconds'] = args.poll_seconds
     save(state_file,state)
     target = select_target_shots(plan['shots'],args.order,args.limit,args.skip)
     state['excludedShots'] = args.skip.split(',') if args.skip else []
@@ -413,7 +415,7 @@ if __name__ == '__main__':
     parser.add_argument('--evidence',required=True,type=Path)
     parser.add_argument('--face-model',required=True,type=Path)
     parser.add_argument('--window',type=int,default=None,choices=range(1,9),
-                        help='Defaults to three draft jobs or one native 4K job; 4K requires one')
+                        help='Maximum unfinished server jobs, not GPU execution concurrency; defaults to three drafts or one refinement')
     parser.add_argument('--limit',type=int)
     parser.add_argument('--order',default='')
     parser.add_argument('--skip',default='',help='Preserve but do not submit these shots; replacement plans are reviewed separately')

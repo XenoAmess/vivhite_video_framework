@@ -7,7 +7,7 @@
 | 环节 | HTTP API | 实际模型ID | 必须使用的尺寸与参数 |
 | --- | --- | --- | --- |
 | 原始768P参考图生成 | `http://192.168.1.11:8001/v1/videos` | `fasth3-omni-bf16` | `1344x768`、`task=ref2va`、8步；运行时核实36层解码器 |
-| 原生4K视频再生成 | `http://192.168.1.11:8002/v1/videos/regenerations` | **`open-h3-2k`** | **`3840x2160`**、`sampler=up3`、当前种子1234；客户端 `--window 1` |
+| 原生4K视频再生成 | `http://192.168.1.11:8002/v1/videos/regenerations` | **`open-h3-2k`** | **`3840x2160`**、`sampler=up3`、当前种子1234；GPU单窗口；本期客户端 `--window 4 --poll-seconds 60` 预排队 |
 
 4K服务沿用旧模型ID和端口，不要擅自改成不存在的 `open-h3-4k`，也不要省略尺寸让服务落回旧默认。2026-11-17本项目实际读取8002的 `/v1/models`，已看到 `3840x2160` 与单窗口能力声明；只读查询不是本项目4K成片验收。
 
@@ -32,7 +32,9 @@
 
 提交返回202后，使用 `GET /v1/videos/{id}` 轮询，完成后从 `GET /v1/videos/{id}/content` 下载。完整请求、上传哈希、任务ID、轮询、原始音视频、规范化源片、日志和失败材料均保留。POST超时不能盲目重提；先核对受理状态，避免重复任务。
 
-4K与768P共用GPU队列，按普通队列执行。4K每次一个任务、每次加载一个窗口，不能沿用旧2K并发窗口2的做法，也不能按两块GPU估算耗时。服务端OOM暂停后保留现场，不自动提高内存限制或反复重试。
+4K与768P共用GPU队列，按普通队列执行，GPU每次仅加载一个4K窗口，不能按两块GPU估算耗时。服务声明的`four_k_max_windows_per_load=1`是单次推理加载窗口数，不等于客户端只能排一个独立HTTP任务。
+
+2026-11-18用户明确要求至少3个任务排队、完成后及时处理，取代本期旧的客户端窗口1约定。当前以`--window 4 --poll-seconds 60`保持最多4个未完成任务，即1个运行＋3个等待；任务仍由服务端正常串行调度，不插队，不增大单次GPU窗口或更改模型。快到片尾、剩余镜头不足时按实际余量补队列。已经提交的计划和请求字节保持不变，新的运行调度另记[队列策略](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/queue-policy-v11-4k-20261118.json)。服务端OOM暂停后保留现场，不自动提高内存限制或反复重试。
 
 数日运行可使用本期已实测的[Windows独立执行器](autumn-journey-background-rendering.md)。它由按需任务承载，保留任务ID、冻结代码、下载与机器检查、图片Git检查点和技术合成，不依赖GPT对话存活；其自动恢复不等于自动通过内容审核。
 
@@ -49,7 +51,7 @@
 ## 本仓库制作入口
 
 - [`prepare_local_refinement.py`](../video-maker/tools/prepare_local_refinement.py)：实际768P交付及其绑定通过后，准备独立4K计划和完整已审源片，不提交任务。新计划明确写入3840×2160和单任务窗口，重新进行人格／披露审核。
-- [`local_video_pipeline.py`](../video-maker/tools/local_video_pipeline.py)：新再生成请求固定为UHD，拒绝新2K计划；核实实际服务尺寸声明，4K仅允许窗口1。完整下载和检查源片，不将HTTP成功自动写为内容通过。
+- [`local_video_pipeline.py`](../video-maker/tools/local_video_pipeline.py)：新再生成请求固定为UHD，拒绝新2K计划；核实实际服务尺寸声明。`--window`限制客户端未完成任务数，支持预排队，不改变服务端GPU加载窗口。完整下载和检查源片，不将HTTP成功自动写为内容通过。
 - [`local_video_finisher.py`](../video-maker/tools/local_video_finisher.py)、[`reference_finisher.py`](../video-maker/tools/reference_finisher.py)：按实际计划装配原始768P或4K影片，绑定实际配乐和标题。既有数学视频1080P接口属于独立历史工作流，不据此新建本地2K生成。
 - [`inspect_local_video_film.py`](../video-maker/tools/inspect_local_video_film.py)：完整解码和画面轨核对。检测器使用缩小图输入，细小人物、印花及接缝仍需原生4K局部检查，不能靠检测器或放大后的768P截图代替。
 
@@ -59,7 +61,7 @@
 video-maker/.venv/Scripts/python.exe video-maker/tools/local_video_pipeline.py `
   --episode <实际episode.json> --plan <已审4K计划.json> `
   --directory <独立4K运行目录> --api http://192.168.1.11:8002/v1 `
-  --evidence <项目内检查图片目录> --face-model <实际YuNet权重> --window 1
+  --evidence <项目内检查图片目录> --face-model <实际YuNet权重> --window 4 --poll-seconds 60
 ```
 
 ## 《秋日旅程》片尾的条件规则

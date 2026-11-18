@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "vivhite-explicit-runtime-queue-policy-1",
+  "at": "2026-11-18T07:39:53.294129+00:00",
+  "authority": "User requested at least three queued jobs, slower polling and prompt postprocessing.",
+  "runtime": "controller-007",
+  "controllerPid": 60456,
+  "generationWorker": {
+    "pid": 158728,
+    "creationTicks": 134394610049589516
+  },
+  "configSha256": "6bb8fcdd7ed7d38063b8182647f30aaf35c2a43886150dc593c5d11854b75688",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "originalSubmittedPlanBytesUnchanged": true,
+  "archivedPlanSubmissionWindow": 1,
+  "effectiveClientSubmissionWindow": 4,
+  "minimumWaitingJobsWhileAvailable": 3,
+  "pollSeconds": 60,
+  "serverGpuWindowsPerLoad": 1,
+  "serverGpuConcurrencyChanged": false,
+  "normalQueueNoPriorityOverride": true,
+  "oldLocalPollingTreeRetired": 13016,
+  "localPollingClientRestarted": true,
+  "sameS06RemoteJobRetained": true,
+  "remoteCancellationPerformed": false,
+  "queuePaused": false,
+  "running": [
+    {
+      "shotId": "S06",
+      "jobId": "video_gen_e7f76b25b51543b19a48d94c089869f5"
+    }
+  ],
+  "queued": [
+    {
+      "shotId": "S07",
+      "jobId": "video_gen_194219acffa74fed94f860172095649b"
+    },
+    {
+      "shotId": "S08",
+      "jobId": "video_gen_af8669e17d134a48b1e4b3558ee6bc64"
+    },
+    {
+      "shotId": "S09",
+      "jobId": "video_gen_afbc24e306944ca188763452cc21464b"
+    }
+  ],
+  "completedSources": 5,
+  "acceptedSources": 5,
+  "semanticAcceptanceAutomaticallyGranted": false,
+  "validation": {
+    "localPipelineTestsPassed": 17,
+    "newQueuePrefillTransportTestPassed": true,
+    "testScope": "Unit fixture replaces only the formal gate; actual queue rows above are live service evidence."
+  }
+}

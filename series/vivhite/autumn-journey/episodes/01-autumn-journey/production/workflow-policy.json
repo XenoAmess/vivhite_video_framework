@@ -23,8 +23,11 @@
       "size": "3840x2160",
       "sampler": "up3",
       "seed": 1234,
-      "submissionWindow": 1,
-      "startCondition": "Separate reviewed 4K production after the current 768p film is delivered; this policy update submits no 4K job."
+      "submissionWindow": 4,
+      "startCondition": "Separate reviewed 4K production after the current 768p film is delivered; this policy update submits no 4K job.",
+      "gpuWindowsPerLoad": 1,
+      "minimumWaitingJobsWhileAvailable": 3,
+      "pollSeconds": 60
     },
     "newTwoKJobsAllowed": false,
     "historicalTwoKRuns": "Preserved, stopped, never automatically resumed",
@@ -142,7 +145,7 @@
   },
   "backgroundExecution": {
     "schedulerTask": "Vivhite-Autumn-Journey-v11-4K",
-    "runtimeVersion": "controller-006",
+    "runtimeVersion": "controller-007",
     "watchdogIntervalSeconds": 60,
     "executionTimeLimit": "PT0S",
     "conversationConnectionRequired": false,
@@ -157,8 +160,11 @@
     "twoKResumeAllowed": false,
     "windowsAtomicStateRetryActuallyTested": true,
     "localStateFailureResumeActuallyTested": true,
-    "generationRuntimeVersion": "controller-004",
+    "generationRuntimeVersion": "controller-007",
     "reviewedCorrectionSelectionSupported": true,
-    "previewCompletionChecksCurrentBindings": true
+    "previewCompletionChecksCurrentBindings": true,
+    "minimumWaitingJobsWhileAvailable": 3,
+    "pollSeconds": 60,
+    "progressReporting": "Completed sources, actual reviews and actionable failures; no model-block reports."
   }
 }
