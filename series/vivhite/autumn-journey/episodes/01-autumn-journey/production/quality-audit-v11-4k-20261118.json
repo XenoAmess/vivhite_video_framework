@@ -105,28 +105,28 @@
       "actualFinalUsedNativeFrames": 96,
       "frameEvidence": [
         {
-          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S03-v2/S03-635d770cbc-all-frames-01.png",
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S03-v2\\S03-635d770cbc-all-frames-01.png",
           "sha256": "4c60ee41153f4fbd0ccfa6d28f8077fe03ea4034411f51a2a0c46287389e6c25",
           "items": 32
         },
         {
-          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S03-v2/S03-635d770cbc-all-frames-02.png",
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S03-v2\\S03-635d770cbc-all-frames-02.png",
           "sha256": "a2092f7df9010e0275dd834f50039daa8a55bd0b5dbcba0d52b5838c3ce5bf46",
           "items": 32
         },
         {
-          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S03-v2/S03-635d770cbc-all-frames-03.png",
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S03-v2\\S03-635d770cbc-all-frames-03.png",
           "sha256": "9a98b351672a3cd6ac3cd53b777a9604ccad1f67d61b26acd70581cbb0c56620",
           "items": 32
         },
         {
-          "path": "assets/generated/production-v11-native-4k-001/review/corrected-S03-v2/S03-635d770cbc-all-frames-04.png",
+          "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S03-v2\\S03-635d770cbc-all-frames-04.png",
           "sha256": "04989f582ad2ff359a085b66dfb80bc051caa4bc77790fbe1614b4ee13c49d69",
           "items": 24
         }
       ],
       "faceEvidence": {
-        "path": "assets/generated/production-v11-native-4k-001/review/corrected-S03-v2/S03-635d770cbc-face-candidates.png",
+        "path": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S03-v2\\S03-635d770cbc-face-candidates.png",
         "sha256": "94e43de96e973511e748f449b4241d37d24b6de67cf561b8a464a8b93ac8d136",
         "items": 13
       },
@@ -185,14 +185,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S05",
+      "sourceSha256": "62aa1dab5b48ad7093b294a442c595418e427f3389918065c1c487bd12b3f318",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T06:53:42.592857+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S05-62aa1dab5b-all-frames-01.png",
+          "sha256": "b0da65fdece9e7e92072f2e70cb03e8fe77903fe0c1dd466858b20b0c468e7a4",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S05-62aa1dab5b-all-frames-02.png",
+          "sha256": "09aadc7bd993a75ec71d67f64948c06eb6373339980f261f6e739bb610c06fa3",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S05-62aa1dab5b-all-frames-03.png",
+          "sha256": "b9bb403a109a57f64a6f6f31de1acba5b50b6a9f24be7d7ae7586350b908031b",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S05-62aa1dab5b-all-frames-04.png",
+          "sha256": "f3f2a12b3ddfb3999f0261b23fdf26af284e7cf37683318999d12c6f9ddf041c",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S05-62aa1dab5b-face-candidates.png",
+        "sha256": "31667584ec6d4a413985d528ed9e80406633effdba6d4ca6074b33e0f6ee204f",
+        "items": 10
+      },
+      "observation": "Viewed all 120 whole-scene frame thumbnails through four JPEG viewing copies, all 120 tracked native sticker crops (first two PNG pages and six native-derived JPEG pages), the face-candidate sheet, native full-frame f048 and f119, the actual 768p input f000 and its sticker crop, and compared with the original chibi artwork reviewed in this session. Only the original female cyclist is present, framed below the head, in the established white/violet/gold clothing. Both legs pedal continuously; road, trees, bicycle and background remain continuous with no observed scene reset. The 49 machine cut candidates occur within this cycling motion and are not observed shot changes. The sticker stays fixed to the same frame tube, its eyes remain open and round glasses persist without blinking or autonomous movement. Face candidates include printed artwork, bike parts and background texture; none is a real human face. Native texture remains somewhat processed and wheel spokes have motion blur. Assistant image-sequence source review, not human continuous playback or final-film acceptance.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Four current source selections reviewed; original S03 rejection retained in the initial audit and review history.",
-  "reviewedSourceCount": 4,
-  "acceptedSourceCount": 4,
+  "scope": "Five current source selections reviewed; original S03 rejection retained in the initial audit and review history.",
+  "reviewedSourceCount": 5,
+  "acceptedSourceCount": 5,
   "rejectedCurrentSourceCount": 0,
   "rejectedHistoricalSourceCount": 1,
-  "pendingSources": 44,
+  "pendingSources": 43,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -207,5 +253,7 @@
       "selectedAt": "2026-11-18T06:26:47.828430+00:00",
       "reason": "Actual all-120-frame and native print review after restoration from the original M05 artwork."
     }
-  }
+  },
+  "snapshotAt": "2026-11-18T06:56:22.191397+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 720
 }

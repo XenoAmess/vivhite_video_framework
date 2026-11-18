@@ -69,6 +69,38 @@ class DurableRecoveryTest(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'plan changed'):
                 worker.verify_frozen(config)
 
+    def test_watchdog_does_not_finish_with_a_stale_preview(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            output = directory/'technical-preview/film-unreviewed.mp4'
+            output.parent.mkdir()
+            # Identity fixture only; this test never grants a media review.
+            output.write_bytes(b'preview identity fixture')
+            config = {'directory':str(directory),'planSha256':'plan',
+                'soundtrackSha256':'audio','titlesSha256':'titles'}
+            receipt = {'status':'encoded-technical-checks-passed-awaiting-semantic-review',
+                'sourcePlanSha256':'plan','sourceSelectionsSha256':None,
+                'soundtrackSha256':'audio','titlesSha256':'titles',
+                'width':3840,'height':2160,'fps':30,'frames':6150,'seconds':205,
+                'fullAudioVideoDecode':'passed','filmSha256':worker.sha(output)}
+            self.assertTrue(worker.preview_complete(config,receipt))
+            for key,value in (('sourcePlanSha256','other-plan'),('width',1344),
+                    ('fps',24),('frames',6149),('seconds',204),
+                    ('soundtrackSha256','other-audio'),('titlesSha256','other-titles'),
+                    ('fullAudioVideoDecode','pending')):
+                with self.subTest(key=key):
+                    self.assertFalse(worker.preview_complete(config,{**receipt,key:value}))
+            selections = directory/'source-selections.json'
+            selections.write_text('{"version":1}',encoding='utf-8')
+            self.assertFalse(worker.preview_complete(config,receipt))
+            receipt['sourceSelectionsSha256'] = worker.sha(selections)
+            self.assertTrue(worker.preview_complete(config,receipt))
+            selections.write_text('{"version":2}',encoding='utf-8')
+            self.assertFalse(worker.preview_complete(config,receipt))
+            receipt['sourceSelectionsSha256'] = worker.sha(selections)
+            output.write_bytes(b'changed preview')
+            self.assertFalse(worker.preview_complete(config,receipt))
+
 
 if __name__ == '__main__':
     unittest.main()

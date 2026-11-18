@@ -216,6 +216,21 @@ def sources_complete(config, jobs):
     return True
 
 
+def preview_complete(config, receipt):
+    directory = Path(config['directory'])
+    output = directory/'technical-preview/film-unreviewed.mp4'
+    selections = directory/'source-selections.json'
+    return (receipt.get('status') == 'encoded-technical-checks-passed-awaiting-semantic-review'
+        and receipt.get('sourcePlanSha256') == config['planSha256']
+        and receipt.get('sourceSelectionsSha256') == (sha(selections) if selections.exists() else None)
+        and receipt.get('soundtrackSha256') == config['soundtrackSha256']
+        and receipt.get('titlesSha256') == config['titlesSha256']
+        and (receipt.get('width'),receipt.get('height'),receipt.get('fps'),
+             receipt.get('frames'),receipt.get('seconds')) == (3840,2160,30,6150,205)
+        and receipt.get('fullAudioVideoDecode') == 'passed'
+        and output.exists() and sha(output) == receipt.get('filmSha256'))
+
+
 def supervise(config_file):
     config = read(config_file)
     directory = Path(config['directory']).resolve()
@@ -269,12 +284,10 @@ def supervise(config_file):
                         status = 'reconciled-existing-worker'
                 complete = sources_complete(config,jobs)
                 preview = read(directory/'technical-preview/receipt.json') if (directory/'technical-preview/receipt.json').exists() else {}
-                preview_file = directory/'technical-preview/film-unreviewed.mp4'
-                preview_complete = (preview.get('status') == 'encoded-technical-checks-passed-awaiting-semantic-review'
-                    and preview_file.exists() and sha(preview_file) == preview.get('filmSha256'))
+                complete_preview = preview_complete(config,preview)
                 preview_state = read(directory/'technical-preview/run.json') if (directory/'technical-preview/run.json').exists() else {}
                 preview_retry = not preview_state or can_resume(preview_state,[])
-                if not owner.alive() and complete and preview_complete:
+                if not owner.alive() and complete and complete_preview:
                     status = 'complete-technical-preview-awaiting-semantic-review'
                 elif not owner.alive() and ((complete and preview_retry) or (not complete and can_resume(state,jobs))):
                     if time.monotonic() >= retry_at:

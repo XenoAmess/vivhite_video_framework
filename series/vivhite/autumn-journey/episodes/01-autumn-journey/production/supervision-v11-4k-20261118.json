@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-direct-supervision-checkpoints-1",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "checkpoints": [
+    {
+      "at": "2026-11-18T06:59:29.690101+00:00",
+      "method": "direct-assistant-check-of-local-state-live-server-and-reviewed-images",
+      "controllerRuntime": "controller-006",
+      "controllerPid": 129376,
+      "generationRuntime": "controller-004",
+      "generationWorker": {
+        "pid": 13016,
+        "creationTicks": 134394527671947866
+      },
+      "configSha256": "b75955b8817e5fe31a55dc751880ebe4a32804a704636d7afcae6cc5a2c7f3e9",
+      "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+      "completedSources": 5,
+      "acceptedSourceSelections": 5,
+      "totalSources": 48,
+      "currentJob": {
+        "id": "video_gen_e7f76b25b51543b19a48d94c089869f5",
+        "status": "in_progress",
+        "size": "3840x2160",
+        "progress": 35,
+        "stage": "4K 同模型计算（本次 1 个窗口）",
+        "batch_windows": 1
+      },
+      "generationProcessRestarted": false,
+      "remoteTaskChangedDuringControllerUpgrade": false,
+      "formalFilmReady": false,
+      "humanFullPlayback": false
+    }
+  ],
+  "scope": "Recorded direct assistant checks only. Gaps between checkpoints do not imply continuous human or GPT observation."
+}

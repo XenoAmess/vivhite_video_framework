@@ -41,7 +41,7 @@
 
 - `metadata/durable-controller-config.json`：本机路径、固定版本指纹和启动参数，不提交这份本地配置。
 - `metadata/scheduled-task.xml`：实际Windows任务定义的导出副本。
-- `runtime/controller-005/`：当前控制器、进度导出和技术预览的冻结代码；正在生成的客户端仍运行004。001至004全部保留，配置同时核对两套实际文件。后续仓库改代码不会热改正在运行的任务。
+- `runtime/controller-006/`：当前控制器、进度导出和技术预览的冻结代码；正在生成的客户端仍运行004。001至005全部保留，配置核对保留的实际文件。后续仓库改代码不会热改正在运行的任务。
 - `controller.json`：控制器及客户端PID、创建时间、心跳、重启次数和当前阶段。
 - `logs/durable-controller.log`与`logs/durable-generation-*.log`：独立日志，不依赖对话输出。
 - `recovery-test/`：实际中断实验前后记录；`attention.json`出现时应阅读具体失败，不把它视为通过。
@@ -80,3 +80,7 @@ Get-ScheduledTaskInfo -TaskName Vivhite-Autumn-Journey-v11-4K
 后台守护仅作兜底。助手连接期间直接核对真实队列、任务日志、下载文件与质量证据，发现守护缺陷就修复。[本次恢复收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/recovery-v11-4k-20261118.json)及[阶段审计](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/quality-audit-v11-4k.md)分别记录运行恢复与实际画面结论。
 
 S03原画修复实际复审后，另部署005以支持已审核的修订源片选择。只替换控制器，续接同一004客户端PID `13016`与同一S05服务端任务，生成进程未停止。技术预览对修订文件、原始父文件、修订收据、完整帧检查和实际通过结论逐一绑定；原始问题源片不会被修订文件覆盖。修改选择后不能静默复用旧预览缓存，源片选择在合成中变化则保留中间文件并报错。
+
+14:57另修复控制器自身的完成判定：旧代码只匹配预览文件哈希，可能在素材选择或制作绑定改变后仍把旧预览判为完成并关闭兜底。现在还核对源计划、当前素材选择指纹、音乐、字幕、3840×2160／30fps／6150帧／205秒及完整解码收据。相关7项恢复与完成判定测试通过；这是技术预览有效性检查，不授予内容通过结论。
+
+修复部署为006；只更换经过路径核对的旧守护进程，新守护PID `129376`续接同一客户端PID `13016`及其创建时间，服务端S06任务ID保持不变。归档在`recovery-history/20261118-preview-completion-binding/`。S05完整源片120帧已实际审阅通过，14:38:43提交S06，15:00前后仍在正常计算；所有镜头时长和模型参数均保持已提交计划。
