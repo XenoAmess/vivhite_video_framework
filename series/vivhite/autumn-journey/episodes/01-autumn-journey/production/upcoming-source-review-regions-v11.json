@@ -1,6 +1,6 @@
 {
   "schemaVersion": "vivhite-input-first-frame-review-preparation-1",
-  "at": "2026-11-18T10:49:27.106621+00:00",
+  "at": "2026-11-18T11:03:57.510220+00:00",
   "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
   "shots": [
     {
@@ -297,6 +297,1105 @@
         }
       ],
       "observationForFutureReview": "Original clothed lower body and attached pouch beside stairs. Check continuous climbing/body motion and printed eyes/glasses; no output conclusion from this single frame.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S17",
+      "inputSha256": "75fcbf85738af14e68d128cd3877a032c82c6fa16818e454bc606983ef86ee97",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S17-input-f000.jpg",
+      "imageSha256": "ac7406b806a32d534a064685a29df73ddc237aa0965fef2daeba4779930c3229",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M02-standee-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "normal-proportion-standee-face",
+          "proxyCenter": [
+            858,
+            326
+          ],
+          "proxyRadius": 50,
+          "master": "M02-standee-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 3,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Normal-proportion M02 standee, not chibi eye proportions. First frame has open eyes; inspect iris, eyelids and thin round gold glasses without calling partial upper-lid coverage a closed eye.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S18",
+      "inputSha256": "42253080c7292b3fafb3f38a376a45b4aab9c1c1b438e17c3df03023757e909d",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S18-input-f000.jpg",
+      "imageSha256": "5160c9b5b33735e07d8abec783b8337ff788d5b2455048c7bbffc0102e3acb9b",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/I01-butterfly-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [],
+      "finalSecondsUnchanged": 5,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Empty grass/seed-head first frame; the design master is a butterfly but none is visible in this first frame. Inspect the full output for its entrance, continuity and any added people.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S19",
+      "inputSha256": "b4fbe1630600a80b1b311385447720fb3d27153ecd8f579fd16992e9db14cf0f",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S19-input-f000.jpg",
+      "imageSha256": "5c17e5d6ae4f99a88aaf95cb6ab89a10f094a210893e23f5d3d56c6937f04258",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M08-pouch-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "partly-cropped-pouch-face",
+          "proxyCenter": [
+            790,
+            729
+          ],
+          "proxyRadius": 90,
+          "master": "M08-pouch-v1.png"
+        },
+        {
+          "kind": "window-resting-hand",
+          "proxyCenter": [
+            662,
+            315
+          ],
+          "proxyRadius": 150
+        },
+        {
+          "kind": "lower-left-partial-original-hand",
+          "proxyCenter": [
+            85,
+            714
+          ],
+          "proxyRadius": 110
+        }
+      ],
+      "finalSecondsUnchanged": 4,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Window-resting hand plus the original partial lower-left hand; cropped pouch print is a separate detail. Verify attachments, reflections and no extra hands across output.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S20",
+      "inputSha256": "025d002be5f23377e55054b29db8688b944d0e71cc6066cbdbb0eec9696ae901",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S20-input-f000.jpg",
+      "imageSha256": "94596e04b2a5554f70c6ae41be51e8bcd99f4cb57152840b0c834e2862415c2e",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M04-plush-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "plush-face",
+          "proxyCenter": [
+            580,
+            514
+          ],
+          "proxyRadius": 70,
+          "master": "M04-plush-v1.png"
+        },
+        {
+          "kind": "separate-badge",
+          "proxyCenter": [
+            963,
+            560
+          ],
+          "proxyRadius": 43,
+          "master": "M05-badge-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 10,
+      "sourceSecondsToReview": 10,
+      "observationForFutureReview": "Two distinct merchandise items: plush M04 and small badge M05. Review both throughout the full continuous ten-second source; no split or timing change.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S21",
+      "inputSha256": "5537b2795e1e94b2f0e0b4b04f5eddc67aded4b018505d60e2588b7755f1731b",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S21-input-f000.jpg",
+      "imageSha256": "391b58958284bdb3cf7ec68e5f111681490d71ea9766f1bb02808d8521137b0e",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M04-plush-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "plush-face",
+          "proxyCenter": [
+            287,
+            424
+          ],
+          "proxyRadius": 82,
+          "master": "M04-plush-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 4,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Plush in travel bag next to original female legs; no real head in first frame. Check the toy eyes and the gondola window/reflection/landscape over the full source.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S22",
+      "inputSha256": "f6c6ac51ba386cd1ad9870d84e0acec35bdbe75d7a89be42702f82c24778ca07",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S22-input-f000.jpg",
+      "imageSha256": "6fb243ed031603a390dc49b6c20aae134e35aca27707a6e73e457ea452efbdc3",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M05-badge-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "bag-badge",
+          "proxyCenter": [
+            844,
+            478
+          ],
+          "proxyRadius": 113,
+          "master": "M05-badge-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 3,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Badge on snowy bag beside empty trail. Check printed eyes, round glasses and wet/snow texture without adding hikers.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S23",
+      "inputSha256": "f9dcdce3eee5517a7fe3b8c7569f38ce9c893a167d551d0bb734ab3fef611c79",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S23-input-f000.jpg",
+      "imageSha256": "50848c8813447e02b2c78ff19b10c5f41bd4eceb7b863add8590ae0d01ac1cf9",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/P03-back-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "back-facing-character",
+          "master": "P03-back-v1.png"
+        },
+        {
+          "kind": "left-screen-original-hand",
+          "proxyCenter": [
+            720,
+            380
+          ],
+          "proxyRadius": 34
+        },
+        {
+          "kind": "right-screen-original-hand",
+          "proxyCenter": [
+            920,
+            380
+          ],
+          "proxyRadius": 34
+        }
+      ],
+      "finalSecondsUnchanged": 5,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Illustrated female character strictly seen from behind. Check both hanging hands, full body motion, no turn revealing a face, and no added distant walkers.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S24",
+      "inputSha256": "5dea106d23199d1c5c0689e452d670e40ecbc2f78cc576a9fbfed9db1a64a952",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S24-input-f000.jpg",
+      "imageSha256": "28c7baadd8f1cc2e6e389253437af6c4d8db253d062cbb5ec7bea31d20585f6a",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M01-keychain-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "sand-releasing-palm",
+          "proxyCenter": [
+            332,
+            302
+          ],
+          "proxyRadius": 120
+        },
+        {
+          "kind": "bag-resting-hand",
+          "proxyCenter": [
+            1083,
+            235
+          ],
+          "proxyRadius": 100
+        },
+        {
+          "kind": "bag-keychain",
+          "proxyCenter": [
+            1087,
+            529
+          ],
+          "proxyRadius": 110,
+          "master": "M01-keychain-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 4,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Two original attached hands: sand release and bag rest. Review all fingers/wrists and keychain separately, plus falling sand and knee/boot continuity.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S25",
+      "inputSha256": "aa7b931b1a8f6f6e6d41de451edd5c6f3487a120d47c5500d6890ccc3225078f",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S25-input-f000.jpg",
+      "imageSha256": "1977eddc6098cc6ecfda0417245e287c3d2dceb60593d8f26ffdf60a47f9816c",
+      "designMaster": null,
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [],
+      "finalSecondsUnchanged": 3,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Empty canyon first frame, no merchandise. Check full landscape and dust continuity, invented people and native texture realism.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S26",
+      "inputSha256": "e9fbe321cc09ecce3c411090994b946fdb1cf832c431df3ed747087b081a97c7",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S26-input-f000.jpg",
+      "imageSha256": "2a748ac5c28673ae5f275cfd71a663b2c537ab8150a9a3d493bfdd0677049d52",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M08-pouch-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "seat-pouch-print",
+          "proxyCenter": [
+            945,
+            505
+          ],
+          "proxyRadius": 97,
+          "master": "M08-pouch-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 5,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Pouch on empty passenger seat. Review print features, moving roadside continuity and reflections for real faces or extra people.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S27",
+      "inputSha256": "f1dce035f0d7921b44afddfe77799dfbfbd10547080232abe77ee0afde47067d",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S27-input-f000.jpg",
+      "imageSha256": "6ea457a3ef27eef6ce5056baf15e98daf7819ed7d3a2692908cf8ddd16430c8d",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M01-keychain-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "seat-keychain",
+          "proxyCenter": [
+            588,
+            355
+          ],
+          "proxyRadius": 115,
+          "master": "M01-keychain-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 2,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Keychain attached to original chain against seat. Check inert open-eye print, chain stability and passing lake/woodland.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S28",
+      "inputSha256": "e0a65ab5e03af81383c83289ef5048d6242ce0a118eb3bfc7e7dd1062afaa59a",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S28-input-f000.jpg",
+      "imageSha256": "929c96a7c73d5aeae7499d9411966e2860aad10c9b581f1d4dac14c0e777b3d2",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "left-screen-original-wrapper-hand",
+          "proxyCenter": [
+            522,
+            376
+          ],
+          "proxyRadius": 118
+        },
+        {
+          "kind": "right-screen-original-wrapper-hand",
+          "proxyCenter": [
+            913,
+            366
+          ],
+          "proxyRadius": 98
+        },
+        {
+          "kind": "cup-sticker",
+          "proxyCenter": [
+            1115,
+            370
+          ],
+          "proxyRadius": 65,
+          "master": "M09-sticker-v1.png"
+        },
+        {
+          "kind": "bread-and-original-paper",
+          "proxyCenter": [
+            817,
+            508
+          ],
+          "proxyRadius": 135
+        }
+      ],
+      "finalSecondsUnchanged": 5,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Original wrapper is physically above the bread at first frame. It should lower once, not become a detached white ghost; inspect paper/bread separately from both attached hands and cup sticker.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S29",
+      "inputSha256": "de3fc022e54e70d3c7b55ea979450a46f31c2ef39eff6530490e81e0926b21c1",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S29-input-f000.jpg",
+      "imageSha256": "c8eadb4cd2d7193214f3d8a3d1dc20677099ad3fbf934392b52be42f1b9e789e",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M05-badge-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "plush-face",
+          "proxyCenter": [
+            521,
+            501
+          ],
+          "proxyRadius": 69,
+          "master": "M04-plush-v1.png"
+        },
+        {
+          "kind": "separate-badge",
+          "proxyCenter": [
+            293,
+            408
+          ],
+          "proxyRadius": 52,
+          "master": "M05-badge-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 4,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Two separate items: M04 plush and M05 bag badge. Also inspect the dock and distant boats for newly invented people.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S30",
+      "inputSha256": "3ac2834bd756086cc6b5452b31938b28db88c81c758a0c643685558db586994c",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S30-input-f000.jpg",
+      "imageSha256": "fddc8b325047b4e0534d5fe8cb87778d74a01699483d443fdbf77825d8078657",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M08-pouch-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "pouch-print",
+          "proxyCenter": [
+            724,
+            403
+          ],
+          "proxyRadius": 90,
+          "master": "M08-pouch-v1.png"
+        },
+        {
+          "kind": "rope-resting-hand",
+          "proxyCenter": [
+            307,
+            387
+          ],
+          "proxyRadius": 145
+        },
+        {
+          "kind": "far-right-original-hand",
+          "proxyCenter": [
+            1292,
+            309
+          ],
+          "proxyRadius": 76
+        }
+      ],
+      "finalSecondsUnchanged": 3,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "One original hand rests on rope and a second original hand is partly visible at the far-right edge. Check both attachments and pouch print throughout.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S31",
+      "inputSha256": "7343e9a678c2f9013782f06f922d29e6c0a9c5b7a02eda4fb5fd3bd1e7e4d587",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S31-input-f000.jpg",
+      "imageSha256": "ddb2984f8ccf0d8133ee1c8290c8ef814031bca701400ae3d52b60bdce78be78",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M01-keychain-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "bag-keychain",
+          "proxyCenter": [
+            1038,
+            510
+          ],
+          "proxyRadius": 83,
+          "master": "M01-keychain-v1.png"
+        },
+        {
+          "kind": "railing-resting-hand",
+          "proxyCenter": [
+            303,
+            229
+          ],
+          "proxyRadius": 120
+        }
+      ],
+      "finalSecondsUnchanged": 5,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Original hand on ferry railing with bag keychain. Check wrists/fingers, print, moving wake and reflections without adding passengers.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S32",
+      "inputSha256": "7fd14f4dff61f7538a78c9a98a78866c15844939f6676bd3bdefc8b414d31bf0",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S32-input-f000.jpg",
+      "imageSha256": "a0a4324612fbb47328344d0b30d64ea8fb3942de0b2cb338c9dff80c7ae2a445",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "camera-sticker",
+          "proxyCenter": [
+            588,
+            298
+          ],
+          "proxyRadius": 107,
+          "master": "M09-sticker-v1.png"
+        },
+        {
+          "kind": "left-screen-camera-hand",
+          "proxyCenter": [
+            370,
+            285
+          ],
+          "proxyRadius": 170
+        },
+        {
+          "kind": "right-screen-camera-hand",
+          "proxyCenter": [
+            924,
+            366
+          ],
+          "proxyRadius": 220
+        }
+      ],
+      "finalSecondsUnchanged": 4,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Two original hands hold a camera, with M09 print on its front. Check fingers, shutter contact, lens/reflection and no third hand; do not infer a face from camera hardware.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S33",
+      "inputSha256": "c97b13608b72696469715568c99e1df356a0317675992d930f40e2430ba76050",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S33-input-f000.jpg",
+      "imageSha256": "e521f94d058f3998faa4f59ddeda8f720948c0ddb832f55fe26b414e496c577a",
+      "designMaster": null,
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [],
+      "finalSecondsUnchanged": 3,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Empty rocky shore at sunset. Check wave, foam and rock continuity and absence of added people throughout native output.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S34",
+      "inputSha256": "daa401207c3ce2021c69aa35c6820d9c8b04c93db3a8b7fcc5e9debca0c1d44c",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S34-input-f000.jpg",
+      "imageSha256": "3e6fe322019e279d3cdc9205b522aa975db3aa9eafad7ec5e96a5348d101c38c",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/P03-back-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "back-facing-character",
+          "master": "P03-back-v1.png"
+        },
+        {
+          "kind": "left-screen-original-hand",
+          "proxyCenter": [
+            552,
+            385
+          ],
+          "proxyRadius": 40
+        },
+        {
+          "kind": "right-screen-original-hand",
+          "proxyCenter": [
+            754,
+            377
+          ],
+          "proxyRadius": 40
+        }
+      ],
+      "finalSecondsUnchanged": 5,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Illustrated female character strictly from behind on coast path. Check full continuous gait, both hands and no face-revealing turn or extra walkers.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S35",
+      "inputSha256": "136b01211af838c360633b22d6f68426f62d0aa2f423cb2fe5aea086fa011302",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S35-input-f000.jpg",
+      "imageSha256": "d3228780b9aaba8b81741090e8d2e8c989695b4be25371156791f4a20c7a0294",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "water-touching-hand",
+          "proxyCenter": [
+            816,
+            573
+          ],
+          "proxyRadius": 120
+        },
+        {
+          "kind": "knee-resting-hand",
+          "proxyCenter": [
+            326,
+            148
+          ],
+          "proxyRadius": 120
+        },
+        {
+          "kind": "bottle-sticker",
+          "proxyCenter": [
+            959,
+            287
+          ],
+          "proxyRadius": 65,
+          "master": "M09-sticker-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 4,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Two original hands: one touches stream, the other rests on knee. Review palm/finger articulation, water contact/ripples and bottle sticker separately.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S36",
+      "inputSha256": "6ce161206e17a52f38adb334eacc7312e36e4eb93eb8d967d3a0f9019efadba5",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S36-input-f000.jpg",
+      "imageSha256": "7b3613dc31080ff753b6e9fbb96d756687d7ada2ccc6988ff002d30e014d3fe6",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M03-clearcard-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "transparent-card-print",
+          "proxyCenter": [
+            225,
+            516
+          ],
+          "proxyRadius": 100,
+          "master": "M03-clearcard-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 3,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Transparent M03 card against waterfall. Check printed open eyes and round glasses, fixed art, transparency and water continuity.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S37",
+      "inputSha256": "8efb5d995fd3384428c35acb6f0390970fce00072b14ee59f7f7637ffe999e2e",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S37-input-f000.jpg",
+      "imageSha256": "aadd22403d84802d37437a4992549cb865c38d2b3a6a7e8a05f7159e52af95a1",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M08-pouch-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "pouch-face",
+          "proxyCenter": [
+            772,
+            331
+          ],
+          "proxyRadius": 50,
+          "master": "M08-pouch-v1.png"
+        },
+        {
+          "kind": "left-screen-original-hand",
+          "proxyCenter": [
+            260,
+            216
+          ],
+          "proxyRadius": 56
+        },
+        {
+          "kind": "pouch-holding-hand",
+          "proxyCenter": [
+            697,
+            239
+          ],
+          "proxyRadius": 58
+        }
+      ],
+      "finalSecondsUnchanged": 5,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Original walking lower body with one free hand and one pouch-carrying hand. Check continuous alternating steps, both attachments and pouch print.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S38",
+      "inputSha256": "d244e0f5881fe5337262cc676cb6b104560a5bba5644ec64b41acfbd505c34cd",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S38-input-f000.jpg",
+      "imageSha256": "2f15dca2908b20f206e4b7166fa4108b11847f4c63206e6f1edc96995d83531b",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M01-keychain-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "bag-keychain",
+          "proxyCenter": [
+            929,
+            444
+          ],
+          "proxyRadius": 88,
+          "master": "M01-keychain-v1.png"
+        },
+        {
+          "kind": "railing-resting-hand",
+          "proxyCenter": [
+            404,
+            506
+          ],
+          "proxyRadius": 126
+        }
+      ],
+      "finalSecondsUnchanged": 4,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Original railing-resting hand and bag keychain. Check fingers/wrist, canal reflections and opposite bank for any new person.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S39",
+      "inputSha256": "3c24bc082c3f553d23d7eb1f67cd80099171d466e01296303bde06488c29d458",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S39-input-f000.jpg",
+      "imageSha256": "62ca9af6684774712691bd5bd8357d2a83250b0876141a80332a6a29472fd5d9",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/I01-butterfly-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "blue-butterfly-motif",
+          "proxyCenter": [
+            170,
+            132
+          ],
+          "proxyRadius": 102,
+          "master": "I01-butterfly-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 3,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Blue butterfly motif by the shop window; no person in the alley first frame. Check full motion and reflections rather than assigning human-face meaning to household objects.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S40",
+      "inputSha256": "ccdea9582412de63a2431fe03bb83889f1d0c60e293d30e15d767ce79eb286f2",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S40-input-f000.jpg",
+      "imageSha256": "cef856aef1e7e404dd9082cf22a9afd102aaaca6c9cd7c1b270fb6dd35e672d3",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "window-sticker",
+          "proxyCenter": [
+            904,
+            415
+          ],
+          "proxyRadius": 94,
+          "master": "M09-sticker-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 5,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Printed character on night train window. Check inert open-eye print, reflection of seats and moving neon without invented real passengers.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S41",
+      "inputSha256": "e0d133e24f05fcf01fd887a6ab0c7acddd23b0f018efb28432a0d59be611cebd",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S41-input-f000.jpg",
+      "imageSha256": "9cddac4b25840e2685a8169206468594e8f6179dcbb70d2fb2a6a075dd328202",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M04-plush-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "plush-face",
+          "proxyCenter": [
+            640,
+            469
+          ],
+          "proxyRadius": 53,
+          "master": "M04-plush-v1.png"
+        },
+        {
+          "kind": "separate-round-charm",
+          "proxyCenter": [
+            378,
+            464
+          ],
+          "proxyRadius": 40,
+          "master": "M05-badge-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 4,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Plush plus separate small round charm/badge; review M04 and M05 independently. Original trees are part of this input scene, unlike the rejected new foreground tree in S48.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S42",
+      "inputSha256": "cc71b58558c2b7d109b84b164c2f8893c50e4b4e69636e9d8a998e893a1bc072",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S42-input-f000.jpg",
+      "imageSha256": "bf2a32b9817a98e9464cf65a1c44f218df56ad6c29e8eb8f7a59a67d00e67155",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "mug-print",
+          "proxyCenter": [
+            838,
+            353
+          ],
+          "proxyRadius": 70,
+          "master": "M09-sticker-v1.png"
+        },
+        {
+          "kind": "cup-holding-hand",
+          "proxyCenter": [
+            913,
+            310
+          ],
+          "proxyRadius": 86
+        },
+        {
+          "kind": "lap-resting-hand",
+          "proxyCenter": [
+            1286,
+            470
+          ],
+          "proxyRadius": 90
+        }
+      ],
+      "finalSecondsUnchanged": 3,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Two original hands: cup-holding and lap-resting. Check the handle grip, mug print and head crop; no face should enter frame.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S43",
+      "inputSha256": "4a2c416885294f8c459c112e1ed4eef3c2491ea22122d56c8280aeefeba8f856",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S43-input-f000.jpg",
+      "imageSha256": "ba8f9813c94a69a5935d964dc851d779d273fbeba1d0a90a22ecab92893846a6",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M03-clearcard-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "transparent-card-print",
+          "proxyCenter": [
+            734,
+            529
+          ],
+          "proxyRadius": 61,
+          "master": "M03-clearcard-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 5,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Transparent card by lantern at night. Check print features, reflected lantern light, background silhouettes and absence of added people.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S44",
+      "inputSha256": "722660288d885b9c94c45f463588fc85b843c2085433459c220eca8d0bfb7eaf",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S44-input-f000.jpg",
+      "imageSha256": "796e8465c3ce3f546dc4f7f966e962209838db3a3a58dc9586d1245a460284b4",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M08-pouch-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "pouch-print",
+          "proxyCenter": [
+            320,
+            358
+          ],
+          "proxyRadius": 89,
+          "master": "M08-pouch-v1.png"
+        },
+        {
+          "kind": "right-hand-zipper-grip",
+          "proxyCenter": [
+            977,
+            234
+          ],
+          "proxyRadius": 125
+        }
+      ],
+      "finalSecondsUnchanged": 4,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Tent is CLOSED in actual input first frame. Right hand must unzip DOWN once, move cloth aside and reveal the exterior within the unchanged four-second used section, then stay open; no reverse zip.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S45",
+      "inputSha256": "53ec165d33cd2275975302fbcd3f10a769d1b9f6b06077fc09642f2688245929",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S45-input-f000.jpg",
+      "imageSha256": "093a9371c7afa7d1957d78b9d37dbf571118bb3cab6a289401ef5a639ec6215e",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M01-keychain-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "suitcase-keychain",
+          "proxyCenter": [
+            624,
+            340
+          ],
+          "proxyRadius": 103,
+          "master": "M01-keychain-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 2,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Original clothed legs walk beside rolling suitcase and attached keychain. Check continuous gait, wheel contact, chain and open-eye print.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S46",
+      "inputSha256": "0adb37dc12b49d312e4baece9357f98dca4078a051685fc50b652011edf25340",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S46-input-f000.jpg",
+      "imageSha256": "d3e76d6f74ae34eb3d54688d89a4bcb5f3ad4723a0f50c17cd3121711654ea16",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "window-sticker",
+          "proxyCenter": [
+            409,
+            190
+          ],
+          "proxyRadius": 100,
+          "master": "M09-sticker-v1.png"
+        },
+        {
+          "kind": "open-palm-and-fingers",
+          "proxyCenter": [
+            768,
+            282
+          ],
+          "proxyRadius": 190
+        }
+      ],
+      "finalSecondsUnchanged": 5,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Original relaxed palm by train window with sticker. Check five fingers, normal articulation and wrist attachment; preserve the full five-second used duration.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S47",
+      "inputSha256": "b782478832d2ba23472e0aa8b649d4bddb62497a32e79b054090c5349c5d858a",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S47-input-f000.jpg",
+      "imageSha256": "289994f09b80cf53b0a67fb4af7c07695de1a4cd8e67980fde755352f5e0aaad",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M04-plush-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "plush-face",
+          "proxyCenter": [
+            751,
+            364
+          ],
+          "proxyRadius": 105,
+          "master": "M04-plush-v1.png"
+        },
+        {
+          "kind": "left-screen-attached-hand",
+          "proxyCenter": [
+            544,
+            526
+          ],
+          "proxyRadius": 113
+        },
+        {
+          "kind": "right-screen-attached-hand",
+          "proxyCenter": [
+            896,
+            512
+          ],
+          "proxyRadius": 112
+        }
+      ],
+      "finalSecondsUnchanged": 4,
+      "sourceSecondsToReview": 5,
+      "observationForFutureReview": "Two uncrossed attached forearms approach the plush from behind bench. Hands grasp its lower corners at first frame; toy arms are sewn limbs. Check a small meaningful straightening/turn and release, no third real hand or spatially impossible wrist.",
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S48",
+      "inputSha256": "8ac2c450a4b919086f365fbb4cc7df8e98cefece6e0c2cf913f7aabad4c31d9b",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S48-input-f000.jpg",
+      "imageSha256": "b985b24c33f77293dfa64772b3c86ea43be81e50a2ff8e8849d334c70ad28743",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/I01-butterfly-v1.png",
+      "inputFrameActuallyViewed": true,
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "original-blue-butterfly",
+          "proxyCenter": [
+            1264,
+            685
+          ],
+          "proxyRadius": 46,
+          "master": "I01-butterfly-v1.png"
+        }
+      ],
+      "finalSecondsUnchanged": 14,
+      "sourceSecondsToReview": 14,
+      "observationForFutureReview": "Original tree-free coastal first frame with blue butterfly at lower right. Preserve original wing cadence with no slowdown, prohibit newly invented foreground tree/branch, inspect all 336 native source frames and keep the fourteen-second ending/205-second film.",
       "actual4KReview": "not performed by this input check"
     }
   ],
