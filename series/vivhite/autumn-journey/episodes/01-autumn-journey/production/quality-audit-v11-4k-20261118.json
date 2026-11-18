@@ -595,14 +595,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S14",
+      "sourceSha256": "4f962fec098196577b9005a959876c8700c4eddf1c671c52432ad36c125dbd9b",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T18:33:31.112257+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S14-corrected-v1/S14-4f962fec09-all-frames-01.png",
+          "sha256": "4ba4f54afcdce7f91ff8899a5fa7760155a02bbcae4193abbfdce42c9d36efd8",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S14-corrected-v1/S14-4f962fec09-all-frames-02.png",
+          "sha256": "2550ce4a75b09f910c929c2bbadd1f110c7dce1a6e7115c3b825e6d3e867d0fb",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S14-corrected-v1/S14-4f962fec09-all-frames-03.png",
+          "sha256": "83e9210993b12b6a9c3b012763acbc9d416a862926dac8057708c07b2da3ddcb",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S14-corrected-v1/S14-4f962fec09-all-frames-04.png",
+          "sha256": "3547f1baa0f560e87a23b630102a14a352b7f58832516bba8c122b84b91b253b",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/S14-corrected-v1/S14-4f962fec09-face-candidates.png",
+        "sha256": "7cce9a72b0e3708b0a0e155eccc31e1398199e7c8b9406505c768fb990da8ee7",
+        "items": 9
+      },
+      "observation": "Actually viewed all 120 raw and all 120 corrected whole-scene frames through eight JPEG pages, all 120 raw and all 120 corrected native badge crops through sixteen pages, raw and corrected native whole frames 0/119, raw badge frame 0 and corrected badge frame 119. Original M05 RGBA artwork, actual 768P input frame 0, both coordinate grids and all eight first-frame registration trials viewed. The first four trials retained residual original glasses contours and were not used for complete videos. Trial 06 selected for the sole full correction. All 48 raw detector boxes from 46 frames and all 58 corrected boxes from 56 frames actually viewed through three and four native-crop pages; detections correspond to the original printed badge, defocused stone-wall joints and a brown ground leaf, not people. Wet glass, shelter posts, road, bag, straps and zipper remain continuous and unoccupied by people, without observed real human faces, reflections, new limbs or scene reset. The thin original water trail runs beside the badge edge and over the bag, not through its printed eyes. Both raw eyes were OPEN; star-iris and thin gold-glasses detail was weakened, also evident in the actual input. M05 texture now keeps fixed open eyes, matching star irises and thin gold round glasses through all 120 corrected crops, without observed blink, double contour or visible tracking drift. Feathered mask scale 1.6 also restores the original printed mouth and nearby fringe; this is not strictly an iris-only pixel edit. Outer badge rim, clothes, original prop and scene are retained; remaining non-restored print remains softened. Whole source re-encoded at CRF16; mask-exterior pixels are not claimed bit-identical. All originals, trials and evidence preserved. Final uses the original three seconds, native frames 0-71; no other shot length changed. Assistant image-sequence QA, not human continuous playback, user aesthetic acceptance or final-film approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Thirteen current source selections reviewed; seven original reference-appearance rejections retained.",
-  "reviewedSourceCount": 13,
-  "acceptedSourceCount": 13,
+  "scope": "Fourteen current source selections reviewed; eight original reference-appearance rejections retained.",
+  "reviewedSourceCount": 14,
+  "acceptedSourceCount": 14,
   "rejectedCurrentSourceCount": 0,
-  "rejectedHistoricalSourceCount": 7,
-  "pendingSources": 35,
+  "rejectedHistoricalSourceCount": 8,
+  "pendingSources": 34,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -688,9 +734,21 @@
       "parentSha256": "ffa84bef0ce79eeaaa0ef9805a950384f393870067130321f7e272d6a8511031",
       "receiptSha256": "16cb51f44ad60aea931dae260b0a313823c5cb30c736fe3f39cd8442d861336b",
       "inspectionReportSha256": "fc5938f39e1831a85ee0b1e8300babc1c3f290da7a1c367f0b6c38e43e388b80"
+    },
+    "S14": {
+      "path": "corrections/S14-reference-eyes-v1.mp4",
+      "parent": "sources/S14.mp4",
+      "receipt": "corrections/S14-reference-eyes-v1.json",
+      "inspectionReport": "correction-inspections/S14-reference-eyes-v1/S14.json",
+      "selectedAt": "2026-11-18T18:33:30.989994+00:00",
+      "sha256": "4f962fec098196577b9005a959876c8700c4eddf1c671c52432ad36c125dbd9b",
+      "parentSha256": "ba0d8cae8441195f308c5c963dd94474cc6b65e9815d64d7b67e26399580d486",
+      "receiptSha256": "9f7351beb6bc99478605f809ef2918a8052bde3acd09eb43f73d6ad8c94d51a9",
+      "inspectionReportSha256": "efe9a61522ec9ebeaa6ac7c5cc6b127dedf9d9db31fda440c884c72b2614a448",
+      "reason": "All 120 raw and corrected whole-scene frames and badge crops, all original and corrected native detector boxes actually viewed; M05 printed texture restoration reviewed."
     }
   },
-  "snapshotAt": "2026-11-18T17:33:42.568195+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 2400,
+  "snapshotAt": "2026-11-18T18:33:31.261489+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 2640,
   "rejectedCorrectionCandidateCount": 2
 }
