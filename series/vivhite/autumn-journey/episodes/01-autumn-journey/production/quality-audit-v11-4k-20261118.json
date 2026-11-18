@@ -775,14 +775,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S18",
+      "sourceSha256": "45a3a9eb07bf94822b4ac7a6b4405e32f5472661709d7894b6be1c8d357e192e",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T23:37:01.076985+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S18-45a3a9eb07-all-frames-01.png",
+          "sha256": "25182771078bb1aa53d106bf52da3fb511de1f41eec8aec4f0d505dadc2ca56a",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S18-45a3a9eb07-all-frames-02.png",
+          "sha256": "6d57c72cd2c883c10b7550f31bbe70d20984c0a8f91877a2ef75376bfbe46f77",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S18-45a3a9eb07-all-frames-03.png",
+          "sha256": "eb17d9eb40b5e7b0dd2d136cb6b369cf8edafefa307075bbe89e6c338b4ecc04",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S18-45a3a9eb07-all-frames-04.png",
+          "sha256": "6fb87b6fc9074724a5338a5f76b21196cbfc196c1cb396e9d8bd3eb34911fbb5",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S18-45a3a9eb07-face-candidates.png",
+        "sha256": "69e0e60ac097444347d15d412db1947dbad2325d19636b318371b85af8940802",
+        "items": 37
+      },
+      "observation": "Actually viewed all120 whole-scene frames through all four ordered JPEG pages, native whole-scene frames0/119, actual768P input frame0 and the previously reviewed complete120-frame input motion baseline. All537 native detector-box crops from all120 frames were actually viewed through all34 JPEG candidate pages. Candidate regions concern dry grass stems, seed heads, foliage and defocused grass/ground/treeline texture, not observed real human heads/faces or added people. Golden dry meadow, pink-brown seed heads, uneven green ground patches and distant low vegetation remain continuous. Grass and flower stems sway gently with continuous camera movement; zero machine cut flags and no observed scene reset. No person, limb, printed character face, text or new foreground prop was observed. The actual approved input did not contain an identified blue butterfly in its complete120-frame baseline; the4K source is compared with that actual input, rather than inserting a butterfly from legacy descriptive prose. No printed-eye restoration or new source correction is needed. All original five seconds/native0-119 remain selected, with every other shot timing unchanged. The all537 candidate coverage is through native-crop JPEG contact pages, not individual full-size viewing of all retained PNGs. Assistant frame-sequence QA, not human continuous playback, hearing, user aesthetic acceptance or final-film/persona approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Seventeen current source selections reviewed; eleven original reference-appearance rejections retained.",
-  "reviewedSourceCount": 17,
-  "acceptedSourceCount": 17,
+  "scope": "Eighteen current source selections reviewed; eleven original reference-appearance rejections retained.",
+  "reviewedSourceCount": 18,
+  "acceptedSourceCount": 18,
   "rejectedCurrentSourceCount": 0,
   "rejectedHistoricalSourceCount": 11,
-  "pendingSources": 31,
+  "pendingSources": 30,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -918,7 +964,7 @@
       "reason": "Both complete120-frame whole-scene and standee-face sequences, all raw/corrected detector boxes and original non-chibi M02 actually reviewed."
     }
   },
-  "snapshotAt": "2026-11-18T22:23:33.405367+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 3360,
+  "snapshotAt": "2026-11-18T23:37:01.154710+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 3480,
   "rejectedCorrectionCandidateCount": 2
 }

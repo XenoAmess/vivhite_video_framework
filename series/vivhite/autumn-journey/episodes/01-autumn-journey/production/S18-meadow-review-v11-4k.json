@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "vivhite-native-4k-scene-visual-review-1",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "reviewedAt": "2026-11-18T23:37:01.125114+00:00",
+  "shotId": "S18",
+  "source": {
+    "jobId": "video_gen_1b7dc125cb6c4460ad4bdad545d7be00",
+    "sha256": "45a3a9eb07bf94822b4ac7a6b4405e32f5472661709d7894b6be1c8d357e192e",
+    "sourceSeconds": 5,
+    "inspectionReportSha256": "8101ac5d88cc981968cb4ccd919f4daa78de842512a2fe350f89971c873e4d3f",
+    "decodedFrames": 120
+  },
+  "coverage": {
+    "wholeSceneFramesActuallyReviewed": 120,
+    "orderedWholeScenePagesActuallyViewed": 4,
+    "nativeWholeSceneFramesViewed": [
+      0,
+      119
+    ],
+    "actual768pInputFrameViewed": 0,
+    "inputSourceSha256": "42253080c7292b3fafb3f38a376a45b4aab9c1c1b438e17c3df03023757e909d",
+    "inputMotionBaseline": "production/input-motion-baselines-v11-S13-S18.json",
+    "allNativeCandidates": {
+      "receipt": "assets/generated/production-v11-native-4k-001/review/S18-raw/all-candidates/S18-45a3a9eb07-all-candidates.json",
+      "receiptSha256": "0e849e7fd25bce5822fe7c04f8dc2e7d01b6f7dfe5d0e86a04a518553c2722fe",
+      "machineCandidateFrames": 120,
+      "machineCandidateBoxes": 537,
+      "nativeCropViewingPagesActuallyViewed": 34,
+      "allNativeCandidatesReviewed": true,
+      "allIndividualPngsViewedAtFullSize": false
+    }
+  },
+  "decision": "accepted-original-source",
+  "observation": "Actually viewed all120 whole-scene frames through all four ordered JPEG pages, native whole-scene frames0/119, actual768P input frame0 and the previously reviewed complete120-frame input motion baseline. All537 native detector-box crops from all120 frames were actually viewed through all34 JPEG candidate pages. Candidate regions concern dry grass stems, seed heads, foliage and defocused grass/ground/treeline texture, not observed real human heads/faces or added people. Golden dry meadow, pink-brown seed heads, uneven green ground patches and distant low vegetation remain continuous. Grass and flower stems sway gently with continuous camera movement; zero machine cut flags and no observed scene reset. No person, limb, printed character face, text or new foreground prop was observed. The actual approved input did not contain an identified blue butterfly in its complete120-frame baseline; the4K source is compared with that actual input, rather than inserting a butterfly from legacy descriptive prose. No printed-eye restoration or new source correction is needed. All original five seconds/native0-119 remain selected, with every other shot timing unchanged. The all537 candidate coverage is through native-crop JPEG contact pages, not individual full-size viewing of all retained PNGs. Assistant frame-sequence QA, not human continuous playback, hearing, user aesthetic acceptance or final-film/persona approval.",
+  "correctionsGenerated": 0,
+  "originalSourceAndAllProcessFilesRetained": true,
+  "finalUsedNativeFrames": 120,
+  "finalSeconds": 5,
+  "finalStartFrame": 1980,
+  "allOtherShotTimingsUnchanged": true,
+  "humanFullPlayback": false,
+  "humanListening": false,
+  "formalFilmApproval": false
+}
