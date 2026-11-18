@@ -85,6 +85,8 @@ S14的M05徽章还暴露了遮罩过小的另一种问题：前四张首帧试�
 
 S15提杯的原生4K版本使用M09母版，四张首帧试样逐一查看后采用01：`--reference-eyes 455 545 705 520 --target-eyes 1520 1255 1590 1248 --tracking-center 541 466 --tracking-radius 70 --mask-scale 1.08 --gain-rgb 0.86 0.84 0.76 --frames 120`。修复范围为眼睛／镜框及羽化内相邻印刷像素，真实手指没有经过这一区域；不能据此推断别的提杯镜头也没有遮挡。两版整景、印花及原有两只手分别实际看完120帧，确认提起与稳捧连续，才绑定采用修订。两版检测器均为零候选，依然完成整景语义检查。原始眼睛始终睁开，问题是细节保真；其余头发／身体仍软，整帧重新编码。详见[S15收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S15-reference-restoration-v11-4k.json)。
 
+S16石阶布袋的M08印花中，原眼睛睁开，但虹膜／镜片被粗灰紫线替代。六张首帧试样均保留并查看，采用02，只做一份完整修订：`--reference-eyes 809 463 904 450 --target-eyes 1887 900 1957 880 --tracking-center 673 321 --tracking-radius 65 --mask-scale 0.55 --gain-rgb 0.90 0.88 0.84 --frames 120`。过窄试样残留旧镜片线，过宽试样影响头发／领口，因此不能只按“越大覆盖越全”选遮罩。实际采用遮罩也涉及相邻刘海、脸颊和嘴部，保留嘴下原布料褶皱；其余未恢复印花仍偏软。两版整景／印花各120帧、原始可见腿部120帧、原始299框和修订276框均实际复核后才采用，见[S16收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S16-reference-restoration-v11-4k.json)。腿部交替迈动可见，但脚多在画外，不把局部序列检查扩写成完整足部触地验收。
+
 ## 可复用的处理命令
 
 在仓库根目录使用已配置的Python环境，FFmpeg／FFprobe须在PATH中。以下参数来自实际S15提杯镜头，但输出使用新的示例文件名，不覆盖既有采用版本。迁移到其他镜头时必须重新标定坐标。

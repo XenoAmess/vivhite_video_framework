@@ -683,14 +683,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S16",
+      "sourceSha256": "9f1f97e7a30d7b0b4176790d095835f38acb3ff78ec51cd95383ac011eaae4f3",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T21:13:31.673435+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S16-corrected-v1/S16-9f1f97e7a3-all-frames-01.png",
+          "sha256": "098684abfca885183badc8bc51564ffcdc6a7f50427d5b20d60944b8530d478f",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S16-corrected-v1/S16-9f1f97e7a3-all-frames-02.png",
+          "sha256": "9b936bf4518986892137908fa52d9f81cc3d9815f937b9dc499ae9ca31bf774d",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S16-corrected-v1/S16-9f1f97e7a3-all-frames-03.png",
+          "sha256": "e870855f7ce3c2da6b0a7fe2d786315f5af342e3ce15fcad0750f639becb6353",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S16-corrected-v1/S16-9f1f97e7a3-all-frames-04.png",
+          "sha256": "50b46169e8139644ece841e8b79823496d1556b6d74aaeea42194a9f1f9c8755",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/S16-corrected-v1/S16-9f1f97e7a3-face-candidates.png",
+        "sha256": "9a57600aabf8ab0649631595cbb70ef616aba874e36b5ce5521d865895c35698",
+        "items": 19
+      },
+      "observation": "Actually viewed all 120 raw and all 120 corrected whole-scene frames through eight JPEG pages, all 120 raw and all 120 corrected native pouch-print crops through sixteen pages, all 120 raw visible-leg-region crops through eight pages, raw and corrected native whole frames 0/119, raw print 0 and corrected print 119. Original M08 RGBA master, actual 768P input frame 0, both coordinate grids and all six first-frame registration trials actually viewed. Chosen trial 02, mask scale .55, used for the only full correction. Narrow trial 01 retained gray old lens strokes; broad trials 05/06 affected hair/collar and were not adopted or made into videos. All 299 raw boxes from 118 frames and all 276 corrected boxes from 114 frames actually viewed through 19 and 18 native-crop pages. They are existing printed art, clothing/bag edges, defocused leaves/stone/moss/tree holes and rail/posts, not observed real human faces or extra people. Same cropped female, head outside frame, white/deep-violet/gold feminine clothing and white legwear. Visible thighs and knees alternate bending/advancing from the beginning while skirt and pouch sway; stone steps, posts and gray rail move continuously. Feet mostly outside frame, so full foot-ground contact is not certified. Eleven cut flags in each version correspond to step/camera movement, not an observed scene reset. Both raw eyes were OPEN but iris/lens strokes were deformed and thin gold round glasses/star irises lost, already weakened in the 768P input. M08 original texture now keeps fixed open star irises and thin gold glasses on the same pouch through all 120 corrected crops, without observed blinking, doubled contours or visible tracking slide. Actual feathered mask also blends nearby printed fringe, cheek and mouth pixels; not strictly iris-only. Outer printed head, body, bag and physical scene retained. No real object crosses the restored eye/glasses region; original cloth crease below the mouth remains. Remaining non-restored print is softened/desaturated. Whole-source CRF16 re-encoding means mask-exterior pixels are not claimed bit-identical. Original source and every still trial retained. Original five-second final length/native frames 0-119 and every other shot timing unchanged. Assistant image-sequence QA, not human continuous playback, user aesthetic acceptance, listening approval or final-film/persona approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Fifteen current source selections reviewed; nine original reference-appearance rejections retained.",
-  "reviewedSourceCount": 15,
-  "acceptedSourceCount": 15,
+  "scope": "Sixteen current source selections reviewed; ten original reference-appearance rejections retained.",
+  "reviewedSourceCount": 16,
+  "acceptedSourceCount": 16,
   "rejectedCurrentSourceCount": 0,
-  "rejectedHistoricalSourceCount": 9,
-  "pendingSources": 33,
+  "rejectedHistoricalSourceCount": 10,
+  "pendingSources": 32,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -800,9 +846,21 @@
       "receiptSha256": "f58ee5d88e32bf437ff7ea3e6b66ea78a75f6114b123fd7080569080371c76b8",
       "inspectionReportSha256": "d062fb969dce7c32e322a744d077655babf6405a2f5c6b134ec739f520158bad",
       "reason": "Both complete 120-frame whole-scene versions, both complete print details, each original hand across 120 frames and original M09 actually reviewed."
+    },
+    "S16": {
+      "path": "corrections/S16-reference-eyes-v1.mp4",
+      "parent": "sources/S16.mp4",
+      "receipt": "corrections/S16-reference-eyes-v1.json",
+      "inspectionReport": "correction-inspections/S16-reference-eyes-v1/S16.json",
+      "selectedAt": "2026-11-18T21:13:31.445236+00:00",
+      "sha256": "9f1f97e7a30d7b0b4176790d095835f38acb3ff78ec51cd95383ac011eaae4f3",
+      "parentSha256": "66f633a0f4fc07df462a2cab501b148198c4cf531c767ccb8c957326408fa586",
+      "receiptSha256": "0111808ce9505a7ec8e147b2030e4227297e6a5e2bf29d3ab354accd4fd36eed",
+      "inspectionReportSha256": "eaff863a4ed0e8c42195328354fc69fd5db9fdb8a4dd3795ab5cd5902bef79ba",
+      "reason": "Both complete 120-frame whole-scene/print versions, all visible-leg crops and all raw/corrected detector boxes actually reviewed against original M08."
     }
   },
-  "snapshotAt": "2026-11-18T19:48:16.271031+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 2880,
+  "snapshotAt": "2026-11-18T21:13:31.857089+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 3120,
   "rejectedCorrectionCandidateCount": 2
 }

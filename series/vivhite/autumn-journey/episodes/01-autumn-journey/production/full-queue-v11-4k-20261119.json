@@ -1,0 +1,515 @@
+{
+  "schemaVersion": "vivhite-full-native-4k-submission-1",
+  "at": "2026-11-18T20:56:33.022467+00:00",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "controllerRuntime": "controller-008",
+  "controllerPid": 64692,
+  "generationWorker": {
+    "pid": 201936,
+    "creationTicks": 134395062559242000
+  },
+  "all48ShotsHaveUniqueServerJobIds": true,
+  "submittedRequestsRechecked": 48,
+  "counts": {
+    "completed": 16,
+    "in_progress": 1,
+    "queued": 31
+  },
+  "remainingUnsubmitted": [],
+  "effectiveSubmissionWindow": 32,
+  "serverGpuWindowsPerLoad": 1,
+  "gpuConcurrencyChanged": false,
+  "normalQueueNoPriorityOverride": true,
+  "remoteCancellations": 0,
+  "stateSource": "Existing durable client local job journals, not an extra HTTP status poll.",
+  "queueCost": "Uploaded input storage and persistent task metadata; queued tasks do not start additional GPU inference.",
+  "fixedFinalSeconds": 205,
+  "fixedFinalFrames": 6150,
+  "S20ContinuousSeconds": 10,
+  "S46Seconds": 5,
+  "S48SourceAndFinalSeconds": 14,
+  "allRequestsExplicitNativeSize": "3840x2160",
+  "shots": [
+    {
+      "shotId": "S01",
+      "jobId": "video_gen_d9e799b6cbfd4b91a34d71e006dbb267",
+      "status": "completed",
+      "submittedAt": "2026-11-17T20:14:55.443847+00:00",
+      "requestSha256": "b4b5ce89e58b093136c45184b4e4ddefd7bb56fd3e431fd9189bf47d2f974a95",
+      "inputSourceSha256": "325fbf2b4467902ba0c637198389a2a66128f3e98a5cae42b2208a343d04a8d3",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S02",
+      "jobId": "video_gen_d9aeeb23a57d48c5a9d66b0eaf208a62",
+      "status": "completed",
+      "submittedAt": "2026-11-17T21:33:25.471926+00:00",
+      "requestSha256": "d6e637f45cc33c3d90f36ae7c5ba4d0cd79d728ab99c0074af2d402066073059",
+      "inputSourceSha256": "768490c596ae51576c58779ca47d14e2c0023b5f196798a4259f3607fe87943e",
+      "sourceSeconds": 5,
+      "finalSeconds": 3
+    },
+    {
+      "shotId": "S03",
+      "jobId": "video_gen_bc97d958687f4800b98aa3369dccb1d7",
+      "status": "completed",
+      "submittedAt": "2026-11-17T22:51:08.753596+00:00",
+      "requestSha256": "e77aeed090df7a563912597f50e22c063c1aa70412f5e8e107247e6eb7862465",
+      "inputSourceSha256": "1fab55e138623b5f3efbafd5fb9c424a009404a47d5382812a9722c46750bba6",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S04",
+      "jobId": "video_gen_da693a3a45344196940fa5e3eb225f6d",
+      "status": "completed",
+      "submittedAt": "2026-11-18T00:09:13.881780+00:00",
+      "requestSha256": "a6402c9b0545bfd84219cad7a9f7f4e22ce7cdec01db26e8a81c9904749ffeda",
+      "inputSourceSha256": "fc8c936f1f124042ae160ff7d006f47267f0191f1ff9d5ea5a562c38155580eb",
+      "sourceSeconds": 5,
+      "finalSeconds": 3
+    },
+    {
+      "shotId": "S05",
+      "jobId": "video_gen_693dae4e6e9948c0967597f67c049c0d",
+      "status": "completed",
+      "submittedAt": "2026-11-18T05:20:41.753191+00:00",
+      "requestSha256": "63eb3db935f1367a3ad450ae21432a944597ddffdcaa35cdf6115003e810569e",
+      "inputSourceSha256": "a495e29aac57d1badc8ceaba52055d8039f28164fec366ff13803cec6a4a3353",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S06",
+      "jobId": "video_gen_e7f76b25b51543b19a48d94c089869f5",
+      "status": "completed",
+      "submittedAt": "2026-11-18T06:38:43.147469+00:00",
+      "requestSha256": "7957b82e6fb82afd61ac9c02881fafcacd68d82af0a70dfecb517facb056b019",
+      "inputSourceSha256": "7e1cda0492e54c1a99d2468a46f5744a4d63bdaba9092527f23a387c1401aae0",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S07",
+      "jobId": "video_gen_194219acffa74fed94f860172095649b",
+      "status": "completed",
+      "submittedAt": "2026-11-18T07:36:47.104845+00:00",
+      "requestSha256": "af497e2e80a276f3358a6e096e0751ec0f322f830b70330b7f4bdfb5efc58113",
+      "inputSourceSha256": "ea52ba6ff18da72133440c7dd720615dc8cf2df2a8e16f76902cc4e5fd5e5fab",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S08",
+      "jobId": "video_gen_af8669e17d134a48b1e4b3558ee6bc64",
+      "status": "completed",
+      "submittedAt": "2026-11-18T07:36:47.196931+00:00",
+      "requestSha256": "d96e61b862d0056871f9dffcbe74864e233a07a8992236f7ae0ca798ce9ca4f4",
+      "inputSourceSha256": "2bfd30a8602d311a04b0d69651cded4554a02d947b82ed0af29f20d51e834c91",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S09",
+      "jobId": "video_gen_afbc24e306944ca188763452cc21464b",
+      "status": "completed",
+      "submittedAt": "2026-11-18T07:36:47.265171+00:00",
+      "requestSha256": "0c52eae573c27227cb91cdd1ac028a78db3fb0def1d0912c3e3af22e4f128673",
+      "inputSourceSha256": "4d5a8de9cb7514454bdf79eb47309bbf0c9cff4cf8b27efce2da2439b370184f",
+      "sourceSeconds": 5,
+      "finalSeconds": 3
+    },
+    {
+      "shotId": "S10",
+      "jobId": "video_gen_e9e0b570531346a594bba9eaecdf8484",
+      "status": "completed",
+      "submittedAt": "2026-11-18T07:56:48.033285+00:00",
+      "requestSha256": "752a1cc4b221b83c4629de3c252c85e92b5f7b408a054548609f9698558d99da",
+      "inputSourceSha256": "abb19f4abf0cedce218a2041cfa9989d6cdf62125b3ca79ad57397bc6c06e469",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S11",
+      "jobId": "video_gen_23ced3df71f1444fb8ab5e2ee869a151",
+      "status": "completed",
+      "submittedAt": "2026-11-18T09:03:28.279865+00:00",
+      "requestSha256": "a4195f3aa60552b55bbf482a42c5a125ca7adb278927360954e4ca919f6c3d23",
+      "inputSourceSha256": "d3cf007fc32175da269f982f1c3fb3a8ce26f2df09dced89a7d8977922f071e4",
+      "sourceSeconds": 5,
+      "finalSeconds": 2
+    },
+    {
+      "shotId": "S12",
+      "jobId": "video_gen_c309724423e34d79a39483e9505236fa",
+      "status": "completed",
+      "submittedAt": "2026-11-18T09:03:28.371532+00:00",
+      "requestSha256": "3136fdb0b1d64815ffd8dfdb8e41818c7a20b1e07782da600dde23531e84689e",
+      "inputSourceSha256": "e993484211ea09cead2897d39a64111d171910e3a488d3f2db23201ef6b7cd09",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S13",
+      "jobId": "video_gen_54627f25d22d4a6a8f2426a4d8da7a01",
+      "status": "completed",
+      "submittedAt": "2026-11-18T09:03:28.422472+00:00",
+      "requestSha256": "d1fadc11a71247536dc30a49e5eccd3647e4044909e56dce79f2d17eb205aa4f",
+      "inputSourceSha256": "f17a81d0bdd38dbaa80667b5ed5a39eaecf7f5c1953d5b2925363710bab03fc9",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S14",
+      "jobId": "video_gen_435b6355e36643a0bb409a10e855c286",
+      "status": "completed",
+      "submittedAt": "2026-11-18T09:03:28.484204+00:00",
+      "requestSha256": "27e2ddf1a1ad193a8ff9feae75ef05b7ce0de4c410152e14d0fbf8c977d8311c",
+      "inputSourceSha256": "6c04016b789bc449c386816cd5116594db58c94eb8aa85f026cb5b28736ea592",
+      "sourceSeconds": 5,
+      "finalSeconds": 3
+    },
+    {
+      "shotId": "S15",
+      "jobId": "video_gen_459c99c860744e2893a85f678ed5027f",
+      "status": "completed",
+      "submittedAt": "2026-11-18T09:03:28.568799+00:00",
+      "requestSha256": "71e60b3c9871411174325ec158dfbb6eb65ff5842199835bfbcf2e2dd2ce194e",
+      "inputSourceSha256": "2a461bda9bae0b504565c892bd7a2bd0d592787cea5c8b04381afec84bd77acb",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S16",
+      "jobId": "video_gen_c6ea9a59c17b45d9ba52444c387f079d",
+      "status": "completed",
+      "submittedAt": "2026-11-18T09:03:28.636767+00:00",
+      "requestSha256": "4b6ca275b02a0978d59e5e94b65bd1a28da695215ad0836f580338e129bf4a09",
+      "inputSourceSha256": "1b490e9c9957ac61365b79854e2a88cd3383eb8cab59299f8e8b47818996acc8",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S17",
+      "jobId": "video_gen_1f37658df1f343d38bcfef1832bb9a74",
+      "status": "in_progress",
+      "submittedAt": "2026-11-18T09:03:28.698485+00:00",
+      "requestSha256": "b2fc72ef2d42ea006a0f2c8563f4a801b5d8ef4e796e7a566c648ffad72f1b01",
+      "inputSourceSha256": "75fcbf85738af14e68d128cd3877a032c82c6fa16818e454bc606983ef86ee97",
+      "sourceSeconds": 5,
+      "finalSeconds": 3
+    },
+    {
+      "shotId": "S18",
+      "jobId": "video_gen_1b7dc125cb6c4460ad4bdad545d7be00",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:28.779287+00:00",
+      "requestSha256": "93b1cc930183f2624a64dea7a572b61a2978a7f53b9572c926ea085d6a056e24",
+      "inputSourceSha256": "42253080c7292b3fafb3f38a376a45b4aab9c1c1b438e17c3df03023757e909d",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S19",
+      "jobId": "video_gen_cd2149a9a8f04f01b2dbce96f8ec7f3f",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:28.834784+00:00",
+      "requestSha256": "5ab0dae63199ee66c71001278af2645bca027a54a04c76ebbbc12f98e942f2a8",
+      "inputSourceSha256": "b4fbe1630600a80b1b311385447720fb3d27153ecd8f579fd16992e9db14cf0f",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S20",
+      "jobId": "video_gen_a2cecd706e3a4b25bbe9786bfa63da11",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.096615+00:00",
+      "requestSha256": "534d26df184e646f066198a36c026832a96c5d5e6d8b525902952cb5b408bd3c",
+      "inputSourceSha256": "025d002be5f23377e55054b29db8688b944d0e71cc6066cbdbb0eec9696ae901",
+      "sourceSeconds": 10,
+      "finalSeconds": 10
+    },
+    {
+      "shotId": "S21",
+      "jobId": "video_gen_d8094ce73b3140f3bb36738a355089e8",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.166682+00:00",
+      "requestSha256": "944f5ecc6562dc6d22b43e2e2cb12038e9de4e9e3c4c7812a73cff6a287cc7d4",
+      "inputSourceSha256": "5537b2795e1e94b2f0e0b4b04f5eddc67aded4b018505d60e2588b7755f1731b",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S22",
+      "jobId": "video_gen_ca6d0852760949598e0699dfd82a0c2e",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.234242+00:00",
+      "requestSha256": "426e06172b86bfe9ac837f6b5ede1d2e1076079dc67894713a649fef0571d64e",
+      "inputSourceSha256": "f6c6ac51ba386cd1ad9870d84e0acec35bdbe75d7a89be42702f82c24778ca07",
+      "sourceSeconds": 5,
+      "finalSeconds": 3
+    },
+    {
+      "shotId": "S23",
+      "jobId": "video_gen_fb400a7b50fc47acbcbcd305baff4034",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.289329+00:00",
+      "requestSha256": "7d25e75192dbddd7e0e5cd22a63c365a9d4189e5be3ce788828374144e7ecdd8",
+      "inputSourceSha256": "f9dcdce3eee5517a7fe3b8c7569f38ce9c893a167d551d0bb734ab3fef611c79",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S24",
+      "jobId": "video_gen_ed1f917f256d4157800a2709607ec092",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.328992+00:00",
+      "requestSha256": "bcc114ce148d616843c6b77ba47f795f215a9bb5a4f7253bbe870cbf0c51f8f1",
+      "inputSourceSha256": "5dea106d23199d1c5c0689e452d670e40ecbc2f78cc576a9fbfed9db1a64a952",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S25",
+      "jobId": "video_gen_4d493d88a6674976830a75debd257ab3",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.395843+00:00",
+      "requestSha256": "fc8bf8f648d4614b2743d7cf058831a4f29e549545ce5f439e71ea89fdc6749f",
+      "inputSourceSha256": "aa7b931b1a8f6f6e6d41de451edd5c6f3487a120d47c5500d6890ccc3225078f",
+      "sourceSeconds": 5,
+      "finalSeconds": 3
+    },
+    {
+      "shotId": "S26",
+      "jobId": "video_gen_da53a945c6534c00b9c5888561cdc66b",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.454093+00:00",
+      "requestSha256": "90be21465ff36e20004d524297a2e02cb1ae9ded9167a5de74450d24c07de649",
+      "inputSourceSha256": "e9fbe321cc09ecce3c411090994b946fdb1cf832c431df3ed747087b081a97c7",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S27",
+      "jobId": "video_gen_98f8cd0545c145809bf23b5858064083",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.542580+00:00",
+      "requestSha256": "6ec481822c9d593c31da8296d8cfe4f89a67eb1fb30055f8e9a8d62b72a5d24b",
+      "inputSourceSha256": "f1dce035f0d7921b44afddfe77799dfbfbd10547080232abe77ee0afde47067d",
+      "sourceSeconds": 5,
+      "finalSeconds": 2
+    },
+    {
+      "shotId": "S28",
+      "jobId": "video_gen_ded2c18cae174e6ba2c78351ac79a544",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.604298+00:00",
+      "requestSha256": "1822c304290e3cdf78b7eff2ffc03298ef0d4cdcc8ad35dae6f0829bd9df882c",
+      "inputSourceSha256": "e0a65ab5e03af81383c83289ef5048d6242ce0a118eb3bfc7e7dd1062afaa59a",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S29",
+      "jobId": "video_gen_afc3d1ba66a74b4286b832eaf19cbc19",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.668991+00:00",
+      "requestSha256": "1c9c6ceaff80f6eb7ddbbc3f864e9571e189209228a7b1db84f9d31b7c466f07",
+      "inputSourceSha256": "de3fc022e54e70d3c7b55ea979450a46f31c2ef39eff6530490e81e0926b21c1",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S30",
+      "jobId": "video_gen_3dc4a5b81b9d4b62b3f6826edb33bd6e",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.750010+00:00",
+      "requestSha256": "637f9452b210c8bfad4ab2e3e9d276039c5c91be9d6840292a8cadd307d537fa",
+      "inputSourceSha256": "3ac2834bd756086cc6b5452b31938b28db88c81c758a0c643685558db586994c",
+      "sourceSeconds": 5,
+      "finalSeconds": 3
+    },
+    {
+      "shotId": "S31",
+      "jobId": "video_gen_b38f77af0b5540558d0297d12d5674e7",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.814743+00:00",
+      "requestSha256": "32311c6cbb6661f5a1fa724b7b5b2767aeef28213c4c6363914069cb7c0f6cc6",
+      "inputSourceSha256": "7343e9a678c2f9013782f06f922d29e6c0a9c5b7a02eda4fb5fd3bd1e7e4d587",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S32",
+      "jobId": "video_gen_d83a2024ccf546a78186fb6ec991cbd6",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.867423+00:00",
+      "requestSha256": "64d8d0e03c26f013bcefad9eb9bb0a091710b274e4c59c14d6f0aacec0649893",
+      "inputSourceSha256": "7fd14f4dff61f7538a78c9a98a78866c15844939f6676bd3bdefc8b414d31bf0",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S33",
+      "jobId": "video_gen_2f4164c5965e40e6ac999640ccfb610c",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:29.942056+00:00",
+      "requestSha256": "1c8d6d7eab9de864233b0a4d5f6e06465c6c5b9b213d0f7744d0f5c6a82f60fa",
+      "inputSourceSha256": "c97b13608b72696469715568c99e1df356a0317675992d930f40e2430ba76050",
+      "sourceSeconds": 5,
+      "finalSeconds": 3
+    },
+    {
+      "shotId": "S34",
+      "jobId": "video_gen_c6db0946d8644b958ff7c848dbe2fbbd",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:30.034867+00:00",
+      "requestSha256": "d6c03f0107d09c6453ca5d24a3ef9cf6306783046b6f64377a4f95e5f30638a8",
+      "inputSourceSha256": "daa401207c3ce2021c69aa35c6820d9c8b04c93db3a8b7fcc5e9debca0c1d44c",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S35",
+      "jobId": "video_gen_10808458552047879b7864d6fe1cfb1e",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:30.122801+00:00",
+      "requestSha256": "8299b26d0c1573cc6514ebb71606431de10fa3a8f1672bb4605382da5cec3f5d",
+      "inputSourceSha256": "136b01211af838c360633b22d6f68426f62d0aa2f423cb2fe5aea086fa011302",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S36",
+      "jobId": "video_gen_f52961f51f83442089d69fd594b27aae",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:30.183029+00:00",
+      "requestSha256": "76ec238bda66ce9d2f73122173371ac8af63aaf418cc4ad5bafe6416dcf9b562",
+      "inputSourceSha256": "6ce161206e17a52f38adb334eacc7312e36e4eb93eb8d967d3a0f9019efadba5",
+      "sourceSeconds": 5,
+      "finalSeconds": 3
+    },
+    {
+      "shotId": "S37",
+      "jobId": "video_gen_b35c2fca72514452b3076087e9a8a67d",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:30.297653+00:00",
+      "requestSha256": "8e0f3c631cb68819bfb064a559aec7c14d06afa05dc872976a5ea02255b23cbc",
+      "inputSourceSha256": "8efb5d995fd3384428c35acb6f0390970fce00072b14ee59f7f7637ffe999e2e",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S38",
+      "jobId": "video_gen_7012ed671ae64887b8d3f1a1ff396958",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:03:30.364470+00:00",
+      "requestSha256": "06dd335a5b2cf0bc47aea40dbff938d1ad15acf428a1ee0b501654ef43397759",
+      "inputSourceSha256": "d244e0f5881fe5337262cc676cb6b104560a5bba5644ec64b41acfbd505c34cd",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S39",
+      "jobId": "video_gen_516a4fe202d64536824557fe3b492bd0",
+      "status": "queued",
+      "submittedAt": "2026-11-18T09:13:28.627656+00:00",
+      "requestSha256": "62be290bf87272b2fcf37b411d1bfcfbede31174a91bb38c17d11f03b05c8c7e",
+      "inputSourceSha256": "3c24bc082c3f553d23d7eb1f67cd80099171d466e01296303bde06488c29d458",
+      "sourceSeconds": 5,
+      "finalSeconds": 3
+    },
+    {
+      "shotId": "S40",
+      "jobId": "video_gen_b74c18d97b93418b90dca1920a5c2b97",
+      "status": "queued",
+      "submittedAt": "2026-11-18T10:31:11.485658+00:00",
+      "requestSha256": "22c77a365fcba0eb975bae703be6d84bc8759b1f73477a35c6acdab920612d49",
+      "inputSourceSha256": "ccdea9582412de63a2431fe03bb83889f1d0c60e293d30e15d767ce79eb286f2",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S41",
+      "jobId": "video_gen_90f5a5d1b73048d18e73facd5add3068",
+      "status": "queued",
+      "submittedAt": "2026-11-18T11:47:52.569677+00:00",
+      "requestSha256": "80f3886927708dfad479c79fb5eb0dc3dc0b10ed868dd621d7baee0902e1ae46",
+      "inputSourceSha256": "e0d133e24f05fcf01fd887a6ab0c7acddd23b0f018efb28432a0d59be611cebd",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S42",
+      "jobId": "video_gen_64ad79ab21e8414ab490b9690a82bc60",
+      "status": "queued",
+      "submittedAt": "2026-11-18T13:04:42.621047+00:00",
+      "requestSha256": "429d81e311402e4ea7d28443dc01611116cba96dacda4cd1834374adc5417865",
+      "inputSourceSha256": "cc71b58558c2b7d109b84b164c2f8893c50e4b4e69636e9d8a998e893a1bc072",
+      "sourceSeconds": 5,
+      "finalSeconds": 3
+    },
+    {
+      "shotId": "S43",
+      "jobId": "video_gen_564aca24106741ce9e1b1284b61212a5",
+      "status": "queued",
+      "submittedAt": "2026-11-18T14:21:42.487122+00:00",
+      "requestSha256": "530a66412d0b64712299fa9e802fba31815286aede8d36381c7af4fadc5b5aee",
+      "inputSourceSha256": "4a2c416885294f8c459c112e1ed4eef3c2491ea22122d56c8280aeefeba8f856",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S44",
+      "jobId": "video_gen_eddf0b38420444d6b6b1f79661cabab7",
+      "status": "queued",
+      "submittedAt": "2026-11-18T15:38:57.793191+00:00",
+      "requestSha256": "271118f52a393f327292ee22af9a978850b3e841b89855c9452d9601e86d8357",
+      "inputSourceSha256": "722660288d885b9c94c45f463588fc85b843c2085433459c220eca8d0bfb7eaf",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S45",
+      "jobId": "video_gen_3a8c19036c0b470ca05ef0854241bb4d",
+      "status": "queued",
+      "submittedAt": "2026-11-18T16:56:10.933884+00:00",
+      "requestSha256": "378bd4380d26d4299ed7d5de9155ddf39e51c0e7ca72a59c0cdc5ec1f01ae8f6",
+      "inputSourceSha256": "53ec165d33cd2275975302fbcd3f10a769d1b9f6b06077fc09642f2688245929",
+      "sourceSeconds": 5,
+      "finalSeconds": 2
+    },
+    {
+      "shotId": "S46",
+      "jobId": "video_gen_f86c869206194fb89a41e28dffbe0d9a",
+      "status": "queued",
+      "submittedAt": "2026-11-18T18:12:13.020117+00:00",
+      "requestSha256": "d7500fb9b13dd6abc68372f91159d9e12607f379fd9998157d2e4e8752727f46",
+      "inputSourceSha256": "0adb37dc12b49d312e4baece9357f98dca4078a051685fc50b652011edf25340",
+      "sourceSeconds": 5,
+      "finalSeconds": 5
+    },
+    {
+      "shotId": "S47",
+      "jobId": "video_gen_e31e6ab68d6e452b96aa0c098137656e",
+      "status": "queued",
+      "submittedAt": "2026-11-18T19:29:12.553068+00:00",
+      "requestSha256": "affe7b6188fda1caf4e4c67d2dd4b033b636c5943860f2a83570f6d0932c0a09",
+      "inputSourceSha256": "b782478832d2ba23472e0aa8b649d4bddb62497a32e79b054090c5349c5d858a",
+      "sourceSeconds": 5,
+      "finalSeconds": 4
+    },
+    {
+      "shotId": "S48",
+      "jobId": "video_gen_505d3a78c78a42d7b933b6519e1007e9",
+      "status": "queued",
+      "submittedAt": "2026-11-18T20:46:48.538528+00:00",
+      "requestSha256": "3ab3c2b12996126d92a951ff528f75a5366cb330ac006785b2ca01de445ca1a8",
+      "inputSourceSha256": "8ac2c450a4b919086f365fbb4cc7df8e98cefece6e0c2cf913f7aabad4c31d9b",
+      "sourceSeconds": 14,
+      "finalSeconds": 14
+    }
+  ],
+  "semanticAcceptance": "Separate source and final-film review required."
+}
