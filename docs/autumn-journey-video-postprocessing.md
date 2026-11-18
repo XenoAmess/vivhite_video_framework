@@ -148,6 +148,8 @@ v8试做的第一份局部候选出现可见翼缘重影，已拒收；第二份
 
 [`inspect_local_video_film.py`](../video-maker/tools/inspect_local_video_film.py) 对成片所有编码帧与所选画面轨做对照，另输出检测候选、各镜样图、标题与献词淡入帧。它用于核对后期是否引入意外改动，不证明所选源片本来就正确；仍要解释全部候选，并区分机器覆盖、助手帧图审阅、人工连续观看和听音。
 
+若要审阅装配后的每个整景帧，使用本期[`extract-encoded-whole-frames-v11.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/extract-encoded-whole-frames-v11.py)：传入`--film <实际MP4> --inspection <encoded-film-inspection.json> --destination <本期项目内的新目录>`。工具核对实际影片SHA、完整对照报告、3840×2160／30fps和帧数，将每个解码帧按顺序保存至32帧一页的JPEG，同时记录页码、首尾帧、数量和指纹。每格416×234，仅常规面积降采样；不是图像增强、换帧或内容修改。已存在但不同的证据拒绝覆盖，导出本身不批准内容。前十六镜63秒预览实际导出并看完60页／1890帧，另看全部原生候选和关键印花局部，见[检查记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/technical-prefix-v11-first16.md)。逐页查看缩略整景不能称为每个4K像素分别检查、人工连续播放或听音；细小眼睛、手指、遮挡仍须原生局部证据。
+
 音频相关性阈值须说明校准范围，不能把前32秒上的经验值当作全部AAC内容的保证。v11的40秒阶段预览与原WAV相关性约0.999810／0.999814，未满足此前0.9999的经验门槛。保留失败材料后，用原WAV、同样的`-t 40 -c:a aac -b:a 256k -ar 48000`独立编码，再将两份AAC完整解码为双声道float32，确认每声道1920000个样本逐一完全相同，最大差值为0。这样将原曲身份、时间对齐和该参数的有损编码差异分别核对；没有通过降低门槛或修改原曲消除失败。实际影片、独立AAC、失败脚本、诊断和完成的worker均保留在`checkpoints/prefix-10-001/`，详见[40秒预览记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/technical-prefix-v11-first10.md)。数值一致仍不代替听音检查。
 
 本期 [`materialize-sources-v8.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/materialize-sources-v8.py) 的 `validate_locked_timing()` 将前47镜时长及起点逐项锁定v7，仅允许S48变为14秒，总计205秒／6150帧。它调用共用导入器核对原任务、所选源片、完整证据与修订链，不负责生成或自动批准内容。
