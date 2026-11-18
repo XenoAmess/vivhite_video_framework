@@ -23,7 +23,7 @@
       "size": "3840x2160",
       "sampler": "up3",
       "seed": 1234,
-      "submissionWindow": 4,
+      "submissionWindow": 32,
       "startCondition": "Separate reviewed 4K production after the current 768p film is delivered; this policy update submits no 4K job.",
       "gpuWindowsPerLoad": 1,
       "minimumWaitingJobsWhileAvailable": 3,
@@ -135,17 +135,18 @@
     "plan": "production-plan-v11-native-4k.json",
     "run": "production-v11-native-4k-001",
     "size": "3840x2160",
-    "submissionWindow": 1,
+    "submissionWindow": 32,
     "all48TimingsLockedToV10": true,
     "seconds": 205,
     "frames": 6150,
     "originalClosingWingCadenceRequired": true,
     "preserve768pRelease": true,
-    "automaticTwoKResumeAllowed": false
+    "automaticTwoKResumeAllowed": false,
+    "submittedPlanSubmissionWindow": 1
   },
   "backgroundExecution": {
     "schedulerTask": "Vivhite-Autumn-Journey-v11-4K",
-    "runtimeVersion": "controller-007",
+    "runtimeVersion": "controller-008",
     "watchdogIntervalSeconds": 60,
     "executionTimeLimit": "PT0S",
     "conversationConnectionRequired": false,
@@ -160,11 +161,15 @@
     "twoKResumeAllowed": false,
     "windowsAtomicStateRetryActuallyTested": true,
     "localStateFailureResumeActuallyTested": true,
-    "generationRuntimeVersion": "controller-007",
+    "generationRuntimeVersion": "controller-008",
     "reviewedCorrectionSelectionSupported": true,
     "previewCompletionChecksCurrentBindings": true,
     "minimumWaitingJobsWhileAvailable": 3,
     "pollSeconds": 60,
-    "progressReporting": "Completed sources, actual reviews and actionable failures; no model-block reports."
+    "progressReporting": "Completed sources, actual reviews and actionable failures; no model-block reports.",
+    "submissionWindow": 32,
+    "documentedServerModelQueueLimit": 32,
+    "bulkQueueSnapshot": true,
+    "backfillRemainingShotsInOriginalOrder": true
   }
 }

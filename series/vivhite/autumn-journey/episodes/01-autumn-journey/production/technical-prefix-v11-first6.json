@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "vivhite-partial-native-4k-technical-preview-1",
+  "status": "technical-prefix-checked-full-film-still-generating",
+  "finishedAt": "2026-11-18T08:38:45.617643+00:00",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "workerSha256": "7b44f1e03b808a4a040f8147be4f7b5f30a63e4aedafa13fda2670fbfaa64b23",
+  "sourceSelectionsSha256": "bfe1171ef80cf5a1eb082b2dc7ac5872bf19bc6927e55deae4c70af7e1e9061c",
+  "sources": [
+    {
+      "id": "S01",
+      "sourcePath": "sources/S01.mp4",
+      "sourceSha256": "c82a37222cced4f64c47d9784929c340e3ad4a149976dbc65b7013ddaeb29255",
+      "startFrame": 0,
+      "seconds": 4,
+      "segmentSha256": "c12e03eae50fef435bfd17c6f982611ffec8e243a5418e6b55ccb50ac89cc3af"
+    },
+    {
+      "id": "S02",
+      "sourcePath": "sources/S02.mp4",
+      "sourceSha256": "9e09730946789a95a20d0d80239e589662d3a3c390455a566da7a8fa89e251e8",
+      "startFrame": 120,
+      "seconds": 3,
+      "segmentSha256": "0bde5d34cc096d06271ee0a8a47b7cbe07ae8168ae64cf62f66066d2110e0df1"
+    },
+    {
+      "id": "S03",
+      "sourcePath": "corrections/S03-reference-badge-v2.mp4",
+      "sourceSha256": "635d770cbc472a2803a2cc64bab96b45b159a723519265a63ee296114c3f6eee",
+      "startFrame": 210,
+      "seconds": 4,
+      "segmentSha256": "bb2ec274363823557c6597f2cd55bf81fa71ecd84babdd90fdc1186c2b049c4d"
+    },
+    {
+      "id": "S04",
+      "sourcePath": "sources/S04.mp4",
+      "sourceSha256": "442e2acdd9b085c2d3fbdfa2cff63b00a135d7dc09e020b1d499b0039ba3654b",
+      "startFrame": 330,
+      "seconds": 3,
+      "segmentSha256": "4501cf22a2d2d131b443c97a40a346e02c182eb684e17cf0ac0b1949a4e50c29"
+    },
+    {
+      "id": "S05",
+      "sourcePath": "sources/S05.mp4",
+      "sourceSha256": "62aa1dab5b48ad7093b294a442c595418e427f3389918065c1c487bd12b3f318",
+      "startFrame": 420,
+      "seconds": 5,
+      "segmentSha256": "3c1d17369cb53211c3389add9a2891edf727d8d4457f9eba1c611f90e967d303"
+    },
+    {
+      "id": "S06",
+      "sourcePath": "corrections/S06-reference-eyes-v2.mp4",
+      "sourceSha256": "d98afe098930a8acff4ac369064203bd308ed5679370dd355f9410852c0de534",
+      "startFrame": 570,
+      "seconds": 4,
+      "segmentSha256": "2165b1651258656343c7a7994a6df940d6d1fcb49d45fc8483be9901b929242b"
+    }
+  ],
+  "includedShots": 6,
+  "width": 3840,
+  "height": 2160,
+  "fps": 30,
+  "frames": 690,
+  "seconds": 23.0,
+  "fullFilmTargetSeconds": 205,
+  "fullFilmTargetFrames": 6150,
+  "allOriginalShotTimingsPreserved": true,
+  "filmSha256": "1a7bbec502262523ee3c7913e2670673ed649c8a9ac9b7f33d339d961a8219bf",
+  "bytes": 189191044,
+  "fullAudioVideoDecode": "passed",
+  "soundtrackSha256": "46ef587715d277e778c805e566d643ce7b8430d3486ee8143b36dda34a74205b",
+  "titlesSha256": "c1a0a030e5cb5e45bd3959c89f4a761bbdf0ea0113634c7c18d1861a6761cb83",
+  "nativeModelAudioInFinalMix": false,
+  "formalDelivery": false,
+  "releasePublished": false,
+  "semanticReview": "Actual included sources passed; encoded prefix review remains separate.",
+  "humanFullPlayback": false,
+  "scope": "Only the unchanged opening prefix, not the full 205-second film.",
+  "output": "checkpoints/prefix-06-001/film-unreviewed-prefix.mp4",
+  "recordedAt": "2026-11-18T09:05:42.439529+00:00",
+  "originalRuntimeReceiptSha256": "259761e25eb0d87511257a82fb8978331fc533b80a7ed688184eebaef902cd39",
+  "actualWorker": "production/render-reviewed-prefix-v11.py",
+  "workerCopyPreserved": "checkpoints/prefix-06-001/worker.py",
+  "allOriginalSourceJobHashesRechecked": true,
+  "encodedInspection": {
+    "schemaVersion": "vivhite-encoded-film-inspection-2",
+    "filmSha256": "1a7bbec502262523ee3c7913e2670673ed649c8a9ac9b7f33d339d961a8219bf",
+    "selectedPictureSha256": "5342451d53e56409b429c790616c58ee4621ba03f6a6cd84b17afb69e2bcf20a",
+    "planSha256": "449f47a3df2566932ffd5d49c5d66bf7806bf55c7af59158b6e8b254c335994a",
+    "workerSha256": "148487323bfd164e9f7b89cd87202ff078a441c9eed630194b93468f84b5a26c",
+    "width": 3840,
+    "height": 2160,
+    "fps": 30,
+    "decodedAndComparedFrames": 690,
+    "faceDetectorFrames": 690,
+    "faceDetectorInputSize": [
+      832,
+      468
+    ],
+    "faceModelSha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+    "faceScoreThreshold": 0.6,
+    "minimumOutsideTitlePsnrDb": 41.472,
+    "lowSimilarityFrames": [],
+    "candidateFrames": 4,
+    "candidateEvidence": [
+      {
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-06-001/S04-final-candidates.png",
+        "sha256": "d49db6e69ec1980235cd049e9ad9975d42ffa2964b5e6aa2fd40175da164339d",
+        "items": 1
+      },
+      {
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-06-001/S05-final-candidates.png",
+        "sha256": "0d8cd5db797abcb770ca548ecca18ac827a6d14b9e272e277bd1c835ad74ccc4",
+        "items": 1
+      },
+      {
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-06-001/S06-final-candidates.png",
+        "sha256": "11fa0ee7a1b2ef29f4369fb8ea7c280b60ecdcd285d80e545465bf3a5641be23",
+        "items": 1
+      }
+    ],
+    "shotEvidence": [
+      {
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-06-001/shots-01-06.png",
+        "sha256": "02841c7fc10bdbb7db540b238afa4d694c1e1246746171a0071289b35f723225",
+        "items": 6
+      }
+    ],
+    "titleFadeEvidence": [
+      {
+        "frame": 570,
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-06-001/0570-S06-before.png",
+        "sha256": "60df056d952b715a3d3dd6c115c4dc10fc528b39db23f5083333190919629e71"
+      },
+      {
+        "frame": 591,
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-06-001/0591-S06-in.png",
+        "sha256": "b19b6eda1ea6032830c57d636dde0095cdaf730e1854e780b24fbd9742d845cf"
+      },
+      {
+        "frame": 630,
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-06-001/0630-S06-visible.png",
+        "sha256": "c20c8b90c83755d9510a6b0f084bb031d5e80e3034105d1742062b2295d71a22"
+      },
+      {
+        "frame": 674,
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-06-001/0674-S06-out.png",
+        "sha256": "083eae7e0b9bb81cce50ec110e6bb45bc7a4de7710c9b0b1a68e6e3e0348ed4c"
+      },
+      {
+        "frame": 678,
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-06-001/0678-closing-fade.png",
+        "sha256": "49aa5b301afcbb6c3a216e11e9e5bf585deb02e665fc6dec22ac07d5e519c34b"
+      },
+      {
+        "frame": 689,
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-06-001/0689-last-frame.png",
+        "sha256": "4f7464052a2e5fd84c63f6cb7c462520cc49f93aabda9e91fcfb5cd2033db6b9"
+      }
+    ],
+    "machineCoverage": "All final frames decoded, compared with selected picture outside known title bounds, and passed through the stated face detector. Source clips have separate native-size inspections.",
+    "semanticReview": "Separate all-source-frame and candidate interpretation required; never automatically approved.",
+    "humanFullPlayback": false,
+    "elapsedSeconds": 30.734
+  },
+  "encodedInspectionSha256": "75cd06a87166740ad94b1f6a5f287429bf2e23ef84827218c9cbac081735db19",
+  "assistantEncodedEvidenceReview": {
+    "allSixShotMidpointsViewed": true,
+    "allFourNativeCandidateCropsViewed": true,
+    "titleAndLastFramesViewed": [
+      570,
+      591,
+      630,
+      674,
+      678,
+      689
+    ],
+    "extraCandidateContextFrameViewed": 565,
+    "interpretations": [
+      {
+        "frame": 413,
+        "result": "S04 printed acrylic keychain face, not a human face"
+      },
+      {
+        "frame": 565,
+        "result": "S05 front wheel axle/fastener, not a human face"
+      },
+      {
+        "frame": 601,
+        "result": "S06 printed sticker face, not a human face"
+      },
+      {
+        "frame": 602,
+        "result": "S06 printed sticker face, not a human face"
+      }
+    ],
+    "titleTextAndStyle": "Original ASS reused; before, appearance, visible and disappearance frames checked.",
+    "all690EncodedFramesSemanticallyViewed": false,
+    "sourceReview": "Separate all-120-frame scene and native merchandise/hand reviews for each selected source.",
+    "audioListeningReview": false,
+    "humanContinuousPlayback": false,
+    "formalPersonaAndDisclosureReviewOfSelected4KFilm": "still required for final delivery",
+    "knownBoundary": "Frame 678 legacy filename says closing-fade; this partial prefix actually has no full-picture fade."
+  }
+}

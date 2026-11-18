@@ -266,8 +266,8 @@ def generate(args):
     validate(plan)
     if args.window is None:
         args.window = 3 if plan['stage']=='draft' else 1
-    if not isinstance(args.window,int) or isinstance(args.window,bool) or not 1 <= args.window <= 8:
-        raise ValueError('Submission window must be an integer from one to eight')
+    if not isinstance(args.window,int) or isinstance(args.window,bool) or not 1 <= args.window <= 32:
+        raise ValueError('Submission window must be an integer from one to 32')
     assets = input_assets(plan,args.episode.resolve(),directory)
     snapshots = {path:sha(path) for path in assets}
     gate = [sys.executable,str(args.root.resolve()/'scripts/character_review.py'),'check',
@@ -334,6 +334,16 @@ def generate(args):
             if sha(plan_file) != plan_hash:
                 raise ValueError('Plan changed during production')
             running = sum(row['status'] not in ('prepared','completed') for row in receipts.values())
+            # Large backlogs need one queue snapshot, not an individual status
+            # request for every job still waiting. Newly completed/active IDs
+            # receive their full receipt through the existing download path.
+            bulk_queue = args.window > 8
+            waiting_ids = set()
+            if bulk_queue:
+                queue = api.json('GET','/queue')
+                waiting_ids = {item['id'] for group in ('queued','waiting_for_source')
+                    for item in queue.get(group,[])}
+            queue_full = False
             for shot in target:
                 row = receipts[shot['id']]
                 receipt_file = directory/'jobs'/f"{shot['id']}.json"
@@ -345,7 +355,7 @@ def generate(args):
                 if row['status'] in ('failed','cancelled','submission-uncertain','submitting'):
                     raise RuntimeError(f"{shot['id']} has {row['status']}; retained evidence requires inspection")
                 if row['status']=='prepared':
-                    if running >= args.window:
+                    if running >= args.window or queue_full:
                         continue
                     payload = payload_for(plan,shot,upload)
                     request_file = directory/'requests'/f"{shot['id']}.json"
@@ -354,9 +364,14 @@ def generate(args):
                     save(request_file,payload)
                     row.update(requestSha256=sha(request_file),planSha256=plan_hash)
                     if not submit(api,'/videos' if plan['stage']=='draft' else '/videos/regenerations',payload,receipt_file,row):
+                        queue_full = True
                         continue
                     running += 1
                     print(f"{shot['id']} submitted {row['jobId']}",flush=True)
+                    if bulk_queue and row['status']=='queued':
+                        waiting_ids.add(row['jobId'])
+                if row['status']=='queued' and row['jobId'] in waiting_ids:
+                    continue
                 remote = api.json('GET',f"/videos/{row['jobId']}")
                 with (directory/'logs'/f"{shot['id']}-polls.jsonl").open('a',encoding='utf-8') as log:
                     log.write(json.dumps({'at':now(),'response':remote},ensure_ascii=False)+'\n')
@@ -414,7 +429,7 @@ if __name__ == '__main__':
     parser.add_argument('--api',required=True)
     parser.add_argument('--evidence',required=True,type=Path)
     parser.add_argument('--face-model',required=True,type=Path)
-    parser.add_argument('--window',type=int,default=None,choices=range(1,9),
+    parser.add_argument('--window',type=int,default=None,choices=range(1,33),
                         help='Maximum unfinished server jobs, not GPU execution concurrency; defaults to three drafts or one refinement')
     parser.add_argument('--limit',type=int)
     parser.add_argument('--order',default='')

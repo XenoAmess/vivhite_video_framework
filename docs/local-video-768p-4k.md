@@ -7,7 +7,7 @@
 | 环节 | HTTP API | 实际模型ID | 必须使用的尺寸与参数 |
 | --- | --- | --- | --- |
 | 原始768P参考图生成 | `http://192.168.1.11:8001/v1/videos` | `fasth3-omni-bf16` | `1344x768`、`task=ref2va`、8步；运行时核实36层解码器 |
-| 原生4K视频再生成 | `http://192.168.1.11:8002/v1/videos/regenerations` | **`open-h3-2k`** | **`3840x2160`**、`sampler=up3`、当前种子1234；GPU单窗口；本期客户端 `--window 4 --poll-seconds 60` 预排队 |
+| 原生4K视频再生成 | `http://192.168.1.11:8002/v1/videos/regenerations` | **`open-h3-2k`** | **`3840x2160`**、`sampler=up3`、当前种子1234；GPU单窗口；本期客户端 `--window 32 --poll-seconds 60` 预排队 |
 
 4K服务沿用旧模型ID和端口，不要擅自改成不存在的 `open-h3-4k`，也不要省略尺寸让服务落回旧默认。2026-11-17本项目实际读取8002的 `/v1/models`，已看到 `3840x2160` 与单窗口能力声明；只读查询不是本项目4K成片验收。
 
@@ -34,7 +34,9 @@
 
 4K与768P共用GPU队列，按普通队列执行，GPU每次仅加载一个4K窗口，不能按两块GPU估算耗时。服务声明的`four_k_max_windows_per_load=1`是单次推理加载窗口数，不等于客户端只能排一个独立HTTP任务。
 
-2026-11-18用户明确要求至少3个任务排队、完成后及时处理，取代本期旧的客户端窗口1约定。当前以`--window 4 --poll-seconds 60`保持最多4个未完成任务，即1个运行＋3个等待；任务仍由服务端正常串行调度，不插队，不增大单次GPU窗口或更改模型。快到片尾、剩余镜头不足时按实际余量补队列。已经提交的计划和请求字节保持不变，新的运行调度另记[队列策略](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/queue-policy-v11-4k-20261118.json)。服务端OOM暂停后保留现场，不自动提高内存限制或反复重试。
+2026-11-18用户先要求至少3个任务排队、完成后及时处理，随后要求评估并尽量排入全部剩余任务。[服务端队列文档](https://github.com/XenoAmess/local-model-operations/blob/main/deployments/video-generation/docs/video-http-queue.md)规定同模型最多32个未完成任务，超限返回429。排队保存上传文件及SQLite任务记录，前端和调度器不加载模型；排队本身不增加同时执行的GPU任务，但仍消耗存储，不能称为零成本。当前以`--window 32 --poll-seconds 60`填充允许的32个未完成名额，超出的剩余镜头随完成自动补入。单次GPU窗口、模型、原顺序不变，不插队。
+
+批量模式每轮只读一次`GET /v1/queue`，仍在等待列表中的任务不逐一查询；运行或已离队的任务获取完整收据，完成后立即下载、检查。明确收到429时保留该镜头为prepared，本轮停止后续新提交，继续处理已知任务，下轮再按原顺序尝试；受理不明的POST仍不得盲目重试。已提交计划及请求字节保持不变。首次窗口4的[历史记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/queue-policy-v11-4k-20261118.json)保留，窗口32的实际部署与队列证据另记[批量排队记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/queue-backlog-v11-4k-20261118.json)。服务端OOM后保留失败任务和现场，不提高内存限制或自行重试失败生成。
 
 数日运行可使用本期已实测的[Windows独立执行器](autumn-journey-background-rendering.md)。它由按需任务承载，保留任务ID、冻结代码、下载与机器检查、图片Git检查点和技术合成，不依赖GPT对话存活；其自动恢复不等于自动通过内容审核。
 
@@ -61,7 +63,7 @@
 video-maker/.venv/Scripts/python.exe video-maker/tools/local_video_pipeline.py `
   --episode <实际episode.json> --plan <已审4K计划.json> `
   --directory <独立4K运行目录> --api http://192.168.1.11:8002/v1 `
-  --evidence <项目内检查图片目录> --face-model <实际YuNet权重> --window 4 --poll-seconds 60
+  --evidence <项目内检查图片目录> --face-model <实际YuNet权重> --window 32 --poll-seconds 60
 ```
 
 ## 《秋日旅程》片尾的条件规则

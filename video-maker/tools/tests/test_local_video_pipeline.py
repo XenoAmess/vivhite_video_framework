@@ -149,7 +149,7 @@ class LocalPipelineTest(unittest.TestCase):
         worker.validate_server_model(plan,{'data':[{'id':'open-h3-2k','sizes':['3840x2160']}]})
         with self.assertRaisesRegex(ValueError,'advertise native 4K'):
             worker.validate_server_model(plan,{'data':[{'id':'open-h3-2k','sizes':['2560x1440']}]})
-        for window in (0,9,True):
+        for window in (0,33,True):
             args = SimpleNamespace(plan=Path('fixture-plan.json'),directory=Path('fixture-run'),window=window)
             with patch.object(worker,'read',return_value=plan),patch.object(worker,'input_assets') as assets:
                 with self.assertRaisesRegex(ValueError,'Submission window'):
@@ -205,6 +205,117 @@ class LocalPipelineTest(unittest.TestCase):
             self.assertEqual(worker.read(directory/'jobs/S01.json')['jobId'],'known-running')
             self.assertFalse((directory/'jobs/S05.json').exists())
             self.assertEqual(worker.read(directory/'run.json')['pollSeconds'],60)
+
+    def test_bulk_backlog_obeys_capacity_and_keeps_known_ids_without_polling_waiting_jobs(self):
+        for full in (False,True):
+            with self.subTest(server_full=full),tempfile.TemporaryDirectory() as temporary:
+                directory = Path(temporary)
+                (directory/'input-sources').mkdir()
+                (directory/'jobs').mkdir()
+                shots = []
+                for index in range(1,41):
+                    identity = f'S{index:02}'
+                    source = directory/'input-sources'/f'{identity}.mp4'
+                    source.write_bytes(f'unit transport fixture {identity}'.encode())
+                    shots.append({'id':identity,'seconds':5,'sourceSeconds':5,'startFrame':(index-1)*150,
+                        'prompt':'Transport fixture; no production approval.',
+                        'inputSource':source.relative_to(directory).as_posix(),'inputSourceSha256':worker.sha(source)})
+                plan = {**self.plan(),'stage':'refine','model':'open-h3-2k','width':3840,'height':2160,
+                    'sourceSize':'3840x2160','shots':shots,'totalFrames':6000}
+                worker.save(directory/'plan.json',plan)
+                for index in range(1,5):
+                    worker.save(directory/'jobs'/f'S{index:02}.json',{'shotId':f'S{index:02}',
+                        'status':'in_progress' if index == 1 else 'queued','jobId':f'known-{index}'})
+                posted,gets,uploads = [],[],[]
+                class Queue:
+                    base = 'http://unit.invalid/v1'
+                    def upload(self,path):
+                        uploads.append(path.stem)
+                        return {'id':'file_'+path.stem}
+                    def json(self,method,path,payload=None):
+                        if path == '/models':
+                            return {'data':[{'id':'open-h3-2k','sizes':['3840x2160']}]}
+                        if path == '/../health':
+                            return {'status':'ok'}
+                        if path == '/queue':
+                            gets.append(path)
+                            return {'running':[{'id':'known-1'}],
+                                'queued':[{'id':f'known-{index}'} for index in range(2,5)]}
+                        if method == 'POST':
+                            posted.append(payload)
+                            if full:
+                                raise worker.ApiError(429,'model queue full')
+                            return {'id':f'queued-{len(posted)}','status':'queued'}
+                        gets.append(path)
+                        if path != '/videos/known-1':
+                            raise AssertionError('Waiting jobs should use the single queue snapshot')
+                        return {'id':'known-1','status':'in_progress'}
+                args = SimpleNamespace(plan=directory/'plan.json',directory=directory,window=32,
+                    episode=directory/'episode.json',root=directory,api=Queue.base,
+                    order='',limit=None,skip='',poll_seconds=60)
+                with patch.object(worker,'Api',return_value=Queue()),patch.object(worker,'run',return_value='unit gate stub'), \
+                        patch.object(worker.time,'sleep',side_effect=InterruptedError('end first unit poll')):
+                    with self.assertRaises(InterruptedError):
+                        worker.generate(args)
+                self.assertEqual(len(posted),1 if full else 28)
+                self.assertEqual(uploads,['S05'] if full else [f'S{index:02}' for index in range(5,33)])
+                self.assertEqual(gets,['/queue','/videos/known-1'])
+                for index in range(1,5):
+                    self.assertEqual(worker.read(directory/'jobs'/f'S{index:02}.json')['jobId'],f'known-{index}')
+                self.assertFalse((directory/'jobs'/('S06.json' if full else 'S33.json')).exists())
+                if full:
+                    self.assertEqual(worker.read(directory/'jobs/S05.json')['status'],'prepared')
+
+    def test_bulk_queue_downloads_a_previously_waiting_job_as_soon_as_it_leaves_queue(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            (directory/'input-sources').mkdir()
+            (directory/'jobs').mkdir()
+            (directory/'sources').mkdir()
+            shots = []
+            for index in range(1,3):
+                source = directory/'input-sources'/f'S{index:02}.mp4'
+                source.write_bytes(b'unit input fixture')
+                shots.append({'id':f'S{index:02}','seconds':5,'sourceSeconds':5,'startFrame':(index-1)*150,
+                    'prompt':'Transport fixture; no production approval.',
+                    'inputSource':source.relative_to(directory).as_posix(),'inputSourceSha256':worker.sha(source)})
+                worker.save(directory/'jobs'/f'S{index:02}.json',
+                    {'shotId':f'S{index:02}','status':'queued','jobId':f'known-{index}'})
+            worker.save(directory/'plan.json',{**self.plan(),'stage':'refine','model':'open-h3-2k',
+                'width':3840,'height':2160,'sourceSize':'3840x2160','shots':shots})
+            raw,source = directory/'raw-fixture.mp4',directory/'sources/S01.mp4'
+            raw.write_bytes(b'unit raw fixture')
+            source.write_bytes(b'unit normalized fixture')
+            calls = []
+            class Queue:
+                base = 'http://unit.invalid/v1'
+                def json(self,method,path,payload=None):
+                    calls.append((method,path))
+                    if path == '/models':
+                        return {'data':[{'id':'open-h3-2k','sizes':['3840x2160']}]}
+                    if path == '/../health':
+                        return {'status':'ok'}
+                    if path == '/queue':
+                        return {'running':[],'queued':[{'id':'known-2'}]}
+                    if path == '/videos/known-1':
+                        return {'id':'known-1','status':'completed'}
+                    raise AssertionError('Unexpected request or duplicate submission')
+            args = SimpleNamespace(plan=directory/'plan.json',directory=directory,window=32,
+                episode=directory/'episode.json',root=directory,api=Queue.base,
+                order='',limit=None,skip='',poll_seconds=60,evidence=directory/'evidence',face_model=directory/'unit.onnx')
+            with patch.object(worker,'Api',return_value=Queue()),patch.object(worker,'run',return_value='unit gate stub'), \
+                    patch.object(worker,'publish_result',return_value=(raw,source,{})) as download, \
+                    patch('review_reference_clips.inspect') as inspect, \
+                    patch.object(worker.time,'sleep',side_effect=InterruptedError('end first unit poll')):
+                with self.assertRaises(InterruptedError):
+                    worker.generate(args)
+                download.assert_called_once()
+                inspect.assert_called_once()
+            self.assertIn(('GET','/videos/known-1'),calls)
+            self.assertNotIn(('GET','/videos/known-2'),calls)
+            self.assertTrue(all(method == 'GET' for method,path in calls))
+            self.assertEqual(worker.read(directory/'jobs/S01.json')['status'],'completed')
+            self.assertEqual(worker.read(directory/'jobs/S01.json')['sourceSha256'],worker.sha(source))
 
     def test_image_only_generation_never_uploads_an_old_motion_reference(self):
         with tempfile.TemporaryDirectory() as temporary:
