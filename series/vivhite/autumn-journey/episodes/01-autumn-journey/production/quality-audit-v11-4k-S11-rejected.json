@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "shots": [
+    {
+      "id": "S11",
+      "sourceSha256": "f14d272e734e671f66ce8eed8300336b1122b189d865b714eff95b9b52e4d64a",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T14:40:24.349050+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 48,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S11-f14d272e73-all-frames-01.png",
+          "sha256": "d7bd39c2199db7960258d976efcb0d88bfe5ff9db4d8eac406f65d63cc6e882e",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S11-f14d272e73-all-frames-02.png",
+          "sha256": "6ea188d9cb9fbd20d4050e164186b44f12041affe86eac118488956120d75fc9",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S11-f14d272e73-all-frames-03.png",
+          "sha256": "8f04b9744ba70dc6f731d2b26634002bc883a27c8fa098f3bd44544dcda73198",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S11-f14d272e73-all-frames-04.png",
+          "sha256": "441c96fce6bc54a23ad832e3af3d307fce1b4d53f5273e5e36dfdfcd395d9511",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S11-f14d272e73-face-candidates.png",
+        "sha256": "6885ac0b7345578f777bef6fa146aa2fc6cd0d96bffc812487c3bbc3a8033e86",
+        "items": 22
+      },
+      "observation": "Actually reviewed all 120 whole-scene thumbnails, all 120 native-derived sufficiently wide hand crops through eight JPEG pages, first 16 printed-card crops, native whole frames 0 and 119, actual input frame 0, M03 original RGBA artwork, the 22-example face sheet and all 255 native detector boxes through 16 contact pages. The original partial feminine-clothed seated woman holds the clear card using one attached hand with a front thumb, rear index contact and curled remaining fingers; no new hand, person, human head or face observed. Water, railing, card, leaf and small hand motion remain continuous. Detector boxes are ground leaves/stones, sleeve/card/hand edges, or the original illustrated chibi print. Eyes are OPEN throughout the reviewed print crops; no closed-to-open claim. Pink star iris details and thin gold round glasses are weakened compared with M03, already in input. First 16 print crops suffice for reference-appearance rejection; other exported print pages not counted as viewed. Leaf does not cover the eye region in the whole-scene sequence. Actual source-frame review only, no human continuous playback or final-film approval.",
+      "decision": "rejected",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "failed"
+    }
+  ],
+  "scope": "Actual original S11 reference appearance rejection before correction. Original eyes OPEN."
+}
