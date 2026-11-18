@@ -124,6 +124,8 @@ $postEvidence = "$postEpisode/assets/generated/postprocess-reuse-example-001/rev
 
 截图、原图对照和检查拼图保存在项目中并提交Git。大型源片、修订片、完整请求、编码日志和收据原件保留在独立输出目录，公开项目保存必要的非敏感版本与处理记录；不要覆盖已经交付的影片或Release。
 
+原生4K阶段使用本期[`inspect-print-details-v11.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/inspect-print-details-v11.py)支持完整120／240／336帧的原生局部导出。检测候选较多或涉及远处疑似人物时，另用[`extract-native-candidates-v11.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/extract-native-candidates-v11.py)：绑定实际源片与完整报告，保存**每个候选框**的原生裁切、坐标、指纹及分页JPEG，不只保存半秒间隔的代表例图。S09实际读完137个候选框，S10实际读完285个候选框；小裁切仍有疑问时，回到相同帧的更宽原生上下文核对。PNG导出、JPEG页阅读和逐张原尺寸展开是不同覆盖，须分别记录。此脚本不删除候选、不修改视频，也不自动批准内容。
+
 ## 慢放、标题与最终装配
 
 [`retime_local_clip.py`](../video-maker/tools/retime_local_clip.py) 的 `retime()` 通过明确源区间、`setpts` 和FFmpeg `minterpolate` 另存慢放候选；插帧使用MCI、AOBMC、双向运动估计与可变块。当前只支持大于1且不超过16的慢放倍率，输出为5秒／120帧或10秒／240帧、24fps，不支持任意14秒输出。10秒配方包含0.25秒末端克隆填充，以补足插帧边缘，必须保留收据并检查尾部停顿。插帧会产生遮挡、透明翅膀或重影伪影，不能纠正本来就错误的蝴蝶结构或动作。
@@ -137,6 +139,8 @@ v8试做的第一份局部候选出现可见翼缘重影，已拒收；第二份
 [`reference_finisher.py`](../video-maker/tools/reference_finisher.py) 的 `titles()` 统一生成ASS标题，片头片尾共享Title／Subtitle样式，献词独立延迟淡入。`local_video_finisher.py` 按计划把24fps源片转为精确帧数的30fps镜段，再做画面装配；此处普通 `fps=30` 不是MCI运动插帧。`reference_finisher.finish()` 绑定实际声音与标题，检查角色收据，输出真实MP4并全量音视频解码；模型原生音轨没有进入本片最终混音。
 
 [`inspect_local_video_film.py`](../video-maker/tools/inspect_local_video_film.py) 对成片所有编码帧与所选画面轨做对照，另输出检测候选、各镜样图、标题与献词淡入帧。它用于核对后期是否引入意外改动，不证明所选源片本来就正确；仍要解释全部候选，并区分机器覆盖、助手帧图审阅、人工连续观看和听音。
+
+音频相关性阈值须说明校准范围，不能把前32秒上的经验值当作全部AAC内容的保证。v11的40秒阶段预览与原WAV相关性约0.999810／0.999814，未满足此前0.9999的经验门槛。保留失败材料后，用原WAV、同样的`-t 40 -c:a aac -b:a 256k -ar 48000`独立编码，再将两份AAC完整解码为双声道float32，确认每声道1920000个样本逐一完全相同，最大差值为0。这样将原曲身份、时间对齐和该参数的有损编码差异分别核对；没有通过降低门槛或修改原曲消除失败。实际影片、独立AAC、失败脚本、诊断和完成的worker均保留在`checkpoints/prefix-10-001/`，详见[40秒预览记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/technical-prefix-v11-first10.md)。数值一致仍不代替听音检查。
 
 本期 [`materialize-sources-v8.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/materialize-sources-v8.py) 的 `validate_locked_timing()` 将前47镜时长及起点逐项锁定v7，仅允许S48变为14秒，总计205秒／6150帧。它调用共用导入器核对原任务、所选源片、完整证据与修订链，不负责生成或自动批准内容。
 

@@ -1,0 +1,1273 @@
+{
+  "schemaVersion": "vivhite-partial-native-4k-technical-preview-1",
+  "status": "technical-prefix-checked-full-film-still-generating",
+  "finishedAt": "2026-11-18T13:20:41.514307+00:00",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "workerSha256": "7b44f1e03b808a4a040f8147be4f7b5f30a63e4aedafa13fda2670fbfaa64b23",
+  "sourceSelectionsSha256": "7b89e08f0ea25642e25897720c99c290899458feb16dcc913c146d21ba0957a8",
+  "sources": [
+    {
+      "id": "S01",
+      "sourcePath": "sources/S01.mp4",
+      "sourceSha256": "c82a37222cced4f64c47d9784929c340e3ad4a149976dbc65b7013ddaeb29255",
+      "startFrame": 0,
+      "seconds": 4,
+      "segmentSha256": "c12e03eae50fef435bfd17c6f982611ffec8e243a5418e6b55ccb50ac89cc3af"
+    },
+    {
+      "id": "S02",
+      "sourcePath": "sources/S02.mp4",
+      "sourceSha256": "9e09730946789a95a20d0d80239e589662d3a3c390455a566da7a8fa89e251e8",
+      "startFrame": 120,
+      "seconds": 3,
+      "segmentSha256": "0bde5d34cc096d06271ee0a8a47b7cbe07ae8168ae64cf62f66066d2110e0df1"
+    },
+    {
+      "id": "S03",
+      "sourcePath": "corrections/S03-reference-badge-v2.mp4",
+      "sourceSha256": "635d770cbc472a2803a2cc64bab96b45b159a723519265a63ee296114c3f6eee",
+      "startFrame": 210,
+      "seconds": 4,
+      "segmentSha256": "bb2ec274363823557c6597f2cd55bf81fa71ecd84babdd90fdc1186c2b049c4d"
+    },
+    {
+      "id": "S04",
+      "sourcePath": "sources/S04.mp4",
+      "sourceSha256": "442e2acdd9b085c2d3fbdfa2cff63b00a135d7dc09e020b1d499b0039ba3654b",
+      "startFrame": 330,
+      "seconds": 3,
+      "segmentSha256": "4501cf22a2d2d131b443c97a40a346e02c182eb684e17cf0ac0b1949a4e50c29"
+    },
+    {
+      "id": "S05",
+      "sourcePath": "sources/S05.mp4",
+      "sourceSha256": "62aa1dab5b48ad7093b294a442c595418e427f3389918065c1c487bd12b3f318",
+      "startFrame": 420,
+      "seconds": 5,
+      "segmentSha256": "3c1d17369cb53211c3389add9a2891edf727d8d4457f9eba1c611f90e967d303"
+    },
+    {
+      "id": "S06",
+      "sourcePath": "corrections/S06-reference-eyes-v2.mp4",
+      "sourceSha256": "d98afe098930a8acff4ac369064203bd308ed5679370dd355f9410852c0de534",
+      "startFrame": 570,
+      "seconds": 4,
+      "segmentSha256": "2165b1651258656343c7a7994a6df940d6d1fcb49d45fc8483be9901b929242b"
+    },
+    {
+      "id": "S07",
+      "sourcePath": "corrections/S07-reference-eyes-v1.mp4",
+      "sourceSha256": "adc5352eee27f0ed5297b7ce8b5cc6f23196ffca47739c81fb2a175f6c9c6530",
+      "startFrame": 690,
+      "seconds": 4,
+      "segmentSha256": "ee3efb90ae7bf73cf1b994ed4b41b7245aa8bc2dfad12edcb62f0df0a8e65396"
+    },
+    {
+      "id": "S08",
+      "sourcePath": "sources/S08.mp4",
+      "sourceSha256": "355114318092092a7bdd859aa43560ab3e0995630861921329703ca413d38eae",
+      "startFrame": 810,
+      "seconds": 5,
+      "segmentSha256": "891158439b590319a7ca47a654f592decd60b788dfb1c98febbbd6b87542c0da"
+    },
+    {
+      "id": "S09",
+      "sourcePath": "corrections/S09-reference-eyes-v1.mp4",
+      "sourceSha256": "dc71a1b950b22907d74a5248ef1744b89ce58a8c4ab9a5f594a6502262183df4",
+      "startFrame": 960,
+      "seconds": 3,
+      "segmentSha256": "5038f9c7a4cf3dc93b06db839e1cb9f196f05b764dfadd15fd96916c9f861a1c"
+    },
+    {
+      "id": "S10",
+      "sourcePath": "sources/S10.mp4",
+      "sourceSha256": "de5904ef37b7c23fa9358f7c9b551f1d9dc3b60e87bf9aefb61ca3f813466713",
+      "startFrame": 1050,
+      "seconds": 5,
+      "segmentSha256": "1bd1043be3706e26234b6cb60e0430480fc20ef2f87a4e1c46e33f019ae8d86b"
+    }
+  ],
+  "includedShots": 10,
+  "width": 3840,
+  "height": 2160,
+  "fps": 30,
+  "frames": 1200,
+  "seconds": 40.0,
+  "fullFilmTargetSeconds": 205,
+  "fullFilmTargetFrames": 6150,
+  "allOriginalShotTimingsPreserved": true,
+  "filmSha256": "a45199c7cb50db594758738f8d4e58c3a8dedeb7c472eb062bec988b26d777b3",
+  "bytes": 300065657,
+  "fullAudioVideoDecode": "passed",
+  "soundtrackSha256": "46ef587715d277e778c805e566d643ce7b8430d3486ee8143b36dda34a74205b",
+  "titlesSha256": "c1a0a030e5cb5e45bd3959c89f4a761bbdf0ea0113634c7c18d1861a6761cb83",
+  "nativeModelAudioInFinalMix": false,
+  "formalDelivery": false,
+  "releasePublished": false,
+  "semanticReview": "Actual included sources passed; encoded prefix review remains separate.",
+  "humanFullPlayback": false,
+  "scope": "Only the unchanged opening prefix, not the full 205-second film.",
+  "recordedAt": "2026-11-18T13:50:25.083106+00:00",
+  "output": "checkpoints/prefix-10-001/film-unreviewed-prefix.mp4",
+  "actualWorker": "production/render-reviewed-prefix-v11.py",
+  "actualWorkerGitCommit": "cafa2cc",
+  "originalRuntimeReceiptSha256": "dbd21a740fbed785ebe4a912880c211d242c66c6ed0e59254bffbbc74af06e2a",
+  "workerCopyPreserved": "checkpoints/prefix-10-001/worker.py",
+  "sourceSelectionsSnapshotPreserved": "checkpoints/prefix-10-001/source-selections-at-render.json",
+  "allOriginalSourceJobHashesRechecked": true,
+  "encodedInspection": {
+    "schemaVersion": "vivhite-encoded-film-inspection-2",
+    "filmSha256": "a45199c7cb50db594758738f8d4e58c3a8dedeb7c472eb062bec988b26d777b3",
+    "selectedPictureSha256": "94a3024d9826634535fec1cc4aa92136af8346674181498bb4631cab645ac325",
+    "planSha256": "dd108b497a16dd0bc5c14d83add651b9b79780d226c8252293a83c0dd5c3b6b6",
+    "workerSha256": "148487323bfd164e9f7b89cd87202ff078a441c9eed630194b93468f84b5a26c",
+    "width": 3840,
+    "height": 2160,
+    "fps": 30,
+    "decodedAndComparedFrames": 1200,
+    "faceDetectorFrames": 1200,
+    "faceDetectorInputSize": [
+      832,
+      468
+    ],
+    "faceModelSha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+    "faceScoreThreshold": 0.6,
+    "minimumOutsideTitlePsnrDb": 41.472,
+    "lowSimilarityFrames": [],
+    "candidateFrames": 55,
+    "candidateEvidence": [
+      {
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/S04-final-candidates.png",
+        "sha256": "d49db6e69ec1980235cd049e9ad9975d42ffa2964b5e6aa2fd40175da164339d",
+        "items": 1
+      },
+      {
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/S05-final-candidates.png",
+        "sha256": "0d8cd5db797abcb770ca548ecca18ac827a6d14b9e272e277bd1c835ad74ccc4",
+        "items": 1
+      },
+      {
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/S06-final-candidates.png",
+        "sha256": "11fa0ee7a1b2ef29f4369fb8ea7c280b60ecdcd285d80e545465bf3a5641be23",
+        "items": 1
+      },
+      {
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/S07-final-candidates.png",
+        "sha256": "e60a96f3032bfdacec87ae3a472533b8cf9f49af03b2887cdf63542af247f8d8",
+        "items": 5
+      },
+      {
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/S08-final-candidates.png",
+        "sha256": "5bfaea8b558f01c4adb6fc6d2c29b691de45eef41052120f8990dfff4ca0f84b",
+        "items": 5
+      },
+      {
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/S09-final-candidates.png",
+        "sha256": "e84a1b81f40234dd82153f3417eb366cf5f84fd87af519f7262a453e12d078ff",
+        "items": 1
+      }
+    ],
+    "shotEvidence": [
+      {
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/shots-01-08.png",
+        "sha256": "afd0be8e575405f1a98ab47eb3b18f7e0097ef5f72c59c50ebfc66e9b38c9fd9",
+        "items": 8
+      },
+      {
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/shots-09-10.png",
+        "sha256": "009cdf4b89271d255e760b0319cf51d81c9086bba2047658e8fb27bd6c46a7b6",
+        "items": 2
+      }
+    ],
+    "titleFadeEvidence": [
+      {
+        "frame": 570,
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/0570-S06-before.png",
+        "sha256": "60df056d952b715a3d3dd6c115c4dc10fc528b39db23f5083333190919629e71"
+      },
+      {
+        "frame": 591,
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/0591-S06-in.png",
+        "sha256": "b19b6eda1ea6032830c57d636dde0095cdaf730e1854e780b24fbd9742d845cf"
+      },
+      {
+        "frame": 630,
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/0630-S06-visible.png",
+        "sha256": "c20c8b90c83755d9510a6b0f084bb031d5e80e3034105d1742062b2295d71a22"
+      },
+      {
+        "frame": 674,
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/0674-S06-out.png",
+        "sha256": "f249bb3c0b5f26dcecc3a7ea429fbf39ac21bebc6867de40d0b0b48e68a15583"
+      },
+      {
+        "frame": 1188,
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/1188-closing-fade.png",
+        "sha256": "de9f75c31ade8e17d465037f28bae86fb70f536182bd777f1eca1453e6578125"
+      },
+      {
+        "frame": 1199,
+        "path": "assets/generated/production-v11-native-4k-001/review/encoded-prefix10/1199-last-frame.png",
+        "sha256": "da81d469623677e00227cb1515f2b45b4aa5ca228eedcbc8d9a2e7f25bbd9de7"
+      }
+    ],
+    "machineCoverage": "All final frames decoded, compared with selected picture outside known title bounds, and passed through the stated face detector. Source clips have separate native-size inspections.",
+    "semanticReview": "Separate all-source-frame and candidate interpretation required; never automatically approved.",
+    "humanFullPlayback": false,
+    "elapsedSeconds": 70.297
+  },
+  "encodedInspectionSha256": "549cd3d8c2d5ea9af6256f5952151972903998a811287121add4c2183e09224d",
+  "nativeDetailsExtraction": {
+    "schemaVersion": "vivhite-encoded-prefix-detail-extraction-1",
+    "filmSha256": "a45199c7cb50db594758738f8d4e58c3a8dedeb7c472eb062bec988b26d777b3",
+    "workerSha256": "ddd966a5487e5693fc26c700db2dbac3a5610e7a1b93de9098d9d340334c3e13",
+    "records": [
+      {
+        "kind": "candidate",
+        "frame": 413,
+        "box": [
+          1712,
+          913,
+          2253,
+          1496
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0413-00.png",
+        "sha256": "657dd3f903cf91b11e524ef09fbe051b2beaae4c5de2c3e6bd1b0e34cf6b1eff"
+      },
+      {
+        "kind": "candidate",
+        "frame": 565,
+        "box": [
+          3410,
+          1292,
+          3494,
+          1390
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0565-00.png",
+        "sha256": "3c8b2b303f32078a22bdc421e42502568bcdfc4a5bf296a8b33574f39caf111c"
+      },
+      {
+        "kind": "candidate",
+        "frame": 601,
+        "box": [
+          2293,
+          1001,
+          2631,
+          1380
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0601-00.png",
+        "sha256": "10aea58628ed0fa0a772d086443370dee96901b61dcfd3600c42fcd0c9b18f06"
+      },
+      {
+        "kind": "candidate",
+        "frame": 602,
+        "box": [
+          2293,
+          1001,
+          2631,
+          1380
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0602-00.png",
+        "sha256": "3f701602d42796511c0817af4ad6c123dff204ec32047a1554e44ac1b1e2a861"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S07",
+        "frame": 690,
+        "box": [
+          3226,
+          773,
+          3546,
+          1089
+        ],
+        "regionSeedSourceFrame": 0,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S07-merchandise-native-f0690.png",
+        "sha256": "3bd54f7bc89b0281c2ec672ae994a32c651511b4af5cbb02719adaf06e83e6d5"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S07",
+        "frame": 714,
+        "box": [
+          2883,
+          753,
+          3188,
+          1054
+        ],
+        "regionSeedSourceFrame": 19,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S07-merchandise-native-f0714.png",
+        "sha256": "06e99be0d04b2e15fce4c2c5d5ff2a51eca3985c99437230b5e6562f178a3dc4"
+      },
+      {
+        "kind": "candidate",
+        "frame": 716,
+        "box": [
+          2515,
+          0,
+          2936,
+          457
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0716-00.png",
+        "sha256": "46236a863f6f1cded6ac7ee78a6658b62b4bd4a925c01ed81e3d24bf00d4d934"
+      },
+      {
+        "kind": "candidate",
+        "frame": 717,
+        "box": [
+          2515,
+          0,
+          2936,
+          457
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0717-00.png",
+        "sha256": "d5d895fa9c4b64c311f2d4d13b9faf859d29a7cfa45d8cfea8812ab3baa284bc"
+      },
+      {
+        "kind": "candidate",
+        "frame": 718,
+        "box": [
+          2478,
+          0,
+          2931,
+          457
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0718-00.png",
+        "sha256": "46fb0adee6c546e693d9c3ae88b493da4014b074470016502b1e3d111ffe7945"
+      },
+      {
+        "kind": "candidate",
+        "frame": 725,
+        "box": [
+          1283,
+          1398,
+          1487,
+          1625
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0725-00.png",
+        "sha256": "f4d9451f46e84c4c13933866ec660bea1df2a020236cd13550916f491dd2906e"
+      },
+      {
+        "kind": "candidate",
+        "frame": 738,
+        "box": [
+          0,
+          1864,
+          176,
+          2160
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0738-00.png",
+        "sha256": "4a83cb787b138430f3bd78ed457f30c9d8c461097b29213105f4b73bbbbc0d6a"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S07",
+        "frame": 738,
+        "box": [
+          2853,
+          876,
+          3164,
+          1182
+        ],
+        "regionSeedSourceFrame": 38,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S07-merchandise-native-f0738.png",
+        "sha256": "cfbbea7806de112afbdb1a74d7c67d505f54ee4324c70e71ccc932fcf2b79910"
+      },
+      {
+        "kind": "candidate",
+        "frame": 740,
+        "box": [
+          0,
+          1855,
+          268,
+          2160
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0740-00.png",
+        "sha256": "ed39d27504b43c3b5338d8c036a026e80bf6549680e8b3f1f8ad1972dbf2bdd5"
+      },
+      {
+        "kind": "candidate",
+        "frame": 756,
+        "box": [
+          2718,
+          383,
+          3716,
+          1390
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0756-00.png",
+        "sha256": "20f43c8bd4dd33290dfd5117cd59336c9c938a9835ac5687c87ca770405059db"
+      },
+      {
+        "kind": "candidate",
+        "frame": 757,
+        "box": [
+          2718,
+          383,
+          3716,
+          1385
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0757-00.png",
+        "sha256": "9a6d3dd744d85f9fdb57b9c1e722f4d2a46b0eb98636bd03e5d4e219269e3adf"
+      },
+      {
+        "kind": "candidate",
+        "frame": 758,
+        "box": [
+          2778,
+          461,
+          3697,
+          1394
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0758-00.png",
+        "sha256": "cf3910c7cbf24dd39420510434bfd9806983057f3c613c7680341f232478c663"
+      },
+      {
+        "kind": "candidate",
+        "frame": 760,
+        "box": [
+          0,
+          1647,
+          222,
+          2054
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0760-00.png",
+        "sha256": "5c6e622c0f6be73935a57efdf52a90d34dc1acff984fc62d56e2ca23f27b4e0d"
+      },
+      {
+        "kind": "candidate",
+        "frame": 761,
+        "box": [
+          0,
+          1675,
+          259,
+          2017
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0761-00.png",
+        "sha256": "e17a109b50c154ff821b9d9a3a8730d486b9583313977748896e48722cebec49"
+      },
+      {
+        "kind": "candidate",
+        "frame": 762,
+        "box": [
+          0,
+          1675,
+          259,
+          2017
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0762-00.png",
+        "sha256": "ae84d627fd1f4a6eda64d22f6441fa21d9366b694e29f634fd1c60a85e28eb32"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S07",
+        "frame": 762,
+        "box": [
+          3151,
+          805,
+          3458,
+          1108
+        ],
+        "regionSeedSourceFrame": 57,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S07-merchandise-native-f0762.png",
+        "sha256": "c0d01268d5436886c6d969092762b030e0f2a850e8b5b6e121728da4aa1a4135"
+      },
+      {
+        "kind": "candidate",
+        "frame": 779,
+        "box": [
+          2543,
+          0,
+          2982,
+          522
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0779-00.png",
+        "sha256": "4b7612b75ca50ad38649165687bf17399c2fad32de5522aaaa8ccf351ae1826b"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S07",
+        "frame": 786,
+        "box": [
+          2850,
+          774,
+          3158,
+          1078
+        ],
+        "regionSeedSourceFrame": 76,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S07-merchandise-native-f0786.png",
+        "sha256": "b4563175877fc7f9df0a4a9f1f15f69f3407023c3d7190af1d55118a32f28bf1"
+      },
+      {
+        "kind": "candidate",
+        "frame": 798,
+        "box": [
+          1121,
+          0,
+          1519,
+          254
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0798-00.png",
+        "sha256": "8f8d94bec60bf8dfa301e4bb6c365a80ed21a340754a7a82d85cf692adce824a"
+      },
+      {
+        "kind": "candidate",
+        "frame": 800,
+        "box": [
+          1107,
+          0,
+          1500,
+          250
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0800-00.png",
+        "sha256": "2833b5defbfce620e1a562d3f2855ab9783955c4e0787df9c9745a409d06f332"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S07",
+        "frame": 809,
+        "box": [
+          2974,
+          779,
+          3289,
+          1089
+        ],
+        "regionSeedSourceFrame": 95,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S07-merchandise-native-f0809.png",
+        "sha256": "28eec9aab3971b5f41121a27f1b51471c42c533e82994704716aecaaf8e30528"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S08",
+        "frame": 810,
+        "box": [
+          2201,
+          1072,
+          2685,
+          1549
+        ],
+        "regionSeedSourceFrame": 0,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S08-merchandise-native-f0810.png",
+        "sha256": "55bc8dd92ff782a9573f204a7c7999c50857715317240ce3f6cb370572addf2b"
+      },
+      {
+        "kind": "candidate",
+        "frame": 830,
+        "box": [
+          2478,
+          544,
+          2857,
+          924
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0830-00.png",
+        "sha256": "0f972ceedd6b769fa28f71ccb556c5eee1a5d6e2828eec685f904e350f974298"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S08",
+        "frame": 840,
+        "box": [
+          2123,
+          1034,
+          2663,
+          1566
+        ],
+        "regionSeedSourceFrame": 24,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S08-merchandise-native-f0840.png",
+        "sha256": "644b953082afdc1392715188f34792455e54f41bbaeca4ca0c199c93e6bf143b"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S08",
+        "frame": 870,
+        "box": [
+          2001,
+          967,
+          2640,
+          1596
+        ],
+        "regionSeedSourceFrame": 48,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S08-merchandise-native-f0870.png",
+        "sha256": "900856e12c347c5ffef74b096152e0b215adea54053c645ebbe18df7569f3650"
+      },
+      {
+        "kind": "candidate",
+        "frame": 884,
+        "box": [
+          1615,
+          641,
+          2797,
+          1902
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0884-00.png",
+        "sha256": "c6b6c00ab5e37c80e1ac404cd6bdcbbfbc869dfc66ff25a211dcdc375374f647"
+      },
+      {
+        "kind": "candidate",
+        "frame": 886,
+        "box": [
+          1596,
+          590,
+          2807,
+          1824
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0886-00.png",
+        "sha256": "e94eebda55b49b76b14cfa807d73849cb582ec26ba53d8156fbbb70b05726ebb"
+      },
+      {
+        "kind": "candidate",
+        "frame": 887,
+        "box": [
+          1601,
+          590,
+          2807,
+          1814
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0887-00.png",
+        "sha256": "58a8dc0064c6c1d055339d845ed31cb355887f96e3044b7b3392e9165690ce78"
+      },
+      {
+        "kind": "candidate",
+        "frame": 888,
+        "box": [
+          1638,
+          595,
+          2797,
+          1722
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0888-00.png",
+        "sha256": "2d2e8a0df5e91c734b76482e665f07e13e87975b65172ea68a1c5da10f24f0d2"
+      },
+      {
+        "kind": "candidate",
+        "frame": 889,
+        "box": [
+          1606,
+          549,
+          2816,
+          1745
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0889-00.png",
+        "sha256": "e92c6aed372c6c7e07c321dd869c2736aef1c38412f4eadaba7624af13289e25"
+      },
+      {
+        "kind": "candidate",
+        "frame": 890,
+        "box": [
+          1620,
+          507,
+          2825,
+          1759
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0890-00.png",
+        "sha256": "b8c40e6ded859f85f3f8abe4d00b243fadab1987766d9ea63734af5f427ffca1"
+      },
+      {
+        "kind": "candidate",
+        "frame": 891,
+        "box": [
+          1444,
+          420,
+          2876,
+          1902
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0891-00.png",
+        "sha256": "eba8d3880934147e0d4cff28057f334ccf6b0273d92d144de7b3f120c4d33ce5"
+      },
+      {
+        "kind": "candidate",
+        "frame": 892,
+        "box": [
+          1444,
+          420,
+          2876,
+          1902
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0892-00.png",
+        "sha256": "33f7c5bd9f0b4ed6f604e6da3e9912a7bbea83ffe4c8f5d8d73ff479e9f9609a"
+      },
+      {
+        "kind": "candidate",
+        "frame": 893,
+        "box": [
+          1624,
+          521,
+          2811,
+          1736
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0893-00.png",
+        "sha256": "081387244504690744c128ba709d13de419bcaf939a86831d64753fffe118f48"
+      },
+      {
+        "kind": "candidate",
+        "frame": 894,
+        "box": [
+          1680,
+          590,
+          2742,
+          1667
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0894-00.png",
+        "sha256": "e91832a33312e38d1420cafdc3aaa7c3a536705adb1c8a4d5f4a5870d4912511"
+      },
+      {
+        "kind": "candidate",
+        "frame": 895,
+        "box": [
+          1712,
+          503,
+          2839,
+          1657
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0895-00.png",
+        "sha256": "b0bf88fd4f0761ba01b65fe0a372665fe675a2450d90ec1725acd8c8ead9d85a"
+      },
+      {
+        "kind": "candidate",
+        "frame": 896,
+        "box": [
+          1693,
+          452,
+          2853,
+          1685
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0896-00.png",
+        "sha256": "124c12e70e53c6ace073dcb64a400b6ea4835aaec30c19ae81b9e6abf4ba9fff"
+      },
+      {
+        "kind": "candidate",
+        "frame": 897,
+        "box": [
+          1693,
+          456,
+          2853,
+          1685
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0897-00.png",
+        "sha256": "426c8ec35b730bec9df998374bfbdaa5b18cf0771c00c8d3655215d1f1c32844"
+      },
+      {
+        "kind": "candidate",
+        "frame": 898,
+        "box": [
+          1661,
+          420,
+          2848,
+          1667
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0898-00.png",
+        "sha256": "0a371099e599ffc8f3f822c9b9e5f15a35f23f271dd97c1a480020c4bd22bc6b"
+      },
+      {
+        "kind": "candidate",
+        "frame": 899,
+        "box": [
+          1684,
+          466,
+          2807,
+          1625
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0899-00.png",
+        "sha256": "47a578cf5ba3a6de37e16d14a802acae42195a438ac54af82552021a7b0c2ea2"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S08",
+        "frame": 900,
+        "box": [
+          1787,
+          854,
+          2556,
+          1612
+        ],
+        "regionSeedSourceFrame": 72,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S08-merchandise-native-f0900.png",
+        "sha256": "f34662719f530c2536cf04990db1ab784b843bcbf34c352f6d6cb8d57e3807ec"
+      },
+      {
+        "kind": "candidate",
+        "frame": 903,
+        "box": [
+          1513,
+          396,
+          2820,
+          1708
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0903-00.png",
+        "sha256": "b3603dae94e7bd51e581f70ecc13b7d6271eb54d81cf8dd16f607a41752a5cf1"
+      },
+      {
+        "kind": "candidate",
+        "frame": 904,
+        "box": [
+          1569,
+          452,
+          2793,
+          1671
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0904-00.png",
+        "sha256": "fd1d5f473dc83b769aa95ae22f91606f3c16801d55c41ceaccfb52b867981729"
+      },
+      {
+        "kind": "candidate",
+        "frame": 905,
+        "box": [
+          1500,
+          503,
+          2659,
+          1745
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0905-00.png",
+        "sha256": "a8168d96157032c7336a5136370d0a97f801ff19697055c73fc83c1231b72a75"
+      },
+      {
+        "kind": "candidate",
+        "frame": 906,
+        "box": [
+          1393,
+          392,
+          2724,
+          1837
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0906-00.png",
+        "sha256": "ca47e8a1e5a52bbbfadaf30cb7a1d47305cb35a9cc60aa6578ca7c99e7fb437e"
+      },
+      {
+        "kind": "candidate",
+        "frame": 907,
+        "box": [
+          1389,
+          387,
+          2724,
+          1833
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0907-00.png",
+        "sha256": "66143c3484edee10d75e8bd9fe4dd974317886a6bb241e49c377e4d0657dc28c"
+      },
+      {
+        "kind": "candidate",
+        "frame": 908,
+        "box": [
+          3258,
+          1070,
+          3633,
+          1537
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0908-00.png",
+        "sha256": "33b29f0d919be0fd793cdc33ea06c50baba543cfdeb9402aa1cced4356a75454"
+      },
+      {
+        "kind": "candidate",
+        "frame": 909,
+        "box": [
+          1467,
+          336,
+          2862,
+          1731
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0909-00.png",
+        "sha256": "9b532f2f085b15782a7b92c28c3466dbaf83f0839d5b8ed480cf6ff28cd8f26d"
+      },
+      {
+        "kind": "candidate",
+        "frame": 910,
+        "box": [
+          1550,
+          406,
+          2834,
+          1685
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0910-00.png",
+        "sha256": "3e3157f6d72781c0eba96d95b846646692ca18a390cb177d5a3c2c66551e90ca"
+      },
+      {
+        "kind": "candidate",
+        "frame": 911,
+        "box": [
+          1527,
+          443,
+          2770,
+          1676
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0911-00.png",
+        "sha256": "9c23c3e05c62584265c83a5dac8bf56eea7b21b03a46c6ac22fc418c183cf4b1"
+      },
+      {
+        "kind": "candidate",
+        "frame": 912,
+        "box": [
+          1527,
+          443,
+          2770,
+          1676
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0912-00.png",
+        "sha256": "202b8ebe7f1c6bd0e0653509c92fae602216e18edf74f86eba47fc520728c961"
+      },
+      {
+        "kind": "candidate",
+        "frame": 913,
+        "box": [
+          1440,
+          378,
+          2834,
+          1704
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0913-00.png",
+        "sha256": "3d4a8058c232b314852ea8cfe4e4155ec47a39dbcc57d6257ff8d254b8d8c730"
+      },
+      {
+        "kind": "candidate",
+        "frame": 914,
+        "box": [
+          1523,
+          424,
+          2811,
+          1676
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0914-00.png",
+        "sha256": "9fec687fb1d5362657e6107019237dcf36e1a3b7b7016806896bc737fd1fa5d4"
+      },
+      {
+        "kind": "candidate",
+        "frame": 916,
+        "box": [
+          1481,
+          429,
+          2793,
+          1671
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0916-00.png",
+        "sha256": "678e72952f64369f32c3c7a7eea6c1c6466d1c1c7b32f338bfbb253007e1f59a"
+      },
+      {
+        "kind": "candidate",
+        "frame": 917,
+        "box": [
+          1481,
+          429,
+          2788,
+          1671
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0917-00.png",
+        "sha256": "08ef173bd8d11fab35a48567aaf0ed146ac4793bef5f3d27e94b7e19a0a471dc"
+      },
+      {
+        "kind": "candidate",
+        "frame": 918,
+        "box": [
+          1509,
+          433,
+          2774,
+          1680
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0918-00.png",
+        "sha256": "2394aee3e2407846dd31da3748b6360d32d957aad513416f06e47f4cfe3c383d"
+      },
+      {
+        "kind": "candidate",
+        "frame": 923,
+        "box": [
+          1467,
+          336,
+          2797,
+          1657
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0923-00.png",
+        "sha256": "b8cf3801f154ee82c53124d0f504cf1a2f0b60c822e2d80be538eadcdab2415e"
+      },
+      {
+        "kind": "candidate",
+        "frame": 926,
+        "box": [
+          1481,
+          383,
+          2807,
+          1662
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0926-00.png",
+        "sha256": "80a8f495030d6e96c9a9e271cd6b252b40cc17b2126950c7c353655e354d515c"
+      },
+      {
+        "kind": "candidate",
+        "frame": 927,
+        "box": [
+          1481,
+          383,
+          2807,
+          1662
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0927-00.png",
+        "sha256": "199c6797ea66c1730435c6979dd3d4b99670a5a24bf5af7485d092a94e1cde27"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S08",
+        "frame": 930,
+        "box": [
+          1590,
+          723,
+          2506,
+          1625
+        ],
+        "regionSeedSourceFrame": 96,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S08-merchandise-native-f0930.png",
+        "sha256": "57f4fc2e803d39cc6408226b6b2a8b794d640ed0c8610e1a61a547667e64e619"
+      },
+      {
+        "kind": "candidate",
+        "frame": 959,
+        "box": [
+          1213,
+          318,
+          2728,
+          1745
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0959-00.png",
+        "sha256": "babd9485bde2f4d196f86deb7303cc3d206bed957bd09736f92b78d8c6639426"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S08",
+        "frame": 959,
+        "box": [
+          1442,
+          630,
+          2488,
+          1660
+        ],
+        "regionSeedSourceFrame": 119,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S08-merchandise-native-f0959.png",
+        "sha256": "15a640e236eff63ad1ae74ce6aa1847bddaa1ae7d6bb532880ad2abdc1302801"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S09",
+        "frame": 960,
+        "box": [
+          2295,
+          639,
+          2779,
+          1116
+        ],
+        "regionSeedSourceFrame": 0,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S09-merchandise-native-f0960.png",
+        "sha256": "55b1bf17f601de6fc1c2fa567f858bc9e359ef1b85cb8b3a261135211e6d918c"
+      },
+      {
+        "kind": "candidate",
+        "frame": 964,
+        "box": [
+          2390,
+          738,
+          2664,
+          1020
+        ],
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/candidate-native-f0964-00.png",
+        "sha256": "c4ee6e459413fce0b4c4ac06f22d13b248d69f2feccf9e7c1dbd5ef088457aa3"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S09",
+        "frame": 975,
+        "box": [
+          2268,
+          636,
+          2755,
+          1115
+        ],
+        "regionSeedSourceFrame": 12,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S09-merchandise-native-f0975.png",
+        "sha256": "f73591c842d5760b5ffb799d0cd58706ca52328989c1aeae1f91175f0fb0585e"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S09",
+        "frame": 990,
+        "box": [
+          2249,
+          627,
+          2741,
+          1111
+        ],
+        "regionSeedSourceFrame": 24,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S09-merchandise-native-f0990.png",
+        "sha256": "5d06af2c93b27062a501814fbae4cb7e4a5409df7388b6f79fa53ef533fe4c8c"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S09",
+        "frame": 1005,
+        "box": [
+          2236,
+          610,
+          2732,
+          1098
+        ],
+        "regionSeedSourceFrame": 36,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S09-merchandise-native-f1005.png",
+        "sha256": "e9d7efb0a95e9a5e4cc4b3c9e2b552586f11da3ea735b9743f2e1c37137fcf65"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S09",
+        "frame": 1020,
+        "box": [
+          2232,
+          587,
+          2730,
+          1077
+        ],
+        "regionSeedSourceFrame": 48,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S09-merchandise-native-f1020.png",
+        "sha256": "6b989b0c6f204e1fd88f48d9a2a28195c3ecccfff7063134e8e16be11898a66e"
+      },
+      {
+        "kind": "critical-merchandise",
+        "shotId": "S09",
+        "frame": 1049,
+        "box": [
+          2139,
+          544,
+          2644,
+          1041
+        ],
+        "regionSeedSourceFrame": 71,
+        "regionSeedMapping": "Nearby source-frame crop box, floor(relative output frame *24/30); no claim of pixel-identical source frame mapping.",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/S09-merchandise-native-f1049.png",
+        "sha256": "da8ea9a56fd86c6c9bd3f1bd948d1e74777ed6e76af07bda7d7981380dfb725d"
+      }
+    ],
+    "pages": [
+      {
+        "kind": "native-candidate-crops",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/native-candidate-crops-p01.jpg",
+        "sha256": "1b0c21a8a545d3dc45878b183a85a9dd58c50681d8c2de0176dc4a421ea87a82",
+        "items": 16
+      },
+      {
+        "kind": "native-candidate-crops",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/native-candidate-crops-p02.jpg",
+        "sha256": "244b408fab48ef24070e5ef0f06d65985173f1a67b15d2396a7a29fc4512c7cb",
+        "items": 16
+      },
+      {
+        "kind": "native-candidate-crops",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/native-candidate-crops-p03.jpg",
+        "sha256": "4751ae1bf060caa0ad4221837316365d2eacdd90bb95e41b89a1825d489a47b9",
+        "items": 16
+      },
+      {
+        "kind": "native-candidate-crops",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/native-candidate-crops-p04.jpg",
+        "sha256": "09e4c31af1e136cabe6e1863340d08e84dfeb158c9e9c2323458ac44ceadd5a7",
+        "items": 7
+      },
+      {
+        "kind": "critical-merchandise",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/critical-merchandise-p01.jpg",
+        "sha256": "522a0b91028672daa577feffd498e3db073a3c8441e50aee6d4f09a15a8e4b4d",
+        "items": 16
+      },
+      {
+        "kind": "critical-merchandise",
+        "path": "assets/generated/production-v11-native-4k-001/review/prefix-10-001/critical-merchandise-p02.jpg",
+        "sha256": "e734911aa86c2491fa7f2103d58ee90bd289fe72c1c06320aaf57adc4d2907d2",
+        "items": 2
+      }
+    ],
+    "semanticApproval": "not granted by this extraction",
+    "originalFilmUnchanged": true
+  },
+  "nativeDetailsExtractionSha256": "370db6d1e201baac832557cb5f3047c0e39569bd0cb1373b232c0b1e1bf29198",
+  "encodedExtractionWorkerPreserved": "checkpoints/prefix-10-001/encoded-extraction-worker.py",
+  "assistantEncodedEvidenceReview": {
+    "allTenShotMidpointsViewed": true,
+    "candidateFramesAndNativeCropsActuallyViewed": 55,
+    "candidateNativeDerivedJpegPagesActuallyViewed": 4,
+    "candidateFramesByShot": {
+      "S04": 1,
+      "S05": 1,
+      "S06": 2,
+      "S07": 15,
+      "S08": 35,
+      "S09": 1
+    },
+    "allIndividualCandidatePngsViewedAtFullPixelSize": false,
+    "criticalMerchandiseCropsViewed": 18,
+    "criticalViewing": "All eighteen native-derived crops through two JPEG contact pages; six each for S07, S08 and S09.",
+    "nativeWholeContextFramesActuallyViewed": [
+      630,
+      1199
+    ],
+    "otherExportedNativeContextFramesNotCountedAsViewed": [
+      570,
+      591,
+      674,
+      1188
+    ],
+    "candidateInterpretations": "S04 keychain print; S05 bicycle axle (original source and earlier full native context); S06 fixed window sticker; S07 original hand/clothes/leaves/pouch print; S08 plush, strap and fabric; S09 original sticker print. No observed real face or added person.",
+    "merchandiseResult": "S07 restored irises/glasses, S08 original plush eyes and physical leaf occlusion, and S09 restored irises/glasses remain visible after actual encoding. Non-eye softened print remains.",
+    "titleTextAndStyle": "Actual visible frame 630 shows 白绮 / 秋日旅程 and Vivhite · Autumn Journey in the unchanged opening style.",
+    "all1200EncodedFramesSemanticallyViewed": false,
+    "humanContinuousPlayback": false,
+    "audioListeningReview": false,
+    "formalFilmPersonaAndDisclosureReview": false,
+    "knownBoundary": "Only first 40 seconds; closingFadeSeconds=0. S20 and S48 not included. No full-film approval."
+  },
+  "encodedAudioComparison": {
+    "schemaVersion": "vivhite-encoded-prefix-music-comparison-1",
+    "at": "2026-11-18T13:39:11.460226+00:00",
+    "filmSha256": "a45199c7cb50db594758738f8d4e58c3a8dedeb7c472eb062bec988b26d777b3",
+    "soundtrackSha256": "46ef587715d277e778c805e566d643ce7b8430d3486ee8143b36dda34a74205b",
+    "expectedFramesPerChannel": 1920000,
+    "decodedFramesPerChannel": 1920000,
+    "sampleRate": 48000,
+    "channels": 2,
+    "perChannelCorrelation": [
+      0.9998100399598634,
+      0.9998140709823398
+    ],
+    "differenceRms": 0.002270837866632415,
+    "signalToDifferenceDb": 34.24517888232585,
+    "aacAlignmentPaddingFrames": 0,
+    "nativeModelAudioMapped": false,
+    "formerCorrelationCalibrationThreshold": 0.9999,
+    "formerCalibrationThresholdMet": false,
+    "independentAacValidation": "Every decoded float32 channel sample matches the independent same-parameter WAV-to-AAC encoding exactly.",
+    "independentEncodingFile": "audio-independent-aac256-validation.m4a",
+    "independentEncodingSha256": "6b934918b68bc679130ae1ebcad05b58f38ec5e2c0a25ef9c80dc9a3350bff72",
+    "independentDecodedSamplesPerChannel": 1920000,
+    "independentMaximumAbsoluteDifference": 0,
+    "scope": "Decoded actual AAC compared at zero offset with original WAV first 40 seconds. Not a listening review.",
+    "humanListening": false
+  },
+  "audioCalibrationInvestigation": {
+    "formerCorrelationThreshold": 0.9999,
+    "formerThresholdPassed": false,
+    "diagnostic": "First 32 seconds retain approximately .999994 correlation. The complete 40 seconds are .999810/.999814. The actual AAC is sample-identical to an independent encoding of the original WAV at the same parameters.",
+    "failedWorkerPreserved": "checkpoints/prefix-10-001/encoded-extraction-worker-correlation-failed.py",
+    "failedWorkerSha256": "d114a2262af1d52a6ec0f04045aad8af6d73f37a5cb7953b8224b35a294e7184",
+    "originalDiagnosticPreserved": "checkpoints/prefix-10-001/audio-failed-check-diagnostic.json",
+    "diagnosticSha256": "cca40110ed9748bea51775259d40b3e5540a1a105928634278a51bafb9fdc7f0",
+    "validationCriterion": "Every float32 decoded channel sample must equal the independent AAC result; no reduced correlation threshold used.",
+    "allExisting99ImageBytesRecheckedUnchanged": true,
+    "soundtrackChanged": false,
+    "filmChanged": false
+  }
+}
