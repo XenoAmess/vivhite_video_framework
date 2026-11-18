@@ -641,14 +641,56 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S15",
+      "sourceSha256": "cdb0e346cf50c40f14c93880413154ba24a843048b900e439fc22a4da591671b",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-18T19:48:16.159009+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S15-corrected-v1/S15-cdb0e346cf-all-frames-01.png",
+          "sha256": "20335cde179157c4e2659b26a78cfc044089e352f0ed68d8b4b235bb32d00205",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S15-corrected-v1/S15-cdb0e346cf-all-frames-02.png",
+          "sha256": "2afeb3147641668e6949f23285ad1d5264c750ec267786c1754d6d9121af9330",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S15-corrected-v1/S15-cdb0e346cf-all-frames-03.png",
+          "sha256": "1dc9841d6d361f1b2c2026cb2b7dd10edd2cf104ab653e2a0dc14dc610adde63",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S15-corrected-v1/S15-cdb0e346cf-all-frames-04.png",
+          "sha256": "6694104a07c0fc5fbfa8ccdde4ac24e08e9912038b48cdc9f5f00746908e9dde",
+          "items": 24
+        }
+      ],
+      "faceEvidence": null,
+      "observation": "Actually viewed all 120 raw and all 120 corrected whole-scene frames through eight JPEG pages, all 120 raw and all 120 corrected native print crops through sixteen pages, and all 120 native crops of each original hand through sixteen additional pages. Raw and corrected native whole frames 0/119, raw print 0, corrected print 119, original M09 RGBA artwork, actual 768P input frame 0, both coordinate grids and all four first-frame registration trials viewed. Trial 01 chosen for the sole full correction; other still trials were not complete videos. Both original and corrected detector reports have zero candidate boxes and zero cut flags; zero detections is not treated as proof and does not replace the whole-scene review. Same female body crop, feminine white/deep-violet/gold clothes, two continuously attached arms and hands. The image-left hand holds the lid/rim, the image-right four fingers wrap the cup side with the opposing thumb behind it; this is a handleless paper takeaway cup. Cup rises once clear of the counter during the first half, then stays held; no repeated stroking, extra hand or movement to a visible mouth. Original window frame, railing, empty wet road, houses and sleeve joints remain continuous; no observed real human face, facial fragment, new person, reflection or scene reset. Both raw printed eyes were OPEN; star-iris and thin gold-round-glasses fidelity was weakened, already in the 768P input. Original M09 texture now keeps open star irises and thin gold glasses fixed on the same cup through all 120 corrected crops, without observed blinking, double contours or visible drift during lifting. Real fingers stay outside the restored eye/glasses region. Feathered mask also blends neighboring printed fringe/skin pixels; not an iris-only or whole-character replacement. Remaining hair and body print stay softened. Whole-source CRF16 re-encoding, so mask-exterior pixels are not claimed bit-identical. Original source, all still trials and process files retained. Final uses original four seconds, native frames 0-95; all other shot timings unchanged. Assistant image-sequence QA, not human continuous playback, user aesthetic acceptance, listening approval or final-film/persona approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Fourteen current source selections reviewed; eight original reference-appearance rejections retained.",
-  "reviewedSourceCount": 14,
-  "acceptedSourceCount": 14,
+  "scope": "Fifteen current source selections reviewed; nine original reference-appearance rejections retained.",
+  "reviewedSourceCount": 15,
+  "acceptedSourceCount": 15,
   "rejectedCurrentSourceCount": 0,
-  "rejectedHistoricalSourceCount": 8,
-  "pendingSources": 34,
+  "rejectedHistoricalSourceCount": 9,
+  "pendingSources": 33,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -746,9 +788,21 @@
       "receiptSha256": "9f7351beb6bc99478605f809ef2918a8052bde3acd09eb43f73d6ad8c94d51a9",
       "inspectionReportSha256": "efe9a61522ec9ebeaa6ac7c5cc6b127dedf9d9db31fda440c884c72b2614a448",
       "reason": "All 120 raw and corrected whole-scene frames and badge crops, all original and corrected native detector boxes actually viewed; M05 printed texture restoration reviewed."
+    },
+    "S15": {
+      "path": "corrections/S15-reference-eyes-v1.mp4",
+      "parent": "sources/S15.mp4",
+      "receipt": "corrections/S15-reference-eyes-v1.json",
+      "inspectionReport": "correction-inspections/S15-reference-eyes-v1/S15.json",
+      "selectedAt": "2026-11-18T19:48:16.033657+00:00",
+      "sha256": "cdb0e346cf50c40f14c93880413154ba24a843048b900e439fc22a4da591671b",
+      "parentSha256": "1b659db8463f7938248d1e040cef806c7d75c2bfbfc1b12e8da9850c1b4d337f",
+      "receiptSha256": "f58ee5d88e32bf437ff7ea3e6b66ea78a75f6114b123fd7080569080371c76b8",
+      "inspectionReportSha256": "d062fb969dce7c32e322a744d077655babf6405a2f5c6b134ec739f520158bad",
+      "reason": "Both complete 120-frame whole-scene versions, both complete print details, each original hand across 120 frames and original M09 actually reviewed."
     }
   },
-  "snapshotAt": "2026-11-18T18:33:31.261489+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 2640,
+  "snapshotAt": "2026-11-18T19:48:16.271031+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 2880,
   "rejectedCorrectionCandidateCount": 2
 }
