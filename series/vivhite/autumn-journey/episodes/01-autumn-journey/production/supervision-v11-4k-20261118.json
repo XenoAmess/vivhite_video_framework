@@ -278,6 +278,63 @@
       "submittedRequestCount": 41,
       "formalFilmReady": false,
       "humanFullPlayback": false
+    },
+    {
+      "at": "2026-11-18T13:16:07.599556+00:00",
+      "method": "direct-assistant-local-state-and-complete-S10-source-hands-and-all-detector-crops-review",
+      "completedSources": 10,
+      "acceptedSourceSelections": 10,
+      "running": [
+        "S11"
+      ],
+      "queued": [
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24",
+        "S25",
+        "S26",
+        "S27",
+        "S28",
+        "S29",
+        "S30",
+        "S31",
+        "S32",
+        "S33",
+        "S34",
+        "S35",
+        "S36",
+        "S37",
+        "S38",
+        "S39",
+        "S40",
+        "S41",
+        "S42"
+      ],
+      "controllerRuntime": "controller-008",
+      "controllerPid": 64692,
+      "generationWorker": {
+        "pid": 193760,
+        "creationTicks": 134394662067209945
+      },
+      "controllerStatus": "watching-active-worker",
+      "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+      "submissionWindow": 32,
+      "pollSeconds": 60,
+      "allSubmittedRequestHashesRechecked": true,
+      "allSubmittedRequestsExplicitlyNative4K": true,
+      "submittedRequestCount": 42,
+      "formalFilmReady": false,
+      "humanFullPlayback": false
     }
   ],
   "scope": "Recorded direct assistant checks only. Gaps between checkpoints do not imply continuous human or GPT observation."

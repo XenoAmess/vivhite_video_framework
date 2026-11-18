@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "vivhite-native-4k-back-and-hands-source-review-1",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "reviewedAt": "2026-11-18T13:16:07.341784+00:00",
+  "shotId": "S10",
+  "jobId": "video_gen_e9e0b570531346a594bba9eaecdf8484",
+  "sourceSha256": "de5904ef37b7c23fa9358f7c9b551f1d9dc3b60e87bf9aefb61ca3f813466713",
+  "inspectionReportSha256": "512fe4895de72c51b7e1e3cbc0056c9bc7e8a7fcc9aeab9bea7c9b690b56daff",
+  "inputSourceSha256": "abb19f4abf0cedce218a2041cfa9989d6cdf62125b3ca79ad57397bc6c06e469",
+  "actualInputFramesViewed": [
+    0
+  ],
+  "referenceCompared": "assets/generated/production-v2-fasth3-001/masters/P03-back-v1.png",
+  "referenceSha256": "fe5f250e85aee2bb2ee5d2108ebf85f6705bd13df544e72a3e6db86c3571af61",
+  "wholeSceneFramesActuallyReviewed": 120,
+  "nativeLeftScreenHandFramesActuallyReviewed": 120,
+  "nativeRightScreenHandFramesActuallyReviewed": 120,
+  "handProxyCenters": [
+    [
+      402,
+      311
+    ],
+    [
+      646,
+      311
+    ]
+  ],
+  "handProxyRadii": [
+    65,
+    65
+  ],
+  "originalCandidateSheetItemsViewed": 25,
+  "allNativeCandidates": {
+    "receipt": "assets/generated/production-v11-native-4k-001/review/S10-all-candidates/S10-de5904ef37-all-candidates.json",
+    "receiptSha256": "138b798a830f8828dfa5ba36ab0a4506f3876a15a83364df13eaa40a8367a5d5",
+    "actualWorkerGitCommit": "7db93f2",
+    "workerSha256": "a8701bef967755c92b0f8e8bec2e403384b110e42c2f1c49e554505e94ec9a38",
+    "candidateFrames": 120,
+    "candidateBoxesActuallyReviewed": 285,
+    "jpegPagesActuallyViewed": 18,
+    "viewingScope": "All 285 native crops through eighteen contact pages; not 285 separately opened full-size PNGs."
+  },
+  "nativeWholeContextFramesViewed": [
+    119
+  ],
+  "extraNativeContexts": [
+    {
+      "frame": 108,
+      "nativeCrop": [
+        0,
+        250,
+        650,
+        680
+      ],
+      "path": "assets/generated/production-v11-native-4k-001/review/S10-all-candidates/S10-de5904ef37-f108-left-bank-context.png",
+      "sha256": "fc347f86cd56c2d5c8d93a3659be1196e8e6dd741062c17b1c827628d47fe258",
+      "actuallyViewed": true,
+      "observation": "Distant trees/roofs and utility poles; no observed people."
+    },
+    {
+      "frame": 108,
+      "nativeCrop": [
+        3500,
+        850,
+        3840,
+        1250
+      ],
+      "path": "assets/generated/production-v11-native-4k-001/review/S10-all-candidates/S10-de5904ef37-f108-right-railing-context.png",
+      "sha256": "0c7489ea7ba0c3ba71dfdc5e7a700902101a430f6ccfd5da3e411e2cdc0334a3",
+      "actuallyViewed": true,
+      "observation": "Rusty junction beneath the white horizontal railing, not a human head."
+    }
+  ],
+  "machineCutCandidateFrames": 0,
+  "sourceReviewDecision": "accepted-original",
+  "noCorrectionCreated": true,
+  "finalSeconds": 5,
+  "finalUsedNativeFrames": 120,
+  "allOtherShotTimingsUnchanged": true,
+  "observation": "Actually viewed all 120 whole-scene source frames through four bound JPEG pages, all 120 native-derived crops of each original hand through sixteen JPEG contact pages, all 285 detector boxes across all 120 candidate frames through eighteen native-derived JPEG contact pages, the original 25-example candidate sheet, native whole frame 119 and two wider native context crops from frame 108. Compared actual 768P input first frame and original P03 back-view artwork. The same one illustrated woman remains strictly back-facing, with stable silver hair, beret, blue butterfly ornament, feminine white/deep violet/gold dress, white legwear and purple boots. Both original resting hands stay attached to the correct sleeved forearms on the railing; no extra limb, palm reversal or changing wrist anatomy observed. Fingers overlap in the resting side view; not a claim of independently counted visible fingers in every frame. Water ripples, small hair and ribbon movements and fixed camera remain continuous. No head turn, eye/face reveal, added person, real face, reflection of people or scene cut observed. Detector boxes show trees, distant building/roof textures, stone pavement and a rusty railing junction; the two small distant clusters and right-edge brown/white cluster were checked in wider frame-108 context. No visible character eyes in this back view; no eye restoration needed. Original native source accepted, all original five seconds / 120 native frames retained. Assistant image-sequence review, not human continuous playback or formal film approval.",
+  "missedFacesStillPossible": true,
+  "humanFullPlayback": false,
+  "formalFilmApproval": false
+}
