@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "vivhite-input-first-frame-review-preparation-1",
+  "at": "2026-11-18T09:57:24.637827+00:00",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "shots": [
+    {
+      "shotId": "S08",
+      "inputSha256": "2bfd30a8602d311a04b0d69651cded4554a02d947b82ed0af29f20d51e834c91",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S08-input-f000.jpg",
+      "imageSha256": "5f8b5e423a13293749bb0853f19bab43715e1e781772f3c40493357c4e09228c",
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "plush-face",
+          "master": "M04-plush-v1.png",
+          "proxyCenter": [
+            855,
+            464
+          ],
+          "proxyRadius": 95
+        },
+        {
+          "kind": "separate-badge",
+          "master": "M05-badge-v1.png",
+          "proxyCenter": [
+            1041,
+            574
+          ],
+          "proxyRadius": 59
+        }
+      ],
+      "inputFrameActuallyViewed": true,
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S09",
+      "inputSha256": "4d5a8de9cb7514454bdf79eb47309bbf0c9cff4cf8b27efce2da2439b370184f",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S09-input-f000.jpg",
+      "imageSha256": "cf5c5c7cd463f95e24bac91f95f930c1bdd33dfdc9bf8798759d0375b41b4a12",
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "bottle-sticker",
+          "master": "M09-sticker-v1.png",
+          "proxyCenter": [
+            888,
+            312
+          ],
+          "proxyRadius": 65
+        },
+        {
+          "kind": "original-hand",
+          "proxyCenter": [
+            450,
+            400
+          ],
+          "proxyRadius": 145
+        }
+      ],
+      "inputFrameActuallyViewed": true,
+      "actual4KReview": "not performed by this input check"
+    },
+    {
+      "shotId": "S10",
+      "inputSha256": "abb19f4abf0cedce218a2041cfa9989d6cdf62125b3ca79ad57397bc6c06e469",
+      "inputFrame": 0,
+      "inputSize": [
+        1344,
+        768
+      ],
+      "evidence": "assets/generated/production-v11-native-4k-001/review/native-checkpoints/S10-input-f000.jpg",
+      "imageSha256": "c96eaac9b746c908a57bb1648431d73150a5028e8753f492c8788efa8f3fd1f9",
+      "regionsToConfirmOnActual4KOutput": [
+        {
+          "kind": "back-facing-character",
+          "master": "P03-back-v1.png"
+        },
+        {
+          "kind": "original-left-screen-hand",
+          "proxyCenter": [
+            402,
+            311
+          ],
+          "proxyRadius": 52
+        },
+        {
+          "kind": "original-right-screen-hand",
+          "proxyCenter": [
+            646,
+            311
+          ],
+          "proxyRadius": 52
+        }
+      ],
+      "inputFrameActuallyViewed": true,
+      "actual4KReview": "not performed by this input check"
+    }
+  ],
+  "scope": "Only the actual approved 768P input first frames were viewed here. Coordinates are provisional 1344x768 proxy units. Actual 4K outputs and all source frames still require independent review; no 4K acceptance granted."
+}
