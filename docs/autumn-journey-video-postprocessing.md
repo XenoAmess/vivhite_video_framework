@@ -154,6 +154,8 @@ v8试做的第一份局部候选出现可见翼缘重影，已拒收；第二份
 
 音频相关性阈值须说明校准范围，不能把前32秒上的经验值当作全部AAC内容的保证。v11的40秒阶段预览与原WAV相关性约0.999810／0.999814，未满足此前0.9999的经验门槛。保留失败材料后，用原WAV、同样的`-t 40 -c:a aac -b:a 256k -ar 48000`独立编码，再将两份AAC完整解码为双声道float32，确认每声道1920000个样本逐一完全相同，最大差值为0。这样将原曲身份、时间对齐和该参数的有损编码差异分别核对；没有通过降低门槛或修改原曲消除失败。实际影片、独立AAC、失败脚本、诊断和完成的worker均保留在`checkpoints/prefix-10-001/`，详见[40秒预览记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/technical-prefix-v11-first10.md)。数值一致仍不代替听音检查。
 
+最终4K还应直接对照已交付768P的**实际完整音轨**，避免只比WAV文件名。2026-11-19已从v10发布影片完整解码205秒AAC，核对48kHz双声道、9840000个有效样本／声道及640个尾部填充；与同一原WAV独立编码的205秒AAC逐个float32样本完全相同，见[完整音轨基准](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/approved-v10-audio-baseline-v11.json)。两份解码文件均为78725120字节，SHA-256同为`69fc6cd53d2c96894a64fb55d79284faada645fe22ba2e31e918dcd297293ed8`。同时覆盖全部41个五秒区间的数值统计；与WAV相关性约0.999712／0.999727，不将有损编码写成无损。源影片、原WAV均未改动，实际worker、独立AAC、解码数据及收据保存在v11运行目录`checkpoints/reference-v10-audio-baseline-001/`。后续解码真正的4K成片，再按完整样本数与此基准比较；此时4K成片尚未完成，不能提前填写音轨一致或听音通过。通用完整音轨检查入口仍见下表的`inspect-audio-v9.py`。
+
 本期 [`materialize-sources-v8.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/materialize-sources-v8.py) 的 `validate_locked_timing()` 将前47镜时长及起点逐项锁定v7，仅允许S48变为14秒，总计205秒／6150帧。它调用共用导入器核对原任务、所选源片、完整证据与修订链，不负责生成或自动批准内容。
 
 v9进一步用 [`materialize-sources-v9.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/materialize-sources-v9.py) 锁定与v8相同的**全部48镜时长和起点**，仅允许S44/S47源片指令及对应素材变化。闭帐门起点和手臂空间错误均重新生成，不用印花回贴修补人体；实际两段新片没有回贴、遮罩、换帧或变速。原生手臂局部检查与采用范围见[v9记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v9-motion-768p.md)。用户已确认3:25显示正确，因此未用补帧或改其他镜头长度处理播放器差异。

@@ -1,0 +1,280 @@
+{
+  "schemaVersion": "vivhite-approved-delivery-audio-baseline-1",
+  "recordedAt": "2026-11-18T23:05:37.935420+00:00",
+  "referenceDelivery": "production-v10-bf16-768p-001/film.mp4",
+  "filmSha256": "19f15cb2ceea266f53f9f0a5d5c32276b90c31928bc49d0d2687bd1e93701a6c",
+  "referenceRelease": "https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v10-768p-20261118",
+  "sourceWavSha256": "46ef587715d277e778c805e566d643ce7b8430d3486ee8143b36dda34a74205b",
+  "workerSha256": "93a4666f7c3d82a1872f20760d1bc19865f15ad1a63ca0396637fc9251801e4b",
+  "retainedRuntimeDirectory": "checkpoints/reference-v10-audio-baseline-001",
+  "sampleRate": 48000,
+  "channels": 2,
+  "durationSeconds": 205,
+  "validSamplesPerChannel": 9840000,
+  "decodedSamplesPerChannel": 9840640,
+  "trailingAacPaddingSamplesPerChannel": 640,
+  "decodedFloat32Sha256": "69fc6cd53d2c96894a64fb55d79284faada645fe22ba2e31e918dcd297293ed8",
+  "decodedFloat32Bytes": 78725120,
+  "wavCorrelationPerChannel": [
+    0.9997119136348949,
+    0.9997268577761854
+  ],
+  "wavDifferenceRms": 0.00266420893155411,
+  "wavSignalToDifferenceDb": 32.506880947005136,
+  "all41FiveSecondIntervalsNumericallyAnalysed": [
+    {
+      "startSeconds": 0,
+      "endSeconds": 5,
+      "rms": 0.10312382751950962,
+      "peak": 0.468936026096344
+    },
+    {
+      "startSeconds": 5,
+      "endSeconds": 10,
+      "rms": 0.11262700999024235,
+      "peak": 0.4445463716983795
+    },
+    {
+      "startSeconds": 10,
+      "endSeconds": 15,
+      "rms": 0.11247681319197399,
+      "peak": 0.4994255006313324
+    },
+    {
+      "startSeconds": 15,
+      "endSeconds": 20,
+      "rms": 0.11286101956072817,
+      "peak": 0.5373619794845581
+    },
+    {
+      "startSeconds": 20,
+      "endSeconds": 25,
+      "rms": 0.13119731851152386,
+      "peak": 0.592858612537384
+    },
+    {
+      "startSeconds": 25,
+      "endSeconds": 30,
+      "rms": 0.1252450313494261,
+      "peak": 0.6069356203079224
+    },
+    {
+      "startSeconds": 30,
+      "endSeconds": 35,
+      "rms": 0.1230428528893549,
+      "peak": 0.6628708243370056
+    },
+    {
+      "startSeconds": 35,
+      "endSeconds": 40,
+      "rms": 0.11272597865248932,
+      "peak": 0.5250653624534607
+    },
+    {
+      "startSeconds": 40,
+      "endSeconds": 45,
+      "rms": 0.15565904896253202,
+      "peak": 0.7210041284561157
+    },
+    {
+      "startSeconds": 45,
+      "endSeconds": 50,
+      "rms": 0.1499463419530784,
+      "peak": 0.758080244064331
+    },
+    {
+      "startSeconds": 50,
+      "endSeconds": 55,
+      "rms": 0.14135267108996333,
+      "peak": 0.6911443471908569
+    },
+    {
+      "startSeconds": 55,
+      "endSeconds": 60,
+      "rms": 0.12814372132862206,
+      "peak": 0.6231194138526917
+    },
+    {
+      "startSeconds": 60,
+      "endSeconds": 65,
+      "rms": 0.12638362199493963,
+      "peak": 0.5966678261756897
+    },
+    {
+      "startSeconds": 65,
+      "endSeconds": 70,
+      "rms": 0.1216446648177072,
+      "peak": 0.6223932504653931
+    },
+    {
+      "startSeconds": 70,
+      "endSeconds": 75,
+      "rms": 0.11669729523254145,
+      "peak": 0.5932881236076355
+    },
+    {
+      "startSeconds": 75,
+      "endSeconds": 80,
+      "rms": 0.10792717529039733,
+      "peak": 0.5173964500427246
+    },
+    {
+      "startSeconds": 80,
+      "endSeconds": 85,
+      "rms": 0.08275937198544957,
+      "peak": 0.4618304967880249
+    },
+    {
+      "startSeconds": 85,
+      "endSeconds": 90,
+      "rms": 0.08007417086794918,
+      "peak": 0.37529629468917847
+    },
+    {
+      "startSeconds": 90,
+      "endSeconds": 95,
+      "rms": 0.0825288821290191,
+      "peak": 0.43210506439208984
+    },
+    {
+      "startSeconds": 95,
+      "endSeconds": 100,
+      "rms": 0.08134528754049442,
+      "peak": 0.38775187730789185
+    },
+    {
+      "startSeconds": 100,
+      "endSeconds": 105,
+      "rms": 0.0705544422632376,
+      "peak": 0.3628939390182495
+    },
+    {
+      "startSeconds": 105,
+      "endSeconds": 110,
+      "rms": 0.08578166935052553,
+      "peak": 0.4407809376716614
+    },
+    {
+      "startSeconds": 110,
+      "endSeconds": 115,
+      "rms": 0.08139348106098655,
+      "peak": 0.456572026014328
+    },
+    {
+      "startSeconds": 115,
+      "endSeconds": 120,
+      "rms": 0.0779319824623804,
+      "peak": 0.38369014859199524
+    },
+    {
+      "startSeconds": 120,
+      "endSeconds": 125,
+      "rms": 0.12908078288616948,
+      "peak": 0.6004766821861267
+    },
+    {
+      "startSeconds": 125,
+      "endSeconds": 130,
+      "rms": 0.12575460677298828,
+      "peak": 0.6951894164085388
+    },
+    {
+      "startSeconds": 130,
+      "endSeconds": 135,
+      "rms": 0.12570233713392923,
+      "peak": 0.6048699617385864
+    },
+    {
+      "startSeconds": 135,
+      "endSeconds": 140,
+      "rms": 0.11658073362348488,
+      "peak": 0.5718881487846375
+    },
+    {
+      "startSeconds": 140,
+      "endSeconds": 145,
+      "rms": 0.12207060555554163,
+      "peak": 0.5713592171669006
+    },
+    {
+      "startSeconds": 145,
+      "endSeconds": 150,
+      "rms": 0.12215280583701682,
+      "peak": 0.6735203266143799
+    },
+    {
+      "startSeconds": 150,
+      "endSeconds": 155,
+      "rms": 0.11817047133919775,
+      "peak": 0.6086423993110657
+    },
+    {
+      "startSeconds": 155,
+      "endSeconds": 160,
+      "rms": 0.10546662265445186,
+      "peak": 0.5291179418563843
+    },
+    {
+      "startSeconds": 160,
+      "endSeconds": 165,
+      "rms": 0.11455514531305655,
+      "peak": 0.5545705556869507
+    },
+    {
+      "startSeconds": 165,
+      "endSeconds": 170,
+      "rms": 0.11686517707284394,
+      "peak": 0.5744593739509583
+    },
+    {
+      "startSeconds": 170,
+      "endSeconds": 175,
+      "rms": 0.11676761752487724,
+      "peak": 0.6012848615646362
+    },
+    {
+      "startSeconds": 175,
+      "endSeconds": 180,
+      "rms": 0.11154989134381726,
+      "peak": 0.5488556027412415
+    },
+    {
+      "startSeconds": 180,
+      "endSeconds": 185,
+      "rms": 0.11299245510784066,
+      "peak": 0.5067620873451233
+    },
+    {
+      "startSeconds": 185,
+      "endSeconds": 190,
+      "rms": 0.11491147330626476,
+      "peak": 0.5380430221557617
+    },
+    {
+      "startSeconds": 190,
+      "endSeconds": 195,
+      "rms": 0.11150206193805423,
+      "peak": 0.5766344666481018
+    },
+    {
+      "startSeconds": 195,
+      "endSeconds": 200,
+      "rms": 0.07167275467539322,
+      "peak": 0.3461940586566925
+    },
+    {
+      "startSeconds": 200,
+      "endSeconds": 205,
+      "rms": 0.06055883894009784,
+      "peak": 0.32133597135543823
+    }
+  ],
+  "independentOriginalWavAacSha256": "841df9e431399385cb7283111825dded6f30e36b3d5fa797bf51868fd7813f0b",
+  "independentDecodedFloat32Sha256": "69fc6cd53d2c96894a64fb55d79284faada645fe22ba2e31e918dcd297293ed8",
+  "independentDecodedSamplesPerChannel": 9840640,
+  "everyDecodedFloat32SampleExactlyEqual": true,
+  "independentMaximumAbsoluteDifference": 0,
+  "humanListening": false,
+  "fourKFinalAudioCompared": false,
+  "scope": "Complete actual approved768P AAC decoded and compared with an independently encoded original WAV. A retained numerical reference for later4K comparison; not new listening approval or a completed4K film."
+}
