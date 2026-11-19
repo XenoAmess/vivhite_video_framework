@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "vivhite-native4k-mixed-assembly-preflight-1",
+  "recordedAt": "2026-11-19T17:02:48.497399+00:00",
+  "workerSha256": "0d5f11726c32d5a6ddcdb4f33a532161c5c9d7985178cb86101b83905e396b44",
+  "testWorkerSha256": "8a2c4ce38577534603cee909ec0e41373df3bb1be00de558f70bda2667c2353c",
+  "lockedLayoutTestsActuallyPassed": 5,
+  "originalSubmittedPlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "singleRepairSubmittedPlanSha256": "f7d10a7c80e72a02bbf541b4109871be0e4845653c4ada12075e4b9de6b63842",
+  "unapprovedCandidateSha256": "e41cfad840e53f54fcb1892aba2486569b184a4f52e2c114e5392e77e23d2f68",
+  "realIncompleteInputsTest": {
+    "argv": [
+      "D:\\workspace\\vivhite_video_framework\\video-maker\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\production\\materialize-native4k-sources-v12.py",
+      "--base",
+      "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey",
+      "--directory",
+      "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-native-4k-full-001",
+      "--plan",
+      "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\checkpoints\\native4k-v12-import-preflight-001\\unapproved-assembly-candidate.json"
+    ],
+    "exitCode": 1,
+    "reason": "Separate repaired S05 has no actual accepted source decision yet; no fallback to old S05. Other later sources also remain pending.",
+    "logSha256": "60641cd5e7304e91ec5079bcb89c5dab551d23ac58622628e11d710fedcb0cd9",
+    "assemblyDirectoryCreated": false
+  },
+  "all48OriginsFullyValidated": false,
+  "semanticAcceptance": false,
+  "scope": "Candidate construction, locked layout tests and actual fail-closed incomplete-input check only. No API calls, materialized source batch, final render or formal approval."
+}

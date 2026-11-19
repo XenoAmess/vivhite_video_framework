@@ -77,6 +77,12 @@ Get-ScheduledTaskInfo -TaskName Vivhite-Autumn-Journey-v11-4K
 
 单镜计划不能用镜号数字作数组下标，S05只有一个元素时该做法会越界；现在按稳定镜号查找，并拒绝计划中不存在的任务。`evidenceRelativeToEpisode`和`sourceCatalogRelativeToEpisode`指定该返工自己的检查图与生成台账，路径限制在当期的`assets/generated`与`production`，不会覆盖原48镜台账。未指定这些字段的旧全片配置保持原路径，现有冻结版本不受源码更新影响。测试覆盖单镜ID、独立台账、路径越界、缺失／变更源片、不完整帧报告、过期／未推送Git检查点，以及既有网络恢复、受理不明保护和无关暂存文件保留，共11项通过。
 
+对应完整4K的素材导入另由[`materialize-native4k-sources-v12.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/materialize-native4k-sources-v12.py)负责：48镜逐一指定来源，S05只认独立返工，其余47镜沿用原生成任务及实际审核选择。它先核对**整批**通过决定、全部源帧证据、原生尺寸、完整解码报告、真实请求／输入／下载哈希和修订收据，再调用已有导入器复制到新装配目录。不提交HTTP任务，不修改旧计划或旧视频，不补写内容通过。
+
+新装配计划须保持每镜原定位置与时长、205秒／6150帧、标题和献词，S05仅将独立返工的镜头位置放回420帧，其余47镜对象不能改变。`build_plan()`只构造待审候选，正式装配仍需全部实际素材及本期角色／披露审核；不能把这个候选当作新的48镜生成任务提交。原控制器可能因旧S05已拒收而阻止旧计划的完整预览，这是正确拦截，不能改成放行旧素材。
+
+2026-11-20凌晨新增的[5项导入测试](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/test_materialize_native4k_v12.py)已通过。对当前真实未齐素材的调用也因新版S05尚无采用决定而在创建新装配目录前拒绝，未回填旧版，见[实测收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/native4k-v12-assembly-preflight.json)。这不代表48份4K素材已经齐备或最终装配验收通过。骑行专用全帧机械检查见[后处理文档](autumn-journey-video-postprocessing.md#骑行机械结构的返工与检查)。
+
 ## 2026-11-18实际故障与修复
 
 北京时间08:50:30，客户端替换`jobs/S04.json`时发生Windows `WinError 5`，留下完整`.partial`记录后退出。旧控制器只自动恢复网络错误，漏掉了本地JSON替换失败，因而停在`attention-required`。S04仍在服务端继续运行，09:26左右完成；此后GPU队列未被继续推进，直至13:19本次直接检查时恢复。不能把这段空转描述成持续正常渲染。
