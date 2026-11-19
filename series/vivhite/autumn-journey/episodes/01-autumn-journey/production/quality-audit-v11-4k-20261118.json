@@ -1431,14 +1431,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S32",
+      "sourceSha256": "4b368605fb5de38a2d4d6d4bbf15dbad564e39b4fbb935675bca18fa40057251",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T20:45:23.857530+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-reference-camera-sticker-v2\\inspection\\S32-4b368605fb-all-frames-01.png",
+          "sha256": "80dbf237fa137aa6844e7bec2291865cca6596e2480c726e89435b8e6809b882",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-reference-camera-sticker-v2\\inspection\\S32-4b368605fb-all-frames-02.png",
+          "sha256": "9e432d4c2430bf372cebb515088ce043413d632ddaf8f19bcfd6f49c0f4c45df",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-reference-camera-sticker-v2\\inspection\\S32-4b368605fb-all-frames-03.png",
+          "sha256": "230d34dcd2757ff0556f9d087f098cbbf2af64adb83da28f174ba4995dde0c44",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-reference-camera-sticker-v2\\inspection\\S32-4b368605fb-all-frames-04.png",
+          "sha256": "b351b8d8facb8ba5061a3111cebb304aead838a65971b26e5bc84721c1f64d57",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-reference-camera-sticker-v2\\inspection\\S32-4b368605fb-face-candidates.png",
+        "sha256": "eaddddb5ac6e5cd94e319b554d27990df242897f32412db3d1d763ed10a926c9",
+        "items": 6
+      },
+      "observation": "Actually viewed all120 whole-scene frames of raw, rejected-v1 and adopted-v2 via4 ordered JPEG pages each, plus native whole0/119 for all3 versions. First16 raw print crops actually viewed; other104 raw print crops retained but not counted. V1 and v2 print120 each actually viewed via8 JPEG pages each. All21raw,22v1 and25v2 native candidate crops actually viewed via2 JPEG pages each; they are board/rail shadows and the original dark camera sensor, not people. All120 raw combined hand/camera-region frames actually viewed through30 ordered2240-wide JPEG pages from native ROI[450,100,3450,2100]. Original giant native four-frame hand JPEG page1 only is additionally viewed; pages2to30 are retained but not counted as native-page viewing. All120 raw lens frames actually viewed via8 ordered half-size400x425 tiles from native ROI[1900,500,2700,1350]. Original native lens JPEG pages1to4, frames0to15, additionally viewed; other native pages retained without that claim. Raw/v2 separate left-hand, upper-index, right-hand and lens native crops0/119 actually viewed. All120 decoded pairs compared outside the face patch: minimumPSNR left39.57564839793008, upper-index39.560793428054744, right39.676632862630086, lens39.94922457783467dB; encoding comparison, not pixel identity or anatomy approval. Complete originalM09, actual768P native first whole/print, all120 input whole frames and120 input hand crops, raw native face/grid and9 first-frame trials actually compared. Trials4to9 additionally compared at the tracked native last frame; endpoint trials are not whole-video approval. Only the original two hands with attached white/deep-violet/gold feminine cuffs hold the same silver camera, lens facing viewer. The near thumbs, curved upper index and partly occluded far fingers remain continuous with wrists/sleeves; modest steadying/lowering movement, no verified shutter press or first-person sea-photography claim. No observed third hand, impossible wrist flip, real human face/reflection or added person. Dark lens reflections remain curved optical/greenish textures without an observed human face. Sea, shore, rope, posts and board shadows remain coherent without a scene jump. Eyes were already OPEN. Raw star/diamond iris details and fine gold glasses became coarse purple highlights and dull gray-brown outlines. V1 mask1.35 retained an old mouth below the projected smile and a residual upper-eye contour at native frame119, so it is rejected and preserved. Selected trial8/mask2.4/bottom730/feather15/gainRGB.88/.87/.85, current-frame originalM09 projection restores open violet-pink star/diamond irises, fine round gold glasses, small smile, fringe, cheeks, chin and neighboring hair/upper choker. Hat, butterfly, outer head/sticker border and body remain; body/outer print still coarser than the complete original. Across120 v2 print frames no observed residual second mouth, obvious double eye/glasses contour, blink, slip or horizontal seam. No generative redraw, whole-prop freeze, person cover, retiming or interpolation. Single whole-frame CRF16 encode from unchanged raw; outside-mask pixels not claimed identical. Complete5second120-frame source retained; final placement unchanged128to132seconds/frames3840to3959. All other timings and205second6150-frame target unchanged. OldS05 stays rejected; new accepted768P film and separately queuednative4K replacement remain distinct. Assistant ordered-image review, not human continuous playback/hearing, user aesthetic acceptance or complete4Kfilm approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Thirty-one original shots reviewed; thirty adopted, oldS05 revoked for missing saddle. S31 raw appearance rejected; original-M01 current-frame correction separately reviewed/adopted. Repaired768P full film published; correspondingnewS05 native4K queued. No complete4Kfilm approval.",
-  "reviewedSourceCount": 31,
-  "acceptedSourceCount": 30,
+  "scope": "Thirty-two original shots reviewed;31 adopted, oldS05 rejected for missing saddle. S32 raw and correctionv1 rejected, original-M09 correctionv2 separately reviewed/adopted. Repaired768P full film published; newS05 native4K ordinarily queued. No complete4Kfilm approval.",
+  "reviewedSourceCount": 32,
+  "acceptedSourceCount": 31,
   "rejectedCurrentSourceCount": 1,
-  "rejectedHistoricalSourceCount": 21,
-  "pendingSources": 17,
+  "rejectedHistoricalSourceCount": 23,
+  "pendingSources": 16,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1692,10 +1738,22 @@
       "inspectionReportSha256": "cd5b5140544f7f2b1dfe58d9cd42ec9631baf484d6a27e4a6d79ec9790bd63e2",
       "selectedAt": "2026-11-19T19:10:19.932033+00:00",
       "reason": "Both120-frame whole sequences actually viewed; raw hand120 ordered half-size crops and raw/corrected native endpoints, corrected print120, all147raw/100corrected detector crops, completeM01 and actual768P input compared. Current-frame original-face projection only; original5s unchanged."
+    },
+    "S32": {
+      "path": "corrections/S32-reference-camera-sticker-v2.mp4",
+      "sha256": "4b368605fb5de38a2d4d6d4bbf15dbad564e39b4fbb935675bca18fa40057251",
+      "parent": "sources/S32.mp4",
+      "parentSha256": "10a3f2bc4a7ca3fb9e73f8df9527860255c3cf37f736118dc661ff8bd66a2465",
+      "receipt": "corrections/S32-reference-camera-sticker-v2.json",
+      "receiptSha256": "e50cee922cd029bff4527499786a81d4d75651081a46a02c8caa57380e256a8b",
+      "inspectionReport": "corrections/S32-reference-camera-sticker-v2-inspection/S32.json",
+      "inspectionReportSha256": "aefb801fa7f1cb8c71f0205054151b5c39c327a9aeb17c3e3b5ef6a72962a1bd",
+      "selectedAt": "2026-11-19T20:45:23.762990+00:00",
+      "reason": "Raw/v1/v2 each120 whole frames actually viewed; v1 rejected for native last-frame mouth residue. V2 print120 and all25 candidates, raw hands120/lens120, raw/v2 native endpoints and originalM09/input compared. Source5s/final4s unchanged."
     }
   },
-  "snapshotAt": "2026-11-19T19:10:20.120858+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 6720,
+  "snapshotAt": "2026-11-19T20:45:23.939731+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 7080,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -1727,7 +1785,10 @@
     "S30Raw": 120,
     "S30AdoptedV1": 120,
     "S31Raw": 120,
-    "S31AdoptedV1": 120
+    "S31AdoptedV1": 120,
+    "S32Raw": 120,
+    "S32RejectedV1": 120,
+    "S32AdoptedV2": 120
   },
   "activeUserDirectedRepair": {
     "shotId": "S05",

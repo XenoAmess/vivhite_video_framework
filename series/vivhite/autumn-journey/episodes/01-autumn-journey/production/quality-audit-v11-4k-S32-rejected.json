@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "vivhite-raw-source-rejection-1",
+  "shotId": "S32",
+  "recordedAt": "2026-11-19T20:05:53.174105+00:00",
+  "planSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "sourceSha256": "10a3f2bc4a7ca3fb9e73f8df9527860255c3cf37f736118dc661ff8bd66a2465",
+  "decision": {
+    "id": "S32",
+    "sourceSha256": "10a3f2bc4a7ca3fb9e73f8df9527860255c3cf37f736118dc661ff8bd66a2465",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-19T20:05:53.171502+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 96,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S32-10a3f2bc4a-all-frames-01.png",
+        "sha256": "7e466faf410359d9e5e0dbe911fb8163b9c05f4d36f4afa5043d455c3adbe2f4",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S32-10a3f2bc4a-all-frames-02.png",
+        "sha256": "2ff78b9ef266e55b0fabd58b1519e949b2abdd376c57606ce4a426536ed244a3",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S32-10a3f2bc4a-all-frames-03.png",
+        "sha256": "e53d9d2dee255fb558de3517e16cf827deb57d02447d3ce3961a165ec54eebdb",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S32-10a3f2bc4a-all-frames-04.png",
+        "sha256": "ce36640134cdda365d7e93dfafae477093f6d1c7e317372a9898a2cf93bed973",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S32-10a3f2bc4a-face-candidates.png",
+      "sha256": "76578badbd212497e70159adbd09a228aa59c1ec2ed35a2cfef233c3c05c84b1",
+      "items": 4
+    },
+    "observation": "Actually viewed all120 raw whole-scene frames via4 ordered JPEG pages, native whole0/119, first16 raw print crops via1JPEG page, all21 native detector crops via2JPEG pages, complete originalM09, actual768P input native first whole/print plus all120 input whole frames and120 input hand crops via8JPEG pages, and raw native face/grid. No observed real human face/reflection or added person in that scope. Candidates are board/rail shadows, original dark camera sensor and lens reflections. The original two hands hold the same silver camera facing the viewer, with a small steadying movement; no verified shutter press or first-person sea-photography claim. Full native UHD hand/lens sequences are exported but await detailed review at this checkpoint. Eyes were already OPEN. Original violet-pink star/diamond irises are replaced by coarse purple/pink highlights; fine round gold glasses become dull gray-brown. The actual768P input first print also has softened fine iris/glasses detail. Raw source rejected for reference appearance; no corrected video approved. Original5second source and final4second placement128to132seconds/frames3840to3959 stay unchanged. Assistant image review, not human continuous playback, hearing or final film approval.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "actualWholeSceneFramesViewed": 120,
+  "actualNativeWholeFramesViewed": [
+    0,
+    119
+  ],
+  "actualPrintFramesViewed": 16,
+  "actualPrintRangesViewed": [
+    [
+      0,
+      15
+    ]
+  ],
+  "actualCandidateBoxesViewed": 21,
+  "actualCandidatePagesViewed": [
+    1,
+    2
+  ],
+  "completeOriginalM09ActuallyViewed": true,
+  "actualInputNativeFirstWholeAndPrintActuallyViewed": true,
+  "actualInputWholeFramesViewed": 120,
+  "actualInputHandFramesViewed": 120,
+  "rawNativeHandCropFramesActuallyViewedAtThisCheckpoint": 0,
+  "rawNativeLensCropFramesActuallyViewedAtThisCheckpoint": 0,
+  "observation": "Actually viewed all120 raw whole-scene frames via4 ordered JPEG pages, native whole0/119, first16 raw print crops via1JPEG page, all21 native detector crops via2JPEG pages, complete originalM09, actual768P input native first whole/print plus all120 input whole frames and120 input hand crops via8JPEG pages, and raw native face/grid. No observed real human face/reflection or added person in that scope. Candidates are board/rail shadows, original dark camera sensor and lens reflections. The original two hands hold the same silver camera facing the viewer, with a small steadying movement; no verified shutter press or first-person sea-photography claim. Full native UHD hand/lens sequences are exported but await detailed review at this checkpoint. Eyes were already OPEN. Original violet-pink star/diamond irises are replaced by coarse purple/pink highlights; fine round gold glasses become dull gray-brown. The actual768P input first print also has softened fine iris/glasses detail. Raw source rejected for reference appearance; no corrected video approved. Original5second source and final4second placement128to132seconds/frames3840to3959 stay unchanged. Assistant image review, not human continuous playback, hearing or final film approval.",
+  "eyesWereAlreadyOpen": true,
+  "correctionAcceptance": false,
+  "fullFilmApproval": false
+}
