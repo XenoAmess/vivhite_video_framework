@@ -933,14 +933,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S21",
+      "sourceSha256": "d9dd4bdeb2794ad5fa608f93682d7ac6c7f8a6c89c370bc9188d882cba8bfed1",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T06:05:42.999529+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-reference-print-v1\\inspection\\S21-d9dd4bdeb2-all-frames-01.png",
+          "sha256": "1a82d1c32a81cd8630a87537d7c8bc943df65ce9927747652604b417e45eac51",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-reference-print-v1\\inspection\\S21-d9dd4bdeb2-all-frames-02.png",
+          "sha256": "d55831c274272f7f1cb3cfc845f31262c526ff88aace48ec1214eb8893d62a3b",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-reference-print-v1\\inspection\\S21-d9dd4bdeb2-all-frames-03.png",
+          "sha256": "a0ebd8227c0521ca32eccfb480701b25af6cfc0e4a4c0ff44c603f34f602999d",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-reference-print-v1\\inspection\\S21-d9dd4bdeb2-all-frames-04.png",
+          "sha256": "887240c709829af8f62c934e310cacd0a0925a3b856c44d80126951aadc4e8af",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-reference-print-v1\\inspection\\S21-d9dd4bdeb2-face-candidates.png",
+        "sha256": "7219d41c93eeddfaae393dc526e577f81a5e7b01e6f3240ba46785d328a971b0",
+        "items": 7
+      },
+      "observation": "Actually viewed all120 raw and corrected whole-scene thumbnails, all120 corrected native face crops on8 pages, all19 raw and17 corrected detector boxes, corrected native whole frames0/119, raw native whole frame0, actual768p input first frame, complete M04 artwork, one coordinate grid and all three first-frame trials through their contact page. The original woman remains head-out-of-frame in white/violet/gold feminine clothing, white legwear and violet boots; no real human head/face/reflection, new person, extra limb or discontinuous cabin/forest reset observed. The seated legs and attached boots retain the input pose; no walking action is claimed. Original fixed OPEN violet-pink diamond/star-pattern irises, thin gold glasses, face proportions and mouth are restored. No blink, doubled lens/mouth or obvious tracked edge seam observed through complete corrected detail sequence. Mask1.4 includes face/fringe/mouth, not only irises; bottom750/feather35 excludes the neck/pendant, original prop outline preserved. One CRF16 pass from raw, no interpolation/retiming/new art. Raw face detail viewing remains limited to0to15 and112to119; raw leg detail pages exported but not actually viewed. Source120native frames/5s preserved; only original first96native frames/4s used at final frames2550to2669. Assistant image-sequence review, not continuous human playback, listening or full-film approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Twenty current selections reviewed; thirteen original rejections retained. Rejected S20 v1 whole240 and S19 v1 partial24 distinguished.",
-  "reviewedSourceCount": 20,
-  "acceptedSourceCount": 20,
+  "scope": "Twenty-one current selections reviewed; fourteen original rejections retained. Rejected S20 v1 complete240 and S19 v1 partial24 distinguished.",
+  "reviewedSourceCount": 21,
+  "acceptedSourceCount": 21,
   "rejectedCurrentSourceCount": 0,
-  "rejectedHistoricalSourceCount": 13,
-  "pendingSources": 28,
+  "rejectedHistoricalSourceCount": 14,
+  "pendingSources": 27,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1098,10 +1144,22 @@
       "inspectionReportSha256": "605c903e225cf1a6073250e31e63ec6871c7d54e38ba8d17ede6c12eee40e18d",
       "selectedAt": "2026-11-19T05:44:30.170534+00:00",
       "reason": "Actual all240 whole-scene frames, all240 frames of each of three prop details, all186 candidate boxes and native whole-scene window-boundary contexts reviewed. Original M04/M05 faces and complete inert first-frame props retained; v1 body/outline discontinuity rejected."
+    },
+    "S21": {
+      "path": "corrections/S21-reference-print-v1.mp4",
+      "sha256": "d9dd4bdeb2794ad5fa608f93682d7ac6c7f8a6c89c370bc9188d882cba8bfed1",
+      "parent": "sources/S21.mp4",
+      "parentSha256": "8a57f820fb400f2354bc2a4b204927746e384faee7b8be269f2770ac53d13a90",
+      "receipt": "corrections/S21-reference-print-v1.json",
+      "receiptSha256": "fba42296733e7dad1d3f8b4f7ae16a7412987bfe58ad3059a976d2b662ee4133",
+      "inspectionReport": "corrections/S21-reference-print-v1-inspection/S21.json",
+      "inspectionReportSha256": "e69aa482850da6041ab259d46ea0c9e563bfce3a1b7f70bedf967a5761444ec1",
+      "selectedAt": "2026-11-19T06:05:42.912715+00:00",
+      "reason": "All120 raw and corrected whole-scene frames, all120 corrected face-detail frames, all19 raw and17 corrected detector boxes, corrected native first/last frames, actual input first frame and original M04 master actually reviewed."
     }
   },
-  "snapshotAt": "2026-11-19T05:44:30.613662+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 4440,
+  "snapshotAt": "2026-11-19T06:05:43.016482+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 4680,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -1114,6 +1172,8 @@
     "previousFirst19RawAndAdopted": 3720,
     "S20Raw": 240,
     "S20RejectedV1": 240,
-    "S20AdoptedV2": 240
+    "S20AdoptedV2": 240,
+    "S21Raw": 120,
+    "S21AdoptedV1": 120
   }
 }

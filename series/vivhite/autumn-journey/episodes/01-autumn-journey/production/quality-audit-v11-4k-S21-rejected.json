@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "vivhite-source-visual-rejection-1",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "decision": {
+    "id": "S21",
+    "sourceSha256": "8a57f820fb400f2354bc2a4b204927746e384faee7b8be269f2770ac53d13a90",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-19T05:58:40.317297+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 96,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S21-8a57f820fb-all-frames-01.png",
+        "sha256": "cc2ff82af3cbcec335456f428c1a9fefadeba1143c4ab8f4969f34c6f993e245",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S21-8a57f820fb-all-frames-02.png",
+        "sha256": "754220ad0383d8bf0b7ff182d2f2a210cc816cdfe0fbcd7eab980f8d46654293",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S21-8a57f820fb-all-frames-03.png",
+        "sha256": "3c1c7d678bb27892992cdc8e8b51425e69be5e5d3739ea587c26ec258f2e9e1b",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S21-8a57f820fb-all-frames-04.png",
+        "sha256": "a79fafe891fe369c7fb66857ccf455a47d69eb8a25cd2536966960497da9a382",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S21-8a57f820fb-face-candidates.png",
+      "sha256": "4bc4a4c01d99d9a0f58081de3c18e92262466ea52e1b4a8c2d0034b2ff60fed1",
+      "items": 7
+    },
+    "observation": "Actual all120 whole-scene thumbnails, native full first frame, actual768p input first frame, original M04 master, native face crops0to15 and112to119, all19 detector boxes and three first-frame restoration trials viewed. Existing woman remains cropped below her head, in white/violet/gold clothing, white legwear and violet boots. No extra person, head, limb or scene jump observed; original cabin/window/forest motion continuous. The existing plush eyes are OPEN throughout reviewed detail ranges, but original diamond/star iris artwork is replaced by coarse blurred purple/orange shapes, already visible in the768p input; reject reference appearance. Other exported detail frames are not counted as viewed. Assistant image-sequence review, not human playback or film approval.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "actualWholeSceneFramesViewed": 120,
+  "actualPrintDetailRangesViewed": [
+    [
+      0,
+      15
+    ],
+    [
+      112,
+      119
+    ]
+  ],
+  "actualPrintDetailFramesViewed": 24,
+  "candidateBoxesActuallyViewed": 19,
+  "nativeWholeSceneFramesActuallyViewed": [
+    0
+  ],
+  "humanContinuousPlayback": false,
+  "fullFilmApproval": false
+}
