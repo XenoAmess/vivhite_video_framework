@@ -1477,14 +1477,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S33",
+      "sourceSha256": "706d07db14df3d0b9d606bec0b8371296d90c2cd2dc0ca4057de6a27bc54a864",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T21:28:32.798632+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S33-706d07db14-all-frames-01.png",
+          "sha256": "a8c512b9d88f5b136b70b1e283702b223e02c78e7464150e694b573b4e4810d5",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S33-706d07db14-all-frames-02.png",
+          "sha256": "d010de0aefd8fb2e16357e4ed8d77b1b21094e274588dff631259af1ca776e67",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S33-706d07db14-all-frames-03.png",
+          "sha256": "75360d5f9f367f9c3b01f95362e2f3e8d952b6f6174b8d2c0966a3260f5a1042",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S33-706d07db14-all-frames-04.png",
+          "sha256": "44401d87a712c1df772d8aadf83ff0c7dca6d32bcff9ba1ba109735560f37cba",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S33-706d07db14-face-candidates.png",
+        "sha256": "6174282ac9cf49a932362eaf0ed8b5b5a59764baa16235d778fb3f588123c019",
+        "items": 19
+      },
+      "observation": "Actually viewed all120 source whole-scene frames via4 ordered JPEG pages, all230 native detector crops via15 JPEG pages, and native whole0/119. Actual unchanged768P input native first whole and all120 input whole-scene frames via4 JPEG pages were independently viewed during this session, with input bytes checked against the immutable submitted plan. All detector candidates are original wet brown/gold rocks, dark cracks, weathered holes or warm rock highlights. Enlarged native whole context confirms they are embedded in the same rock ledge, with no observed human face or reflected person. The original sunset coast stays unoccupied: no added walker, hand, body, vehicle, animal, character merchandise or readable lettering. Existing waves advance, break and recede over dark wet rock channels; foam and thin reflective water lines change continuously while the headland, offshore rocks, sunset and cloud bank remain coherent. No observed reset, added prop or unplanned cut. The warm high-contrast sunset is already present in the input. Native4K detail is still soft/processed in some distant vegetation and rock texture; this does not establish photographic or pixel-perfect realism. No visible character or printed front face, so hand/eye/glasses/costume restoration is inapplicable; no masking, patching, first-frame freezing, interpolation, retiming or new image generation performed. Unmodified original4K source adopted directly. All5seconds120native24fps frames retained; the locked first3seconds72native frames become90final30fps frames3960to4049 at132to135seconds. Other shot lengths and205seconds6150frames stay unchanged. Other native checkpoints and original PNG contact pages retained but not counted as individually viewed. Assistant ordered-image review, not human continuous playback/listening, user aesthetic acceptance or final full-film approval. OldS05 remains rejected while the new768P-based4K replacement is separately queued.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Thirty-two original shots reviewed;31 adopted, oldS05 rejected for missing saddle. S32 raw and correctionv1 rejected, original-M09 correctionv2 separately reviewed/adopted. Repaired768P full film published; newS05 native4K ordinarily queued. No complete4Kfilm approval.",
-  "reviewedSourceCount": 32,
-  "acceptedSourceCount": 31,
+  "scope": "Thirty-three original shots reviewed;32 adopted, oldS05 revoked for missing saddle. S33 unmodified empty coast reviewed/adopted. New768P full film published and newS05 native4K separately ordinarily queued. Full4Kfilm pending.",
+  "reviewedSourceCount": 33,
+  "acceptedSourceCount": 32,
   "rejectedCurrentSourceCount": 1,
   "rejectedHistoricalSourceCount": 23,
-  "pendingSources": 16,
+  "pendingSources": 15,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1752,8 +1798,8 @@
       "reason": "Raw/v1/v2 each120 whole frames actually viewed; v1 rejected for native last-frame mouth residue. V2 print120 and all25 candidates, raw hands120/lens120, raw/v2 native endpoints and originalM09/input compared. Source5s/final4s unchanged."
     }
   },
-  "snapshotAt": "2026-11-19T20:45:23.939731+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 7080,
+  "snapshotAt": "2026-11-19T21:28:32.819565+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 7200,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -1788,7 +1834,8 @@
     "S31AdoptedV1": 120,
     "S32Raw": 120,
     "S32RejectedV1": 120,
-    "S32AdoptedV2": 120
+    "S32AdoptedV2": 120,
+    "S33OriginalAdopted": 120
   },
   "activeUserDirectedRepair": {
     "shotId": "S05",
