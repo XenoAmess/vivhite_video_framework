@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "vivhite-native-source-visual-review-1",
+  "shotId": "S25",
+  "reviewedAt": "2026-11-19T11:04:29.761732+00:00",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "sourceSha256": "b81885790f85ee34fd14ed5e8b47e2939b5c0cfe4ce4ed2aac96d6a04803d681",
+  "sourceModified": false,
+  "decision": {
+    "id": "S25",
+    "sourceSha256": "b81885790f85ee34fd14ed5e8b47e2939b5c0cfe4ce4ed2aac96d6a04803d681",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-19T11:04:29.739407+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 72,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S25-b81885790f-all-frames-01.png",
+        "sha256": "be7f98da155f3527951812e5488c714d961ce4cc31e0bd6d5bb312750b3e6fdf",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S25-b81885790f-all-frames-02.png",
+        "sha256": "33e6a5530d7980feccec3f81f3e076f0c2f994e7d02ebbdb8a3ea8c38b9edde9",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S25-b81885790f-all-frames-03.png",
+        "sha256": "7958be28cbb5f32a30daab18938eaf4280af9dd5c1ff5406ce7ddeaf63c77897",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S25-b81885790f-all-frames-04.png",
+        "sha256": "6b8d75e19724dfad8e6cfff8bbd6fdee28bbb65af2d89a08f5eef01b7d1415e0",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S25-b81885790f-face-candidates.png",
+      "sha256": "8c742a5833d71e6085ef489739ec1c09e61ee0555e28a922cc36cab144501788",
+      "items": 17
+    },
+    "observation": "Actually viewed all120 whole-scene frames through4JPEG pages, all168 detector candidate boxes through11JPEG pages, native UHD whole JPEG frames0/119, and actual unchanged1344x768 input first frame. Earlier genuine120-frame input viewing remains bound to the identical input SHA. All candidate crops show original sunlit or shaded sandstone, weathered holes, cliff edges, shrubs or ground texture; none is an observed human face or person. The canyon stays unoccupied with no added traveler, animal, limb, vehicle, merchandise, reflected person or readable lettering. Rock outlines, ledges, bushes, foreground stones, cloud bank and warm-light boundaries remain continuous; the existing low dust cloud drifts through the valley from the first frame without an observed reset or obvious unplanned cut. No character or printed artwork is present, so there is no visible hand, eye/glasses, costume or merchandise region to restore. Unmodified native4K model source adopted directly; no masking, patching, interpolation, retiming, new image generation or synthetic scene addition. All5seconds/120native frames remain retained; original first72native frames/3seconds become90 final30fps frames3030to3119. Other native checkpoints and original PNG contact sheets remain exported but are not counted as individually viewed. Assistant frame-image semantic review only, not human continuous playback, listening, user aesthetic acceptance or final205-second-film approval.",
+    "decision": "accepted",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "passed"
+  },
+  "inputSourceSha256": "aa7b931b1a8f6f6e6d41de451edd5c6f3487a120d47c5500d6890ccc3225078f",
+  "originalMaster": null,
+  "previousCompleteInputReview": {
+    "path": "production/input-motion-baselines-v11-S21-S27.json",
+    "sha256": "e447323c8677c7735180d9d4b6fc71d60bfc2324817cee68e4a2a84f606e071f",
+    "boundInputSha256": "aa7b931b1a8f6f6e6d41de451edd5c6f3487a120d47c5500d6890ccc3225078f"
+  },
+  "actualInputFirstFrame": {
+    "path": "assets/generated/production-v11-native-4k-001/review/input-native-interaction-baselines/S25-input-native-f000.png",
+    "sha256": "225df9d44c2f07b01565babcd9003cdc974e591d8d9cdb0cad7c841aa393b382",
+    "actuallyViewed": true
+  },
+  "extractions": {
+    "whole": {
+      "path": "assets/generated/production-v11-native-4k-001/review/viewing-copies/S25-b81885790f.json",
+      "sha256": "cc4c71522c8c821c0c279e8fa0d6247e643d1fe4493c0faeb9766ca46547fde3"
+    },
+    "candidates": {
+      "path": "assets/generated/production-v11-native-4k-001/review/native-candidates/S25-original-b81885790f/S25-b81885790f-all-candidates.json",
+      "sha256": "51f52b4d9f7fb8c98354c18d78e1d4f7c67917d5398553633ba6cbb91652ad12"
+    }
+  },
+  "wholeSceneFramesActuallyViewed": 120,
+  "wholePagesActuallyViewed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "nativeWholeFramesActuallyViewed": [
+    0,
+    119
+  ],
+  "candidateBoxesActuallyViewed": 168,
+  "candidateBoxesExported": 168,
+  "candidatePagesActuallyViewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "candidateFinding": "Original sandstone, cliff, shrub and ground-texture false positives; no human face observed.",
+  "characterPresent": false,
+  "printedFrontFacePresent": false,
+  "eyeRestorationPerformed": false,
+  "frozenWorkers": [
+    {
+      "source": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\production\\prepare-review-viewing-copies-v11.py",
+      "frozen": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\checkpoints\\S25-source-review-001\\prepare-review-viewing-copies-v11.py",
+      "sha256": "401d6a91290cfb202a45ff33fdc6ade4b50a463323bf770396cce23ffbd1aba3"
+    },
+    {
+      "source": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\production\\extract-native-candidates-v11.py",
+      "frozen": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\checkpoints\\S25-source-review-001\\extract-native-candidates-v11.py",
+      "sha256": "a8701bef967755c92b0f8e8bec2e403384b110e42c2f1c49e554505e94ec9a38"
+    }
+  ],
+  "allExportedNativeCheckpointsIndividuallyViewed": false,
+  "humanContinuousPlayback": false,
+  "humanListening": false,
+  "formalFullFilmApproval": false,
+  "observation": "Actually viewed all120 whole-scene frames through4JPEG pages, all168 detector candidate boxes through11JPEG pages, native UHD whole JPEG frames0/119, and actual unchanged1344x768 input first frame. Earlier genuine120-frame input viewing remains bound to the identical input SHA. All candidate crops show original sunlit or shaded sandstone, weathered holes, cliff edges, shrubs or ground texture; none is an observed human face or person. The canyon stays unoccupied with no added traveler, animal, limb, vehicle, merchandise, reflected person or readable lettering. Rock outlines, ledges, bushes, foreground stones, cloud bank and warm-light boundaries remain continuous; the existing low dust cloud drifts through the valley from the first frame without an observed reset or obvious unplanned cut. No character or printed artwork is present, so there is no visible hand, eye/glasses, costume or merchandise region to restore. Unmodified native4K model source adopted directly; no masking, patching, interpolation, retiming, new image generation or synthetic scene addition. All5seconds/120native frames remain retained; original first72native frames/3seconds become90 final30fps frames3030to3119. Other native checkpoints and original PNG contact sheets remain exported but are not counted as individually viewed. Assistant frame-image semantic review only, not human continuous playback, listening, user aesthetic acceptance or final205-second-film approval.",
+  "allProcessFilesAndImagesRetained": true
+}
