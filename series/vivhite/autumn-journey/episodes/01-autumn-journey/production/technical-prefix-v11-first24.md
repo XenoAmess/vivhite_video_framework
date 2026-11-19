@@ -1,5 +1,7 @@
 # 前24镜原生4K审核版
 
+已发布下载：[MP4审核片](https://github.com/XenoAmess/vivhite_video_framework/releases/download/autumn-journey-v11-4k-first24-review-20261119/vivhite-autumn-journey-v11-4k-first24-review.mp4) · [GitHub Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v11-4k-first24-review-20261119)。三个附件均已从Release完整回下载并逐字节SHA-256核验通过。
+
 按用户要求，将当前采用的S01—S24连续合成为一份可下载审核片：3840×2160、30fps、101秒（1:41）、3030帧，MP4大小635,111,749字节。各镜保持既定入片长度，S20仍为连续10秒，S24为4秒。原音乐、片头文字及样式沿用当前版本。后续S25—S48继续制作，全片目标仍为205秒／6150帧。
 
 视频SHA-256：`c6173533abb8861edcd816a203a5a802461d4d632d4f39b91d1b0ed9301ea928`。实际渲染、选择的16份周边修订、素材哈希与逐帧证据绑定见[审核收据](technical-prefix-v11-first24.json)。发布结果另存[Release凭据](release-v11-first24-4k-review-20261119.json)。
