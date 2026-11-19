@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "vivhite-source-visual-rejection-1",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "decision": {
+    "id": "S24",
+    "sourceSha256": "ce67c0dfb608bd760b616e554a60971df840aef44f987e81854165e306fa5675",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-19T09:44:18.675824+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 96,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S24-ce67c0dfb6-all-frames-01.png",
+        "sha256": "18b0b5a657719f38f11fdfc4bcc06355a87833d852f976660c3eb0e66f7a767a",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S24-ce67c0dfb6-all-frames-02.png",
+        "sha256": "cb4d18838074eb4208d2e88d033f0d03522dde950caa7a62e5ebedb5c15a9d2d",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S24-ce67c0dfb6-all-frames-03.png",
+        "sha256": "3d0df0e4f9232bac21dfd6a53f96bc4b0d850073901e0ef8410c437ce2ca7192",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S24-ce67c0dfb6-all-frames-04.png",
+        "sha256": "7997700dcbce2681b784b3c5d12b43fe70cb4424ee65d89c06af878a736bc91c",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S24-ce67c0dfb6-face-candidates.png",
+      "sha256": "6a1eb2af7adf719dcdf70a02eb1fb6d691958dcc641bc37b7dc924112f17fa70",
+      "items": 10
+    },
+    "observation": "All120 raw whole-scene thumbnails, native whole frame0, raw native face crop/grid, raw native-derived keychain crops0to15 and112to119, actual768p input native frame0, original full M01 master and three first-frame face trials in one contact page actually viewed. Raw pouring-hand/sand and bag-hand detail pages1 only, frames0to3 each, actually viewed; other116 raw detail frames per region exported but not counted as viewed. The same head-cropped female kneels with connected original arms, open right palm already letting sand fall and the left hand resting on the bag. No additional person or obvious scene jump observed in whole-scene sequence. The keychain eyes are OPEN throughout the reviewed ranges, but original multi-star violet-pink iris details are replaced by coarse cyan flecks and gold glasses are less faithful. Reject reference appearance; no closed-to-open event claimed. Raw detector exported116 native candidate boxes; none yet counted as actually viewed. Other96 raw print crops exported but not counted as viewed. First-frame mask1.35 selected from three actually viewed trials for a candidate. Full corrected-source visual review remains required. Assistant frame-image review, not human playback, listening or final-film approval.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "actualWholeSceneFramesViewed": 120,
+  "actualPrintDetailRangesViewed": [
+    [
+      0,
+      15
+    ],
+    [
+      112,
+      119
+    ]
+  ],
+  "actualPrintDetailFramesViewed": 24,
+  "actualMotionDetailRangesViewed": {
+    "pouringHandAndSand": [
+      [
+        0,
+        3
+      ]
+    ],
+    "bagHand": [
+      [
+        0,
+        3
+      ]
+    ]
+  },
+  "candidateBoxesExported": 116,
+  "candidateBoxesActuallyViewed": 0,
+  "nativeWholeSceneFramesActuallyViewed": [
+    0
+  ],
+  "actual768pInputNativeFramesViewed": [
+    0
+  ],
+  "firstFrameTrialsContactActuallyViewed": true,
+  "firstFrameTrialsActuallyViewed": 3,
+  "humanContinuousPlayback": false,
+  "fullFilmApproval": false
+}

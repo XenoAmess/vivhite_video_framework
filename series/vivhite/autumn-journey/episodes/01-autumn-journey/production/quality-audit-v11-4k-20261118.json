@@ -1063,14 +1063,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S24",
+      "sourceSha256": "ba58f9a8aef60c87ed956831b477ad5e94c813f1210c6e4e9c24a2862cd877cc",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T10:10:48.944947+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S24-reference-keychain-v1\\inspection\\S24-ba58f9a8ae-all-frames-01.png",
+          "sha256": "037d0b508a576bb25c2370a3844d417f784595db57a0e786178e3ac916c91792",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S24-reference-keychain-v1\\inspection\\S24-ba58f9a8ae-all-frames-02.png",
+          "sha256": "646f606870d9038c49ae86943db7db265f537248c8bf01f64c4f543687e9e1bf",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S24-reference-keychain-v1\\inspection\\S24-ba58f9a8ae-all-frames-03.png",
+          "sha256": "42240f3199dc993ac814af5e315e2d770bb104f4388c951ba96bc8549b2ffdca",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S24-reference-keychain-v1\\inspection\\S24-ba58f9a8ae-all-frames-04.png",
+          "sha256": "acfcf60b57ddedba4a7a6786516ac862118a8b68cc037d005f4a607384ea288c",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S24-reference-keychain-v1\\inspection\\S24-ba58f9a8ae-face-candidates.png",
+        "sha256": "907482b8b4bdc4cae26e72b3151b6488fa7508c5e416b4017e1939dce51dc313",
+        "items": 10
+      },
+      "observation": "Actually viewed all120 raw and corrected whole-scene thumbnails through4JPEG pages each; raw native whole frame0; corrected native whole frames0/119. All120 corrected keychain detail frames through8JPEG pages and both corrected native hand/sand regions through30JPEG pages each were actually viewed. All118 corrected detector candidate boxes through8JPEG pages were actually viewed: arm, sleeve and adjacent terrain false positives, not human faces. Actual input first native frame and complete original M01 artwork were viewed, alongside the previously bound full input interaction review. Raw keychain detail frames0to15 and112to119 (24frames), raw hand regions0to3 each, raw face/grid crops and the three first-frame registration trials via their contact page were actually viewed. Other exported raw print/hand details and all116 raw native candidate crops were retained but not counted as actually viewed. The single original head-cropped woman remains kneeling in feminine white/deep-violet/gold clothing with original boots; the right attached palm pours a continuing narrow sand stream from the first frame, while the other attached hand rests on the bag. No new head, person, third hand, crossed limb, anatomical jump, scene cut or autonomous merchandise movement observed. This is continuing sand flow, not a new scooping action or complete emptying of the palm; the second original hand remains visible. Raw printed eyes were already OPEN; the failure was coarse cyan/white iris flecks and redrawn glasses, not a closed-to-open transition. Selected mask1.35 restores original open violet-pink multistar irises, complete fine gold glasses, face proportions and small mouth from original RGBA M01; all120 corrected detail frames show no observed drift, doubled rim/mouth or obvious mask seam. Current-frame reference projection includes face/fringe/cheeks/mouth/chin with mother-coordinate bottom830/feather30 and gainRGB0.88/0.87/0.84. Original acrylic perimeter, bag, hands, sand, background and motion remain; no whole-prop first-frame freeze, interpolation, retiming or newly generated artwork. One CRF16 encode directly from raw. All5seconds/120native frames retained; original final4seconds/96native frames become120 final30fps frames2910to3029. Assistant frame-image semantic review, not human continuous playback, listening, user aesthetic acceptance or final205-second-film approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Twenty-three current sources actually reviewed; fifteen original rejections and distinct rejected correction scopes retained. Full205-second film pending.",
-  "reviewedSourceCount": 23,
-  "acceptedSourceCount": 23,
+  "scope": "Twenty-four current selections reviewed; sixteen original rejections retained. Rejected-candidate full/partial review coverage remains distinct.",
+  "reviewedSourceCount": 24,
+  "acceptedSourceCount": 24,
   "rejectedCurrentSourceCount": 0,
-  "rejectedHistoricalSourceCount": 15,
-  "pendingSources": 25,
+  "rejectedHistoricalSourceCount": 16,
+  "pendingSources": 24,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1252,10 +1298,22 @@
       "inspectionReportSha256": "9fae3f2367ff76c89fed8b6881198a703c71cdfcb0d0c023be50d8ce52874924",
       "selectedAt": "2026-11-19T07:24:19.725812+00:00",
       "reason": "Both120-frame whole scenes, all120 corrected badge crops,40raw badge crops, three corrected native whole contexts, actual input and original M05 master reviewed; zero detector boxes in both versions."
+    },
+    "S24": {
+      "path": "corrections/S24-reference-keychain-v1.mp4",
+      "sha256": "ba58f9a8aef60c87ed956831b477ad5e94c813f1210c6e4e9c24a2862cd877cc",
+      "parent": "sources/S24.mp4",
+      "parentSha256": "ce67c0dfb608bd760b616e554a60971df840aef44f987e81854165e306fa5675",
+      "receipt": "corrections/S24-reference-keychain-v1.json",
+      "receiptSha256": "567a8f1a75c82ef557dcce28813ab21f9a8b25f439b84b5709d7baf0693e5703",
+      "inspectionReport": "corrections/S24-reference-keychain-v1-inspection/S24.json",
+      "inspectionReportSha256": "d3f6ba34369f3ff146bdd6984d3ccd3c08b0e5524be3bd797b0011dcdc3d6a89",
+      "selectedAt": "2026-11-19T10:10:48.864760+00:00",
+      "reason": "Actually reviewed both120-frame whole-scene versions, all120 corrected keychain crops, both120-frame corrected hand/sand regions, all118 corrected native candidate boxes, raw24 print crops, original M01 artwork and original input baseline. Current-frame reference projection restores fixed open eyes and gold glasses; no timing change."
     }
   },
-  "snapshotAt": "2026-11-19T08:41:27.972952+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 5040,
+  "snapshotAt": "2026-11-19T10:10:49.055882+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 5280,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -1273,6 +1331,8 @@
     "S21AdoptedV1": 120,
     "S22Raw": 120,
     "S22AdoptedV1": 120,
-    "S23OriginalAdopted": 120
+    "S23OriginalAdopted": 120,
+    "S24Raw": 120,
+    "S24AdoptedV1": 120
   }
 }
