@@ -1201,14 +1201,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S27",
+      "sourceSha256": "da86e30cf0408bdb7c98dc7e1a11989e80613b55629b192154d1569f0ebb1345",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T15:36:26.030497+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 48,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S27-da86e30cf0-all-frames-01.png",
+          "sha256": "861d7366a8c26f0aae54d1d1d916aceab4628c3b3b106ad8c71708098d455077",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S27-da86e30cf0-all-frames-02.png",
+          "sha256": "d511ab81d74019e3c345a002b3faf07b93642ed942284ac51a027e03f11e38b5",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S27-da86e30cf0-all-frames-03.png",
+          "sha256": "5125449d96ac08a549e2e738b173178c9a03774a98ea4cf8029227ae947b7c62",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S27-da86e30cf0-all-frames-04.png",
+          "sha256": "278f6e3569315fff03e89b3cf3410fa4c4f4278255c3b5b9ad7310e07db43c60",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S27-da86e30cf0-face-candidates.png",
+        "sha256": "b47495b03df2481c67071ae858beffb3d93677cb8570cbe0896fb1a65efcce83",
+        "items": 6
+      },
+      "observation": "Actually viewed all120 raw whole-scene frames via4 ordered JPEG pages, native whole first0 and last119, all120 native printed-keychain detail crops via8 JPEG pages and separate native print119, all50 detector boxes from42frames via4 ordered native-crop JPEG pages, complete M01 original master and actual768P input native first whole and print crop. Same empty worn striped vehicle seat, brown leather bag, metal ring and attached short chain throughout; one original acrylic character hangs from its original top hole. Small body/chain movement and the corresponding separate rightward cast shadow stay coherent with vehicle vibration. Original window, guardrail, near foliage, lake and distant mountains remain; passing foliage/flowers and light changes are continuous, no observed cut or background reset. All detector candidates are existing charm/chain shadows, bag metal hardware, illustration fragments or window foliage; no observed real human face, reflection, head, extra person or limb. The printed female character keeps fixed open violet-pink eyes, round gold glasses, pale lilac hair, blue butterfly and white/violet clothes. Fine star-like iris highlights are simplified/softer than the full M01 mother image, so this is not pixel-identical artwork fidelity. No observed autonomous blink, eye migration, eyelid collapse, changing expression, print slide or doubled eye/glasses contour across the120 print crops. Accept this source without compositing, retiming, interpolation or whole-prop freeze. All5s120native frames reviewed though final uses only original first2s48native frames, final60frames3270to3329 at109to111seconds. No other timing changed. Old S05 remains rejected; repaired768P was separately delivered and correspondingnew4K is queued. Assistant frame-image semantic review, not human continuous playback, listening, user aesthetic acceptance or complete4Kfilm approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Twenty-six sources reviewed; twenty-five adopted after user revokedS05 for missing visible saddle support. S26 original rejected and separately reviewed current-frame original-art correction adopted. S05repair768P queued; corresponding4K still pending.",
-  "reviewedSourceCount": 26,
-  "acceptedSourceCount": 25,
+  "scope": "Twenty-seven source shots reviewed; twenty-six adopted, old S05 revoked for missing saddle. S27 raw source accepted after complete whole/print/candidate image review with fine iris-detail limitations recorded. Repaired768P film published; correspondingnew4K queued separately. No complete4Kfilm approval.",
+  "reviewedSourceCount": 27,
+  "acceptedSourceCount": 26,
   "rejectedCurrentSourceCount": 1,
   "rejectedHistoricalSourceCount": 17,
-  "pendingSources": 22,
+  "pendingSources": 21,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1416,8 +1462,8 @@
       "reason": "Actually viewed both120-frame whole versions, all120 corrected printed-face crops, all120 corrected window-region crops, all108 raw and14 corrected native detector boxes, original M08 and actual768P input first frame. Original open iris/glasses restoration, unchanged five-second duration."
     }
   },
-  "snapshotAt": "2026-11-19T13:04:47.713851+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 5640,
+  "snapshotAt": "2026-11-19T15:36:26.072876+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 5760,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -1440,7 +1486,8 @@
     "S24AdoptedV1": 120,
     "S25OriginalAdopted": 120,
     "S26Raw": 120,
-    "S26AdoptedV1": 120
+    "S26AdoptedV1": 120,
+    "S27Raw": 120
   },
   "activeUserDirectedRepair": {
     "shotId": "S05",
