@@ -1247,14 +1247,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S28",
+      "sourceSha256": "1ac6eecb6997435f2e240bed65d5ea6aed64f45cc354f3249a9d9ca880dc712e",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T16:04:37.594662+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S28-reference-cup-v1\\inspection\\S28-1ac6eecb69-all-frames-01.png",
+          "sha256": "640634d115999efcb1bce31cb1cf516eb28641b8447b489c2c8bfd6dbec1a3c7",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S28-reference-cup-v1\\inspection\\S28-1ac6eecb69-all-frames-02.png",
+          "sha256": "f8282e93b64b9bc5f9bb1af5a741122c7c79c3d27ff3077cd2064286e12a5355",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S28-reference-cup-v1\\inspection\\S28-1ac6eecb69-all-frames-03.png",
+          "sha256": "990aa81d3dfc5641dcd87a7e5cbc65970cbe8684a298d0768f3ec55ac29d439b",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S28-reference-cup-v1\\inspection\\S28-1ac6eecb69-all-frames-04.png",
+          "sha256": "8ad7b3bcd158978891d48fd8d7e0edab2144298efb267d58d97a96e75462dd33",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S28-reference-cup-v1\\inspection\\S28-1ac6eecb69-face-candidates.png",
+        "sha256": "66862eae928006451d5f5063d122e689f8d48dfacb9f42efb44726d01646ce43",
+        "items": 4
+      },
+      "observation": "Actually viewed all120 raw and all120 corrected whole-scene frames via4 ordered JPEG pages each; raw native whole0 and corrected native whole0/119. All120 raw hands/wrapper/bread crops via30 retained2240-wide four-frame JPEG viewing copies actually viewed, plus separately viewed corrected native hand-region0/119. All120 corrected print crops via8 JPEG pages and first16 raw print crops via first JPEG page actually viewed; other104raw print crops exported/retained but not counted as viewed. All30raw and24corrected native detector boxes via2JPEG pages each actually viewed. Complete original M09 mother image, actual768P input native first whole and print crop, raw native face grid and all3 first-frame trials in their contact page actually viewed. Same one head-out woman, white/violet/gold feminine dress, original two forearms/wrists/hands, covered thighs, worn table, cup and food throughout. The hands pinch the original raised back edge of translucent grease paper, gradually lower it down/outward until roughly2.3seconds, then settle at the paper/table edges. The paper remains visibly supported by the original hands and under/alongside the bread; no observed unsupported floating white object, white steam ghost or third hand. Fingers keep attached joints and consistent opposing grips with natural partial self-occlusion; no observed impossible wrist turn, fused hand, extra limb, human face/reflection, bystander or scene reset. Detector boxes are existing tabletop screws/grain/edge or sleeve/background fragments, not observed human faces. Raw printed eyes were already OPEN; near-flat magenta iris blobs and weak/dark glasses failed original appearance. Trial2/mask1.35 restores original open violet-pink star irises, fine gold round glasses, fringe/cheeks and small mouth from original M09 pixels projected into each tracked current frame. Mask bottom690/feather25 and gainRGB.88/.87/.85 retain original outer hair/hat/blue butterfly/body/cup. Remaining printed clothing and limbs are softer/coarser than the mother image. All120 corrected printed faces show no observed blink, double eye/glasses contour, obvious sliding or horizontal seam. No full-prop first-frame freeze, generative redrawing, retiming or interpolation; one whole-frame CRF16 encode from unchanged raw. Machine BGR comparison of the hands/wrapper/bread native box[1050,860,2930,1820] covers all120frame pairs, minPSNR38.4388dB/mean39.4705dB; this is not pixel identity or automatic anatomy approval. No all120 corrected native hand-crop viewing claim: corrected full-scene120 and corrected native hand endpoints were actually viewed alongside raw all120 hand crops and the comparison. Full5s120native frames retained/adopted, original final150frames3330to3479 at111to116seconds; all other timings unchanged. Old S05 approval remains revoked and its separate native4K replacement is queued. Assistant image sequence review, not human continuous playback, hearing, user aesthetic acceptance or complete4Kfilm approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Twenty-seven source shots reviewed; twenty-six adopted, old S05 revoked for missing saddle. S27 raw source accepted after complete whole/print/candidate image review with fine iris-detail limitations recorded. Repaired768P film published; correspondingnew4K queued separately. No complete4Kfilm approval.",
-  "reviewedSourceCount": 27,
-  "acceptedSourceCount": 26,
+  "scope": "Twenty-eight source shots reviewed; twenty-seven adopted, old S05 revoked for missing saddle. S28 raw print rejected, separately reviewed current-frame original-art correction adopted. Repaired768P film published; correspondingnewS05 native4K queued. No complete4Kfilm approval.",
+  "reviewedSourceCount": 28,
+  "acceptedSourceCount": 27,
   "rejectedCurrentSourceCount": 1,
-  "rejectedHistoricalSourceCount": 17,
-  "pendingSources": 21,
+  "rejectedHistoricalSourceCount": 18,
+  "pendingSources": 20,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1460,10 +1506,22 @@
       "inspectionReportSha256": "a9c684c9aad9ec28e31f909b144243326e57c1324247bda658f459b6d8be5961",
       "selectedAt": "2026-11-19T13:04:47.459901+00:00",
       "reason": "Actually viewed both120-frame whole versions, all120 corrected printed-face crops, all120 corrected window-region crops, all108 raw and14 corrected native detector boxes, original M08 and actual768P input first frame. Original open iris/glasses restoration, unchanged five-second duration."
+    },
+    "S28": {
+      "path": "corrections/S28-reference-cup-v1.mp4",
+      "sha256": "1ac6eecb6997435f2e240bed65d5ea6aed64f45cc354f3249a9d9ca880dc712e",
+      "parent": "sources/S28.mp4",
+      "parentSha256": "f2a2c9eb9cc7f9668e380036d3ef76c481e2d2af455fc2f29019daf25f97d572",
+      "receipt": "corrections/S28-reference-cup-v1.json",
+      "receiptSha256": "a324c9e0a70aed72b34c8ad9ddde9577671f7e81fbe54152db3b2072d82935a8",
+      "inspectionReport": "corrections/S28-reference-cup-v1-inspection/S28.json",
+      "inspectionReportSha256": "de91af8bf7f7f2b0ae466e02e59ff07b5937f458fff64cc9705b60ceb1a74873",
+      "selectedAt": "2026-11-19T16:04:37.521966+00:00",
+      "reason": "Actually viewed both120-frame whole versions, all120 raw hands/wrapper/bread crops, corrected hands0/119, all120 corrected print crops, all30raw/24corrected detector crops, complete M09 and actual768P input first frame. Unchanged5second source; current-frame original-artwork face correction."
     }
   },
-  "snapshotAt": "2026-11-19T15:36:26.072876+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 5760,
+  "snapshotAt": "2026-11-19T16:04:37.651941+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 6000,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -1487,7 +1545,9 @@
     "S25OriginalAdopted": 120,
     "S26Raw": 120,
     "S26AdoptedV1": 120,
-    "S27Raw": 120
+    "S27Raw": 120,
+    "S28Raw": 120,
+    "S28AdoptedV1": 120
   },
   "activeUserDirectedRepair": {
     "shotId": "S05",

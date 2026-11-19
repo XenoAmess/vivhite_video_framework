@@ -1,0 +1,2076 @@
+{
+  "schemaVersion": "vivhite-reference-face-restoration-review-1",
+  "shotId": "S28",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "reviewedAt": "2026-11-19T16:04:37.643596+00:00",
+  "decision": {
+    "id": "S28",
+    "sourceSha256": "1ac6eecb6997435f2e240bed65d5ea6aed64f45cc354f3249a9d9ca880dc712e",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-19T16:04:37.594662+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 120,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S28-reference-cup-v1\\inspection\\S28-1ac6eecb69-all-frames-01.png",
+        "sha256": "640634d115999efcb1bce31cb1cf516eb28641b8447b489c2c8bfd6dbec1a3c7",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S28-reference-cup-v1\\inspection\\S28-1ac6eecb69-all-frames-02.png",
+        "sha256": "f8282e93b64b9bc5f9bb1af5a741122c7c79c3d27ff3077cd2064286e12a5355",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S28-reference-cup-v1\\inspection\\S28-1ac6eecb69-all-frames-03.png",
+        "sha256": "990aa81d3dfc5641dcd87a7e5cbc65970cbe8684a298d0768f3ec55ac29d439b",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S28-reference-cup-v1\\inspection\\S28-1ac6eecb69-all-frames-04.png",
+        "sha256": "8ad7b3bcd158978891d48fd8d7e0edab2144298efb267d58d97a96e75462dd33",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S28-reference-cup-v1\\inspection\\S28-1ac6eecb69-face-candidates.png",
+      "sha256": "66862eae928006451d5f5063d122e689f8d48dfacb9f42efb44726d01646ce43",
+      "items": 4
+    },
+    "observation": "Actually viewed all120 raw and all120 corrected whole-scene frames via4 ordered JPEG pages each; raw native whole0 and corrected native whole0/119. All120 raw hands/wrapper/bread crops via30 retained2240-wide four-frame JPEG viewing copies actually viewed, plus separately viewed corrected native hand-region0/119. All120 corrected print crops via8 JPEG pages and first16 raw print crops via first JPEG page actually viewed; other104raw print crops exported/retained but not counted as viewed. All30raw and24corrected native detector boxes via2JPEG pages each actually viewed. Complete original M09 mother image, actual768P input native first whole and print crop, raw native face grid and all3 first-frame trials in their contact page actually viewed. Same one head-out woman, white/violet/gold feminine dress, original two forearms/wrists/hands, covered thighs, worn table, cup and food throughout. The hands pinch the original raised back edge of translucent grease paper, gradually lower it down/outward until roughly2.3seconds, then settle at the paper/table edges. The paper remains visibly supported by the original hands and under/alongside the bread; no observed unsupported floating white object, white steam ghost or third hand. Fingers keep attached joints and consistent opposing grips with natural partial self-occlusion; no observed impossible wrist turn, fused hand, extra limb, human face/reflection, bystander or scene reset. Detector boxes are existing tabletop screws/grain/edge or sleeve/background fragments, not observed human faces. Raw printed eyes were already OPEN; near-flat magenta iris blobs and weak/dark glasses failed original appearance. Trial2/mask1.35 restores original open violet-pink star irises, fine gold round glasses, fringe/cheeks and small mouth from original M09 pixels projected into each tracked current frame. Mask bottom690/feather25 and gainRGB.88/.87/.85 retain original outer hair/hat/blue butterfly/body/cup. Remaining printed clothing and limbs are softer/coarser than the mother image. All120 corrected printed faces show no observed blink, double eye/glasses contour, obvious sliding or horizontal seam. No full-prop first-frame freeze, generative redrawing, retiming or interpolation; one whole-frame CRF16 encode from unchanged raw. Machine BGR comparison of the hands/wrapper/bread native box[1050,860,2930,1820] covers all120frame pairs, minPSNR38.4388dB/mean39.4705dB; this is not pixel identity or automatic anatomy approval. No all120 corrected native hand-crop viewing claim: corrected full-scene120 and corrected native hand endpoints were actually viewed alongside raw all120 hand crops and the comparison. Full5s120native frames retained/adopted, original final150frames3330to3479 at111to116seconds; all other timings unchanged. Old S05 approval remains revoked and its separate native4K replacement is queued. Assistant image sequence review, not human continuous playback, hearing, user aesthetic acceptance or complete4Kfilm approval.",
+    "decision": "accepted",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "passed"
+  },
+  "actualInputSourceSha256": "e0a65ab5e03af81383c83289ef5048d6242ce0a118eb3bfc7e7dd1062afaa59a",
+  "rawRejectionSnapshot": {
+    "schemaVersion": "vivhite-source-visual-rejection-1",
+    "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+    "decision": {
+      "id": "S28",
+      "sourceSha256": "f2a2c9eb9cc7f9668e380036d3ef76c481e2d2af455fc2f29019daf25f97d572",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T15:45:15.550335+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S28-f2a2c9eb9c-all-frames-01.png",
+          "sha256": "3de9632faf84decc845ecce427deefbeec5419e6d37c951d9c92b80460a47179",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S28-f2a2c9eb9c-all-frames-02.png",
+          "sha256": "f5e471b577f63449a576b0f261ae14d70b2b33ee8c8f1ae6ace3a4967a8c75cf",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S28-f2a2c9eb9c-all-frames-03.png",
+          "sha256": "5150944e9b0426dd4389f81648d138162fe3f28dd184494c9bff431458a14ffe",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S28-f2a2c9eb9c-all-frames-04.png",
+          "sha256": "0aceb009df0f645210df2d44b64f9470ade4f11fb047b509792afbacc2a44ccd",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S28-f2a2c9eb9c-face-candidates.png",
+        "sha256": "db30a598cdb6c26a797340b95835ea638628d07c36d4bddc7452599230ac1cdb",
+        "items": 5
+      },
+      "observation": "Actually viewed all120 raw whole-scene frames via4 ordered JPEG pages, native whole0, first16 native cup-print crops via first JPEG page, all30 native detector crops via2JPEG pages, the complete original M09 mother image, raw native face coordinate grid and all3first-frame trial variants in their contact page. The same head-out female traveler gradually lowers the original wrapper outward and down until it lies beside/under the bread, then keeps her original two hands near the paper edges. No observed added third hand, real face, bystander, reflected human, floating white object above the bread or scene jump in the whole sequence. Detailed120-frame hands/wrapper crops are exported but not yet counted as viewed at this rejection checkpoint. All detector candidates are existing worn tabletop screw/grain/edge or sleeve/background fragments. Original printed eyes were already OPEN. Native cup print shows near-flat round magenta iris blobs and weakened dark round glasses, differing from original detailed open star irises and fine gold glasses. Reject referenceAppearance; not a closed-to-open or blink claim. Trial2/mask1.35 covers the obsolete coarse eye/glasses contours while keeping the original outer hair, hat, body, cup and light. Trial1 leaves more adjacent old contour and trial3 extends farther into hair/face; all trial images retained. No corrected video approved; complete actual correction review remains required. Assistant image sequence review, not human playback/hearing or full-film approval.",
+      "decision": "rejected",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "failed"
+    },
+    "actualWholeSceneFramesViewed": 120,
+    "nativeWholeFramesActuallyViewed": [
+      0
+    ],
+    "actualPrintFramesViewed": 16,
+    "actualPrintFrameRangesViewed": [
+      [
+        0,
+        15
+      ]
+    ],
+    "actualCandidateBoxesViewed": 30,
+    "actualCandidatePagesViewed": [
+      1,
+      2
+    ],
+    "firstFrameTrialsActuallyViewedViaContact": 3,
+    "handsDetailExportedButNotYetCountedAsViewed": true,
+    "eyesWereAlreadyOpen": true,
+    "humanContinuousPlayback": false,
+    "fullFilmApproval": false
+  },
+  "rawViewingCoverage": {
+    "wholeSceneFramesActuallyViewed": 120,
+    "nativeWholeFramesActuallyViewed": [
+      0
+    ],
+    "printFramesActuallyViewed": 16,
+    "printRangesActuallyViewed": [
+      [
+        0,
+        15
+      ]
+    ],
+    "candidateBoxesActuallyViewed": 30,
+    "candidatePagesActuallyViewed": [
+      1,
+      2
+    ],
+    "handsWrapperBreadFramesActuallyViewed": 120,
+    "handsScaledPagesActuallyViewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "handsNativeBox": [
+      1050,
+      860,
+      2930,
+      1820
+    ],
+    "handsViewingManifest": "assets/generated/production-v11-native-4k-001/review/viewing-copies/S28-raw-hands-scaled-f2a2c9eb9c/manifest.json"
+  },
+  "adoptedCorrection": {
+    "selection": {
+      "path": "corrections/S28-reference-cup-v1.mp4",
+      "sha256": "1ac6eecb6997435f2e240bed65d5ea6aed64f45cc354f3249a9d9ca880dc712e",
+      "parent": "sources/S28.mp4",
+      "parentSha256": "f2a2c9eb9cc7f9668e380036d3ef76c481e2d2af455fc2f29019daf25f97d572",
+      "receipt": "corrections/S28-reference-cup-v1.json",
+      "receiptSha256": "a324c9e0a70aed72b34c8ad9ddde9577671f7e81fbe54152db3b2072d82935a8",
+      "inspectionReport": "corrections/S28-reference-cup-v1-inspection/S28.json",
+      "inspectionReportSha256": "de91af8bf7f7f2b0ae466e02e59ff07b5937f458fff64cc9705b60ceb1a74873",
+      "selectedAt": "2026-11-19T16:04:37.521966+00:00",
+      "reason": "Actually viewed both120-frame whole versions, all120 raw hands/wrapper/bread crops, corrected hands0/119, all120 corrected print crops, all30raw/24corrected detector crops, complete M09 and actual768P input first frame. Unchanged5second source; current-frame original-artwork face correction."
+    },
+    "actualCorrectionReceipt": {
+      "schemaVersion": "vivhite-printed-regions-restoration-1",
+      "sourceSha256": "f2a2c9eb9cc7f9668e380036d3ef76c481e2d2af455fc2f29019daf25f97d572",
+      "correctedSha256": "1ac6eecb6997435f2e240bed65d5ea6aed64f45cc354f3249a9d9ca880dc712e",
+      "configurationSha256": "2d414723dea8f68f4ad625f8d4ce678481052d9cee25ff1a6828e9f59834af1b",
+      "workerSha256": "8703d92889b0386eeb1c38372d92fb0a27d7aa8f47c20be6b04ded826572be51",
+      "eyeProjectionWorkerSha256": "7137f7c4f1bf8586a1f03d27ebd10fd9a252006eb09cff1d770aa7ea8ca67d6b",
+      "trackingWorkerSha256": "2ebeb3119289113d0b71b051e71a156eca61f10a0b8ed2784990400a702d1018",
+      "frames": 120,
+      "fps": 24,
+      "nativeSize": [
+        3840,
+        2160
+      ],
+      "encodingPasses": 1,
+      "referenceProjection": "per-region-original-artwork-or-complete-native-inert-prop-template",
+      "regions": [
+        {
+          "id": "M09-cup-sticker",
+          "reference": "series/vivhite/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+          "referenceSha256": "b235d5ada333dbd4ab83620f7a1f4d9b0523776be1c6c9090bba118f5587e1d2",
+          "referenceEyes": [
+            457,
+            554,
+            681,
+            529
+          ],
+          "targetEyes": [
+            3147,
+            1012,
+            3227,
+            1004
+          ],
+          "trackingCenter": [
+            1116,
+            386
+          ],
+          "trackingRadius": 100,
+          "gainRgb": [
+            0.88,
+            0.87,
+            0.85
+          ],
+          "maskScale": 1.35,
+          "referenceMaskBottom": 690,
+          "referenceMaskBottomFeather": 25,
+          "registration": [
+            [
+              0.3566858920099998,
+              -0.0040944075904017635,
+              2986.262849156513
+            ],
+            [
+              0.0040944075904017635,
+              0.3566858920099998,
+              812.5248715576465
+            ]
+          ],
+          "tracking": [
+            {
+              "frame": 1,
+              "scale": 1.000037464135564,
+              "center": [
+                1116.000732421875,
+                385.9935302734375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 2,
+              "scale": 1.0000553701785007,
+              "center": [
+                1115.998046875,
+                385.9786376953125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 3,
+              "scale": 1.0000716232339542,
+              "center": [
+                1115.9991455078125,
+                385.9736022949219
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 4,
+              "scale": 1.0000921649553562,
+              "center": [
+                1116.000732421875,
+                385.9671630859375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 5,
+              "scale": 1.0001527615065937,
+              "center": [
+                1115.98779296875,
+                385.9578552246094
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 6,
+              "scale": 1.0001699307567378,
+              "center": [
+                1115.985595703125,
+                385.9541015625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 7,
+              "scale": 1.0001989040337085,
+              "center": [
+                1115.9844970703125,
+                385.9493713378906
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 8,
+              "scale": 1.0002069742912947,
+              "center": [
+                1115.9842529296875,
+                385.9422912597656
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 9,
+              "scale": 1.0001501182685881,
+              "center": [
+                1115.9849853515625,
+                385.946044921875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 10,
+              "scale": 1.0001767316752288,
+              "center": [
+                1115.9814453125,
+                385.9374084472656
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 11,
+              "scale": 1.0002088511834772,
+              "center": [
+                1115.980224609375,
+                385.9337158203125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 12,
+              "scale": 1.0002217808159048,
+              "center": [
+                1115.9793701171875,
+                385.9288330078125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 13,
+              "scale": 1.0002372626616172,
+              "center": [
+                1115.973876953125,
+                385.9401550292969
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 14,
+              "scale": 1.0002821479062576,
+              "center": [
+                1115.9700927734375,
+                385.93658447265625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 15,
+              "scale": 1.0003229018034456,
+              "center": [
+                1115.9671630859375,
+                385.9345397949219
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 16,
+              "scale": 1.0003507865887478,
+              "center": [
+                1115.963134765625,
+                385.93365478515625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 17,
+              "scale": 1.0003745294976552,
+              "center": [
+                1115.9676513671875,
+                385.9609680175781
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 18,
+              "scale": 1.0003887269586251,
+              "center": [
+                1115.9654541015625,
+                385.97088623046875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 19,
+              "scale": 1.0004833213711601,
+              "center": [
+                1115.95849609375,
+                385.966796875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 20,
+              "scale": 1.0005077312090103,
+              "center": [
+                1115.9573974609375,
+                385.9623718261719
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 21,
+              "scale": 1.0005508520418451,
+              "center": [
+                1115.95458984375,
+                385.9613342285156
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 22,
+              "scale": 1.0006403340682462,
+              "center": [
+                1115.95166015625,
+                385.9630432128906
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 23,
+              "scale": 1.000672186083365,
+              "center": [
+                1115.9500732421875,
+                385.9596252441406
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 24,
+              "scale": 1.000690110264412,
+              "center": [
+                1115.9473876953125,
+                385.95458984375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 25,
+              "scale": 1.0007083971814026,
+              "center": [
+                1115.9454345703125,
+                385.9541015625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 26,
+              "scale": 1.0006225502800075,
+              "center": [
+                1115.94580078125,
+                385.9608459472656
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 27,
+              "scale": 1.000636934146859,
+              "center": [
+                1115.94482421875,
+                385.9576110839844
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 28,
+              "scale": 1.000637848650857,
+              "center": [
+                1115.94287109375,
+                385.9548645019531
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 29,
+              "scale": 1.000646487053344,
+              "center": [
+                1115.941650390625,
+                385.954345703125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 30,
+              "scale": 1.0006397093382007,
+              "center": [
+                1115.9398193359375,
+                385.9697265625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 31,
+              "scale": 1.0006642281689917,
+              "center": [
+                1115.9381103515625,
+                385.9686279296875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 32,
+              "scale": 1.000660483883389,
+              "center": [
+                1115.9371337890625,
+                385.9676818847656
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 33,
+              "scale": 1.0006516419313003,
+              "center": [
+                1115.9365234375,
+                385.9670104980469
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 34,
+              "scale": 1.0005716403492932,
+              "center": [
+                1115.952392578125,
+                385.9855651855469
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 35,
+              "scale": 1.0005756555570795,
+              "center": [
+                1115.9449462890625,
+                385.9919738769531
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 36,
+              "scale": 1.0005695524802976,
+              "center": [
+                1115.9444580078125,
+                385.9854431152344
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 37,
+              "scale": 1.0005678556200983,
+              "center": [
+                1115.9471435546875,
+                385.9842224121094
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 38,
+              "scale": 1.0005629299999865,
+              "center": [
+                1115.951416015625,
+                385.980224609375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 39,
+              "scale": 1.000544396593533,
+              "center": [
+                1115.9498291015625,
+                385.9779052734375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 40,
+              "scale": 1.0005564953011763,
+              "center": [
+                1115.9495849609375,
+                385.97613525390625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 41,
+              "scale": 1.0005516063476967,
+              "center": [
+                1115.9500732421875,
+                385.9759826660156
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 42,
+              "scale": 1.0005632490554364,
+              "center": [
+                1115.9498291015625,
+                385.974365234375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 43,
+              "scale": 1.0004788828503082,
+              "center": [
+                1115.9512939453125,
+                385.9806213378906
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 44,
+              "scale": 1.0004900274669632,
+              "center": [
+                1115.9503173828125,
+                385.9742126464844
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 45,
+              "scale": 1.0005068780577058,
+              "center": [
+                1115.951416015625,
+                385.9708251953125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 46,
+              "scale": 1.0005156342764765,
+              "center": [
+                1115.951904296875,
+                385.9675598144531
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 47,
+              "scale": 1.0004819009273769,
+              "center": [
+                1115.9521484375,
+                385.9775695800781
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 48,
+              "scale": 1.0004841977397845,
+              "center": [
+                1115.95166015625,
+                385.9761962890625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 49,
+              "scale": 1.00049189400323,
+              "center": [
+                1115.9508056640625,
+                385.97503662109375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 50,
+              "scale": 1.0004901836595335,
+              "center": [
+                1115.95068359375,
+                385.9738464355469
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 51,
+              "scale": 1.0004809761933342,
+              "center": [
+                1115.963134765625,
+                385.9907531738281
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 52,
+              "scale": 1.000409021420488,
+              "center": [
+                1115.962158203125,
+                386.00048828125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 53,
+              "scale": 1.0004257648585941,
+              "center": [
+                1115.9642333984375,
+                385.99432373046875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 54,
+              "scale": 1.0003874087331508,
+              "center": [
+                1115.9698486328125,
+                385.9906005859375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 55,
+              "scale": 1.0004085194633254,
+              "center": [
+                1115.972412109375,
+                385.9877624511719
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 56,
+              "scale": 1.0003370107480327,
+              "center": [
+                1115.98291015625,
+                385.9925537109375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 57,
+              "scale": 1.0003628871301127,
+              "center": [
+                1115.9833984375,
+                385.9873352050781
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 58,
+              "scale": 1.0003581417335792,
+              "center": [
+                1115.9822998046875,
+                385.9841003417969
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 59,
+              "scale": 1.0003679636311442,
+              "center": [
+                1115.982177734375,
+                385.9842529296875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 60,
+              "scale": 1.0003196768104097,
+              "center": [
+                1115.98486328125,
+                385.99560546875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 61,
+              "scale": 1.0003362162801213,
+              "center": [
+                1115.985107421875,
+                385.9919738769531
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 62,
+              "scale": 1.0003362649433305,
+              "center": [
+                1115.98486328125,
+                385.98736572265625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 63,
+              "scale": 1.0003344958650584,
+              "center": [
+                1115.984375,
+                385.985595703125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 64,
+              "scale": 1.0002073972672056,
+              "center": [
+                1115.9918212890625,
+                385.98822021484375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 65,
+              "scale": 1.0002222632592042,
+              "center": [
+                1115.9906005859375,
+                385.9849548339844
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 66,
+              "scale": 1.0002282751380551,
+              "center": [
+                1115.989013671875,
+                385.98175048828125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 67,
+              "scale": 1.000208423944558,
+              "center": [
+                1115.9871826171875,
+                385.98046875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 68,
+              "scale": 1.000121291321152,
+              "center": [
+                1115.995849609375,
+                385.9856872558594
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 69,
+              "scale": 1.000058162599258,
+              "center": [
+                1115.9976806640625,
+                385.9822998046875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 70,
+              "scale": 1.000042637161346,
+              "center": [
+                1115.99609375,
+                385.9772644042969
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 71,
+              "scale": 1.0000432518075473,
+              "center": [
+                1115.998046875,
+                385.9749450683594
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 72,
+              "scale": 0.9999924441967091,
+              "center": [
+                1116.0008544921875,
+                385.97235107421875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 73,
+              "scale": 0.9999938775245422,
+              "center": [
+                1115.9952392578125,
+                385.9637756347656
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 74,
+              "scale": 1.000009809935882,
+              "center": [
+                1115.9937744140625,
+                385.95556640625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 75,
+              "scale": 1.0000052079378192,
+              "center": [
+                1115.99462890625,
+                385.9518737792969
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 76,
+              "scale": 1.0000136638265393,
+              "center": [
+                1115.9935302734375,
+                385.9473876953125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 77,
+              "scale": 0.9999198495871315,
+              "center": [
+                1115.9952392578125,
+                385.9609680175781
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 78,
+              "scale": 0.9999142575684435,
+              "center": [
+                1115.994384765625,
+                385.9577331542969
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 79,
+              "scale": 0.9999388370269551,
+              "center": [
+                1115.9942626953125,
+                385.9541320800781
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 80,
+              "scale": 0.9999255133376814,
+              "center": [
+                1115.993408203125,
+                385.9503479003906
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 81,
+              "scale": 0.9999341591844464,
+              "center": [
+                1115.9888916015625,
+                385.9597473144531
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 82,
+              "scale": 0.9999241374885571,
+              "center": [
+                1115.987060546875,
+                385.95806884765625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 83,
+              "scale": 0.9999351667662707,
+              "center": [
+                1115.986572265625,
+                385.9559631347656
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 84,
+              "scale": 0.9999269115708309,
+              "center": [
+                1115.9837646484375,
+                385.95184326171875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 85,
+              "scale": 0.9999372681945531,
+              "center": [
+                1115.992431640625,
+                385.9805603027344
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 86,
+              "scale": 0.9998819967976903,
+              "center": [
+                1115.9974365234375,
+                385.9879455566406
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 87,
+              "scale": 0.9998886766643873,
+              "center": [
+                1115.99609375,
+                385.98028564453125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 88,
+              "scale": 0.9998701092576092,
+              "center": [
+                1115.9974365234375,
+                385.9761962890625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 89,
+              "scale": 0.999884604490269,
+              "center": [
+                1115.9967041015625,
+                385.9740905761719
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 90,
+              "scale": 0.9999056068046365,
+              "center": [
+                1115.994384765625,
+                385.96002197265625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 91,
+              "scale": 0.9999059846525353,
+              "center": [
+                1115.991943359375,
+                385.95135498046875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 92,
+              "scale": 0.9999007664603605,
+              "center": [
+                1115.9898681640625,
+                385.94677734375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 93,
+              "scale": 0.9999116128567495,
+              "center": [
+                1115.9891357421875,
+                385.9442443847656
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 94,
+              "scale": 0.9998577120505467,
+              "center": [
+                1115.9915771484375,
+                385.951171875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 95,
+              "scale": 0.9998521665169907,
+              "center": [
+                1115.9901123046875,
+                385.94610595703125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 96,
+              "scale": 0.9998517088956416,
+              "center": [
+                1115.9888916015625,
+                385.9421691894531
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 97,
+              "scale": 0.9998443713474291,
+              "center": [
+                1115.9886474609375,
+                385.94049072265625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 98,
+              "scale": 0.9998682081821643,
+              "center": [
+                1115.982177734375,
+                385.9468994140625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 99,
+              "scale": 0.9998683878175914,
+              "center": [
+                1115.9791259765625,
+                385.94140625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 100,
+              "scale": 0.9998646247923118,
+              "center": [
+                1115.976806640625,
+                385.9386291503906
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 101,
+              "scale": 0.9998838803065511,
+              "center": [
+                1115.9744873046875,
+                385.9365539550781
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 102,
+              "scale": 0.9998307410337595,
+              "center": [
+                1115.988037109375,
+                385.9457092285156
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 103,
+              "scale": 0.9998463123831856,
+              "center": [
+                1115.98046875,
+                385.94769287109375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 104,
+              "scale": 0.9998542233155253,
+              "center": [
+                1115.9783935546875,
+                385.94232177734375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 105,
+              "scale": 0.9998564045396283,
+              "center": [
+                1115.98193359375,
+                385.9397888183594
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 106,
+              "scale": 0.9998725589301682,
+              "center": [
+                1115.9849853515625,
+                385.93701171875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 107,
+              "scale": 0.9998470807324649,
+              "center": [
+                1115.98681640625,
+                385.9278564453125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 108,
+              "scale": 0.9998464086855642,
+              "center": [
+                1115.986328125,
+                385.9248046875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 109,
+              "scale": 0.9998583533198218,
+              "center": [
+                1115.9869384765625,
+                385.92218017578125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 110,
+              "scale": 0.9998745569534921,
+              "center": [
+                1115.9862060546875,
+                385.91973876953125
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 111,
+              "scale": 0.9997928917949356,
+              "center": [
+                1115.9871826171875,
+                385.9300842285156
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 112,
+              "scale": 0.9998012209082171,
+              "center": [
+                1115.987060546875,
+                385.92791748046875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 113,
+              "scale": 0.9998184090323785,
+              "center": [
+                1115.9871826171875,
+                385.9240417480469
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 114,
+              "scale": 0.9998327247784096,
+              "center": [
+                1115.9871826171875,
+                385.9212951660156
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 115,
+              "scale": 0.9998057715326765,
+              "center": [
+                1115.984375,
+                385.92254638671875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 116,
+              "scale": 0.9998076399460066,
+              "center": [
+                1115.982177734375,
+                385.9188232421875
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 117,
+              "scale": 0.9998011158830304,
+              "center": [
+                1115.9825439453125,
+                385.918212890625
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 118,
+              "scale": 0.9998175900113975,
+              "center": [
+                1115.980712890625,
+                385.9154052734375
+              ],
+              "inliers": 100
+            },
+            {
+              "frame": 119,
+              "scale": 0.9997145094700375,
+              "center": [
+                1115.98828125,
+                385.9281921386719
+              ],
+              "inliers": 100
+            }
+          ]
+        }
+      ],
+      "method": "Independent unmodified-prop tracking. Original RGBA details are projected directly, or first combined with the same fully visible native frame-zero inert prop and then tracked as a complete template. One CRF16 encode from the unchanged raw source.",
+      "scope": "Explicit per-region masks may include the full inert prop, outline and nearby background feather when an inertSourcePolygon is provided. Otherwise masks may include fringe, cheeks, nose, mouth or chin. Whole-frame lossy re-encoding. No person covered or removed.",
+      "status": "technical-correction-completed-review-required",
+      "humanFullPlayback": false
+    },
+    "preparationReceipt": {
+      "sourceSha256": "f2a2c9eb9cc7f9668e380036d3ef76c481e2d2af455fc2f29019daf25f97d572",
+      "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+      "startedAt": "2026-11-19T15:45:15.583555+00:00",
+      "semanticAcceptance": false,
+      "workers": {
+        "restore_printed_regions.py": "8703d92889b0386eeb1c38372d92fb0a27d7aa8f47c20be6b04ded826572be51",
+        "restore_printed_eyes.py": "7137f7c4f1bf8586a1f03d27ebd10fd9a252006eb09cff1d770aa7ea8ca67d6b",
+        "stabilize_printed_patch.py": "2ebeb3119289113d0b71b051e71a156eca61f10a0b8ed2784990400a702d1018"
+      },
+      "commands": [
+        {
+          "argv": [
+            "D:\\workspace\\vivhite_video_framework\\video-maker\\.venv\\Scripts\\python.exe",
+            "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\runtime\\S28-print-restoration-v1\\restore_printed_regions.py",
+            "--source",
+            "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\sources\\S28.mp4",
+            "--destination",
+            "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\corrections\\S28-reference-cup-v1.mp4",
+            "--configuration",
+            "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\runtime\\S28-print-restoration-v1\\configuration.json"
+          ]
+        },
+        {
+          "argv": [
+            "D:\\workspace\\vivhite_video_framework\\video-maker\\.venv\\Scripts\\python.exe",
+            "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\production\\prepare-review-viewing-copies-v11.py",
+            "--directory",
+            "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001",
+            "--shot",
+            "S28",
+            "--source",
+            "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\corrections\\S28-reference-cup-v1.mp4",
+            "--report",
+            "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\corrections\\S28-reference-cup-v1-inspection\\S28.json"
+          ],
+          "workerSha256": "401d6a91290cfb202a45ff33fdc6ade4b50a463323bf770396cce23ffbd1aba3"
+        },
+        {
+          "argv": [
+            "D:\\workspace\\vivhite_video_framework\\video-maker\\.venv\\Scripts\\python.exe",
+            "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\production\\inspect-print-details-v11.py",
+            "--source",
+            "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\corrections\\S28-reference-cup-v1.mp4",
+            "--identity",
+            "S28-corrected-cup",
+            "--center",
+            "1116",
+            "386",
+            "--radius",
+            "100",
+            "--frames",
+            "120"
+          ],
+          "workerSha256": "78a914b18a99c94e79187fb7641bcf5637b5cd8503723aacce860093ee066257"
+        },
+        {
+          "argv": [
+            "D:\\workspace\\vivhite_video_framework\\video-maker\\.venv\\Scripts\\python.exe",
+            "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\production\\extract-native-candidates-v11.py",
+            "--source",
+            "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\corrections\\S28-reference-cup-v1.mp4",
+            "--report",
+            "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\corrections\\S28-reference-cup-v1-inspection\\S28.json",
+            "--destination",
+            "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S28-reference-cup-v1\\all-candidates"
+          ],
+          "workerSha256": "a8701bef967755c92b0f8e8bec2e403384b110e42c2f1c49e554505e94ec9a38"
+        }
+      ],
+      "finishedAt": "2026-11-19T15:46:50.268129+00:00",
+      "correctedSha256": "1ac6eecb6997435f2e240bed65d5ea6aed64f45cc354f3249a9d9ca880dc712e",
+      "inspectionReportSha256": "de91af8bf7f7f2b0ae466e02e59ff07b5937f458fff64cc9705b60ceb1a74873"
+    },
+    "wholeSceneFramesActuallyViewed": 120,
+    "wholeScenePagesActuallyViewed": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "printFramesActuallyViewed": 120,
+    "printPagesActuallyViewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "candidateBoxesActuallyViewed": 24,
+    "candidatePagesActuallyViewed": [
+      1,
+      2
+    ],
+    "nativeWholeFramesActuallyViewed": [
+      0,
+      119
+    ],
+    "nativeHandsRegionFramesActuallyViewed": [
+      0,
+      119
+    ],
+    "allCorrectedNativeHandsCropsActuallyViewed": false,
+    "handsEncodeComparisonSha256": "01056ccdcb7a3f7d1de6f47f9eb1fff0887eae15f9770f4a2de99c1f7996232c",
+    "handsEncodeComparison": {
+      "rawSha256": "f2a2c9eb9cc7f9668e380036d3ef76c481e2d2af455fc2f29019daf25f97d572",
+      "correctedSha256": "1ac6eecb6997435f2e240bed65d5ea6aed64f45cc354f3249a9d9ca880dc712e",
+      "decodedFramePairs": 120,
+      "nativeBox": [
+        1050,
+        860,
+        2930,
+        1820
+      ],
+      "minimumPsnrDb": 38.4388324871912,
+      "meanPsnrDb": 39.470458576731424,
+      "pixelIdentical": false,
+      "scope": "Whole-frame CRF16 encode; comparison is distortion evidence, not automatic anatomy or semantic approval. Raw all120 hands images actually viewed separately. Corrected endpoint crops require actual viewing.",
+      "frames": [
+        {
+          "frame": 0,
+          "psnrDb": 40.57761415495851,
+          "maxBgrDifference": 17
+        },
+        {
+          "frame": 1,
+          "psnrDb": 39.81351028814763,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 2,
+          "psnrDb": 39.94092535703971,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 3,
+          "psnrDb": 39.93688699164362,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 4,
+          "psnrDb": 40.112290799858854,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 5,
+          "psnrDb": 39.52259579849152,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 6,
+          "psnrDb": 39.61909149413363,
+          "maxBgrDifference": 28
+        },
+        {
+          "frame": 7,
+          "psnrDb": 39.67742756832793,
+          "maxBgrDifference": 28
+        },
+        {
+          "frame": 8,
+          "psnrDb": 39.889977113954,
+          "maxBgrDifference": 20
+        },
+        {
+          "frame": 9,
+          "psnrDb": 39.40024769158805,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 10,
+          "psnrDb": 39.5532794974661,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 11,
+          "psnrDb": 39.62622726888105,
+          "maxBgrDifference": 29
+        },
+        {
+          "frame": 12,
+          "psnrDb": 39.81265399066483,
+          "maxBgrDifference": 20
+        },
+        {
+          "frame": 13,
+          "psnrDb": 39.42976441206858,
+          "maxBgrDifference": 27
+        },
+        {
+          "frame": 14,
+          "psnrDb": 39.55546903518861,
+          "maxBgrDifference": 30
+        },
+        {
+          "frame": 15,
+          "psnrDb": 39.61096621148937,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 16,
+          "psnrDb": 39.780423548763025,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 17,
+          "psnrDb": 39.46473243914548,
+          "maxBgrDifference": 30
+        },
+        {
+          "frame": 18,
+          "psnrDb": 39.56818226833739,
+          "maxBgrDifference": 28
+        },
+        {
+          "frame": 19,
+          "psnrDb": 39.646688973762124,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 20,
+          "psnrDb": 39.83271710233971,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 21,
+          "psnrDb": 39.54053812529634,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 22,
+          "psnrDb": 39.5577537346353,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 23,
+          "psnrDb": 39.64826995616776,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 24,
+          "psnrDb": 39.84389908596585,
+          "maxBgrDifference": 21
+        },
+        {
+          "frame": 25,
+          "psnrDb": 39.71176027006078,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 26,
+          "psnrDb": 39.48152069458013,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 27,
+          "psnrDb": 39.66398948179699,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 28,
+          "psnrDb": 39.83591966373824,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 29,
+          "psnrDb": 39.715553078841545,
+          "maxBgrDifference": 42
+        },
+        {
+          "frame": 30,
+          "psnrDb": 39.54059456658256,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 31,
+          "psnrDb": 39.67214792691315,
+          "maxBgrDifference": 21
+        },
+        {
+          "frame": 32,
+          "psnrDb": 39.77555678688518,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 33,
+          "psnrDb": 39.46124606372025,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 34,
+          "psnrDb": 39.4642611589663,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 35,
+          "psnrDb": 39.604288917142824,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 36,
+          "psnrDb": 39.84157581801367,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 37,
+          "psnrDb": 39.73026096504252,
+          "maxBgrDifference": 27
+        },
+        {
+          "frame": 38,
+          "psnrDb": 39.49428089529829,
+          "maxBgrDifference": 20
+        },
+        {
+          "frame": 39,
+          "psnrDb": 39.3685547163937,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 40,
+          "psnrDb": 39.328905286322026,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 41,
+          "psnrDb": 39.543822394716166,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 42,
+          "psnrDb": 39.523621933749354,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 43,
+          "psnrDb": 39.26972066490931,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 44,
+          "psnrDb": 39.25764339264645,
+          "maxBgrDifference": 28
+        },
+        {
+          "frame": 45,
+          "psnrDb": 39.58835661920513,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 46,
+          "psnrDb": 39.467241445080276,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 47,
+          "psnrDb": 39.30433969277636,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 48,
+          "psnrDb": 39.28571040666627,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 49,
+          "psnrDb": 39.5961880637989,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 50,
+          "psnrDb": 39.432437171604974,
+          "maxBgrDifference": 21
+        },
+        {
+          "frame": 51,
+          "psnrDb": 39.261234920704744,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 52,
+          "psnrDb": 38.98051453109908,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 53,
+          "psnrDb": 39.56348212393509,
+          "maxBgrDifference": 27
+        },
+        {
+          "frame": 54,
+          "psnrDb": 39.53640758346965,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 55,
+          "psnrDb": 39.441069563637,
+          "maxBgrDifference": 31
+        },
+        {
+          "frame": 56,
+          "psnrDb": 39.2381657711529,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 57,
+          "psnrDb": 39.580000901455406,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 58,
+          "psnrDb": 39.57549763247394,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 59,
+          "psnrDb": 39.621653943450845,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 60,
+          "psnrDb": 39.160651807693746,
+          "maxBgrDifference": 28
+        },
+        {
+          "frame": 61,
+          "psnrDb": 39.62826884347966,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 62,
+          "psnrDb": 39.521015693376924,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 63,
+          "psnrDb": 39.60392783461447,
+          "maxBgrDifference": 28
+        },
+        {
+          "frame": 64,
+          "psnrDb": 39.22827471222193,
+          "maxBgrDifference": 27
+        },
+        {
+          "frame": 65,
+          "psnrDb": 39.68980179667995,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 66,
+          "psnrDb": 39.544584273585755,
+          "maxBgrDifference": 19
+        },
+        {
+          "frame": 67,
+          "psnrDb": 39.38073606391711,
+          "maxBgrDifference": 27
+        },
+        {
+          "frame": 68,
+          "psnrDb": 38.4388324871912,
+          "maxBgrDifference": 34
+        },
+        {
+          "frame": 69,
+          "psnrDb": 39.475643319337564,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 70,
+          "psnrDb": 39.58232139877631,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 71,
+          "psnrDb": 39.521119228430514,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 72,
+          "psnrDb": 38.75161064877823,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 73,
+          "psnrDb": 39.617541510046685,
+          "maxBgrDifference": 31
+        },
+        {
+          "frame": 74,
+          "psnrDb": 39.59565210309972,
+          "maxBgrDifference": 20
+        },
+        {
+          "frame": 75,
+          "psnrDb": 39.81576242114586,
+          "maxBgrDifference": 19
+        },
+        {
+          "frame": 76,
+          "psnrDb": 39.257443413525735,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 77,
+          "psnrDb": 39.59127519745229,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 78,
+          "psnrDb": 39.53432261393211,
+          "maxBgrDifference": 21
+        },
+        {
+          "frame": 79,
+          "psnrDb": 39.79050484769712,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 80,
+          "psnrDb": 39.23271656241261,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 81,
+          "psnrDb": 39.63714308103334,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 82,
+          "psnrDb": 39.48764151222488,
+          "maxBgrDifference": 18
+        },
+        {
+          "frame": 83,
+          "psnrDb": 39.59186715000301,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 84,
+          "psnrDb": 39.13576783875079,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 85,
+          "psnrDb": 39.28658883426533,
+          "maxBgrDifference": 27
+        },
+        {
+          "frame": 86,
+          "psnrDb": 39.58775848332881,
+          "maxBgrDifference": 19
+        },
+        {
+          "frame": 87,
+          "psnrDb": 39.624008784210076,
+          "maxBgrDifference": 21
+        },
+        {
+          "frame": 88,
+          "psnrDb": 39.1020225042979,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 89,
+          "psnrDb": 39.150427431326584,
+          "maxBgrDifference": 28
+        },
+        {
+          "frame": 90,
+          "psnrDb": 39.62650166380958,
+          "maxBgrDifference": 19
+        },
+        {
+          "frame": 91,
+          "psnrDb": 39.732456852337215,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 92,
+          "psnrDb": 39.430321345749675,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 93,
+          "psnrDb": 39.45769446078562,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 94,
+          "psnrDb": 39.59214924000974,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 95,
+          "psnrDb": 39.81479825539514,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 96,
+          "psnrDb": 39.515749785852236,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 97,
+          "psnrDb": 39.46727863061034,
+          "maxBgrDifference": 27
+        },
+        {
+          "frame": 98,
+          "psnrDb": 39.59694293167297,
+          "maxBgrDifference": 19
+        },
+        {
+          "frame": 99,
+          "psnrDb": 39.70443270038659,
+          "maxBgrDifference": 20
+        },
+        {
+          "frame": 100,
+          "psnrDb": 39.47257941640436,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 101,
+          "psnrDb": 39.28160325851841,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 102,
+          "psnrDb": 39.530832545144946,
+          "maxBgrDifference": 19
+        },
+        {
+          "frame": 103,
+          "psnrDb": 39.17547664440553,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 104,
+          "psnrDb": 39.14135435293399,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 105,
+          "psnrDb": 39.52059787037578,
+          "maxBgrDifference": 21
+        },
+        {
+          "frame": 106,
+          "psnrDb": 39.314665725698546,
+          "maxBgrDifference": 20
+        },
+        {
+          "frame": 107,
+          "psnrDb": 39.177932787164906,
+          "maxBgrDifference": 28
+        },
+        {
+          "frame": 108,
+          "psnrDb": 39.133477591311056,
+          "maxBgrDifference": 26
+        },
+        {
+          "frame": 109,
+          "psnrDb": 39.41327537845284,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 110,
+          "psnrDb": 39.245532958305304,
+          "maxBgrDifference": 20
+        },
+        {
+          "frame": 111,
+          "psnrDb": 38.95483087333787,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 112,
+          "psnrDb": 38.97182918551995,
+          "maxBgrDifference": 27
+        },
+        {
+          "frame": 113,
+          "psnrDb": 39.263930113999834,
+          "maxBgrDifference": 24
+        },
+        {
+          "frame": 114,
+          "psnrDb": 39.01599277057743,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 115,
+          "psnrDb": 38.87927717831986,
+          "maxBgrDifference": 25
+        },
+        {
+          "frame": 116,
+          "psnrDb": 38.81011116577328,
+          "maxBgrDifference": 22
+        },
+        {
+          "frame": 117,
+          "psnrDb": 38.94059847692236,
+          "maxBgrDifference": 23
+        },
+        {
+          "frame": 118,
+          "psnrDb": 38.54453004536459,
+          "maxBgrDifference": 28
+        },
+        {
+          "frame": 119,
+          "psnrDb": 38.44338465065005,
+          "maxBgrDifference": 26
+        }
+      ]
+    }
+  },
+  "firstFrameTrials": {
+    "contact": "assets/generated/production-v11-native-4k-001/review/S28-registration/trials-01-03-and-raw.jpg",
+    "masks": [
+      1.0,
+      1.35,
+      1.6
+    ],
+    "selectedTrial": 2,
+    "selectedMask": 1.35,
+    "firstFrameOnly": true
+  },
+  "originalArtworkCompared": "M09-sticker-v1.png",
+  "eyesWereAlreadyOpen": true,
+  "observation": "Actually viewed all120 raw and all120 corrected whole-scene frames via4 ordered JPEG pages each; raw native whole0 and corrected native whole0/119. All120 raw hands/wrapper/bread crops via30 retained2240-wide four-frame JPEG viewing copies actually viewed, plus separately viewed corrected native hand-region0/119. All120 corrected print crops via8 JPEG pages and first16 raw print crops via first JPEG page actually viewed; other104raw print crops exported/retained but not counted as viewed. All30raw and24corrected native detector boxes via2JPEG pages each actually viewed. Complete original M09 mother image, actual768P input native first whole and print crop, raw native face grid and all3 first-frame trials in their contact page actually viewed. Same one head-out woman, white/violet/gold feminine dress, original two forearms/wrists/hands, covered thighs, worn table, cup and food throughout. The hands pinch the original raised back edge of translucent grease paper, gradually lower it down/outward until roughly2.3seconds, then settle at the paper/table edges. The paper remains visibly supported by the original hands and under/alongside the bread; no observed unsupported floating white object, white steam ghost or third hand. Fingers keep attached joints and consistent opposing grips with natural partial self-occlusion; no observed impossible wrist turn, fused hand, extra limb, human face/reflection, bystander or scene reset. Detector boxes are existing tabletop screws/grain/edge or sleeve/background fragments, not observed human faces. Raw printed eyes were already OPEN; near-flat magenta iris blobs and weak/dark glasses failed original appearance. Trial2/mask1.35 restores original open violet-pink star irises, fine gold round glasses, fringe/cheeks and small mouth from original M09 pixels projected into each tracked current frame. Mask bottom690/feather25 and gainRGB.88/.87/.85 retain original outer hair/hat/blue butterfly/body/cup. Remaining printed clothing and limbs are softer/coarser than the mother image. All120 corrected printed faces show no observed blink, double eye/glasses contour, obvious sliding or horizontal seam. No full-prop first-frame freeze, generative redrawing, retiming or interpolation; one whole-frame CRF16 encode from unchanged raw. Machine BGR comparison of the hands/wrapper/bread native box[1050,860,2930,1820] covers all120frame pairs, minPSNR38.4388dB/mean39.4705dB; this is not pixel identity or automatic anatomy approval. No all120 corrected native hand-crop viewing claim: corrected full-scene120 and corrected native hand endpoints were actually viewed alongside raw all120 hand crops and the comparison. Full5s120native frames retained/adopted, original final150frames3330to3479 at111to116seconds; all other timings unchanged. Old S05 approval remains revoked and its separate native4K replacement is queued. Assistant image sequence review, not human continuous playback, hearing, user aesthetic acceptance or complete4Kfilm approval.",
+  "allProcessFilesAndImagesRetained": true,
+  "humanContinuousPlayback": false,
+  "humanListening": false,
+  "formalFullFilmApproval": false
+}

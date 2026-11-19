@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "vivhite-source-visual-rejection-1",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "decision": {
+    "id": "S28",
+    "sourceSha256": "f2a2c9eb9cc7f9668e380036d3ef76c481e2d2af455fc2f29019daf25f97d572",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-19T15:45:15.550335+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 120,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S28-f2a2c9eb9c-all-frames-01.png",
+        "sha256": "3de9632faf84decc845ecce427deefbeec5419e6d37c951d9c92b80460a47179",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S28-f2a2c9eb9c-all-frames-02.png",
+        "sha256": "f5e471b577f63449a576b0f261ae14d70b2b33ee8c8f1ae6ace3a4967a8c75cf",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S28-f2a2c9eb9c-all-frames-03.png",
+        "sha256": "5150944e9b0426dd4389f81648d138162fe3f28dd184494c9bff431458a14ffe",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S28-f2a2c9eb9c-all-frames-04.png",
+        "sha256": "0aceb009df0f645210df2d44b64f9470ade4f11fb047b509792afbacc2a44ccd",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S28-f2a2c9eb9c-face-candidates.png",
+      "sha256": "db30a598cdb6c26a797340b95835ea638628d07c36d4bddc7452599230ac1cdb",
+      "items": 5
+    },
+    "observation": "Actually viewed all120 raw whole-scene frames via4 ordered JPEG pages, native whole0, first16 native cup-print crops via first JPEG page, all30 native detector crops via2JPEG pages, the complete original M09 mother image, raw native face coordinate grid and all3first-frame trial variants in their contact page. The same head-out female traveler gradually lowers the original wrapper outward and down until it lies beside/under the bread, then keeps her original two hands near the paper edges. No observed added third hand, real face, bystander, reflected human, floating white object above the bread or scene jump in the whole sequence. Detailed120-frame hands/wrapper crops are exported but not yet counted as viewed at this rejection checkpoint. All detector candidates are existing worn tabletop screw/grain/edge or sleeve/background fragments. Original printed eyes were already OPEN. Native cup print shows near-flat round magenta iris blobs and weakened dark round glasses, differing from original detailed open star irises and fine gold glasses. Reject referenceAppearance; not a closed-to-open or blink claim. Trial2/mask1.35 covers the obsolete coarse eye/glasses contours while keeping the original outer hair, hat, body, cup and light. Trial1 leaves more adjacent old contour and trial3 extends farther into hair/face; all trial images retained. No corrected video approved; complete actual correction review remains required. Assistant image sequence review, not human playback/hearing or full-film approval.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "actualWholeSceneFramesViewed": 120,
+  "nativeWholeFramesActuallyViewed": [
+    0
+  ],
+  "actualPrintFramesViewed": 16,
+  "actualPrintFrameRangesViewed": [
+    [
+      0,
+      15
+    ]
+  ],
+  "actualCandidateBoxesViewed": 30,
+  "actualCandidatePagesViewed": [
+    1,
+    2
+  ],
+  "firstFrameTrialsActuallyViewedViaContact": 3,
+  "handsDetailExportedButNotYetCountedAsViewed": true,
+  "eyesWereAlreadyOpen": true,
+  "humanContinuousPlayback": false,
+  "fullFilmApproval": false
+}
