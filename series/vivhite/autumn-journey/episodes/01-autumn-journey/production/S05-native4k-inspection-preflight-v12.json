@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "vivhite-native4k-inspection-preflight-1",
+  "shotId": "S05",
+  "workerSha256": "d96885170f9e06394efb60bab29cdc61f9dccffba8ea15ca74d93eb2757cb6fa",
+  "testWorkerSha256": "640e55d35b561c918eecbc55844f3ce2f2bd90869bf0ec7d410b3ef57bb2c216",
+  "provenanceTestsActuallyPassed": 6,
+  "realQueuedJobTest": {
+    "argv": [
+      "D:\\workspace\\vivhite_video_framework\\video-maker\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\production\\inspect-S05-native4k-v12.py",
+      "--directory",
+      "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-S05-native-4k-001",
+      "--region",
+      "saddle-hips",
+      "0",
+      "0",
+      "2600",
+      "1041",
+      "--region",
+      "legs-cranks",
+      "857",
+      "338",
+      "2857",
+      "2160",
+      "--region",
+      "sticker",
+      "1857",
+      "647",
+      "3143",
+      "1435"
+    ],
+    "exitCode": 1,
+    "expectedRejection": "The exact repaired S05 native4K job has not completed",
+    "inspectionDirectoryCreated": false,
+    "logSha256": "ea8d6ce401501cb525969737a4720061711767fcdc407d8d11ce8103501c2b70"
+  },
+  "actualNative4kOutputInspected": false,
+  "semanticAcceptance": false,
+  "scope": "Prepared extraction gates only; completed native4K extraction and all actual image viewing still pending. No HTTP requests, cancel or resubmission."
+}

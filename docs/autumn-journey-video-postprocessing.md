@@ -209,3 +209,24 @@ v7实际来源收据中有10个镜头经过局部处理：S07、S11、S16、S20�
 这些能力为Python后处理worker，位于以Java为主的制作框架中；不将它们描述成Java渲染器已经内置的自动修复模型。
 
 2026-11-18实读8001的OpenAPI还确认：FastH3的`negative_prompt`固定为空，`guidance_scale`固定1.0，`num_inference_steps`固定8，`task`固定`ref2va`，没有独立的像素级首帧锁定参数。正文写“不要某物”不是独立负向控制，也不能保证参考图里没有的物体不会生成。应使用清晰的正向构图与动作描述，再按真实结果验收；不虚构负向参数、不将语义提示称为强制锁帧。这个接口事实不证明某个具体幻觉一定由某个词造成。
+
+## 骑行机械结构的返工与检查
+
+2026-11-19用户指出S05缺车座，暴露了先前检查的遗漏：背景连续、没有真人脸、贴纸稳定，并不能证明自行车或坐姿正确。车座、座轨、夹具、座杆、车架和臀部承重必须共同可见且持续连接；左右靴各接触原来的踏板，两条曲柄围绕同一五通轴相对转动。裙摆遮挡不能作为无可见支撑的放行理由。手、脚、道具同样要按连续关节与实际接触关系审阅，而非只数肢体数量。
+
+本次先用imagegen修订首帧，明确黑色车座及金属连接，再用局域网模型重新生成768P整段；没有在旧视频里涂车座、贴静态车座或修改踩踏速度。实际看完120帧整景、车座／臀部／连接件、腿／曲柄／靴和贴纸细节，以及全部检测候选；原首帧、各版裁切与过程均保留。[768P源片收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S05-saddle-768p-source-review-v12.json)记录观察与限制。新版完整影片仍为205秒／6150帧，仅替换00:14—00:19的S05；其他47镜的源片、时长和字幕未改，实际音轨解码与v10逐样本一致。完整修订已另发[GitHub Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v12-768p-20261119)，旧版本保留。
+
+对应4K以实际采用的新768P源片为输入另排普通队列。[独立检查入口](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/inspect-S05-native4k-v12.py)锁定该任务、不可变计划、新输入SHA、请求参数及实际下载，拒绝旧S05、768P／2K替代、非单窗口结果和不完整报告。输出各120帧原生车座／臀部、腿／曲柄与贴纸裁切、整景查看页、原生检查帧及全部检测候选；只提取原视频像素，不增强或修补视频，也不授予通过结论。检查图保存在本期项目的`assets/generated/production-v12-S05-native-4k-001/review/`，后续按实际生成的图片清单提交Git。
+
+下列范围按已采用768P构图换算，必须在真实4K出片后检查是否覆盖完整运动；存在出框就另存更宽的`--variant native-r2`，不能沿用被截断的裁切声明完整审阅：
+
+```powershell
+video-maker/.venv/Scripts/python.exe -X utf8 `
+  series/vivhite/autumn-journey/episodes/01-autumn-journey/production/inspect-S05-native4k-v12.py `
+  --directory D:/workspace/vivhite-analysis-output/vivhite/autumn-journey/production-v12-S05-native-4k-001 `
+  --region saddle-hips 0 0 2600 1041 `
+  --region legs-cranks 857 338 2857 2160 `
+  --region sticker 1857 647 3143 1435
+```
+
+截至2026-11-20凌晨，该4K任务仍在等待，尚无新的4K画面通过。[6项来源校验测试](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/test_inspect_S05_native4k_v12.py)已通过，实际等待任务调用也按预期在创建检查目录前拒绝，见[实测记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S05-native4k-inspection-preflight-v12.json)。这些测试只证明来源校验行为，不代表完成了原生4K视频提取、手脚机械验收或完整成片复核。
