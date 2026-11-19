@@ -230,3 +230,5 @@ video-maker/.venv/Scripts/python.exe -X utf8 `
 ```
 
 截至2026-11-20凌晨，该4K任务仍在等待，尚无新的4K画面通过。[6项来源校验测试](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/test_inspect_S05_native4k_v12.py)已通过，实际等待任务调用也按预期在创建检查目录前拒绝，见[实测记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S05-native4k-inspection-preflight-v12.json)。这些测试只证明来源校验行为，不代表完成了原生4K视频提取、手脚机械验收或完整成片复核。
+
+最终装配的[文字／音轨预检](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/native4k-v12-text-audio-preflight.json)已确认：新4K待审装配候选经`titles()`及实际使用的`utf-8-sig`／LF写法产生的ASS，与已发布v12／768P文件逐字节相同；保留的完整原WAV哈希也相同。片头主副标题19.4秒起，片尾仍为191—205秒的14秒，主副标题191.4秒起，献词194秒起淡入。ASS使用1920×1080虚拟画布，按输出尺寸缩放同一套样式。最初仅比较普通UTF-8编码会因缺少三个BOM字节而不同，不是文字、布局或时序改变。实际4K成片尚未装配，这项预检不能替代最终编码音轨逐样本对照、字幕画面阅读或全片音画验收。
