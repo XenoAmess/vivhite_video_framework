@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "vivhite-native-source-visual-review-1",
+  "shotId": "S23",
+  "reviewedAt": "2026-11-19T08:41:27.967735+00:00",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "sourceSha256": "89ecc0f4eb5d0193f380a51b837049efe6d86992d3d50646d62d1e9d1e661e7c",
+  "sourceModified": false,
+  "decision": {
+    "id": "S23",
+    "sourceSha256": "89ecc0f4eb5d0193f380a51b837049efe6d86992d3d50646d62d1e9d1e661e7c",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-19T08:41:27.959384+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 120,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S23-89ecc0f4eb-all-frames-01.png",
+        "sha256": "973db97ef1b74efa38054b895b42adbde0da14ca4b49d8114cdbf1c6909a5285",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S23-89ecc0f4eb-all-frames-02.png",
+        "sha256": "3d83063fb7bbc17cb4f1d2e6afcc5e3d0200130b3fe9a54926223632ae0071fd",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S23-89ecc0f4eb-all-frames-03.png",
+        "sha256": "816164fa9cac15c263e6f2b5de479a77bb48eef3ba2a642020aeec830b18cd8e",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S23-89ecc0f4eb-all-frames-04.png",
+        "sha256": "080f09f3163b8b82d03809632b87f75d74a31bd0c1dc285194ce842ddbc2d52d",
+        "items": 24
+      }
+    ],
+    "faceEvidence": null,
+    "observation": "Actually viewed all120 whole-scene frames through4JPEG pages, all120 upper-body/arm/hand crops through30JPEG pages, all120 strict-back head crops through8JPEG pages, native UHD whole JPEG frames0/119, complete P03-back master and actual768p input first frame. The earlier genuine complete120-frame input whole-scene review remains bound to the identical input SHA. One illustrated female remains strictly back-facing; no real human face, facial fragment, reflected face, extra traveler, added body part or new readable lettering observed. Silver hair, beret, blue butterfly ornament, white-violet-gold feminine costume, white legwear and violet boots retain the original reference. Both original uncrossed arms hang beside hips with continuous wrists, original hand orientations and stable finger contours; no rail-grip or walking action is claimed. Small original hair/ribbon and skirt movement remains gentle, background ridge/path/fence/cloud geometry stays continuous with no obvious scene reset. No front-facing eyes/glasses or separate printed-face merchandise occurs in this shot, so no eye restoration is needed. Full120-frame detector extraction produced0boxes; zero detection does not replace the actual whole-scene and detail review. Unmodified native model source adopted without patching, masking, interpolation, retiming or new image generation. Whole source5seconds/120native frames used for final frames2760to2909; all other locked timings remain unchanged. Other native checkpoint files and original PNG contact sheets retained but not claimed as individually viewed. Assistant frame-image review only, not human continuous playback, listening, user aesthetic acceptance or complete-film approval.",
+    "decision": "accepted",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "passed"
+  },
+  "inputSourceSha256": "f9dcdce3eee5517a7fe3b8c7569f38ce9c893a167d551d0bb734ab3fef611c79",
+  "originalMaster": {
+    "path": "assets/generated/production-v2-fasth3-001/masters/P03-back-v1.png",
+    "sha256": "fe5f250e85aee2bb2ee5d2108ebf85f6705bd13df544e72a3e6db86c3571af61",
+    "actuallyViewedComplete": true
+  },
+  "previousCompleteInputReview": {
+    "path": "production/input-motion-baselines-v11-S21-S27.json",
+    "sha256": "e447323c8677c7735180d9d4b6fc71d60bfc2324817cee68e4a2a84f606e071f",
+    "boundInputSha256": "f9dcdce3eee5517a7fe3b8c7569f38ce9c893a167d551d0bb734ab3fef611c79"
+  },
+  "extractions": {
+    "whole": {
+      "path": "assets/generated/production-v11-native-4k-001/review/viewing-copies/S23-89ecc0f4eb.json",
+      "sha256": "95f162138690f0584bd48642a0fd3bc02348f3da69845019dc048d8046f4b8b6"
+    },
+    "hands": {
+      "path": "assets/generated/production-v11-native-4k-001/review/motion-details/S23-back-arms-and-hands-89ecc0f4eb.json",
+      "sha256": "b18bdc105ea60bcf5fc9df71ff9016cc33ccdcd30b6ef3a9db86ca1246552bbc"
+    },
+    "backHead": {
+      "path": "assets/generated/production-v11-native-4k-001/review/print/S23-back-head-original-89ecc0f4eb.json",
+      "sha256": "0b4a0ab022ad27881ea048523c5fdb846f77ab7bdf8014df836f8dc0e36dcdd2"
+    },
+    "candidates": {
+      "path": "assets/generated/production-v11-native-4k-001/review/native-candidates/S23-original-89ecc0f4eb/S23-89ecc0f4eb-all-candidates.json",
+      "sha256": "2789ed99cc8b5fd002854d6d93ed8603aa509b83dbbcd557c73425671e8671f5"
+    }
+  },
+  "wholeSceneFramesActuallyViewed": 120,
+  "wholePagesActuallyViewed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "armAndHandRegionFramesActuallyViewed": 120,
+  "armAndHandRegionPagesActuallyViewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "backHeadRegionFramesActuallyViewed": 120,
+  "backHeadRegionPagesActuallyViewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "nativeWholeFramesActuallyViewed": [
+    0,
+    119
+  ],
+  "candidateBoxesActuallyViewed": 0,
+  "candidateBoxesExported": 0,
+  "printedFrontFacePresent": false,
+  "eyeRestorationPerformed": false,
+  "allExportedNativeCheckpointsIndividuallyViewed": false,
+  "humanContinuousPlayback": false,
+  "humanListening": false,
+  "formalFullFilmApproval": false,
+  "observation": "Actually viewed all120 whole-scene frames through4JPEG pages, all120 upper-body/arm/hand crops through30JPEG pages, all120 strict-back head crops through8JPEG pages, native UHD whole JPEG frames0/119, complete P03-back master and actual768p input first frame. The earlier genuine complete120-frame input whole-scene review remains bound to the identical input SHA. One illustrated female remains strictly back-facing; no real human face, facial fragment, reflected face, extra traveler, added body part or new readable lettering observed. Silver hair, beret, blue butterfly ornament, white-violet-gold feminine costume, white legwear and violet boots retain the original reference. Both original uncrossed arms hang beside hips with continuous wrists, original hand orientations and stable finger contours; no rail-grip or walking action is claimed. Small original hair/ribbon and skirt movement remains gentle, background ridge/path/fence/cloud geometry stays continuous with no obvious scene reset. No front-facing eyes/glasses or separate printed-face merchandise occurs in this shot, so no eye restoration is needed. Full120-frame detector extraction produced0boxes; zero detection does not replace the actual whole-scene and detail review. Unmodified native model source adopted without patching, masking, interpolation, retiming or new image generation. Whole source5seconds/120native frames used for final frames2760to2909; all other locked timings remain unchanged. Other native checkpoint files and original PNG contact sheets retained but not claimed as individually viewed. Assistant frame-image review only, not human continuous playback, listening, user aesthetic acceptance or complete-film approval.",
+  "allProcessFilesAndImagesRetained": true
+}

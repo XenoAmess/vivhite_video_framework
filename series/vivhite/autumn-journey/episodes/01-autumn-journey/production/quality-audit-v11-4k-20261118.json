@@ -1021,14 +1021,56 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S23",
+      "sourceSha256": "89ecc0f4eb5d0193f380a51b837049efe6d86992d3d50646d62d1e9d1e661e7c",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T08:41:27.959384+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S23-89ecc0f4eb-all-frames-01.png",
+          "sha256": "973db97ef1b74efa38054b895b42adbde0da14ca4b49d8114cdbf1c6909a5285",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S23-89ecc0f4eb-all-frames-02.png",
+          "sha256": "3d83063fb7bbc17cb4f1d2e6afcc5e3d0200130b3fe9a54926223632ae0071fd",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S23-89ecc0f4eb-all-frames-03.png",
+          "sha256": "816164fa9cac15c263e6f2b5de479a77bb48eef3ba2a642020aeec830b18cd8e",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S23-89ecc0f4eb-all-frames-04.png",
+          "sha256": "080f09f3163b8b82d03809632b87f75d74a31bd0c1dc285194ce842ddbc2d52d",
+          "items": 24
+        }
+      ],
+      "faceEvidence": null,
+      "observation": "Actually viewed all120 whole-scene frames through4JPEG pages, all120 upper-body/arm/hand crops through30JPEG pages, all120 strict-back head crops through8JPEG pages, native UHD whole JPEG frames0/119, complete P03-back master and actual768p input first frame. The earlier genuine complete120-frame input whole-scene review remains bound to the identical input SHA. One illustrated female remains strictly back-facing; no real human face, facial fragment, reflected face, extra traveler, added body part or new readable lettering observed. Silver hair, beret, blue butterfly ornament, white-violet-gold feminine costume, white legwear and violet boots retain the original reference. Both original uncrossed arms hang beside hips with continuous wrists, original hand orientations and stable finger contours; no rail-grip or walking action is claimed. Small original hair/ribbon and skirt movement remains gentle, background ridge/path/fence/cloud geometry stays continuous with no obvious scene reset. No front-facing eyes/glasses or separate printed-face merchandise occurs in this shot, so no eye restoration is needed. Full120-frame detector extraction produced0boxes; zero detection does not replace the actual whole-scene and detail review. Unmodified native model source adopted without patching, masking, interpolation, retiming or new image generation. Whole source5seconds/120native frames used for final frames2760to2909; all other locked timings remain unchanged. Other native checkpoint files and original PNG contact sheets retained but not claimed as individually viewed. Assistant frame-image review only, not human continuous playback, listening, user aesthetic acceptance or complete-film approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Twenty-two current selections reviewed; fifteen original rejections retained. Earlier rejected corrections retain distinct full/partial review scopes.",
-  "reviewedSourceCount": 22,
-  "acceptedSourceCount": 22,
+  "scope": "Twenty-three current sources actually reviewed; fifteen original rejections and distinct rejected correction scopes retained. Full205-second film pending.",
+  "reviewedSourceCount": 23,
+  "acceptedSourceCount": 23,
   "rejectedCurrentSourceCount": 0,
   "rejectedHistoricalSourceCount": 15,
-  "pendingSources": 26,
+  "pendingSources": 25,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1212,8 +1254,8 @@
       "reason": "Both120-frame whole scenes, all120 corrected badge crops,40raw badge crops, three corrected native whole contexts, actual input and original M05 master reviewed; zero detector boxes in both versions."
     }
   },
-  "snapshotAt": "2026-11-19T07:24:19.819289+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 4920,
+  "snapshotAt": "2026-11-19T08:41:27.972952+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 5040,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -1230,6 +1272,7 @@
     "S21Raw": 120,
     "S21AdoptedV1": 120,
     "S22Raw": 120,
-    "S22AdoptedV1": 120
+    "S22AdoptedV1": 120,
+    "S23OriginalAdopted": 120
   }
 }
