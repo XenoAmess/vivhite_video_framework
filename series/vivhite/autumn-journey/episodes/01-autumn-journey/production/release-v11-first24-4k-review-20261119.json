@@ -80,5 +80,13 @@
   },
   "publisherWorkerSha256": "d3102a287bdc3396fe8c4c5e6d003d9af9899c007fe4cef2b97163699e87c776",
   "draftLookupHandling": "Initial tag lookup returned404 while draft; resumed the same release by ID451200144. Assets were verified and reused without duplicate upload.",
-  "firstAttemptWorkerSha256": "c14ec2be8f712bade0befb714314c32e1f5fe217770a4320695b8388ce0056d1"
+  "firstAttemptWorkerSha256": "c14ec2be8f712bade0befb714314c32e1f5fe217770a4320695b8388ce0056d1",
+  "releaseNotesCorrection": {
+    "verifiedAt": "2026-11-19T11:09:57.949122+00:00",
+    "reason": "Windows PowerShell ASCII pipe damaged Chinese release body; corrected with a directly written UTF8 notes file.",
+    "notesSha256": "a4b6459922c7684cfcf967c763e80787b4025f6c0a247a18e56a8a2ef640666e",
+    "actualRemoteUnicodeTextMatches": true,
+    "initialNotesRetained": true,
+    "allThreePublishedAssetBytesUnchanged": true
+  }
 }
