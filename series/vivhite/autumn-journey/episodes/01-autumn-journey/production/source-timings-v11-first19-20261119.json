@@ -1,0 +1,266 @@
+{
+  "schemaVersion": "vivhite-local-source-timing-observations-1",
+  "recordedAt": "2026-11-19T01:25:38.859885+00:00",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "scope": "Existing local completed-job records only; no additional HTTP query or video submission.",
+  "nativeSize": [
+    3840,
+    2160
+  ],
+  "model": "open-h3-2k",
+  "sampler": "up3",
+  "completedSourceCount": 19,
+  "completedSourceSeconds": 95,
+  "allSubmittedJobCount": 48,
+  "allSubmittedJobIdsUnique": true,
+  "submittedRequestProof": "production/full-queue-v11-4k-20261119.json",
+  "observations": [
+    {
+      "shotId": "S01",
+      "jobId": "video_gen_d9e799b6cbfd4b91a34d71e006dbb267",
+      "sourceSha256": "c82a37222cced4f64c47d9784929c340e3ad4a149976dbc65b7013ddaeb29255",
+      "firstObservedInProgressAt": "2026-11-17T20:15:03.482393+00:00",
+      "completionObservedAt": "2026-11-17T21:32:26.772209+00:00",
+      "localObservedIntervalSeconds": 4643.289816,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S02",
+      "jobId": "video_gen_d9aeeb23a57d48c5a9d66b0eaf208a62",
+      "sourceSha256": "9e09730946789a95a20d0d80239e589662d3a3c390455a566da7a8fa89e251e8",
+      "firstObservedInProgressAt": "2026-11-17T21:33:54.609933+00:00",
+      "completionObservedAt": "2026-11-17T22:50:16.415376+00:00",
+      "localObservedIntervalSeconds": 4581.805443,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S03",
+      "jobId": "video_gen_bc97d958687f4800b98aa3369dccb1d7",
+      "sourceSha256": "1cbb04a1f2d25dd73512601ae74dc3f71981df6a5e72fedad5ba9c531abb6b01",
+      "firstObservedInProgressAt": "2026-11-17T22:51:09.534705+00:00",
+      "completionObservedAt": "2026-11-18T00:08:23.264374+00:00",
+      "localObservedIntervalSeconds": 4633.729669,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S04",
+      "jobId": "video_gen_da693a3a45344196940fa5e3eb225f6d",
+      "sourceSha256": "442e2acdd9b085c2d3fbdfa2cff63b00a135d7dc09e020b1d499b0039ba3654b",
+      "firstObservedInProgressAt": "2026-11-18T00:09:22.100938+00:00",
+      "completionObservedAt": "2026-11-18T05:19:32.097384+00:00",
+      "localObservedIntervalSeconds": 18609.996446,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": true
+    },
+    {
+      "shotId": "S05",
+      "jobId": "video_gen_693dae4e6e9948c0967597f67c049c0d",
+      "sourceSha256": "62aa1dab5b48ad7093b294a442c595418e427f3389918065c1c487bd12b3f318",
+      "firstObservedInProgressAt": "2026-11-18T05:20:57.021077+00:00",
+      "completionObservedAt": "2026-11-18T06:37:45.643098+00:00",
+      "localObservedIntervalSeconds": 4608.622021,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S06",
+      "jobId": "video_gen_e7f76b25b51543b19a48d94c089869f5",
+      "sourceSha256": "656dd19150267bc95d8cad6887ba48b1fe759187ac9716ad37ee469364d20b06",
+      "firstObservedInProgressAt": "2026-11-18T06:38:51.739255+00:00",
+      "completionObservedAt": "2026-11-18T07:55:55.435662+00:00",
+      "localObservedIntervalSeconds": 4623.696407,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S07",
+      "jobId": "video_gen_194219acffa74fed94f860172095649b",
+      "sourceSha256": "95cd6741cbb93238643d6bc2f56cd4f3c1950db29077d5310ca379c49336feea",
+      "firstObservedInProgressAt": "2026-11-18T07:56:47.956124+00:00",
+      "completionObservedAt": "2026-11-18T09:12:34.618499+00:00",
+      "localObservedIntervalSeconds": 4546.662375,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S08",
+      "jobId": "video_gen_af8669e17d134a48b1e4b3558ee6bc64",
+      "sourceSha256": "355114318092092a7bdd859aa43560ab3e0995630861921329703ca413d38eae",
+      "firstObservedInProgressAt": "2026-11-18T09:13:28.553763+00:00",
+      "completionObservedAt": "2026-11-18T10:30:11.842446+00:00",
+      "localObservedIntervalSeconds": 4603.288683,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S09",
+      "jobId": "video_gen_afbc24e306944ca188763452cc21464b",
+      "sourceSha256": "fa45f62b63f90ab53b57a9252ad3c702f1a8697653c94409163f896b6b414437",
+      "firstObservedInProgressAt": "2026-11-18T10:31:11.421701+00:00",
+      "completionObservedAt": "2026-11-18T11:47:03.701590+00:00",
+      "localObservedIntervalSeconds": 4552.279889,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S10",
+      "jobId": "video_gen_e9e0b570531346a594bba9eaecdf8484",
+      "sourceSha256": "de5904ef37b7c23fa9358f7c9b551f1d9dc3b60e87bf9aefb61ca3f813466713",
+      "firstObservedInProgressAt": "2026-11-18T11:47:52.524203+00:00",
+      "completionObservedAt": "2026-11-18T13:03:48.012322+00:00",
+      "localObservedIntervalSeconds": 4555.488119,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S11",
+      "jobId": "video_gen_23ced3df71f1444fb8ab5e2ee869a151",
+      "sourceSha256": "f14d272e734e671f66ce8eed8300336b1122b189d865b714eff95b9b52e4d64a",
+      "firstObservedInProgressAt": "2026-11-18T13:04:42.467148+00:00",
+      "completionObservedAt": "2026-11-18T14:20:47.849767+00:00",
+      "localObservedIntervalSeconds": 4565.382619,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S12",
+      "jobId": "video_gen_c309724423e34d79a39483e9505236fa",
+      "sourceSha256": "797af890d3d5a988c5df67c533995c97f1d9bb3402090aeb984c59794b0b1040",
+      "firstObservedInProgressAt": "2026-11-18T14:21:42.401636+00:00",
+      "completionObservedAt": "2026-11-18T15:37:47.277612+00:00",
+      "localObservedIntervalSeconds": 4564.875976,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S13",
+      "jobId": "video_gen_54627f25d22d4a6a8f2426a4d8da7a01",
+      "sourceSha256": "ffa84bef0ce79eeaaa0ef9805a950384f393870067130321f7e272d6a8511031",
+      "firstObservedInProgressAt": "2026-11-18T15:38:57.654294+00:00",
+      "completionObservedAt": "2026-11-18T16:55:10.745931+00:00",
+      "localObservedIntervalSeconds": 4573.091637,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S14",
+      "jobId": "video_gen_435b6355e36643a0bb409a10e855c286",
+      "sourceSha256": "ba0d8cae8441195f308c5c963dd94474cc6b65e9815d64d7b67e26399580d486",
+      "firstObservedInProgressAt": "2026-11-18T16:56:10.787493+00:00",
+      "completionObservedAt": "2026-11-18T18:11:24.608611+00:00",
+      "localObservedIntervalSeconds": 4513.821118,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S15",
+      "jobId": "video_gen_459c99c860744e2893a85f678ed5027f",
+      "sourceSha256": "1b659db8463f7938248d1e040cef806c7d75c2bfbfc1b12e8da9850c1b4d337f",
+      "firstObservedInProgressAt": "2026-11-18T18:12:12.956523+00:00",
+      "completionObservedAt": "2026-11-18T19:28:22.103787+00:00",
+      "localObservedIntervalSeconds": 4569.147264,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S16",
+      "jobId": "video_gen_c6ea9a59c17b45d9ba52444c387f079d",
+      "sourceSha256": "66f633a0f4fc07df462a2cab501b148198c4cf531c767ccb8c957326408fa586",
+      "firstObservedInProgressAt": "2026-11-18T19:29:12.490426+00:00",
+      "completionObservedAt": "2026-11-18T20:45:31.117418+00:00",
+      "localObservedIntervalSeconds": 4578.626992,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S17",
+      "jobId": "video_gen_1f37658df1f343d38bcfef1832bb9a74",
+      "sourceSha256": "885175bfe3f341067c36aa5ac90086a3c67a5d4006948da063ae066df4037f1a",
+      "firstObservedInProgressAt": "2026-11-18T20:46:48.292948+00:00",
+      "completionObservedAt": "2026-11-18T22:03:09.713505+00:00",
+      "localObservedIntervalSeconds": 4581.420557,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S18",
+      "jobId": "video_gen_1b7dc125cb6c4460ad4bdad545d7be00",
+      "sourceSha256": "45a3a9eb07bf94822b4ac7a6b4405e32f5472661709d7894b6be1c8d357e192e",
+      "firstObservedInProgressAt": "2026-11-18T22:03:53.768322+00:00",
+      "completionObservedAt": "2026-11-18T23:20:15.843261+00:00",
+      "localObservedIntervalSeconds": 4582.074939,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    },
+    {
+      "shotId": "S19",
+      "jobId": "video_gen_cd2149a9a8f04f01b2dbce96f8ec7f3f",
+      "sourceSha256": "7097b9d238f86a3d2b59c1bc08967758b3e075ae6f63d12af809006ebddf6590",
+      "firstObservedInProgressAt": "2026-11-18T23:21:07.968711+00:00",
+      "completionObservedAt": "2026-11-19T00:37:34.144901+00:00",
+      "localObservedIntervalSeconds": 4586.17619,
+      "sourceSeconds": 5,
+      "decodedFrames": 120,
+      "knownClientIncidentAffectedInterval": false
+    }
+  ],
+  "summaryExcludingKnownClientIncident": {
+    "count": 18,
+    "minimumObservedSeconds": 4513.821118,
+    "medianObservedSeconds": 4580.0237745,
+    "maximumObservedSeconds": 4643.289816,
+    "medianMinutes": 76.333729575
+  },
+  "remaining": {
+    "shortFiveSecondSources": 27,
+    "longSources": [
+      {
+        "shotId": "S20",
+        "sourceSeconds": 10,
+        "actualNative4KDurationMeasured": false
+      },
+      {
+        "shotId": "S48",
+        "sourceSeconds": 14,
+        "actualNative4KDurationMeasured": false
+      }
+    ],
+    "shortSourcesAtObservedMedianHours": 34.35017830875,
+    "previousDeliveryPlanningWindowShanghai": [
+      "2026-11-21",
+      "2026-11-22"
+    ],
+    "deliveryWindowIsGuarantee": false
+  },
+  "limitations": [
+    "Intervals run from the client first observing in_progress to observing completion, with sixty-second polling uncertainty; not isolated GPU or server processing measurements.",
+    "S04 includes a previously recorded client interruption and is retained but excluded from the ordinary short-source range.",
+    "Queueing all remaining requests avoids client backfill gaps; GPU inference remains serial and queueing is not a measured model speed increase.",
+    "Native10-second S20 and14-second S48 are not completed timing or memory-feasibility measurements. They must not be extrapolated as already successful.",
+    "The short-source subtotal excludes the running long source, ending, potential retries, source QA, final encoding and complete encoded-film QA."
+  ],
+  "semanticApprovalGranted": false,
+  "newApiQueries": 0,
+  "newJobsSubmitted": 0
+}
