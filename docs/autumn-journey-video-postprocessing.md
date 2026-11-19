@@ -172,6 +172,8 @@ v9进一步用 [`materialize-sources-v9.py`](../series/vivhite/autumn-journey/ep
 
 v10的S01检查暴露另一种漏检：同一条手臂上只有一只手，并不代表左右手接对。必须从肘、前臂、腕部跟到手掌，结合拇指侧、掌背、指关节与实际捏布接触核对，不能仅相信提示词的LEFT标签。用户要左手反手拉帘时，把掌心翻向镜头展示属于改错动作；本轮前两张翻掌候选被拒收。应先生成可辨认的自然反手首帧，再检查完整源片是否出现翻掌、换手或扭腕，详见[v10记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v10-left-hand-768p.md)。首帧选定不等于视频已验收；局部纹理回贴不能修复左右手错误。
 
+逐次扩展预览时，只能复用有实际审阅记录且**解码后原生像素完全相同**的帧。前二十镜85秒预览与已看完的63秒版本逐帧比较原生3840×2160 BGR数组，前1855帧完全相同，余下35个旧帧编码发生变化；这35帧和660个新增帧全部重新看完，不能因两版输入相同就直接放行。同样，108个原生检测框裁切核对帧号、坐标、SHA及完整PNG字节相同后复用旧证据，另外25框实际重新查看。所有新导出图仍保留，导出与实际查看分别记录。实际一次性比对worker及证明保存在运行目录`checkpoints/prefix-20-001/native-pixel-comparison-worker.py`与`native-pixel-comparison-with-reviewed-prefix16.json`；它尚不是通用工程入口。完整覆盖、限定范围和文件绑定见[85秒记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/technical-prefix-v11-first20.md)。这项证据复用不修改视频，也不把缩略整景审阅扩大为逐个4K像素、人工播放或审美验收。
+
 ## 实际案例与代码索引
 
 同一镜头有两件周边时，可用[`restore_printed_regions.py`](../video-maker/tools/restore_printed_regions.py)独立跟踪各自的原始表面，从同一份未修改源片出发，在一次CRF16编码中合成多个母版图案。`--configuration` JSON绑定完整源片SHA、帧数，以及各区域的母版路径／SHA、双眼坐标、跟踪中心／半径、RGB增益和蒙版尺度；母版相对路径按执行工作目录解析，本期从仓库根目录执行。收据记录所有区域和原始父源，不把两次串行处理的中间片伪装成原始父源。
