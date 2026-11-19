@@ -24,6 +24,27 @@ def bound_mask_bottom(mask, bottom, feather):
     return mask*weight[:, None]
 
 
+def inert_native_template(first, texture, reference_mask, registration, polygon, feather):
+    """Keep a fully visible inert prop, including its outline, in one native template."""
+    points = np.asarray(polygon, dtype=np.float64)
+    if (points.ndim != 2 or points.shape[1] != 2 or len(points) < 3
+            or not np.isfinite(points).all() or not np.isfinite(feather) or not 0 < feather <= 32):
+        raise ValueError('Finite native prop polygon and explicit feather required')
+    height, width = first.shape[:2]
+    guard = int(np.ceil(feather*4))+1
+    if (np.any(points < guard) or np.any(points[:, 0] >= width-guard)
+            or np.any(points[:, 1] >= height-guard)):
+        raise ValueError('Complete inert prop and feather must fit inside the first native canvas')
+    artwork, alpha = tracked_reference_layers(texture, reference_mask, registration,
+        np.eye(3), (width, height))
+    template = first.astype(np.float32)*(1-alpha[:, :, None])+artwork*alpha[:, :, None]
+    mask = np.zeros((height, width), dtype=np.float32)
+    cv2.fillPoly(mask, [np.rint(points).astype(np.int32)], 1)
+    if cv2.countNonZero(mask) < 100:
+        raise ValueError('Inert prop polygon has no usable area')
+    return template, cv2.GaussianBlur(mask, (0, 0), feather), np.eye(3)[:2]
+
+
 def prepare_regions(first, definitions):
     if not definitions or len({row['id'] for row in definitions}) != len(definitions):
         raise ValueError('Nonempty, uniquely identified printed regions required')
@@ -40,6 +61,9 @@ def prepare_regions(first, definitions):
             mask = bound_mask_bottom(mask, definition['referenceMaskBottom'],
                 definition['referenceMaskBottomFeather'])
         registration = eye_registration(definition['referenceEyes'], definition['targetEyes'])
+        if 'inertSourcePolygon' in definition:
+            texture, mask, registration = inert_native_template(first, texture, mask, registration,
+                definition['inertSourcePolygon'], definition['inertSourceFeatherPixels'])
         tracker = PrintedPatch(cv2.resize(first, (1344, 768)),
             tuple(definition['trackingCenter']), definition['trackingRadius'])
         prepared.append({'definition': definition, 'texture': texture, 'mask': mask,
@@ -132,11 +156,11 @@ def restore(source, destination, configuration_file):
             'eyeProjectionWorkerSha256': fingerprint(Path(__file__).with_name('restore_printed_eyes.py')),
             'trackingWorkerSha256': fingerprint(Path(__file__).with_name('stabilize_printed_patch.py')),
             'frames': frames, 'fps': 24, 'nativeSize': [3840, 2160], 'encodingPasses': 1,
-            'referenceProjection': 'original-artwork-to-current-frame',
+            'referenceProjection': 'per-region-original-artwork-or-complete-native-inert-prop-template',
             'regions': [{**row['definition'], 'registration': row['registration'].tolist(),
                 'tracking': row['tracking']} for row in regions],
-            'method': 'Independent original-prop tracking, original RGBA artwork projected directly into each current frame, feathered masks, one CRF16 encode from the unchanged raw source.',
-            'scope': 'Masks may include fringe, cheeks, nose, mouth or chin as specified by the actual registration and mask scale; whole-frame lossy re-encoding. No person covered or removed.',
+            'method': 'Independent unmodified-prop tracking. Original RGBA details are projected directly, or first combined with the same fully visible native frame-zero inert prop and then tracked as a complete template. One CRF16 encode from the unchanged raw source.',
+            'scope': 'Explicit per-region masks may include the full inert prop, outline and nearby background feather when an inertSourcePolygon is provided. Otherwise masks may include fringe, cheeks, nose, mouth or chin. Whole-frame lossy re-encoding. No person covered or removed.',
             'status': 'technical-correction-completed-review-required', 'humanFullPlayback': False}
         receipt_file.write_text(json.dumps(receipt, indent=2)+'\n', encoding='utf-8')
         print(frames, 'native frames,', len(regions), 'prints, one encode; complete review required.', flush=True)

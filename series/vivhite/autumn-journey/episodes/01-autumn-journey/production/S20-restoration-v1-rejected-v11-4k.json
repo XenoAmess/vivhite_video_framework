@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "vivhite-rejected-correction-review-1",
+  "shotId": "S20",
+  "reviewedAt": "2026-11-19T05:08:02.032992+00:00",
+  "sourceSha256": "b72977918b0b0eac6cdf91ea2e6fdf2974cfa28408efe608a7f5e474a066877f",
+  "correctedSha256": "c73c700c7c1cda376fef7d018e70a60d0ddbdd936fbcb7f09576b747d20c7d42",
+  "correctionReceiptSha256": "de4e1b5b2887ded5aa51bbe44214d3abff558bea496b8758cfebc2da17df9df2",
+  "inspectionReportSha256": "0e986ded6546dec01312df1d9f955b06ec95ca0e0b40721ca114475fb8a62abe",
+  "actuallyViewed": {
+    "wholeSceneNativeFrames": 240,
+    "wholeViewingPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "plushDetailFrames": [
+      80,
+      95
+    ],
+    "badgeDetailFrames": [
+      80,
+      95
+    ],
+    "candidateCropPages": []
+  },
+  "observation": "All240 corrected whole-scene frames were actually viewed. Face detail page06 for each prop shows stable restored open irises and glasses but still a distinct change at90->91 in the M04 pendant/bodice and M05 surrounding hat/rim/body print. Eye-only repair does not fix the complete inert merchandise texture. No claim of viewing other corrected print pages or any corrected candidate crops. Reject local prop continuity and merchandise behavior; preserve v1 and all evidence. No source selection or final-film approval.",
+  "failedChecks": [
+    "motionAndContinuity",
+    "merchandiseBehavior"
+  ],
+  "decision": "rejected",
+  "allSourceWholeFramesViewed": true,
+  "humanContinuousPlayback": false
+}

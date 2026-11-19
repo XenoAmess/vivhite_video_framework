@@ -7,11 +7,31 @@ import cv2
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).parents[1]))
-from restore_printed_regions import blend_layers, bound_mask_bottom
+from restore_printed_regions import blend_layers, bound_mask_bottom, inert_native_template
 from restore_printed_eyes import tracked_reference_layers
 
 
 class PrintedRegionsTest(unittest.TestCase):
+    def test_inert_template_restores_art_and_keeps_native_body_under_independent_motion(self):
+        first = np.full((120, 160, 3), 40, dtype=np.uint8)
+        first[60:90, 40:70] = [80, 110, 180]
+        artwork = np.full((20, 20, 3), [10, 200, 20], dtype=np.float32)
+        alpha = np.ones((20, 20), dtype=np.float32)
+        template, mask, registration = inert_native_template(first, artwork, alpha,
+            np.array([[1, 0, 40], [0, 1, 40]], dtype=np.float64),
+            [[30, 30], [80, 30], [80, 95], [30, 95]], 2)
+        np.testing.assert_array_equal(template[50, 50], [10, 200, 20])
+        np.testing.assert_array_equal(template[75, 50], first[75, 50])
+        motion = np.array([[1, 0, 10], [0, 1, 0], [0, 0, 1]], dtype=np.float64)
+        warped, current_mask = tracked_reference_layers(template, mask, registration, motion, (160, 120))
+        altered = np.full_like(first, 100)
+        result = blend_layers(altered, [(warped, current_mask)])
+        np.testing.assert_allclose(result[75, 60], first[75, 50], atol=1)
+        np.testing.assert_array_equal(result[50, 10], altered[50, 10])
+        with self.assertRaisesRegex(ValueError, 'fit inside'):
+            inert_native_template(first, artwork, alpha, registration,
+                [[0, 0], [80, 0], [80, 90]], 2)
+
     def test_face_mask_does_not_bleed_into_a_separate_necklace(self):
         mask = np.ones((120, 80), dtype=np.float32)
         bounded = bound_mask_bottom(mask, 90, 20)
