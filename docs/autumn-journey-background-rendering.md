@@ -69,6 +69,14 @@ Get-ScheduledTaskInfo -TaskName Vivhite-Autumn-Journey-v11-4K
 
 实现入口：[Windows按需任务](../scripts/start-durable-video-task.ps1)、[独立控制器](../video-maker/tools/durable_video_controller.py)、[技术预览合成](../video-maker/tools/render_4k_technical_preview.py)、[当前生成器](../video-maker/tools/local_video_pipeline.py)。正式4K尺寸与质量路线继续遵守[768P／4K规约](local-video-768p-4k.md)，不恢复2K，不改现有768P成片。
 
+## 单镜返工的独立看护
+
+2026-11-19用户指出骑行缺车座，先完成并发布v12原始768P修订，再提交对应原生4K。S05使用独立计划、运行目录和Windows任务`Vivhite-Autumn-Journey-v12-S05-4K`，接管同一个已提交客户端，不重提原48镜任务。原控制器008和原计划字节保持。实际部署、任务ID、源片哈希与冻结代码见[S05凭据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S05-native4k-submission-v12.json)。
+
+控制器现在支持显式`generationOnly: true`：只完成指定源片的生成、下载、完整机器检查与图片入库，不创建完整影片预览，也不自动通过画面内容。必须核对实际本地视频哈希、24fps、全部源帧及图片报告覆盖；相同源片／报告的Git检查点已成功推送后才关闭兜底任务，提交被无关暂存文件阻挡时继续等待。
+
+单镜计划不能用镜号数字作数组下标，S05只有一个元素时该做法会越界；现在按稳定镜号查找，并拒绝计划中不存在的任务。`evidenceRelativeToEpisode`和`sourceCatalogRelativeToEpisode`指定该返工自己的检查图与生成台账，路径限制在当期的`assets/generated`与`production`，不会覆盖原48镜台账。未指定这些字段的旧全片配置保持原路径，现有冻结版本不受源码更新影响。测试覆盖单镜ID、独立台账、路径越界、缺失／变更源片、不完整帧报告、过期／未推送Git检查点，以及既有网络恢复、受理不明保护和无关暂存文件保留，共11项通过。
+
 ## 2026-11-18实际故障与修复
 
 北京时间08:50:30，客户端替换`jobs/S04.json`时发生Windows `WinError 5`，留下完整`.partial`记录后退出。旧控制器只自动恢复网络错误，漏掉了本地JSON替换失败，因而停在`attention-required`。S04仍在服务端继续运行，09:26左右完成；此后GPU队列未被继续推进，直至13:19本次直接检查时恢复。不能把这段空转描述成持续正常渲染。

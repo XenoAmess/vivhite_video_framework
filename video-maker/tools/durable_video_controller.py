@@ -129,11 +129,21 @@ def checkpoint_sources(config, jobs):
     """Commit only complete inspection evidence and a non-sensitive source catalog."""
     root, directory = Path(config['root']), Path(config['directory'])
     episode = Path(config['episode']).parent
-    evidence = (episode/'assets/generated/production-v11-native-4k-001/review/video-4k').resolve()
+    evidence = (episode/config.get('evidenceRelativeToEpisode',
+        'assets/generated/production-v11-native-4k-001/review/video-4k')).resolve()
+    catalog = (episode/config.get('sourceCatalogRelativeToEpisode',
+        'production/source-generation-v11-4k.json')).resolve()
+    if (not evidence.is_relative_to((episode/'assets/generated').resolve())
+            or not catalog.is_relative_to((episode/'production').resolve())
+            or catalog.suffix != '.json'):
+        raise ValueError('Keep checkpoint images and catalog inside their episode directories')
+    shots = {shot['id']:shot for shot in read(config['plan'])['shots']}
     rows, paths = [], []
     for job in jobs:
         if job.get('status') != 'completed' or not job.get('sourceSha256'):
             continue
+        if job['shotId'] not in shots:
+            raise ValueError('Checkpoint job is absent from the exact submitted plan')
         report_file = directory/'clip-inspection'/f"{job['shotId']}.json"
         if not report_file.exists():
             continue
@@ -149,7 +159,7 @@ def checkpoint_sources(config, jobs):
                 paths.append(path.relative_to(root).as_posix())
         rows.append({'id':job['shotId'],'jobId':job['jobId'],'status':'source-downloaded-inspected-content-review-pending',
             'sourceSha256':job['sourceSha256'],'rawSha256':job['rawSha256'],
-            'requestSha256':job['requestSha256'],'inputSourceSha256':read(config['plan'])['shots'][int(job['shotId'][1:])-1]['inputSourceSha256'],
+            'requestSha256':job['requestSha256'],'inputSourceSha256':shots[job['shotId']]['inputSourceSha256'],
             'decodedNativeFrames':report['decodedFrames'],'width':3840,'height':2160,'fps':24,
             'inspectionReportSha256':sha(report_file),'semanticReview':'pending'})
     ledger_file = directory/'git-checkpoint.json'
@@ -164,9 +174,8 @@ def checkpoint_sources(config, jobs):
                 error=pushed.stderr.decode('utf-8','replace')[-1200:] if pushed.returncode else None)
             save(ledger_file,ledger)
         return
-    catalog = episode/'production/source-generation-v11-4k.json'
     save(catalog,{'schemaVersion':'vivhite-native-4k-source-catalog-1','sourcePlanSha256':config['planSha256'],
-        'sources':rows,'completedSources':len(rows),'totalSources':48,
+        'sources':rows,'completedSources':len(rows),'totalSources':len(shots),
         'semanticAcceptance':'not-automatically-granted','humanFullPlayback':False})
     paths.append(catalog.relative_to(root).as_posix())
     cached = subprocess.run(['git','diff','--cached','--name-only','-z'],cwd=root,capture_output=True,check=True)
@@ -216,6 +225,38 @@ def sources_complete(config, jobs):
     return True
 
 
+def generation_only_complete(config, jobs):
+    """A subset run needs exact local sources and full inspections before stopping."""
+    if config.get('generationOnly') is not True or not sources_complete(config,jobs):
+        return False
+    directory = Path(config['directory'])
+    by_id = {job['shotId']:job for job in jobs}
+    for shot in read(config['plan'])['shots']:
+        source = directory/'sources'/f"{shot['id']}.mp4"
+        report = read(directory/'clip-inspection'/f"{shot['id']}.json")
+        expected = shot['sourceSeconds']*24
+        if (not source.is_file() or sha(source) != by_id[shot['id']]['sourceSha256']
+                or report.get('sourceFps') != 24
+                or report.get('usedFramesAnalysed') != expected
+                or report.get('identity',{}).get('usedSeconds') != shot['sourceSeconds']
+                or sum(row['items'] for row in report.get('allUsedFrameEvidence',[])) != expected):
+            return False
+    return True
+
+
+def generation_checkpoint_pushed(config, jobs):
+    directory = Path(config['directory'])
+    ledger_file = directory/'git-checkpoint.json'
+    if not ledger_file.exists():
+        return False
+    ledger = read(ledger_file)
+    expected = [[job['shotId'],job['sourceSha256'],
+                 sha(directory/'clip-inspection'/f"{job['shotId']}.json")]
+                for job in jobs if job.get('status') == 'completed' and job.get('sourceSha256')]
+    return (ledger.get('pushed') is True and ledger.get('sources') == expected
+            and len(expected) == len(read(config['plan'])['shots']))
+
+
 def preview_complete(config, receipt):
     directory = Path(config['directory'])
     output = directory/'technical-preview/film-unreviewed.mp4'
@@ -259,9 +300,11 @@ def supervise(config_file):
     retry_at = 0
     last_status = None
     kind = prior.get('workerKind','generation')
-    progress_spec = importlib.util.spec_from_file_location('durable_4k_progress',config['progressWorker'])
-    progress = importlib.util.module_from_spec(progress_spec)
-    progress_spec.loader.exec_module(progress)
+    progress = None
+    if config.get('progressWorker'):
+        progress_spec = importlib.util.spec_from_file_location('durable_4k_progress',config['progressWorker'])
+        progress = importlib.util.module_from_spec(progress_spec)
+        progress_spec.loader.exec_module(progress)
     # Per-thread only; restore on exit. Does not change a Windows power plan.
     ctypes.windll.kernel32.SetThreadExecutionState(0x80000001)
     print(now(),'controller started',os.getpid(),'adopting',owner.identity(),flush=True)
@@ -284,10 +327,14 @@ def supervise(config_file):
                         status = 'reconciled-existing-worker'
                 complete = sources_complete(config,jobs)
                 preview = read(directory/'technical-preview/receipt.json') if (directory/'technical-preview/receipt.json').exists() else {}
-                complete_preview = preview_complete(config,preview)
+                generation_only = config.get('generationOnly') is True
+                complete_preview = False if generation_only else preview_complete(config,preview)
                 preview_state = read(directory/'technical-preview/run.json') if (directory/'technical-preview/run.json').exists() else {}
                 preview_retry = not preview_state or can_resume(preview_state,[])
-                if not owner.alive() and complete and complete_preview:
+                if not owner.alive() and generation_only and complete:
+                    status = ('sources-complete-awaiting-git-checkpoint'
+                              if generation_only_complete(config,jobs) else 'attention-required')
+                elif not owner.alive() and complete and complete_preview:
                     status = 'complete-technical-preview-awaiting-semantic-review'
                 elif not owner.alive() and ((complete and preview_retry) or (not complete and can_resume(state,jobs))):
                     if time.monotonic() >= retry_at:
@@ -323,17 +370,23 @@ def supervise(config_file):
                 'remoteCancellationAllowed':False,'semanticAcceptance':'never-automatically-granted'}
             save(prior_file,snapshot)
             try:
-                progress.export(Path(config['base']),episode_directory=Path(config['episode']).parent,emit=False)
+                if progress is not None:
+                    progress.export(Path(config['base']),episode_directory=Path(config['episode']).parent,emit=False)
             except (OSError,ValueError) as error:
                 print(now(),'progress snapshot deferred:',repr(error),flush=True)
             try:
                 checkpoint_sources(config,jobs)
             except (OSError,ValueError,RuntimeError,subprocess.SubprocessError) as error:
                 print(now(),'Git checkpoint deferred; rendering continues:',repr(error),flush=True)
+            if status == 'sources-complete-awaiting-git-checkpoint' and generation_checkpoint_pushed(config,jobs):
+                status = 'complete-sources-awaiting-semantic-review'
+                snapshot['status'] = status
+                save(prior_file,snapshot)
             if status != last_status:
                 print(now(),status,flush=True)
                 last_status = status
-            if status in ('stopped-by-local-request','complete-technical-preview-awaiting-semantic-review'):
+            if status in ('stopped-by-local-request','complete-technical-preview-awaiting-semantic-review',
+                          'complete-sources-awaiting-semantic-review'):
                 disabled = subprocess.run(['schtasks.exe','/Change','/TN',config['schedulerTask'],'/DISABLE'],
                     capture_output=True,timeout=30,creationflags=subprocess.CREATE_NO_WINDOW)
                 snapshot['watchdogDisabled'] = disabled.returncode == 0

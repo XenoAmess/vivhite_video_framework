@@ -7,12 +7,91 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
+from types import SimpleNamespace
 
 sys.path.insert(0,str(Path(__file__).parents[1]))
 import durable_video_controller as worker
 
 
 class DurableRecoveryTest(unittest.TestCase):
+    def make_single_shot(self, directory):
+        plan = directory/'plan.json'
+        worker.save(plan,{'shots':[{'id':'S05','sourceSeconds':5,'inputSourceSha256':'input-S05'}]})
+        source = directory/'sources/S05.mp4'
+        source.parent.mkdir()
+        source.write_bytes(b'Identity fixture only, not a video or semantic approval')
+        report = directory/'clip-inspection/S05.json'
+        worker.save(report,{'status':'decoded','sourceFps':24,
+            'identity':{'sourceSha256':worker.sha(source),'usedSeconds':5},
+            'decodedFrames':120,'usedFramesAnalysed':120,
+            'allUsedFrameEvidence':[{'items':120}]})
+        config = {'directory':str(directory),'plan':str(plan),'generationOnly':True}
+        jobs = [{'shotId':'S05','status':'completed','sourceSha256':worker.sha(source)}]
+        return config,jobs,source,report
+
+    def test_single_shot_generation_completion_requires_exact_local_source_and_all_frames(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            config,jobs,source,report = self.make_single_shot(Path(temporary))
+            self.assertTrue(worker.generation_only_complete(config,jobs))
+            original = worker.read(report)
+            for change in ({'usedFramesAnalysed':119},{'sourceFps':30},{'allUsedFrameEvidence':[{'items':119}]}):
+                worker.save(report,{**original,**change})
+                self.assertFalse(worker.generation_only_complete(config,jobs))
+            worker.save(report,original)
+            source.write_bytes(b'Changed completed source')
+            self.assertFalse(worker.generation_only_complete(config,jobs))
+            source.unlink()
+            self.assertFalse(worker.generation_only_complete(config,jobs))
+            self.assertFalse(worker.generation_only_complete({**config,'generationOnly':False},jobs))
+
+    def test_generation_watchdog_requires_matching_pushed_checkpoint(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            config,jobs,source,report = self.make_single_shot(directory)
+            self.assertFalse(worker.generation_checkpoint_pushed(config,jobs))
+            ledger = {'pushed':True,'sources':[['S05',worker.sha(source),worker.sha(report)]]}
+            worker.save(directory/'git-checkpoint.json',ledger)
+            self.assertTrue(worker.generation_checkpoint_pushed(config,jobs))
+            worker.save(directory/'git-checkpoint.json',{**ledger,'pushed':False})
+            self.assertFalse(worker.generation_checkpoint_pushed(config,jobs))
+            worker.save(directory/'git-checkpoint.json',ledger)
+            worker.save(report,{**worker.read(report),'scope':'changed inspection receipt'})
+            self.assertFalse(worker.generation_checkpoint_pushed(config,jobs))
+
+    def test_subset_checkpoint_uses_shot_id_and_its_own_episode_catalog(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            base = Path(temporary)
+            root,directory = base/'checkout',base/'run'
+            root.mkdir();directory.mkdir();(directory/'logs').mkdir()
+            config,jobs,source,report = self.make_single_shot(directory)
+            episode = root/'episode'
+            evidence = episode/'assets/generated/single-repair/review'
+            evidence.mkdir(parents=True)
+            image = evidence/'identity.fixture'
+            image.write_bytes(b'Inspection identity fixture, no generated artwork')
+            worker.save(report,{**worker.read(report),'allUsedFrameEvidence':[
+                {'items':120,'path':str(image),'sha256':worker.sha(image)}]})
+            config.update(root=str(root),episode=str(episode/'episode.json'),planSha256=worker.sha(config['plan']),
+                evidenceRelativeToEpisode='assets/generated/single-repair/review',
+                sourceCatalogRelativeToEpisode='production/single-repair.json')
+            jobs[0].update(rawSha256='raw',requestSha256='request',jobId='known')
+            result = SimpleNamespace(returncode=0,stdout=b'',stderr=b'')
+            with (patch.object(worker.subprocess,'run',return_value=result),
+                  patch.object(worker.subprocess,'check_output',return_value=b'unit-commit'),
+                  patch.object(worker.subprocess,'CREATE_NO_WINDOW',0,create=True)):
+                worker.checkpoint_sources(config,jobs)
+            catalog = worker.read(episode/'production/single-repair.json')
+            self.assertEqual(catalog['totalSources'],1)
+            self.assertEqual(catalog['sources'][0]['inputSourceSha256'],'input-S05')
+            self.assertFalse((episode/'production/source-generation-v11-4k.json').exists())
+            for key,value in [('evidenceRelativeToEpisode','../outside'),
+                              ('sourceCatalogRelativeToEpisode','../outside.json')]:
+                with self.subTest(key=key), self.assertRaisesRegex(ValueError,'episode directories'):
+                    worker.checkpoint_sources({**config,key:value},jobs)
+            with self.assertRaisesRegex(ValueError,'absent'):
+                worker.checkpoint_sources(config,[{**jobs[0],'shotId':'S09'}])
+
     def test_network_disconnect_resumes_a_known_task(self):
         self.assertTrue(worker.can_resume({'status':'interrupted-or-failed',
             'error':'<urlopen error [WinError 10054] Connection reset>'},

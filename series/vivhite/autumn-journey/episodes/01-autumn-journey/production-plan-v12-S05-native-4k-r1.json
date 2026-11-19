@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 12,
+  "model": "open-h3-2k",
+  "stage": "refine",
+  "fps": 30,
+  "width": 3840,
+  "height": 2160,
+  "sourceSize": "3840x2160",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 150,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "titleOverlays": [],
+  "closingCredit": "",
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "3840x2160",
+    "sampler": "up3",
+    "submissionWindow": 1,
+    "scope": "Native UHD regeneration; historical provider model ID retained. No 2K output."
+  },
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "Preserve the exact reviewed source frame count at 24fps and the unchanged final 30fps timeline; no temporal padding or retiming.",
+  "shotDurationExceptions": {},
+  "referenceAppearanceRequired": true,
+  "scope": "Separate single-shot saddle repair after full768P delivery review; normal shared queue, no preemption, oldv11 plan/requests retained.",
+  "director": "director-v12.md",
+  "sourceContinuation": "Regenerate only the adopted repaired S05 source in native UHD; do not resubmit other47 jobs.",
+  "draftGenerationMetadata": {
+    "numInferenceSteps": 8,
+    "decoderLayers": 36,
+    "decoderVerification": "GET /v1/models on 2026-11-16"
+  },
+  "refinementSeed": 1234,
+  "sampler": "up3",
+  "draftPlanSha256": "3a6b6c5e318fe779375e0c209a571fc90dfd433da40f41330ab8b14ee830fe10",
+  "draftDeliverySha256": "edb7bb75643e5a2d017634d230752f5d18d9a3a7cfab9d4f7a37130074a80d2f",
+  "draftFilmSha256": "95e2dabfceca23bd8187fd758f2b93857e875a8eee472ac3a5cd2ab34e4f6cc6",
+  "sourceReviewReuse": "This exact repaired S05 768P input was fully viewed in this session; old missing-saddle source and approval are revoked. No future4K output approved.",
+  "shots": [
+    {
+      "id": "S05",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "seed": 2026111905,
+      "mode": "H",
+      "action": "真实侧面跟拍；白绮坐在清楚可见的黑色车座上，座管连续连接车座与车架，臀部保持合理承重。双脚各踩原有对置踏板，左右腿从第一帧持续自然交替踩踏，曲柄保持180度相对。车座、座管与车架不消失或变形；林木和路面连续后移，没有背景跳变。",
+      "soundDescription": "链条与轮胎沙沙声。",
+      "prompt": "Regenerate this same uninterrupted quiet travel video in clear native 3840x2160 detail. The INPUT VIDEO is the sole definition of scene contents, action, motion speed and camera trajectory. Keep every original moment in its original temporal order and preserve the complete input duration. Preserve exact framing, natural light, ordinary weather, colors, terrain and object count. The same one woman stays in exactly the original body crop with her entire head outside the picture. Preserve her feminine white/deep-violet/gold clothes and the anatomical identity, orientation and continuous joints of each original arm and hand. The existing printed illustration remains identical and fixed to its original surface. Every existing printed or sewn character face, including any small badge beside the doll, keeps its original OPEN violet-pink eyes, iris and eyelid contours, thin round gold glasses and original face proportions throughout. No blink, squint, eye shift, facial redraw, expression change or turning illustration. Preserve transparent acrylic areas as real background. Keep the existing alternating pedalling and continuous road and tree motion; no background reset, spatial jump or scene transition. Introduce no extra person or body part. No real human face or facial fragment anywhere, including reflections and background. No new readable lettering, subtitles, credits, speech, singing or other voices. No cuts, synthetic beautification, scene replacement, invented props, frozen padding or looping. Preserve the input action without performing it again. Preserve the existing visible black padded saddle, rear edge and forward nose, metal saddle rails, fixed clamp and exposed seatpost continuously joined into the existing seat tube. Keep the existing seated hip support in every frame; do not remove, conceal, float or deform the saddle or seatpost. Preserve the exact input leg/crank/boot motion, two opposing crank arms about one bottom-bracket axle and each original sole on its original pedal; do not invent extra cycles, switch feet or detach limbs. The corrected768P source, rather than any older shot or written idealized cadence, defines every moment.",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "acceptanceCriteria": "Actually view all120 native UHD whole frames plus saddle/rails/clamp/seatpost/hips, legs/cranks/boots and original printed-face details. Reject missing/floating/unsupported seat, changed frame/axle geometry, foot/pedal separation, extra limb/person/face/reflection, background reset, fixed-print eye distortion or autonomous blink. Compare the exact adopted768P source. Final placement remains14to19seconds, five seconds150final frames420to569; all other47timings remain unchanged.",
+      "inputSource": "input-sources/S05.mp4",
+      "inputSourceSha256": "d814fd0ade3bd7d62857e3366a19ef2ec51b6a74ed3c1b2e0ad2dc5a9caf19bf"
+    }
+  ],
+  "finalAssemblyPlacement": {
+    "id": "S05",
+    "startFrame": 420,
+    "seconds": 5,
+    "frames": 150,
+    "fullFilmSeconds": 205,
+    "fullFilmFrames": 6150
+  }
+}

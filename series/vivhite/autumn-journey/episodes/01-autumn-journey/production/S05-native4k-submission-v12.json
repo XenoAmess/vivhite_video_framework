@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "vivhite-single-native4k-saddle-submission-1",
+  "shotId": "S05",
+  "jobId": "video_gen_ab78089d679c4c66ba653410717fc5f5",
+  "statusAtReceipt": "queued",
+  "sourcePlanSha256": "f7d10a7c80e72a02bbf541b4109871be0e4845653c4ada12075e4b9de6b63842",
+  "request": {
+    "model": "open-h3-2k",
+    "size": "3840x2160",
+    "sampler": "up3",
+    "seed": 1234,
+    "prompt": "Regenerate this same uninterrupted quiet travel video in clear native 3840x2160 detail. The INPUT VIDEO is the sole definition of scene contents, action, motion speed and camera trajectory. Keep every original moment in its original temporal order and preserve the complete input duration. Preserve exact framing, natural light, ordinary weather, colors, terrain and object count. The same one woman stays in exactly the original body crop with her entire head outside the picture. Preserve her feminine white/deep-violet/gold clothes and the anatomical identity, orientation and continuous joints of each original arm and hand. The existing printed illustration remains identical and fixed to its original surface. Every existing printed or sewn character face, including any small badge beside the doll, keeps its original OPEN violet-pink eyes, iris and eyelid contours, thin round gold glasses and original face proportions throughout. No blink, squint, eye shift, facial redraw, expression change or turning illustration. Preserve transparent acrylic areas as real background. Keep the existing alternating pedalling and continuous road and tree motion; no background reset, spatial jump or scene transition. Introduce no extra person or body part. No real human face or facial fragment anywhere, including reflections and background. No new readable lettering, subtitles, credits, speech, singing or other voices. No cuts, synthetic beautification, scene replacement, invented props, frozen padding or looping. Preserve the input action without performing it again. Preserve the existing visible black padded saddle, rear edge and forward nose, metal saddle rails, fixed clamp and exposed seatpost continuously joined into the existing seat tube. Keep the existing seated hip support in every frame; do not remove, conceal, float or deform the saddle or seatpost. Preserve the exact input leg/crank/boot motion, two opposing crank arms about one bottom-bracket axle and each original sole on its original pedal; do not invent extra cycles, switch feet or detach limbs. The corrected768P source, rather than any older shot or written idealized cadence, defines every moment.",
+    "input_video": {
+      "file_id": "file_17ad3981f0f3430c97f0dc6dab041fdf"
+    }
+  },
+  "requestSha256": "2a80d6a847934cb1dffde0435b5a7130d046183fa1f0f7531a0ba8123687daf8",
+  "inputSourceSha256": "d814fd0ade3bd7d62857e3366a19ef2ec51b6a74ed3c1b2e0ad2dc5a9caf19bf",
+  "runName": "production-v12-S05-native-4k-001",
+  "size": "3840x2160",
+  "sampler": "up3",
+  "seed": 1234,
+  "ordinaryQueueNoPreemption": true,
+  "oldS05JobNotReused": true,
+  "other47JobsNotResubmitted": true,
+  "finalPlacement": {
+    "startFrame": 420,
+    "frames": 150,
+    "seconds": 5,
+    "fullFilmFrames": 6150,
+    "fullFilmSeconds": 205
+  },
+  "durableExecution": {
+    "schedulerTask": "Vivhite-Autumn-Journey-v12-S05-4K",
+    "controllerSnapshot": {
+      "schemaVersion": "vivhite-durable-video-controller-1",
+      "pid": 233464,
+      "status": "watching-active-worker",
+      "snapshotAt": "2026-11-19T15:20:48.835211+00:00",
+      "configSha256": "41e307405a9f78bf006a98d6676a60e89f05684f51915d9098ee2e5228a71c4a",
+      "sourcePlanSha256": "f7d10a7c80e72a02bbf541b4109871be0e4845653c4ada12075e4b9de6b63842",
+      "resumeAttempts": 0,
+      "worker": {
+        "pid": 211436,
+        "creationTicks": 134395741852180799
+      },
+      "workerKind": "generation",
+      "schedulerTask": "Vivhite-Autumn-Journey-v12-S05-4K",
+      "completedSources": 0,
+      "remoteCancellationAllowed": false,
+      "semanticAcceptance": "never-automatically-granted"
+    },
+    "configSha256": "41e307405a9f78bf006a98d6676a60e89f05684f51915d9098ee2e5228a71c4a",
+    "generationOnly": true,
+    "checkpointUsesShotIdInsteadOfNumericIndex": true,
+    "ownImageAndCatalogPaths": true,
+    "noFullFilmPreviewForSingleShot": true,
+    "completionRequiresExactDownloadedSourceAndFullFrameReport": true,
+    "completionRequiresMatchingPushedImageCheckpoint": true,
+    "automaticSemanticApproval": false,
+    "actualInterruptionKillTestPerformed": false,
+    "recoveryAndCheckpointTestsPassed": 11,
+    "original48JobControllerUnchanged": true,
+    "frozenWorkers": [
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-S05-native-4k-001\\runtime\\controller-001\\durable_video_controller.py",
+        "sha256": "685328f6924ab1322f1411a93be1f9f3b9ea01d19e023afd626f110ca7dc7b74"
+      },
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-S05-native-4k-001\\runtime\\controller-001\\local_video_pipeline.py",
+        "sha256": "a9aa85a94eefd1e4848fb40aa0583a25bed06e1fc6f08ce14029001c472cba2f"
+      },
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-S05-native-4k-001\\runtime\\controller-001\\reference_finisher.py",
+        "sha256": "906766393fde9b62835179dfb118959800bdc9dd2e06408ca8710604fbd8efa6"
+      },
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-S05-native-4k-001\\runtime\\controller-001\\review_reference_clips.py",
+        "sha256": "446cd6235d817a39713d031ad58f18e8cb8613d6e5f77963b326b0934821c9ab"
+      },
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-S05-native-4k-001\\runtime\\generation-001\\local_video_pipeline.py",
+        "sha256": "a9aa85a94eefd1e4848fb40aa0583a25bed06e1fc6f08ce14029001c472cba2f"
+      },
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-S05-native-4k-001\\runtime\\generation-001\\reference_finisher.py",
+        "sha256": "906766393fde9b62835179dfb118959800bdc9dd2e06408ca8710604fbd8efa6"
+      },
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-S05-native-4k-001\\runtime\\generation-001\\review_reference_clips.py",
+        "sha256": "446cd6235d817a39713d031ad58f18e8cb8613d6e5f77963b326b0934821c9ab"
+      }
+    ]
+  },
+  "rawDownloadAndInspectionPending": true,
+  "native4KSemanticAcceptance": "pending"
+}
