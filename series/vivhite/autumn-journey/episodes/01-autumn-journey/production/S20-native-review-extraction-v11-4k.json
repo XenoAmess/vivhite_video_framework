@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "vivhite-native-4k-source-extraction-checkpoint-1",
+  "snapshotAt": "2026-11-19T04:41:12.145078+00:00",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "shotId": "S20",
+  "jobId": "video_gen_a2cecd706e3a4b25bbe9786bfa63da11",
+  "sourceSha256": "b72977918b0b0eac6cdf91ea2e6fdf2974cfa28408efe608a7f5e474a066877f",
+  "rawDownloadSha256": "2057755593181ec59f28a453ec59297ed21f361faf7d11fd61210816488083c5",
+  "downloadedAt": "2026-11-19T04:29:30.976092+00:00",
+  "sourceSeconds": 10,
+  "nativeSize": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "decodedFrames": 240,
+  "inspectionReportSha256": "118e612a37e28fad5357ab48d0b126a7b3db2a9f65320f8b346efa348f4cdb52",
+  "machineCandidateFrames": 227,
+  "machineCandidateBoxes": 313,
+  "machineCutCandidateFrames": [],
+  "extractionManifests": [
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/viewing-copies/S20-b72977918b.json",
+      "sha256": "906b22396e51bc0391c4d0926f7409846a1bdf29144f80b59bbd50f96b78e5fe"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/S20-raw-window-join/S20-b72977918b-native-checkpoints.json",
+      "sha256": "c045178757ce7ffe2bd90929c23ec722eaac5b625c98c434a4f8cb0974605812"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/print/S20-original-plush-face-b72977918b.json",
+      "sha256": "3fa4f90c1f944b4c25c906e2492659dd32952088bc48d7fb689cb328b69ac204"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/print/S20-original-badge-face-b72977918b.json",
+      "sha256": "0cec80b10227525052776d41e4ab8b7da79a16cc0cce0b821e324af33da56024"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/S20-raw/all-candidates/S20-b72977918b-all-candidates.json",
+      "sha256": "01a6a3f031c7a8136befc1a0433fa222b3681b50f91347440d1bf2674461c1be"
+    }
+  ],
+  "readonlyWorkers": [
+    {
+      "name": "prepare-review-viewing-copies-v11.py",
+      "sha256": "401d6a91290cfb202a45ff33fdc6ade4b50a463323bf770396cce23ffbd1aba3",
+      "logSha256": "919a6e52cf14d33f04d43995eb0ab6f6fb97a8b55f131b8c3d2c723fa7146c52"
+    },
+    {
+      "name": "extract-native-checkpoints-v11.py",
+      "sha256": "559d8c5d1a9e23c7d81a7046daecc51f528d08a4e93ff8945b43e06b3ff9d6bb",
+      "logSha256": "be2f11f715204805a2070ceeb2077e06983cd15a24fcb4597ea8207a7d7296b8"
+    },
+    {
+      "name": "inspect-print-details-v11.py",
+      "sha256": "78a914b18a99c94e79187fb7641bcf5637b5cd8503723aacce860093ee066257",
+      "logSha256": "7d5cf80cada14bbfb5d46af51e6949be47bd606330e1894c34701530b5289705"
+    },
+    {
+      "name": "inspect-print-details-v11.py",
+      "sha256": "78a914b18a99c94e79187fb7641bcf5637b5cd8503723aacce860093ee066257",
+      "logSha256": "250d11b056cd912dacd299f7dd6d86c3cec5f6fc7be4357849c34e2f34bc67d2"
+    },
+    {
+      "name": "extract-native-candidates-v11.py",
+      "sha256": "a8701bef967755c92b0f8e8bec2e403384b110e42c2f1c49e554505e94ec9a38",
+      "logSha256": "1c96e507c545c5637a08e35fd107730f8212eb758951ae7827889f6a2060a107"
+    }
+  ],
+  "scope": "Complete240-frame whole-scene viewing copies,12 native temporal-join checkpoints,240 plush and240 badge crops, every313 detector box. Export coverage is not semantic review coverage.",
+  "allExportedImagesActuallyViewed": false,
+  "assistantVisualReview": "in-progress-recorded-separately",
+  "semanticAcceptanceGranted": false,
+  "humanContinuousPlayback": false,
+  "originalVideoChanged": false,
+  "allOtherShotTimingsUnchanged": true
+}

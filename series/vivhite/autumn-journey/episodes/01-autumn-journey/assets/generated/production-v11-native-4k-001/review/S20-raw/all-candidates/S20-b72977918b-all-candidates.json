@@ -1,0 +1,6382 @@
+{
+  "schemaVersion": "vivhite-all-native-candidate-crops-1",
+  "shotId": "S20",
+  "sourceSha256": "b72977918b0b0eac6cdf91ea2e6fdf2974cfa28408efe608a7f5e474a066877f",
+  "inspectionReportSha256": "118e612a37e28fad5357ab48d0b126a7b3db2a9f65320f8b346efa348f4cdb52",
+  "workerSha256": "a8701bef967755c92b0f8e8bec2e403384b110e42c2f1c49e554505e94ec9a38",
+  "nativeSize": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "decodedFrames": 240,
+  "candidateFrames": 227,
+  "candidateBoxes": 313,
+  "nativeCrops": [
+    {
+      "frame": 0,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2663,
+        "y": 1526,
+        "width": 186,
+        "height": 154,
+        "score": 0.78288,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2589,
+        1452,
+        2923,
+        1754
+      ],
+      "path": "S20-b72977918b-all-candidates-f000-b00.png",
+      "sha256": "8b8592cc893683551b1a660c182510de037a2973510f2cf8029212d0e492525c"
+    },
+    {
+      "frame": 0,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1483,
+        "y": 1309,
+        "width": 236,
+        "height": 260,
+        "score": 0.66528,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1389,
+        1215,
+        1813,
+        1663
+      ],
+      "path": "S20-b72977918b-all-candidates-f000-b01.png",
+      "sha256": "ab32b1258a6cc81653f1dd55aad4be433aefe209d8d7f0971ae1124f0d123e0c"
+    },
+    {
+      "frame": 0,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 2010,
+        "y": 1226,
+        "width": 207,
+        "height": 300,
+        "score": 0.62741,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1927,
+        1143,
+        2300,
+        1609
+      ],
+      "path": "S20-b72977918b-all-candidates-f000-b02.png",
+      "sha256": "afbb4ff35e132c6d2f59ab39fc372a9addac53f6cc9b546ef734f9b9c132c040"
+    },
+    {
+      "frame": 1,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2666,
+        "y": 1530,
+        "width": 179,
+        "height": 154,
+        "score": 0.80671,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2594,
+        1458,
+        2917,
+        1756
+      ],
+      "path": "S20-b72977918b-all-candidates-f001-b00.png",
+      "sha256": "ee458c18198eb7ad3595bf0c6547f991ad7f4902219db3164902b7b3a50ae8ec"
+    },
+    {
+      "frame": 1,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1481,
+        "y": 1313,
+        "width": 242,
+        "height": 257,
+        "score": 0.6037,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1384,
+        1216,
+        1820,
+        1667
+      ],
+      "path": "S20-b72977918b-all-candidates-f001-b01.png",
+      "sha256": "2e59a119baddc2cce321861cb7b304c4196545cb990affd60ffe9374f572e94e"
+    },
+    {
+      "frame": 2,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2668,
+        "y": 1534,
+        "width": 178,
+        "height": 147,
+        "score": 0.77062,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2597,
+        1463,
+        2917,
+        1752
+      ],
+      "path": "S20-b72977918b-all-candidates-f002-b00.png",
+      "sha256": "2a572cef970bb8f85a3b4f063fcb243823e1ce7cd5136397b6c16aa4eed7fa50"
+    },
+    {
+      "frame": 2,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1490,
+        "y": 1325,
+        "width": 213,
+        "height": 239,
+        "score": 0.66652,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1405,
+        1240,
+        1788,
+        1649
+      ],
+      "path": "S20-b72977918b-all-candidates-f002-b01.png",
+      "sha256": "ba974acce8a8a106c025c5c3730b8183780842471ed660dcf0c223fb8decea31"
+    },
+    {
+      "frame": 3,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2659,
+        "y": 1528,
+        "width": 191,
+        "height": 156,
+        "score": 0.74657,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2583,
+        1452,
+        2926,
+        1760
+      ],
+      "path": "S20-b72977918b-all-candidates-f003-b00.png",
+      "sha256": "73f928f12f25ff0e577f7663cb615bdd4ec2c4efe92372aa0f65ebe042ba3317"
+    },
+    {
+      "frame": 3,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 2015,
+        "y": 1222,
+        "width": 191,
+        "height": 295,
+        "score": 0.66247,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1939,
+        1146,
+        2282,
+        1593
+      ],
+      "path": "S20-b72977918b-all-candidates-f003-b01.png",
+      "sha256": "a93cad79ff5248f3eaebc82da559f2a2124454da77cd5a10ad49878af9e1dcfb"
+    },
+    {
+      "frame": 4,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2636,
+        "y": 1500,
+        "width": 215,
+        "height": 197,
+        "score": 0.75088,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2550,
+        1414,
+        2937,
+        1783
+      ],
+      "path": "S20-b72977918b-all-candidates-f004-b00.png",
+      "sha256": "151e671db9dee37d8077ea01fce78d6d6de7941fbe941fb700f3658ed6226297"
+    },
+    {
+      "frame": 4,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1487,
+        "y": 1314,
+        "width": 200,
+        "height": 248,
+        "score": 0.66023,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1407,
+        1234,
+        1767,
+        1642
+      ],
+      "path": "S20-b72977918b-all-candidates-f004-b01.png",
+      "sha256": "1f1d2b41ba834e2a1ada6737e901653f9619f0244ebe74633fc43fcdc4dbdb15"
+    },
+    {
+      "frame": 4,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 2017,
+        "y": 1240,
+        "width": 190,
+        "height": 262,
+        "score": 0.62238,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1941,
+        1164,
+        2283,
+        1578
+      ],
+      "path": "S20-b72977918b-all-candidates-f004-b02.png",
+      "sha256": "cc10a49769fcfad75b49b468e59b39df1d410b6187520470528efcb2667b6cae"
+    },
+    {
+      "frame": 4,
+      "boxIndex": 3,
+      "detectorBox": {
+        "x": 274,
+        "y": 1748,
+        "width": 48,
+        "height": 55,
+        "score": 0.60408,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        255,
+        1729,
+        341,
+        1822
+      ],
+      "path": "S20-b72977918b-all-candidates-f004-b03.png",
+      "sha256": "50781745262aaa1b4e1be3d38fcb231275d83c54261cbf1c80a1384eda0598b5"
+    },
+    {
+      "frame": 5,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1480,
+        "y": 1289,
+        "width": 222,
+        "height": 277,
+        "score": 0.67724,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1391,
+        1200,
+        1791,
+        1655
+      ],
+      "path": "S20-b72977918b-all-candidates-f005-b00.png",
+      "sha256": "502c4478f65c661be1e8a1155e8fbfcbb1aec8d3e7ffeda9b0a827843fa3bc15"
+    },
+    {
+      "frame": 5,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 2011,
+        "y": 1231,
+        "width": 219,
+        "height": 289,
+        "score": 0.65329,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1923,
+        1143,
+        2318,
+        1608
+      ],
+      "path": "S20-b72977918b-all-candidates-f005-b01.png",
+      "sha256": "0698559a6978fa4ce00da5c17865423b6627f93aab53a9fe404a29e3c606a7e4"
+    },
+    {
+      "frame": 5,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 2632,
+        "y": 1519,
+        "width": 199,
+        "height": 167,
+        "score": 0.64324,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2552,
+        1439,
+        2911,
+        1766
+      ],
+      "path": "S20-b72977918b-all-candidates-f005-b02.png",
+      "sha256": "38841faaf9b6ace40f2978ce7b2b25a56cb00ccfcd77f1fbb196f342adaf605d"
+    },
+    {
+      "frame": 6,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2643,
+        "y": 1529,
+        "width": 171,
+        "height": 147,
+        "score": 0.80897,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2575,
+        1461,
+        2882,
+        1744
+      ],
+      "path": "S20-b72977918b-all-candidates-f006-b00.png",
+      "sha256": "2d51e430d314ecd4140e2c676890a87e5310368460f7c6c8537492ddf27ce6c2"
+    },
+    {
+      "frame": 6,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1483,
+        "y": 1305,
+        "width": 205,
+        "height": 253,
+        "score": 0.70198,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1401,
+        1223,
+        1770,
+        1640
+      ],
+      "path": "S20-b72977918b-all-candidates-f006-b01.png",
+      "sha256": "b6056b7030e59860b4ad5593fddbecfedffe8bcc8f9a63958144ad487d529ae5"
+    },
+    {
+      "frame": 7,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2643,
+        "y": 1526,
+        "width": 180,
+        "height": 146,
+        "score": 0.77442,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2571,
+        1454,
+        2895,
+        1744
+      ],
+      "path": "S20-b72977918b-all-candidates-f007-b00.png",
+      "sha256": "ea6d4a0ec6e5cc18a4499f4bda5331113caa0f4f611d0511f4d65310d0ed8d4a"
+    },
+    {
+      "frame": 7,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1493,
+        "y": 1315,
+        "width": 191,
+        "height": 242,
+        "score": 0.73078,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1417,
+        1239,
+        1760,
+        1633
+      ],
+      "path": "S20-b72977918b-all-candidates-f007-b01.png",
+      "sha256": "bc696f42463e7fb9e1f6859892fd6988d27876944bde6b74a4d93eac11513aa5"
+    },
+    {
+      "frame": 8,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1494,
+        "y": 1332,
+        "width": 185,
+        "height": 220,
+        "score": 0.67993,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1420,
+        1258,
+        1753,
+        1626
+      ],
+      "path": "S20-b72977918b-all-candidates-f008-b00.png",
+      "sha256": "81e12a3f7f914c92ebe4a65364c7387bf0b0a01c218b05d8804fd2de2db80427"
+    },
+    {
+      "frame": 8,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 2640,
+        "y": 1524,
+        "width": 190,
+        "height": 156,
+        "score": 0.66464,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2564,
+        1448,
+        2906,
+        1756
+      ],
+      "path": "S20-b72977918b-all-candidates-f008-b01.png",
+      "sha256": "b0b0b131f51e100495a52eeccd962d33f5ce8d8969f6e2f5bd06be8155700450"
+    },
+    {
+      "frame": 9,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2636,
+        "y": 1519,
+        "width": 191,
+        "height": 155,
+        "score": 0.75095,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2560,
+        1443,
+        2903,
+        1750
+      ],
+      "path": "S20-b72977918b-all-candidates-f009-b00.png",
+      "sha256": "dc9e07574d49a4e8cdd6069835e17796f2bce654c437e348cdc397c19fb0b0f6"
+    },
+    {
+      "frame": 9,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1489,
+        "y": 1327,
+        "width": 184,
+        "height": 224,
+        "score": 0.61821,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1415,
+        1253,
+        1747,
+        1625
+      ],
+      "path": "S20-b72977918b-all-candidates-f009-b01.png",
+      "sha256": "7bcc4200d491afd3c7fd38d2accb4f2d8ed2436f7d556bf1de277b90bca777c0"
+    },
+    {
+      "frame": 9,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 1997,
+        "y": 1250,
+        "width": 196,
+        "height": 266,
+        "score": 0.60294,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1919,
+        1172,
+        2271,
+        1594
+      ],
+      "path": "S20-b72977918b-all-candidates-f009-b02.png",
+      "sha256": "96dbfb660d110825ae7a1908db0bf5d74a024c58520354914e3cbd9a28ee35ab"
+    },
+    {
+      "frame": 10,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1994,
+        "y": 1252,
+        "width": 186,
+        "height": 261,
+        "score": 0.61659,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1920,
+        1178,
+        2254,
+        1587
+      ],
+      "path": "S20-b72977918b-all-candidates-f010-b00.png",
+      "sha256": "4ca109c118e4b875a9b0ebe23f8a4e079615ddb5e7dbc9c12a0c43294ded1e23"
+    },
+    {
+      "frame": 10,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1485,
+        "y": 1322,
+        "width": 188,
+        "height": 230,
+        "score": 0.60992,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1410,
+        1247,
+        1748,
+        1627
+      ],
+      "path": "S20-b72977918b-all-candidates-f010-b01.png",
+      "sha256": "bb69b0a4006729f0465e92403b7715d7c8c82d0368b19f32c642f7c60edc0841"
+    },
+    {
+      "frame": 10,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 2625,
+        "y": 1518,
+        "width": 204,
+        "height": 160,
+        "score": 0.60924,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2543,
+        1436,
+        2911,
+        1760
+      ],
+      "path": "S20-b72977918b-all-candidates-f010-b02.png",
+      "sha256": "acb4981adb9a9e36b24a92b46deb11d91d365e4373623e34edad44b8f328173d"
+    },
+    {
+      "frame": 11,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1988,
+        "y": 1234,
+        "width": 206,
+        "height": 287,
+        "score": 0.69209,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1906,
+        1152,
+        2276,
+        1603
+      ],
+      "path": "S20-b72977918b-all-candidates-f011-b00.png",
+      "sha256": "8b0f5c715eb6b145d0bad8f3b9fcf7b94ee6be109c8ec3073b333199648793e7"
+    },
+    {
+      "frame": 11,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 2617,
+        "y": 1515,
+        "width": 206,
+        "height": 154,
+        "score": 0.64534,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2535,
+        1433,
+        2905,
+        1751
+      ],
+      "path": "S20-b72977918b-all-candidates-f011-b01.png",
+      "sha256": "40c4cd542fa366acf7b9fc728527018e2a5fb544bb64a5d62f3fe5752755d537"
+    },
+    {
+      "frame": 11,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 1487,
+        "y": 1330,
+        "width": 179,
+        "height": 222,
+        "score": 0.60997,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1415,
+        1258,
+        1738,
+        1624
+      ],
+      "path": "S20-b72977918b-all-candidates-f011-b02.png",
+      "sha256": "64722f9e1a7d551cc6b24c63dd64e104b50f873082e0659253b678584687b843"
+    },
+    {
+      "frame": 12,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1477,
+        "y": 1331,
+        "width": 184,
+        "height": 220,
+        "score": 0.70355,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1403,
+        1257,
+        1735,
+        1625
+      ],
+      "path": "S20-b72977918b-all-candidates-f012-b00.png",
+      "sha256": "7aaf4d356585613c4f05bcb0c069606728525f54437d25a46e0c8d044a318cb8"
+    },
+    {
+      "frame": 12,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1994,
+        "y": 1239,
+        "width": 191,
+        "height": 268,
+        "score": 0.68311,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1918,
+        1163,
+        2261,
+        1583
+      ],
+      "path": "S20-b72977918b-all-candidates-f012-b01.png",
+      "sha256": "5306dca75c79b7434ee6810b753edc2fd7d80d4fac1fb0ca692966874748aca5"
+    },
+    {
+      "frame": 13,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2618,
+        "y": 1533,
+        "width": 172,
+        "height": 146,
+        "score": 0.81626,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2549,
+        1464,
+        2859,
+        1748
+      ],
+      "path": "S20-b72977918b-all-candidates-f013-b00.png",
+      "sha256": "ca508f222a164539c150706bb03a457cbbb7cf61a11c27aa6db8912de10183f1"
+    },
+    {
+      "frame": 13,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1990,
+        "y": 1232,
+        "width": 194,
+        "height": 284,
+        "score": 0.65299,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1912,
+        1154,
+        2262,
+        1594
+      ],
+      "path": "S20-b72977918b-all-candidates-f013-b01.png",
+      "sha256": "61013e196ec9a51e63d215f533c8992d0188592ea5d4191cd474907e0e1e06f9"
+    },
+    {
+      "frame": 13,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 1481,
+        "y": 1313,
+        "width": 190,
+        "height": 242,
+        "score": 0.62129,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1405,
+        1237,
+        1747,
+        1631
+      ],
+      "path": "S20-b72977918b-all-candidates-f013-b02.png",
+      "sha256": "b838da86406d1037f3157799c6ed615cde98600c321613e8c052dd8b55520d3e"
+    },
+    {
+      "frame": 14,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2627,
+        "y": 1527,
+        "width": 180,
+        "height": 141,
+        "score": 0.75317,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2555,
+        1455,
+        2879,
+        1740
+      ],
+      "path": "S20-b72977918b-all-candidates-f014-b00.png",
+      "sha256": "92d2345c84609942d57ee0eae538e4f710fc544eafe1b217ce546c36a8619aef"
+    },
+    {
+      "frame": 14,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1480,
+        "y": 1318,
+        "width": 194,
+        "height": 234,
+        "score": 0.62554,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1402,
+        1240,
+        1752,
+        1630
+      ],
+      "path": "S20-b72977918b-all-candidates-f014-b01.png",
+      "sha256": "c5cb7f52e5d98dffd921c34f6bb0b810130552d0b1b16878aa28ee11422ca7e3"
+    },
+    {
+      "frame": 14,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 1987,
+        "y": 1219,
+        "width": 208,
+        "height": 303,
+        "score": 0.60135,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1904,
+        1136,
+        2278,
+        1605
+      ],
+      "path": "S20-b72977918b-all-candidates-f014-b02.png",
+      "sha256": "c1da5f29121b514b1e5d37a4c93733511fead5fc6b11f5d1753e80ba57f8b85e"
+    },
+    {
+      "frame": 15,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2604,
+        "y": 1530,
+        "width": 177,
+        "height": 137,
+        "score": 0.70135,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2533,
+        1459,
+        2852,
+        1738
+      ],
+      "path": "S20-b72977918b-all-candidates-f015-b00.png",
+      "sha256": "28e048524edf951e03a6fb44a8e80e717773b90d6e682a36ac897394b9aea27a"
+    },
+    {
+      "frame": 15,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1977,
+        "y": 1205,
+        "width": 227,
+        "height": 309,
+        "score": 0.66039,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1886,
+        1114,
+        2295,
+        1605
+      ],
+      "path": "S20-b72977918b-all-candidates-f015-b01.png",
+      "sha256": "8479982b1171064123056f4c563cae91d491ff261b1d2b1e3ba25caf12cdb806"
+    },
+    {
+      "frame": 15,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 1475,
+        "y": 1303,
+        "width": 203,
+        "height": 251,
+        "score": 0.64442,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1394,
+        1222,
+        1759,
+        1635
+      ],
+      "path": "S20-b72977918b-all-candidates-f015-b02.png",
+      "sha256": "94675bcb757568d759d0a453088d263f2b6345b41b4b4dfdd7de8268126410f2"
+    },
+    {
+      "frame": 16,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1474,
+        "y": 1305,
+        "width": 206,
+        "height": 248,
+        "score": 0.63656,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1392,
+        1223,
+        1762,
+        1635
+      ],
+      "path": "S20-b72977918b-all-candidates-f016-b00.png",
+      "sha256": "891562b3e6fce2f86bf2816a2aae5b53a00054d336abf550d814c1b745ec5a3b"
+    },
+    {
+      "frame": 16,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1989,
+        "y": 1236,
+        "width": 202,
+        "height": 276,
+        "score": 0.62014,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1908,
+        1155,
+        2272,
+        1593
+      ],
+      "path": "S20-b72977918b-all-candidates-f016-b01.png",
+      "sha256": "7ab972eae6895000560057f5c0052addaba2e656d7666f6291a67ea5bf9f1a98"
+    },
+    {
+      "frame": 17,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1479,
+        "y": 1318,
+        "width": 201,
+        "height": 234,
+        "score": 0.69425,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1399,
+        1238,
+        1760,
+        1632
+      ],
+      "path": "S20-b72977918b-all-candidates-f017-b00.png",
+      "sha256": "cac76cc5512e3e883919d085ecab1b5ad43a267ced53da7d8d161b997fabaf65"
+    },
+    {
+      "frame": 17,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 2598,
+        "y": 1531,
+        "width": 181,
+        "height": 137,
+        "score": 0.63012,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2526,
+        1459,
+        2851,
+        1740
+      ],
+      "path": "S20-b72977918b-all-candidates-f017-b01.png",
+      "sha256": "8ebb949b638e7bc36d253bfc4fad50830233f46dc87d7ec2ee99cb7df9307914"
+    },
+    {
+      "frame": 18,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2590,
+        "y": 1524,
+        "width": 198,
+        "height": 151,
+        "score": 0.76509,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2511,
+        1445,
+        2867,
+        1754
+      ],
+      "path": "S20-b72977918b-all-candidates-f018-b00.png",
+      "sha256": "51ebc6623b95ae1cd7bcb30df8c7bbfe8978e905dbedd7610cb24d60b96ec4d7"
+    },
+    {
+      "frame": 18,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1471,
+        "y": 1319,
+        "width": 212,
+        "height": 233,
+        "score": 0.67169,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1386,
+        1234,
+        1768,
+        1637
+      ],
+      "path": "S20-b72977918b-all-candidates-f018-b01.png",
+      "sha256": "097e5c6ba744b5312164eb94289e856b2fe8183343e0fadae9499ae410dc34aa"
+    },
+    {
+      "frame": 18,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 1971,
+        "y": 1213,
+        "width": 236,
+        "height": 305,
+        "score": 0.67124,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1877,
+        1119,
+        2301,
+        1612
+      ],
+      "path": "S20-b72977918b-all-candidates-f018-b02.png",
+      "sha256": "d06a7a7ce4b30046bca4cce79c4e7cfdd688e77fc49a372a1686a460a2b0e768"
+    },
+    {
+      "frame": 19,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2576,
+        "y": 1506,
+        "width": 214,
+        "height": 171,
+        "score": 0.73545,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2490,
+        1420,
+        2876,
+        1763
+      ],
+      "path": "S20-b72977918b-all-candidates-f019-b00.png",
+      "sha256": "af3e42f09431ea3c8e63fcb4411bdf7f87334d57059a35cc856ebefa4fb71d3d"
+    },
+    {
+      "frame": 19,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1454,
+        "y": 1303,
+        "width": 239,
+        "height": 255,
+        "score": 0.63493,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1358,
+        1207,
+        1789,
+        1654
+      ],
+      "path": "S20-b72977918b-all-candidates-f019-b01.png",
+      "sha256": "7ff559634c5d45d62e4c0eef303ff5bd315bd745b0ea2bf7f10d718c8969ec03"
+    },
+    {
+      "frame": 20,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2567,
+        "y": 1503,
+        "width": 236,
+        "height": 185,
+        "score": 0.6665,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2473,
+        1409,
+        2897,
+        1782
+      ],
+      "path": "S20-b72977918b-all-candidates-f020-b00.png",
+      "sha256": "c1e5b63fa7b34a32ff192d1f3436b4e6170c16a642779e0a431e44774dcbf1e3"
+    },
+    {
+      "frame": 20,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1457,
+        "y": 1306,
+        "width": 237,
+        "height": 249,
+        "score": 0.65149,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1362,
+        1211,
+        1789,
+        1650
+      ],
+      "path": "S20-b72977918b-all-candidates-f020-b01.png",
+      "sha256": "3ccd418a19419ec0341c0f6f0a7df429aa315ff64cd52f1d4e184de212bf6a51"
+    },
+    {
+      "frame": 21,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1458,
+        "y": 1304,
+        "width": 230,
+        "height": 249,
+        "score": 0.62775,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1366,
+        1212,
+        1780,
+        1645
+      ],
+      "path": "S20-b72977918b-all-candidates-f021-b00.png",
+      "sha256": "42753e2952d38506561acd8298452fa4f1ece6282194d528d0f01154bf13fcb6"
+    },
+    {
+      "frame": 22,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2574,
+        "y": 1515,
+        "width": 177,
+        "height": 155,
+        "score": 0.75433,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2503,
+        1444,
+        2822,
+        1741
+      ],
+      "path": "S20-b72977918b-all-candidates-f022-b00.png",
+      "sha256": "c416b9b00b40cacb1c421cca7db5d9339e0a2fa8145fddbb36c1ea27b265e5fe"
+    },
+    {
+      "frame": 22,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1469,
+        "y": 1325,
+        "width": 202,
+        "height": 213,
+        "score": 0.68801,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1388,
+        1244,
+        1752,
+        1619
+      ],
+      "path": "S20-b72977918b-all-candidates-f022-b01.png",
+      "sha256": "ba5f9aa1c44171d41551201bd798644680b702da681666eb93997bc7057289fc"
+    },
+    {
+      "frame": 23,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1470,
+        "y": 1324,
+        "width": 199,
+        "height": 215,
+        "score": 0.65554,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1390,
+        1244,
+        1749,
+        1619
+      ],
+      "path": "S20-b72977918b-all-candidates-f023-b00.png",
+      "sha256": "91afb7bbf3f00a7076723397329bd6a1a69900f24e9315f53b23783c3ee683e9"
+    },
+    {
+      "frame": 23,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1967,
+        "y": 1239,
+        "width": 186,
+        "height": 248,
+        "score": 0.64381,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1893,
+        1165,
+        2227,
+        1561
+      ],
+      "path": "S20-b72977918b-all-candidates-f023-b01.png",
+      "sha256": "ff25d4a9afa622c534de727ceee156bb7e2eeef1b99416aab66c4a4c4dac7c37"
+    },
+    {
+      "frame": 24,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1470,
+        "y": 1327,
+        "width": 196,
+        "height": 212,
+        "score": 0.68636,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1392,
+        1249,
+        1744,
+        1617
+      ],
+      "path": "S20-b72977918b-all-candidates-f024-b00.png",
+      "sha256": "2afb3c6bc7230b1909ac892128b25c6d972430c6ebeba016d4452f93ce0145d5"
+    },
+    {
+      "frame": 25,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1961,
+        "y": 1231,
+        "width": 196,
+        "height": 273,
+        "score": 0.68736,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1883,
+        1153,
+        2235,
+        1582
+      ],
+      "path": "S20-b72977918b-all-candidates-f025-b00.png",
+      "sha256": "fbd4ff9d3bd880522c09ea307844c1564ffd611d499673aec5d52ae4ff70a2f4"
+    },
+    {
+      "frame": 25,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1472,
+        "y": 1326,
+        "width": 192,
+        "height": 213,
+        "score": 0.66277,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1395,
+        1249,
+        1741,
+        1616
+      ],
+      "path": "S20-b72977918b-all-candidates-f025-b01.png",
+      "sha256": "cffc27a6890d28edc37aa91400bc0057ffffe8cf117d4793f222675a4c866623"
+    },
+    {
+      "frame": 26,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1964,
+        "y": 1231,
+        "width": 196,
+        "height": 275,
+        "score": 0.67262,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1886,
+        1153,
+        2238,
+        1584
+      ],
+      "path": "S20-b72977918b-all-candidates-f026-b00.png",
+      "sha256": "8351c82f47d95afd8594241d4e73c3093030130d72c2e808b9945941c9d77d8d"
+    },
+    {
+      "frame": 26,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1467,
+        "y": 1317,
+        "width": 212,
+        "height": 222,
+        "score": 0.60328,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1382,
+        1232,
+        1764,
+        1624
+      ],
+      "path": "S20-b72977918b-all-candidates-f026-b01.png",
+      "sha256": "75eebd991a5300da5d1ea2f02dd794d834a9384beb760ca1c3070534e6468beb"
+    },
+    {
+      "frame": 27,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 243,
+        "y": 1214,
+        "width": 385,
+        "height": 449,
+        "score": 0.60686,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        89,
+        1060,
+        782,
+        1817
+      ],
+      "path": "S20-b72977918b-all-candidates-f027-b00.png",
+      "sha256": "3f1765e8c541a06783a3aba879ebfb94d65d6283bc9562adc1a059924ae55cd6"
+    },
+    {
+      "frame": 28,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1948,
+        "y": 1200,
+        "width": 230,
+        "height": 313,
+        "score": 0.65551,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1856,
+        1108,
+        2270,
+        1605
+      ],
+      "path": "S20-b72977918b-all-candidates-f028-b00.png",
+      "sha256": "ef53e3ac3ab68f8ba10fde4ea752deb3ebfe76c0c2c7998723fae814630948aa"
+    },
+    {
+      "frame": 29,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1955,
+        "y": 1222,
+        "width": 216,
+        "height": 279,
+        "score": 0.62679,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1869,
+        1136,
+        2257,
+        1587
+      ],
+      "path": "S20-b72977918b-all-candidates-f029-b00.png",
+      "sha256": "16adf98b55b2a7c28160f6a82be17b3fdca231a66ef865527ddb2e0b7227def0"
+    },
+    {
+      "frame": 29,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 261,
+        "y": 1197,
+        "width": 372,
+        "height": 475,
+        "score": 0.61566,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        112,
+        1048,
+        782,
+        1821
+      ],
+      "path": "S20-b72977918b-all-candidates-f029-b01.png",
+      "sha256": "2e27641700df16c2e582534b7984cdb01ad101d6381349d06151785c13658e29"
+    },
+    {
+      "frame": 30,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 259,
+        "y": 1191,
+        "width": 391,
+        "height": 478,
+        "score": 0.60646,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        103,
+        1035,
+        806,
+        1825
+      ],
+      "path": "S20-b72977918b-all-candidates-f030-b00.png",
+      "sha256": "7221add23d70f7eb82039665627606a5131c293490da86d4b2f26be8fcfac33c"
+    },
+    {
+      "frame": 34,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 259,
+        "y": 1194,
+        "width": 392,
+        "height": 484,
+        "score": 0.69666,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        102,
+        1037,
+        808,
+        1835
+      ],
+      "path": "S20-b72977918b-all-candidates-f034-b00.png",
+      "sha256": "2f2f0cbb347487395149a27b520ce920e09a00ad7c22f41f5657e706cbc312c8"
+    },
+    {
+      "frame": 35,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 288,
+        "y": 1227,
+        "width": 342,
+        "height": 417,
+        "score": 0.62822,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        151,
+        1090,
+        767,
+        1781
+      ],
+      "path": "S20-b72977918b-all-candidates-f035-b00.png",
+      "sha256": "6d962368be751a1be808ea9079c1f378e109372263d4f52d4aee322df0dc1ead"
+    },
+    {
+      "frame": 36,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 283,
+        "y": 1220,
+        "width": 352,
+        "height": 435,
+        "score": 0.73335,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        142,
+        1079,
+        776,
+        1796
+      ],
+      "path": "S20-b72977918b-all-candidates-f036-b00.png",
+      "sha256": "8974c163611e85bce64c79c3523e6af1e1213bc775c35f7a068a24db284b5385"
+    },
+    {
+      "frame": 36,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1943,
+        "y": 1251,
+        "width": 182,
+        "height": 237,
+        "score": 0.62114,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1870,
+        1178,
+        2198,
+        1561
+      ],
+      "path": "S20-b72977918b-all-candidates-f036-b01.png",
+      "sha256": "1033f51374a476647d299b35c425dcda3b68039178cfb32288966e24c704b376"
+    },
+    {
+      "frame": 37,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 272,
+        "y": 1198,
+        "width": 387,
+        "height": 473,
+        "score": 0.68969,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        117,
+        1043,
+        814,
+        1826
+      ],
+      "path": "S20-b72977918b-all-candidates-f037-b00.png",
+      "sha256": "0195a37759d07689837dba524fc061474ba4a3fa863c0b29daa3ed365f2bfc26"
+    },
+    {
+      "frame": 38,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 287,
+        "y": 1212,
+        "width": 354,
+        "height": 449,
+        "score": 0.72516,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        145,
+        1070,
+        783,
+        1803
+      ],
+      "path": "S20-b72977918b-all-candidates-f038-b00.png",
+      "sha256": "4466361995b74caf1610b15ec6f404730c185d52f6dce9a354083451112a08be"
+    },
+    {
+      "frame": 38,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 2503,
+        "y": 1490,
+        "width": 181,
+        "height": 157,
+        "score": 0.6258,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2431,
+        1418,
+        2756,
+        1719
+      ],
+      "path": "S20-b72977918b-all-candidates-f038-b01.png",
+      "sha256": "8c060a7fa27bcf6437d6ad39075e613abcb21fea288d6fdb6d16fe9c644f7854"
+    },
+    {
+      "frame": 39,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1948,
+        "y": 1254,
+        "width": 168,
+        "height": 228,
+        "score": 0.62126,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1881,
+        1187,
+        2183,
+        1549
+      ],
+      "path": "S20-b72977918b-all-candidates-f039-b00.png",
+      "sha256": "df409b6d1b8729f31691b5e40d7dbb98b0cf5fa0499dcd4d209c94ccb86ec536"
+    },
+    {
+      "frame": 39,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 2502,
+        "y": 1497,
+        "width": 180,
+        "height": 147,
+        "score": 0.62051,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2430,
+        1425,
+        2754,
+        1716
+      ],
+      "path": "S20-b72977918b-all-candidates-f039-b01.png",
+      "sha256": "241065f1624c5aacf454f3b1fa458dc082c3120e943d2b601297dbb2b63e06fe"
+    },
+    {
+      "frame": 39,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 269,
+        "y": 1192,
+        "width": 406,
+        "height": 490,
+        "score": 0.60563,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        107,
+        1030,
+        837,
+        1844
+      ],
+      "path": "S20-b72977918b-all-candidates-f039-b02.png",
+      "sha256": "67aed0c46e6aab87f812d5481a6da015dcc1c6d45cc13fdd955cef97effd1800"
+    },
+    {
+      "frame": 40,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 277,
+        "y": 1203,
+        "width": 384,
+        "height": 476,
+        "score": 0.64868,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        123,
+        1049,
+        815,
+        1833
+      ],
+      "path": "S20-b72977918b-all-candidates-f040-b00.png",
+      "sha256": "40612924c1649492bf1f7a4d97c331b17304e6919008e9c3a501c5d9f2ad4813"
+    },
+    {
+      "frame": 40,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 2490,
+        "y": 1490,
+        "width": 170,
+        "height": 168,
+        "score": 0.64438,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2422,
+        1422,
+        2728,
+        1726
+      ],
+      "path": "S20-b72977918b-all-candidates-f040-b01.png",
+      "sha256": "79cc3cbaae06d87d80127c3bbc6130ec88694c21c97ee3cf784d54ec488d089e"
+    },
+    {
+      "frame": 40,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 1943,
+        "y": 1254,
+        "width": 176,
+        "height": 233,
+        "score": 0.62685,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1873,
+        1184,
+        2189,
+        1557
+      ],
+      "path": "S20-b72977918b-all-candidates-f040-b02.png",
+      "sha256": "3bde842f192732928b4a4c38c9f245b00ba80fab7757d64329c481df75d88fa8"
+    },
+    {
+      "frame": 41,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2485,
+        "y": 1485,
+        "width": 176,
+        "height": 172,
+        "score": 0.62288,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2415,
+        1415,
+        2731,
+        1727
+      ],
+      "path": "S20-b72977918b-all-candidates-f041-b00.png",
+      "sha256": "297fa2fe485cc1a94e576bfcf6eb4453f55f1a80e5b78c990dedebc5afa98418"
+    },
+    {
+      "frame": 41,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 280,
+        "y": 1218,
+        "width": 375,
+        "height": 447,
+        "score": 0.60834,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        130,
+        1068,
+        805,
+        1815
+      ],
+      "path": "S20-b72977918b-all-candidates-f041-b01.png",
+      "sha256": "f864477eaa9edf91bab04e6b43859aca924a456d8a4335d592f9d44386d60580"
+    },
+    {
+      "frame": 42,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1932,
+        "y": 1230,
+        "width": 208,
+        "height": 275,
+        "score": 0.64498,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1849,
+        1147,
+        2223,
+        1588
+      ],
+      "path": "S20-b72977918b-all-candidates-f042-b00.png",
+      "sha256": "087f14657973c20140bf12cb62102c2326803082157b5612b46aa5f126946b17"
+    },
+    {
+      "frame": 42,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 283,
+        "y": 1216,
+        "width": 364,
+        "height": 443,
+        "score": 0.60227,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        137,
+        1070,
+        793,
+        1805
+      ],
+      "path": "S20-b72977918b-all-candidates-f042-b01.png",
+      "sha256": "fede4da31f583fe352113408f6f2c2d864ea5e59bbd9edd45e299b4edbcb8865"
+    },
+    {
+      "frame": 44,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 296,
+        "y": 1227,
+        "width": 355,
+        "height": 417,
+        "score": 0.65764,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        154,
+        1085,
+        793,
+        1786
+      ],
+      "path": "S20-b72977918b-all-candidates-f044-b00.png",
+      "sha256": "0da448bfde4e71f10e130790caa018562fd5f90f0c5e3197cc97a83c8ace0d74"
+    },
+    {
+      "frame": 45,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 305,
+        "y": 1225,
+        "width": 347,
+        "height": 419,
+        "score": 0.63954,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        166,
+        1086,
+        791,
+        1783
+      ],
+      "path": "S20-b72977918b-all-candidates-f045-b00.png",
+      "sha256": "a7e18cb6455f8572fe0139870d5dab48bccdef9a18b69bcc161c06959823a914"
+    },
+    {
+      "frame": 46,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 306,
+        "y": 1240,
+        "width": 344,
+        "height": 395,
+        "score": 0.60916,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        168,
+        1102,
+        788,
+        1773
+      ],
+      "path": "S20-b72977918b-all-candidates-f046-b00.png",
+      "sha256": "214e96fb5f59f21f231abc7e5d0da577f88b6162cbbb3c534a25816aa39119ee"
+    },
+    {
+      "frame": 47,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1946,
+        "y": 1260,
+        "width": 171,
+        "height": 224,
+        "score": 0.63012,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1878,
+        1192,
+        2185,
+        1552
+      ],
+      "path": "S20-b72977918b-all-candidates-f047-b00.png",
+      "sha256": "62e5bec3888c7bfbbce57bdfe9ae6e6bbf6d637158ca818ac1faef5c0de71e86"
+    },
+    {
+      "frame": 50,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 173,
+        "y": 1011,
+        "width": 67,
+        "height": 100,
+        "score": 0.63477,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        146,
+        984,
+        267,
+        1138
+      ],
+      "path": "S20-b72977918b-all-candidates-f050-b00.png",
+      "sha256": "88889ff7c43fb22f1c55a2801264fe06db51c63d15c8194203a5e1939f991871"
+    },
+    {
+      "frame": 50,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1937,
+        "y": 1294,
+        "width": 141,
+        "height": 190,
+        "score": 0.63426,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1881,
+        1238,
+        2134,
+        1540
+      ],
+      "path": "S20-b72977918b-all-candidates-f050-b01.png",
+      "sha256": "8c02c57f1188a05a03fe8d95a8895226e11b8c2308e0700f15375f63b955e5d3"
+    },
+    {
+      "frame": 51,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1918,
+        "y": 1263,
+        "width": 151,
+        "height": 221,
+        "score": 0.67081,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1858,
+        1203,
+        2129,
+        1544
+      ],
+      "path": "S20-b72977918b-all-candidates-f051-b00.png",
+      "sha256": "c7dffa012d6f1426a1f19aa9d39bdccfcbdbf25ed94fe6414baf200f7e76792e"
+    },
+    {
+      "frame": 51,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1446,
+        "y": 1289,
+        "width": 223,
+        "height": 258,
+        "score": 0.62713,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1357,
+        1200,
+        1758,
+        1636
+      ],
+      "path": "S20-b72977918b-all-candidates-f051-b01.png",
+      "sha256": "65e3ed2e4fa5937c4b8cbdc421f6167b4925f49d69c3ef6ee5aa77557423c390"
+    },
+    {
+      "frame": 53,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 307,
+        "y": 1200,
+        "width": 371,
+        "height": 465,
+        "score": 0.6481,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        159,
+        1052,
+        826,
+        1813
+      ],
+      "path": "S20-b72977918b-all-candidates-f053-b00.png",
+      "sha256": "3f8e04fb5f45af6160d7dc4f4a58551c171f4c5b42f8b66cfac7c4a3b83f2bc8"
+    },
+    {
+      "frame": 53,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1453,
+        "y": 1311,
+        "width": 189,
+        "height": 226,
+        "score": 0.62263,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1377,
+        1235,
+        1718,
+        1613
+      ],
+      "path": "S20-b72977918b-all-candidates-f053-b01.png",
+      "sha256": "0c5abc0cb10eeac30e5276b20dce01e210c5a5b9fbb764d03abe34137d21ed94"
+    },
+    {
+      "frame": 53,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 1912,
+        "y": 1262,
+        "width": 168,
+        "height": 232,
+        "score": 0.61855,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1845,
+        1195,
+        2147,
+        1561
+      ],
+      "path": "S20-b72977918b-all-candidates-f053-b02.png",
+      "sha256": "af89261c21788653af973318ecdfcaa049d75dbd851df55c6cbad6d8d5a4d600"
+    },
+    {
+      "frame": 55,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2410,
+        "y": 1427,
+        "width": 199,
+        "height": 230,
+        "score": 0.63194,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2330,
+        1347,
+        2689,
+        1737
+      ],
+      "path": "S20-b72977918b-all-candidates-f055-b00.png",
+      "sha256": "47f43b13bb9bccaf0ca69755b365927bdbbcf560697e90a4d549ca8c5d9d864f"
+    },
+    {
+      "frame": 56,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1456,
+        "y": 1335,
+        "width": 184,
+        "height": 197,
+        "score": 0.67577,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1382,
+        1261,
+        1714,
+        1606
+      ],
+      "path": "S20-b72977918b-all-candidates-f056-b00.png",
+      "sha256": "ccfdcd1fee5871d644d6b9a242188ad47af1e9797d6abb2765c97ac69a8c7542"
+    },
+    {
+      "frame": 57,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1909,
+        "y": 1267,
+        "width": 167,
+        "height": 225,
+        "score": 0.67125,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1842,
+        1200,
+        2143,
+        1559
+      ],
+      "path": "S20-b72977918b-all-candidates-f057-b00.png",
+      "sha256": "10400245b0c526ad7321c680a5401f5e45d1e80b773e6417ff87306a43d4134f"
+    },
+    {
+      "frame": 57,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1459,
+        "y": 1341,
+        "width": 177,
+        "height": 182,
+        "score": 0.62038,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1388,
+        1270,
+        1707,
+        1594
+      ],
+      "path": "S20-b72977918b-all-candidates-f057-b01.png",
+      "sha256": "991683d552444a5f97cd50778801a10191cacd859b148817484dabd026f18dbc"
+    },
+    {
+      "frame": 58,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1459,
+        "y": 1346,
+        "width": 174,
+        "height": 176,
+        "score": 0.66181,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1389,
+        1276,
+        1703,
+        1592
+      ],
+      "path": "S20-b72977918b-all-candidates-f058-b00.png",
+      "sha256": "b74bda8f9bdfb2ff9e4ef987a0fe8d57a34a70903172836bc9587c90c22bf12e"
+    },
+    {
+      "frame": 58,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 399,
+        "y": 1689,
+        "width": 40,
+        "height": 43,
+        "score": 0.60513,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        383,
+        1673,
+        455,
+        1748
+      ],
+      "path": "S20-b72977918b-all-candidates-f058-b01.png",
+      "sha256": "335af7a71996f9b9ba71047114dcbfa37a7b3b192beca7a0cf273dad5d0095b7"
+    },
+    {
+      "frame": 59,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1457,
+        "y": 1341,
+        "width": 179,
+        "height": 183,
+        "score": 0.65604,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1385,
+        1269,
+        1708,
+        1596
+      ],
+      "path": "S20-b72977918b-all-candidates-f059-b00.png",
+      "sha256": "0f868169ad9cef8c6fcc0810fcb2e23c174d3077e48d726ee58104ab03477ae0"
+    },
+    {
+      "frame": 59,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1908,
+        "y": 1262,
+        "width": 171,
+        "height": 223,
+        "score": 0.61849,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1840,
+        1194,
+        2147,
+        1553
+      ],
+      "path": "S20-b72977918b-all-candidates-f059-b01.png",
+      "sha256": "0ea55641b4aa6991509300edea484dc97cdd556175459fcc74ff78dc85dea38c"
+    },
+    {
+      "frame": 60,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1453,
+        "y": 1341,
+        "width": 183,
+        "height": 185,
+        "score": 0.65398,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1380,
+        1268,
+        1709,
+        1599
+      ],
+      "path": "S20-b72977918b-all-candidates-f060-b00.png",
+      "sha256": "1649d3faed02d8a768ed6652cec7a17ca316c1cb65d14fc0f8d016b8cecbebb3"
+    },
+    {
+      "frame": 61,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1453,
+        "y": 1344,
+        "width": 184,
+        "height": 178,
+        "score": 0.64726,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1379,
+        1270,
+        1711,
+        1596
+      ],
+      "path": "S20-b72977918b-all-candidates-f061-b00.png",
+      "sha256": "e10900e4413e5df75601a4a7097532be63e17d28aad8fe22cc8bb2535ba8d88a"
+    },
+    {
+      "frame": 62,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1448,
+        "y": 1339,
+        "width": 191,
+        "height": 187,
+        "score": 0.65611,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1372,
+        1263,
+        1715,
+        1602
+      ],
+      "path": "S20-b72977918b-all-candidates-f062-b00.png",
+      "sha256": "63f0580630bf02cee14197fe7403d505b3bc706742ddae47f50a3baa6fc6f2a6"
+    },
+    {
+      "frame": 63,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1443,
+        "y": 1346,
+        "width": 189,
+        "height": 182,
+        "score": 0.69308,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1367,
+        1270,
+        1708,
+        1604
+      ],
+      "path": "S20-b72977918b-all-candidates-f063-b00.png",
+      "sha256": "ee32e198c2d6d7fbcb6a44866d84857b05c68d6963c2dca55d34eb25e316e60b"
+    },
+    {
+      "frame": 63,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 3249,
+        "y": 1405,
+        "width": 514,
+        "height": 504,
+        "score": 0.6469,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        3043,
+        1199,
+        3840,
+        2115
+      ],
+      "path": "S20-b72977918b-all-candidates-f063-b01.png",
+      "sha256": "ad29f69d644480522d6685f2395a3d8c6015b09ca55e01c09c1d7cf194276627"
+    },
+    {
+      "frame": 64,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1440,
+        "y": 1330,
+        "width": 218,
+        "height": 201,
+        "score": 0.67417,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1353,
+        1243,
+        1745,
+        1618
+      ],
+      "path": "S20-b72977918b-all-candidates-f064-b00.png",
+      "sha256": "ace65af1b95cf8ec0348eb77ab0519f5c128b11a05be83275e5614eaa3b3eeb4"
+    },
+    {
+      "frame": 65,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1444,
+        "y": 1343,
+        "width": 196,
+        "height": 188,
+        "score": 0.70999,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1366,
+        1265,
+        1718,
+        1609
+      ],
+      "path": "S20-b72977918b-all-candidates-f065-b00.png",
+      "sha256": "e67228ae9d526d95d4f54465c8a611fb3e21c7c167430c32ced9526ea7654118"
+    },
+    {
+      "frame": 66,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1446,
+        "y": 1342,
+        "width": 181,
+        "height": 187,
+        "score": 0.7188,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1374,
+        1270,
+        1699,
+        1601
+      ],
+      "path": "S20-b72977918b-all-candidates-f066-b00.png",
+      "sha256": "87669da97a5d5d8727529e2fd8e2bc3273489078771ef05a713a7655dd139811"
+    },
+    {
+      "frame": 69,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 3241,
+        "y": 1426,
+        "width": 473,
+        "height": 463,
+        "score": 0.61442,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        3052,
+        1237,
+        3840,
+        2078
+      ],
+      "path": "S20-b72977918b-all-candidates-f069-b00.png",
+      "sha256": "231789849aef7ac463b3aee5750e3163d940170d0c35d9e96f1b7f8945645307"
+    },
+    {
+      "frame": 70,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1437,
+        "y": 1320,
+        "width": 194,
+        "height": 216,
+        "score": 0.63987,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1359,
+        1242,
+        1709,
+        1614
+      ],
+      "path": "S20-b72977918b-all-candidates-f070-b00.png",
+      "sha256": "3d472873174b1591ae817a96b4d987a5f89bbcf45f5dec6356cf6a02f73bf700"
+    },
+    {
+      "frame": 71,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1436,
+        "y": 1335,
+        "width": 192,
+        "height": 202,
+        "score": 0.70956,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1359,
+        1258,
+        1705,
+        1614
+      ],
+      "path": "S20-b72977918b-all-candidates-f071-b00.png",
+      "sha256": "b39496245027172db0686a73c48f7750d73e9bb89dcd807a8b7113d64f09e425"
+    },
+    {
+      "frame": 72,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1429,
+        "y": 1316,
+        "width": 205,
+        "height": 229,
+        "score": 0.70696,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1347,
+        1234,
+        1716,
+        1627
+      ],
+      "path": "S20-b72977918b-all-candidates-f072-b00.png",
+      "sha256": "49100eb15963ca92bb94a437f2f244571587b3bfab2f9cd6ef680295c0fc3036"
+    },
+    {
+      "frame": 73,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1429,
+        "y": 1323,
+        "width": 200,
+        "height": 212,
+        "score": 0.63318,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1349,
+        1243,
+        1709,
+        1615
+      ],
+      "path": "S20-b72977918b-all-candidates-f073-b00.png",
+      "sha256": "e1c53349222815d1456fcd1d4f900eab918ec4698caf37979ebf26a5ab066d72"
+    },
+    {
+      "frame": 74,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1436,
+        "y": 1358,
+        "width": 154,
+        "height": 165,
+        "score": 0.78449,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1374,
+        1296,
+        1652,
+        1585
+      ],
+      "path": "S20-b72977918b-all-candidates-f074-b00.png",
+      "sha256": "47d89fc43d20e2214eab9cac7819c42796c87dc2e70e22d4d11220ef2351e802"
+    },
+    {
+      "frame": 75,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1432,
+        "y": 1345,
+        "width": 169,
+        "height": 177,
+        "score": 0.6358,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1364,
+        1277,
+        1669,
+        1590
+      ],
+      "path": "S20-b72977918b-all-candidates-f075-b00.png",
+      "sha256": "a29c4df2a1053b51784aeceb276d4c499556127c2f8c840a8d1621eb70174005"
+    },
+    {
+      "frame": 77,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1430,
+        "y": 1353,
+        "width": 165,
+        "height": 167,
+        "score": 0.63558,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1364,
+        1287,
+        1661,
+        1586
+      ],
+      "path": "S20-b72977918b-all-candidates-f077-b00.png",
+      "sha256": "d85ace3d4b3209e347b9f0ae5ac188eb1184f0f3fade6a3fc78325959dde5dfc"
+    },
+    {
+      "frame": 78,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2288,
+        "y": 1424,
+        "width": 218,
+        "height": 192,
+        "score": 0.65964,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2201,
+        1337,
+        2593,
+        1703
+      ],
+      "path": "S20-b72977918b-all-candidates-f078-b00.png",
+      "sha256": "f5ccdd9709a53bc84a07688b154643d75dd18a3cd10df56fed5114bd33e2cb2c"
+    },
+    {
+      "frame": 78,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1423,
+        "y": 1336,
+        "width": 187,
+        "height": 193,
+        "score": 0.6113,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1348,
+        1261,
+        1685,
+        1604
+      ],
+      "path": "S20-b72977918b-all-candidates-f078-b01.png",
+      "sha256": "0e03a94fba4bfd4c3c6788776b114b5ee77f7621d94c0aec2ae318faca38ed2d"
+    },
+    {
+      "frame": 79,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1417,
+        "y": 1341,
+        "width": 185,
+        "height": 180,
+        "score": 0.70721,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1343,
+        1267,
+        1676,
+        1595
+      ],
+      "path": "S20-b72977918b-all-candidates-f079-b00.png",
+      "sha256": "e3da29677db033ac6a902fe5fd0496aacf961c48202399e7295fc9d779fe4c65"
+    },
+    {
+      "frame": 80,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2283,
+        "y": 1410,
+        "width": 204,
+        "height": 217,
+        "score": 0.61089,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2201,
+        1328,
+        2569,
+        1709
+      ],
+      "path": "S20-b72977918b-all-candidates-f080-b00.png",
+      "sha256": "f05379682588b2b35efc8a357dae64a7c65121ebe7b80e4718e9cf3f20f1bfd3"
+    },
+    {
+      "frame": 81,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1413,
+        "y": 1341,
+        "width": 179,
+        "height": 185,
+        "score": 0.65882,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1341,
+        1269,
+        1664,
+        1598
+      ],
+      "path": "S20-b72977918b-all-candidates-f081-b00.png",
+      "sha256": "fd1610eef7b2202a364687c8cd8cbc07be7f5b2637e5665b68a841dcf62a88cc"
+    },
+    {
+      "frame": 82,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1412,
+        "y": 1322,
+        "width": 170,
+        "height": 197,
+        "score": 0.7532,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1344,
+        1254,
+        1650,
+        1587
+      ],
+      "path": "S20-b72977918b-all-candidates-f082-b00.png",
+      "sha256": "00d0c2c0b11f9a91313618cae0b09b8ad1d79636864e19fb48ec2ba2d9db4c72"
+    },
+    {
+      "frame": 83,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1408,
+        "y": 1323,
+        "width": 173,
+        "height": 194,
+        "score": 0.74056,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1339,
+        1254,
+        1650,
+        1586
+      ],
+      "path": "S20-b72977918b-all-candidates-f083-b00.png",
+      "sha256": "3e1a10315191ccab89a25a03f75135c0f24ad472df301d7b256c285ae79e2ee7"
+    },
+    {
+      "frame": 84,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1406,
+        "y": 1335,
+        "width": 166,
+        "height": 182,
+        "score": 0.7673,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1340,
+        1269,
+        1638,
+        1583
+      ],
+      "path": "S20-b72977918b-all-candidates-f084-b00.png",
+      "sha256": "a492b1daa4c15e4ac772954168bb74ae4c60dd1ddfe5c97ca0d00542a11ed932"
+    },
+    {
+      "frame": 84,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 2264,
+        "y": 1427,
+        "width": 203,
+        "height": 181,
+        "score": 0.68222,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2183,
+        1346,
+        2548,
+        1689
+      ],
+      "path": "S20-b72977918b-all-candidates-f084-b01.png",
+      "sha256": "aad86f27a6e2c82017bfa62e1ed4f2f73cf62c97657ce1211c6d2b4880594b69"
+    },
+    {
+      "frame": 85,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1409,
+        "y": 1326,
+        "width": 172,
+        "height": 201,
+        "score": 0.75662,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1340,
+        1257,
+        1650,
+        1596
+      ],
+      "path": "S20-b72977918b-all-candidates-f085-b00.png",
+      "sha256": "6f7c2ce0fcc5b84a67531c49e1b02913f82e212113eca0384470fe4cfc97d5d7"
+    },
+    {
+      "frame": 86,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1410,
+        "y": 1340,
+        "width": 166,
+        "height": 181,
+        "score": 0.78385,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1344,
+        1274,
+        1642,
+        1587
+      ],
+      "path": "S20-b72977918b-all-candidates-f086-b00.png",
+      "sha256": "779fa9230d520bc9b9f6cd25afa2d107186849860adfa639d4ce4a6eceac7952"
+    },
+    {
+      "frame": 87,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1411,
+        "y": 1327,
+        "width": 174,
+        "height": 192,
+        "score": 0.73805,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1341,
+        1257,
+        1655,
+        1589
+      ],
+      "path": "S20-b72977918b-all-candidates-f087-b00.png",
+      "sha256": "340d7a613862be4b3c2dd15ce2d9f13a759056dcd902be015b50be1684757bf9"
+    },
+    {
+      "frame": 88,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1415,
+        "y": 1330,
+        "width": 177,
+        "height": 188,
+        "score": 0.7867,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1344,
+        1259,
+        1663,
+        1589
+      ],
+      "path": "S20-b72977918b-all-candidates-f088-b00.png",
+      "sha256": "84883ed4c74d6febd7c14aaa53bfa7476ace74122c4bee0901f58180f84c3a38"
+    },
+    {
+      "frame": 89,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 3722,
+        "y": 1991,
+        "width": 111,
+        "height": 125,
+        "score": 0.69768,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        3678,
+        1947,
+        3840,
+        2160
+      ],
+      "path": "S20-b72977918b-all-candidates-f089-b00.png",
+      "sha256": "60f514d377a7f59f153859551e1d29196769acf99ea118a88aa43ca204aaae62"
+    },
+    {
+      "frame": 89,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1416,
+        "y": 1339,
+        "width": 166,
+        "height": 175,
+        "score": 0.65506,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1350,
+        1273,
+        1648,
+        1580
+      ],
+      "path": "S20-b72977918b-all-candidates-f089-b01.png",
+      "sha256": "63bb1dee93fc5625a2e98559e4b2aa50e95fda14438ef277c0104cf43601bc6f"
+    },
+    {
+      "frame": 90,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1409,
+        "y": 1334,
+        "width": 177,
+        "height": 176,
+        "score": 0.62699,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1338,
+        1263,
+        1657,
+        1581
+      ],
+      "path": "S20-b72977918b-all-candidates-f090-b00.png",
+      "sha256": "4044efc5bd4f6de88d98bed3bf6a8c698719189908111c8a7fbf078e61604445"
+    },
+    {
+      "frame": 91,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1414,
+        "y": 1320,
+        "width": 197,
+        "height": 205,
+        "score": 0.74209,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1335,
+        1241,
+        1690,
+        1604
+      ],
+      "path": "S20-b72977918b-all-candidates-f091-b00.png",
+      "sha256": "20bb89c3215b1799e3dd845a7f80a26cdb61164a89f1c6292bbc315443ee2df7"
+    },
+    {
+      "frame": 92,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1423,
+        "y": 1339,
+        "width": 179,
+        "height": 185,
+        "score": 0.79113,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1351,
+        1267,
+        1674,
+        1596
+      ],
+      "path": "S20-b72977918b-all-candidates-f092-b00.png",
+      "sha256": "0feed6833d82c841f405fc2cf6b315259110b1c415063d83557f57d42942eab2"
+    },
+    {
+      "frame": 93,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1755,
+        "y": 1216,
+        "width": 241,
+        "height": 290,
+        "score": 0.65355,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1659,
+        1120,
+        2092,
+        1602
+      ],
+      "path": "S20-b72977918b-all-candidates-f093-b00.png",
+      "sha256": "0d95bfd8694a8f705bcfc241d556dad7986daab94503176413a4a86675cfd09c"
+    },
+    {
+      "frame": 93,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1420,
+        "y": 1342,
+        "width": 136,
+        "height": 166,
+        "score": 0.60351,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1366,
+        1288,
+        1610,
+        1562
+      ],
+      "path": "S20-b72977918b-all-candidates-f093-b01.png",
+      "sha256": "89b40be87ba1ba129c8c6d54e82687b803992029991b6da6d3c69cd72dad1faa"
+    },
+    {
+      "frame": 94,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1416,
+        "y": 1340,
+        "width": 137,
+        "height": 166,
+        "score": 0.61631,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1361,
+        1285,
+        1608,
+        1561
+      ],
+      "path": "S20-b72977918b-all-candidates-f094-b00.png",
+      "sha256": "c44b95234db08bc2c56aa672f4a24cfbe29942938c1abb9336b0603f8319aace"
+    },
+    {
+      "frame": 95,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1413,
+        "y": 1325,
+        "width": 153,
+        "height": 183,
+        "score": 0.64306,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1352,
+        1264,
+        1627,
+        1569
+      ],
+      "path": "S20-b72977918b-all-candidates-f095-b00.png",
+      "sha256": "8bb468842133e4530b44b21072c6e29882423c05a9100da0b17cd54ded099ed6"
+    },
+    {
+      "frame": 96,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1403,
+        "y": 1334,
+        "width": 148,
+        "height": 174,
+        "score": 0.7431,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1344,
+        1275,
+        1610,
+        1567
+      ],
+      "path": "S20-b72977918b-all-candidates-f096-b00.png",
+      "sha256": "63a4d0264d52b7922fb0ae383aa0597b6089d7dfd34fca1e8059779b418e4cce"
+    },
+    {
+      "frame": 97,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1398,
+        "y": 1329,
+        "width": 157,
+        "height": 183,
+        "score": 0.77753,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1335,
+        1266,
+        1618,
+        1575
+      ],
+      "path": "S20-b72977918b-all-candidates-f097-b00.png",
+      "sha256": "b4908958280ef863a72e5b06a74bbc5d28867e7544a4acc7d0668bd74c9486c7"
+    },
+    {
+      "frame": 98,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1393,
+        "y": 1326,
+        "width": 186,
+        "height": 194,
+        "score": 0.77138,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1319,
+        1252,
+        1653,
+        1594
+      ],
+      "path": "S20-b72977918b-all-candidates-f098-b00.png",
+      "sha256": "b628688afa82c6d2c06a89d8ada102e0d191653d2c38bb403885f3772ca27f29"
+    },
+    {
+      "frame": 99,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1397,
+        "y": 1316,
+        "width": 219,
+        "height": 212,
+        "score": 0.77368,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1309,
+        1228,
+        1704,
+        1616
+      ],
+      "path": "S20-b72977918b-all-candidates-f099-b00.png",
+      "sha256": "0e56893509429fc8c29a5bb00fb9fb8fa22b743a9f311605faaf4d034928d04a"
+    },
+    {
+      "frame": 100,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1392,
+        "y": 1327,
+        "width": 173,
+        "height": 185,
+        "score": 0.76351,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1323,
+        1258,
+        1634,
+        1581
+      ],
+      "path": "S20-b72977918b-all-candidates-f100-b00.png",
+      "sha256": "20f06fa3b49578153a5a8c65e9dd82a564dee9d7961584e9b4e5ef5321ec7971"
+    },
+    {
+      "frame": 101,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1392,
+        "y": 1366,
+        "width": 114,
+        "height": 133,
+        "score": 0.75877,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1346,
+        1320,
+        1552,
+        1545
+      ],
+      "path": "S20-b72977918b-all-candidates-f101-b00.png",
+      "sha256": "db2fd7e13c4596d6951f46558f9485abc19b9030aac71287c41f42aea4f8d369"
+    },
+    {
+      "frame": 101,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 318,
+        "y": 1168,
+        "width": 385,
+        "height": 464,
+        "score": 0.61877,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        164,
+        1014,
+        857,
+        1786
+      ],
+      "path": "S20-b72977918b-all-candidates-f101-b01.png",
+      "sha256": "99cdc070478cf2958f80627f88b277068f5450730d68dfe0e4ed5fd67f8476ef"
+    },
+    {
+      "frame": 102,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1388,
+        "y": 1356,
+        "width": 116,
+        "height": 145,
+        "score": 0.74522,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1342,
+        1310,
+        1550,
+        1547
+      ],
+      "path": "S20-b72977918b-all-candidates-f102-b00.png",
+      "sha256": "25484c85c09b91255dff826f8d950400a50e147dec0558624d2b57e369d22813"
+    },
+    {
+      "frame": 102,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 293,
+        "y": 1156,
+        "width": 419,
+        "height": 484,
+        "score": 0.6391,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        125,
+        988,
+        880,
+        1808
+      ],
+      "path": "S20-b72977918b-all-candidates-f102-b01.png",
+      "sha256": "4db94ac22c419bbf534a9dab1d70152a6154bf581f17da75f11d3f07a005272f"
+    },
+    {
+      "frame": 103,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1383,
+        "y": 1345,
+        "width": 128,
+        "height": 158,
+        "score": 0.78254,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1332,
+        1294,
+        1562,
+        1554
+      ],
+      "path": "S20-b72977918b-all-candidates-f103-b00.png",
+      "sha256": "64b412aace4fa8c9e480f98d401ef94dffea7584193e93efbcdde6089ae2f9e8"
+    },
+    {
+      "frame": 103,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 298,
+        "y": 1161,
+        "width": 405,
+        "height": 483,
+        "score": 0.65831,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        136,
+        999,
+        865,
+        1806
+      ],
+      "path": "S20-b72977918b-all-candidates-f103-b01.png",
+      "sha256": "3928275690f88cb5d7a1234fd79dd5b2a486f77317024cc83649c4d56746a80c"
+    },
+    {
+      "frame": 104,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1376,
+        "y": 1337,
+        "width": 133,
+        "height": 171,
+        "score": 0.81216,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1323,
+        1284,
+        1562,
+        1561
+      ],
+      "path": "S20-b72977918b-all-candidates-f104-b00.png",
+      "sha256": "2df82ecba9e1ab55719872fc2f23dfee0835cac4efd1f940ba3a0838958641c9"
+    },
+    {
+      "frame": 104,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 292,
+        "y": 1150,
+        "width": 419,
+        "height": 499,
+        "score": 0.65839,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        124,
+        982,
+        879,
+        1817
+      ],
+      "path": "S20-b72977918b-all-candidates-f104-b01.png",
+      "sha256": "7184265526c7fbe654a06a6d7a8e1b61f30bc8363ac1925b36f0b0309d25f5c9"
+    },
+    {
+      "frame": 105,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1367,
+        "y": 1336,
+        "width": 152,
+        "height": 171,
+        "score": 0.77526,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1306,
+        1275,
+        1580,
+        1568
+      ],
+      "path": "S20-b72977918b-all-candidates-f105-b00.png",
+      "sha256": "bdabdc9924337868a845c2bfb24573c13d48cf4241f94ee1c3e7e673b36dd71a"
+    },
+    {
+      "frame": 106,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1364,
+        "y": 1306,
+        "width": 226,
+        "height": 225,
+        "score": 0.68713,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1274,
+        1216,
+        1680,
+        1621
+      ],
+      "path": "S20-b72977918b-all-candidates-f106-b00.png",
+      "sha256": "8f5c39925a437f498d8ae3446742f5f0b167bcd4de0275b5155cb6a25c53a583"
+    },
+    {
+      "frame": 107,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1364,
+        "y": 1343,
+        "width": 166,
+        "height": 165,
+        "score": 0.6857,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1298,
+        1277,
+        1596,
+        1574
+      ],
+      "path": "S20-b72977918b-all-candidates-f107-b00.png",
+      "sha256": "1b815569af270086acaa744e4821a9495a42b1b386d671828884cc2ac4429684"
+    },
+    {
+      "frame": 107,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 3540,
+        "y": 1906,
+        "width": 167,
+        "height": 214,
+        "score": 0.61779,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        3473,
+        1839,
+        3774,
+        2160
+      ],
+      "path": "S20-b72977918b-all-candidates-f107-b01.png",
+      "sha256": "11a7aac14ffa9c7db1eeff2c5eff5dea8e9bda70f7fd05e320eea99c99237de9"
+    },
+    {
+      "frame": 108,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1357,
+        "y": 1353,
+        "width": 122,
+        "height": 144,
+        "score": 0.67678,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1308,
+        1304,
+        1528,
+        1546
+      ],
+      "path": "S20-b72977918b-all-candidates-f108-b00.png",
+      "sha256": "3b3370e1d34fecb7ba91ce6f21c810460f4c04fa56956e07ec872eb932628f13"
+    },
+    {
+      "frame": 109,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1373,
+        "y": 1309,
+        "width": 220,
+        "height": 220,
+        "score": 0.6954,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1285,
+        1221,
+        1681,
+        1617
+      ],
+      "path": "S20-b72977918b-all-candidates-f109-b00.png",
+      "sha256": "d821a870a59b04a60d868c6ed48f2ee9d322c77fca83ac0c304967ac1ebc2a3f"
+    },
+    {
+      "frame": 110,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1354,
+        "y": 1320,
+        "width": 191,
+        "height": 194,
+        "score": 0.65816,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1278,
+        1244,
+        1621,
+        1590
+      ],
+      "path": "S20-b72977918b-all-candidates-f110-b00.png",
+      "sha256": "c5cf8030e5c004ad165cea62a5b61cc125e7aa144eed092b96ac9aaea7d2da3a"
+    },
+    {
+      "frame": 110,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 3505,
+        "y": 1885,
+        "width": 180,
+        "height": 232,
+        "score": 0.61554,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        3433,
+        1813,
+        3757,
+        2160
+      ],
+      "path": "S20-b72977918b-all-candidates-f110-b01.png",
+      "sha256": "868f99367c884a48f32ffa58f8729813b9f3539aee1a81471ccbbab11ce89c6f"
+    },
+    {
+      "frame": 111,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1340,
+        "y": 1306,
+        "width": 216,
+        "height": 218,
+        "score": 0.68641,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1254,
+        1220,
+        1642,
+        1610
+      ],
+      "path": "S20-b72977918b-all-candidates-f111-b00.png",
+      "sha256": "24305fc7b4550109467fbdc7171f5f03c4695e9cdafa7673a0c4cb9e52c24db8"
+    },
+    {
+      "frame": 112,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1330,
+        "y": 1304,
+        "width": 233,
+        "height": 216,
+        "score": 0.70848,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1237,
+        1211,
+        1656,
+        1613
+      ],
+      "path": "S20-b72977918b-all-candidates-f112-b00.png",
+      "sha256": "97f52c1a3d5535decd525120c478264f4e896fa5272952ef69f0c6f8eb70a3c5"
+    },
+    {
+      "frame": 112,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1635,
+        "y": 1192,
+        "width": 271,
+        "height": 317,
+        "score": 0.60972,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1527,
+        1084,
+        2014,
+        1617
+      ],
+      "path": "S20-b72977918b-all-candidates-f112-b01.png",
+      "sha256": "7ea65c1b211c8ff0881ce876a2cbad23a94453fafd40d041900d2fbd8713ae64"
+    },
+    {
+      "frame": 113,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 295,
+        "y": 1155,
+        "width": 406,
+        "height": 491,
+        "score": 0.69661,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        133,
+        993,
+        863,
+        1808
+      ],
+      "path": "S20-b72977918b-all-candidates-f113-b00.png",
+      "sha256": "614a7be7df274ff4c1eacdee87a6f719b30d61f57843c4b30487dd6c945acab3"
+    },
+    {
+      "frame": 113,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1331,
+        "y": 1357,
+        "width": 117,
+        "height": 132,
+        "score": 0.63971,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1284,
+        1310,
+        1495,
+        1536
+      ],
+      "path": "S20-b72977918b-all-candidates-f113-b01.png",
+      "sha256": "53d244ce52869f6bb365904c308ca544f4b01cff9f50b24dc5de1796b8191e26"
+    },
+    {
+      "frame": 114,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 296,
+        "y": 1159,
+        "width": 411,
+        "height": 479,
+        "score": 0.67321,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        132,
+        995,
+        871,
+        1802
+      ],
+      "path": "S20-b72977918b-all-candidates-f114-b00.png",
+      "sha256": "bf35538211404c20799b15b0b6a533bebd66860082ad62c43479aac96b358043"
+    },
+    {
+      "frame": 114,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1634,
+        "y": 1209,
+        "width": 225,
+        "height": 278,
+        "score": 0.65781,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1544,
+        1119,
+        1949,
+        1577
+      ],
+      "path": "S20-b72977918b-all-candidates-f114-b01.png",
+      "sha256": "a4038fa919eae2e75e5ddf8cae53df37f284df30ccba1352fcce5a399eea9905"
+    },
+    {
+      "frame": 114,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 1351,
+        "y": 1306,
+        "width": 210,
+        "height": 205,
+        "score": 0.64591,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1267,
+        1222,
+        1645,
+        1595
+      ],
+      "path": "S20-b72977918b-all-candidates-f114-b02.png",
+      "sha256": "fe0d2cc5661dfbde5a5c580509c03645891d4167fa8f2c26d4d7552bfa83393b"
+    },
+    {
+      "frame": 115,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1324,
+        "y": 1331,
+        "width": 135,
+        "height": 165,
+        "score": 0.75721,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1270,
+        1277,
+        1513,
+        1550
+      ],
+      "path": "S20-b72977918b-all-candidates-f115-b00.png",
+      "sha256": "40a35e5889618b5be1f0176da6ea8bdafd3672382b5cfe9b41641510d14a8c4e"
+    },
+    {
+      "frame": 116,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1314,
+        "y": 1308,
+        "width": 218,
+        "height": 207,
+        "score": 0.63776,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1227,
+        1221,
+        1619,
+        1602
+      ],
+      "path": "S20-b72977918b-all-candidates-f116-b00.png",
+      "sha256": "d44cb5cbf534dbd73244dda1dd035a2430cb1b80602d3ac56aa2eedd103fc498"
+    },
+    {
+      "frame": 116,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1614,
+        "y": 1165,
+        "width": 288,
+        "height": 376,
+        "score": 0.61552,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1499,
+        1050,
+        2017,
+        1656
+      ],
+      "path": "S20-b72977918b-all-candidates-f116-b01.png",
+      "sha256": "420d9c37fb0339fa782693c72b9531d39fbade6484d6e231a6a9685ce7dd9144"
+    },
+    {
+      "frame": 117,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 279,
+        "y": 1149,
+        "width": 440,
+        "height": 512,
+        "score": 0.63307,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        103,
+        973,
+        895,
+        1837
+      ],
+      "path": "S20-b72977918b-all-candidates-f117-b00.png",
+      "sha256": "b844c3f51adfe5225dd12b106692500f862fa6db01afa32eeb01ba470f6a7af6"
+    },
+    {
+      "frame": 117,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1310,
+        "y": 1301,
+        "width": 227,
+        "height": 224,
+        "score": 0.60873,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1219,
+        1210,
+        1628,
+        1616
+      ],
+      "path": "S20-b72977918b-all-candidates-f117-b01.png",
+      "sha256": "5854286929d9ec2f600b1e9750d5951dd50c144ac5f143d2852af18cebed4157"
+    },
+    {
+      "frame": 118,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 277,
+        "y": 1169,
+        "width": 399,
+        "height": 471,
+        "score": 0.6333,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        117,
+        1009,
+        836,
+        1800
+      ],
+      "path": "S20-b72977918b-all-candidates-f118-b00.png",
+      "sha256": "ef58f270c59d490b8b21d69be7c048806b7d2a25cd486a945ef47c2dc232eb88"
+    },
+    {
+      "frame": 118,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1296,
+        "y": 1349,
+        "width": 123,
+        "height": 141,
+        "score": 0.61124,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1247,
+        1300,
+        1468,
+        1539
+      ],
+      "path": "S20-b72977918b-all-candidates-f118-b01.png",
+      "sha256": "e9ce1d99feba53dae71a8ebba3c4426fe7b17173940b10f8f7a27a2a47cb5a0b"
+    },
+    {
+      "frame": 119,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1326,
+        "y": 1317,
+        "width": 199,
+        "height": 196,
+        "score": 0.60074,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1246,
+        1237,
+        1605,
+        1593
+      ],
+      "path": "S20-b72977918b-all-candidates-f119-b00.png",
+      "sha256": "8ab40920148b3b4f34830c1953dccc00e604a2384f8e70469ffe0e0aee2cb4d6"
+    },
+    {
+      "frame": 120,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 274,
+        "y": 1164,
+        "width": 401,
+        "height": 482,
+        "score": 0.72706,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        114,
+        1004,
+        835,
+        1806
+      ],
+      "path": "S20-b72977918b-all-candidates-f120-b00.png",
+      "sha256": "c25d97f1ca04e29ec5130b593e14057f7dd92919194b262bbdeca67e628a7134"
+    },
+    {
+      "frame": 120,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1587,
+        "y": 1180,
+        "width": 266,
+        "height": 348,
+        "score": 0.63762,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1481,
+        1074,
+        1959,
+        1634
+      ],
+      "path": "S20-b72977918b-all-candidates-f120-b01.png",
+      "sha256": "5672593ad93f9af7bd361fa33b807efb0f353b95a82fac0675471bc8b8524b6f"
+    },
+    {
+      "frame": 120,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 1301,
+        "y": 1381,
+        "width": 83,
+        "height": 105,
+        "score": 0.63178,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1268,
+        1348,
+        1417,
+        1519
+      ],
+      "path": "S20-b72977918b-all-candidates-f120-b02.png",
+      "sha256": "a447c33a722c24f7dae45b55094ddc9aa3485ff518d9fe7fb28b7b8afcef6751"
+    },
+    {
+      "frame": 121,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1302,
+        "y": 1384,
+        "width": 78,
+        "height": 102,
+        "score": 0.6842,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1271,
+        1353,
+        1411,
+        1517
+      ],
+      "path": "S20-b72977918b-all-candidates-f121-b00.png",
+      "sha256": "b6c9f3706a653e4d6f795fde7f48ec7229e98016710728c8d4c42975a75b7f8b"
+    },
+    {
+      "frame": 122,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1292,
+        "y": 1344,
+        "width": 136,
+        "height": 157,
+        "score": 0.69399,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1238,
+        1290,
+        1482,
+        1555
+      ],
+      "path": "S20-b72977918b-all-candidates-f122-b00.png",
+      "sha256": "e0fcc89c52b31cc6ce35fcc6678b1e114b789a012abc2e0d911ed7d821a5c5e1"
+    },
+    {
+      "frame": 122,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 269,
+        "y": 1162,
+        "width": 413,
+        "height": 482,
+        "score": 0.68469,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        104,
+        997,
+        847,
+        1809
+      ],
+      "path": "S20-b72977918b-all-candidates-f122-b01.png",
+      "sha256": "4f4dd208626ab5e1e932e8219a724f81ec68c9c45f46381538d94008104a818f"
+    },
+    {
+      "frame": 123,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1290,
+        "y": 1315,
+        "width": 198,
+        "height": 200,
+        "score": 0.74196,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1211,
+        1236,
+        1567,
+        1594
+      ],
+      "path": "S20-b72977918b-all-candidates-f123-b00.png",
+      "sha256": "12e54d83889340ddd8c1d8e390f140458875b531c7bdf713bf915b96d0300116"
+    },
+    {
+      "frame": 123,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 265,
+        "y": 1157,
+        "width": 420,
+        "height": 496,
+        "score": 0.68037,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        97,
+        989,
+        853,
+        1821
+      ],
+      "path": "S20-b72977918b-all-candidates-f123-b01.png",
+      "sha256": "0f0448447b2b5695dfe185004180f1963e759c08a2a683d096d8d48395aeac12"
+    },
+    {
+      "frame": 124,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1280,
+        "y": 1335,
+        "width": 148,
+        "height": 169,
+        "score": 0.61437,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1221,
+        1276,
+        1487,
+        1563
+      ],
+      "path": "S20-b72977918b-all-candidates-f124-b00.png",
+      "sha256": "5702339c64b209ef7f764ba44e3718a0f5bec852df32524f39757c5f89947d5d"
+    },
+    {
+      "frame": 125,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 265,
+        "y": 1154,
+        "width": 411,
+        "height": 490,
+        "score": 0.67954,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        101,
+        990,
+        840,
+        1808
+      ],
+      "path": "S20-b72977918b-all-candidates-f125-b00.png",
+      "sha256": "a456dc5027c17f91f55eadf88d887cf137a75f051f718674721a677adf9e475a"
+    },
+    {
+      "frame": 125,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1272,
+        "y": 1334,
+        "width": 154,
+        "height": 168,
+        "score": 0.67605,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1210,
+        1272,
+        1488,
+        1564
+      ],
+      "path": "S20-b72977918b-all-candidates-f125-b01.png",
+      "sha256": "d10d54d56eda9edd1d0dbf05c3f6381e151b740ce8aefe80da8fe15170946b3f"
+    },
+    {
+      "frame": 126,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1275,
+        "y": 1347,
+        "width": 143,
+        "height": 157,
+        "score": 0.77995,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1218,
+        1290,
+        1475,
+        1561
+      ],
+      "path": "S20-b72977918b-all-candidates-f126-b00.png",
+      "sha256": "9b7d89175d897f929f5b21cbd6c3bc69eb67cb557216d065f388f24a2e0c3234"
+    },
+    {
+      "frame": 126,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 263,
+        "y": 1168,
+        "width": 410,
+        "height": 469,
+        "score": 0.71614,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        99,
+        1004,
+        837,
+        1801
+      ],
+      "path": "S20-b72977918b-all-candidates-f126-b01.png",
+      "sha256": "b79a9729b905ca9c15004b17397985b1e3dbbc8c445f14020a9f67b5c97180f1"
+    },
+    {
+      "frame": 127,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1269,
+        "y": 1349,
+        "width": 123,
+        "height": 148,
+        "score": 0.60052,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1220,
+        1300,
+        1441,
+        1546
+      ],
+      "path": "S20-b72977918b-all-candidates-f127-b00.png",
+      "sha256": "3c6830f9709803ba06d375d4fb1551834665d81baf5a3cbf67f3d924c589bd8d"
+    },
+    {
+      "frame": 128,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1269,
+        "y": 1358,
+        "width": 128,
+        "height": 148,
+        "score": 0.67915,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1218,
+        1307,
+        1448,
+        1557
+      ],
+      "path": "S20-b72977918b-all-candidates-f128-b00.png",
+      "sha256": "3086050385660a72c7eb05b101b96917142126bff9cfaf613cfc77d76ddb6d3c"
+    },
+    {
+      "frame": 128,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 243,
+        "y": 1160,
+        "width": 447,
+        "height": 493,
+        "score": 0.61123,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        64,
+        981,
+        869,
+        1832
+      ],
+      "path": "S20-b72977918b-all-candidates-f128-b01.png",
+      "sha256": "ae180e78f6257178a7acbf325516f5f89657039af1bcbfe46bd168ff5e71f5c9"
+    },
+    {
+      "frame": 129,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1260,
+        "y": 1342,
+        "width": 133,
+        "height": 157,
+        "score": 0.71666,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1207,
+        1289,
+        1446,
+        1552
+      ],
+      "path": "S20-b72977918b-all-candidates-f129-b00.png",
+      "sha256": "1445a30b50a0ad4cef12fbbd30c6f9e22a34689918270d1e09ab40e0f884acd7"
+    },
+    {
+      "frame": 130,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1262,
+        "y": 1346,
+        "width": 142,
+        "height": 156,
+        "score": 0.80532,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1205,
+        1289,
+        1461,
+        1559
+      ],
+      "path": "S20-b72977918b-all-candidates-f130-b00.png",
+      "sha256": "243b6ca7b2f907d1387d9054b9d5c3b08254741caacd1de7910c5f21489ebdda"
+    },
+    {
+      "frame": 131,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1264,
+        "y": 1334,
+        "width": 143,
+        "height": 172,
+        "score": 0.74312,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1207,
+        1277,
+        1464,
+        1563
+      ],
+      "path": "S20-b72977918b-all-candidates-f131-b00.png",
+      "sha256": "35db34e9f7017ef66146321bcb59eeec910da610a42ed816b97e662131b4c74a"
+    },
+    {
+      "frame": 132,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1259,
+        "y": 1328,
+        "width": 143,
+        "height": 175,
+        "score": 0.78904,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1202,
+        1271,
+        1459,
+        1560
+      ],
+      "path": "S20-b72977918b-all-candidates-f132-b00.png",
+      "sha256": "2364cabcecf1aaf7167eab714ca16b17d5b36f66f35521ccdf92cfcb7c67f008"
+    },
+    {
+      "frame": 133,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1254,
+        "y": 1329,
+        "width": 135,
+        "height": 169,
+        "score": 0.69211,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1200,
+        1275,
+        1443,
+        1552
+      ],
+      "path": "S20-b72977918b-all-candidates-f133-b00.png",
+      "sha256": "2f5d9a20a9a15df0741a95b2ab2dcaf893070c89f90b8ba938430ad862b488b9"
+    },
+    {
+      "frame": 134,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1243,
+        "y": 1330,
+        "width": 156,
+        "height": 175,
+        "score": 0.72854,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1181,
+        1268,
+        1461,
+        1567
+      ],
+      "path": "S20-b72977918b-all-candidates-f134-b00.png",
+      "sha256": "84db92f4bc47069aab9f95d0ee07a2e94574bd1f17030629ed70abef96769e0f"
+    },
+    {
+      "frame": 135,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1245,
+        "y": 1361,
+        "width": 111,
+        "height": 138,
+        "score": 0.69739,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1201,
+        1317,
+        1400,
+        1543
+      ],
+      "path": "S20-b72977918b-all-candidates-f135-b00.png",
+      "sha256": "31ba6b143541b5c50b9f565a803830f207f8d4ab4d98d06d74b8bb8b3ce74a3b"
+    },
+    {
+      "frame": 136,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1238,
+        "y": 1345,
+        "width": 127,
+        "height": 157,
+        "score": 0.67373,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1187,
+        1294,
+        1416,
+        1553
+      ],
+      "path": "S20-b72977918b-all-candidates-f136-b00.png",
+      "sha256": "445cbecc8a5d459268c147b7aa566ae68272350365982525a08d10dfb761fde4"
+    },
+    {
+      "frame": 137,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1234,
+        "y": 1343,
+        "width": 132,
+        "height": 159,
+        "score": 0.83299,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1181,
+        1290,
+        1419,
+        1555
+      ],
+      "path": "S20-b72977918b-all-candidates-f137-b00.png",
+      "sha256": "0493e76c87502aa5dfad3cea92de3b9d430ffdfacb630e7348fd98a27da4898c"
+    },
+    {
+      "frame": 138,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1229,
+        "y": 1343,
+        "width": 160,
+        "height": 173,
+        "score": 0.72192,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1165,
+        1279,
+        1453,
+        1580
+      ],
+      "path": "S20-b72977918b-all-candidates-f138-b00.png",
+      "sha256": "290e55b4d82196d1d643099fabdf11b5fd155720b6b26698ea0f0086639c9ec5"
+    },
+    {
+      "frame": 139,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1231,
+        "y": 1341,
+        "width": 132,
+        "height": 166,
+        "score": 0.79358,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1178,
+        1288,
+        1416,
+        1560
+      ],
+      "path": "S20-b72977918b-all-candidates-f139-b00.png",
+      "sha256": "2941bb2cb6974889d6095e52c04cdfe3471ef0f0b9e4b51c9817735ffa8ed42a"
+    },
+    {
+      "frame": 140,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1224,
+        "y": 1334,
+        "width": 154,
+        "height": 178,
+        "score": 0.80486,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1162,
+        1272,
+        1440,
+        1574
+      ],
+      "path": "S20-b72977918b-all-candidates-f140-b00.png",
+      "sha256": "82396e31a396943c9201c91938678cd572529d1e0c0938b1dc043184ae15a893"
+    },
+    {
+      "frame": 141,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1212,
+        "y": 1339,
+        "width": 159,
+        "height": 173,
+        "score": 0.78924,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1148,
+        1275,
+        1435,
+        1576
+      ],
+      "path": "S20-b72977918b-all-candidates-f141-b00.png",
+      "sha256": "abb318609c254929e4d04e11861183e6bfefc3b54de991fdf6991477eabd7f84"
+    },
+    {
+      "frame": 142,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1211,
+        "y": 1350,
+        "width": 123,
+        "height": 152,
+        "score": 0.66477,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1162,
+        1301,
+        1383,
+        1551
+      ],
+      "path": "S20-b72977918b-all-candidates-f142-b00.png",
+      "sha256": "19b7851e707639749acea15f0514f66fff93b3443bf1139de23a266473b3427b"
+    },
+    {
+      "frame": 142,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 79,
+        "y": 1048,
+        "width": 61,
+        "height": 83,
+        "score": 0.62744,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        55,
+        1024,
+        164,
+        1155
+      ],
+      "path": "S20-b72977918b-all-candidates-f142-b01.png",
+      "sha256": "22a7850f1d4ec8b57d35da3851bf82811d7889f089c7ae21303e3a968020187f"
+    },
+    {
+      "frame": 143,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1206,
+        "y": 1327,
+        "width": 189,
+        "height": 194,
+        "score": 0.78632,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1130,
+        1251,
+        1471,
+        1597
+      ],
+      "path": "S20-b72977918b-all-candidates-f143-b00.png",
+      "sha256": "338941548987b84de3ff7222d13527384242c55b3c37f3da1761d8a0df9a5194"
+    },
+    {
+      "frame": 144,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1206,
+        "y": 1352,
+        "width": 128,
+        "height": 153,
+        "score": 0.82137,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1155,
+        1301,
+        1385,
+        1556
+      ],
+      "path": "S20-b72977918b-all-candidates-f144-b00.png",
+      "sha256": "0337fd5e9eb32cfd4f0e869058ecda537b115031044a2f4bda7a69904fbc7862"
+    },
+    {
+      "frame": 145,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1203,
+        "y": 1354,
+        "width": 136,
+        "height": 158,
+        "score": 0.82567,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1149,
+        1300,
+        1393,
+        1566
+      ],
+      "path": "S20-b72977918b-all-candidates-f145-b00.png",
+      "sha256": "da12459cfdf1ee62ecc7ef940ac62a11feb231f4c2150dadae2e50f0439da652"
+    },
+    {
+      "frame": 146,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1199,
+        "y": 1340,
+        "width": 135,
+        "height": 169,
+        "score": 0.80554,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1145,
+        1286,
+        1388,
+        1563
+      ],
+      "path": "S20-b72977918b-all-candidates-f146-b00.png",
+      "sha256": "a197d0684b3cd196ebbb4613ba26df455e551f84770b7c6a4c420ba03502000c"
+    },
+    {
+      "frame": 147,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1194,
+        "y": 1330,
+        "width": 140,
+        "height": 177,
+        "score": 0.76564,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1138,
+        1274,
+        1390,
+        1563
+      ],
+      "path": "S20-b72977918b-all-candidates-f147-b00.png",
+      "sha256": "69a778f64435bfcedd53a78e3f16aa8db610605c5fd5fd9f50ad23cb0f0e7e27"
+    },
+    {
+      "frame": 148,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1187,
+        "y": 1340,
+        "width": 154,
+        "height": 171,
+        "score": 0.80283,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1125,
+        1278,
+        1403,
+        1573
+      ],
+      "path": "S20-b72977918b-all-candidates-f148-b00.png",
+      "sha256": "7225a0825462b91bac81cc3ea03471f0010e75e955cdef1a8f19f990d31595b2"
+    },
+    {
+      "frame": 148,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1475,
+        "y": 1239,
+        "width": 237,
+        "height": 291,
+        "score": 0.60622,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1380,
+        1144,
+        1807,
+        1625
+      ],
+      "path": "S20-b72977918b-all-candidates-f148-b01.png",
+      "sha256": "14a4edd1a8ce6ef7e1a93f01caf8e77206ac2411c83b43b4ce0c31e4c998d7d8"
+    },
+    {
+      "frame": 151,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1173,
+        "y": 1346,
+        "width": 165,
+        "height": 177,
+        "score": 0.61222,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1107,
+        1280,
+        1404,
+        1589
+      ],
+      "path": "S20-b72977918b-all-candidates-f151-b00.png",
+      "sha256": "81be211948842a6e31e7605646d3f73f8eab35f399a5692be83030716d6600ba"
+    },
+    {
+      "frame": 151,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 51,
+        "y": 1055,
+        "width": 56,
+        "height": 77,
+        "score": 0.60909,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        29,
+        1033,
+        129,
+        1154
+      ],
+      "path": "S20-b72977918b-all-candidates-f151-b01.png",
+      "sha256": "b422c2b0d453488439747b5ba99bbb4c30ca0b58d9e579f7db01c4769b4c808e"
+    },
+    {
+      "frame": 152,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1071,
+        "y": 1495,
+        "width": 135,
+        "height": 171,
+        "score": 0.65806,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1017,
+        1441,
+        1260,
+        1720
+      ],
+      "path": "S20-b72977918b-all-candidates-f152-b00.png",
+      "sha256": "5884c79b9a4fd743295a570aa1634884bace75d43127066ddfa7467bc9f42c89"
+    },
+    {
+      "frame": 153,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1078,
+        "y": 1505,
+        "width": 121,
+        "height": 160,
+        "score": 0.69876,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1030,
+        1457,
+        1247,
+        1713
+      ],
+      "path": "S20-b72977918b-all-candidates-f153-b00.png",
+      "sha256": "609729e765209894bbde4dc2190409a03d90cf46fe377e4421fa30abec12c561"
+    },
+    {
+      "frame": 153,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 1169,
+        "y": 1366,
+        "width": 145,
+        "height": 153,
+        "score": 0.66741,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1111,
+        1308,
+        1372,
+        1577
+      ],
+      "path": "S20-b72977918b-all-candidates-f153-b01.png",
+      "sha256": "74531997784fdcb83441ab5077f769096f5fa9673a8bb525b326cc7a2bac792f"
+    },
+    {
+      "frame": 154,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1173,
+        "y": 1366,
+        "width": 147,
+        "height": 157,
+        "score": 0.63773,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1114,
+        1307,
+        1379,
+        1582
+      ],
+      "path": "S20-b72977918b-all-candidates-f154-b00.png",
+      "sha256": "ed84d4e60df0f087fc7c8d52c714b2e6cba13cf17692c0149e95ef7979f43f9b"
+    },
+    {
+      "frame": 155,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1175,
+        "y": 1382,
+        "width": 124,
+        "height": 138,
+        "score": 0.71523,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1125,
+        1332,
+        1349,
+        1570
+      ],
+      "path": "S20-b72977918b-all-candidates-f155-b00.png",
+      "sha256": "438be1766fa9b01900db04c3615ecf9ff32c3084729b4ce5f80c7a26577ff683"
+    },
+    {
+      "frame": 156,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1165,
+        "y": 1367,
+        "width": 147,
+        "height": 163,
+        "score": 0.67098,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1106,
+        1308,
+        1371,
+        1589
+      ],
+      "path": "S20-b72977918b-all-candidates-f156-b00.png",
+      "sha256": "8d78d23fe1fe37be1e9a1285b1d736a1b87ffdfb06dde4db2af822dde030d0fe"
+    },
+    {
+      "frame": 157,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1155,
+        "y": 1347,
+        "width": 168,
+        "height": 189,
+        "score": 0.60408,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1088,
+        1280,
+        1390,
+        1603
+      ],
+      "path": "S20-b72977918b-all-candidates-f157-b00.png",
+      "sha256": "0d3898b63459c1261d30104edbd9310c4bc28c088f8f72dacfc84eaa302ae777"
+    },
+    {
+      "frame": 158,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1164,
+        "y": 1373,
+        "width": 136,
+        "height": 153,
+        "score": 0.69941,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1110,
+        1319,
+        1354,
+        1580
+      ],
+      "path": "S20-b72977918b-all-candidates-f158-b00.png",
+      "sha256": "14a74823ebbf2254d45ac7bbd9279eba3a85e9cd7a2d2f424cdea9abaaa8675e"
+    },
+    {
+      "frame": 159,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1170,
+        "y": 1379,
+        "width": 129,
+        "height": 151,
+        "score": 0.79593,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1118,
+        1327,
+        1351,
+        1582
+      ],
+      "path": "S20-b72977918b-all-candidates-f159-b00.png",
+      "sha256": "61f1631e54395fc956828713b2065d203d72aa3c1b569fa7afabe84ecab42f14"
+    },
+    {
+      "frame": 160,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1165,
+        "y": 1384,
+        "width": 138,
+        "height": 151,
+        "score": 0.78846,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1110,
+        1329,
+        1358,
+        1590
+      ],
+      "path": "S20-b72977918b-all-candidates-f160-b00.png",
+      "sha256": "0273f46e6499655b57b02908031d5e9531158b15ead451e4b3ecd89e777248e3"
+    },
+    {
+      "frame": 161,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1167,
+        "y": 1383,
+        "width": 145,
+        "height": 154,
+        "score": 0.79268,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1109,
+        1325,
+        1370,
+        1595
+      ],
+      "path": "S20-b72977918b-all-candidates-f161-b00.png",
+      "sha256": "49a35972f96321f7d0c058926008e74c901afcaec707e1415110face36a7d0eb"
+    },
+    {
+      "frame": 162,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1169,
+        "y": 1383,
+        "width": 138,
+        "height": 155,
+        "score": 0.75473,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1114,
+        1328,
+        1362,
+        1593
+      ],
+      "path": "S20-b72977918b-all-candidates-f162-b00.png",
+      "sha256": "4f427d9970524bfd26c7f3732c581a8bafa35029e7d3b11e5df1682b8a928c5d"
+    },
+    {
+      "frame": 163,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1168,
+        "y": 1384,
+        "width": 138,
+        "height": 157,
+        "score": 0.83233,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1113,
+        1329,
+        1361,
+        1596
+      ],
+      "path": "S20-b72977918b-all-candidates-f163-b00.png",
+      "sha256": "48466ed20257625d9b5d6cff7b16aa76e559ed694c595a13e71fb1d75d43ba25"
+    },
+    {
+      "frame": 164,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1166,
+        "y": 1385,
+        "width": 145,
+        "height": 159,
+        "score": 0.80724,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1108,
+        1327,
+        1369,
+        1602
+      ],
+      "path": "S20-b72977918b-all-candidates-f164-b00.png",
+      "sha256": "b8a899d5eaf51baac84c37d1a593fe95d48b78a6b454e9cbb4d62d0fda6ffd95"
+    },
+    {
+      "frame": 164,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 0,
+        "y": 1392,
+        "width": 63,
+        "height": 89,
+        "score": 0.65729,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        0,
+        1367,
+        88,
+        1506
+      ],
+      "path": "S20-b72977918b-all-candidates-f164-b01.png",
+      "sha256": "921af5e267842fd51a09bf8598c3a1b636445f9769c733f5c1fe17f5ba0c2c67"
+    },
+    {
+      "frame": 164,
+      "boxIndex": 2,
+      "detectorBox": {
+        "x": 168,
+        "y": 1228,
+        "width": 401,
+        "height": 461,
+        "score": 0.62856,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        8,
+        1068,
+        729,
+        1849
+      ],
+      "path": "S20-b72977918b-all-candidates-f164-b02.png",
+      "sha256": "dac365f84206788421842eaae00d011ab37f1a5c77a457bb176704bed0dfd980"
+    },
+    {
+      "frame": 165,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1163,
+        "y": 1380,
+        "width": 151,
+        "height": 165,
+        "score": 0.71061,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1103,
+        1320,
+        1374,
+        1605
+      ],
+      "path": "S20-b72977918b-all-candidates-f165-b00.png",
+      "sha256": "3dc5cd5a9fa5e3afc62f38e9b32e6b485bff4f6feae79a37252310ab3022eb1e"
+    },
+    {
+      "frame": 166,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1169,
+        "y": 1391,
+        "width": 139,
+        "height": 154,
+        "score": 0.76989,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1113,
+        1335,
+        1364,
+        1601
+      ],
+      "path": "S20-b72977918b-all-candidates-f166-b00.png",
+      "sha256": "ffb873de04786c6463146749ce29815ee20e01d902b117e41aef24c4479df1f4"
+    },
+    {
+      "frame": 167,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1171,
+        "y": 1402,
+        "width": 130,
+        "height": 140,
+        "score": 0.7763,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1119,
+        1350,
+        1353,
+        1594
+      ],
+      "path": "S20-b72977918b-all-candidates-f167-b00.png",
+      "sha256": "5f66dcea6d8e965c6a4bd89960b9c521654e448d615e62974ea1f223a6926eb2"
+    },
+    {
+      "frame": 168,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1170,
+        "y": 1398,
+        "width": 128,
+        "height": 143,
+        "score": 0.77677,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1119,
+        1347,
+        1349,
+        1592
+      ],
+      "path": "S20-b72977918b-all-candidates-f168-b00.png",
+      "sha256": "73c4bb3d0968a59e4702f6a15d119a83d751045f6925cae1a0fd37973242f57a"
+    },
+    {
+      "frame": 168,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 609,
+        "y": 326,
+        "width": 77,
+        "height": 92,
+        "score": 0.62263,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        578,
+        295,
+        717,
+        449
+      ],
+      "path": "S20-b72977918b-all-candidates-f168-b01.png",
+      "sha256": "11a242d2401513b4885ba31d1bb5c45275a8f0431ee2794a44dfa907d8d6038c"
+    },
+    {
+      "frame": 169,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1171,
+        "y": 1399,
+        "width": 131,
+        "height": 142,
+        "score": 0.75676,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1119,
+        1347,
+        1354,
+        1593
+      ],
+      "path": "S20-b72977918b-all-candidates-f169-b00.png",
+      "sha256": "5aff40bae9a3a4325979d876554cae2a3cb5679909e5c2ff061dd8698a5338f4"
+    },
+    {
+      "frame": 170,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1164,
+        "y": 1397,
+        "width": 138,
+        "height": 148,
+        "score": 0.78423,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1109,
+        1342,
+        1357,
+        1600
+      ],
+      "path": "S20-b72977918b-all-candidates-f170-b00.png",
+      "sha256": "62ff2c1506d073ff58b5a49e0cf27024a201e1f25a22ce3b8183c69ce471e876"
+    },
+    {
+      "frame": 171,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1165,
+        "y": 1402,
+        "width": 138,
+        "height": 147,
+        "score": 0.75154,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1110,
+        1347,
+        1358,
+        1604
+      ],
+      "path": "S20-b72977918b-all-candidates-f171-b00.png",
+      "sha256": "3d14f039efb8a8e7f49c5149928c930e43b23e5344f002fe3332d1c6bb7d2882"
+    },
+    {
+      "frame": 172,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1162,
+        "y": 1408,
+        "width": 145,
+        "height": 147,
+        "score": 0.74402,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1104,
+        1350,
+        1365,
+        1613
+      ],
+      "path": "S20-b72977918b-all-candidates-f172-b00.png",
+      "sha256": "711903d9a53f76b35005332e18abcd71a88f8e0d4d527f89fc6fb25d687cd026"
+    },
+    {
+      "frame": 173,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1167,
+        "y": 1409,
+        "width": 137,
+        "height": 142,
+        "score": 0.67035,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1112,
+        1354,
+        1359,
+        1606
+      ],
+      "path": "S20-b72977918b-all-candidates-f173-b00.png",
+      "sha256": "ca4de8502ef57e71dc76e81a1061dfd8985e6e0307ac3b11793d3c9fc187badc"
+    },
+    {
+      "frame": 174,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1166,
+        "y": 1405,
+        "width": 142,
+        "height": 147,
+        "score": 0.60865,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1109,
+        1348,
+        1365,
+        1609
+      ],
+      "path": "S20-b72977918b-all-candidates-f174-b00.png",
+      "sha256": "3114abbf9cfec2b19934ff93656a933b4f0e353ce44dcb11cf01c2cd012bd594"
+    },
+    {
+      "frame": 175,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1165,
+        "y": 1401,
+        "width": 137,
+        "height": 152,
+        "score": 0.68893,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1110,
+        1346,
+        1357,
+        1608
+      ],
+      "path": "S20-b72977918b-all-candidates-f175-b00.png",
+      "sha256": "b7f73f2e250d591c1278af8ba994f45c0b478fbc91a37ae12f40b073f04aca0f"
+    },
+    {
+      "frame": 176,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1168,
+        "y": 1405,
+        "width": 132,
+        "height": 150,
+        "score": 0.70365,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1115,
+        1352,
+        1353,
+        1608
+      ],
+      "path": "S20-b72977918b-all-candidates-f176-b00.png",
+      "sha256": "bc027b1f1287349e0e3cdcb26c2f0432a52957ac84045ff7b0b15166b2119e2f"
+    },
+    {
+      "frame": 177,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1162,
+        "y": 1404,
+        "width": 147,
+        "height": 155,
+        "score": 0.70816,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1103,
+        1345,
+        1368,
+        1618
+      ],
+      "path": "S20-b72977918b-all-candidates-f177-b00.png",
+      "sha256": "17bdddc3ce1be63129b8ec70348db38de30ee30afe35441a445d1b31a1eff3b8"
+    },
+    {
+      "frame": 178,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1162,
+        "y": 1405,
+        "width": 153,
+        "height": 158,
+        "score": 0.70226,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1101,
+        1344,
+        1376,
+        1624
+      ],
+      "path": "S20-b72977918b-all-candidates-f178-b00.png",
+      "sha256": "4bbc2d331566c4bc143bbf2048a158d3d8e1f481c9557c2f0e98569c61e627d4"
+    },
+    {
+      "frame": 179,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1168,
+        "y": 1415,
+        "width": 132,
+        "height": 147,
+        "score": 0.70878,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1115,
+        1362,
+        1353,
+        1615
+      ],
+      "path": "S20-b72977918b-all-candidates-f179-b00.png",
+      "sha256": "5516f1fee4e4b719df037d33cba8f42142dd445aeddd117270205924140b3e76"
+    },
+    {
+      "frame": 180,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1168,
+        "y": 1413,
+        "width": 127,
+        "height": 146,
+        "score": 0.80124,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1117,
+        1362,
+        1346,
+        1610
+      ],
+      "path": "S20-b72977918b-all-candidates-f180-b00.png",
+      "sha256": "6c39e2dbcdcb597eda4e610f90fe8a2e448a294621d895c8746cb8eb368aad86"
+    },
+    {
+      "frame": 181,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1161,
+        "y": 1407,
+        "width": 147,
+        "height": 158,
+        "score": 0.79599,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1102,
+        1348,
+        1367,
+        1624
+      ],
+      "path": "S20-b72977918b-all-candidates-f181-b00.png",
+      "sha256": "2eed97be83b6b2884676137dcbf3cdf939dfa1ca287ff81e8a8d019d78e26c13"
+    },
+    {
+      "frame": 182,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1164,
+        "y": 1421,
+        "width": 124,
+        "height": 145,
+        "score": 0.84266,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1114,
+        1371,
+        1338,
+        1616
+      ],
+      "path": "S20-b72977918b-all-candidates-f182-b00.png",
+      "sha256": "1594bda4002981bfdeef1152d977fe9b295db24829b77da31d757a2a6c559f4e"
+    },
+    {
+      "frame": 183,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1156,
+        "y": 1421,
+        "width": 136,
+        "height": 148,
+        "score": 0.77833,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1102,
+        1367,
+        1346,
+        1623
+      ],
+      "path": "S20-b72977918b-all-candidates-f183-b00.png",
+      "sha256": "102bb23f2003f808e8688f630342d9804c66e62ac9e271a4e06b23eef765b5bc"
+    },
+    {
+      "frame": 184,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1161,
+        "y": 1434,
+        "width": 127,
+        "height": 138,
+        "score": 0.73001,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1110,
+        1383,
+        1339,
+        1623
+      ],
+      "path": "S20-b72977918b-all-candidates-f184-b00.png",
+      "sha256": "a4aec286185784ce320a9dd2254d770282d9711cb7458ff32b6167a490db1682"
+    },
+    {
+      "frame": 185,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1154,
+        "y": 1430,
+        "width": 133,
+        "height": 140,
+        "score": 0.75524,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1101,
+        1377,
+        1340,
+        1623
+      ],
+      "path": "S20-b72977918b-all-candidates-f185-b00.png",
+      "sha256": "fdf55ec6f5992b1a4e0fd014494e2c98375b6b41c9f9c228df9ef7ea736cfa3f"
+    },
+    {
+      "frame": 186,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1150,
+        "y": 1435,
+        "width": 133,
+        "height": 135,
+        "score": 0.70535,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1097,
+        1382,
+        1336,
+        1623
+      ],
+      "path": "S20-b72977918b-all-candidates-f186-b00.png",
+      "sha256": "aba15429c1ce70c3ccd6c0294ed0f69b2eb7af6e5c292b2c89445af0fdf30148"
+    },
+    {
+      "frame": 187,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1150,
+        "y": 1438,
+        "width": 139,
+        "height": 137,
+        "score": 0.75337,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1094,
+        1382,
+        1345,
+        1631
+      ],
+      "path": "S20-b72977918b-all-candidates-f187-b00.png",
+      "sha256": "974697ac9afe0a6fb7b7b41802e037631ae596eb33395f8f74722556c176dc32"
+    },
+    {
+      "frame": 188,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1144,
+        "y": 1433,
+        "width": 141,
+        "height": 142,
+        "score": 0.81038,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1088,
+        1377,
+        1341,
+        1631
+      ],
+      "path": "S20-b72977918b-all-candidates-f188-b00.png",
+      "sha256": "abc15bddf352e18cf9072078fa9a10e9b498fec3e388989e176150be0acfd576"
+    },
+    {
+      "frame": 189,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1150,
+        "y": 1442,
+        "width": 124,
+        "height": 132,
+        "score": 0.80941,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1100,
+        1392,
+        1324,
+        1624
+      ],
+      "path": "S20-b72977918b-all-candidates-f189-b00.png",
+      "sha256": "f203afa63e6dfef801d3c52d6def1f1fc6eb0db8d4a03e1d1858b2961a9dd952"
+    },
+    {
+      "frame": 190,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1150,
+        "y": 1450,
+        "width": 115,
+        "height": 126,
+        "score": 0.82671,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1104,
+        1404,
+        1311,
+        1622
+      ],
+      "path": "S20-b72977918b-all-candidates-f190-b00.png",
+      "sha256": "ffb21bda94e67f6893a224d90efb3515a91c10ca36da2ba41a0c2a70df193f94"
+    },
+    {
+      "frame": 191,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1147,
+        "y": 1436,
+        "width": 125,
+        "height": 140,
+        "score": 0.7956,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1097,
+        1386,
+        1322,
+        1626
+      ],
+      "path": "S20-b72977918b-all-candidates-f191-b00.png",
+      "sha256": "aea4602b234851605a86a104e645b18f1d89a298bb718ffebd102116c7531377"
+    },
+    {
+      "frame": 192,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1144,
+        "y": 1440,
+        "width": 129,
+        "height": 139,
+        "score": 0.81341,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1092,
+        1388,
+        1325,
+        1631
+      ],
+      "path": "S20-b72977918b-all-candidates-f192-b00.png",
+      "sha256": "90e7d302621de58501f091b723d4bbb3351eb23208873abe2a42328734a758e6"
+    },
+    {
+      "frame": 193,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1139,
+        "y": 1444,
+        "width": 133,
+        "height": 136,
+        "score": 0.78827,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1086,
+        1391,
+        1325,
+        1633
+      ],
+      "path": "S20-b72977918b-all-candidates-f193-b00.png",
+      "sha256": "3db1c245460bdb3670a3d3c11530f5c549bdb94819142b8b53ef802978d123e3"
+    },
+    {
+      "frame": 194,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1133,
+        "y": 1440,
+        "width": 137,
+        "height": 139,
+        "score": 0.74022,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1078,
+        1385,
+        1325,
+        1634
+      ],
+      "path": "S20-b72977918b-all-candidates-f194-b00.png",
+      "sha256": "ffd9a23507c0761b0030f6d716d5f73c04c34c2f746e7bd8bea8fce65c0c85b0"
+    },
+    {
+      "frame": 195,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1134,
+        "y": 1427,
+        "width": 139,
+        "height": 154,
+        "score": 0.75282,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1078,
+        1371,
+        1329,
+        1637
+      ],
+      "path": "S20-b72977918b-all-candidates-f195-b00.png",
+      "sha256": "7f8871d6cc8f3a92bc85a54a2eca8d7d86c1913e4765323d8cdb21de0acbe632"
+    },
+    {
+      "frame": 196,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1131,
+        "y": 1438,
+        "width": 139,
+        "height": 142,
+        "score": 0.72985,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1075,
+        1382,
+        1326,
+        1636
+      ],
+      "path": "S20-b72977918b-all-candidates-f196-b00.png",
+      "sha256": "c43532ba464f63368f7c3250ca77d4ed0f704ab4d5621e2e4e19d8baae300aa2"
+    },
+    {
+      "frame": 197,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1124,
+        "y": 1441,
+        "width": 116,
+        "height": 137,
+        "score": 0.76759,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1078,
+        1395,
+        1286,
+        1624
+      ],
+      "path": "S20-b72977918b-all-candidates-f197-b00.png",
+      "sha256": "e155dc267241e3ba700f63695bab90444acd7c606c99d92e4bb46e62ef711757"
+    },
+    {
+      "frame": 197,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 88,
+        "y": 1198,
+        "width": 434,
+        "height": 531,
+        "score": 0.67409,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        0,
+        1024,
+        696,
+        1903
+      ],
+      "path": "S20-b72977918b-all-candidates-f197-b01.png",
+      "sha256": "880d891ea9f00e5e536bf8415db6d813fc58751ee8ceaa996ce892247bce2368"
+    },
+    {
+      "frame": 198,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1123,
+        "y": 1445,
+        "width": 117,
+        "height": 132,
+        "score": 0.78336,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1076,
+        1398,
+        1287,
+        1624
+      ],
+      "path": "S20-b72977918b-all-candidates-f198-b00.png",
+      "sha256": "9192ea898b4dae742fb71994bfa8080988b5dbd0a6788dd60c5e8babe37a031e"
+    },
+    {
+      "frame": 199,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1115,
+        "y": 1443,
+        "width": 126,
+        "height": 138,
+        "score": 0.69223,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1065,
+        1393,
+        1291,
+        1631
+      ],
+      "path": "S20-b72977918b-all-candidates-f199-b00.png",
+      "sha256": "f5cba499174941bfb644c4378d0ec37e7f81bc8a24327678eec5e8af117c9ef7"
+    },
+    {
+      "frame": 200,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1122,
+        "y": 1445,
+        "width": 124,
+        "height": 136,
+        "score": 0.67052,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1072,
+        1395,
+        1296,
+        1631
+      ],
+      "path": "S20-b72977918b-all-candidates-f200-b00.png",
+      "sha256": "61cd68390de1b90652d0b6f85ad33211b6b3877976332644db16b62659f1d30d"
+    },
+    {
+      "frame": 201,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1115,
+        "y": 1446,
+        "width": 124,
+        "height": 137,
+        "score": 0.76926,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1065,
+        1396,
+        1289,
+        1633
+      ],
+      "path": "S20-b72977918b-all-candidates-f201-b00.png",
+      "sha256": "432d24e460e947d897225c33d2ac1b42ccb292c604d5a2cb11a0819cc2bbe703"
+    },
+    {
+      "frame": 202,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1111,
+        "y": 1448,
+        "width": 117,
+        "height": 132,
+        "score": 0.8063,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1064,
+        1401,
+        1275,
+        1627
+      ],
+      "path": "S20-b72977918b-all-candidates-f202-b00.png",
+      "sha256": "384284d75151a6c0dc47ac7d125b8f411e12e46342f8419074b683de30cdae99"
+    },
+    {
+      "frame": 203,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1108,
+        "y": 1447,
+        "width": 123,
+        "height": 135,
+        "score": 0.80117,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1059,
+        1398,
+        1280,
+        1631
+      ],
+      "path": "S20-b72977918b-all-candidates-f203-b00.png",
+      "sha256": "812f7b9d4af6b40ecd519b31b43347574304bdc5fcd0759b7cfd73c01ef20cf3"
+    },
+    {
+      "frame": 204,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1105,
+        "y": 1447,
+        "width": 116,
+        "height": 132,
+        "score": 0.8047,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1059,
+        1401,
+        1267,
+        1625
+      ],
+      "path": "S20-b72977918b-all-candidates-f204-b00.png",
+      "sha256": "5af5893e660fcd0532574ef1e4a56e1b2498bca7c5d40f48ff020cf372d0d4b3"
+    },
+    {
+      "frame": 205,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1107,
+        "y": 1446,
+        "width": 124,
+        "height": 137,
+        "score": 0.80134,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1057,
+        1396,
+        1281,
+        1633
+      ],
+      "path": "S20-b72977918b-all-candidates-f205-b00.png",
+      "sha256": "0bb53f9871e25392f2140977034c470b62ba4c0f51b7527fe011ac383b554761"
+    },
+    {
+      "frame": 206,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1106,
+        "y": 1446,
+        "width": 120,
+        "height": 138,
+        "score": 0.76696,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1058,
+        1398,
+        1274,
+        1632
+      ],
+      "path": "S20-b72977918b-all-candidates-f206-b00.png",
+      "sha256": "9bd5a88f843ea3dc56619a018a9320eff80cea80cbbaf5e57d4bdc46726f2337"
+    },
+    {
+      "frame": 207,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1100,
+        "y": 1448,
+        "width": 117,
+        "height": 134,
+        "score": 0.70613,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1053,
+        1401,
+        1264,
+        1629
+      ],
+      "path": "S20-b72977918b-all-candidates-f207-b00.png",
+      "sha256": "78631c4c8933b0bb7d8894ca3cd153fc5c6a19b26f08e0b6f92aac65153ccec7"
+    },
+    {
+      "frame": 208,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1097,
+        "y": 1460,
+        "width": 105,
+        "height": 121,
+        "score": 0.73418,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1055,
+        1418,
+        1244,
+        1623
+      ],
+      "path": "S20-b72977918b-all-candidates-f208-b00.png",
+      "sha256": "8bc201be0ac6f3db6ad711df9b48164ec91222122332373e5e324a81eeeabbcb"
+    },
+    {
+      "frame": 209,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1094,
+        "y": 1465,
+        "width": 104,
+        "height": 118,
+        "score": 0.70765,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1052,
+        1423,
+        1240,
+        1625
+      ],
+      "path": "S20-b72977918b-all-candidates-f209-b00.png",
+      "sha256": "27cb0206f82739f54b802ea94ccfc88a0d8a1196a928299711fbde67e00d1e86"
+    },
+    {
+      "frame": 210,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1087,
+        "y": 1459,
+        "width": 109,
+        "height": 121,
+        "score": 0.7775,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1043,
+        1415,
+        1240,
+        1624
+      ],
+      "path": "S20-b72977918b-all-candidates-f210-b00.png",
+      "sha256": "889d0324af4529bee7bcaf1ce2a6d54d20e04116bc43bf3bc79b8f4c20b9cbdf"
+    },
+    {
+      "frame": 211,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1089,
+        "y": 1450,
+        "width": 117,
+        "height": 132,
+        "score": 0.79926,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1042,
+        1403,
+        1253,
+        1629
+      ],
+      "path": "S20-b72977918b-all-candidates-f211-b00.png",
+      "sha256": "7a68ceece2b57ad37ea159ee23ef29231ff2d896e00982cdcb52cf9fa9c89155"
+    },
+    {
+      "frame": 212,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1090,
+        "y": 1463,
+        "width": 105,
+        "height": 119,
+        "score": 0.79375,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1048,
+        1421,
+        1237,
+        1624
+      ],
+      "path": "S20-b72977918b-all-candidates-f212-b00.png",
+      "sha256": "f2408124522070d77199b9a3d9d40fcc1636ff43b14fc0da3970937c9932b71e"
+    },
+    {
+      "frame": 213,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1083,
+        "y": 1457,
+        "width": 110,
+        "height": 126,
+        "score": 0.77976,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1039,
+        1413,
+        1237,
+        1627
+      ],
+      "path": "S20-b72977918b-all-candidates-f213-b00.png",
+      "sha256": "1f2b28f5131a0ec02a42fd0c1c1d1d73d001653d76ecb4f90917f69ca829310c"
+    },
+    {
+      "frame": 214,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1080,
+        "y": 1458,
+        "width": 120,
+        "height": 128,
+        "score": 0.79101,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1032,
+        1410,
+        1248,
+        1634
+      ],
+      "path": "S20-b72977918b-all-candidates-f214-b00.png",
+      "sha256": "dc472f75436116b700d5092619a3fecd68ead94eabef284cb71af20f4fee48e8"
+    },
+    {
+      "frame": 215,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1080,
+        "y": 1456,
+        "width": 115,
+        "height": 127,
+        "score": 0.75288,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1034,
+        1410,
+        1241,
+        1629
+      ],
+      "path": "S20-b72977918b-all-candidates-f215-b00.png",
+      "sha256": "b68336e051c2f6383b0549673fda323be6515969f22e00255636c5d10cc09b22"
+    },
+    {
+      "frame": 216,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1080,
+        "y": 1455,
+        "width": 121,
+        "height": 131,
+        "score": 0.66149,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1032,
+        1407,
+        1249,
+        1634
+      ],
+      "path": "S20-b72977918b-all-candidates-f216-b00.png",
+      "sha256": "2d04783dabebfcd20c192285f27c8a916225320f318d782c674f308b37a6cd33"
+    },
+    {
+      "frame": 217,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1075,
+        "y": 1452,
+        "width": 130,
+        "height": 136,
+        "score": 0.66603,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1023,
+        1400,
+        1257,
+        1640
+      ],
+      "path": "S20-b72977918b-all-candidates-f217-b00.png",
+      "sha256": "12ee21ee1f618ca6c8440b826bacacdb7a16d86ecf11c3e8b75ee23bd00e4a41"
+    },
+    {
+      "frame": 218,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1070,
+        "y": 1444,
+        "width": 135,
+        "height": 142,
+        "score": 0.72894,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1016,
+        1390,
+        1259,
+        1640
+      ],
+      "path": "S20-b72977918b-all-candidates-f218-b00.png",
+      "sha256": "535f9eed4f61eccecf22bfcde13a3bff464f0496f6993f8d382fb42606654d7c"
+    },
+    {
+      "frame": 219,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1061,
+        "y": 1451,
+        "width": 129,
+        "height": 138,
+        "score": 0.77576,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1009,
+        1399,
+        1242,
+        1641
+      ],
+      "path": "S20-b72977918b-all-candidates-f219-b00.png",
+      "sha256": "5e04bdf0328ca444adf9f44ecc25533450abc3ad30b0444a762edb5f1f25618d"
+    },
+    {
+      "frame": 219,
+      "boxIndex": 1,
+      "detectorBox": {
+        "x": 15,
+        "y": 1273,
+        "width": 388,
+        "height": 456,
+        "score": 0.61022,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        0,
+        1118,
+        558,
+        1884
+      ],
+      "path": "S20-b72977918b-all-candidates-f219-b01.png",
+      "sha256": "4b188956bba577a1ceb4886a45f3510ead2dd41b323755c0fa5d307a1bb3f360"
+    },
+    {
+      "frame": 220,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1072,
+        "y": 1459,
+        "width": 123,
+        "height": 129,
+        "score": 0.71033,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1023,
+        1410,
+        1244,
+        1637
+      ],
+      "path": "S20-b72977918b-all-candidates-f220-b00.png",
+      "sha256": "fd90e29d5ecd67f0cf1cba95054f1c7d93187a53a9e7a79f5e0cc365d67bd1b4"
+    },
+    {
+      "frame": 221,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1095,
+        "y": 1452,
+        "width": 123,
+        "height": 133,
+        "score": 0.7306,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1046,
+        1403,
+        1267,
+        1634
+      ],
+      "path": "S20-b72977918b-all-candidates-f221-b00.png",
+      "sha256": "fa3795727a10ce255b77ea2e55c6cabf2262ff30711109fff89651b10b533e10"
+    },
+    {
+      "frame": 222,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1051,
+        "y": 1443,
+        "width": 147,
+        "height": 148,
+        "score": 0.66801,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        992,
+        1384,
+        1257,
+        1650
+      ],
+      "path": "S20-b72977918b-all-candidates-f222-b00.png",
+      "sha256": "3a6b00b97060d2c0696510a455af8d9a25953a261d3eb56e3827ecf27d10ad2f"
+    },
+    {
+      "frame": 223,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1053,
+        "y": 1448,
+        "width": 131,
+        "height": 139,
+        "score": 0.74285,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1001,
+        1396,
+        1236,
+        1639
+      ],
+      "path": "S20-b72977918b-all-candidates-f223-b00.png",
+      "sha256": "35d01431abe94630b20ef2f647766ef9858e5deadb849c1160f42532a8fd081e"
+    },
+    {
+      "frame": 224,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1047,
+        "y": 1453,
+        "width": 127,
+        "height": 135,
+        "score": 0.82556,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        996,
+        1402,
+        1225,
+        1639
+      ],
+      "path": "S20-b72977918b-all-candidates-f224-b00.png",
+      "sha256": "d29170bdbf71fc71ee6f65341e892c3fdefa525df409a8d32a0a401cfcda0d0a"
+    },
+    {
+      "frame": 225,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1046,
+        "y": 1454,
+        "width": 138,
+        "height": 136,
+        "score": 0.80436,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        991,
+        1399,
+        1239,
+        1645
+      ],
+      "path": "S20-b72977918b-all-candidates-f225-b00.png",
+      "sha256": "af500c1a655e2e76c496ac438933f8578a9f1e8b2ae4fc03f0cde4a7b1b7a5cf"
+    },
+    {
+      "frame": 226,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1044,
+        "y": 1455,
+        "width": 128,
+        "height": 134,
+        "score": 0.82061,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        993,
+        1404,
+        1223,
+        1640
+      ],
+      "path": "S20-b72977918b-all-candidates-f226-b00.png",
+      "sha256": "7e626679016e3e950365ccffac80724df5b8a46122cb350f11929a36de89f544"
+    },
+    {
+      "frame": 227,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1037,
+        "y": 1462,
+        "width": 131,
+        "height": 129,
+        "score": 0.78388,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        985,
+        1410,
+        1220,
+        1643
+      ],
+      "path": "S20-b72977918b-all-candidates-f227-b00.png",
+      "sha256": "4d2f7dfbeefa647c3ee367dbbd100e25b0b8227423ec9be12ece867e92e88935"
+    },
+    {
+      "frame": 228,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1041,
+        "y": 1464,
+        "width": 131,
+        "height": 128,
+        "score": 0.78506,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        989,
+        1412,
+        1224,
+        1644
+      ],
+      "path": "S20-b72977918b-all-candidates-f228-b00.png",
+      "sha256": "001f9c6b2673720548cafb8c150af3402f072d61ba82aed96e963d64fded844a"
+    },
+    {
+      "frame": 229,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1041,
+        "y": 1460,
+        "width": 124,
+        "height": 131,
+        "score": 0.7865,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        991,
+        1410,
+        1215,
+        1641
+      ],
+      "path": "S20-b72977918b-all-candidates-f229-b00.png",
+      "sha256": "e55594a04b641524caeb12f45388c754650532d8e47fac77368733cb8a360289"
+    },
+    {
+      "frame": 230,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1041,
+        "y": 1461,
+        "width": 123,
+        "height": 129,
+        "score": 0.73193,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        992,
+        1412,
+        1213,
+        1639
+      ],
+      "path": "S20-b72977918b-all-candidates-f230-b00.png",
+      "sha256": "dad8ea459f9860fb5f87934bd5fd096ad049fa9ec919a070c6d252c397ac573e"
+    },
+    {
+      "frame": 231,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1036,
+        "y": 1455,
+        "width": 116,
+        "height": 135,
+        "score": 0.79572,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        990,
+        1409,
+        1198,
+        1636
+      ],
+      "path": "S20-b72977918b-all-candidates-f231-b00.png",
+      "sha256": "5f6f2c261f337e79dcf515af390a13e3b2a46c682f38138df33067c4e7246d8d"
+    },
+    {
+      "frame": 232,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1034,
+        "y": 1456,
+        "width": 120,
+        "height": 136,
+        "score": 0.82111,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        986,
+        1408,
+        1202,
+        1640
+      ],
+      "path": "S20-b72977918b-all-candidates-f232-b00.png",
+      "sha256": "69cb290ae72104cca8141f8964bdcfc9ee7b9e2d9e8acb300c7218fcbfd4c47b"
+    },
+    {
+      "frame": 233,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1026,
+        "y": 1457,
+        "width": 125,
+        "height": 137,
+        "score": 0.79769,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        976,
+        1407,
+        1201,
+        1644
+      ],
+      "path": "S20-b72977918b-all-candidates-f233-b00.png",
+      "sha256": "2718718ed21f9ebc9e7a3323984a49d9ea62e5cc61b9bddbc27a65d73318ed06"
+    },
+    {
+      "frame": 234,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1021,
+        "y": 1449,
+        "width": 134,
+        "height": 145,
+        "score": 0.73626,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        967,
+        1395,
+        1209,
+        1648
+      ],
+      "path": "S20-b72977918b-all-candidates-f234-b00.png",
+      "sha256": "61299f3ff20c316c40a3df5c64b7c0df6696e2b623f0414aa97cad141ba8e3df"
+    },
+    {
+      "frame": 235,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1021,
+        "y": 1458,
+        "width": 132,
+        "height": 137,
+        "score": 0.78308,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        968,
+        1405,
+        1206,
+        1648
+      ],
+      "path": "S20-b72977918b-all-candidates-f235-b00.png",
+      "sha256": "b9bd927598e82162eabdac0acd71c31239b502e3da1585cbff4e6c1f8bb36cfe"
+    },
+    {
+      "frame": 236,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1023,
+        "y": 1456,
+        "width": 129,
+        "height": 141,
+        "score": 0.80884,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        971,
+        1404,
+        1204,
+        1649
+      ],
+      "path": "S20-b72977918b-all-candidates-f236-b00.png",
+      "sha256": "114bbcd27f2fdc9c7ceeaf95856f8e191440e8da4dc2dc17178870ad4f628a09"
+    },
+    {
+      "frame": 237,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1023,
+        "y": 1467,
+        "width": 118,
+        "height": 126,
+        "score": 0.84523,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        976,
+        1420,
+        1188,
+        1640
+      ],
+      "path": "S20-b72977918b-all-candidates-f237-b00.png",
+      "sha256": "5a62963947cb40fdedccabf4ff2392b7d37d4791fe20ff4c775fa54c4b031b34"
+    },
+    {
+      "frame": 238,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1018,
+        "y": 1474,
+        "width": 111,
+        "height": 121,
+        "score": 0.86055,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        974,
+        1430,
+        1173,
+        1639
+      ],
+      "path": "S20-b72977918b-all-candidates-f238-b00.png",
+      "sha256": "dd263562b2baabc865f96dc734b099632b5dc6153806294985da6dee897026ce"
+    },
+    {
+      "frame": 239,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1015,
+        "y": 1480,
+        "width": 115,
+        "height": 119,
+        "score": 0.84875,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        969,
+        1434,
+        1176,
+        1645
+      ],
+      "path": "S20-b72977918b-all-candidates-f239-b00.png",
+      "sha256": "4d345674da32684ad5bb054fe02a74d70fcbbd518d73473b2d97451a75e0b017"
+    }
+  ],
+  "viewingPages": [
+    {
+      "path": "S20-b72977918b-all-candidates-p01.jpg",
+      "sha256": "ba87274f70ac4beb63b36d675c8fa7e0d0a7dd81c80c5dc3184479c41011dac3",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p02.jpg",
+      "sha256": "0f995baaa9575d6445a3f85fe8dcc9b8757c986ec7bdeb4a1e5d4decc637d4df",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p03.jpg",
+      "sha256": "3e7c7f5bce0167878686e7bc3738f26791369b1dd51f2b500b5d6c0fd798b21d",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p04.jpg",
+      "sha256": "0c4248db6b63b98a4d956ddc3a774eaec3470c8a93b9b44021600490ff94b397",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p05.jpg",
+      "sha256": "9c900d06c92e577741a12b2513a876423f3e2d5e779e493a637fec76e1e5f47b",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p06.jpg",
+      "sha256": "fccca05254b85eaed87685c48b06e504aabc6f2e8cc451687b5e7bdc90414711",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p07.jpg",
+      "sha256": "bedf09b44336cdac1fe7165cc388af5d4bb9ae38b0ac0ad2d6cbf9718c1a8551",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p08.jpg",
+      "sha256": "2d1f2fa576cea2979c85919cb3ea9b0b291804d5a17c3afe782f6256a4bc5a41",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p09.jpg",
+      "sha256": "3da79139f576af527db0c4d00f062b5b978ef430de0eb3e9781394f75213de4e",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p10.jpg",
+      "sha256": "aa244e563bb4b3a313fcb701c5f93904abe34b4443af91d966948d17e3894f3a",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p11.jpg",
+      "sha256": "7d8f8e4b8f47a19e6eae1fe7d543ca292e01dfb4ad053e799214791e63d8553a",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p12.jpg",
+      "sha256": "d1c393af4bb1af7beca383d328b9974b274b766e2973f935602f0254476ce70c",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p13.jpg",
+      "sha256": "0b37ef05a811f38479f582e53687d0041694d4f815d92e8e8dec3b1a334ee0d2",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p14.jpg",
+      "sha256": "5787002f1db9d7e840d5b1276e5e0cbc0e43f84f792f8846f8347da55b19c646",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p15.jpg",
+      "sha256": "a103baccdd90ce6a69c913838669204949868494ad4195b9a982c0196ffc8e80",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p16.jpg",
+      "sha256": "838f3bd0ec19ef84cd07affccad86f1eb1746329a79c0dc43533e7b6ba32f27e",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p17.jpg",
+      "sha256": "aa2f1cea6011ca2b830a4732ad607db6b38840cb59f5e4f98c6d5b6089cd95bd",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p18.jpg",
+      "sha256": "cc95c4352f659e15c10f0dcc7c73e4c84817b1ec8eb4118aadf342eb2d033a38",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p19.jpg",
+      "sha256": "39db07ab40753abbd961a170954751ed9c66d21f001d66ca29fb7584a2d69501",
+      "items": 16
+    },
+    {
+      "path": "S20-b72977918b-all-candidates-p20.jpg",
+      "sha256": "64d9e4f13f4227765fd96e93e966810ce2ac5dd32c2fae97205603efed80a6cb",
+      "items": 9
+    }
+  ],
+  "scope": "All detector boxes exported. Exported does not mean viewed or semantically approved.",
+  "humanFullPlayback": false,
+  "semanticDecision": "not-automatically-decided"
+}
