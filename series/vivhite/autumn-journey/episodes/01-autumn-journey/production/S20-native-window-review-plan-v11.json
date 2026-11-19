@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "vivhite-native-4k-temporal-window-review-preparation-1",
+  "preparedAt": "2026-11-19T03:26:49.696034+00:00",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "shotId": "S20",
+  "jobId": "video_gen_a2cecd706e3a4b25bbe9786bfa63da11",
+  "inputSourceSha256": "025d002be5f23377e55054b29db8688b944d0e71cc6066cbdbb0eec9696ae901",
+  "sourceFrames": 240,
+  "fps": 24,
+  "sourceAndFinalSeconds": 10,
+  "publishedSource": {
+    "repository": "XenoAmess/local-model-operations",
+    "revision": "259168e384469afb79da96e67fb083eda77ab8cd",
+    "path": "deployments/video-generation/tools/plan_h3_2k_windows.py",
+    "gitBlobSha": "2337dcb6046745c80bc713c987c7f83a91655df1",
+    "sha256": "e4e48e15529469d4b9424bd9d67c9346a26be6904a1ec2558581a8697acb3a69",
+    "url": "https://github.com/XenoAmess/local-model-operations/blob/259168e384469afb79da96e67fb083eda77ab8cd/deployments/video-generation/tools/plan_h3_2k_windows.py",
+    "defaultWindowFrames": 124,
+    "defaultMinimumOverlapFrames": 24
+  },
+  "inferredFromPublishedPlanner": true,
+  "actualDeployedWindowPlanRetrieved": false,
+  "plannerWindows": [
+    {
+      "source_start_frame": 0,
+      "source_end_frame": 124,
+      "pad_tail_frames": 0,
+      "keep_global_start": 0,
+      "keep_global_end": 91,
+      "keep_local_start": 0,
+      "keep_local_end": 91
+    },
+    {
+      "source_start_frame": 58,
+      "source_end_frame": 182,
+      "pad_tail_frames": 0,
+      "keep_global_start": 91,
+      "keep_global_end": 149,
+      "keep_local_start": 33,
+      "keep_local_end": 91
+    },
+    {
+      "source_start_frame": 116,
+      "source_end_frame": 240,
+      "pad_tail_frames": 0,
+      "keep_global_start": 149,
+      "keep_global_end": 240,
+      "keep_local_start": 33,
+      "keep_local_end": 124
+    }
+  ],
+  "outputFramesCoveredExactlyOnceByPlanner": true,
+  "expectedJoinFrameIndices": [
+    91,
+    149
+  ],
+  "expectedJoinSeconds": [
+    3.7916666666666665,
+    6.208333333333333
+  ],
+  "nativeCheckpointFrames": [
+    86,
+    89,
+    90,
+    91,
+    92,
+    96,
+    144,
+    147,
+    148,
+    149,
+    150,
+    154
+  ],
+  "latestActualLog": {
+    "path": "logs/S20-live-check-20261119T032039Z-server.log",
+    "bytes": 9823,
+    "sha256": "bdd8e2ff8d02c1e621937ec421b3909dc1f468d4e9b5440d4e643aa52aa5ec0d",
+    "windowsObserved": [
+      "window-00",
+      "window-01",
+      "window-02"
+    ],
+    "completedWindowWritesObserved": 2,
+    "logGrewSincePreviousDiagnostic": true,
+    "additionalHttpLogRequestsThisDiagnostic": 1,
+    "observedFatalMemoryOrTracebackMarkers": false
+  },
+  "endingProjectionOnly": {
+    "shotId": "S48",
+    "sourceFrames": 336,
+    "sourceSeconds": 14,
+    "windows": [
+      {
+        "source_start_frame": 0,
+        "source_end_frame": 124,
+        "pad_tail_frames": 0,
+        "keep_global_start": 0,
+        "keep_global_end": 97,
+        "keep_local_start": 0,
+        "keep_local_end": 97
+      },
+      {
+        "source_start_frame": 71,
+        "source_end_frame": 195,
+        "pad_tail_frames": 0,
+        "keep_global_start": 97,
+        "keep_global_end": 168,
+        "keep_local_start": 26,
+        "keep_local_end": 97
+      },
+      {
+        "source_start_frame": 141,
+        "source_end_frame": 265,
+        "pad_tail_frames": 0,
+        "keep_global_start": 168,
+        "keep_global_end": 238,
+        "keep_local_start": 27,
+        "keep_local_end": 97
+      },
+      {
+        "source_start_frame": 212,
+        "source_end_frame": 336,
+        "pad_tail_frames": 0,
+        "keep_global_start": 238,
+        "keep_global_end": 336,
+        "keep_local_start": 26,
+        "keep_local_end": 124
+      }
+    ],
+    "windowCount": 4,
+    "actualNative4KResultValidated": false
+  },
+  "limitations": [
+    "Published-source calculation and three observed windows do not replace the deployed window-plan or completed-source inspection.",
+    "The earlier two-window diagnostic recorded only the first two names visible then; it did not establish a total window count.",
+    "The earlier review checkpoints near five seconds are replaced before any S20 extraction. No source frames or generation requests changed.",
+    "Full240-frame whole-scene and both-prop detail viewing remains required, including actual cut candidates and any discontinuity outside these inferred boundaries."
+  ],
+  "completeSourceDownloaded": false,
+  "semanticApprovalGranted": false,
+  "newGenerationJobsSubmitted": 0,
+  "generationParametersChanged": false,
+  "allOtherShotTimingsUnchanged": true
+}
