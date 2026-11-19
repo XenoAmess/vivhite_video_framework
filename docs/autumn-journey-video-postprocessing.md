@@ -174,6 +174,8 @@ v10的S01检查暴露另一种漏检：同一条手臂上只有一只手，并�
 
 逐次扩展预览时，只能复用有实际审阅记录且**解码后原生像素完全相同**的帧。前二十镜85秒预览与已看完的63秒版本逐帧比较原生3840×2160 BGR数组，前1855帧完全相同，余下35个旧帧编码发生变化；这35帧和660个新增帧全部重新看完，不能因两版输入相同就直接放行。同样，108个原生检测框裁切核对帧号、坐标、SHA及完整PNG字节相同后复用旧证据，另外25框实际重新查看。所有新导出图仍保留，导出与实际查看分别记录。实际一次性比对worker及证明保存在运行目录`checkpoints/prefix-20-001/native-pixel-comparison-worker.py`与`native-pixel-comparison-with-reviewed-prefix16.json`；它尚不是通用工程入口。完整覆盖、限定范围和文件绑定见[85秒记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/technical-prefix-v11-first20.md)。这项证据复用不修改视频，也不把缩略整景审阅扩大为逐个4K像素、人工播放或审美验收。
 
+92秒扩展版另实测一种避免重复裁图的办法：先证明0—2510帧原生BGR字节完全相同，再核对这些帧的检测框坐标与旧报告一致，保留并复查旧检查图的SHA，直接引用此前实际看过的133个候选。没有生成新的重复裁图，也没有把不存在的新图写成已看过。其余39个旧尾帧和210个新增帧重新审阅；新增90个候选全部另外裁出并实际看完。一次性提取代码与原生像素比对代码分别冻结在运行目录`checkpoints/prefix-22-001/incremental-encoded-extraction-worker.py`、`native-pixel-comparison-worker.py`，公开的[92秒记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/technical-prefix-v11-first22.json)保存范围与绑定。若像素、坐标、旧图指纹或旧实际查看依据任一不符，就不能沿用该候选结论。
+
 ## 实际案例与代码索引
 
 同一镜头有两件周边时，可用[`restore_printed_regions.py`](../video-maker/tools/restore_printed_regions.py)独立跟踪各自的原始表面，从同一份未修改源片出发，在一次CRF16编码中合成多个母版图案。`--configuration` JSON绑定完整源片SHA、帧数，以及各区域的母版路径／SHA、双眼坐标、跟踪中心／半径、RGB增益和蒙版尺度；母版相对路径按执行工作目录解析，本期从仓库根目录执行。收据记录所有区域和原始父源，不把两次串行处理的中间片伪装成原始父源。
