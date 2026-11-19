@@ -97,6 +97,8 @@ S19第二版实际使用同一组首帧参数：`--reference-eyes 809 463 904 45
 
 ## 可复用的处理命令
 
+时间窗接续处可用[`extract-native-checkpoints-v11.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/extract-native-checkpoints-v11.py)导出指定原生整景帧。输入为实际源片、绑定同一SHA且完整覆盖源片的检查报告、项目内目标目录和明确帧号。工具顺序解码完整源片，保存原生3840×2160的JPEG94查看副本及指纹，不改视频，不授予画面通过结论。本次S20配置108、114、118～125、130、136帧，覆盖两个时间窗的接续附近，仍需另看完整240帧及周边细节。工具已用S19实际120帧源片验证：导出首尾帧与已有查看副本逐字节相同，没有新增或覆盖图片，见[提取记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v11-native-4k-001/review/viewing-copies/S19-7097b9d238-native-checkpoints.json)；越界、负数和重复帧号均在写图前拒绝。这项工具验证不代表S20已经出片或审阅通过。
+
 在仓库根目录使用已配置的Python环境，FFmpeg／FFprobe须在PATH中。以下参数来自实际S15提杯镜头，但输出使用新的示例文件名，不覆盖既有采用版本。迁移到其他镜头时必须重新标定坐标。
 
 ```powershell
