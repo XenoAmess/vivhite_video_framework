@@ -174,11 +174,16 @@ v10的S01检查暴露另一种漏检：同一条手臂上只有一只手，并�
 
 ## 实际案例与代码索引
 
+同一镜头有两件周边时，可用[`restore_printed_regions.py`](../video-maker/tools/restore_printed_regions.py)独立跟踪各自的原始表面，从同一份未修改源片出发，在一次CRF16编码中合成多个母版图案。`--configuration` JSON绑定完整源片SHA、帧数，以及各区域的母版路径／SHA、双眼坐标、跟踪中心／半径、RGB增益和蒙版尺度；母版相对路径按执行工作目录解析，本期从仓库根目录执行。收据记录所有区域和原始父源，不把两次串行处理的中间片伪装成原始父源。
+
+每帧直接从RGBA母版投射，沿用S19修订v2避免首帧画布裁断的方法。不同周边的有效蒙版若重叠会停止；不支持用它覆盖真人。蒙版过窄可能留下原有变形镜框或第二张嘴，过宽可能把母版领口混到原玩偶胸口。可显式设置`referenceMaskBottom`及`referenceMaskBottomFeather`，在母版坐标内平滑截止蒙版，保留原领口／项链。扩大蒙版后范围可能包含刘海、脸颊、鼻、嘴及下巴，必须如实记录，不能称作只改虹膜。两件周边的独立运动、背景保持及重叠／非有限蒙版拒绝、脸部蒙版不渗入项链的单测已执行；S20已实际完成原片对照及八组首帧试贴，完整240帧修订及复审仍在进行，尚无采用结论。试贴和退回版本全部保存。
+
 v7实际来源收据中有10个镜头经过局部处理：S07、S11、S16、S20仅锁定首帧；S29、S37、S42、S44、S45、S46包含场景图回贴，S29另外串联首帧锁定。v8的S07、S15、S28、S44均另存场景图回贴版本；S47未用回贴。v8已发布，随后用户拒收其S44/S47，v9以新生成片替换两镜；旧版记录和素材保留。完整状态以[v8记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v8-motion-768p.md)、[v9记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v9-motion-768p.md)及各版本实际收据为准。
 
 | 复用入口 | 职责 |
 | --- | --- |
 | [`stabilize_printed_patch.py`](../video-maker/tools/stabilize_printed_patch.py) | `PrintedPatch`跟踪；`project_reference_texture`映射原图；`stabilize`合成、编码、保存处理参数与哈希 |
+| [`restore_printed_regions.py`](../video-maker/tools/restore_printed_regions.py)、[`test_restore_printed_regions.py`](../video-maker/tools/tests/test_restore_printed_regions.py) | 多件周边独立跟踪、母版逐帧投射、蒙版下缘截止与单次编码；绑定原始父源，导出技术收据，不自动验收 |
 | [`inspect_printed_region.py`](../video-maker/tools/inspect_printed_region.py) | 跟踪裁出原始视频局部，供实际查看 |
 | [`inspect-closing-details.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/inspect-closing-details.py) | S48固定区域原生像素检查；完整336帧分页、原生首尾、输入与代码哈希，不编辑视频、不自动验收 |
 | [`inspect-motion-details-v9.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/inspect-motion-details-v9.py) | 120帧原生局部分页、六个完整原生帧、JPEG查看副本；核对掌背、拇指、手腕、手臂连接和接触，检查图不改变源片 |

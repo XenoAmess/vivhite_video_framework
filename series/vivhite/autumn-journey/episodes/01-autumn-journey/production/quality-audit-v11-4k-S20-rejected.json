@@ -1,0 +1,66 @@
+{
+  "id": "S20",
+  "sourceSha256": "b72977918b0b0eac6cdf91ea2e6fdf2974cfa28408efe608a7f5e474a066877f",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-19T04:50:45.389957+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 240,
+  "actualFinalUsedNativeFrames": 240,
+  "frameEvidence": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S20-b72977918b-all-frames-01.png",
+      "sha256": "da8747cd84b8eaabee5296aaf4bc0615e2331d628bc5e053d1ea499a50fdaf1b",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S20-b72977918b-all-frames-02.png",
+      "sha256": "79468a8ca5a2219392942c52de9332985870cf459a3cc9e64798a497c9346d4d",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S20-b72977918b-all-frames-03.png",
+      "sha256": "4ee214dc1bb4a2939999a66221afff25c9268c9b5e9d5dfba5c7ae661f2ea1a9",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S20-b72977918b-all-frames-04.png",
+      "sha256": "27f40801a79d713b4c97ca64b5f91edc672fbb1d432dfe4dd09932979e14c09c",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S20-b72977918b-all-frames-05.png",
+      "sha256": "c28e38ec1d0f1317a898f307c97d7de8f87c74fd0e6a4886b6a3ae44fa0c864e",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S20-b72977918b-all-frames-06.png",
+      "sha256": "570eb516b78bf9bbee2fe23f49f6e640ba441033ca879fb7ccb3e4c4ea4d070f",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S20-b72977918b-all-frames-07.png",
+      "sha256": "567e1f4ac62864fae2f197184770b87a2e3e29cb8b4aba09fb3a18e000a767be",
+      "items": 32
+    },
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S20-b72977918b-all-frames-08.png",
+      "sha256": "051dfc4e5b13937756c80347c538ef3077de38fc7afa78892350c7dd45963448",
+      "items": 16
+    }
+  ],
+  "faceEvidence": {
+    "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S20-b72977918b-face-candidates.png",
+    "sha256": "937a2a740892b493756b7ba0a9396e044595fd61da6ed325016fd0e8d7876ede",
+    "items": 27
+  },
+  "observation": "Actually viewed all 240 raw whole-scene frames and native whole frames 0/239; native join checkpoints 86/89/90/91/92/96/144/147/148/149/150/154; M04 and M05 original RGBA masters and actual input frame 0. Printed detail review so far covers frames 0-15 and 80-95 for EACH prop, and candidate crop pages 1-4 (64 boxes); other exported detail/candidate pages are not claimed viewed. Whole landscape, retreating camera, rocks and bag remain continuous; no observed real human head/face, added person or human limb. Both original masters have OPEN eyes. M05 has coarse gray/dark irises and distorted glasses/face contours. At the expected native window joins 90->91 and 148->149, printed or embroidered face/eye/fringe/mouth details change on the physically inert props. M04 also has changes in pendant/bodice detail. This is not an original closed-to-open eye change. Reject raw reference appearance and local prop-texture continuity; no restoration has been accepted. The complete 10-second duration, original camera motion and all other timings remain unchanged.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "failed",
+  "merchandiseBehavior": "failed",
+  "referenceAppearance": "failed"
+}
