@@ -46,6 +46,33 @@ class PrintedEyeRestorationTest(unittest.TestCase):
             worker.projected_eyes(reference[:,:,:3],[455,545,705,520],
                 [2427,1174,2515,1158],(3840,2160),[1,1,1])
 
+    def test_current_frame_projection_preserves_a_patch_entering_from_the_bottom(self):
+        reference = np.full((256,256,4),255,dtype=np.uint8)
+        reference[:,:,:3] = np.indices((256,256))[0][:,:,None]
+        eyes,target,size = [80,100,170,100],[80,150,170,150],(256,160)
+        texture,mask = worker.reference_eye_layers(reference,eyes,[1,1,1],.55)
+        first_texture,first_mask,registration = worker.projected_eyes(reference,eyes,target,size,[1,1,1],.55)
+        motion = np.array([[1,0,0],[0,1,-60],[0,0,1]],dtype=np.float64)
+        current_texture,current_mask = worker.tracked_reference_layers(texture,mask,registration,motion,size)
+        clipped_mask = cv2.warpPerspective(first_mask,motion,size)
+        self.assertEqual(clipped_mask[130,80],0)
+        self.assertGreater(current_mask[130,80],.65)
+        np.testing.assert_array_equal(current_texture[130,80],reference[140,80,:3])
+        actual = worker.tracked_reference_layers(texture,mask,registration,np.eye(3),size)
+        np.testing.assert_allclose(actual[0],first_texture)
+        np.testing.assert_allclose(actual[1],first_mask)
+
+    def test_current_frame_projection_keeps_original_reference_transparency(self):
+        reference = np.full((256,256,4),255,dtype=np.uint8)
+        reference[135:145,75:86,3] = 0
+        texture,mask = worker.reference_eye_layers(reference,[80,100,170,100],[1,1,1],.55)
+        registration = worker.eye_registration([80,100,170,100],[80,150,170,150])
+        motion = np.array([[1,0,0],[0,1,-60],[0,0,1]],dtype=np.float64)
+        _,current_mask = worker.tracked_reference_layers(texture,mask,registration,motion,(256,160))
+        self.assertEqual(current_mask[130,80],0)
+        with self.assertRaises(ValueError):
+            worker.tracked_reference_layers(texture,mask,registration,np.full((3,3),np.nan),(256,160))
+
 
 if __name__ == '__main__':
     unittest.main()

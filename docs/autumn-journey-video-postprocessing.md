@@ -89,6 +89,12 @@ S16石阶布袋的M08印花中，原眼睛睁开，但虹膜／镜片被粗灰�
 
 S17温室立牌使用非Q版M02母版，不能复用M09或M08的眼部坐标。六张首帧试样均查看后选择05：`--reference-eyes 474 208 548 205 --target-eyes 2432 917 2494 914 --tracking-center 858 326 --tracking-radius 50 --mask-scale 0.65 --gain-rgb 0.82 0.82 0.76 --frames 120`。原眼睛一直睁开，虹膜／镜片却变成粗粉紫线；较窄遮罩留下旧嘴／下巴碎片，较宽06影响领口。实际采用范围包括眼睛、镜框及邻近刘海、脸颊、鼻、嘴和下巴，不能称为只恢复虹膜。亚克力外缘与透明底座保留，不往透明区域投影母版背景。两版整景和面部各120帧、全部3／4个检测框实际查看后才采用；原定3秒及所有其他镜头长度不变，见[S17收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S17-reference-restoration-v11-4k.json)。身体印花仍软，整帧重新编码；这不是整张立牌重绘或真人面部修复。
 
+S19另暴露了首帧边界问题：布袋印花起初被画面下缘截住，后来随镜头移动进入画面。旧方法先把母版纹理和羽化遮罩投影到首帧大小的画布，再跟踪这张画布；首帧之外的遮罩被硬截断，移动后形成横向接缝。第一份完整修订已[拒收并保留](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S19-restoration-v1-rejected-v11-4k.json)，实际只看了其末24帧整景、末8帧局部及原生尾帧即确认失败，没有声称完整复审通过。
+
+[`restore_printed_eyes.py`](../video-maker/tools/restore_printed_eyes.py)新增显式`--project-reference-each-frame`：在母版坐标中保留完整局部纹理与遮罩，每帧先合成“母版配准→当前道具跟踪”的变换，再直接投影进当前画面，最后才按当前画面边界裁切。原先的默认路径保留，以便复现旧版本；没有修改生成服务或已提交的4K请求。边缘重新进入画面的有效纹理和母版透明区域各有回归检查，连同原有三项共五项检查通过。这个选项仍没有解决真实遮挡、布料非刚性变形或跟踪失效，也不自动授予新修订的画面通过结论。
+
+S19第二版实际使用同一组首帧参数：`--reference-eyes 809 463 904 450 --target-eyes 2147 2080 2297 2059 --tracking-center 790 680 --tracking-radius 80 --mask-scale 0.65 --gain-rgb 0.90 0.88 0.84 --frames 120 --project-reference-each-frame`。从未改动的原始4K片重做，不叠加在第一版上；全部120帧整景和印花、全部检测候选及原生首尾复审后采用，后段横缝消失。印花下巴由画外进入，实际遮罩还包含相邻脸部和头发；不声称只改虹膜或恢复了完整身体印花。仍只使用原定4秒，见[采用收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S19-reference-restoration-v11-4k.json)。
+
 ## 可复用的处理命令
 
 在仓库根目录使用已配置的Python环境，FFmpeg／FFprobe须在PATH中。以下参数来自实际S15提杯镜头，但输出使用新的示例文件名，不覆盖既有采用版本。迁移到其他镜头时必须重新标定坐标。

@@ -29,7 +29,7 @@ def eye_registration(reference_eyes, target_eyes):
     return np.column_stack((rotation,target[0]-rotation@original[0]))
 
 
-def projected_eyes(reference, reference_eyes, target_eyes, size, gain_rgb, mask_scale=1):
+def reference_eye_layers(reference, reference_eyes, gain_rgb, mask_scale=1):
     if reference is None or reference.ndim != 3 or reference.shape[2] != 4:
         raise ValueError('Original RGBA merchandise artwork required')
     gain = np.asarray(gain_rgb,dtype=np.float32)
@@ -37,7 +37,6 @@ def projected_eyes(reference, reference_eyes, target_eyes, size, gain_rgb, mask_
         raise ValueError('Explicit finite RGB lighting gains required')
     if not np.isfinite(mask_scale) or not .05 <= mask_scale <= 4:
         raise ValueError('Finite reference mask scale from .05 to four required')
-    matrix = eye_registration(reference_eyes,target_eyes)
     mask = np.zeros(reference.shape[:2],dtype=np.float32)
     eyes = np.asarray(reference_eyes).reshape(2,2)
     for x,y in eyes:
@@ -47,11 +46,30 @@ def projected_eyes(reference, reference_eyes, target_eyes, size, gain_rgb, mask_
         (round(eyes[1,0]-85*mask_scale),round(max(eyes[:,1])+45*mask_scale)),1,-1)
     mask = cv2.GaussianBlur(mask,(0,0),18*mask_scale)*reference[:,:,3].astype(np.float32)/255
     texture = np.clip(reference[:,:,:3].astype(np.float32)*gain[::-1],0,255)
+    return texture,mask
+
+
+def projected_eyes(reference, reference_eyes, target_eyes, size, gain_rgb, mask_scale=1):
+    texture,mask = reference_eye_layers(reference,reference_eyes,gain_rgb,mask_scale)
+    matrix = eye_registration(reference_eyes,target_eyes)
     return (cv2.warpAffine(texture,matrix,size),
         cv2.warpAffine(mask,matrix,size),matrix)
 
 
-def restore(source, destination, reference_file, reference_eyes, target_eyes, center, radius, frames, gain_rgb, mask_scale=1):
+def tracked_reference_layers(texture, mask, registration, transform, size):
+    """Project from the artwork before clipping to the current video frame."""
+    registration = np.asarray(registration,dtype=np.float64)
+    transform = np.asarray(transform,dtype=np.float64)
+    if (registration.shape != (2,3) or transform.shape != (3,3)
+            or not np.isfinite(registration).all() or not np.isfinite(transform).all()):
+        raise ValueError('Finite registration and tracked transforms required')
+    matrix = transform@np.vstack((registration,[0,0,1]))
+    return (cv2.warpPerspective(texture,matrix,size),
+        cv2.warpPerspective(mask,matrix,size))
+
+
+def restore(source, destination, reference_file, reference_eyes, target_eyes, center, radius, frames, gain_rgb,
+            mask_scale=1, project_reference_each_frame=False):
     source,destination,reference_file = Path(source),Path(destination),Path(reference_file)
     if destination.exists() or destination.with_suffix('.partial.mp4').exists():
         raise ValueError('Use a new correction version; preserve existing candidates')
@@ -66,8 +84,11 @@ def restore(source, destination, reference_file, reference_eyes, target_eyes, ce
         ok,first = capture.read()
         if not ok:
             raise ValueError('Cannot read original source')
-        texture,mask,registration = projected_eyes(cv2.imread(str(reference_file),cv2.IMREAD_UNCHANGED),
+        reference = cv2.imread(str(reference_file),cv2.IMREAD_UNCHANGED)
+        texture,mask,registration = projected_eyes(reference,
             reference_eyes,target_eyes,(3840,2160),gain_rgb,mask_scale)
+        if project_reference_each_frame:
+            reference_texture,reference_mask = reference_eye_layers(reference,reference_eyes,gain_rgb,mask_scale)
         tracker = PrintedPatch(cv2.resize(first,(1344,768)),tuple(center),radius)
         scaling = np.diag([1344/3840,768/2160,1])
         inverse = np.linalg.inv(scaling)
@@ -88,8 +109,13 @@ def restore(source, destination, reference_file, reference_eyes, target_eyes, ce
                     _,metric = tracker.frame(cv2.resize(image,(1344,768)))
                     tracking.append({'frame':index,**metric})
                 transform = inverse@tracker.transform@scaling
-                warped = cv2.warpPerspective(texture,transform,(3840,2160))
-                alpha = np.clip(cv2.warpPerspective(mask,transform,(3840,2160)),0,1)[:,:,None]
+                if project_reference_each_frame:
+                    warped,current_mask = tracked_reference_layers(reference_texture,reference_mask,
+                        registration,transform,(3840,2160))
+                else:
+                    warped = cv2.warpPerspective(texture,transform,(3840,2160))
+                    current_mask = cv2.warpPerspective(mask,transform,(3840,2160))
+                alpha = np.clip(current_mask,0,1)[:,:,None]
                 corrected = (warped*alpha+image*(1-alpha)).clip(0,255).astype(np.uint8)
                 encoder.stdin.write(corrected.tobytes())
             if capture.read()[0]:
@@ -111,6 +137,10 @@ def restore(source, destination, reference_file, reference_eyes, target_eyes, ce
             'method':'Original RGBA eye/glasses texture, two-landmark similarity registration, feathered lens masks and original prop tracking.',
             'scope':'Local printed eye/glasses pixels before whole-frame CRF16 re-encoding. No person removed; original head outline and scene retained.',
             'status':'technical-correction-completed-review-required','humanFullPlayback':False}
+        if project_reference_each_frame:
+            receipt.update(referenceProjection='original-artwork-to-current-frame',
+                firstFrameCanvasClippingAvoided=True,
+                method='Original RGBA printed artwork and feathered reference masks projected directly into each current frame through composed landmark registration and original prop tracking; no intermediate first-frame canvas clipping.')
         destination.with_suffix('.json').write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8')
         print(frames,'native frames corrected; actual complete-frame review required.')
         return receipt
@@ -141,6 +171,9 @@ if __name__ == '__main__':
     parser.add_argument('--gain-rgb',type=float,nargs=3,default=(1,1,1))
     parser.add_argument('--mask-scale',type=float,default=1,
         help='Scale lens masks in reference-image pixels; retain one for the original M09 coordinates')
+    parser.add_argument('--project-reference-each-frame',action='store_true',
+        help='Avoid a first-frame clipping seam when the same printed prop later moves into view')
     args = parser.parse_args()
     restore(args.source,args.destination,args.reference,args.reference_eyes,args.target_eyes,
-        args.tracking_center,args.tracking_radius,args.frames,args.gain_rgb,args.mask_scale)
+        args.tracking_center,args.tracking_radius,args.frames,args.gain_rgb,args.mask_scale,
+        args.project_reference_each_frame)

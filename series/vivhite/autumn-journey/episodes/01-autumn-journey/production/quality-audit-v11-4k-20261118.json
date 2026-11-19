@@ -821,14 +821,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S19",
+      "sourceSha256": "6e8a48d1e754e5dfc9e872ad3ca0e582a613a7573e4937b768b76d6081e9fc61",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T01:13:31.262181+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S19-corrected-v2/S19-6e8a48d1e7-all-frames-01.png",
+          "sha256": "4cb0840ae113314a93533f63115ef7a02a68d065f2533f14acb7a84c27aa8011",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S19-corrected-v2/S19-6e8a48d1e7-all-frames-02.png",
+          "sha256": "f9c3cc57f996b013ba491ffce98469d14cf87e4b9925ca3688d5cd84740d57e2",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S19-corrected-v2/S19-6e8a48d1e7-all-frames-03.png",
+          "sha256": "4f43df7f5c317705e7cba15d4d847c4d0d8a721621bcc7aa7aac5901f6da2d31",
+          "items": 32
+        },
+        {
+          "path": "assets/generated/production-v11-native-4k-001/review/S19-corrected-v2/S19-6e8a48d1e7-all-frames-04.png",
+          "sha256": "00e8014ca1a421b4ce83c18d1dd9e8139722a473844e732767d4393f25094ad6",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "assets/generated/production-v11-native-4k-001/review/S19-corrected-v2/S19-6e8a48d1e7-face-candidates.png",
+        "sha256": "551a7bd894bb52a1a4eded5ceabe95e995cd52795855237cc3ce66f05a4143c4",
+        "items": 3
+      },
+      "observation": "Actually viewed all120 raw and all120 V2 whole-scene frames through eight ordered JPEG pages, all120 raw and all120 V2 printed-face crops through sixteen JPEG pages, both versions native whole frames0/119 and V2 native printed-face119. All120 raw window-hand and all120 original partial lap-hand crops, actual768P input frame0, previously complete120-frame input baseline, M08 RGBA master, both coordinate grids and all four first-frame registration trials were actually viewed. Original single cropped female wears white sleeve with deep-violet cuff; the dorsal window hand stays attached to its visible wrist/forearm and makes only relaxed finger movements. The original partial hand remains at the lower-left edge, increasingly cropped; offscreen wrist/arm anatomy is not certified. The diffuse warm reflection above the window hand already exists in the input and is not a third hand. No observed real head, face, reflected person, additional human or limb. Trees, roadside barrier and mountains pass continuously, zero machine cut flags and no scene reset. M08 pouch print remains inert and eyes were OPEN in every raw frame; the defect was coarse grey-purple iris detail and weakened gold round glasses, not closed-to-open animation. Chosen still02 parameters, mask.65, were used for V1 and V2. V1 was rejected after actually viewing only whole frames96-119, print112-119 and native print119 because of a visible horizontal seam; its exported remainder is not claimed reviewed. V2 starts from the unchanged raw source, composes original-artwork registration with each current prop transform, and avoids first-frame canvas clipping. All120 V2 print frames preserve fixed open violet-pink star irises and fine gold round glasses, without observed blink, double contour, tracking slide or the V1 horizontal band. The printed chin initially lies below the frame and gradually enters view with the original pouch/camera motion; it is not cropped throughout. The local feathered mask also includes fringe, cheeks, nose, mouth, chin and nearby hair; not iris-only. Remaining print/body stays softer than the master and whole-source CRF16 re-encoding is not exterior pixel identity. All two raw detector boxes and all four V2 detector boxes were viewed through one native-crop contact page each: existing window hand and restored printed face, not real faces. Final use remains native0-95, four seconds, every other shot length unchanged. Assistant frame-sequence QA, not human continuous playback, hearing, user aesthetic approval or final-film/persona approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Eighteen current source selections reviewed; eleven original reference-appearance rejections retained.",
-  "reviewedSourceCount": 18,
-  "acceptedSourceCount": 18,
+  "scope": "Nineteen current selections reviewed; twelve original reference-appearance rejections retained. S19 V1 partially reviewed and rejected separately.",
+  "reviewedSourceCount": 19,
+  "acceptedSourceCount": 19,
   "rejectedCurrentSourceCount": 0,
-  "rejectedHistoricalSourceCount": 11,
-  "pendingSources": 30,
+  "rejectedHistoricalSourceCount": 12,
+  "pendingSources": 29,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -962,9 +1008,28 @@
       "receiptSha256": "98c35e680203d26045fc6fa4edeb76b536d75bf9e73eb64df4d14d56371de47a",
       "inspectionReportSha256": "ed26715363e4a984119853cb77a187b3f59fcce65a79d5a632f18012e77a266f",
       "reason": "Both complete120-frame whole-scene and standee-face sequences, all raw/corrected detector boxes and original non-chibi M02 actually reviewed."
+    },
+    "S19": {
+      "path": "corrections/S19-reference-eyes-v2.mp4",
+      "parent": "sources/S19.mp4",
+      "receipt": "corrections/S19-reference-eyes-v2.json",
+      "inspectionReport": "correction-inspections/S19-reference-eyes-v2/S19.json",
+      "selectedAt": "2026-11-19T01:13:31.135322+00:00",
+      "sha256": "6e8a48d1e754e5dfc9e872ad3ca0e582a613a7573e4937b768b76d6081e9fc61",
+      "parentSha256": "7097b9d238f86a3d2b59c1bc08967758b3e075ae6f63d12af809006ebddf6590",
+      "receiptSha256": "cb405a3e4208034b4fe75a0c0fa4b343dc048804f3fc452a6e00cf84de426b47",
+      "inspectionReportSha256": "e67e5ce0be304364da0f299408cdc61dc728db9540280be0297c311170e16c6d",
+      "reason": "All120 raw and V2 whole-scene and print frames actually reviewed; V1 seam rejected. Current-frame original-artwork projection removes the clipped first-frame boundary."
     }
   },
-  "snapshotAt": "2026-11-18T23:37:01.154710+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 3480,
-  "rejectedCorrectionCandidateCount": 2
+  "snapshotAt": "2026-11-19T01:13:31.392387+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 3720,
+  "rejectedCorrectionCandidateCount": 2,
+  "additionalPartialRejectedCorrectionReview": {
+    "shotId": "S19",
+    "version": "v1",
+    "wholeSceneFrames": 24,
+    "printDetailFrames": 8,
+    "includedInWholeSourceCoverage": false
+  }
 }

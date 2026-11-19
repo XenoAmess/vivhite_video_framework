@@ -1,0 +1,46 @@
+{
+  "id": "S19",
+  "sourceSha256": "7097b9d238f86a3d2b59c1bc08967758b3e075ae6f63d12af809006ebddf6590",
+  "method": "assistant-frame-review",
+  "reviewedAt": "2026-11-19T00:47:22.694206+00:00",
+  "allSourceFrameReview": true,
+  "allUsedFrameReview": true,
+  "reviewedNativeFrames": 120,
+  "actualFinalUsedNativeFrames": 96,
+  "frameEvidence": [
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S19-7097b9d238-all-frames-01.png",
+      "sha256": "b4bbc3c3010ba2b12a063dc518338af445619aac6540f8de2e0da8bbfc7dd93a",
+      "items": 32
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S19-7097b9d238-all-frames-02.png",
+      "sha256": "8a88e9dafeefebfc2dcc4ba69a8008e70fc37a3b4e534e5eb2c4d437655b3adf",
+      "items": 32
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S19-7097b9d238-all-frames-03.png",
+      "sha256": "750d484a437412d4ede7db7bfc57cfbf13dea25f90b920bc68292ae80b520b52",
+      "items": 32
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S19-7097b9d238-all-frames-04.png",
+      "sha256": "9530861e97c96f5723845fa98fee03ccbe27ec3c9a5f07ffbb4e39ed76d3b71c",
+      "items": 24
+    }
+  ],
+  "faceEvidence": {
+    "path": "assets/generated/production-v11-native-4k-001/review/video-4k/S19-7097b9d238-face-candidates.png",
+    "sha256": "adbb9782f586fba30ac123b2f5c9b9bfddfabeabab6c6113e7b26d524d5e2fd9",
+    "items": 2
+  },
+  "observation": "Actually viewed all120 raw whole-scene frames, all120 raw pouch-face detail frames, all120 window-hand detail frames and all120 detail frames of the original partially cropped lower-left lap hand. Native whole frames0/119, actual768P input frame0, M08 master, both coordinate grids, all four first-frame registration trials and both native detector-box crops were actually viewed. Both candidate boxes concern the existing window hand, not real faces. No observed added person, extra arm/hand, real head/face or scene reset. The window wrist remains connected to its original violet cuff with a dorsal relaxed hand; the lap hand is originally partial and its offscreen wrist is not certified. Continuous passing trees, guardrail and mountains and the existing diffuse hand reflection are retained. Both printed eyes stay OPEN, but coarse gray-purple iris detail and dull simplified gold glasses fall short of the M08 artwork; this is not a closed-to-open change. Reject original reference appearance. Trial02 is selected for a separate full-source restoration, not yet accepted. Original final four seconds and all other shot timings stay unchanged.",
+  "decision": "rejected",
+  "noHumanFaces": "passed",
+  "noAddedPeople": "passed",
+  "allCharactersFemale": "passed",
+  "costumeStyle": "passed",
+  "motionAndContinuity": "passed",
+  "merchandiseBehavior": "passed",
+  "referenceAppearance": "failed"
+}
