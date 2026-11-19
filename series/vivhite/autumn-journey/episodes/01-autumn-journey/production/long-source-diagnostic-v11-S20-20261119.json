@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "vivhite-native-4k-long-source-diagnostic-1",
+  "observedAt": "2026-11-19T02:39:31+00:00",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "shotId": "S20",
+  "jobId": "video_gen_a2cecd706e3a4b25bbe9786bfa63da11",
+  "status": "in-progress-not-a-completed-source-review",
+  "plannedSourceSeconds": 10,
+  "requiredCompleteSourceFrames": 240,
+  "inputSourceSha256": "025d002be5f23377e55054b29db8688b944d0e71cc6066cbdbb0eec9696ae901",
+  "additionalHttpLogRequests": 1,
+  "logSnapshot": {
+    "retainedRuntimePath": "logs/S20-live-check-20261119T023931Z-server.log",
+    "bytes": 6387,
+    "sha256": "89141f615d8c39e3fa894d074e74b8e9a15952339eeb6937f7008b0fea332cd1",
+    "lastModifiedHeaderProvided": false,
+    "observedFatalMemoryOrTracebackMarkers": false,
+    "clockTimezoneIndependentlyVerified": false
+  },
+  "actualLogObservations": {
+    "temporalWindowNamesObserved": ["window-00", "window-01"],
+    "windowsObservedSequentially": true,
+    "firstWindowDraftFrames": 124,
+    "firstWindowOutputFrames": 124,
+    "firstWindowOutputSize": [3840, 2160],
+    "firstWindowDraftServerClock": "08:37:34",
+    "firstWindowOutputWrittenServerClock": "09:52:58",
+    "firstWindowObservedIntervalSeconds": 4524,
+    "secondWindowDraftServerClock": "09:53:46",
+    "secondWindowStillSampling": true,
+    "denoiser": "BF16",
+    "decoder": "full-FP32-tiled-VAE",
+    "reportedBatchWindows": 1,
+    "reportedBatchWindowsIsNotProofOfTotalTemporalWindowCount": true
+  },
+  "followUp": {
+    "awaitCompleteDownloadAnd240FrameInspection": true,
+    "reviewEntireSourceSequence": true,
+    "reviewTemporalWindowJoinAtNativeResolution": true,
+    "reviewPlushAndBadgeThroughout": true,
+    "keepContinuousTenSecondFinalShot": true,
+    "allOtherShotTimingsUnchanged": true
+  },
+  "completedSourceCountRemains": 19,
+  "semanticApprovalGranted": false,
+  "humanContinuousPlayback": false,
+  "renderConfigurationChanged": false,
+  "newJobsSubmitted": 0
+}
