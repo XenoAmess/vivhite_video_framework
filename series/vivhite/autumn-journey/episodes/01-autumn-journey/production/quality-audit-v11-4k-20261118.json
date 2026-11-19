@@ -1385,14 +1385,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S31",
+      "sourceSha256": "8bee5f7450314468ce311629f7e952ea6cb96878375a08214a6aa2befd9ded43",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T19:10:20.039675+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S31-reference-keychain-v1\\inspection\\S31-8bee5f7450-all-frames-01.png",
+          "sha256": "2f1e290aca3cb8edec626e0485e694958ede5520b15dc5c628f51b048fdba669",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S31-reference-keychain-v1\\inspection\\S31-8bee5f7450-all-frames-02.png",
+          "sha256": "30d186c49236ccaa07a856fda3f72c25795fa55a52a7ed118806a5b255443a6f",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S31-reference-keychain-v1\\inspection\\S31-8bee5f7450-all-frames-03.png",
+          "sha256": "283a8185177f3a2b416e4e22f83acccf7474b74fa5714c017cdee6ae26e898a3",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S31-reference-keychain-v1\\inspection\\S31-8bee5f7450-all-frames-04.png",
+          "sha256": "fe1a96d097a7e6aa6eb74d62aba8fbc03fa1fecb3e04b47a2ffa72bfc618a2cd",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S31-reference-keychain-v1\\inspection\\S31-8bee5f7450-face-candidates.png",
+        "sha256": "d271d1b35f1ff843069e222b0f8dbca0afbed7ee1a3b3f2864a769ce29643820",
+        "items": 13
+      },
+      "observation": "Actually viewed all120 raw and all120 corrected whole-scene frames via4 ordered JPEG pages each; native whole0/119 for both versions. All120 raw rail-hand crops in native ROI[250,250,2200,1100] actually viewed via8 ordered half-size975x425 JPEG pages. Original30 native four-frame hand pages and their JPEG copies are retained but are not claimed viewed. Native hand crops0/119 for both raw and corrected versions actually viewed; no all120 corrected native hand-crop viewing claim. Machine comparison of all120 decoded hand-region pairs gives minimumPSNR39.92683759816852dB/mean40.63998991519223dB, an encoding comparison rather than pixel identity or automatic anatomy approval. All120 corrected keychain print crops via8 JPEG pages and first16 raw print crops via first page actually viewed; other104 raw print crops retained but not counted as viewed. All147raw native candidate crops via10 JPEG pages and all100corrected crops via7 JPEG pages actually viewed. Complete originalM01 keychain, actual768P input first native whole/print plus all120 input whole-scene frames, native raw-face grid and3 first-frame registration trials via their contact page actually viewed. Same one head-out woman in white/deep-violet/gold feminine dress; the original hand rests palm-down on chipped white ferry railing, with wrist, sleeve and forearm continuous. Near thumb and curved index remain consistent with the partly occluded fingers on the far side of the rail. No observed extra hand, arm, impossible wrist flip, real human face/reflection or bystander. Bag, chain and existing keychain sway mildly, with coherent overcast sea, distant shore and wake; no observed scene reset or jump. Every detector candidate corresponds to the original illustrated keychain, worn/rusted railing or wake foam; no observed human candidate. Printed eyes were already OPEN in the raw/input; coarse purple iris highlights and dull gray-brown thick glasses fail original detail. Selected trial2/mask1.35, bottom830/feather30, gainRGB.88/.87/.84 restores original open violet-pink star/diamond irises, fine gold round glasses and small smile using current-frame tracking. Mask includes fringe, cheeks, nose, mouth and chin; original outer head, hat, blue butterfly, acrylic border and body remain. Body print and outer hair retain softer/coarser detail than the complete mother image. Across all120 corrected print crops no observed blink, obvious double contour, sliding or horizontal boundary. No generative redraw, whole-prop first-frame freeze, person cover, retiming or interpolation. Single whole-frame CRF16 encode from unchanged raw; outside-mask pixels are not claimed identical. All5seconds/120native frames preserved; final placement remains123to128seconds/150frames3690to3839. All other timings unchanged. OldS05 remains rejected; its accepted new768P film and queued native4K replacement are separate. Assistant ordered image review, not human continuous playback, hearing, user aesthetic acceptance or complete4Kfilm approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Thirty original source shots reviewed; twenty-nine adopted, oldS05 revoked for missing saddle. S30 raw appearance rejected and original-M08 current-frame correction separately reviewed/adopted. Repaired768P full film published, correspondingnewS05 native4K queued. No complete4Kfilm approval.",
-  "reviewedSourceCount": 30,
-  "acceptedSourceCount": 29,
+  "scope": "Thirty-one original shots reviewed; thirty adopted, oldS05 revoked for missing saddle. S31 raw appearance rejected; original-M01 current-frame correction separately reviewed/adopted. Repaired768P full film published; correspondingnewS05 native4K queued. No complete4Kfilm approval.",
+  "reviewedSourceCount": 31,
+  "acceptedSourceCount": 30,
   "rejectedCurrentSourceCount": 1,
-  "rejectedHistoricalSourceCount": 20,
-  "pendingSources": 18,
+  "rejectedHistoricalSourceCount": 21,
+  "pendingSources": 17,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1634,10 +1680,22 @@
       "inspectionReportSha256": "7590d51a642017a3dcd17e341a6e554892f1e972b335374b9f8373d28ec5d303",
       "selectedAt": "2026-11-19T17:59:06.345008+00:00",
       "reason": "Both120-frame whole sequences actually viewed; raw rope-hand120 and far-hand120, corrected native endpoints for both hands, corrected print120, all137raw/121corrected detector crops, original M08 and actual768P input compared. Original current-frame face projection only; source5s/final3s unchanged."
+    },
+    "S31": {
+      "path": "corrections/S31-reference-keychain-v1.mp4",
+      "sha256": "8bee5f7450314468ce311629f7e952ea6cb96878375a08214a6aa2befd9ded43",
+      "parent": "sources/S31.mp4",
+      "parentSha256": "3dc1318b707fc6589dd347bef99486f45ce6618a28894a4f8c0effe0ad40a319",
+      "receipt": "corrections/S31-reference-keychain-v1.json",
+      "receiptSha256": "1d5e0bf913b172cc4c6597237b7e22942a417d0429fe617275a9dc836ce2743f",
+      "inspectionReport": "corrections/S31-reference-keychain-v1-inspection/S31.json",
+      "inspectionReportSha256": "cd5b5140544f7f2b1dfe58d9cd42ec9631baf484d6a27e4a6d79ec9790bd63e2",
+      "selectedAt": "2026-11-19T19:10:19.932033+00:00",
+      "reason": "Both120-frame whole sequences actually viewed; raw hand120 ordered half-size crops and raw/corrected native endpoints, corrected print120, all147raw/100corrected detector crops, completeM01 and actual768P input compared. Current-frame original-face projection only; original5s unchanged."
     }
   },
-  "snapshotAt": "2026-11-19T17:59:06.540998+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 6480,
+  "snapshotAt": "2026-11-19T19:10:20.120858+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 6720,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -1667,7 +1725,9 @@
     "S29Raw": 120,
     "S29AdoptedV1": 120,
     "S30Raw": 120,
-    "S30AdoptedV1": 120
+    "S30AdoptedV1": 120,
+    "S31Raw": 120,
+    "S31AdoptedV1": 120
   },
   "activeUserDirectedRepair": {
     "shotId": "S05",
