@@ -190,7 +190,7 @@
       "id": "S05",
       "sourceSha256": "62aa1dab5b48ad7093b294a442c595418e427f3389918065c1c487bd12b3f318",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-18T06:53:42.592857+00:00",
+      "reviewedAt": "2026-11-19T12:55:46.310867+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
@@ -222,13 +222,13 @@
         "sha256": "31667584ec6d4a413985d528ed9e80406633effdba6d4ca6074b33e0f6ee204f",
         "items": 10
       },
-      "observation": "Viewed all 120 whole-scene frame thumbnails through four JPEG viewing copies, all 120 tracked native sticker crops (first two PNG pages and six native-derived JPEG pages), the face-candidate sheet, native full-frame f048 and f119, the actual 768p input f000 and its sticker crop, and compared with the original chibi artwork reviewed in this session. Only the original female cyclist is present, framed below the head, in the established white/violet/gold clothing. Both legs pedal continuously; road, trees, bicycle and background remain continuous with no observed scene reset. The 49 machine cut candidates occur within this cycling motion and are not observed shot changes. The sticker stays fixed to the same frame tube, its eyes remain open and round glasses persist without blinking or autonomous movement. Face candidates include printed artwork, bike parts and background texture; none is a real human face. Native texture remains somewhat processed and wheel spokes have motion blur. Assistant image-sequence source review, not human continuous playback or final-film acceptance.",
-      "decision": "accepted",
+      "observation": "User rejects the bicycle shot for a missing saddle and requires repair768P before corresponding4K. Supplementary review actually viewed the original image, all120 original768P frames through4 ordered pages and native first frame, and original4K native whole frame0. The same4K source previously received genuine120-frame whole-scene and120-frame sticker review; that historical viewing is retained but its previous overall acceptance is revoked. Neither viewed first frame clearly establishes an attached visible saddle/seatpost and a seated support relationship under the hips; continuous pedaling/background and face restrictions alone were insufficient acceptance. Reject mechanical/body-support continuity. This follow-up does not claim a new complete4K-frame rereview or prove a saddle hidden outside the visible crop. No media is deleted, patched in place, retimed or replaced. New image-reference-only768P shot is queued under independentv12 plan, followed only after actual768P adoption by independentnative4K regeneration. OriginalS05 final interval remains14to19seconds. Other47 source lengths and all48 timeline starts remain unchanged. All historical review files and releases retained; user rejection supersedes this prior candidate acceptance.",
+      "decision": "rejected",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
       "allCharactersFemale": "passed",
       "costumeStyle": "passed",
-      "motionAndContinuity": "passed",
+      "motionAndContinuity": "failed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
     },
@@ -1155,14 +1155,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S26",
+      "sourceSha256": "b198d52c6ba18f03dbd5c2f035dd8672be3942bfc5d073a1539198e5ef20744d",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T13:04:47.558136+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S26-reference-pouch-v1\\inspection\\S26-b198d52c6b-all-frames-01.png",
+          "sha256": "d9b2f1f2872e7f639b0d3f627b25d8694a076af0fdd616b11277c84cb773581d",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S26-reference-pouch-v1\\inspection\\S26-b198d52c6b-all-frames-02.png",
+          "sha256": "6d51a4c1f6ee9383f5f45453c14a6f05751a98f8f98b83be83eb1d7ff874de4b",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S26-reference-pouch-v1\\inspection\\S26-b198d52c6b-all-frames-03.png",
+          "sha256": "57fb77fba4a8cf4532a3789208d0b19d7c8b8c9b5a356ff3da1506f9fc75807e",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S26-reference-pouch-v1\\inspection\\S26-b198d52c6b-all-frames-04.png",
+          "sha256": "638ac7b93c4d4059e028647384883e22c0ed0d34a45be1615acf98420a000226",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S26-reference-pouch-v1\\inspection\\S26-b198d52c6b-face-candidates.png",
+        "sha256": "1a99c014cf737d43cce89a36891d3c9117579fcc106ba5a6fadd54cb09abdbbc",
+        "items": 5
+      },
+      "observation": "Actually viewed all120 raw and all120 corrected whole-scene frames through4 ordered JPEG pages each; native whole0/119 in both versions. Raw printed-face0to15 and112to119 (24frames) and all120 corrected printed-face crops through8JPEG pages actually viewed. All120 corrected window-region crops actually viewed through30four-frame contact pages: original full-size JPEG pages1to3, retained2240-wide viewing copies for pages4to30; not every native pixel independently inspected. Every original PNG/JPEG and all30 smaller copies retained. All108 raw detector boxes from104frames through7JPEG pages and all14 corrected boxes from14frames through1JPEG page actually viewed. These are the existing chibi print, car-door latch and pouch cloth folds, not real human faces. Complete M08 original master, actual768P first whole/print frame, raw face/grid and all3first-frame registration trials in one contact were actually viewed. Same empty car seat, headrest, window, door/latch and pouch throughout; no observed real passenger, head/face, reflected human, additional person, hand or limb. Original road edge, fence posts, shrubs, dry field, cloud layers and distant hills move continuously with near/far parallax and small vehicle shake; no observed cut, reset or scene replacement. Small distant field marks are not individually identified. The pouch/printed body moves only with the original vehicle vibration. Both original printed eyes were already OPEN; coarse violet iris redraw and weak gold round glasses failed reference appearance. Trial1/mask.65 restores original fixed open violet-pink star irises, fine complete round gold glasses, fringe/cheeks/small mouth from original M08 pixels projected directly into each tracked current frame. All120 corrected print frames show no observed autonomous blink, doubled contour, horizontal seam or tracking slide. Mask bottom548/feather24 and gainRGB.88/.88/.90 preserve the original outer head/body/collar and pouch; broad still trials1.0/1.35 affect adjacent neck/hair and were not rendered as videos. Remaining print/body is softer and less saturated than the complete master. One CRF16 encode from unchanged raw, not exterior pixel identity. No whole-prop first-frame freeze, new illustration, retiming or interpolation; full5s120native frames become150 final frames3120to3269 at104to109seconds. Every other shot timing unchanged. S05 old approval separately revoked by user for a missing saddle; this S26 decision does not approve that shot or a complete film. Assistant frame-image review, not human continuous playback, listening or user aesthetic acceptance.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Twenty-five current sources actually reviewed; sixteen original rejections and separate full/partial correction scopes retained. Full205-second film pending.",
-  "reviewedSourceCount": 25,
+  "scope": "Twenty-six sources reviewed; twenty-five adopted after user revokedS05 for missing visible saddle support. S26 original rejected and separately reviewed current-frame original-art correction adopted. S05repair768P queued; corresponding4K still pending.",
+  "reviewedSourceCount": 26,
   "acceptedSourceCount": 25,
-  "rejectedCurrentSourceCount": 0,
-  "rejectedHistoricalSourceCount": 16,
-  "pendingSources": 23,
+  "rejectedCurrentSourceCount": 1,
+  "rejectedHistoricalSourceCount": 17,
+  "pendingSources": 22,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1356,10 +1402,22 @@
       "inspectionReportSha256": "d3f6ba34369f3ff146bdd6984d3ccd3c08b0e5524be3bd797b0011dcdc3d6a89",
       "selectedAt": "2026-11-19T10:10:48.864760+00:00",
       "reason": "Actually reviewed both120-frame whole-scene versions, all120 corrected keychain crops, both120-frame corrected hand/sand regions, all118 corrected native candidate boxes, raw24 print crops, original M01 artwork and original input baseline. Current-frame reference projection restores fixed open eyes and gold glasses; no timing change."
+    },
+    "S26": {
+      "path": "corrections/S26-reference-pouch-v1.mp4",
+      "sha256": "b198d52c6ba18f03dbd5c2f035dd8672be3942bfc5d073a1539198e5ef20744d",
+      "parent": "sources/S26.mp4",
+      "parentSha256": "a8b1bed3d71e436dc07c1bbebd2f9dd9e72a7fe367e4d773a009b3a332abccb0",
+      "receipt": "corrections/S26-reference-pouch-v1.json",
+      "receiptSha256": "2609e26bbbd70e0216abd15cd52c3bdc4a875b7c7dbb7cff21e78850dd44391a",
+      "inspectionReport": "corrections/S26-reference-pouch-v1-inspection/S26.json",
+      "inspectionReportSha256": "a9c684c9aad9ec28e31f909b144243326e57c1324247bda658f459b6d8be5961",
+      "selectedAt": "2026-11-19T13:04:47.459901+00:00",
+      "reason": "Actually viewed both120-frame whole versions, all120 corrected printed-face crops, all120 corrected window-region crops, all108 raw and14 corrected native detector boxes, original M08 and actual768P input first frame. Original open iris/glasses restoration, unchanged five-second duration."
     }
   },
-  "snapshotAt": "2026-11-19T11:04:29.770052+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 5400,
+  "snapshotAt": "2026-11-19T13:04:47.713851+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 5640,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -1380,6 +1438,17 @@
     "S23OriginalAdopted": 120,
     "S24Raw": 120,
     "S24AdoptedV1": 120,
-    "S25OriginalAdopted": 120
+    "S25OriginalAdopted": 120,
+    "S26Raw": 120,
+    "S26AdoptedV1": 120
+  },
+  "activeUserDirectedRepair": {
+    "shotId": "S05",
+    "sequence": [
+      "repair-and-review-native768p",
+      "regenerate-and-review-corresponding-native4k"
+    ],
+    "record": "production/S05-saddle-rejection-v12.json",
+    "oldAcceptanceRevoked": true
   }
 }

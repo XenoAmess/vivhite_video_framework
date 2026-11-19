@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "vivhite-native768p-submission-1",
+  "recordedAt": "2026-11-19T13:14:14.867749+00:00",
+  "shotId": "S05",
+  "plan": "production-plan-v12-S05-saddle-r1.json",
+  "planSha256": "f811b54093d815c9650ac896d29bf9ec9a33993f5939b3e2c2718ce5c85c58d9",
+  "requestSha256": "d13642ba48a6f1986ea0920c191064f7cf305b49a189c26adc317e112cd93298",
+  "jobId": "video_gen_b14366a59ee74dfa8351f18ab1719c92",
+  "submittedAt": "2026-11-19T12:53:12.282648+00:00",
+  "model": "fasth3-omni-bf16",
+  "checkpoint": "FastVideo/FastVideo-FastH3-Omni-8-Step-V1",
+  "dtype": "BF16",
+  "size": "1344x768",
+  "task": "ref2va",
+  "numInferenceSteps": 8,
+  "actualDecoderLayers": 36,
+  "referenceSha256": "2b388c2168b9a9a845fc2bc42f8d1c54af97962aae07229146dd0595a196a496",
+  "oldMotionVideoReferenceUploaded": false,
+  "frozenWorkers": [
+    {
+      "source": "video-maker/tools/local_video_pipeline.py",
+      "frozen": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-saddle-768p-001\\runtime\\generation-001\\local_video_pipeline.py",
+      "sha256": "a9aa85a94eefd1e4848fb40aa0583a25bed06e1fc6f08ce14029001c472cba2f"
+    },
+    {
+      "source": "video-maker/tools/reference_finisher.py",
+      "frozen": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-saddle-768p-001\\runtime\\generation-001\\reference_finisher.py",
+      "sha256": "906766393fde9b62835179dfb118959800bdc9dd2e06408ca8710604fbd8efa6"
+    },
+    {
+      "source": "video-maker/tools/review_reference_clips.py",
+      "frozen": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-saddle-768p-001\\runtime\\generation-001\\review_reference_clips.py",
+      "sha256": "446cd6235d817a39713d031ad58f18e8cb8613d6e5f77963b326b0934821c9ab"
+    }
+  ],
+  "ordinaryQueueNoPriorityOverride": true,
+  "existing4kTasksNotCancelled": true,
+  "sourceSeconds": 5,
+  "finalSeconds": 5,
+  "finalStartFrame": 420,
+  "all48TimingsUnchanged": true,
+  "actualOutputAccepted": false,
+  "corresponding4kSubmitted": false
+}

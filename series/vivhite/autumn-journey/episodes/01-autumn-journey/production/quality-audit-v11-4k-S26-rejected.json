@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "vivhite-source-visual-rejection-1",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "decision": {
+    "id": "S26",
+    "sourceSha256": "a8b1bed3d71e436dc07c1bbebd2f9dd9e72a7fe367e4d773a009b3a332abccb0",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-19T12:26:44.607626+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 120,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S26-a8b1bed3d7-all-frames-01.png",
+        "sha256": "d1f67a00e7498cec54a8bbd1238f6a8e4fc66923718f1d4ad7bfcf35522c51a2",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S26-a8b1bed3d7-all-frames-02.png",
+        "sha256": "3820b062bb6f443a8d41dea6cf87201b968a62cf09549530c6602bbc45cb6c35",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S26-a8b1bed3d7-all-frames-03.png",
+        "sha256": "b8410dba4de7779380f39c8318ba73bb64315d741d8b68cc33b31960d7931054",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S26-a8b1bed3d7-all-frames-04.png",
+        "sha256": "32cf064a4e19206cfea5626a2219816cabb75b3949f15eb03b2d8e42cf20348f",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S26-a8b1bed3d7-face-candidates.png",
+      "sha256": "e0cb832a5f8c197fe62c0ca7f338949c0a42fdb112b6d1ca290a842b555d9407",
+      "items": 10
+    },
+    "observation": "Actually viewed all120 raw whole-scene frames through4 ordered JPEG pages, native whole0/119, raw native pouch-print detail0to15 and112to119 (24frames), all108 detector boxes from104 frames through7 native-crop JPEG pages, complete original M08 master, actual768P input native first whole and print crop, native raw face/grid and three first-frame trials in their contact page. The original empty car seat and pouch remain; roadside fence/posts, dry field and hills move continuously with mild original vehicle shake. No observed real face, reflected passenger, additional person, hand or limb. Detector boxes show existing printed chibi art, door latch and cloth folds, not real human faces. Both raw printed eyes were already OPEN. Coarse purple irises and weakened gold round glasses differ from original open star irises and fine complete glasses. Reject referenceAppearance, not a blink or closed-to-open event. Other96 exported raw print crops are retained but not counted as actually viewed. First-frame trial1/mask.65 chosen for a candidate: narrower face/fringe/cheek/mouth correction preserves original outer hair and collar. Broader still trials also affect adjacent neck/hair and are not adopted as videos. Full corrected-source visual review remains required. Assistant image-sequence review, not human continuous playback, hearing or final-film approval.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "actualWholeSceneFramesViewed": 120,
+  "actualPrintDetailRangesViewed": [
+    [
+      0,
+      15
+    ],
+    [
+      112,
+      119
+    ]
+  ],
+  "actualPrintDetailFramesViewed": 24,
+  "candidateBoxesExported": 108,
+  "candidateBoxesActuallyViewed": 108,
+  "candidatePagesActuallyViewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "nativeWholeSceneFramesActuallyViewed": [
+    0,
+    119
+  ],
+  "actual768pInputNativeFramesViewed": [
+    0
+  ],
+  "firstFrameTrialsActuallyViewedViaContact": 3,
+  "humanContinuousPlayback": false,
+  "fullFilmApproval": false
+}

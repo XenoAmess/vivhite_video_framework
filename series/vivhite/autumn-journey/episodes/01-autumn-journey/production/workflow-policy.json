@@ -171,5 +171,26 @@
     "documentedServerModelQueueLimit": 32,
     "bulkQueueSnapshot": true,
     "backfillRemainingShotsInOriginalOrder": true
+  },
+  "activeS05SaddleRepair": {
+    "revision": 12,
+    "authorizedOn": "2026-11-19",
+    "order": [
+      "1344x768-generation-and-actual-review",
+      "corresponding3840x2160-generation-and-actual-review"
+    ],
+    "generationPlan": "production-plan-v12-S05-saddle-r1.json",
+    "full768pTargetPlan": "production-plan-v12-bf16-768p.json",
+    "record": "production/S05-saddle-rejection-v12.json",
+    "run": "production-v12-saddle-768p-001",
+    "shotSeconds": 5,
+    "all48TimingsLocked": true,
+    "filmSeconds": 205,
+    "filmFrames": 6150,
+    "ordinaryQueueNoPreemption": true,
+    "existing4kQueueContinues": true,
+    "historical768pAndFirst24ReviewReleasePreserved": true,
+    "oldS05AcceptanceRevoked": true,
+    "replacementOutputAccepted": false
   }
 }

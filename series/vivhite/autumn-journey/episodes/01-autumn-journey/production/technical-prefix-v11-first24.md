@@ -1,5 +1,7 @@
 # 前24镜原生4K审核版
 
+发布后反馈：用户指出00:14—00:19的S05骑行镜头缺少明确车座支撑，该镜旧通过结论已撤回；正在按[单独修复记录](S05-saddle-rejection-v12.json)先重做768P、再重做对应4K。本审核版及附件完整保留，下面的技术检查与当时覆盖仍是历史事实，不代表用户已验收或该缺陷已修复。
+
 已发布下载：[MP4审核片](https://github.com/XenoAmess/vivhite_video_framework/releases/download/autumn-journey-v11-4k-first24-review-20261119/vivhite-autumn-journey-v11-4k-first24-review.mp4) · [GitHub Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v11-4k-first24-review-20261119)。三个附件均已从Release完整回下载并逐字节SHA-256核验通过。
 
 按用户要求，将当前采用的S01—S24连续合成为一份可下载审核片：3840×2160、30fps、101秒（1:41）、3030帧，MP4大小635,111,749字节。各镜保持既定入片长度，S20仍为连续10秒，S24为4秒。原音乐、片头文字及样式沿用当前版本。后续S25—S48继续制作，全片目标仍为205秒／6150帧。

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 12,
+  "model": "fasth3-omni-bf16",
+  "stage": "draft",
+  "fps": 30,
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 150,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "numInferenceSteps": 8,
+  "decoderLayers": 36,
+  "decoderVerification": "GET /v1/models on 2026-11-16",
+  "titleOverlays": [],
+  "closingCredit": "",
+  "shots": [
+    {
+      "id": "S05",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "seed": 2026111905,
+      "mode": "H",
+      "action": "真实侧面跟拍；白绮坐在清楚可见的黑色车座上，座管连续连接车座与车架，臀部保持合理承重。双脚各踩原有对置踏板，左右腿从第一帧持续自然交替踩踏，曲柄保持180度相对。车座、座管与车架不消失或变形；林木和路面连续后移，没有背景跳变。",
+      "soundDescription": "链条与轮胎沙沙声。",
+      "prompt": "Use <Picture 1> as the exact first frame of a single uninterrupted five-second realistic bicycle travel shot. The one woman is already SEATED on the existing black padded saddle, supported by its exposed metal rails, clamp and seatpost continuously joined to the original seat tube. The black saddle rear edge and forward nose and the visible seatpost remain recognizable throughout; her hips stay seated at the same sensible height, with only small natural pedaling movement. Preserve the two original wheels, frame tubes, fork, hubs, chainring, chain, cranks and pedals as a mechanically connected bicycle of fixed shape. The two crank arms stay exactly opposed at 180 degrees about the same bottom-bracket axle. Each of her two boots stays on its own flat pedal, the midsole resting over the spindle; her knees bend and extend in regular alternation through approximately three calm crank revolutions over five seconds, starting immediately. No foot detaches, passes through a frame tube or follows a separate imaginary crank center. The camera tracks smoothly at the bicycle's forward speed from the same drive-side position; the whole saddle/seatpost stays inside the same frame. The same road, leaf litter and tree trunks slide backward with continuous depth and parallax, with natural rotating wheels, never resetting or cutting. Same feminine white/deep-violet/gold pleated dress, opaque white legwear and purple butterfly-trim ankle boots. Her entire head, face, chin, neck and chest remain above the image boundary; no other person or human reflection. Her hands remain outside the original crop, do not add detached arms or hands. Keep the existing Vivhite sticker as fixed inert print on its original frame tube, with identical OPEN violet-pink star irises, thin complete round gold glasses, face proportions and costume; no blink, facial redraw or autonomous expression. No disappearing/floating saddle, shifting seatpost, changing bicycle geometry, extra limb, extra bike, frozen pedaling, reverse pedaling, initial still hold, scene transition, added vegetation, subtitles, lettering, credits, speech, singing, humming or other voices. Ordinary tire and chain ambience only.",
+      "references": [
+        "assets/generated/production-v12-saddle-firstframes-001/scenes/S05-saddle-v1.png"
+      ],
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "generationAction": "Use <Picture 1> as the exact first frame of a single uninterrupted five-second realistic bicycle travel shot. The one woman is already SEATED on the existing black padded saddle, supported by its exposed metal rails, clamp and seatpost continuously joined to the original seat tube. The black saddle rear edge and forward nose and the visible seatpost remain recognizable throughout; her hips stay seated at the same sensible height, with only small natural pedaling movement. Preserve the two original wheels, frame tubes, fork, hubs, chainring, chain, cranks and pedals as a mechanically connected bicycle of fixed shape. The two crank arms stay exactly opposed at 180 degrees about the same bottom-bracket axle. Each of her two boots stays on its own flat pedal, the midsole resting over the spindle; her knees bend and extend in regular alternation through approximately three calm crank revolutions over five seconds, starting immediately. No foot detaches, passes through a frame tube or follows a separate imaginary crank center. The camera tracks smoothly at the bicycle's forward speed from the same drive-side position; the whole saddle/seatpost stays inside the same frame. The same road, leaf litter and tree trunks slide backward with continuous depth and parallax, with natural rotating wheels, never resetting or cutting. Same feminine white/deep-violet/gold pleated dress, opaque white legwear and purple butterfly-trim ankle boots. Her entire head, face, chin, neck and chest remain above the image boundary; no other person or human reflection. Her hands remain outside the original crop, do not add detached arms or hands. Keep the existing Vivhite sticker as fixed inert print on its original frame tube, with identical OPEN violet-pink star irises, thin complete round gold glasses, face proportions and costume; no blink, facial redraw or autonomous expression. No disappearing/floating saddle, shifting seatpost, changing bicycle geometry, extra limb, extra bike, frozen pedaling, reverse pedaling, initial still hold, scene transition, added vegetation, subtitles, lettering, credits, speech, singing, humming or other voices. Ordinary tire and chain ambience only.",
+      "acceptanceCriteria": "Actually review all120 native frames and saddle/seatpost/hips and both crank/boot regions. Saddle must remain physically attached and visibly support the seated rider; exposed seatpost remains continuous into the frame. Two crank arms stay opposed about one axle; each original boot stays on its own pedal and legs alternate naturally from first frame. Reject a missing or floating seat, changing frame geometry, disconnected chain, extra limb, face/person, frozen pedaling, background reset or distorted/blinking sticker. Final duration stays exactly5seconds at the original00:14-00:19 position.",
+      "firstFrameRequirement": "visible-supported-black-saddle-continuous-seatpost-seated-rider-and-opposed-cranks"
+    }
+  ],
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "3840x2160",
+    "sampler": "up3",
+    "seed": 1234,
+    "submissionWindow": 1,
+    "status": "not-started",
+    "scope": "Native UHD only for future separate refinement, historical API model identifier retained. New 2K jobs forbidden."
+  },
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "S20 has 240 native source frames, S48 has 336, every other complete source has 120. Complete source review covers 6096 frames; final used native frames 4920; final film 6150 frames at 30fps.",
+  "promptRevision": {
+    "id": "v12-S05-visible-saddle-r1",
+    "reason": "User rejects missing bicycle saddle. First repair768P, then regenerate corresponding native4K from the actually adopted repaired768P source."
+  },
+  "shotDurationExceptions": {},
+  "referenceAppearanceRequired": true,
+  "scope": "OnlyS05 5-second native768P repair. No old motion reference is uploaded. Ordinary queue, no preemption. A plan/input review does not approve the future output.",
+  "director": "director-v12.md",
+  "previousProductionPlanSha256": "b8b663809dc5fe49730c64aaf129d70b8652ba3b0f642488e59ca1102487d59c",
+  "sourceContinuation": "Use exact other47 adoptedv10 sources for later205-second assembly; never overwrite an old source, submittedplan, output or release."
+}
