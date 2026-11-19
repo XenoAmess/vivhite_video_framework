@@ -1293,14 +1293,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S29",
+      "sourceSha256": "b2262248fc71001c3522027e6d64960e72753f5b65ba5855ea43a74398d293df",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T16:41:18.227879+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S29-reference-two-prints-v1\\inspection\\S29-b2262248fc-all-frames-01.png",
+          "sha256": "fa53208bbf227df6ba6c3a2b1991c69ef6bccb6bd74e2c2703d7a509a9ad8724",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S29-reference-two-prints-v1\\inspection\\S29-b2262248fc-all-frames-02.png",
+          "sha256": "4503172b054f8b2d4c3c0cb8fb1252c2acf6b1ecd44ef3b901b78c587f157d9c",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S29-reference-two-prints-v1\\inspection\\S29-b2262248fc-all-frames-03.png",
+          "sha256": "b3b32411911d75d1200ff545631fabca2c791336796a4b0c01ebda77b77bc060",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S29-reference-two-prints-v1\\inspection\\S29-b2262248fc-all-frames-04.png",
+          "sha256": "386cb5a30da877f4273ebc873c50e53f6722804f908395d61ad879d1cb17634d",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S29-reference-two-prints-v1\\inspection\\S29-b2262248fc-face-candidates.png",
+        "sha256": "e27fd5b12dc9d5f9d2580de9550c58de115a5181c4ecb4cb3bd25abbbda4d704",
+        "items": 1
+      },
+      "observation": "Actually viewed all120 raw and all120 corrected whole-scene frames via4 ordered JPEG pages each; raw and corrected native whole0/119. All120 corrected M04 plush and all120 corrected M05 badge print crops via8 JPEG pages each actually viewed. First16 raw print crops for each prop via their first JPEG pages actually viewed; other104each exported/retained but not counted as viewed. All118raw native detector crops via8JPEG pages and all4corrected native detector crops via1JPEG page actually viewed. Both complete original M04 plush and M05 badge mother images, actual768P input native first whole and both print crops, raw plush native coordinate grid, raw badge native crop and all3 paired first-frame trials via their contact page actually viewed. Same empty working harbor with moored fishing boats, weathered warehouses and gray sky; rippling water, worn wooden dock, coiled rope, bollard, bag and two attached props stay coherent. No observed real person, human face/reflection, hand or new limb; no apparent scene reset or jump. Raw detector candidates are the existing plush embroidered face, and corrected candidates are the existing rope fibers, not observed real human faces. Both raw faces already had OPEN eyes, not blink or closed-to-open. Plush round magenta iris blobs and chunky gold glasses, and small gray/coarse badge eyes and glasses, failed the original appearance. Trial3 restores original open violet-pink star/diamond irises, thin round gold glasses and original small smiles using independently tracked current-frame projections from M04/M05 originals. Plush mask1.8/bottom750/feather35; badge mask1.9/bottom900/feather35; both gainRGB.88/.87/.85. Masks also include fringe, cheeks, nose, mouth/chin. Original outer heads, hats, blue butterflies, bodies and prop surfaces remain; some original body/clothing print is coarser and softer than the full mother image. All120 corrected frames of both faces show no observed blink, doubled eye/glasses contour, obvious sliding, floating patch or horizontal seam. No first-frame whole-prop freeze, generative redraw, motion retiming or interpolation. Single whole-frame CRF16 encoding from unchanged raw; pixels outside patches are not claimed identical. Full5s120native frames retained; final uses original4seconds/120final frames3480to3599 at116to120seconds. All other timings unchanged. Old S05 approval remains revoked and its separately submitted native4K replacement is queued. Assistant ordered image sequence review, not human continuous playback, hearing, user aesthetic approval or complete4Kfilm acceptance.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Twenty-eight source shots reviewed; twenty-seven adopted, old S05 revoked for missing saddle. S28 raw print rejected, separately reviewed current-frame original-art correction adopted. Repaired768P film published; correspondingnewS05 native4K queued. No complete4Kfilm approval.",
-  "reviewedSourceCount": 28,
-  "acceptedSourceCount": 27,
+  "scope": "Twenty-nine source shots reviewed; twenty-eight adopted, old S05 revoked for missing saddle. S29 raw appearance rejected and separately reviewed two-original-artwork correction adopted. Repaired768P film published; correspondingnewS05 native4K queued. No complete4Kfilm approval.",
+  "reviewedSourceCount": 29,
+  "acceptedSourceCount": 28,
   "rejectedCurrentSourceCount": 1,
-  "rejectedHistoricalSourceCount": 18,
-  "pendingSources": 20,
+  "rejectedHistoricalSourceCount": 19,
+  "pendingSources": 19,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1518,10 +1564,22 @@
       "inspectionReportSha256": "de91af8bf7f7f2b0ae466e02e59ff07b5937f458fff64cc9705b60ceb1a74873",
       "selectedAt": "2026-11-19T16:04:37.521966+00:00",
       "reason": "Actually viewed both120-frame whole versions, all120 raw hands/wrapper/bread crops, corrected hands0/119, all120 corrected print crops, all30raw/24corrected detector crops, complete M09 and actual768P input first frame. Unchanged5second source; current-frame original-artwork face correction."
+    },
+    "S29": {
+      "path": "corrections/S29-reference-two-prints-v1.mp4",
+      "sha256": "b2262248fc71001c3522027e6d64960e72753f5b65ba5855ea43a74398d293df",
+      "parent": "sources/S29.mp4",
+      "parentSha256": "4ebe548eb192636a627008ae1dc1ce36113a236eb8ffb9e16b3a967e061c9030",
+      "receipt": "corrections/S29-reference-two-prints-v1.json",
+      "receiptSha256": "bc58eb766b135245923dc2859af16a915b06fb923094b7b369f282e1f470a9da",
+      "inspectionReport": "corrections/S29-reference-two-prints-v1-inspection/S29.json",
+      "inspectionReportSha256": "6cca4ceb189a443a73b77322595fbba0e4f79ffc3cb07d645e3f4ecf1ff43239",
+      "selectedAt": "2026-11-19T16:41:18.137292+00:00",
+      "reason": "Actually viewed both120-frame whole versions, each120-frame corrected print, first16 each raw print, all118raw/4corrected candidate crops, native whole0/119, complete M04/M05 and actual768P input first whole/prints. Current-frame two-region original artwork correction; all source and final timing unchanged."
     }
   },
-  "snapshotAt": "2026-11-19T16:04:37.651941+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 6000,
+  "snapshotAt": "2026-11-19T16:41:18.292171+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 6240,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -1547,7 +1605,9 @@
     "S26AdoptedV1": 120,
     "S27Raw": 120,
     "S28Raw": 120,
-    "S28AdoptedV1": 120
+    "S28AdoptedV1": 120,
+    "S29Raw": 120,
+    "S29AdoptedV1": 120
   },
   "activeUserDirectedRepair": {
     "shotId": "S05",
