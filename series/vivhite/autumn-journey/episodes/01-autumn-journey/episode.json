@@ -13,7 +13,7 @@
   "revision": 11,
   "productionPlan": "production-plan-v11-native-4k.json",
   "finalAssemblyPlan": "final-assembly-plan-v10-768p.json",
-  "deliveryPlan": "delivery-plan-v10-768p.json",
+  "deliveryPlan": "delivery-plan-v12-768p.json",
   "productionPolicy": "production/workflow-policy.json",
   "preserved768pDelivery": "delivery-plan-v10-768p.json",
   "active4kRun": "production-v11-native-4k-001",
@@ -22,6 +22,9 @@
     "plan": "production-plan-v12-S05-saddle-r1.json",
     "director": "director-v12.md",
     "record": "production/S05-saddle-rejection-v12.json",
-    "priority": "Repair768P first, then correspondingnative4K; original4K queue continues."
+    "priority": "Repair768P first, then correspondingnative4K; original4K queue continues.",
+    "status": "768p-repaired-and-full-film-reviewed-corresponding4k-pending",
+    "sourceReview": "production/S05-saddle-768p-source-review-v12.json",
+    "delivery": "delivery-plan-v12-768p.json"
   }
 }

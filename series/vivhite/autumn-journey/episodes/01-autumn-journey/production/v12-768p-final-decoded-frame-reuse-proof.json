@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "vivhite-final-decoded-frame-reuse-proof-1",
+  "workerSha256": "c2cc301b25645c74655669572248bb96ca2ea85b09d18840f67a6ac7af7ed1a5",
+  "filmSha256": "95e2dabfceca23bd8187fd758f2b93857e875a8eee472ac3a5cd2ab34e4f6cc6",
+  "oldFilmSha256": "19f15cb2ceea266f53f9f0a5d5c32276b90c31928bc49d0d2687bd1e93701a6c",
+  "allFramesCompared": 6150,
+  "pixelExactSameFrames": 5841,
+  "differentFrames": 309,
+  "sameRangesInclusive": [
+    [
+      0,
+      380
+    ],
+    [
+      690,
+      6149
+    ]
+  ],
+  "differentRangesInclusive": [
+    [
+      381,
+      689
+    ]
+  ],
+  "method": "Sequential native BGR array equality of every final frame; no approximate similarity treated as exact reuse.",
+  "semanticAcceptance": false,
+  "humanContinuousPlayback": false
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "vivhite-bicycle-saddle-source-review-1",
+  "reviewedAt": "2026-11-19T13:53:08.119183+00:00",
+  "sourcePlanSha256": "f811b54093d815c9650ac896d29bf9ec9a33993f5939b3e2c2718ce5c85c58d9",
+  "sourceSha256": "d814fd0ade3bd7d62857e3366a19ef2ec51b6a74ed3c1b2e0ad2dc5a9caf19bf",
+  "generationJobId": "video_gen_b14366a59ee74dfa8351f18ab1719c92",
+  "decision": {
+    "id": "S05",
+    "sourceSha256": "d814fd0ade3bd7d62857e3366a19ef2ec51b6a74ed3c1b2e0ad2dc5a9caf19bf",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-19T13:53:08.112963+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 120,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v12-saddle-768p-001\\review\\video-768p\\S05-d814fd0ade-all-frames-01.png",
+        "sha256": "3c307c94a8cc071c957e5694322ae707cdbe5315e4504a2bf24dd02f70a2e47e",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v12-saddle-768p-001\\review\\video-768p\\S05-d814fd0ade-all-frames-02.png",
+        "sha256": "6a46569cabdb8435a2871652ce1dfce4cb203ba7df79947fea5549169517c3bb",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v12-saddle-768p-001\\review\\video-768p\\S05-d814fd0ade-all-frames-03.png",
+        "sha256": "e4e495fb8e0e15deb9eaef57241834b0d8d7a8f26a6a37bcb61613318e026386",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v12-saddle-768p-001\\review\\video-768p\\S05-d814fd0ade-all-frames-04.png",
+        "sha256": "405955189b6b09cf3b8e4725b4c148fa4e024ffd6fe02c3d08e78117451876e9",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v12-saddle-768p-001\\review\\video-768p\\S05-d814fd0ade-face-candidates.png",
+      "sha256": "de8f0cbf141f3d289e79ac4eea51d2fb8264f8b5d12148d852464320e4441fce",
+      "items": 5
+    },
+    "observation": "Actually viewed every native frame0to119 in4 ordered whole-scene JPEG contact pages; native whole first/last frames also viewed. All120 saddle/seatpost/hip crops in cycle-native-r2/saddle pages1to15, all120 legs/cranks crops in cycle-native-r1/legs-cranks pages1to15, and all120 sticker crops in cycle-native-r2/sticker pages1to15 actually viewed. These are original-frame crops/contact viewing copies, not regenerated evidence. The earlier r1 saddle/sticker crop boxes lose peripheral details during camera drift; r2 expands those areas. Legs/cranks contact crops also clip peripheral portions later in the shot; whole-scene pages and native last-frame context were examined together. All13 detector boxes from13 frames viewed in one native-crop contact page: forest blur, seat tube, crank/bottle cage and white legwear; no observed human face. Compared complete original M09-sticker-v1 master, the newly generated first frame and actual video first/last whole frames. One waist-down feminine white/deep-violet/gold costume, white legwear and purple boots remains; no head/face/chin/reflected human, added person, hand or extra leg observed. A visible black padded saddle supports the seated hips throughout; metal saddle rails, fixed clamp and exposed seatpost remain connected to the frame seat tube. No observed saddle disappearance, unsupported standing pose or floating pelvis. Two legs alternate continuously from the beginning; two boots follow opposing pedals around one bottom bracket. Pedal platforms stay beneath their corresponding soles as knees alternate flexion; some low pedal/boot positions naturally leave the original lower image edge. No observed foot swap, third leg, detached foot, impossible joint reversal or pedal teleport. Cadence is slower than the prompt target and is not counted as exactly three full cycles. Frame/fork/hubs remain coherent; wheel reflectors progress around the hubs, road/leaf litter and tree trunks move continuously with tracking parallax. The33 numerical cut candidates are high motion changes examined in the all-frame sequence, not33 observed cuts; no observed background reset or hard scene replacement. The small down-tube sticker remains attached with fixed open violet/pink eyes, round glasses, pale-lilac hair, blue butterfly and white/violet costume. No observed autonomous blink, eye collapse, expression flip, crawling outline or sticker slide. Fine star-iris/line details are limited by native print size; this is not a pixel-identical full-master reproduction. No postprocessing, anatomy patch, frame freeze, retiming or interpolation was applied. Full5s120native frames will occupy the original150final frames420to569 at14to19seconds. Other47shot durations/start positions and full205s6150-frame timeline remain unchanged. This accepts only these exact S05 source bytes after assistant frame-image review; no complete-film, human continuous playback, hearing or user aesthetic acceptance is asserted.",
+    "decision": "accepted",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "passed"
+  },
+  "wholeSceneNativeFramesActuallyViewed": 120,
+  "wholeScenePagesActuallyViewed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "nativeWholeFramesActuallyViewed": [
+    0,
+    119
+  ],
+  "saddleNativeFramesActuallyViewed": 120,
+  "legsCranksNativeFramesActuallyViewed": 120,
+  "stickerNativeFramesActuallyViewed": 120,
+  "regionPagesActuallyViewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "candidateBoxesActuallyViewed": 13,
+  "numericalCutCandidatesActuallyChecked": 33,
+  "inspectionManifests": [
+    {
+      "path": "assets/generated/production-v12-saddle-768p-001/review/cycle-native-r1/manifest.json",
+      "sha256": "fb5cd2494434310993017fc492285c81c11000a278a901fbc3d1d7cb6e457e6d"
+    },
+    {
+      "path": "assets/generated/production-v12-saddle-768p-001/review/cycle-native-r2/manifest.json",
+      "sha256": "2ba4542bf1bddfc92e3940e89576c7197a10a3ffc804f921174cd879002e5e35"
+    }
+  ],
+  "old768PAnd4KRejectionsRetained": true,
+  "allImagesRetained": true,
+  "formalFullFilmApproval": false,
+  "humanContinuousPlayback": false,
+  "humanListening": false,
+  "next": "Assemble and audit separate full768P, then regenerate native4K from these adopted768P bytes."
+}

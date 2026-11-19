@@ -1,6 +1,8 @@
 # 第一期：秋日旅程
 
-当前已交付为[v10原生768P](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v10-768p-20261118)，48镜、205秒／6150帧，包含首镜左手反手修订及v9帐门、摆正玩偶修订。[v11原生4K](production/production-v11-native-4k.md)已按用户要求启动，以全部v10采用源片再生成3840×2160，所有镜头时长、音乐、标题及原蝶翼速度锁定；768P保留。[实际进度](production/run-progress-v11-4k.json)不代表4K成片已验收。下列v7及更早条目为历史归档，其201秒时间轴与旧2K路线不作为当前制作参数。
+新[v12车座修订768P](production/production-v12-S05-saddle.md)已完成合成与复核，见[实际交付清单](delivery-plan-v12-768p.json)：只替换00:14—00:19的骑行源片，车座、座轨、固定夹与座管支撑明确；其他47镜源文件、全部时长、音乐、片名与14秒片尾保持。全片1344×768、30fps、205秒／6150帧，已完整解码并检查编码画面。旧768P、前24镜4K审核Release和所有候选均保留；旧S05的通过结论已撤回。对应4K只允许使用本轮实际采用的新源片另行再生成，原4K队列继续运行。新Release发布后另存实际上传及下载验证凭据。
+
+此前已交付的[v10原生768P](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v10-768p-20261118)完整保留，48镜、205秒／6150帧，包含首镜左手反手修订及v9帐门、摆正玩偶修订。[v11原生4K](production/production-v11-native-4k.md)已按用户要求启动，以全部v10采用源片再生成3840×2160，所有镜头时长、音乐、标题及原蝶翼速度锁定；S05另按v12修订替换。[实际进度](production/run-progress-v11-4k.json)不代表4K成片已验收。下列v7及更早条目为历史归档，其201秒时间轴与旧2K路线不作为当前制作参数。
 
 - [下载v7原生768P完整影片及导演稿（GitHub Release）](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v7-768p-20261117)；[v6 Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v6-768p-20261117)完整保留。
 - [当前导演案 v7](director-v7.md)：48镜、201秒；S20与片尾S48各连续10秒，其余46镜2–5秒。片尾中英文标题与片头完全一致，第三行献词延迟缓慢浮现。[实际制作记录](production/production-v7-768p.md)保留源片和编码检查范围。全部2K任务已取消，自动续跑关闭；[停止收据](production/stopped-2k-20261117.json)。此前预计节点仅作历史记录，不再作为2K交付承诺。
