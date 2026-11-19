@@ -4,7 +4,7 @@
 
 ## 当前运行与实测证据
 
-独立进程链实际为`svchost.exe → pythonw.exe → durable_video_controller.py → local_video_pipeline.py`，脱离对话终端的进程树。Windows任务处于`Running`，`ExecutionTimeLimit=PT0S`，没有开机或登录触发器；首次按需启动后由每分钟的周期触发器看护。单实例策略为`IgnoreNew`，运行中的任务不会因周期触发而重复启动。完成技术预览或收到明确停止标记时，控制器会尝试禁用看护任务，结果写入`watchdogDisabled`。
+首次部署的独立进程链实际为`svchost.exe → pythonw.exe → durable_video_controller.py → local_video_pipeline.py`，脱离对话终端的进程树。Windows任务处于`Running`，`ExecutionTimeLimit=PT0S`，没有开机或登录触发器；首次按需启动后由每分钟的周期触发器看护。单实例策略为`IgnoreNew`，运行中的任务不会因周期触发而重复启动。2026-11-20已切换至下面所述的009配置：原批次只收齐源片、检查图片并推送检查点，随后禁用自身看护；正式影片另用通过审核的素材装配。
 
 实际故障注入只终止了原对话终端下的本地轮询客户端，不取消服务端任务。独立执行器在约15秒内启动新客户端，新客户端的父进程是独立执行器。服务端继续相同任务`video_gen_d9e799b6cbfd4b91a34d71e006dbb267`，创建时间及完整请求指纹保持不变；队列只见这一个原任务，没有重复提交。重复启动同名Windows任务后，控制器与客户端PID均保持原值。
 
@@ -22,9 +22,9 @@
 2. 下载原始视频及音轨，核对服务端哈希，保存规范化24fps源片、完整请求、日志、轮询及失败材料。
 3. 解码全部完整源帧，导出动作、场景变化和人脸候选检查图片；这些机器候选不代表内容通过。
 4. 将完整源片的检查图片与不含私有人格的生成清单按路径提交、推送Git。有其他已暂存文件时延后检查点，避免混入其他工作；Git失败不终止视频生成。
-5. 48镜齐备后自动合成完整**未审4K技术预览**：3840×2160、30fps、205秒／6150帧，使用同一音乐、标题及全部镜头时长，并完整解码核对。
+5. 009配置中，48镜齐备并核对完整源帧及已推送检查点后，停在`complete-sources-awaiting-semantic-review`。不自动合成包含旧S05的技术预览，也不授予内容通过。新版完整影片由下述v12素材导入与正式装配流程制作。
 
-完整预览输出在仓库外：
+旧配置的完整未审预览预定输出在仓库外；009不会自动创建它：
 
 ```text
 ../vivhite-analysis-output/vivhite/autumn-journey/
@@ -41,7 +41,7 @@
 
 - `metadata/durable-controller-config.json`：本机路径、固定版本指纹和启动参数，不提交这份本地配置。
 - `metadata/scheduled-task.xml`：实际Windows任务定义的导出副本。
-- `runtime/controller-008/`：当前控制器、生成客户端、进度导出和技术预览的冻结代码。001至007全部保留，配置核对保留的实际文件。后续仓库改代码不会热改正在运行的任务。
+- `runtime/controller-009/`：当前只收齐源片的控制器与进度导出冻结代码。实际生成客户端仍运行008，命令和进程未更换；001至008全部保留。后续仓库改代码不会热改正在运行的任务。
 - `controller.json`：控制器及客户端PID、创建时间、心跳、重启次数和当前阶段。
 - `logs/durable-controller.log`与`logs/durable-generation-*.log`：独立日志，不依赖对话输出。
 - `recovery-test/`：实际中断实验前后记录；`attention.json`出现时应阅读具体失败，不把它视为通过。
@@ -55,8 +55,8 @@
 ./scripts/start-durable-video-task.ps1 -Configuration `
   D:/workspace/vivhite-analysis-output/vivhite/autumn-journey/production-v11-native-4k-001/metadata/durable-controller-config.json
 
-Get-ScheduledTask -TaskName Vivhite-Autumn-Journey-v11-4K
-Get-ScheduledTaskInfo -TaskName Vivhite-Autumn-Journey-v11-4K
+Get-ScheduledTask -TaskName Vivhite-Autumn-Journey-v11-4K-sources
+Get-ScheduledTaskInfo -TaskName Vivhite-Autumn-Journey-v11-4K-sources
 ```
 
 启动脚本遇到同名无关任务会拒绝覆盖；同一任务已运行时不会再启动第二个执行器。停止本轮时，先在运行目录写入明确的`control/stop.json`，控制器据此停止本地客户端；服务端仍在运行的本项目任务需另行明确取消。不要仅杀轮询进程来表达停止意图，正常恢复策略会重新接管它。
@@ -79,9 +79,17 @@ Get-ScheduledTaskInfo -TaskName Vivhite-Autumn-Journey-v11-4K
 
 对应完整4K的素材导入另由[`materialize-native4k-sources-v12.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/materialize-native4k-sources-v12.py)负责：48镜逐一指定来源，S05只认独立返工，其余47镜沿用原生成任务及实际审核选择。它先核对**整批**通过决定、全部源帧证据、原生尺寸、完整解码报告、真实请求／输入／下载哈希和修订收据，再调用已有导入器复制到新装配目录。不提交HTTP任务，不修改旧计划或旧视频，不补写内容通过。
 
-新装配计划须保持每镜原定位置与时长、205秒／6150帧、标题和献词，S05仅将独立返工的镜头位置放回420帧，其余47镜对象不能改变。`build_plan()`只构造待审候选，正式装配仍需全部实际素材及本期角色／披露审核；不能把这个候选当作新的48镜生成任务提交。原控制器可能因旧S05已拒收而阻止旧计划的完整预览，这是正确拦截，不能改成放行旧素材。
+新装配计划须保持每镜原定位置与时长、205秒／6150帧、标题和献词，S05仅将独立返工的镜头位置放回420帧，其余47镜对象不能改变。`build_plan()`只构造待审候选，正式装配仍需全部实际素材及本期角色／披露审核；不能把这个候选当作新的48镜生成任务提交。重新检查实际冻结的008预览代码后发现：修订素材分支有绑定检查，但原始素材分支不会因为拒收决定而停止，不能依赖它拦住旧S05。009因此明确关闭原批次自动预览；v12导入器另要求48份实际采用决定，且S05仅认独立返工目录。
 
 2026-11-20凌晨新增的[5项导入测试](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/test_materialize_native4k_v12.py)已通过。对当前真实未齐素材的调用也因新版S05尚无采用决定而在创建新装配目录前拒绝，未回填旧版，见[实测收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/native4k-v12-assembly-preflight.json)。这不代表48份4K素材已经齐备或最终装配验收通过。骑行专用全帧机械检查见[后处理文档](autumn-journey-video-postprocessing.md#骑行机械结构的返工与检查)。
+
+### 009：原批次停止自动采用旧骑行镜头
+
+2026-11-20北京时间06:29部署009：保留008和全部旧配置，只替换本地守护，采用已有的`generationOnly: true`策略。实际生成客户端PID `201936`及创建时间不变，48份任务ID、请求指纹、提交计划、排队窗口32与60秒轮询均未改变。独立新版S05任务及其守护也保持原样。没有停止或重新提交任何模型任务。
+
+新的Windows任务为`Vivhite-Autumn-Journey-v11-4K-sources`，沿用每分钟看护、`IgnoreNew`及不限时运行。旧同名历史任务仅禁用后续触发并保留定义；没有停止生成客户端的进程树。新控制器已实际接管原客户端，完整源片的解码、图片保存及Git检查点继续执行。配置、旧心跳、旧任务定义与全部任务绑定归档在运行目录`recovery-history/20261120-source-only-controller-009/`。
+
+[部署实测收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/source-only-controller-009-v11-4k.json)记录新旧配置指纹与接管检查。本次实际运行现有控制器恢复测试10项通过；没有为此中断渲染或重做故障注入，也没有把检查图片已导出等同于画面已审通过。
 
 ## 2026-11-18实际故障与修复
 

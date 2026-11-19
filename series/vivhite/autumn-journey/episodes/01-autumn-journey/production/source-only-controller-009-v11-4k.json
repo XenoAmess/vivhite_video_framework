@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "vivhite-source-only-controller-deployment-1",
+  "verifiedAt": "2026-11-19T22:30:54.059275+00:00",
+  "beforeConfigSha256": "92eec1a0dea7a0a78b4dfe2b879d3272407c0235def5310d97a675d2951aff49",
+  "afterConfigSha256": "be2a885960ad91de90fd39308dcd592aee001f94e3b36057b6a901352f040223",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "oldControllerPid": 64692,
+  "newControllerSnapshot": {
+    "schemaVersion": "vivhite-durable-video-controller-1",
+    "pid": 200360,
+    "status": "watching-active-worker",
+    "snapshotAt": "2026-11-19T22:30:47.007114+00:00",
+    "configSha256": "be2a885960ad91de90fd39308dcd592aee001f94e3b36057b6a901352f040223",
+    "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+    "resumeAttempts": 0,
+    "worker": {
+      "pid": 201936,
+      "creationTicks": 134395062559242000
+    },
+    "workerKind": "generation",
+    "schedulerTask": "Vivhite-Autumn-Journey-v11-4K-sources",
+    "completedSources": 33,
+    "remoteCancellationAllowed": false,
+    "semanticAcceptance": "never-automatically-granted"
+  },
+  "oldTaskRetainedDisabled": "Vivhite-Autumn-Journey-v11-4K",
+  "newScheduledTask": "Vivhite-Autumn-Journey-v11-4K-sources",
+  "generationOnly": true,
+  "sourceCompletionRequiresFullFrameReportsAndPushedGitCheckpoint": true,
+  "automaticOldPlanPreviewDisabled": true,
+  "generationCommandUnchanged": true,
+  "generationClientUnchanged": {
+    "pid": 201936,
+    "creationTicks": 134395062559242000
+  },
+  "all48ExistingTaskBindingsUnchanged": true,
+  "submissionWindow": 32,
+  "pollSeconds": 60,
+  "replacementS05ControllerUnchanged": true,
+  "replacementS05Snapshot": {
+    "schemaVersion": "vivhite-durable-video-controller-1",
+    "pid": 233464,
+    "status": "watching-active-worker",
+    "snapshotAt": "2026-11-19T22:30:52.263154+00:00",
+    "configSha256": "41e307405a9f78bf006a98d6676a60e89f05684f51915d9098ee2e5228a71c4a",
+    "sourcePlanSha256": "f7d10a7c80e72a02bbf541b4109871be0e4845653c4ada12075e4b9de6b63842",
+    "resumeAttempts": 0,
+    "worker": {
+      "pid": 211436,
+      "creationTicks": 134395741852180799
+    },
+    "workerKind": "generation",
+    "schedulerTask": "Vivhite-Autumn-Journey-v12-S05-4K",
+    "completedSources": 0,
+    "remoteCancellationAllowed": false,
+    "semanticAcceptance": "never-automatically-granted"
+  },
+  "controllerRuntimeSha256": "685328f6924ab1322f1411a93be1f9f3b9ea01d19e023afd626f110ca7dc7b74",
+  "scheduledTaskDefinitionSha256": "770aed740b7013ee52d8562836dffa252d5f8dcdd7832ccb8087c7ff929a04ef",
+  "existingRecoveryTestsActuallyRun": 10,
+  "actualInterruptionKillTestPerformed": false,
+  "httpRequestsIssuedByDeployment": 0,
+  "remoteTasksCancelled": 0,
+  "remoteTasksResubmitted": 0,
+  "semanticAcceptanceGranted": false,
+  "assemblyPolicy": "Use accepted v12 selections: replacement S05 plus the other 47 original tasks; preserve all 205 seconds and 6150 frames."
+}
