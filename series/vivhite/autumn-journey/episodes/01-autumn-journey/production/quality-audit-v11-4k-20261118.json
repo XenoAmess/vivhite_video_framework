@@ -979,14 +979,56 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S22",
+      "sourceSha256": "64caef08a7d982b61367f5c6d8d66bf005815b76cf8720f1b097ac796c71bc7c",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-19T07:24:19.807855+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S22-reference-badge-v1\\inspection\\S22-64caef08a7-all-frames-01.png",
+          "sha256": "9e3323bdc4130753ee60a8940f27f33a435e6039e1b181ea839befc9b0891f5e",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S22-reference-badge-v1\\inspection\\S22-64caef08a7-all-frames-02.png",
+          "sha256": "850381353295fd8f8bf76303b813b8ec6aebc932fc26f5fce7ba12ff59369185",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S22-reference-badge-v1\\inspection\\S22-64caef08a7-all-frames-03.png",
+          "sha256": "b5c02a95f15fce7059aaa65672e0f6a81c9d8e6b4791cc4fe135b44f4579805d",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S22-reference-badge-v1\\inspection\\S22-64caef08a7-all-frames-04.png",
+          "sha256": "94e1628edf79e46c8a225e59462d4f05f705817a812f6eddf40576a8cf796ce0",
+          "items": 24
+        }
+      ],
+      "faceEvidence": null,
+      "observation": "Actually viewed all120 raw and corrected whole-scene thumbnails, all120 corrected native badge crops through8JPEG pages, raw badge crops0to31 and112to119 (40frames), raw native whole frame0, corrected native whole frames0/24/119, actual768p input native frames0/16/28/119, complete M05 artwork, raw face/grid and three first-frame trials via contact page. Trial03 full native context was subsequently viewed through its same-size JPEG; original12MB PNG was retained but omitted by image tool and not counted as individually viewed. Both source inspections have zero detector boxes; whole-scene viewing separately found no real human face, head, added person or limb. Original unoccupied snow path, bag, drops and foreground snow motion preserved; snow at badge top/near its left rim remains, with no observed new masking seam or frozen particle. Fixed OPEN diamond/star-pattern violet-pink irises, fine complete gold glasses, original face proportions and mouth restored; no blink, drifting eyes, double mouth/lens or obvious halo observed in full corrected detail sequence. Mask1.9 includes face/fringe/mouth, not only irises, with mother-coordinate bottom900/feather35 excluding lower neck/chest. Current-frame reference projection, no whole-prop first-frame template, one CRF16 encoding directly from raw, no retiming/interpolation or new artwork. Raw print frames32to111 exported but not counted as viewed. Full5-second/120native-frame source preserved; original first72native frames/3seconds used at final2670to2759. Assistant frame-image review, not continuous human playback, listening, user aesthetic acceptance or complete-film approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Twenty-one current selections reviewed; fourteen original rejections retained. Rejected S20 v1 complete240 and S19 v1 partial24 distinguished.",
-  "reviewedSourceCount": 21,
-  "acceptedSourceCount": 21,
+  "scope": "Twenty-two current selections reviewed; fifteen original rejections retained. Earlier rejected corrections retain distinct full/partial review scopes.",
+  "reviewedSourceCount": 22,
+  "acceptedSourceCount": 22,
   "rejectedCurrentSourceCount": 0,
-  "rejectedHistoricalSourceCount": 14,
-  "pendingSources": 27,
+  "rejectedHistoricalSourceCount": 15,
+  "pendingSources": 26,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1156,10 +1198,22 @@
       "inspectionReportSha256": "e69aa482850da6041ab259d46ea0c9e563bfce3a1b7f70bedf967a5761444ec1",
       "selectedAt": "2026-11-19T06:05:42.912715+00:00",
       "reason": "All120 raw and corrected whole-scene frames, all120 corrected face-detail frames, all19 raw and17 corrected detector boxes, corrected native first/last frames, actual input first frame and original M04 master actually reviewed."
+    },
+    "S22": {
+      "path": "corrections/S22-reference-badge-v1.mp4",
+      "sha256": "64caef08a7d982b61367f5c6d8d66bf005815b76cf8720f1b097ac796c71bc7c",
+      "parent": "sources/S22.mp4",
+      "parentSha256": "d4566a24e7f6209319da5906c408e7ca04fa3fd0af9c5fb67e4172690c599d28",
+      "receipt": "corrections/S22-reference-badge-v1.json",
+      "receiptSha256": "7d288a88d4a9cee52e3eda33fcce87acd5a09a5580e427559564b86041d41860",
+      "inspectionReport": "corrections/S22-reference-badge-v1-inspection/S22.json",
+      "inspectionReportSha256": "9fae3f2367ff76c89fed8b6881198a703c71cdfcb0d0c023be50d8ce52874924",
+      "selectedAt": "2026-11-19T07:24:19.725812+00:00",
+      "reason": "Both120-frame whole scenes, all120 corrected badge crops,40raw badge crops, three corrected native whole contexts, actual input and original M05 master reviewed; zero detector boxes in both versions."
     }
   },
-  "snapshotAt": "2026-11-19T06:05:43.016482+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 4680,
+  "snapshotAt": "2026-11-19T07:24:19.819289+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 4920,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -1174,6 +1228,8 @@
     "S20RejectedV1": 240,
     "S20AdoptedV2": 240,
     "S21Raw": 120,
-    "S21AdoptedV1": 120
+    "S21AdoptedV1": 120,
+    "S22Raw": 120,
+    "S22AdoptedV1": 120
   }
 }
