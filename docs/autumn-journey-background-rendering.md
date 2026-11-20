@@ -95,7 +95,7 @@ Get-ScheduledTaskInfo -TaskName Vivhite-Autumn-Journey-v11-4K-sources
 
 ## 2026-11-20发布时间估算与已审核镜头缓存
 
-按S25—S38共14份完整本地记录，从首次运行到下载完成的单窗口镜头中位耗时约76.17分钟。当前S39运行，余下S40—S47、14秒S48及另排的新版S05计入预算；S48暂按4个窗口估算，尚不是该任务的实测结果。预计北京时间11月21日05:30前后收齐源片，再预留3—5小时完成最后几镜检查、205秒合成、完整检查及Release上传，向用户给出的发布窗口为11月21日08:00—11:00。这个窗口以服务、队列顺序和近期速度持续正常且没有新增远程返工为前提。计算数据和假设保存于[估算收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/release-estimate-v12-4k-20261120.json)，不是交付验收或保证时间。
+按S25—S38共14份完整本地记录，从首次运行到下载完成的单窗口镜头中位耗时约76.17分钟。估算时S39运行，余下S40—S47、14秒S48及另排的新版S05计入预算；S48暂按4个窗口估算，尚不是该任务的实测结果。预计北京时间11月21日05:30前后收齐源片，再预留3—5小时完成最后几镜检查、205秒合成、完整检查及Release上传，向用户给出的发布窗口为11月21日08:00—11:00。这个窗口以服务、队列顺序和近期速度持续正常且没有新增远程返工为前提。计算数据和假设保存于[估算收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/release-estimate-v12-4k-20261120.json)，不是交付验收或保证时间。
 
 等待远端生成期间，用[已审核镜头缓存工具](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/prepare-reviewed-native4k-segments-v12.py)在独立的`production-v12-native-4k-segment-cache-001`准备S01—S38中已采用的37镜，明确排除旧S05。工具在创建目录前核对整批实际采用结论、源片／父片、任务、完整解码报告和所有整景证据指纹；没有修订选择的原片同样必须有明确的`accepted`结论，不能借用旧预览工具的原片回退路径。运行不增加HTTP请求，不提交任务、不合成影片，也不写新的语义通过结论。
 
@@ -108,6 +108,10 @@ S39完成实际源片审阅后，另存`production-v12-native-4k-segment-cache-0
 S40修订版完成全部120个源帧的实际复审后，单独保存第三批`production-v12-native-4k-segment-cache-003`，未改前两批。新增原定5秒／150个30fps帧，全部原生尺寸帧的机器对照最低YUV PSNR为48.79dB，实际视频、收据、比较统计及程序均保留，见[第三批收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/reviewed-native4k-segment-cache-v12-003.json)。三批累计39镜／159秒／4770帧；仍是分段技术缓存，未合成完整影片，也未授予编码缓存新的语义或成片通过结论。
 
 剩余S40—S48另有[局部证据准备进程](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S40-S48-local-print-detail-preparer-v12.py)，实际运行代码的相同字节已入库，见[启动及绑定记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S40-S48-local-print-detail-preparation-v12.json)。它每60秒只检查本地下载结果，核对既定任务、输入、源片及完整解码报告，再提取各镜周边图案；片尾则导出完整336帧的蓝蝶原生局部。不请求HTTP、不改视频、不改变渲染队列，不自动给出画面通过结论。区域坐标来自实际768P输入首帧，未来4K若移动或出裁切边界，必须另行扩大检查；手部与多窗口接缝仍由后续实际画面审阅处理。启动记录只证明进程开始等待，不证明待生成镜头已经检查。
+
+北京时间16:13，S40／S41材料与实际审阅已完成；本地日志显示服务端先运行S48，S42—S47仍等待。旧整景／候选及局部两个准备循环都按镜号等待，会使先完成的片尾继续等前面的镜头。现用[按完成顺序准备材料的程序](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/prepare-ready-native-evidence-v12.py)接替剩余S42—S48：每60秒检查全部本地待办，哪段下载和完整解码绑定先齐就先导出整景、全部原生候选和既定周边局部。原区域、源片和检查程序保持绑定；准备成功仍不代表实际看过或采用。
+
+只停止了两个旧材料观察器的四个Python父／子进程，并保存原代码、日志及最后状态；两组生成客户端／控制器的进程身份、配置和全部49份已提交任务／请求指纹均实际复核未变。新进程以隐藏窗口独立运行，旧版本保留，不调用HTTP或重新排队。启动与实测范围见[部署记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/ready-order-native-evidence-preparation-v12.json)。[三项回归检查](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/test_prepare_ready_native_evidence_v12.py)验证后号片尾不被前号排队镜头挡住、任务错绑拒绝，以及报告未齐时等待／源片改变时拒绝；当前七份真实待办也完成只读绑定预检，未伪造未来画面通过。
 
 后续只可在全部48镜通过正式导入后，把与导入源片SHA-256、原定30fps帧数、尺寸及配方完全一致的缓存和收据复制到新合成目录的`segments/`，由`local_video_finisher.py`再次核验。缓存不能代替最终实际素材的人格／披露绑定检查，也不能将源片审核冒充编码成片、音轨或字幕审核。运行进程独立于对话，日志及启动指纹保留在原4K运行目录；渲染守护和服务端队列配置不变。
 

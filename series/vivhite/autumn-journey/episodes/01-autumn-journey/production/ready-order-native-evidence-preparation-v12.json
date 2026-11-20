@@ -1,0 +1,177 @@
+{
+  "schemaVersion": "vivhite-ready-order-local-evidence-deployment-1",
+  "verifiedAt": "2026-11-20T08:16:26.380066+00:00",
+  "reason": "Server began S48 while S42toS47 remain queued. Earlier local preparation loops waited in shot-number order; replace only those observers with a ready-order observer.",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "workerSha256": "259e6ae651483fdcbc86c102cea43b4bbedf8689ce3ccc9c0ac97c6b40db482f",
+  "testWorkerSha256": "97274ec45054263be9c6102f3c29a929c6c7a03ee55a168376a5da7faf673591",
+  "deploymentWorkerSha256": "ec9c1e765ce864a39bad3df2be2215ae169f736d774af4b730e14d4429d5d28b",
+  "actualStartupStateSha256": "dc006c825bcc7c3b545ad3d50e17be84deb149cb57d17e022a96697deb2a65cc",
+  "actualStartupState": {
+    "schemaVersion": "vivhite-ready-order-local-evidence-preparation-1",
+    "startedAt": "2026-11-20T08:13:21.588730+00:00",
+    "workerSha256": "259e6ae651483fdcbc86c102cea43b4bbedf8689ce3ccc9c0ac97c6b40db482f",
+    "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+    "jobs": {
+      "S42": "video_gen_64ad79ab21e8414ab490b9690a82bc60",
+      "S43": "video_gen_564aca24106741ce9e1b1284b61212a5",
+      "S44": "video_gen_eddf0b38420444d6b6b1f79661cabab7",
+      "S45": "video_gen_3a8c19036c0b470ca05ef0854241bb4d",
+      "S46": "video_gen_f86c869206194fb89a41e28dffbe0d9a",
+      "S47": "video_gen_e31e6ab68d6e452b96aa0c098137656e",
+      "S48": "video_gen_505d3a78c78a42d7b933b6519e1007e9"
+    },
+    "inspectionWorkers": {
+      "prepare-review-viewing-copies-v11.py": "401d6a91290cfb202a45ff33fdc6ade4b50a463323bf770396cce23ffbd1aba3",
+      "extract-native-candidates-v11.py": "a8701bef967755c92b0f8e8bec2e403384b110e42c2f1c49e554505e94ec9a38",
+      "inspect-print-details-v11.py": "78a914b18a99c94e79187fb7641bcf5637b5cd8503723aacce860093ee066257",
+      "inspect-motion-details-v11.py": "591f801032ed61b495b3b1e03a955ec0539cd4bdfe65ef1b016997c0ffe25769"
+    },
+    "regions": {
+      "S42": [
+        [
+          "cup",
+          [
+            836,
+            330
+          ],
+          55
+        ]
+      ],
+      "S43": [
+        [
+          "card",
+          [
+            735,
+            514
+          ],
+          50
+        ]
+      ],
+      "S44": [
+        [
+          "pouch",
+          [
+            320,
+            344
+          ],
+          65
+        ]
+      ],
+      "S45": [
+        [
+          "keyring",
+          [
+            620,
+            326
+          ],
+          75
+        ]
+      ],
+      "S46": [
+        [
+          "sticker",
+          [
+            402,
+            168
+          ],
+          60
+        ]
+      ],
+      "S47": [
+        [
+          "plush",
+          [
+            740,
+            365
+          ],
+          110
+        ]
+      ],
+      "S48": [
+        [
+          "butterfly",
+          [
+            3300,
+            1500,
+            3840,
+            2160
+          ],
+          null
+        ]
+      ]
+    },
+    "status": "waiting-local-source",
+    "pendingShots": [
+      "S42",
+      "S43",
+      "S44",
+      "S45",
+      "S46",
+      "S47",
+      "S48"
+    ],
+    "shots": [],
+    "noHttpRequests": true,
+    "sourcePixelsModified": false,
+    "semanticAcceptance": false,
+    "actualImageViewingClaim": false,
+    "formalFilmApproval": false
+  },
+  "launcherPid": 236192,
+  "observedActualPythonPid": 74080,
+  "oldEvidenceObserverPidsIntentionallyStopped": [
+    186648,
+    20488,
+    194336,
+    111776
+  ],
+  "oldEvidenceFilesAndLastStateRetained": true,
+  "renderProcessIdentitiesUnchanged": [
+    {
+      "creationTicks": 134396009619684974,
+      "processId": 200360
+    },
+    {
+      "creationTicks": 134395062559242000,
+      "processId": 201936
+    },
+    {
+      "creationTicks": 134395749081642591,
+      "processId": 233464
+    },
+    {
+      "creationTicks": 134395741852180799,
+      "processId": 211436
+    }
+  ],
+  "renderControllersActuallyRechecked": [
+    {
+      "run": "production-v11-native-4k-001",
+      "controllerPid": 200360,
+      "workerPid": 201936,
+      "workerCreationTicks": 134395062559242000,
+      "configSha256": "be2a885960ad91de90fd39308dcd592aee001f94e3b36057b6a901352f040223",
+      "actualStatus": "watching-active-worker"
+    },
+    {
+      "run": "production-v12-S05-native-4k-001",
+      "controllerPid": 233464,
+      "workerPid": 211436,
+      "workerCreationTicks": 134395741852180799,
+      "configSha256": "41e307405a9f78bf006a98d6676a60e89f05684f51915d9098ee2e5228a71c4a",
+      "actualStatus": "watching-active-worker"
+    }
+  ],
+  "submittedJobAndRequestBindingsRechecked": 49,
+  "noHttpRequestsForDeploymentOrPreparation": true,
+  "noRemoteTaskCancellationOrResubmission": true,
+  "noQueueReordering": true,
+  "targetedRegressionTestsPassed": 3,
+  "actualSevenPendingBindingsPassWithNoReadySource": true,
+  "futureOutputActuallyViewed": false,
+  "semanticAcceptance": false,
+  "formalFilmApproval": false,
+  "archiveRelativeToRun": "recovery-history/20261120-ready-order-evidence-002",
+  "scope": "Startup/ordering and unchanged generation bindings only. No assertion later sources are completed, visually accepted or included in an approved film."
+}
