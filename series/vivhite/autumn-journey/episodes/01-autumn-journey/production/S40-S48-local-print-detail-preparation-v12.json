@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "vivhite-local-detail-preparation-launch-receipt-1",
+  "recordedAt": "2026-11-20T05:42:46.246686+00:00",
+  "publicWorker": "production/S40-S48-local-print-detail-preparer-v12.py",
+  "workerSha256": "ddd31e77b795881253eb795e36081337afa784081b898071b2cfff23095f532e",
+  "actualRunningWorker": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\logs\\prepare-S40-S48-local-print-details-001.py",
+  "launcherPid": 111776,
+  "startedAt": "2026-11-20T05:20:29.963784+00:00",
+  "statusAtVerification": "waiting-local-source",
+  "boundJobs": {
+    "S40": "video_gen_b74c18d97b93418b90dca1920a5c2b97",
+    "S41": "video_gen_90f5a5d1b73048d18e73facd5add3068",
+    "S42": "video_gen_64ad79ab21e8414ab490b9690a82bc60",
+    "S43": "video_gen_564aca24106741ce9e1b1284b61212a5",
+    "S44": "video_gen_eddf0b38420444d6b6b1f79661cabab7",
+    "S45": "video_gen_3a8c19036c0b470ca05ef0854241bb4d",
+    "S46": "video_gen_f86c869206194fb89a41e28dffbe0d9a",
+    "S47": "video_gen_e31e6ab68d6e452b96aa0c098137656e",
+    "S48": "video_gen_505d3a78c78a42d7b933b6519e1007e9"
+  },
+  "boundSourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "inspectionWorkerSha256": {
+    "inspect-print-details-v11.py": "78a914b18a99c94e79187fb7641bcf5637b5cd8503723aacce860093ee066257",
+    "inspect-motion-details-v11.py": "591f801032ed61b495b3b1e03a955ec0539cd4bdfe65ef1b016997c0ffe25769"
+  },
+  "regionsSelectedFromActualBoundInputFirstFrames": {
+    "S40": [
+      [
+        "sticker",
+        [
+          906,
+          375
+        ],
+        75
+      ]
+    ],
+    "S41": [
+      [
+        "plush",
+        [
+          643,
+          470
+        ],
+        80
+      ],
+      [
+        "badge",
+        [
+          378,
+          464
+        ],
+        45
+      ]
+    ],
+    "S42": [
+      [
+        "cup",
+        [
+          836,
+          330
+        ],
+        55
+      ]
+    ],
+    "S43": [
+      [
+        "card",
+        [
+          735,
+          514
+        ],
+        50
+      ]
+    ],
+    "S44": [
+      [
+        "pouch",
+        [
+          320,
+          344
+        ],
+        65
+      ]
+    ],
+    "S45": [
+      [
+        "keyring",
+        [
+          620,
+          326
+        ],
+        75
+      ]
+    ],
+    "S46": [
+      [
+        "sticker",
+        [
+          402,
+          168
+        ],
+        60
+      ]
+    ],
+    "S47": [
+      [
+        "plush",
+        [
+          740,
+          365
+        ],
+        110
+      ]
+    ],
+    "S48": [
+      [
+        "butterfly",
+        [
+          3300,
+          1500,
+          3840,
+          2160
+        ],
+        null
+      ]
+    ]
+  },
+  "statusFile": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\metadata\\S40-S48-local-print-detail-preparation-001.json",
+  "stdoutLog": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\logs\\S40-S48-local-detail-001.stdout.log",
+  "stderrLog": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\logs\\S40-S48-local-detail-001.stderr.log",
+  "actualCompletedSourceDetailCommands": 0,
+  "actualImageViewingClaim": false,
+  "semanticAcceptance": false,
+  "formalFilmApproval": false,
+  "noHttpRequests": true,
+  "sourcesModified": false,
+  "pollSeconds": 60,
+  "deadlineHours": 48,
+  "failedCommandLogsRetained": true,
+  "separateHandAndWindowJoinReviewStillRequired": true
+}
