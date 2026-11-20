@@ -105,6 +105,8 @@ Get-ScheduledTaskInfo -TaskName Vivhite-Autumn-Journey-v11-4K-sources
 
 S39完成实际源片审阅后，另存`production-v12-native-4k-segment-cache-002`，保持第一批缓存原样。新增该镜原定3秒／90帧，全部90个原生缓存帧机器对照最低YUV PSNR为44.23dB，输出和收据指纹复核通过，见[第二批收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/reviewed-native4k-segment-cache-v12-002.json)。两批共38镜／154秒／4620帧，各段独立保存；只有全部48镜正式导入通过后，才按相同源片哈希、帧数、编码配方及输出指纹合入最终缓存目录，并由合成器再次检查。当前没有绕过缺失的新S05拼成完整影片。
 
+S40修订版完成全部120个源帧的实际复审后，单独保存第三批`production-v12-native-4k-segment-cache-003`，未改前两批。新增原定5秒／150个30fps帧，全部原生尺寸帧的机器对照最低YUV PSNR为48.79dB，实际视频、收据、比较统计及程序均保留，见[第三批收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/reviewed-native4k-segment-cache-v12-003.json)。三批累计39镜／159秒／4770帧；仍是分段技术缓存，未合成完整影片，也未授予编码缓存新的语义或成片通过结论。
+
 剩余S40—S48另有[局部证据准备进程](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S40-S48-local-print-detail-preparer-v12.py)，实际运行代码的相同字节已入库，见[启动及绑定记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S40-S48-local-print-detail-preparation-v12.json)。它每60秒只检查本地下载结果，核对既定任务、输入、源片及完整解码报告，再提取各镜周边图案；片尾则导出完整336帧的蓝蝶原生局部。不请求HTTP、不改视频、不改变渲染队列，不自动给出画面通过结论。区域坐标来自实际768P输入首帧，未来4K若移动或出裁切边界，必须另行扩大检查；手部与多窗口接缝仍由后续实际画面审阅处理。启动记录只证明进程开始等待，不证明待生成镜头已经检查。
 
 后续只可在全部48镜通过正式导入后，把与导入源片SHA-256、原定30fps帧数、尺寸及配方完全一致的缓存和收据复制到新合成目录的`segments/`，由`local_video_finisher.py`再次核验。缓存不能代替最终实际素材的人格／披露绑定检查，也不能将源片审核冒充编码成片、音轨或字幕审核。运行进程独立于对话，日志及启动指纹保留在原4K运行目录；渲染守护和服务端队列配置不变。

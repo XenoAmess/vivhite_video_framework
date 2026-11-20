@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "vivhite-reviewed-native4k-segment-cache-receipt-1",
+  "verifiedAt": "2026-11-20T07:03:32.614523+00:00",
+  "cacheRun": "production-v12-native-4k-segment-cache-003",
+  "preparationStateSha256": "9b1d62757db545b770931c0044d93f2973c4c65e0193982a8e5a6586b82d597d",
+  "actualPreparation": {
+    "schemaVersion": "vivhite-reviewed-native4k-segment-cache-1",
+    "startedAt": "2026-11-20T07:02:38.622866+00:00",
+    "workerSha256": "90595064e9db93a41430901630a3447a44a61ab4564a8e66d22afcdda018bb98",
+    "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+    "requestedShots": [
+      "S40"
+    ],
+    "status": "complete-cache-awaiting-formal-import-and-film-review",
+    "segments": [
+      {
+        "id": "S40",
+        "identity": {
+          "sourceSha256": "ff32d05837882e8aed053afa6bc19a0ac9337a8271fe983f37eb1ae2a55a5fbf",
+          "frames": 150,
+          "width": 3840,
+          "height": 2160,
+          "recipe": "fps30-x264-fast-crf17-1"
+        },
+        "sha256": "ba1ddc79cd1b575730bcc0b410686d3749edc9b63a9c0fb5d516b75e5c4e1c55",
+        "receiptSha256": "047525805c32669198f9e1bac920de6fb40521c1d1d16e2c95cd968e155e46b3",
+        "argv": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-i",
+          "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\corrections\\S40-reference-sticker-v1.mp4",
+          "-map",
+          "0:v:0",
+          "-an",
+          "-vf",
+          "scale=3840:2160:force_original_aspect_ratio=increase,crop=3840:2160,fps=30",
+          "-frames:v",
+          "150",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "17",
+          "-pix_fmt",
+          "yuv420p",
+          "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-native-4k-segment-cache-003\\S40.partial.mp4"
+        ],
+        "elapsedSeconds": 14.390000000130385
+      }
+    ],
+    "semanticAcceptance": false,
+    "formalFilm": false,
+    "updatedAt": "2026-11-20T07:02:53.003014+00:00",
+    "completedSegments": 1,
+    "finishedAt": "2026-11-20T07:02:53.003527+00:00"
+  },
+  "allOutputAndReceiptHashesRechecked": true,
+  "totalFramesAcrossSeparateSegments": 150,
+  "secondsAcrossSeparateSegments": 5,
+  "allFrameMachineComparison": {
+    "comparisonFileSha256": "2479986b80fa8a034d0275b78b7ff8a471b718bb0d7b2fc36e983ff4577437c0",
+    "result": {
+      "schemaVersion": "vivhite-native4k-technical-segment-comparison-1",
+      "startedAt": "2026-11-20T07:03:10.014171+00:00",
+      "cachePreparationSha256": "9b1d62757db545b770931c0044d93f2973c4c65e0193982a8e5a6586b82d597d",
+      "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+      "workerSha256": "ad1a8c7462746a186a74597aee3f3f4b2cae892ff17c9c89699dc9922b3389ac",
+      "acceptedSourceGateWorkerSha256": "90595064e9db93a41430901630a3447a44a61ab4564a8e66d22afcdda018bb98",
+      "segments": [
+        {
+          "id": "S40",
+          "sourceSha256": "ff32d05837882e8aed053afa6bc19a0ac9337a8271fe983f37eb1ae2a55a5fbf",
+          "segmentSha256": "ba1ddc79cd1b575730bcc0b410686d3749edc9b63a9c0fb5d516b75e5c4e1c55",
+          "comparedFrames": 150,
+          "minimumNativeYuvPsnrDb": 48.79,
+          "meanNativeYuvPsnrDb": 50.512,
+          "perFrameStatsSha256": "42ac0eea2061c0045d69c1529bb4306f21cfba995f2e1aae43e3e34c14943f2d",
+          "decoderLogSha256": "eead4c731ddbf99d1349b486ee0d77ae6414edfdcb7fbd033400c6c64f47b506",
+          "argv": [
+            "ffmpeg",
+            "-v",
+            "info",
+            "-i",
+            "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\corrections\\S40-reference-sticker-v1.mp4",
+            "-i",
+            "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-native-4k-segment-cache-003\\S40.mp4",
+            "-filter_complex",
+            "[0:v]scale=3840:2160:force_original_aspect_ratio=increase,crop=3840:2160,fps=30,trim=end_frame=150,setpts=PTS-STARTPTS,format=yuv420p[reference];[1:v]setpts=PTS-STARTPTS[actual];[actual][reference]psnr=stats_file=S40.psnr.log:stats_version=2:shortest=1[out]",
+            "-map",
+            "[out]",
+            "-an",
+            "-f",
+            "null",
+            "-"
+          ]
+        }
+      ],
+      "status": "complete-machine-comparison-not-semantic-approval",
+      "semanticAcceptance": false,
+      "noHttpRequests": true,
+      "comparedFrames": 150,
+      "updatedAt": "2026-11-20T07:03:11.146869+00:00",
+      "finishedAt": "2026-11-20T07:03:11.147893+00:00",
+      "minimumNativeYuvPsnrDb": 48.79
+    },
+    "frames": 150,
+    "allStatsFilesRetained": true,
+    "scope": "All decoded native frames versus exact selected-source fps30 conversion; no new semantic or full-film approval."
+  },
+  "actualImageSequenceViewingOfEncodedCaches": false,
+  "formalFilmApproval": false,
+  "allNative24fpsSourcesRetained": true,
+  "combinedWithOtherCachesOnlyAfterFormalImport": true
+}
