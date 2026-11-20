@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "vivhite-raw-source-rejection-1",
+  "shotId": "S37",
+  "recordedAt": "2026-11-20T03:03:51.189574+00:00",
+  "planSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "sourceSha256": "ee171474f4b282bb9ac5c140d9a66ce446d2fa0de128f7fbffda292ed9152d4c",
+  "decision": {
+    "id": "S37",
+    "sourceSha256": "ee171474f4b282bb9ac5c140d9a66ce446d2fa0de128f7fbffda292ed9152d4c",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-20T03:03:51.179076+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 120,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S37-ee171474f4-all-frames-01.png",
+        "sha256": "16a0d41ed93ee14eb5214f70fba72c89fa4d692241a004bb5c918cf99ece56f8",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S37-ee171474f4-all-frames-02.png",
+        "sha256": "22cdc8ff8757b9726ae6b082220ebb8fcf8f76d25871e46ad3008b7410a90180",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S37-ee171474f4-all-frames-03.png",
+        "sha256": "f366825d17f8d4f1e70860be05ba818b6eb739560c630299c65d2942b7d68008",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S37-ee171474f4-all-frames-04.png",
+        "sha256": "3b3c997da496c56f14168377344302d3b3c72a0e541d1a36daf44fe88c36d007",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S37-ee171474f4-face-candidates.png",
+      "sha256": "cf8fb8ad366d7b59722eed29b7c9c6c34f11903999424c49225aae3e213f8022",
+      "items": 18
+    },
+    "observation": "Actually viewed all120 raw whole-scene frames via4 bound JPEG pages and native whole0/119, all120 raw print frames via8 JPEG pages and native print0/119. All120 raw original-hands-r2 crops from ROI[0,350,2350,1250] and all120 raw visible-legs crops from ROI[800,900,1800,2160] were actually viewed via30 native four-frame JPEG pages per region. Earlier narrower hand-r1 only40frames actually viewed; its full exports are retained without claiming full viewing. All169 raw detector boxes via11 JPEG pages actually viewed. These are the original hands, printed female face, clothing, grass and dirt/leaves, without an observed new real face or person. Complete originalM08 was actually reread; all120 actual768P input whole frames and native first frame were viewed and recorded; source/input fingerprints checked. One original head-out female figure in white/deep-violet/gold clothing carries the closed lavender zip pouch. One attached hand holds its upper corner, the other remains relaxed and partly leaves the left scene edge near the middle before returning. Four gripping fingers remain coherent with the wrist/cuff; the opposing thumb is behind or occluded. No observed extra hand, detached wrist, palm reversal, new person, real face/reflection or scene reset. Initial raised boot/sole lowers around1.1to1.3seconds during a gradual camera approach/tilt. Boots progressively fall below the frame while pale legs and skirt remain visible; not a complete alternating gait or all-frame ground-contact certification. Dirt path, dry grass, fence, hay bales and distant trees remain coherent. Printed eyes were already OPEN throughout. Raw fine star/diamond iris details and thin gold round glasses are smeared into glossy pink lens areas; the original small smile is absent. This is reference-appearance failure, not closed eyes or blinking. Full5seconds120native24fps frames and original147to152seconds/finalframes4410to4559 remain unchanged, as do all other shot lengths and205seconds6150frames. Soft/processed landscape and non-face print detail remain; no complete photographic-realism or pixel-perfect claim. Ordered-image QA by the assistant is not human continuous playback/listening, user aesthetic acceptance or formal full-film approval. Raw rejected for referenceAppearance; local original-face correction reviewed separately.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "actualWholeSceneFramesViewed": 120,
+  "actualNativeWholeFramesViewed": [
+    0,
+    119
+  ],
+  "actualPrintFramesViewed": 120,
+  "actualNativePrintFramesViewed": [
+    0,
+    119
+  ],
+  "actualNativeHandR2FramesViewed": 120,
+  "actualNativeVisibleLegFramesViewed": 120,
+  "actualCandidateBoxesViewed": 169,
+  "eyesWereAlreadyOpen": true,
+  "observation": "Actually viewed all120 raw whole-scene frames via4 bound JPEG pages and native whole0/119, all120 raw print frames via8 JPEG pages and native print0/119. All120 raw original-hands-r2 crops from ROI[0,350,2350,1250] and all120 raw visible-legs crops from ROI[800,900,1800,2160] were actually viewed via30 native four-frame JPEG pages per region. Earlier narrower hand-r1 only40frames actually viewed; its full exports are retained without claiming full viewing. All169 raw detector boxes via11 JPEG pages actually viewed. These are the original hands, printed female face, clothing, grass and dirt/leaves, without an observed new real face or person. Complete originalM08 was actually reread; all120 actual768P input whole frames and native first frame were viewed and recorded; source/input fingerprints checked. One original head-out female figure in white/deep-violet/gold clothing carries the closed lavender zip pouch. One attached hand holds its upper corner, the other remains relaxed and partly leaves the left scene edge near the middle before returning. Four gripping fingers remain coherent with the wrist/cuff; the opposing thumb is behind or occluded. No observed extra hand, detached wrist, palm reversal, new person, real face/reflection or scene reset. Initial raised boot/sole lowers around1.1to1.3seconds during a gradual camera approach/tilt. Boots progressively fall below the frame while pale legs and skirt remain visible; not a complete alternating gait or all-frame ground-contact certification. Dirt path, dry grass, fence, hay bales and distant trees remain coherent. Printed eyes were already OPEN throughout. Raw fine star/diamond iris details and thin gold round glasses are smeared into glossy pink lens areas; the original small smile is absent. This is reference-appearance failure, not closed eyes or blinking. Full5seconds120native24fps frames and original147to152seconds/finalframes4410to4559 remain unchanged, as do all other shot lengths and205seconds6150frames. Soft/processed landscape and non-face print detail remain; no complete photographic-realism or pixel-perfect claim. Ordered-image QA by the assistant is not human continuous playback/listening, user aesthetic acceptance or formal full-film approval. ",
+  "correctionAcceptance": false,
+  "fullFilmApproval": false
+}

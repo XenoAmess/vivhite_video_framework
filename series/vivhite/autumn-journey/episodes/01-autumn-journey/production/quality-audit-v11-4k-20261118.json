@@ -1661,14 +1661,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S37",
+      "sourceSha256": "12a2c85da3f08db6f5febecff156fed5c49dd77727584d7ed590742c91cb9936",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-20T03:03:51.515593+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-reference-pouch-v1\\inspection\\S37-12a2c85da3-all-frames-01.png",
+          "sha256": "32316cfce5753070a74f920666491f4fa545425840a99e8b525d77bb4714655e",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-reference-pouch-v1\\inspection\\S37-12a2c85da3-all-frames-02.png",
+          "sha256": "c4471777cfcf5b7081a1b5a401a81e43558c12a832969d618970667e1bc3a1a5",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-reference-pouch-v1\\inspection\\S37-12a2c85da3-all-frames-03.png",
+          "sha256": "400d3e95fcb83f3f43ef796b5e6f4e6792f9c1ea09394a2b555d620608b28efc",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-reference-pouch-v1\\inspection\\S37-12a2c85da3-all-frames-04.png",
+          "sha256": "b6fb4e8d3363d10eab9710cd49bb64bf19cb278b6882569d1817b8df408d4ec4",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-reference-pouch-v1\\inspection\\S37-12a2c85da3-face-candidates.png",
+        "sha256": "a4db1449efef087740653b41dd60162bbc9d2729565883cbd8ef15b5ebd8f380",
+        "items": 19
+      },
+      "observation": "Actually viewed all120 raw whole-scene frames via4 bound JPEG pages and native whole0/119, all120 raw print frames via8 JPEG pages and native print0/119. All120 raw original-hands-r2 crops from ROI[0,350,2350,1250] and all120 raw visible-legs crops from ROI[800,900,1800,2160] were actually viewed via30 native four-frame JPEG pages per region. Earlier narrower hand-r1 only40frames actually viewed; its full exports are retained without claiming full viewing. All169 raw detector boxes via11 JPEG pages actually viewed. These are the original hands, printed female face, clothing, grass and dirt/leaves, without an observed new real face or person. Complete originalM08 was actually reread; all120 actual768P input whole frames and native first frame were viewed and recorded; source/input fingerprints checked. One original head-out female figure in white/deep-violet/gold clothing carries the closed lavender zip pouch. One attached hand holds its upper corner, the other remains relaxed and partly leaves the left scene edge near the middle before returning. Four gripping fingers remain coherent with the wrist/cuff; the opposing thumb is behind or occluded. No observed extra hand, detached wrist, palm reversal, new person, real face/reflection or scene reset. Initial raised boot/sole lowers around1.1to1.3seconds during a gradual camera approach/tilt. Boots progressively fall below the frame while pale legs and skirt remain visible; not a complete alternating gait or all-frame ground-contact certification. Dirt path, dry grass, fence, hay bales and distant trees remain coherent. Printed eyes were already OPEN throughout. Raw fine star/diamond iris details and thin gold round glasses are smeared into glossy pink lens areas; the original small smile is absent. This is reference-appearance failure, not closed eyes or blinking. Full5seconds120native24fps frames and original147to152seconds/finalframes4410to4559 remain unchanged, as do all other shot lengths and205seconds6150frames. Soft/processed landscape and non-face print detail remain; no complete photographic-realism or pixel-perfect claim. Ordered-image QA by the assistant is not human continuous playback/listening, user aesthetic acceptance or formal full-film approval. Selected correction additionally reviewed all120 whole frames via4 JPEG pages, all120 print frames via8 JPEG pages, native whole0/119 and native print0/119, and all183 detector boxes via12 native-crop JPEG pages. All3 first/last registration trials were actually compared as contacts; trial1 native endpoints also individually viewed. Trial1 mask.65/bottom548/feather24/gainRGB.88/.88/.90 projects the originalM08 open violet-pink irises, thin gold round glasses, small smile and adjacent fringe/cheeks/chin into each current frame. No observed blink, autonomous expression, second mouth, double frame contour, sliding or visible seam in all120 corrected print frames. Outer hat/butterfly/head and body artwork still have softer original generated detail. Raw/corrected native original-hands and visible-legs ROI endpoints0/119 were actually viewed. All120 decoded pairs compare those selected outside-print regions: minimumPSNR39.39920841644784/38.546566474086895dB. The comparison hand ROI[0,350,1900,1250] is narrower than the full raw-hand-r2 ROI and excludes part of the gripping hand, especially at the last frame; native full-scene endpoints and all corrected whole frames supply that context. No claim of individually viewing all corrected native hand/leg crops, pixel identity or automatic motion approval. No generative redraw, whole-pouch freeze, scene replacement, anatomy patch, hand cover, retiming or interpolation. One whole-frame CRF16 encode from the unchanged raw. Outside-mask pixels are not claimed identical. OldS05 remains rejected; new768P-based4K replacement stays separately in the ordinary queue.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Thirty-six original shots reviewed;35 adopted, oldS05 revoked for missing saddle. S36 raw reference appearance rejected; original-M03 local face restoration separately reviewed/adopted. Repaired768P full film published; correspondingS05 native4K ordinarily queued. Full4Kfilm pending.",
-  "reviewedSourceCount": 36,
-  "acceptedSourceCount": 35,
+  "scope": "Thirty-seven original shots reviewed;36 adopted, oldS05 revoked for missing saddle. S37 raw reference appearance rejected; original-M08 local face correction separately reviewed/adopted. Repaired768P full film published; correspondingS05 native4K ordinarily queued. Full4Kfilm pending.",
+  "reviewedSourceCount": 37,
+  "acceptedSourceCount": 36,
   "rejectedCurrentSourceCount": 1,
-  "rejectedHistoricalSourceCount": 25,
-  "pendingSources": 12,
+  "rejectedHistoricalSourceCount": 26,
+  "pendingSources": 11,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1958,10 +2004,22 @@
       "inspectionReportSha256": "91188d4648d07503557e2c148e4f96fe47388cebac361263cd1e3d12aeeec228",
       "selectedAt": "2026-11-20T01:34:23.360188+00:00",
       "reason": "Raw/corrected120 whole and print frames each actually viewed;30raw/72fixed native candidates; all120 raw central-water native crops and raw/corrected water/stream native endpoints plus120 decoded outside-print comparisons reviewed. Original M03 face only;5s source/final3s unchanged."
+    },
+    "S37": {
+      "path": "corrections/S37-reference-pouch-v1.mp4",
+      "sha256": "12a2c85da3f08db6f5febecff156fed5c49dd77727584d7ed590742c91cb9936",
+      "parent": "sources/S37.mp4",
+      "parentSha256": "ee171474f4b282bb9ac5c140d9a66ce446d2fa0de128f7fbffda292ed9152d4c",
+      "receipt": "corrections/S37-reference-pouch-v1.json",
+      "receiptSha256": "c87a91bbf40188f899c5c69a114690ae6a64bca7306d338ee45bb03de1b478b8",
+      "inspectionReport": "corrections/S37-reference-pouch-v1-inspection/S37.json",
+      "inspectionReportSha256": "e393518b6c489e8657d4bda12c12382072c69d728f27dc387d88646a93fd298b",
+      "selectedAt": "2026-11-20T03:03:51.327557+00:00",
+      "reason": "Raw/corrected all120 whole and print frames each actually viewed;169raw/183fixed native candidates, all120 raw hand-r2 and leg crops, native whole/print/outside endpoints and120 decoded outside-region comparisons reviewed. OriginalM08 face only;5second source/final unchanged."
     }
   },
-  "snapshotAt": "2026-11-20T01:34:23.766059+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 7800,
+  "snapshotAt": "2026-11-20T03:03:51.672212+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 8040,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -2002,7 +2060,9 @@
     "S35Raw": 120,
     "S35AdoptedV1": 120,
     "S36Raw": 120,
-    "S36AdoptedV1": 120
+    "S36AdoptedV1": 120,
+    "S37Raw": 120,
+    "S37AdoptedV1": 120
   },
   "activeUserDirectedRepair": {
     "shotId": "S05",
