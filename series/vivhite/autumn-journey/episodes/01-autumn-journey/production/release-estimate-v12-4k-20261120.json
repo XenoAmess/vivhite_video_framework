@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "vivhite-native4k-release-time-estimate-1",
+  "estimatedAt": "2026-11-20T04:27:37.958307+00:00",
+  "timezone": "Asia/Shanghai",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "observedSamples": [
+    {
+      "id": "S25",
+      "firstInProgressAt": "2026-11-19T09:37:35.475093+00:00",
+      "downloadedAt": "2026-11-19T10:53:45.840674+00:00",
+      "localObservedMinutes": 76.17275968333334
+    },
+    {
+      "id": "S26",
+      "firstInProgressAt": "2026-11-19T10:54:23.912434+00:00",
+      "downloadedAt": "2026-11-19T12:10:27.031202+00:00",
+      "localObservedMinutes": 76.05197946666667
+    },
+    {
+      "id": "S27",
+      "firstInProgressAt": "2026-11-19T12:11:05.433927+00:00",
+      "downloadedAt": "2026-11-19T13:27:15.193659+00:00",
+      "localObservedMinutes": 76.16266220000001
+    },
+    {
+      "id": "S28",
+      "firstInProgressAt": "2026-11-19T13:35:07.835317+00:00",
+      "downloadedAt": "2026-11-19T14:52:23.431678+00:00",
+      "localObservedMinutes": 77.25993935
+    },
+    {
+      "id": "S29",
+      "firstInProgressAt": "2026-11-19T14:53:03.265825+00:00",
+      "downloadedAt": "2026-11-19T16:09:18.833820+00:00",
+      "localObservedMinutes": 76.25946658333334
+    },
+    {
+      "id": "S30",
+      "firstInProgressAt": "2026-11-19T16:09:59.819016+00:00",
+      "downloadedAt": "2026-11-19T17:25:35.238084+00:00",
+      "localObservedMinutes": 75.59031780000001
+    },
+    {
+      "id": "S31",
+      "firstInProgressAt": "2026-11-19T17:26:17.123716+00:00",
+      "downloadedAt": "2026-11-19T18:43:00.939726+00:00",
+      "localObservedMinutes": 76.73026683333333
+    },
+    {
+      "id": "S32",
+      "firstInProgressAt": "2026-11-19T18:44:05.345120+00:00",
+      "downloadedAt": "2026-11-19T19:59:40.703129+00:00",
+      "localObservedMinutes": 75.58930015
+    },
+    {
+      "id": "S33",
+      "firstInProgressAt": "2026-11-19T20:00:21.001858+00:00",
+      "downloadedAt": "2026-11-19T21:17:02.930839+00:00",
+      "localObservedMinutes": 76.69881635
+    },
+    {
+      "id": "S34",
+      "firstInProgressAt": "2026-11-19T21:17:44.944895+00:00",
+      "downloadedAt": "2026-11-19T22:33:24.814642+00:00",
+      "localObservedMinutes": 75.66449578333332
+    },
+    {
+      "id": "S35",
+      "firstInProgressAt": "2026-11-19T22:34:17.893759+00:00",
+      "downloadedAt": "2026-11-19T23:49:59.920301+00:00",
+      "localObservedMinutes": 75.70044236666666
+    },
+    {
+      "id": "S36",
+      "firstInProgressAt": "2026-11-19T23:50:40.142916+00:00",
+      "downloadedAt": "2026-11-20T01:07:34.801645+00:00",
+      "localObservedMinutes": 76.91097881666666
+    },
+    {
+      "id": "S37",
+      "firstInProgressAt": "2026-11-20T01:08:13.932086+00:00",
+      "downloadedAt": "2026-11-20T02:25:11.624264+00:00",
+      "localObservedMinutes": 76.9615363
+    },
+    {
+      "id": "S38",
+      "firstInProgressAt": "2026-11-20T02:25:59.281828+00:00",
+      "downloadedAt": "2026-11-20T03:41:55.898220+00:00",
+      "localObservedMinutes": 75.94360653333334
+    }
+  ],
+  "medianShortSourceMinutes": 76.16771094166668,
+  "completedOriginalSources": 38,
+  "reviewedOriginalSources": 38,
+  "adoptedOriginalSources": 37,
+  "currentlyGenerating": "S39",
+  "activeElapsedMinutes": 44.65589575,
+  "otherOriginalShortSourcesRemaining": 8,
+  "remainingEnding": "S48",
+  "endingWindowsForEstimateOnly": 4,
+  "endingWindowCountMeasuredForThisJob": false,
+  "separatelyQueuedS05RepairWindows": 1,
+  "sourceCompletionEstimatedLocal": "2026-11-21T05:29:19.481753+08:00",
+  "postGenerationAssemblyReviewUploadHours": [
+    3,
+    5
+  ],
+  "modelBasedPublishRangeLocal": [
+    "2026-11-21T08:29:19.481753+08:00",
+    "2026-11-21T10:29:19.481753+08:00"
+  ],
+  "communicatedPublishWindowLocal": [
+    "2026-11-21T08:00:00+08:00",
+    "2026-11-21T11:00:00+08:00"
+  ],
+  "assumptions": [
+    "Current serial queue order, service availability and recent single-window speed continue.",
+    "S48 fourteen-second source budget uses four sequential windows as an estimate, not a measured completed-job result.",
+    "The separately queued repaired S05 is included; rejected old S05 is never substituted.",
+    "No newly discovered problem requires further remote regeneration.",
+    "Technical segment caches may reduce post-generation wait; encoded-film checks and release download verification remain required."
+  ],
+  "noHttpRequestsForThisEstimate": true,
+  "guaranteedDeadline": false,
+  "fullFilmApproval": false
+}

@@ -93,6 +93,16 @@ Get-ScheduledTaskInfo -TaskName Vivhite-Autumn-Journey-v11-4K-sources
 
 [部署实测收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/source-only-controller-009-v11-4k.json)记录新旧配置指纹与接管检查。本次实际运行现有控制器恢复测试10项通过；没有为此中断渲染或重做故障注入，也没有把检查图片已导出等同于画面已审通过。
 
+## 2026-11-20发布时间估算与已审核镜头缓存
+
+按S25—S38共14份完整本地记录，从首次运行到下载完成的单窗口镜头中位耗时约76.17分钟。当前S39运行，余下S40—S47、14秒S48及另排的新版S05计入预算；S48暂按4个窗口估算，尚不是该任务的实测结果。预计北京时间11月21日05:30前后收齐源片，再预留3—5小时完成最后几镜检查、205秒合成、完整检查及Release上传，向用户给出的发布窗口为11月21日08:00—11:00。这个窗口以服务、队列顺序和近期速度持续正常且没有新增远程返工为前提。计算数据和假设保存于[估算收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/release-estimate-v12-4k-20261120.json)，不是交付验收或保证时间。
+
+等待远端生成期间，用[已审核镜头缓存工具](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/prepare-reviewed-native4k-segments-v12.py)在独立的`production-v12-native-4k-segment-cache-001`准备S01—S38中已采用的37镜，明确排除旧S05。工具在创建目录前核对整批实际采用结论、源片／父片、任务、完整解码报告和所有整景证据指纹；没有修订选择的原片同样必须有明确的`accepted`结论，不能借用旧预览工具的原片回退路径。运行不增加HTTP请求，不提交任务、不合成影片，也不写新的语义通过结论。
+
+每段保留原生3840×2160，按原定入片秒数转换为30fps，采用现有合成器的`fps30-x264-fast-crf17-1`配方；源片仍单独保留完整24fps版本。输出先写`.partial.mp4`，完整读取核对尺寸、帧率和帧数后才生成带实际源片指纹的缓存收据。异常保留部分文件与编码日志。实际旧S05被拒绝且没有创建输出目录、其余37镜的源片与整景证据验证通过；另有[3项回归检查](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/test_prepare_reviewed_native4k_segments_v12.py)覆盖被撤回原片禁止回退、报告错绑及编码失败保留材料。
+
+后续只可在全部48镜通过正式导入后，把与导入源片SHA-256、原定30fps帧数、尺寸及配方完全一致的缓存和收据复制到新合成目录的`segments/`，由`local_video_finisher.py`再次核验。缓存不能代替最终实际素材的人格／披露绑定检查，也不能将源片审核冒充编码成片、音轨或字幕审核。运行进程独立于对话，日志及启动指纹保留在原4K运行目录；渲染守护和服务端队列配置不变。
+
 ## 2026-11-18实际故障与修复
 
 北京时间08:50:30，客户端替换`jobs/S04.json`时发生Windows `WinError 5`，留下完整`.partial`记录后退出。旧控制器只自动恢复网络错误，漏掉了本地JSON替换失败，因而停在`attention-required`。S04仍在服务端继续运行，09:26左右完成；此后GPU队列未被继续推进，直至13:19本次直接检查时恢复。不能把这段空转描述成持续正常渲染。
