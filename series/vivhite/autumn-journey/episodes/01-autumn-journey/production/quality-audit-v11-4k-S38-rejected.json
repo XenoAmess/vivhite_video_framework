@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "vivhite-raw-source-rejection-1",
+  "shotId": "S38",
+  "recordedAt": "2026-11-20T04:00:31.369626+00:00",
+  "planSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "sourceSha256": "fb8daa9e5ab773a3f36e538542fce5117e6f988ac8ffe218c1ad9822a7a961cf",
+  "decision": {
+    "id": "S38",
+    "sourceSha256": "fb8daa9e5ab773a3f36e538542fce5117e6f988ac8ffe218c1ad9822a7a961cf",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-20T04:00:31.367562+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 96,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S38-fb8daa9e5a-all-frames-01.png",
+        "sha256": "b879217e37124c4c1e6e9c59ac48b635ffeb96d1719d62396d306a5b922adeb3",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S38-fb8daa9e5a-all-frames-02.png",
+        "sha256": "e7d0c50a764eead4349b27e4cefcbc10d3d0c5872b2eba5c526c758e647b7295",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S38-fb8daa9e5a-all-frames-03.png",
+        "sha256": "cae0aed07b6e85117d458d2202b3162887efff54314e9817c8016ce80f0700d9",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S38-fb8daa9e5a-all-frames-04.png",
+        "sha256": "a50eb06008df12d46e5de99f9c3e9b647730fd8551dda88eabc5cc79641a6703",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S38-fb8daa9e5a-face-candidates.png",
+      "sha256": "79db887296d66cf169938b0664444368b84fa8f75c7f507fa45ca6940912f799",
+      "items": 14
+    },
+    "observation": "Actually viewed all120 raw whole-scene frames via4 ordered JPEG pages, native whole0/119, all120 raw print crops via8 JPEG pages and native print0/119, all176 detector crops via11 ordered JPEG pages, full original M01 artwork, and all120 raw native original-hand ROI frames via30 ordered JPEG pages. Actual768P input all120 whole/native0 and original M01 were also inspected and bound in the existing input-baseline receipt. One head-out feminine white/violet/gold-costumed woman rests one original attached hand on worn wooden canal railing; other fingers overlap/occlude, so no claim of five individually visible fingers or hand handedness. No added hand, wrist flip, detachment, real human face/reflection or added person observed. Original bag, chain, rigid acrylic keyring, worn white houses, canal ripples and warm reflection remain continuous; the increasing warm foreground light is already present in input. All120 print frames keep eyes already OPEN. Fine original violet-pink star/diamond iris structure is coarse and fine gold round glasses merge with tan/pink lens areas; original small smile is absent. Raw rejected for reference appearance, not closed eyes or blink. Background and skin retain processed soft detail. Source5s/final4s152to156 seconds unchanged. Image sequence review by assistant, not human continuous playback, hearing or full-film approval.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "actualWholeSceneFramesViewed": 120,
+  "actualNativeWholeFramesViewed": [
+    0,
+    119
+  ],
+  "actualPrintFramesViewed": 120,
+  "actualNativePrintFramesViewed": [
+    0,
+    119
+  ],
+  "actualCandidateBoxesViewed": 176,
+  "actualCandidatePagesViewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "actualNativeHandCropFramesViewed": 120,
+  "handNativeBox": [
+    450,
+    750,
+    2300,
+    1850
+  ],
+  "handPagesActuallyViewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "completeOriginalM01ActuallyViewed": true,
+  "actualInputWholeFramesViewed": 120,
+  "observation": "Actually viewed all120 raw whole-scene frames via4 ordered JPEG pages, native whole0/119, all120 raw print crops via8 JPEG pages and native print0/119, all176 detector crops via11 ordered JPEG pages, full original M01 artwork, and all120 raw native original-hand ROI frames via30 ordered JPEG pages. Actual768P input all120 whole/native0 and original M01 were also inspected and bound in the existing input-baseline receipt. One head-out feminine white/violet/gold-costumed woman rests one original attached hand on worn wooden canal railing; other fingers overlap/occlude, so no claim of five individually visible fingers or hand handedness. No added hand, wrist flip, detachment, real human face/reflection or added person observed. Original bag, chain, rigid acrylic keyring, worn white houses, canal ripples and warm reflection remain continuous; the increasing warm foreground light is already present in input. All120 print frames keep eyes already OPEN. Fine original violet-pink star/diamond iris structure is coarse and fine gold round glasses merge with tan/pink lens areas; original small smile is absent. Raw rejected for reference appearance, not closed eyes or blink. Background and skin retain processed soft detail. Source5s/final4s152to156 seconds unchanged. Image sequence review by assistant, not human continuous playback, hearing or full-film approval.",
+  "eyesWereAlreadyOpen": true,
+  "correctionAcceptance": false,
+  "fullFilmApproval": false
+}
