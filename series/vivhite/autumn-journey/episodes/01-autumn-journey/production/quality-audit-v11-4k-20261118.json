@@ -1569,14 +1569,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S35",
+      "sourceSha256": "7530cab8e3497d7ac73524b7d682092fd365a8a0b26a4d99a078b2b36546df4c",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-20T00:20:46.508071+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S35-reference-water-bottle-v1\\inspection\\S35-7530cab8e3-all-frames-01.png",
+          "sha256": "f513c5e7172acccb653caba74cb39d74e997756a779bdb9e8f5a13cbb40871a1",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S35-reference-water-bottle-v1\\inspection\\S35-7530cab8e3-all-frames-02.png",
+          "sha256": "e852dcba3c3eca0a5ff02128f7349dea5b5f269fb8d6e77a6c7a3360a29f3767",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S35-reference-water-bottle-v1\\inspection\\S35-7530cab8e3-all-frames-03.png",
+          "sha256": "9af1dbbac7d7adaca986f3980499b8beafe9d0a67e1848e71e5fe4905bbb63bc",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S35-reference-water-bottle-v1\\inspection\\S35-7530cab8e3-all-frames-04.png",
+          "sha256": "04dbe3688270681b256cf29953e37b9003f73d2de40974c0dd383e3750e3b7e1",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S35-reference-water-bottle-v1\\inspection\\S35-7530cab8e3-face-candidates.png",
+        "sha256": "d00e5a13706ca6043df8596f11ee0825d836461c749595849b7f7def49d692a2",
+        "items": 10
+      },
+      "observation": "Actually viewed all120 whole-scene frames each of raw and corrected-v1 via4 ordered JPEG pages per version, native whole0/119 for both, and all120 print frames per version via8 ordered JPEG pages each plus corrected native print0/119. All120 raw lap-hand frames actually viewed via30 native four-frame JPEG pages. Original narrow native stream-hand pages1to21 cover frames0to83; pages22to30 retained without viewing claim. All120 wider raw stream-hand frames actually viewed via8 ordered bounded560x433-pixel tiles from native ROI[1600,1000,3100,2160], with native wide crops0/119. The30 wider native four-frame pages were exported but not individually viewed. Corrected native lap and wider-stream crops0/119 actually viewed. All120 decoded raw/corrected frame pairs compared outside the print mask: minimumPSNR lap39.39982274306089dB and stream38.63434962163796dB, encoding comparison rather than pixel identity or automatic anatomy approval. All135 raw detector boxes via9 JPEG pages and85 corrected boxes via6 JPEG pages actually viewed. Candidates are original violet boot/butterfly, cuff/forearm, stone, leaves, wood, water/ripples and existing printed illustration; no observed real human face, facial reflection or added bystander. Complete originalM09 and actual768P input native first whole, all120 input whole frames and120 input hand crops actually viewed; source/input fingerprints checked. Raw native coordinate grid and all3 first/last-frame registration trials actually compared before selecting trial1. Only the original head-out woman in white/deep-violet/gold feminine clothing, pale stockings and violet butterfly boots crouches beside the original stream. One attached palm-down hand rests relaxed on her knee. The other attached hand faces its palm toward the camera, gently opens/turns and reaches near/touches the water as the original stream/ripples move; no observed third hand, switched palm, detached limb, impossible wrist reversal, extra leg or scene jump. Occluded lap fingers are not claimed fully visible. Closed bottle stays upright on the stone; no drinking or bottle-pickup action claimed. Printed eyes were already OPEN. Raw fine violet-pink star/diamond irises and gold round glasses became coarse gray-brown detail, and original small smile was absent. Raw rejected for reference appearance. Selected trial1 mask1.35/bottom730/feather15/gainRGB.88/.87/.85 projects the originalM09 open eyes, fine gold round glasses, smile, fringe, cheeks/chin and adjacent face hair into each current frame through the original bottle tracking. Original cap/butterfly, outer print and body remain softer/coarser than original artwork. Across120 corrected print frames no observed blink, second mouth, double eye/glasses contour, slip or horizontal seam. No generative redraw, whole-bottle freeze, person cover, anatomy patch, retiming or interpolation. Single whole-frame CRF16 encode from unchanged raw; outside-mask pixels not claimed identical. Original5seconds120native24fps frames retained; final first4seconds96native frames used as120final30fps frames4200to4319 at140to144seconds. Other shot lengths and205seconds6150frames stay unchanged. Scene detail retains soft/processed texture, without a pixel-perfect or photographic-realism claim. Original PNG contact pages and other exported native checkpoints retained but not counted as individually viewed. Assistant ordered-image review, not human continuous playback/listening, user aesthetic acceptance or final full-film approval. OldS05 remains rejected; corresponding new768P-based4K replacement stays separately ordinarily queued.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Thirty-four original shots reviewed;33 adopted, oldS05 revoked for missing saddle. S34 unmodified strict-back-view coast reviewed/adopted against actual input motion. New768P full film published and newS05 native4K separately ordinarily queued. Full4Kfilm pending.",
-  "reviewedSourceCount": 34,
-  "acceptedSourceCount": 33,
+  "scope": "Thirty-five original shots reviewed;34 adopted, oldS05 revoked for missing saddle. S35 raw reference appearance rejected; original-M09 face restoration separately reviewed/adopted. Repaired768P full film published; correspondingS05 native4K ordinarily queued. Full4Kfilm pending.",
+  "reviewedSourceCount": 35,
+  "acceptedSourceCount": 34,
   "rejectedCurrentSourceCount": 1,
-  "rejectedHistoricalSourceCount": 23,
-  "pendingSources": 14,
+  "rejectedHistoricalSourceCount": 24,
+  "pendingSources": 13,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -1842,10 +1888,22 @@
       "inspectionReportSha256": "aefb801fa7f1cb8c71f0205054151b5c39c327a9aeb17c3e3b5ef6a72962a1bd",
       "selectedAt": "2026-11-19T20:45:23.762990+00:00",
       "reason": "Raw/v1/v2 each120 whole frames actually viewed; v1 rejected for native last-frame mouth residue. V2 print120 and all25 candidates, raw hands120/lens120, raw/v2 native endpoints and originalM09/input compared. Source5s/final4s unchanged."
+    },
+    "S35": {
+      "path": "corrections/S35-reference-water-bottle-v1.mp4",
+      "sha256": "7530cab8e3497d7ac73524b7d682092fd365a8a0b26a4d99a078b2b36546df4c",
+      "parent": "sources/S35.mp4",
+      "parentSha256": "1dc5856c409ac2e0552c67ca13d3d792d334ebca3bfc0378d4e9e872891804b6",
+      "receipt": "corrections/S35-reference-water-bottle-v1.json",
+      "receiptSha256": "9f2cb977054ae1935bcce7c75a7f2f719f62e3598a78e98fe8a942cb103cfbb7",
+      "inspectionReport": "corrections/S35-reference-water-bottle-v1-inspection/S35.json",
+      "inspectionReportSha256": "563ccf30051c8ed6cf86d3aa988496f01c2e3ddbffee03737ab6f5dd37be79bd",
+      "selectedAt": "2026-11-20T00:20:46.387965+00:00",
+      "reason": "Raw and corrected120 whole/print frames each actually viewed; all135raw/85fixed candidates, raw native lap120 and wider stream120 bounded copies, corrected native hand endpoints and120 decoded encode comparisons reviewed. Original M09 face only;5s source/final4s unchanged."
     }
   },
-  "snapshotAt": "2026-11-19T22:56:52.260042+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 7320,
+  "snapshotAt": "2026-11-20T00:20:46.616212+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 7560,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -1882,7 +1940,9 @@
     "S32RejectedV1": 120,
     "S32AdoptedV2": 120,
     "S33OriginalAdopted": 120,
-    "S34OriginalAdopted": 120
+    "S34OriginalAdopted": 120,
+    "S35Raw": 120,
+    "S35AdoptedV1": 120
   },
   "activeUserDirectedRepair": {
     "shotId": "S05",
