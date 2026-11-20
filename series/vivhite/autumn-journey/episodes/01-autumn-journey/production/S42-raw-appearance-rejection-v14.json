@@ -1,0 +1,53 @@
+{
+  "sourceSha256": "6d0d9697810da7c72bc4e15bc69bec6c134a6fd90339910b9faac9874490dab2",
+  "decision": {
+    "id": "S42",
+    "sourceSha256": "6d0d9697810da7c72bc4e15bc69bec6c134a6fd90339910b9faac9874490dab2",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-20T21:23:41.546731+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 72,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S42-6d0d969781-all-frames-01.png",
+        "sha256": "f47f6478890b7c2b2976a77640102941def1611b03bacbf81f1f47cccb563ea5",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S42-6d0d969781-all-frames-02.png",
+        "sha256": "85632ae9eecf007073221b5831fd15110f42d8942fc5204c3472ea53a9175f0b",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S42-6d0d969781-all-frames-03.png",
+        "sha256": "111088f3a76a92431f6665a9d1b04812b50dcb99ed9ab6ef3fe5d0080f6b3559",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S42-6d0d969781-all-frames-04.png",
+        "sha256": "827a56e6e505708d44aea1f80d06f95df97a65334c1333fb6d772ebda54b13fd",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S42-6d0d969781-face-candidates.png",
+      "sha256": "57d225bd8cba43dd435a9afdaf8cc364249739ed861393ec0d57a0add4532e66",
+      "items": 9
+    },
+    "observation": "All120 raw whole-frame representations and native whole endpoints actually viewed. Raw violet eyes were already open, but iris motifs, fine gold spectacle rims and mouth detail were deformed. This is not closed-to-open eye repair. Actually viewed all120 native expanded hand-region representations on30 pages, in addition to complete whole-frame representations. The existing right hand lowers the mug onto the table around1.2seconds, holds it steadily and releases around3.5seconds. The final first3seconds therefore show placement and a steady hold, not the complete release. Original attached arms/hands remain coherent; no extra limb, human face, added person or cut observed.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "rawWholeFramesActuallyViewed": 120,
+  "rawPrintFramesActuallyViewed": 16,
+  "rawDetectorCropsActuallyViewed": 0,
+  "humanContinuousPlayback": false
+}

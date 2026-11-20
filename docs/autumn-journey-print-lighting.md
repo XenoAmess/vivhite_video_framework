@@ -8,6 +8,10 @@
 
 后续完成 [S38 挂件](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S38-print-lighting-source-review-v14-r1.json) 与 [S03 徽章](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S03-print-lighting-source-review-v14-r1.json) 的同范围复核和替换；检测候选分别为 183／119 个。S38 保留从阴影转入暖光的原片变化，S03 保留旧版整块徽章的配准与摆动。四段均从原始视频重新编码，原版继续保留。其余修订候选仍待完整审阅，全片明度拦截继续有效。
 
+第三批又完成 S06 电车窗贴纸、S09 水壶贴纸、S12 划船贴纸、S15 咖啡杯贴纸和 S45 行李箱挂件的同范围复核及选片，累计 9 段明度修订。每段实际查看完整 120 帧全景、120 帧印花细节、原生全景与印花首末帧及全部检测候选；候选数量依次为 35、141、4、1、83。全部印花外原片／新版帧对也重新比较，旧版分数未复用。逐段观察和哈希见各自 `production/SXX-print-lighting-source-review-v14-rN.json`，合并进度见 [`print-lighting-audit-v14-stage3.json`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/print-lighting-audit-v14-stage3.json)。这些是助手通过有序检查页形成的源片结论，不等于人工连续播放或最终成片验收；全片明度拦截仍开启。
+
+S09 与 S15 的首轮明度候选还残留原始生成画面的嘴部竖线，因此被拒绝。第二版在原有配准和颜色增益基础上，将原始图案投影范围明确扩大至嘴与下巴，并限制遮罩下界和羽化；重新从未修改的原始视频合成，去除竖线并保留原始微笑。不能仅因眼睛已稳定、脸已变暗就认定整个面部合格，也不能把重做后的覆盖范围记成旧候选已全部审过。各轮候选和实际查看范围均独立保留。
+
 ## 实际处理方法
 
 1. 对每个已选修复区域提取原片与修复版的首帧、中间帧、末帧，保存完整原生裁图和并排查看图。该步骤用于筛查光照问题，不冒充全片逐帧审核。

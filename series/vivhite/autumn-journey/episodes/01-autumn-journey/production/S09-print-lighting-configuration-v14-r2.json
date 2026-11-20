@@ -1,0 +1,87 @@
+{
+  "frames": 120,
+  "sourceSha256": "fa45f62b63f90ab53b57a9252ad3c702f1a8697653c94409163f896b6b414437",
+  "lightingCalibration": {
+    "sourceReceiptSha256": "a4e1b09fe7bff04dc36a6dd94a101338de27cfe516d01d259c43bb2f53903c59",
+    "measurementWorkerSha256": "bbddd1c60dab21391633c883c28c20109c5e786f894f7410f409a5d2c02572e8",
+    "samples": [
+      {
+        "proposedGainRgb": [
+          0.7114624381065369,
+          0.677804172039032,
+          0.653910756111145
+        ],
+        "samplePixels": 29469,
+        "sourceMedianRgb": [
+          179.37005615234375,
+          157.110107421875,
+          146.53021240234375
+        ],
+        "referenceMedianRgb": [
+          253.0,
+          233.0,
+          225.0
+        ],
+        "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+        "id": "S09-print-1",
+        "previousGainRgb": [
+          0.6804814338684082,
+          0.6063086986541748,
+          0.6462214589118958
+        ]
+      }
+    ],
+    "factor": 1.0,
+    "actualReview": "pending"
+  },
+  "regions": [
+    {
+      "schemaVersion": "vivhite-printed-eye-restoration-1",
+      "sourceSha256": "fa45f62b63f90ab53b57a9252ad3c702f1a8697653c94409163f896b6b414437",
+      "correctedSha256": "dc71a1b950b22907d74a5248ef1744b89ce58a8c4ab9a5f594a6502262183df4",
+      "referenceTextureSha256": "b235d5ada333dbd4ab83620f7a1f4d9b0523776be1c6c9090bba118f5587e1d2",
+      "workerSha256": "64bba2ff857644ce97b2a1c587ca8ce3da25c86e9ec6667f8e7b39af4d772e07",
+      "trackingWorkerSha256": "2ebeb3119289113d0b71b051e71a156eca61f10a0b8ed2784990400a702d1018",
+      "frames": 120,
+      "fps": 24,
+      "nativeSize": [
+        3840,
+        2160
+      ],
+      "referenceEyes": [
+        455,
+        545,
+        705,
+        520
+      ],
+      "targetEyes": [
+        2492,
+        906,
+        2617,
+        894
+      ],
+      "gainRgb": [
+        0.6804814338684082,
+        0.6063086986541748,
+        0.6462214589118958
+      ],
+      "referenceMaskScale": 1.15,
+      "trackingCenter": [
+        888,
+        312
+      ],
+      "trackingRadius": 65,
+      "method": "Original RGBA eye/glasses texture, two-landmark similarity registration, feathered lens masks and original prop tracking.",
+      "scope": "Local printed eye/glasses pixels before whole-frame CRF16 re-encoding. No person removed; original head outline and scene retained.",
+      "status": "technical-correction-completed-review-required",
+      "humanFullPlayback": false,
+      "id": "S09-print-1",
+      "reference": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-fasth3-001\\masters\\M09-sticker-v1.png",
+      "referenceSha256": "b235d5ada333dbd4ab83620f7a1f4d9b0523776be1c6c9090bba118f5587e1d2",
+      "maskScale": 1.8,
+      "referenceSofteningSigma": 1.0003883449124606,
+      "referenceMaskBottom": 720,
+      "referenceMaskBottomFeather": 16
+    }
+  ]
+}
