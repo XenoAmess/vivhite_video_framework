@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "vivhite-local-inspection-preparer-1",
+  "observedState": {
+    "pid": 231420,
+    "status": "waiting-for-complete-local-source",
+    "snapshotAt": "2026-11-20T03:13:01.987479+00:00",
+    "onlyLocalFiles": true,
+    "semanticAcceptance": false,
+    "jobId": "video_gen_ab78089d679c4c66ba653410717fc5f5"
+  },
+  "configuration": {
+    "jobId": "video_gen_ab78089d679c4c66ba653410717fc5f5",
+    "planSha256": "f7d10a7c80e72a02bbf541b4109871be0e4845653c4ada12075e4b9de6b63842",
+    "workerSha256": "d96885170f9e06394efb60bab29cdc61f9dccffba8ea15ca74d93eb2757cb6fa",
+    "extractorSha256": "a8701bef967755c92b0f8e8bec2e403384b110e42c2f1c49e554505e94ec9a38",
+    "preparerSha256": "15cb6c37188fb42eb2e4aa1afa5bc9300f49044e8b3100bf3329e86af0fa85be",
+    "localFilesOnly": true,
+    "semanticAcceptance": false
+  },
+  "publicCode": "production/S05-native-evidence-preparer-v12.py",
+  "actualCode": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-S05-native-4k-001\\logs\\prepare-S05-native4k-when-local-ready.py",
+  "configurationFile": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-S05-native-4k-001\\metadata\\S05-native-evidence-preparer-configuration.json",
+  "startMethod": "Start-Process WindowStyle Hidden; independent Windows child process",
+  "launcherPid": 81996,
+  "generationRequestsSubmitted": 0,
+  "queueOrControllersChanged": false,
+  "waitIntervalSeconds": 60,
+  "waitDeadlineHours": 48,
+  "extractionTimeoutSeconds": 3600,
+  "regions": {
+    "saddle-hips": [
+      0,
+      0,
+      2600,
+      1041
+    ],
+    "legs-cranks": [
+      857,
+      338,
+      2857,
+      2160
+    ],
+    "sticker": [
+      1857,
+      647,
+      3143,
+      1435
+    ]
+  },
+  "preparedEvidenceIsApproval": false,
+  "coverage": "After the exact source and complete report are local:120 whole frames, each120 native ROI frames and all detector crops. Actual viewing, clip approval and Git staging remain separate. Clipped anatomy requires a wider evidence variant."
+}

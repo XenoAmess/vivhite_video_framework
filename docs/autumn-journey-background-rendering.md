@@ -83,6 +83,8 @@ Get-ScheduledTaskInfo -TaskName Vivhite-Autumn-Journey-v11-4K-sources
 
 2026-11-20凌晨新增的[5项导入测试](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/test_materialize_native4k_v12.py)已通过。对当前真实未齐素材的调用也因新版S05尚无采用决定而在创建新装配目录前拒绝，未回填旧版，见[实测收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/native4k-v12-assembly-preflight.json)。这不代表48份4K素材已经齐备或最终装配验收通过。骑行专用全帧机械检查见[后处理文档](autumn-journey-video-postprocessing.md#骑行机械结构的返工与检查)。
 
+新版S05另有[出片后机械检查材料准备程序](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S05-native-evidence-preparer-v12.py)，[启动凭据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S05-native-evidence-preparation-wait-v12.json)保留实际代码和配置指纹。它是隐藏窗口启动的独立本地进程，每60秒只读本地文件，不调用模型或修改队列；等指定返工任务、完整下载和120帧报告齐备后，展开车座／臀部、双腿／曲柄及贴纸各120帧原生裁切和全部检测候选。最长等待48小时，失败保留全部材料；代码或绑定改变即停止检查并记录错误，不重提生成任务。程序只准备证据，实际画面阅读、采用决定和Git归档仍由助手执行。固定裁切若随运动截断人物或机械结构，须另存扩大区域，不能将导出成功当作审阅通过。
+
 ### 009：原批次停止自动采用旧骑行镜头
 
 2026-11-20北京时间06:29部署009：保留008和全部旧配置，只替换本地守护，采用已有的`generationOnly: true`策略。实际生成客户端PID `201936`及创建时间不变，48份任务ID、请求指纹、提交计划、排队窗口32与60秒轮询均未改变。独立新版S05任务及其守护也保持原样。没有停止或重新提交任何模型任务。
