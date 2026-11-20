@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "vivhite-native4k-reviewed-segment-cache-receipt-1",
+  "runName": "production-v12-native-4k-segment-cache-005",
+  "cachePreparationSha256": "cbcdb374ef52ec5c1fd640bc5d2108f121ca7937207bca633c9163b6424e31e3",
+  "allFrameComparisonSha256": "73f303b908c9a8139948803e805366d33eee9bb310d2c85752c67251c3a1d88f",
+  "shots": [
+    {
+      "id": "S48",
+      "identity": {
+        "sourceSha256": "1c51e6b59d1649e91f1b671a02dc244afa101cd85b8fcd4d21a60a3c9fe87de5",
+        "frames": 420,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "sha256": "e423fed81a4d3c444ac968269aeea1ca0bb1a15cfc836b78d7c97867fefd0e65",
+      "receiptSha256": "ceeb8b15094367dce3d40861b5085c44298657464df0bc013b8daf3cdb6e4475",
+      "argv": [
+        "ffmpeg",
+        "-v",
+        "error",
+        "-i",
+        "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\sources\\S48.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-vf",
+        "scale=3840:2160:force_original_aspect_ratio=increase,crop=3840:2160,fps=30",
+        "-frames:v",
+        "420",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "fast",
+        "-crf",
+        "17",
+        "-pix_fmt",
+        "yuv420p",
+        "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-native-4k-segment-cache-005\\S48.partial.mp4"
+      ],
+      "elapsedSeconds": 26.07799999997951
+    }
+  ],
+  "comparison": {
+    "schemaVersion": "vivhite-native4k-technical-segment-comparison-1",
+    "startedAt": "2026-11-20T16:33:22.658136+00:00",
+    "cachePreparationSha256": "cbcdb374ef52ec5c1fd640bc5d2108f121ca7937207bca633c9163b6424e31e3",
+    "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+    "workerSha256": "f541962242900cc74e4bc1d8730d1b796aa109743584ed5e21a676edd3916a83",
+    "acceptedSourceGateWorkerSha256": "90595064e9db93a41430901630a3447a44a61ab4564a8e66d22afcdda018bb98",
+    "segments": [
+      {
+        "id": "S48",
+        "sourceSha256": "1c51e6b59d1649e91f1b671a02dc244afa101cd85b8fcd4d21a60a3c9fe87de5",
+        "segmentSha256": "e423fed81a4d3c444ac968269aeea1ca0bb1a15cfc836b78d7c97867fefd0e65",
+        "comparedFrames": 420,
+        "minimumNativeYuvPsnrDb": 43.86,
+        "meanNativeYuvPsnrDb": 47.63778571428571,
+        "perFrameStatsSha256": "0c0dd9b060a7f28a530eee75b3d79456f6072bd07b17fa44e0782622ce519afd",
+        "decoderLogSha256": "cd8516c2a8fba3d478047330ba8a1428da93fc0e5a21940c6ca5684160b591d1",
+        "argv": [
+          "ffmpeg",
+          "-v",
+          "info",
+          "-i",
+          "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v11-native-4k-001\\sources\\S48.mp4",
+          "-i",
+          "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-native-4k-segment-cache-005\\S48.mp4",
+          "-filter_complex",
+          "[0:v]scale=3840:2160:force_original_aspect_ratio=increase,crop=3840:2160,fps=30,trim=end_frame=420,setpts=PTS-STARTPTS,format=yuv420p[reference];[1:v]setpts=PTS-STARTPTS[actual];[actual][reference]psnr=stats_file=S48.psnr.log:stats_version=2:shortest=1[out]",
+          "-map",
+          "[out]",
+          "-an",
+          "-f",
+          "null",
+          "-"
+        ]
+      }
+    ],
+    "status": "complete-machine-comparison-not-semantic-approval",
+    "semanticAcceptance": false,
+    "noHttpRequests": true,
+    "comparedFrames": 420,
+    "updatedAt": "2026-11-20T16:33:25.846134+00:00",
+    "finishedAt": "2026-11-20T16:33:25.847670+00:00",
+    "minimumNativeYuvPsnrDb": 43.86
+  },
+  "semanticAcceptance": false,
+  "formalFilmApproval": false,
+  "noHttpRequests": true,
+  "sourceAndEvidenceRetained": true,
+  "original24fpsSourcesRetained": true,
+  "finalImportRequiresExactActualSourceFrameRecipeAndOutputHashes": true,
+  "newS20RerunPendingOldS20CacheExcludedFromNextFinalImport": true
+}

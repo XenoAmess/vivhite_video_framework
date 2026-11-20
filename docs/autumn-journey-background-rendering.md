@@ -1,5 +1,13 @@
 # 秋日旅程：对话断开后的独立4K执行
 
+2026-11-21更新：海边S48实际完成14秒原生4K整段生成，336帧整景和蝴蝶原生局部均已实际审阅，可作为源片。服务器返回 `full_sequence/windows=1` 且不回退到独立视频窗口；首次观察运行到本地下载约8小时9分。下文按四窗估算的旧交付窗口08:00—11:00属于历史预算，现已顺延；新增S20整段重做也需要额外排队与生成，不能继续沿用该旧时间承诺。短镜头预算待新部署的实际出片耗时校准。
+
+用户在该片尾通过后要求再做10秒高山湖／包／玩偶：实际任务 `video_gen_9ff805618a994ab5a4d2b2234cc384de` 已以同一完整768P源片、3840×2160、`up3`、种子1234进入普通队尾，提交后快照为第7位，排在S43—S47和新版S05之后。独立Windows任务 `Vivhite-Autumn-Journey-v13-S20-4K` 已运行，冻结代码、计划、任务ID和完整请求另存于 `production-v13-S20-full-sequence-native-4k-001`；60秒轮询，聊天中断后继续生成、下载、完整机器检查和图片Git检查点，不自动通过画面。原两组生成任务不变，见[排队及守护凭据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S20-full-sequence-submission-v13.json)。
+
+新完整影片改用[独立v13来源导入器](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/materialize-native4k-sources-v13.py)：46镜原生4K原来源，加单独重做的S05和本次S20。新版S20必须实际通过完整240帧审阅，并核对同一任务的 `full_sequence/windows=1/independent_window_fallback=false`，不能用旧多窗S20回填。原v12导入器、旧计划和缓存全部保留；当前[预检查](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/native4k-v13-import-preflight.json)在缺少新源片时拒绝、未创建最终合成目录。3项回归检查保护48镜原时序、禁止旧S20回退、禁止缩短S46；正式48素材／计划审核及成片检查仍待完成。
+
+已采用S48另存[第五批合成缓存](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/reviewed-native4k-segment-cache-v12-005.json)，保持原生4K，转换为14秒／420帧30fps；全部420帧机器对照最低YUV PSNR43.86dB。该缓存与原336帧24fps源片分别保留。最终只导入与实际采用源片哈希、镜长、编码配方及成品指纹全部匹配的缓存；第一批中的旧S20缓存不用于新版S20。不把缓存完成或数值对照当作完整成片语义审核。
+
 2026-11-18用户要求：即使GPT对话中断，4K视频渲染仍持续正常进行。本期已实际创建并启动带每分钟看护的Windows任务`Vivhite-Autumn-Journey-v11-4K`。这不是仅提供一个待运行的脚本。
 
 ## 当前运行与实测证据
