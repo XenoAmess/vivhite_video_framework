@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "vivhite-native4k-release-estimate-2",
+  "estimatedAt": "2026-11-21T00:51:55.075915+08:00",
+  "timezone": "Asia/Shanghai",
+  "originalCompletedShots": 42,
+  "originalTotalShots": 48,
+  "remainingOriginalShots": [
+    "S42",
+    "S43",
+    "S44",
+    "S45",
+    "S46",
+    "S47"
+  ],
+  "remainingSeparateRepairs": [
+    "S05",
+    "S20"
+  ],
+  "totalOutstandingJobs": 8,
+  "runningShot": "S42",
+  "queueSnapshotSha256": "1aa5f897a62d4d0fabfc30c5974b3abf602f83c6d2f95e76830230a44fccb5e0",
+  "queueOrder": [
+    "video_gen_564aca24106741ce9e1b1284b61212a5",
+    "video_gen_eddf0b38420444d6b6b1f79661cabab7",
+    "video_gen_3a8c19036c0b470ca05ef0854241bb4d",
+    "video_gen_f86c869206194fb89a41e28dffbe0d9a",
+    "video_gen_e31e6ab68d6e452b96aa0c098137656e",
+    "video_gen_ab78089d679c4c66ba653410717fc5f5",
+    "video_gen_9ff805618a994ab5a4d2b2234cc384de"
+  ],
+  "shortJobMeasurements": [
+    {
+      "shotId": "S25",
+      "jobId": "video_gen_4d493d88a6674976830a75debd257ab3",
+      "minutesFirstObservedRunningToDownloaded": 76.17275968333334
+    },
+    {
+      "shotId": "S26",
+      "jobId": "video_gen_da53a945c6534c00b9c5888561cdc66b",
+      "minutesFirstObservedRunningToDownloaded": 76.05197946666667
+    },
+    {
+      "shotId": "S27",
+      "jobId": "video_gen_98f8cd0545c145809bf23b5858064083",
+      "minutesFirstObservedRunningToDownloaded": 76.16266220000001
+    },
+    {
+      "shotId": "S28",
+      "jobId": "video_gen_ded2c18cae174e6ba2c78351ac79a544",
+      "minutesFirstObservedRunningToDownloaded": 77.25993935
+    },
+    {
+      "shotId": "S29",
+      "jobId": "video_gen_afc3d1ba66a74b4286b832eaf19cbc19",
+      "minutesFirstObservedRunningToDownloaded": 76.25946658333334
+    },
+    {
+      "shotId": "S30",
+      "jobId": "video_gen_3dc4a5b81b9d4b62b3f6826edb33bd6e",
+      "minutesFirstObservedRunningToDownloaded": 75.59031780000001
+    },
+    {
+      "shotId": "S31",
+      "jobId": "video_gen_b38f77af0b5540558d0297d12d5674e7",
+      "minutesFirstObservedRunningToDownloaded": 76.73026683333333
+    },
+    {
+      "shotId": "S32",
+      "jobId": "video_gen_d83a2024ccf546a78186fb6ec991cbd6",
+      "minutesFirstObservedRunningToDownloaded": 75.58930015
+    },
+    {
+      "shotId": "S33",
+      "jobId": "video_gen_2f4164c5965e40e6ac999640ccfb610c",
+      "minutesFirstObservedRunningToDownloaded": 76.69881635
+    },
+    {
+      "shotId": "S34",
+      "jobId": "video_gen_c6db0946d8644b958ff7c848dbe2fbbd",
+      "minutesFirstObservedRunningToDownloaded": 75.66449578333332
+    },
+    {
+      "shotId": "S35",
+      "jobId": "video_gen_10808458552047879b7864d6fe1cfb1e",
+      "minutesFirstObservedRunningToDownloaded": 75.70044236666666
+    },
+    {
+      "shotId": "S36",
+      "jobId": "video_gen_f52961f51f83442089d69fd594b27aae",
+      "minutesFirstObservedRunningToDownloaded": 76.91097881666666
+    },
+    {
+      "shotId": "S37",
+      "jobId": "video_gen_b35c2fca72514452b3076087e9a8a67d",
+      "minutesFirstObservedRunningToDownloaded": 76.9615363
+    },
+    {
+      "shotId": "S38",
+      "jobId": "video_gen_7012ed671ae64887b8d3f1a1ff396958",
+      "minutesFirstObservedRunningToDownloaded": 75.94360653333334
+    },
+    {
+      "shotId": "S39",
+      "jobId": "video_gen_516a4fe202d64536824557fe3b492bd0",
+      "minutesFirstObservedRunningToDownloaded": 76.25220516666667
+    },
+    {
+      "shotId": "S40",
+      "jobId": "video_gen_b74c18d97b93418b90dca1920a5c2b97",
+      "minutesFirstObservedRunningToDownloaded": 76.14301633333334
+    },
+    {
+      "shotId": "S41",
+      "jobId": "video_gen_90f5a5d1b73048d18e73facd5add3068",
+      "minutesFirstObservedRunningToDownloaded": 74.8761141
+    }
+  ],
+  "shortJobMedianMinutes": 76.16266220000001,
+  "shortJobMeasurementScope": "Actual17 five-second sources on earlier deployment; first short source after long-sequence upgrade is still running, so unchanged short-job speed remains an assumption.",
+  "activeShortElapsedMinutesAtEstimate": 48.15944026666667,
+  "shortJobsRemainingMinutesAtHistoricalMedian": 484.97919513333346,
+  "estimatedS20StartAt": "2026-11-21T08:56:53.827623+08:00",
+  "completed14SecondLongSource": {
+    "shotId": "S48",
+    "minutesFirstObservedRunningToDownloaded": 488.56075733333336,
+    "temporalStrategy": "full_sequence",
+    "windows": 1
+  },
+  "new10SecondFullSequenceBudgetHours": [
+    6,
+    8
+  ],
+  "new10SecondBudgetMeasured": false,
+  "longBudgetRationale": "No actual ten-second result on this new deployment yet. Reserve6to8hours using the14second full-sequence8h9m end-to-end observation as the conservative reference; not a window-count calculation or measured linear scaling.",
+  "sourceCompletionWindowAt": [
+    "2026-11-21T14:56:53.827623+08:00",
+    "2026-11-21T16:56:53.827623+08:00"
+  ],
+  "finalReviewAssemblyVerificationAndReleaseBudgetHours": [
+    3,
+    5
+  ],
+  "releaseWindowAt": [
+    "2026-11-21T17:56:53.827623+08:00",
+    "2026-11-21T21:56:53.827623+08:00"
+  ],
+  "communicatedSourceWindow": "2026-11-21 15:00-17:00 Asia/Shanghai",
+  "communicatedReleaseWindow": "2026-11-21 18:00-22:00 Asia/Shanghai",
+  "remainingHoursRounded": [
+    17,
+    21
+  ],
+  "reviewCompletedSourcesWhileNextGenerate": true,
+  "assumptions": [
+    "Same ordinary queue order and single activeGPU job",
+    "No additional queue competition or service interruption",
+    "No new remote regeneration required after output review",
+    "Current approximately76minute short-job speed continues"
+  ],
+  "estimateIsNotGuaranteeOrAcceptance": true,
+  "supersedesHistoricalReleaseWindow": "2026-11-21 08:00-11:00; superseded by measured S48 duration and newly requested S20 rerun",
+  "newS20JobId": "video_gen_9ff805618a994ab5a4d2b2234cc384de",
+  "finalFilmSeconds": 205,
+  "finalFilmFrames": 6150,
+  "finalFilmSize": [
+    3840,
+    2160
+  ]
+}
