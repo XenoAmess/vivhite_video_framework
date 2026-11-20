@@ -4,6 +4,10 @@
 
 本轮增加的明度复核尚未完成最终成片验收。旧源片、旧修复、失败试样、检查图片和已发布版本均保留。渲染队列继续工作；最终装配被 [`print-lighting-hold-v14.json`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/print-lighting-hold-v14.json) 拦截，不能把未解决的亮脸直接沿用到交付影片。历史通过结论不能自动关闭本轮问题。
 
+本轮已完成 S42 杯子与 S43 露营立牌修订源片的助手逐帧复核并更新选片：每段完整 120 帧全景和 120 帧印花区域、原生全景与印花首末帧，以及分别 53／126 个检测候选均已实际查看。新版只校准局部印花的颜色与柔化，保留原来动作和时长；逐段依据见 [S42](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S42-print-lighting-source-review-v14-r1.json) 和 [S43](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S43-print-lighting-source-review-v14-r1.json)。这两段的源片结论不代表其余镜头或最终成片已通过明度审核。
+
+后续完成 [S38 挂件](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S38-print-lighting-source-review-v14-r1.json) 与 [S03 徽章](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S03-print-lighting-source-review-v14-r1.json) 的同范围复核和替换；检测候选分别为 183／119 个。S38 保留从阴影转入暖光的原片变化，S03 保留旧版整块徽章的配准与摆动。四段均从原始视频重新编码，原版继续保留。其余修订候选仍待完整审阅，全片明度拦截继续有效。
+
 ## 实际处理方法
 
 1. 对每个已选修复区域提取原片与修复版的首帧、中间帧、末帧，保存完整原生裁图和并排查看图。该步骤用于筛查光照问题，不冒充全片逐帧审核。
@@ -16,6 +20,8 @@
 
 所有参考人物眼睛原本就是睁开的。本轮不以“闭眼变睁眼”解释印花漂移或眩亮，也不把周边图案的脸误当成允许出现的真人脸。
 
+S03 的历史修复采用整块徽章矩形配准及圆形遮罩，与一般的面部投影不同。因此单独保留其原始母版矩形、目标矩形、原生分辨率圆形遮罩及边缘光流跟踪，只在该徽章印面内校准颜色与柔化。三档样张保存原片、旧亮版与新候选的首／中／末帧；不能为了复用眼部工具而静默改变徽章形状。新徽章候选仍须完整解码和实际逐帧审阅，不由测光函数自动采用。
+
 ## 代码与数据入口
 
 | 环节 | 文件 |
@@ -23,9 +29,12 @@
 | 原片与历史修复的三点对照 | [`prepare-print-lighting-audit-v14.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/prepare-print-lighting-audit-v14.py) |
 | 非眼部肤色采样与增益建议 | [`print_lighting_calibration.py`](../video-maker/tools/print_lighting_calibration.py) |
 | 固定增益、光照曲线与局部柔化 | [`restore_printed_regions_lighting.py`](../video-maker/tools/restore_printed_regions_lighting.py) |
+| 历史整块徽章配准的光照修订 | [`restore_printed_badge_lighting.py`](../video-maker/tools/restore_printed_badge_lighting.py) |
+| 徽章原片／旧亮版／三档候选样张 | [`prepare-badge-lighting-trials-v14.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/prepare-badge-lighting-trials-v14.py) |
 | 三档候选样张及可选光照曲线 | [`prepare-print-lighting-trials-v14.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/prepare-print-lighting-trials-v14.py) |
 | 冻结实际代码、配置与输入后渲染 | [`render-print-lighting-candidates-v14.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/render-print-lighting-candidates-v14.py) |
 | 全量解码、印花页、检测候选与区域比较 | [`prepare-print-lighting-evidence-v14.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/prepare-print-lighting-evidence-v14.py) |
+| 沿用已核对区域坐标、重算新版全部帧对 | [`compare-print-lighting-outside-v14.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/compare-print-lighting-outside-v14.py) |
 | 未解决明度问题时阻止正式装配 | [`materialize-native4k-sources-v13.py`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/materialize-native4k-sources-v13.py) |
 
 图像与样张保存在本期 `assets/generated/production-v11-native-4k-001/review/lighting-v14-*`。新的本地视频候选保存在仓库外运行目录 `production-v11-native-4k-001/corrections/*-print-lighting-v14-*.mp4`；配置、检查记录与图片入 Git，大型视频沿用发布资产交付。正式选片前，候选一律标记为待审核。

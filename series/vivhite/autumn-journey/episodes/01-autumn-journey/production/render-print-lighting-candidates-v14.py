@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT / 'video-maker/tools'))
 from local_video_pipeline import read, save, now
 from reference_finisher import sha
 from restore_printed_regions_lighting import restore
+from restore_printed_badge_lighting import restore as restore_badge
 
 
 def render(run, shot, trial, revision):
@@ -28,14 +29,16 @@ def render(run, shot, trial, revision):
     records = []
     for path in [Path(__file__), trial, configuration, *[ROOT / 'video-maker/tools' / name
             for name in ('restore_printed_regions_lighting.py', 'restore_printed_regions.py',
-                'restore_printed_eyes.py', 'stabilize_printed_patch.py', 'print_lighting_calibration.py')]]:
+                'restore_printed_eyes.py', 'stabilize_printed_patch.py', 'print_lighting_calibration.py',
+                'restore_printed_badge_lighting.py')]]:
         target = checkpoint / path.name
         shutil.copyfile(path, target)
         records.append({'source': str(path), 'frozen': str(target), 'sha256': sha(path)})
     save(checkpoint / 'frozen-inputs.json', {'createdAt': now(), 'files': records,
         'rawSha256': sha(source), 'selectedStillTrialSha256': sha(trial),
         'semanticAcceptance': False})
-    restore(source, destination, configuration)
+    renderer = restore if 'regions' in trial_configuration else restore_badge
+    renderer(source, destination, configuration)
     if not all(sha(row['source']) == sha(row['frozen']) == row['sha256'] for row in records):
         raise ValueError('A frozen rendering input changed')
     print(shot, 'lighting video candidate rendered; complete review required', flush=True)

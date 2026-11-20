@@ -18,6 +18,7 @@ from reference_finisher import sha
 from review_reference_clips import inspect
 
 OUTSIDE = {
+    'S03': {'upper-scene': [0, 0, 3840, 1000], 'left-scene': [0, 1000, 1850, 2160]},
     'S42': {'upper-scene': [0, 0, 3840, 550], 'right-hand-and-sleeves': [2530, 400, 3840, 1750]},
     'S43': {'left-landscape': [0, 0, 1800, 2160], 'right-lantern-and-cup': [2300, 0, 3840, 2160]}}
 
@@ -43,7 +44,12 @@ def prepare(run, shot_id, source):
         'inspectionReportSha256': sha(report), 'semanticAcceptance': False, 'commands': []}
     commands = [('prepare-review-viewing-copies-v11.py', ['--directory', str(run), '--shot', shot_id,
         '--source', str(source), '--report', str(report)])]
-    for number, region in enumerate(receipt['regions'], 1):
+    regions = receipt.get('regions')
+    if regions is None:
+        regions = [{'trackingCenter': [round(receipt['center'][0]*1344/3840),
+            round(receipt['center'][1]*768/2160)],
+            'trackingRadius': math.ceil(receipt['radius']*1344/3840*1.35)}]
+    for number, region in enumerate(regions, 1):
         commands.append(('inspect-print-details-v11.py', ['--source', str(source), '--identity',
             f'{source.stem}-r{number:02}', '--center', *map(str, region['trackingCenter']),
             '--radius', str(region['trackingRadius']), '--frames', str(receipt['frames']), '--max-scale', '2.5']))

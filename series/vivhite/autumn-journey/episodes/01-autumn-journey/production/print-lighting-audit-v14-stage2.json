@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "vivhite-print-lighting-review-progress-2",
+  "recordedAt": "2026-11-20T21:56:59.549601+00:00",
+  "reason": "User rejected excessively bright restored print faces; whole-film lighting review remains open.",
+  "priorScreeningRecordSha256": "62483b0f5808358706dbb007bc3019e7c79a07dd25ec6bec809a03aea6035aa6",
+  "sourceReviews": [
+    {
+      "path": "production/S03-print-lighting-source-review-v14-r1.json",
+      "sha256": "667776927ee715e2fbb275f76d7c450f4bd6e57a38e1bf57017bb31ca1c65636",
+      "shotId": "S03",
+      "selectedSourceSha256": "724f3e1ab52ef28fb71f787c60e8c2f58efe23cf2b0532a7e02c7db4a62d39a4"
+    },
+    {
+      "path": "production/S38-print-lighting-source-review-v14-r1.json",
+      "sha256": "1447e0a46ca278124f022886ac985886fc0c5939e55774bbdfce19718b399c0f",
+      "shotId": "S38",
+      "selectedSourceSha256": "4c6f522873405fe2a17a4a7f54c3103152732f63a973bf3a9de7f991ee39684d"
+    },
+    {
+      "path": "production/S42-print-lighting-source-review-v14-r1.json",
+      "sha256": "d6e5fd3055612b97c3ffa0fae5972d03be115756b335da55221680123b587454",
+      "shotId": "S42",
+      "selectedSourceSha256": "4e12c815661a5fc6401a6b84229eed38470842c023ff464650c6f6406227dc95"
+    },
+    {
+      "path": "production/S43-print-lighting-source-review-v14-r1.json",
+      "sha256": "dabf6258ca017488903962b207708b847acbe30914fcdf5e20781a8d7699e191",
+      "shotId": "S43",
+      "selectedSourceSha256": "a201ee7f42fc50ea573e09c5f6d30acd0c8a5278d55d02c077417644f09b5628"
+    }
+  ],
+  "actuallyReviewedAndSelectedLightingRevisions": 4,
+  "otherNewCandidates": [
+    {
+      "shotId": "S06",
+      "sourceSha256": "d35cd658aa49ddd7e66632ec3642ac3122326263ad26e7ec7a72d92383e0698c",
+      "status": "technical-candidate-complete-visual-review-pending",
+      "wholeSceneFramesActuallyViewed": 0,
+      "printFramesActuallyViewed": 0,
+      "stillTrialVariantsActuallyViewed": [
+        1,
+        2,
+        3
+      ],
+      "stillTrialFramesActuallyViewed": [
+        0,
+        60,
+        119
+      ],
+      "selectedStillTrial": 2,
+      "fullClipAcceptance": false
+    },
+    {
+      "shotId": "S09",
+      "sourceSha256": "5a193544026da81b16f42bc56233d6a8f07980c3a34aba631df21e314df5d524",
+      "status": "technical-candidate-complete-visual-review-pending",
+      "wholeSceneFramesActuallyViewed": 0,
+      "printFramesActuallyViewed": 0,
+      "stillTrialVariantsActuallyViewed": [
+        1,
+        2,
+        3
+      ],
+      "stillTrialFramesActuallyViewed": [
+        0,
+        60,
+        119
+      ],
+      "selectedStillTrial": 2,
+      "fullClipAcceptance": false
+    },
+    {
+      "shotId": "S12",
+      "sourceSha256": "628232a17d4264be186451a556086cb2a7c001237caba81819d39fa7a51487dd",
+      "status": "technical-candidate-complete-visual-review-pending",
+      "wholeSceneFramesActuallyViewed": 0,
+      "printFramesActuallyViewed": 0,
+      "stillTrialVariantsActuallyViewed": [
+        1,
+        2,
+        3
+      ],
+      "stillTrialFramesActuallyViewed": [
+        0,
+        60,
+        119
+      ],
+      "selectedStillTrial": 1,
+      "fullClipAcceptance": false
+    },
+    {
+      "shotId": "S15",
+      "sourceSha256": "2c58d549dce5751289f2d5da0f377b33038bc5a1283a131ea0bcb3a412c17dcf",
+      "status": "technical-candidate-complete-visual-review-pending",
+      "wholeSceneFramesActuallyViewed": 0,
+      "printFramesActuallyViewed": 0,
+      "stillTrialVariantsActuallyViewed": [
+        1,
+        2,
+        3
+      ],
+      "stillTrialFramesActuallyViewed": [
+        0,
+        60,
+        119
+      ],
+      "selectedStillTrial": 1,
+      "fullClipAcceptance": false
+    },
+    {
+      "shotId": "S45",
+      "sourceSha256": "2a72ca56e880d0e7dfaa8199a22ecf6436291965e143e8a2a33727c8ee5444a2",
+      "status": "technical-candidate-complete-visual-review-pending",
+      "wholeSceneFramesActuallyViewed": 0,
+      "printFramesActuallyViewed": 0,
+      "stillTrialVariantsActuallyViewed": [
+        1,
+        2,
+        3
+      ],
+      "stillTrialFramesActuallyViewed": [
+        0,
+        60,
+        119
+      ],
+      "selectedStillTrial": 1,
+      "fullClipAcceptance": false
+    }
+  ],
+  "S45RawActualReview": {
+    "sourceSha256": "77884e5b19bc7362aa7d4727bfe23e1a29b5054bc1163630c46f698420bdb97e",
+    "wholeSceneFramesActuallyViewed": 120,
+    "printFramesActuallyViewed": 16,
+    "nativeWholeFramesActuallyViewed": [
+      0
+    ],
+    "detectorCropsActuallyViewed": 0,
+    "rejectionRecordSha256": "1c4a3994e19bbd79f25aee2c7c7fb88d306b684ecfdbe964211097310b373564"
+  },
+  "S44ActualReview": {
+    "sourceSha256": "ad5eef171bda976621f9648680d601a6c321f7cf231514b928d522813b7a0298",
+    "wholeSceneFramesActuallyViewed": 120,
+    "expandedNativeHandFramesActuallyViewed": 0,
+    "completeSourceAcceptance": false
+  },
+  "originalRunDownloadedSources": 46,
+  "originalRunTotalSources": 48,
+  "separateQueuedReplacementShots": [
+    "S05",
+    "S20"
+  ],
+  "preservedVersionsAndEveryTrial": true,
+  "humanContinuousPlayback": false,
+  "humanListening": false,
+  "formalFullFilmApproval": false,
+  "finalAssemblyAllowed": false,
+  "tests": {
+    "lightingCalibration": 3,
+    "faceLightingCompositing": 6,
+    "wholeBadgeLightingCompositing": 2,
+    "allExecutedPassed": true,
+    "notAestheticApproval": true
+  }
+}

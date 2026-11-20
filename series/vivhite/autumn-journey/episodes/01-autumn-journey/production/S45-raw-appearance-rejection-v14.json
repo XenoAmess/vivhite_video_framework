@@ -1,0 +1,56 @@
+{
+  "sourceSha256": "77884e5b19bc7362aa7d4727bfe23e1a29b5054bc1163630c46f698420bdb97e",
+  "decision": {
+    "id": "S45",
+    "sourceSha256": "77884e5b19bc7362aa7d4727bfe23e1a29b5054bc1163630c46f698420bdb97e",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-20T21:43:29.169615+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 48,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S45-77884e5b19-all-frames-01.png",
+        "sha256": "b2a4a263e766d6112468f16381c7546209d48c2e9a02d2b1e10e98ccb176e864",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S45-77884e5b19-all-frames-02.png",
+        "sha256": "ca0c34ad4ce630d64fa10a85111dca7bd32d9841320705d6d5284556febebba6",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S45-77884e5b19-all-frames-03.png",
+        "sha256": "e5169bb89a5b645e19b34bd5df7035f73f69fdee4c512200d6723af12ca177ef",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S45-77884e5b19-all-frames-04.png",
+        "sha256": "1d4330c1f3525180440d6ee65c5c84b5fb4d7cf7db2c8862c997efaf8b96c947",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S45-77884e5b19-face-candidates.png",
+      "sha256": "6d2786a4f0e2920cff7adc9044a2ba5a2d533ddb0785e8790ccc8d773b51cffb",
+      "items": 10
+    },
+    "observation": "All120 raw whole-frame representations on4 ordered JPEG pages, native whole frame0, native-coordinate face grid and first16 print-region representations actually viewed. The two booted legs walk continuously in alternating strides, suitcase wheel and established street move coherently, no observed extra person, real face, extra leg, frozen gait or cut. Original M01 printed eyes are already open but their patterned iris detail, fine gold spectacle outlines and small mouth are lost or deformed. Reject reference appearance; do not call this closed-to-open repair. Full raw candidate crops and remaining print pages not individually reviewed. Measured original-art local lighting trials are being prepared; no corrected source accepted and no human continuous playback/listening or final-film approval.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "wholeSceneFramesActuallyViewed": 120,
+  "printFramesActuallyViewed": 16,
+  "nativeWholeFramesActuallyViewed": [
+    0
+  ],
+  "detectorCropsActuallyViewed": 0,
+  "humanFullPlayback": false
+}

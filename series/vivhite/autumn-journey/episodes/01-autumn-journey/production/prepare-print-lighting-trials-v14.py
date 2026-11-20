@@ -70,9 +70,11 @@ def measure_curve(cap, first, definitions, frames):
     return measurements
 
 
-def prepare(run, shot, destination, lighting_curve=False):
+def prepare(run, shot, destination, lighting_curve=False, initial_configuration=None):
     selections = read(run / 'source-selections.json')['selections']
-    if shot in selections:
+    if initial_configuration is not None:
+        receipt_file = initial_configuration
+    elif shot in selections:
         receipt_file = run / selections[shot]['receipt']
     else:
         receipt_file = run / f'corrections/{shot}-reference-print-v1.json'
@@ -215,6 +217,11 @@ if __name__ == '__main__':
     parser.add_argument('--shots', nargs='+', required=True)
     parser.add_argument('--destination', required=True, type=Path)
     parser.add_argument('--lighting-curve', action='store_true')
+    parser.add_argument('--configuration', type=Path,
+        help='Explicit original-art registration for one newly downloaded source, before any correction exists')
     args = parser.parse_args()
+    if args.configuration is not None and len(args.shots) != 1:
+        parser.error('An initial configuration belongs to one explicit shot')
     for shot_id in args.shots:
-        prepare(args.run.resolve(), shot_id, args.destination.resolve() / shot_id, args.lighting_curve)
+        prepare(args.run.resolve(), shot_id, args.destination.resolve() / shot_id, args.lighting_curve,
+            args.configuration.resolve() if args.configuration is not None else None)
