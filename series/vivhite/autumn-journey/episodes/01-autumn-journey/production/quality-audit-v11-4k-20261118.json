@@ -1799,14 +1799,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S40",
+      "sourceSha256": "ff32d05837882e8aed053afa6bc19a0ac9337a8271fe983f37eb1ae2a55a5fbf",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-20T06:45:45.488822+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-reference-sticker-v1\\inspection\\S40-ff32d05837-all-frames-01.png",
+          "sha256": "5be7f6815637107d64148023bb0a15d3f5512986697f730a7577c9607170e4fd",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-reference-sticker-v1\\inspection\\S40-ff32d05837-all-frames-02.png",
+          "sha256": "40cf2c65544eb6513a06bbe4aef5ff3f447b4de261301eaf5b4a05b2374e8837",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-reference-sticker-v1\\inspection\\S40-ff32d05837-all-frames-03.png",
+          "sha256": "4c42b961c63d0cd29589b7988ed18fe0fb18d1267ef822df35ea6510e01af715",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-reference-sticker-v1\\inspection\\S40-ff32d05837-all-frames-04.png",
+          "sha256": "09d9bde58ec7d1192c0e9a5c85b01682f04fb0db05e9ad81049cc4c3b8152120",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-reference-sticker-v1\\inspection\\S40-ff32d05837-face-candidates.png",
+        "sha256": "13b329c7016a2ab607e5ce18563127c3ff034220274eab4083ba5d5bd0373aac",
+        "items": 2
+      },
+      "observation": "Actually viewed all120 raw whole-scene frames on4 ordered JPEG pages, native whole0/119, all2 native detector boxes on1 page, and first32 raw print frames on2 native-crop JPEG pages. Complete original M09 master actually reread; actual768P input native first whole reread this session, with previous continuous-session120-input-frame baseline available. Original train seat and seat reflection stay unoccupied. Pink/cyan exterior light bands travel laterally with continuous blur; window frame, metal trim, existing empty seat reflection, glass scratches and existing attached sticker stay coherent. No observed new person, hand, human face or reflected person, lettering or unplanned cut. Both detector boxes are original sticker costume detail. Printed eyes are already OPEN in actual examined native detail; the problem is coarse violet iris detail instead of original star/diamond structure, warm thick/merged round spectacle edges and absent small original smile. This is a reference-appearance rejection, not an invented closed-eye or blink diagnosis. Other96 raw print detail frames/pages and other native checkpoints are exported/retained, not claimed individually viewed. Whole120-frame scope does not certify fine iris detail everywhere. No source modification, retiming, interpolation, anatomy patch or corrected-video approval at this checkpoint. Preserve full5second120native-frame source and original final5seconds159to164seconds/frames4770to4919; all other durations and205seconds6150frames remain fixed. Assistant ordered-image review, not human continuous playback/listening, user aesthetic acceptance or final-film approval. Corrected version independently reviewed: all120 whole frames on4 JPEG pages and all120 print frames on8 JPEG pages, native whole0/119, native print0/119, all4 detector boxes on1 JPEG page actually viewed. All12 first/last endpoint trial variants were actually compared; selectedtrial11 native0/119 viewed. Two-eye similarity trials left a chin/glasses gap or edge residue and were not used. Selected original-M09 eye/eye/chin affine registration matches the existing three landmarks without reflection, uses mask1.8/bottom700/feather15 and gainRGB.75/.65/.67. The finite bounded mapping is checked by3 passing targeted tests, including the actual eye-only chin-gap regression. Open original violet-pink star/diamond irises, fine gold round glasses and the small original smile remain fixed to the same sticker through all120 corrected print frames; no observed blink, autonomous expression, slipping, duplicated glasses, double mouth, chin sliver or visible mask seam. The face mask also affects nearby original fringe, cheeks and chin; it is not an iris-only pixel edit or a claim of unwarped pixel identity. Outer hat/butterfly/body and scene retain softer processed detail. The same empty seat/window scene and lateral light changes remain continuous through all120 corrected whole frames. All4 detector boxes are original printed costume, not a real human face. No new passenger, face/reflection, human limb, subtitle or cut observed. All120 native outside-region frame pairs compared: empty-window minimumPSNR40.73698831032958dB, seat/metal40.452007583234234dB. This is lossy-encode comparison, not pixel identity or automatic semantic approval. Exported separate outside crops are retained but not individually claimed viewed; native whole0/119 provide actual full-scene context. No human anatomy editing, complete-sticker freeze, new image generation, scene replacement, speed change or interpolation. One CRF16 encode from unchanged raw, keeping the current frame outside the print. All5seconds120native24fps frames retained and used at159to164seconds, final30fps frames4770to4919. Other shot durations and205seconds6150frames remain fixed. All raw/corrected versions and endpoint trials retained. OldS05 remains rejected and its new768P-based native4K job ordinarily queued. Assistant ordered-image review; no human continuous playback/listening, user aesthetic or final full-film approval.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Thirty-nine original shots reviewed;38 adopted, oldS05 revoked for missing saddle. Unmodified S39 adopted after complete whole, native butterfly and candidate review. New768P full film published, correspondingS05 native4K ordinarily queued; S40 running. Full4Kfilm pending.",
-  "reviewedSourceCount": 39,
-  "acceptedSourceCount": 38,
+  "scope": "Forty original shots reviewed;39 adopted, oldS05 revoked for missing saddle. S40raw reference appearance rejected; original-M09 three-point affine print correction separately reviewed/adopted. Repaired768P full film published, correspondingS05 native4K ordinarily queued; S41 running. Full4Kfilm pending.",
+  "reviewedSourceCount": 40,
+  "acceptedSourceCount": 39,
   "rejectedCurrentSourceCount": 1,
-  "rejectedHistoricalSourceCount": 27,
-  "pendingSources": 9,
+  "rejectedHistoricalSourceCount": 28,
+  "pendingSources": 8,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -2120,10 +2166,22 @@
       "inspectionReportSha256": "e48f9017edbd10c318a036330e15b9d61fac6d31c0d5fe36d306a74bec5438a2",
       "selectedAt": "2026-11-20T04:13:26.111963+00:00",
       "reason": "Actually viewed120 raw/corrected whole and print frames each,176raw/186corrected detector boxes,120raw native hand crops, native whole/print/outside endpoints and3 endpoint projection trials. OriginalM01 face restored locally; original final4seconds unchanged."
+    },
+    "S40": {
+      "path": "corrections/S40-reference-sticker-v1.mp4",
+      "sha256": "ff32d05837882e8aed053afa6bc19a0ac9337a8271fe983f37eb1ae2a55a5fbf",
+      "parent": "sources/S40.mp4",
+      "parentSha256": "938a770964809294847d63237447a1ff2dec3b738e5e40d48c510ef856d55238",
+      "receipt": "corrections/S40-reference-sticker-v1.json",
+      "receiptSha256": "d63b8c67968b6d6e1c64fbff939f1bb881f4f1c292a9bb04492616712dc0553c",
+      "inspectionReport": "corrections/S40-reference-sticker-v1-inspection/S40.json",
+      "inspectionReportSha256": "dea076077f8361872b8c53c574b1fd8f908399530f489d43dd6a1321189efdd9",
+      "selectedAt": "2026-11-20T06:45:45.414158+00:00",
+      "reason": "Actually viewed120 whole frames per version,32raw/120corrected print frames,all2raw/4corrected candidates,native whole endpoints per version/corrected print endpoints and12 first-last trials. Original-M09 eye/eye/chin affine trial11 reviewed; final5seconds unchanged."
     }
   },
-  "snapshotAt": "2026-11-20T05:12:25.932484+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 8400,
+  "snapshotAt": "2026-11-20T06:45:45.629633+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 8640,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -2169,7 +2227,9 @@
     "S37AdoptedV1": 120,
     "S38Raw": 120,
     "S38AdoptedV1": 120,
-    "S39OriginalAdopted": 120
+    "S39OriginalAdopted": 120,
+    "S40Raw": 120,
+    "S40AdoptedV1": 120
   },
   "activeUserDirectedRepair": {
     "shotId": "S05",

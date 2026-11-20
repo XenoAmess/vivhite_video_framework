@@ -232,3 +232,11 @@ video-maker/.venv/Scripts/python.exe -X utf8 `
 截至2026-11-20凌晨，该4K任务仍在等待，尚无新的4K画面通过。[6项来源校验测试](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/test_inspect_S05_native4k_v12.py)已通过，实际等待任务调用也按预期在创建检查目录前拒绝，见[实测记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S05-native4k-inspection-preflight-v12.json)。这些测试只证明来源校验行为，不代表完成了原生4K视频提取、手脚机械验收或完整成片复核。
 
 最终装配的[文字／音轨预检](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/native4k-v12-text-audio-preflight.json)已确认：新4K待审装配候选经`titles()`及实际使用的`utf-8-sig`／LF写法产生的ASS，与已发布v12／768P文件逐字节相同；保留的完整原WAV哈希也相同。片头主副标题19.4秒起，片尾仍为191—205秒的14秒，主副标题191.4秒起，献词194秒起淡入。ASS使用1920×1080虚拟画布，按输出尺寸缩放同一套样式。最初仅比较普通UTF-8编码会因缺少三个BOM字节而不同，不是文字、布局或时序改变。实际4K成片尚未装配，这项预检不能替代最终编码音轨逐样本对照、字幕画面阅读或全片音画验收。
+
+## 两眼对齐后仍有下巴或镜框残影
+
+2026-11-20的S40夜车贴纸说明：只按两眼中心进行相似变换，可以对齐眼睛，却不一定同时对齐镜框下沿、嘴和下巴。扩大遮罩可能留下原下巴或双嘴；缩小遮罩又可能留下旧镜框。12组首末试样中，前9组未采用；最后选择11号的原画两眼加下巴三点仿射。该映射明确检查三个点不共线、方向一致、有限缩放与伸缩比例，拒绝反射或退化映射；再按源片光照调整RGB增益，用限定到下巴附近的羽化遮罩融合。
+
+实际复现入口为[该镜三点配准程序](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/restore-S40-three-point-print-v12.py)和[配置](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S40-reference-restoration-configuration-v11.json)。它保持已使用的通用后处理代码原样，仅在独立进程内替换该镜的初始配准矩阵，随后继续跟踪同一原贴纸，并以每个当前帧为底图。核心程序、实际封装程序、配置及原始核心收据分别冻结留档；最终技术收据补充封装程序指纹，不能只凭通用程序名声称可复现。入口锁定S40及实际源片，不应把这组三点坐标直接用于别的镜头。
+
+[3项针对性测试](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/test_restore_S40_three_point_print_v12.py)已实际通过，包括原两眼映射留下超过15像素下巴偏差、三点映射同时对齐，以及拒绝共线、反射、非有限值和不一致眼部锚点。实际修订另完成120帧整景与120帧印花阅读、原生首末和全部检测框复核，见[实际审核收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S40-reference-restoration-v11-4k.json)。本方法会影响印刷面部及相邻刘海、脸颊和下巴，并通过仿射映射到原贴纸平面，不能称为仅改虹膜像素或原画逐像素不变；不用于修补真人手脚或遮盖新增人员。全片时长与其他镜头保持，完整4K成片仍待最终装配和复核。

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "vivhite-raw-source-rejection-1",
+  "shotId": "S40",
+  "recordedAt": "2026-11-20T06:22:50.480047+00:00",
+  "planSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "sourceSha256": "938a770964809294847d63237447a1ff2dec3b738e5e40d48c510ef856d55238",
+  "decision": {
+    "id": "S40",
+    "sourceSha256": "938a770964809294847d63237447a1ff2dec3b738e5e40d48c510ef856d55238",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-20T06:22:50.476928+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 120,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S40-938a770964-all-frames-01.png",
+        "sha256": "180df37e455ac8aacaa02c245d702d765a33fa7ca012723703676e8f71379136",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S40-938a770964-all-frames-02.png",
+        "sha256": "da46f311bd07368a641d77fb32a4dd0c1048e51bdcef9a27dc34b12e121d4b60",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S40-938a770964-all-frames-03.png",
+        "sha256": "53262b7e5ffa7fe52d5bee5d690844fe06791f12e26ab63f8fcdc45b812f2af5",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S40-938a770964-all-frames-04.png",
+        "sha256": "8427cbed50cd124610633d29d190abc515d172814971df60a7871c85b1f1fc67",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S40-938a770964-face-candidates.png",
+      "sha256": "9613c71288d1d523cbeb6f18c9c770b73cfce3f5883cac6237903b23e67196fb",
+      "items": 1
+    },
+    "observation": "Actually viewed all120 raw whole-scene frames on4 ordered JPEG pages, native whole0/119, all2 native detector boxes on1 page, and first32 raw print frames on2 native-crop JPEG pages. Complete original M09 master actually reread; actual768P input native first whole reread this session, with previous continuous-session120-input-frame baseline available. Original train seat and seat reflection stay unoccupied. Pink/cyan exterior light bands travel laterally with continuous blur; window frame, metal trim, existing empty seat reflection, glass scratches and existing attached sticker stay coherent. No observed new person, hand, human face or reflected person, lettering or unplanned cut. Both detector boxes are original sticker costume detail. Printed eyes are already OPEN in actual examined native detail; the problem is coarse violet iris detail instead of original star/diamond structure, warm thick/merged round spectacle edges and absent small original smile. This is a reference-appearance rejection, not an invented closed-eye or blink diagnosis. Other96 raw print detail frames/pages and other native checkpoints are exported/retained, not claimed individually viewed. Whole120-frame scope does not certify fine iris detail everywhere. No source modification, retiming, interpolation, anatomy patch or corrected-video approval at this checkpoint. Preserve full5second120native-frame source and original final5seconds159to164seconds/frames4770to4919; all other durations and205seconds6150frames remain fixed. Assistant ordered-image review, not human continuous playback/listening, user aesthetic acceptance or final-film approval.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "actualWholeSceneFramesViewed": 120,
+  "actualNativeWholeFramesViewed": [
+    0,
+    119
+  ],
+  "actualPrintFramesViewed": 32,
+  "actualCandidateBoxesViewed": 2,
+  "eyesWereAlreadyOpenInActuallyExaminedNativeDetail": true,
+  "observation": "Actually viewed all120 raw whole-scene frames on4 ordered JPEG pages, native whole0/119, all2 native detector boxes on1 page, and first32 raw print frames on2 native-crop JPEG pages. Complete original M09 master actually reread; actual768P input native first whole reread this session, with previous continuous-session120-input-frame baseline available. Original train seat and seat reflection stay unoccupied. Pink/cyan exterior light bands travel laterally with continuous blur; window frame, metal trim, existing empty seat reflection, glass scratches and existing attached sticker stay coherent. No observed new person, hand, human face or reflected person, lettering or unplanned cut. Both detector boxes are original sticker costume detail. Printed eyes are already OPEN in actual examined native detail; the problem is coarse violet iris detail instead of original star/diamond structure, warm thick/merged round spectacle edges and absent small original smile. This is a reference-appearance rejection, not an invented closed-eye or blink diagnosis. Other96 raw print detail frames/pages and other native checkpoints are exported/retained, not claimed individually viewed. Whole120-frame scope does not certify fine iris detail everywhere. No source modification, retiming, interpolation, anatomy patch or corrected-video approval at this checkpoint. Preserve full5second120native-frame source and original final5seconds159to164seconds/frames4770to4919; all other durations and205seconds6150frames remain fixed. Assistant ordered-image review, not human continuous playback/listening, user aesthetic acceptance or final-film approval.",
+  "correctionAcceptance": false,
+  "fullFilmApproval": false
+}
