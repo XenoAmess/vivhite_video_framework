@@ -1753,14 +1753,60 @@
       "motionAndContinuity": "passed",
       "merchandiseBehavior": "passed",
       "referenceAppearance": "passed"
+    },
+    {
+      "id": "S39",
+      "sourceSha256": "d9338cd0ec61bc3a9f3a5e2cd87d7531a993081ec1ebaa1fef6201c61a17ae28",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-20T05:12:25.910279+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S39-d9338cd0ec-all-frames-01.png",
+          "sha256": "4cf8599b18046f6fd7020d002768c1c7e4ff5fd7b004fcfc61a44a29d8b137c6",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S39-d9338cd0ec-all-frames-02.png",
+          "sha256": "9d609bee1dd5b83e9e167244f85cff77b03540b35cc6ea6cb85d3549de617092",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S39-d9338cd0ec-all-frames-03.png",
+          "sha256": "d1165b444040581dde0aec65f9e2bbc37ea27022f720fce26195c499ed3cc756",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S39-d9338cd0ec-all-frames-04.png",
+          "sha256": "d8e76256d92be7093b0173d27a4ea76dc336982f4a049719a4ea3cc666bfad90",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S39-d9338cd0ec-face-candidates.png",
+        "sha256": "4b625b412e5042ba9aa81754c9f118737f9683e974d4b510868c2970d70cc27d",
+        "items": 4
+      },
+      "observation": "Actually viewed all120 source whole-scene frames through4 ordered JPEG pages, native whole0/119, all14 native detector boxes on1 JPEG page, and all120 native butterfly-region frames through30 four-frame JPEG pages. The complete I01 master and actual input native first whole were reread immediately before this decision; all120 actual input whole frames were previously viewed in this continuous session and their evidence bytes rechecked. The unoccupied wet stone lane, worn walls, wood/glass window, pottery shelves, drainpipes, tiled roofs and original overhanging leaves remain coherent. The same warm lantern and its wet-pavement reflection move/change gently with the camera and ambient light; no observed background reset, cut, pedestrian, new limb, human face or reflected person. All14 detector boxes correspond to the existing blue wing and adjacent reflected leaves/roof, not a human face. Native butterfly detail retains the same blue/cyan teardrop pattern, joined upper/lower wing silhouette and rounded lower veins. Small wing-angle changes remain continuous; exact wingbeat rate and frame-perfect equivalence to input are not certified. No speed adjustment is performed and the separate S48 original-cadence requirement remains unchanged. The top leaves/branch are already present in the actual input; no new foreground tree is observed. No printed character front face, hand anatomy, glasses or clothing appears in this shot; no eye or anatomy restoration is applicable. Some distant foliage/glass texture remains soft/processed; native resolution does not certify perfect photographic detail. Unmodified native4K source adopted directly, with no image editing, masking, first-frame freezing, interpolation, retiming or new generation. All5seconds120native24fps frames retained; only the original first3seconds72native frames are used at156to159seconds, final30fps frames4680to4769. Other shot durations and the205seconds6150frame total remain fixed. Other exported native checkpoints/PNG pages retained but not counted as individually viewed. This assistant ordered-image review is not human continuous playback/listening, user aesthetic acceptance or final-film approval. The oldS05 source remains rejected; its replacement is ordinarily queued separately.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
     }
   ],
-  "scope": "Thirty-eight original shots reviewed;37 adopted, oldS05 revoked for missing saddle. S38raw reference appearance rejected; local original-M01 face correction separately reviewed/adopted. Full repaired768P film published, correspondingS05 native4K ordinarily queued, S39inprogress. Full4Kfilm pending.",
-  "reviewedSourceCount": 38,
-  "acceptedSourceCount": 37,
+  "scope": "Thirty-nine original shots reviewed;38 adopted, oldS05 revoked for missing saddle. Unmodified S39 adopted after complete whole, native butterfly and candidate review. New768P full film published, correspondingS05 native4K ordinarily queued; S40 running. Full4Kfilm pending.",
+  "reviewedSourceCount": 39,
+  "acceptedSourceCount": 38,
   "rejectedCurrentSourceCount": 1,
   "rejectedHistoricalSourceCount": 27,
-  "pendingSources": 10,
+  "pendingSources": 9,
   "humanFullPlayback": false,
   "sourceSelections": {
     "S03": {
@@ -2076,8 +2122,8 @@
       "reason": "Actually viewed120 raw/corrected whole and print frames each,176raw/186corrected detector boxes,120raw native hand crops, native whole/print/outside endpoints and3 endpoint projection trials. OriginalM01 face restored locally; original final4seconds unchanged."
     }
   },
-  "snapshotAt": "2026-11-20T04:13:26.269157+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 8280,
+  "snapshotAt": "2026-11-20T05:12:25.932484+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 8400,
   "rejectedCorrectionCandidateCount": 3,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
@@ -2122,7 +2168,8 @@
     "S37Raw": 120,
     "S37AdoptedV1": 120,
     "S38Raw": 120,
-    "S38AdoptedV1": 120
+    "S38AdoptedV1": 120,
+    "S39OriginalAdopted": 120
   },
   "activeUserDirectedRepair": {
     "shotId": "S05",
