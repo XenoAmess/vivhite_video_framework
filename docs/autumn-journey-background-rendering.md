@@ -107,6 +107,8 @@ S39完成实际源片审阅后，另存`production-v12-native-4k-segment-cache-0
 
 S40修订版完成全部120个源帧的实际复审后，单独保存第三批`production-v12-native-4k-segment-cache-003`，未改前两批。新增原定5秒／150个30fps帧，全部原生尺寸帧的机器对照最低YUV PSNR为48.79dB，实际视频、收据、比较统计及程序均保留，见[第三批收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/reviewed-native4k-segment-cache-v12-003.json)。三批累计39镜／159秒／4770帧；仍是分段技术缓存，未合成完整影片，也未授予编码缓存新的语义或成片通过结论。
 
+S41双周边修订版完成实际复审后，另存第四批`production-v12-native-4k-segment-cache-004`，保持其原定4秒／120个30fps帧；全部120个原生尺寸帧机器对照最低YUV PSNR为46.21dB，见[第四批收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/reviewed-native4k-segment-cache-v12-004.json)。四批共40镜／163秒／4890帧，输出、比较日志及完整24fps源片均保留，仍须全部48镜正式导入和成片检查。
+
 剩余S40—S48另有[局部证据准备进程](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S40-S48-local-print-detail-preparer-v12.py)，实际运行代码的相同字节已入库，见[启动及绑定记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/S40-S48-local-print-detail-preparation-v12.json)。它每60秒只检查本地下载结果，核对既定任务、输入、源片及完整解码报告，再提取各镜周边图案；片尾则导出完整336帧的蓝蝶原生局部。不请求HTTP、不改视频、不改变渲染队列，不自动给出画面通过结论。区域坐标来自实际768P输入首帧，未来4K若移动或出裁切边界，必须另行扩大检查；手部与多窗口接缝仍由后续实际画面审阅处理。启动记录只证明进程开始等待，不证明待生成镜头已经检查。
 
 北京时间16:13，S40／S41材料与实际审阅已完成；本地日志显示服务端先运行S48，S42—S47仍等待。旧整景／候选及局部两个准备循环都按镜号等待，会使先完成的片尾继续等前面的镜头。现用[按完成顺序准备材料的程序](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/prepare-ready-native-evidence-v12.py)接替剩余S42—S48：每60秒检查全部本地待办，哪段下载和完整解码绑定先齐就先导出整景、全部原生候选和既定周边局部。原区域、源片和检查程序保持绑定；准备成功仍不代表实际看过或采用。
