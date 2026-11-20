@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "vivhite-full-sequence-rerun-submission-1",
+  "shotId": "S20",
+  "submittedAt": "2026-11-20T16:27:51.500167+00:00",
+  "jobId": "video_gen_9ff805618a994ab5a4d2b2234cc384de",
+  "statusAtReceipt": "queued",
+  "runName": "production-v13-S20-full-sequence-native-4k-001",
+  "sourcePlanSha256": "106f0f0ee8e80cd1a4f9362bbf826f2b75a5d43336d550dea9f9fd954f37073a",
+  "requestSha256": "2b2877745d0708c434bdcdc0e07e3789aa9c3eec9ac25ee44a22148e8d0f56c3",
+  "request": {
+    "model": "open-h3-2k",
+    "size": "3840x2160",
+    "sampler": "up3",
+    "seed": 1234,
+    "prompt": "Regenerate this same uninterrupted quiet travel video in clear native 3840x2160 detail. The INPUT VIDEO is the sole definition of scene contents, action, motion speed and camera trajectory. Keep every original moment in its original temporal order and preserve the complete input duration. Preserve exact framing, natural light, ordinary weather, colors, terrain and object count. The existing environment stays unoccupied by people. The exact existing fabric doll remains an inert object with its same sewn face, expression and costume. Every existing printed or sewn character face, including any small badge beside the doll, keeps its original OPEN violet-pink eyes, iris and eyelid contours, thin round gold glasses and original face proportions throughout. No blink, squint, eye shift, facial redraw, expression change or turning illustration. Preserve transparent acrylic areas as real background. Keep the entire continuous lake shot, existing camera movement and stationary supported doll; do not restart, freeze, loop or replace the view during the complete ten-second sequence. Introduce no extra person or body part. No real human face or facial fragment anywhere, including reflections and background. No new readable lettering, subtitles, credits, speech, singing or other voices. No cuts, synthetic beautification, scene replacement, invented props, frozen padding or looping. Preserve the input action without performing it again. Preserve the same dark fabric shoulder bag, its attached round original character badge and the same supported seated plush on the same rock. The plush is a passive fabric object, not a living character: no independent nod, head turn, limb gesture, facial animation or blinking. Preserve the original sewn open violet-pink eye patterns, fine round gold glasses and small smile on both the doll and badge. Preserve their original camera-relative perspective and the complete original slow pullback, lake ripples, clouds and mountain contours continuously for all ten seconds.",
+    "input_video": {
+      "file_id": "file_17dd96778a77404cab111d20b79ebcde"
+    }
+  },
+  "inputSourceSha256": "025d002be5f23377e55054b29db8688b944d0e71cc6066cbdbb0eec9696ae901",
+  "sourceSeconds": 10,
+  "expectedNativeFrames": 240,
+  "outputSize": "3840x2160",
+  "backendResultRequired": {
+    "temporal_strategy": "full_sequence",
+    "windows": 1,
+    "independent_window_fallback": false
+  },
+  "queue": {
+    "ordinaryPriority": 0,
+    "frontOrder": 0,
+    "position": 7,
+    "lastInSnapshot": true,
+    "runningJob": "video_gen_64ad79ab21e8414ab490b9690a82bc60",
+    "waitingOrder": [
+      "video_gen_564aca24106741ce9e1b1284b61212a5",
+      "video_gen_eddf0b38420444d6b6b1f79661cabab7",
+      "video_gen_3a8c19036c0b470ca05ef0854241bb4d",
+      "video_gen_f86c869206194fb89a41e28dffbe0d9a",
+      "video_gen_e31e6ab68d6e452b96aa0c098137656e",
+      "video_gen_ab78089d679c4c66ba653410717fc5f5",
+      "video_gen_9ff805618a994ab5a4d2b2234cc384de"
+    ],
+    "queuePaused": false,
+    "existingJobsNotResubmittedOrReprioritized": true,
+    "snapshotSha256": "f60a1def1e6e5ae71fcf73a2d98ea399981cc418b328a50af1ec0f36c3e96269"
+  },
+  "usableEndingReviewSha256": "5f2c2226317af40cbcbc61ea7a3264bbde716970681a6c02e002d2a2d7e6dab4",
+  "durableExecution": {
+    "schedulerTask": "Vivhite-Autumn-Journey-v13-S20-4K",
+    "controller": {
+      "schemaVersion": "vivhite-durable-video-controller-1",
+      "pid": 214572,
+      "status": "watching-active-worker",
+      "snapshotAt": "2026-11-20T16:28:10.774078+00:00",
+      "configSha256": "56dcc727a6b8364a98075f4d37f462f2635be8f275fd5c7ec03f3d9a368724ca",
+      "sourcePlanSha256": "106f0f0ee8e80cd1a4f9362bbf826f2b75a5d43336d550dea9f9fd954f37073a",
+      "resumeAttempts": 1,
+      "worker": {
+        "pid": 139736,
+        "creationTicks": 134396656707511021
+      },
+      "workerKind": "generation",
+      "schedulerTask": "Vivhite-Autumn-Journey-v13-S20-4K",
+      "completedSources": 0,
+      "remoteCancellationAllowed": false,
+      "semanticAcceptance": "never-automatically-granted"
+    },
+    "configurationSha256": "56dcc727a6b8364a98075f4d37f462f2635be8f275fd5c7ec03f3d9a368724ca",
+    "generationOnly": true,
+    "pollSeconds": 60,
+    "automaticSemanticApproval": false,
+    "chatIndependentGenerationAndDownload": true,
+    "frozenWorkers": [
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v13-S20-full-sequence-native-4k-001\\runtime\\controller-001\\durable_video_controller.py",
+        "sha256": "685328f6924ab1322f1411a93be1f9f3b9ea01d19e023afd626f110ca7dc7b74"
+      },
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v13-S20-full-sequence-native-4k-001\\runtime\\controller-001\\local_video_pipeline.py",
+        "sha256": "a9aa85a94eefd1e4848fb40aa0583a25bed06e1fc6f08ce14029001c472cba2f"
+      },
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v13-S20-full-sequence-native-4k-001\\runtime\\controller-001\\reference_finisher.py",
+        "sha256": "906766393fde9b62835179dfb118959800bdc9dd2e06408ca8710604fbd8efa6"
+      },
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v13-S20-full-sequence-native-4k-001\\runtime\\controller-001\\review_reference_clips.py",
+        "sha256": "446cd6235d817a39713d031ad58f18e8cb8613d6e5f77963b326b0934821c9ab"
+      },
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v13-S20-full-sequence-native-4k-001\\runtime\\generation-001\\local_video_pipeline.py",
+        "sha256": "a9aa85a94eefd1e4848fb40aa0583a25bed06e1fc6f08ce14029001c472cba2f"
+      },
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v13-S20-full-sequence-native-4k-001\\runtime\\generation-001\\reference_finisher.py",
+        "sha256": "906766393fde9b62835179dfb118959800bdc9dd2e06408ca8710604fbd8efa6"
+      },
+      {
+        "path": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v13-S20-full-sequence-native-4k-001\\runtime\\generation-001\\review_reference_clips.py",
+        "sha256": "446cd6235d817a39713d031ad58f18e8cb8613d6e5f77963b326b0934821c9ab"
+      }
+    ]
+  },
+  "finalPlacement": {
+    "startFrame": 2250,
+    "frames": 300,
+    "seconds": 10,
+    "fullFilmSeconds": 205,
+    "fullFilmFrames": 6150
+  },
+  "oldVersionsRetained": true,
+  "outputSemanticDecision": "pending",
+  "allProcessFilesRetained": true
+}

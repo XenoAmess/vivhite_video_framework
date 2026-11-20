@@ -17,6 +17,20 @@
   "productionPolicy": "production/workflow-policy.json",
   "preserved768pDelivery": "delivery-plan-v10-768p.json",
   "active4kRun": "production-v11-native-4k-001",
+  "activeLongShotRerun": {
+    "shotId": "S20",
+    "plan": "production-plan-v13-S20-full-sequence-native-4k-r1.json",
+    "record": "production/S20-full-sequence-submission-v13.json",
+    "run": "production-v13-S20-full-sequence-native-4k-001",
+    "jobId": "video_gen_9ff805618a994ab5a4d2b2234cc384de",
+    "status": "queued-output-review-pending",
+    "requiredTemporalStrategy": "full_sequence",
+    "seconds": 10,
+    "size": "3840x2160",
+    "queuePolicy": "ordinary-tail-no-preemption",
+    "oldVersionsRetained": true,
+    "finalAssemblyRequiresActualNewSourceReviewAndNewBinding": true
+  },
   "activeRepair": {
     "shotId": "S05",
     "plan": "production-plan-v12-S05-saddle-r1.json",

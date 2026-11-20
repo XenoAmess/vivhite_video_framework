@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 13,
+  "model": "open-h3-2k",
+  "stage": "refine",
+  "fps": 30,
+  "width": 3840,
+  "height": 2160,
+  "sourceSize": "3840x2160",
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 300,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "costumeStyle": "女性化白／深紫黑／细金边、裙装、白色腿部服装和紫色鞋靴，贴近角色参考图。",
+  "titleOverlays": [],
+  "closingCredit": "",
+  "refinement": {
+    "model": "open-h3-2k",
+    "size": "3840x2160",
+    "sampler": "up3",
+    "submissionWindow": 1,
+    "scope": "Native UHD regeneration; historical provider model ID retained. No 2K output."
+  },
+  "clientArchiveSha256": "b818bd94ea799ad4349e4ea43545882a6cf6eaaaeda4b1f7edee268450b716a9",
+  "sourceAlignmentNote": "Preserve the exact reviewed source frame count at 24fps and the unchanged final 30fps timeline; no temporal padding or retiming.",
+  "shotDurationExceptions": {
+    "S20": 10
+  },
+  "referenceAppearanceRequired": true,
+  "scope": "Separate user-requested continuous10second nativeUHD rerun after usableS48 review. Preserve all old versions; no preemption or other-shot duration changes.",
+  "director": "director-v12.md",
+  "sourceContinuation": "Rerun only S20 on the new server full-sequence backend; append at ordinary queue tail.",
+  "draftGenerationMetadata": {
+    "numInferenceSteps": 8,
+    "decoderLayers": 36,
+    "decoderVerification": "GET /v1/models on 2026-11-16"
+  },
+  "refinementSeed": 1234,
+  "sampler": "up3",
+  "draftPlanSha256": "b8b663809dc5fe49730c64aaf129d70b8652ba3b0f642488e59ca1102487d59c",
+  "draftDeliverySha256": "39ddbdebe8af2530ab679ef52ad55106a8088571c2ae1dc080bcd6944e8ca02f",
+  "draftFilmSha256": "19f15cb2ceea266f53f9f0a5d5c32276b90c31928bc49d0d2687bd1e93701a6c",
+  "sourceReviewReuse": "All240 actual768P whole frames and native first whole were reread for this request; no new4K output approved.",
+  "shots": [
+    {
+      "id": "S20",
+      "seconds": 10,
+      "sourceSeconds": 10,
+      "startFrame": 0,
+      "seed": 202611170020,
+      "mode": "O",
+      "action": "高山湖远景，近处岩石上坐着小小的白绮玩偶；镜头缓慢后移，云影持续掠过湖面，空间越来越开阔。",
+      "soundDescription": "高处风声、水声，音乐保留长线条。",
+      "prompt": "Regenerate this same uninterrupted quiet travel video in clear native 3840x2160 detail. The INPUT VIDEO is the sole definition of scene contents, action, motion speed and camera trajectory. Keep every original moment in its original temporal order and preserve the complete input duration. Preserve exact framing, natural light, ordinary weather, colors, terrain and object count. The existing environment stays unoccupied by people. The exact existing fabric doll remains an inert object with its same sewn face, expression and costume. Every existing printed or sewn character face, including any small badge beside the doll, keeps its original OPEN violet-pink eyes, iris and eyelid contours, thin round gold glasses and original face proportions throughout. No blink, squint, eye shift, facial redraw, expression change or turning illustration. Preserve transparent acrylic areas as real background. Keep the entire continuous lake shot, existing camera movement and stationary supported doll; do not restart, freeze, loop or replace the view during the complete ten-second sequence. Introduce no extra person or body part. No real human face or facial fragment anywhere, including reflections and background. No new readable lettering, subtitles, credits, speech, singing or other voices. No cuts, synthetic beautification, scene replacement, invented props, frozen padding or looping. Preserve the input action without performing it again. Preserve the same dark fabric shoulder bag, its attached round original character badge and the same supported seated plush on the same rock. The plush is a passive fabric object, not a living character: no independent nod, head turn, limb gesture, facial animation or blinking. Preserve the original sewn open violet-pink eye patterns, fine round gold glasses and small smile on both the doll and badge. Preserve their original camera-relative perspective and the complete original slow pullback, lake ripples, clouds and mountain contours continuously for all ten seconds.",
+      "designMaster": "assets/generated/production-v2-fasth3-001/masters/M04-plush-v1.png",
+      "inputSource": "input-sources/S20.mp4",
+      "inputSourceSha256": "025d002be5f23377e55054b29db8688b944d0e71cc6066cbdbb0eec9696ae901",
+      "acceptanceCriteria": "Require actual server result temporal_strategy=full_sequence, windows=1 and independent_window_fallback=false. Decode and actually review all240 native3840x2160 source frames plus original doll/body/eyes/glasses and round badge details. Reject scene reset, cuts, autonomous toy nod/gesture/blink, deforming print, new person/face/reflection/limb, added foreground prop or a multi-video-window fallback. Preserve full ten seconds75to85 and final frames2250to2549. This input review does not approve any future output."
+    }
+  ],
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "usableEndingReviewSha256": "5f2c2226317af40cbcbc61ea7a3264bbde716970681a6c02e002d2a2d7e6dab4",
+  "requiredServerResult": {
+    "temporal_strategy": "full_sequence",
+    "windows": 1,
+    "independent_window_fallback": false
+  },
+  "finalAssemblyPlacement": {
+    "id": "S20",
+    "startFrame": 2250,
+    "seconds": 10,
+    "frames": 300,
+    "fullFilmSeconds": 205,
+    "fullFilmFrames": 6150
+  }
+}
