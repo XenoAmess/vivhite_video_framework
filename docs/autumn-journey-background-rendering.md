@@ -101,6 +101,8 @@ Get-ScheduledTaskInfo -TaskName Vivhite-Autumn-Journey-v11-4K-sources
 
 每段保留原生3840×2160，按原定入片秒数转换为30fps，采用现有合成器的`fps30-x264-fast-crf17-1`配方；源片仍单独保留完整24fps版本。输出先写`.partial.mp4`，完整读取核对尺寸、帧率和帧数后才生成带实际源片指纹的缓存收据。异常保留部分文件与编码日志。实际旧S05被拒绝且没有创建输出目录、其余37镜的源片与整景证据验证通过；另有[3项回归检查](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/test_prepare_reviewed_native4k_segments_v12.py)覆盖被撤回原片禁止回退、报告错绑及编码失败保留材料。
 
+已实际完成37段缓存，共151秒／4530个30fps帧，逐文件及收据指纹复核通过。另把全部4530个原生尺寸缓存帧与相同源片的既定30fps转换逐帧机器对照，最低YUV PSNR为42.49dB；每帧统计、解码日志、实际比较程序与输入均保留。这用于检查编码与源帧对应关系，不是逐像素相同、助手逐张语义阅读或成片验收。完整绑定见[缓存实测收据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/reviewed-native4k-segment-cache-v12-001.json)。
+
 后续只可在全部48镜通过正式导入后，把与导入源片SHA-256、原定30fps帧数、尺寸及配方完全一致的缓存和收据复制到新合成目录的`segments/`，由`local_video_finisher.py`再次核验。缓存不能代替最终实际素材的人格／披露绑定检查，也不能将源片审核冒充编码成片、音轨或字幕审核。运行进程独立于对话，日志及启动指纹保留在原4K运行目录；渲染守护和服务端队列配置不变。
 
 ## 2026-11-18实际故障与修复
