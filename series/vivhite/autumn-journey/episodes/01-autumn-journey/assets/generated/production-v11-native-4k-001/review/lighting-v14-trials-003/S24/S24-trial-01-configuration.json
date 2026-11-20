@@ -1,0 +1,70 @@
+{
+  "frames": 120,
+  "sourceSha256": "ce67c0dfb608bd760b616e554a60971df840aef44f987e81854165e306fa5675",
+  "lightingCalibration": {
+    "sourceReceiptSha256": "567a8f1a75c82ef557dcce28813ab21f9a8b25f439b84b5709d7baf0693e5703",
+    "measurementWorkerSha256": "bbddd1c60dab21391633c883c28c20109c5e786f894f7410f409a5d2c02572e8",
+    "samples": [
+      {
+        "proposedGainRgb": [
+          0.8307739496231079,
+          0.7883154153823853,
+          0.769565224647522
+        ],
+        "samplePixels": 16418,
+        "sourceMedianRgb": [
+          209.4919891357422,
+          177.45834350585938,
+          168.7233428955078
+        ],
+        "referenceMedianRgb": [
+          253.0,
+          231.0,
+          222.0
+        ],
+        "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+        "id": "M01-keychain",
+        "previousGainRgb": [
+          0.88,
+          0.87,
+          0.84
+        ]
+      }
+    ],
+    "factor": 0.94,
+    "actualReview": "pending"
+  },
+  "regions": [
+    {
+      "id": "M01-keychain",
+      "reference": "series/vivhite/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v2-fasth3-001/masters/M01-keychain-v1.png",
+      "referenceSha256": "a2f6b52bd369c1a5a692f381f644a74e20a0a0b5f7b25a7d3fa38ae43032bc6a",
+      "referenceEyes": [
+        460,
+        714,
+        620,
+        695
+      ],
+      "targetEyes": [
+        3066,
+        1424,
+        3146,
+        1419
+      ],
+      "trackingCenter": [
+        1082,
+        513
+      ],
+      "trackingRadius": 105,
+      "gainRgb": [
+        0.7809275126457214,
+        0.7410164904594421,
+        0.7233913111686706
+      ],
+      "maskScale": 1.35,
+      "referenceMaskBottom": 830,
+      "referenceMaskBottomFeather": 30,
+      "referenceSofteningSigma": 1.005064993929918
+    }
+  ]
+}

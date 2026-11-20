@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "vivhite-print-lighting-trials-1",
+  "createdAt": "2026-11-20T20:48:42.726483+00:00",
+  "shotId": "S30",
+  "sourceSha256": "bda369bfd9e15487455935b9a6916989a2d7593531cb4bed64d0474a6df48250",
+  "workerSha256": "1c82f71abdc9d496c160ec652fc0ba0caddf7605672a0c632edc276b99379098",
+  "measurements": [
+    {
+      "proposedGainRgb": [
+        0.8713290691375732,
+        0.8376252055168152,
+        0.8519111275672913
+      ],
+      "samplePixels": 5367,
+      "sourceMedianRgb": [
+        207.00563049316406,
+        181.58761596679688,
+        175.17909240722656
+      ],
+      "referenceMedianRgb": [
+        238.0,
+        214.0,
+        206.0
+      ],
+      "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+      "id": "M08-pouch",
+      "previousGainRgb": [
+        0.88,
+        0.88,
+        0.9
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S30/S30-r01-raw-f000-native.png",
+      "sha256": "df1dcdfd6837b422bb7a8d466c99c68d8efc8bfb4eb01e880565d1823acf31af",
+      "frame": 0,
+      "region": "M08-pouch"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S30/S30-r01-trial-01-f000-native.png",
+      "sha256": "3455f9ff27f1da951d464eb42402edc69b90c0e48fdeda8da3da926b1345d530",
+      "frame": 0,
+      "region": "M08-pouch"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S30/S30-r01-trial-02-f000-native.png",
+      "sha256": "7f449c4a89a0cef824c4a2f8e807cf2f6d505004ea3161b15a20325a1eb9d7cb",
+      "frame": 0,
+      "region": "M08-pouch"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S30/S30-r01-trial-03-f000-native.png",
+      "sha256": "9ad15ecbed64764d6d2c25f0b29d0e7e6b96ba60c4497af149ebc3448965f4f6",
+      "frame": 0,
+      "region": "M08-pouch"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S30/S30-r01-raw-f060-native.png",
+      "sha256": "9c89cd60e985d641099dc7c261b9d9a1747d99dce8a9d291fa4e4d3d1970827d",
+      "frame": 60,
+      "region": "M08-pouch"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S30/S30-r01-trial-01-f060-native.png",
+      "sha256": "53c0ad17f43c6fc28a70e6a84657f6d2b7fe5c6f883100b83db1cd5386a79bab",
+      "frame": 60,
+      "region": "M08-pouch"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S30/S30-r01-trial-02-f060-native.png",
+      "sha256": "0571fe7783f08ea97fcbf484ea36f8b44420480d88a4214c886e39930f3c66bb",
+      "frame": 60,
+      "region": "M08-pouch"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S30/S30-r01-trial-03-f060-native.png",
+      "sha256": "d1685f02c1ff8debb1193076faa50bf413f66dc8fc63cfe2f9998c9357e903b2",
+      "frame": 60,
+      "region": "M08-pouch"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S30/S30-r01-raw-f119-native.png",
+      "sha256": "8ac580b5dd3824c938e46fb98203dc2a29eb7c63857e9fcfd0ebe37f60c25e85",
+      "frame": 119,
+      "region": "M08-pouch"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S30/S30-r01-trial-01-f119-native.png",
+      "sha256": "3329982b8cd517abbd99c051f3f25fa19f3fe35a5160933664374f3fbef15c44",
+      "frame": 119,
+      "region": "M08-pouch"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S30/S30-r01-trial-02-f119-native.png",
+      "sha256": "821b641d224d7ae3dade5d191e198a202ac8031c14af79dcdc31312539aed0ad",
+      "frame": 119,
+      "region": "M08-pouch"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S30/S30-r01-trial-03-f119-native.png",
+      "sha256": "e97811e508881078e3f4572ad218997e5889d823261bbb456f9ad7349d617c17",
+      "frame": 119,
+      "region": "M08-pouch"
+    }
+  ],
+  "semanticAcceptance": false,
+  "scope": "Three still samples per trial, no full-video approval."
+}

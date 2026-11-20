@@ -1,0 +1,87 @@
+{
+  "frames": 120,
+  "sourceSha256": "7097b9d238f86a3d2b59c1bc08967758b3e075ae6f63d12af809006ebddf6590",
+  "lightingCalibration": {
+    "sourceReceiptSha256": "cb405a3e4208034b4fe75a0c0fa4b343dc048804f3fc452a6e00cf84de426b47",
+    "measurementWorkerSha256": "330d95e8d14e14d25eed67c3cd0aca4bcc102d5d42741228e9b67c06d12f5942",
+    "samples": [
+      {
+        "proposedGainRgb": [
+          0.7925311326980591,
+          0.7399103045463562,
+          0.7159507274627686
+        ],
+        "samplePixels": 4910,
+        "sourceMedianRgb": [
+          189.50936889648438,
+          160.64495849609375,
+          148.21939086914062
+        ],
+        "referenceMedianRgb": [
+          238.0,
+          214.0,
+          206.0
+        ],
+        "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+        "id": "S19-print-1",
+        "previousGainRgb": [
+          0.9,
+          0.88,
+          0.84
+        ]
+      }
+    ],
+    "factor": 1.06,
+    "actualReview": "pending"
+  },
+  "regions": [
+    {
+      "schemaVersion": "vivhite-printed-eye-restoration-1",
+      "sourceSha256": "7097b9d238f86a3d2b59c1bc08967758b3e075ae6f63d12af809006ebddf6590",
+      "correctedSha256": "6e8a48d1e754e5dfc9e872ad3ca0e582a613a7573e4937b768b76d6081e9fc61",
+      "referenceTextureSha256": "718047bf66d78df2f985ee4fda51c871069e89485819f24b494e617d99cb6b21",
+      "workerSha256": "7137f7c4f1bf8586a1f03d27ebd10fd9a252006eb09cff1d770aa7ea8ca67d6b",
+      "trackingWorkerSha256": "2ebeb3119289113d0b71b051e71a156eca61f10a0b8ed2784990400a702d1018",
+      "frames": 120,
+      "fps": 24,
+      "nativeSize": [
+        3840,
+        2160
+      ],
+      "referenceEyes": [
+        809,
+        463,
+        904,
+        450
+      ],
+      "targetEyes": [
+        2147,
+        2080,
+        2297,
+        2059
+      ],
+      "gainRgb": [
+        0.8400830006599427,
+        0.7843049228191377,
+        0.7589077711105348
+      ],
+      "referenceMaskScale": 0.65,
+      "trackingCenter": [
+        790,
+        680
+      ],
+      "trackingRadius": 80,
+      "method": "Original RGBA printed artwork and feathered reference masks projected directly into each current frame through composed landmark registration and original prop tracking; no intermediate first-frame canvas clipping.",
+      "scope": "Local printed eye/glasses pixels before whole-frame CRF16 re-encoding. No person removed; original head outline and scene retained.",
+      "status": "technical-correction-completed-review-required",
+      "humanFullPlayback": false,
+      "referenceProjection": "original-artwork-to-current-frame",
+      "firstFrameCanvasClippingAvoided": true,
+      "id": "S19-print-1",
+      "reference": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-fasth3-001\\masters\\M08-pouch-v1.png",
+      "referenceSha256": "718047bf66d78df2f985ee4fda51c871069e89485819f24b494e617d99cb6b21",
+      "maskScale": 0.65,
+      "referenceSofteningSigma": 0.31653087739926955
+    }
+  ]
+}

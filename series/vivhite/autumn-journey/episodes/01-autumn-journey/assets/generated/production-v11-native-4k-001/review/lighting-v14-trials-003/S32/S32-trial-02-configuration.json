@@ -1,0 +1,70 @@
+{
+  "frames": 120,
+  "sourceSha256": "10a3f2bc4a7ca3fb9e73f8df9527860255c3cf37f736118dc661ff8bd66a2465",
+  "lightingCalibration": {
+    "sourceReceiptSha256": "e50cee922cd029bff4527499786a81d4d75651081a46a02c8caa57380e256a8b",
+    "measurementWorkerSha256": "bbddd1c60dab21391633c883c28c20109c5e786f894f7410f409a5d2c02572e8",
+    "samples": [
+      {
+        "proposedGainRgb": [
+          0.8458498120307922,
+          0.7863247990608215,
+          0.7824293375015259
+        ],
+        "samplePixels": 29285,
+        "sourceMedianRgb": [
+          213.0,
+          181.71205139160156,
+          173.62109375
+        ],
+        "referenceMedianRgb": [
+          253.0,
+          233.0,
+          225.0
+        ],
+        "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+        "id": "M09-camera-sticker",
+        "previousGainRgb": [
+          0.88,
+          0.87,
+          0.85
+        ]
+      }
+    ],
+    "factor": 1.0,
+    "actualReview": "pending"
+  },
+  "regions": [
+    {
+      "id": "M09-camera-sticker",
+      "reference": "series/vivhite/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "referenceSha256": "b235d5ada333dbd4ab83620f7a1f4d9b0523776be1c6c9090bba118f5587e1d2",
+      "referenceEyes": [
+        457,
+        554,
+        681,
+        529
+      ],
+      "targetEyes": [
+        1667,
+        821,
+        1809,
+        794
+      ],
+      "trackingCenter": [
+        588,
+        298
+      ],
+      "trackingRadius": 107,
+      "gainRgb": [
+        0.8458498120307922,
+        0.7863247990608215,
+        0.7824293375015259
+      ],
+      "maskScale": 2.4,
+      "referenceMaskBottom": 730,
+      "referenceMaskBottomFeather": 15,
+      "referenceSofteningSigma": 0.7796608604335066
+    }
+  ]
+}

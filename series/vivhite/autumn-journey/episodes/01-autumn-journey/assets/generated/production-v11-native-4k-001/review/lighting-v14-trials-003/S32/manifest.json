@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "vivhite-print-lighting-trials-1",
+  "createdAt": "2026-11-20T20:49:31.033472+00:00",
+  "shotId": "S32",
+  "sourceSha256": "10a3f2bc4a7ca3fb9e73f8df9527860255c3cf37f736118dc661ff8bd66a2465",
+  "workerSha256": "1c82f71abdc9d496c160ec652fc0ba0caddf7605672a0c632edc276b99379098",
+  "measurements": [
+    {
+      "proposedGainRgb": [
+        0.8458498120307922,
+        0.7863247990608215,
+        0.7824293375015259
+      ],
+      "samplePixels": 29285,
+      "sourceMedianRgb": [
+        213.0,
+        181.71205139160156,
+        173.62109375
+      ],
+      "referenceMedianRgb": [
+        253.0,
+        233.0,
+        225.0
+      ],
+      "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+      "id": "M09-camera-sticker",
+      "previousGainRgb": [
+        0.88,
+        0.87,
+        0.85
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S32/S32-r01-raw-f000-native.png",
+      "sha256": "7409a828325512a57573e244a8c728b9ff175405c2db29d65783a085d1dbf52a",
+      "frame": 0,
+      "region": "M09-camera-sticker"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S32/S32-r01-trial-01-f000-native.png",
+      "sha256": "711cb3d4d142c8089a75dab9c8ce3918abb83a1e5a13a4b636bb2da719fa62dd",
+      "frame": 0,
+      "region": "M09-camera-sticker"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S32/S32-r01-trial-02-f000-native.png",
+      "sha256": "bdcaa8e85449c6aeaa946a03ad07b92244ae1b0dc03b8228389ad3949b355acf",
+      "frame": 0,
+      "region": "M09-camera-sticker"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S32/S32-r01-trial-03-f000-native.png",
+      "sha256": "76d547a66049fae10405aed4b08ae851364296e2bfc1231040d06cdc47aebd3d",
+      "frame": 0,
+      "region": "M09-camera-sticker"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S32/S32-r01-raw-f060-native.png",
+      "sha256": "57527bf52067c40a0b7327a8c8704683e160f23ff4c14491f403443053af2d60",
+      "frame": 60,
+      "region": "M09-camera-sticker"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S32/S32-r01-trial-01-f060-native.png",
+      "sha256": "1845c23d469be28d49e714a33c6c4679cc61bb2bc48443434397752c19d1dc76",
+      "frame": 60,
+      "region": "M09-camera-sticker"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S32/S32-r01-trial-02-f060-native.png",
+      "sha256": "2fc45b0711a791fd8cea6bdc9bd365190bc50515084e06a766bf964c48b89c64",
+      "frame": 60,
+      "region": "M09-camera-sticker"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S32/S32-r01-trial-03-f060-native.png",
+      "sha256": "a9dfab650c772726b810a04347827fb7f7cf1c4e5ff11dbfb34f02554f6e6a14",
+      "frame": 60,
+      "region": "M09-camera-sticker"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S32/S32-r01-raw-f119-native.png",
+      "sha256": "35841baba33252c633f85f6221e96d7eac439c60e65256fc25cf66b543daa3bc",
+      "frame": 119,
+      "region": "M09-camera-sticker"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S32/S32-r01-trial-01-f119-native.png",
+      "sha256": "05ad374207ca97122da139d1171cb510172c003f367ceeb2c4d348e3d87b32c2",
+      "frame": 119,
+      "region": "M09-camera-sticker"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S32/S32-r01-trial-02-f119-native.png",
+      "sha256": "dd66609b93dbec00036392bfd0997962dfd12a112f637df459a397c09e13f5ec",
+      "frame": 119,
+      "region": "M09-camera-sticker"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S32/S32-r01-trial-03-f119-native.png",
+      "sha256": "f5f19eff9a585ce106359d59c59d6e60475553e0c86ddd95abf1f452d2584c2a",
+      "frame": 119,
+      "region": "M09-camera-sticker"
+    }
+  ],
+  "semanticAcceptance": false,
+  "scope": "Three still samples per trial, no full-video approval."
+}

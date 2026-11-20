@@ -1,0 +1,99 @@
+{
+  "frames": 120,
+  "sourceSha256": "938a770964809294847d63237447a1ff2dec3b738e5e40d48c510ef856d55238",
+  "lightingCalibration": {
+    "sourceReceiptSha256": "d63b8c67968b6d6e1c64fbff939f1bb881f4f1c292a9bb04492616712dc0553c",
+    "measurementWorkerSha256": "bbddd1c60dab21391633c883c28c20109c5e786f894f7410f409a5d2c02572e8",
+    "samples": [
+      {
+        "proposedGainRgb": [
+          0.7539682388305664,
+          0.6524114608764648,
+          0.6768559217453003
+        ],
+        "samplePixels": 29020,
+        "sourceMedianRgb": [
+          190.0865478515625,
+          151.450439453125,
+          150.341064453125
+        ],
+        "referenceMedianRgb": [
+          253.0,
+          233.0,
+          225.0
+        ],
+        "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+        "id": "M09-train-window",
+        "previousGainRgb": [
+          0.75,
+          0.65,
+          0.67
+        ]
+      }
+    ],
+    "factor": 1.0,
+    "actualReview": "pending"
+  },
+  "regions": [
+    {
+      "id": "M09-train-window",
+      "reference": "series/vivhite/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "referenceSha256": "b235d5ada333dbd4ab83620f7a1f4d9b0523776be1c6c9090bba118f5587e1d2",
+      "referenceEyes": [
+        457,
+        554,
+        681,
+        529
+      ],
+      "targetEyes": [
+        2547,
+        1046,
+        2656,
+        1029
+      ],
+      "trackingCenter": [
+        906,
+        375
+      ],
+      "trackingRadius": 75,
+      "gainRgb": [
+        0.75,
+        0.65,
+        0.67
+      ],
+      "maskScale": 1.8,
+      "referenceMaskBottom": 700,
+      "referenceMaskBottomFeather": 15,
+      "registrationMode": "three-point-affine-face",
+      "referenceLandmarks": [
+        [
+          457,
+          554
+        ],
+        [
+          681,
+          529
+        ],
+        [
+          585,
+          692
+        ]
+      ],
+      "targetLandmarks": [
+        [
+          2547,
+          1046
+        ],
+        [
+          2656,
+          1029
+        ],
+        [
+          2607,
+          1126
+        ]
+      ],
+      "referenceSofteningSigma": 1.0342525103913323
+    }
+  ]
+}

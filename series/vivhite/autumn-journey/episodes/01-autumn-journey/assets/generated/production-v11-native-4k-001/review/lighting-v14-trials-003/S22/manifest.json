@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "vivhite-print-lighting-trials-1",
+  "createdAt": "2026-11-20T20:46:14.152365+00:00",
+  "shotId": "S22",
+  "sourceSha256": "d4566a24e7f6209319da5906c408e7ca04fa3fd0af9c5fb67e4172690c599d28",
+  "workerSha256": "1c82f71abdc9d496c160ec652fc0ba0caddf7605672a0c632edc276b99379098",
+  "measurements": [
+    {
+      "proposedGainRgb": [
+        0.8139858841896057,
+        0.7943238615989685,
+        0.7760503888130188
+      ],
+      "samplePixels": 14471,
+      "sourceMedianRgb": [
+        200.6210174560547,
+        170.09780883789062,
+        160.0
+      ],
+      "referenceMedianRgb": [
+        247.0,
+        212.0,
+        208.0
+      ],
+      "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+      "id": "M05-badge",
+      "previousGainRgb": [
+        0.86,
+        0.86,
+        0.84
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S22/S22-r01-raw-f000-native.png",
+      "sha256": "015d82d7888e11ff93304a639798030b40e31aa85e3604a5b8ecdad85cad3825",
+      "frame": 0,
+      "region": "M05-badge"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S22/S22-r01-trial-01-f000-native.png",
+      "sha256": "89d455172fa469002fb299d575716f6449c6c71a1c17d209fa20c62cd04f2dfa",
+      "frame": 0,
+      "region": "M05-badge"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S22/S22-r01-trial-02-f000-native.png",
+      "sha256": "d341fcd671a4dd4d5c5db99e863cb481404fdd5d0d5dd5d9c3cab25b7f79ee31",
+      "frame": 0,
+      "region": "M05-badge"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S22/S22-r01-trial-03-f000-native.png",
+      "sha256": "5434a69087c5578933a51e4d68f6a92941cf4fed7b26bf137e4a4bd1bade2732",
+      "frame": 0,
+      "region": "M05-badge"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S22/S22-r01-raw-f060-native.png",
+      "sha256": "a7b32de6dbf5362a2f6d6cd12e5042a31c85210402e2c9f83c9b037f49856436",
+      "frame": 60,
+      "region": "M05-badge"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S22/S22-r01-trial-01-f060-native.png",
+      "sha256": "dfd46dfe0e82b154068f7ed87599e1df57c0008f5363dccf38bd552874b4ccf7",
+      "frame": 60,
+      "region": "M05-badge"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S22/S22-r01-trial-02-f060-native.png",
+      "sha256": "98f0c4acdd3b546521fb3756e41d24b629656383a33756161308ab25203790e4",
+      "frame": 60,
+      "region": "M05-badge"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S22/S22-r01-trial-03-f060-native.png",
+      "sha256": "8ec83e4ab0a08a3e4dae3c713e4311169a0fa7a84b6d31e492a8d250862f6279",
+      "frame": 60,
+      "region": "M05-badge"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S22/S22-r01-raw-f119-native.png",
+      "sha256": "a03ccd4feb588bc721d9b0042fb7b866829039ec1e4ba634526f56fde55fa3b1",
+      "frame": 119,
+      "region": "M05-badge"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S22/S22-r01-trial-01-f119-native.png",
+      "sha256": "96e25a6ee931ba589ac5e5762c1d7cb824a6c08cef01779097ad9edf1a56d9b3",
+      "frame": 119,
+      "region": "M05-badge"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S22/S22-r01-trial-02-f119-native.png",
+      "sha256": "47f5a42e0854cece3c97cbff8fccadb20876799d09baa5c14beccb758f5664bd",
+      "frame": 119,
+      "region": "M05-badge"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S22/S22-r01-trial-03-f119-native.png",
+      "sha256": "16ecf99121d2569c6ac005d255456b79515456f6df679ddd40fc574e011bfc03",
+      "frame": 119,
+      "region": "M05-badge"
+    }
+  ],
+  "semanticAcceptance": false,
+  "scope": "Three still samples per trial, no full-video approval."
+}

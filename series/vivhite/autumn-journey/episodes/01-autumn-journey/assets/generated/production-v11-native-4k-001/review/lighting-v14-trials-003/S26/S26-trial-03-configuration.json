@@ -1,0 +1,70 @@
+{
+  "frames": 120,
+  "sourceSha256": "a8b1bed3d71e436dc07c1bbebd2f9dd9e72a7fe367e4d773a009b3a332abccb0",
+  "lightingCalibration": {
+    "sourceReceiptSha256": "2609e26bbbd70e0216abd15cd52c3bdc4a875b7c7dbb7cff21e78850dd44391a",
+    "measurementWorkerSha256": "bbddd1c60dab21391633c883c28c20109c5e786f894f7410f409a5d2c02572e8",
+    "samples": [
+      {
+        "proposedGainRgb": [
+          0.8603495359420776,
+          0.8334524035453796,
+          0.8596386313438416
+        ],
+        "samplePixels": 5367,
+        "sourceMedianRgb": [
+          203.9833526611328,
+          180.06549072265625,
+          178.42758178710938
+        ],
+        "referenceMedianRgb": [
+          238.0,
+          214.0,
+          206.0
+        ],
+        "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+        "id": "M08-pouch",
+        "previousGainRgb": [
+          0.88,
+          0.88,
+          0.9
+        ]
+      }
+    ],
+    "factor": 1.06,
+    "actualReview": "pending"
+  },
+  "regions": [
+    {
+      "id": "M08-pouch",
+      "reference": "series/vivhite/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v2-fasth3-001/masters/M08-pouch-v1.png",
+      "referenceSha256": "718047bf66d78df2f985ee4fda51c871069e89485819f24b494e617d99cb6b21",
+      "referenceEyes": [
+        809,
+        463,
+        904,
+        450
+      ],
+      "targetEyes": [
+        2646,
+        1408,
+        2766,
+        1395
+      ],
+      "trackingCenter": [
+        942,
+        506
+      ],
+      "trackingRadius": 115,
+      "gainRgb": [
+        0.88,
+        0.88,
+        0.9
+      ],
+      "maskScale": 0.65,
+      "referenceMaskBottom": 548,
+      "referenceMaskBottomFeather": 24,
+      "referenceSofteningSigma": 0.39719830122183764
+    }
+  ]
+}

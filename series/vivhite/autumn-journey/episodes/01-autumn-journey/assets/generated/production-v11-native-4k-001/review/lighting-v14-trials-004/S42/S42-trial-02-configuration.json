@@ -1,0 +1,158 @@
+{
+  "frames": 120,
+  "sourceSha256": "6d0d9697810da7c72bc4e15bc69bec6c134a6fd90339910b9faac9874490dab2",
+  "lightingCalibration": {
+    "sourceReceiptSha256": "5a707df21a5a1eece474f0826e9f7f11e8950a5929a6b1b3066ab63d0b64d064",
+    "measurementWorkerSha256": "bbddd1c60dab21391633c883c28c20109c5e786f894f7410f409a5d2c02572e8",
+    "samples": [
+      {
+        "proposedGainRgb": [
+          0.6679841876029968,
+          0.6071521639823914,
+          0.5945703387260437
+        ],
+        "samplePixels": 29283,
+        "sourceMedianRgb": [
+          167.9225616455078,
+          136.94967651367188,
+          131.17550659179688
+        ],
+        "referenceMedianRgb": [
+          253.0,
+          233.0,
+          225.0
+        ],
+        "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+        "id": "M09-camp-mug",
+        "previousGainRgb": [
+          0.88,
+          0.87,
+          0.85
+        ],
+        "lightingKeyframeMeasurements": [
+          {
+            "proposedGainRgb": [
+              0.6679841876029968,
+              0.6071521639823914,
+              0.5945703387260437
+            ],
+            "samplePixels": 29283,
+            "sourceMedianRgb": [
+              167.9225616455078,
+              136.94967651367188,
+              131.17550659179688
+            ],
+            "referenceMedianRgb": [
+              253.0,
+              233.0,
+              225.0
+            ],
+            "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+            "frame": 0
+          },
+          {
+            "proposedGainRgb": [
+              0.6526429653167725,
+              0.6139814853668213,
+              0.6236773729324341
+            ],
+            "samplePixels": 29283,
+            "sourceMedianRgb": [
+              163.88951110839844,
+              137.7564239501953,
+              137.055419921875
+            ],
+            "referenceMedianRgb": [
+              253.0,
+              233.0,
+              225.0
+            ],
+            "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+            "frame": 60
+          },
+          {
+            "proposedGainRgb": [
+              0.6356165409088135,
+              0.5887119770050049,
+              0.6066813468933105
+            ],
+            "samplePixels": 29283,
+            "sourceMedianRgb": [
+              159.363525390625,
+              132.20091247558594,
+              132.7293701171875
+            ],
+            "referenceMedianRgb": [
+              253.0,
+              233.0,
+              225.0
+            ],
+            "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+            "frame": 119
+          }
+        ]
+      }
+    ],
+    "factor": 1.0,
+    "actualReview": "pending"
+  },
+  "regions": [
+    {
+      "id": "M09-camp-mug",
+      "reference": "series/vivhite/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "referenceSha256": "b235d5ada333dbd4ab83620f7a1f4d9b0523776be1c6c9090bba118f5587e1d2",
+      "referenceEyes": [
+        457,
+        554,
+        681,
+        529
+      ],
+      "targetEyes": [
+        2353,
+        938,
+        2433,
+        930
+      ],
+      "trackingCenter": [
+        836,
+        330
+      ],
+      "trackingRadius": 55,
+      "gainRgb": [
+        0.6679841876029968,
+        0.6071521639823914,
+        0.5945703387260437
+      ],
+      "maskScale": 1.8,
+      "referenceMaskBottom": 730,
+      "referenceMaskBottomFeather": 15,
+      "referenceSofteningSigma": 1.4017012515207554,
+      "gainRgbKeyframes": [
+        {
+          "frame": 0,
+          "gainRgb": [
+            0.6679841876029968,
+            0.6071521639823914,
+            0.5945703387260437
+          ]
+        },
+        {
+          "frame": 60,
+          "gainRgb": [
+            0.6526429653167725,
+            0.6139814853668213,
+            0.6236773729324341
+          ]
+        },
+        {
+          "frame": 119,
+          "gainRgb": [
+            0.6356165409088135,
+            0.5887119770050049,
+            0.6066813468933105
+          ]
+        }
+      ]
+    }
+  ]
+}

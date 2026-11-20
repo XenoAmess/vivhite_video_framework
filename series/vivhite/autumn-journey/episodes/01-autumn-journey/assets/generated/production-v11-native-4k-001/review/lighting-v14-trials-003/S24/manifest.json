@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "vivhite-print-lighting-trials-1",
+  "createdAt": "2026-11-20T20:46:35.733079+00:00",
+  "shotId": "S24",
+  "sourceSha256": "ce67c0dfb608bd760b616e554a60971df840aef44f987e81854165e306fa5675",
+  "workerSha256": "1c82f71abdc9d496c160ec652fc0ba0caddf7605672a0c632edc276b99379098",
+  "measurements": [
+    {
+      "proposedGainRgb": [
+        0.8307739496231079,
+        0.7883154153823853,
+        0.769565224647522
+      ],
+      "samplePixels": 16418,
+      "sourceMedianRgb": [
+        209.4919891357422,
+        177.45834350585938,
+        168.7233428955078
+      ],
+      "referenceMedianRgb": [
+        253.0,
+        231.0,
+        222.0
+      ],
+      "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+      "id": "M01-keychain",
+      "previousGainRgb": [
+        0.88,
+        0.87,
+        0.84
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S24/S24-r01-raw-f000-native.png",
+      "sha256": "3e3e7617498b25b69d7029c5fe69e7993f1db4201ba6930edfa895a07c267cc7",
+      "frame": 0,
+      "region": "M01-keychain"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S24/S24-r01-trial-01-f000-native.png",
+      "sha256": "49b179f345dab2dc20057c0f8b992f5e3b7c19484c13a82135a5e87e29056010",
+      "frame": 0,
+      "region": "M01-keychain"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S24/S24-r01-trial-02-f000-native.png",
+      "sha256": "c69c847f368b860ca5adaa5de62da287f49c94773dc7b923e72fb28c5f959cc1",
+      "frame": 0,
+      "region": "M01-keychain"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S24/S24-r01-trial-03-f000-native.png",
+      "sha256": "7ec525cb37828724da151cfe46347e2b3f5a9b2b76f293bdf3b3031698bc5123",
+      "frame": 0,
+      "region": "M01-keychain"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S24/S24-r01-raw-f060-native.png",
+      "sha256": "ddfcc97862f46191770840d7d022036d93a33fca078a3c2fb5eee648296c0666",
+      "frame": 60,
+      "region": "M01-keychain"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S24/S24-r01-trial-01-f060-native.png",
+      "sha256": "effdf95f5a2949d24111d46daea3ea31f87226a06b3f9100a76a6baa3f57cf66",
+      "frame": 60,
+      "region": "M01-keychain"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S24/S24-r01-trial-02-f060-native.png",
+      "sha256": "e1e3ee2ca3a7acdaadd1ee15677f24b5f5cc79775aae67b44ac688f7ebf65a3d",
+      "frame": 60,
+      "region": "M01-keychain"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S24/S24-r01-trial-03-f060-native.png",
+      "sha256": "b1e95040677232167b7ce3afd8734f896e7dad6373748ef5231580e48ae79c6e",
+      "frame": 60,
+      "region": "M01-keychain"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S24/S24-r01-raw-f119-native.png",
+      "sha256": "329c4c65a854df4d6fa474aa6c5d4869bff105e40f434080070bd06f7a04e182",
+      "frame": 119,
+      "region": "M01-keychain"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S24/S24-r01-trial-01-f119-native.png",
+      "sha256": "198bacfbffcd9a2dfd740ae1c139b0e8aeee592bd30e14b2b92fdae6f3e6d123",
+      "frame": 119,
+      "region": "M01-keychain"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S24/S24-r01-trial-02-f119-native.png",
+      "sha256": "6f6c462effe365a24f4a4b0454dbf63b17170a1726395fb96d0bda5d43651c91",
+      "frame": 119,
+      "region": "M01-keychain"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S24/S24-r01-trial-03-f119-native.png",
+      "sha256": "f883640b1e59d6361dd25aa76484e03344e29d1b4f1d69ca681e3010aa062c17",
+      "frame": 119,
+      "region": "M01-keychain"
+    }
+  ],
+  "semanticAcceptance": false,
+  "scope": "Three still samples per trial, no full-video approval."
+}

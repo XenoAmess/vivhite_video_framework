@@ -1,0 +1,70 @@
+{
+  "frames": 120,
+  "sourceSha256": "d4566a24e7f6209319da5906c408e7ca04fa3fd0af9c5fb67e4172690c599d28",
+  "lightingCalibration": {
+    "sourceReceiptSha256": "7d288a88d4a9cee52e3eda33fcce87acd5a09a5580e427559564b86041d41860",
+    "measurementWorkerSha256": "bbddd1c60dab21391633c883c28c20109c5e786f894f7410f409a5d2c02572e8",
+    "samples": [
+      {
+        "proposedGainRgb": [
+          0.8139858841896057,
+          0.7943238615989685,
+          0.7760503888130188
+        ],
+        "samplePixels": 14471,
+        "sourceMedianRgb": [
+          200.6210174560547,
+          170.09780883789062,
+          160.0
+        ],
+        "referenceMedianRgb": [
+          247.0,
+          212.0,
+          208.0
+        ],
+        "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+        "id": "M05-badge",
+        "previousGainRgb": [
+          0.86,
+          0.86,
+          0.84
+        ]
+      }
+    ],
+    "factor": 1.0,
+    "actualReview": "pending"
+  },
+  "regions": [
+    {
+      "id": "M05-badge",
+      "reference": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-fasth3-001\\masters\\M05-badge-v1.png",
+      "referenceSha256": "0ea71978d8df0c77511781b801966b79eee2bf40b90805366e237bcd589e064c",
+      "referenceEyes": [
+        530,
+        714,
+        775,
+        690
+      ],
+      "targetEyes": [
+        2326,
+        1386,
+        2487,
+        1360
+      ],
+      "trackingCenter": [
+        840,
+        475
+      ],
+      "trackingRadius": 135,
+      "gainRgb": [
+        0.8139858841896057,
+        0.7943238615989685,
+        0.7760503888130188
+      ],
+      "maskScale": 1.9,
+      "referenceMaskBottom": 900,
+      "referenceMaskBottomFeather": 35,
+      "referenceSofteningSigma": 0.7547334057913084
+    }
+  ]
+}

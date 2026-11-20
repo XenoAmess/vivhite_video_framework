@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "vivhite-print-lighting-trials-1",
+  "createdAt": "2026-11-20T20:51:11.643301+00:00",
+  "shotId": "S40",
+  "sourceSha256": "938a770964809294847d63237447a1ff2dec3b738e5e40d48c510ef856d55238",
+  "workerSha256": "1c82f71abdc9d496c160ec652fc0ba0caddf7605672a0c632edc276b99379098",
+  "measurements": [
+    {
+      "proposedGainRgb": [
+        0.7539682388305664,
+        0.6524114608764648,
+        0.6768559217453003
+      ],
+      "samplePixels": 29020,
+      "sourceMedianRgb": [
+        190.0865478515625,
+        151.450439453125,
+        150.341064453125
+      ],
+      "referenceMedianRgb": [
+        253.0,
+        233.0,
+        225.0
+      ],
+      "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+      "id": "M09-train-window",
+      "previousGainRgb": [
+        0.75,
+        0.65,
+        0.67
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S40/S40-r01-raw-f000-native.png",
+      "sha256": "5a370fdbdb2c680ababbc1ff8ab366ef98f503fed61aefb5d0ae494a3fd395ff",
+      "frame": 0,
+      "region": "M09-train-window"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S40/S40-r01-trial-01-f000-native.png",
+      "sha256": "d05f5c6ec5e53fccfdc4d2e0c08182e3b2dad3cb007d6a08095037500cde5667",
+      "frame": 0,
+      "region": "M09-train-window"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S40/S40-r01-trial-02-f000-native.png",
+      "sha256": "fd7792891f750c50d2ba1473851e5a674124fe4196e5cc95a9bbe51bac41cd2c",
+      "frame": 0,
+      "region": "M09-train-window"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S40/S40-r01-trial-03-f000-native.png",
+      "sha256": "fd7792891f750c50d2ba1473851e5a674124fe4196e5cc95a9bbe51bac41cd2c",
+      "frame": 0,
+      "region": "M09-train-window"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S40/S40-r01-raw-f060-native.png",
+      "sha256": "1b9e5e5684fecec725bfe118bc80f8006b36b3341f1f77acb588d31d3c4e7a44",
+      "frame": 60,
+      "region": "M09-train-window"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S40/S40-r01-trial-01-f060-native.png",
+      "sha256": "7f9940596dbaea268011e9f3490395ceae8bfba64a822ce805c8290ead3ab996",
+      "frame": 60,
+      "region": "M09-train-window"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S40/S40-r01-trial-02-f060-native.png",
+      "sha256": "69502dae4b2fbc2e4e82e3f0459882b8b09ed942950992850dac421aecd27a44",
+      "frame": 60,
+      "region": "M09-train-window"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S40/S40-r01-trial-03-f060-native.png",
+      "sha256": "69502dae4b2fbc2e4e82e3f0459882b8b09ed942950992850dac421aecd27a44",
+      "frame": 60,
+      "region": "M09-train-window"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S40/S40-r01-raw-f119-native.png",
+      "sha256": "a6fbf9e7fa612f174f4ae25d4727d3984a0654195c12c6f5bfc7fa04cb1dedac",
+      "frame": 119,
+      "region": "M09-train-window"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S40/S40-r01-trial-01-f119-native.png",
+      "sha256": "50ee24fa1d5decb0b2969562816f335c9c4e0c3e2e8ddbcbd6ea16cdd3fb2429",
+      "frame": 119,
+      "region": "M09-train-window"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S40/S40-r01-trial-02-f119-native.png",
+      "sha256": "c3ac2d6cc4281605528369eda05f8357f5c848ea97d3876babffc314f3c36725",
+      "frame": 119,
+      "region": "M09-train-window"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-003/S40/S40-r01-trial-03-f119-native.png",
+      "sha256": "c3ac2d6cc4281605528369eda05f8357f5c848ea97d3876babffc314f3c36725",
+      "frame": 119,
+      "region": "M09-train-window"
+    }
+  ],
+  "semanticAcceptance": false,
+  "scope": "Three still samples per trial, no full-video approval."
+}

@@ -1,0 +1,70 @@
+{
+  "frames": 120,
+  "sourceSha256": "8a57f820fb400f2354bc2a4b204927746e384faee7b8be269f2770ac53d13a90",
+  "lightingCalibration": {
+    "sourceReceiptSha256": "fba42296733e7dad1d3f8b4f7ae16a7412987bfe58ad3059a976d2b662ee4133",
+    "measurementWorkerSha256": "bbddd1c60dab21391633c883c28c20109c5e786f894f7410f409a5d2c02572e8",
+    "samples": [
+      {
+        "proposedGainRgb": [
+          0.7430905699729919,
+          0.7004504203796387,
+          0.6647047996520996
+        ],
+        "samplePixels": 34865,
+        "sourceMedianRgb": [
+          175.49981689453125,
+          148.03955078125,
+          131.73097229003906
+        ],
+        "referenceMedianRgb": [
+          237.0,
+          213.0,
+          202.0
+        ],
+        "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+        "id": "M04-plush",
+        "previousGainRgb": [
+          0.86,
+          0.83,
+          0.8
+        ]
+      }
+    ],
+    "factor": 1.06,
+    "actualReview": "pending"
+  },
+  "regions": [
+    {
+      "id": "M04-plush",
+      "reference": "series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-fasth3-001\\masters\\M04-plush-v1.png",
+      "referenceSha256": "2fb946dc283cc07915b9302e0664c22348db01e6bc1204f81a4b2c72ff69f9f0",
+      "referenceEyes": [
+        631,
+        598,
+        859,
+        578
+      ],
+      "targetEyes": [
+        751,
+        1230,
+        930,
+        1182
+      ],
+      "trackingCenter": [
+        286,
+        444
+      ],
+      "trackingRadius": 100,
+      "gainRgb": [
+        0.7876760041713715,
+        0.742477445602417,
+        0.7045870876312256
+      ],
+      "maskScale": 1.4,
+      "referenceMaskBottom": 750,
+      "referenceMaskBottomFeather": 35,
+      "referenceSofteningSigma": 0.6175008686264367
+    }
+  ]
+}

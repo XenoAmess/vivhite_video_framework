@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "vivhite-print-lighting-trials-1",
+  "createdAt": "2026-11-20T20:39:59.906080+00:00",
+  "shotId": "S43",
+  "sourceSha256": "c5e0f1a4e6ed7ec3e65b200f6b2d7e4152bed57f0991d01ab813a7f821a2a23f",
+  "workerSha256": "1c82f71abdc9d496c160ec652fc0ba0caddf7605672a0c632edc276b99379098",
+  "measurements": [
+    {
+      "proposedGainRgb": [
+        0.8806578516960144,
+        0.8546350002288818,
+        0.841918408870697
+      ],
+      "samplePixels": 3011,
+      "sourceMedianRgb": [
+        220.62179565429688,
+        194.60935974121094,
+        185.0
+      ],
+      "referenceMedianRgb": [
+        252.0,
+        229.0,
+        219.0
+      ],
+      "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+      "id": "M03-night-clear-card",
+      "previousGainRgb": [
+        0.9,
+        0.88,
+        0.85
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-002/S43/S43-r01-raw-f000-native.png",
+      "sha256": "25fdc812af78962ba515d0a12ce3fee50e9946011ad9328158f8ca992030503d",
+      "frame": 0,
+      "region": "M03-night-clear-card"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-002/S43/S43-r01-trial-01-f000-native.png",
+      "sha256": "8bdb5984ef616ef6b5464d4627edc216ce81b15a9415665b5157e78fbe998b7d",
+      "frame": 0,
+      "region": "M03-night-clear-card"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-002/S43/S43-r01-trial-02-f000-native.png",
+      "sha256": "d6450a4482ae4dc86d30ac1231071b6f738bd7a3d75c0f76104104daf4d11ec3",
+      "frame": 0,
+      "region": "M03-night-clear-card"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-002/S43/S43-r01-trial-03-f000-native.png",
+      "sha256": "fa928fccdf6b2fda6a2b7d5a5688e71768a8b922cd37cebb7156ab65fa07a160",
+      "frame": 0,
+      "region": "M03-night-clear-card"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-002/S43/S43-r01-raw-f060-native.png",
+      "sha256": "cc10a43d5e011e4f5984785cef06a414e48c7bb03daf4887e8fa4ea2cabf1643",
+      "frame": 60,
+      "region": "M03-night-clear-card"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-002/S43/S43-r01-trial-01-f060-native.png",
+      "sha256": "85caed8e4be8f8392710772d7cec3d21cfa7da2020e662133895a47f4db401b1",
+      "frame": 60,
+      "region": "M03-night-clear-card"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-002/S43/S43-r01-trial-02-f060-native.png",
+      "sha256": "7e2346a93b909b222acedc9133aadb40b1d8031050bb2e16306259775da4be47",
+      "frame": 60,
+      "region": "M03-night-clear-card"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-002/S43/S43-r01-trial-03-f060-native.png",
+      "sha256": "3267a11525775050b55b624e7c5ab88c451e3bf01506f53df226a3672e98ea8a",
+      "frame": 60,
+      "region": "M03-night-clear-card"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-002/S43/S43-r01-raw-f119-native.png",
+      "sha256": "d535e8fa0ac62adb90db645cef819998e728f4896997a428dcc2fd06573cceea",
+      "frame": 119,
+      "region": "M03-night-clear-card"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-002/S43/S43-r01-trial-01-f119-native.png",
+      "sha256": "1268570f78c922d29dea3104688b5e770d46cab5c819a0f1796434a7b0449d82",
+      "frame": 119,
+      "region": "M03-night-clear-card"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-002/S43/S43-r01-trial-02-f119-native.png",
+      "sha256": "0e1718182e84a33579db9d6bfaf6147392528361e403fc28aca547064aec7bf1",
+      "frame": 119,
+      "region": "M03-night-clear-card"
+    },
+    {
+      "path": "assets/generated/production-v11-native-4k-001/review/lighting-v14-trials-002/S43/S43-r01-trial-03-f119-native.png",
+      "sha256": "ed952854742e5b8e4c1ee95cca8522f12900ed03fa185207f897a0a72a5ad43f",
+      "frame": 119,
+      "region": "M03-night-clear-card"
+    }
+  ],
+  "semanticAcceptance": false,
+  "scope": "Three still samples per trial, no full-video approval."
+}

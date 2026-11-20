@@ -3,6 +3,7 @@ import copy
 import importlib.util
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
 SPEC = importlib.util.spec_from_file_location('import_v13_under_test',
     Path(__file__).with_name('materialize-native4k-sources-v13.py'))
@@ -35,6 +36,18 @@ class NativeImportV13Test(unittest.TestCase):
         plan['shots'][45]['seconds'] = 4
         with self.assertRaises(ValueError):
             MODULE.validate_locked_layout(plan)
+
+    def test_user_rejected_print_lighting_blocks_assembly(self):
+        with patch.object(MODULE.worker, 'read', return_value={'status': 'open', 'finalAssemblyAllowed': False}):
+            with self.assertRaisesRegex(ValueError, 'Print lighting review is unresolved'):
+                MODULE.validate_lighting_hold()
+
+    def test_changed_lighting_resolution_receipt_is_rejected(self):
+        with patch.object(MODULE.worker, 'read', return_value={'status': 'resolved',
+                'finalAssemblyAllowed': True, 'resolutionReceipt': 'production/test-only.json',
+                'resolutionReceiptSha256': 'bound'}), patch.object(MODULE.worker, 'sha', return_value='changed'):
+            with self.assertRaisesRegex(ValueError, 'resolution receipt changed'):
+                MODULE.validate_lighting_hold()
 
 
 if __name__ == '__main__':

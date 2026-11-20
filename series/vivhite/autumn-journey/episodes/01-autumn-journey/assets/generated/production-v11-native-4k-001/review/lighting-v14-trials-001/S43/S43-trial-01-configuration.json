@@ -1,0 +1,70 @@
+{
+  "frames": 120,
+  "sourceSha256": "c5e0f1a4e6ed7ec3e65b200f6b2d7e4152bed57f0991d01ab813a7f821a2a23f",
+  "lightingCalibration": {
+    "sourceReceiptSha256": "56ca225b5b52962241568a35066d477521307cde8c6d0f4f462fc3f4ffb5fc7a",
+    "measurementWorkerSha256": "330d95e8d14e14d25eed67c3cd0aca4bcc102d5d42741228e9b67c06d12f5942",
+    "samples": [
+      {
+        "proposedGainRgb": [
+          0.8806578516960144,
+          0.8546350002288818,
+          0.841918408870697
+        ],
+        "samplePixels": 3011,
+        "sourceMedianRgb": [
+          220.62179565429688,
+          194.60935974121094,
+          185.0
+        ],
+        "referenceMedianRgb": [
+          252.0,
+          229.0,
+          219.0
+        ],
+        "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+        "id": "M03-night-clear-card",
+        "previousGainRgb": [
+          0.9,
+          0.88,
+          0.85
+        ]
+      }
+    ],
+    "factor": 0.94,
+    "actualReview": "pending"
+  },
+  "regions": [
+    {
+      "id": "M03-night-clear-card",
+      "reference": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-fasth3-001\\masters\\M03-clearcard-v1.png",
+      "referenceSha256": "36cba4d6ae5ea0433bc85fe0592276e3194ce2149937b6406c71aa761bf02a8a",
+      "referenceEyes": [
+        266,
+        693,
+        340,
+        677
+      ],
+      "targetEyes": [
+        2061,
+        1453,
+        2129,
+        1437
+      ],
+      "trackingCenter": [
+        735,
+        514
+      ],
+      "trackingRadius": 50,
+      "gainRgb": [
+        0.8278183805942535,
+        0.8033569002151488,
+        0.7914033043384552
+      ],
+      "maskScale": 0.9,
+      "referenceMaskBottom": 780,
+      "referenceMaskBottomFeather": 12,
+      "referenceSofteningSigma": 2.0
+    }
+  ]
+}

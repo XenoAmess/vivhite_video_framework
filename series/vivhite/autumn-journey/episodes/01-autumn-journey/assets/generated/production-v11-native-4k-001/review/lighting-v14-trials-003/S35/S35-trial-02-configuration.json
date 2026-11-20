@@ -1,0 +1,70 @@
+{
+  "frames": 120,
+  "sourceSha256": "1dc5856c409ac2e0552c67ca13d3d792d334ebca3bfc0378d4e9e872891804b6",
+  "lightingCalibration": {
+    "sourceReceiptSha256": "9f2cb977054ae1935bcce7c75a7f2f719f62e3598a78e98fe8a942cb103cfbb7",
+    "measurementWorkerSha256": "bbddd1c60dab21391633c883c28c20109c5e786f894f7410f409a5d2c02572e8",
+    "samples": [
+      {
+        "proposedGainRgb": [
+          0.7475244998931885,
+          0.7376798987388611,
+          0.7525713443756104
+        ],
+        "samplePixels": 27307,
+        "sourceMedianRgb": [
+          187.9141082763672,
+          168.83595275878906,
+          168.43568420410156
+        ],
+        "referenceMedianRgb": [
+          253.0,
+          233.0,
+          224.0
+        ],
+        "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+        "id": "M09-water-bottle",
+        "previousGainRgb": [
+          0.88,
+          0.87,
+          0.85
+        ]
+      }
+    ],
+    "factor": 1.0,
+    "actualReview": "pending"
+  },
+  "regions": [
+    {
+      "id": "M09-water-bottle",
+      "reference": "series/vivhite/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+      "referenceSha256": "b235d5ada333dbd4ab83620f7a1f4d9b0523776be1c6c9090bba118f5587e1d2",
+      "referenceEyes": [
+        457,
+        554,
+        681,
+        529
+      ],
+      "targetEyes": [
+        2699,
+        765,
+        2766,
+        764
+      ],
+      "trackingCenter": [
+        954,
+        270
+      ],
+      "trackingRadius": 60,
+      "gainRgb": [
+        0.7475244998931885,
+        0.7376798987388611,
+        0.7525713443756104
+      ],
+      "maskScale": 1.35,
+      "referenceMaskBottom": 730,
+      "referenceMaskBottomFeather": 15,
+      "referenceSofteningSigma": 1.681833367009802
+    }
+  ]
+}

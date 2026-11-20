@@ -20,6 +20,7 @@ RERUN_PLAN = EP / 'production-plan-v13-S20-full-sequence-native-4k-r1.json'
 RERUN_SHA = '106f0f0ee8e80cd1a4f9362bbf826f2b75a5d43336d550dea9f9fd954f37073a'
 RERUN_JOB = 'video_gen_9ff805618a994ab5a4d2b2234cc384de'
 RERUN_INPUT = '025d002be5f23377e55054b29db8688b944d0e71cc6066cbdbb0eec9696ae901'
+LIGHTING_HOLD = EP / 'production/print-lighting-hold-v14.json'
 PREVIOUS_ORIGINS = previous.origins
 
 
@@ -61,6 +62,7 @@ def build_plan():
 
 def validate_origins(base, plan_file):
     validate_locked_layout(worker.read(plan_file))
+    validate_lighting_hold()
     # This independently loaded module is used only in this single-threaded
     # import operation. Restore its extension points even on validation failure.
     old_layout, old_origins = previous.validate_locked_layout, previous.origins
@@ -77,6 +79,15 @@ def validate_origins(base, plan_file):
             or result.get('windows') != 1 or result.get('independent_window_fallback') is not False):
         raise ValueError('Require the exact new S20 job and a single full sequence without fallback')
     return proofs
+
+
+def validate_lighting_hold():
+    hold = worker.read(LIGHTING_HOLD)
+    if hold.get('status') != 'resolved' or hold.get('finalAssemblyAllowed') is not True:
+        raise ValueError('Print lighting review is unresolved; do not assemble the rejected bright faces')
+    receipt = EP / hold['resolutionReceipt']
+    if worker.sha(receipt) != hold['resolutionReceiptSha256']:
+        raise ValueError('Print lighting resolution receipt changed')
 
 
 def materialize(base, directory, plan_file):
