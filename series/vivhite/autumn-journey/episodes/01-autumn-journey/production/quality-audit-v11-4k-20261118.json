@@ -464,41 +464,41 @@
     },
     {
       "id": "S11",
-      "sourceSha256": "d45c3e44b1a6922cced5f8df5db2cbb08a569aa96190caef4dbd0bb0dd450d5b",
+      "sourceSha256": "ece8ebd0890392eb1218a79652d5b872a7f614549a381ecf53eeaf4a94eabfd1",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-18T14:54:17.939633+00:00",
+      "reviewedAt": "2026-11-21T03:56:01.354144+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
       "actualFinalUsedNativeFrames": 48,
       "frameEvidence": [
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S11-v1\\S11-d45c3e44b1-all-frames-01.png",
-          "sha256": "9d6c8a58d249f2da94f548a355de40058cae44854e3a67db038d2e3c205b3936",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S11-print-lighting-v14-r1\\inspection\\S11-ece8ebd089-all-frames-01.png",
+          "sha256": "40e0b52289aaf4be4065f9c35c539d657c66eba9ea5cff55713a07e9285e06da",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S11-v1\\S11-d45c3e44b1-all-frames-02.png",
-          "sha256": "28b524d746a89e8d27859a5a5a17a2113f082e6e588920d0a6a5608fdfd077d9",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S11-print-lighting-v14-r1\\inspection\\S11-ece8ebd089-all-frames-02.png",
+          "sha256": "bb44b7f209be89d47ca12ebf973e0a44d20ac490062dff32147de393fab9a06b",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S11-v1\\S11-d45c3e44b1-all-frames-03.png",
-          "sha256": "2697f397b5a3a0261daf187f6c0bf5aebdfa3e2792b6ec1d0441e4d4b14c47de",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S11-print-lighting-v14-r1\\inspection\\S11-ece8ebd089-all-frames-03.png",
+          "sha256": "3f4b6b98e094f97a4d2a81cc4a1309ac73457f39ad754c27d4b538c9ada60042",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S11-v1\\S11-d45c3e44b1-all-frames-04.png",
-          "sha256": "a444803771373c96c1357ef1eaf04335138082dc71e35874c38447af30afc1ee",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S11-print-lighting-v14-r1\\inspection\\S11-ece8ebd089-all-frames-04.png",
+          "sha256": "09290e4be5cd391dee109704adbe33abb4484810396987b11243e29413255bb0",
           "items": 24
         }
       ],
       "faceEvidence": {
-        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S11-v1\\S11-d45c3e44b1-face-candidates.png",
-        "sha256": "e37e5a3ac3de875ec1eea8b9f5ef5b1cf16456172dcc5cf7c7cc7b295747911c",
-        "items": 23
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S11-print-lighting-v14-r1\\inspection\\S11-ece8ebd089-face-candidates.png",
+        "sha256": "ef51b5a4829431245e47c1859b5486ad1c625a43a5d110b9cd7a89f96134d4f7",
+        "items": 21
       },
-      "observation": "Actually reviewed all 120 original and all 120 corrected whole-scene frames through eight bound JPEG pages, all 120 sufficiently wide original hand crops through eight pages, original printed-card frames 0-15, all 120 corrected eye/glasses crops through eight pages, raw and corrected native whole frames 0 and 119, actual 768P input frame 0 and M03 RGBA artwork. Viewed two native coordinate grids and all four first-frame registration trials, choosing trial 02 parameters before generating this one full correction. Viewed the original 22-example and corrected candidate sheets and every detector box: 255 raw boxes through 16 pages and 266 corrected boxes through 17 pages. These are fallen leaves, stones, vegetation, sleeve/hand/card edges and the existing illustrated chibi print; no observed real head/face or extra person. The original partial seated woman keeps one anatomically connected hand holding the card, thumb in front and rear index contact, other fingers naturally curled; no extra hand, reversed palm or broken wrist. Water, railing, clear-card transparency, leaf and small hand motion remain continuous. M03 open pink/violet star irises and thin round gold glasses stay fixed to the print without autonomous expression or visible sliding. Both original and corrected eyes are OPEN; the original defect was lost iris and frame detail, already in the input. The leaf stays outside the corrected eye region. Only eyes/glasses restored; remaining hair/body print remains softened and the complete source was re-encoded at CRF16. All five source seconds / 120 frames reviewed, only original two seconds / 48 native frames enter the film. Assistant image-sequence QA, not human continuous playback, user aesthetic acceptance or formal final-film approval.",
+      "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M03 master and all254 detector crops on16 pages. All3 expanded-mouth trial016 variants at frames0/60/119 actually compared; trial1 selected. Earlier eye-only mask.39 retained a raw mouth remnant and was rejected only at its actually viewed three-frame calibration scope. The head-out seated woman retains her white/violet/gold skirt, white stockings, violet boots and one attached hand holding the same transparent rectangular card near the lakeshore rail. Thumb remains in front and other gripping fingers behind the card, with modest continuous hand/card/camera movement. The existing yellow-brown leaf on viewer right moves near and away without covering the printed face. Original ground leaves, vegetation, railing and water remain coherent. No observed added person, human face, extra hand or limb, scene cut or new text. Detector crops contain the existing printed face, fallen leaves, vegetation/ground, cuff edges or the same attached hand; none shows an actual human face. Original already-open patterned violet-pink irises, thin gold glasses and small smile stay fixed. RGB gain.789747/.778551/.7332, effective mask.7 bounded at reference y765/feather12 and sigma.388200 produce a subdued slightly warm printed face consistent with the shaded scene. Legacy referenceMaskScale.39 remains provenance, overridden by explicit maskScale.7. Outer generated hair/costume and physical card sheen remain; no entire-prop replacement claimed. No observed conspicuous pale face patch, bright mask halo, residual vertical mouth, duplicate eyes/glasses/mouth, blink, autonomous expression, drifting or moving mask seam. All120 native RAW/revised outside-print frame pairs freshly compared: left hand/cuff/leaves/ground/rail minimumPSNR39.572031dB, right card/leaf/rail/water39.794681dB and upper-middle card-edge/vegetation39.362730dB. Separate outside endpoint PNGs retained but not individually viewed; whole native endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode. Final first2seconds40to42/f1200to1259 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations do not mean individually viewing every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
       "decision": "accepted",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
@@ -556,37 +556,41 @@
     },
     {
       "id": "S13",
-      "sourceSha256": "5c5a80341996e680545662191e9f15181bbd22094538988d1b48bac15085d534",
+      "sourceSha256": "8f45f934650f1bd0adeec96bc7293b2c8ce4141289264d4f942fb74dd7af45c6",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-18T17:33:42.473855+00:00",
+      "reviewedAt": "2026-11-21T03:36:35.872779+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
       "actualFinalUsedNativeFrames": 96,
       "frameEvidence": [
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S13-v1\\S13-5c5a803419-all-frames-01.png",
-          "sha256": "8dd15a9b68b0df047a8b4b3c02976aed325c8f09f0b0354eb9193f51d40ec838",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S13-print-lighting-v14-r1\\inspection\\S13-8f45f93465-all-frames-01.png",
+          "sha256": "357450c5e24b5b027b8dd505829075f319ae89665d1c5f9d932a57b26de59d55",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S13-v1\\S13-5c5a803419-all-frames-02.png",
-          "sha256": "9b7d1902eb919a2d580733af6cd2a658d9d3bf004bb68c77b2718fca1457ae66",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S13-print-lighting-v14-r1\\inspection\\S13-8f45f93465-all-frames-02.png",
+          "sha256": "ccf478e10114e75eeb579e5e5c73ff0dc1a28f5cea7096fb638472d54544e48d",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S13-v1\\S13-5c5a803419-all-frames-03.png",
-          "sha256": "58f09e59699abc16b020ad8553c899f783dc261616c6a59374b0a6098ea2d05a",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S13-print-lighting-v14-r1\\inspection\\S13-8f45f93465-all-frames-03.png",
+          "sha256": "e8e41239041fc85eff50bb1b865dca2601e0d40fe409b6e97657cc0a7f286a47",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\corrected-S13-v1\\S13-5c5a803419-all-frames-04.png",
-          "sha256": "39219537ee504df167dcd1d592898b9befb16b56e7ffa0a904ec31d03deed4a0",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S13-print-lighting-v14-r1\\inspection\\S13-8f45f93465-all-frames-04.png",
+          "sha256": "6fccf683f5101eb066f5a97d9552e31911def8c166638fe4dcd5be4b9e342a6e",
           "items": 24
         }
       ],
-      "faceEvidence": null,
-      "observation": "Actually reviewed all 120 original and all 120 corrected whole-scene frames through eight bound JPEG pages, all 120 original primary umbrella-grip frames through eight native-derived crop pages, original printed charm frames 0-31 and all 120 corrected printed-eye frames through eight pages. Viewed original and corrected native whole frames 0 and 119, original native charm frame 0, actual 768P input frame 0, original M01 RGBA artwork, two coordinate grids and all four first-frame registration trials; selected trial 02 for the one complete corrected video. Primary hand remains attached to the same feminine white/deep-violet/gold sleeve; four curled fingers with opposed thumb behind the shaft maintain one umbrella grip, with continuous wrist and forearm. Original free hand enters the lower edge after about 4.1 seconds, as it also does in the input; it is motion-blurred behind the charm, not an added person or a third human hand. The final uses frames 0-95 only and excludes that later entry. Head stays outside the top crop, with no chin, human face, human reflection or additional person observed. Wet street, shutters, puddles, umbrella and original keychain remain continuous. Both original detector boxes at frames 20 and 57 were actually viewed through one native-crop page and show original printed charm, not human faces. Corrected detector found zero boxes; that alone is not evidence of semantic acceptance. Original eyes were OPEN, with weakened star-iris and gold-frame fidelity already present in the 768P input. M01 star irises and thin round glasses restored to the same physical charm remain stable through all 120 corrected crops, with no observed blink, double eyelid, boundary, texture drift or autonomous expression. No occlusion crosses the printed eyes. Only eye/glasses texture restored; non-eye print remains soft and the full source re-encoded at CRF16. Original sources, all first-frame trials and process images retained. Original 4-second final allocation and all other timings unchanged. Assistant image-sequence QA, not human continuous playback, user aesthetic acceptance or formal final-film approval.",
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S13-print-lighting-v14-r1\\inspection\\S13-8f45f93465-face-candidates.png",
+        "sha256": "bdd691840ad913bcceb4916f82b9804fed7f38386c715862fe1c7dcf8eb88dd0",
+        "items": 8
+      },
+      "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M01 master and all50 detector crops on4 pages. All3 expanded-mouth trial015 variants at frames0/60/119 actually compared; trial1 selected. Earlier eye-only calibration rejected at its actual three-frame scope because it retained a raw mouth remnant; its pictures and record remain. The head-out woman retains her feminine white/violet/gold costume and attached hand gripping the same umbrella shaft. The hanging acrylic keychain has modest physical pendulum motion while transparent canopy water drops, shop shutters/walls/drains, wet empty street and reflections remain coherent. During approximately4.0to4.96 seconds, her other connected sleeved hand rises from her side and behind the charm; these source frames remain reviewed and retained but are outside the unchanged first4seconds used in the film. No observed added person, human face, extra hand or limb, scene cut or new text. All50 detector crops contain the existing printed character. Original already-open patterned violet-pink irises, fine gold spectacles and small smile remain fixed. RGB gain.767688/.753686/.769722, effective mask1.35 bounded at reference y830/feather30 and sigma.695406 produce subdued slightly warm printed skin fitting the gray rain scene. Legacy referenceMaskScale.82 is retained as provenance and overridden by explicit maskScale1.35. The physical acrylic edge and outer generated hair/costume remain; no entire original-prop replacement claimed. No observed conspicuous white face patch, bright mask halo, residual vertical mouth line, duplicate eye/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised pairs freshly compared outside print: left hand/cuff/costume/umbrella minimumPSNR39.946807dB, right shutters/drains/street39.668260dB and upper-middle grip/umbrella/street39.245624dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; final first4seconds47to51/f1410to1529 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
       "decision": "accepted",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
@@ -690,41 +694,41 @@
     },
     {
       "id": "S16",
-      "sourceSha256": "9f1f97e7a30d7b0b4176790d095835f38acb3ff78ec51cd95383ac011eaae4f3",
+      "sourceSha256": "63b53c980e21822aa120ab561bc974900fc2a35d0d51f702ee24232f89a79aed",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-18T21:13:31.673435+00:00",
+      "reviewedAt": "2026-11-21T04:01:40.186431+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
       "actualFinalUsedNativeFrames": 120,
       "frameEvidence": [
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S16-corrected-v1\\S16-9f1f97e7a3-all-frames-01.png",
-          "sha256": "098684abfca885183badc8bc51564ffcdc6a7f50427d5b20d60944b8530d478f",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S16-print-lighting-v14-r1\\inspection\\S16-63b53c980e-all-frames-01.png",
+          "sha256": "f42cba058a58e1ca515341c6386db6b1b345132bb8e64aab0962f6a1b83c2ea1",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S16-corrected-v1\\S16-9f1f97e7a3-all-frames-02.png",
-          "sha256": "9b936bf4518986892137908fa52d9f81cc3d9815f937b9dc499ae9ca31bf774d",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S16-print-lighting-v14-r1\\inspection\\S16-63b53c980e-all-frames-02.png",
+          "sha256": "875745b9c6ac980fefe08d17c96640874df94ef4adaf89e3b0a83bc976db6b3c",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S16-corrected-v1\\S16-9f1f97e7a3-all-frames-03.png",
-          "sha256": "e870855f7ce3c2da6b0a7fe2d786315f5af342e3ce15fcad0750f639becb6353",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S16-print-lighting-v14-r1\\inspection\\S16-63b53c980e-all-frames-03.png",
+          "sha256": "8d7ef4d308795f42c2fec871289a3b94f924143be123111ee21ac8f8a73b5d8c",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S16-corrected-v1\\S16-9f1f97e7a3-all-frames-04.png",
-          "sha256": "50b46169e8139644ece841e8b79823496d1556b6d74aaeea42194a9f1f9c8755",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S16-print-lighting-v14-r1\\inspection\\S16-63b53c980e-all-frames-04.png",
+          "sha256": "0f562cde28b6bbb136f4ae2081c6db08bca03bbe5dd90dd87d8e539f88a8f5ef",
           "items": 24
         }
       ],
       "faceEvidence": {
-        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S16-corrected-v1\\S16-9f1f97e7a3-face-candidates.png",
-        "sha256": "9a57600aabf8ab0649631595cbb70ef616aba874e36b5ce5521d865895c35698",
-        "items": 19
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S16-print-lighting-v14-r1\\inspection\\S16-63b53c980e-face-candidates.png",
+        "sha256": "bb882793481178516d2604213bf951f8de746ec6194cf33ee5b688134d3da3a5",
+        "items": 32
       },
-      "observation": "Actually viewed all 120 raw and all 120 corrected whole-scene frames through eight JPEG pages, all 120 raw and all 120 corrected native pouch-print crops through sixteen pages, all 120 raw visible-leg-region crops through eight pages, raw and corrected native whole frames 0/119, raw print 0 and corrected print 119. Original M08 RGBA master, actual 768P input frame 0, both coordinate grids and all six first-frame registration trials actually viewed. Chosen trial 02, mask scale .55, used for the only full correction. Narrow trial 01 retained gray old lens strokes; broad trials 05/06 affected hair/collar and were not adopted or made into videos. All 299 raw boxes from 118 frames and all 276 corrected boxes from 114 frames actually viewed through 19 and 18 native-crop pages. They are existing printed art, clothing/bag edges, defocused leaves/stone/moss/tree holes and rail/posts, not observed real human faces or extra people. Same cropped female, head outside frame, white/deep-violet/gold feminine clothing and white legwear. Visible thighs and knees alternate bending/advancing from the beginning while skirt and pouch sway; stone steps, posts and gray rail move continuously. Feet mostly outside frame, so full foot-ground contact is not certified. Eleven cut flags in each version correspond to step/camera movement, not an observed scene reset. Both raw eyes were OPEN but iris/lens strokes were deformed and thin gold round glasses/star irises lost, already weakened in the 768P input. M08 original texture now keeps fixed open star irises and thin gold glasses on the same pouch through all 120 corrected crops, without observed blinking, doubled contours or visible tracking slide. Actual feathered mask also blends nearby printed fringe, cheek and mouth pixels; not strictly iris-only. Outer printed head, body, bag and physical scene retained. No real object crosses the restored eye/glasses region; original cloth crease below the mouth remains. Remaining non-restored print is softened/desaturated. Whole-source CRF16 re-encoding means mask-exterior pixels are not claimed bit-identical. Original source and every still trial retained. Original five-second final length/native frames 0-119 and every other shot timing unchanged. Assistant image-sequence QA, not human continuous playback, user aesthetic acceptance, listening approval or final-film/persona approval.",
+      "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M08 master and all314 detector crops on20 pages. All3 expanded-mouth trial014 variants at frames0/60/119 actually compared; trial1 selected. Earlier mask.55 calibration was rejected only at its actually viewed three-frame scope for a raw mouth remnant. The head-out woman retains her feminine white/violet/gold skirt, white stockings and violet boot tops beside the forest stairs. Small continuous camera/body/pouch sway preserves the same belt buckles, skirt pleats, hanging pouch strap, zipper, fabric folds, worn stair edges, railing posts, fallen leaves, trunks and vegetation. No claim that this static-position shot shows walking. No observed added person, human face, extra limb, scene cut or new text. All314 detector crops contain the existing printed character, pouch or skirt edges, stairs/railing, fallen leaves and blurred vegetation; none shows an actual human face. Original already-open patterned violet-pink irises, thin gold spectacles and small smile stay fixed. RGB gain.819087/.790034/.7896, effective mask.8 bounded at reference y548/feather12 and sigma.658543 produce subdued slightly warm print illumination fitting the shaded pouch fabric. Legacy referenceMaskScale.55 remains provenance overridden by explicit maskScale.8. Outer generated hair/body/costume retain their softer printed texture; no entire-prop replacement claimed. No observed conspicuous bright face patch, mask halo, raw vertical mouth, duplicated eyes/glasses/mouth, blink, autonomous expression, drift or moving seam. All11 cut flags explicitly resolved by actual full ordered viewing and retained in the record. All120 native RAW/revised outside-print pairs freshly compared: left skirt/belt/buckle/strap minimumPSNR39.642737dB, right stairs/rail/leaves/trees39.193075dB and upper-middle strap/pouch-fabric38.368430dB. Separate outside endpoint PNGs retained but not individually viewed; whole native endpoints actually provide context. Lossy encoding comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode. Final full5seconds58to63/f1740to1889 unchanged. All previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
       "decision": "accepted",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
@@ -940,41 +944,41 @@
     },
     {
       "id": "S21",
-      "sourceSha256": "d9dd4bdeb2794ad5fa608f93682d7ac6c7f8a6c89c370bc9188d882cba8bfed1",
+      "sourceSha256": "c5b8078a0540e206883e7ce36e715ad0b7a739613aee5225a5dca544a60d72c5",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-19T06:05:42.999529+00:00",
+      "reviewedAt": "2026-11-21T02:50:22.084551+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
       "actualFinalUsedNativeFrames": 96,
       "frameEvidence": [
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-reference-print-v1\\inspection\\S21-d9dd4bdeb2-all-frames-01.png",
-          "sha256": "1a82d1c32a81cd8630a87537d7c8bc943df65ce9927747652604b417e45eac51",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-print-lighting-v14-r1\\inspection\\S21-c5b8078a05-all-frames-01.png",
+          "sha256": "dbfbbb55ece0b166f6d2ea6f9148141988e97e81c2342dbb7ab8ff4aa0f81dae",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-reference-print-v1\\inspection\\S21-d9dd4bdeb2-all-frames-02.png",
-          "sha256": "d55831c274272f7f1cb3cfc845f31262c526ff88aace48ec1214eb8893d62a3b",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-print-lighting-v14-r1\\inspection\\S21-c5b8078a05-all-frames-02.png",
+          "sha256": "838487bf57ce186d64a755c2dab4d3d0c173416a362d838b1faa4fe40b2092bb",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-reference-print-v1\\inspection\\S21-d9dd4bdeb2-all-frames-03.png",
-          "sha256": "a0ebd8227c0521ca32eccfb480701b25af6cfc0e4a4c0ff44c603f34f602999d",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-print-lighting-v14-r1\\inspection\\S21-c5b8078a05-all-frames-03.png",
+          "sha256": "c88537dd85498082d7301d34e71664074c3508628088d16e5219ac092555f893",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-reference-print-v1\\inspection\\S21-d9dd4bdeb2-all-frames-04.png",
-          "sha256": "887240c709829af8f62c934e310cacd0a0925a3b856c44d80126951aadc4e8af",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-print-lighting-v14-r1\\inspection\\S21-c5b8078a05-all-frames-04.png",
+          "sha256": "438928288ba287cd8badbb29e475c8e53c152d2c41d73b1ad308f3fb32cb0252",
           "items": 24
         }
       ],
       "faceEvidence": {
-        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-reference-print-v1\\inspection\\S21-d9dd4bdeb2-face-candidates.png",
-        "sha256": "7219d41c93eeddfaae393dc526e577f81a5e7b01e6f3240ba46785d328a971b0",
-        "items": 7
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S21-print-lighting-v14-r1\\inspection\\S21-c5b8078a05-face-candidates.png",
+        "sha256": "9849c39fae77e946e47c91816c6a2ebd98f33d4bc9d7801f5896bf8d10595548",
+        "items": 6
       },
-      "observation": "Actually viewed all120 raw and corrected whole-scene thumbnails, all120 corrected native face crops on8 pages, all19 raw and17 corrected detector boxes, corrected native whole frames0/119, raw native whole frame0, actual768p input first frame, complete M04 artwork, one coordinate grid and all three first-frame trials through their contact page. The original woman remains head-out-of-frame in white/violet/gold feminine clothing, white legwear and violet boots; no real human head/face/reflection, new person, extra limb or discontinuous cabin/forest reset observed. The seated legs and attached boots retain the input pose; no walking action is claimed. Original fixed OPEN violet-pink diamond/star-pattern irises, thin gold glasses, face proportions and mouth are restored. No blink, doubled lens/mouth or obvious tracked edge seam observed through complete corrected detail sequence. Mask1.4 includes face/fringe/mouth, not only irises; bottom750/feather35 excludes the neck/pendant, original prop outline preserved. One CRF16 pass from raw, no interpolation/retiming/new art. Raw face detail viewing remains limited to0to15 and112to119; raw leg detail pages exported but not actually viewed. Source120native frames/5s preserved; only original first96native frames/4s used at final frames2550to2669. Assistant image-sequence review, not continuous human playback, listening or full-film approval.",
+      "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119 and the complete original master. All3 lighting variants at frames0/60/119 were actually compared on the retained stage9 overview; trial1 selected. All15 detector crops on1 page actually viewed. The head-out woman in the same feminine white/violet/gold skirt, white stockings and violet boots sits quietly in the worn cable-car cabin. Her existing bag with M04 plush stays beside her. Original forest, patches of snow, cable supports/cables and distant enclosed cabin pass continuously outside the window. Worn seat, scratched metal cabin wall/floor/window, bag fabric/straps/zipper and the plush felt seams remain coherent. No observed extra person, human face, extra limb, scene cut or new text. Detector crops contain blurred passing landscape/window reflections without resolved human anatomy. The original already-open patterned irises, fine gold spectacles and small smile stay inert on the plush. RGB gain.698505/.658423/.624823, mask1.4 bounded at reference y750/feather35 and sigma.617501 lower the pale face to subdued slightly warm cabin shade while retaining felt texture. No observed bright face patch, halo, duplicate eyes/glasses/mouth, blink, autonomous expression, drifting or moving mask seam. Outer generated felt hair/costume are not claimed to be a complete original-prop replacement. All120 native RAW/revised pairs freshly compared outside print: right cabin/window/forest/snow/cables minimum PSNR39.755207dB, upper-left skirt/seat39.754609dB and lower-left bag/floor39.332313dB. Final first4seconds85to89/f2550to2669 unchanged. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy encoding comparison is not pixel identity or semantic approval. One fresh RAW-source CRF16 native3840x2160/24fps/120frames/5seconds encode. All previous sources, trials and evidence retained. Bounded JPEG pages are not individually viewing every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
       "decision": "accepted",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
@@ -986,37 +990,37 @@
     },
     {
       "id": "S22",
-      "sourceSha256": "64caef08a7d982b61367f5c6d8d66bf005815b76cf8720f1b097ac796c71bc7c",
+      "sourceSha256": "7e3f7ca4bff78ad63ccd1cbc1d5e56fb35d3b2152a5618126135fbe93a9d997f",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-19T07:24:19.807855+00:00",
+      "reviewedAt": "2026-11-21T02:50:22.558577+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
       "actualFinalUsedNativeFrames": 72,
       "frameEvidence": [
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S22-reference-badge-v1\\inspection\\S22-64caef08a7-all-frames-01.png",
-          "sha256": "9e3323bdc4130753ee60a8940f27f33a435e6039e1b181ea839befc9b0891f5e",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S22-print-lighting-v14-r1\\inspection\\S22-7e3f7ca4bf-all-frames-01.png",
+          "sha256": "4b310ebed08542816d22a8946686be852dc50068b97429fc590fb611b14be89c",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S22-reference-badge-v1\\inspection\\S22-64caef08a7-all-frames-02.png",
-          "sha256": "850381353295fd8f8bf76303b813b8ec6aebc932fc26f5fce7ba12ff59369185",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S22-print-lighting-v14-r1\\inspection\\S22-7e3f7ca4bf-all-frames-02.png",
+          "sha256": "9bf195594cd6fb215de48df53b9f78e1fa6c8d7f767a9c315603b277883f8430",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S22-reference-badge-v1\\inspection\\S22-64caef08a7-all-frames-03.png",
-          "sha256": "b5c02a95f15fce7059aaa65672e0f6a81c9d8e6b4791cc4fe135b44f4579805d",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S22-print-lighting-v14-r1\\inspection\\S22-7e3f7ca4bf-all-frames-03.png",
+          "sha256": "ae1541a46af356e0eea8676b07a3e3cc1ec7a8bbc0aa981d2b4b3617c77fe21a",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S22-reference-badge-v1\\inspection\\S22-64caef08a7-all-frames-04.png",
-          "sha256": "94e1628edf79e46c8a225e59462d4f05f705817a812f6eddf40576a8cf796ce0",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S22-print-lighting-v14-r1\\inspection\\S22-7e3f7ca4bf-all-frames-04.png",
+          "sha256": "9306bb88156ec3564c133d04f51da6a63c4fbf23f931dfd54f79517ca1252f75",
           "items": 24
         }
       ],
       "faceEvidence": null,
-      "observation": "Actually viewed all120 raw and corrected whole-scene thumbnails, all120 corrected native badge crops through8JPEG pages, raw badge crops0to31 and112to119 (40frames), raw native whole frame0, corrected native whole frames0/24/119, actual768p input native frames0/16/28/119, complete M05 artwork, raw face/grid and three first-frame trials via contact page. Trial03 full native context was subsequently viewed through its same-size JPEG; original12MB PNG was retained but omitted by image tool and not counted as individually viewed. Both source inspections have zero detector boxes; whole-scene viewing separately found no real human face, head, added person or limb. Original unoccupied snow path, bag, drops and foreground snow motion preserved; snow at badge top/near its left rim remains, with no observed new masking seam or frozen particle. Fixed OPEN diamond/star-pattern violet-pink irises, fine complete gold glasses, original face proportions and mouth restored; no blink, drifting eyes, double mouth/lens or obvious halo observed in full corrected detail sequence. Mask1.9 includes face/fringe/mouth, not only irises, with mother-coordinate bottom900/feather35 excluding lower neck/chest. Current-frame reference projection, no whole-prop first-frame template, one CRF16 encoding directly from raw, no retiming/interpolation or new artwork. Raw print frames32to111 exported but not counted as viewed. Full5-second/120native-frame source preserved; original first72native frames/3seconds used at final2670to2759. Assistant frame-image review, not continuous human playback, listening, user aesthetic acceptance or complete-film approval.",
+      "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119 and the complete original master. All3 lighting variants at frames0/60/119 were actually compared on the retained stage9 overview; trial1 selected. The exact inspection and extraction contain zero detector crops; this does not replace actual whole-scene semantic review. The existing M05 badge remains on the black worn backpack beside an empty wet woodland path, bare branches, rocks and snow patches. Original foreground snow falls and settles above the physical badge rim and bag zipper, without crossing or erasing the printed eyes/glasses/mouth. Straps, handle, buckle, water drops and fabric weave remain coherent. No observed person, human face, hand, extra limb, scene cut or new text. Original already-open patterned violet-pink irises, fine gold spectacles and small smile stay inert on the same circular badge. RGB gain.765147/.746664/.729487, mask1.9 bounded at reference y900/feather35 and sigma.754733 lower the face to subdued overcast illumination while the original metallic rim and softer generated outer hair/costume remain. No observed conspicuous white face patch, bright halo, duplicated detail, blink, autonomous expression, slipping or moving mask seam. Not an entire original-badge replacement. All120 native RAW/revised pairs freshly compared outside print: left snow/woodland/path minimumPSNR40.010298dB, right strap/buckle/fabric40.225812dB and upper bag/snow/zipper/handle40.676009dB. Final first3seconds89to92/f2670to2759 unchanged. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy encoding comparison is not pixel identity or semantic approval. One fresh RAW-source CRF16 native3840x2160/24fps/120frames/5seconds encode. All previous sources, trials and evidence retained. Bounded JPEG pages are not individually viewing every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
       "decision": "accepted",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
@@ -1342,41 +1346,41 @@
     },
     {
       "id": "S30",
-      "sourceSha256": "2f91eff7820a5bccff2a78b459f7b28d56307055eb428b9824f445344660f72b",
+      "sourceSha256": "375abe9a59cd8e6437cb37c4c8bbc31e25c047d735284ed23ce18b3f80bd6eb0",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-19T17:59:06.463936+00:00",
+      "reviewedAt": "2026-11-21T03:18:07.232703+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
       "actualFinalUsedNativeFrames": 72,
       "frameEvidence": [
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S30-reference-pouch-v1\\inspection\\S30-2f91eff782-all-frames-01.png",
-          "sha256": "30ec266f82a21ea94fea8df18fc151b168396886aee95bc972907b2e3e6201bd",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S30-print-lighting-v14-r1\\inspection\\S30-375abe9a59-all-frames-01.png",
+          "sha256": "82b4ef01ca6504ba7ba0549347d098b59e4d61ced96b16738fbf25fd8630600d",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S30-reference-pouch-v1\\inspection\\S30-2f91eff782-all-frames-02.png",
-          "sha256": "78c922b4e26cad2fa5b33cdfa31df4bc30c41339139a58e9fa42d806240386ba",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S30-print-lighting-v14-r1\\inspection\\S30-375abe9a59-all-frames-02.png",
+          "sha256": "6da779eb8640f5f9338c7acb0d9c4a71c874f63c4476643138483f7ab54de3ba",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S30-reference-pouch-v1\\inspection\\S30-2f91eff782-all-frames-03.png",
-          "sha256": "28868ee2c63d0f60edbd2526a33f013c978590ff8cb78845ccdf3fc5c936a6ed",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S30-print-lighting-v14-r1\\inspection\\S30-375abe9a59-all-frames-03.png",
+          "sha256": "6b804e8224f2406df3dd7f2f61b51bda665e58e6570c7978e8966f6d88402e47",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S30-reference-pouch-v1\\inspection\\S30-2f91eff782-all-frames-04.png",
-          "sha256": "ffb9c2559804acc49f7d32eca37ec9a882a99be107f1b1313e91b229385e431e",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S30-print-lighting-v14-r1\\inspection\\S30-375abe9a59-all-frames-04.png",
+          "sha256": "633ccdd955b7c670cac5423b9a7e2a603f820518e665d61642c713530d5aef6b",
           "items": 24
         }
       ],
       "faceEvidence": {
-        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S30-reference-pouch-v1\\inspection\\S30-2f91eff782-face-candidates.png",
-        "sha256": "4fcab85b53026e352cc2d0265b8c8cd9e6890ca40b70e2b3710b49721fe81101",
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S30-print-lighting-v14-r1\\inspection\\S30-375abe9a59-face-candidates.png",
+        "sha256": "1f59d14ee8a2ed4312e9a93a14ecff0d8618b7ce0e65931ef576999ac8c9ed87",
         "items": 14
       },
-      "observation": "Actually viewed all120 raw and all120 corrected whole-scene frames via4 ordered JPEG pages each; raw and corrected native whole0/119. Raw rope-hand native four-frame pages1to11 (frames0to43) and ordered half-size615x525 crops pages3to8 (frames32to119) actually viewed, union all120 frames. All120 raw far-right hand crops actually viewed via8 ordered360x624 JPEG pages. Original native PNG crops for both regions are retained; other native pages are not claimed viewed. Corrected native crops0/119 for each hand actually viewed; no all120 corrected native hand-crop viewing claim. Machine comparison of all120 decoded pairs in rope-hand[300,500,1530,1550] and far-hand[3390,400,3840,1180] gives minimumPSNR38.8888/39.7381dB; this is not pixel identity or automatic anatomy approval. All120 corrected M08 pouch print crops via8 JPEG pages and first16 raw print crops via first page actually viewed; remaining104raw print crops retained but not counted as viewed. All137raw native candidate crops via9 JPEG pages and all121corrected native candidate crops via8 JPEG pages actually viewed. Complete original M08 pouch, actual768P input first native whole/print plus all120 whole input frames, native raw-face grid and3 first-frame registration trials via their contact page actually viewed. Same one head-out woman in white/deep-violet/gold feminine dress with covered legs. The original near hand rests palm-down on rope atop worn wood, slightly relaxing fingers around3.1seconds; wrist remains attached to the original sleeve. The other original partly cropped hand remains loosely curled at the right edge, attached to its original white sleeve; it was already present in the input. No observed additional hand or arm, impossible wrist flip, real human face/reflection, bystander, scene reset or jump. Rope, worn rail, metal bollards, pouch and water motion stay coherent. Candidate boxes are the existing illustrated pouch face, zipper/loop, worn bollard/post fixtures and original hand or sleeve, not observed real faces. Raw printed eyes already OPEN throughout the reviewed scope; coarse round purple iris blobs and dark/thickened gold glasses fail the original face detail. Selected trial2/mask.65, bottom548/feather24, gainRGB.88/.88/.90 restores original open violet-pink star/diamond irises, fine round gold glasses and small smile using a current-frame tracked projection from M08. Mask also includes fringe, cheeks, nose, mouth and chin. Original outer head, hat, blue butterfly, body, pouch and scene remain; printed clothing and pendant details stay softer/coarser than the complete mother image. Across all120 corrected print crops no observed blink, eye/glasses double contour, obvious slipping or horizontal boundary. No generative redraw, whole-prop first-frame freeze, person cover, retiming or interpolation. Single whole-frame CRF16 encode from unchanged raw; outside-mask pixels are not claimed identical. Complete5s120native frames preserved. Final uses exactly original3seconds/90frames3600to3689 at120to123seconds; all other timings unchanged. OldS05 remains rejected; its accepted new768P source and queued native4K replacement are separate. Assistant ordered image review, not human continuous playback, hearing, user aesthetic acceptance or complete4Kfilm approval.",
+      "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M08 master and all146 detector crops on10 pages. All3 lighting variants at frames0/60/119 actually compared on retained stage9 overview; trial1 selected. The head-out woman in the established feminine white/violet/gold skirt and white stockings stands beside the worn ferry rail. One attached hand rests on the original rope/wooden rail while the other remains relaxed at her side. The hanging pouch, strap/buckles/zipper, skirt pleats, rusty bollards/posts, worn wood/paint, empty deck and rippling water remain coherent with subtle continuous boat/camera motion. No observed added person, human face, extra hand or limb, scene cut or new text. Detector crops show the existing printed character, bag fabric/zipper/loops, rusty metal/post fasteners or attached hand/rope/cuff, not human faces. Original already-open patterned violet-pink irises, fine gold spectacles and small smile stay fixed on the pouch. RGB gain.819049/.787368/.800796, original-art mask.65 bounded at reference y548/feather24 and sigma.502880 retain subdued slightly warm skin and fabric texture under soft coastal daylight. Outer generated costume/hair and pouch material remain; this is not an entire original-prop replacement. No observed conspicuous white face patch, bright mask halo, duplicate eye/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised pairs freshly compared outside print: left hand/cuff/rope/rail/water minimumPSNR39.160989dB, right hand/skirt/boat40.097836dB and upper-middle strap/costume39.206264dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; final first3seconds120to123/f3600to3689 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
       "decision": "accepted",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
@@ -1434,41 +1438,41 @@
     },
     {
       "id": "S32",
-      "sourceSha256": "4b368605fb5de38a2d4d6d4bbf15dbad564e39b4fbb935675bca18fa40057251",
+      "sourceSha256": "29de5ad828b6a3c79a37f2696dc071b85ca81ef5f33b77b326ef13af6342bf11",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-19T20:45:23.857530+00:00",
+      "reviewedAt": "2026-11-21T03:10:24.264513+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
       "actualFinalUsedNativeFrames": 96,
       "frameEvidence": [
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-reference-camera-sticker-v2\\inspection\\S32-4b368605fb-all-frames-01.png",
-          "sha256": "80dbf237fa137aa6844e7bec2291865cca6596e2480c726e89435b8e6809b882",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-print-lighting-v14-r1\\inspection\\S32-29de5ad828-all-frames-01.png",
+          "sha256": "298fbfdbb012579e39f93cd2e316936fc05ce1755fc0e61fdb35d9958408f65e",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-reference-camera-sticker-v2\\inspection\\S32-4b368605fb-all-frames-02.png",
-          "sha256": "9e432d4c2430bf372cebb515088ce043413d632ddaf8f19bcfd6f49c0f4c45df",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-print-lighting-v14-r1\\inspection\\S32-29de5ad828-all-frames-02.png",
+          "sha256": "c651b88454adb7d91cee574e006777aed96f0c799be5b23d318f151c240931db",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-reference-camera-sticker-v2\\inspection\\S32-4b368605fb-all-frames-03.png",
-          "sha256": "230d34dcd2757ff0556f9d087f098cbbf2af64adb83da28f174ba4995dde0c44",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-print-lighting-v14-r1\\inspection\\S32-29de5ad828-all-frames-03.png",
+          "sha256": "fe8690ea2d9b9d1f326270ae280553119be5b5ae0b0e4fa8dd644492878e7921",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-reference-camera-sticker-v2\\inspection\\S32-4b368605fb-all-frames-04.png",
-          "sha256": "b351b8d8facb8ba5061a3111cebb304aead838a65971b26e5bc84721c1f64d57",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-print-lighting-v14-r1\\inspection\\S32-29de5ad828-all-frames-04.png",
+          "sha256": "26b31f794734c16d81c74feed91d7fbf1037277c6b02aa621eec3e00c62fd4b4",
           "items": 24
         }
       ],
       "faceEvidence": {
-        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-reference-camera-sticker-v2\\inspection\\S32-4b368605fb-face-candidates.png",
-        "sha256": "eaddddb5ac6e5cd94e319b554d27990df242897f32412db3d1d763ed10a926c9",
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-print-lighting-v14-r1\\inspection\\S32-29de5ad828-face-candidates.png",
+        "sha256": "8db0ae07a02002d27736af2b073c665f4b933aad638fd3fd95ab520850b4d61a",
         "items": 6
       },
-      "observation": "Actually viewed all120 whole-scene frames of raw, rejected-v1 and adopted-v2 via4 ordered JPEG pages each, plus native whole0/119 for all3 versions. First16 raw print crops actually viewed; other104 raw print crops retained but not counted. V1 and v2 print120 each actually viewed via8 JPEG pages each. All21raw,22v1 and25v2 native candidate crops actually viewed via2 JPEG pages each; they are board/rail shadows and the original dark camera sensor, not people. All120 raw combined hand/camera-region frames actually viewed through30 ordered2240-wide JPEG pages from native ROI[450,100,3450,2100]. Original giant native four-frame hand JPEG page1 only is additionally viewed; pages2to30 are retained but not counted as native-page viewing. All120 raw lens frames actually viewed via8 ordered half-size400x425 tiles from native ROI[1900,500,2700,1350]. Original native lens JPEG pages1to4, frames0to15, additionally viewed; other native pages retained without that claim. Raw/v2 separate left-hand, upper-index, right-hand and lens native crops0/119 actually viewed. All120 decoded pairs compared outside the face patch: minimumPSNR left39.57564839793008, upper-index39.560793428054744, right39.676632862630086, lens39.94922457783467dB; encoding comparison, not pixel identity or anatomy approval. Complete originalM09, actual768P native first whole/print, all120 input whole frames and120 input hand crops, raw native face/grid and9 first-frame trials actually compared. Trials4to9 additionally compared at the tracked native last frame; endpoint trials are not whole-video approval. Only the original two hands with attached white/deep-violet/gold feminine cuffs hold the same silver camera, lens facing viewer. The near thumbs, curved upper index and partly occluded far fingers remain continuous with wrists/sleeves; modest steadying/lowering movement, no verified shutter press or first-person sea-photography claim. No observed third hand, impossible wrist flip, real human face/reflection or added person. Dark lens reflections remain curved optical/greenish textures without an observed human face. Sea, shore, rope, posts and board shadows remain coherent without a scene jump. Eyes were already OPEN. Raw star/diamond iris details and fine gold glasses became coarse purple highlights and dull gray-brown outlines. V1 mask1.35 retained an old mouth below the projected smile and a residual upper-eye contour at native frame119, so it is rejected and preserved. Selected trial8/mask2.4/bottom730/feather15/gainRGB.88/.87/.85, current-frame originalM09 projection restores open violet-pink star/diamond irises, fine round gold glasses, small smile, fringe, cheeks, chin and neighboring hair/upper choker. Hat, butterfly, outer head/sticker border and body remain; body/outer print still coarser than the complete original. Across120 v2 print frames no observed residual second mouth, obvious double eye/glasses contour, blink, slip or horizontal seam. No generative redraw, whole-prop freeze, person cover, retiming or interpolation. Single whole-frame CRF16 encode from unchanged raw; outside-mask pixels not claimed identical. Complete5second120-frame source retained; final placement unchanged128to132seconds/frames3840to3959. All other timings and205second6150-frame target unchanged. OldS05 stays rejected; new accepted768P film and separately queuednative4K replacement remain distinct. Assistant ordered-image review, not human continuous playback/hearing, user aesthetic acceptance or complete4Kfilm approval.",
+      "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M09 master and all27 detector crops on2 pages. All3 lighting variants at frames0/60/119 actually compared on retained stage9 overview; trial1 selected. Two attached hands in the established feminine white/violet/gold sleeves continue holding the same silver compact camera. Viewer-left thumb rests on the camera front and index finger curves over its top dial; viewer-right thumb rests below the lens while the fingers naturally wrap around the edge. Subtle grip motion, coastal waves, weathered wooden posts/rail and ropes remain continuous. No observed added person, human face, extra hand or limb, scene cut or new text. Detector crops contain weathered wood/rail shadows, the circular camera sensor and lens reflections, not human faces. Original already-open patterned violet-pink irises, fine gold spectacles and small smile stay fixed on the physical camera sticker. RGB gain .795099/.739145/.735484, original-art mask2.4 bounded at reference y730/feather15 and sigma.779661 produce subdued slightly warm printed skin fitting the daylight and camera. The physical sticker edge and outer generated costume remain; the blue-gray original hair beneath the chin is printed artwork, not a human shadow. No observed conspicuous white face patch, bright mask halo, duplicate eye/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised pairs freshly compared outside print: left hand/cuff/rail/water minimumPSNR39.745573dB, right lens/hand/sea39.970234dB and lower cuff/rail/camera39.462160dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; final first4seconds128to132/f3840to3959 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
       "decision": "accepted",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
@@ -1618,41 +1622,41 @@
     },
     {
       "id": "S36",
-      "sourceSha256": "b4fec296d28b7c42ca88bc6a1314169f1a24a8dd7aecb064e34dd98da99db26b",
+      "sourceSha256": "301dadad7d1fd4d454eadf6aa9c38d5acb408b2fee4926e13a5f26a5d8a52c2e",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-20T01:34:23.434641+00:00",
+      "reviewedAt": "2026-11-21T03:24:37.847418+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
       "actualFinalUsedNativeFrames": 72,
       "frameEvidence": [
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S36-reference-clear-card-v1\\inspection\\S36-b4fec296d2-all-frames-01.png",
-          "sha256": "6fed0afddb2ca651118e92206fd7124d22dd760d30de25583789d7ce062c503f",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S36-print-lighting-v14-r1\\inspection\\S36-301dadad7d-all-frames-01.png",
+          "sha256": "643612bc962abe8e48f80afdb5d00393474aa3c70fe1ae90d2998e8b4b370953",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S36-reference-clear-card-v1\\inspection\\S36-b4fec296d2-all-frames-02.png",
-          "sha256": "71fe4919781ab8b27c6e5e527758f1949f70764c858e431c4da69f7e823e88d9",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S36-print-lighting-v14-r1\\inspection\\S36-301dadad7d-all-frames-02.png",
+          "sha256": "09e5fab6fe94f501f0a3f58d6246c537686fd38fcd320f4272c09dc093756f73",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S36-reference-clear-card-v1\\inspection\\S36-b4fec296d2-all-frames-03.png",
-          "sha256": "1efd77835d355cb681d37becbb1ffa248f1de6044e7cdb3cb0a1d0f6a17b2ced",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S36-print-lighting-v14-r1\\inspection\\S36-301dadad7d-all-frames-03.png",
+          "sha256": "85b0ad35ec89d2dd3eceddeb09baf26939dbdc38f1d06092c75d06c8a51b3f95",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S36-reference-clear-card-v1\\inspection\\S36-b4fec296d2-all-frames-04.png",
-          "sha256": "248c16763302ad1177d4a1edae6f45cdcaaeb7e10d616f6ebf620ae226983701",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S36-print-lighting-v14-r1\\inspection\\S36-301dadad7d-all-frames-04.png",
+          "sha256": "6337043f7bdec1b8431ebc86e85275ad33f7766280b264752b7b1b461d47a5bf",
           "items": 24
         }
       ],
       "faceEvidence": {
-        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S36-reference-clear-card-v1\\inspection\\S36-b4fec296d2-face-candidates.png",
-        "sha256": "5e047ef28e55771f458e1ebb7e0253db6fb9482b7e7273d240beef43cf5494e0",
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S36-print-lighting-v14-r1\\inspection\\S36-301dadad7d-face-candidates.png",
+        "sha256": "338f3e10624774b7b28120ff0727df711eda797e4238bee6fad600362043f733",
         "items": 8
       },
-      "observation": "Actually viewed all120 whole-scene and all120 print frames each of raw/corrected-v1 via4 whole and8 print JPEG pages per version, native whole0/119 for both, raw native print0 and corrected native print0/119. All120 raw central-clear-card/water crops actually viewed via30 native four-frame JPEG pages from ROI[900,500,1450,1850]. All30 raw detector boxes via2 JPEG pages and all72 corrected detector boxes via5 JPEG pages actually viewed; these are the existing printed female chibi face, not a newly generated real person. Raw/corrected native central-water and background-stream crops0/119 actually viewed. All120 decoded frame pairs compared in those outside-print regions: minimumPSNR38.8592810472447/39.17573057289908dB, only an encoding comparison rather than pixel identity or automatic motion approval. No claim that every corrected native water crop was individually viewed. Complete originalM03 was actually reread and the actual768P complete120 input whole frames/native first frame were viewed and recorded; source/input fingerprints checked. A native first-frame coordinate grid and all3 first/last registration trials were actually compared; trial1 selected. The original transparent acrylic card rests on the wet wooden railing beside the original stream/waterfall, rocks and vegetation. No present human body/hand, added bystander, real face/reflection, readable text or scene reset observed. Existing central upper-edge droplet lengthens and slides down once, reaching the lower edge around2.4to2.6seconds and leaving a wet trail; smaller droplets mostly stay. Background water/ripples continue behind and through the clear card. Printed eyes were already OPEN throughout. Raw star/diamond irises and fine gold round glasses became glossy circles and broad tan lower lens areas, with original small smile absent. Raw rejected for reference appearance, without closed-eye/blink claim. Selected trial1 mask.65/bottom744/feather12/gainRGB.90/.90/.86 projects originalM03 violet-pink open irises, thin round gold glasses, small smile and adjacent fringe/cheeks/chin into each current frame, following the same card. All120 corrected print frames show no observed blink, second mouth, double glasses contour, slipping or visible horizontal seam. Original cap/butterfly, outer head print and body still remain soft/coarse; not a complete artwork replacement. No generative redraw, whole-card freeze, transparent-background/water replacement, human cover, anatomy patch, retiming or interpolation. Single whole-frame CRF16 encode from unchanged raw; outside-mask pixels not claimed identical. Full5seconds120native24fps frames retained; only first3seconds72native frames used as90final30fps frames4320to4409 at144to147seconds. All other shot lengths and205seconds6150frames remain unchanged. Scene water/foliage retains softened/processed detail; no pixel-perfect or complete photographic-realism claim. Original PNG contact pages and other exported native checkpoints retained but not counted individually viewed. Assistant ordered-image QA, not human continuous playback/listening, user aesthetic acceptance or formal full-film approval. OldS05 remains rejected; new768P-based4K replacement stays separately ordinarily queued.",
+      "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M03 master and all82 detector crops on6 pages. All3 lighting variants at frames0/60/119 actually compared on retained stage9 overview; trial1 selected. The existing transparent rectangular card rests on the wet wooden rail beside the original small waterfall. Water flows continuously over coherent rocks into the pool; foliage, moss, wooden post, scratches, moisture and clear card edges remain stable. Water droplets move down the clear area above/beside the printed figure, without erasing its eyes or mouth. No observed added person, human face, hand, extra limb, scene cut or new text. All82 detector crops contain the same existing printed character face. Original already-open patterned violet-pink irises, fine gold spectacles and small smile remain fixed on the physical print. RGB gain .817391/.814397/.8084, original-art mask.65 bounded at reference y744/feather12 and sigma.345769 produce subdued slightly warm printed skin fitting diffuse woodland light while retaining card reflections and generated physical print texture. The outer generated hair/costume and clear card remain; no entire original-prop replacement claimed. No observed conspicuous white face patch, bright mask halo, duplicate eye/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised pairs freshly compared outside print: right waterfall/rocks/water minimumPSNR39.324982dB, upper-left wood/vegetation/clearcard39.327088dB and lower-left wet wooden rail38.920126dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; final first3seconds 144to147/f4320to4409 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
       "decision": "accepted",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
@@ -1664,41 +1668,41 @@
     },
     {
       "id": "S37",
-      "sourceSha256": "12a2c85da3f08db6f5febecff156fed5c49dd77727584d7ed590742c91cb9936",
+      "sourceSha256": "cab9e1cd2ec78b2e8ec5a43ecab8451d2d39e0b9c8594af84d4a8f8b6b5d9c41",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-20T03:03:51.515593+00:00",
+      "reviewedAt": "2026-11-21T04:08:01.578688+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
       "actualFinalUsedNativeFrames": 120,
       "frameEvidence": [
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-reference-pouch-v1\\inspection\\S37-12a2c85da3-all-frames-01.png",
-          "sha256": "32316cfce5753070a74f920666491f4fa545425840a99e8b525d77bb4714655e",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-print-lighting-v14-r1\\inspection\\S37-cab9e1cd2e-all-frames-01.png",
+          "sha256": "aea4a84d91e2a3a68bc05b96ddab93f407fef99d5b6f7b22182cd43685cc1e39",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-reference-pouch-v1\\inspection\\S37-12a2c85da3-all-frames-02.png",
-          "sha256": "c4471777cfcf5b7081a1b5a401a81e43558c12a832969d618970667e1bc3a1a5",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-print-lighting-v14-r1\\inspection\\S37-cab9e1cd2e-all-frames-02.png",
+          "sha256": "3f81aa1810ac364eea8fa918e6d3180a1d65c1a93bc53071ab79153359015dee",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-reference-pouch-v1\\inspection\\S37-12a2c85da3-all-frames-03.png",
-          "sha256": "400d3e95fcb83f3f43ef796b5e6f4e6792f9c1ea09394a2b555d620608b28efc",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-print-lighting-v14-r1\\inspection\\S37-cab9e1cd2e-all-frames-03.png",
+          "sha256": "a7f228492e0788c165bff8982aa06560e309758b329b75e4613360c402f7ef3c",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-reference-pouch-v1\\inspection\\S37-12a2c85da3-all-frames-04.png",
-          "sha256": "b6fb4e8d3363d10eab9710cd49bb64bf19cb278b6882569d1817b8df408d4ec4",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-print-lighting-v14-r1\\inspection\\S37-cab9e1cd2e-all-frames-04.png",
+          "sha256": "c20017ab4761cf3ce676cb93e968b09ebaea453f8b4bd191dffde273c129ce9c",
           "items": 24
         }
       ],
       "faceEvidence": {
-        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-reference-pouch-v1\\inspection\\S37-12a2c85da3-face-candidates.png",
-        "sha256": "a4db1449efef087740653b41dd60162bbc9d2729565883cbd8ef15b5ebd8f380",
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S37-print-lighting-v14-r1\\inspection\\S37-cab9e1cd2e-face-candidates.png",
+        "sha256": "a15170782840dac0c191dba60539a771f4d7c299bfef81e515a675561e2c68c3",
         "items": 19
       },
-      "observation": "Actually viewed all120 raw whole-scene frames via4 bound JPEG pages and native whole0/119, all120 raw print frames via8 JPEG pages and native print0/119. All120 raw original-hands-r2 crops from ROI[0,350,2350,1250] and all120 raw visible-legs crops from ROI[800,900,1800,2160] were actually viewed via30 native four-frame JPEG pages per region. Earlier narrower hand-r1 only40frames actually viewed; its full exports are retained without claiming full viewing. All169 raw detector boxes via11 JPEG pages actually viewed. These are the original hands, printed female face, clothing, grass and dirt/leaves, without an observed new real face or person. Complete originalM08 was actually reread; all120 actual768P input whole frames and native first frame were viewed and recorded; source/input fingerprints checked. One original head-out female figure in white/deep-violet/gold clothing carries the closed lavender zip pouch. One attached hand holds its upper corner, the other remains relaxed and partly leaves the left scene edge near the middle before returning. Four gripping fingers remain coherent with the wrist/cuff; the opposing thumb is behind or occluded. No observed extra hand, detached wrist, palm reversal, new person, real face/reflection or scene reset. Initial raised boot/sole lowers around1.1to1.3seconds during a gradual camera approach/tilt. Boots progressively fall below the frame while pale legs and skirt remain visible; not a complete alternating gait or all-frame ground-contact certification. Dirt path, dry grass, fence, hay bales and distant trees remain coherent. Printed eyes were already OPEN throughout. Raw fine star/diamond iris details and thin gold round glasses are smeared into glossy pink lens areas; the original small smile is absent. This is reference-appearance failure, not closed eyes or blinking. Full5seconds120native24fps frames and original147to152seconds/finalframes4410to4559 remain unchanged, as do all other shot lengths and205seconds6150frames. Soft/processed landscape and non-face print detail remain; no complete photographic-realism or pixel-perfect claim. Ordered-image QA by the assistant is not human continuous playback/listening, user aesthetic acceptance or formal full-film approval. Selected correction additionally reviewed all120 whole frames via4 JPEG pages, all120 print frames via8 JPEG pages, native whole0/119 and native print0/119, and all183 detector boxes via12 native-crop JPEG pages. All3 first/last registration trials were actually compared as contacts; trial1 native endpoints also individually viewed. Trial1 mask.65/bottom548/feather24/gainRGB.88/.88/.90 projects the originalM08 open violet-pink irises, thin gold round glasses, small smile and adjacent fringe/cheeks/chin into each current frame. No observed blink, autonomous expression, second mouth, double frame contour, sliding or visible seam in all120 corrected print frames. Outer hat/butterfly/head and body artwork still have softer original generated detail. Raw/corrected native original-hands and visible-legs ROI endpoints0/119 were actually viewed. All120 decoded pairs compare those selected outside-print regions: minimumPSNR39.39920841644784/38.546566474086895dB. The comparison hand ROI[0,350,1900,1250] is narrower than the full raw-hand-r2 ROI and excludes part of the gripping hand, especially at the last frame; native full-scene endpoints and all corrected whole frames supply that context. No claim of individually viewing all corrected native hand/leg crops, pixel identity or automatic motion approval. No generative redraw, whole-pouch freeze, scene replacement, anatomy patch, hand cover, retiming or interpolation. One whole-frame CRF16 encode from the unchanged raw. Outside-mask pixels are not claimed identical. OldS05 remains rejected; new768P-based4K replacement stays separately in the ordinary queue.",
+      "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M08 master and all176 detector crops on11 pages. All3 trial003 variants at frames0/60/119 actually compared on overview013; trial1 selected. The head-out woman retains her feminine white/violet/gold skirt, white stockings and violet butterfly boots on the dirt field path. One attached hand grips the same pouch loop/top edge; the other relaxed hand stays connected to its sleeved wrist. Slow forward stepping and a gradual closer camera framing retain the same legs, skirt folds, pouch zipper and modest pouch sway; no claim of fast or evenly timed walking cycles throughout. Original dry grass, path leaves, wire fence/posts, harvested field/bales, distant tree line and overcast sky remain coherent. No observed added person, human face, extra hand or limb, scene cut or new text. All176 detector crops show the existing attached hands, pouch/print, sleeve or skirt edges, ground leaves and blurred grass; none shows an actual human face. Original already-open patterned violet-pink irises, thin gold spectacles and small smile remain fixed. RGB gain.8272/.8272/.846, mask.65 bounded at reference y548/feather24 and sigma.803295 produce muted print illumination consistent with the overcast fabric, without the earlier white face patch. Outer generated hair/body/costume retain their softer printed texture; no entire-prop replacement claimed. No observed bright mask halo, duplicate eyes/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised outside-print pairs freshly compared: left hand/skirt/legs/boots/path minimumPSNR39.018670dB, right field/fence/grass/path 38.828697dB and lower-middle legs/boots/ground37.759815dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy encoding comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode. Final full5seconds147to152/f4410to4559 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
       "decision": "accepted",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
@@ -1802,41 +1806,41 @@
     },
     {
       "id": "S40",
-      "sourceSha256": "ff32d05837882e8aed053afa6bc19a0ac9337a8271fe983f37eb1ae2a55a5fbf",
+      "sourceSha256": "de7546d7a1f03d0a95d0616335fc0a65a854f13f5f0e24460931bed24af2ee08",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-20T06:45:45.488822+00:00",
+      "reviewedAt": "2026-11-21T03:01:43.898821+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
       "actualFinalUsedNativeFrames": 120,
       "frameEvidence": [
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-reference-sticker-v1\\inspection\\S40-ff32d05837-all-frames-01.png",
-          "sha256": "5be7f6815637107d64148023bb0a15d3f5512986697f730a7577c9607170e4fd",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-print-lighting-v14-r1\\inspection\\S40-de7546d7a1-all-frames-01.png",
+          "sha256": "7909aa63f891900d0c3598583d83692e20d30d94eef6a4a14aa474f33153629b",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-reference-sticker-v1\\inspection\\S40-ff32d05837-all-frames-02.png",
-          "sha256": "40cf2c65544eb6513a06bbe4aef5ff3f447b4de261301eaf5b4a05b2374e8837",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-print-lighting-v14-r1\\inspection\\S40-de7546d7a1-all-frames-02.png",
+          "sha256": "2b7e75c975caf7c41beee0e9f90655e8bb0d6bc4c3fdeb2c78bcfd84a3098428",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-reference-sticker-v1\\inspection\\S40-ff32d05837-all-frames-03.png",
-          "sha256": "4c42b961c63d0cd29589b7988ed18fe0fb18d1267ef822df35ea6510e01af715",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-print-lighting-v14-r1\\inspection\\S40-de7546d7a1-all-frames-03.png",
+          "sha256": "dbc7ffaa0090ba81bef5c45e561dd2f5ec179a68066a7737a4da98eac86385ab",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-reference-sticker-v1\\inspection\\S40-ff32d05837-all-frames-04.png",
-          "sha256": "09d9bde58ec7d1192c0e9a5c85b01682f04fb0db05e9ad81049cc4c3b8152120",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-print-lighting-v14-r1\\inspection\\S40-de7546d7a1-all-frames-04.png",
+          "sha256": "9206d16ea01104b3c37efaded0852c38c2902e1ffe117a64d64459541af20420",
           "items": 24
         }
       ],
       "faceEvidence": {
-        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-reference-sticker-v1\\inspection\\S40-ff32d05837-face-candidates.png",
-        "sha256": "13b329c7016a2ab607e5ce18563127c3ff034220274eab4083ba5d5bd0373aac",
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S40-print-lighting-v14-r1\\inspection\\S40-de7546d7a1-face-candidates.png",
+        "sha256": "54ae81922ef98b6b278a324d11995a75f3a62a718deb335a316e23b04c005f9e",
         "items": 2
       },
-      "observation": "Actually viewed all120 raw whole-scene frames on4 ordered JPEG pages, native whole0/119, all2 native detector boxes on1 page, and first32 raw print frames on2 native-crop JPEG pages. Complete original M09 master actually reread; actual768P input native first whole reread this session, with previous continuous-session120-input-frame baseline available. Original train seat and seat reflection stay unoccupied. Pink/cyan exterior light bands travel laterally with continuous blur; window frame, metal trim, existing empty seat reflection, glass scratches and existing attached sticker stay coherent. No observed new person, hand, human face or reflected person, lettering or unplanned cut. Both detector boxes are original sticker costume detail. Printed eyes are already OPEN in actual examined native detail; the problem is coarse violet iris detail instead of original star/diamond structure, warm thick/merged round spectacle edges and absent small original smile. This is a reference-appearance rejection, not an invented closed-eye or blink diagnosis. Other96 raw print detail frames/pages and other native checkpoints are exported/retained, not claimed individually viewed. Whole120-frame scope does not certify fine iris detail everywhere. No source modification, retiming, interpolation, anatomy patch or corrected-video approval at this checkpoint. Preserve full5second120native-frame source and original final5seconds159to164seconds/frames4770to4919; all other durations and205seconds6150frames remain fixed. Assistant ordered-image review, not human continuous playback/listening, user aesthetic acceptance or final-film approval. Corrected version independently reviewed: all120 whole frames on4 JPEG pages and all120 print frames on8 JPEG pages, native whole0/119, native print0/119, all4 detector boxes on1 JPEG page actually viewed. All12 first/last endpoint trial variants were actually compared; selectedtrial11 native0/119 viewed. Two-eye similarity trials left a chin/glasses gap or edge residue and were not used. Selected original-M09 eye/eye/chin affine registration matches the existing three landmarks without reflection, uses mask1.8/bottom700/feather15 and gainRGB.75/.65/.67. The finite bounded mapping is checked by3 passing targeted tests, including the actual eye-only chin-gap regression. Open original violet-pink star/diamond irises, fine gold round glasses and the small original smile remain fixed to the same sticker through all120 corrected print frames; no observed blink, autonomous expression, slipping, duplicated glasses, double mouth, chin sliver or visible mask seam. The face mask also affects nearby original fringe, cheeks and chin; it is not an iris-only pixel edit or a claim of unwarped pixel identity. Outer hat/butterfly/body and scene retain softer processed detail. The same empty seat/window scene and lateral light changes remain continuous through all120 corrected whole frames. All4 detector boxes are original printed costume, not a real human face. No new passenger, face/reflection, human limb, subtitle or cut observed. All120 native outside-region frame pairs compared: empty-window minimumPSNR40.73698831032958dB, seat/metal40.452007583234234dB. This is lossy-encode comparison, not pixel identity or automatic semantic approval. Exported separate outside crops are retained but not individually claimed viewed; native whole0/119 provide actual full-scene context. No human anatomy editing, complete-sticker freeze, new image generation, scene replacement, speed change or interpolation. One CRF16 encode from unchanged raw, keeping the current frame outside the print. All5seconds120native24fps frames retained and used at159to164seconds, final30fps frames4770to4919. Other shot durations and205seconds6150frames remain fixed. All raw/corrected versions and endpoint trials retained. OldS05 remains rejected and its new768P-based native4K job ordinarily queued. Assistant ordered-image review; no human continuous playback/listening, user aesthetic or final full-film approval.",
+      "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M09 master and all4 detector crops on1 page. All3 lighting variants at frames0/60/119 actually compared on retained stage9 overview; trial2 selected to retain colored night illumination instead of the grayer trial1. The existing window sticker remains inert in an empty train interior. Pink/cyan city light bands and window reflections pass continuously, with scratched glass, window frame, sill and the patterned empty seat remaining coherent. No observed added person, human face, hand, extra limb, scene cut or new text. All4 detector crops contain the existing printed sleeve/costume ornament, not human anatomy. Original already-open patterned violet-pink irises, fine gold spectacles and small smile stay fixed on the sticker. RGB gain.75/.65/.67, original-art mask1.8 bounded at reference y700/feather15, existing three-landmark registration and sigma1.034253 produce subdued pink-violet face illumination fitting the neon/window scene. Physical sticker edge and outer generated costume/hair remain; this is not an entire original-sticker replacement. No observed conspicuous white face patch, bright mask halo, duplicate eye/glasses/mouth, blink, independent expression, drift or moving mask seam. All120 native RAW/revised pairs freshly compared outside print: left moving city/window/reflections minimumPSNR40.728287dB, right seat/frame40.413806dB and upper-middle window40.788814dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; full5seconds159to164/f4770to4919 unchanged. All previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
       "decision": "accepted",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
@@ -1848,41 +1852,41 @@
     },
     {
       "id": "S41",
-      "sourceSha256": "836713f41f83df7caadec9407ce489ca6120826dcbfdf25ee44e5475552352ca",
+      "sourceSha256": "28c3a5296eb02d8c09a4e34b9f52cece85b3f76233d43aac875d7628172c7efa",
       "method": "assistant-frame-review",
-      "reviewedAt": "2026-11-20T07:59:53.418538+00:00",
+      "reviewedAt": "2026-11-21T04:23:01.814681+00:00",
       "allSourceFrameReview": true,
       "allUsedFrameReview": true,
       "reviewedNativeFrames": 120,
       "actualFinalUsedNativeFrames": 96,
       "frameEvidence": [
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S41-reference-two-prints-v1\\inspection\\S41-836713f41f-all-frames-01.png",
-          "sha256": "be41565b75769ea8a8bd6de2253710151ce8bed4f386b8499dd2ac47b881d5d0",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S41-print-lighting-v14-r1\\inspection\\S41-28c3a5296e-all-frames-01.png",
+          "sha256": "7a330faf604b71237e6228949295f88167a1b75b20b9e44643fe02b59a43a6ee",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S41-reference-two-prints-v1\\inspection\\S41-836713f41f-all-frames-02.png",
-          "sha256": "0c6a8e698bcabcfac74aa0af35cd1e2e42b3dff130b0648af7c9776036541695",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S41-print-lighting-v14-r1\\inspection\\S41-28c3a5296e-all-frames-02.png",
+          "sha256": "6c61690c812aba1ebaf26c6794c15fbce0ef5604a0b7a14f9adeff7b4413fbd8",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S41-reference-two-prints-v1\\inspection\\S41-836713f41f-all-frames-03.png",
-          "sha256": "c4b2de22ae169b16a6a4255c79e5fb08b12a2fb4c404ea8284709c76f9407574",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S41-print-lighting-v14-r1\\inspection\\S41-28c3a5296e-all-frames-03.png",
+          "sha256": "584f9f6f3fceabfc6ab3ce4b03ba7252215d977c872754f606575782c30ee0bd",
           "items": 32
         },
         {
-          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S41-reference-two-prints-v1\\inspection\\S41-836713f41f-all-frames-04.png",
-          "sha256": "37fe9e5f5da889c233be832c0c900365b525a53965b25c676de13447d7356975",
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S41-print-lighting-v14-r1\\inspection\\S41-28c3a5296e-all-frames-04.png",
+          "sha256": "fb9e79109413ec70dffd0a8099c434a00b43868ee42806675fffd76bdfb8aa70",
           "items": 24
         }
       ],
       "faceEvidence": {
-        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S41-reference-two-prints-v1\\inspection\\S41-836713f41f-face-candidates.png",
-        "sha256": "39622fdf528977e19af55d5369cbbdb40d611e4de6dab87fe8e7124c050ca42e",
-        "items": 28
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S41-print-lighting-v14-r1\\inspection\\S41-28c3a5296e-face-candidates.png",
+        "sha256": "29a366555a9d3c13e24fb38980a750ce23c58e4d5507f243cdcf6ebf9e3b8916",
+        "items": 30
       },
-      "observation": "Actually viewed all120 raw whole-scene frames on4 ordered JPEG pages, native whole0/119, first16 raw plush print frames and first16 raw badge print frames on one native-crop JPEG page each. Complete M04/M05 original masters and actual768P native input first whole actually reread; previous continuous-session120-input-frame baseline remains separately bound. The empty dusk lookout, old wooden bench, black shoulder bag, attached round M05 badge, seated M04 plush, original upper-left branches, fence, worn earth and distant town lights remain continuous. No observed unrelated person, human face, reflected person, hand, lettering, autonomous toy gesture or unplanned cut in the viewed scope. Both merchandise depictions already have OPEN eyes. Native examined plush detail simplifies the original iris diamond motif into round dark pupils/highlight speckles and thick warm spectacle edges; examined badge detail has coarse violet irises, reduced pink/diamond structure and a diminished original smile. Reject reference appearance; do not invent closed eyes or blinking. Remaining104 raw print frames per prop, native checkpoints beyond0/119, and all461 individual detector boxes are exported and retained but not claimed actually viewed at this checkpoint. All120 whole frames do not certify every native iris or background pixel. No correction or final-film approval. Preserve complete5second120-native-frame source and unchanged final4seconds164to168/frames4920to5039. All other timing and205seconds6150frames remain fixed. Assistant ordered-image review only; no human continuous playback, audio listening or user aesthetic acceptance. Corrected version independently actually reviewed: all120 whole frames on4 JPEG pages, all120 M04 plush print frames on8 pages, all120 M05 badge print frames on8 pages, native whole0/119 and both native print0/119, all356 detector crops on23 ordered pages. All3 first/last registration trial contacts for each prop actually viewed; selectedtrial1 first/last native crops per prop actually viewed. M04 original open violet-pink diamond/star irises, fine gold round spectacle frames and small smile remain fixed to the same plush. M05 original open patterned irises, fine gold frames and small smile remain fixed to the same round badge. No observed blink, autonomous gesture/expression, slipping, duplicate glasses, double mouth or moving mask seam. These are independently tracked original-master face projections: M04 mask1.8/bottom750/feather35/gainRGB.70/.67/.66, M05 mask1.9/bottom900/feather35/gainRGB.80/.78/.80. Masks also affect adjacent fringe, cheeks and chin. Outer hat, butterfly, costume, toy outline, badge rim and scene retain softer processed detail; this is not unwarped pixel identity or complete-object replacement. All356 corrected detector boxes are the original badge, existing branches against sky, grass/earth or wooden bench/leg details; no actual human face observed. Empty dusk lookout and original town-light, fence, grass, bench and black bag remain coherent through all120 corrected whole frames. No new person, human limb, message or unplanned cut observed. All120 native outside-region frame pairs compared: sky/town minimumPSNR41.859678933825904dB; right bench/earth39.35682514068187dB. This is lossy-encode comparison, not pixel identity or semantic approval. Separate outside endpoint crops retained but not individually viewed; whole native endpoints supply actual context. Whole and print JPEG pages are bounded representations of native crops, not individual viewing of every native PNG or every4K pixel. Full raw5seconds120frames retained; final first4seconds164to168/f4920to5039 remain unchanged. No human anatomy patch, inert full-object freeze, new image generation, scene replacement, interpolation or retiming. Both raw/corrected versions and all trials retained. OldS05 still rejected; separate repaired native4K source pending. Source review only; full48-source assembly, encoded film, audio/subtitles and final persona/disclosure gate remain pending.",
+      "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, BOTH print regions with120 representations each on8 ordered JPEG pages per region (240 print representations/16 pages total), native whole endpoints0/119 and native print endpoints0/119 for BOTH regions. Complete original M04 plush and M05 badge masters actually viewed in full. All3 trial003 variants at0/60/119 for BOTH regions actually compared earlier in the same ongoing session; trial1 selected. All349 detector crops actually viewed on22 pages. The same plush remains seated beside the black travel bag on a weathered wooden viewpoint bench. Round badge stays attached to the existing strap. Original bag zipper/buckles/webbing, plush felt seams/hat/butterfly/boots/costume, wood grain/scratches, worn empty ground, dry grass, left-side trees, wooden rail, distant town lights and layered mountains remain coherent under blue-gray twilight with subtle continuous camera/vegetation movement. No observed person, human face, hand, added limb, unplanned cut or new text. All349 detector crops contain the existing round printed badge, blurred sky framed by branches, grass/stalks or bench/ground texture; no actual human face. Both original already-open patterned violet-pink irises, fine gold spectacles and small smiles stay fixed. Plush gain.658/.623355/.617482, mask1.8 bounded at reference y750/feather35 and sigma.801913 preserve subdued fabric illumination; badge gain.721825/.722933/.752, mask1.9 bounded at y900/feather35 and sigma1.936508 preserve the cooler physical print. Material responses are calibrated separately, without bright face patches or blanket scene darkening. Outer generated badge hair/costume and original physical surface remain; no entire-prop replacement claimed. No observed mask halo, duplicated facial detail, blink, autonomous expression, drifting, flicker or moving seam. All120 native RAW/revised outside-print pairs freshly compared: upper tree/sky/mountains/town/rail minimumPSNR41.990628dB, left bag/straps/ground39.960462dB and right bench/grass/empty-ground39.434012dB. Separate outside endpoint PNGs retained but not individually viewed; whole native endpoints actually provide context. Lossy encoding comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode. Final first4seconds164to168/f4920to5039 unchanged. All previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
       "decision": "accepted",
       "noHumanFaces": "passed",
       "noAddedPeople": "passed",
@@ -2246,7 +2250,7 @@
       "referenceAppearance": "passed"
     }
   ],
-  "scope": "All48 original source identities reviewed; original missing-saddle S05 remains rejected. Separate newly generated S05 now actually accepted with local print lighting revision. Original-run selected lighting revision count excludes this separate replacement; full-sequence S20 and remaining lighting reviews/final film still pending.",
+  "scope": "All48 original source identities reviewed; old missing-saddle S05 remains rejected. All33 original-run lighting revisions plus one separately generated S05 lighting revision actually accepted. New full-sequence S20 and final film still pending; global hold is not yet resolved by these source-level decisions.",
   "reviewedSourceCount": 48,
   "acceptedSourceCount": 47,
   "rejectedCurrentSourceCount": 1,
@@ -2303,16 +2307,16 @@
       "reason": "Actually viewed all120 revised whole-scene representations on4 JPEG pages, all120 revised print-region representations on8 JPEG pages, native whole/print endpoints0/119, complete original M09 master and all141 detector crops on9 pages. All3 expanded-mouth lighting trials008 at frames0/60/119 actually compared; trial2 selected. The original white bottle with violet lid and same sticker stays on the worn wooden railing. The head-out woman retains her white/violet/gold feminine sleeve and the same attached hand resting on the railing; no added bottle-gripping action. Camera moves slowly and continuously with the original water, reeds and empty bank. No observed added person, human face, limb, cut or new text. All detector crops contain original out-of-focus bank, vegetation, railing, bottle or sleeve edges, not human faces. Rejected r1 lowered brightness but left a faint raw vertical mouth/chin remnant. R2 retains calibrated RGB gain.680481/.606309/.646221, expands the original-art mask to1.8 bounded at reference y720/feather16, with sigma1.000388 approximately half a native pixel. Original already-open patterned violet-pink eyes, thin gold glasses and small smile remain fixed on the physical sticker throughout. No observed vertical mouth remnant, doubled mouth/eye/glasses, blinking, independent expression, slipping or moving mask edge. Face illumination fits the subdued outdoor bottle and wooden railing. Outer generated hair/costume remain softer than the original face; no claim of replacing the whole sticker or recovering every printed detail. All120 outside-print RAW/new native frame pairs freshly compared for the left arm/hand/railing/costume and right water/reeds/bank. Outside endpoint crops retained but not individually viewed. Lossy encoding scores are not pixel identity or semantic approval. Fresh RAW-source one-pass CRF16 native3840x2160/24fps/120frames/5seconds. Final first3seconds32to35/f960to1049 unchanged. Historical source, rejected r1, all trials and evidence retained. Bounded JPEG pages are not individually viewing every native PNG or every4Kpixel. No anatomy patch, whole-scene grade, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or final-film approval."
     },
     "S11": {
-      "path": "corrections/S11-reference-eyes-v1.mp4",
+      "path": "corrections/S11-print-lighting-v14-r1.mp4",
+      "sha256": "ece8ebd0890392eb1218a79652d5b872a7f614549a381ecf53eeaf4a94eabfd1",
       "parent": "sources/S11.mp4",
-      "receipt": "corrections/S11-reference-eyes-v1.json",
-      "inspectionReport": "correction-inspections/S11-reference-eyes-v1/S11.json",
-      "selectedAt": "2026-11-18T14:54:17.569056+00:00",
-      "reason": "Actual 120-frame whole-scene and native eye/glasses review against M03; original attached hand separately reviewed in all 120 frames; all raw/corrected detector boxes reviewed.",
-      "sha256": "d45c3e44b1a6922cced5f8df5db2cbb08a569aa96190caef4dbd0bb0dd450d5b",
       "parentSha256": "f14d272e734e671f66ce8eed8300336b1122b189d865b714eff95b9b52e4d64a",
-      "receiptSha256": "498e123efd27792aa97e2fa935b0575ccd908d8acc9380b35809588537544b39",
-      "inspectionReportSha256": "b3556f1c2aae6f2974f86aaa8e49ce2fafb878e12df7169b04ccdfe50623cb6c"
+      "receipt": "corrections/S11-print-lighting-v14-r1.json",
+      "receiptSha256": "7e07e8d0625f7722664b3db87e3f66f3c0b5771cebcc8582cf90c647d0bb5c2b",
+      "inspectionReport": "corrections/S11-print-lighting-v14-r1-inspection/S11.json",
+      "inspectionReportSha256": "a6931d078caf75d2e769266700626f3d662eabd12646f8a61156cfb06e62d585",
+      "selectedAt": "2026-11-21T03:56:01.253627+00:00",
+      "reason": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M03 master and all254 detector crops on16 pages. All3 expanded-mouth trial016 variants at frames0/60/119 actually compared; trial1 selected. Earlier eye-only mask.39 retained a raw mouth remnant and was rejected only at its actually viewed three-frame calibration scope. The head-out seated woman retains her white/violet/gold skirt, white stockings, violet boots and one attached hand holding the same transparent rectangular card near the lakeshore rail. Thumb remains in front and other gripping fingers behind the card, with modest continuous hand/card/camera movement. The existing yellow-brown leaf on viewer right moves near and away without covering the printed face. Original ground leaves, vegetation, railing and water remain coherent. No observed added person, human face, extra hand or limb, scene cut or new text. Detector crops contain the existing printed face, fallen leaves, vegetation/ground, cuff edges or the same attached hand; none shows an actual human face. Original already-open patterned violet-pink irises, thin gold glasses and small smile stay fixed. RGB gain.789747/.778551/.7332, effective mask.7 bounded at reference y765/feather12 and sigma.388200 produce a subdued slightly warm printed face consistent with the shaded scene. Legacy referenceMaskScale.39 remains provenance, overridden by explicit maskScale.7. Outer generated hair/costume and physical card sheen remain; no entire-prop replacement claimed. No observed conspicuous pale face patch, bright mask halo, residual vertical mouth, duplicate eyes/glasses/mouth, blink, autonomous expression, drifting or moving mask seam. All120 native RAW/revised outside-print frame pairs freshly compared: left hand/cuff/leaves/ground/rail minimumPSNR39.572031dB, right card/leaf/rail/water39.794681dB and upper-middle card-edge/vegetation39.362730dB. Separate outside endpoint PNGs retained but not individually viewed; whole native endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode. Final first2seconds40to42/f1200to1259 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations do not mean individually viewing every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     },
     "S12": {
       "path": "corrections/S12-print-lighting-v14-r1.mp4",
@@ -2327,16 +2331,16 @@
       "reason": "Actually viewed all120 revised whole-scene representations on4 JPEG pages, all120 print-region representations on8 JPEG pages, native whole/print endpoints0/119, the complete original M09 master and all4 detector crops on1 page. All3 lighting trials at frames0/60/119 were compared earlier in this session; trial1 selected. The head-out woman retains her white/violet/gold feminine costume and the same attached hand gripping the wooden oar. Thumb wraps below the shaft; remaining fingers wrap over it. The oar continuously rotates in its original fixed rowlock, enters and exits the water with ripples; the empty opposite bank, water, weathered boat wall and wooden seat remain coherent. No observed added person, human face, extra limb, cut or new text. All4 detector crops contain the existing hand and wooden oar, weathered paint or tiny printed costume, not actual human faces. Original already-open patterned violet-pink irises and thin gold glasses remain stable within the same sticker. The pre-existing generated body and hair remain softer than the face; the new approximately half-native-pixel reference softness reduces the prior hard-edged appearance. RGB gain.749009/.657737/.665583 lowers the formerly pale face to the subdued, slightly warm boat lighting. No observed blink, independent expression, slipping, duplicate glasses/eyes/mouth or moving mask edge. The smile is small at this physical print size; no exaggerated mouth detail or claim of restoring the entire sticker. All120 RAW/new native frame pairs outside the print compared: hand/oar/water minimum PSNR39.4561518385575dB and right boat wall39.277594104842166dB. Separate outside endpoint crops retained but not individually viewed; actual native whole endpoints provide scene context. Lossy encoding comparison is not pixel identity or semantic approval. Fresh RAW-source one-pass CRF16 native3840x2160/24fps/120frame encode. Full5seconds enter final 42to47/f1260to1409 unchanged. Prior sources, rejected brightness and all trials retained. Bounded JPEG pages do not mean separately viewing every native PNG or every4Kpixel. No human anatomy patch, background change, interpolation or retiming. Source-level assistant review only; global print-lighting hold remains open, no human continuous playback/listening or final-film approval."
     },
     "S13": {
-      "path": "corrections/S13-reference-eyes-v1.mp4",
+      "path": "corrections/S13-print-lighting-v14-r1.mp4",
+      "sha256": "8f45f934650f1bd0adeec96bc7293b2c8ce4141289264d4f942fb74dd7af45c6",
       "parent": "sources/S13.mp4",
-      "receipt": "corrections/S13-reference-eyes-v1.json",
-      "inspectionReport": "correction-inspections/S13-reference-eyes-v1/S13.json",
-      "selectedAt": "2026-11-18T17:33:42.379745+00:00",
-      "reason": "Actual complete 120-frame original and corrected whole-scene review, complete corrected eye/glasses crops against M01 and complete primary umbrella-grip motion crops; original detector boxes actually viewed.",
-      "sha256": "5c5a80341996e680545662191e9f15181bbd22094538988d1b48bac15085d534",
       "parentSha256": "ffa84bef0ce79eeaaa0ef9805a950384f393870067130321f7e272d6a8511031",
-      "receiptSha256": "16cb51f44ad60aea931dae260b0a313823c5cb30c736fe3f39cd8442d861336b",
-      "inspectionReportSha256": "fc5938f39e1831a85ee0b1e8300babc1c3f290da7a1c367f0b6c38e43e388b80"
+      "receipt": "corrections/S13-print-lighting-v14-r1.json",
+      "receiptSha256": "234fdb2c6948dbea389b5b013d441e29d7c807cd349c6026a0b86d6687b44785",
+      "inspectionReport": "corrections/S13-print-lighting-v14-r1-inspection/S13.json",
+      "inspectionReportSha256": "317483445117f035e6a811a122a4e70fd9b0c82871fe6ffd32723a2509d37600",
+      "selectedAt": "2026-11-21T03:36:35.784599+00:00",
+      "reason": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M01 master and all50 detector crops on4 pages. All3 expanded-mouth trial015 variants at frames0/60/119 actually compared; trial1 selected. Earlier eye-only calibration rejected at its actual three-frame scope because it retained a raw mouth remnant; its pictures and record remain. The head-out woman retains her feminine white/violet/gold costume and attached hand gripping the same umbrella shaft. The hanging acrylic keychain has modest physical pendulum motion while transparent canopy water drops, shop shutters/walls/drains, wet empty street and reflections remain coherent. During approximately4.0to4.96 seconds, her other connected sleeved hand rises from her side and behind the charm; these source frames remain reviewed and retained but are outside the unchanged first4seconds used in the film. No observed added person, human face, extra hand or limb, scene cut or new text. All50 detector crops contain the existing printed character. Original already-open patterned violet-pink irises, fine gold spectacles and small smile remain fixed. RGB gain.767688/.753686/.769722, effective mask1.35 bounded at reference y830/feather30 and sigma.695406 produce subdued slightly warm printed skin fitting the gray rain scene. Legacy referenceMaskScale.82 is retained as provenance and overridden by explicit maskScale1.35. The physical acrylic edge and outer generated hair/costume remain; no entire original-prop replacement claimed. No observed conspicuous white face patch, bright mask halo, residual vertical mouth line, duplicate eye/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised pairs freshly compared outside print: left hand/cuff/costume/umbrella minimumPSNR39.946807dB, right shutters/drains/street39.668260dB and upper-middle grip/umbrella/street39.245624dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; final first4seconds47to51/f1410to1529 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     },
     "S14": {
       "path": "corrections/S14-print-lighting-v14-r1.mp4",
@@ -2363,16 +2367,16 @@
       "reason": "Actually viewed all120 revised whole-scene representations on4 JPEG pages, all120 revised print-region representations on8 JPEG pages, native whole/print endpoints0/119, complete M09 original master and the only detector crop on1 page. All3 expanded-mouth lighting trials007 at frames0/60/119 were actually compared; trial2 selected. Trial3 has the same capped gain. The original head-out woman in the same feminine white/violet/gold costume slowly lifts the same paper cup off the cafe table during approximately0.8to1.4seconds, brings it modestly forward and holds it steadily for the remainder. Both hands stay connected to their own wrists/forearms: the hand on viewer left supports the lid/upper cup; the hand on viewer right grips the sleeve with its thumb partly behind the cup. No observed third hand, extra limb, human face, added person, jump cut or new text. Exterior empty street, windows, table and chair remain coherent. The detector crop contains the actual cup, printed sticker and existing fingers, not a human face. Rejected r1 lowered the eye/cheek brightness but left the raw vertical mouth line. This r2 uses the same calibrated RGB gain.665614/.604429/.606742, expanded original-art mask1.8 bounded at reference y720/feather16 and sigma1.785714, approximately half a native pixel. The original already-open patterned violet-pink eyes, thin gold spectacles and small smile remain fixed on the cup. No observed residual vertical mouth line, duplicate face detail, blink, autonomous expression, drifting or moving mask seam. The outer printed costume and hair retain softer generated detail; this is not an entire-prop replacement. Face illumination is subdued and slightly warm, without the previously conspicuous pale patch. All120 outside-print RAW/new native frame pairs recomputed for the upper scene and hand/cuff/dress regions using the same explicit ROI coordinates as the rejected r1 comparison; none of its scores or approval reused. Outside endpoint crops retained but not individually viewed. Lossy-encode comparison is not pixel identity or semantic approval. Fresh one-pass CRF16 native3840x2160/24fps/120frames/5seconds from untouched RAW, final first4seconds54to58/f1620to1739 unchanged. All previous sources, rejected r1, trials and evidence retained. Bounded JPEG pages are not individual viewing of every native PNG or every4Kpixel. No human anatomy patch, whole-scene grading, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or final-film approval."
     },
     "S16": {
-      "path": "corrections/S16-reference-eyes-v1.mp4",
+      "path": "corrections/S16-print-lighting-v14-r1.mp4",
+      "sha256": "63b53c980e21822aa120ab561bc974900fc2a35d0d51f702ee24232f89a79aed",
       "parent": "sources/S16.mp4",
-      "receipt": "corrections/S16-reference-eyes-v1.json",
-      "inspectionReport": "correction-inspections/S16-reference-eyes-v1/S16.json",
-      "selectedAt": "2026-11-18T21:13:31.445236+00:00",
-      "sha256": "9f1f97e7a30d7b0b4176790d095835f38acb3ff78ec51cd95383ac011eaae4f3",
       "parentSha256": "66f633a0f4fc07df462a2cab501b148198c4cf531c767ccb8c957326408fa586",
-      "receiptSha256": "0111808ce9505a7ec8e147b2030e4227297e6a5e2bf29d3ab354accd4fd36eed",
-      "inspectionReportSha256": "eaff863a4ed0e8c42195328354fc69fd5db9fdb8a4dd3795ab5cd5902bef79ba",
-      "reason": "Both complete 120-frame whole-scene/print versions, all visible-leg crops and all raw/corrected detector boxes actually reviewed against original M08."
+      "receipt": "corrections/S16-print-lighting-v14-r1.json",
+      "receiptSha256": "bdb0839ad47286667e94be85d558e9bd28202584fe14dd3f22e538905c501dc3",
+      "inspectionReport": "corrections/S16-print-lighting-v14-r1-inspection/S16.json",
+      "inspectionReportSha256": "d1de480beb54d6172594796d081d4256acb0d36bb3667f8023d6ec468a7f1a05",
+      "selectedAt": "2026-11-21T04:01:39.968795+00:00",
+      "reason": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M08 master and all314 detector crops on20 pages. All3 expanded-mouth trial014 variants at frames0/60/119 actually compared; trial1 selected. Earlier mask.55 calibration was rejected only at its actually viewed three-frame scope for a raw mouth remnant. The head-out woman retains her feminine white/violet/gold skirt, white stockings and violet boot tops beside the forest stairs. Small continuous camera/body/pouch sway preserves the same belt buckles, skirt pleats, hanging pouch strap, zipper, fabric folds, worn stair edges, railing posts, fallen leaves, trunks and vegetation. No claim that this static-position shot shows walking. No observed added person, human face, extra limb, scene cut or new text. All314 detector crops contain the existing printed character, pouch or skirt edges, stairs/railing, fallen leaves and blurred vegetation; none shows an actual human face. Original already-open patterned violet-pink irises, thin gold spectacles and small smile stay fixed. RGB gain.819087/.790034/.7896, effective mask.8 bounded at reference y548/feather12 and sigma.658543 produce subdued slightly warm print illumination fitting the shaded pouch fabric. Legacy referenceMaskScale.55 remains provenance overridden by explicit maskScale.8. Outer generated hair/body/costume retain their softer printed texture; no entire-prop replacement claimed. No observed conspicuous bright face patch, mask halo, raw vertical mouth, duplicated eyes/glasses/mouth, blink, autonomous expression, drift or moving seam. All11 cut flags explicitly resolved by actual full ordered viewing and retained in the record. All120 native RAW/revised outside-print pairs freshly compared: left skirt/belt/buckle/strap minimumPSNR39.642737dB, right stairs/rail/leaves/trees39.193075dB and upper-middle strap/pouch-fabric38.368430dB. Separate outside endpoint PNGs retained but not individually viewed; whole native endpoints actually provide context. Lossy encoding comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode. Final full5seconds58to63/f1740to1889 unchanged. All previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     },
     "S17": {
       "path": "corrections/S17-print-lighting-v14-r1.mp4",
@@ -2411,28 +2415,28 @@
       "reason": "Actual all240 whole-scene frames, all240 frames of each of three prop details, all186 candidate boxes and native whole-scene window-boundary contexts reviewed. Original M04/M05 faces and complete inert first-frame props retained; v1 body/outline discontinuity rejected."
     },
     "S21": {
-      "path": "corrections/S21-reference-print-v1.mp4",
-      "sha256": "d9dd4bdeb2794ad5fa608f93682d7ac6c7f8a6c89c370bc9188d882cba8bfed1",
+      "path": "corrections/S21-print-lighting-v14-r1.mp4",
+      "sha256": "c5b8078a0540e206883e7ce36e715ad0b7a739613aee5225a5dca544a60d72c5",
       "parent": "sources/S21.mp4",
       "parentSha256": "8a57f820fb400f2354bc2a4b204927746e384faee7b8be269f2770ac53d13a90",
-      "receipt": "corrections/S21-reference-print-v1.json",
-      "receiptSha256": "fba42296733e7dad1d3f8b4f7ae16a7412987bfe58ad3059a976d2b662ee4133",
-      "inspectionReport": "corrections/S21-reference-print-v1-inspection/S21.json",
-      "inspectionReportSha256": "e69aa482850da6041ab259d46ea0c9e563bfce3a1b7f70bedf967a5761444ec1",
-      "selectedAt": "2026-11-19T06:05:42.912715+00:00",
-      "reason": "All120 raw and corrected whole-scene frames, all120 corrected face-detail frames, all19 raw and17 corrected detector boxes, corrected native first/last frames, actual input first frame and original M04 master actually reviewed."
+      "receipt": "corrections/S21-print-lighting-v14-r1.json",
+      "receiptSha256": "b99452db2660ef793e0685de54e4b90f2887fce063967b32e130641fd95e5068",
+      "inspectionReport": "corrections/S21-print-lighting-v14-r1-inspection/S21.json",
+      "inspectionReportSha256": "6420ff54338b7685490350bad5369df8524c6f2e3e71b4293ec8b7198954bf15",
+      "selectedAt": "2026-11-21T02:50:21.976764+00:00",
+      "reason": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119 and the complete original master. All3 lighting variants at frames0/60/119 were actually compared on the retained stage9 overview; trial1 selected. All15 detector crops on1 page actually viewed. The head-out woman in the same feminine white/violet/gold skirt, white stockings and violet boots sits quietly in the worn cable-car cabin. Her existing bag with M04 plush stays beside her. Original forest, patches of snow, cable supports/cables and distant enclosed cabin pass continuously outside the window. Worn seat, scratched metal cabin wall/floor/window, bag fabric/straps/zipper and the plush felt seams remain coherent. No observed extra person, human face, extra limb, scene cut or new text. Detector crops contain blurred passing landscape/window reflections without resolved human anatomy. The original already-open patterned irises, fine gold spectacles and small smile stay inert on the plush. RGB gain.698505/.658423/.624823, mask1.4 bounded at reference y750/feather35 and sigma.617501 lower the pale face to subdued slightly warm cabin shade while retaining felt texture. No observed bright face patch, halo, duplicate eyes/glasses/mouth, blink, autonomous expression, drifting or moving mask seam. Outer generated felt hair/costume are not claimed to be a complete original-prop replacement. All120 native RAW/revised pairs freshly compared outside print: right cabin/window/forest/snow/cables minimum PSNR39.755207dB, upper-left skirt/seat39.754609dB and lower-left bag/floor39.332313dB. Final first4seconds85to89/f2550to2669 unchanged. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy encoding comparison is not pixel identity or semantic approval. One fresh RAW-source CRF16 native3840x2160/24fps/120frames/5seconds encode. All previous sources, trials and evidence retained. Bounded JPEG pages are not individually viewing every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     },
     "S22": {
-      "path": "corrections/S22-reference-badge-v1.mp4",
-      "sha256": "64caef08a7d982b61367f5c6d8d66bf005815b76cf8720f1b097ac796c71bc7c",
+      "path": "corrections/S22-print-lighting-v14-r1.mp4",
+      "sha256": "7e3f7ca4bff78ad63ccd1cbc1d5e56fb35d3b2152a5618126135fbe93a9d997f",
       "parent": "sources/S22.mp4",
       "parentSha256": "d4566a24e7f6209319da5906c408e7ca04fa3fd0af9c5fb67e4172690c599d28",
-      "receipt": "corrections/S22-reference-badge-v1.json",
-      "receiptSha256": "7d288a88d4a9cee52e3eda33fcce87acd5a09a5580e427559564b86041d41860",
-      "inspectionReport": "corrections/S22-reference-badge-v1-inspection/S22.json",
-      "inspectionReportSha256": "9fae3f2367ff76c89fed8b6881198a703c71cdfcb0d0c023be50d8ce52874924",
-      "selectedAt": "2026-11-19T07:24:19.725812+00:00",
-      "reason": "Both120-frame whole scenes, all120 corrected badge crops,40raw badge crops, three corrected native whole contexts, actual input and original M05 master reviewed; zero detector boxes in both versions."
+      "receipt": "corrections/S22-print-lighting-v14-r1.json",
+      "receiptSha256": "14eaa22df0d3f637f5d0069e88258557874975e6935ed51a02747522c4a04974",
+      "inspectionReport": "corrections/S22-print-lighting-v14-r1-inspection/S22.json",
+      "inspectionReportSha256": "3ecca7fb67e5d559b9e799a8ad4c6d2cf98135d4f3bdcf0a85312983fc969269",
+      "selectedAt": "2026-11-21T02:50:22.449041+00:00",
+      "reason": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119 and the complete original master. All3 lighting variants at frames0/60/119 were actually compared on the retained stage9 overview; trial1 selected. The exact inspection and extraction contain zero detector crops; this does not replace actual whole-scene semantic review. The existing M05 badge remains on the black worn backpack beside an empty wet woodland path, bare branches, rocks and snow patches. Original foreground snow falls and settles above the physical badge rim and bag zipper, without crossing or erasing the printed eyes/glasses/mouth. Straps, handle, buckle, water drops and fabric weave remain coherent. No observed person, human face, hand, extra limb, scene cut or new text. Original already-open patterned violet-pink irises, fine gold spectacles and small smile stay inert on the same circular badge. RGB gain.765147/.746664/.729487, mask1.9 bounded at reference y900/feather35 and sigma.754733 lower the face to subdued overcast illumination while the original metallic rim and softer generated outer hair/costume remain. No observed conspicuous white face patch, bright halo, duplicated detail, blink, autonomous expression, slipping or moving mask seam. Not an entire original-badge replacement. All120 native RAW/revised pairs freshly compared outside print: left snow/woodland/path minimumPSNR40.010298dB, right strap/buckle/fabric40.225812dB and upper bag/snow/zipper/handle40.676009dB. Final first3seconds89to92/f2670to2759 unchanged. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy encoding comparison is not pixel identity or semantic approval. One fresh RAW-source CRF16 native3840x2160/24fps/120frames/5seconds encode. All previous sources, trials and evidence retained. Bounded JPEG pages are not individually viewing every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     },
     "S24": {
       "path": "corrections/S24-print-lighting-v14-r1.mp4",
@@ -2483,16 +2487,16 @@
       "reason": "Actually viewed all120 revised whole-scene representations on4 JPEG pages, BOTH print regions with120 frames each on8 JPEG pages per region (240 representations/16 pages total), native whole endpoints0/119 and native print endpoints0/119 for BOTH regions. Complete original M04 plush and M05 badge masters actually viewed in full; all3 trial003 variants at0/60/119 for BOTH regions actually compared earlier in this session, trial2 selected. Detector produced zero candidates, which is not automatic semantic clearance. The same plush sits against the weathered beige/violet travel bag on the old harbor dock. Its original soft felt weave, hair seams, hat/butterfly, small mittens, feminine costume and boots remain coherent; M05 remains a physical round badge on the bag. No human person or limb is visible. Ripples/reflections move continuously beneath the same fishing boats, masts, ropes, weathered warehouse, blue crates and cloudy ridge; no new person, human face, unplanned cut or new text observed. Both original already-open patterned violet-pink irises, fine gold spectacles and small smiles stay fixed. Plush RGB gain.774264/.767691/.739935 with mask1.8 bounded at y750/feather35 and sigma.593420 preserves felt texture; badge gain.737990/.776411/.818362 with mask1.9 bounded at y900/feather35 and sigma2.0 lowers the eye/cheek patch to the cool overcast harbor light. Material and local color responses are calibrated independently. No observed blink, autonomous expression, duplicate eye/glasses/mouth, slipping, flicker or moving mask seam. Generated outer badge costume remains softer; no entire-prop restoration claimed. All120 RAW/new native outside-print pairs freshly compared for the upper harbor/boats/ sky/posts/warehouse and right water/dock/rope/bollard regions, chosen after actually viewing whole native endpoints. Separate outside endpoint crops retained but not individually viewed. Lossy encoding scores are not pixel identity or semantic approval. Fresh one-pass CRF16 native3840x2160/24fps/120frames/5seconds from untouched RAW. Final first4seconds116to120/f3480to3599 unchanged. All prior sources, trials and evidence retained. Bounded JPEG pages are not separate viewing of every native PNG or every4Kpixel. No human anatomy patch, whole-scene grade, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or final-film approval."
     },
     "S30": {
-      "path": "corrections/S30-reference-pouch-v1.mp4",
-      "sha256": "2f91eff7820a5bccff2a78b459f7b28d56307055eb428b9824f445344660f72b",
+      "path": "corrections/S30-print-lighting-v14-r1.mp4",
+      "sha256": "375abe9a59cd8e6437cb37c4c8bbc31e25c047d735284ed23ce18b3f80bd6eb0",
       "parent": "sources/S30.mp4",
       "parentSha256": "bda369bfd9e15487455935b9a6916989a2d7593531cb4bed64d0474a6df48250",
-      "receipt": "corrections/S30-reference-pouch-v1.json",
-      "receiptSha256": "665fd890986b83878a5cae66e6ee40062ae3e38ce13fb77330c30e502446fbd1",
-      "inspectionReport": "corrections/S30-reference-pouch-v1-inspection/S30.json",
-      "inspectionReportSha256": "7590d51a642017a3dcd17e341a6e554892f1e972b335374b9f8373d28ec5d303",
-      "selectedAt": "2026-11-19T17:59:06.345008+00:00",
-      "reason": "Both120-frame whole sequences actually viewed; raw rope-hand120 and far-hand120, corrected native endpoints for both hands, corrected print120, all137raw/121corrected detector crops, original M08 and actual768P input compared. Original current-frame face projection only; source5s/final3s unchanged."
+      "receipt": "corrections/S30-print-lighting-v14-r1.json",
+      "receiptSha256": "a72cccdb3c1ccba6cc4addd363e8e2d528b9d98c8b776c8929f0c430884b7f50",
+      "inspectionReport": "corrections/S30-print-lighting-v14-r1-inspection/S30.json",
+      "inspectionReportSha256": "be66ada4abbd426b050c5c99d9f757fb231305b424c7c67d0066eed1e43573dd",
+      "selectedAt": "2026-11-21T03:18:07.119412+00:00",
+      "reason": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M08 master and all146 detector crops on10 pages. All3 lighting variants at frames0/60/119 actually compared on retained stage9 overview; trial1 selected. The head-out woman in the established feminine white/violet/gold skirt and white stockings stands beside the worn ferry rail. One attached hand rests on the original rope/wooden rail while the other remains relaxed at her side. The hanging pouch, strap/buckles/zipper, skirt pleats, rusty bollards/posts, worn wood/paint, empty deck and rippling water remain coherent with subtle continuous boat/camera motion. No observed added person, human face, extra hand or limb, scene cut or new text. Detector crops show the existing printed character, bag fabric/zipper/loops, rusty metal/post fasteners or attached hand/rope/cuff, not human faces. Original already-open patterned violet-pink irises, fine gold spectacles and small smile stay fixed on the pouch. RGB gain.819049/.787368/.800796, original-art mask.65 bounded at reference y548/feather24 and sigma.502880 retain subdued slightly warm skin and fabric texture under soft coastal daylight. Outer generated costume/hair and pouch material remain; this is not an entire original-prop replacement. No observed conspicuous white face patch, bright mask halo, duplicate eye/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised pairs freshly compared outside print: left hand/cuff/rope/rail/water minimumPSNR39.160989dB, right hand/skirt/boat40.097836dB and upper-middle strap/costume39.206264dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; final first3seconds120to123/f3600to3689 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     },
     "S31": {
       "path": "corrections/S31-print-lighting-v14-r1.mp4",
@@ -2507,16 +2511,16 @@
       "reason": "Actually viewed all120 revised whole-scene representations on4 JPEG pages, all120 print representations on8 JPEG pages, native whole/print endpoints0/119, complete original M01 keychain master and all126 detector crops on8 pages. All3 lighting trials003 at0/60/119 actually compared in this session; darker trial1 selected. The same head-out woman in her feminine white/violet/gold costume rests the same attached left hand on the worn white ship railing. Fingers naturally overlap the top/far side; not every fingertip is independently visible. Original skirt, violet shoulder bag, strap, hardware, keychain and rusty rail remain connected. The same sea, island ridge, wake, deck structure, lights and windows remain coherent through slight continuous camera/ship movement and modest physical keychain sway. No observed additional person, human face, extra/detached limb, cut or new text. Detector candidates are existing rusty rail joints/wear, sea wake and printed keychain, not human faces. The ambiguous distant dark-capped rail detail was explicitly compared with the complete original S31 realism scene still and retained magnified crops from that still and the exact selected768 input/native RAW endpoints0/119. It is a pre-existing static rail detail, not a new resolved human face or anatomy. Nearest-neighbor technical magnification adds no detail; no unseen anatomy is inferred. Original already-open patterned violet-pink eyes, fine gold spectacles and small smile remain fixed on M01. RGB gain.677766/.670544/.716904 and sigma.709585 approximately half a native pixel match the subdued cool overcast deck illumination. Mask1.35 bounded at reference y830/feather30 preserves surrounding translucent acrylic reflection. No observed blink, autonomous expression, duplicate mouth/eye/glasses, slipping or moving mask edge. Existing generated outer print detail remains softer; no entire-keychain replacement claimed. All120 RAW/revised native outside-print pairs freshly compared for left hand/cuff/rail/water/skirt and upper bag/strap/costume/ship-wall regions. Separate outside endpoint crops retained but not individually viewed. Lossy encoding scores are not pixel identity or semantic approval. Fresh one-pass CRF16 native3840x2160/24fps/120frames/5seconds from untouched RAW. Final full5seconds123to128/f3690to3839 unchanged. All prior sources, trials and evidence retained. Bounded JPEG pages are not separate viewing of every native PNG or every4Kpixel. No anatomy patch, whole-scene grade, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or final-film approval."
     },
     "S32": {
-      "path": "corrections/S32-reference-camera-sticker-v2.mp4",
-      "sha256": "4b368605fb5de38a2d4d6d4bbf15dbad564e39b4fbb935675bca18fa40057251",
+      "path": "corrections/S32-print-lighting-v14-r1.mp4",
+      "sha256": "29de5ad828b6a3c79a37f2696dc071b85ca81ef5f33b77b326ef13af6342bf11",
       "parent": "sources/S32.mp4",
       "parentSha256": "10a3f2bc4a7ca3fb9e73f8df9527860255c3cf37f736118dc661ff8bd66a2465",
-      "receipt": "corrections/S32-reference-camera-sticker-v2.json",
-      "receiptSha256": "e50cee922cd029bff4527499786a81d4d75651081a46a02c8caa57380e256a8b",
-      "inspectionReport": "corrections/S32-reference-camera-sticker-v2-inspection/S32.json",
-      "inspectionReportSha256": "aefb801fa7f1cb8c71f0205054151b5c39c327a9aeb17c3e3b5ef6a72962a1bd",
-      "selectedAt": "2026-11-19T20:45:23.762990+00:00",
-      "reason": "Raw/v1/v2 each120 whole frames actually viewed; v1 rejected for native last-frame mouth residue. V2 print120 and all25 candidates, raw hands120/lens120, raw/v2 native endpoints and originalM09/input compared. Source5s/final4s unchanged."
+      "receipt": "corrections/S32-print-lighting-v14-r1.json",
+      "receiptSha256": "9b3a5f54f41408b1da3975a40210c367dbd1561e1350b63cf41af95cd0f856f2",
+      "inspectionReport": "corrections/S32-print-lighting-v14-r1-inspection/S32.json",
+      "inspectionReportSha256": "8d604aececbe61bed33f005757f90927ad1336b1ebf25a42849e38fd1510eb65",
+      "selectedAt": "2026-11-21T03:10:24.164968+00:00",
+      "reason": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M09 master and all27 detector crops on2 pages. All3 lighting variants at frames0/60/119 actually compared on retained stage9 overview; trial1 selected. Two attached hands in the established feminine white/violet/gold sleeves continue holding the same silver compact camera. Viewer-left thumb rests on the camera front and index finger curves over its top dial; viewer-right thumb rests below the lens while the fingers naturally wrap around the edge. Subtle grip motion, coastal waves, weathered wooden posts/rail and ropes remain continuous. No observed added person, human face, extra hand or limb, scene cut or new text. Detector crops contain weathered wood/rail shadows, the circular camera sensor and lens reflections, not human faces. Original already-open patterned violet-pink irises, fine gold spectacles and small smile stay fixed on the physical camera sticker. RGB gain .795099/.739145/.735484, original-art mask2.4 bounded at reference y730/feather15 and sigma.779661 produce subdued slightly warm printed skin fitting the daylight and camera. The physical sticker edge and outer generated costume remain; the blue-gray original hair beneath the chin is printed artwork, not a human shadow. No observed conspicuous white face patch, bright mask halo, duplicate eye/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised pairs freshly compared outside print: left hand/cuff/rail/water minimumPSNR39.745573dB, right lens/hand/sea39.970234dB and lower cuff/rail/camera39.462160dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; final first4seconds128to132/f3840to3959 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     },
     "S35": {
       "path": "corrections/S35-print-lighting-v14-r1.mp4",
@@ -2531,28 +2535,28 @@
       "reason": "Actually viewed all120 revised whole-scene representations on4 JPEG pages, all120 print representations on8 JPEG pages, native whole/print endpoints0/119, complete original M09 sticker master and all95 detector crops on6 pages. All3 lighting trials003 at0/60/119 actually compared in this session; darker trial1 selected. Complete M09 master and whole native frame0 re-viewed after finishing every detector page. The same head-out woman in her white/violet/gold feminine skirt, white stockings and violet butterfly boots crouches at the shallow forest stream. One attached hand rests on her knee; the other connected wrist and palm reach down so fingertips contact the water with modest continuous relaxation and ripples. Natural water refraction and occlusion mean not every fingertip is independently visible in every frame. Original rocks, moss, roots, dry leaves, ferns and black-capped bottle on its rock remain coherent. No observed additional person, human face, extra/detached hand, cut or new text. Detector crops show existing boot bows, sleeve/arm edges, stones, leaves, water and bottle print, not actual human faces. Original already-open patterned violet-pink eyes, thin gold spectacles and small smile remain fixed on the sticker. RGB gain.702673/.693419/.707417 and sigma1.681833 approximately half a native pixel lower the formerly conspicuous pale face patch to the subdued wooded shade. Mask1.35 bounded at reference y730/feather15 covers the face without replacing the outer generated hair/costume. No observed residual vertical mouth line, duplicate eyes/glasses/mouth, blink, autonomous expression, slipping or moving mask edge. Physical bottle wear remains; no entire-prop restoration claimed. All120 RAW/revised native outside-print pairs freshly compared for both hands/cuffs/ skirt/stockings/boots/water and right forest/leaves/stones/water regions. Separate outside endpoint crops retained but not individually viewed. Lossy encoding scores are not pixel identity or semantic approval. Fresh one-pass CRF16 native3840x2160/ 24fps/120frames/5seconds from untouched RAW. Final first4seconds140to144/f4200to4319 unchanged. All previous sources, trials and evidence retained. Bounded JPEG pages are not separate viewing of every native PNG or every4Kpixel. No anatomy patch, whole-scene grade, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or final-film approval."
     },
     "S36": {
-      "path": "corrections/S36-reference-clear-card-v1.mp4",
-      "sha256": "b4fec296d28b7c42ca88bc6a1314169f1a24a8dd7aecb064e34dd98da99db26b",
+      "path": "corrections/S36-print-lighting-v14-r1.mp4",
+      "sha256": "301dadad7d1fd4d454eadf6aa9c38d5acb408b2fee4926e13a5f26a5d8a52c2e",
       "parent": "sources/S36.mp4",
       "parentSha256": "d2ac24f1daa8d8e15f86cc41b86018722b4eb32e242d5c2cc3127a9086364364",
-      "receipt": "corrections/S36-reference-clear-card-v1.json",
-      "receiptSha256": "1a7f5b968ae50bb2503db1a1cd1160d7fcabe3f9b76647bd08a6a1b5275824b7",
-      "inspectionReport": "corrections/S36-reference-clear-card-v1-inspection/S36.json",
-      "inspectionReportSha256": "91188d4648d07503557e2c148e4f96fe47388cebac361263cd1e3d12aeeec228",
-      "selectedAt": "2026-11-20T01:34:23.360188+00:00",
-      "reason": "Raw/corrected120 whole and print frames each actually viewed;30raw/72fixed native candidates; all120 raw central-water native crops and raw/corrected water/stream native endpoints plus120 decoded outside-print comparisons reviewed. Original M03 face only;5s source/final3s unchanged."
+      "receipt": "corrections/S36-print-lighting-v14-r1.json",
+      "receiptSha256": "c83475fb54ef0c47974f66ab8e5509c8ab478bbffbb18bb8ac8e28877500fcde",
+      "inspectionReport": "corrections/S36-print-lighting-v14-r1-inspection/S36.json",
+      "inspectionReportSha256": "c5a083aab504b5bb46c4602ef9cfb80a9fc468b5b008dfc4f2fcfc07069a0316",
+      "selectedAt": "2026-11-21T03:24:37.763613+00:00",
+      "reason": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M03 master and all82 detector crops on6 pages. All3 lighting variants at frames0/60/119 actually compared on retained stage9 overview; trial1 selected. The existing transparent rectangular card rests on the wet wooden rail beside the original small waterfall. Water flows continuously over coherent rocks into the pool; foliage, moss, wooden post, scratches, moisture and clear card edges remain stable. Water droplets move down the clear area above/beside the printed figure, without erasing its eyes or mouth. No observed added person, human face, hand, extra limb, scene cut or new text. All82 detector crops contain the same existing printed character face. Original already-open patterned violet-pink irises, fine gold spectacles and small smile remain fixed on the physical print. RGB gain .817391/.814397/.8084, original-art mask.65 bounded at reference y744/feather12 and sigma.345769 produce subdued slightly warm printed skin fitting diffuse woodland light while retaining card reflections and generated physical print texture. The outer generated hair/costume and clear card remain; no entire original-prop replacement claimed. No observed conspicuous white face patch, bright mask halo, duplicate eye/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised pairs freshly compared outside print: right waterfall/rocks/water minimumPSNR39.324982dB, upper-left wood/vegetation/clearcard39.327088dB and lower-left wet wooden rail38.920126dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; final first3seconds 144to147/f4320to4409 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     },
     "S37": {
-      "path": "corrections/S37-reference-pouch-v1.mp4",
-      "sha256": "12a2c85da3f08db6f5febecff156fed5c49dd77727584d7ed590742c91cb9936",
+      "path": "corrections/S37-print-lighting-v14-r1.mp4",
+      "sha256": "cab9e1cd2ec78b2e8ec5a43ecab8451d2d39e0b9c8594af84d4a8f8b6b5d9c41",
       "parent": "sources/S37.mp4",
       "parentSha256": "ee171474f4b282bb9ac5c140d9a66ce446d2fa0de128f7fbffda292ed9152d4c",
-      "receipt": "corrections/S37-reference-pouch-v1.json",
-      "receiptSha256": "c87a91bbf40188f899c5c69a114690ae6a64bca7306d338ee45bb03de1b478b8",
-      "inspectionReport": "corrections/S37-reference-pouch-v1-inspection/S37.json",
-      "inspectionReportSha256": "e393518b6c489e8657d4bda12c12382072c69d728f27dc387d88646a93fd298b",
-      "selectedAt": "2026-11-20T03:03:51.327557+00:00",
-      "reason": "Raw/corrected all120 whole and print frames each actually viewed;169raw/183fixed native candidates, all120 raw hand-r2 and leg crops, native whole/print/outside endpoints and120 decoded outside-region comparisons reviewed. OriginalM08 face only;5second source/final unchanged."
+      "receipt": "corrections/S37-print-lighting-v14-r1.json",
+      "receiptSha256": "24b91b41e9956cba87b9f32064870edd25354c9c565918c4cb264962310c3329",
+      "inspectionReport": "corrections/S37-print-lighting-v14-r1-inspection/S37.json",
+      "inspectionReportSha256": "1b944b39870727cc1ded3944ef871aa66712f9ad6fa311477a7766494d8adcf1",
+      "selectedAt": "2026-11-21T04:08:01.352270+00:00",
+      "reason": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M08 master and all176 detector crops on11 pages. All3 trial003 variants at frames0/60/119 actually compared on overview013; trial1 selected. The head-out woman retains her feminine white/violet/gold skirt, white stockings and violet butterfly boots on the dirt field path. One attached hand grips the same pouch loop/top edge; the other relaxed hand stays connected to its sleeved wrist. Slow forward stepping and a gradual closer camera framing retain the same legs, skirt folds, pouch zipper and modest pouch sway; no claim of fast or evenly timed walking cycles throughout. Original dry grass, path leaves, wire fence/posts, harvested field/bales, distant tree line and overcast sky remain coherent. No observed added person, human face, extra hand or limb, scene cut or new text. All176 detector crops show the existing attached hands, pouch/print, sleeve or skirt edges, ground leaves and blurred grass; none shows an actual human face. Original already-open patterned violet-pink irises, thin gold spectacles and small smile remain fixed. RGB gain.8272/.8272/.846, mask.65 bounded at reference y548/feather24 and sigma.803295 produce muted print illumination consistent with the overcast fabric, without the earlier white face patch. Outer generated hair/body/costume retain their softer printed texture; no entire-prop replacement claimed. No observed bright mask halo, duplicate eyes/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised outside-print pairs freshly compared: left hand/skirt/legs/boots/path minimumPSNR39.018670dB, right field/fence/grass/path 38.828697dB and lower-middle legs/boots/ground37.759815dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy encoding comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode. Final full5seconds147to152/f4410to4559 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     },
     "S38": {
       "path": "corrections/S38-print-lighting-v14-r1.mp4",
@@ -2567,28 +2571,28 @@
       "reason": "Actually viewed all120 revised whole/print frames, native whole/print endpoints, all183 detector crops and3 lighting contacts. Original M01 face follows existing gradual warm light; final4seconds unchanged."
     },
     "S40": {
-      "path": "corrections/S40-reference-sticker-v1.mp4",
-      "sha256": "ff32d05837882e8aed053afa6bc19a0ac9337a8271fe983f37eb1ae2a55a5fbf",
+      "path": "corrections/S40-print-lighting-v14-r1.mp4",
+      "sha256": "de7546d7a1f03d0a95d0616335fc0a65a854f13f5f0e24460931bed24af2ee08",
       "parent": "sources/S40.mp4",
       "parentSha256": "938a770964809294847d63237447a1ff2dec3b738e5e40d48c510ef856d55238",
-      "receipt": "corrections/S40-reference-sticker-v1.json",
-      "receiptSha256": "d63b8c67968b6d6e1c64fbff939f1bb881f4f1c292a9bb04492616712dc0553c",
-      "inspectionReport": "corrections/S40-reference-sticker-v1-inspection/S40.json",
-      "inspectionReportSha256": "dea076077f8361872b8c53c574b1fd8f908399530f489d43dd6a1321189efdd9",
-      "selectedAt": "2026-11-20T06:45:45.414158+00:00",
-      "reason": "Actually viewed120 whole frames per version,32raw/120corrected print frames,all2raw/4corrected candidates,native whole endpoints per version/corrected print endpoints and12 first-last trials. Original-M09 eye/eye/chin affine trial11 reviewed; final5seconds unchanged."
+      "receipt": "corrections/S40-print-lighting-v14-r1.json",
+      "receiptSha256": "e68b1ed1529c5f894cc0714797bf17a1dab02c66f051d7b1af7db5db0c043024",
+      "inspectionReport": "corrections/S40-print-lighting-v14-r1-inspection/S40.json",
+      "inspectionReportSha256": "5086f9a524dbaadae383cfdddfba138cc21b4f72f62c625fd343aa7c7e81a687",
+      "selectedAt": "2026-11-21T03:01:43.803750+00:00",
+      "reason": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M09 master and all4 detector crops on1 page. All3 lighting variants at frames0/60/119 actually compared on retained stage9 overview; trial2 selected to retain colored night illumination instead of the grayer trial1. The existing window sticker remains inert in an empty train interior. Pink/cyan city light bands and window reflections pass continuously, with scratched glass, window frame, sill and the patterned empty seat remaining coherent. No observed added person, human face, hand, extra limb, scene cut or new text. All4 detector crops contain the existing printed sleeve/costume ornament, not human anatomy. Original already-open patterned violet-pink irises, fine gold spectacles and small smile stay fixed on the sticker. RGB gain.75/.65/.67, original-art mask1.8 bounded at reference y700/feather15, existing three-landmark registration and sigma1.034253 produce subdued pink-violet face illumination fitting the neon/window scene. Physical sticker edge and outer generated costume/hair remain; this is not an entire original-sticker replacement. No observed conspicuous white face patch, bright mask halo, duplicate eye/glasses/mouth, blink, independent expression, drift or moving mask seam. All120 native RAW/revised pairs freshly compared outside print: left moving city/window/reflections minimumPSNR40.728287dB, right seat/frame40.413806dB and upper-middle window40.788814dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; full5seconds159to164/f4770to4919 unchanged. All previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     },
     "S41": {
-      "path": "corrections/S41-reference-two-prints-v1.mp4",
-      "sha256": "836713f41f83df7caadec9407ce489ca6120826dcbfdf25ee44e5475552352ca",
+      "path": "corrections/S41-print-lighting-v14-r1.mp4",
+      "sha256": "28c3a5296eb02d8c09a4e34b9f52cece85b3f76233d43aac875d7628172c7efa",
       "parent": "sources/S41.mp4",
       "parentSha256": "33dac00282e8b73b4a8900e221767ca70a2f3a4a375aad1b25047cc89a243942",
-      "receipt": "corrections/S41-reference-two-prints-v1.json",
-      "receiptSha256": "cee99279c6815a81d41ea865d579850f66c0ba664eaabd4db3710cd13b01b8ac",
-      "inspectionReport": "corrections/S41-reference-two-prints-v1-inspection/S41.json",
-      "inspectionReportSha256": "e1ca0b1eef405a39bb7f80c5777f6ed9ed09c9fd4105f5a4f0d2c582367a54af",
-      "selectedAt": "2026-11-20T07:59:53.354616+00:00",
-      "reason": "Actually viewed all120 corrected whole frames, all120 print frames per M04/M05, native whole and both print0/119, all356 corrected detector crops on23 pages, and all3 first/last trial contacts. Original-art trial1 selected; final4seconds unchanged."
+      "receipt": "corrections/S41-print-lighting-v14-r1.json",
+      "receiptSha256": "32669d3220d97bfb82acee66a88f51019b4403051b42b734e7001213afa3955e",
+      "inspectionReport": "corrections/S41-print-lighting-v14-r1-inspection/S41.json",
+      "inspectionReportSha256": "caf9d858d039aaee986aed8c93094f68b9c468ae04814776dac8ad544652ffe9",
+      "selectedAt": "2026-11-21T04:23:01.736060+00:00",
+      "reason": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, BOTH print regions with120 representations each on8 ordered JPEG pages per region (240 print representations/16 pages total), native whole endpoints0/119 and native print endpoints0/119 for BOTH regions. Complete original M04 plush and M05 badge masters actually viewed in full. All3 trial003 variants at0/60/119 for BOTH regions actually compared earlier in the same ongoing session; trial1 selected. All349 detector crops actually viewed on22 pages. The same plush remains seated beside the black travel bag on a weathered wooden viewpoint bench. Round badge stays attached to the existing strap. Original bag zipper/buckles/webbing, plush felt seams/hat/butterfly/boots/costume, wood grain/scratches, worn empty ground, dry grass, left-side trees, wooden rail, distant town lights and layered mountains remain coherent under blue-gray twilight with subtle continuous camera/vegetation movement. No observed person, human face, hand, added limb, unplanned cut or new text. All349 detector crops contain the existing round printed badge, blurred sky framed by branches, grass/stalks or bench/ground texture; no actual human face. Both original already-open patterned violet-pink irises, fine gold spectacles and small smiles stay fixed. Plush gain.658/.623355/.617482, mask1.8 bounded at reference y750/feather35 and sigma.801913 preserve subdued fabric illumination; badge gain.721825/.722933/.752, mask1.9 bounded at y900/feather35 and sigma1.936508 preserve the cooler physical print. Material responses are calibrated separately, without bright face patches or blanket scene darkening. Outer generated badge hair/costume and original physical surface remain; no entire-prop replacement claimed. No observed mask halo, duplicated facial detail, blink, autonomous expression, drifting, flicker or moving seam. All120 native RAW/revised outside-print pairs freshly compared: upper tree/sky/mountains/town/rail minimumPSNR41.990628dB, left bag/straps/ground39.960462dB and right bench/grass/empty-ground39.434012dB. Separate outside endpoint PNGs retained but not individually viewed; whole native endpoints actually provide context. Lossy encoding comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode. Final first4seconds164to168/f4920to5039 unchanged. All previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     },
     "S42": {
       "path": "corrections/S42-print-lighting-v14-r1.mp4",
@@ -2663,9 +2667,9 @@
       "reason": "Actually viewed all120 revised whole-scene representations on4 bounded JPEG pages, all120 print representations on8 pages, native whole/print endpoints0/119, complete original M04 plush master and all58 detector crops on4 pages. All3 lighting trials012 at0/60/119 actually compared; darker trial1 selected. Original already-open patterned violet-pink irises, fine gold spectacles and small smile replace deformed generated embroidery, not closed eyes. RGB.741671/.688278/.660200, mask1.8 bounded at reference y750/feather35 and sigma.437050 make the felt face subdued and coherent with the overcast seaside bench. Original felt texture, hair seams and physical costume remain. No observed doubled eyes/glasses/mouth, autonomous expression, blink, pale outer edge, slipping or moving mask seam. Outer generated hair/costume remain softer; no whole-plush restoration claimed. The head-out woman in her established feminine white/violet/gold costume uses both connected hands to cup the plush base, straighten and turn it modestly from its initial leftward tilt to upright by approximately1.3seconds, holds it, releases at approximately2.7to3seconds, then rests both palms on the bench by3.7seconds. Hands remain attached to their respective original cuffs and arms; no observed third hand, detached limb, reversed wrist, human face, extra person, cut or new text. Overlapping grip and occlusion mean not all fingers are separately visible at every instant. The plush mittens are cloth props, not extra human hands. All120 expanded native-coordinate RAW two-hand representations on30 bounded pages separately reviewed. Original weathered bench planks/fasteners, wall, sea waves, travel bag and head-out costume/stockings remain coherent. All detector crops show original weathered wall texture at x107/y521, sleeve/forearm and plush arm/clothing, not resolved human faces. No unseen anatomy is inferred from wall wear. All120 RAW/revised native outside-print pairs freshly compared for left arm/hand/costume/bench/wall/sea, right arm/hand/bag/bench/wall/sea and lower plush/boots/mittens/bench/hands. Separate outside endpoint PNGs retained but not individually viewed. Lossy encoding scores are not pixel identity or semantic approval. Fresh one-pass CRF16 native3840x2160/24fps/120frames/5seconds from untouched RAW. Final first4seconds187to191/f5610to5729 unchanged. Original RAW rejection, all still trials and evidence retained. Bounded pages are not separate viewing of every native PNG or every4Kpixel. No anatomy patch, whole-scene grade, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     }
   },
-  "snapshotAt": "2026-11-21T02:35:13.275878+00:00",
-  "wholeSceneFrameReviewAcrossVersions": 13056,
-  "rejectedCorrectionCandidateCount": 23,
+  "snapshotAt": "2026-11-21T04:23:01.885135+00:00",
+  "wholeSceneFrameReviewAcrossVersions": 14376,
+  "rejectedCorrectionCandidateCount": 34,
   "additionalPartialRejectedCorrectionReview": {
     "shotId": "S19",
     "version": "v1",
@@ -2747,7 +2751,18 @@
     "S07LightingV14R1": 120,
     "S14LightingV14R1": 120,
     "S17LightingV14R1": 120,
-    "S05NewNativeLightingV14R1": 120
+    "S05NewNativeLightingV14R1": 120,
+    "S21LightingV14R1": 120,
+    "S22LightingV14R1": 120,
+    "S40LightingV14R1": 120,
+    "S32LightingV14R1": 120,
+    "S30LightingV14R1": 120,
+    "S36LightingV14R1": 120,
+    "S13LightingV14R1": 120,
+    "S11LightingV14R1": 120,
+    "S16LightingV14R1": 120,
+    "S37LightingV14R1": 120,
+    "S41LightingV14R1": 120
   },
   "activeUserDirectedRepair": {
     "shotId": "S05",
@@ -2758,7 +2773,7 @@
     "record": "production/S05-saddle-rejection-v12.json",
     "oldAcceptanceRevoked": true
   },
-  "printLightingRevisedSourceCount": 22,
+  "printLightingRevisedSourceCount": 33,
   "separateNativeS05Replacement": {
     "originRun": "production-v12-S05-native-4k-001",
     "sourcePlanSha256": "f7d10a7c80e72a02bbf541b4109871be0e4845653c4ada12075e4b9de6b63842",

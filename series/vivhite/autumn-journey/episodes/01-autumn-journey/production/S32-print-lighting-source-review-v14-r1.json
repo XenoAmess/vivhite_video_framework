@@ -1,0 +1,1257 @@
+{
+  "schemaVersion": "vivhite-print-lighting-actual-source-review-1",
+  "shotId": "S32",
+  "reviewedAt": "2026-11-21T03:10:24.453053+00:00",
+  "sourcePlanSha256": "5797a7ea8d61e53b5ce7372a57fcce24cb8d924225a7c3760333651a2eda50fa",
+  "selection": {
+    "path": "corrections/S32-print-lighting-v14-r1.mp4",
+    "sha256": "29de5ad828b6a3c79a37f2696dc071b85ca81ef5f33b77b326ef13af6342bf11",
+    "parent": "sources/S32.mp4",
+    "parentSha256": "10a3f2bc4a7ca3fb9e73f8df9527860255c3cf37f736118dc661ff8bd66a2465",
+    "receipt": "corrections/S32-print-lighting-v14-r1.json",
+    "receiptSha256": "9b3a5f54f41408b1da3975a40210c367dbd1561e1350b63cf41af95cd0f856f2",
+    "inspectionReport": "corrections/S32-print-lighting-v14-r1-inspection/S32.json",
+    "inspectionReportSha256": "8d604aececbe61bed33f005757f90927ad1336b1ebf25a42849e38fd1510eb65",
+    "selectedAt": "2026-11-21T03:10:24.164968+00:00",
+    "reason": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M09 master and all27 detector crops on2 pages. All3 lighting variants at frames0/60/119 actually compared on retained stage9 overview; trial1 selected. Two attached hands in the established feminine white/violet/gold sleeves continue holding the same silver compact camera. Viewer-left thumb rests on the camera front and index finger curves over its top dial; viewer-right thumb rests below the lens while the fingers naturally wrap around the edge. Subtle grip motion, coastal waves, weathered wooden posts/rail and ropes remain continuous. No observed added person, human face, extra hand or limb, scene cut or new text. Detector crops contain weathered wood/rail shadows, the circular camera sensor and lens reflections, not human faces. Original already-open patterned violet-pink irises, fine gold spectacles and small smile stay fixed on the physical camera sticker. RGB gain .795099/.739145/.735484, original-art mask2.4 bounded at reference y730/feather15 and sigma.779661 produce subdued slightly warm printed skin fitting the daylight and camera. The physical sticker edge and outer generated costume remain; the blue-gray original hair beneath the chin is printed artwork, not a human shadow. No observed conspicuous white face patch, bright mask halo, duplicate eye/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised pairs freshly compared outside print: left hand/cuff/rail/water minimumPSNR39.745573dB, right lens/hand/sea39.970234dB and lower cuff/rail/camera39.462160dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; final first4seconds128to132/f3840to3959 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
+  },
+  "previousSelectionRetained": {
+    "path": "corrections/S32-reference-camera-sticker-v2.mp4",
+    "sha256": "4b368605fb5de38a2d4d6d4bbf15dbad564e39b4fbb935675bca18fa40057251",
+    "parent": "sources/S32.mp4",
+    "parentSha256": "10a3f2bc4a7ca3fb9e73f8df9527860255c3cf37f736118dc661ff8bd66a2465",
+    "receipt": "corrections/S32-reference-camera-sticker-v2.json",
+    "receiptSha256": "e50cee922cd029bff4527499786a81d4d75651081a46a02c8caa57380e256a8b",
+    "inspectionReport": "corrections/S32-reference-camera-sticker-v2-inspection/S32.json",
+    "inspectionReportSha256": "aefb801fa7f1cb8c71f0205054151b5c39c327a9aeb17c3e3b5ef6a72962a1bd",
+    "selectedAt": "2026-11-19T20:45:23.762990+00:00",
+    "reason": "Raw/v1/v2 each120 whole frames actually viewed; v1 rejected for native last-frame mouth residue. V2 print120 and all25 candidates, raw hands120/lens120, raw/v2 native endpoints and originalM09/input compared. Source5s/final4s unchanged."
+  },
+  "decision": {
+    "id": "S32",
+    "sourceSha256": "29de5ad828b6a3c79a37f2696dc071b85ca81ef5f33b77b326ef13af6342bf11",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-21T03:10:24.264513+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 96,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-print-lighting-v14-r1\\inspection\\S32-29de5ad828-all-frames-01.png",
+        "sha256": "298fbfdbb012579e39f93cd2e316936fc05ce1755fc0e61fdb35d9958408f65e",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-print-lighting-v14-r1\\inspection\\S32-29de5ad828-all-frames-02.png",
+        "sha256": "c651b88454adb7d91cee574e006777aed96f0c799be5b23d318f151c240931db",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-print-lighting-v14-r1\\inspection\\S32-29de5ad828-all-frames-03.png",
+        "sha256": "fe8690ea2d9b9d1f326270ae280553119be5b5ae0b0e4fa8dd644492878e7921",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-print-lighting-v14-r1\\inspection\\S32-29de5ad828-all-frames-04.png",
+        "sha256": "26b31f794734c16d81c74feed91d7fbf1037277c6b02aa621eec3e00c62fd4b4",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\S32-print-lighting-v14-r1\\inspection\\S32-29de5ad828-face-candidates.png",
+      "sha256": "8db0ae07a02002d27736af2b073c665f4b933aad638fd3fd95ab520850b4d61a",
+      "items": 6
+    },
+    "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M09 master and all27 detector crops on2 pages. All3 lighting variants at frames0/60/119 actually compared on retained stage9 overview; trial1 selected. Two attached hands in the established feminine white/violet/gold sleeves continue holding the same silver compact camera. Viewer-left thumb rests on the camera front and index finger curves over its top dial; viewer-right thumb rests below the lens while the fingers naturally wrap around the edge. Subtle grip motion, coastal waves, weathered wooden posts/rail and ropes remain continuous. No observed added person, human face, extra hand or limb, scene cut or new text. Detector crops contain weathered wood/rail shadows, the circular camera sensor and lens reflections, not human faces. Original already-open patterned violet-pink irises, fine gold spectacles and small smile stay fixed on the physical camera sticker. RGB gain .795099/.739145/.735484, original-art mask2.4 bounded at reference y730/feather15 and sigma.779661 produce subdued slightly warm printed skin fitting the daylight and camera. The physical sticker edge and outer generated costume remain; the blue-gray original hair beneath the chin is printed artwork, not a human shadow. No observed conspicuous white face patch, bright mask halo, duplicate eye/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised pairs freshly compared outside print: left hand/cuff/rail/water minimumPSNR39.745573dB, right lens/hand/sea39.970234dB and lower cuff/rail/camera39.462160dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; final first4seconds128to132/f3840to3959 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
+    "decision": "accepted",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "passed"
+  },
+  "actualCorrectionReceipt": {
+    "schemaVersion": "vivhite-printed-regions-restoration-1",
+    "sourceSha256": "10a3f2bc4a7ca3fb9e73f8df9527860255c3cf37f736118dc661ff8bd66a2465",
+    "correctedSha256": "29de5ad828b6a3c79a37f2696dc071b85ca81ef5f33b77b326ef13af6342bf11",
+    "configurationSha256": "ecfe1bf1443d3d01956281ff9b46b298793f66933304478d1a393726e3b1da29",
+    "workerSha256": "8703d92889b0386eeb1c38372d92fb0a27d7aa8f47c20be6b04ded826572be51",
+    "eyeProjectionWorkerSha256": "7137f7c4f1bf8586a1f03d27ebd10fd9a252006eb09cff1d770aa7ea8ca67d6b",
+    "trackingWorkerSha256": "2ebeb3119289113d0b71b051e71a156eca61f10a0b8ed2784990400a702d1018",
+    "frames": 120,
+    "fps": 24,
+    "nativeSize": [
+      3840,
+      2160
+    ],
+    "encodingPasses": 1,
+    "referenceProjection": "per-region-original-artwork-or-complete-native-inert-prop-template",
+    "regions": [
+      {
+        "id": "M09-camera-sticker",
+        "reference": "series/vivhite/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v2-fasth3-001/masters/M09-sticker-v1.png",
+        "referenceSha256": "b235d5ada333dbd4ab83620f7a1f4d9b0523776be1c6c9090bba118f5587e1d2",
+        "referenceEyes": [
+          457,
+          554,
+          681,
+          529
+        ],
+        "targetEyes": [
+          1667,
+          821,
+          1809,
+          794
+        ],
+        "trackingCenter": [
+          588,
+          298
+        ],
+        "trackingRadius": 107,
+        "gainRgb": [
+          0.7950988233089447,
+          0.7391453111171722,
+          0.7354835772514343
+        ],
+        "maskScale": 2.4,
+        "referenceMaskBottom": 730,
+        "referenceMaskBottomFeather": 15,
+        "referenceSofteningSigma": 0.7796608604335066,
+        "registration": [
+          [
+            0.6394165469183678,
+            0.04917226038857503,
+            1347.5452058030353
+          ],
+          [
+            -0.04917226038857503,
+            0.6394165469183678,
+            489.23495600480305
+          ]
+        ],
+        "tracking": [
+          {
+            "frame": 1,
+            "scale": 1.0002115276698462,
+            "center": [
+              588.0005493164062,
+              298.0962829589844
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 2,
+            "scale": 1.0005354997241913,
+            "center": [
+              588.01318359375,
+              298.1894836425781
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 3,
+            "scale": 1.0007844917893274,
+            "center": [
+              588.0172119140625,
+              298.20404052734375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 4,
+            "scale": 1.001049520350361,
+            "center": [
+              588.0223388671875,
+              298.19244384765625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 5,
+            "scale": 1.0013796944040807,
+            "center": [
+              588.0021362304688,
+              298.1810302734375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 6,
+            "scale": 1.0017488613429357,
+            "center": [
+              587.9739990234375,
+              298.1075134277344
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 7,
+            "scale": 1.0020633841327096,
+            "center": [
+              587.9420166015625,
+              298.0118713378906
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 8,
+            "scale": 1.0024059882197007,
+            "center": [
+              587.9056396484375,
+              297.8712158203125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 9,
+            "scale": 1.0028209969743802,
+            "center": [
+              587.785400390625,
+              297.7400207519531
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 10,
+            "scale": 1.0031074175870127,
+            "center": [
+              587.63671875,
+              297.47589111328125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 11,
+            "scale": 1.0034147965975895,
+            "center": [
+              587.5322265625,
+              297.23846435546875
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 12,
+            "scale": 1.0036923310094685,
+            "center": [
+              587.4288940429688,
+              296.947021484375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 13,
+            "scale": 1.0039073898735376,
+            "center": [
+              587.28564453125,
+              296.7510070800781
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 14,
+            "scale": 1.004249311991208,
+            "center": [
+              587.119873046875,
+              296.40673828125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 15,
+            "scale": 1.0045830138168292,
+            "center": [
+              586.9387817382812,
+              295.9698486328125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 16,
+            "scale": 1.0049778404514216,
+            "center": [
+              586.7898559570312,
+              295.6429748535156
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 17,
+            "scale": 1.0056044478647195,
+            "center": [
+              586.635986328125,
+              295.38824462890625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 18,
+            "scale": 1.0060085623116486,
+            "center": [
+              586.517822265625,
+              295.1048278808594
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 19,
+            "scale": 1.006564097909442,
+            "center": [
+              586.3867797851562,
+              294.7034912109375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 20,
+            "scale": 1.0070977231650522,
+            "center": [
+              586.3057861328125,
+              294.42816162109375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 21,
+            "scale": 1.0076263532028489,
+            "center": [
+              586.2489013671875,
+              294.12432861328125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 22,
+            "scale": 1.0085593929833754,
+            "center": [
+              586.1298828125,
+              293.681884765625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 23,
+            "scale": 1.0090402831230807,
+            "center": [
+              586.03369140625,
+              293.2692565917969
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 24,
+            "scale": 1.0094913400938794,
+            "center": [
+              585.9838256835938,
+              293.01275634765625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 25,
+            "scale": 1.009988434004326,
+            "center": [
+              585.9392700195312,
+              292.7840881347656
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 26,
+            "scale": 1.0104982296833052,
+            "center": [
+              585.8169555664062,
+              292.4619445800781
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 27,
+            "scale": 1.0110615407739079,
+            "center": [
+              585.690673828125,
+              292.0450439453125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 28,
+            "scale": 1.0114721867745244,
+            "center": [
+              585.603271484375,
+              291.7782897949219
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 29,
+            "scale": 1.0118360965728121,
+            "center": [
+              585.522705078125,
+              291.4497985839844
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 30,
+            "scale": 1.0122937430614363,
+            "center": [
+              585.3450927734375,
+              290.8257751464844
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 31,
+            "scale": 1.0126772135899476,
+            "center": [
+              585.2437744140625,
+              290.3936462402344
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 32,
+            "scale": 1.0130726682085809,
+            "center": [
+              585.1541748046875,
+              290.0699157714844
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 33,
+            "scale": 1.0133520570670043,
+            "center": [
+              585.0682983398438,
+              289.8367919921875
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 34,
+            "scale": 1.0141762066991413,
+            "center": [
+              584.8052368164062,
+              289.3134765625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 35,
+            "scale": 1.0142985555618933,
+            "center": [
+              584.641357421875,
+              288.9743347167969
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 36,
+            "scale": 1.014501617871851,
+            "center": [
+              584.3799438476562,
+              288.5130310058594
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 37,
+            "scale": 1.0146104440648924,
+            "center": [
+              584.17138671875,
+              288.1842041015625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 38,
+            "scale": 1.015021084649224,
+            "center": [
+              583.86767578125,
+              287.6727294921875
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 39,
+            "scale": 1.0152520493578279,
+            "center": [
+              583.5491333007812,
+              287.2265319824219
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 40,
+            "scale": 1.0153367903624373,
+            "center": [
+              583.2763671875,
+              286.82354736328125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 41,
+            "scale": 1.015532857301347,
+            "center": [
+              583.0621948242188,
+              286.5305480957031
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 42,
+            "scale": 1.0157386881038613,
+            "center": [
+              582.8225708007812,
+              286.1882629394531
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 43,
+            "scale": 1.0157313889666102,
+            "center": [
+              582.5191040039062,
+              285.8596496582031
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 44,
+            "scale": 1.0158006775362707,
+            "center": [
+              582.232177734375,
+              285.50372314453125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 45,
+            "scale": 1.0158840259085578,
+            "center": [
+              581.9472045898438,
+              285.20159912109375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 46,
+            "scale": 1.0160796045726357,
+            "center": [
+              581.5224609375,
+              284.7060852050781
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 47,
+            "scale": 1.0160742935125282,
+            "center": [
+              581.0784912109375,
+              284.2077941894531
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 48,
+            "scale": 1.01621231549593,
+            "center": [
+              580.7741088867188,
+              283.8503112792969
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 49,
+            "scale": 1.0162057851372388,
+            "center": [
+              580.5172119140625,
+              283.5716552734375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 50,
+            "scale": 1.0163684958412291,
+            "center": [
+              580.2422485351562,
+              283.27728271484375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 51,
+            "scale": 1.0162939152016373,
+            "center": [
+              579.9283447265625,
+              282.80914306640625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 52,
+            "scale": 1.0161467219627094,
+            "center": [
+              579.6710815429688,
+              282.51849365234375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 53,
+            "scale": 1.0162199572369537,
+            "center": [
+              579.2740478515625,
+              281.9996032714844
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 54,
+            "scale": 1.0163668055085282,
+            "center": [
+              578.8926391601562,
+              281.4547119140625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 55,
+            "scale": 1.0166244012818706,
+            "center": [
+              578.4899291992188,
+              280.84967041015625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 56,
+            "scale": 1.0164249580102447,
+            "center": [
+              578.2443237304688,
+              280.5296936035156
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 57,
+            "scale": 1.0164781562715555,
+            "center": [
+              578.0172119140625,
+              280.1768798828125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 58,
+            "scale": 1.0165385874019486,
+            "center": [
+              577.8102416992188,
+              279.81793212890625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 59,
+            "scale": 1.0166024869985693,
+            "center": [
+              577.6362915039062,
+              279.4817810058594
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 60,
+            "scale": 1.0165081684707902,
+            "center": [
+              577.4461669921875,
+              279.20068359375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 61,
+            "scale": 1.0163717251226339,
+            "center": [
+              577.2478637695312,
+              278.7728271484375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 62,
+            "scale": 1.0164575547142627,
+            "center": [
+              577.0260009765625,
+              278.22564697265625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 63,
+            "scale": 1.0166060238598993,
+            "center": [
+              576.7847900390625,
+              277.50555419921875
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 64,
+            "scale": 1.0167972324072216,
+            "center": [
+              576.60791015625,
+              277.1438903808594
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 65,
+            "scale": 1.0170108345253237,
+            "center": [
+              576.4978637695312,
+              276.8109436035156
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 66,
+            "scale": 1.0172244249407505,
+            "center": [
+              576.39697265625,
+              276.5106506347656
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 67,
+            "scale": 1.017434559533605,
+            "center": [
+              576.3228149414062,
+              276.23846435546875
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 68,
+            "scale": 1.0173405890061136,
+            "center": [
+              576.2838745117188,
+              275.88580322265625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 69,
+            "scale": 1.0172660269690812,
+            "center": [
+              576.2101440429688,
+              275.5420837402344
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 70,
+            "scale": 1.0174415280101912,
+            "center": [
+              576.0846557617188,
+              274.8233642578125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 71,
+            "scale": 1.0177273313858752,
+            "center": [
+              576.0327758789062,
+              274.3190612792969
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 72,
+            "scale": 1.017894723338374,
+            "center": [
+              576.0160522460938,
+              273.88385009765625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 73,
+            "scale": 1.018110768071317,
+            "center": [
+              575.9835205078125,
+              273.59588623046875
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 74,
+            "scale": 1.018556290776808,
+            "center": [
+              575.9326782226562,
+              273.1181945800781
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 75,
+            "scale": 1.0189103385320308,
+            "center": [
+              575.9132080078125,
+              272.715087890625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 76,
+            "scale": 1.0190550502527647,
+            "center": [
+              575.9042358398438,
+              272.3802490234375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 77,
+            "scale": 1.019081993991061,
+            "center": [
+              575.8726196289062,
+              272.0500183105469
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 78,
+            "scale": 1.01922023860934,
+            "center": [
+              575.8548583984375,
+              271.4235534667969
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 79,
+            "scale": 1.0193547062782142,
+            "center": [
+              575.8602294921875,
+              270.85675048828125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 80,
+            "scale": 1.0196279639977395,
+            "center": [
+              575.887939453125,
+              270.34820556640625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 81,
+            "scale": 1.0197242904544692,
+            "center": [
+              575.8438110351562,
+              269.9556579589844
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 82,
+            "scale": 1.019836769100843,
+            "center": [
+              575.810791015625,
+              269.5396423339844
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 83,
+            "scale": 1.0199553472669347,
+            "center": [
+              575.78369140625,
+              269.2442932128906
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 84,
+            "scale": 1.020120639655517,
+            "center": [
+              575.775146484375,
+              269.01800537109375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 85,
+            "scale": 1.020508841548525,
+            "center": [
+              575.78466796875,
+              268.565673828125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 86,
+            "scale": 1.020528966885723,
+            "center": [
+              575.8302612304688,
+              268.0435791015625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 87,
+            "scale": 1.020826431953415,
+            "center": [
+              575.8803100585938,
+              267.4732360839844
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 88,
+            "scale": 1.0209441959490155,
+            "center": [
+              575.947265625,
+              267.1089172363281
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 89,
+            "scale": 1.0211844587555052,
+            "center": [
+              576.0408935546875,
+              266.7933654785156
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 90,
+            "scale": 1.0212975561485533,
+            "center": [
+              576.1783447265625,
+              266.4935607910156
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 91,
+            "scale": 1.0216276885369897,
+            "center": [
+              576.3167724609375,
+              266.1525573730469
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 92,
+            "scale": 1.021820348636524,
+            "center": [
+              576.4600830078125,
+              265.8802490234375
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 93,
+            "scale": 1.022062845965871,
+            "center": [
+              576.6165771484375,
+              265.6242980957031
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 94,
+            "scale": 1.0220579503116405,
+            "center": [
+              576.7765502929688,
+              265.3677978515625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 95,
+            "scale": 1.022236023421128,
+            "center": [
+              576.9430541992188,
+              265.0870361328125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 96,
+            "scale": 1.0224021462964012,
+            "center": [
+              577.0733642578125,
+              264.88848876953125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 97,
+            "scale": 1.022587136030548,
+            "center": [
+              577.2409057617188,
+              264.6719665527344
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 98,
+            "scale": 1.0225891094078408,
+            "center": [
+              577.3973999023438,
+              264.537841796875
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 99,
+            "scale": 1.0226508724784693,
+            "center": [
+              577.5518188476562,
+              264.4081115722656
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 100,
+            "scale": 1.0226722491573286,
+            "center": [
+              577.6932983398438,
+              264.3297424316406
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 101,
+            "scale": 1.0226755905140554,
+            "center": [
+              577.8189697265625,
+              264.26416015625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 102,
+            "scale": 1.022733840310313,
+            "center": [
+              577.9020385742188,
+              264.1330261230469
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 103,
+            "scale": 1.0227108216658214,
+            "center": [
+              578.0103149414062,
+              264.1551818847656
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 104,
+            "scale": 1.0226706028148975,
+            "center": [
+              578.1748046875,
+              264.1622619628906
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 105,
+            "scale": 1.0226546724649674,
+            "center": [
+              578.329345703125,
+              264.1842346191406
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 106,
+            "scale": 1.0227660534171403,
+            "center": [
+              578.5543823242188,
+              264.2123107910156
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 107,
+            "scale": 1.0227323091401683,
+            "center": [
+              578.7035522460938,
+              264.2888488769531
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 108,
+            "scale": 1.022747888819769,
+            "center": [
+              578.9093627929688,
+              264.35711669921875
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 109,
+            "scale": 1.0226153975152488,
+            "center": [
+              579.1294555664062,
+              264.4216613769531
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 110,
+            "scale": 1.022527206226292,
+            "center": [
+              579.3656005859375,
+              264.4936218261719
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 111,
+            "scale": 1.0223779346250392,
+            "center": [
+              579.6056518554688,
+              264.6614685058594
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 112,
+            "scale": 1.0221455721256067,
+            "center": [
+              579.8751220703125,
+              264.8096923828125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 113,
+            "scale": 1.0219729847470531,
+            "center": [
+              580.10693359375,
+              264.9361267089844
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 114,
+            "scale": 1.0218756865101657,
+            "center": [
+              580.3760375976562,
+              265.1153564453125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 115,
+            "scale": 1.021735771374201,
+            "center": [
+              580.6205444335938,
+              265.2964172363281
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 116,
+            "scale": 1.0215203764186889,
+            "center": [
+              580.85986328125,
+              265.45513916015625
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 117,
+            "scale": 1.0213520113144443,
+            "center": [
+              581.0723266601562,
+              265.5780944824219
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 118,
+            "scale": 1.0211532971058561,
+            "center": [
+              581.2415771484375,
+              265.708251953125
+            ],
+            "inliers": 100
+          },
+          {
+            "frame": 119,
+            "scale": 1.0207258441686562,
+            "center": [
+              581.3984375,
+              265.95111083984375
+            ],
+            "inliers": 100
+          }
+        ]
+      }
+    ],
+    "method": "Independent unmodified-prop tracking. Original RGBA details are projected directly, or first combined with the same fully visible native frame-zero inert prop and then tracked as a complete template. One CRF16 encode from the unchanged raw source.",
+    "scope": "Explicit per-region masks may include the full inert prop, outline and nearby background feather when an inertSourcePolygon is provided. Otherwise masks may include fringe, cheeks, nose, mouth or chin. Whole-frame lossy re-encoding. No person covered or removed.",
+    "status": "technical-correction-completed-review-required",
+    "humanFullPlayback": false,
+    "lightingWorkerSha256": "2d516678d9f45f2ae1e3ab7c5ebc034b315679836432789911eac93c391de12a",
+    "originalRegionWorkerSha256": "8703d92889b0386eeb1c38372d92fb0a27d7aa8f47c20be6b04ded826572be51",
+    "lightingScope": "Explicit scene-calibrated RGB gains, optional smooth source-bound lighting keyframes, and bounded reference-space softening. Raw video remains the base; no global grade, human anatomy patch or duration change.",
+    "semanticAcceptance": false
+  },
+  "frozenRenderingInputsSha256": "9f1d0c7859325aefee19f602a4b1f9521f0f0da80bea864f9f445978dc72418d",
+  "wholeSceneFramesActuallyViewed": 120,
+  "printFramesActuallyViewed": 120,
+  "nativeWholeFramesActuallyViewed": [
+    0,
+    119
+  ],
+  "nativePrintFramesActuallyViewed": [
+    0,
+    119
+  ],
+  "detectorCropsActuallyViewed": 27,
+  "detectorPagesActuallyViewed": [
+    1,
+    2
+  ],
+  "completeOriginalMasterActuallyViewed": true,
+  "selectedTrial": 1,
+  "extractions": {
+    "whole": {
+      "path": "assets/generated/production-v11-native-4k-001/review/viewing-copies/S32-29de5ad828.json",
+      "sha256": "20f30620ec587f3db5825e2baaa27b156aa7684838bae0792f9ef0985d4bad6e"
+    },
+    "print": {
+      "path": "assets/generated/production-v11-native-4k-001/review/print/S32-print-lighting-v14-r1-r01-29de5ad828.json",
+      "sha256": "bafadf6fa34701d829da9cfd63667d308169662994a01d6e198d64648537560f"
+    },
+    "candidates": {
+      "path": "assets/generated/production-v11-native-4k-001/review/S32-print-lighting-v14-r1/all-candidates/S32-29de5ad828-all-candidates.json",
+      "sha256": "ca13c6143a581e192bd0568a757bb619c66e80b2768407dc592b3ce496962fbf"
+    }
+  },
+  "outsideComparisonSha256": "25ea0e1f7b53b706c7c4693d828ed5cec1bea4367d7324dc1dd7ed619f7fa72a",
+  "observation": "Actually viewed all120 revised whole-scene representations on4 ordered JPEG pages, all120 print-region representations on8 ordered JPEG pages, native whole/print endpoints0/119, complete original M09 master and all27 detector crops on2 pages. All3 lighting variants at frames0/60/119 actually compared on retained stage9 overview; trial1 selected. Two attached hands in the established feminine white/violet/gold sleeves continue holding the same silver compact camera. Viewer-left thumb rests on the camera front and index finger curves over its top dial; viewer-right thumb rests below the lens while the fingers naturally wrap around the edge. Subtle grip motion, coastal waves, weathered wooden posts/rail and ropes remain continuous. No observed added person, human face, extra hand or limb, scene cut or new text. Detector crops contain weathered wood/rail shadows, the circular camera sensor and lens reflections, not human faces. Original already-open patterned violet-pink irises, fine gold spectacles and small smile stay fixed on the physical camera sticker. RGB gain .795099/.739145/.735484, original-art mask2.4 bounded at reference y730/feather15 and sigma.779661 produce subdued slightly warm printed skin fitting the daylight and camera. The physical sticker edge and outer generated costume remain; the blue-gray original hair beneath the chin is printed artwork, not a human shadow. No observed conspicuous white face patch, bright mask halo, duplicate eye/glasses/mouth, blink, autonomous expression, drift or moving seam. All120 native RAW/revised pairs freshly compared outside print: left hand/cuff/rail/water minimumPSNR39.745573dB, right lens/hand/sea39.970234dB and lower cuff/rail/camera39.462160dB. Separate outside endpoint PNGs retained but not individually viewed; native whole endpoints actually provide context. Lossy-encode comparison is not pixel identity or semantic approval. Fresh untouched-RAW one-pass CRF16 native3840x2160/24fps/120frames/5seconds encode; final first4seconds128to132/f3840to3959 unchanged. Previous sources, trials and evidence retained. Bounded JPEG representations are not individual viewing of every native PNG or UHD pixel. No whole-scene grade, anatomy patch, new image generation, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval.",
+  "fullFilmLightingHoldResolved": false,
+  "humanContinuousPlayback": false,
+  "humanListening": false,
+  "formalFullFilmApproval": false
+}
