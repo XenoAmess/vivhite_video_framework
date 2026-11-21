@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "vivhite-native-full-sequence-raw-review-1",
+  "recordedAt": "2026-11-21T06:19:51.212677+00:00",
+  "sourcePlanSha256": "106f0f0ee8e80cd1a4f9362bbf826f2b75a5d43336d550dea9f9fd954f37073a",
+  "jobId": "video_gen_9ff805618a994ab5a4d2b2234cc384de",
+  "inputSha256": "025d002be5f23377e55054b29db8688b944d0e71cc6066cbdbb0eec9696ae901",
+  "rawSha256": "7026422b779f56b936fe41c14dc0261c0c3deda692ab1a551130298a4d6b8e6c",
+  "normalizedSourceSha256": "403991798df7bd42f609099335cca70d02ed5e2981ae115e8d03f3bc644e6024",
+  "serverResult": {
+    "width": 3840,
+    "height": 2160,
+    "fps": 24,
+    "frames": 240,
+    "temporal_strategy": "full_sequence",
+    "windows": 1,
+    "independent_window_fallback": false,
+    "decoder_layers": 36,
+    "native_resolution": "4k"
+  },
+  "decision": {
+    "id": "S20",
+    "sourceSha256": "403991798df7bd42f609099335cca70d02ed5e2981ae115e8d03f3bc644e6024",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-21T06:15:01.849249+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 240,
+    "actualFinalUsedNativeFrames": 240,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v13-S20-native-4k-001\\review\\video-4k\\S20-403991798d-all-frames-01.png",
+        "sha256": "23983bc5e043449da2b913c5240222d912ad94e8501a9d1c7dfd6b919b8a8566",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v13-S20-native-4k-001\\review\\video-4k\\S20-403991798d-all-frames-02.png",
+        "sha256": "d3fb16ca2c98df77489bc4a50fa59eb9d865b179beabfea24212d20ff8a2c349",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v13-S20-native-4k-001\\review\\video-4k\\S20-403991798d-all-frames-03.png",
+        "sha256": "c014a0a34cdbbba5970589103bb3e7b23916ae4c8f232a6c71a79b2f993962e8",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v13-S20-native-4k-001\\review\\video-4k\\S20-403991798d-all-frames-04.png",
+        "sha256": "b24ac48ebebf3f6680258e5be5a7b3eba2fee1e30b0ee011e1a76473cf31afc5",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v13-S20-native-4k-001\\review\\video-4k\\S20-403991798d-all-frames-05.png",
+        "sha256": "46768a8316d491a196be1ba7a89f14fd01d408ad4d2e386f325f20939b4ac35d",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v13-S20-native-4k-001\\review\\video-4k\\S20-403991798d-all-frames-06.png",
+        "sha256": "1191da4587598c72870058658fe564f3c7d9c677edd6f3a42878b8b07d98ac86",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v13-S20-native-4k-001\\review\\video-4k\\S20-403991798d-all-frames-07.png",
+        "sha256": "54b36be146c9ff22d0db93b21cc20b1b78666c675f309586af4ab39ed8fdfb0a",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v13-S20-native-4k-001\\review\\video-4k\\S20-403991798d-all-frames-08.png",
+        "sha256": "0e7ac77ec5a628468db7419ab80de02f4358fff15da21c27cefbc46c36333540",
+        "items": 16
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v13-S20-native-4k-001\\review\\video-4k\\S20-403991798d-face-candidates.png",
+      "sha256": "185073a3a0d5f00d59a7aff1ee3844aea7d1d2f4f0509219ec3997adaf092e63",
+      "items": 24
+    },
+    "observation": "Actually viewed all240 ordered whole-scene representations on8 JPEG pages, native whole endpoints0/239, all212 native detector crops on14 pages, and native print endpoints0/239 for BOTH plush and badge. Full original M04/M05 masters actually reread. The continuous slow pullback preserves alpine lake, worn path, rocks, grass, snow ridges, bag hardware and pre-existing late blue sky opening, with no observed person, human face, hand, new text, tree or hard cut. RAW is rejected for drifting/squinting printed or embroidered eye shapes, plush head squash/nod and deforming badge face. The original reference artwork is already open-eyed; this is generator drift, not an original closed-eye state. Retained full RAW print pages were not all individually viewed. Entire10seconds240nativeframes inspected as bounded representations; no final-film acceptance, human continuous playback or listening.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "failed",
+    "referenceAppearance": "failed"
+  },
+  "wholeSceneRepresentationsActuallyViewed": 240,
+  "nativeWholeFramesActuallyViewed": [
+    0,
+    239
+  ],
+  "allNativeDetectorCropsActuallyViewed": 212,
+  "nativePrintFramesActuallyViewedPerRegion": {
+    "plush": [
+      0,
+      239
+    ],
+    "badge": [
+      0,
+      239
+    ]
+  },
+  "completeRawPrintPagesAllActuallyViewed": false,
+  "trialReviews": [
+    {
+      "trialSet": 1,
+      "actuallyViewed": "All3variants at0/120/239 for both regions.",
+      "decision": "rejected",
+      "reason": "Faint duplicate original generated mouth remains."
+    },
+    {
+      "trialSet": 2,
+      "actuallyViewed": "Plush all3variants at0/120 only.",
+      "decision": "rejected",
+      "reason": "Expanded bottom imports a second reference collar and pendant."
+    },
+    {
+      "trialSet": 3,
+      "actuallyViewed": "Plush all3variants at0/120 only.",
+      "decision": "rejected",
+      "reason": "Short bottom feather produces a visible chin boundary."
+    },
+    {
+      "trialSet": 4,
+      "actuallyViewed": "All3variants at0 for plush and badge only.",
+      "decision": "rejected",
+      "reason": "Third mouth landmark produces excessive vertical iris/glasses stretch."
+    },
+    {
+      "trialSet": 5,
+      "actuallyViewed": "All3variants at0/120/239 for both regions; trial1 native print endpoints0/239 for both regions.",
+      "decision": "trial1-selected-for-unapproved-video-candidate",
+      "reason": "Two-eye similarity preserves artwork proportions; broader mask and long bottom feather suppress ghost mouth while excluding neck. Dimmer scene-calibrated gains selected."
+    }
+  ],
+  "oldMultiWindowS20FallbackAllowed": false,
+  "allDurationsUnchanged": true,
+  "sourceAcceptance": "pending-complete-corrected-video-review",
+  "finalFilmApproval": false
+}
