@@ -1,5 +1,7 @@
 # 周边印花修复后的明度与场景光照
 
+当前状态：本轮明度修订和完整成片复核已完成，[4K审片版](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v13-4k-20261121)的六个附件已实际完整回下载并核验SHA-256；用户审美待审。下面的未完成、拦截与排队描述均为当时的历史记录。
+
 2026-11-21，用户指出修复后的部分周边面部过亮。该问题成立：恢复原始睁眼纹样、金色镜框和微笑后，部分修复区域没有充分继承现场的阴影、色温与印刷材质，局部清晰度也高于周围图案。此前的纹样审核不能代替光照融合审核。
 
 本轮增加的明度复核尚未完成最终成片验收。旧源片、旧修复、失败试样、检查图片和已发布版本均保留。渲染队列继续工作；最终装配被 [`print-lighting-hold-v14.json`](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/print-lighting-hold-v14.json) 拦截，不能把未解决的亮脸直接沿用到交付影片。历史通过结论不能自动关闭本轮问题。
@@ -82,3 +84,5 @@ S03 的历史修复采用整块徽章矩形配准及圆形遮罩，与一般的�
 原有印花稳定、原图回贴、人员与动作错误处理方法见 [`autumn-journey-video-postprocessing.md`](autumn-journey-video-postprocessing.md)。
 
 2026-11-21 最终输出更新：35段／38个印花区域的采用源片与完整4K编码后画面复核已完成，全部6150帧有序图册、18张原生重点、13张字幕检查代理和20张最终候选图册实际查看；另完整查看7张印花首末对照页，共76组原生区域。此范围未观察到新发光脸块或眼睛形变。源片拦截和最终发布检查已分别解决，具体指纹及检查边界见[完整4K制作记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v13-native-4k.md)及其审核JSON。前述各阶段状态均为历史快照；此处仍不代表人工连续播放、听音或用户审美验收。
+
+完整4K已通过上传、服务端摘要核对和六个附件的实际完整回下载验证，见[v13审片Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v13-4k-20261121)及[发布凭据](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/release-v13-native-4k.json)。历史阶段的拦截描述保留作过程记录，当前以独立最终检查和发布凭据为准。

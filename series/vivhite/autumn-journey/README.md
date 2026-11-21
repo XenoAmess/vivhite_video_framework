@@ -1,5 +1,7 @@
 # 白绮／秋日旅程
 
+当前完整4K：[v13原生4K完整审片版](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v13-4k-20261121)，3840×2160、30fps、205秒／6150帧。六个附件全部完整回下载并核验指纹；含新骑行车座、单次完整10秒高山湖、14秒海岸片尾和35段印花光照修订，全部镜长保持。检查范围与实际实现差异见[制作记录](episodes/01-autumn-journey/production/production-v13-native-4k.md)及[发布凭据](episodes/01-autumn-journey/production/release-v13-native-4k.json)。用户审美仍待审；下文早期排队与制作状态作为历史记录保留。
+
 本目录是内容子项目，沿用“系列／课题／期”的组织方式。
 
 当前768P交付：[v12骑行车座修复完整影片](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v12-768p-20261119)，1344×768、205秒／6150帧。新S05的黑色车座、座轨、夹具、座管和坐姿支撑已完成源片及编码后检查，仅替换00:14—00:19；其余47镜、音乐、字幕和全部时长保持。五个Release附件已完整回下载并核验哈希，见[发布凭据](episodes/01-autumn-journey/production/release-v12-768p.json)及[修复记录](episodes/01-autumn-journey/production/production-v12-S05-saddle.md)。对应[新S05原生4K](episodes/01-autumn-journey/production/S05-native4k-submission-v12.json)已使用实际采用的新源片进入普通队列，尚未出片；旧无车座4K结论已撤回，禁止回填。原v10成片、前24镜4K审核版和全部中间材料继续保留。后续完整4K仍在制作。
