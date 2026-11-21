@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "vivhite-bilibili-covers-1",
+  "generatedAt": "2026-11-21T09:33:47.155347+00:00",
+  "generator": "built-in-imagegen",
+  "scope": "Two independently generated layouts for the finished205second native4K film. Existing video and releases unchanged.",
+  "deliverables": [
+    {
+      "id": "cover-16x9",
+      "aspectRatio": "16:9",
+      "png": "cover-16x9.png",
+      "jpg": "cover-16x9.jpg",
+      "width": 1664,
+      "height": 936
+    },
+    {
+      "id": "cover-4x3",
+      "aspectRatio": "4:3",
+      "png": "cover-4x3.png",
+      "jpg": "cover-4x3.jpg",
+      "width": 1448,
+      "height": 1086
+    }
+  ],
+  "originalGenerationFiles": [
+    "cover-16x9-v1-original.png",
+    "cover-4x3-v1-original.png"
+  ],
+  "export": "The16:9 generator returned1672x941; ffmpeg crops4px left,4px right,2px top,3px bottom to exact1664x936, with lossless remaining RGB pixels. The4:3 generator returned exact1448x1086 and its PNG is byte-identical. JPEGs are encoding copies; no creative redraw, color adjustment, subject composite or enlargement.",
+  "text": {
+    "title": "白绮 / 秋日旅程",
+    "titleLineBreak": "白绮 /\n秋日旅程",
+    "subtitle": "Vivhite · Autumn Journey",
+    "extraText": false
+  },
+  "references": [
+    {
+      "path": "assets/generated/production-v2-fasth3-001/masters/M04-plush-v1.png",
+      "sha256": "2fb946dc283cc07915b9302e0664c22348db01e6bc1204f81a4b2c72ff69f9f0",
+      "role": "Plush identity, open eye embroidery, gold spectacles, color and material reference."
+    },
+    {
+      "path": "assets/generated/bilibili-covers-20261121-v1/references/film-S20-frame-2250.jpg",
+      "sha256": "d2885c2b26363c9f9a711fe1b008007f080c67285dd9f01fc9a07709049ab8d3",
+      "role": "Actual completed film alpine lake, bag, badge and ordinary world context."
+    }
+  ],
+  "retainedPictures": [
+    {
+      "path": "assets/generated/bilibili-covers-20261121-v1/cover-16x9-v1-original.png",
+      "sha256": "d93ec6262ea9e7d2d487860c0174636ecdcde4cd091867380c271c720d1768d3",
+      "bytes": 2723503,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/generated/bilibili-covers-20261121-v1/cover-16x9.jpg",
+      "sha256": "7fa74deba5e73a206a50471db98822bb334452b703b4e698df8ac28e44498ce8",
+      "bytes": 465751,
+      "width": 1664,
+      "height": 936,
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/generated/bilibili-covers-20261121-v1/cover-16x9.png",
+      "sha256": "c73d7a96445819a7e17287b4406f57372a274389d35332be7c75326d90be30d5",
+      "bytes": 2551775,
+      "width": 1664,
+      "height": 936,
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/generated/bilibili-covers-20261121-v1/cover-4x3-v1-original.png",
+      "sha256": "a077f6ac4790159bc94b7e0a784001c518028ce573c6aac70c02c9f4dd050083",
+      "bytes": 2894008,
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/generated/bilibili-covers-20261121-v1/cover-4x3.jpg",
+      "sha256": "42e49bf971adb0e9d8fd57344c981d013df5acd7d843647bb6215412e82ebc54",
+      "bytes": 525697,
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/generated/bilibili-covers-20261121-v1/cover-4x3.png",
+      "sha256": "a077f6ac4790159bc94b7e0a784001c518028ce573c6aac70c02c9f4dd050083",
+      "bytes": 2894008,
+      "width": 1448,
+      "height": 1086,
+      "mode": "RGB"
+    },
+    {
+      "path": "assets/generated/bilibili-covers-20261121-v1/references/film-S20-frame-2250.jpg",
+      "sha256": "d2885c2b26363c9f9a711fe1b008007f080c67285dd9f01fc9a07709049ab8d3",
+      "bytes": 1775326,
+      "width": 3840,
+      "height": 2160,
+      "mode": "RGB"
+    }
+  ],
+  "allGeneratedCandidatesRetained": true,
+  "userAestheticAcceptance": "pending"
+}
