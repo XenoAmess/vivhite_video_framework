@@ -1,0 +1,95 @@
+{
+  "createdAt": "2026-11-20T23:51:12.500143+00:00",
+  "sourceSha256": "ad5eef171bda976621f9648680d601a6c321f7cf231514b928d522813b7a0298",
+  "decision": {
+    "id": "S44",
+    "sourceSha256": "ad5eef171bda976621f9648680d601a6c321f7cf231514b928d522813b7a0298",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-20T23:51:12.490351+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 96,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S44-ad5eef171b-all-frames-01.png",
+        "sha256": "243779b0587487cf5e5b3301013cd18c9106c13f896042099c8b76a75f093a3f",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S44-ad5eef171b-all-frames-02.png",
+        "sha256": "d8a5b410561b6cbb2c709f62c4543b67006cc41875e852ca9fa802cde2ac41e8",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S44-ad5eef171b-all-frames-03.png",
+        "sha256": "a42e1a44dff54107e39cffcb2bf0ea0c087f3a3c2ca7cd079be6bcbcd363d8b3",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S44-ad5eef171b-all-frames-04.png",
+        "sha256": "88dfb7b372f6e1a53819666dd0b30baa13affe6902a67dce295fbfdc34363164",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S44-ad5eef171b-face-candidates.png",
+      "sha256": "c5c245f26b0c8501ee41529c4b6b5f8ef574fbfda9aec2e09903d2ba871c76b1",
+      "items": 11
+    },
+    "observation": "Actually viewed all120 RAW whole-scene representations on4 ordered JPEG pages, native whole endpoints0/119, native print frame0 and the complete original M08 pouch master. Separately viewed all120 expanded native-coordinate hand representations on30 ordered four-frame pages: original large pages1to4 and bounded viewing copies5to30. Those are bounded representations, not separate inspection of every native pixel. One attached right hand initially pinches the zipper tab with thumb/index, pulls the slider down once from approximately.8to2seconds, releases below and returns empty-handed upward around2.5to2.8seconds. It then grips the left cloth flap with its thumb on the near surface and fingers behind, pulls it left to reveal the grass/trees by approximately3.7seconds, then releases. During the last source second it settles onto the right cloth edge; this is not a second zipper pull or closure. No observed extra hand, detached digit, wrist reversal, human face, new person, jump cut or new readable text. Some fingers are naturally occluded, not independently visible throughout. The out-of-focus distant short blue-capped object is already present in the exact selected768 input endpoint: actually compared retained input/raw endpoint crops, not classified as a new person or claimed to have invented detail. The tent starts closed and ends open; original carabiner/pouch/lining/cuff/stocking knee remain coherent. Printed eyes are already open and have violet pattern detail; reject referenceAppearance because gold glasses are thick/deformed and the original small smile is replaced by vertical/dotted marks. No closed-to-open repair claimed. RAW print contact pages, remaining native print endpoints and detector crops remain unread; this partial appearance rejection does not certify them. Source5seconds and final first4seconds176to180 unchanged. No human continuous playback/listening or final-film approval.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "wholeSceneFramesActuallyViewed": 120,
+  "expandedHandFramesActuallyViewed": 120,
+  "expandedHandPagesActuallyViewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "nativeWholeFramesActuallyViewed": [
+    0,
+    119
+  ],
+  "nativePrintFramesActuallyViewed": [
+    0
+  ],
+  "rawPrintContactPagesActuallyViewed": [],
+  "rawDetectorCropsActuallyViewed": 0,
+  "humanFullPlayback": false,
+  "formalFilmApproval": false
+}

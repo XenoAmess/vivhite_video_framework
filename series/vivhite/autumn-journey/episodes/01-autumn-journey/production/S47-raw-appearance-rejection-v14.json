@@ -1,0 +1,97 @@
+{
+  "createdAt": "2026-11-21T00:40:51.724509+00:00",
+  "sourceSha256": "5b5417d9b5bb30c3458e5a6ae759760bfa1ea4771afc902fa8641fbc49e8c551",
+  "decision": {
+    "id": "S47",
+    "sourceSha256": "5b5417d9b5bb30c3458e5a6ae759760bfa1ea4771afc902fa8641fbc49e8c551",
+    "method": "assistant-frame-review",
+    "reviewedAt": "2026-11-21T00:40:51.715361+00:00",
+    "allSourceFrameReview": true,
+    "allUsedFrameReview": true,
+    "reviewedNativeFrames": 120,
+    "actualFinalUsedNativeFrames": 96,
+    "frameEvidence": [
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S47-5b5417d9b5-all-frames-01.png",
+        "sha256": "5439d89140445dd9240b1956f21a94b247fd7e93d0d0ae48552e6b3cda75c6b5",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S47-5b5417d9b5-all-frames-02.png",
+        "sha256": "ee41bec2b90060f3e8246570514989d7b43aea47d06183ac582b1ecae0db16b5",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S47-5b5417d9b5-all-frames-03.png",
+        "sha256": "78942c4a6601c650c51ad921f65059e601343d6c31320de389087a77dbf6e377",
+        "items": 32
+      },
+      {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S47-5b5417d9b5-all-frames-04.png",
+        "sha256": "b58ace11d112016424c6b0369a39b62fff7181e40c721d6e8e92997f56c4b756",
+        "items": 24
+      }
+    ],
+    "faceEvidence": {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v11-native-4k-001\\review\\video-4k\\S47-5b5417d9b5-face-candidates.png",
+      "sha256": "f41cbdcbf3ab7353a8f0701c38b4571b0bef23cc57e4734e7243be033645c88e",
+      "items": 12
+    },
+    "observation": "Actually viewed all120 RAW whole-scene representations on4 ordered JPEG pages, native whole endpoints0/119, native print endpoints0/119 and the complete original M04 plush master. Separately actually viewed all120 expanded native-coordinate double-hand representations on30 bounded four-frame pages. Both human hands remain connected through their wrists to their own white/violet/gold feminine sleeves. They hold the plush base, modestly straighten/turn it during the first second, retain the pose, then release at approximately 2.7to3seconds and move separately outward/down onto the wooden bench by3.6seconds. Natural overlap hides some fingertips while gripping; after release both thumbs and four fingers unfold naturally. No observed additional/detached hand, impossible wrist reversal, human face, added person, unplanned cut or new text. The plush mittens are original cloth props, not a third human hand. Existing head-out woman, attached arms, skirt, bag, worn bench/fasteners, seawall and continuous waves remain coherent. Reject referenceAppearance: original already-open patterned irises are replaced by large simplified highlights and distorted internal pattern, with irregular gold glasses/ stitch marks and a heavier smile. All original reference eyes were already open. RAW print pages and detector crops are retained but unread; no complete print-detail or detector review claimed. Bounded pages do not mean individually viewing every native PNG or every4Kpixel. Source5seconds and final first4seconds187to191/f5610to5729 unchanged. No human continuous playback/listening or final-film approval.",
+    "decision": "rejected",
+    "noHumanFaces": "passed",
+    "noAddedPeople": "passed",
+    "allCharactersFemale": "passed",
+    "costumeStyle": "passed",
+    "motionAndContinuity": "passed",
+    "merchandiseBehavior": "passed",
+    "referenceAppearance": "failed"
+  },
+  "wholeSceneFramesActuallyViewed": 120,
+  "expandedHandFramesActuallyViewed": 120,
+  "expandedHandPagesActuallyViewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "nativeWholeFramesActuallyViewed": [
+    0,
+    119
+  ],
+  "nativePrintFramesActuallyViewed": [
+    0,
+    119
+  ],
+  "printContactFramesActuallyViewed": 0,
+  "detectorCropsActuallyViewed": 0,
+  "completeOriginalMasterActuallyViewed": true,
+  "oldVersionsRetained": true,
+  "scope": "RAW appearance rejection; no final-film approval. Unread evidence retained."
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "vivhite-all-native-candidate-crops-1",
+  "shotId": "S44",
+  "sourceSha256": "b45575869801d32fd731fde54f03bb572bf2778c08c3f8143a66feb6dfacd3ef",
+  "inspectionReportSha256": "7a86fc4f8cc508a5b76a360fa205dc1dea4ce348e99963646c2f75d7b53f780d",
+  "workerSha256": "a8701bef967755c92b0f8e8bec2e403384b110e42c2f1c49e554505e94ec9a38",
+  "nativeSize": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "decodedFrames": 120,
+  "candidateFrames": 7,
+  "candidateBoxes": 7,
+  "nativeCrops": [
+    {
+      "frame": 53,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 778,
+        "y": 864,
+        "width": 191,
+        "height": 195,
+        "score": 0.63356,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        702,
+        788,
+        1045,
+        1135
+      ],
+      "path": "S44-b455758698-all-candidates-f053-b00.png",
+      "sha256": "ca2ed1d4490759b0dbcbc10a4707e28c118e1602f681f8cf4aeff207d494dd9a"
+    },
+    {
+      "frame": 62,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2513,
+        "y": 1181,
+        "width": 459,
+        "height": 528,
+        "score": 0.65042,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2329,
+        997,
+        3156,
+        1893
+      ],
+      "path": "S44-b455758698-all-candidates-f062-b00.png",
+      "sha256": "12270a2ddc1c9a4c2c13bc6e9b872ff7d52ecf09047a9cefe6014c6dccf64e63"
+    },
+    {
+      "frame": 63,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2636,
+        "y": 1126,
+        "width": 365,
+        "height": 481,
+        "score": 0.67236,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2490,
+        980,
+        3147,
+        1753
+      ],
+      "path": "S44-b455758698-all-candidates-f063-b00.png",
+      "sha256": "5481d06ee54591dbbdfe53bfb03cde028a516dbefefa79bf4865437c01a2b80f"
+    },
+    {
+      "frame": 66,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2552,
+        "y": 807,
+        "width": 371,
+        "height": 470,
+        "score": 0.65837,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2404,
+        659,
+        3071,
+        1425
+      ],
+      "path": "S44-b455758698-all-candidates-f066-b00.png",
+      "sha256": "c9955c70c5bc27d0b080de4d624d8fb42452a4ca42344c2d0d9e1c73e825f905"
+    },
+    {
+      "frame": 71,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 2270,
+        "y": 739,
+        "width": 414,
+        "height": 478,
+        "score": 0.61454,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        2104,
+        573,
+        2850,
+        1383
+      ],
+      "path": "S44-b455758698-all-candidates-f071-b00.png",
+      "sha256": "f79e3ba37a095254bdedaf59ddff13d548cc376440603abc9caa6608e7fc7b3c"
+    },
+    {
+      "frame": 81,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 324,
+        "y": 453,
+        "width": 134,
+        "height": 169,
+        "score": 0.64552,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        270,
+        399,
+        512,
+        676
+      ],
+      "path": "S44-b455758698-all-candidates-f081-b00.png",
+      "sha256": "c0d52d9fb666a6cae1f8a40b7b8816cbae22f59fd52a211b787e97b1154de38f"
+    },
+    {
+      "frame": 92,
+      "boxIndex": 0,
+      "detectorBox": {
+        "x": 1784,
+        "y": 911,
+        "width": 365,
+        "height": 406,
+        "score": 0.64072,
+        "classifier": "YuNet-2023mar"
+      },
+      "nativeCrop": [
+        1638,
+        765,
+        2295,
+        1463
+      ],
+      "path": "S44-b455758698-all-candidates-f092-b00.png",
+      "sha256": "cbfdacdb9e56c84830ce10781f73fa11833dbccf6c95cdff18d09a07c7b55663"
+    }
+  ],
+  "viewingPages": [
+    {
+      "path": "S44-b455758698-all-candidates-p01.jpg",
+      "sha256": "915d4a096018e320d14ba5a11d0ed353fbe203fcf8f0ecd8783ec47c2ceb99e3",
+      "items": 7
+    }
+  ],
+  "scope": "All detector boxes exported. Exported does not mean viewed or semantically approved.",
+  "humanFullPlayback": false,
+  "semanticDecision": "not-automatically-decided"
+}

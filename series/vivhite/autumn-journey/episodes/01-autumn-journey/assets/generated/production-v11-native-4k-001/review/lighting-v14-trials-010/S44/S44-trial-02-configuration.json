@@ -1,0 +1,70 @@
+{
+  "frames": 120,
+  "sourceSha256": "ad5eef171bda976621f9648680d601a6c321f7cf231514b928d522813b7a0298",
+  "lightingCalibration": {
+    "sourceReceiptSha256": "77f72801c5da3a95868da3c06dde8590140837eb34ac6e578daa277c5b287354",
+    "measurementWorkerSha256": "bbddd1c60dab21391633c883c28c20109c5e786f894f7410f409a5d2c02572e8",
+    "samples": [
+      {
+        "proposedGainRgb": [
+          0.9343324899673462,
+          0.8478260636329651,
+          0.7656170725822449
+        ],
+        "samplePixels": 5407,
+        "sourceMedianRgb": [
+          223.10374450683594,
+          183.588623046875,
+          157.31451416015625
+        ],
+        "referenceMedianRgb": [
+          237.0,
+          214.0,
+          206.0
+        ],
+        "scope": "Frame-zero registered skin illumination estimate, not a semantic approval.",
+        "id": "M08-tent-pouch",
+        "previousGainRgb": [
+          0.88,
+          0.87,
+          0.85
+        ]
+      }
+    ],
+    "factor": 1.0,
+    "actualReview": "pending"
+  },
+  "regions": [
+    {
+      "id": "M08-tent-pouch",
+      "reference": "series/vivhite/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v2-fasth3-001/masters/M08-pouch-v1.png",
+      "referenceSha256": "718047bf66d78df2f985ee4fda51c871069e89485819f24b494e617d99cb6b21",
+      "referenceEyes": [
+        809,
+        463,
+        904,
+        450
+      ],
+      "targetEyes": [
+        876,
+        974,
+        966,
+        965
+      ],
+      "trackingCenter": [
+        320,
+        344
+      ],
+      "trackingRadius": 65,
+      "gainRgb": [
+        0.88,
+        0.8478260636329651,
+        0.7656170725822449
+      ],
+      "maskScale": 1.1,
+      "referenceMaskBottom": 548,
+      "referenceMaskBottomFeather": 12,
+      "referenceSofteningSigma": 0.5300527081009155
+    }
+  ]
+}
