@@ -1,0 +1,409 @@
+{
+  "schemaVersion": "vivhite-delivery-plan-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 13,
+  "stage": "native-4k-full-user-review",
+  "film": {
+    "relativeToRepositoryParent": "vivhite-analysis-output/vivhite/autumn-journey/production-v13-native-4k-full-001/film.mp4",
+    "sha256": "4a2f833105a027becbc4a1f2553de801d4a7ec994d1e837c6eaadddcf77a8819",
+    "bytes": 1095359437,
+    "seconds": 205,
+    "frames": 6150,
+    "width": 3840,
+    "height": 2160,
+    "fps": 30,
+    "nativeSource": "3840x2160 at24fps; native model regeneration, not final-film interpolation"
+  },
+  "sourcePlan": "production-plan-v13-native-4k.json",
+  "sourcePlanSha256": "f85a01f07afb0f9b538c035bdd7e2639987767c9fdda1d1679642ba07dd2575a",
+  "finalAssemblyPlan": "production-plan-v13-native-4k-final.json",
+  "finalAssemblyPlanSha256": "1306853fb94f3619b3ac80c479b76df6a3bfe5dbbf4bf3f120bb799ebebf695d",
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "all48ShotTimingsLockedToV10": true,
+  "shotDurationExceptions": {
+    "S20": 10,
+    "S48": 14
+  },
+  "S46Seconds": 5,
+  "nativeModelAudioInFinalMix": false,
+  "butterflySlowdownApplied": false,
+  "titleOverlays": [
+    {
+      "shotId": "S06",
+      "text": "白绮／秋日旅程",
+      "subtitle": "Vivhite · Autumn Journey"
+    },
+    {
+      "shotId": "S48",
+      "text": "白绮／秋日旅程",
+      "subtitle": "Vivhite · Autumn Journey",
+      "dedication": "献给世界上最可爱的你",
+      "dedicationDelaySeconds": 3,
+      "dedicationFadeInMs": 1800
+    }
+  ],
+  "closingCredit": "",
+  "soundtrackSha256": "46ef587715d277e778c805e566d643ce7b8430d3486ee8143b36dda34a74205b",
+  "titlesAssSha256": "c1a0a030e5cb5e45bd3959c89f4a761bbdf0ea0113634c7c18d1861a6761cb83",
+  "finalReview": "production/final-review-v13-native-4k.json",
+  "finalReviewSha256": "3541f4be377307db81a39cef7797625eba78c4cc84ff62ce86c20fd25dca1483",
+  "machineDecodedFinalFrames": 6150,
+  "assistantWholeFilmContactReviewedFrames": 6150,
+  "assistantSourceReviewCompleteNativeFrames": 6096,
+  "assistantSourceReviewUsedNativeFrames": 4920,
+  "shots": [
+    {
+      "id": "S01",
+      "startFrame": 0,
+      "seconds": 4,
+      "sourceSha256": "c82a37222cced4f64c47d9784929c340e3ad4a149976dbc65b7013ddaeb29255",
+      "intendedAction": "同一女性的左臂自然伸向窗边，左手反手捏住帘边向左轻拉；手背朝镜头、掌心朝布帘和窗户，拇指在下侧与食指相对，腕部不翻掌。挂件随列车轻晃，窗外普通田野连续后移。"
+    },
+    {
+      "id": "S02",
+      "startFrame": 120,
+      "seconds": 3,
+      "sourceSha256": "9e09730946789a95a20d0d80239e589662d3a3c390455a566da7a8fa89e251e8",
+      "intendedAction": "远景里湖岸弯曲，云影缓缓跨过水面；画面没有人。"
+    },
+    {
+      "id": "S03",
+      "startFrame": 210,
+      "seconds": 4,
+      "sourceSha256": "724f3e1ab52ef28fb71f787c60e8c2f58efe23cf2b0532a7e02c7db4a62d39a4",
+      "intendedAction": "站台腰部以下跟拍，旅者拎包向前走，包面白绮徽章随着步伐起伏。"
+    },
+    {
+      "id": "S04",
+      "startFrame": 330,
+      "seconds": 3,
+      "sourceSha256": "442e2acdd9b085c2d3fbdfa2cff63b00a135d7dc09e020b1d499b0039ba3654b",
+      "intendedAction": "车站露台的椅边放着旅行包，一枚挂件投下的影子在木纹上轻摆。"
+    },
+    {
+      "id": "S05",
+      "startFrame": 420,
+      "seconds": 5,
+      "sourceSha256": "badc7b5a9aaae96e9ce3cdda294623542aa051d1beaee797ce4518ef3090aeae",
+      "intendedAction": "真实侧面跟拍；白绮坐在清楚可见的黑色车座上，座管连续连接车座与车架，臀部保持合理承重。双脚各踩原有对置踏板，左右腿从第一帧持续自然交替踩踏，曲柄保持180度相对。车座、座管与车架不消失或变形；林木和路面连续后移，没有背景跳变。"
+    },
+    {
+      "id": "S06",
+      "startFrame": 570,
+      "seconds": 4,
+      "sourceSha256": "d35cd658aa49ddd7e66632ec3642ac3122326263ad26e7ec7a72d92383e0698c",
+      "intendedAction": "城市电车窗角贴着白绮小贴纸，窗外彩色立面掠过；片名在空白玻璃区叠入。"
+    },
+    {
+      "id": "S07",
+      "startFrame": 690,
+      "seconds": 4,
+      "sourceSha256": "7bb809c2f8c725b4e6401f372ac657df4606574d00d1021c1428c322893cc0e7",
+      "intendedAction": "从第一帧开始正常向前散步，左右靴交替完成连续步伐并自然承重，裙摆与布袋随走路轻摆，不先僵住再突然迈步。"
+    },
+    {
+      "id": "S08",
+      "startFrame": 810,
+      "seconds": 5,
+      "sourceSha256": "355114318092092a7bdd859aa43560ab3e0995630861921329703ca413d38eae",
+      "intendedAction": "林间长椅上一只白绮玩偶靠着包坐稳，树叶投影缓缓从帽沿移到脸上。"
+    },
+    {
+      "id": "S09",
+      "startFrame": 960,
+      "seconds": 3,
+      "sourceSha256": "19efb10b892114658719fa461248267792363b36c8a1e62cbb34f090f5f0cc2b",
+      "intendedAction": "近景只见手沿木栏杆轻轻滑过，前景挂在腕边的水壶带白绮贴纸。"
+    },
+    {
+      "id": "S10",
+      "startFrame": 1050,
+      "seconds": 5,
+      "sourceSha256": "de5904ef37b7c23fa9358f7c9b551f1d9dc3b60e87bf9aefb61ca3f813466713",
+      "intendedAction": "桥上二维白绮背影，人物放松倚着栏杆看水；镜头固定，发丝和飘带轻动，不转头。"
+    },
+    {
+      "id": "S11",
+      "startFrame": 1200,
+      "seconds": 2,
+      "sourceSha256": "ece8ebd0890392eb1218a79652d5b872a7f614549a381ecf53eeaf4a94eabfd1",
+      "intendedAction": "手指夹着透明片的边缘，一片黄叶恰好从片前飘过，印刷图仍可辨认。"
+    },
+    {
+      "id": "S12",
+      "startFrame": 1260,
+      "seconds": 5,
+      "sourceSha256": "628232a17d4264be186451a556086cb2a7c001237caba81819d39fa7a51487dd",
+      "intendedAction": "小舟侧下方，只有握桨的手和袖口入画；船缘白绮贴纸旁的水纹被一次划桨推开。"
+    },
+    {
+      "id": "S13",
+      "startFrame": 1410,
+      "seconds": 4,
+      "sourceSha256": "8f45f934650f1bd0adeec96bc7293b2c8ce4141289264d4f942fb74dd7af45c6",
+      "intendedAction": "雨街近景只见握伞柄的手，伞柄绳上的挂件轻碰袖口；湿石路在下方延伸。"
+    },
+    {
+      "id": "S14",
+      "startFrame": 1530,
+      "seconds": 3,
+      "sourceSha256": "949283ed739fd13fe60e885cae12db2d33e59782e701bc8ccee0d726aad1d72b",
+      "intendedAction": "包靠在檐下，徽章表面一滴水缓慢滑到金属边；后方灯光在湿地面散开。"
+    },
+    {
+      "id": "S15",
+      "startFrame": 1620,
+      "seconds": 4,
+      "sourceSha256": "17d489ff86693408b8a10a3e46711a33c8e78d3ba951a747e87a5be0b1e72e2a",
+      "intendedAction": "两只原有手自然握稳杯身，在镜头前半段将杯子从桌面缓缓提起约8厘米，随后稳定捧住欣赏窗外；不反复摸杯、不送到嘴边、不抬机位。"
+    },
+    {
+      "id": "S16",
+      "startFrame": 1740,
+      "seconds": 5,
+      "sourceSha256": "63b53c980e21822aa120ab561bc974900fc2a35d0d51f702ee24232f89a79aed",
+      "intendedAction": "石阶侧下方只见膝下，脚步拾级而上；包口夹着一角白绮布袋。"
+    },
+    {
+      "id": "S17",
+      "startFrame": 1890,
+      "seconds": 3,
+      "sourceSha256": "ab683d808b565f0494c9c3aac063b079f9d4278a74cd42d184391879ce7bfbf2",
+      "intendedAction": "温室长台上的白绮立牌保持原图的睁眼印花；固定中远景保留完整立牌和底座，叶影轻缓掠过，背景植物微动。"
+    },
+    {
+      "id": "S18",
+      "startFrame": 1980,
+      "seconds": 5,
+      "sourceSha256": "45a3a9eb07bf94822b4ac7a6b4405e32f5472661709d7894b6be1c8d357e192e",
+      "intendedAction": "原野粉紫草穗与淡金芦苇在风里同向起伏，角落叠一枚小蓝蝶轮廓，轻停在前景草影旁。"
+    },
+    {
+      "id": "S19",
+      "startFrame": 2130,
+      "seconds": 4,
+      "sourceSha256": "7c2a10903d356badb50503d7d83d9e0dad1bd015c5a20e20408ded576379842b",
+      "intendedAction": "山路巴士窗边只见搭在窗沿的衣袖与手，灰紫收纳袋置于下方，山影在窗外侧移。"
+    },
+    {
+      "id": "S20",
+      "startFrame": 2250,
+      "seconds": 10,
+      "sourceSha256": "722a64a7d3bda8697f9cb0efcfb7cf5ae0fa846c9019fc8552e9960e14d9524b",
+      "intendedAction": "高山湖远景，近处岩石上坐着小小的白绮玩偶；镜头缓慢后移，云影持续掠过湖面，空间越来越开阔。"
+    },
+    {
+      "id": "S21",
+      "startFrame": 2550,
+      "seconds": 4,
+      "sourceSha256": "c5b8078a0540e206883e7ce36e715ad0b7a739613aee5225a5dca544a60d72c5",
+      "intendedAction": "缆车座舱低机位只见靴子和膝下，玩偶靠在包口；下方雪线和深色树林缓缓移动。"
+    },
+    {
+      "id": "S22",
+      "startFrame": 2670,
+      "seconds": 3,
+      "sourceSha256": "7e3f7ca4bff78ad63ccd1cbc1d5e56fb35d3b2152a5618126135fbe93a9d997f",
+      "intendedAction": "旅行包一角的徽章落上几粒细雪，雪在金属边慢慢融成亮点。"
+    },
+    {
+      "id": "S23",
+      "startFrame": 2760,
+      "seconds": 5,
+      "sourceSha256": "89ecc0f4eb5d0193f380a51b837049efe6d86992d3d50646d62d1e9d1e661e7c",
+      "intendedAction": "开阔山径上白绮二维背影静看远处层叠山脊，裙摆与短发顺风轻动，身体不回转。"
+    },
+    {
+      "id": "S24",
+      "startFrame": 2910,
+      "seconds": 4,
+      "sourceSha256": "3cf2fbf6f53b6ac69068e6d782c791da1824d6d632cece4c8056c958bf916e3e",
+      "intendedAction": "砂地近景只有一只手让细沙从指间漏下，旁边包上的白绮挂件被风推向同一方向。"
+    },
+    {
+      "id": "S25",
+      "startFrame": 3030,
+      "seconds": 3,
+      "sourceSha256": "b81885790f85ee34fd14ed5e8b47e2939b5c0cfe4ce4ed2aac96d6a04803d681",
+      "intendedAction": "砂岩峡谷的光影远景，低处一阵薄尘横过画面，环境无人。"
+    },
+    {
+      "id": "S26",
+      "startFrame": 3120,
+      "seconds": 5,
+      "sourceSha256": "52534b000fec706a6e4a6186680702d2d98e793c88593f5fe499d0b943829424",
+      "intendedAction": "行驶车辆的窗边放着白绮布袋，窗外旷野路面不断向后流；袋角随车身轻颤。"
+    },
+    {
+      "id": "S27",
+      "startFrame": 3270,
+      "seconds": 2,
+      "sourceSha256": "da86e30cf0408bdb7c98dc7e1a11989e80613b55629b192154d1569f0ebb1345",
+      "intendedAction": "近景只见挂件与座椅织物上的影子，车身一次轻颠让影子跃动后回落。"
+    },
+    {
+      "id": "S28",
+      "startFrame": 3330,
+      "seconds": 5,
+      "sourceSha256": "ddbccefee408199f97f6ef16f4ad0e9ba38eeeed7d7f9ae8db334b6778f1f0d5",
+      "intendedAction": "把点心包装纸从面包两侧缓慢向外向下摊平，纸张最终贴住桌面，两手停在纸边；面包上方保持干净，不生成蒸汽、漂浮白片或白色阴影。"
+    },
+    {
+      "id": "S29",
+      "startFrame": 3480,
+      "seconds": 4,
+      "sourceSha256": "aae9c1c6ac244ca32259e6a82b66615d976639a5a54ce7b45128e55f1afa2f5d",
+      "intendedAction": "海港木台上的白绮玩偶面对几只彩色小船，轻微浪影映到台边，玩偶被包侧稳稳支住。"
+    },
+    {
+      "id": "S30",
+      "startFrame": 3600,
+      "seconds": 3,
+      "sourceSha256": "375abe9a59cd8e6437cb37c4c8bbc31e25c047d735284ed23ce18b3f80bd6eb0",
+      "intendedAction": "只见一只手抚过船边绳结，旁边布袋的白绮小图随船轻晃。"
+    },
+    {
+      "id": "S31",
+      "startFrame": 3690,
+      "seconds": 5,
+      "sourceSha256": "ed20204dea9cd191f51832139ab4f20d757dd90ebf29280be47c1df165fb91df",
+      "intendedAction": "渡船栏杆旁只拍前臂与包的下半部，挂件在航行风中偏向后方，船尾白浪向远处展开。"
+    },
+    {
+      "id": "S32",
+      "startFrame": 3840,
+      "seconds": 4,
+      "sourceSha256": "29de5ad828b6a3c79a37f2696dc071b85ca81ef5f33b77b326ef13af6342bf11",
+      "intendedAction": "海边木栈道近景只见握相机的手，相机外壳白绮贴纸受侧光照亮；镜头绕手小幅移动，远处海蓝保持可辨。"
+    },
+    {
+      "id": "S33",
+      "startFrame": 3960,
+      "seconds": 3,
+      "sourceSha256": "706d07db14df3d0b9d606bec0b8371296d90c2cd2dc0ca4057de6a27bc54a864",
+      "intendedAction": "浪花退过暗色礁石，一条细亮水线留在岩面，画面无人。"
+    },
+    {
+      "id": "S34",
+      "startFrame": 4050,
+      "seconds": 5,
+      "sourceSha256": "1eb5eeb12fbdff29944b291023f4fafa214b9df4d6e9f1915a3d782e512cd82e",
+      "intendedAction": "海岸步道内侧的二维白绮背影，宽天空占大部画面；她缓缓向前走一步，飘带随风展开，不转头。"
+    },
+    {
+      "id": "S35",
+      "startFrame": 4200,
+      "seconds": 4,
+      "sourceSha256": "7b3f5d72f577776396e4760efcd3a441204644b1b70dc3b2f6b967ade532a4e5",
+      "intendedAction": "苔绿溪边只见一只手掠过浅水，水壶上的白绮贴纸留在干燥石面一侧。"
+    },
+    {
+      "id": "S36",
+      "startFrame": 4320,
+      "seconds": 3,
+      "sourceSha256": "301dadad7d1fd4d454eadf6aa9c38d5acb408b2fee4926e13a5f26a5d8a52c2e",
+      "intendedAction": "溪流栏杆上斜靠透明片，前景几颗水珠顺片边滑下，背景瀑布柔化成银白纹理。"
+    },
+    {
+      "id": "S37",
+      "startFrame": 4410,
+      "seconds": 5,
+      "sourceSha256": "cab9e1cd2ec78b2e8ec5a43ecab8451d2d39e0b9c8594af84d4a8f8b6b5d9c41",
+      "intendedAction": "田边小路只拍女性腰部以下，旅者缓步前进，手里提的白绮布袋擦过白紫裙侧，远处作物在斜光里起伏。"
+    },
+    {
+      "id": "S38",
+      "startFrame": 4560,
+      "seconds": 4,
+      "sourceSha256": "4c6f522873405fe2a17a4a7f54c3103152732f63a973bf3a9de7f991ee39684d",
+      "intendedAction": "黄昏桥栏旁只见手轻放在栏面，袖口附近的挂件被一盏灯照亮，水中长影缓慢移动。"
+    },
+    {
+      "id": "S39",
+      "startFrame": 4680,
+      "seconds": 3,
+      "sourceSha256": "d9338cd0ec61bc3a9f3a5e2cd87d7531a993081ec1ebaa1fef6201c61a17ae28",
+      "intendedAction": "无人的小街灯笼在风里轻摆，白绮蓝蝶轮廓在前景一块无字玻璃的角落随反光显现。"
+    },
+    {
+      "id": "S40",
+      "startFrame": 4770,
+      "seconds": 5,
+      "sourceSha256": "de7546d7a1f03d0a95d0616335fc0a65a854f13f5f0e24460931bed24af2ee08",
+      "intendedAction": "夜行列车玻璃角落的白绮小贴纸保持固定，窗外粉蓝灯带缓缓扫过，内侧只有座椅织物倒影。"
+    },
+    {
+      "id": "S41",
+      "startFrame": 4920,
+      "seconds": 4,
+      "sourceSha256": "28c3a5296eb02d8c09a4e34b9f52cece85b3f76233d43aac875d7628172c7efa",
+      "intendedAction": "观景长椅上的白绮玩偶靠着包，背景小城灯火闪烁，衣物一角被风轻轻掀起。"
+    },
+    {
+      "id": "S42",
+      "startFrame": 5040,
+      "seconds": 3,
+      "sourceSha256": "4e12c815661a5fc6401a6b84229eed38470842c023ff464650c6f6406227dc95",
+      "intendedAction": "只见手把热杯放在露营小桌，白绮杯套贴纸面对镜头，蒸汽升到暗蓝背景里。"
+    },
+    {
+      "id": "S43",
+      "startFrame": 5130,
+      "seconds": 5,
+      "sourceSha256": "a201ee7f42fc50ea573e09c5f6d30acd0c8a5278d55d02c077417644f09b5628",
+      "intendedAction": "帐外小灯照着透明片，片外远处是真实感星空；微风让帐布慢慢起伏，透明片稳放不漂浮。"
+    },
+    {
+      "id": "S44",
+      "startFrame": 5280,
+      "seconds": 4,
+      "sourceSha256": "07c488e5efe616b86f74f78bf51ac24f9d04471385daa040e82f30ca5e750db9",
+      "intendedAction": "第一帧帐门完全闭合、不露外景；原有右手先向下单向拉开右侧拉链，再牵开已经解锁的门帘，逐渐露出无人的草地和树景，最后保持打开。四秒入片内完成开门，不回拉、不合上。"
+    },
+    {
+      "id": "S45",
+      "startFrame": 5400,
+      "seconds": 2,
+      "sourceSha256": "2a72ca56e880d0e7dfaa8199a22ecf6436291965e143e8a2a33727c8ee5444a2",
+      "intendedAction": "低机位只见行李轮子和鞋尖向前滚过路面，包边白绮挂件短暂摆入画面。"
+    },
+    {
+      "id": "S46",
+      "startFrame": 5460,
+      "seconds": 5,
+      "sourceSha256": "5e277d928e9f7b9ef034505267563c970500194fe422c220206c18411ca694fb",
+      "intendedAction": "新的一段车窗旁，一只手迎着微风放松张开，窗内固定的白绮贴纸与更远处海岸同框。"
+    },
+    {
+      "id": "S47",
+      "startFrame": 5610,
+      "seconds": 4,
+      "sourceSha256": "1731623cf16521afec5588089d1a60b9fba6718db8e5080cb148f2e189db36fa",
+      "intendedAction": "同一女性在长椅后方，用自然连接的两条手臂和双手从玩偶下部两侧轻扶，将略倾斜的坐姿小幅摆正，底部稳放后松开；左右手不交叉、不翻面、不绕过玩偶，不改变手腕朝向。四秒内完成摆正和松手，脸始终在画外。"
+    },
+    {
+      "id": "S48",
+      "startFrame": 5730,
+      "seconds": 14,
+      "sourceSha256": "1c51e6b59d1649e91f1b671a02dc244afa101cd85b8fcd4d21a60a3c9fe87de5",
+      "intendedAction": "固定原海岸宽景，天空与左侧海面保持原图无遮挡构图，不新增前景树干、树枝或树叶；保留原海浪、道路与房屋，右下蓝蝶保留本次R5生成的原生开合动作和速度，不做减速、插帧或局部替换。原生连续14秒完整入片，片尾文字由后期叠加。"
+    }
+  ],
+  "humanFullPlayback": false,
+  "humanListening": false,
+  "userAestheticAcceptance": "pending",
+  "preserved768pDelivery": "delivery-plan-v12-768p.json",
+  "historicalVersionsRetained": true,
+  "plannedReleaseTag": "autumn-journey-v13-4k-20261121",
+  "releaseStatus": "not-yet-published",
+  "coverageLimitations": [
+    "Ordered whole-frame contact pages show every final frame at416x234per cell; fine anatomy and print details use independent native focus/source crops. This is not continuous real-time human playback.",
+    "S16 is a quiet weight shift by stairs rather than a full staircase walk; S18 actual footage has grasses without the optional butterfly motif.",
+    "S32 has camera framing adjustment without a verified shutter press; S35 has subtle fingertip/wrist movement; S42 cup is lowered with hand remaining on handle throughout the used3seconds.",
+    "Original brisk butterfly wing motion is preserved as requested; fine edge synthesis remains visible at native size.",
+    "Final6150th frame begins204.966667s and remains displayed to205s; fade is near black rather than a separately appended pure-black still."
+  ]
+}

@@ -6,31 +6,33 @@
   "cast": [
     "vivhite"
   ],
-  "director": "director-v10.md",
-  "status": "rendering-native-4k-v11",
+  "director": "director-v12.md",
+  "status": "native-4k-reviewed-release-preparing",
   "number": 1,
   "title": "白绮／秋日旅程",
-  "revision": 11,
-  "productionPlan": "production-plan-v11-native-4k.json",
-  "finalAssemblyPlan": "final-assembly-plan-v10-768p.json",
-  "deliveryPlan": "delivery-plan-v12-768p.json",
+  "revision": 13,
+  "productionPlan": "production-plan-v13-native-4k.json",
+  "finalAssemblyPlan": "production-plan-v13-native-4k-final.json",
+  "deliveryPlan": "delivery-plan-v13-native-4k.json",
   "productionPolicy": "production/workflow-policy.json",
-  "preserved768pDelivery": "delivery-plan-v10-768p.json",
-  "active4kRun": "production-v11-native-4k-001",
+  "preserved768pDelivery": "delivery-plan-v12-768p.json",
+  "active4kRun": "production-v13-native-4k-full-001",
   "activeLongShotRerun": {
     "shotId": "S20",
     "plan": "production-plan-v13-S20-full-sequence-native-4k-r1.json",
     "record": "production/S20-full-sequence-submission-v13.json",
     "run": "production-v13-S20-full-sequence-native-4k-001",
     "jobId": "video_gen_9ff805618a994ab5a4d2b2234cc384de",
-    "status": "queued-output-review-pending",
+    "status": "generated-reviewed-and-adopted-in-final-4k",
     "requiredTemporalStrategy": "full_sequence",
     "seconds": 10,
     "size": "3840x2160",
     "queuePolicy": "ordinary-tail-no-preemption",
     "assemblyImporter": "production/materialize-native4k-sources-v13.py",
     "oldVersionsRetained": true,
-    "finalAssemblyRequiresActualNewSourceReviewAndNewBinding": true
+    "finalAssemblyRequiresActualNewSourceReviewAndNewBinding": true,
+    "sourceReview": "production/S20-new-full-sequence-print-lighting-source-review-v14-r2.json",
+    "finalSelectedSourceSha256": "722a64a7d3bda8697f9cb0efcfb7cf5ae0fa846c9019fc8552e9960e14d9524b"
   },
   "activeRepair": {
     "shotId": "S05",
@@ -38,10 +40,17 @@
     "director": "director-v12.md",
     "record": "production/S05-saddle-rejection-v12.json",
     "priority": "Repair768P first, then correspondingnative4K; original4K queue continues.",
-    "status": "768p-published-corresponding4k-queued",
+    "status": "768p-published-corresponding4k-reviewed-and-adopted",
     "sourceReview": "production/S05-saddle-768p-source-review-v12.json",
     "delivery": "delivery-plan-v12-768p.json",
     "native4kPlan": "production-plan-v12-S05-native-4k-r1.json",
-    "native4kRecord": "production/S05-native4k-submission-v12.json"
-  }
+    "native4kRecord": "production/S05-native4k-submission-v12.json",
+    "native4kSourceReview": "production/S05-new-native-print-lighting-source-review-v14-r1.json",
+    "finalSelectedNative4kSourceSha256": "badc7b5a9aaae96e9ce3cdda294623542aa051d1beaee797ce4518ef3090aeae"
+  },
+  "preservedOriginal4kRun": "production-v11-native-4k-001",
+  "historical768pDeliveries": [
+    "delivery-plan-v10-768p.json",
+    "delivery-plan-v12-768p.json"
+  ]
 }

@@ -1,0 +1,1081 @@
+{
+  "schemaVersion": "vivhite-native4k-encoded-final-review-1",
+  "reviewedAt": "2026-11-21T08:43:30.572003+00:00",
+  "method": "assistant-frame-review",
+  "filmSha256": "4a2f833105a027becbc4a1f2553de801d4a7ec994d1e837c6eaadddcf77a8819",
+  "actualFinalPlanSha256": "1306853fb94f3619b3ac80c479b76df6a3bfe5dbbf4bf3f120bb799ebebf695d",
+  "status": "passed-for-user-review",
+  "releasePublicationPermittedByTechnicalReview": true,
+  "sourceReview": {
+    "selectedShots": 48,
+    "completeNativeFrames": 6096,
+    "usedNativeFrames": 4920,
+    "all48CompleteSourceReviewsPassed": true,
+    "clipDecisionsSha256": "f3c6d5a82f3dc735fcc639475fc2ec0418e7e2ec518a0fb1c45881b699affba4",
+    "sourceImportsSha256": "6625959371ed34c3dc8b4b9e70f39d17b2ab5231f34ced1e700d5a13023afb90"
+  },
+  "machineCoverage": {
+    "fullyDecodedVideoFrames": 6150,
+    "fullyDecodedAudioVideo": "passed",
+    "outsideTitleComparedFrames": 6150,
+    "minimumOutsideTitlePsnrDb": 40.886,
+    "lowSimilarityFrames": [],
+    "faceDetectorFrames": 6150,
+    "faceDetectorInputSize": [
+      832,
+      468
+    ],
+    "faceScoreThreshold": 0.6,
+    "candidateFrames": 584,
+    "detectionIsNotSemanticApproval": true
+  },
+  "actualVisualCoverage": {
+    "wholeFrameManifest": "assets/generated/production-v13-native-4k-full-001/final/whole-ordered/manifest.json",
+    "wholeFrameManifestSha256": "6d4a53bb98d6f83fd350822d678bfd7fede915a6aa7ac3194dd17cfd805b2623",
+    "wholeFramePagesActuallyViewed": 193,
+    "framesRepresentedAndActuallyReviewed": 6150,
+    "cellResolution": [
+      416,
+      234
+    ],
+    "wholePages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193
+    ],
+    "nativeFocusActuallyViewed": [
+      "native-0000-S01-first.jpg",
+      "native-0060-S01-left-hand.jpg",
+      "native-0119-S01-last.jpg",
+      "native-0435-S05-saddle-start.jpg",
+      "native-0495-S05-saddle-middle.jpg",
+      "native-0555-S05-saddle-end.jpg",
+      "native-0735-S07-walking.jpg",
+      "native-1665-S15-lift-cup.jpg",
+      "native-3435-S28-bread.jpg",
+      "native-5280-S44-tent-closed.jpg",
+      "native-5325-S44-unzip.jpg",
+      "native-5399-S44-open.jpg",
+      "native-5610-S47-first.jpg",
+      "native-5655-S47-straighten.jpg",
+      "native-5729-S47-released.jpg",
+      "native-5730-S48-first.jpg",
+      "native-5900-S48-dedication.jpg",
+      "native-6149-S48-last.jpg"
+    ],
+    "subtitleReviewProxiesActuallyViewed": [
+      "0630-S06-visible-review.jpg",
+      "5790-S48-visible-review.jpg",
+      "0570-S06-before-review.jpg",
+      "0591-S06-in-review.jpg",
+      "0674-S06-out-review.jpg",
+      "5730-S48-before-review.jpg",
+      "5751-S48-in-review.jpg",
+      "5819-S48-before-dedication-review.jpg",
+      "5847-S48-dedication-in-review.jpg",
+      "5889-S48-dedication-visible-review.jpg",
+      "6134-S48-out-review.jpg",
+      "6138-closing-fade-review.jpg",
+      "6149-last-frame-review.jpg"
+    ],
+    "subtitleProxyManifest": "assets/generated/production-v13-native-4k-full-001/final/subtitle-review-proxies.json",
+    "subtitleProxyManifestSha256": "ef0b5a8c1d33329f418e348d9ad2e65ba23f219a38e98fc2d9190d3ea2754d16",
+    "candidateSheetsActuallyViewed": [
+      "S05-final-candidates.png",
+      "S06-final-candidates.png",
+      "S07-final-candidates.png",
+      "S08-final-candidates.png",
+      "S09-final-candidates.png",
+      "S16-final-candidates.png",
+      "S18-final-candidates.png",
+      "S20-final-candidates.png",
+      "S21-final-candidates.png",
+      "S22-final-candidates.png",
+      "S26-final-candidates.png",
+      "S27-final-candidates.png",
+      "S30-final-candidates.png",
+      "S35-final-candidates.png",
+      "S37-final-candidates.png",
+      "S38-final-candidates.png",
+      "S40-final-candidates.png",
+      "S44-final-candidates.png",
+      "S45-final-candidates.png",
+      "S47-final-candidates.png"
+    ],
+    "candidateCropsActuallyViewed": 83,
+    "finalCandidateEvidenceSampling": "Sampled every15 finalframes; all-source native candidate reviews are separately retained. Does not claim all584 finalflags individually inspected at native size."
+  },
+  "wholeObservations": [
+    {
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "note": "Inherited actual review: S01 left-arm curtain gesture one attached hand; S02 original landscape; S03 head-out skirt/leggings/boots and bag continuous."
+    },
+    {
+      "pages": [
+        9,
+        10
+      ],
+      "note": "S03 continuous alternating steps, single bag-holding hand and other idle arm; station background coherent; no face or extra person."
+    },
+    {
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "note": "S03 completes walking; expected cut330 to S04 bag on empty bench. Chibi acrylic charm open-eye print unchanged through slow close approach, bench/rails continuous; no human added."
+    },
+    {
+      "pages": [
+        14,
+        15,
+        16
+      ],
+      "note": "Expected S04→S05 cut420. Saddle, rails and seatpost visible, two legs pedal with opposing crank motion, woods pass continuously without old background jump; frame sticker fixed/open eyes. Full pedalling segment continues."
+    },
+    {
+      "pages": [
+        17,
+        18,
+        19
+      ],
+      "note": "S05 continuous complete150frames saddle stays attached and pedalling no abrupt jump. Expected cut570 to empty tram; opening title fades in over coherent street passing window, fixed sticker, no passenger or real face."
+    },
+    {
+      "pages": [
+        20,
+        21,
+        22
+      ],
+      "note": "S06 tram street passes continuously fixed window/charm; title then fade complete before expected S07 cut690. S07 starts head-out alternating footsteps on autumn path, attached arms and case."
+    },
+    {
+      "pages": [
+        23,
+        24
+      ],
+      "note": "S07 repeated alternating forward steps throughout23.47–25.57s; hands and case attached, no late-only leg movement, wooded ground remains coherent; no face or extra person. Page25 omitted by tool and not counted."
+    },
+    {
+      "pages": [
+        25,
+        26
+      ],
+      "note": "S07 alternating steps continue to expected810cut, no frozen-until-end leg issue. S08 bench plush and bag/badge original leaf atop plush, fixed open eyes and stable daylight no autonomous doll action."
+    },
+    {
+      "pages": [
+        27,
+        28
+      ],
+      "note": "S08 slow camera push across bench/plush/badge, leaf and facial print remain inert, glasses/open eyes visible and daylight consistent, no extra hand/person."
+    },
+    {
+      "pages": [
+        29,
+        30
+      ],
+      "note": "S08 ends with original top leaf sliding downward across one eye and off right31.3–31.9s; occlusion is a leaf, no blinking/eye deformation. Plush head and glasses stay rigid; no autonomous animation/person. Prior inert-leaf note applies only earlier pages."
+    },
+    {
+      "pages": [
+        31,
+        32
+      ],
+      "note": "Expected960cut S09 waterside bottle/hand. One resting attached female hand, slight natural finger movement and water ripple; bottle printed face stays rigid open-eye with scene-compatible subdued light."
+    },
+    {
+      "pages": [
+        33,
+        34
+      ],
+      "note": "S09 end no extra hand; expected1050cut S10 back-facing woman by railing, face stays hidden, two arms rest on railing, scenery and river coherent, no other person."
+    },
+    {
+      "pages": [
+        35,
+        36
+      ],
+      "note": "S10 full rear pose stays rear-facing without face reveal; skirt/hair slight breeze river ripples, no cut or added person; two attached arms resting."
+    },
+    {
+      "pages": [
+        37,
+        38
+      ],
+      "note": "S10 rear-facing through39.97s. Expected1200cut S11 female hand holds clear acrylic frame and character on lap by water, one attached hand; leaf outside frame drifts, printed character remains unchanged."
+    },
+    {
+      "pages": [
+        39,
+        40
+      ],
+      "note": "S11 hand maintains real grip and clear frame, original leaf drifting by river; cut1260 S12 one oar and one female hand begins stroke, no added passenger; interior print stable."
+    },
+    {
+      "pages": [
+        41,
+        42
+      ],
+      "note": "S12 oar exits water then rotates back and dips with coherent ripple, hand remains gripping same shaft/rowlock; single visible hand, fixed boat print, no people."
+    },
+    {
+      "pages": [
+        43,
+        44
+      ],
+      "note": "S12 full rowing motion completes: oar repeatedly dips/exits with water drops/ripple, continuous attached grip and rowlock, print static, no extra hand/person."
+    },
+    {
+      "pages": [
+        45,
+        46
+      ],
+      "note": "Expected1410cut S13 umbrella. One visible grip hand through used section, head/face cropped out, pendant swings gently in rain, wet street and shutters consistent, no additional person."
+    },
+    {
+      "pages": [
+        47,
+        48
+      ],
+      "note": "S13 used4s concludes with only grip hand, no unused later second hand imported. Cut1530 S14 rainy shelter/bag/badge, open eyes stable and dull-weather print shading maintained."
+    },
+    {
+      "pages": [
+        49,
+        50
+      ],
+      "note": "S14 slow push rain streaks and ground reflections, bag/badge remain coherent, open-eye face stays subdued relative damp cloth; no hand/person or face reveal."
+    },
+    {
+      "pages": [
+        51,
+        52
+      ],
+      "note": "S14 ends expectedcut1620; S15 two attached hands grip lid/cup and begin lifting from tabletop around55s, no arbitrary rubbing. Cup sticker remains fixed open-eye, head-out female, no extra limb/person."
+    },
+    {
+      "pages": [
+        53,
+        54
+      ],
+      "note": "S15 cup fully raised and held with same two hands above table55.47–57.57, no cup touching-only gesture, no third hand or face; fixed cup print has no blink or new bright patch."
+    },
+    {
+      "pages": [
+        55,
+        56
+      ],
+      "note": "S15 held raised cup to endpoint, two attached hands and no face; expected1740cut S16 standing by stone stairs, small torso/bag/cloth sway, no full walking claim, print follows fabric."
+    },
+    {
+      "pages": [
+        57,
+        58
+      ],
+      "note": "S16 slight weight shift/bag sway and slow camera move, stair/rail background continuous, print open-eye stable follows bag; feet mostly out-of-frame, not claimed walking."
+    },
+    {
+      "pages": [
+        59,
+        60
+      ],
+      "note": "S16 completes continuous small weight shift, no abrupt edits despite legacy cut flags. Expected1890cut S17 greenhouse adult acrylic figure on bench, quiet camera approach and original plant/window geometry, no real person. Fine eyes assessed separately at print/native scale."
+    },
+    {
+      "pages": [
+        61,
+        62
+      ],
+      "note": "S17 entire3s acrylic motionless against subtle plant/window/rain changes, no autonomous blink/limb movement or added person; expected1980cut S18 grass landscape."
+    },
+    {
+      "pages": [
+        63,
+        64
+      ],
+      "note": "S18 wind ripples through original tawny grasses, continuous landscape without butterfly/person/text inserted."
+    },
+    {
+      "pages": [
+        65,
+        66
+      ],
+      "note": "S18 continued wind movement in stems/blades across68.27–70.37s, no cut/person/artifact insertion."
+    },
+    {
+      "pages": [
+        67,
+        68
+      ],
+      "note": "S18 completes windgrass no people; expected2130cut S19 train windowside arm/hand and other lap hand, both connected, no face, continuous passing trees with subdued bag print."
+    },
+    {
+      "pages": [
+        69,
+        70
+      ],
+      "note": "S19 train trees and mountains slide past consistently while two arms remain attached/window hand relaxed; bag printed eyes fixed, face cropped, no new passenger."
+    },
+    {
+      "pages": [
+        71,
+        72
+      ],
+      "note": "Expected2250cut into new S20 full10s alpine lake/plush/bag. Continuous water and clouds, props inert, both printed faces aligned/open eyes and subdued cloudy light; no people."
+    },
+    {
+      "pages": [
+        73,
+        74
+      ],
+      "note": "S20 continuous alpine water/cloud motion76.8–79s, inert plush/body and badge, no morph/nod, bag straps/buckles and adjacent rock fixed; no extra tree/person."
+    },
+    {
+      "pages": [
+        75,
+        76
+      ],
+      "note": "S20 crosses5s/80s without stitch or cut: slow coherent pullback; cloud and lake continue, inert plush/badge remain anchored and brightness stable, no blinking."
+    },
+    {
+      "pages": [
+        77,
+        78
+      ],
+      "note": "S20 pullback81.07–83.17 coherent scale/ground, dolls remain inert and eyes stable; lake/cloud light continuous with no seam or added branch/tree."
+    },
+    {
+      "pages": [
+        79,
+        80
+      ],
+      "note": "S20 ends continuous10s75–85 without independent-window seam; original blue sky fleck late retained from adopted input/source, not new person/tree. Plush/badge remain inert. Expected2550cut to S21 cablecar woman head-out with floor bag/plush."
+    },
+    {
+      "pages": [
+        81,
+        82
+      ],
+      "note": "S21 gondola floor bag/plush and head-out seated woman's legs stay coherent against moving mountain/cable background; plush eyes fixed, no extra passenger or hand."
+    },
+    {
+      "pages": [
+        83,
+        84
+      ],
+      "note": "S21 ends one seated woman/no added passengers. Expected2670cut S22 black backpack/badge in snow; fine falling particles/weather, open eyes and fixed circular print, no person."
+    },
+    {
+      "pages": [
+        85,
+        86
+      ],
+      "note": "S22 snowflakes fall and one original clump rests along top badge rim; does not change eyes, bag hardware stable, no people. This is adopted source snow/occlusion, not a newly added face/halo."
+    },
+    {
+      "pages": [
+        87,
+        88
+      ],
+      "note": "Expected2760cut S23 rear-facing lone woman on mountain trail; slight wind in skirt/hair and distant clouds, face never turns toward camera, no extra hiker."
+    },
+    {
+      "pages": [
+        89,
+        90
+      ],
+      "note": "S23 rear-only woman remains facing mountains through95.97s, hair/skirt/grass subtle wind, no turn/face or added hiker; continuous terrain."
+    },
+    {
+      "pages": [
+        91,
+        92
+      ],
+      "note": "S23 rear-only end through96.97s. Expected2910cut S24 kneeling woman pours sand from one palm, other hand rests on bag; two attached wrists, correct head-out composition, pendant stays fixed print."
+    },
+    {
+      "pages": [
+        93,
+        94
+      ],
+      "note": "S24 sand continues falling through fingers98.13–100.23s, two attached hands hold/rest positions without duplicate limbs; clear charm open eyes unchanged, consistent muted sandy environment."
+    },
+    {
+      "pages": [
+        95,
+        96
+      ],
+      "note": "S24 sand trickle continues to expected3030cut; S25 canyon sunny wide with wind/dust near ground, coherent rocks/clouds, no hiker/face/text."
+    },
+    {
+      "pages": [
+        97,
+        98
+      ],
+      "note": "S25 dust travels along ground, rocks steady no added figure. Expected3120cut S26 empty car seat/pouch, continuous plains through window and static open-eye fabric print."
+    },
+    {
+      "pages": [
+        99,
+        100
+      ],
+      "note": "S26 continuous passing prairie/fence, empty seat and lavender pouch remain stable; open-eyed printed character no pulse/extra face/person, no internal cut."
+    },
+    {
+      "pages": [
+        101,
+        102
+      ],
+      "note": "S26 entire5s empty seat/pouch and passing countryside, printed character eyes open and color stable, no extra person/face/internal cut."
+    },
+    {
+      "pages": [
+        103,
+        104
+      ],
+      "note": "Expected3270cut S27 sunlight train seat/charm. Suspended acrylic swings slightly while light bands and its cast shadow change with outside trees; face stays static/open-eyed, empty seat."
+    },
+    {
+      "pages": [
+        105,
+        106
+      ],
+      "note": "Expected3330cut S28 bread unwrapping: two hands lower/open greaseproof paper to reveal bread on table, paper is physical continuous sheet, no floating white shadow/steam above bread; cup print stays still."
+    },
+    {
+      "pages": [
+        107,
+        108
+      ],
+      "observation": "Bread wrapper remains physically laid flat; two attached hands settle alongside the bread. No floating white shadow or steam; no additional limbs, faces or people. Printed cup unchanged."
+    },
+    {
+      "pages": [
+        109,
+        110
+      ],
+      "observation": "S28 ends with physical wrapper resting flat and two connected hands, no floating white artifact. Cut at 116.0 seconds to S29: dock bag, badge and inert plush with open printed eyes, moving harbor water; no people."
+    },
+    {
+      "pages": [
+        111,
+        112
+      ],
+      "observation": "S29 harbor water ripples continuously behind still canvas bag, plush and round badge; open eyes and nonluminous printed skin remain stable. No human additions or transition discontinuity."
+    },
+    {
+      "pages": [
+        113,
+        114
+      ],
+      "observation": "S29 ends naturally; exact 120s cut to S30 head-cropped boat traveler. Two attached arms, one hand resting along rope and rail, other beside body; skirt and bag sway slightly with water. Bag print remains fixed and subdued."
+    },
+    {
+      "pages": [
+        115,
+        116
+      ],
+      "observation": "S30 resting hand remains anatomically attached; fixed bag image and subtle cloth sway. At 123s S31 ferry rail shot starts: single attached resting hand and dangling acrylic charm, continuous vessel wake, no head or extra person."
+    },
+    {
+      "pages": [
+        117,
+        118
+      ],
+      "observation": "S31 continuous ferry wake and mild bag/charm sway; rigid open-eyed print without autonomous mouth or eye movement. Visible resting hand stays connected to sleeve, no added passenger or face."
+    },
+    {
+      "pages": [
+        119,
+        120
+      ],
+      "observation": "S31 through 127.97s: wake and distant shoreline stay continuous; hanging print remains rigid with both eyes open and no brightness flash. Single visible hand attached, human head stays outside frame."
+    },
+    {
+      "pages": [
+        121,
+        122
+      ],
+      "observation": "S32 two hands hold a compact camera over coastal rail, wrists remain attached; subtle framing adjustment, no unsupported shutter press claim. Water continues, camera sticker has fixed open eyes and matched daylight tone."
+    },
+    {
+      "pages": [
+        123,
+        124
+      ],
+      "observation": "S32 ends with two steady connected hands and fixed camera sticker; 132s cut to S33 sunset rock coast, foam and waves advancing continuously with no people or text."
+    },
+    {
+      "pages": [
+        125,
+        126
+      ],
+      "observation": "S33 sunlit coast: wave fronts advance and wash over fixed foreground rocks, no unexpected branch, person, text or discontinuity."
+    },
+    {
+      "pages": [
+        127,
+        128
+      ],
+      "observation": "S33 waves continue to 134.97s. At 135s S34 rear-facing lone woman walks along coastal path with alternating steps and attached arms, no turn revealing face; original hillside vegetation remains stationary, no extra person."
+    },
+    {
+      "pages": [
+        129,
+        130
+      ],
+      "observation": "S34 alternating gait continues throughout coastal path walk, no early freeze or reveal of human face; two arms/two legs maintain their connections, wind affects skirt and grass without background jump."
+    },
+    {
+      "pages": [
+        131,
+        132
+      ],
+      "observation": "S34 continues walking away without face reveal, cut at 140s to S35 crouching stream traveler. One hand rests on knee while other reaches surface, attached arms and continuous ripples; water bottle print stays inert."
+    },
+    {
+      "pages": [
+        133,
+        134
+      ],
+      "observation": "S35 fingertips hover/touch stream with subtle wrist adjustment and concentric ripples; resting hand remains on knee, no third hand. Bottle print stays static without illuminated facial patch. No claim of a large hand sweep."
+    },
+    {
+      "pages": [
+        135,
+        136
+      ],
+      "observation": "S35 finishes with same two connected hands and stream ripples. At 144s S36 transparent rectangular plate with fixed chibi print beside flowing waterfall, wet bench and droplets; print remains nonanimated and environmental lighting subdued, no people."
+    },
+    {
+      "pages": [
+        137,
+        138
+      ],
+      "observation": "S36 waterfall and droplets move behind rigid acrylic print, both printed eyes remain open. 147s starts S37 head-cropped rural traveler approaching slowly with pouch and two attached arms; no additional people."
+    },
+    {
+      "pages": [
+        139,
+        140
+      ],
+      "observation": "S37 slow forward approach changes body scale and leg position continuously; pouch hangs from one connected hand, other arm stays beside body. Head stays cropped, no fast gait claim, fixed pouch print with no eye or luminance jump."
+    },
+    {
+      "pages": [
+        141,
+        142
+      ],
+      "observation": "S37 continues slowly toward camera with bag and cloth sway; feet progressively leave lower crop as subject approaches, not a sudden jump. No extra limbs or human head; printed image remains fixed in pouch plane."
+    },
+    {
+      "pages": [
+        143,
+        144
+      ],
+      "observation": "S37 ends, S38 at152s head-cropped traveler at dusk canal rail; resting hand stays attached, water reflections continuous, original warm light begins on hand/rail toward153.5s. Acrylic print remains fixed and darker than white fabric, no head reveal or added people."
+    },
+    {
+      "pages": [
+        145,
+        146
+      ],
+      "observation": "S38 warm incident light gradually spreads across hand, rail, costume and bag, retained from adopted source; acrylic face stays muted rather than glowing independently. Rail hand remains connected and no added person appears."
+    },
+    {
+      "pages": [
+        147,
+        148
+      ],
+      "observation": "S38 concludes with coherent warm illumination. At156s S39 empty evening lane, blue butterfly motif on left window stays static; subtle camera drift and light/wet ground reflections, no added pedestrian or face."
+    },
+    {
+      "pages": [
+        149,
+        150
+      ],
+      "observation": "S39 lane remains empty until159s. S40 train-window neon streaks move continuously outside, empty seat/reflection has no human; sticker shape and open eyes fixed while surrounding magenta/blue light changes, no autonomous print animation."
+    },
+    {
+      "pages": [
+        151,
+        152
+      ],
+      "observation": "S40 continued night train: moving horizontal colored reflections and empty seat, no human reflected face. Fixed open-eyed sticker retains subdued lilac/skin tone without eye/mouth movement or new source of brightness."
+    },
+    {
+      "pages": [
+        153,
+        154
+      ],
+      "observation": "S40 reflection motion continues without a passenger or sticker blink to163.97s. At164s S41 dark hillside bench with bag, hanging round badge and sitting plush; no human. Prints keep open eyes, blue hour illumination, no emissive face."
+    },
+    {
+      "pages": [
+        155,
+        156
+      ],
+      "observation": "S41 bench composition remains stable with slight camera/environment motion; plush and badge inert, open eyes and blue-hour tone maintained, no limb/head animation or added people."
+    },
+    {
+      "pages": [
+        157,
+        158
+      ],
+      "observation": "S41 ends without object animation; S42 begins168s with one attached hand holding enamel mug and other hand resting on knee, lantern on table, closed tent behind. Mug is being lowered, print stays fixed; no human head."
+    },
+    {
+      "pages": [
+        159,
+        160
+      ],
+      "observation": "S42 mug lowers until its base meets table around169.2s, hand stays on handle through used interval; second hand remains on knee, no unsupported full-release claim. Lantern warm reflections physical, fixed cup print/no extra limbs or face."
+    },
+    {
+      "pages": [
+        161,
+        162
+      ],
+      "observation": "S42 mug remains grounded with hand on handle through170.97s; at171s S43 empty night campsite, lantern and plate with small fixed chibi image. Clouds/light vary subtly, lantern reflection on table and clear rim coherent; no human or animated printed eyes."
+    },
+    {
+      "pages": [
+        163,
+        164
+      ],
+      "observation": "S43 full night scene continues with gradual cloud motion, steady lantern and reflections. Small fixed plate print retains shape/open eyes and no isolated lighting pulse; camp remains empty."
+    },
+    {
+      "pages": [
+        165,
+        166
+      ],
+      "observation": "S43 ends at175.97s. S44 begins176s with fully closed opaque tent flap and single sleeve-connected right hand pinching zipper. Hand starts downward travel, no initial outside view, pouch print fixed; original knee remains lower frame."
+    },
+    {
+      "pages": [
+        167,
+        168
+      ],
+      "observation": "S44 zipper travels downward once until approximately178s, leaving a growing narrow slit of greenery. Around178.5s released empty hand returns upward to grip flap edge (not a zipper being closed again); single attached wrist throughout."
+    },
+    {
+      "pages": [
+        169,
+        170
+      ],
+      "observation": "S44 flap is pulled left and released, progressively revealing grassy wooded exterior; no second zipper cycle, single attached right hand, no people outside (original blue distant fixture retained). At180s S45 lower-body traveler walks with wheeled suitcase, alternating feet and rigid open-eyed charm."
+    },
+    {
+      "pages": [
+        171,
+        172
+      ],
+      "observation": "S45 walking and wheeled case move continuously until181.97s. S46 starts182s: one sleeve-connected hand raised palm-up at open train window, fingers relaxed, outside coast and poles pass continuously; fixed sticker, no extra person/head."
+    },
+    {
+      "pages": [
+        173,
+        174
+      ],
+      "observation": "S46 palm remains relaxed with very small finger/wrist movement, sleeve attachment stable; train landscape and passing poles continuous. Fixed window sticker retains open eyes and no added passenger, no extreme wrist turn."
+    },
+    {
+      "pages": [
+        175,
+        176
+      ],
+      "observation": "S46 retains full182..187s duration, continuous train scene and single connected hand. S47 begins187s with head-cropped woman behind bench and exactly two sleeve-connected hands holding plush sides; plush open eyes and subdued daylight tone."
+    },
+    {
+      "pages": [
+        177,
+        178
+      ],
+      "observation": "S47 hands make a small positioning adjustment at plush sides and settle it squarely on bench, maintaining two attached wrists and normal reach from behind. Plush moves only with the hands, eyes remain open and face tone stable; no third hand or human face."
+    },
+    {
+      "pages": [
+        179,
+        180
+      ],
+      "observation": "S47 hands release plush around190s then rest palms on bench, exactly two anatomically attached hands, plush remains seated/open-eyed. At191s S48 continuous coast starts with original brisk butterfly cadence, no foreground tree/person; title fades in after191.4s."
+    },
+    {
+      "pages": [
+        181,
+        182
+      ],
+      "observation": "S48 coast and waves continue across192..194.1s with title and English subtitle already visible, third line absent before194s. Original brisk butterfly preserved without slowdown; no foreground tree/branch or people, no independent-window seam."
+    },
+    {
+      "pages": [
+        183,
+        184
+      ],
+      "observation": "S48 third dedication line gradually appears after194s and reaches full visibility around195.8s, below existing title/subtitle. Waves and original butterfly motion continue, no branch/tree/person or credit text; coast remains continuous."
+    },
+    {
+      "pages": [
+        185,
+        186
+      ],
+      "observation": "S48 three text lines remain in fixed upper-left positions across196.27..198.37s, no production credits. Waves continuous, butterfly original brisk flapping retained, coast empty and no foreground tree."
+    },
+    {
+      "pages": [
+        187,
+        188
+      ],
+      "observation": "S48 crosses 198.4..200.5s without a cut or coastal layout jump; fixed title/subtitle/dedication, original blue butterfly and natural wave progression. No person or foreground branch."
+    },
+    {
+      "pages": [
+        189,
+        190
+      ],
+      "observation": "S48 continues through202.63s, three approved text lines stable and wave patterns advancing, no layout reset or added person/tree. Butterfly cadence remains original; no further slow-motion processing."
+    },
+    {
+      "pages": [
+        191,
+        192
+      ],
+      "observation": "S48 continuous to204.77s; global fade starts204.2s and text fades out by204.65s, approved dedication remains third line until fade. No new object, person, foreground tree or cut appears in final seconds."
+    },
+    {
+      "pages": [
+        193
+      ],
+      "observation": "Final six frames6144..6149 show smooth continuation of global fade toward black, no extra post-credit frame or unexpected content. Complete ordered whole-frame contact review covers all6150frames; it is not human real-time playback."
+    }
+  ],
+  "nativeFocusNotes": [
+    {
+      "files": [
+        "native-0000-S01-first.jpg"
+      ],
+      "observation": "S01 original-size first frame: left forearm leads to back of left hand, four fingers grasp curtain and thumb on camera-right side, wrist continuous under cuff; no second arm or human face. Acrylic eyes open and print subdued."
+    },
+    {
+      "files": [
+        "native-0060-S01-left-hand.jpg",
+        "native-0119-S01-last.jpg"
+      ],
+      "observation": "Original-size S01 midpoint/end preserve back-of-left-hand grasp, four curled fingers plus thumb on right side of image, anatomical wrist/cuff connection; no forearm flip, extra fingers/arm or face. Charm remains open-eyed."
+    },
+    {
+      "files": [
+        "native-0435-S05-saddle-start.jpg",
+        "native-0495-S05-saddle-middle.jpg"
+      ],
+      "observation": "S05 native saddle surface, rails, clamp and seatpost clearly support seated rider. Two legs on opposing pedals, normal bent/extended positions; sticker pupils/open eyes stable, scene subdued. Background trees coherent with source motion, no added person."
+    },
+    "Native frame 555: saddle, clamp and post support the seated cyclist; connected opposing legs and pedals remain coherent. Frame 735: attached legs and boots in the walking shot, muted printed face with open eyes, no additional limbs.",
+    "Frame1665: both cuff-connected hands support a lifted coffee cup; open-eye print remains muted. Frame3435: two attached hands hold a physical wrapper against the wooden table, no separate hovering white shadow over the bread.",
+    "Frames5280/5325: initial opaque tent is closed with one sleeve-attached right hand on the zipper; the slider moves downward and opens a narrow slit to grass. No third hand or detached wrist.",
+    "Frame5399: tent flap pulled aside, one attached hand releasing fabric and clear view of the established campsite. Frame5610: two hands from two anatomically connected forearms support the plush at its sides; no visible human head, plush printed eyes open.",
+    "Frames5655/5729: natural connected wrists hold and adjust the plush, then both hands leave it and rest on the bench. No spatially disconnected hand or extra limb; plush fixed embroidered eyes open and face not overexposed.",
+    "Frames5730/5900: open sea and shore without new foreground branch or human; original blue butterfly at lower right. Closing native image reads 白绮 / 秋日旅程, Vivhite · Autumn Journey and 献给世界上最可爱的你; no production credit.",
+    "Frame6149: closing fade nearly black, no text; last displayed frame starts204.966667 and persists to205.0 seconds. This is not a claim that the final encoded frame is mathematically pure black."
+  ],
+  "candidateInterpretations": {
+    "S05": "Two flags are cropped bicycle tube/white thigh/background foliage, not a human face.",
+    "S06": "Two small printed white-haired open-eye character stickers.",
+    "S07": "Attached gripping hand, bag illustration, foliage and cropped white sleeve; no face or additional person.",
+    "S08": "Physical plush/embroidered open eyes and hat/leaf; printed face, not a human. A moving leaf is the physical late occluder seen on whole pages.",
+    "S09": "One fixed character illustration on bottle.",
+    "S16": "Nine bag/chibi print crops, no human head.",
+    "S18": "Two dried wildflower heads and grass stems, no person.",
+    "S20": "One fixed plush embroidered face with both eyes open.",
+    "S21": "Three crops of the same plush inside the floor bag, embroidered open eyes.",
+    "S22": "Six round printed badges with snow along the top rim; eyes fixed open.",
+    "S26": "Seventeen printed bag/seat crops including duplicate overlapping boxes; no actual passenger or face.",
+    "S27": "Three flat acrylic character print crops; slight incident warm light, open irises and circular glasses.",
+    "S30": "One flat character print on the swinging cloth pouch.",
+    "S35": "One printed bottle and mossy rock, not a person.",
+    "S37": "Five attached cuff/hand and pouch crops, no human face or additional hand.",
+    "S38": "Two printed hanging-character crops with warm incident light; no flesh face.",
+    "S40": "Seven crops of the established out-of-focus amber light above the empty seat; no eyes, human features or new passenger.",
+    "S44": "Eight fixed printed pouch character crops; eyes open, no human facial fragment.",
+    "S45": "One cropped dress edge and road/background, no human face.",
+    "S47": "Two embroidered plush face crops, both eyes open. Two actual hands were independently checked in the full-frame native focus images."
+  },
+  "printLighting": {
+    "selectedCorrectedSources": 35,
+    "regions": 38,
+    "nativeEndpointPairs": 76,
+    "comparisonPagesActuallyViewed": 7,
+    "manifest": "assets/generated/production-v13-native-4k-full-001/final/print-lighting-native-comparison/manifest.json",
+    "manifestSha256": "99b2c0303c85cca0532fc339b282545c7867819eb7d204b5b2eac0b9b57d0aaa",
+    "minimumMeanEncodedRgbLumaDifference": -0.2080255690995898,
+    "maximumMeanEncodedRgbLumaDifference": 0.3835506820119434,
+    "minimumPrintPsnrDb": 35.32541718432518,
+    "conclusion": "No observed new isolated glowing facial patch, mask edge or altered open-eye shape introduced by final encode. Scene-specific warm/blue incident light is retained. This is assistant visual review and encoded-RGB measurement, not physical exposure calibration or user aesthetic approval."
+  },
+  "audio": {
+    "approvedOriginalWavSha256": "46ef587715d277e778c805e566d643ce7b8430d3486ee8143b36dda34a74205b",
+    "comparedSamplesPerChannel": 9840000,
+    "sampleRate": 48000,
+    "channels": 2,
+    "signalToNoiseRatioDb": 32.50682893234627,
+    "correlation": 0.9997195819807433,
+    "maximumOneSecondRelativeRmsError": 0.006194455625093443,
+    "silentActualSeconds": [],
+    "nativeModelAudioIncluded": false,
+    "scope": "Complete decoded waveform compared with unchanged approved205second programmatic instrumental/ambient source; no human listening claimed."
+  },
+  "lockedTiming": {
+    "seconds": 205,
+    "frames": 6150,
+    "fps": 30,
+    "S20Seconds": 10,
+    "S46Seconds": 5,
+    "S48Seconds": 14,
+    "otherShotDurationsChanged": false
+  },
+  "titles": {
+    "frontAndClosingSameStyleActuallyCompared": true,
+    "text": "白绮／秋日旅程",
+    "english": "Vivhite · Autumn Journey",
+    "dedication": "献给世界上最可爱的你",
+    "closingTitleStartSeconds": 191.4,
+    "dedicationStartSeconds": 194,
+    "dedicationFadeInMilliseconds": 1800,
+    "productionCreditsVisible": false
+  },
+  "knownPracticalLimits": [
+    "Ordered whole-frame contact pages show every final frame at416x234per cell; fine anatomy and print details use independent native focus/source crops. This is not continuous real-time human playback.",
+    "S16 is a quiet weight shift by stairs rather than a full staircase walk; S18 actual footage has grasses without the optional butterfly motif.",
+    "S32 has camera framing adjustment without a verified shutter press; S35 has subtle fingertip/wrist movement; S42 cup is lowered with hand remaining on handle throughout the used3seconds.",
+    "Original brisk butterfly wing motion is preserved as requested; fine edge synthesis remains visible at native size.",
+    "Final6150th frame begins204.966667s and remains displayed to205s; fade is near black rather than a separately appended pure-black still."
+  ],
+  "artifacts": [
+    {
+      "path": "production/native4k-v13-final-evidence/final-probe.json",
+      "sha256": "368d357370db7d3c166d35cb5fc8173a23653cddfab55869363e313b303ca09d"
+    },
+    {
+      "path": "production/native4k-v13-final-evidence/final-assembly-receipt.json",
+      "sha256": "0b324e0dbca3e7e22703022168e1e939c99efdfa88dbbb145ad419b6a8545172"
+    },
+    {
+      "path": "production/native4k-v13-final-evidence/encoded-film-inspection.json",
+      "sha256": "7cd7dd2cd165e338dddff5b8964a454e1c2d7b4b59d1f68d5508b8fac2e2af9f"
+    },
+    {
+      "path": "production/native4k-v13-final-evidence/audio-technical-comparison.json",
+      "sha256": "be55a6eb8e07d1ddd62708ea2a16d9451add3776c5c3fc640b8cf30be28fadb3"
+    },
+    {
+      "path": "production/native4k-v13-final-evidence/native4k-origin-verification.json",
+      "sha256": "c8bc4592836b211bb3eb15c8546bdbabdaf1d53c2b93f1649e0bee0dfb535aac"
+    }
+  ],
+  "humanFullPlayback": false,
+  "humanListening": false,
+  "userAestheticAcceptance": "pending",
+  "oldVersionsRetained": true,
+  "characterReview": "Separate version-bound public receipt; detailed two-part semantic reasoning only in private character repository."
+}
