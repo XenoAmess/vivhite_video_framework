@@ -1,0 +1,817 @@
+{
+  "schemaVersion": "vivhite-native4k-assembly-preparation-1",
+  "recordedAt": "2026-11-21T05:10:02.208043+00:00",
+  "workerSha256": "54eeb9876e7fd23b2110d3cf841e5792cdc206935bb5aa42e6b6932d8f56d0dd",
+  "status": "47-technical-segment-caches-ready-S20-and-formal-film-pending",
+  "candidateSourcePlanSha256": "f85a01f07afb0f9b538c035bdd7e2639987767c9fdda1d1679642ba07dd2575a",
+  "candidateSourcePlanApproved": false,
+  "lightingReviewStage7Sha256": "ab787e77547b5dff9df4858e0a75849306aa83f2a0345bfc49947712293bee17",
+  "crossShotLightingReviewSha256": "c04c263317b734d8930493374d294fd0ea18fba27a3fffc1a361bb3592567355",
+  "preparedSegments": 47,
+  "preparedFinalFrames": 5850,
+  "preparedSegmentFps": 30,
+  "sourceNativeFps": 24,
+  "nativeSize": [
+    3840,
+    2160
+  ],
+  "comparisons": [
+    {
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "preparationSha256": "fdd5c1330d0031c2de39078bb23fd13359e1eaab15b70294c04ce019aff6abfb",
+      "comparisonSha256": "9bda4fe3d9ed0b545b7e4f86cc8828a73c6d4e16376f287e24032aa9feeb2574",
+      "comparedFrames": 5700,
+      "minimumNativeYuvPsnrDb": 42.59
+    },
+    {
+      "cacheRun": "production-v14-S05-native-4k-segment-cache-001",
+      "preparationSha256": "f6d5be87093645cb70c75126656243d3d24c682e063f4f11cc6001893827ff8b",
+      "comparisonSha256": "3d474cf97bfb4cf37ee8fa4a2cacf0632165652c2f83229e9b32639e41c34a05",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 43.99
+    }
+  ],
+  "segments": [
+    {
+      "id": "S01",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "c82a37222cced4f64c47d9784929c340e3ad4a149976dbc65b7013ddaeb29255",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "c12e03eae50fef435bfd17c6f982611ffec8e243a5418e6b55ccb50ac89cc3af",
+      "receiptSha256": "99dea354589e9a44e6a9c6b5d23f0a7174adfdb106a217533923605010534112",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 43.47,
+      "lockedStartFrame": 0
+    },
+    {
+      "id": "S02",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "9e09730946789a95a20d0d80239e589662d3a3c390455a566da7a8fa89e251e8",
+        "frames": 90,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "0bde5d34cc096d06271ee0a8a47b7cbe07ae8168ae64cf62f66066d2110e0df1",
+      "receiptSha256": "6a316e556b4c74ace8942088ac38b56bc17be1b8e3f80a002d1660f77d40e3a1",
+      "comparedFrames": 90,
+      "minimumNativeYuvPsnrDb": 45.22,
+      "lockedStartFrame": 120
+    },
+    {
+      "id": "S03",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "724f3e1ab52ef28fb71f787c60e8c2f58efe23cf2b0532a7e02c7db4a62d39a4",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "3342aad55bf85f8471d52f04f5fd4644fea9eab33fd7ffe0972e9a6197e463dc",
+      "receiptSha256": "dfeb4ad901753f5e561756224125776ce23d35d7c6e713abb7be2ac3eb62e646",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 45.65,
+      "lockedStartFrame": 210
+    },
+    {
+      "id": "S04",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "442e2acdd9b085c2d3fbdfa2cff63b00a135d7dc09e020b1d499b0039ba3654b",
+        "frames": 90,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "4501cf22a2d2d131b443c97a40a346e02c182eb684e17cf0ac0b1949a4e50c29",
+      "receiptSha256": "3d6bc71f882ca5c588c90be6b601334c8f11be5f63a60a374c2bee93a6ac6c50",
+      "comparedFrames": 90,
+      "minimumNativeYuvPsnrDb": 42.9,
+      "lockedStartFrame": 330
+    },
+    {
+      "id": "S05",
+      "cacheRun": "production-v14-S05-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "badc7b5a9aaae96e9ce3cdda294623542aa051d1beaee797ce4518ef3090aeae",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "cdaa8c73a4611167bb9d50a8544d341f44517b5981e5a460f714255c4474d56e",
+      "receiptSha256": "5fbd33d844f630905bceb45429ee865c6e4f7d5adf78a0b6e179ffcaa2e5bd58",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 43.99,
+      "lockedStartFrame": 420
+    },
+    {
+      "id": "S06",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "d35cd658aa49ddd7e66632ec3642ac3122326263ad26e7ec7a72d92383e0698c",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "bc634dadb22e6d9818d0748409dc6d4b998de56c891a22eff4ec866128187a2c",
+      "receiptSha256": "bef15e63a7e70c9b184a4cd84e5f3a7a167ac071dcbf60c1deb0b84e652b3647",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 44.39,
+      "lockedStartFrame": 570
+    },
+    {
+      "id": "S07",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "7bb809c2f8c725b4e6401f372ac657df4606574d00d1021c1428c322893cc0e7",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "5dcccf09bf3cc0e49f06dbc7d6ce4f70753ce60c945989ca3df1bd095c39d0d9",
+      "receiptSha256": "4efdcbebbbedce507e0f71759a86719c3c0fbdece3a85712e7672b6dc8abcec4",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 43.88,
+      "lockedStartFrame": 690
+    },
+    {
+      "id": "S08",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "355114318092092a7bdd859aa43560ab3e0995630861921329703ca413d38eae",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "891158439b590319a7ca47a654f592decd60b788dfb1c98febbbd6b87542c0da",
+      "receiptSha256": "41f2fc31f98a7148c771c3a0e2a8dd9968d3c770090bbb896df67449e726c3d0",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 43.25,
+      "lockedStartFrame": 810
+    },
+    {
+      "id": "S09",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "19efb10b892114658719fa461248267792363b36c8a1e62cbb34f090f5f0cc2b",
+        "frames": 90,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "f091822914f9d12bd8ac42662c219971e5d9ce00fc17ff33fad849f50ecc62fa",
+      "receiptSha256": "565db665f908df5f595cd2579acfabf53fd57a3a072244173e588ac3a99a2dee",
+      "comparedFrames": 90,
+      "minimumNativeYuvPsnrDb": 45.28,
+      "lockedStartFrame": 960
+    },
+    {
+      "id": "S10",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "de5904ef37b7c23fa9358f7c9b551f1d9dc3b60e87bf9aefb61ca3f813466713",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "1bd1043be3706e26234b6cb60e0430480fc20ef2f87a4e1c46e33f019ae8d86b",
+      "receiptSha256": "ffb123a629dcf739b30cc0af9356f5378f45bec41231ce7a5d5fd536c1f97029",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 44.33,
+      "lockedStartFrame": 1050
+    },
+    {
+      "id": "S11",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "ece8ebd0890392eb1218a79652d5b872a7f614549a381ecf53eeaf4a94eabfd1",
+        "frames": 60,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "e6f00dbd4411cc80cadb56acba07c0a395ed9089410e2f31e14442c1e1edc888",
+      "receiptSha256": "2aab1ced4566acc2e8f919e446450e27f65128883e52b6ebd55e5d5ca4d989cd",
+      "comparedFrames": 60,
+      "minimumNativeYuvPsnrDb": 46.5,
+      "lockedStartFrame": 1200
+    },
+    {
+      "id": "S12",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "628232a17d4264be186451a556086cb2a7c001237caba81819d39fa7a51487dd",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "451c915eb6b1db45ab005fdae0f5483eaedbea0ffd9ded34c5e3347278b7b866",
+      "receiptSha256": "5238641d35e4ed7a4017d9bf86bbb541a768189d7b872a0b4232973043944df2",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 44.72,
+      "lockedStartFrame": 1260
+    },
+    {
+      "id": "S13",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "8f45f934650f1bd0adeec96bc7293b2c8ce4141289264d4f942fb74dd7af45c6",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "157a9dac4c0a6f35e2ffd9ce750d579337a700e1c702852bbbbaaa19e97dfe4f",
+      "receiptSha256": "d6de1616d228904d6465cf493ed81fec5e418159e62a91e534c5e063e3de4f68",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 46.14,
+      "lockedStartFrame": 1410
+    },
+    {
+      "id": "S14",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "949283ed739fd13fe60e885cae12db2d33e59782e701bc8ccee0d726aad1d72b",
+        "frames": 90,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "2919fd7b0f317a51715b1abd8e24d46e87ea0bdf90fc1955e53b5046521a90b1",
+      "receiptSha256": "4ce6f0cedde34d1ff5c663aa952b9330e1e8bb192641ed74dccd6506dc3ff5c0",
+      "comparedFrames": 90,
+      "minimumNativeYuvPsnrDb": 44.52,
+      "lockedStartFrame": 1530
+    },
+    {
+      "id": "S15",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "17d489ff86693408b8a10a3e46711a33c8e78d3ba951a747e87a5be0b1e72e2a",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "99b3e249b0752fea7b434497dbe6011a3b8cabff1638b506aed0a200e16c55ab",
+      "receiptSha256": "62cb958d56c9c3e2663d3c6fbd6a875e69fee3fb034302201716b2f72aae87fc",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 45.78,
+      "lockedStartFrame": 1620
+    },
+    {
+      "id": "S16",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "63b53c980e21822aa120ab561bc974900fc2a35d0d51f702ee24232f89a79aed",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "b9bf93432f0e82bc5b8ad497f7efa6e6bcf15d278b436e76a12afe7c8f6a245a",
+      "receiptSha256": "e4d66b81b5995c0ca7334860c85844ea866881bbe6a105132b9b444975737538",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 45.69,
+      "lockedStartFrame": 1740
+    },
+    {
+      "id": "S17",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "ab683d808b565f0494c9c3aac063b079f9d4278a74cd42d184391879ce7bfbf2",
+        "frames": 90,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "537c043567d34b1a9ec39869c68fb5b8a4bd5e141f3954744fcbb052aefb955a",
+      "receiptSha256": "2b7af1d2a2289dee94caa76e78c72465e2c333ec8344998096d7be4b7abd2bef",
+      "comparedFrames": 90,
+      "minimumNativeYuvPsnrDb": 44.16,
+      "lockedStartFrame": 1890
+    },
+    {
+      "id": "S18",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "45a3a9eb07bf94822b4ac7a6b4405e32f5472661709d7894b6be1c8d357e192e",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "cfe725f264b7e339747168f13e2b01d45f5fdd9f5de8e166b6eb176125fd04d3",
+      "receiptSha256": "741f0707c68c533e60e70f404b5b0d23efa3f107cebf05f38e5a6b5a90805a36",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 42.94,
+      "lockedStartFrame": 1980
+    },
+    {
+      "id": "S19",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "7c2a10903d356badb50503d7d83d9e0dad1bd015c5a20e20408ded576379842b",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "e50320f1931d0541292ad575810281257b65376cde23335dd14d35a0aa683e68",
+      "receiptSha256": "92d8e559e442e8a9375a3e2d75429881c0549a441765b8f5df6268728d8bf3a6",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 47.39,
+      "lockedStartFrame": 2130
+    },
+    {
+      "id": "S21",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "c5b8078a0540e206883e7ce36e715ad0b7a739613aee5225a5dca544a60d72c5",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "154f4f3728ae58ed3558305506f6952cb46861466be07ed58e090fae63904c58",
+      "receiptSha256": "e80ba691ab28c727ac685acd9dba18e8711115167392e72c235b7c736dcc6dc5",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 44.75,
+      "lockedStartFrame": 2550
+    },
+    {
+      "id": "S22",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "7e3f7ca4bff78ad63ccd1cbc1d5e56fb35d3b2152a5618126135fbe93a9d997f",
+        "frames": 90,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "46f57bc446d30ae38fcb13179cd4bffe83d206ab1a6c550914a8de9b3473ccf8",
+      "receiptSha256": "16fce7bc1589af80aa89a79652c00ccc4b5d48b91846d65854bdd62f6ee1506a",
+      "comparedFrames": 90,
+      "minimumNativeYuvPsnrDb": 44.07,
+      "lockedStartFrame": 2670
+    },
+    {
+      "id": "S23",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "89ecc0f4eb5d0193f380a51b837049efe6d86992d3d50646d62d1e9d1e661e7c",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "e75ab36164ecc632cda4be72b2e2203e517e498ebfb721756453531e4b8ba3ba",
+      "receiptSha256": "9c8e1ac90508a910f93ec3f8a6dc00f1d17b4dab0d4d1f2289c84c782a28389f",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 45.56,
+      "lockedStartFrame": 2760
+    },
+    {
+      "id": "S24",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "3cf2fbf6f53b6ac69068e6d782c791da1824d6d632cece4c8056c958bf916e3e",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "316eafaebd2c0acf65416b32623c59042879d0c7bc549448ecff6c24b6ce1a8e",
+      "receiptSha256": "608099b86fa6682f11b121958e3cdf1060a6981b87961b6895784a420d785236",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 44.42,
+      "lockedStartFrame": 2910
+    },
+    {
+      "id": "S25",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "b81885790f85ee34fd14ed5e8b47e2939b5c0cfe4ce4ed2aac96d6a04803d681",
+        "frames": 90,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "976c18c0d5331255e219012c5ba60be2a3e88131632853e5dd43ff2b2025b66f",
+      "receiptSha256": "fbb85f4302071a6df8d617536ff11cfe63a61dabb01c15ea68775231557b4a3b",
+      "comparedFrames": 90,
+      "minimumNativeYuvPsnrDb": 44.39,
+      "lockedStartFrame": 3030
+    },
+    {
+      "id": "S26",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "52534b000fec706a6e4a6186680702d2d98e793c88593f5fe499d0b943829424",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "dfce74735abf6ee2c63246209f3ed6e59da51a8fd92659b69e7329ee20249df7",
+      "receiptSha256": "157804ca24e56ac6d7f9629ca7e6ab93d2c64ddaf588103a8ab5b9e2227ddf02",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 45.74,
+      "lockedStartFrame": 3120
+    },
+    {
+      "id": "S27",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "da86e30cf0408bdb7c98dc7e1a11989e80613b55629b192154d1569f0ebb1345",
+        "frames": 60,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "91088b0420c21c07320fe8aab5e5eb632147ebb87cb1db673a73476ceaa3eeca",
+      "receiptSha256": "895d83083034765d4eb13d92c0078273e8f26e2b24c82e08a00add881e11ac69",
+      "comparedFrames": 60,
+      "minimumNativeYuvPsnrDb": 45.15,
+      "lockedStartFrame": 3270
+    },
+    {
+      "id": "S28",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "ddbccefee408199f97f6ef16f4ad0e9ba38eeeed7d7f9ae8db334b6778f1f0d5",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "c66c55d624ee0aa1b11055c16ffd676fa5f8b8c4597469f5c875e802821bad85",
+      "receiptSha256": "787b69d48db5cfe64620fa34ea0692e076297d3d4bf3cad6e0052de466135212",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 46.09,
+      "lockedStartFrame": 3330
+    },
+    {
+      "id": "S29",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "aae9c1c6ac244ca32259e6a82b66615d976639a5a54ce7b45128e55f1afa2f5d",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "46de2708473abf76b755b46bd1c5f3a0e7a38d88ae7a3ddd619f4a9ff8ebacce",
+      "receiptSha256": "6c7751c9979248e816c35e7006c764694afe9d2a69cfe1a3a9b2b85f688032f4",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 42.59,
+      "lockedStartFrame": 3480
+    },
+    {
+      "id": "S30",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "375abe9a59cd8e6437cb37c4c8bbc31e25c047d735284ed23ce18b3f80bd6eb0",
+        "frames": 90,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "0609ae3b1d20e7817d5807015ba155606b5d81334cb2f2890d439d528ce026dc",
+      "receiptSha256": "2824ace267baaeed6a369b4e77e86a6eb9c64b4a0da785a7721c079c90318f3b",
+      "comparedFrames": 90,
+      "minimumNativeYuvPsnrDb": 44.13,
+      "lockedStartFrame": 3600
+    },
+    {
+      "id": "S31",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "ed20204dea9cd191f51832139ab4f20d757dd90ebf29280be47c1df165fb91df",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "e7b4bc13b446f40088ed483485e7f5fbd00b37626133bbd4639ea426eac879de",
+      "receiptSha256": "dcc04ce263e0c0e60d92f42bd92d9f56fed92275d686c1f127f37da1cea606cf",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 45.76,
+      "lockedStartFrame": 3690
+    },
+    {
+      "id": "S32",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "29de5ad828b6a3c79a37f2696dc071b85ca81ef5f33b77b326ef13af6342bf11",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "2b3fc953c5829e03d44612f89ec9d6288987ca81a665e6b8b7ce30de90dfe528",
+      "receiptSha256": "950b81010683285a52d2333eff7c7d516169f9aa9a60b476a3f47732d4f21b3e",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 45.09,
+      "lockedStartFrame": 3840
+    },
+    {
+      "id": "S33",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "706d07db14df3d0b9d606bec0b8371296d90c2cd2dc0ca4057de6a27bc54a864",
+        "frames": 90,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "b8ac55e5f1f96945dedc4efc2d11c2320ab954ee4af847fbb1f62e54ac5dacc3",
+      "receiptSha256": "cc9b8cb4390dbbc6343c7f392f95a9fcaa808aac2a4bdbf0218b5134378dc224",
+      "comparedFrames": 90,
+      "minimumNativeYuvPsnrDb": 43.12,
+      "lockedStartFrame": 3960
+    },
+    {
+      "id": "S34",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "1eb5eeb12fbdff29944b291023f4fafa214b9df4d6e9f1915a3d782e512cd82e",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "47eaab861527132f19b75ec469b942040fbbfb1825be86d643d54ed191f10a65",
+      "receiptSha256": "358e4903c9ea57a3da96311290e34e543ea278fe81c13f9298732088dae5dfa8",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 44.51,
+      "lockedStartFrame": 4050
+    },
+    {
+      "id": "S35",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "7b3f5d72f577776396e4760efcd3a441204644b1b70dc3b2f6b967ade532a4e5",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "fe03f386e6b8f944124a947d280f5b8c204482bfb627337f75993d99823ddeb1",
+      "receiptSha256": "7017541ee63c2f98d9305bc4665c096f576d90fec344d50d6324a7cad17a649f",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 43.73,
+      "lockedStartFrame": 4200
+    },
+    {
+      "id": "S36",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "301dadad7d1fd4d454eadf6aa9c38d5acb408b2fee4926e13a5f26a5d8a52c2e",
+        "frames": 90,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "3c8e529f6997dfe9d96ec9be10353533705f8949606b304a17df7eb552c17003",
+      "receiptSha256": "80d3a7969480a533b45289fafc7855e315a87b13e667ce6d8a7296ce9175cbf5",
+      "comparedFrames": 90,
+      "minimumNativeYuvPsnrDb": 43.77,
+      "lockedStartFrame": 4320
+    },
+    {
+      "id": "S37",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "cab9e1cd2ec78b2e8ec5a43ecab8451d2d39e0b9c8594af84d4a8f8b6b5d9c41",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "bfbb2d9c86963e95b9f137d6a3f730c0757a5c4e4b3137fe9f07aa2297fba515",
+      "receiptSha256": "0946f45244a6459e734485e7f355d03f2b813a2abb51039b1d21f4be6f8d91ff",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 43.6,
+      "lockedStartFrame": 4410
+    },
+    {
+      "id": "S38",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "4c6f522873405fe2a17a4a7f54c3103152732f63a973bf3a9de7f991ee39684d",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "38742a2eaf2d1631eb5b6c6763861a3f77a2d8be6230742d885c568b6598a2ba",
+      "receiptSha256": "d113833fd35feb5bd1847658164db5fbb64e46da48a40c19d47b3e81e764908e",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 44.92,
+      "lockedStartFrame": 4560
+    },
+    {
+      "id": "S39",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "d9338cd0ec61bc3a9f3a5e2cd87d7531a993081ec1ebaa1fef6201c61a17ae28",
+        "frames": 90,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "7dc1866624206be09807ae423ece9c89094795215a3f84219ee43dac3809d770",
+      "receiptSha256": "189f6d8582ec4a64ce16113820489a1e989144a66470db41847cac24359ece06",
+      "comparedFrames": 90,
+      "minimumNativeYuvPsnrDb": 44.23,
+      "lockedStartFrame": 4680
+    },
+    {
+      "id": "S40",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "de7546d7a1f03d0a95d0616335fc0a65a854f13f5f0e24460931bed24af2ee08",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "506f9cc8cfa28450fd3103b0fc24f05c76174204811bae3bc50a6f97c8268378",
+      "receiptSha256": "b432baca9cd731383a9634da5228ac74a739a4ecda03f3ef726ba86a82b932c8",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 48.95,
+      "lockedStartFrame": 4770
+    },
+    {
+      "id": "S41",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "28c3a5296eb02d8c09a4e34b9f52cece85b3f76233d43aac875d7628172c7efa",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "784c8077d79c63f79113ed5516a1363016b00408b40e9db3995fdd8c78c4ad9d",
+      "receiptSha256": "51b9aaa1356b2c71d4d54a2745f066b178e6e60a47768bb8c7960c8b4783e4d9",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 46.25,
+      "lockedStartFrame": 4920
+    },
+    {
+      "id": "S42",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "4e12c815661a5fc6401a6b84229eed38470842c023ff464650c6f6406227dc95",
+        "frames": 90,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "c584e2c2cb032f4997f4803e4cd585702af3118e3c74d42b96588404ba4240ad",
+      "receiptSha256": "e1f87c5d7ab3604daf5f7dd9d28f9ede85b9d873b3a714d9431c4e7e6463a278",
+      "comparedFrames": 90,
+      "minimumNativeYuvPsnrDb": 45.8,
+      "lockedStartFrame": 5040
+    },
+    {
+      "id": "S43",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "a201ee7f42fc50ea573e09c5f6d30acd0c8a5278d55d02c077417644f09b5628",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "a47e47ae7e62e50fd8eb45d57130b847032970bcf3525d177fafef15e7006e0b",
+      "receiptSha256": "b6183b237200f77a499530c41cab9f1a70c13a3c54134be4a809a1a2dd08c897",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 48.67,
+      "lockedStartFrame": 5130
+    },
+    {
+      "id": "S44",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "07c488e5efe616b86f74f78bf51ac24f9d04471385daa040e82f30ca5e750db9",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "fc014f9b0cd36594a88ff2cfaac5ab1c990e66aead69370bbaa5b0feb7f4e50b",
+      "receiptSha256": "f24a315e7f348bf9b23d44058814a79d7c82cd85490ad44e77b28a8a8b182518",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 44.77,
+      "lockedStartFrame": 5280
+    },
+    {
+      "id": "S45",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "2a72ca56e880d0e7dfaa8199a22ecf6436291965e143e8a2a33727c8ee5444a2",
+        "frames": 60,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "f73a6f88d93f2e88a9776bc07bd7ee46a3a0cc403436ad7194099d2a6446a31d",
+      "receiptSha256": "48e1224b55f0b9d8ccfc2083bfb8f6264cb65c404ffe28b988312adf968ee9c3",
+      "comparedFrames": 60,
+      "minimumNativeYuvPsnrDb": 45.7,
+      "lockedStartFrame": 5400
+    },
+    {
+      "id": "S46",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "5e277d928e9f7b9ef034505267563c970500194fe422c220206c18411ca694fb",
+        "frames": 150,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "159b8873aa5acd816bd098031646d8af813b88f264eb0ab9600b9eaf270987fb",
+      "receiptSha256": "520a1090b023c0f66a71ebf4a790dc605b12c58517106a954436ec8c98ec73d9",
+      "comparedFrames": 150,
+      "minimumNativeYuvPsnrDb": 45.91,
+      "lockedStartFrame": 5460
+    },
+    {
+      "id": "S47",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "1731623cf16521afec5588089d1a60b9fba6718db8e5080cb148f2e189db36fa",
+        "frames": 120,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "93cb1d0723d017f63f4d37c027b7f05c356d22e7c3dd18c1c7ba097be0da0944",
+      "receiptSha256": "34a87516f4308f75a44c18d56fed8a41f53b56e8233fa8b4d54fc693feb5ae09",
+      "comparedFrames": 120,
+      "minimumNativeYuvPsnrDb": 43.85,
+      "lockedStartFrame": 5610
+    },
+    {
+      "id": "S48",
+      "cacheRun": "production-v14-lighting-native-4k-segment-cache-001",
+      "identity": {
+        "sourceSha256": "1c51e6b59d1649e91f1b671a02dc244afa101cd85b8fcd4d21a60a3c9fe87de5",
+        "frames": 420,
+        "width": 3840,
+        "height": 2160,
+        "recipe": "fps30-x264-fast-crf17-1"
+      },
+      "segmentSha256": "e423fed81a4d3c444ac968269aeea1ca0bb1a15cfc836b78d7c97867fefd0e65",
+      "receiptSha256": "ceeb8b15094367dce3d40861b5085c44298657464df0bc013b8daf3cdb6e4475",
+      "comparedFrames": 420,
+      "minimumNativeYuvPsnrDb": 43.86,
+      "lockedStartFrame": 5730
+    }
+  ],
+  "pendingS20": {
+    "jobId": "video_gen_9ff805618a994ab5a4d2b2234cc384de",
+    "requiredSingleFullSequenceSeconds": 10,
+    "requiredNativeFrames": 240,
+    "requiredFinalFrames": 300,
+    "lockedStartFrame": 2250,
+    "sourceReview": "pending",
+    "oldThreeWindowFallbackAllowed": false
+  },
+  "soundtrackSha256": "46ef587715d277e778c805e566d643ce7b8430d3486ee8143b36dda34a74205b",
+  "titlesSha256": "c1a0a030e5cb5e45bd3959c89f4a761bbdf0ea0113634c7c18d1861a6761cb83",
+  "sourceS20Seconds": 10,
+  "S46Seconds": 5,
+  "S48Seconds": 14,
+  "targetFinalSeconds": 205,
+  "targetFinalFrames": 6150,
+  "cacheTemporalMethod": "Existing fps30 conversion only; no optical interpolation, altered motion speed, looping or freeze padding.",
+  "oldCachesAndSourcesPreserved": true,
+  "newHttpGenerationRequests": 0,
+  "actualSourceShaAndCacheIdentityMustMatchAgainAtFinalImport": true,
+  "nativeModelAudioInFinalMix": false,
+  "semanticAcceptance": false,
+  "formalFinalPlanGatePassed": false,
+  "completeFilmAssembled": false,
+  "completeFilmReviewed": false,
+  "completeFilmPublished": false,
+  "globalLightingHoldClosedHere": false,
+  "humanContinuousPlayback": false,
+  "scope": "Technical frame conversion and native-YUV comparison of47 already-reviewed selected sources. 5850 is a sum of separate prepared frame intervals, not a continuous195second film or6150frame film approval."
+}
