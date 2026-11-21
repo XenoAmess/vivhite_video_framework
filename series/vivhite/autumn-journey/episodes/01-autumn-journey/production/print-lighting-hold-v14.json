@@ -1,9 +1,13 @@
 {
   "schemaVersion": "vivhite-print-lighting-hold-1",
   "reason": "User rejected excessive facial brightness in restored merchandise prints on 2026-11-21.",
-  "status": "open",
-  "finalAssemblyAllowed": false,
-  "scope": "Recheck every selected restored print against its actual scene lighting. S42 and S43 initial corrections remain unaccepted. Prior source decisions and caches are historical evidence, not approval of brightness for the final film.",
+  "status": "resolved",
+  "finalAssemblyAllowed": true,
+  "scope": "Source-level assembly hold resolved for exact48 bound sources. Independent final-plan character review and complete encoded-film review remain mandatory before release.",
   "preservation": "Keep all old versions and evidence. Change local print lighting only after comparison; do not alter shot timing or human anatomy.",
-  "requiredBeforeRelease": "Actually review the revised lighting and complete motion of each changed source, bind exact selected SHA-256 values, invalidate caches by changed source identity, and pass the final film review."
+  "requiredBeforeRelease": "Actually review the revised lighting and complete motion of each changed source, bind exact selected SHA-256 values, invalidate caches by changed source identity, and pass the final film review.",
+  "resolvedAt": "2026-11-21T06:39:03.799407+00:00",
+  "resolutionReceipt": "production/print-lighting-source-resolution-v14.json",
+  "resolutionReceiptSha256": "cca7ae637fb7a63599dc6ff6ba6bb6a0f2176484559972d8568db2fce3e45259",
+  "releaseAllowed": false
 }

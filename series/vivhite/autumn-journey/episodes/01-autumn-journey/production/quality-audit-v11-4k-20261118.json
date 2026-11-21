@@ -2250,7 +2250,7 @@
       "referenceAppearance": "passed"
     }
   ],
-  "scope": "All48 original source identities reviewed; old missing-saddle S05 remains rejected. All33 original-run lighting revisions plus one separately generated S05 lighting revision actually accepted. New full-sequence S20 and final film still pending; global hold is not yet resolved by these source-level decisions.",
+  "scope": "All48 final source identities accepted:46 exact original-run sources plus separately accepted newS05 and single-sequence S20. Existing34 lighting revisions plus newS20 total35. This does not approve an assembled film; full-film lighting and independent final-plan/film checks remain required.",
   "reviewedSourceCount": 48,
   "acceptedSourceCount": 47,
   "rejectedCurrentSourceCount": 1,
@@ -2667,7 +2667,7 @@
       "reason": "Actually viewed all120 revised whole-scene representations on4 bounded JPEG pages, all120 print representations on8 pages, native whole/print endpoints0/119, complete original M04 plush master and all58 detector crops on4 pages. All3 lighting trials012 at0/60/119 actually compared; darker trial1 selected. Original already-open patterned violet-pink irises, fine gold spectacles and small smile replace deformed generated embroidery, not closed eyes. RGB.741671/.688278/.660200, mask1.8 bounded at reference y750/feather35 and sigma.437050 make the felt face subdued and coherent with the overcast seaside bench. Original felt texture, hair seams and physical costume remain. No observed doubled eyes/glasses/mouth, autonomous expression, blink, pale outer edge, slipping or moving mask seam. Outer generated hair/costume remain softer; no whole-plush restoration claimed. The head-out woman in her established feminine white/violet/gold costume uses both connected hands to cup the plush base, straighten and turn it modestly from its initial leftward tilt to upright by approximately1.3seconds, holds it, releases at approximately2.7to3seconds, then rests both palms on the bench by3.7seconds. Hands remain attached to their respective original cuffs and arms; no observed third hand, detached limb, reversed wrist, human face, extra person, cut or new text. Overlapping grip and occlusion mean not all fingers are separately visible at every instant. The plush mittens are cloth props, not extra human hands. All120 expanded native-coordinate RAW two-hand representations on30 bounded pages separately reviewed. Original weathered bench planks/fasteners, wall, sea waves, travel bag and head-out costume/stockings remain coherent. All detector crops show original weathered wall texture at x107/y521, sleeve/forearm and plush arm/clothing, not resolved human faces. No unseen anatomy is inferred from wall wear. All120 RAW/revised native outside-print pairs freshly compared for left arm/hand/costume/bench/wall/sea, right arm/hand/bag/bench/wall/sea and lower plush/boots/mittens/bench/hands. Separate outside endpoint PNGs retained but not individually viewed. Lossy encoding scores are not pixel identity or semantic approval. Fresh one-pass CRF16 native3840x2160/24fps/120frames/5seconds from untouched RAW. Final first4seconds187to191/f5610to5729 unchanged. Original RAW rejection, all still trials and evidence retained. Bounded pages are not separate viewing of every native PNG or every4Kpixel. No anatomy patch, whole-scene grade, interpolation or retiming. Assistant source review only; global lighting hold remains open, no human continuous playback/listening or formal final-film approval."
     }
   },
-  "snapshotAt": "2026-11-21T04:23:01.885135+00:00",
+  "snapshotAt": "2026-11-21T06:34:49.960233+00:00",
   "wholeSceneFrameReviewAcrossVersions": 14376,
   "rejectedCorrectionCandidateCount": 34,
   "additionalPartialRejectedCorrectionReview": {
@@ -2784,5 +2784,16 @@
     "oldMissingSaddleSourceRemainsRejected": true,
     "fullFilmApproval": false
   },
-  "additionalNativeSourceLightingRevisionCount": 1
+  "additionalNativeSourceLightingRevisionCount": 1,
+  "finalSelectedSourceCount": 48,
+  "finalPlannedSourceCount": 48,
+  "finalSelectedSourcePercent": 100.0,
+  "separateFullSequenceS20Replacement": {
+    "run": "production-v13-S20-full-sequence-native-4k-001",
+    "sourcePlanSha256": "106f0f0ee8e80cd1a4f9362bbf826f2b75a5d43336d550dea9f9fd954f37073a",
+    "selectedSourceSha256": "722a64a7d3bda8697f9cb0efcfb7cf5ae0fa846c9019fc8552e9960e14d9524b",
+    "actualSourceReview": "accepted",
+    "audit": "production/S20-new-full-sequence-print-lighting-source-review-v14-r2.json",
+    "auditSha256": "8976e6760b720a04ced6c7338323779d1052a8fde040a121bacb8bb4da64be90"
+  }
 }

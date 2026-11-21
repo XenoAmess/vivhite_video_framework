@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "vivhite-native4k-source-completion-1",
+  "recordedAt": "2026-11-21T06:56:25.908504+00:00",
+  "generatedSources": {
+    "complete": 48,
+    "total": 48,
+    "percent": 100.0
+  },
+  "actuallyAcceptedFinalSources": {
+    "complete": 48,
+    "total": 48,
+    "percent": 100.0
+  },
+  "previouslyIdentifiedLightingRevisions": {
+    "complete": 34,
+    "total": 34,
+    "percent": 100.0
+  },
+  "additionalNewS20LightingRevision": 1,
+  "allActuallyAcceptedLightingRevisions": 35,
+  "preparedPictureSegments": {
+    "complete": 48,
+    "total": 48,
+    "percent": 100.0
+  },
+  "preparedFinalPictureFrames": {
+    "complete": 6150,
+    "total": 6150,
+    "percent": 100.0
+  },
+  "fullPictureDecode": {
+    "checkedAt": "2026-11-21T06:50:40.187266+00:00",
+    "pictureSha256": "860505a4725d160944e1e965fc7805ddd6d13add0c3f2fd68317b28880cf0db4",
+    "status": "complete-technical-decode-not-semantic-approval",
+    "probe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "mime_codec_string": "avc1.640033",
+          "width": 3840,
+          "height": 2160,
+          "coded_width": 3840,
+          "coded_height": 2160,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 51,
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 4,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/15360",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 3148800,
+          "duration": "205.000000",
+          "bit_rate": "51961790",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "6150",
+          "nb_read_frames": "6150",
+          "extradata_size": 46,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "encoder": "Lavc62.28.101 libx264"
+          }
+        }
+      ],
+      "format": {
+        "filename": "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v13-native-4k-full-001\\picture-assembly.mp4",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "205.000000",
+        "size": "1331615419",
+        "bit_rate": "51965479",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf62.12.101"
+        }
+      }
+    },
+    "allFramesDecoded": 6150,
+    "durationSeconds": 205.0,
+    "humanContinuousPlayback": false
+  },
+  "newS20NativeCacheComparison": {
+    "status": "complete-machine-comparison-not-semantic-approval",
+    "finishedAt": "2026-11-21T06:44:46.869370+00:00",
+    "workerSha256": "2151a783c227039b71f3d4a813a63dbea459ceb84ec23c2a4dc913fd364d8428",
+    "sourceSha256": "722a64a7d3bda8697f9cb0efcfb7cf5ae0fa846c9019fc8552e9960e14d9524b",
+    "segmentSha256": "18e15c315f3cc127860f3589e6af57c4257a786a44f41d9c45f7978f9a07aa9d",
+    "comparedFrames": 300,
+    "minimumNativeYuvPsnrDb": 42.37,
+    "meanNativeYuvPsnrDb": 44.96373333333334,
+    "perFrameStatsSha256": "984376c50e9a71b059ecfcee37028830e365e4fee3307610826bbd37dc81fec9",
+    "decoderLogSha256": "795ac5dda9d56e366dd47ead26d4d7e905582d9ac13419a2780a02d632f9b712",
+    "argv": [
+      "ffmpeg",
+      "-v",
+      "info",
+      "-i",
+      "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v13-native-4k-full-001\\sources\\S20.mp4",
+      "-i",
+      "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v13-native-4k-full-001\\segments\\S20.mp4",
+      "-filter_complex",
+      "[0:v]scale=3840:2160:force_original_aspect_ratio=increase,crop=3840:2160,fps=30,trim=end_frame=300,setpts=PTS-STARTPTS,format=yuv420p[reference];[1:v]setpts=PTS-STARTPTS[actual];[actual][reference]psnr=stats_file=S20.psnr.log:stats_version=2:shortest=1[out]",
+      "-map",
+      "[out]",
+      "-an",
+      "-f",
+      "null",
+      "-"
+    ],
+    "scope": "Every native UHD newS20 cache frame compared to exact accepted source under identical24to30 conversion. Lossy comparison is not pixel identity or semantic approval."
+  },
+  "sourceLightingResolutionSha256": "cca7ae637fb7a63599dc6ff6ba6bb6a0f2176484559972d8568db2fce3e45259",
+  "actualFinalPlanSha256": "1306853fb94f3619b3ac80c479b76df6a3bfe5dbbf4bf3f120bb799ebebf695d",
+  "actualFinalPlanCharacterReceiptSha256": "2200d73a0f127efcd93e2c6e59dc1f2fd227c405d6c90aa2691db39cc5007d8b",
+  "actualFinalPlanBoundAssets": 53,
+  "actualFinalPlanPersonalityConsistency": "passed",
+  "actualFinalPlanInformationDisclosure": "passed",
+  "privateReviewRevision": "5de8510ab64a44207e8d30190884658db2ab3f41",
+  "completeEncodedFilmReview": "pending",
+  "completeFilmPublished": false,
+  "humanContinuousPlayback": false,
+  "humanListening": false,
+  "estimated4KReleaseBeijing": [
+    "2026-11-21T17:00:00+08:00",
+    "2026-11-21T19:00:00+08:00"
+  ],
+  "estimateCondition": "Estimate. Requires final encoding/complete actual film review and upload/download verification without another source retry.",
+  "allDurationsUnchanged": true,
+  "filmSeconds": 205,
+  "filmFrames": 6150,
+  "fps": 30,
+  "scope": "Source/picture/input-plan milestones only;100percent source completion is not complete-film or human aesthetic acceptance."
+}
