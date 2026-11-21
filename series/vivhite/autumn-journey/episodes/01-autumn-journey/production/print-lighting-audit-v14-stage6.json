@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "vivhite-print-lighting-review-progress-5",
+  "recordedAt": "2026-11-21T02:38:25.907430+00:00",
+  "priorStage5RecordSha256": "74ad98d695d93fc6adde8117b721ec0cf10dfee7bc7ecbce4e3ee1c3d7c54550",
+  "originalRunActuallyReviewedAndSelectedLightingRevisions": 22,
+  "separateNewS05ActuallyReviewedAndSelectedLightingRevisions": 1,
+  "totalActuallyReviewedAndSelectedLightingRevisions": 23,
+  "newSourceReviews": [
+    {
+      "path": "production/S47-print-lighting-source-review-v14-r1.json",
+      "sha256": "95aaa8b7dd975985a7dc031356ad1edeed1383018efaba80873cf801d298c034",
+      "shotId": "S47",
+      "selectedSourceSha256": "1731623cf16521afec5588089d1a60b9fba6718db8e5080cb148f2e189db36fa"
+    },
+    {
+      "path": "production/S07-print-lighting-source-review-v14-r1.json",
+      "sha256": "d463e5eb7354c656de96164f8efcdfba8fdec7800598d28fafaba4ffb3c647f2",
+      "shotId": "S07",
+      "selectedSourceSha256": "7bb809c2f8c725b4e6401f372ac657df4606574d00d1021c1428c322893cc0e7"
+    },
+    {
+      "path": "production/S14-print-lighting-source-review-v14-r1.json",
+      "sha256": "750b9af958d4bf5f24b646d82a2b2126c2cab1b41d15bee2771e83e507e0a22b",
+      "shotId": "S14",
+      "selectedSourceSha256": "949283ed739fd13fe60e885cae12db2d33e59782e701bc8ccee0d726aad1d72b"
+    },
+    {
+      "path": "production/S17-print-lighting-source-review-v14-r1.json",
+      "sha256": "9c21e8e305bcea24ef43dc0091e8a207f79bc81021dad92df8aa7d5edaec5abc",
+      "shotId": "S17",
+      "selectedSourceSha256": "ab683d808b565f0494c9c3aac063b079f9d4278a74cd42d184391879ce7bfbf2"
+    },
+    {
+      "path": "production/S05-new-native-print-lighting-source-review-v14-r1.json",
+      "sha256": "6afe129219d45b77942729889e84845f8749ad771327847d0d8e8003a0e0db8c",
+      "shotId": "S05",
+      "selectedSourceSha256": "badc7b5a9aaae96e9ce3cdda294623542aa051d1beaee797ce4518ef3090aeae"
+    }
+  ],
+  "newSourceReviewRepresentationScope": "Each actually viewed120 ordered whole-scene and120 print-detail representations, native whole/print endpoints0/119, all detector crops and full original master. This is not every native PNG or UHD pixel separately viewed.",
+  "newDetectorCropsActuallyViewed": {
+    "S47": 58,
+    "S07": 365,
+    "S14": 66,
+    "S17": 12,
+    "S05": 67
+  },
+  "newS05ExtraRawMotionCoverage": {
+    "saddleHipFramesActuallyViewed": 120,
+    "legCrankFramesActuallyViewed": 120,
+    "rawDetectorCropsActuallyViewed": 64,
+    "rawStickerDetailFramesActuallyViewed": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "allRawStickerDetailPagesViewed": false,
+    "oldMissingSaddleFallbackAllowed": false
+  },
+  "machineCutFlagsRetainedAndActuallyResolved": {
+    "S07": 19,
+    "S05": 52
+  },
+  "remainingRenderedLightingCandidatesNotYetFullyReviewed": [
+    "S11",
+    "S13",
+    "S16",
+    "S21",
+    "S22",
+    "S30",
+    "S32",
+    "S36",
+    "S37",
+    "S40",
+    "S41"
+  ],
+  "fullSequenceS20": {
+    "jobId": "video_gen_9ff805618a994ab5a4d2b2234cc384de",
+    "statusAtCheckpoint": "in_progress",
+    "sourceAcceptance": "pending"
+  },
+  "partialVisualSemanticReviews": {
+    "characterId": "vivhite",
+    "characterRepoRevision": "d252b0f9c20357894fda14e410d5758926c543f2",
+    "personaSha256": "2ad7c63b2b98d73f34bba1751b6f7a8f5c66cf47a5b92cb481b92ef1994ed4bd",
+    "newScope": [
+      "S47",
+      "S07",
+      "S14",
+      "S17",
+      "S05"
+    ],
+    "personalityConsistencyForReviewedVisualScope": "passed",
+    "informationDisclosureForReviewedVisualScope": "passed",
+    "all48ScenesAndFinalAudioReviewed": false,
+    "formalFullFilmReceiptExported": false
+  },
+  "originalRunOldS05RemainsRejected": true,
+  "allLockedDurationsUnchanged": true,
+  "targetFilmSeconds": 205,
+  "targetFilmFrames": 6150,
+  "outsideNativePairsRecomputedPerRevision": 120,
+  "outsideEndpointPngsIndividuallyViewed": false,
+  "preservedVersionsAndEveryTrial": true,
+  "humanContinuousPlayback": false,
+  "humanListening": false,
+  "formalFullFilmApproval": false,
+  "finalAssemblyAllowed": false
+}

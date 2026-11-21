@@ -1,0 +1,1116 @@
+{
+  "schemaVersion": "vivhite-saddle-native4k-inspection-1",
+  "sourcePlanSha256": "f7d10a7c80e72a02bbf541b4109871be0e4845653c4ada12075e4b9de6b63842",
+  "inputSourceSha256": "d814fd0ade3bd7d62857e3366a19ef2ec51b6a74ed3c1b2e0ad2dc5a9caf19bf",
+  "jobId": "video_gen_ab78089d679c4c66ba653410717fc5f5",
+  "jobReceiptSha256": "17d994cbb4465baf214b034274137e05b69908897d46dbf71cb7a30770e458e0",
+  "requestSha256": "2a80d6a847934cb1dffde0435b5a7130d046183fa1f0f7531a0ba8123687daf8",
+  "sourceSha256": "a89d160cb7d49d7cc68a798b35d7d530bfe40c5c1446375fafd4240e0ddc7d37",
+  "inspectionReportSha256": "0fe02853cbb01b17172abbbd2cff1d90d34e93c1779c6d250615690b4549eeeb",
+  "workerSha256": "d96885170f9e06394efb60bab29cdc61f9dccffba8ea15ca74d93eb2757cb6fa",
+  "candidateExtractorSha256": "a8701bef967755c92b0f8e8bec2e403384b110e42c2f1c49e554505e94ec9a38",
+  "candidateExtractionCommand": [
+    "D:\\workspace\\vivhite_video_framework\\video-maker\\.venv\\Scripts\\python.exe",
+    "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\production\\extract-native-candidates-v11.py",
+    "--source",
+    "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-S05-native-4k-001\\sources\\S05.mp4",
+    "--report",
+    "D:\\workspace\\vivhite-analysis-output\\vivhite\\autumn-journey\\production-v12-S05-native-4k-001\\clip-inspection\\S05.json",
+    "--destination",
+    "D:\\workspace\\vivhite_video_framework\\series\\vivhite\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v12-S05-native-4k-001\\review\\cycle-native-r1\\candidates"
+  ],
+  "nativeSize": [
+    3840,
+    2160
+  ],
+  "fps": 24,
+  "decodedFrames": 120,
+  "wholeScenePages": [
+    {
+      "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/whole-p01.jpg",
+      "sha256": "78750a044a3a3f2471c943b0d4e1d2da92498df16be88a5f43bf1778c34afc0e",
+      "items": 32
+    },
+    {
+      "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/whole-p02.jpg",
+      "sha256": "cb25370a4dce91e35d2aa6f81cdbcf85054f5fa6efe20ba4baa2205c947c603b",
+      "items": 32
+    },
+    {
+      "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/whole-p03.jpg",
+      "sha256": "c5675ceda4fc433a9771037be127824f85b7bfe4bc901215c26e535162b6f06c",
+      "items": 32
+    },
+    {
+      "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/whole-p04.jpg",
+      "sha256": "3e9cef6c07b79d3b500abf9bde846170ff339e97816c6f87946b51147f39c86b",
+      "items": 24
+    }
+  ],
+  "nativeWholeCheckpoints": [
+    {
+      "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/native-f000.png",
+      "sha256": "5a19c66c7eeca9b6c5ca9cf6964786101e3a57c1c6b757120072bd43e65d690a",
+      "frame": 0
+    },
+    {
+      "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/native-f024.png",
+      "sha256": "80e0bbafabf9f9e805d14abf92fbc3ecf1522eff27ffb8c5a3c0c2bb65a145ff",
+      "frame": 24
+    },
+    {
+      "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/native-f048.png",
+      "sha256": "1719daae95a988f2f4d703a3b6e6968781b7c71615c49cd3f47cd46c51454c5d",
+      "frame": 48
+    },
+    {
+      "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/native-f072.png",
+      "sha256": "87ea5eedb8af2ea48a67e51f11dc1e1771d251893f64ec5738329affd1c99124",
+      "frame": 72
+    },
+    {
+      "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/native-f095.png",
+      "sha256": "cde708a73d0662dc284b09563f5e226e3cb0ff8e5ba5cabf0703a0ed35fabae1",
+      "frame": 95
+    },
+    {
+      "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/native-f119.png",
+      "sha256": "6da9f96c4e546a4a43493b8e655e6528832455111144a2753210e69da1713bcc",
+      "frame": 119
+    }
+  ],
+  "regions": {
+    "saddle-hips": {
+      "nativeBox": [
+        0,
+        0,
+        2600,
+        1041
+      ],
+      "nativeFrames": 120,
+      "framesPerPage": 4,
+      "pages": [
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p01.png",
+          "sha256": "230196b8a85d713388c933da3897502344fcf39b7104a3e20fe965012df3cc52",
+          "firstFrame": 0,
+          "lastFrame": 3,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p01.jpg",
+            "sha256": "08d2aeb3a39b8ecb39dd52e5c3ae7d5c81ba902eeb47396660880343ab1c60be"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p02.png",
+          "sha256": "da67fc01aeacf77ee7d222381d90f77b9d09dbd30c09ca3069348a177c94eb97",
+          "firstFrame": 4,
+          "lastFrame": 7,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p02.jpg",
+            "sha256": "0cd0ddceddce56224d16f3c3b41b1e40f500d74bafbfbf201254c76d692b48c8"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p03.png",
+          "sha256": "4d136bb0ce4b8c8d8ac208e7d87f65898a83523364b4d4b42dae8e5bd2a875d8",
+          "firstFrame": 8,
+          "lastFrame": 11,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p03.jpg",
+            "sha256": "e44e50f28fd0f36fdc481071bce359420f454b5a0388dfe4ccc05be1b5c141fc"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p04.png",
+          "sha256": "4a61e04c641197a28ba20f1ae092d57dc3d5352ca788fc4dc0f823236f4779bd",
+          "firstFrame": 12,
+          "lastFrame": 15,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p04.jpg",
+            "sha256": "dba7079246afacff83cfff5e99cc6293489214e1e5504c4571da8c235cacd86e"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p05.png",
+          "sha256": "5d58d1af10dc4e3268ad8c9a3f3ecf3f1ac0dd1a2ae8bcde82cc5da457e8f7c7",
+          "firstFrame": 16,
+          "lastFrame": 19,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p05.jpg",
+            "sha256": "16a028524e3992b5bd4256940bb31044c016e09be9bdc98a65499037b18d4df5"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p06.png",
+          "sha256": "681dd27789ca078bd37199bbf07ef2bde24d63e7ccd449c985a36fbf8296a0a4",
+          "firstFrame": 20,
+          "lastFrame": 23,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p06.jpg",
+            "sha256": "db2cbaeefa52698043d12c39549fe171080d8b8e9c4fd2c91936aa894073692f"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p07.png",
+          "sha256": "980960710ba578ce78347545dd697d082319fbdf1e8aeed3cc963ab292227ea1",
+          "firstFrame": 24,
+          "lastFrame": 27,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p07.jpg",
+            "sha256": "8232955db1f575703ab0dfe1f6373cf9088aa7d068ef23e79b3bf61ce419dac7"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p08.png",
+          "sha256": "1b9baea1779c1d1eeb45109c7ba1aaf91beab17062d72edff500bd054d42e067",
+          "firstFrame": 28,
+          "lastFrame": 31,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p08.jpg",
+            "sha256": "d940d26fa3f75bdcd5aa59b85699c5ffc1b8a0fc147379adb9d8681d6893cd8d"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p09.png",
+          "sha256": "d368efe335e59f13b25b3ccab44db032d9f783b1a40c477a30c677b1aa3e939d",
+          "firstFrame": 32,
+          "lastFrame": 35,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p09.jpg",
+            "sha256": "3bed4da4647bcfbbc773ac8659ade9e156526d483d99f47f94190d1160135e7f"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p10.png",
+          "sha256": "c39a55b7c87d1a5b08065134163edefa46a349e2483c4f69382329b64c14a234",
+          "firstFrame": 36,
+          "lastFrame": 39,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p10.jpg",
+            "sha256": "aac2f0d2b38590f87a4be34b944755d8c9f926e7344accded25516883d24c773"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p11.png",
+          "sha256": "722a9ff8adf48864fbd7b848b9373c7cb36dfcc8555805989c9b04c549f93997",
+          "firstFrame": 40,
+          "lastFrame": 43,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p11.jpg",
+            "sha256": "71ca0f795ef74984ff3fda8e4ad863a236af0cf3f998631c3266001b08613ef3"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p12.png",
+          "sha256": "e5ea2ea135a7f641c3b5fb33f376a2d0a5ee2d5b119a1bcfae0eb396022ae688",
+          "firstFrame": 44,
+          "lastFrame": 47,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p12.jpg",
+            "sha256": "8d94e3336f45d17c6508076678206e3ea72a5c15c0bcca5315fe416e163a5506"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p13.png",
+          "sha256": "9bb69e5c8f475e9f36da9e22795ba917c917738f99eeb14994f706ffd63cbe08",
+          "firstFrame": 48,
+          "lastFrame": 51,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p13.jpg",
+            "sha256": "6127d9b6599ef2e140e7fac4eb28f87330619900b8edba4e423a44de1e1c8161"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p14.png",
+          "sha256": "4f3466ec5976e98fa0b9c1912748a4e920970e1d831491e011c5d8dcb616916f",
+          "firstFrame": 52,
+          "lastFrame": 55,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p14.jpg",
+            "sha256": "07b89404b1dd8393bda3c1bb683d4fc5df9caa441d4a70f85e1fc72f8a192d28"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p15.png",
+          "sha256": "5ab934915f592f5468c8e6da0e2119dde32645b336b773ee4f2b3f7482c3bc17",
+          "firstFrame": 56,
+          "lastFrame": 59,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p15.jpg",
+            "sha256": "21b388933f6cb3bbc0889e13dbdffb920c3cf833c0f3f9b67051dc7810d33735"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p16.png",
+          "sha256": "57f4e654dcf1a25d62d260b7bf91a8bb83549dfa6295b35e21d7c28c6d82cfb6",
+          "firstFrame": 60,
+          "lastFrame": 63,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p16.jpg",
+            "sha256": "f324883b89ca1f33e7a69712cf20c5a3440226508c8f87bdbe2b0fa37262036e"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p17.png",
+          "sha256": "b61bcbd825c2873108345c2c53c88468be241b2bca68555d0f87310eea8bbad1",
+          "firstFrame": 64,
+          "lastFrame": 67,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p17.jpg",
+            "sha256": "8c402ae759eac719718a0a74e48c3f64be528224addd994163567ba0e425855a"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p18.png",
+          "sha256": "a0e65c8646399b608ff25d79a07b3fb91f0d93f174828bcbdcc683795c880d5b",
+          "firstFrame": 68,
+          "lastFrame": 71,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p18.jpg",
+            "sha256": "1ad40cd619ced1c6134c7a60870b9059e55d071420e2f0c10670369437cafc59"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p19.png",
+          "sha256": "73d7638da70d17b5058b47b3fb46ec7082a0da269589221d8da19c2d5e756976",
+          "firstFrame": 72,
+          "lastFrame": 75,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p19.jpg",
+            "sha256": "e7609d8ecfec19e6aa9716805ea7584e023ffde8ff7aeb7876ce53514421256a"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p20.png",
+          "sha256": "a5dcde415179ec16573e577a99e774b463f47227058e8dd569c313148bbaf112",
+          "firstFrame": 76,
+          "lastFrame": 79,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p20.jpg",
+            "sha256": "5a01ce623db15c6a07c09baa9b96b7350cf0978fed564d6fd875068e544b09ac"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p21.png",
+          "sha256": "f63ccea66f677ecffc1fc0221f72514db2e7e85258d2546bc6d06413d1265d7e",
+          "firstFrame": 80,
+          "lastFrame": 83,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p21.jpg",
+            "sha256": "2612084593f1c03628bea765780017ef4499ba75f9a85d50216a645a2dd9769c"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p22.png",
+          "sha256": "bc08286249cd03ba73dc01167b4bfca3875797378618c43e1a53b83b54a7497b",
+          "firstFrame": 84,
+          "lastFrame": 87,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p22.jpg",
+            "sha256": "7f91ecaa387c7798e13e80ce29d8529a8c3eea4ae22404e8524219fdc9c895f7"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p23.png",
+          "sha256": "37b6e5428e52e9681750f0f8eff437464e7f802a13618a916cb1c11c13fb0968",
+          "firstFrame": 88,
+          "lastFrame": 91,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p23.jpg",
+            "sha256": "5147c8cf615aca19e8169bfb25c43f6b04b005b6f0e834a0fe294b9877bea601"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p24.png",
+          "sha256": "906b17a45cfc7f4de89cf0564071c9373497b3935c3369105831274e2b11216a",
+          "firstFrame": 92,
+          "lastFrame": 95,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p24.jpg",
+            "sha256": "c8404cf789f9f563d149127696b2e3e88c9025c4221282cb1a4f84bd29671ea0"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p25.png",
+          "sha256": "846dbb04ce906d11a10f8edbd4b9c958476420e2d9510918a485dfff803b018e",
+          "firstFrame": 96,
+          "lastFrame": 99,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p25.jpg",
+            "sha256": "864b1c69790f5493efaea356a5b5c3ee09565be2be4105cf9be876fe1d60e19f"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p26.png",
+          "sha256": "049b66270c158ce0fb278363edbdc40030190d00e032f1315a9f7a6cc1da57b7",
+          "firstFrame": 100,
+          "lastFrame": 103,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p26.jpg",
+            "sha256": "36c098912d8a2d9aaf788597a3e2df1b5b3c8d4465c563ef7b3e72e6c74687b8"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p27.png",
+          "sha256": "46ea62935eba6bd775e751923862028b97dfddc9bf7bbcd829599600d553b309",
+          "firstFrame": 104,
+          "lastFrame": 107,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p27.jpg",
+            "sha256": "b8797808cd0e3c80ce074b5fda77c1a441eea9172ddab8c682b42df478a272cb"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p28.png",
+          "sha256": "42da3de2252dcb1ca670e8b51905cde45ff5126e03f417fb8e0829410a986f71",
+          "firstFrame": 108,
+          "lastFrame": 111,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p28.jpg",
+            "sha256": "09afdb29dd959c1f0f4bef28ebb794abee3d52e28164160bc405515ad896ff28"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p29.png",
+          "sha256": "8fd338229ac7fae31d856035a817339452449f0e583b3bdeb54d9aa455e1590a",
+          "firstFrame": 112,
+          "lastFrame": 115,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p29.jpg",
+            "sha256": "76c01a7e9803c425c10297f2156ad42f41bd40a5190a4d43d8070db0c7883135"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p30.png",
+          "sha256": "53620ea1a7f38600f61825cde643c5aef51188fe7e0f7cb7f403df475761fa17",
+          "firstFrame": 116,
+          "lastFrame": 119,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/saddle-hips/p30.jpg",
+            "sha256": "8cc10cb64ae1381edb690a2e3640ce4fc83a6cdd922035b99140bc6cf30db759"
+          }
+        }
+      ],
+      "originalPixelsOnly": true
+    },
+    "legs-cranks": {
+      "nativeBox": [
+        857,
+        338,
+        2857,
+        2160
+      ],
+      "nativeFrames": 120,
+      "framesPerPage": 4,
+      "pages": [
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p01.png",
+          "sha256": "13aeaa1cdc88b8776bf7820a553101759b5266ccc906b49d7b44403120b8342d",
+          "firstFrame": 0,
+          "lastFrame": 3,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p01.jpg",
+            "sha256": "fb7488013f0adebf3096c0e53fedc3a256f84d71353150ba2def2088459338b6"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p02.png",
+          "sha256": "de791165036d30f7145f82a69a8bc6c1dfec797326b4c425bc777af5be3c5f47",
+          "firstFrame": 4,
+          "lastFrame": 7,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p02.jpg",
+            "sha256": "6631b2e3535927c108f9932b704fc5918e60aa9a98c359d3777021f5fc49bc96"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p03.png",
+          "sha256": "eef95c73f00d13d7b584808c9930f819828e2ba6474812417be0537a26663b9c",
+          "firstFrame": 8,
+          "lastFrame": 11,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p03.jpg",
+            "sha256": "38c974c82f366c92d292b2928d12e7da797ef105c85ea1d2c6f13d74a0a9d0ed"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p04.png",
+          "sha256": "ece2f233b4f3c3bb3640eb5e52fa018c0dc8c703d318e4a12e94acbd8b165866",
+          "firstFrame": 12,
+          "lastFrame": 15,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p04.jpg",
+            "sha256": "b4148b7eb34cb5a3476a08bb40f5c65f8d6b67a5269b8d6f9ac83cffe9acc325"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p05.png",
+          "sha256": "ada194ce560ad9c62dbed066cffa3ae0c17ce6dbbedb7d04bbb7fc44ebc2c286",
+          "firstFrame": 16,
+          "lastFrame": 19,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p05.jpg",
+            "sha256": "5583b48aaa6496e3e655ac356bcc170e2a4a17c0cd28c23d1d50ed5a625edeb9"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p06.png",
+          "sha256": "aee29574736bae041b7f71d504a917af8b5fcbd8d2ad539f20cfcbbab6edbd7e",
+          "firstFrame": 20,
+          "lastFrame": 23,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p06.jpg",
+            "sha256": "9301ecd81410cdd07076b6f7d9ad72a69be7afbcc1b2f0bb8424d90fa2460708"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p07.png",
+          "sha256": "921f588544ef66dc7a33743c9777f0107f7a6356c528e4c0e0288abfc39f2af9",
+          "firstFrame": 24,
+          "lastFrame": 27,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p07.jpg",
+            "sha256": "45d5b57555d2f9c70dfcd68b9f534e633bd63b4cf7d1bae75b6f496ea89deb77"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p08.png",
+          "sha256": "7cddb4e393f6c84df122ec370e46285d97a31710590b78da2b31371a24c356b9",
+          "firstFrame": 28,
+          "lastFrame": 31,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p08.jpg",
+            "sha256": "c2b378811139576658b1882ce4a8a5ae897a32fa7d372eb0df18b19e5d1e8098"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p09.png",
+          "sha256": "036de85ec39e01c4823c0fefa21cf052e6da280d32a63c24f7232b5c23e44c12",
+          "firstFrame": 32,
+          "lastFrame": 35,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p09.jpg",
+            "sha256": "d52e8d5e031a349e4c34a36a4c6fc1a1f8faf9e923c592c0da90ccb4b84db222"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p10.png",
+          "sha256": "09903c1ed83b1ccd45fef1aa381799d902439679818b4fa5dd6530ef4b54bb32",
+          "firstFrame": 36,
+          "lastFrame": 39,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p10.jpg",
+            "sha256": "435c6d70c1de5fa93b50e743fa397cc9ef79397ff8e3e21c5d492cc323b07fd5"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p11.png",
+          "sha256": "aac4ae2102cd5f2c2242747f069aa03008dc339f6983b7439f8943b58fdf9113",
+          "firstFrame": 40,
+          "lastFrame": 43,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p11.jpg",
+            "sha256": "dadc8bb6f21f10687ebb627f3c8b866b4e1565a584a1115944eabc2d4a379583"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p12.png",
+          "sha256": "30c46bbe4ed1bed45635983289cde117032b2e72de23734ddfc9f3af313b2628",
+          "firstFrame": 44,
+          "lastFrame": 47,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p12.jpg",
+            "sha256": "b81ee9315c6aed66c62a166c76a7d341961f5b0c574b6d0d46bcb990cfc7a2eb"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p13.png",
+          "sha256": "dbaa30dbf048dc3a941e669876304b1cef5c6032f321a58a13010e6b437506b1",
+          "firstFrame": 48,
+          "lastFrame": 51,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p13.jpg",
+            "sha256": "52d8a5dbcc893b48c70b776171b6d6b652f393f5d80be6e98069aa2659136639"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p14.png",
+          "sha256": "7ccb3d021b371b1faaaa573bc7053dfd75185730b67c063af89a2ba998ad0632",
+          "firstFrame": 52,
+          "lastFrame": 55,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p14.jpg",
+            "sha256": "9630a0b44b494afdd4901f5b8328c81f4f0fe843235addd97be4003130443db7"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p15.png",
+          "sha256": "ee89ca5262a43dc367d04d526451bc25e1ff6e07a4d9dff91b81b7237aa1a646",
+          "firstFrame": 56,
+          "lastFrame": 59,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p15.jpg",
+            "sha256": "fc0ff0b4ab9e011b87af44bf3f87630bfa536885e469f9299b16fd9e8d2a9d39"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p16.png",
+          "sha256": "a45009d193dee0d3a585694387444a2e7d87a9cd0009b95e562b200f1d745af0",
+          "firstFrame": 60,
+          "lastFrame": 63,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p16.jpg",
+            "sha256": "aad2a125675336eac0d850746122c6f6fe319f7210ea903a6568f8d111139986"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p17.png",
+          "sha256": "f1884d65ad4afebeaed0d35b0b06839a0a59c76b23504361d194a6c2d46af522",
+          "firstFrame": 64,
+          "lastFrame": 67,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p17.jpg",
+            "sha256": "c8b1965dac7cf0405513fd13f2e9b05e43114d64404281cb618132907eda5793"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p18.png",
+          "sha256": "8584d04d948168d3d9c2e54aea78308fa9ac84cbe42e44d10ceca3737c6016d2",
+          "firstFrame": 68,
+          "lastFrame": 71,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p18.jpg",
+            "sha256": "ac4a636b5a9e79f64b596aa736c0c43a2bf32b83b7ef50909a2a0030e97f9464"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p19.png",
+          "sha256": "5bbb533c0a571556c5a257bd02a1ce4fc3349b449916b895825c786b5c922c96",
+          "firstFrame": 72,
+          "lastFrame": 75,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p19.jpg",
+            "sha256": "b86fe26d12d65b6e90815c2bb686f8abec2e6b3abc518ccefa8ed3157073cd62"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p20.png",
+          "sha256": "1e5a1862f943579021f62c0bec3e557a9542579cad2e75b96c65d63e27c7fd72",
+          "firstFrame": 76,
+          "lastFrame": 79,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p20.jpg",
+            "sha256": "9db9f1e5845a7438076ddc3d9d2b1f80e678fd24130988b16b01c197c5e5859f"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p21.png",
+          "sha256": "80ec76acfc0aa6cb01cb627f890be39ab902713325e8cd1bb1f3be051b1e585d",
+          "firstFrame": 80,
+          "lastFrame": 83,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p21.jpg",
+            "sha256": "adb80bdb8f4c13c13ff6f5ae4876bd82b421e88568989bf37ba5ab1fa87f25a7"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p22.png",
+          "sha256": "dfa304f47352f24a0aed885db56c4d13abfc140a31a2ccdd7704a066d6435061",
+          "firstFrame": 84,
+          "lastFrame": 87,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p22.jpg",
+            "sha256": "6f089b97560a8997a6b19ade21cf9533ffc3062e11eb04446584b9c1014e700a"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p23.png",
+          "sha256": "a20c37f76470c3a2f8b4dd3c43c9742d91ba79a10cf306ba222ba7eeebeff802",
+          "firstFrame": 88,
+          "lastFrame": 91,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p23.jpg",
+            "sha256": "d9014964b3d131592ee4e5d6398095fdedc24220c62ace20e829cadfec602678"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p24.png",
+          "sha256": "e15231dac236f409354e47f5da81175b378fc284edf81f59c6d5409a06cce6aa",
+          "firstFrame": 92,
+          "lastFrame": 95,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p24.jpg",
+            "sha256": "67a8cadedcf277ada9a75e55c8141fa0426f91b77bda6cb7b95a7af2759a483c"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p25.png",
+          "sha256": "2a1d33c9a8a2d49d9eb9e6be7e6c4119be4e60515ecc817e5fa874ba4f64c24a",
+          "firstFrame": 96,
+          "lastFrame": 99,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p25.jpg",
+            "sha256": "58593aee5631aa29e363547107d4a53980831e6766948e0dbea726b7f1a8c03b"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p26.png",
+          "sha256": "1f8bf5dd98efe834de1bf532e7a3271778fb131c9abbfe213063fac7f6411cfa",
+          "firstFrame": 100,
+          "lastFrame": 103,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p26.jpg",
+            "sha256": "93671322e47a1278e934522ca4f9c0111c030673f5ef8e3c419993a4e652405b"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p27.png",
+          "sha256": "c8a65052c8efb8532c62f8b40003ede9c4c374d5e0fa93c370191fd762f51102",
+          "firstFrame": 104,
+          "lastFrame": 107,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p27.jpg",
+            "sha256": "e8ecac655bb2a2e8383e2ef2473148753c56cd1b6d0a4ed3d05c9f238ad65cab"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p28.png",
+          "sha256": "8b7914f6b4bbd7ef3fafc80d22b108a20e699fb758464296a0b285b27a82af32",
+          "firstFrame": 108,
+          "lastFrame": 111,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p28.jpg",
+            "sha256": "94c5ec25986821de5da72e94e37553c2b07840b207c6cbdfda2261a6cc2ac0c2"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p29.png",
+          "sha256": "3497d00eac1696b55de8309d7ebb4c3162f46bf54fc06e1ee8b3c41f9d199318",
+          "firstFrame": 112,
+          "lastFrame": 115,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p29.jpg",
+            "sha256": "52577d307f6a319b36ae0a9894fed7e39e86b2fb43539e7c69ed094f25c17b41"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p30.png",
+          "sha256": "f9b859f4154ccb3e43b6e04469e0db3aa7af99ef29bdc9b7aa5ee8b6152336bf",
+          "firstFrame": 116,
+          "lastFrame": 119,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/legs-cranks/p30.jpg",
+            "sha256": "94c45ead6046e69366a325c58baf8ef4cc784c25eb219308f034fdaea38587c5"
+          }
+        }
+      ],
+      "originalPixelsOnly": true
+    },
+    "sticker": {
+      "nativeBox": [
+        1857,
+        647,
+        3143,
+        1435
+      ],
+      "nativeFrames": 120,
+      "framesPerPage": 4,
+      "pages": [
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p01.png",
+          "sha256": "19fcb306547ed5472b4031d6808e63a97b8b4f60c34140a6962ba33ca09a610e",
+          "firstFrame": 0,
+          "lastFrame": 3,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p01.jpg",
+            "sha256": "1e40ba3ff2c083c1df53d61e71bcf8a5939d65d180aa5bfa4a2640669fe1d5f5"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p02.png",
+          "sha256": "01991060bd5565620de3f86da3f0e4af054898400736fba5fe5fe4eb919d10b5",
+          "firstFrame": 4,
+          "lastFrame": 7,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p02.jpg",
+            "sha256": "215593f68074786a3b641f93a6bc0558e5a357db4d1d2e87562060c370ee84c1"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p03.png",
+          "sha256": "b4f07c6ba2f39098c4079ba0cb648d1eaa5b4b0e101dcf5879da815948f601e8",
+          "firstFrame": 8,
+          "lastFrame": 11,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p03.jpg",
+            "sha256": "1abe03d6fe00f137ce783bfbe0de53a43dd2b972b8cf26a0f30534f1ecfad174"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p04.png",
+          "sha256": "7f7642a6d02ba1feda08764f848d9fab8e0609469c0e2136711ade7bb2df1633",
+          "firstFrame": 12,
+          "lastFrame": 15,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p04.jpg",
+            "sha256": "d33bb3ee3886cae96bd2a6af28c07c571eb6e1cddb8941193964faa27356b2b3"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p05.png",
+          "sha256": "6f28c94b8575a0beb7ab8be591c6b6332122cb1f75a40353a994724028a552de",
+          "firstFrame": 16,
+          "lastFrame": 19,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p05.jpg",
+            "sha256": "78c10832ad0ba86e5fa99e2f09c7c7c91c09ef496aea0b99ecbb38d6a8f5562e"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p06.png",
+          "sha256": "e8e944cf3ca367f964dd28d2b0df7c733864f8a25803f1f9edff91ced43eb912",
+          "firstFrame": 20,
+          "lastFrame": 23,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p06.jpg",
+            "sha256": "235b256ff9479ba5c7275bf75c6d3856ecdba81c1b5082b42374326c82a91462"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p07.png",
+          "sha256": "618ba2cd75b6754cea5e3355133691bff8144c285929e2929972013d5cc5ccb1",
+          "firstFrame": 24,
+          "lastFrame": 27,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p07.jpg",
+            "sha256": "9a80fdcde4e97fcd4ee46fd4e11b23c2eca27866df2fcecbba1ff7f683a6f13e"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p08.png",
+          "sha256": "f0951ab0ffa920e912360919c4415cd053776513156baaeacefec30d202a4462",
+          "firstFrame": 28,
+          "lastFrame": 31,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p08.jpg",
+            "sha256": "aea57a2596bef69532ce7cd2fd4b21ae61d44be84bcb145ae23bc267afe54d12"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p09.png",
+          "sha256": "c652854b7b6e8fd5f4ef605d3dab093f82b8d8a06c8d67c88a383f7631bf135f",
+          "firstFrame": 32,
+          "lastFrame": 35,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p09.jpg",
+            "sha256": "a464306b2cb6d9ca93372b8e808ded01dd60c13ea8dbe778db4b40e97a5e2508"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p10.png",
+          "sha256": "1f2fdbb319cf627726a662044aad85c1b3fb70d6c87552ec0c0aa90fd0f9f12b",
+          "firstFrame": 36,
+          "lastFrame": 39,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p10.jpg",
+            "sha256": "e37c58debef327ed5c718cf19919daa473643d9e7f00c2d9330174734481ebef"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p11.png",
+          "sha256": "5fbe52037730dbcf92b29da0aa89fca117f4cdf3e4841e5da562ee8164394721",
+          "firstFrame": 40,
+          "lastFrame": 43,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p11.jpg",
+            "sha256": "77d340e3311af6149ec71aef18d51686da3ab9fdbd79b60fe7c9191b096cc0e1"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p12.png",
+          "sha256": "164f627e2b12b8901e1a116192d56fb99dda570aca9285e0e7f6ccdc7e3207a4",
+          "firstFrame": 44,
+          "lastFrame": 47,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p12.jpg",
+            "sha256": "415cd6b7afa431128225d2225054c79c818eed0dce469592cb46183aeb303062"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p13.png",
+          "sha256": "334bbbd5bfba29de24e10be950ec11dc54442dc5365ae95c400ce5c0da9ca291",
+          "firstFrame": 48,
+          "lastFrame": 51,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p13.jpg",
+            "sha256": "2c939229607f0914f0766e4567864e4af6937c6a498b5ac182c3e0d047a7b11f"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p14.png",
+          "sha256": "2e7f23b06fb64d16f2275a9998f0d2bb12179c9bc13428c1ee8c5af50f2fe118",
+          "firstFrame": 52,
+          "lastFrame": 55,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p14.jpg",
+            "sha256": "93e792b95ead5a039a71a1c3dca3b69e8fb5812941bf05397e8f8326397b324a"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p15.png",
+          "sha256": "fcfb99a5e083ec7add1418358f7fac31a64e134a79cf87121fd3292a1fc003b5",
+          "firstFrame": 56,
+          "lastFrame": 59,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p15.jpg",
+            "sha256": "8b963cd9d9f2eea6e6f05e98ae90645b7d808d622ec669bf94e420db826ee524"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p16.png",
+          "sha256": "8f90edcea2bd031b6bd503c46b49f33f7d8349dbd9e0523a3b8074266d638c5a",
+          "firstFrame": 60,
+          "lastFrame": 63,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p16.jpg",
+            "sha256": "6d46e9c7609e4844a910740130f212b8c4521ac84998d807022a1a656f937bd5"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p17.png",
+          "sha256": "700a5fe38b90f6059a70a612a9b66f4e8a0d8eb93f4a76b12aaab3626415467a",
+          "firstFrame": 64,
+          "lastFrame": 67,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p17.jpg",
+            "sha256": "1a425ed7f0d7442c0eae75990cdbf4c86f844cfd003d8227a3526e8a7e5f2304"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p18.png",
+          "sha256": "c8233c5b699177d0aea944f19471c971ebc2c37352ac442696a26dadab9c025f",
+          "firstFrame": 68,
+          "lastFrame": 71,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p18.jpg",
+            "sha256": "082b03b2eee446150235f77e79c5bb9241c39bd13a42638b3eb9c1ffa40cce55"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p19.png",
+          "sha256": "43a5736570aa9ddff73f52d0ee9587dc889877cd93e7394eb6214c6ad68173f4",
+          "firstFrame": 72,
+          "lastFrame": 75,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p19.jpg",
+            "sha256": "9b49f4fc9c68b0e73b03c8d57451d9c147ad31a0be036ff161876dbb345b9a9f"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p20.png",
+          "sha256": "2483edaefe2e41b05279a1c80a71c89576fb37cd80839e599d7c29d4defc3a77",
+          "firstFrame": 76,
+          "lastFrame": 79,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p20.jpg",
+            "sha256": "9f5ab82703aa3e351ea657a3c35999fcfe1510ec9d5b64a8693ff0e0efd67175"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p21.png",
+          "sha256": "e63e8d88e6185d17d86a1698432873719f68afda78117f86bebbbe16bcc577f0",
+          "firstFrame": 80,
+          "lastFrame": 83,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p21.jpg",
+            "sha256": "4f448767c6d1a3280d880530a31637c37a25487bed89e1fc15af173946164e6f"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p22.png",
+          "sha256": "dc4cf81518a6fc167e6afb0afa79e191b9be77a4ccfe515878af61d719fdbcde",
+          "firstFrame": 84,
+          "lastFrame": 87,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p22.jpg",
+            "sha256": "73313c043c6a518c92e349b6b375c69b690fba5d2dd2107b1461b19cba52ea23"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p23.png",
+          "sha256": "9996291d9cc49d61ddfb0ae9ed274c6652bed0b4ed91efdf96ec02b60d39c723",
+          "firstFrame": 88,
+          "lastFrame": 91,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p23.jpg",
+            "sha256": "4f1cb1064a6d16b0df20f9cd27438871c1b6a088626fddae12a3f79470ff2a4b"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p24.png",
+          "sha256": "a580bac283e9d89e5d12aeedabb90d2cd54d73c1097e4d625abaec09052cf320",
+          "firstFrame": 92,
+          "lastFrame": 95,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p24.jpg",
+            "sha256": "f80f53d7337790f41e6ffff7f83b71911b965f4fee658fa0dfc8db0f417584a3"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p25.png",
+          "sha256": "ab67700afaa1c1e9c5d120d5f7adf06688098a890d3c30475809b993088e0e7a",
+          "firstFrame": 96,
+          "lastFrame": 99,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p25.jpg",
+            "sha256": "1ab8a1af7dcccf2732f9757a90906a3432e1c58cc906571034b1ace071efd4dc"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p26.png",
+          "sha256": "97d244f2438b5c87ad769152a5ab0fc6c4074f9b4eee52be77b375abc8bc8b8a",
+          "firstFrame": 100,
+          "lastFrame": 103,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p26.jpg",
+            "sha256": "c99072b0f360ddc6a82700a21c4e3ce3dfce6b9351ec9eb102f42f4783ebf829"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p27.png",
+          "sha256": "ca9d66cde2004d3349e3b5f9db93047155df2a95eabbf5a8ac93bdfd29bd9700",
+          "firstFrame": 104,
+          "lastFrame": 107,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p27.jpg",
+            "sha256": "2694550c278d1c2085fc24a398c6c51b98022f96f5e5f8931d48f31db4ea1ceb"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p28.png",
+          "sha256": "09d05808bbea75bf79e42bd80f08d5600eae6ac9047cc66b51cc8735c0be363a",
+          "firstFrame": 108,
+          "lastFrame": 111,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p28.jpg",
+            "sha256": "94db7779678388a72135a02db7935c8e19ed751427e6d5a27e634a9213ccff33"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p29.png",
+          "sha256": "29956ad20f2c2d8f40ef7c356e2bd65ff037ee1248f75dcea4a391325d099750",
+          "firstFrame": 112,
+          "lastFrame": 115,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p29.jpg",
+            "sha256": "8f953cbea7e3ca69c4eb801feac10ef82e944c290910ac97795a1bc50263d816"
+          }
+        },
+        {
+          "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p30.png",
+          "sha256": "0f38ea42d20ce4cc1478e1a76c1a51387ded04210776591c011391e211fdd06f",
+          "firstFrame": 116,
+          "lastFrame": 119,
+          "items": 4,
+          "viewingCopy": {
+            "path": "assets/generated/production-v12-S05-native-4k-001/review/cycle-native-r1/sticker/p30.jpg",
+            "sha256": "0587c39ed39a1a1f55b122f12cf2f34fba83447a93c4438fa784b27bba18bfea"
+          }
+        }
+      ],
+      "originalPixelsOnly": true
+    }
+  },
+  "semanticAcceptance": false,
+  "humanContinuousPlayback": false,
+  "scope": "Extraction only. All120 whole/mechanical/print frames and all detector crops still require actual viewing. Fixed regions must be checked against the actual camera motion; clipped anatomy requires a new wider variant."
+}
