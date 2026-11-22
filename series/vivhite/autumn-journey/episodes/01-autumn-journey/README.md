@@ -1,5 +1,9 @@
 # 第一期：秋日旅程
 
+**2026-11-22已结项，用户表示满意。** 最终完整影片为[v13原生4K](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v13-4k-20261121)，3840×2160、30fps、48镜、205秒／6150帧；原始768P沿用[v12交付](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v12-768p-20261119)，两种比例封面见[封面目录](assets/generated/bilibili-covers-20261121-v1/README.md)。本机4K影片在 `D:/workspace/vivhite-analysis-output/vivhite/autumn-journey/production-v13-native-4k-full-001/film.mp4`。
+
+[结项复盘](../../../../../docs/autumn-journey-retrospective.md)记录创作、动作与机械结构、印花保真及光照、独立渲染、时间估算和交付的经验教训；[结项记录](production/project-closeout-20261122.json)保存当前项目状态。下文“尚未发布”“待出片”“待审”等为当时的过程记录，历史计划、审核与已发布附件保持原样，不作为自动恢复旧任务的指令。
+
 2026-11-21：14秒海边片尾已完成原生4K整段生成，336帧整景及蝴蝶原生局部实际审阅后可采用，见[S48记录](production/S48-full-sequence-source-review-v11-4k.json)。按用户要求，S20高山湖／包／玩偶另排10秒整段4K重做，普通队列末尾、独立守护，见[排队记录](production/S20-full-sequence-submission-v13.json)。旧版本全部保留；新版S20与剩余镜头仍待出片审阅，完整4K尚未发布。全片仍固定205秒／6150帧。
 
 新[v12车座修订768P](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v12-768p-20261119)已发布，见[实际交付清单](delivery-plan-v12-768p.json)及[上传与完整远程下载验证](production/release-v12-768p.json)：只替换00:14—00:19的骑行源片，车座、座轨、固定夹与座管支撑明确；其他47镜源文件、全部时长、音乐、片名与14秒片尾保持。全片1344×768、30fps、205秒／6150帧，已完整解码并检查编码画面。旧768P、前24镜4K审核Release和所有候选均保留；旧S05的通过结论已撤回。[对应新4K单镜](production/S05-native4k-submission-v12.json)已用本轮实际采用的新源片进入普通队列，由独立Windows任务看护，原48镜队列继续运行。详细过程见[制作记录](production/production-v12-S05-saddle.md)。

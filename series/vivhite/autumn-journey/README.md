@@ -1,6 +1,8 @@
 # 白绮／秋日旅程
 
-当前完整4K：[v13原生4K完整审片版](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v13-4k-20261121)，3840×2160、30fps、205秒／6150帧。六个附件全部完整回下载并核验指纹；含新骑行车座、单次完整10秒高山湖、14秒海岸片尾和35段印花光照修订，全部镜长保持。检查范围与实际实现差异见[制作记录](episodes/01-autumn-journey/production/production-v13-native-4k.md)及[发布凭据](episodes/01-autumn-journey/production/release-v13-native-4k.json)。用户审美仍待审；下文早期排队与制作状态作为历史记录保留。
+**2026-11-22已结项：用户明确表示满意。** 最终完整4K为[v13原生4K版](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v13-4k-20261121)，3840×2160、30fps、205秒／6150帧。六个附件全部完整回下载并核验指纹；含新骑行车座、单次完整10秒高山湖、14秒海岸片尾和35段印花光照修订，全部镜长保持。检查范围与实际实现差异见[制作记录](episodes/01-autumn-journey/production/production-v13-native-4k.md)及[发布凭据](episodes/01-autumn-journey/production/release-v13-native-4k.json)。[结项复盘](../../../docs/autumn-journey-retrospective.md)汇总经验教训、后续流程和代码入口；[结项记录](episodes/01-autumn-journey/production/project-closeout-20261122.json)保存最终交付与用户验收状态。下文排队、未完成与待审状态均为历史记录。
+
+两张bilibili封面已保存并入库：[16:9与4:3封面及完整提示词](episodes/01-autumn-journey/assets/generated/bilibili-covers-20261121-v1/README.md)。
 
 本目录是内容子项目，沿用“系列／课题／期”的组织方式。
 

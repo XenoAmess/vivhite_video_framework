@@ -20,7 +20,9 @@
 
 视频创作材料按[系列 → 课题 → 多期](series/README.md)组织，当前课题为[数学教育系列 · 逆序数](series/math-education/inversion-count/README.md)：第一期保留已交付内容，第二期证明完整矩形棋盘结论，第三期从头证明 Wilson 一般图定理。案例材料已直接移动到各期目录，原模块下不保留兼容入口。
 
-新增内容子项目[白绮／秋日旅程](series/vivhite/autumn-journey/README.md)：v3 成片为无对白的多地点自由旅行蒙太奇，48 镜、202 秒、每镜 2–10 秒；全员女性，服装贴近白绮，真人不露脸，不允许新增原图没有的无关人员，配合贴纸、玩偶、周边与意象。按用户反馈重做 42 镜为更接近实拍的普通世界，全部生成与检查图片入库。源片 832×480／24fps，最终上采样为 1080p30；实际成片、修订与审核覆盖见[制作记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v3.md)。
+内容子项目[白绮／秋日旅程](series/vivhite/autumn-journey/README.md)已于 **2026-11-22结项，用户表示满意**。最终交付为原始768P v12、原生4K v13及16:9／4:3两张bilibili封面，影片均为205秒／6150帧。经验教训、可复用流程及代码索引见[结项复盘](docs/autumn-journey-retrospective.md)，最新状态见[结项记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/project-closeout-20261122.json)。下文各版本的排队、未完成及待审描述保留为历史，不再作为当前任务。
+
+早期v3成片为无对白的多地点自由旅行蒙太奇，48镜、202秒、每镜2–10秒；全员女性，服装贴近白绮，真人不露脸，不允许新增原图没有的无关人员，配合贴纸、玩偶、周边与意象。按用户反馈重做42镜为更接近实拍的普通世界，全部生成与检查图片入库。源片832×480／24fps，最终上采样为1080p30；实际成片、修订与审核覆盖见[制作记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v3.md)。
 
 该片新增[片尾修订 v4](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v4.md)：蓝蝶八倍慢放，片尾仅显示“白绮|秋日旅程”“献给最可爱的你”，移除画面制作署名；完整影片和单独片尾另存，v3 完整保留。
 
@@ -34,7 +36,7 @@
 
 当前768P交付为[v12骑行车座修订](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v12-S05-saddle.md)：重做00:14—00:19骑行镜头，检查黑色车座、座轨、夹具、座管与坐姿支撑，替换S05后仍为1344×768、30fps、205秒／6150帧，其余47镜、时长、音乐和字幕保持。[v12 Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v12-768p-20261119)中的完整影片及四份附件已完整回下载并核验指纹。对应原生4K使用实际采用的新768P源片进入普通队列，旧无车座4K结论已撤回，禁止回填；完整4K仍在制作。
 
-当前完整4K交付为[v13原生4K审片版](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v13-4k-20261121)：3840×2160、30fps、205秒／6150帧，全部48段源片完成，含有车座新S05、单序列10秒S20和单序列14秒片尾。35段／38处印花完成场景光照匹配；6150帧成片已完整解码、逐帧图册复核并核对音轨和字幕，六个Release附件实际完整回下载、核验摘要。原768P、旧4K审核版及全部失败和中间材料保留。检查范围及限制见[完整制作记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v13-native-4k.md)，仍待用户审美验收。
+最终完整4K交付为[v13原生4K版](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v13-4k-20261121)：3840×2160、30fps、205秒／6150帧，全部48段源片完成，含有车座新S05、单序列10秒S20和单序列14秒片尾。35段／38处印花完成场景光照匹配；6150帧成片已完整解码、逐帧图册复核并核对音轨和字幕，六个Release附件实际完整回下载、核验摘要。原768P、旧4K审核版及全部失败和中间材料保留。检查范围及限制见[完整制作记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v13-native-4k.md)；2026-11-22用户已在项目层面确认满意并结项，不追溯扩大此前检查范围。
 
 历史[v10左手反手拉帘修订](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v10-left-hand-768p.md)仅重做00:00–00:04首镜，纠正左臂、腕部与左手的对应关系，保留手背朝镜头的自然反手捏帘姿势。两张翻掌候选被用户拒收，不进入影片。其他47镜源片、全部48镜时长／起点、音乐、标题和原生14秒蝶翼保持v9；成片1344×768、30fps、205秒／6150帧。[v10 Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v10-768p-20261118)、[交付计划](series/vivhite/autumn-journey/episodes/01-autumn-journey/delivery-plan-v10-768p.json)及[全部首帧候选和检查图片](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/image-inventory-v10-768p.json)继续保留。
 

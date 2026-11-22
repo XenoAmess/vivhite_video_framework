@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "vivhite-project-closeout-1",
+  "episode": "vivhite/autumn-journey/01-autumn-journey",
+  "title": "白绮／秋日旅程",
+  "closedOn": "2026-11-22",
+  "recordedAt": "2026-11-22T22:37:01.087858+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": "closed-user-accepted",
+  "acceptance": {
+    "method": "explicit-user-project-closeout",
+    "userAestheticAcceptance": "accepted-at-project-level",
+    "basis": "The user stated satisfaction with the completed project and requested a retrospective and Git publication.",
+    "scope": "Project-level acceptance of the delivered work; no new per-frame human playback or listening claims are inferred."
+  },
+  "deliveredSourceCommit": "3f8935ec2dca1502ec0fc1d29bc21c665b28fcc6",
+  "films": [
+    {
+      "id": "v12-768p",
+      "deliveryPlan": "delivery-plan-v12-768p.json",
+      "releaseRecord": "production/release-v12-768p.json",
+      "releaseUrl": "https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v12-768p-20261119",
+      "assetName": "vivhite-autumn-journey-v12-768p-saddle-fix.mp4",
+      "downloadUrl": "https://github.com/XenoAmess/vivhite_video_framework/releases/download/autumn-journey-v12-768p-20261119/vivhite-autumn-journey-v12-768p-saddle-fix.mp4",
+      "film": {
+        "relativeToRepositoryParent": "vivhite-analysis-output/vivhite/autumn-journey/production-v12-saddle-768p-full-001/film.mp4",
+        "sha256": "95e2dabfceca23bd8187fd758f2b93857e875a8eee472ac3a5cd2ab34e4f6cc6",
+        "bytes": 144053032,
+        "seconds": 205,
+        "frames": 6150,
+        "width": 1344,
+        "height": 768,
+        "fps": 30,
+        "nativeSource": "1344x768 at24fps"
+      },
+      "localSha256RecheckedAtCloseout": true
+    },
+    {
+      "id": "v13-native-4k",
+      "deliveryPlan": "delivery-plan-v13-native-4k.json",
+      "releaseRecord": "production/release-v13-native-4k.json",
+      "releaseUrl": "https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v13-4k-20261121",
+      "assetName": "vivhite-autumn-journey-v13-native-4k-full-205s.mp4",
+      "downloadUrl": "https://github.com/XenoAmess/vivhite_video_framework/releases/download/autumn-journey-v13-4k-20261121/vivhite-autumn-journey-v13-native-4k-full-205s.mp4",
+      "film": {
+        "relativeToRepositoryParent": "vivhite-analysis-output/vivhite/autumn-journey/production-v13-native-4k-full-001/film.mp4",
+        "sha256": "4a2f833105a027becbc4a1f2553de801d4a7ec994d1e837c6eaadddcf77a8819",
+        "bytes": 1095359437,
+        "seconds": 205,
+        "frames": 6150,
+        "width": 3840,
+        "height": 2160,
+        "fps": 30,
+        "nativeSource": "3840x2160 at24fps; native model regeneration, not final-film interpolation"
+      },
+      "localSha256RecheckedAtCloseout": true
+    }
+  ],
+  "covers": [
+    {
+      "id": "cover-16x9",
+      "aspectRatio": "16:9",
+      "png": {
+        "path": "assets/generated/bilibili-covers-20261121-v1/cover-16x9.png",
+        "sha256": "c73d7a96445819a7e17287b4406f57372a274389d35332be7c75326d90be30d5",
+        "bytes": 2551775
+      },
+      "jpg": {
+        "path": "assets/generated/bilibili-covers-20261121-v1/cover-16x9.jpg",
+        "sha256": "7fa74deba5e73a206a50471db98822bb334452b703b4e698df8ac28e44498ce8",
+        "bytes": 465751
+      },
+      "width": 1664,
+      "height": 936
+    },
+    {
+      "id": "cover-4x3",
+      "aspectRatio": "4:3",
+      "png": {
+        "path": "assets/generated/bilibili-covers-20261121-v1/cover-4x3.png",
+        "sha256": "a077f6ac4790159bc94b7e0a784001c518028ce573c6aac70c02c9f4dd050083",
+        "bytes": 2894008
+      },
+      "jpg": {
+        "path": "assets/generated/bilibili-covers-20261121-v1/cover-4x3.jpg",
+        "sha256": "42e49bf971adb0e9d8fd57344c981d013df5acd7d843647bb6215412e82ebc54",
+        "bytes": 525697
+      },
+      "width": 1448,
+      "height": 1086
+    }
+  ],
+  "historicalEvidence": {
+    "generatedShots": 48,
+    "selectedSourceReviewedShots": 48,
+    "finalDecodedFrames": 6150,
+    "finalAssistantContactReviewedFrames": 6150,
+    "printLightingShots": 35,
+    "printLightingRegions": 38,
+    "native4kReleaseAssets": 6,
+    "native4kCompleteRemoteDownloadsShaVerified": 6,
+    "machineAndAssistantEvidenceSource": "production/native4k-completion-20261121.json",
+    "humanFullPlaybackRecorded": false,
+    "humanListeningRecorded": false,
+    "limitationsRecord": "production/production-v13-native-4k.md"
+  },
+  "evidenceBindings": [
+    {
+      "path": "delivery-plan-v12-768p.json",
+      "sha256": "edb7bb75643e5a2d017634d230752f5d18d9a3a7cfab9d4f7a37130074a80d2f"
+    },
+    {
+      "path": "delivery-plan-v13-native-4k.json",
+      "sha256": "344d2078dfc7814974907e4fc3b05564dfee3a7b976ab525b96133cf5e9cafc5"
+    },
+    {
+      "path": "production-plan-v13-native-4k.json",
+      "sha256": "f85a01f07afb0f9b538c035bdd7e2639987767c9fdda1d1679642ba07dd2575a"
+    },
+    {
+      "path": "production-plan-v13-native-4k-final.json",
+      "sha256": "1306853fb94f3619b3ac80c479b76df6a3bfe5dbbf4bf3f120bb799ebebf695d"
+    },
+    {
+      "path": "production/release-v12-768p.json",
+      "sha256": "a8ecf7aabcf12165f5eec7e6ef2b43d520265c13d05ce9e8e08a543d382b023a"
+    },
+    {
+      "path": "production/release-v13-native-4k.json",
+      "sha256": "b4e2b56a7d37c6fce865c4d377c5a0608a1214e45d8ccd495287f3d9a1fbf6f9"
+    },
+    {
+      "path": "production/final-review-v13-native-4k.json",
+      "sha256": "3541f4be377307db81a39cef7797625eba78c4cc84ff62ce86c20fd25dca1483"
+    },
+    {
+      "path": "production/native4k-completion-20261121.json",
+      "sha256": "4755692a6f1dc128c39b0ac0faf561d3b3c9ffb2928850ad853a5c5a0edc5c24"
+    },
+    {
+      "path": "assets/generated/bilibili-covers-20261121-v1/manifest.json",
+      "sha256": "c3d7de33b5b31ed618f7fbe71f21bd9918a0e9319804a4af77ad995f845dad7c"
+    }
+  ],
+  "retrospective": {
+    "relativeToRepository": "docs/autumn-journey-retrospective.md",
+    "sha256": "a39ce83b4b9ea370e1dc27492333db0e17a71340a4f5e1128a1f03d34d5b1fc1"
+  },
+  "archivePolicy": {
+    "oldReleasesAndMediaPreserved": true,
+    "existingReleaseAssetsUnchanged": true,
+    "historicalPendingSnapshotsPreserved": true,
+    "old2kRecordsPreserved": true,
+    "resume2kAutomatically": false,
+    "newRenderTasksSubmittedDuringCloseout": false,
+    "privateReviewDetailsRemainPrivate": true,
+    "largeMediaRemainOutsideGitAndInReleases": true
+  },
+  "closeoutValidation": {
+    "existingLocalFilmHashesRechecked": true,
+    "selectedCoverHashesRechecked": true,
+    "locked205SecondTimingReconciled": true,
+    "newRenderOrFullDecodePerformed": false,
+    "newRemoteAssetDownloadPerformed": false,
+    "priorReleaseDownloadEvidenceReused": true
+  }
+}
