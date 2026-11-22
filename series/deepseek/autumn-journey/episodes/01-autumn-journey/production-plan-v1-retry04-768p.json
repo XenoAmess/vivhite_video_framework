@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 1,
+  "stage": "draft",
+  "model": "fasth3-omni-bf16",
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "fps": 30,
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 300,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "decoderLayers": 36,
+  "numInferenceSteps": 8,
+  "shotDurationExceptions": {},
+  "shots": [
+    {
+      "id": "S16",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "finalFilmStartFrame": 1740,
+      "seed": 2026112316,
+      "mode": "H",
+      "action": "Below-waist view: the same two shoes make two small deliberate alternating uphill steps on the EXISTING stairs, soles land on their real treads and weight shifts naturally. Navy skirt and printed bag move with body, no freeze, detached foot or new step geometry.",
+      "generationAction": "Below-waist view: the same two shoes make two small deliberate alternating uphill steps on the EXISTING stairs, soles land on their real treads and weight shifts naturally. Navy skirt and printed bag move with body, no freeze, detached foot or new step geometry.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "A single continuous realistic low shot matching <Picture 1>. Only the EXISTING WOMAN FROM WAIST DOWN on the original old stone steps is visible. Starting immediately she climbs upward normally, alternately lifting and firmly planting the two original stockinged legs and black shoes on successive steps. Keep the same navy skirt with white apron and one cloth tote at her side. Framing follows only hips, knees, ankles and shoes, with head and chin permanently beyond the top edge. The small existing graphic on the tote is FLAT PRINTED INK, attached to cloth and unchanged. All empty air and steps stay empty: NO character illustration over the video, no large portrait, no ghost, no body overlay, no extra person, no extra leg, no second hand. Ordinary continuous natural motion, no pose freeze, scene cut, wipe or transition. No words, speech or singing.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S16-v2.png"
+      ],
+      "referenceSha256": [
+        "0a81a4592a431dce2dfb24ab93f3132512ab3a8dfd996a83106d00a79d609692"
+      ]
+    },
+    {
+      "id": "S23",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 150,
+      "finalFilmStartFrame": 2760,
+      "seed": 2026112323,
+      "mode": "A",
+      "action": "Same illustrated whale-girl FROM BEHIND on mountain path, stable stance. Blue long hair and navy skirt move softly with wind, one attached tail remains coherent. No head turn or human face; distant ridges and sky steady.",
+      "generationAction": "Same illustrated whale-girl FROM BEHIND on mountain path, stable stance. Blue long hair and navy skirt move softly with wind, one attached tail remains coherent. No head turn or human face; distant ridges and sky steady.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "One uninterrupted locked rear view matching <Picture 1>. The solitary original illustrated female stands still facing AWAY toward the ordinary mountain valley for all five seconds. Her shoulders and covered back of head maintain their exact rear-facing orientation; she never rotates or turns toward camera. NO face, eyes, cheek, chin, mouth or profile ever becomes visible. Two original arms hang calmly at her sides. Only existing hair tips and navy-white skirt hem flutter very slightly in soft wind, the one original attached tail stays behind her. Thin grass and distant cloud shadows move slowly under overcast light. Same empty hiking path and fixed horizon. No extra person, added portrait, new head, camera orbit, scene reset, cuts or transition. Silent, no voice or text.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S23-v1.png"
+      ],
+      "referenceSha256": [
+        "0b046ecdc3ae485dbc9543f3a47d0b90514614d277eaa8ff7d147c37ea7db185"
+      ]
+    }
+  ],
+  "titleOverlays": [],
+  "closingCredit": "",
+  "scope": "Generation batch only; finalFilmStartFrame retains the original205second positions. No finished-film approval.",
+  "director": "director-v1.md",
+  "finalTargetFrames": 6150,
+  "finalTargetSeconds": 205
+}

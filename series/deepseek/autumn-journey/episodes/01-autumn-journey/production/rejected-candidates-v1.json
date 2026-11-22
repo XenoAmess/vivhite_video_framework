@@ -1,6 +1,6 @@
 {
   "schemaVersion": "deepseek-rejected-candidates-1",
-  "at": "2026-11-22T19:43:47.100135+00:00",
+  "at": "2026-11-22T21:33:35.483079+00:00",
   "shots": [
     {
       "id": "S44",
@@ -70,6 +70,132 @@
         "items": 32
       },
       "scope": "First32 actual corrected thumbnails and native first frame viewed; sufficient blink rejection, no claim of reviewing the other88 frames of this rejected candidate."
+    },
+    {
+      "id": "S10",
+      "candidateRun": "production-v1-batch02-768p-001",
+      "sourceSha256": "124556b8568064f109b1d79ef6d7e896697de8b5dcbb629dbb0e5726ac7ff7f8",
+      "jobId": "video_gen_039ce0c5e5ae43c08215b594464f0391",
+      "decision": "rejected-unchanged",
+      "reason": "Turns rear-view illustrated figure to front-facing visible face, violating fixed rear-only framing. First64 actual source thumbnails viewed; unchanged source rejected.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/viewing-copies/batch02/S10-124556b856-all-frames-01.png",
+        "sha256": "af82c49f8fb35b3ceb6a76247e8847ea680a477ed987cf7e24e2531b3b2294f2",
+        "items": 32
+      },
+      "scope": "Actual viewing described in reason; rejection does not claim complete raw-source review or acceptance. All candidates retained."
+    },
+    {
+      "id": "S12",
+      "candidateRun": "production-v1-batch02-768p-001",
+      "sourceSha256": "6102acb20331d1442bdbf8983cfe54df5e6cd49f8acc16da21508f4837fb2873",
+      "jobId": "video_gen_b1d45e66850c4a1988bed135ef450c95",
+      "decision": "rejected-unchanged",
+      "reason": "Flat boat-side printed eyes close aroundframes57-64. All120 native print details and temporal samples viewed; independent stable-texture candidate reviewed separately.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/viewing-copies/batch02-native-details/S12-6102acb203-native-details-01.png",
+        "sha256": "f8f24e9a6607c192532d7a9f124a6e59c4184a410264352ad6f4f652e30ec7b7",
+        "items": 120
+      },
+      "scope": "Actual viewing described in reason; rejection does not claim complete raw-source review or acceptance. All candidates retained."
+    },
+    {
+      "id": "S13",
+      "candidateRun": "production-v1-batch02-768p-001",
+      "sourceSha256": "1c26097292a1030d6826b8bafbd0d00e94f88c8e9a8bf8e9d8f3c6fcb319cf5d",
+      "jobId": "video_gen_ae4df97320a940599db83794c663ca9e",
+      "decision": "rejected-unchanged",
+      "reason": "Flat acrylic charm printed eyes close aroundframes53-59. All120 native detail crops and temporal samples viewed; separate correction used.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/viewing-copies/batch02-native-details/S13-1c26097292-native-details-01.png",
+        "sha256": "f776ecd3b1e625237f400b2848edb1bf8cd25f6732644a38776087711b5600e3",
+        "items": 120
+      },
+      "scope": "Actual viewing described in reason; rejection does not claim complete raw-source review or acceptance. All candidates retained."
+    },
+    {
+      "id": "S14",
+      "candidateRun": "production-v1-batch02-768p-001",
+      "sourceSha256": "6802cbf649cee292a8bf05332225b894a6845fbf990087277851114adffdc8bd",
+      "jobId": "video_gen_87ea97f1e0714b8799e634224d6d89d3",
+      "decision": "rejected-unchanged",
+      "reason": "Adds female torso/arms behind bag absent from object-only input. Temporal samples viewed; separate constant crop and print correction reviewed separately.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch02-768p/S14-6802cbf649-temporal.png",
+        "sha256": "3863cbc4c5d1d7d402aa83f6ae1d45c8e64b7d4b8f9a5346114951d3e820f542",
+        "items": 11
+      },
+      "scope": "Actual viewing described in reason; rejection does not claim complete raw-source review or acceptance. All candidates retained."
+    },
+    {
+      "id": "S16",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "ed1a561643a173330e77247e285af664918f4c6d00c4e74f1e2d5ae95c3ef46e",
+      "jobId": "video_gen_0caf1c4c82c6408c8b3614a245079e91",
+      "decision": "rejected-unchanged",
+      "reason": "Adds large frontal cartoon avatar/ghost overlay over original cropped woman and steps after2.5seconds. Temporal samples sufficient to reject; separate physical-action retry prepared.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S16-ed1a561643-temporal.png",
+        "sha256": "90ab0435335e5b0543524e1739bd7ae1c7736e84e20b5420b719a02859397934",
+        "items": 11
+      },
+      "scope": "Actual viewing described in reason; rejection does not claim complete raw-source review or acceptance. All candidates retained."
+    },
+    {
+      "id": "S17",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "4f2acfd9683d5127a2be86045561fd9e0ffef31b1f9c9f3af4078cf768ff133e",
+      "jobId": "video_gen_d99d5844cca54ef9a9b8a018790d2b7a",
+      "decision": "rejected-unchanged",
+      "reason": "Printed standee eyes close twice aroundframes18-24 and66-73. All120 native head details viewed, no claim of complete raw scene review; separate inert-print candidate required.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/viewing-copies/batch03-native-details/S17-4f2acfd968-native-details-01.png",
+        "sha256": "7b0a7aa5a3c05027908a11ffcec7f45389e39b62602a8e337f2568ba8af696f2",
+        "items": 120
+      },
+      "scope": "Actual viewing described in reason; rejection does not claim complete raw-source review or acceptance. All candidates retained."
+    },
+    {
+      "id": "S18",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "be28a56a9ce8d574efbe3c1a0884b1e26d54e0be3133b44f4fca1a47a8f02cde",
+      "jobId": "video_gen_019bc5e5ed4a4f89af3941533f1d3714",
+      "decision": "rejected-unchanged",
+      "reason": "Adds two large frontal cartoon women absent from exact empty grassland and tiny tail-keychain input. Temporal samples viewed; separate object-only retry queued.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S18-be28a56a9c-temporal.png",
+        "sha256": "892306afb7752aa9a0565577fbf7f2828b972b20a88b0c5f1734fa55e2c13158",
+        "items": 11
+      },
+      "scope": "Actual viewing described in reason; rejection does not claim complete raw-source review or acceptance. All candidates retained."
+    },
+    {
+      "id": "S19",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "e85c278aeb5a1663f82c960a03554454d149f12554224fc71b282d0e36a7daa0",
+      "jobId": "video_gen_ef67578feadb449185a56a850617eebc",
+      "decision": "rejected-unchanged",
+      "reason": "Flat pouch print produces eyelid closure/wink aroundframes82-90. All120 actual native print details and temporal samples viewed; separate inert-print candidate required.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/viewing-copies/batch03-native-details/S19-e85c278aeb-native-details-01.png",
+        "sha256": "9726d8263e6b3bf0afe1c9cafdeb25062523cbef0c606ec175b9f63076e70c83",
+        "items": 120
+      },
+      "scope": "Actual viewing described in reason; rejection does not claim complete raw-source review or acceptance. All candidates retained."
+    },
+    {
+      "id": "S23",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "e250ab769a73d1db12814e246dc0d399e71428cb1c3bed649a5535102c7992a4",
+      "jobId": "video_gen_e595ff1e0f4e4adcb99a4330fb2890a1",
+      "decision": "rejected-unchanged",
+      "reason": "Rear-view figure rotates its head to face camera, violating back-only shot. Temporal samples sufficient to reject; separate rear-locked retry prepared.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S23-e250ab769a-temporal.png",
+        "sha256": "9480e1ebf5c92287d10fa530ed89af1e3a127cd17cc8dcd67bfaebf0f6d141f9",
+        "items": 11
+      },
+      "scope": "Actual viewing described in reason; rejection does not claim complete raw-source review or acceptance. All candidates retained."
     }
   ],
   "S48InitialRejection": "S48-v1-768p-rejected.json",

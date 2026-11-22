@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 1,
+  "stage": "draft",
+  "model": "fasth3-omni-bf16",
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "fps": 30,
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 150,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "decoderLayers": 36,
+  "numInferenceSteps": 8,
+  "shotDurationExceptions": {},
+  "shots": [
+    {
+      "id": "S10",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "finalFilmStartFrame": 1050,
+      "seed": 2026112310,
+      "mode": "A",
+      "action": "Keep illustrated whale-girl FROM BEHIND, two hands resting naturally on rail. Only long blue hair, skirt hem and tail tip move slightly in breeze, torso stable and no head turn. Ordinary water and park background remain empty; no profile or face ever revealed.",
+      "generationAction": "Keep illustrated whale-girl FROM BEHIND, two hands resting naturally on rail. Only long blue hair, skirt hem and tail tip move slightly in breeze, torso stable and no head turn. Ordinary water and park background remain empty; no profile or face ever revealed.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "One continuous locked camera shot matching <Picture 1> exactly. The solitary original illustrated female is seen exclusively FROM THE BACK for the entire five seconds. Her shoulders, torso and covered back of head maintain their original fixed orientation toward the river. She NEVER turns her head or body toward the camera. There is NO visible face, profile, eye, cheek, chin or mouth at any time. Two original hands stay gently resting on the railing. Only the bottom tips of the existing blue hair and navy-white skirt flutter faintly in a light breeze. The small existing tail remains attached behind the skirt. Natural river ripples travel gently. Same ordinary overcast empty riverside park and stable composition throughout. No additional person or reflected person, no new object, no facial animation, no camera orbit, no scene cut. Silent visual, no words, speech or singing.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S10-v1.png"
+      ],
+      "referenceSha256": [
+        "30d726aa84377ee6170e057cc3d72dfa6250959ad6c1775566bf04157bdbee2a"
+      ]
+    }
+  ],
+  "titleOverlays": [],
+  "closingCredit": "",
+  "scope": "Generation batch only; finalFilmStartFrame retains the original205second positions. No finished-film approval.",
+  "director": "director-v1.md",
+  "finalTargetFrames": 6150,
+  "finalTargetSeconds": 205
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "deepseek-prop-corrections-1",
+  "width": 1344,
+  "height": 768,
+  "fps": 24,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "nativeAudioRetained": false,
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-badge-framing-001",
+  "inputs": {
+    "S14": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch02-768p-001/sources/S14.mp4",
+      "sha256": "6802cbf649cee292a8bf05332225b894a6845fbf990087277851114adffdc8bd"
+    }
+  },
+  "shots": [
+    {
+      "id": "S14",
+      "seconds": 3,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "action": "Object-only close-up of original rain-speckled canvas bag, metal badge and hardware. Constant crop excludes the complete added woman visible above/around bag in rejected raw input. Preserve ordinary wet material and droplets on metal rim. Stabilize existing scene-shaded frame-zero printed face and two blue OPEN eyes as inert ink, tracking the badge physical motion. No new portrait, global brightening, human/anatomy patch, extra person or object, voices or text. Keep original three-second final timing.",
+      "cropFilter": "crop=784:448:400:300,scale=1344:768:flags=lanczos,setsar=1",
+      "printedPatch": { "center": [800, 390], "radius": 125 }
+    }
+  ],
+  "scope": "Raw S14 with added woman is rejected unchanged. Separate fixed-framing and inert printed-video texture candidate, with all original inputs/intermediates preserved. Complete actual corrected-frame review remains required."
+}

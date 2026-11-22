@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "deepseek-prop-corrections-1",
+  "width": 1344,
+  "height": 768,
+  "fps": 24,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "nativeAudioRetained": false,
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-print-stability02-001",
+  "inputs": {
+    "S12": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch02-768p-001/sources/S12.mp4",
+      "sha256": "6102acb20331d1442bdbf8983cfe54df5e6cd49f8acc16da21508f4837fb2873"
+    },
+    "S13": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch02-768p-001/sources/S13.mp4",
+      "sha256": "1c26097292a1030d6826b8bafbd0d00e94f88c8e9a8bf8e9d8f3c6fcb319cf5d"
+    }
+  },
+  "shots": [
+    {
+      "id": "S12",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "cropFilter": "null",
+      "printedPatch": {
+        "center": [
+          579,
+          536
+        ],
+        "radius": 60
+      },
+      "action": "Retain complete original cropped female action and ordinary location. Track original first-source printed face as inert video texture, preserving blue OPEN eyes and scene exposure; no new illustration or global brightening."
+    },
+    {
+      "id": "S13",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "cropFilter": "null",
+      "printedPatch": {
+        "center": [
+          698,
+          479
+        ],
+        "radius": 70
+      },
+      "action": "Retain complete original cropped female action and ordinary location. Track original first-source printed face as inert video texture, preserving blue OPEN eyes and scene exposure; no new illustration or global brightening."
+    }
+  ],
+  "scope": "Separate video-texture stability candidates for actually observed printed blinks; prior raw sources retained. No future output acceptance.",
+  "revision": 5
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 1,
+  "stage": "draft",
+  "model": "fasth3-omni-bf16",
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "fps": 30,
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 150,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "decoderLayers": 36,
+  "numInferenceSteps": 8,
+  "shotDurationExceptions": {},
+  "shots": [
+    {
+      "id": "S18",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "finalFilmStartFrame": 1980,
+      "seed": 2026112318,
+      "mode": "I",
+      "action": "Locked real autumn meadow. Grass and reeds move gently in one breeze. Existing cropped bag and attached blue whale-tail charm stay in place with tiny physically attached sway. No new person, butterfly, floating symbol or prop.",
+      "generationAction": "Locked real autumn meadow. Grass and reeds move gently in one breeze. Existing cropped bag and attached blue whale-tail charm stay in place with tiny physically attached sway. No new person, butterfly, floating symbol or prop.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact composition of one realistic autumn meadow shot. Wide locked tripod camera for five uninterrupted seconds. Ordinary grass and reeds bend slowly together in one light breeze. The original small BLACK BAG CORNER stays at the lower RIGHT edge, with its original tiny blue FORKED-TAIL-SHAPED ENAMEL METAL KEYCHAIN hanging from the same attached metal ring. Keep this accessory a small rigid physical silhouette of unchanged size; it sways only a few millimetres with its ring. Keep the whole LEFT and CENTRAL meadow as uninterrupted empty grassland. Preserve original ordinary daylight, depth and field horizon. The scene contains only meadow plants and that cropped inanimate bag/accessory. No person, figurine, extra graphic, animal, new object, text, camera move or cut. Quiet soft wind only, no voices or singing.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S18-v1.png"
+      ],
+      "referenceSha256": [
+        "d8d1c2a52a2214105279ee592bbbc7daca14d96fa15212ca313d9a32da5a0325"
+      ]
+    }
+  ],
+  "titleOverlays": [],
+  "closingCredit": "",
+  "scope": "Generation batch only; finalFilmStartFrame retains the original205second positions. No finished-film approval.",
+  "director": "director-v1.md",
+  "finalTargetFrames": 6150,
+  "finalTargetSeconds": 205
+}

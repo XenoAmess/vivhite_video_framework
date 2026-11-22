@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "367432b3d13eae0fab3c53054e1e706274aab60acbd476e0fb716f21eb845271",
+  "shots": [
+    {
+      "id": "S14",
+      "sourceSha256": "2763667d9c13fd7fd2c01bf86e21288bba6baf6ed229e448f85f45f9e0cbd723",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-22T20:58:19.981129+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\badge-framing\\S14-2763667d9c-all-frames-01.png",
+          "sha256": "9d408cd512fa8058a947faf657cdd8e494eb0a10912d83c819fab4af2323b97c",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\badge-framing\\S14-2763667d9c-all-frames-02.png",
+          "sha256": "7839e9dc7a0a0a05aa285bcb1c83b7e701cbc8cb2dde1c717c5243fe1bdb5877",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\badge-framing\\S14-2763667d9c-all-frames-03.png",
+          "sha256": "3a86dfda28c2e93d5188824e960264b873d98388f308b46fa3e16bdb33a1c495",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\badge-framing\\S14-2763667d9c-all-frames-04.png",
+          "sha256": "b6f92bf301531454700f0b4ce704e970a7fff6dbb4cf01395994322dcc6bf6bd",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\badge-framing\\S14-2763667d9c-face-candidates.png",
+        "sha256": "a451de1b7d8b264190237957f8a9eb4d211b1643085f6dd0f1e9ee65332c936d",
+        "items": 10
+      },
+      "observation": "Actually viewed all120 actual corrected-source frames in four sheets and every detected candidate in three sheets. Constant close framing contains only rain-speckled bag, zipper, dark straps and round printed badge; whole unintended human remains outside all frames. Blue OPEN eyes, white headband and navy-blue hair retain the actual first-source appearance and scene shading throughout; inert print has no blink, exaggerated face brightness or independent facial motion. Subtle coherent bag/camera movement, droplet highlights remain on badge rim. All120 source frames reviewed, first72 used; assistant image review, no human playback claim.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    }
+  ]
+}

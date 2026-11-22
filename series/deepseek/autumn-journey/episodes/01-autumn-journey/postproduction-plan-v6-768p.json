@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "deepseek-prop-corrections-1",
+  "width": 1344,
+  "height": 768,
+  "fps": 24,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "nativeAudioRetained": false,
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-print-stability03-001",
+  "inputs": {
+    "S17": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch03-768p-001/sources/S17.mp4",
+      "sha256": "4f2acfd9683d5127a2be86045561fd9e0ffef31b1f9c9f3af4078cf768ff133e"
+    },
+    "S19": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch03-768p-001/sources/S19.mp4",
+      "sha256": "e85c278aeb5a1663f82c960a03554454d149f12554224fc71b282d0e36a7daa0"
+    }
+  },
+  "shots": [
+    {
+      "id": "S17",
+      "seconds": 3,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "cropFilter": "null",
+      "printedPatch": {
+        "center": [
+          816,
+          271
+        ],
+        "radius": 70
+      },
+      "action": "Preserve complete physical shot and original body/object count. Stabilize same first-source OPEN-eyed printed texture in scene exposure, following actual prop movement without global relighting. No character animation or new artwork."
+    },
+    {
+      "id": "S19",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "cropFilter": "null",
+      "printedPatch": {
+        "center": [
+          708,
+          574
+        ],
+        "radius": 90
+      },
+      "action": "Preserve complete physical shot and original body/object count. Stabilize same first-source OPEN-eyed printed texture in scene exposure, following actual prop movement without global relighting. No character animation or new artwork."
+    }
+  ],
+  "scope": "Separate inert-print candidates for actually observed standee/pouch eye blinks. No future output acceptance or changes to original shot timing.",
+  "revision": 6
+}

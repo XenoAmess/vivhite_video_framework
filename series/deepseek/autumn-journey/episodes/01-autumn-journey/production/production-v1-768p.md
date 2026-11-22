@@ -14,6 +14,9 @@
 | batch02 | `production-plan-v1-batch02-768p.json` | S03–S15中的12个角色镜头 | `DeepSeek-Autumn-Journey-v1-768P-batch02` |
 | batch03 | `production-plan-v1-batch03-768p.json` | 剩余28镜 | `DeepSeek-Autumn-Journey-v1-768P-batch03` |
 | retry01 | `production-plan-v1-retry01-768p.json` | S08空物镜头返工 | `DeepSeek-Autumn-Journey-v1-768P-retry01` |
+| retry02 | `production-plan-v1-retry02-768p.json` | S18草地与鲸尾挂件返工 | `DeepSeek-Autumn-Journey-v1-768P-retry02` |
+| retry03 | `production-plan-v1-retry03-768p.json` | S10河边固定背影返工 | `DeepSeek-Autumn-Journey-v1-768P-retry03` |
+| retry04 | `production-plan-v1-retry04-768p.json` | S16楼梯动作、S23山径固定背影返工 | `DeepSeek-Autumn-Journey-v1-768P-retry04` |
 
 源片、原始有声下载、请求、队列快照、冻结执行器和日志保存在仓库外`../vivhite-analysis-output/deepseek/autumn-journey/production-v1-<批次>-768p-001/`。任务不依赖聊天进程，配置冻结计划及执行器指纹，Windows每分钟兜底；客户端窗口32，服务端满额时保留未提交请求顺序补入。每60秒批量查询，下载后全解码并生成逐帧图册。技术检查和Git检查点不会自动授予内容通过，也不会自动发布未经审阅的成片。
 
@@ -33,13 +36,20 @@ S02、S25、S33仅复用原版无人的风景源片，实际文件指纹、解�
 
 三段旧风景各120个完整源帧已在本期重新查看；实际拷贝逐字节核对v12正式装配计划。205秒WAV母带也已核对指纹、48kHz双声道16位格式和每声道9840000个采样，见`reference-material-imports-v1.json`。`source-adoptions-v1.json`保存实际通过的逐镜决策和已拷贝素材；48镜未齐时只是部分采用，不表示成片完成。
 
+截至本轮检查点，实际采用24／48镜（50%）。已采用S01–S07、S09、S11–S15、S17、S19–S22、S24–S25、S33、S44、S47–S48；S20全部240个原生帧保持连续10秒，片尾全部336个原生帧保持14秒。这个数字仅表示明确采用的源片，尚无完整成片。
+
+S10、S23把背影转成了可见正脸；S16在腿脚镜头中新增大型卡通人物叠影；S18在空草地上新增两个人物。均原样拒收，按单独版本返工。S14原始生成新增人体，v4固定包面近景排除整个人体后独立复查通过。S12船侧贴纸、S13雨伞挂件、S17温室立牌、S19布包印花出现真实可见的闭眼或眨眼，分别由v5、v6计划生成独立印花稳定候选；全部120个修正源帧和原生印花局部已实际查看，通过后才采用。没有把原本睁眼的设定误记成闭眼，也没有用检测器漏检推断闭眼。
+
+S20另外对玩偶和包上徽章分别制作240帧原生细节图册；徽章起初部分出画，再随连续拉远入画。对疑似细小眼部变化，实际放大第30、36、39、42、50、53、56、65帧核对，确认双眼仍睁开，没有因为缩略图不清就作闭眼结论。S24上边缘的大检测框实际是领结、纽扣和衣褶，原生整帧和全部源帧确认没有人脸。
+
 ## 本期工具与原始材料
 
 - `prepare-production-v1.py`创建新的不可覆盖批次，可通过显式提示词文件准备返工；已提交计划不变。
 - `save-firstframe-v1.py`保存原始imagegen图片、规范化图及指纹。
 - `deploy-generation-batch-v1.py`先检查实际计划／首帧的审核绑定，再部署冻结执行器和独立Windows任务。
-- `render-postproduction-v1.py`负责v1实际海岸合成与帐篷固定裁切；`render-prop-corrections-v1.py`负责v2／v3物体取景及印花稳定，均在编码前检查实际输入绑定。
+- `render-postproduction-v1.py`负责v1实际海岸合成与帐篷固定裁切；`render-prop-corrections-v1.py`负责独立v2–v6物体取景及印花稳定候选，均在编码前检查实际输入绑定。
 - `prepare-source-proof-v1.py`制作完整源帧的缩小查看副本，并展开每一帧的所有检测器候选；支持逐帧局部区域图册。只生成证据，不自动判断通过。
+- `prepare-tracked-proof-v1.py`与`prepare-detail-atlas-v1.py`跟踪局部并裁取每个实际源帧的原生像素，包括检测器漏检帧。跟踪器合成返回值被丢弃，检查图册绝不展示回贴后的假干净图代替原始被检视频。后者支持同一物体上的另一个跟踪位置，适用于S20两个独立周边面孔。
 - `import-reference-materials-v1.py`只拷贝核实指纹的三段空风景和已有母带。
 - `adopt-reviewed-sources-v1.py`只导入明确指定、实际完整审阅通过且文件指纹一致的源片，保留原始视频、模型原声及全部失败候选，不原地覆盖已采用的不同版本。
 
