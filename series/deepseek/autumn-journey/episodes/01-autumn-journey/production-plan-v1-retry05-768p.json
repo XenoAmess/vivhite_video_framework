@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 1,
+  "stage": "draft",
+  "model": "fasth3-omni-bf16",
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "fps": 30,
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 90,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "decoderLayers": 36,
+  "numInferenceSteps": 8,
+  "shotDurationExceptions": {},
+  "shots": [
+    {
+      "id": "S36",
+      "seconds": 3,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "finalFilmStartFrame": 4320,
+      "seed": 2026112336,
+      "mode": "O",
+      "action": "Fixed empty waterfall/card scene. Transparent card stays supported at original position, print remains fixed OPEN-eyed. A few existing water droplets slide along card EDGE, not over changing face; background water flows softly.",
+      "generationAction": "Fixed empty waterfall/card scene. Transparent card stays supported at original position, print remains fixed OPEN-eyed. A few existing water droplets slide along card EDGE, not over changing face; background water flows softly.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "One continuous locked documentary still-life matching <Picture 1>. Only the ORIGINAL NONLIVING clear transparent photo card, wet old wooden railing, mossy rocks, leaves and small flowing waterfall are present. The clear card is already securely propped against the railing and remains completely supported and motionless for all five seconds. Its tiny colored ink figure remains a fixed flat printed mark, exactly unchanged. Fine droplets already on the clear card slowly descend along its empty right-side edge; water flows gently in the background. Same empty composition, same overcast forest light and camera framing throughout. All space above and beside the card stays empty. No hand reaches into the scene, no fingers, arm, torso, head, other person, new doll or extra illustration. No card lifting or repositioning, no scene transition. No words, voice, singing or music.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S36-v1.png"
+      ],
+      "referenceSha256": [
+        "81716d7d3b3d67bbdd69d968b262ee78de6f7229bbd2c7607ea73754cd6ff656"
+      ]
+    }
+  ],
+  "titleOverlays": [],
+  "closingCredit": "",
+  "scope": "Generation batch only; finalFilmStartFrame retains the original205second positions. No finished-film approval.",
+  "director": "director-v1.md",
+  "finalTargetFrames": 6150,
+  "finalTargetSeconds": 205
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "deepseek-prop-corrections-1",
+  "width": 1344,
+  "height": 768,
+  "fps": 24,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "nativeAudioRetained": false,
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-print-stability06-001",
+  "inputs": {
+    "S40": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch03-768p-001/sources/S40.mp4",
+      "sha256": "ef9ca56af9f9bbbb254121ff1e129f138c3cf37ae0607b6f0d29b2b4a4140e43"
+    },
+    "S41": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch03-768p-001/sources/S41.mp4",
+      "sha256": "e2f5046dcef9178e402da9f99e6000fe4bb56c24a92997640c7e28a52dc28e74"
+    }
+  },
+  "shots": [
+    {
+      "id": "S40",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "cropFilter": "null",
+      "printedPatch": {
+        "center": [
+          895,
+          344
+        ],
+        "radius": 100
+      },
+      "action": "Preserve continuous empty night-train view and stabilize the original window sticker from its first video frame; printed blue eyes stay OPEN and naturally shaded."
+    },
+    {
+      "id": "S41",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "cropFilter": "null",
+      "printedPatch": {
+        "center": [
+          633,
+          447
+        ],
+        "radius": 145
+      },
+      "action": "Preserve continuous empty dusk bench view and physical original plush body and bag. Stabilize original plush head from its own first-video-frame texture, keeping stitched blue eyes OPEN and no duplicate ghost features; original small bag badge remains unchanged."
+    }
+  ],
+  "scope": "Separate inert night sticker / embroidered plush head correction candidates, no timing change, no new person or drawn replacement portrait. Full output review pending.",
+  "revision": 10
+}

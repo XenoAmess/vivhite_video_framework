@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 1,
+  "stage": "draft",
+  "model": "fasth3-omni-bf16",
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "fps": 30,
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 150,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "decoderLayers": 36,
+  "numInferenceSteps": 8,
+  "shotDurationExceptions": {},
+  "shots": [
+    {
+      "id": "S43",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "finalFilmStartFrame": 5130,
+      "seed": 2026112343,
+      "mode": "O",
+      "action": "Fixed EMPTY campsite. Clear card remains upright and stable on table with identical whole printed whale-maid and clear unprinted area. Existing tent fabric moves softly in breeze, warm lamp flickers very gently, no new person, floating card or animated face.",
+      "generationAction": "Fixed EMPTY campsite. Clear card remains upright and stable on table with identical whole printed whale-maid and clear unprinted area. Existing tent fabric moves softly in breeze, warm lamp flickers very gently, no new person, floating card or animated face.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "A single continuous locked documentary still life matching <Picture 1>. ONLY the existing nonliving transparent rectangular acrylic display on its TWO small clear feet, the camping table, warm battery lantern, metal mug, closed tent and empty ordinary hillside exist. The acrylic display stays firmly on the same table for all five seconds. Its tiny colored ink design remains completely flat, small, fixed and unchanging inside the transparent rectangle. The lantern glows steadily; only a little existing distant grass sways in a light breeze. Camera is locked, same composition and natural dark evening exposure throughout. Space above, in front of and around the acrylic display stays EMPTY. No new figure, close-up portrait, live person, ghost, face overlay, giant illustration, floating image, hand, arm or reflection appears. No changes in scale or opacity of the printed mark. No cuts, transitions, text, speech, singing or music.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S43-v1.png"
+      ],
+      "referenceSha256": [
+        "19130674a7b4d5a14e6b614ae233668d63ad8730529fedd9f43966b04088f15c"
+      ]
+    }
+  ],
+  "titleOverlays": [],
+  "closingCredit": "",
+  "scope": "Generation batch only; finalFilmStartFrame retains the original205second positions. No finished-film approval.",
+  "director": "director-v1.md",
+  "finalTargetFrames": 6150,
+  "finalTargetSeconds": 205
+}

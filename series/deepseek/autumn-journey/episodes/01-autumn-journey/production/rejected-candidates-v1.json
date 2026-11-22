@@ -1,6 +1,6 @@
 {
   "schemaVersion": "deepseek-rejected-candidates-1",
-  "at": "2026-11-22T21:33:35.483079+00:00",
+  "at": "2026-11-22T23:45:46.325675+00:00",
   "shots": [
     {
       "id": "S44",
@@ -196,6 +196,160 @@
         "items": 11
       },
       "scope": "Actual viewing described in reason; rejection does not claim complete raw-source review or acceptance. All candidates retained."
+    },
+    {
+      "id": "S26",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "89596c66ee7a3e34fdd897ac047750850c2c5510dd7bcb368fc474e1db206ce0",
+      "jobId": "video_gen_32a8c056c510478a899ec1b5130886d7",
+      "decision": "rejected-unchanged",
+      "reason": "Printed pouch eyes close around18-29. All120 native print-head details and temporal samples viewed; unchanged raw source rejected, corrected candidate separately reviewed.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S26-89596c66ee-temporal.png",
+        "sha256": "79465176541a3351cc1053c04a65c0d5ca4c4b0a15f8a9d18694460336da9a35",
+        "items": 11
+      },
+      "scope": "Actual scope stated in reason. Clear rejection does not claim complete raw full-scene acceptance. All raw and corrected candidates retained."
+    },
+    {
+      "id": "S27",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "ae59a06dfe2c44c5f6a188f98611e84c0ffb782fe8bc2c9116b59b490a31f3a7",
+      "jobId": "video_gen_233aadbbb98e484aad17e0ae3ba6cb5f",
+      "decision": "rejected-unchanged",
+      "reason": "Acrylic print eyes close around21-24. All120 native print-head details and temporal samples viewed; raw unchanged rejected.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S27-ae59a06dfe-temporal.png",
+        "sha256": "edcf792c0e0d3e37079ba5dd299ee763b4497e77be989e53ccd3e844152d740d",
+        "items": 11
+      },
+      "scope": "Actual scope stated in reason. Clear rejection does not claim complete raw full-scene acceptance. All raw and corrected candidates retained."
+    },
+    {
+      "id": "S32",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "78f1e8ef261de06b76efd84b22a138965d9344fd53a34dfbd103c592a45a62fe",
+      "jobId": "video_gen_287a187fb9024bd2870bd28342f1cfce",
+      "decision": "rejected-unchanged",
+      "reason": "Camera sticker blinks around49-54 and109-112. All120 native print-head details and temporal samples viewed; raw unchanged rejected.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S32-78f1e8ef26-temporal.png",
+        "sha256": "2c3921ac5d9b680257430dbda5cbf3f097f8f31a1624b9dd0c3734d29f46dbc0",
+        "items": 11
+      },
+      "scope": "Actual scope stated in reason. Clear rejection does not claim complete raw full-scene acceptance. All raw and corrected candidates retained."
+    },
+    {
+      "id": "S34",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "be5b24b69526bdbae25f9596176d702b1dd4d6143ae9030bc0364f83a2eb5138",
+      "jobId": "video_gen_388e3c5fb80445b5be3ea6f32a94324f",
+      "decision": "rejected-unchanged",
+      "reason": "Back-of-head drawing produces a frontal face despite rear-only input. Temporal/native crop checks sufficient to reject unchanged raw; separate constant head-excluded framing reviewed.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S34-be5b24b695-temporal.png",
+        "sha256": "85aee927cc877f870476f6fbed797d72b97a1a08d113c82519e0c12a92574e39",
+        "items": 11
+      },
+      "scope": "Actual scope stated in reason. Clear rejection does not claim complete raw full-scene acceptance. All raw and corrected candidates retained."
+    },
+    {
+      "id": "S36",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "8a38bccb33ebcb22ff6915439eccd25508e0997a876b2520f5867193a5f30280",
+      "jobId": "video_gen_77dbb3d9f4a142f78e0918124ef3a5e0",
+      "decision": "rejected-unchanged",
+      "reason": "Adds a hand from upper right, absent from exact object-only first frame, which repositions the supported clear card. Temporal samples and exact input viewed; retry05 queued.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S36-8a38bccb33-temporal.png",
+        "sha256": "c2d60c774740f259b604005c9c9071fb2a598adeed6f9a34ce8b84222ac73c73",
+        "items": 11
+      },
+      "scope": "Actual scope stated in reason. Clear rejection does not claim complete raw full-scene acceptance. All raw and corrected candidates retained."
+    },
+    {
+      "id": "S37",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "830fa8eeb902b85fd903dec75c07ee7f18d4d3b0291cca5b8e91fd678e14345b",
+      "jobId": "video_gen_ddaef499aab24549bfe59cb9c3a97bd9",
+      "decision": "rejected-unchanged",
+      "reason": "Bag print closes eyelids in later part, around84-94; all120 native print-head details viewed. Raw unchanged rejected; same first-video texture stabilized separately.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S37-830fa8eeb9-temporal.png",
+        "sha256": "72e6bc0df7ac756414db39df166c088d0d8bd81c03cffe81002743393ed4a17e",
+        "items": 11
+      },
+      "scope": "Actual scope stated in reason. Clear rejection does not claim complete raw full-scene acceptance. All raw and corrected candidates retained."
+    },
+    {
+      "id": "S38",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "915740dd910ec9634df443456dd3c7dc73ff805c3cc0693cec1ec35894b73c48",
+      "jobId": "video_gen_93895178720940a7a2c1bc0e8900a7dd",
+      "decision": "rejected-unchanged",
+      "reason": "Small physical charm develops white self-illumination unlike naturally shaded first frame. Actual temporal overview, native first frame and all120 native head details viewed; separate whole-prop exposure stability candidate required.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S38-915740dd91-temporal.png",
+        "sha256": "30065e0547764f1db79660a4499be36e6615c6a2f14332050352af31da8bf666",
+        "items": 11
+      },
+      "scope": "Actual scope stated in reason. Clear rejection does not claim complete raw full-scene acceptance. All raw and corrected candidates retained."
+    },
+    {
+      "id": "S39",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "784e35817f46b87537b5ba43ce369865c54cc5ca6c3c7a209dc64520b6e927b2",
+      "jobId": "video_gen_e3d05fc9423140b89f881bed2ed4c023",
+      "decision": "rejected-unchanged",
+      "reason": "Adds two large frontal maid illustrations to exact empty street/window/whale-silhouette input. Temporal samples and exact selected S39-v2 input viewed; retry06 queued.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S39-784e35817f-temporal.png",
+        "sha256": "9f3b2cd918f12af2ef84ca24a3c73d8b168b834693bc70cf32b8c33edcaf7237",
+        "items": 11
+      },
+      "scope": "Actual scope stated in reason. Clear rejection does not claim complete raw full-scene acceptance. All raw and corrected candidates retained."
+    },
+    {
+      "id": "S40",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "ef9ca56af9f9bbbb254121ff1e129f138c3cf37ae0607b6f0d29b2b4a4140e43",
+      "jobId": "video_gen_444893572ebc4075847a8ba14e31764b",
+      "decision": "rejected-unchanged",
+      "reason": "Fixed window sticker closes eyes around24-34. Actual all120 native print-head details and temporal samples viewed; raw unchanged rejected.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S40-ef9ca56af9-temporal.png",
+        "sha256": "4cf08658affdcf202c9cde5a78e149b3773758d56679203da944aa4b440c4037",
+        "items": 11
+      },
+      "scope": "Actual scope stated in reason. Clear rejection does not claim complete raw full-scene acceptance. All raw and corrected candidates retained."
+    },
+    {
+      "id": "S41",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "e2f5046dcef9178e402da9f99e6000fe4bb56c24a92997640c7e28a52dc28e74",
+      "jobId": "video_gen_f52407c2b6c34a26ae950034961fee19",
+      "decision": "rejected-unchanged",
+      "reason": "Embroidered plush blinks around15-17 and generates duplicate ghost face in later frames. Native first frame, temporal overview and all120 native plush/badge details viewed; raw unchanged rejected.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S41-e2f5046dce-temporal.png",
+        "sha256": "7764614755bec47b41fbf57be9aeb270a2404819f7793f41bb2eed83e3fbc778",
+        "items": 11
+      },
+      "scope": "Actual scope stated in reason. Clear rejection does not claim complete raw full-scene acceptance. All raw and corrected candidates retained."
+    },
+    {
+      "id": "S43",
+      "candidateRun": "production-v1-batch03-768p-001",
+      "sourceSha256": "7e136fc35b5531b06b7ed2c596319a9148310bb47c9bf945a23763ef674455ba",
+      "jobId": "video_gen_949c720a4c264451b9d6b77547e5bbd9",
+      "decision": "rejected-unchanged",
+      "reason": "Original supported acrylic card is replaced by giant floating frontal portrait overlay which scales/fades away. Temporal samples and exact empty-campsite first frame viewed; retry07 queued.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch03-768p/S43-7e136fc35b-temporal.png",
+        "sha256": "f92b925a2d7254e6a1da3f74fcfd3b674148adfda9deb6ff3135e5fcffe047bd",
+        "items": 11
+      },
+      "scope": "Actual scope stated in reason. Clear rejection does not claim complete raw full-scene acceptance. All raw and corrected candidates retained."
     }
   ],
   "S48InitialRejection": "S48-v1-768p-rejected.json",

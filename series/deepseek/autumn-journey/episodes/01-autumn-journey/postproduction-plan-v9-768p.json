@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "deepseek-prop-corrections-1",
+  "width": 1344,
+  "height": 768,
+  "fps": 24,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "nativeAudioRetained": false,
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-print-stability05-001",
+  "inputs": {
+    "S37": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch03-768p-001/sources/S37.mp4",
+      "sha256": "830fa8eeb902b85fd903dec75c07ee7f18d4d3b0291cca5b8e91fd678e14345b"
+    },
+    "S38": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch03-768p-001/sources/S38.mp4",
+      "sha256": "915740dd910ec9634df443456dd3c7dc73ff805c3cc0693cec1ec35894b73c48"
+    }
+  },
+  "shots": [
+    {
+      "id": "S37",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "cropFilter": "null",
+      "printedPatch": {
+        "center": [
+          775,
+          327
+        ],
+        "radius": 65
+      },
+      "action": "Preserve original female rear walking body and two original arms. Stabilize original flat bag print from the first video frame with naturally shaded OPEN blue eyes."
+    },
+    {
+      "id": "S38",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "cropFilter": "null",
+      "printedPatch": {
+        "center": [
+          905,
+          435
+        ],
+        "radius": 110
+      },
+      "action": "Preserve original cropped female hand resting on bridge and continuous dusk canal. Stabilize entire original small charm from its naturally dark first-frame ink texture, including face and apron; no self illumination or blinking."
+    }
+  ],
+  "scope": "Local first-video-frame printed-prop stability candidates; preserve all physical body and environment motion, no new character artwork. Whole-output review pending.",
+  "revision": 9
+}

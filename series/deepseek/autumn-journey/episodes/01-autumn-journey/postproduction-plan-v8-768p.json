@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "deepseek-prop-corrections-1",
+  "width": 1344,
+  "height": 768,
+  "fps": 24,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "nativeAudioRetained": false,
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-coast-corrections-001",
+  "inputs": {
+    "S32": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch03-768p-001/sources/S32.mp4",
+      "sha256": "78f1e8ef261de06b76efd84b22a138965d9344fd53a34dfbd103c592a45a62fe"
+    },
+    "S34": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch03-768p-001/sources/S34.mp4",
+      "sha256": "be5b24b69526bdbae25f9596176d702b1dd4d6143ae9030bc0364f83a2eb5138"
+    }
+  },
+  "shots": [
+    {
+      "id": "S32",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "cropFilter": "null",
+      "action": "Preserve original two connected hands and physical camera motion; stabilize original first-source flat printed blue OPEN eyes at scene exposure.",
+      "printedPatch": {
+        "center": [
+          510,
+          259
+        ],
+        "radius": 95
+      }
+    },
+    {
+      "id": "S34",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "cropFilter": "crop=952:544:196:224,scale=1344:768:flags=lanczos",
+      "action": "Constant rear lower-body framing of original illustrated female walking by ordinary coast. Entire head/face excluded throughout; retain attached whale tail, back bow, skirt and alternating two original legs. Original five-second source retained without timing change."
+    }
+  ],
+  "scope": "Separate S32 inert-camera-sticker and S34 constant rear-body framing candidates. Raw sources retained, no new artwork or additional person covered; output complete-frame review pending.",
+  "revision": 8
+}

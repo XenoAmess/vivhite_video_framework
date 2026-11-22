@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 1,
+  "stage": "draft",
+  "model": "fasth3-omni-bf16",
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "fps": 30,
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 90,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "decoderLayers": 36,
+  "numInferenceSteps": 8,
+  "shotDurationExceptions": {},
+  "shots": [
+    {
+      "id": "S39",
+      "seconds": 3,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "finalFilmStartFrame": 4680,
+      "seed": 2026112339,
+      "mode": "I",
+      "action": "Locked EMPTY dusk street. Existing lantern sways gently and its reflection shifts over glass. Small matte whale silhouette sticker stays physically adhered and inert at original corner, no flying whale or new person.",
+      "generationAction": "Locked EMPTY dusk street. Existing lantern sways gently and its reflection shifts over glass. Small matte whale silhouette sticker stays physically adhered and inert at original corner, no flying whale or new person.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "One continuous quiet documentary view matching <Picture 1>: an EMPTY old stone lane at blue dusk, weathered cream plaster walls, the ORIGINAL shop window with ordinary ceramic bowls, a wicker basket, and one tiny flat matte blue WHALE SILHOUETTE sticker on the glass. The sticker is just the same simple nonliving whale outline, fixed to the same glass, without human features or added artwork. Camera remains almost locked with a very slow subtle forward drift. The original warm paper lantern and a few existing leaves move slightly in a breeze; faint window reflections remain reflections of the same EMPTY walls and sky. Every part of the lane and shop stays EMPTY throughout all five seconds. Preserve the original scale, arrangement and natural subdued exposure. No person, girl, face, portrait, human illustration, doll, hand, arm, new figure or reflection of any person appears. No cuts, scene changes, added words, voice, singing or music.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S39-v2.png"
+      ],
+      "referenceSha256": [
+        "2d7cd20fa6eb28d3f2c21b3e57e5f01083c9be67e8bdc52c41042b4810fc4b20"
+      ]
+    }
+  ],
+  "titleOverlays": [],
+  "closingCredit": "",
+  "scope": "Generation batch only; finalFilmStartFrame retains the original205second positions. No finished-film approval.",
+  "director": "director-v1.md",
+  "finalTargetFrames": 6150,
+  "finalTargetSeconds": 205
+}
