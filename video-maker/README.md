@@ -8,6 +8,8 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.maker`。
 
 同一文档另列 BF16 原生1344×768与逐镜3840×2160重生成入口，以及印花细节检查和另存修订工具；当前[768P／4K规约](../docs/local-video-768p-4k.md)替代历史2K路线，4K仍沿用服务端历史模型ID并单任务执行。印花跟踪的 `--max-scale` 可显式适配已观察到的镜头推近，默认上限2.5倍；技术成功仍须实际逐帧检查，不能自动作为成片内容通过的结论。
 
+`durable_video_controller.py`也支持原始768P图像参考批次：检查实际1344×768源片，将每镜新首帧指纹绑定到独立源片目录，下载、全解码并保存技术检查点。`generationOnly`只完成源片和检查点，不自动通过语义审核或发布影片。DeepSeek衍生片的独立部署、冻结执行器及使用边界见[实际制作记录](../series/deepseek/autumn-journey/episodes/01-autumn-journey/production/production-v1-768p.md)。
+
 局部纹理稳定、场景原图回贴、慢放插帧、完整源帧复核、标题和固定时长装配，另见[后处理方法与代码索引](../docs/autumn-journey-video-postprocessing.md)。
 
 具体创作材料按[系列、课题和期号](../series/README.md)管理，本模块保存可复用的制作能力。任何新文案或改稿先读取外部私有角色仓库的完整人格，再按[角色与文案审核规约](../docs/character-workflow.md)检查人格一致性及信息披露；审核状态必须对应当前文案和人格版本。

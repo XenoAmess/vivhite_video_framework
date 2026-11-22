@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 1,
+  "stage": "draft",
+  "model": "fasth3-omni-bf16",
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "fps": 30,
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 930,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "decoderLayers": 36,
+  "numInferenceSteps": 8,
+  "shotDurationExceptions": {
+    "S48": 14
+  },
+  "shots": [
+    {
+      "id": "S48",
+      "seconds": 14,
+      "sourceSeconds": 14,
+      "startFrame": 0,
+      "finalFilmStartFrame": 5730,
+      "seed": 2026112348,
+      "mode": "I",
+      "action": "Locked wide fourteen-second coast. Keep exact open sky, sea, pebble shore, road, railing and houses. Existing seated whale-maid plush and hiking bag stay stable on lower-right stones. Existing whale-tail charm sways a few millimetres, waves roll gently. No tree, branch, butterfly, extra prop or enlarged toy. Full continuous fourteen seconds, no camera movement.",
+      "generationAction": "Locked wide fourteen-second coast. Keep exact open sky, sea, pebble shore, road, railing and houses. Existing seated whale-maid plush and hiking bag stay stable on lower-right stones. Existing whale-tail charm sways a few millimetres, waves roll gently. No tree, branch, butterfly, extra prop or enlarged toy. Full continuous fourteen seconds, no camera movement.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Locked wide fourteen-second coast. Keep exact open sky, sea, pebble shore, road, railing and houses. Existing seated whale-maid plush and hiking bag stay stable on lower-right stones. Existing whale-tail charm sways a few millimetres, waves roll gently. No tree, branch, butterfly, extra prop or enlarged toy. Full continuous fourteen seconds, no camera movement.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S48-v1.png"
+      ],
+      "referenceSha256": [
+        "3dce66e85b254af59ea77447e59af2270a89c2ac5026b68b2203077c112bdc1e"
+      ]
+    },
+    {
+      "id": "S01",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 420,
+      "finalFilmStartFrame": 0,
+      "seed": 2026112301,
+      "mode": "H",
+      "action": "Same anatomically LEFT hand keeps its BACK/knuckles toward camera and palm toward curtain. Thumb and index maintain the existing opposed cloth pinch. During first three seconds gently draw the beige curtain a few centimetres LEFT, then hold. No wrist roll, palm flip, handedness swap, regrip or detached finger. Only the original connected left arm/hand visible; train scenery slides backward continuously, bag and acrylic charm remain in place.",
+      "generationAction": "Same anatomically LEFT hand keeps its BACK/knuckles toward camera and palm toward curtain. Thumb and index maintain the existing opposed cloth pinch. During first three seconds gently draw the beige curtain a few centimetres LEFT, then hold. No wrist roll, palm flip, handedness swap, regrip or detached finger. Only the original connected left arm/hand visible; train scenery slides backward continuously, bag and acrylic charm remain in place.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Same anatomically LEFT hand keeps its BACK/knuckles toward camera and palm toward curtain. Thumb and index maintain the existing opposed cloth pinch. During first three seconds gently draw the beige curtain a few centimetres LEFT, then hold. No wrist roll, palm flip, handedness swap, regrip or detached finger. Only the original connected left arm/hand visible; train scenery slides backward continuously, bag and acrylic charm remain in place.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S01-v1.png"
+      ],
+      "referenceSha256": [
+        "45be79382467e59f2694d8937982493ae56d2121a6e496edb4849d04ce024dff"
+      ]
+    },
+    {
+      "id": "S05",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 540,
+      "finalFilmStartFrame": 420,
+      "seed": 2026112305,
+      "mode": "H",
+      "action": "Smooth drive-side bicycle tracking for five seconds. Woman remains SEATED on visible black saddle, rails, clamp and seatpost continuously joined to frame; hips supported. Two navy boots remain on their own opposed flat pedals, cranks180degrees apart, calm alternating pedaling immediately from frame one, about two revolutions. Preserve wheels, chainring, chain, fork and all tubes. Forest/road flow backward continuously, no reset. Torso/head/hands stay outside crop. Frame-tube whale-maid sticker stays attached and inert.",
+      "generationAction": "Smooth drive-side bicycle tracking for five seconds. Woman remains SEATED on visible black saddle, rails, clamp and seatpost continuously joined to frame; hips supported. Two navy boots remain on their own opposed flat pedals, cranks180degrees apart, calm alternating pedaling immediately from frame one, about two revolutions. Preserve wheels, chainring, chain, fork and all tubes. Forest/road flow backward continuously, no reset. Torso/head/hands stay outside crop. Frame-tube whale-maid sticker stays attached and inert.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Smooth drive-side bicycle tracking for five seconds. Woman remains SEATED on visible black saddle, rails, clamp and seatpost continuously joined to frame; hips supported. Two navy boots remain on their own opposed flat pedals, cranks180degrees apart, calm alternating pedaling immediately from frame one, about two revolutions. Preserve wheels, chainring, chain, fork and all tubes. Forest/road flow backward continuously, no reset. Torso/head/hands stay outside crop. Frame-tube whale-maid sticker stays attached and inert.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S05-v1.png"
+      ],
+      "referenceSha256": [
+        "68c53a0dc4bd5ab560efd07b61ad377d136efbe2fab45c736789d20ed991fc7e"
+      ]
+    },
+    {
+      "id": "S44",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 690,
+      "finalFilmStartFrame": 5280,
+      "seed": 2026112344,
+      "mode": "H",
+      "action": "Start with fully opaque tent door ZIPPED COMPLETELY CLOSED and no outdoors visible. Hold closed0.4seconds. Existing RIGHT hand pulls the same brass slider DOWN smoothly from0.4to2seconds, teeth separating behind it. Release slider and draw the free fabric edge LEFT from2to3.2seconds, exposing an ordinary EMPTY grassy campsite; hold OPEN. Complete opening within four seconds, never reverse or close. Cloth folds aside, never dissolves. Same attached hand/wrist/forearm and navy pouch, no other limb.",
+      "generationAction": "Start with fully opaque tent door ZIPPED COMPLETELY CLOSED and no outdoors visible. Hold closed0.4seconds. Existing RIGHT hand pulls the same brass slider DOWN smoothly from0.4to2seconds, teeth separating behind it. Release slider and draw the free fabric edge LEFT from2to3.2seconds, exposing an ordinary EMPTY grassy campsite; hold OPEN. Complete opening within four seconds, never reverse or close. Cloth folds aside, never dissolves. Same attached hand/wrist/forearm and navy pouch, no other limb.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Start with fully opaque tent door ZIPPED COMPLETELY CLOSED and no outdoors visible. Hold closed0.4seconds. Existing RIGHT hand pulls the same brass slider DOWN smoothly from0.4to2seconds, teeth separating behind it. Release slider and draw the free fabric edge LEFT from2to3.2seconds, exposing an ordinary EMPTY grassy campsite; hold OPEN. Complete opening within four seconds, never reverse or close. Cloth folds aside, never dissolves. Same attached hand/wrist/forearm and navy pouch, no other limb.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S44-v1.png"
+      ],
+      "referenceSha256": [
+        "e07f4b057f035cfc86eaaf85fed2d8c5f519b6e29172af2246515b8647b9c848"
+      ]
+    },
+    {
+      "id": "S47",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 810,
+      "finalFilmStartFrame": 5610,
+      "seed": 2026112347,
+      "mode": "H",
+      "action": "Same faceless woman BEHIND bench, two attached UNCROSSED arms. Her right hand stays imageLEFT, left hand imageRIGHT, original palm/thumb orientation. Original fingertips support the doll lower sides. During0to2seconds straighten the WHOLE inert plush a few centimetres, settle its base on bench. During2to3seconds release grips, before4seconds move hands slightly outward along OWN sides and rest; hold through5seconds. No crossing, palm flip, bent-back wrist, extra finger, arm swap, hand through doll or touching its face. Preserve original sewn eyes and whole toy.",
+      "generationAction": "Same faceless woman BEHIND bench, two attached UNCROSSED arms. Her right hand stays imageLEFT, left hand imageRIGHT, original palm/thumb orientation. Original fingertips support the doll lower sides. During0to2seconds straighten the WHOLE inert plush a few centimetres, settle its base on bench. During2to3seconds release grips, before4seconds move hands slightly outward along OWN sides and rest; hold through5seconds. No crossing, palm flip, bent-back wrist, extra finger, arm swap, hand through doll or touching its face. Preserve original sewn eyes and whole toy.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Same faceless woman BEHIND bench, two attached UNCROSSED arms. Her right hand stays imageLEFT, left hand imageRIGHT, original palm/thumb orientation. Original fingertips support the doll lower sides. During0to2seconds straighten the WHOLE inert plush a few centimetres, settle its base on bench. During2to3seconds release grips, before4seconds move hands slightly outward along OWN sides and rest; hold through5seconds. No crossing, palm flip, bent-back wrist, extra finger, arm swap, hand through doll or touching its face. Preserve original sewn eyes and whole toy.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S47-v1.png"
+      ],
+      "referenceSha256": [
+        "094f804757a2308c8c59ce1d4ed172e1b26d0562d2c24fb1b3d8d78aedf6d806"
+      ]
+    }
+  ],
+  "titleOverlays": [],
+  "closingCredit": "",
+  "scope": "Generation batch only; finalFilmStartFrame retains the original205second positions. No finished-film approval.",
+  "director": "director-v1.md",
+  "finalTargetFrames": 6150,
+  "finalTargetSeconds": 205
+}

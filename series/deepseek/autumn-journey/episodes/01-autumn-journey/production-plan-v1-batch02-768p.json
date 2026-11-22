@@ -1,0 +1,258 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 1,
+  "stage": "draft",
+  "model": "fasth3-omni-bf16",
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "fps": 30,
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 1380,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "decoderLayers": 36,
+  "numInferenceSteps": 8,
+  "shotDurationExceptions": {},
+  "shots": [
+    {
+      "id": "S03",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "finalFilmStartFrame": 210,
+      "seed": 2026112303,
+      "mode": "H",
+      "action": "Below-waist tracking of the same woman walking forward continuously. Navy/white skirt and bag sway gently, shoes take alternating supported steps, round whale-maid badge stays printed and open-eyed. Same empty platform and coherent background.",
+      "generationAction": "Below-waist tracking of the same woman walking forward continuously. Navy/white skirt and bag sway gently, shoes take alternating supported steps, round whale-maid badge stays printed and open-eyed. Same empty platform and coherent background.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Below-waist tracking of the same woman walking forward continuously. Navy/white skirt and bag sway gently, shoes take alternating supported steps, round whale-maid badge stays printed and open-eyed. Same empty platform and coherent background.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S03-v1.png"
+      ],
+      "referenceSha256": [
+        "ebc95e5f67237511f40921306251c335386802a2a992dbfbe152987ae3dfe21a"
+      ]
+    },
+    {
+      "id": "S04",
+      "seconds": 3,
+      "sourceSeconds": 5,
+      "startFrame": 120,
+      "finalFilmStartFrame": 330,
+      "seed": 2026112304,
+      "mode": "O",
+      "action": "Locked empty station-bench view. Existing travel bag stays still; attached whale-maid acrylic charm sways gently once with a slight breeze, retaining rigid clear contour and printed expression. Background only soft natural motion.",
+      "generationAction": "Locked empty station-bench view. Existing travel bag stays still; attached whale-maid acrylic charm sways gently once with a slight breeze, retaining rigid clear contour and printed expression. Background only soft natural motion.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Locked empty station-bench view. Existing travel bag stays still; attached whale-maid acrylic charm sways gently once with a slight breeze, retaining rigid clear contour and printed expression. Background only soft natural motion.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S04-v1.png"
+      ],
+      "referenceSha256": [
+        "709dca95b825adf4e2163729a422b06c915546afe559c267f155f5e90047d887"
+      ]
+    },
+    {
+      "id": "S06",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 210,
+      "finalFilmStartFrame": 570,
+      "seed": 2026112306,
+      "mode": "I",
+      "action": "Fixed empty tram-window composition. Sticker remains adhered to exactly the same glass spot, no redraw or blink; exterior buildings move smoothly across the window. Only original seat reflection, no new reflected person. No generated title; lettering added in post.",
+      "generationAction": "Fixed empty tram-window composition. Sticker remains adhered to exactly the same glass spot, no redraw or blink; exterior buildings move smoothly across the window. Only original seat reflection, no new reflected person. No generated title; lettering added in post.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Fixed empty tram-window composition. Sticker remains adhered to exactly the same glass spot, no redraw or blink; exterior buildings move smoothly across the window. Only original seat reflection, no new reflected person. No generated title; lettering added in post.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S06-v1.png"
+      ],
+      "referenceSha256": [
+        "0302890895a988c3e175dc41228221f7f0bf7656cfe1bd151350889614d4a062"
+      ]
+    },
+    {
+      "id": "S07",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 330,
+      "finalFilmStartFrame": 690,
+      "seed": 2026112307,
+      "mode": "H",
+      "action": "The same two legs begin ordinary walking IMMEDIATELY. Continuous alternating steps and sensible weight transfer, natural knees/ankles, no initial freeze or limp. Navy skirt and printed pouch sway with steps; smooth low tracking with continuous leaf-covered path.",
+      "generationAction": "The same two legs begin ordinary walking IMMEDIATELY. Continuous alternating steps and sensible weight transfer, natural knees/ankles, no initial freeze or limp. Navy skirt and printed pouch sway with steps; smooth low tracking with continuous leaf-covered path.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. The same two legs begin ordinary walking IMMEDIATELY. Continuous alternating steps and sensible weight transfer, natural knees/ankles, no initial freeze or limp. Navy skirt and printed pouch sway with steps; smooth low tracking with continuous leaf-covered path.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S07-v1.png"
+      ],
+      "referenceSha256": [
+        "d20f92090152ba2344bf78592cafa65776b6e3b4f452803be9fa42cef6dbdeef"
+      ]
+    },
+    {
+      "id": "S08",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 450,
+      "finalFilmStartFrame": 810,
+      "seed": 2026112308,
+      "mode": "O",
+      "action": "Fixed empty forest-bench view. Whole seated sewn plush and bag remain stable. Leaf shadows drift slowly over the headband, blue fabric hair and embroidered face; eyes remain sewn OPEN with constant shape. No doll animation or extra object.",
+      "generationAction": "Fixed empty forest-bench view. Whole seated sewn plush and bag remain stable. Leaf shadows drift slowly over the headband, blue fabric hair and embroidered face; eyes remain sewn OPEN with constant shape. No doll animation or extra object.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Fixed empty forest-bench view. Whole seated sewn plush and bag remain stable. Leaf shadows drift slowly over the headband, blue fabric hair and embroidered face; eyes remain sewn OPEN with constant shape. No doll animation or extra object.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S08-v1.png"
+      ],
+      "referenceSha256": [
+        "1e6f02978ff99923798a668aa65bd286eef79e22cb35221ef5f26c063b985706"
+      ]
+    },
+    {
+      "id": "S09",
+      "seconds": 3,
+      "sourceSeconds": 5,
+      "startFrame": 600,
+      "finalFilmStartFrame": 960,
+      "seed": 2026112309,
+      "mode": "H",
+      "action": "Same one hand gently glides a few centimetres along the wooden rail, wrist attached naturally. Bottle stays planted on the rail, printed character fixed; lake ripples softly, no additional hand or bottle.",
+      "generationAction": "Same one hand gently glides a few centimetres along the wooden rail, wrist attached naturally. Bottle stays planted on the rail, printed character fixed; lake ripples softly, no additional hand or bottle.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Same one hand gently glides a few centimetres along the wooden rail, wrist attached naturally. Bottle stays planted on the rail, printed character fixed; lake ripples softly, no additional hand or bottle.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S09-v1.png"
+      ],
+      "referenceSha256": [
+        "b221ab3404306a314c9ec03bede8df5ba92234c53c016d92539c96620e717e82"
+      ]
+    },
+    {
+      "id": "S10",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 690,
+      "finalFilmStartFrame": 1050,
+      "seed": 2026112310,
+      "mode": "A",
+      "action": "Keep illustrated whale-girl FROM BEHIND, two hands resting naturally on rail. Only long blue hair, skirt hem and tail tip move slightly in breeze, torso stable and no head turn. Ordinary water and park background remain empty; no profile or face ever revealed.",
+      "generationAction": "Keep illustrated whale-girl FROM BEHIND, two hands resting naturally on rail. Only long blue hair, skirt hem and tail tip move slightly in breeze, torso stable and no head turn. Ordinary water and park background remain empty; no profile or face ever revealed.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Keep illustrated whale-girl FROM BEHIND, two hands resting naturally on rail. Only long blue hair, skirt hem and tail tip move slightly in breeze, torso stable and no head turn. Ordinary water and park background remain empty; no profile or face ever revealed.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S10-v1.png"
+      ],
+      "referenceSha256": [
+        "30d726aa84377ee6170e057cc3d72dfa6250959ad6c1775566bf04157bdbee2a"
+      ]
+    },
+    {
+      "id": "S11",
+      "seconds": 2,
+      "sourceSeconds": 5,
+      "startFrame": 840,
+      "finalFilmStartFrame": 1200,
+      "seed": 2026112311,
+      "mode": "H",
+      "action": "Same hand holds card steadily BY ITS EDGE with natural finger joints. One original yellow leaf drifts past in front; printed character remains fixed to transparent card, actual scene visible through unprinted area. No face or extra hand.",
+      "generationAction": "Same hand holds card steadily BY ITS EDGE with natural finger joints. One original yellow leaf drifts past in front; printed character remains fixed to transparent card, actual scene visible through unprinted area. No face or extra hand.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Same hand holds card steadily BY ITS EDGE with natural finger joints. One original yellow leaf drifts past in front; printed character remains fixed to transparent card, actual scene visible through unprinted area. No face or extra hand.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S11-v1.png"
+      ],
+      "referenceSha256": [
+        "118b80d69bf87a3a38cf6c0df32338ada389381a893b94dcf1978d438ec97106"
+      ]
+    },
+    {
+      "id": "S12",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 900,
+      "finalFilmStartFrame": 1260,
+      "seed": 2026112312,
+      "mode": "H",
+      "action": "Same connected female hand makes ONE small deliberate oar stroke. Oar rotates coherently in its original rowlock, pushes a ripple in the lake; boat and sticker remain rigid and consistent. Preserve thumb/grip, no additional hand or oar.",
+      "generationAction": "Same connected female hand makes ONE small deliberate oar stroke. Oar rotates coherently in its original rowlock, pushes a ripple in the lake; boat and sticker remain rigid and consistent. Preserve thumb/grip, no additional hand or oar.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Same connected female hand makes ONE small deliberate oar stroke. Oar rotates coherently in its original rowlock, pushes a ripple in the lake; boat and sticker remain rigid and consistent. Preserve thumb/grip, no additional hand or oar.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S12-v1.png"
+      ],
+      "referenceSha256": [
+        "2ddf54d92ab5df9b85b76127f053e10aee43ebdaa5e88e2eb3a84e06d3a71a95"
+      ]
+    },
+    {
+      "id": "S13",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 1050,
+      "finalFilmStartFrame": 1410,
+      "seed": 2026112313,
+      "mode": "H",
+      "action": "Same hand maintains umbrella grip as camera tracks slowly along empty wet street. Attached acrylic charm sways slightly near cuff, fixed printed eyes; no wrist flip, extra hand, added pedestrian or face/reflection.",
+      "generationAction": "Same hand maintains umbrella grip as camera tracks slowly along empty wet street. Attached acrylic charm sways slightly near cuff, fixed printed eyes; no wrist flip, extra hand, added pedestrian or face/reflection.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Same hand maintains umbrella grip as camera tracks slowly along empty wet street. Attached acrylic charm sways slightly near cuff, fixed printed eyes; no wrist flip, extra hand, added pedestrian or face/reflection.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S13-v1.png"
+      ],
+      "referenceSha256": [
+        "0c38455f57273ca2ffe85b6e421d30bfbd2fe561372bea7b0be576e9e9909f33"
+      ]
+    },
+    {
+      "id": "S14",
+      "seconds": 3,
+      "sourceSeconds": 5,
+      "startFrame": 1170,
+      "finalFilmStartFrame": 1530,
+      "seed": 2026112314,
+      "mode": "O",
+      "action": "Locked close shot of wet bag and badge. One existing water droplet slides gently along metal rim and onto fabric; printed eyes and whole badge remain unchanged. Original rainy shelter and wet street, empty throughout.",
+      "generationAction": "Locked close shot of wet bag and badge. One existing water droplet slides gently along metal rim and onto fabric; printed eyes and whole badge remain unchanged. Original rainy shelter and wet street, empty throughout.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Locked close shot of wet bag and badge. One existing water droplet slides gently along metal rim and onto fabric; printed eyes and whole badge remain unchanged. Original rainy shelter and wet street, empty throughout.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S14-v1.png"
+      ],
+      "referenceSha256": [
+        "f9239b1579daceac7a5bc45ac7cfa28ecd3a4d56aff6257ba2df0ed349aa3e62"
+      ]
+    },
+    {
+      "id": "S15",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "startFrame": 1260,
+      "finalFilmStartFrame": 1620,
+      "seed": 2026112315,
+      "mode": "H",
+      "action": "Same TWO connected hands grasp the cup securely; during first two seconds lift the whole cup from table slowly by about8cm, then hold it steadily through the remaining take. Fingers maintain real contact, cup never deforms, no repetitive touching, no mouth or face revealed.",
+      "generationAction": "Same TWO connected hands grasp the cup securely; during first two seconds lift the whole cup from table slowly by about8cm, then hold it steadily through the remaining take. Fingers maintain real contact, cup never deforms, no repetitive touching, no mouth or face revealed.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "Use <Picture 1> as the exact first-frame composition of one uninterrupted realistic travel shot. Preserve the same ordinary location, lighting and object count. All whale-maid illustrations and embroidered faces remain inert: identical blue OPEN eyes, long navy/sea-blue hair, white frilled headband, side fins, navy/white apron dress and one whale tail. No blink, facial redraw or autonomous expression. Printed and sewn faces inherit scene shadows, never glow. Any existing real woman remains in the same feminine navy/white body crop, head/chin/face entirely outside frame. No additional person, real face, reflected human, extra hand, detached wrist, readable text, speech, singing, humming, scene cut or background reset. Same TWO connected hands grasp the cup securely; during first two seconds lift the whole cup from table slowly by about8cm, then hold it steadily through the remaining take. Fingers maintain real contact, cup never deforms, no repetitive touching, no mouth or face revealed.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S15-v1.png"
+      ],
+      "referenceSha256": [
+        "4d9e86cbb50b4877ecd4bb73fca5bdddc0690444b4c74cc9ad3a04bc4892d6ac"
+      ]
+    }
+  ],
+  "titleOverlays": [],
+  "closingCredit": "",
+  "scope": "Generation batch only; finalFilmStartFrame retains the original205second positions. No finished-film approval.",
+  "director": "director-v1.md",
+  "finalTargetFrames": 6150,
+  "finalTargetSeconds": 205
+}

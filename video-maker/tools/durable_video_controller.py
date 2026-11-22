@@ -16,7 +16,7 @@ import subprocess
 import sys
 import time
 
-from local_video_pipeline import read, save
+from local_video_pipeline import contained, read, save
 from reference_finisher import sha
 
 
@@ -137,7 +137,9 @@ def checkpoint_sources(config, jobs):
             or not catalog.is_relative_to((episode/'production').resolve())
             or catalog.suffix != '.json'):
         raise ValueError('Keep checkpoint images and catalog inside their episode directories')
-    shots = {shot['id']:shot for shot in read(config['plan'])['shots']}
+    plan = read(config['plan'])
+    draft = plan.get('stage') == 'draft'
+    shots = {shot['id']:shot for shot in plan['shots']}
     rows, paths = [], []
     for job in jobs:
         if job.get('status') != 'completed' or not job.get('sourceSha256'):
@@ -157,10 +159,19 @@ def checkpoint_sources(config, jobs):
                 if not path.is_relative_to(evidence) or sha(path) != image['sha256']:
                     raise ValueError('Complete source inspection image identity changed')
                 paths.append(path.relative_to(root).as_posix())
+        input_binding = {'inputSourceSha256':shots[job['shotId']]['inputSourceSha256']} if not draft else {}
+        if draft:
+            shot = shots[job['shotId']]
+            references = [{'path':relative,'sha256':sha(contained(episode,relative))}
+                          for relative in shot['references']]
+            if [item['sha256'] for item in references] != shot.get('referenceSha256'):
+                raise ValueError('Draft reference changed from its reviewed plan binding')
+            input_binding = {'imageReferences':references}
         rows.append({'id':job['shotId'],'jobId':job['jobId'],'status':'source-downloaded-inspected-content-review-pending',
             'sourceSha256':job['sourceSha256'],'rawSha256':job['rawSha256'],
-            'requestSha256':job['requestSha256'],'inputSourceSha256':shots[job['shotId']]['inputSourceSha256'],
-            'decodedNativeFrames':report['decodedFrames'],'width':3840,'height':2160,'fps':24,
+            'requestSha256':job['requestSha256'],**input_binding,
+            'decodedNativeFrames':report['decodedFrames'],'width':plan.get('width',3840),
+            'height':plan.get('height',2160),'fps':24,
             'inspectionReportSha256':sha(report_file),'semanticReview':'pending'})
     ledger_file = directory/'git-checkpoint.json'
     ledger = read(ledger_file) if ledger_file.exists() else {}
@@ -174,7 +185,8 @@ def checkpoint_sources(config, jobs):
                 error=pushed.stderr.decode('utf-8','replace')[-1200:] if pushed.returncode else None)
             save(ledger_file,ledger)
         return
-    save(catalog,{'schemaVersion':'vivhite-native-4k-source-catalog-1','sourcePlanSha256':config['planSha256'],
+    save(catalog,{'schemaVersion':'vivhite-native-768p-source-catalog-1' if draft else 'vivhite-native-4k-source-catalog-1',
+        'sourcePlanSha256':config['planSha256'],
         'sources':rows,'completedSources':len(rows),'totalSources':len(shots),
         'semanticAcceptance':'not-automatically-granted','humanFullPlayback':False})
     paths.append(catalog.relative_to(root).as_posix())
@@ -194,7 +206,8 @@ def checkpoint_sources(config, jobs):
     changed = any(subprocess.run(['git','diff','--cached','--quiet','--',*paths[offset:offset+20]],
         cwd=root,creationflags=subprocess.CREATE_NO_WINDOW).returncode for offset in range(0,len(paths),20))
     if changed:
-        result = subprocess.run(['git','commit','--only','-m',f'chore: preserve {len(rows)} native 4k source inspections',
+        label = '768p' if draft else '4k'
+        result = subprocess.run(['git','commit','--only','-m',f'chore: preserve {len(rows)} native {label} source inspections',
             '--pathspec-from-file='+str(pathspec),'--pathspec-file-nul'],cwd=root,capture_output=True,
             timeout=300,creationflags=subprocess.CREATE_NO_WINDOW)
         if result.returncode:

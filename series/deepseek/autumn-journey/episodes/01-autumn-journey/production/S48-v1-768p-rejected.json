@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "deepseek-source-quality-decision-1",
+  "at": "2026-11-22T18:27:32.090976+00:00",
+  "shotId": "S48",
+  "decision": "rejected",
+  "sourceSha256": "5e23da36116be20fa1fab236975a7aa3dc3dbecd458d2642823a60599308b02f",
+  "rawSha256": "f510463ccd288ffbc6ed800e0b6723f1d2b8bbaf9dc90be6fd734e05d9ce270a",
+  "jobId": "video_gen_3e6b6bd58a4c41d293c3be8bcc793793",
+  "reason": "The generated scene adds a real woman with torso/arms absent from the empty first-frame image, violating no-added-people. It also changes the wide empty coastal composition. No facial exposure is needed for this rejection.",
+  "actuallyViewed": [
+    {
+      "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\pilot-768p\\S48-5e23da3611-temporal.png",
+      "sha256": "0581017dd2fc46ce6b1b2b79c5c44dc809395bb9e7c3c11fdc0516c93671a6ab",
+      "items": 29
+    }
+  ],
+  "viewingScope": "All29 temporal samples in one actual viewed sheet, including first frame; sufficient to reject. Full336 all-frame pages and candidate sheet are retained but not yet actually viewed or claimed as passed.",
+  "futureUse": "Never adopt this rejected result in final film. Keep all originals. Prepare a separate layered closing with verified empty coastal motion and new nonliving whale-girl merchandise."
+}

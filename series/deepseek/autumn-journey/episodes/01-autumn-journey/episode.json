@@ -5,10 +5,12 @@
   "id": "01-autumn-journey",
   "number": 1,
   "title": "大肥鱼／秋日旅程",
-  "revision": 1,
-  "cast": ["deepseek-whale-girl"],
+  "revision": 2,
+  "cast": [
+    "deepseek-whale-girl"
+  ],
   "director": "director-v1.md",
-  "status": "visual-concepts-awaiting-user-review",
+  "status": "768p-production-in-progress",
   "derivedFrom": "series/vivhite/autumn-journey/episodes/01-autumn-journey/delivery-plan-v13-native-4k.json",
   "videoTarget": {
     "width": 1344,
@@ -18,6 +20,10 @@
     "frames": 6150
   },
   "visualConcepts": "assets/generated/visual-concepts-20261123-v1",
-  "videoGenerationSubmitted": false,
-  "userVisualApproval": "pending"
+  "videoGenerationSubmitted": true,
+  "userVisualApproval": "adopted-for-review-production-by-user-instruction",
+  "productionRecords": [
+    "production/deployment-v1-batch02-768p.json",
+    "production/deployment-v1-batch03-768p.json"
+  ]
 }

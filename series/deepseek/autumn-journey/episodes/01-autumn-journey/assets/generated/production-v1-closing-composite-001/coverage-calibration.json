@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "deepseek-closing-coverage-calibration-1",
+  "sourceSha256": "8ac2c450a4b919086f365fbb4cc7df8e98cefece6e0c2cf913f7aabad4c31d9b",
+  "foregroundSha256": "1534dc1c214a299b583f3c1fd9e4a92de3466d88db1ab008ec43960bfa506856",
+  "decodedSourceFrames": 336,
+  "legacySymbolUnionBounds": [
+    1164,
+    630,
+    1309,
+    761
+  ],
+  "legacySymbolMaskRecipe": "HSV H90..140 S>=90 V>=60 within x>=1170,y>=560; union across all336 frames,13x13 dilation",
+  "proposedTransforms": [
+    [
+      1856.0,
+      410,
+      282,
+      940,
+      530,
+      252,
+      252.93825707759396
+    ],
+    [
+      1929.0,
+      420,
+      289,
+      930,
+      525,
+      251,
+      252.94365612237834
+    ],
+    [
+      1967.5,
+      440,
+      303,
+      915,
+      510,
+      251,
+      252.9372187997508
+    ],
+    [
+      1979.0,
+      420,
+      289,
+      935,
+      525,
+      252,
+      252.9479476707967
+    ],
+    [
+      2017.5,
+      440,
+      303,
+      920,
+      510,
+      251,
+      252.94434830760713
+    ],
+    [
+      2040.5,
+      450,
+      310,
+      905,
+      505,
+      251,
+      252.93735723679657
+    ],
+    [
+      2052.0,
+      430,
+      296,
+      925,
+      520,
+      252,
+      252.94926282273136
+    ],
+    [
+      2082.0,
+      460,
+      316,
+      895,
+      500,
+      251,
+      252.93631895895342
+    ]
+  ],
+  "scope": "Analytical alpha-coverage check only; final visual composite still requires actual inspection."
+}
