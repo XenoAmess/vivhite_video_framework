@@ -23,6 +23,26 @@
       "semanticReview": "pending"
     },
     {
+      "id": "S05",
+      "jobId": "video_gen_5dfd5ef7d1e14d00a19374261022e48f",
+      "status": "source-downloaded-inspected-content-review-pending",
+      "sourceSha256": "6aee6c8294b7cd58001196746331d18c6c5cf841957a86b65dab148a78a932d5",
+      "rawSha256": "b286d7cc318dba9cd4f6d557254bccc01b1df9201ddd2c6e551756e6ca69f916",
+      "requestSha256": "3dced4269b56459895891ebf05720dfcb20116affa7a801f896c6c2654bfe2c0",
+      "imageReferences": [
+        {
+          "path": "assets/generated/production-v1-firstframes-001/scenes/S05-v1.png",
+          "sha256": "68c53a0dc4bd5ab560efd07b61ad377d136efbe2fab45c736789d20ed991fc7e"
+        }
+      ],
+      "decodedNativeFrames": 120,
+      "width": 1344,
+      "height": 768,
+      "fps": 24,
+      "inspectionReportSha256": "a4ca3977bd5ff55b5b2f8840fe6c35a5297adb95b8c3c0215bccb749d73f1998",
+      "semanticReview": "pending"
+    },
+    {
       "id": "S48",
       "jobId": "video_gen_3e6b6bd58a4c41d293c3be8bcc793793",
       "status": "source-downloaded-inspected-content-review-pending",
@@ -43,7 +63,7 @@
       "semanticReview": "pending"
     }
   ],
-  "completedSources": 2,
+  "completedSources": 3,
   "totalSources": 5,
   "semanticAcceptance": "not-automatically-granted",
   "humanFullPlayback": false
