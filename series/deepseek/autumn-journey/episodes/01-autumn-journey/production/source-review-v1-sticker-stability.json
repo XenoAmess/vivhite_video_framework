@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "f1455bb4e7a11daf17cbfdff6e7599aa48dbe7534aed0f1c9795928016f67eae",
+  "shots": [
+    {
+      "id": "S06",
+      "sourceSha256": "c4c6910701713438433a1fb89e95845566bff1d4ffb99013a2475d39ebfc9b8c",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-22T19:57:11.943844+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\sticker-stability\\S06-c4c6910701-all-frames-01.png",
+          "sha256": "7dedfd9bed8704af7b13f11e59a2a856712ecfc9b4922e2ada4da6c9eb741b42",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\sticker-stability\\S06-c4c6910701-all-frames-02.png",
+          "sha256": "4d4810ae4812a4893ca3c4d005196bedda33498b7e44022fa7b025e796f8b264",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\sticker-stability\\S06-c4c6910701-all-frames-03.png",
+          "sha256": "5d6a2e784390eaa497a496e37539e9758c5a836debda756e9dd29d85b1d0499a",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\sticker-stability\\S06-c4c6910701-all-frames-04.png",
+          "sha256": "73fe375c15814a65ececa7c11fa566d671a9e2ce1ec3636a56e33b5254728830",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\sticker-stability\\S06-c4c6910701-face-candidates.png",
+        "sha256": "971e3f1333772449ddef28a0be60035fe6e5eeaccf1c09a15bcee4ee4ca1ddba",
+        "items": 5
+      },
+      "observation": "Actually viewed all120 final corrected source-frame thumbnails in four pages, all120 printed-head region crops in four pages and every expanded detector-candidate crop in one page. Object-only framing contains no added woman, real face/chin or reflection; glass/window remain stable while ordinary exterior buildings move continuously. Tracked original scene-shaded frame-zero printed face preserves two blue OPEN eyes through former blink frames26-30 and every remaining frame. No new portrait, eye glow, floating face patch or altered duration; recognizable whole blue-haired whale-maid print with side fins, navy-white apron and one tail. First96native frames used. Earlier raw added-person output and cropped blink candidate are retained and rejected unchanged. Assistant image review only, no human continuous playback claim. Additional native frame019 and actual original imagegen first frame compared: apparent exterior detector candidates are the basket/handlebars of a PARKED bicycle, not a rider or pedestrian.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    }
+  ]
+}

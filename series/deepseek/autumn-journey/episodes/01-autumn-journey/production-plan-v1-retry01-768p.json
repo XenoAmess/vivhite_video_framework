@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 1,
+  "stage": "draft",
+  "model": "fasth3-omni-bf16",
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "fps": 30,
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 150,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "decoderLayers": 36,
+  "numInferenceSteps": 8,
+  "shotDurationExceptions": {},
+  "shots": [
+    {
+      "id": "S08",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "finalFilmStartFrame": 810,
+      "seed": 2026112308,
+      "mode": "O",
+      "action": "Fixed empty forest-bench view. Whole seated sewn plush and bag remain stable. Leaf shadows drift slowly over the headband, blue fabric hair and embroidered face; eyes remain sewn OPEN with constant shape. No doll animation or extra object.",
+      "generationAction": "Fixed empty forest-bench view. Whole seated sewn plush and bag remain stable. Leaf shadows drift slowly over the headband, blue fabric hair and embroidered face; eyes remain sewn OPEN with constant shape. No doll animation or extra object.",
+      "soundDescription": "Quiet location ambience; final instrumental is mixed separately.",
+      "prompt": "One continuous five-second tripod shot matching <Picture 1> exactly. An UNoccupied, EMPTY autumn forest bench supports ONLY one small blue fabric souvenir toy, one ordinary tan canvas bag and its circular printed badge. Retain the original wide composition, small toy scale and complete bench. Very gentle shifting leaf shadows across the wood and fabric, slight foliage breeze far behind. The stitched blue eyes and printed badge are INERT, fixed artwork with exactly unchanged shapes and ordinary scene shadows. Toy, bag, badge and bench stay physically supported in their original positions throughout. Keep the EMPTY space on the LEFT of the toy as original bare wooden bench. Zero humans, zero torso, zero arms or legs, no face outside the sewn/printed object, no new item, no living doll movement, no push-in, no camera movement, no cut or scene change. Quiet nature ambience only; no voices, singing, speech or text.",
+      "references": [
+        "assets/generated/production-v1-firstframes-001/scenes/S08-v1.png"
+      ],
+      "referenceSha256": [
+        "1e6f02978ff99923798a668aa65bd286eef79e22cb35221ef5f26c063b985706"
+      ]
+    }
+  ],
+  "titleOverlays": [],
+  "closingCredit": "",
+  "scope": "Generation batch only; finalFilmStartFrame retains the original205second positions. No finished-film approval.",
+  "director": "director-v1.md",
+  "finalTargetFrames": 6150,
+  "finalTargetSeconds": 205
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "deepseek-local-compositing-1",
+  "width": 1344,
+  "height": 768,
+  "fps": 24,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "inputs": {
+    "S44Source": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-pilot-768p-001/sources/S44.mp4",
+      "sha256": "d630053d4a2d55c04a6956c9dfffc5fd58e0e19890e0e05fac82a34f2c76092d"
+    },
+    "coastSource": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/vivhite/autumn-journey/production-v12-saddle-768p-full-001/sources/S48.mp4",
+      "sha256": "8ac2c450a4b919086f365fbb4cc7df8e98cefece6e0c2cf913f7aabad4c31d9b"
+    },
+    "cleanPlate": {
+      "pathRelativeToRepositoryParent": "vivhite_video_framework/series/deepseek/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v1-closing-composite-001/clean-plate-1344x768.png",
+      "sha256": "b3519c738754fc51e72749a66317149ecf5158286394ea701873b6fff431a61b"
+    },
+    "foreground": {
+      "pathRelativeToRepositoryParent": "vivhite_video_framework/series/deepseek/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v1-closing-composite-001/foreground-original.png",
+      "sha256": "1534dc1c214a299b583f3c1fd9e4a92de3466d88db1ab008ec43960bfa506856"
+    }
+  },
+  "nativeAudioRetained": false,
+  "shots": [
+    {
+      "id": "S44",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "action": "Closed tent is unzipped downward once, curtain pulled left, revealing empty grass. Exactly the existing right hand, connected arm and navy-white female body crop. Source has a chin at extreme top-right and is NOT adopted unchanged; constant crop excludes it from every output frame.",
+      "crop": {
+        "x": 0,
+        "y": 96,
+        "width": 1176,
+        "height": 672
+      },
+      "outputFrames": 120,
+      "filter": "crop=1176:672:0:96,scale=1344:768:flags=lanczos,setsar=1"
+    },
+    {
+      "id": "S48",
+      "seconds": 14,
+      "sourceSeconds": 14,
+      "outputFrames": 336,
+      "action": "One continuous fourteen-second empty coastal moving background. Nonliving new whale-maid plush, hiking bag and rigid whale-tail charm rest in lower-right foreground, no autonomous face or toy motion. Waves move continuously, no loop or frozen whole scene. Clean beach patch removes the complete legacy butterfly footprint; no tree, human or other prop. Titles are added only in final assembly.",
+      "legacySymbolUnionBounds": [
+        1164,
+        630,
+        1309,
+        761
+      ],
+      "cleanPlatePatch": {
+        "x": 1130,
+        "y": 585,
+        "width": 214,
+        "height": 183,
+        "leftTopFeatherPixels": 12,
+        "rightBottomFeatherPixels": 0
+      },
+      "foregroundTransform": {
+        "width": 400,
+        "x": 920,
+        "y": 480
+      },
+      "filter": "[1:v]crop=214:183:1130:585,format=rgba,geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='255*clip(X/12,0,1)*clip(Y/12,0,1)'[plate];[0:v][plate]overlay=1130:585[bg];[2:v]scale=400:-1,format=rgba[fg];[bg][fg]overlay=920:480,format=yuv420p,setsar=1[out]"
+    }
+  ],
+  "scope": "Actual local postproduction inputs and instructions; source/output frame review and final-film acceptance are separate. This closing is layered compositing, not a new pure Ref2VA output."
+}

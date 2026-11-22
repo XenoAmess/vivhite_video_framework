@@ -13,6 +13,7 @@
 | pilot | `production-plan-v1-pilot-768p.json` | S48、S01、S05、S44、S47 | `DeepSeek-Autumn-Journey-v1-768P-pilot` |
 | batch02 | `production-plan-v1-batch02-768p.json` | S03–S15中的12个角色镜头 | `DeepSeek-Autumn-Journey-v1-768P-batch02` |
 | batch03 | `production-plan-v1-batch03-768p.json` | 剩余28镜 | `DeepSeek-Autumn-Journey-v1-768P-batch03` |
+| retry01 | `production-plan-v1-retry01-768p.json` | S08空物镜头返工 | `DeepSeek-Autumn-Journey-v1-768P-retry01` |
 
 源片、原始有声下载、请求、队列快照、冻结执行器和日志保存在仓库外`../vivhite-analysis-output/deepseek/autumn-journey/production-v1-<批次>-768p-001/`。任务不依赖聊天进程，配置冻结计划及执行器指纹，Windows每分钟兜底；客户端窗口32，服务端满额时保留未提交请求顺序补入。每60秒批量查询，下载后全解码并生成逐帧图册。技术检查和Git检查点不会自动授予内容通过，也不会自动发布未经审阅的成片。
 
@@ -24,7 +25,23 @@ S48首轮新增首帧没有的女性，即使面部未露出也拒收，原文�
 
 S44首轮在开帘后右上角带入下巴，不能原样采用。另存固定机位裁切候选后，必须重新核对全部入片帧，不能仅靠人脸检测器宣布无脸。任何印花修复都只作用于非生命道具，服从场景光照；新增人员或错误肢体不能靠印花回贴掩盖。
 
+S04、S06、S08首轮同样出现首帧没有的女性，原样全部拒收；不能因为人物没有露脸就通过。S04和S06另存为物体近景，固定裁切排除整个人体；S08按只描述原有物体的提示词重新排普通队列，等待原28镜均已取得任务ID后才部署返工批次，没有取消或提升既有任务优先级。删除通用提示词中的条件式女性外观句是针对观察到的失败作的修订，不宣称已经证明模型的唯一根因。
+
+S04挂件与S06贴纸还检查到印刷眼睛眨动。另存的稳定候选跟踪原视频首帧的睁眼印花纹理，不重新绘制人脸、不整体提亮。S06第一轮裁切候选仍有眨眼，继续保留并拒收，随后使用独立v3计划修正。S04、最终S06各120帧均已实际查看全帧图册和局部印花图册；具体通过范围、采用指纹及失败依据见`source-review-v1-*.json`、`rejected-candidates-v1.json`。S06检测器疑似人脸的背景位置另用原生第19帧与实际首帧核对，是停放自行车的车篮和车把。
+
 S02、S25、S33仅复用原版无人的风景源片，实际文件指纹、解码和画面复核后才写入采用清单。旧白绮影片、源片及发布版本不修改。
+
+三段旧风景各120个完整源帧已在本期重新查看；实际拷贝逐字节核对v12正式装配计划。205秒WAV母带也已核对指纹、48kHz双声道16位格式和每声道9840000个采样，见`reference-material-imports-v1.json`。`source-adoptions-v1.json`保存实际通过的逐镜决策和已拷贝素材；48镜未齐时只是部分采用，不表示成片完成。
+
+## 本期工具与原始材料
+
+- `prepare-production-v1.py`创建新的不可覆盖批次，可通过显式提示词文件准备返工；已提交计划不变。
+- `save-firstframe-v1.py`保存原始imagegen图片、规范化图及指纹。
+- `deploy-generation-batch-v1.py`先检查实际计划／首帧的审核绑定，再部署冻结执行器和独立Windows任务。
+- `render-postproduction-v1.py`负责v1实际海岸合成与帐篷固定裁切；`render-prop-corrections-v1.py`负责v2／v3物体取景及印花稳定，均在编码前检查实际输入绑定。
+- `prepare-source-proof-v1.py`制作完整源帧的缩小查看副本，并展开每一帧的所有检测器候选；支持逐帧局部区域图册。只生成证据，不自动判断通过。
+- `import-reference-materials-v1.py`只拷贝核实指纹的三段空风景和已有母带。
+- `adopt-reviewed-sources-v1.py`只导入明确指定、实际完整审阅通过且文件指纹一致的源片，保留原始视频、模型原声及全部失败候选，不原地覆盖已采用的不同版本。
 
 ## 审查边界
 

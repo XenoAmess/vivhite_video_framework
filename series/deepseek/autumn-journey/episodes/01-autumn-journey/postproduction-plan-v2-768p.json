@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "deepseek-prop-corrections-1",
+  "width": 1344,
+  "height": 768,
+  "fps": 24,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "nativeAudioRetained": false,
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-prop-corrections-001",
+  "inputs": {
+    "S04": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch02-768p-001/sources/S04.mp4",
+      "sha256": "d893b3ab614d7a6af2a396af5af20eede612b0134d357e03efa1f00cc0b8c88b"
+    },
+    "S06": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-batch02-768p-001/sources/S06.mp4",
+      "sha256": "81f610f17ec48bdc2a21ad97d038d0c8b58cbf85471c14c8af5db38fa82dd26d"
+    }
+  },
+  "shots": [
+    {
+      "id": "S04",
+      "seconds": 3,
+      "sourceSeconds": 5,
+      "action": "Close-up of original black travel bag and rigid clear whale-maid charm on the worn wooden station bench. Constant crop removes the entire added woman at image left. Preserve natural bench/bag texture and tiny charm swing. The print's existing blue OPEN eyes are held inert using tracked frame-zero video texture, inheriting the same scene exposure. No human, new object, living eye motion or text in the corrected output.",
+      "cropFilter": "crop=854:488:490:210,scale=1344:768:flags=lanczos,setsar=1",
+      "printedPatch": { "center": [658, 389], "radius": 86 },
+      "outputFrames": 120
+    },
+    {
+      "id": "S06",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "action": "Window detail with the existing full-body blue-haired whale-maid sticker and real exterior buildings moving continuously. Constant crop removes the entire added woman at image right, leaving only glass, sticker, window frame and exterior. No actor or reflection. Open printed blue eyes and rigid printed identity stay recognizable. No generated text; final film title is added separately at the original time.",
+      "cropFilter": "crop=1008:576:0:192,scale=1344:768:flags=lanczos,setsar=1",
+      "outputFrames": 120
+    }
+  ],
+  "scope": "Raw videos with added women are rejected unchanged. New object-only reframed candidates require complete actual output-frame review. Frame-zero print stabilization is video postproduction, not creation of a new portrait or removal of a person by a face patch. All raw inputs and intermediates are retained. Other shot lengths and the205second timeline are unchanged."
+}

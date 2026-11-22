@@ -67,7 +67,10 @@ ACTIONS.update({
 })
 
 
-def prepare(name, ids):
+def prepare(name, ids, overrides=None):
+    overrides = overrides or {}
+    if set(overrides)-set(ids) or any(not isinstance(value,str) or not value.strip() for value in overrides.values()):
+        raise ValueError('Prompt overrides must name actual shots and contain text')
     base = json.loads((ROOT/'series/vivhite/autumn-journey/episodes/01-autumn-journey/delivery-plan-v13-native-4k.json').read_text(encoding='utf-8'))
     source = {row['id']: row for row in base['shots']}
     frame, shots, exceptions = 0, [], {}
@@ -96,7 +99,7 @@ def prepare(name, ids):
                     else 'O' if sid in ('S04','S08','S14','S17','S20','S22','S26','S27','S29','S36','S41','S43') else 'H'),
             'action':action, 'generationAction':action,
             'soundDescription':'Quiet location ambience; final instrumental is mixed separately.',
-            'prompt':prompt, 'references':[relative], 'referenceSha256':[digest]})
+            'prompt':overrides.get(sid,prompt), 'references':[relative], 'referenceSha256':[digest]})
         frame += seconds*30
     plan = {'schemaVersion':'vivhite-local-two-stage-video-1', 'episodeId':'01-autumn-journey',
         'revision':1, 'stage':'draft', 'model':'fasth3-omni-bf16', 'width':1344, 'height':768,
@@ -117,5 +120,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--name', required=True)
     parser.add_argument('--shots', required=True)
+    parser.add_argument('--prompt-overrides', type=Path)
     args = parser.parse_args()
-    prepare(args.name, args.shots.split(','))
+    overrides = json.loads(args.prompt_overrides.read_text(encoding='utf-8')) if args.prompt_overrides else None
+    prepare(args.name, args.shots.split(','), overrides)

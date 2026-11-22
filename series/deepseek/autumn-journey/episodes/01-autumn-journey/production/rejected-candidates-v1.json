@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "deepseek-rejected-candidates-1",
+  "at": "2026-11-22T19:43:47.100135+00:00",
+  "shots": [
+    {
+      "id": "S44",
+      "candidateRun": "production-v1-pilot-768p-001",
+      "sourceSha256": "d630053d4a2d55c04a6956c9dfffc5fd58e0e19890e0e05fac82a34f2c76092d",
+      "jobId": "video_gen_2d74b81606af4339a5f27ab364f8572d",
+      "decision": "rejected-unchanged",
+      "reason": "Raw source brings chin into extreme upper-right corner after tent opens; unchanged raw source rejected. Separate constant-framing candidate has independent actual complete review.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/pilot-768p/S44-d630053d4a-temporal.png",
+        "sha256": "9d6e406e7c843fc5fcdbd71357541dc24babe83b999087face0d6a47682fd62e",
+        "items": 11
+      },
+      "scope": "Actual temporal samples suffice to reject; no claim of complete raw-source frame review or acceptance."
+    },
+    {
+      "id": "S04",
+      "candidateRun": "production-v1-batch02-768p-001",
+      "sourceSha256": "d893b3ab614d7a6af2a396af5af20eede612b0134d357e03efa1f00cc0b8c88b",
+      "jobId": "video_gen_edd1a5ceb60d4f509cbe3142a122c1a5",
+      "decision": "rejected-unchanged",
+      "reason": "Adds seated woman absent from empty-bench first frame. Rejected unchanged; separate object-only crop and inert printed texture correction has independent review.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch02-768p/S04-d893b3ab61-temporal.png",
+        "sha256": "0c09baa5fe65c3a5309d9931ca5b8aaa89c466b299e6a2e159f1ce5b060ca604",
+        "items": 11
+      },
+      "scope": "Actual temporal samples suffice to reject; no claim of complete raw-source frame review or acceptance."
+    },
+    {
+      "id": "S06",
+      "candidateRun": "production-v1-batch02-768p-001",
+      "sourceSha256": "81f610f17ec48bdc2a21ad97d038d0c8b58cbf85471c14c8af5db38fa82dd26d",
+      "jobId": "video_gen_7844dfb90a654bc188017c878da80b81",
+      "decision": "rejected-unchanged",
+      "reason": "Adds woman at image right absent from first frame. Rejected unchanged; later crop and subsequent print-stability correction are separate versions.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch02-768p/S06-81f610f17e-temporal.png",
+        "sha256": "ac0516e3b284982566be4e21a612524160539df5185b31ea012b10d638522511",
+        "items": 11
+      },
+      "scope": "Actual temporal samples suffice to reject; no claim of complete raw-source frame review or acceptance."
+    },
+    {
+      "id": "S08",
+      "candidateRun": "production-v1-batch02-768p-001",
+      "sourceSha256": "e72d268fbb7ed0d1e34c9d9cb115b0599799d9299811d7cb400552cf26d1611a",
+      "jobId": "video_gen_718e1989b12a447c911b4896f4eb9db0",
+      "decision": "rejected-unchanged",
+      "reason": "Adds a seated blonde woman absent from empty forest-bench input, and pushes camera into toy. Rejected; independent empty-object prompt retry prepared without changing submitted plan.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/batch02-768p/S08-e72d268fbb-temporal.png",
+        "sha256": "3d172ce08e641400c9bab04cc489791edc2310f090014d77c20fc9d00b59ffb7",
+        "items": 12
+      },
+      "scope": "Actual temporal samples suffice to reject; no claim of complete raw-source frame review or acceptance."
+    },
+    {
+      "id": "S06",
+      "candidateRun": "production-v1-prop-corrections-001",
+      "sourceSha256": "730972fd8dc8ff984577ec49e28f6533520f0ed003df42dd1da1da1fe735aa52",
+      "decision": "rejected-unchanged",
+      "reason": "Object-only crop fixes actor framing but flat printed sticker closes its eyes aroundframes26-30. New separate source must keep original open eyes inert.",
+      "actuallyViewedEvidence": {
+        "path": "assets/generated/production-v1-firstframes-001/review/viewing-copies/prop-corrections/S06-730972fd8d-all-frames-01.png",
+        "sha256": "5380140c4b367f415c9eb263eb0c65750b465c21a9df8204d7232414026171ce",
+        "items": 32
+      },
+      "scope": "First32 actual corrected thumbnails and native first frame viewed; sufficient blink rejection, no claim of reviewing the other88 frames of this rejected candidate."
+    }
+  ],
+  "S48InitialRejection": "S48-v1-768p-rejected.json",
+  "preservation": "All raw videos, original model audio, normalized sources, candidate corrections and inspection images retained outside final selected-source set."
+}

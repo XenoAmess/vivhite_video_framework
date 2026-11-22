@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "deepseek-prop-corrections-1",
+  "width": 1344,
+  "height": 768,
+  "fps": 24,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "nativeAudioRetained": false,
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-sticker-stability-001",
+  "inputs": {
+    "S06": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-prop-corrections-001/sources/S06.mp4",
+      "sha256": "730972fd8dc8ff984577ec49e28f6533520f0ed003df42dd1da1da1fe735aa52"
+    }
+  },
+  "shots": [
+    {
+      "id": "S06",
+      "seconds": 4,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "action": "Preserve the existing corrected object-only tram-window composition and continuous ordinary outside scenery. The flat printed whale-maid sticker must never blink or change expression. Track its physical motion and stabilize the original scene-shaded frame-zero printed face, including its two blue OPEN eyes; no new portrait is generated, no global brightening, no change in frame bounds or duration, no person or new object. Titles remain separate.",
+      "cropFilter": "null,setsar=1",
+      "printedPatch": {
+        "center": [
+          815,
+          259
+        ],
+        "radius": 125
+      }
+    }
+  ],
+  "scope": "Prior cropped S06 fixes unwanted actor framing but contains a printed blink near frames26-30, so is not adopted unchanged. This separate candidate uses video texture from the actually viewed OPEN-eyed first frame, retaining scene exposure and all original intermediate versions. Complete new output-frame review is required."
+}
