@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "deepseek-bilibili-cover-artifacts-1",
+  "createdAt": "2026-11-23T15:52:03.405089+00:00",
+  "tool": "built-in image_gen",
+  "variants": [
+    {
+      "aspect": "16x9",
+      "originalSize": [
+        1672,
+        941
+      ],
+      "outputSize": [
+        1664,
+        936
+      ],
+      "crop": [
+        4,
+        2,
+        1664,
+        936
+      ],
+      "pngRetainedRgbExact": true,
+      "jpgEncoding": "ffmpeg -q:v2 yuvj444p",
+      "png": "cover-16x9.png",
+      "jpeg": "cover-16x9.jpg",
+      "original": "cover-16x9-v1-original.png"
+    },
+    {
+      "aspect": "4x3",
+      "originalSize": [
+        1448,
+        1086
+      ],
+      "outputSize": [
+        1448,
+        1086
+      ],
+      "crop": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "pngRetainedRgbExact": true,
+      "jpgEncoding": "ffmpeg -q:v2 yuvj444p",
+      "png": "cover-4x3.png",
+      "jpeg": "cover-4x3.jpg",
+      "original": "cover-4x3-v1-original.png"
+    }
+  ],
+  "imageFiles": [
+    {
+      "path": "cover-16x9-v1-original.png",
+      "sha256": "43b56843ea6098b2afdc26b6978306e46f4bf7d4555caecdd0c8703c27484408",
+      "bytes": 2947504,
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "cover-16x9.jpg",
+      "sha256": "f9b9c64243e7fc574b2201a9d7dc176377835e1c2150d52c7c56b08b81f40912",
+      "bytes": 550615,
+      "size": [
+        1664,
+        936
+      ]
+    },
+    {
+      "path": "cover-16x9.png",
+      "sha256": "b9e45e0a620156704570ec9c73185208232d5c23ef982702b8880a50a727f126",
+      "bytes": 2724344,
+      "size": [
+        1664,
+        936
+      ]
+    },
+    {
+      "path": "cover-4x3-v1-original.png",
+      "sha256": "d53991dfedebfc210f8130b9858c95f7c01b044392aea1e2669a192a91fea743",
+      "bytes": 2926238,
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "cover-4x3.jpg",
+      "sha256": "5c23bc701f9a6caa6b1b5bf2e04b6781e31c4eb23a7247070ead2b120abf1c1b",
+      "bytes": 553250,
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "cover-4x3.png",
+      "sha256": "d53991dfedebfc210f8130b9858c95f7c01b044392aea1e2669a192a91fea743",
+      "bytes": 2926238,
+      "size": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "path": "references/film-S20-frame-2520.png",
+      "sha256": "80f9a894aa8bdc105cff9d6e0bd2a404d9a574c9fc1c5d38868713bf659ea115",
+      "bytes": 1847760,
+      "size": [
+        1344,
+        768
+      ]
+    }
+  ],
+  "imageCount": 7,
+  "normalization": "Aspect-ratio-only lossless crop or byte-identical PNG copy, plus JPEG export; no creative post-edit outside imagegen.",
+  "semanticAcceptance": "separately-recorded",
+  "userAestheticAcceptance": "pending"
+}

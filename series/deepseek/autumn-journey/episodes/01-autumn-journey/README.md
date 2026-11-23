@@ -1,5 +1,7 @@
 # 大肥鱼／秋日旅程：768P完整审核版
 
+本期新增[16:9／4:3两张bilibili封面](assets/generated/bilibili-covers-20261123-v1/README.md)：延续白绮封面的高山湖、玩偶、旅行包和米白标题风格，角色与片名改为本期大肥鱼；PNG、JPEG、原图和完整提示词均保存在项目。
+
 当前为**v3二次返修审核版**：[完整影片与恢复素材](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v3-768p-20261123)。S37重做为田边停步，整个包、拉链和印花共同固定并保留原手遮挡；S47沿椅面实际左移玩偶，松手后留在新位置。其余46镜、时长、字幕献词与配乐保持，1344×768、30fps、205秒／6150帧。
 
 本地：`D:/workspace/vivhite-analysis-output/deepseek/autumn-journey/production-v3-768p-full-002/film.mp4`。[制作记录](production/production-v3-768p.md)、[实际成片检查](production/final-film-review-v3-768p.json)、[全部图像清单](production/image-inventory-v3-768p.json)、[新图及提示词](assets/generated/production-v3-firstframes-001/README.md)。用户审美验收待审；v1、v2和未发布的首组失败成片保留。
