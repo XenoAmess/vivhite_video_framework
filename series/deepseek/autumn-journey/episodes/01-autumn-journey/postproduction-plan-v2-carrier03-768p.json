@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "deepseek-whole-carrier-correction-1",
+  "revision": 2,
+  "shots": [
+    {
+      "id": "S37",
+      "seconds": 5,
+      "input": "vivhite-analysis-output/deepseek/autumn-journey/production-v2-repair01-768p-001/sources/S37.mp4",
+      "inputSha256": "144194e4dc1ba7815daa092f76f80a2a3a15de56567b9943de404824a4f46b48",
+      "reference": "assets/generated/production-v2-firstframes-001/scenes/S37-v1.png",
+      "referenceSha256": "88df05003f5e454e3d0bdc9e402fafec57bee11e4366326d1cfcff0f63eef24e",
+      "definition": {
+        "patchPolygons": [
+          [
+            [
+              648,
+              302
+            ],
+            [
+              660,
+              295
+            ],
+            [
+              665,
+              307
+            ],
+            [
+              729,
+              307
+            ],
+            [
+              739,
+              282
+            ],
+            [
+              854,
+              278
+            ],
+            [
+              863,
+              286
+            ],
+            [
+              866,
+              431
+            ],
+            [
+              855,
+              445
+            ],
+            [
+              650,
+              449
+            ],
+            [
+              644,
+              438
+            ]
+          ]
+        ],
+        "carrierPolygons": [
+          [
+            [
+              650,
+              279
+            ],
+            [
+              855,
+              276
+            ],
+            [
+              865,
+              437
+            ],
+            [
+              648,
+              447
+            ]
+          ]
+        ],
+        "excludedPolygons": [
+          [
+            [
+              700,
+              291
+            ],
+            [
+              842,
+              291
+            ],
+            [
+              842,
+              432
+            ],
+            [
+              700,
+              432
+            ]
+          ]
+        ],
+        "feather": 5,
+        "maxShift": 650,
+        "maxScaleChange": 0.9
+      },
+      "action": "Keep the actual natural rear forward walking, original two arms and legs, corrected two-lobed whale tail and field/path from new source. Restore entire original imagegen cloth pouch and complete dry-ink girl print using its zipper and blank seam features, excluding all illustration from tracking. Same hand remains in front of upper pouch corner; do not cover or invent fingers. Camera approach follows actual source; no face, autonomous print, extra central tail spur or added person. Full5second source, no timing change."
+    }
+  ],
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v2-carrier03-001",
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "sourceFps": 24,
+  "width": 1344,
+  "height": 768,
+  "workerSha256": "a4de12429b3b0c8908628f6238cba8b0fb969d57fd845585aafc17f27d6a68ef",
+  "scope": "Whole original pouch projection on actual new moving source, retaining hand occlusion. Explicit observed camera-approach tracking bound; all120 source frames and carrier alignment require actual review, not automatic acceptance."
+}

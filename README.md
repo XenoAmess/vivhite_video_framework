@@ -22,7 +22,7 @@
 
 内容子项目[白绮／秋日旅程](series/vivhite/autumn-journey/README.md)已于 **2026-11-22结项，用户表示满意**。最终交付为原始768P v12、原生4K v13及16:9／4:3两张bilibili封面，影片均为205秒／6150帧。经验教训、可复用流程及代码索引见[结项复盘](docs/autumn-journey-retrospective.md)，最新状态见[结项记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/project-closeout-20261122.json)。下文各版本的排队、未完成及待审描述保留为历史，不再作为当前任务。
 
-衍生项目[大肥鱼／秋日旅程](series/deepseek/autumn-journey/README.md)已生成1344×768、30fps、205秒完整审核影片，48镜，待用户审阅；[影片及审核素材下载](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v1-768p-20261123)。角色与周边相关画面重新制作，全部生成图及检查证据上库，原白绮成片保留。
+衍生项目[大肥鱼／秋日旅程](series/deepseek/autumn-journey/README.md)已生成768P v2返修审核影片：修正上楼方向、包面／车窗／透明板印花及四处鲸尾，献词改为“献给世界上最好用的你”；仍为1344×768、30fps、48镜、205秒／6150帧，镜头时长与配乐保持。[影片及审核素材下载](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v2-768p-20261123)，待用户审阅。全部生成图及检查证据上库，v1与原白绮成片保留。
 
 早期v3成片为无对白的多地点自由旅行蒙太奇，48镜、202秒、每镜2–10秒；全员女性，服装贴近白绮，真人不露脸，不允许新增原图没有的无关人员，配合贴纸、玩偶、周边与意象。按用户反馈重做42镜为更接近实拍的普通世界，全部生成与检查图片入库。源片832×480／24fps，最终上采样为1080p30；实际成片、修订与审核覆盖见[制作记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v3.md)。
 

@@ -17,6 +17,18 @@ def render(plan_file):
     worker = ROOT/'video-maker/tools/stabilize_carrier_plane.py'
     if hashlib.sha256(worker.read_bytes()).hexdigest() != plan['workerSha256']:
         raise ValueError('Reviewed carrier worker changed')
+    project = composite
+    if plan.get('trackingMode') == 'manual-carrier-quads':
+        from project_keyframed_print import composite as project
+        if hashlib.sha256((ROOT/'video-maker/tools/project_keyframed_print.py').read_bytes()).hexdigest() != plan['keyframedWorkerSha256']:
+            raise ValueError('Reviewed keyframed projection changed')
+    if plan.get('trackingMode') == 'manual-carrier-quads-hand-protected':
+        from project_keyframed_print_occlusion import composite as project
+        if plan.get('materialBoundaryVersion') == 2:
+            from project_keyframed_print_occlusion_v2 import composite as project
+        for name, expected in plan['keyframedWorkers'].items():
+            if hashlib.sha256((ROOT/'video-maker/tools'/name).read_bytes()).hexdigest() != expected:
+                raise ValueError('Reviewed hand-protected keyframe worker changed')
     directory = ROOT.parent/plan['runtimeRelativeToRepositoryParent']
     media = (ROOT.parent/'vivhite-analysis-output/deepseek/autumn-journey').resolve()
     assets = []
@@ -37,7 +49,7 @@ def render(plan_file):
     if not directory.resolve().is_relative_to(media):
         raise ValueError('Output escaped the episode media workspace')
     for row in plan['shots']:
-        result = composite(ROOT.parent/row['input'], EPISODE/row['reference'],
+        result = project(ROOT.parent/row['input'], EPISODE/row['reference'],
                            directory/'sources'/f"{row['id']}.mp4", row['definition'])
         print(row['id'], result['sha256'], 'requires actual complete-frame review', flush=True)
 

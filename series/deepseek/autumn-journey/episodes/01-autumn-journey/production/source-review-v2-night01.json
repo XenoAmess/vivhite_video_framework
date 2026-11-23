@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "edb9068e44621d9a362a88572467671a2c728e09239a2cd2b303a500a46c8937",
+  "shots": [
+    {
+      "id": "S40",
+      "sourceSha256": "ce3da9fc856a7da240a180005593f9c4046b7adf48854d0b984c3ccdb006c861",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-23T10:53:09.656654+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\night-final-view\\native-machine-proof\\S40-ce3da9fc85-all-frames-01.png",
+          "sha256": "31d449ffbff0cbc4fc3276966237359b98ff5a43a921f4089490fc4c26e07373",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\night-final-view\\native-machine-proof\\S40-ce3da9fc85-all-frames-02.png",
+          "sha256": "a15da675374bf04cf2126d69136a8e912c24828086f2675adde08adbdb106470",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\night-final-view\\native-machine-proof\\S40-ce3da9fc85-all-frames-03.png",
+          "sha256": "03691f462970eaa4d8629b4b8d7cfbccff996bce1cab91bf7eba422c8c3ff04a",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\night-final-view\\native-machine-proof\\S40-ce3da9fc85-all-frames-04.png",
+          "sha256": "490a6c3bb4615e96c5534a49e984f205a75abdc34b46f243b79700199362f3de",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\night-final-view\\native-machine-proof\\S40-ce3da9fc85-face-candidates.png",
+        "sha256": "accede477fd0c99520b2ad0740aca6e9899dc62f3c430f83029562b68c007d93",
+        "items": 16
+      },
+      "observation": "Actually viewed all120 ordered full-scene frames, all120 whole-sticker detail crops and native first/last images against transparent imagegen reference. Entire physical paper sticker is rigidly fixed to glass, blue open eyes, hair/body/apron/shoes and two-lobed tail unchanging. Actual exterior lights continue behind the die-cut silhouette and through ahoge hole; no surrounding frozen glass block, added person, human reflection or autonomous print motion. Dim face/white trim match night exposure without white glow. Native5seconds, actual full source120frames.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    }
+  ]
+}

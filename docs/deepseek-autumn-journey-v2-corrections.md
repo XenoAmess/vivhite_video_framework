@@ -24,9 +24,20 @@ S16原图脚尖面对镜头，模型生成倒退上楼；固定裁切只能排�
 
 S10、S23、S34、S37原尾柄穿过分叉后继续延伸，形成第三根竖刺。先用imagegen修正四张首帧为一个相连尾柄、在末端只有左右两叶，再重生成；不能只在负面提示里写“不要第三根”同时继续输入错误原图。侧面尾巴与周边图案也要检查，不能把衣褶或真实连接的尾柄一律擦掉。
 
+## 低纹理布袋的自动跟踪失败时
+
+S37新源片有明显的相机靠近和布袋形变。直接首帧LK在第76帧失去可靠拟合；改成每24帧重新取点虽然跟完120帧，末端袋边仍漂移约数十像素。因此“成功跟完”不能作为位置正确的证明，重设种子或增加尺度容差不能代替实际边缘检查。未采用的分段跟踪实验代码保存在本期`production/experiments/`。
+
+最终候选按实际袋边／拉链观察11个平面关键帧，插值各帧四边形，将完整原始印花投射到袋面，同时用空白布料区域匹配场景曝光。它是带人工观察锚点的平面近似，不是精确的非刚性布料重建；需要完整查看印花相对拉链、缝线和手的位置。
+
+前两组羽化范围留下原图呆毛／鞋的浅重影，扩大覆盖的第三组又把原图草地带到袋口，均未采用。第四组明确限制原图材质轮廓、修正拉链锚点，并保护原有手的遮挡：不投射参考图的皮肤像素，保留当前源片中实际相连的握袋手。皮肤阈值只在本镜受限握袋区域内使用，不能推广成通用人物分割或用来隐藏新增人员。
+
+当前入口为[投射几何](../video-maker/tools/project_keyframed_print.py)、[手部保护及材质边界版本](../video-maker/tools/project_keyframed_print_occlusion_v2.py)、[实际参数](../series/deepseek/autumn-journey/episodes/01-autumn-journey/postproduction-plan-v2-keyframed-print04-768p.json)。前三组代码、计划和成品保留；当前采用值与逐帧检查绑定在[源片复核记录](../series/deepseek/autumn-journey/episodes/01-autumn-journey/production/source-review-v2-keyframed04.json)。
+
 ## 验证与复用
 
 - [针对性测试](../video-maker/tools/test_stabilize_carrier_plane.py)验证：改变图案内部动画不影响载体变换，缺失载体特征会拒绝，越界蒙版会拒绝。测试只证明程序行为，不证明实际影片美观。
+- [关键帧几何测试](../video-maker/tools/test_project_keyframed_print.py)验证精确锚点与中间平面、禁止越过已观察帧外推、拒绝反射／交叉四边形；不替代实际袋边和手部遮挡检查。
 - [源片检查器](../series/deepseek/autumn-journey/episodes/01-autumn-journey/production/prepare-source-proof-v2.py)完整解码原生源片，保存所有帧的有序整景图册、指定局部和原生帧；输出明确不自动宣告实际看过或审核通过。
 - [独立装配器](../series/deepseek/autumn-journey/episodes/01-autumn-journey/production/assemble-reviewed-film-v2.py)要求八段替换源片逐一有实际通过决定且指纹相符，40段未改源片只转移原有决定；核对全部48镜起点和时长，保留205秒／6150帧与原配乐。
 

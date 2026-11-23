@@ -1,0 +1,348 @@
+{
+  "schemaVersion": "deepseek-whole-carrier-correction-1",
+  "revision": 2,
+  "shots": [
+    {
+      "id": "S37",
+      "seconds": 5,
+      "input": "vivhite-analysis-output/deepseek/autumn-journey/production-v2-repair01-768p-001/sources/S37.mp4",
+      "inputSha256": "144194e4dc1ba7815daa092f76f80a2a3a15de56567b9943de404824a4f46b48",
+      "reference": "assets/generated/production-v2-firstframes-001/scenes/S37-v1.png",
+      "referenceSha256": "88df05003f5e454e3d0bdc9e402fafec57bee11e4366326d1cfcff0f63eef24e",
+      "definition": {
+        "patchPolygons": [
+          [
+            [
+              735,
+              274
+            ],
+            [
+              856,
+              275
+            ],
+            [
+              861,
+              434
+            ],
+            [
+              694,
+              447
+            ],
+            [
+              694,
+              320
+            ],
+            [
+              730,
+              312
+            ]
+          ]
+        ],
+        "feather": 6,
+        "referenceQuad": [
+          [
+            649,
+            294
+          ],
+          [
+            854,
+            278
+          ],
+          [
+            861,
+            433
+          ],
+          [
+            651,
+            447
+          ]
+        ],
+        "keyframes": [
+          {
+            "frame": 0,
+            "quad": [
+              [
+                649,
+                294
+              ],
+              [
+                854,
+                278
+              ],
+              [
+                861,
+                433
+              ],
+              [
+                651,
+                447
+              ]
+            ]
+          },
+          {
+            "frame": 12,
+            "quad": [
+              [
+                650,
+                261
+              ],
+              [
+                850,
+                244
+              ],
+              [
+                857,
+                394
+              ],
+              [
+                642,
+                418
+              ]
+            ]
+          },
+          {
+            "frame": 24,
+            "quad": [
+              [
+                643,
+                270
+              ],
+              [
+                850,
+                241
+              ],
+              [
+                862,
+                390
+              ],
+              [
+                643,
+                418
+              ]
+            ]
+          },
+          {
+            "frame": 36,
+            "quad": [
+              [
+                603,
+                220
+              ],
+              [
+                825,
+                224
+              ],
+              [
+                829,
+                383
+              ],
+              [
+                592,
+                385
+              ]
+            ]
+          },
+          {
+            "frame": 48,
+            "quad": [
+              [
+                589,
+                242
+              ],
+              [
+                822,
+                232
+              ],
+              [
+                843,
+                401
+              ],
+              [
+                591,
+                410
+              ]
+            ]
+          },
+          {
+            "frame": 60,
+            "quad": [
+              [
+                609,
+                228
+              ],
+              [
+                830,
+                207
+              ],
+              [
+                843,
+                382
+              ],
+              [
+                610,
+                408
+              ]
+            ]
+          },
+          {
+            "frame": 72,
+            "quad": [
+              [
+                576,
+                203
+              ],
+              [
+                831,
+                208
+              ],
+              [
+                828,
+                382
+              ],
+              [
+                566,
+                389
+              ]
+            ]
+          },
+          {
+            "frame": 84,
+            "quad": [
+              [
+                599,
+                227
+              ],
+              [
+                860,
+                225
+              ],
+              [
+                877,
+                405
+              ],
+              [
+                595,
+                430
+              ]
+            ]
+          },
+          {
+            "frame": 96,
+            "quad": [
+              [
+                625,
+                204
+              ],
+              [
+                891,
+                186
+              ],
+              [
+                892,
+                371
+              ],
+              [
+                621,
+                400
+              ]
+            ]
+          },
+          {
+            "frame": 108,
+            "quad": [
+              [
+                611,
+                218
+              ],
+              [
+                871,
+                181
+              ],
+              [
+                895,
+                376
+              ],
+              [
+                614,
+                415
+              ]
+            ]
+          },
+          {
+            "frame": 119,
+            "quad": [
+              [
+                566,
+                191
+              ],
+              [
+                872,
+                202
+              ],
+              [
+                857,
+                394
+              ],
+              [
+                563,
+                400
+              ]
+            ]
+          }
+        ],
+        "lightingPolygons": [
+          [
+            [
+              657,
+              330
+            ],
+            [
+              691,
+              330
+            ],
+            [
+              691,
+              422
+            ],
+            [
+              657,
+              430
+            ]
+          ],
+          [
+            [
+              843,
+              326
+            ],
+            [
+              855,
+              326
+            ],
+            [
+              855,
+              415
+            ],
+            [
+              843,
+              421
+            ]
+          ]
+        ],
+        "keyframeEvidence": "assets/generated/production-v2-firstframes-001/review/bag-tracking/S37-carrier-keyframes-grid.jpg"
+      },
+      "action": "Same new source walking, original two arms/legs and corrected whale tail. Restore the COMPLETE original printed girl to the observed pouch plane using manually observed bag-edge keyframes, whole-print mask and blank-cloth scene exposure matching. Preserve actual cloth rim, hand and grip. All facial, hair, dress, shoe and tail print elements stay fixed relative to carrier; no new limb, human or timing change."
+    }
+  ],
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v2-keyframed-print02-001",
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "sourceFps": 24,
+  "width": 1344,
+  "height": 768,
+  "workerSha256": "a4de12429b3b0c8908628f6238cba8b0fb969d57fd845585aafc17f27d6a68ef",
+  "scope": "Low-texture moving cloth: direct automatic tracking failed and24frame rebasing drifted. Use explicitly observed11 source carrier keyframes and interpolated plane, retain original physical pouch/hand. Full120frame alignment and cloth-edge review required; no automatic approval. Prior18pixel feather left faint old ahoge/feet at last frame; reduce to6pixels within blank cloth margins, inspect complete output.",
+  "trackingMode": "manual-carrier-quads",
+  "keyframedWorkerSha256": "b5b029b97f9271a0648f114f23efd9b58ca501c123220745a8465678cebfc348"
+}

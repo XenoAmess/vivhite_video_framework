@@ -99,16 +99,20 @@ def prepare():
     decisions, ledger = [], []
     (DIRECTORY/'sources').mkdir(parents=True, exist_ok=True)
     (DIRECTORY/'segments').mkdir(exist_ok=True)
-    frame_refs = {s['id']:s['references'] for s in read(EPISODE/'production-plan-v2-repair01-768p.json')['shots']}
+    new_generation = {s['id']:s for s in read(EPISODE/'production-plan-v2-repair01-768p.json')['shots']}
+    new_generation.update({s['id']:s for s in read(EPISODE/'production-plan-v2-repair02-768p.json')['shots']})
     for shot in plan['shots']:
         sid = shot['id']
         if sid in replacement_rows:
             runtime, row, entry = replacement_rows[sid]
             record = {'id': sid, 'runtime': entry['runtime'], 'plan': entry['plan'],
                       'planSha256': finisher.sha(EPISODE/entry['plan']), 'reviewSha256': finisher.sha(runtime/'clip-decisions.json')}
-            if sid in frame_refs:
-                shot['references'] = frame_refs[sid]
+            shot['actualCorrectionPlan'] = entry['plan']
+            if sid in new_generation:
+                shot['references'] = new_generation[sid]['references']
                 shot['referenceSha256'] = [finisher.sha(EPISODE/f) for f in shot['references']]
+                shot['originalGenerationAction'] = new_generation[sid]['generationAction']
+                shot['seed'] = new_generation[sid]['seed']
             if sid == 'S40':
                 shot['references'] = ['assets/generated/production-v2-firstframes-001/scenes/S40-clean-v1.png',
                                       'assets/generated/production-v2-firstframes-001/scenes/S40-sticker-fitted-rgba.png']

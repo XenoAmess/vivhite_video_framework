@@ -18,7 +18,51 @@
       "decision": "rejected",
       "observed": "Freeze patch includes surrounding blue glass and leaves a conspicuous shape against later exterior lights. Rebuild empty moving background and use a complete transparent paper sticker instead.",
       "allFramesReviewedForThisRejection": false
+    },
+    {
+      "id": "S37",
+      "runtime": "production-v2-repair01-768p-001",
+      "sha256": "144194e4dc1ba7815daa092f76f80a2a3a15de56567b9943de404824a4f46b48",
+      "decision": "rejected-as-final-source",
+      "observed": "The raw S37 walking source still redraws its printed character; only its walking and corrected tail serve as the parent of the accepted projection.",
+      "allFramesReviewedForThisRejection": false
+    },
+    {
+      "id": "S37",
+      "runtime": "production-v2-keyframed-print01-001",
+      "sha256": "1741deaa3bbf49a7366f6c2e0e5b8eaa5fa16cae8d8e3825462be703be7d5753",
+      "decision": "rejected-as-final-source",
+      "observed": "18px feather leaves the old ahoge and feet visible as a second contour; rejected on native last-frame inspection.",
+      "allFramesReviewedForThisRejection": false
+    },
+    {
+      "id": "S37",
+      "runtime": "production-v2-keyframed-print02-001",
+      "sha256": "fc9807a32b6a156dabaae95f29c6fc90c69f781001a747b901b877e7d640477f",
+      "decision": "rejected-as-final-source",
+      "observed": "6px feather still exposes the previous ahoge; rejected after the full120 bag atlas and native last-frame inspection.",
+      "allFramesReviewedForThisRejection": false
+    },
+    {
+      "id": "S37",
+      "runtime": "production-v2-keyframed-print03-001",
+      "sha256": "b18508c1d027e517b60b907db163d6bc0b8e256f92609459c53b30f8ff142766",
+      "decision": "rejected-as-final-source",
+      "observed": "Expanded projection brings source grass into the zipper area; rejected on native first and last frames.",
+      "allFramesReviewedForThisRejection": false
     }
   ],
-  "scope": "Actual assistant observations of specified candidate frames. Failure records do not claim complete-source review or final user approval. Every failed source and image remains retained."
+  "scope": "Actual assistant observations of specified candidate frames. Failure records do not claim complete-source review or final user approval. Every failed source and image remains retained.",
+  "trackingExperiments": [
+    {
+      "runtime": "production-v2-carrier03-001",
+      "decision": "rejected",
+      "observed": "Direct LK tracking fails at frame76. Partial output and failure logs retained."
+    },
+    {
+      "worker": "production/experiments/stabilize_carrier_segments-rejected.py",
+      "decision": "rejected",
+      "observed": "24-frame rebase diagnostic returns transforms for120 frames but exhibits approximately40px drift; tracking completion is not an alignment pass."
+    }
+  ]
 }

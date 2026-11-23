@@ -2,13 +2,45 @@
   "schemaVersion": "deepseek-visual-replacements-2",
   "scope": "Candidate routing only. Every entry still requires an actual complete-source accepted decision matching the exact source hash.",
   "shots": [
-    {"id":"S10","runtime":"production-v2-repair01-768p-001","plan":"production-plan-v2-repair01-768p.json"},
-    {"id":"S16","runtime":"production-v2-repair01-768p-001","plan":"production-plan-v2-repair01-768p.json"},
-    {"id":"S23","runtime":"production-v2-repair01-768p-001","plan":"production-plan-v2-repair01-768p.json"},
-    {"id":"S26","runtime":"production-v2-carrier02-001","plan":"postproduction-plan-v2-carrier02-768p.json"},
-    {"id":"S34","runtime":"production-v2-repair01-768p-001","plan":"production-plan-v2-repair01-768p.json"},
-    {"id":"S37","runtime":"production-v2-carrier03-001","plan":"postproduction-plan-v2-carrier03-768p.json"},
-    {"id":"S40","runtime":"production-v2-night-composite01-001","plan":"postproduction-plan-v2-night01-768p.json"},
-    {"id":"S43","runtime":"production-v2-carrier01-001","plan":"postproduction-plan-v2-carrier01-768p.json"}
+    {
+      "id": "S10",
+      "runtime": "production-v2-repair01-768p-001",
+      "plan": "production-plan-v2-repair01-768p.json"
+    },
+    {
+      "id": "S16",
+      "runtime": "production-v2-repair01-768p-001",
+      "plan": "production-plan-v2-repair01-768p.json"
+    },
+    {
+      "id": "S23",
+      "runtime": "production-v2-repair01-768p-001",
+      "plan": "production-plan-v2-repair01-768p.json"
+    },
+    {
+      "id": "S26",
+      "runtime": "production-v2-carrier02-001",
+      "plan": "postproduction-plan-v2-carrier02-768p.json"
+    },
+    {
+      "id": "S34",
+      "runtime": "production-v2-repair01-768p-001",
+      "plan": "production-plan-v2-repair01-768p.json"
+    },
+    {
+      "id": "S37",
+      "runtime": "production-v2-keyframed-print04-001",
+      "plan": "postproduction-plan-v2-keyframed-print04-768p.json"
+    },
+    {
+      "id": "S40",
+      "runtime": "production-v2-night-composite01-001",
+      "plan": "postproduction-plan-v2-night01-768p.json"
+    },
+    {
+      "id": "S43",
+      "runtime": "production-v2-carrier01-001",
+      "plan": "postproduction-plan-v2-carrier01-768p.json"
+    }
   ]
 }

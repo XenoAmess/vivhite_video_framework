@@ -10,7 +10,7 @@
     "deepseek-whale-girl"
   ],
   "director": "director-v4.md",
-  "status": "768p-v2-user-corrections-in-progress",
+  "status": "768p-v2-review-film-ready",
   "derivedFrom": "series/vivhite/autumn-journey/episodes/01-autumn-journey/delivery-plan-v13-native-4k.json",
   "videoTarget": {
     "width": 1344,
@@ -32,19 +32,30 @@
     "production/deployment-v1-retry04-768p.json",
     "production/deployment-v1-retry05-768p.json",
     "production/deployment-v1-retry06-768p.json",
-    "production/deployment-v1-retry07-768p.json"
+    "production/deployment-v1-retry07-768p.json",
+    "production/deployment-v2-repair01-768p.json",
+    "production/deployment-v2-repair02-768p.json"
   ],
   "delivery": {
-    "plan": "delivery-plan-v1-768p.json",
-    "review": "production/final-film-review-v1-768p.json",
-    "release": "https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v1-768p-20261123",
-    "userAestheticAcceptance": "rejected-seven-corrections-requested"
+    "plan": "delivery-plan-v2-768p.json",
+    "review": "production/final-film-review-v2-768p.json",
+    "release": "https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v2-768p-20261123",
+    "userAestheticAcceptance": "pending"
   },
   "revisionInProgress": {
     "version": "v2",
     "requirements": "production/revision-v2-requirements.md",
     "generationPlan": "production-plan-v2-repair01-768p.json",
     "priorFilmPreserved": true,
-    "timingUnchanged": true
-  }
+    "timingUnchanged": true,
+    "status": "review-film-ready"
+  },
+  "previousDeliveries": [
+    {
+      "plan": "delivery-plan-v1-768p.json",
+      "review": "production/final-film-review-v1-768p.json",
+      "release": "https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v1-768p-20261123",
+      "userAestheticAcceptance": "rejected-seven-corrections-requested"
+    }
+  ]
 }

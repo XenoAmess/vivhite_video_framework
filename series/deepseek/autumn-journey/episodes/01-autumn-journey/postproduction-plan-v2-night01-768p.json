@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "deepseek-rigid-night-sticker-plan-1",
+  "revision": 2,
+  "input": "vivhite-analysis-output/deepseek/autumn-journey/production-v2-repair02-768p-001/sources/S40.mp4",
+  "inputSha256": "9721ae2abf1174b1b87f0d5a50efdf214331b247d49cfb13ed43171508f643ff",
+  "sticker": "assets/generated/production-v2-firstframes-001/scenes/S40-sticker-fitted-rgba.png",
+  "stickerSha256": "6bb58b188d8585a5e79cd0180d3435ffb856c6dffae14937e31a9e0fc482aa02",
+  "position": [
+    794,
+    239
+  ],
+  "carrierPolygons": [
+    [
+      [
+        1018,
+        5
+      ],
+      [
+        1125,
+        5
+      ],
+      [
+        1125,
+        757
+      ],
+      [
+        1018,
+        757
+      ]
+    ],
+    [
+      [
+        40,
+        592
+      ],
+      [
+        1010,
+        561
+      ],
+      [
+        1010,
+        736
+      ],
+      [
+        40,
+        736
+      ]
+    ]
+  ],
+  "workers": {
+    "video-maker/tools/stabilize_carrier_plane.py": "a4de12429b3b0c8908628f6238cba8b0fb969d57fd845585aafc17f27d6a68ef",
+    "series/deepseek/autumn-journey/episodes/01-autumn-journey/production/render-night-sticker-v2.py": "c4afa329b31a83f83c1d96b207df47847b3419ecc7ba7c1ed89b6ec9268b6acd"
+  },
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v2-night-composite01-001",
+  "shots": [
+    {
+      "id": "S40",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "action": "Same empty night-train window, exterior light streaks continuous; whole opaque die-cut whale-maid paper sticker fixed to glass with original blue open eyes, hair, body, feet and exactly two-lobed tail. No autonomous print motion or bright face; no person, limb or reflected passenger."
+    }
+  ],
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "referenceAppearanceRequired": true,
+  "scope": "New model-generated clean moving background and actual complete RGBA paper sticker, premultiplied-alpha carrier projection; no frozen surrounding glass, face-only patch or timing change. Full sequence review still required."
+}
