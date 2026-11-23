@@ -5,12 +5,12 @@
   "id": "01-autumn-journey",
   "number": 1,
   "title": "大肥鱼／秋日旅程",
-  "revision": 3,
+  "revision": 4,
   "cast": [
     "deepseek-whale-girl"
   ],
-  "director": "director-v2.md",
-  "status": "768p-final-assembly-in-progress",
+  "director": "director-v3.md",
+  "status": "768p-review-film-ready",
   "derivedFrom": "series/vivhite/autumn-journey/episodes/01-autumn-journey/delivery-plan-v13-native-4k.json",
   "videoTarget": {
     "width": 1344,
@@ -33,5 +33,11 @@
     "production/deployment-v1-retry05-768p.json",
     "production/deployment-v1-retry06-768p.json",
     "production/deployment-v1-retry07-768p.json"
-  ]
+  ],
+  "delivery": {
+    "plan": "delivery-plan-v1-768p.json",
+    "review": "production/final-film-review-v1-768p.json",
+    "release": "https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v1-768p-20261123",
+    "userAestheticAcceptance": "pending"
+  }
 }

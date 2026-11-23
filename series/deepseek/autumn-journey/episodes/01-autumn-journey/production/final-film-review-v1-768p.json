@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "deepseek-final-film-review-1",
+  "method": "assistant-frame-and-document-review",
+  "reviewedAt": "2026-11-23T01:11:03.065548+00:00",
+  "filmSha256": "1ac4cad93402cb2f045bb2c99f06c59be98d87e5941137128d354e973c13855a",
+  "sourceReview": {
+    "shots": 48,
+    "allNativeSourceFramesActuallyViewed": true,
+    "reviewedNativeSourceFrames": 6096,
+    "nativeFramesUsedInFilm": 4920,
+    "evidence": "source-review-v1-full-timeline.json"
+  },
+  "encodedReview": {
+    "fullMachineAudioVideoDecode": "passed",
+    "decodedEncodedFrames": 6150,
+    "assistantViewedEncodedSamples": 458,
+    "sampleMethod": "2fps plus every shot start/end",
+    "actuallyViewedPages": [
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-01.png",
+        "sha256": "4405434bd7866d7e00e5485fc4c6b7494b4964e76156d357d446a546d0ef751e",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-02.png",
+        "sha256": "2fb60178ee1e4c38e27d111c70384c02fdd1fba699a45609d9ba5c694cb7d30e",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-03.png",
+        "sha256": "ebc6c6b33a722f40a01e89528578efe88764a102c38e8246a87344a5bf5ded78",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-04.png",
+        "sha256": "4b4b1bfac70d050f494c3cb2742e4e0ff58725ffc86638c904a3285e39ce6081",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-05.png",
+        "sha256": "2eed476ae458cb94f1bfdeb25ee6bf4f5e9a4bd4328e6d90f823ab849c1d6d81",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-06.png",
+        "sha256": "222830eb23e3f9fb9e988cd84ae89be5f2bb8f2595d64ae425ef702b39691724",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-07.png",
+        "sha256": "9303a72eb80ebf72272addddd16e115387959abe2fa47a600aac4fc8c8fdd979",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-08.png",
+        "sha256": "4e16da140ec8ab2168952fe1d7035932a9fdbfcfde02c22f382294fb97490947",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-09.png",
+        "sha256": "1d845d8d817e84ce2c07c11f8f95d331f16c65c592de96087ed9d4bc7de911c2",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-10.png",
+        "sha256": "67ada06bb2b533c6dd35408a17b7d035990e890e1735249b48aec00b369430fd",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-11.png",
+        "sha256": "3eb5cc7479b6de2d6038ed01b37501e65e00d40c63bb59a7c681a2fabc05bb4f",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-12.png",
+        "sha256": "71c2c04338c564e994dc8014bf1df3d81155bdb0b075fdd8a4e05c0dc5d2bfd2",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-13.png",
+        "sha256": "90f5bc23ab23dca1ab775afecb518cb5d501f1d0f931bb42d828eeb22b8529ae",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-14.png",
+        "sha256": "923274f2d06d49d3565f659ff19bc9e739c324bba1e793812110bf0920d21ba7",
+        "items": 32
+      },
+      {
+        "pathRelativeToEpisode": "assets/generated/production-v1-final-review-001/film-timeline-15.png",
+        "sha256": "e944b86375fb39b488a465a7010c68bdf06d30bf7ba9307c3857768f38a5e843",
+        "items": 10
+      }
+    ],
+    "nativeFullFramesActuallyViewed": [
+      600,
+      5760,
+      5880
+    ],
+    "encodedAllFramesIndividuallyViewed": false,
+    "scope": "All15 timeline pages actually viewed, plus named native typography frames; all source-frame semantics covered separately before assembly. Not continuous human playback."
+  },
+  "checks": {
+    "noRealFacesOrAddedPeople": "passed",
+    "originalHandConnectionsAndMotion": "passed-with-source-specific-reviewed-scope",
+    "inertPrintedAndEmbroideredEyes": "passed-with-small-wide-print-detail-limit",
+    "titlesAndDedication": "passed",
+    "timingAndFrameCount": "passed",
+    "audioProvenanceAndDecode": "passed"
+  },
+  "audio": {
+    "masterSha256": "46ef587715d277e778c805e566d643ce7b8430d3486ee8143b36dda34a74205b",
+    "nativeModelAudioInFinalMix": false,
+    "peakDb": -2.405696,
+    "actualFullHumanListening": false,
+    "basis": "Exact previously approved procedural instrumental master, explicit map and full final audio decode; no new speech source."
+  },
+  "documentationCorrection": "Final source and frame600 confirm S06 is a train-window sticker; director-v3 corrects v2 luggage wording. Immutable render plans/film retained.",
+  "limitations": [
+    "Assistant contact-sheet/native-detail review is distinct from human continuous playback or user aesthetic acceptance.",
+    "S43 small ink face is limited in native pixel detail; no enlarged fine-iris quality claim.",
+    "S48 explicitly documented compositing with fixed foreground and continuous moving sea."
+  ],
+  "humanFullPlayback": false,
+  "userAestheticAcceptance": "pending"
+}
