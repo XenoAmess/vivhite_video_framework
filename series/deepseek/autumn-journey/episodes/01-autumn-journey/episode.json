@@ -5,12 +5,12 @@
   "id": "01-autumn-journey",
   "number": 1,
   "title": "大肥鱼／秋日旅程",
-  "revision": 5,
+  "revision": 6,
   "cast": [
     "deepseek-whale-girl"
   ],
-  "director": "director-v4.md",
-  "status": "768p-v2-review-release-published",
+  "director": "director-v5.md",
+  "status": "768p-v3-revision-generating",
   "derivedFrom": "series/vivhite/autumn-journey/episodes/01-autumn-journey/delivery-plan-v13-native-4k.json",
   "videoTarget": {
     "width": 1344,
@@ -34,22 +34,23 @@
     "production/deployment-v1-retry06-768p.json",
     "production/deployment-v1-retry07-768p.json",
     "production/deployment-v2-repair01-768p.json",
-    "production/deployment-v2-repair02-768p.json"
+    "production/deployment-v2-repair02-768p.json",
+    "production/deployment-v3-repair01-768p.json"
   ],
   "delivery": {
     "plan": "delivery-plan-v2-768p.json",
     "review": "production/final-film-review-v2-768p.json",
     "release": "https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v2-768p-20261123",
-    "userAestheticAcceptance": "pending",
+    "userAestheticAcceptance": "two-shots-rejected-S37-S47",
     "releaseVerification": "production/release-v2-768p.json"
   },
   "revisionInProgress": {
-    "version": "v2",
-    "requirements": "production/revision-v2-requirements.md",
-    "generationPlan": "production-plan-v2-repair01-768p.json",
+    "version": "v3",
+    "requirements": "production/revision-v3-requirements.md",
+    "generationPlan": "production-plan-v3-repair01-768p.json",
     "priorFilmPreserved": true,
     "timingUnchanged": true,
-    "status": "review-release-published"
+    "status": "two-shot-generation-running"
   },
   "previousDeliveries": [
     {
