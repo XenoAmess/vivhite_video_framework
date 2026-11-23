@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "deepseek-whole-carrier-correction-1",
+  "revision": 2,
+  "shots": [
+    {
+      "id": "S26",
+      "seconds": 5,
+      "input": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-768p-full-001/sources/S26.mp4",
+      "inputSha256": "a9af005ecca17f3b9d258af5ad86b6a0e11d4bd3bfa2d5853deb42d3855c937d",
+      "reference": "assets/generated/production-v1-firstframes-001/scenes/S26-v1.png",
+      "referenceSha256": "0f7b8f100979afdaa92eb6ec6c6cef9574b3cf50d744750ba06ce21aa3eca3ab",
+      "definition": {
+        "patchPolygons": [
+          [
+            [
+              644,
+              391
+            ],
+            [
+              692,
+              387
+            ],
+            [
+              697,
+              349
+            ],
+            [
+              739,
+              341
+            ],
+            [
+              891,
+              359
+            ],
+            [
+              1139,
+              346
+            ],
+            [
+              1193,
+              352
+            ],
+            [
+              1207,
+              397
+            ],
+            [
+              1203,
+              583
+            ],
+            [
+              1229,
+              697
+            ],
+            [
+              1198,
+              709
+            ],
+            [
+              668,
+              664
+            ],
+            [
+              663,
+              615
+            ],
+            [
+              687,
+              460
+            ],
+            [
+              691,
+              435
+            ],
+            [
+              645,
+              436
+            ]
+          ]
+        ],
+        "carrierPolygons": [
+          [
+            [
+              5,
+              390
+            ],
+            [
+              637,
+              390
+            ],
+            [
+              637,
+              730
+            ],
+            [
+              5,
+              730
+            ]
+          ],
+          [
+            [
+              1050,
+              150
+            ],
+            [
+              1338,
+              150
+            ],
+            [
+              1338,
+              730
+            ],
+            [
+              1050,
+              730
+            ]
+          ]
+        ],
+        "feather": 3,
+        "maxShift": 25,
+        "maxScaleChange": 0.06
+      },
+      "action": "Empty car seat and moving countryside. Preserve the entire original pouch, seams and complete inert printed artwork as one physical prop; track independent seat and car interior features. No face-only patch or rectangular cloth insert."
+    }
+  ],
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v2-carrier02-001",
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "sourceFps": 24,
+  "width": 1344,
+  "height": 768,
+  "workerSha256": "a4de12429b3b0c8908628f6238cba8b0fb969d57fd845585aafc17f27d6a68ef",
+  "scope": "Replace complete supported original pouch as a carrier-aligned video prop, including intact whole original artwork. Preserve moving road outside. New candidate; first rectangular print candidate rejected."
+}

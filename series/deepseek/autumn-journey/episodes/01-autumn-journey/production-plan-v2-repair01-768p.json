@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 2,
+  "stage": "draft",
+  "model": "fasth3-omni-bf16",
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "fps": 30,
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 750,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "decoderLayers": 36,
+  "numInferenceSteps": 8,
+  "shotDurationExceptions": {},
+  "shots": [
+    {
+      "id": "S16",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "finalFilmStartFrame": 1740,
+      "seed": 2026112416,
+      "mode": "H",
+      "action": "Low REAR view of the existing woman climbing FORWARD UP these stone stairs. Camera sees heels and backs of shoes; all toes face AWAY from camera UPHILL throughout. Beginning immediately, left foot lifts forward onto next higher real tread, left sole plants and supports weight, then right foot passes it FORWARD and lands on the following higher tread. Continue alternating naturally uphill for five seconds. Hips gain height and move AWAY from camera; no backward shuffle, walking down, sliding feet or reverse playback. Camera stays behind below waist, no head, chin, face, hands or additional person. Keep original shoes, stockings, skirt, railing and continuous stair geometry. Bag tiny whale motif is inert.",
+      "soundDescription": "石阶脚步、渐远的雨滴。",
+      "prompt": "Use <Picture 1> as the exact first frame of one uninterrupted realistic shot. Same location, composition, exposure and subject count. No speech, song, text or new object. Low REAR view of the existing woman climbing FORWARD UP these stone stairs. Camera sees heels and backs of shoes; all toes face AWAY from camera UPHILL throughout. Beginning immediately, left foot lifts forward onto next higher real tread, left sole plants and supports weight, then right foot passes it FORWARD and lands on the following higher tread. Continue alternating naturally uphill for five seconds. Hips gain height and move AWAY from camera; no backward shuffle, walking down, sliding feet or reverse playback. Camera stays behind below waist, no head, chin, face, hands or additional person. Keep original shoes, stockings, skirt, railing and continuous stair geometry. Bag tiny whale motif is inert.",
+      "references": [
+        "assets/generated/production-v2-firstframes-001/scenes/S16-v1.png"
+      ],
+      "referenceSha256": [
+        "332c2afc34016d0ea3581e18f0eaa2d1d2b368dae73ab4509bbc84d57112a38f"
+      ],
+      "generationAction": "Low REAR view of the existing woman climbing FORWARD UP these stone stairs. Camera sees heels and backs of shoes; all toes face AWAY from camera UPHILL throughout. Beginning immediately, left foot lifts forward onto next higher real tread, left sole plants and supports weight, then right foot passes it FORWARD and lands on the following higher tread. Continue alternating naturally uphill for five seconds. Hips gain height and move AWAY from camera; no backward shuffle, walking down, sliding feet or reverse playback. Camera stays behind below waist, no head, chin, face, hands or additional person. Keep original shoes, stockings, skirt, railing and continuous stair geometry. Bag tiny whale motif is inert."
+    },
+    {
+      "id": "S10",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 150,
+      "finalFilmStartFrame": 1050,
+      "seed": 2026112410,
+      "mode": "A",
+      "action": "Same whale-maid FROM BEHIND resting both original hands on the river railing for five seconds. Locked camera; only very soft hair-tip and skirt breeze and ordinary flowing river. Keep the corrected short curved SINGLE tail stalk attached at lower back, terminating in exactly TWO broad left/right fluke lobes. Tail remains still and keeps its first-frame topology. No central third spike, vertical dangling extension, extra fin, tail duplication, head turn or new person.",
+      "soundDescription": "桥下流水、风。",
+      "prompt": "Use <Picture 1> as the exact first frame of one uninterrupted realistic shot. Same location, composition, exposure and subject count. No speech, song, text or new object. Same whale-maid FROM BEHIND resting both original hands on the river railing for five seconds. Locked camera; only very soft hair-tip and skirt breeze and ordinary flowing river. Keep the corrected short curved SINGLE tail stalk attached at lower back, terminating in exactly TWO broad left/right fluke lobes. Tail remains still and keeps its first-frame topology. No central third spike, vertical dangling extension, extra fin, tail duplication, head turn or new person.",
+      "references": [
+        "assets/generated/production-v2-firstframes-001/scenes/S10-v1.png"
+      ],
+      "referenceSha256": [
+        "5576d0ea70d1a3fcc3fb6ff12291b043c91f22a72ec3195ff9d17f6896edb390"
+      ],
+      "generationAction": "Same whale-maid FROM BEHIND resting both original hands on the river railing for five seconds. Locked camera; only very soft hair-tip and skirt breeze and ordinary flowing river. Keep the corrected short curved SINGLE tail stalk attached at lower back, terminating in exactly TWO broad left/right fluke lobes. Tail remains still and keeps its first-frame topology. No central third spike, vertical dangling extension, extra fin, tail duplication, head turn or new person."
+    },
+    {
+      "id": "S23",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 300,
+      "finalFilmStartFrame": 2760,
+      "seed": 2026112423,
+      "mode": "A",
+      "action": "Same whale-maid FROM BEHIND looking at mountain ridges for five seconds. Locked camera, body stays in original stance, only slight hair and hem breeze. Keep corrected tail rigidly coherent: one curved stalk from lower back ENDS at exactly two broad left/right fluke lobes. No continuation beyond split, central third prong, extra fin or new tail. No head turn, face, new person or background reset.",
+      "soundDescription": "山风。",
+      "prompt": "Use <Picture 1> as the exact first frame of one uninterrupted realistic shot. Same location, composition, exposure and subject count. No speech, song, text or new object. Same whale-maid FROM BEHIND looking at mountain ridges for five seconds. Locked camera, body stays in original stance, only slight hair and hem breeze. Keep corrected tail rigidly coherent: one curved stalk from lower back ENDS at exactly two broad left/right fluke lobes. No continuation beyond split, central third prong, extra fin or new tail. No head turn, face, new person or background reset.",
+      "references": [
+        "assets/generated/production-v2-firstframes-001/scenes/S23-v1.png"
+      ],
+      "referenceSha256": [
+        "6e3d8270e114429b46caedbde748fc028ed65482d7f5285a4f73d1e5f9dfca0c"
+      ],
+      "generationAction": "Same whale-maid FROM BEHIND looking at mountain ridges for five seconds. Locked camera, body stays in original stance, only slight hair and hem breeze. Keep corrected tail rigidly coherent: one curved stalk from lower back ENDS at exactly two broad left/right fluke lobes. No continuation beyond split, central third prong, extra fin or new tail. No head turn, face, new person or background reset."
+    },
+    {
+      "id": "S34",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 450,
+      "finalFilmStartFrame": 4050,
+      "seed": 2026112434,
+      "mode": "A",
+      "action": "Smooth rear tracking below the shoulders of this same woman walking FORWARD along the existing coastal path, natural alternating planted steps from the first frame. Only original two arms and legs. Keep corrected tail shape attached beneath waist bow: ONE short curved stalk ENDS at two broad left/right flukes, no extra central protrusion. Tail keeps the original exact topology and moves only with the skirt. Head and face always outside crop. No new person, limb, scene cut or background reset.",
+      "soundDescription": "海风、细步声。",
+      "prompt": "Use <Picture 1> as the exact first frame of one uninterrupted realistic shot. Same location, composition, exposure and subject count. No speech, song, text or new object. Smooth rear tracking below the shoulders of this same woman walking FORWARD along the existing coastal path, natural alternating planted steps from the first frame. Only original two arms and legs. Keep corrected tail shape attached beneath waist bow: ONE short curved stalk ENDS at two broad left/right flukes, no extra central protrusion. Tail keeps the original exact topology and moves only with the skirt. Head and face always outside crop. No new person, limb, scene cut or background reset.",
+      "references": [
+        "assets/generated/production-v2-firstframes-001/scenes/S34-v1.png"
+      ],
+      "referenceSha256": [
+        "f026417989b0207b4da9b34c0f438a6c8f3d3418e24df52cf026a2cbaacc0575"
+      ],
+      "generationAction": "Smooth rear tracking below the shoulders of this same woman walking FORWARD along the existing coastal path, natural alternating planted steps from the first frame. Only original two arms and legs. Keep corrected tail shape attached beneath waist bow: ONE short curved stalk ENDS at two broad left/right flukes, no extra central protrusion. Tail keeps the original exact topology and moves only with the skirt. Head and face always outside crop. No new person, limb, scene cut or background reset."
+    },
+    {
+      "id": "S37",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 600,
+      "finalFilmStartFrame": 4410,
+      "seed": 2026112437,
+      "mode": "H",
+      "action": "Smooth REAR tracking of the SAME cropped woman walking naturally FORWARD on this empty farm lane for five seconds, alternating supported footsteps immediately. Original right hand holds original rectangular cloth pouch by its top corner; keep pouch broad face facing camera, gentle whole-pouch sway only, fabric nearly flat. The ENTIRE printed chibi character is dry ink, fixed relative to pouch seams: blue OPEN eyes, hair, body, shoes and tail absolutely unchanged, never independent motion, blinking or facial redraw. Keep corrected costume tail: one curved stalk terminating in exactly TWO broad flukes; no central third spike, dangling stem beyond fork, extra fin or second tail. Only original two arms and two legs, no face, reflected person, new person or cut.",
+      "soundDescription": "轻步、田风。",
+      "prompt": "Use <Picture 1> as the exact first frame of one uninterrupted realistic shot. Same location, composition, exposure and subject count. No speech, song, text or new object. Smooth REAR tracking of the SAME cropped woman walking naturally FORWARD on this empty farm lane for five seconds, alternating supported footsteps immediately. Original right hand holds original rectangular cloth pouch by its top corner; keep pouch broad face facing camera, gentle whole-pouch sway only, fabric nearly flat. The ENTIRE printed chibi character is dry ink, fixed relative to pouch seams: blue OPEN eyes, hair, body, shoes and tail absolutely unchanged, never independent motion, blinking or facial redraw. Keep corrected costume tail: one curved stalk terminating in exactly TWO broad flukes; no central third spike, dangling stem beyond fork, extra fin or second tail. Only original two arms and two legs, no face, reflected person, new person or cut.",
+      "references": [
+        "assets/generated/production-v2-firstframes-001/scenes/S37-v1.png"
+      ],
+      "referenceSha256": [
+        "88df05003f5e454e3d0bdc9e402fafec57bee11e4366326d1cfcff0f63eef24e"
+      ],
+      "generationAction": "Smooth REAR tracking of the SAME cropped woman walking naturally FORWARD on this empty farm lane for five seconds, alternating supported footsteps immediately. Original right hand holds original rectangular cloth pouch by its top corner; keep pouch broad face facing camera, gentle whole-pouch sway only, fabric nearly flat. The ENTIRE printed chibi character is dry ink, fixed relative to pouch seams: blue OPEN eyes, hair, body, shoes and tail absolutely unchanged, never independent motion, blinking or facial redraw. Keep corrected costume tail: one curved stalk terminating in exactly TWO broad flukes; no central third spike, dangling stem beyond fork, extra fin or second tail. Only original two arms and two legs, no face, reflected person, new person or cut."
+    }
+  ],
+  "titleOverlays": [],
+  "closingCredit": "",
+  "scope": "User-requested correction generation only. Preserve v1. Final film remains205seconds; no source automatically accepted.",
+  "director": "director-v4.md",
+  "finalTargetFrames": 6150,
+  "finalTargetSeconds": 205,
+  "referenceAppearanceRequired": true,
+  "originalTimelineSha256": "344d2078dfc7814974907e4fc3b05564dfee3a7b976ab525b96133cf5e9cafc5",
+  "referenceSoundDescriptionsPlanSha256": "872f11868922b3d7eddcbc08a78d7ee096b0fdceb26ffd2f658eb8be73eea458"
+}

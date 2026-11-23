@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "e78b87a1e869f65f7da033c5ab37628f31e86b5ed2f210903f3ba2c7621c5807",
+  "shots": [
+    {
+      "id": "S43",
+      "sourceSha256": "cc2777ef0367751100b6c61d137e1f4e0f9cb2af4cfc40e139dd5ea638b07749",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-23T10:06:09.389260+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\carrier01\\S43-cc2777ef03-all-frames-01.png",
+          "sha256": "f0f45330ffdbb33b33617632065015ae58d5a2ebb2530362226f1b513670e12e",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\carrier01\\S43-cc2777ef03-all-frames-02.png",
+          "sha256": "58e0b6f679ee4b891912c86657f5a355763e1e772f317c92eb04e27b30791807",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\carrier01\\S43-cc2777ef03-all-frames-03.png",
+          "sha256": "877de53fc0e3d310e5cd0671451cb68dd5b67efb84687c872a85e7d5b9d7d55a",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\carrier01\\S43-cc2777ef03-all-frames-04.png",
+          "sha256": "294a332702aad13a3e5efed957a79880589ce17c51988bd4d5d7aa1833afdfdc",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\carrier01\\S43-cc2777ef03-face-candidates.png",
+        "sha256": "8f6366b98b1e76b8f0d75608bc608d30c196d51e0c982d10186a23513e58ed3f",
+        "items": 10
+      },
+      "observation": "Viewed all120 ordered full-source frames, all120 original-pixel whole-card details and native last frame against original card input. Whole original illustration restored at proper readable size: open blue eyes, stable head/body/limbs and two-lobed tail, fixed to clear physical panel. No shrinking to a distorted miniature, autonomously changing drawing or floating portrait. Clear border/base remain supported, source lamp/sky/tent natural, no people, visible patch seam or bright face. Actual artwork is original print projected as a full carrier; no claim of unprocessed model video.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    }
+  ]
+}

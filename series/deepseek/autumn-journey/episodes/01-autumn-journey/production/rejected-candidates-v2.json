@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "deepseek-rejected-candidates-2",
+  "priorReleasePreserved": true,
+  "priorUserDecision": "v1 rejected; seven correction requirements recorded separately",
+  "candidates": [
+    {
+      "id": "S26",
+      "runtime": "production-v2-carrier01-001",
+      "sha256": "fa35aaf671eea54a26c876f8e543f1eabfdd63820d2dbadf852cfcffc435eb1a",
+      "decision": "rejected",
+      "observed": "Whole print is stable but a rectangular navy cloth patch boundary is visible in native last frame. Carrier02 replaces the complete original pouch instead.",
+      "allFramesReviewedForThisRejection": false
+    },
+    {
+      "id": "S40",
+      "runtime": "production-v2-carrier01-001",
+      "sha256": "57cec2d116c372d4195fd67ed80b2301387993d718643bde169d1b49526f8aea",
+      "decision": "rejected",
+      "observed": "Freeze patch includes surrounding blue glass and leaves a conspicuous shape against later exterior lights. Rebuild empty moving background and use a complete transparent paper sticker instead.",
+      "allFramesReviewedForThisRejection": false
+    }
+  ],
+  "scope": "Actual assistant observations of specified candidate frames. Failure records do not claim complete-source review or final user approval. Every failed source and image remains retained."
+}

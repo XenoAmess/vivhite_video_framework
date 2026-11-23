@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "vivhite-local-two-stage-video-1",
+  "episodeId": "01-autumn-journey",
+  "revision": 2,
+  "stage": "draft",
+  "model": "fasth3-omni-bf16",
+  "width": 1344,
+  "height": 768,
+  "sourceSize": "1344x768",
+  "fps": 30,
+  "sourceFps": 24,
+  "sourceSeconds": 5,
+  "maxShotSeconds": 5,
+  "totalFrames": 150,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "decoderLayers": 36,
+  "numInferenceSteps": 8,
+  "shotDurationExceptions": {},
+  "shots": [
+    {
+      "id": "S40",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "startFrame": 0,
+      "finalFilmStartFrame": 4770,
+      "seed": 2026112440,
+      "mode": "I",
+      "action": "Locked EMPTY night-train window for five seconds. Only exterior cyan and pink light bands move smoothly across the SAME dark glass. Preserve original window frame and original EMPTY navy fabric seat reflection. No sticker, drawing, person, human silhouette, head, face, hand, torso, passenger, new object, text, independent reflected movement, camera move or scene cut. All interior furniture remains stationary. Natural dark exposure, no bright flare.",
+      "soundDescription": "\u5300\u901f\u5217\u8f66\u58f0\u3001\u97f3\u4e50\u8f6c\u8f7b\u3002",
+      "prompt": "Use <Picture 1> as exact first frame. Locked EMPTY night-train window for five seconds. Only exterior cyan and pink light bands move smoothly across the SAME dark glass. Preserve original window frame and original EMPTY navy fabric seat reflection. No sticker, drawing, person, human silhouette, head, face, hand, torso, passenger, new object, text, independent reflected movement, camera move or scene cut. All interior furniture remains stationary. Natural dark exposure, no bright flare.",
+      "references": [
+        "assets/generated/production-v2-firstframes-001/scenes/S40-clean-v1.png"
+      ],
+      "referenceSha256": [
+        "96969de1590ab5fab87dcfaf23bf0707045742335144b8016678cfb2bda82f7f"
+      ],
+      "generationAction": "Locked EMPTY night-train window for five seconds. Only exterior cyan and pink light bands move smoothly across the SAME dark glass. Preserve original window frame and original EMPTY navy fabric seat reflection. No sticker, drawing, person, human silhouette, head, face, hand, torso, passenger, new object, text, independent reflected movement, camera move or scene cut. All interior furniture remains stationary. Natural dark exposure, no bright flare."
+    }
+  ],
+  "titleOverlays": [],
+  "closingCredit": "",
+  "scope": "Generate empty night-window background only. A separately reviewed complete paper sticker will be composited after source inspection, with rigid glass-relative position; never generate the sticker illustration as moving video.",
+  "director": "director-v4.md",
+  "finalTargetFrames": 6150,
+  "finalTargetSeconds": 205,
+  "referenceAppearanceRequired": true,
+  "originalTimelineSha256": "344d2078dfc7814974907e4fc3b05564dfee3a7b976ab525b96133cf5e9cafc5",
+  "referenceSoundDescriptionsPlanSha256": "872f11868922b3d7eddcbc08a78d7ee096b0fdceb26ffd2f658eb8be73eea458"
+}

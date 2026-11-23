@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "8cd7df1b2d3706a36acd25acdab3bacb46583c4cdb45617d08158beb09e05950",
+  "shots": [
+    {
+      "id": "S26",
+      "sourceSha256": "b6c29ec38d3e6828066a12f3840ef03e1fc4651f6b176cfc97078ec9042775b1",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-23T10:06:09.373145+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\carrier02-view\\native-machine-proof\\S26-b6c29ec38d-all-frames-01.png",
+          "sha256": "2e8c443b3dc9a16f1530b589a114f79789b210d64ca1eed517f6c9886e848ccb",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\carrier02-view\\native-machine-proof\\S26-b6c29ec38d-all-frames-02.png",
+          "sha256": "c57992a03a83b9056935211c11997061edd40240557a642cc99ef8c733760ea2",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\carrier02-view\\native-machine-proof\\S26-b6c29ec38d-all-frames-03.png",
+          "sha256": "9e665fe3bacac19cd6056bf3ec35f0b93eb3be586edc5034d8d44ee1346e2691",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\carrier02-view\\native-machine-proof\\S26-b6c29ec38d-all-frames-04.png",
+          "sha256": "6ab9fdd4249c4124ab6cb68b23b0f6ef15cf7c2feda35271e12e50be87fdb0b4",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v2-firstframes-001\\review\\carrier02-view\\native-machine-proof\\S26-b6c29ec38d-face-candidates.png",
+        "sha256": "daafc9c24c1d0b4966bb37a8b3c40405ead34d043ea5890991749a44bc393eb0",
+        "items": 13
+      },
+      "observation": "Viewed all120 ordered full-scene source frames and native last frame against original imagegen reference. Entire pouch and all print elements are one coherent physical prop: eyes, hair, body, shoes and forked tail no longer independently animate. No interior rectangular texture boundary; cloth seams, zipper and road/seat remain continuous. Original navy/skin exposure subdued, no glowing face, new human or reflection. The first print-only rectangular candidate remains rejected and retained.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    }
+  ]
+}
