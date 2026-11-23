@@ -61,18 +61,31 @@ def prepare_plan():
     timeline = read(timeline_file)
     if [s['id'] for s in timeline['shots']] != EXPECTED:
         raise ValueError('Original 48-shot timeline changed')
+    sound_file = ROOT/'series/vivhite/autumn-journey/episodes/01-autumn-journey/final-assembly-plan-v12-768p.json'
+    sound_descriptions = {row['id']: row['soundDescription'] for row in read(sound_file)['shots']}
+    if list(sound_descriptions) != EXPECTED:
+        raise ValueError('Approved music timeline must cover all48 shots')
     canonical = {}
     for file in ['production-plan-v1-pilot-768p.json', 'production-plan-v1-batch02-768p.json',
                  'production-plan-v1-batch03-768p.json', 'source-review-plan-v1-landscapes.json']:
         canonical.update({row['id']: row for row in read(EPISODE/file)['shots']})
-    overrides = {
-        'S04': 'Constant close framing of original bag and physical round charm on empty bench. Quiet coherent motion and inert scene-shaded OPEN-eyed print; entire unintended human is outside the frame.',
-        'S06': 'Close view of original suitcase sticker and empty ordinary surroundings, unchanged OPEN-eyed printed texture attached to luggage. No added person.',
-        'S14': 'Close view of rain-speckled bag, zipper and round badge; natural subdued light, identical OPEN-eyed print and subtle continuous movement. Whole unintended human is outside the frame.',
-        'S20': 'Continuous ten-second camera pullback from supported plush closeup to original bag, mountain lake and ordinary snow mountains. Both physical merchandise faces remain OPEN-eyed, waves move naturally, no joins.',
-        'S34': 'Constant close rear-body framing of illustrated female walking along ordinary coastal path: back bow, navy-white skirt, attached whale tail and alternating two legs, with entire head and face outside the frame throughout.',
-        'S44': 'Original closed tent zipper is pulled open once, then curtain drawn aside to reveal outside scenery. Constant framing excludes head and chin throughout; no reverse closing or extra hand.',
-        'S48': 'Continuous fourteen-second empty coastal view with gently moving sea. New whole plush, bag and tail charm remain inert at lower right. Imagegen foreground and clean sand patch are composited over verified original moving coast; no butterfly, tree, branch or person.'}
+    actual_actions = {}
+    for line in director.read_text(encoding='utf-8').splitlines():
+        if line.startswith('| S'):
+            cells = [cell.strip() for cell in line.split('|')]
+            sid, time_range, seconds, action = cells[1:5]
+            start, end = time_range.split('–')
+            def clock_seconds(value):
+                minutes, seconds_part = map(int, value.split(':'))
+                return minutes*60+seconds_part
+            original = next(row for row in timeline['shots'] if row['id'] == sid)
+            if (sid in actual_actions or int(seconds) != original['seconds']
+                    or clock_seconds(start)*30 != original['startFrame']
+                    or clock_seconds(end)-clock_seconds(start) != int(seconds) or not action):
+                raise ValueError('Actual director and original film timing differ: '+sid)
+            actual_actions[sid] = action
+    if list(actual_actions) != EXPECTED:
+        raise ValueError('Actual director must describe all48 shots in order')
     checked_rows, shots = [], []
     proof_helper = runpy.run_path(str(EPISODE/'production/adopt-reviewed-sources-v1.py'))
     checks = ['noHumanFaces', 'noAddedPeople', 'allCharactersFemale', 'costumeStyle',
@@ -104,18 +117,21 @@ def prepare_plan():
         transferred['reviewTransfer'] = 'Exact reviewed bytes and original dated decision; no new watching or semantic acceptance is inferred.'
         checked_rows.append(transferred)
         shot = copy.deepcopy(canonical[sid])
-        action = overrides.get(sid, shot['action'])
+        action = actual_actions[sid]
+        if 'generationAction' in shot:
+            shot['originalGenerationAction'] = shot.pop('generationAction')
         shot.update(startFrame=original['startFrame'], finalFilmStartFrame=original['startFrame'],
                     seconds=original['seconds'], sourceSeconds=source_seconds,
                     action=action, prompt='Assembly of the explicitly selected reviewed source: '+action,
                     sourceFile=entry['path'], sourceSha256=entry['sha256'],
-                    soundDescription=original['soundDescription'])
+                    soundDescription=sound_descriptions[sid])
         shots.append(shot)
     plan = read(EPISODE/'production-plan-v1-pilot-768p.json')
     plan.update(totalFrames=6150, shots=shots, shotDurationExceptions={'S20': 10, 'S48': 14},
                 referenceAppearanceRequired=True, assemblyOnly=True,
                 director='director-v2.md', directorSha256=reference_finisher.sha(director),
                 originalTimelineSha256=reference_finisher.sha(timeline_file),
+                referenceSoundDescriptionsPlanSha256=reference_finisher.sha(sound_file),
                 sourceAdoptionsSha256=reference_finisher.sha(DIRECTORY/'source-imports.json'),
                 episodeAssemblyWorkers=workers(), closingCredit='',
                 titleOverlays=[{'shotId': 'S06', 'text': '大肥鱼 / 秋日旅程',

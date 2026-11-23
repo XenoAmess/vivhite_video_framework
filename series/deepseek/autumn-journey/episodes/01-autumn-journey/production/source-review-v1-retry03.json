@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "b61513d3c8d4a8aa516a297d80e88eded298f92236e51b9401e96063b0598de5",
+  "shots": [
+    {
+      "id": "S10",
+      "sourceSha256": "d60feb3cacea31b8db1983e7dc737c0f96b30d21812045d2af93a3be4078af94",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-23T00:07:54.251367+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry03-768p\\S10-d60feb3cac-all-frames-01.png",
+          "sha256": "e1229b76c0224f335da1a0b996dc11ad8223884f278e1af3df4cf05d12f806df",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry03-768p\\S10-d60feb3cac-all-frames-02.png",
+          "sha256": "675cbacbd5ca30ccd38b56bb948c2525913e8c425dde9fe6be88c48b9790328f",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry03-768p\\S10-d60feb3cac-all-frames-03.png",
+          "sha256": "059132d42ce0521563b31e0900127d88ffbdcfb64e614961988aa954e60b7630",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry03-768p\\S10-d60feb3cac-all-frames-04.png",
+          "sha256": "9a7cd0fdc061fe30609fe60e36c3856a8a6691727e910f7f1e207c5587c143af",
+          "items": 24
+        }
+      ],
+      "faceEvidence": null,
+      "observation": "Actually viewed all120 native-source thumbnails in4pages and temporal overview. Same illustrated female stands rear-facing beside ordinary autumn river railing for full5seconds, both original arms/hands supported on rail, two legs/shoes and one attached whale tail stable. Back of blue gradient hair, white headband and back bow remain visible, no turn, cheek, eye, mouth or reflected face appears. Hair/ribbons and river show subtle continuous breeze/ripples; ordinary buildings/rail stay coherent. No new person, ghost, frontal portrait or old heroine residue. Source has no printed frontal face to stabilize; all120frames used. Assistant image review only, no human continuous playback claim.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    }
+  ]
+}

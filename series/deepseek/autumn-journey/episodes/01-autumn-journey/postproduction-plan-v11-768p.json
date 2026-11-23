@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "deepseek-prop-corrections-1",
+  "width": 1344,
+  "height": 768,
+  "fps": 24,
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "nativeAudioRetained": false,
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-stairs-framing-001",
+  "inputs": {
+    "S16": {
+      "pathRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v1-retry04-768p-001/sources/S16.mp4",
+      "sha256": "35e858f9e26291e56feec49fbc8949a81ca5bef820b1df658ac4f570eec78135"
+    }
+  },
+  "shots": [
+    {
+      "id": "S16",
+      "seconds": 5,
+      "sourceSeconds": 5,
+      "outputFrames": 120,
+      "cropFilter": "crop=896:512:160:256,scale=1344:768:flags=lanczos",
+      "action": "Constant lower-body close framing of original female legs, navy-white skirt hem and stone steps. Exclude entire upper bag print and all head/face through all120 frames; retain physically connected original two legs taking continuous supported downward steps as camera retreats, without timing change."
+    }
+  ],
+  "scope": "Separate fixed knee/leg framing candidate of existing physical-motion retry; raw retained. No newly drawn artwork or new body. Whole output review pending.",
+  "revision": 11
+}

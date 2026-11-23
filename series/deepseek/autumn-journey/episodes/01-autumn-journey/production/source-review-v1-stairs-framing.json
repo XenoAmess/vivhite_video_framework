@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "b7ae9832e92f6f6dfd67967d4b068c8ecb338f7d02c9838882da174640ae3d2a",
+  "shots": [
+    {
+      "id": "S16",
+      "sourceSha256": "82710387cbce8982a80d3e3d1c74f7206929c81718e272c066a179b847efb3ab",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-23T00:19:41.934128+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\stairs-framing\\S16-82710387cb-all-frames-01.png",
+          "sha256": "c2588c55d1a51b43aac57603dd969c85dcc65d1aa6127871f40a16d46df25a1a",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\stairs-framing\\S16-82710387cb-all-frames-02.png",
+          "sha256": "312dd53bc79a27063247d7303df61e958ee71e449bc2c830480f1807270aab9b",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\stairs-framing\\S16-82710387cb-all-frames-03.png",
+          "sha256": "4004e0aa0de3ed7df7d46ea4d1bb652a3c4e1fee31ec2388c877f231d102ccbb",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\stairs-framing\\S16-82710387cb-all-frames-04.png",
+          "sha256": "dde3685e50f8ff55a22f356df4047897f06bffd1988caac77235d50edcc1576c",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\stairs-framing\\S16-82710387cb-face-candidates.png",
+        "sha256": "3e481bde989834200ebbf4683e2eaca1334e7d23f10d5c5b62e347dbe2c03e31",
+        "items": 1
+      },
+      "observation": "Actually viewed all120 corrected-source thumbnails in4pages and the only expanded detector candidate (background stone/moss texture, not face). Fixed close framing shows original two connected stockinged legs, navy-white hem, feminine black bow shoes and ordinary mossy stone steps; whole upper bag print/head/chin excluded throughout. Camera retreats continuously while heels lift and feet settle in alternating small steps; no ghost portrait, new body or anatomical teleport. Early large image-difference/cut flags are gradual physical camera/step changes in actual consecutive frames, not accepted blindly. Full5seconds/all120frames retained. This is a close step-detail shot rather than a demonstrated uninterrupted ascent; final director updated to actual neutral stair motion. Assistant image review only, not human playback.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    }
+  ]
+}

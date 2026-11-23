@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "b57a169b0a84a6d13cd6c9f9aab79c402606317f326ff541eedce1150725712a",
+  "shots": [
+    {
+      "id": "S18",
+      "sourceSha256": "2a0b0f39146a684ce741772d3528095bdec35fea8bd114bbdf1f69d9087dc57e",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-22T23:59:08.284336+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry02-768p\\S18-2a0b0f3914-all-frames-01.png",
+          "sha256": "2a2c0e3b8967124dfb44046bf4f575bd6017ef33eceb61d25f9c4b08dfec0aed",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry02-768p\\S18-2a0b0f3914-all-frames-02.png",
+          "sha256": "e418e7c436c6941be34d19a1965686b40caa293992139a2fe40f29a9d0351a57",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry02-768p\\S18-2a0b0f3914-all-frames-03.png",
+          "sha256": "f64b5d6bfe4afbbd6574b8dfad20a83f5b98ea723853587ae08d8f7c8c579805",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry02-768p\\S18-2a0b0f3914-all-frames-04.png",
+          "sha256": "58bb0d946b36b19709543d952b6e26a4e515837602f81b1142de048bb76143c5",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry02-768p\\S18-2a0b0f3914-face-candidates.png",
+        "sha256": "a67f57e7d219b68258968e82ca734bba288a8869f39a16b9b42eba1dc4273fa0",
+        "items": 1
+      },
+      "observation": "Actually viewed all120 actual native source thumbnails in4pages and temporal overview. Empty ordinary autumn field has same reeds/grasses moving coherently in breeze, small original bag corner and linked matte blue whale-tail charm at lower right. Tiny nonliving tail remains physically connected to zipper/ring, no autonomous whale or added figure. No person, body, hand, portrait or face appears in any reviewed source frame, no scene reset or fantasy lighting. Five seconds/all120 source frames retained. Detector absence alone was not used for semantic acceptance; assistant image review only, not human playback.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "461fff339c8fec40d0631550ed32050850a96cae9ed9cb28a3617878b3be1d99",
+  "shots": [
+    {
+      "id": "S39",
+      "sourceSha256": "d2e929d8dfeb9681b52974c75e7584cc4158f21434cb347273436a735e08bb8c",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-23T00:39:57.783314+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry06-768p\\S39-d2e929d8df-all-frames-01.png",
+          "sha256": "3e3845d0253c381f5eb5fa0d4c5105120d81060e01b8946c908354f5cccbf90c",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry06-768p\\S39-d2e929d8df-all-frames-02.png",
+          "sha256": "00d5ad74c2f9ff29783a3c930529bcdc155e5fa680f8f6732fe0655679a2b9bc",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry06-768p\\S39-d2e929d8df-all-frames-03.png",
+          "sha256": "3b46198d3f3412b1e4f77d39e667cbc10ab6eae21dcaf6d7767c9e66a5c6ee17",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry06-768p\\S39-d2e929d8df-all-frames-04.png",
+          "sha256": "664c6a82b8c431c2ab167919b3659431b4a23d32b86ae3607edadb066321c3e1",
+          "items": 24
+        }
+      ],
+      "faceEvidence": null,
+      "observation": "Actually viewed all120 actual native-source thumbnails in4pages and temporal overview, compared with exact selected empty S39-v2 input. Ordinary blue-dusk lane, weathered walls, shop glass/ceramics/basket, original lantern/leaves remain continuous; camera gently drifts, tiny flat matte blue whale silhouette stays on same glass plane. No added girl, portrait, hand, person or human reflection anywhere, no floating whale or scene reset. Fullsource reviewed; first72frames used at original3seconds. Detector absence alone not used to accept. Assistant image review only, not human continuous playback.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    }
+  ]
+}

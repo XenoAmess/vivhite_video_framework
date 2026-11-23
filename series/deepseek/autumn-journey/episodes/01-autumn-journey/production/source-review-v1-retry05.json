@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "857431a28f1351f2c3f4f5e3e182f0a31f52d82f6d22e24b43daac3b4d2e7db4",
+  "shots": [
+    {
+      "id": "S36",
+      "sourceSha256": "e8818fe782c1c8fd4e472ba83d2db53f86be7078dac2e7ab1fb9a38b5e81f8fc",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-23T00:29:02.999395+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 72,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry05-768p\\S36-e8818fe782-all-frames-01.png",
+          "sha256": "ae4f5053a78795cc01660f0c1ffb9d1464fa8f4e5b8c9f32f0cc20bcb770ae96",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry05-768p\\S36-e8818fe782-all-frames-02.png",
+          "sha256": "8e65fb38ee5b3dea017d72a68a03481463bacc72386a392cca77e92faa72dede",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry05-768p\\S36-e8818fe782-all-frames-03.png",
+          "sha256": "7872b25b636944a1e2f60a529c2fbd532119898039e0c4788361442f7296f9eb",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry05-768p\\S36-e8818fe782-all-frames-04.png",
+          "sha256": "c8f27fda3dee803b4c154b0b56974c2c10fb931f81897eb41358a8b5f5611f02",
+          "items": 24
+        }
+      ],
+      "faceEvidence": {
+        "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry05-768p\\S36-e8818fe782-face-candidates.png",
+        "sha256": "e51bbc325f822acdb7b1c1f49f62558c483859d2cb170660d10936fbd76d7823",
+        "items": 20
+      },
+      "observation": "Actually viewed all120 actual native-source thumbnails in4pages, native first full frame, temporal overview and all120 unmodified tracked printed-head details. Original supported rectangular clear card remains on wet wood railing with transparent empty area, small blue-haired female print stays flat with blue OPEN eyes, unchanged headband/fins/dress/tail and naturally shaded ink. Background waterfall/stream flows continuously and droplets remain physical. No hand, arm, person, reflection, portrait overlay or card lifting appears anywhere; prior unwanted hand completely absent in this separately generated retry. Fullsource reviewed, first72 native frames used at original3seconds; assistant image review only, no human playback claim.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "6a824dae90e3bde03f38c974f57c06a15a3bd5d6e1bb632f0dbff2e3c07ed459",
+  "shots": [
+    {
+      "id": "S23",
+      "sourceSha256": "175b344ea380dc919da5f34a3d2704842aabdca22c4de7c10ffe6ba9e0a28672",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-23T00:23:28.240135+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry04-768p\\S23-175b344ea3-all-frames-01.png",
+          "sha256": "49d80b8afa7759825a6c308bb55c53e1e49266f46f1a9d08bd1589f58085fabd",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry04-768p\\S23-175b344ea3-all-frames-02.png",
+          "sha256": "329db9e1832e7e027ef06a4227d6627478fe98b6db8d3f75456d63e391c82bff",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry04-768p\\S23-175b344ea3-all-frames-03.png",
+          "sha256": "9769b47efeccc8e6599423b68a674242bd35eb34478847834d031bcdd1a41656",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v1-firstframes-001\\review\\retry04-768p\\S23-175b344ea3-all-frames-04.png",
+          "sha256": "9bce09092fd4cc224b5bfb418fafa311af26671e88ee8d8764c39c065af34717",
+          "items": 24
+        }
+      ],
+      "faceEvidence": null,
+      "observation": "Actually viewed all120 actual native-source thumbnails in4pages and temporal overview. Same original illustrated female remains rear-facing at ordinary mountain trail throughout, blue gradient long hair/white headband/back bow/navy-white skirt and one attached whale tail stable, two original arms/hands and two shoes coherent. Slight wind moves hair, skirt and grass; mountain/ropeline geometry remains continuous. No head turn, frontal face, eye, mouth, added person, animal, ghost or old heroine residue appears. Five seconds/all120sourceframes used, detector absence alone not used for acceptance. Assistant image review only, no human continuous playback claim.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed"
+    }
+  ]
+}
