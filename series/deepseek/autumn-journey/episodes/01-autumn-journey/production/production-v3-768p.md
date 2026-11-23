@@ -3,6 +3,7 @@
 已完成完整审核影片，1344×768、30fps、48镜、205.000秒／6150帧。仅替换S37与S47，其他46段源片及全部镜头起点、长度不变；实际ASS逐字节与v2相同，原WAV和成片解码音轨也与v2一致。片尾仍为“献给世界上最好用的你”。用户审美验收待审。
 
 - [完整影片及恢复素材](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v3-768p-20261123)。
+- [实际发布核验](release-v3-768p.json)：六个服务器附件摘要与本地文件相同，完整MP4已重新下载并核对指纹；v1与v2的原影片摘要保持。
 - 本地影片：`D:/workspace/vivhite-analysis-output/deepseek/autumn-journey/production-v3-768p-full-002/film.mp4`。
 - SHA-256：`4a1125cb737ca02a24da3caa8a200f26c5153d56dc6fa90026a2d8cbd91d112d`。
 - 最终采用[源片计划v3b](../production-plan-v3b-768p.json)、[最终装配计划v3b](../final-assembly-plan-v3b-768p.json)、[导演稿v5](../director-v5.md)。`v3b`是本轮第二个内部装配候选；对外交付为v3，不覆盖首组失败计划与影片。
