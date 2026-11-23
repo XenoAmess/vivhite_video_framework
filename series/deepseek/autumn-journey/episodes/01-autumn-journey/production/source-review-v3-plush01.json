@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "29d13762fb3f366d88be1191c2832f12ed4928fde53543a94d2982155892d7e2",
+  "shots": [
+    {
+      "id": "S47",
+      "sourceSha256": "03d6dbee90da86b688e2925104f95b8de2de0145d9b808bcd43c5213ee8d870a",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-23T14:14:46.113895+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 96,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\plush-slide01\\S47-all-1.jpg",
+          "sha256": "cc6c79089d48570417b4c883ef804f24dc1ffa28134539540254b666a6f532f8",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\plush-slide01\\S47-all-2.jpg",
+          "sha256": "567232f564e498359cb9d597dfc8a9167024ac76d310084db20f6056892716be",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\plush-slide01\\S47-all-3.jpg",
+          "sha256": "8c29acd6b3a669dee60ca10669d8be2acb2b8a0d3a9df9a4f9ea1b8bf7fb6899",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\plush-slide01\\S47-all-4.jpg",
+          "sha256": "e6de3442ff2b54da3bbf371deff88152e7181e75255cdd7c876d6ea6c80b2d3c",
+          "items": 24
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\plush-slide01\\S47-toy-and-hands-all120.jpg",
+          "sha256": "a7b3e8006b51998dd4a92cf11226f9dfaeb307ae7c918d6892a135ccd824d7d3",
+          "items": 120
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\plush-slide01\\S47-f000-native.png",
+          "sha256": "9804345a63bad37bd5d1abd9211f841ec43c744b77f2209e3c14973be6c02590",
+          "items": 1
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\plush-slide01\\S47-f072-native.png",
+          "sha256": "7565132f71fc8ff97a457c5412f0412dcf462cb3fde8f07108d6a56cc537d95d",
+          "items": 1
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\plush-slide01\\S47-f096-native.png",
+          "sha256": "22780b43966b72be2e8c5323a101f8a137fbedc0969ecb0863d100fcb0656a95",
+          "items": 1
+        }
+      ],
+      "observation": "Actually viewed all120 ordered full-scene source frames, all120 toy-and-hand detail crops and native0/72/96. Whole plush slides visibly image-left along the bench, settles in a distinct new position, hands release and withdraw by the end of the used first4seconds. Continuous support and no lift-and-return bounce. Independent support-relative displacement at used frame95 is about-157px horizontal and0px vertical; final used second position span recorded separately. Original two arms/hands remain connected and uncrossed, no added person or human face/chin/neck, same feminine navy/white outfit and inert blue-open-eyed sewn plush. Machine face candidates are the visible toy embroidery, not real people. No actual full continuous playback or physical-centimetre claim.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed",
+      "humanFullPlayback": false
+    }
+  ],
+  "scope": "Actual S47 source reviewed; S37 is not implicitly accepted."
+}

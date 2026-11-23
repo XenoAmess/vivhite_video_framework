@@ -10,7 +10,7 @@
     "deepseek-whale-girl"
   ],
   "director": "director-v5.md",
-  "status": "768p-v3-revision-generating",
+  "status": "768p-v3-review-film-ready",
   "derivedFrom": "series/vivhite/autumn-journey/episodes/01-autumn-journey/delivery-plan-v13-native-4k.json",
   "videoTarget": {
     "width": 1344,
@@ -38,11 +38,10 @@
     "production/deployment-v3-repair01-768p.json"
   ],
   "delivery": {
-    "plan": "delivery-plan-v2-768p.json",
-    "review": "production/final-film-review-v2-768p.json",
-    "release": "https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v2-768p-20261123",
-    "userAestheticAcceptance": "two-shots-rejected-S37-S47",
-    "releaseVerification": "production/release-v2-768p.json"
+    "plan": "delivery-plan-v3-768p.json",
+    "review": "production/final-film-review-v3-768p.json",
+    "release": "https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v3-768p-20261123",
+    "userAestheticAcceptance": "pending"
   },
   "revisionInProgress": {
     "version": "v3",
@@ -50,7 +49,8 @@
     "generationPlan": "production-plan-v3-repair01-768p.json",
     "priorFilmPreserved": true,
     "timingUnchanged": true,
-    "status": "two-shot-generation-running"
+    "status": "review-film-ready",
+    "finalCandidate": "production-v3-768p-full-002"
   },
   "previousDeliveries": [
     {
@@ -58,6 +58,13 @@
       "review": "production/final-film-review-v1-768p.json",
       "release": "https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v1-768p-20261123",
       "userAestheticAcceptance": "rejected-seven-corrections-requested"
+    },
+    {
+      "plan": "delivery-plan-v2-768p.json",
+      "review": "production/final-film-review-v2-768p.json",
+      "release": "https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v2-768p-20261123",
+      "userAestheticAcceptance": "two-shots-rejected-S37-S47",
+      "releaseVerification": "production/release-v2-768p.json"
     }
   ]
 }

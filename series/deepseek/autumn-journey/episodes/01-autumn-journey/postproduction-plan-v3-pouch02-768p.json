@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "deepseek-original-hand-protected-prop-3",
+  "inputs": [
+    {
+      "path": "vivhite-analysis-output/deepseek/autumn-journey/production-v3-whole-pouch01-001/sources/S37.mp4",
+      "sha256": "8c7c9b574423f4cb4744e82ef2e09340d1385de72bfc5968adc192e73734cae8"
+    },
+    {
+      "path": "vivhite-analysis-output/deepseek/autumn-journey/production-v3-repair01-768p-001/sources/S37.mp4",
+      "sha256": "b425ed598d140233dae023311e905145fd2369bb5fd3de39fe9cbc61ed8818b6"
+    }
+  ],
+  "workers": {
+    "video-maker/tools/restore_original_occlusion.py": "eaf1cc1781c3823435d14446a8f3335838df5d978aef68d049b756417d7db407",
+    "video-maker/tools/project_keyframed_print_occlusion_v2.py": "cdaba363676e89f6f60d8afe479e0c73f7559a603eb52634357402b1d652178b",
+    "series/deepseek/autumn-journey/episodes/01-autumn-journey/production/render-hand-protected-pouch-v3.py": "9d65fe260a83a31d3cf840e521115c2abeb6f00c9d379112533beee99f30a666"
+  },
+  "definition": {
+    "originalHandPolygons": [
+      [
+        [
+          770,
+          193
+        ],
+        [
+          891,
+          193
+        ],
+        [
+          891,
+          263
+        ],
+        [
+          770,
+          263
+        ]
+      ]
+    ]
+  },
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v3-whole-pouch02-001",
+  "sourceFps": 24,
+  "width": 1344,
+  "height": 768,
+  "seconds": 5,
+  "scope": "Keep complete inert pouch and restore only actual original connected hand pixels where its fingertips later approach the bag. Prior pouch01/full001 are rejected on encoded native frame4530 due clipped fingertips. No extra person or hand generation."
+}

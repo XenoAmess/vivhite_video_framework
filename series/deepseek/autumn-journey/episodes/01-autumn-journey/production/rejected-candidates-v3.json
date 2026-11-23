@@ -16,6 +16,19 @@
       "sha256": "3a3ed1ed4ccef187d321dd7e77bf6622357e8fcdb87aa63f448f8c3f9d2e29b1",
       "decision": "rejected-by-user-as-v3-input",
       "observed": "User observes an up-down bob returning the plush to its old place. New shot must translate the whole plush along the bench and settle at a distinct new position."
+    },
+    {
+      "id": "S37",
+      "runtime": "production-v3-whole-pouch01-001",
+      "sha256": "8c7c9b574423f4cb4744e82ef2e09340d1385de72bfc5968adc192e73734cae8",
+      "decision": "rejected-after-encoded-native-frame-review",
+      "observed": "Whole bag is stable, but later original fingertips cross the replacement boundary and are clipped. Actual source96/encoded4530 examination overrides earlier full-scene/pouch acceptance."
+    },
+    {
+      "runtime": "production-v3-768p-full-001",
+      "sha256": "7220f80957153752ff4ab1b7686c028f77ee148098b6d101ef2afb5b8d28c460",
+      "decision": "rejected-not-published",
+      "observed": "Encoded S37 at2:31 clips original fingertips; retain candidate and render independent full002 with hand-protected source."
     }
   ]
 }

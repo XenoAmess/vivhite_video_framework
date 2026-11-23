@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "deepseek-source-selections-3",
+  "shots": [
+    {
+      "id": "S37",
+      "runtime": "production-v3-whole-pouch02-001",
+      "plan": "postproduction-plan-v3-pouch02-768p.json"
+    },
+    {
+      "id": "S47",
+      "runtime": "production-v3-repair01-768p-001",
+      "plan": "production-plan-v3-repair01-768p.json"
+    }
+  ],
+  "scope": "Exactly the two actually reviewed new sources; preserve all other v2 source bytes."
+}

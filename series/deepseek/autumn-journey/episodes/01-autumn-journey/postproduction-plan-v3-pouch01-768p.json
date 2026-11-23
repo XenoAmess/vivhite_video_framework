@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "deepseek-whole-carrier-correction-1",
+  "revision": 3,
+  "shots": [
+    {
+      "id": "S37",
+      "seconds": 5,
+      "input": "vivhite-analysis-output/deepseek/autumn-journey/production-v3-repair01-768p-001/sources/S37.mp4",
+      "inputSha256": "b425ed598d140233dae023311e905145fd2369bb5fd3de39fe9cbc61ed8818b6",
+      "reference": "assets/generated/production-v3-firstframes-001/scenes/S37-v1.png",
+      "referenceSha256": "e9f239f0fdfa22329d681253448c7357cf52bc7b4a3622af9fcd5323fae32005",
+      "definition": {
+        "patchPolygons": [
+          [
+            [
+              852,
+              74
+            ],
+            [
+              1105,
+              74
+            ],
+            [
+              1105,
+              257
+            ],
+            [
+              852,
+              257
+            ]
+          ]
+        ],
+        "carrierPolygons": [
+          [
+            [
+              690,
+              267
+            ],
+            [
+              1225,
+              267
+            ],
+            [
+              1225,
+              320
+            ],
+            [
+              690,
+              320
+            ]
+          ],
+          [
+            [
+              1215,
+              340
+            ],
+            [
+              1337,
+              340
+            ],
+            [
+              1337,
+              670
+            ],
+            [
+              1215,
+              670
+            ]
+          ]
+        ],
+        "feather": 3,
+        "maxShift": 40,
+        "maxScaleChange": 0.06
+      },
+      "action": "Retain the entire supported original ivory pouch including silhouette, top zipper, cloth and complete inert blue-open-eyed print. Align the whole physical prop using independent wooden gate features. Actual original hand remains outside the prop patch; do not animate the ink or project a drawing into deforming cloth."
+    }
+  ],
+  "runtimeRelativeToRepositoryParent": "vivhite-analysis-output/deepseek/autumn-journey/production-v3-whole-pouch01-001",
+  "noSpeech": true,
+  "noHumanFaces": true,
+  "noAddedPeople": true,
+  "allCharactersFemale": true,
+  "sourceFps": 24,
+  "width": 1344,
+  "height": 768,
+  "workerSha256": "a4de12429b3b0c8908628f6238cba8b0fb969d57fd845585aafc17f27d6a68ef",
+  "scope": "New stable supported whole-pouch composition; replace full physical prop as one texture, not a print-only moving cloth projection. Final source must receive full120frame/native pouch review."
+}

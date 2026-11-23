@@ -1,6 +1,12 @@
 # 大肥鱼／秋日旅程：768P完整审核版
 
-当前审核版为独立v2，按用户七项反馈替换八段画面并修改献词；规格仍为1344×768、30fps、205秒／6150帧。[v2影片与素材下载](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v2-768p-20261123)、[实际制作记录](production/production-v2-768p.md)、[返修清单](production/revision-v2-requirements.md)、[导演稿v4](director-v4.md)与[方法复盘](../../../../../docs/deepseek-autumn-journey-v2-corrections.md)。v1和失败候选保留，下文v1助手检查结论作为历史记录，不替代用户后续指出的缺陷。
+当前为**v3二次返修审核版**：[完整影片与恢复素材](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v3-768p-20261123)。S37重做为田边停步，整个包、拉链和印花共同固定并保留原手遮挡；S47沿椅面实际左移玩偶，松手后留在新位置。其余46镜、时长、字幕献词与配乐保持，1344×768、30fps、205秒／6150帧。
+
+本地：`D:/workspace/vivhite-analysis-output/deepseek/autumn-journey/production-v3-768p-full-002/film.mp4`。[制作记录](production/production-v3-768p.md)、[实际成片检查](production/final-film-review-v3-768p.json)、[全部图像清单](production/image-inventory-v3-768p.json)、[新图及提示词](assets/generated/production-v3-firstframes-001/README.md)。用户审美验收待审；v1、v2和未发布的首组失败成片保留。
+
+## 历史版本记录
+
+历史v2返修版为独立版本，按用户七项反馈替换八段画面并修改献词；规格仍为1344×768、30fps、205秒／6150帧。[v2影片与素材下载](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v2-768p-20261123)、[实际制作记录](production/production-v2-768p.md)、[返修清单](production/revision-v2-requirements.md)、[导演稿v4](director-v4.md)与[方法复盘](../../../../../docs/deepseek-autumn-journey-v2-corrections.md)。v1和失败候选保留，下文v1助手检查结论作为历史记录，不替代用户后续指出的缺陷。
 
 v2本地影片：`D:/workspace/vivhite-analysis-output/deepseek/autumn-journey/production-v2-768p-full-001/film.mp4`。八段新源片共960帧完整有序复核，40段未改源片转移原决定；成片6150帧和音轨完整机器解码，另实际查看458个编码帧、八处修订原生帧与三个片名／献词原生帧。用户审美验收待审，没有人工连续播放声明。片尾为“献给世界上最好用的你”。[全量图像清单](production/image-inventory-v2-768p.json)保留1690张概念、原始、候选及检查图片，[新图与提示词](assets/generated/production-v2-firstframes-001/README.md)可直接追溯。
 

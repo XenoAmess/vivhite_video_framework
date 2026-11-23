@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "vivhite-clip-decisions-1",
+  "sourcePlanSha256": "e41ac4590d2c875227f453570d28515841dfe95b0994cd1b90828c827a17e1ec",
+  "shots": [
+    {
+      "id": "S37",
+      "sourceSha256": "ea5bc229cf7553b81d205a5180d54ef3e47972cddc2214bd8871e52a9bd6f665",
+      "method": "assistant-frame-review",
+      "reviewedAt": "2026-11-23T14:31:40.774315+00:00",
+      "allSourceFrameReview": true,
+      "allUsedFrameReview": true,
+      "reviewedNativeFrames": 120,
+      "actualFinalUsedNativeFrames": 120,
+      "frameEvidence": [
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\pouch-whole02\\S37-all-1.jpg",
+          "sha256": "1b4a15d014c773e95b62a6d24c78d70fc197aeff34a3a4ba6a14e2a2faa61090",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\pouch-whole02\\S37-all-2.jpg",
+          "sha256": "3553ce6fd8d3dc6f3a01068d448661fb078dc910fba0c2d42ca2b5c9cf63f965",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\pouch-whole02\\S37-all-3.jpg",
+          "sha256": "f40ddca32a61cd6b3770afd16c35f753b48dd82eedf8ca53145df1e17e62c831",
+          "items": 32
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\pouch-whole02\\S37-all-4.jpg",
+          "sha256": "69a88716e93817c992e1dd5e5f798a2f4d38960258b4885e26b7778c8ad088bf",
+          "items": 24
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\pouch-whole02\\S37-f096-native.png",
+          "sha256": "e00a8d2a3bc87dd11dadc6c4af0a76dc0ab76b2f6fd959ed02765584c12c18f9",
+          "items": 1
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\pouch-whole02\\S37-f119-native.png",
+          "sha256": "244439b5074d7b127d2ccf02084af7fa1f7780ef0b1ae2272513d049f56e569d",
+          "items": 1
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\pouch-native02\\S37-pouch-native-all-01.png",
+          "sha256": "f7d89bc214e3574b2c039414a24775cf014d8e6bd555748dca09f4f2eb6821ce",
+          "items": 30
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\pouch-native02\\S37-pouch-native-all-02.png",
+          "sha256": "5dae3637128ddf1071b684578e0c5ca5e8dcdf18123140ed455a7ebeaaeab0f4",
+          "items": 30
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\pouch-native02\\S37-pouch-native-all-03.png",
+          "sha256": "cd215c461ed262c4060b9422d39be340229d1ddd5be858159c47a50c69d2de84",
+          "items": 30
+        },
+        {
+          "path": "D:\\workspace\\vivhite_video_framework\\series\\deepseek\\autumn-journey\\episodes\\01-autumn-journey\\assets\\generated\\production-v3-firstframes-001\\review\\pouch-native02\\S37-pouch-native-all-04.png",
+          "sha256": "221c6f7671352553dab3b9d4bdbc510beb74a89618bb4f16259dbcd40161c7c6",
+          "items": 30
+        }
+      ],
+      "observation": "Actually viewed all120 FINAL full-scene frames, all120 FINAL native whole-pouch-and-hand crops and native96/119 full scenes. Complete physical pouch and inert whole print remain coherent and supported. Late source hand now remains completely visible IN FRONT OF the pouch edge, with original connected fingertips from the same source frame; no straight truncation, extra hand or pasted foreign human pixels. Prior pouch01/full001 rejected after encoded4530 revealed cutoff. Corrected output keeps original skirt/hair breeze, two-fluke tail, feminine clothing and no human face, new person, speech or print animation. Whole-prop positioning, all120 canvas/zipper/ink relations and fingertip contacts inspected, including2:28/2:31 corresponding phases. No human continuous playback claim.",
+      "decision": "accepted",
+      "noHumanFaces": "passed",
+      "noAddedPeople": "passed",
+      "allCharactersFemale": "passed",
+      "costumeStyle": "passed",
+      "motionAndContinuity": "passed",
+      "merchandiseBehavior": "passed",
+      "referenceAppearance": "passed",
+      "humanFullPlayback": false
+    }
+  ],
+  "scope": "Actual complete hand-protected whole-pouch source review; prior pouch01 acceptance overridden by later native-frame defect observation."
+}

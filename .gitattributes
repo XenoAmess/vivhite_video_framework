@@ -25,3 +25,5 @@ series/deepseek/autumn-journey/episodes/01-autumn-journey/production/*v2*.py -te
 series/deepseek/autumn-journey/episodes/01-autumn-journey/production/*v2*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 series/deepseek/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v2-*/**/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 video-maker/tools/project_keyframed_print_occlusion*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Preserve already emitted v3 inspection manifests used by frame-review receipts.
+series/deepseek/autumn-journey/episodes/01-autumn-journey/assets/generated/production-v3-*/**/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

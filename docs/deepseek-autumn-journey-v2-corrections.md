@@ -2,6 +2,8 @@
 
 本页记录《大肥鱼／秋日旅程》v2返修的方法边界。用户反馈见[七项返修范围](../series/deepseek/autumn-journey/episodes/01-autumn-journey/production/revision-v2-requirements.md)。v1成片、审核记录和Release保留，原有“助手通过”不能覆盖后续用户指出的缺陷。具体是否采用以v2源片及成片审核记录为准。
 
+后续用户仍拒绝S37袋面错位，并要求S47真正挪动玩偶；本页S37手动平面投射仅保留为失败经验，不能作为最新通过方案。替代路线和实际玩偶位移证据见[v3补充](deepseek-autumn-journey-v3-corrections.md)。
+
 ## 脸部稳定不等于印花稳定
 
 `stabilize_printed_patch.py`的局部圆形蒙版可以止住脸部变化，却可能让圆外身体、头发、鞋和尾巴继续活动。跟踪图案内部特征还可能把模型动画误当成载体运动，造成脸与包面错位。
