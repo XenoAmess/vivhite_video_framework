@@ -8,6 +8,7 @@ import re
 import sys
 import time
 import traceback
+import wave
 
 import local_video_pipeline as video
 
@@ -90,6 +91,71 @@ def check_asset(entry):
     if video.sha(path) != entry['sha256']:
         raise ValueError(f'Prepared input changed: {path.name}')
     return path
+
+
+def sync_soundtrack(root, prepared, timing_path):
+    timing = video.read(timing_path)
+    plan = video.read(check_asset(prepared['plan']))
+    soundtrack = plan['soundtrack']
+    sample_rate = 48000
+    samples_per_frame = sample_rate // FPS
+    crossfade = timing['crossfadeSamplesAt48k']
+    output_samples = prepared['totalFrames'] * samples_per_frame
+    source_samples = round(timing['sourceAudioEndSeconds'] * sample_rate)
+    if (timing['schemaVersion'] != 'vivhite-pipa-soundtrack-sync-1'
+            or (timing['videoId'],timing['part']) != (soundtrack['videoId'],soundtrack['part'])
+            or timing['editFramesPerSecond'] != FPS
+            or soundtrack['startSeconds'] != 0 or timing['sourceAudioEndSeconds'] != soundtrack['endSeconds']
+            or not 0 < crossfade < samples_per_frame or crossfade % 2
+            or not timing['anchors']):
+        raise ValueError('The soundtrack anchors must match this edition and picture timeline')
+    shot_starts = {shot['id']:shot['startFrame'] for shot in prepared['shots']}
+    if any(shot_starts.get(point['shot']) != point['originalFrame'] for point in timing['anchors']):
+        raise ValueError('A soundtrack anchor does not match its actual picture cut')
+    boundaries = [(0,0)]
+    boundaries.extend((point['originalFrame']*samples_per_frame,point['editFrame']*samples_per_frame)
+                      for point in timing['anchors'])
+    boundaries.append((output_samples,source_samples))
+    segments = list(zip(boundaries,boundaries[1:]))
+    if any(picture_to-picture_from <= crossfade or audio_to-audio_from <= crossfade
+           for (picture_from,audio_from),(picture_to,audio_to) in segments):
+        raise ValueError('Soundtrack anchors must increase on both timelines')
+    if (root/'pipa-768p.mp4').exists():
+        raise ValueError('Use a new production directory to change an assembled soundtrack')
+
+    filters = [f"[0:a:0]aresample={sample_rate},apad=pad_len={sample_rate},asplit={len(segments)}"
+               + ''.join(f'[aligned-input-{index}]' for index in range(len(segments)))]
+    for index,((picture_from,audio_from),(picture_to,audio_to)) in enumerate(segments):
+        tempo = (audio_to-audio_from)/(picture_to-picture_from)
+        leading = crossfade//2 if index else 0
+        trailing = crossfade//2 if index < len(segments)-1 else 0
+        first = audio_from-round(tempo*leading)
+        # The ahead samples let atempo complete the overlap before trimming its output.
+        last = min(audio_to+round(tempo*trailing)+4096,source_samples+4096)
+        length = picture_to-picture_from+leading+trailing
+        filters.append(f'[aligned-input-{index}]atrim=start_sample={first}:end_sample={last},'
+                       f'asetpts=PTS-STARTPTS,atempo={tempo:.12f},apad=whole_len={length},'
+                       f'atrim=end_sample={length},asetpts=N/SR/TB[aligned-part-{index}]')
+    filters.append(''.join(f'[aligned-part-{index}]' for index in range(len(segments)))
+                   + f'acrossfade=n={len(segments)}:ns={crossfade}:c1=tri:c2=tri[aligned]')
+    audio = check_asset(prepared['soundtrackSource'])
+    timing_input = asset(timing_path)
+    output = root/f"soundtrack-cut-sync-{timing_input['sha256'][:12]}.wav"
+    if not output.exists():
+        partial = output.with_name(output.stem+f'.{time.time_ns()}.partial.wav')
+        ff('-n','-i',audio,'-filter_complex',';'.join(filters),'-map','[aligned]','-c:a','pcm_s16le','-ac','2',partial)
+        with wave.open(str(partial),'rb') as track:
+            if (track.getframerate(),track.getnchannels(),track.getnframes()) != (sample_rate,2,output_samples):
+                raise ValueError('Audio alignment did not cover the exact picture timeline')
+        partial.replace(output)
+    with wave.open(str(output),'rb') as track:
+        if (track.getframerate(),track.getnchannels(),track.getnframes()) != (sample_rate,2,output_samples):
+            raise ValueError('Existing aligned audio does not match the picture timeline')
+    ff('-xerror','-i',output,'-f','null','-')
+    prepared['soundtrack'] = asset(output)
+    prepared['soundtrackTiming'] = timing_input
+    video.save(root/'prepared.json',prepared)
+    print(output, flush=True)
 
 
 def prepare(args, root):
@@ -355,11 +421,16 @@ def generate(base, root, prepared):
                 if not (attempt/'job.json').exists():
                     queue_full = True
         counts = {}
+        reviews = {}
         for _,attempt,receipt in rows:
             status = video.read(attempt/'job.json')['status'] if (attempt/'job.json').exists() else receipt['status']
             counts[status] = counts.get(status,0)+1
+            if status == 'completed':
+                review_path = attempt/'review.json'
+                decision = video.read(review_path)['decision'] if review_path.exists() else 'pending'
+                reviews[decision] = reviews.get(decision,0)+1
         active = sum(counts.get(key,0) for key in ('prepared','queued','in_progress','download_pending'))
-        video.save(root/'progress.json',{'at':video.now(),'totalShots':len(rows),'counts':counts,
+        video.save(root/'progress.json',{'at':video.now(),'totalShots':len(rows),'counts':counts,'visualReviews':reviews,
                                          'status':'rendering' if active else 'awaiting-shot-review-or-repair'})
         if active == 0:
             return
@@ -379,6 +450,8 @@ def finish(root, prepared):
         verify_picture(picture,shot['frames'],SIZE)
         films.append(picture)
     audio = check_asset(prepared['soundtrack'])
+    if 'soundtrackTiming' in prepared:
+        check_asset(prepared['soundtrackTiming'])
     concat = root/'approved-shots.ffconcat'
     concat.write_text('ffconcat version 1.0\n'+'\n'.join(
         "file '" + path.as_posix().replace("'","'\\''") + "'" for path in films)+'\n',encoding='utf-8')
@@ -396,10 +469,14 @@ def finish(root, prepared):
             or (picture['width'],picture['height'])!=(1344,768) or sound['codec_type']!='audio'
             or abs(float(sound['duration'])-seconds)>1/FPS):
         raise ValueError('The complete film does not match the reviewed timeline')
-    partial.replace(output)
-    video.save(root/'final-receipt.json',{'artifact':asset(output),'frames':prepared['totalFrames'],
+    video.save(root/'final-receipt.json',{'artifact':{'path':str(output),'sha256':video.sha(partial)},
+                                         'frames':prepared['totalFrames'],
                                          'seconds':seconds,'audioVideoCompleteDecode':'passed',
-                                         'shots':len(films),'createdAt':video.now()})
+                                         'shots':len(films),'createdAt':video.now(),
+                                         'soundtrackSha256':prepared['soundtrack']['sha256'],
+                                         'soundtrackTimingSha256':prepared.get('soundtrackTiming',{}).get('sha256')})
+    partial.replace(output)
+    video.save(root/'progress.json',{'at':video.now(),'totalShots':len(films),'status':'assembled'})
 
 
 def run_scheduled(base, root, config):
@@ -416,6 +493,11 @@ def run_scheduled(base, root, config):
         with redirect_stdout(log),redirect_stderr(log):
             try:
                 progress_file = root/'progress.json'
+                if (root/'pipa-768p.mp4').exists() and (root/'final-receipt.json').exists():
+                    if not progress_file.exists() or video.read(progress_file)['status']!='assembled':
+                        check_asset(video.read(root/'final-receipt.json')['artifact'])
+                        video.save(progress_file,{'at':video.now(),'totalShots':len(config['shots']),'status':'assembled'})
+                    return
                 if progress_file.exists() and video.read(progress_file)['status']=='awaiting-shot-review-or-repair':
                     attempts = [latest(root,shot) for shot in config['shots']]
                     done = [attempt/'job.json' for attempt in attempts]
@@ -447,6 +529,8 @@ def main():
     render.add_argument('--api',default=video.DEFAULT_API)
     render.add_argument('--scheduled',action='store_true')
     render.add_argument('--tool-directory',type=Path)
+    soundtrack = sub.add_parser('sync-soundtrack')
+    soundtrack.add_argument('--timing',required=True,type=Path)
     ret = sub.add_parser('retry')
     ret.add_argument('--shot',required=True)
     ret.add_argument('--prompt-file',required=True,type=Path)
@@ -480,6 +564,8 @@ def main():
             generate(args.api,root,config)
     elif args.command=='retry':
         retry(args,root,config)
+    elif args.command=='sync-soundtrack':
+        sync_soundtrack(root,config,args.timing.resolve())
     elif args.command=='compare':
         compare_shot(root,selected_shot(config,args.shot))
     elif args.command=='review':

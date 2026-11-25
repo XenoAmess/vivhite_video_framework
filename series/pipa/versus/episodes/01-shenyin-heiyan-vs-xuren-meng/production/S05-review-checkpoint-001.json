@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S05",
+  "startFrame": 129,
+  "endFrame": 158,
+  "firstAttempt": {
+    "jobId": "video_gen_e0f681a5f20e494d905d06e70d6535b6:openai",
+    "requestSha256": "057513f04e2321dc463b1e5bca3b9e81e4fff4d8098b333368062c2a861405d3",
+    "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. High table insert with navy-and-gold sleeves and hand motion. Any foreground object is a simplified nonfunctional stage prop. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+    "seed": 1234,
+    "rawSha256": "aeb05c6f6726387d34bc2ea866b29b2bd0e5e83844397903e152e5c9f294b712",
+    "cutSha256": "9782d5876d2a40bfc51a98a5f3cf1650d330b0d08b1efb978cd6311d63540336",
+    "review": {
+      "cutSha256": "9782d5876d2a40bfc51a98a5f3cf1650d330b0d08b1efb978cd6311d63540336",
+      "requestSha256": "057513f04e2321dc463b1e5bca3b9e81e4fff4d8098b333368062c2a861405d3",
+      "originalSha256": "8ff46e0dccdb7107f18898318b579dcbb0e81a7567a157df0bb21006c3f8ad0c",
+      "decision": "rejected",
+      "reviewedFrames": 29,
+      "method": "assistant-frame-review",
+      "observations": "对照原片第 129–157 帧及全部 29 帧候选。前半镜能看见神隐黑炎的蓝金袖口，并有把道具放向桌面的轮廓。约从候选第 22 帧突然切到明亮有窗的房间，出现两个重复的军服人物。原镜始终在深色圆桌上，放下和从边缘回到桌面的手部动作需保留。候选还照搬原道具外形，和首镜已经采用的金色舞台棒不连贯。本次拒收。",
+      "reviewedAt": "2026-11-25T21:06:33.909953+00:00"
+    }
+  },
+  "retakeAtCheckpoint": {
+    "status": "prepared",
+    "prompt": "One uninterrupted tabletop insert for the whole clip. <Video 1> guides the movement and high close camera over the dark round wooden table. <Picture 1> supplies the officer’s gold-trimmed navy sleeve and ivory cuff only. <Picture 2> shows the required table framing, peaceful gold theatre baton and cuff. From screen right a navy sleeve carries the solid golden stage baton leftward, lowers it onto the dark wooden table and releases it with an open palm. The hand briefly draws back out of the crop; near the end another reach from the same right edge brushes the baton and rotates it a little on the tabletop. The downward-facing view stays tightly on the wood grain, sleeves, fingers and this one smooth, solid rounded prop for every frame. No full characters, face, duplicate, wine glass, window, camera cut, real weapon, or readable text. Keep the restrained warm red shadow and the source movement timing.",
+    "seed": 1235,
+    "additionalImageSha256": "8e1d8bb2d387f945c6420114e00f91f5c3d1c6733a7ae98d4de351d0abc016d0",
+    "anchorImagePrompt": "Use case: anime-storyboard for a continuous comic short. Image 1 supplies the high tabletop camera and restrained dark warm side lighting only. Image 2 supplies the single smooth brass-colored theatrical baton and the navy-and-gold cuff design only. Make a landscape 16:9 single anime keyframe, seen high from just above a dark round wooden table. Crop tight so the table occupies the frame; no person’s face, head, torso, window or other background is visible. A single open empty hand in a navy cuff with gold piping enters diagonally from the right. On the table just left of the hand, place the clearly harmless solid gold painted stage baton from Image 2, a single chunky tapered rounded cylinder like a miniature wooden baseball bat, rounded wide tip at the left, narrow wrapped grip at the right, no attachments. The hand has just released it onto the table. Warm restrained rim lighting and subtle wood grain, crisp 2D cel-shaded hand and navy cuff. No extra objects, people, weapons, drinking glasses, writing, panels, or text."
+  }
+}

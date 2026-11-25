@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "vivhite-pipa-soundtrack-receipt-1",
+  "sourceSha256": "82e2c5fd940646b64ad3470ee68337e3901c79cf636802132c532ac8a9e99314",
+  "timingSha256": "30f73ed6298ccb28031c83f957f10a2fa2a0f657d3ff7ebbf311091394885363",
+  "audioSha256": "eaf0822839c2d381f48f73b3015e67f659f9c63a6ae3baa3be1730968dab46fb",
+  "sampleRate": 48000,
+  "channels": 2,
+  "samples": 2956000,
+  "method": "Compare the original and retimed soundtrack with 5ms amplitude and derivative envelopes over 350ms windows.",
+  "checks": [
+    {
+      "shot": "S05",
+      "initialLagMs": -45,
+      "alignedLagMs": 0,
+      "initialSimilarity": 0.9881,
+      "alignedSimilarity": 0.9175,
+      "overlapPeakSampleStep": 0.085815
+    },
+    {
+      "shot": "S11",
+      "initialLagMs": -115,
+      "alignedLagMs": -15,
+      "initialSimilarity": 0.9504,
+      "alignedSimilarity": 0.9127,
+      "overlapPeakSampleStep": 0.062378
+    },
+    {
+      "shot": "S17",
+      "initialLagMs": -230,
+      "alignedLagMs": 0,
+      "initialSimilarity": 0.975,
+      "alignedSimilarity": 0.9603,
+      "overlapPeakSampleStep": 0.179474
+    },
+    {
+      "shot": "S26",
+      "initialLagMs": -245,
+      "alignedLagMs": -5,
+      "initialSimilarity": 0.9649,
+      "alignedSimilarity": 0.9504,
+      "overlapPeakSampleStep": 0.328644
+    },
+    {
+      "shot": "S32",
+      "initialLagMs": -100,
+      "alignedLagMs": 0,
+      "initialSimilarity": 0.9373,
+      "alignedSimilarity": 0.958,
+      "overlapPeakSampleStep": 0.339722
+    },
+    {
+      "shot": "S41",
+      "initialLagMs": 60,
+      "alignedLagMs": 0,
+      "initialSimilarity": 0.9416,
+      "alignedSimilarity": 0.9346,
+      "overlapPeakSampleStep": 0.062225
+    },
+    {
+      "shot": "S53",
+      "initialLagMs": 160,
+      "alignedLagMs": 0,
+      "initialSimilarity": 0.9698,
+      "alignedSimilarity": 0.9587,
+      "overlapPeakSampleStep": 0.177704
+    },
+    {
+      "shot": "S56",
+      "initialLagMs": 100,
+      "alignedLagMs": 0,
+      "initialSimilarity": 0.9916,
+      "alignedSimilarity": 0.9629,
+      "overlapPeakSampleStep": 0.081726
+    }
+  ]
+}
