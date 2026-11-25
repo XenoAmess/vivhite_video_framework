@@ -393,7 +393,15 @@ def generate(base, root, prepared):
             if remote['status']=='completed':
                 receipt['status'] = 'download_pending'
                 video.save(attempt/'job.json',receipt)
-                download(api,shot,attempt,remote,receipt)
+                try:
+                    download(api,shot,attempt,remote,receipt)
+                except (OSError,RuntimeError) as error:
+                    # Fetch and media probes can be repeated using the same remote job.
+                    receipt['lastDownloadError'] = {'at':video.now(),'detail':str(error) or repr(error)}
+                    video.save(attempt/'job.json',receipt)
+                    print(f"{shot['id']} result needs another download or probe: {type(error).__name__}: {error}",
+                          flush=True)
+                    continue
                 unfinished -= 1
             else:
                 video.save(attempt/'job.json',receipt)
