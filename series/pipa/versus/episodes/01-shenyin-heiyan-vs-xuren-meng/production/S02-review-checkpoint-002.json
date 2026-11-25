@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S02",
+  "attempt": 2,
+  "startFrame": 40,
+  "endFrame": 64,
+  "jobId": "video_gen_525e09ef0dbf4740824634199bbcfccd:openai",
+  "requestSha256": "7386fbe9757ea1aacbbb791b5ccec6f2655c8c96409ff50fb545229fb1ac2ee8",
+  "renderPrompt": "One continuous anime chest-up shot of one person. <Video 1> controls only the fixed close framing and the change of focus: the central face starts a little soft and becomes sharp near the middle while the right edge foreground remains soft. <Picture 1> gives the red hood and gold-haired character identity. <Picture 2> is the shot composition to hold from the very first frame, showing only chest, head and shoulders. Match Picture 2 and keep this chest-up scale for the entire shot. The one visible character looks sternly ahead and shows a slight head movement as focus settles. There is an abstract, out-of-focus wooden edge at screen right. Exactly one character, no shoulders or faces at either foreground edge, no whole-body view, no clothing from the motion video, no new cuts, no text, no weapons, no dialogue.",
+  "seed": 1235,
+  "rawSha256": "21b415560d1d088bfe1200166fecb2d58c9169703dd2973cdade1b4b49f87553",
+  "cutSha256": "4d4f4a8ddfe5110671965c55f7e7048dc609a15c22a1cc88787f574da61e84d2",
+  "review": {
+    "cutSha256": "4d4f4a8ddfe5110671965c55f7e7048dc609a15c22a1cc88787f574da61e84d2",
+    "requestSha256": "7386fbe9757ea1aacbbb791b5ccec6f2655c8c96409ff50fb545229fb1ac2ee8",
+    "originalSha256": "79297531fdf282ddd556dce28881b69ec0e326e582ed46d02527c64f64987fb8",
+    "decision": "accepted",
+    "reviewedFrames": 24,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 40–63 帧，共 24 帧。第二次渲染保留虚人梦的红兜帽、金发、肩部面具和唯一出场人物，景别恢复为胸部以上。以短暂虚焦至清晰还原开头调焦，眼神在门口持续朝画外，保持原来一秒的节奏。右前景使用虚化木框，原片右侧近物的遮挡范围更大。逐帧未见额外人物、额外切点或明显穿模。通过本镜画面审核。",
+    "reviewedAt": "2026-11-25T21:52:42.708361+00:00"
+  },
+  "anchorImagePrompt": "One 16:9 anime storyboard anchor. Image 1 is the only identity, outfit and shape reference. Image 2 is the warm dim composition and camera distance, replace its person and any recognizable object. Show a chest-up face-forward close medium view of the exact slim red-hooded performer from Image 1, centered a little left of frame. Their face and eyes remain clearly visible; crimson hood, blond strands, deep red cloak and one ivory mask tied to the left shoulder. Dim warm wooden wall, a tiny red rim light, slightly top-soft background. An indistinct oversized dark wooden beam at the extreme right edge gives foreground parallax and is intentionally out of focus. Exactly one person. Keep camera close to the face, crop below chest. Crisp Japanese-style anime cel shading and a quiet stern gaze, no text, no other silhouettes, no weapons or markings.",
+  "postprocess": {
+    "usedInput": "cut-before-focus.mp4",
+    "inputSha256": "452d8031ca51ebec8c12782db516f39466109982e461723a4edb746f16896ef8",
+    "outputSha256": "4d4f4a8ddfe5110671965c55f7e7048dc609a15c22a1cc88787f574da61e84d2",
+    "tool": "ffmpeg",
+    "filter": "[0:v]split=2[sharp][blur-source];[blur-source]gblur=sigma=8:steps=2[soft];[sharp][soft]blend=all_expr='A*min(1,N/8)+B*(1-min(1,N/8))'[picture]",
+    "reason": "Restore the visible opening focus pull in the already generated single chest-up shot.",
+    "coveredFrames": 24,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-25T21:52:42.304452+00:00"
+  }
+}
