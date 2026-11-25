@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S08",
+  "attempt": 2,
+  "startFrame": 206,
+  "endFrame": 254,
+  "jobId": "video_gen_bf59a1955ab34e23a6e6961845e85a7f:openai",
+  "requestSha256": "6e882d96ce94c29e1d7cf42ddc5a7b29b0dd9438b3d8f9437358943a09265bfa",
+  "renderPrompt": "One continuous two-second original camera movement recreated across this model clip. <Video 1> specifies timing, angular continuity and the room. <Picture 1> is visible only as the blurred gold-trim navy sleeve and hand at the far-left edge at the beginning. <Picture 2> is the exact crimson-hooded performer with long gold hair and the ivory shoulder mask. Begin in the chest-up pose of <Picture 3>, centered by the door with an expressive open mouth, with a short smooth rounded golden theatre baton blurred at left beside the navy sleeve. The crimson performer pivots from facing the lens to facing deeper into the room, and moves away quickly as the camera pulls back a long way. Continue the same uninterrupted camera move, from tight chest-up to quite distant whole body, with warm light and bits of paper swirling ahead of the final step. No other full character, cuts, new room layout, realistic weapon, text, graphics, or dialogue.",
+  "seed": 1235,
+  "rawSha256": "2ea6db74f854ae66dbe08b66eec45e6d41a0249e2aec32e138881b95822d1e18",
+  "cutSha256": "556356f6cedb4df98b531a032726bf95c7d625a6aa5d930b56006423ee7a1cdc",
+  "review": {
+    "cutSha256": "556356f6cedb4df98b531a032726bf95c7d625a6aa5d930b56006423ee7a1cdc",
+    "requestSha256": "6e882d96ce94c29e1d7cf42ddc5a7b29b0dd9438b3d8f9437358943a09265bfa",
+    "originalSha256": "8293b8da8482eaa808455e85c4e930bc2a8c3ea0c59d8c35d6e00c85034c33d4",
+    "decision": "accepted",
+    "reviewedFrames": 48,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原版第 206–253 帧和候选全部 48 帧。起镜虚人梦在胸部以上景别，神隐黑炎仅为左前景蓝金袖口；虚人梦连续侧转至背身，带着披风走向尽头，镜头同时从半身拉远为房间宽景。后半以暖光、飞动纸片和远处站位表现原版的空间变化，省去了破墙效果和远处较激烈的落地。角色替换完整，保持单镜运镜、前景关系和转身方向。逐帧未见额外人物、切镜或明显穿模，通过本镜画面审核。",
+    "reviewedAt": "2026-11-25T23:31:17.238604+00:00"
+  },
+  "anchorImagePrompt": "One 16:9 anime keyframe for the start of a fast camera pullback. Image 1 gives the exact red-hooded golden-haired persona, crimson cloak, red eyes, gold lining and small ivory mask attached at the left shoulder. Image 2 gives the framing and warm dim room only. Begin with the crimson performer centered in tight chest-up view by the dark narrow wood doorway, mouth slightly open in comic surprise. On the far left edge supply the only other person's cropped out-of-focus navy sleeve with fine gold cuff and a blurred smooth golden stage baton held close to the lens, occupying the left quarter at most, no other face. The baton is a solid painted wooden club with a rounded end and no attachments. Use warm amber light with a slight red cast, clean cel shading, and contrast the central red hood against the background. One shot, no weapon, text, logo or panels."
+}
