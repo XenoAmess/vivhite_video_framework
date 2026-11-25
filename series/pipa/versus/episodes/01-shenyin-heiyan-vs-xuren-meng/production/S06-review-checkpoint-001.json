@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S06",
+  "startFrame": 158,
+  "endFrame": 186,
+  "firstAttempt": {
+    "jobId": "video_gen_4d9faf011e5049b3a962409dc93e9a67:openai",
+    "requestSha256": "08f7df9e9f42071ac49505d5dc5214e6450adefd6e02af223bf7c3e5409fd3c1",
+    "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Medium shot, lean forward over the table, twist sideways and begin to stand. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+    "seed": 1234,
+    "rawSha256": "57a0244148d664a8b72085f9cf6567ed348ac30a80f2d571fb086de9aa5ef060",
+    "cutSha256": "85274d12692ba460d756d720476ce2f5a5b50336f00900f69918b59a80bf04c2",
+    "review": {
+      "cutSha256": "85274d12692ba460d756d720476ce2f5a5b50336f00900f69918b59a80bf04c2",
+      "requestSha256": "08f7df9e9f42071ac49505d5dc5214e6450adefd6e02af223bf7c3e5409fd3c1",
+      "originalSha256": "f66a8a1573ed40a06ecf6abd412c166675eee6de6ae7b7fa7bf7935fc7c4eba2",
+      "decision": "rejected",
+      "reviewedFrames": 28,
+      "method": "assistant-frame-review",
+      "observations": "逐帧对照 28 帧。候选的蓝金军服、深色桌面、粉椅以及起身动作可辨。原镜开始右手已伸在桌子左半，后段手贴近画面左下方的道具并扫过桌面，随后躯干迅速往画面右侧拧转、离开主体位置。候选从双手并排开始，背向镜头站到房间中央，缺少伸手与向右拧身，并在后景加入原镜没有的人影。拒收并修正动作方向、右侧收镜和背景。",
+      "reviewedAt": "2026-11-25T21:19:40.107533+00:00"
+    }
+  },
+  "retakeAtCheckpoint": {
+    "status": "prepared",
+    "prompt": "One continuous low medium shot, a fixed view past the dark round table and toward the single rose-pink chair. <Video 1> is the guide for the table gesture and abrupt final twist. <Picture 1> is the navy-and-gold officer identity. <Picture 2> shows the mandatory large foreground reach and right-of-center position by the rose chair. At the start he leans forward with his right hand already raised over the left side of the table and his left hand by his hip. Toward the end, his right arm reaches across the tabletop into the far left foreground beside one simple gold stage baton lying flat. Then his shoulders and chin snap toward screen right as he leaves the original center of the image, still partly in frame on the right. Follow this precise order and hold the left-to-right sweep, fixed lens, and rose chair throughout. One person only. Keep the distant dark drapery empty, no change of room, no centered back view, no weapons, added text or dialogue.",
+    "seed": 1235,
+    "additionalImageSha256": "dd9e52b2e46b535a4248b337bafb573af3b21a55e3e83ea4cb9073341a14b934",
+    "anchorImagePrompt": "A single 16:9 cel-shaded anime storyboard image. Image 1 supplies the exact identity, short tousled dark hair and gold-trimmed navy Napoleonic-style coat; Image 2 supplies only the seat, camera, hand pose and warm room placement. The officer sits right of center by the rose-pink chair, leans slightly forward but keeps his left arm planted by his hip, and reaches his right open empty hand diagonally across the table toward the left foreground. Use exaggerated harmless foreshortening to make his open palm large in the foreground. A smooth, solid gold-color painted theatrical baton lies flat diagonally on the dark round tabletop; it resembles a tiny simple rounded wooden bat, no parts or mechanisms. Low medium camera remains across the table from the chair. Maintain the same drape, amber walls and muted red highlights and replace any lettering on the walls with a blurry nondescript texture. One person only. Crisp 2D lines, no standalone windows or other characters, no logos, text, or realistic weapons."
+  }
+}
