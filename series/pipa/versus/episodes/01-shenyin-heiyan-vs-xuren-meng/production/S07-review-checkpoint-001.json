@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S07",
+  "startFrame": 186,
+  "endFrame": 206,
+  "firstAttempt": {
+    "jobId": "video_gen_0ef6fe6b0a2c462c9d748d1a1691c124:openai",
+    "requestSha256": "f377c3c5aed440e19068a08c47d28dcf2076e719832af879e5f8ea80e5474890",
+    "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Side medium shot, quickly rise by the rose chair and make an exaggerated playing-to-the-room gesture. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+    "seed": 1234,
+    "rawSha256": "7dc4b9035d445763f3ba9ae463bad9fe8b8d632124fa22765426ca13d509eab3",
+    "cutSha256": "3d595a404d1c86ac185fde7f7a1a7094da5097203b0881779a619a04b2613486",
+    "review": {
+      "cutSha256": "3d595a404d1c86ac185fde7f7a1a7094da5097203b0881779a619a04b2613486",
+      "requestSha256": "f377c3c5aed440e19068a08c47d28dcf2076e719832af879e5f8ea80e5474890",
+      "originalSha256": "b5c8564512d16601c74e305b4d318ba21bf8db1102347c56b0f44b20d7cab0c3",
+      "decision": "rejected",
+      "reviewedFrames": 20,
+      "method": "assistant-frame-review",
+      "observations": "逐帧对照本镜 20 帧。蓝金军服、粉椅和开头俯身都保留，过半以后人物抬身和高举手臂也随原镜发生。原镜结尾的关键动作是靠回椅中，把近侧手臂和道具送进画面右前景，远处的脸相对较小。候选末段两手空着，人物仍居中半站，改成张手和放射线特效。右侧前景动作缺失，无法和下一镜切换对上，本版拒收。",
+      "reviewedAt": "2026-11-25T21:34:08.604512+00:00"
+    }
+  },
+  "retakeAtCheckpoint": {
+    "status": "prepared",
+    "prompt": "One continuous anime shot, seated by the same rose chair for the entire clip. Follow <Video 1> for the close to wide canted camera and continuous movement. <Picture 1> is the exact dark-haired navy and gold officer. Begin with him folded forward near the right arm of the rose-pink chair, head down and both hands low, upper body filling the frame. As the camera turns and pulls wider he snaps his head and shoulders back toward screen left and lowers himself against the chair. One hand raises a solid rounded gold stage baton from below and reaches it out to the RIGHT foreground near the lens. His other hand opens loosely on the LEFT as he reclines. The last frames must match the canted pose and foreshortened gold baton on the right in <Picture 2>, held at that scale while his face remains behind. His body never stands fully. One character, no jump cut, drawn speed lines, extra prop, gun, text, or dialogue.",
+    "seed": 1235,
+    "additionalImageSha256": "ca5ee22061bb24835dfc9fc0a6a0df69374e275b087f8d01e741881c66b98ecf",
+    "imageRecords": [
+      {
+        "file": "S07-chair-lean.png",
+        "inputs": [
+          "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+          "S07-original-lean.png"
+        ],
+        "submittedInRetake": false,
+        "prompt": "Single 16:9 anime keyframe for the start of a short comic chair reaction. Image 1 supplies the only identity and wardrobe. The camera, lighting, large rose-pink chair and very bent forward pose come from Image 2. Show the tousled dark-haired young adult navy-and-gold officer leaning sharply forward in the rose-pink armchair, head and eyes angled down and toward frame right, elbows both low, one empty hand hanging beside the visible right chair arm. Wide gold fringed epaulettes, navy coat, covered ivory trousers, narrow waist and slim proportion match his identity sheet. The body is folded over the thighs from the waist, torso nearly diagonal, still supported by the chair. Medium close framing exactly here, small sliver of dark tabletop bottom left, warm amber shadowed beige wall behind. One character, crisp 2D cel shading, no text, no prop in the hands, no additional person or room.",
+        "sha256": "994b7e399b975c1d553013f9e01b354ba5fc5b78a91009dc5deb9db8d25b3e52"
+      },
+      {
+        "file": "S07-chair-end.png",
+        "inputs": [
+          "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+          "S07-original-end.png",
+          "S05-baton-continuity.png"
+        ],
+        "submittedInRetake": true,
+        "prompt": "A single 16:9 keyframe for an animate stage-comedy close. Image 1 supplies the only anime character and fitted navy-and-gold officer outfit; Image 2 supplies only the tilted camera, foreshortening, hand placement and rose chair; Image 3 supplies only the simple smooth solid gold theater baton. Recreate the camera relationship with that unmistakably harmless rounded short golden baton in the right foreground, its wide rounded end aimed to frame right, its narrow grip in the character's visible near hand at center. The character is comparatively small behind his extended arm, seated leaning back in the rose-pink chair, other hand raised loosely and open, recognizable short dark tousled hair and ivory trousers. Warm wall completely unlettered. Maintain the Dutch angle; crisp cel-shaded 2D anime, only one character. The baton is one solid smooth tapered object, with no holes, triggers, attachments, flashes, or mechanisms. No actual weapons, logos, text, fake cut or speed-line graphics.",
+        "sha256": "ca5ee22061bb24835dfc9fc0a6a0df69374e275b087f8d01e741881c66b98ecf"
+      }
+    ]
+  }
+}

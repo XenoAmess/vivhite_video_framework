@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "vivhite-pipa-layout-refinement-1",
+  "tool": "built-in imagegen",
+  "shots": [
+    {
+      "shot": "S08",
+      "sourceFrame": 209,
+      "file": "S08-doorway-focus.png",
+      "imagePrompt": "One 16:9 anime keyframe for the start of a fast camera pullback. Image 1 gives the exact red-hooded golden-haired persona, crimson cloak, red eyes, gold lining and small ivory mask attached at the left shoulder. Image 2 gives the framing and warm dim room only. Begin with the crimson performer centered in tight chest-up view by the dark narrow wood doorway, mouth slightly open in comic surprise. On the far left edge supply the only other person's cropped out-of-focus navy sleeve with fine gold cuff and a blurred smooth golden stage baton held close to the lens, occupying the left quarter at most, no other face. The baton is a solid painted wooden club with a rounded end and no attachments. Use warm amber light with a slight red cast, clean cel shading, and contrast the central red hood against the background. One shot, no weapon, text, logo or panels.",
+      "used": true,
+      "videoPrompt": "One continuous two-second original camera movement recreated across this model clip. <Video 1> specifies timing, angular continuity and the room. <Picture 1> is visible only as the blurred gold-trim navy sleeve and hand at the far-left edge at the beginning. <Picture 2> is the exact crimson-hooded performer with long gold hair and the ivory shoulder mask. Begin in the chest-up pose of <Picture 3>, centered by the door with an expressive open mouth, with a short smooth rounded golden theatre baton blurred at left beside the navy sleeve. The crimson performer pivots from facing the lens to facing deeper into the room, and moves away quickly as the camera pulls back a long way. Continue the same uninterrupted camera move, from tight chest-up to quite distant whole body, with warm light and bits of paper swirling ahead of the final step. No other full character, cuts, new room layout, realistic weapon, text, graphics, or dialogue.",
+      "initialAttempt": {
+        "reason": "Add the verified camera scale reference before this job reaches the GPU.",
+        "jobId": "video_gen_6f5bcf17bd954578b295f1095c991578:openai",
+        "oldStatus": "queued",
+        "newStatus": "cancelled",
+        "requestSha256": "c0195124c693497da82255f86dc530ee3e5f9c45c3957b8f667fb0454e4e74b2",
+        "originalPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> is the exact identity for long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Dark room pullback. Red-hooded performer turns away and moves deeper into the room; navy sleeves may pass the near edge. Use theatrical dust, paper scraps and broad amber light accents. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+        "motionReferenceSha256": "12f9a26ef62b6ef3c60630b034e0e0c3d7eb83e0ca4d97cdb5a398f71458e5e7",
+        "recordedAt": "2026-11-25T21:37:59.074874+00:00"
+      },
+      "imageSha256": "3504a12ee278956547ab36bbc77f3cd9ef2531be1c58614bd45e6cbe72199d7c",
+      "statusAtCheckpoint": "anchor-verified"
+    },
+    {
+      "shot": "S09",
+      "sourceFrame": 267,
+      "file": "S09-upward-glance.png",
+      "imagePrompt": "One 16:9 anime storyboard keyframe. Image 1 supplies identity only: adult blond character with red hood, dark top, red cloak with gold lining, small ivory theatrical mask at the left shoulder, red eyes. Image 2 supplies a steep downward camera with the wooden boards behind, a clear face tilted upward and dramatic red-amber sidelight. Show the red-hooded character deep in a crouch, shoulders turning toward frame right while the face looks up just below the lens with a determined, playful expression. The face in the upper-middle and shoulders fill the view, only a portion of the bent leg or wood floor around the lower edge. Warm light, cel-shaded style, full clothing, just one person, no effects, text or weapons.",
+      "used": true,
+      "videoPrompt": "One continuous cel-shaded anime shot with exactly one performer. <Video 1> gives the steep high angle and fast push-in during the crouch. <Picture 1> is the exact red-hooded identity, blond bangs, black clothing and single ivory left-shoulder mask. Start looking down at the whole crouching silhouette on the wood boards, with the knees flexed and one gloved hand stabilizing the body. The head turns toward screen right, then lifts and looks upward, eyes coming into clear focus as the camera moves closer. Finish at the tight scale, angle and expression of <Picture 2>, with red-amber sidelight and a leg still briefly visible at the edge. Preserve the motion and camera direction, one shot, one person, no visible weapons, text, or added symbols.",
+      "initialAttempt": {
+        "reason": "Add the verified camera scale reference before this job reaches the GPU.",
+        "jobId": "video_gen_11888ccbaba24b67aca8f344c18120a9:openai",
+        "oldStatus": "queued",
+        "newStatus": "cancelled",
+        "requestSha256": "d56dfef57fde26425becc12dab4dd0afa53c1f51d79fe01067e727197ab784f3",
+        "originalPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. High-angle moving camera, the red-hooded performer drops into a deep crouch, turns their head and looks up as the camera comes nearer. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+        "motionReferenceSha256": "3488ab1a9177d7b5444e0245adf199b92243507a0c8e7a1d8f8930e0260d8f6f",
+        "recordedAt": "2026-11-25T21:37:59.108614+00:00"
+      },
+      "imageSha256": "b94650c537e119f53fa8eba9a5d97c3a2db5edf6462cd48b31103932aef45de4",
+      "statusAtCheckpoint": "anchor-verified"
+    }
+  ],
+  "retainedOriginalSubmission": [
+    "S10",
+    "S11",
+    "S12"
+  ]
+}
