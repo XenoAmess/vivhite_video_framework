@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S12",
+  "attempt": 1,
+  "startFrame": 317,
+  "endFrame": 338,
+  "jobId": "video_gen_424b9827f68245feab204f6009b500b0:openai",
+  "requestSha256": "cd525f0d5a544a8aab411a18667ace31a4442b193a59810461841c126a84bfc1",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> shows the desired pose and framing for this same character. Begin in the canted rose-chair medium-wide view with the navy officer sitting in the right half. Push toward his face as he opens his mouth wide, then pull back smoothly on the same camera axis, finishing with one arm extending sideways. Match the actual rapid push and pull timing in the video. The officer consistently remains the only person. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "8200028115699109db327396416c5aafbb2e7adf0b2568c14e2bec5d59687760",
+  "cutSha256": "ccc5e3bc0f40bb7b194fbef1a29fc75b8163fd087e3e3a1ba53795fb4f4ba816",
+  "review": {
+    "cutSha256": "ccc5e3bc0f40bb7b194fbef1a29fc75b8163fd087e3e3a1ba53795fb4f4ba816",
+    "requestSha256": "cd525f0d5a544a8aab411a18667ace31a4442b193a59810461841c126a84bfc1",
+    "originalSha256": "66607994b1836a0868bdc5b7720eed9dce6bdc80212b7fd34f6544a1c3d57ae6",
+    "decision": "accepted",
+    "reviewedFrames": 21,
+    "method": "assistant-frame-review",
+    "observations": "逐帧查看原片第 317–337 帧和候选全部 21 帧。单人坐在粉椅边，镜头从较宽景别迅速推到惊讶张嘴的脸部，又连续退回半身，手臂随后向一侧张开。角色发型、蓝金服饰、暖色屋内与粉椅持续可辨。相比原片，中间表情少了短促的眯眼，尾段手臂进入前景的幅度较小，三个景别和动作顺序清楚，未见额外人物、额外切镜。通过本镜画面审核。",
+    "reviewedAt": "2026-11-25T23:05:16.367921+00:00"
+  },
+  "anchorImagePrompt": "Create one landscape 16:9 anime storyboard anchor of the character of Image 1. Image 1 provides the only face, design and outfit. Image 2 provides only the tilted room camera, pose and startled comedic expression. Replace the person with the anime boy in the navy and gold French-First-Empire-inspired military coat with gold fringed epaulettes, dark-brown short tousled hair and blue-gray eyes. Medium shot from a mildly tilted camera, positioned by a rose chair, leaning a little backward, mouth open and eyes wide in an exaggerated surprised reaction to something off screen. Keep the hands empty. Same warm wooden room and warm beige wall, use a blank out-of-focus wall in place of signage. Crisp 2D cel shading, readable dark navy and gold, preserve the hair and eye design from Image 1. Exactly one character. No logos, no readable text, no weapons."
+}
