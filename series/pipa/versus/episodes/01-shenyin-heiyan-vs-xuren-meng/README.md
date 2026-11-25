@@ -12,3 +12,5 @@
 神隐黑炎的军服补全部分参考法国第一帝国的长衣摆、马裤和靴型，照顾原图已有的深蓝和金色装饰。 [法国军事博物馆近卫军制服资料](https://www.musee-armee.fr/fileadmin-cru-1503318930/user_upload/Documents/Support-Visite-Fiches-Objets/Fiches-periode-napoleon/MA_grenadier-garde-imperiale.pdf) · [拿破仑基金会军服简介](https://www.napoleon.org/en/young-historians/napodoc/napoleons-grande-armee-2/)
 
 后续分镜中，神隐黑炎对应夸张开枪的一方，虚人梦对应拍屁股挑衅的一方。动画参考为 Kotte Animation 原片，重点分镜和配乐参考「成都超人 p01 原曲」。 [原动画素材 BV1pvY16QEwd](https://www.bilibili.com/video/BV1pvY16QEwd/) · [重点分镜与 BGM BV14BeA6CEUb](https://www.bilibili.com/video/BV14BeA6CEUb/)
+
+首轮 S01 技术样片为单镜 5 秒、1344×768、24 fps（120 帧），配乐取指定参考片 00:24–00:29 的原混音。合成文件和完整运行记录保存在仓库外。两位角色的造型和同框比例可辨，虚人梦的转身与披风摆动可见，拍击和后退动作幅度偏小。 [生成、素材指纹与全帧检查收据](production/sample-S01-768p-001.json)

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "vivhite-local-video-technical-sample-1",
+  "artifact": "pipa-shenyin-heiyan-vs-xuren-meng-768p-5s.mp4",
+  "sha256": "cfba78ab1b0cae895af76c73b16c0bbe6d893c8785d929eb5c398e802138adbe",
+  "bytes": 3261648,
+  "model": "fasth3-omni-bf16",
+  "jobId": "video_gen_124dce4575ca44228d0c1a1a35a63e77:openai",
+  "requestSha256": "a074934b9f0473297abcb2c899034a931f097799bf43442a17ad91218d27f58e",
+  "rawSha256": "4d7d496ff6d5549a1e381430e6f216940c400c055a5ec3006577aeb5bdeb247f",
+  "pictureSha256": "7432dd4254a218c365cbf195dd37628336817426bcdd9111e817c464f053c109",
+  "width": 1344,
+  "height": 768,
+  "fps": 24,
+  "frames": 120,
+  "seconds": 5,
+  "fullAudioVideoDecode": "passed",
+  "audio": {
+    "source": "BV14BeA6CEUb P1",
+    "startSeconds": 24,
+    "endSeconds": 29,
+    "kind": "reference-soundtrack-excerpt",
+    "sourceSha256": "82e2c5fd940646b64ad3470ee68337e3901c79cf636802132c532ac8a9e99314",
+    "preparedWavSha256": "38a88ebef571faf4ff99c87027a23854678303b6fb828e61dc47856aac85fc04",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "status": "technical-sample-reviewed-for-delivery",
+  "humanPlaybackReview": false,
+  "createdUtc": "2026-11-25T18:58:53.247721+00:00",
+  "videoReference": {
+    "source": "BV1pvY16QEwd",
+    "use": "Visual review of room lighting and low-angle framing"
+  },
+  "storyboardAndSoundtrackReference": "BV14BeA6CEUb P1",
+  "request": {
+    "model": "fasth3-omni-bf16",
+    "task": "ref2va",
+    "size": "1344x768",
+    "seconds": 5,
+    "num_inference_steps": 8,
+    "guidance_scale": 1,
+    "seed": 1234,
+    "prompt": "A single continuous 5-second comic anime showdown, with clean 2D cel-shaded characters and a detailed wood-floor back room. Use the face, hair and full outfit of <Picture 1> for the navy-and-gold officer at the left, and the face, long blond hair, red hood, red cloak and ivory left shoulder mask of <Picture 2> for the performer at the right. They have comparable height, head proportions and slim build. Exactly these two distinct adult characters. Medium-wide two-shot from a low, mildly canted angle, a warm pendant light above, rose upholstered chair against the back wall, dark wood door, blue shadows and amber light. Both characters face partly toward camera so both faces and costumes remain visible. In the first second both hold their pose, then the red-hooded performer pivots one quarter turn, gives one quick cheeky pat to the side of their own fully clothed hip and flicks the edge of the red cape, like a playful dance challenge. The navy officer makes one small startled step back with both empty hands open and recovers composure. End with both planted and facing each other. A subtle push in, no hard cuts. Clear feet on the floor, stable anatomy, the same hair and outfits, exactly one shoulder mask, distinct silhouettes. Family-friendly theatrical comedy, empty hands, no weapons, no combat, no physical contact between the characters, no blood, no explosions, no voices, no lettering.",
+    "imageReferences": [
+      {
+        "path": "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "sha256": "fcc41595a2d072855f3ccbd12e94af4d3d658a9df665efc16a90bfad144abf99"
+      },
+      {
+        "path": "assets/generated/character-concepts-v2/xuren-meng.png",
+        "sha256": "9a8b1a2819e4c38a622aafddfb21b1f819537fe7800100c18346cbcfd16c2535"
+      }
+    ]
+  },
+  "providerSourceFrames": 124,
+  "outputSourceRange": {
+    "firstFrame": 1,
+    "lastFrame": 120
+  },
+  "assistantVisualReview": {
+    "reviewedEncodedFrames": 120,
+    "method": "ordered contact sheets of every encoded frame",
+    "observations": [
+      "The two characters keep their distinct costumes and comparable body scale.",
+      "The red-hooded character turns and moves the cape. The navy officer reacts and faces them.",
+      "The intended hip pat and backward step are not clearly articulated."
+    ],
+    "scope": "Character appearance, framing and rough motion. Technical sample for user playback."
+  }
+}
