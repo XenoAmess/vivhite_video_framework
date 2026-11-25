@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "vivhite-pipa-layout-refinement-1",
+  "tool": "built-in imagegen",
+  "shots": [
+    {
+      "shot": "S14",
+      "anchorShot": "S14",
+      "anchorFrame": 343,
+      "file": "S14-table-baton.png",
+      "videoPrompt": "One continuous canted anime shot. <Video 1> gives the side tabletop lens and the hand movement. <Picture 1> is the navy-and-gold officer identity, and <Picture 2> gives the framing and solid rounded gold stage baton. Keep him seated back right in the rose chair, behind a dark round table, with one arm extended across it to the left near foreground. Begin with the oversized blurred baton at left, then pull back smoothly to reveal the face while following his small comic gesture and the warm amber glow sweeping in from the left edge. No other character, cut, text, dialogue, visible weapons, or burst coming from the solid prop itself.",
+      "character": "shenyin-heiyan",
+      "imagePrompt": "Single 16:9 anime storyboard still. Image 1 supplies the exact anime officer identity and navy-gold uniform. Image 2 supplies only a canted over-table camera and far right rose-pink chair. Image 3 supplies the simple golden stage prop design already seen earlier. Put the officer toward the back right by the rose chair, seated, with a playfully startled grin, legs in ivory trousers mostly obscured by the dark round table. His navy-and-gold glove-free hand reaches over the table toward the left foreground, carrying the single smooth solid round gold baton of Image 3, whose end is strongly foreshortened near camera. Warm amber stage light from beyond the left edge glows softly on the front of the prop and table. Keep the dark door and beige warm wall, replace markings with blank blur. One character, cel-shaded linework matching Image 1. No muzzle, realistic weapon, extra person or text.",
+      "imageSha256": "14566bcec193aaf44fd31b2e3bfc8ff3ef88e4e80f8b59381ca43790b1ced920",
+      "seed": 1235,
+      "firstRequest": {
+        "jobId": "video_gen_cea7c588a9594f9cb186df061d16da07:openai",
+        "requestSha256": "932aa3f2307b0ac3f572a6abecbe5bfe3c545f645048d1aade27d4ae4fdf9362",
+        "prompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Side view across dark table, officer makes an exaggerated forward gesture with abstract theatrical light flashes. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+        "motionReferenceSha256": "e9e891c85217bb551eb98a6c026bf0abd9a706f9e2d5727f3268f4c4a506982d",
+        "serviceStateBefore": "queued",
+        "serviceStateAfter": "cancelled",
+        "checkedAt": "2026-11-25T22:14:45.155199+00:00"
+      }
+    },
+    {
+      "shot": "S15",
+      "anchorShot": "S16",
+      "anchorFrame": 395,
+      "file": "S16-rear-wide-dance.png",
+      "videoPrompt": "Use <Video 1> for the continuous rear-angle movement. <Picture 1> defines the fully clothed crimson performer, and <Picture 2> supplies their red hood and covered stance from behind in this same room. Begin close behind, side-angled, then move back to show both booted feet, red cape, bent knees and whole upper body. The dancer shifts their weight deeply from one side to the other, twisting across the waist and shoulders in a comic step while keeping the back angled toward camera. Keep the warm stage lighting, wood boards and folding doors locked in the same scene. One person, no extra cut, other cast, graphic marks, weapon, or text.",
+      "character": "xuren-meng",
+      "imagePrompt": "Single 16:9 anime storyboard frame of a comic stage dancer. Image 1 supplies the red hood, blond hair, dark trousers and gold lined red cape. Image 2 supplies the warm floor-level camera and broadly planted bent-knee dance silhouette. Show the view from behind and low, with the back seam of the red hood and boot heels clearly visible. Feet at each side and bent knees support a sideways weight shift, torso upright and one arm just starting to pull upward. Show the whole performer from hood to shoes plus the dark wooden room, simple doors and round amber overhead lamp. The gold-lined red cape swings asymmetrically to one side so both legs are visible. Keep proportion natural, action comedic, and the whole person fully clothed. No face in camera, no other person, realistic weapon, injury, text or floating graphic.",
+      "imageSha256": "4846a5cdd5c8053294254d39c81f6cf62abd515fd360e29748f913d0417f08e3",
+      "seed": 1235,
+      "firstRequest": {
+        "jobId": "video_gen_301ba9a12cba432caa4b70e768491532:openai",
+        "requestSha256": "d86d7a5a26b5e3b8694131e2a47e93db7df642f0f1e368087f2ee06047404a3d",
+        "prompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Near rear view, red-hooded performer bends both knees and swings the hips to the side, cape following the turn. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+        "motionReferenceSha256": "185a6ff44c26df9b00b1c7656b4e54bd14841eb3c9a4d38553c083f972696666",
+        "serviceStateBefore": "queued",
+        "serviceStateAfter": "cancelled",
+        "checkedAt": "2026-11-25T22:14:45.174166+00:00"
+      }
+    },
+    {
+      "shot": "S16",
+      "anchorShot": "S16",
+      "anchorFrame": 395,
+      "file": "S16-rear-wide-dance.png",
+      "videoPrompt": "One continuous low sweeping anime shot. <Video 1> establishes the floor-level camera and timed shifts. <Picture 1> is the fully clothed red-hooded costume identity, and <Picture 2> shows the required initial rear wide camera, leg placement and hood. Begin in a wide view with the performer facing away and both bent knees visible. As the legs continue shifting left and right, the camera slides and tilts from low center toward a lower oblique angle. The shoulders tilt as one arm rises distinctly over the head at the end. Show both planted boots and cape responding to the movement. Warm overhead circle lamp and wooden set keep the same position, no other person, cut, printed graphics, weapon or words.",
+      "character": "xuren-meng",
+      "imagePrompt": "Single 16:9 anime storyboard frame of a comic stage dancer. Image 1 supplies the red hood, blond hair, dark trousers and gold lined red cape. Image 2 supplies the warm floor-level camera and broadly planted bent-knee dance silhouette. Show the view from behind and low, with the back seam of the red hood and boot heels clearly visible. Feet at each side and bent knees support a sideways weight shift, torso upright and one arm just starting to pull upward. Show the whole performer from hood to shoes plus the dark wooden room, simple doors and round amber overhead lamp. The gold-lined red cape swings asymmetrically to one side so both legs are visible. Keep proportion natural, action comedic, and the whole person fully clothed. No face in camera, no other person, realistic weapon, injury, text or floating graphic.",
+      "imageSha256": "4846a5cdd5c8053294254d39c81f6cf62abd515fd360e29748f913d0417f08e3",
+      "seed": 1235,
+      "firstRequest": {
+        "jobId": "video_gen_481971ab8b514d8d8abad0040eced5ed:openai",
+        "requestSha256": "80a2ca0fb7de61d961d34569a2c94317dad410f8ac1ea0f51296217e7d8c3230",
+        "prompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Wide low-angle view of the red-hooded performer shifting left then right and opening the arms, warm room and airborne stage glints. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+        "motionReferenceSha256": "4203b047c30b1a1220571788bf6c1ee08b7ad60f4cec9790108a5d01fc6ef864",
+        "serviceStateBefore": "queued",
+        "serviceStateAfter": "cancelled",
+        "checkedAt": "2026-11-25T22:14:45.194130+00:00"
+      }
+    },
+    {
+      "shot": "S17",
+      "anchorShot": "S14",
+      "anchorFrame": 343,
+      "file": "S14-table-baton.png",
+      "videoPrompt": "One continuous cel-shaded anime shot. <Video 1> sets the exact timing and slight canted camera change. <Picture 1> is the dark-haired officer and navy gold outfit. Begin with him leaning abruptly forward and his face larger by the rose chair, mouth open in exaggerated comic surprise. As one arm reaches left over the dark round table, the view draws out to the wider scale shown in <Picture 2>. The harmless solid gold stage baton passes near the left edge and bright amber stage light sweeps across the foreground. Remain in the same room and perspective through to the end, no added person, realistic weapon, cuts, graphics, subtitles or dialogue.",
+      "character": "shenyin-heiyan",
+      "imagePrompt": "Single 16:9 anime storyboard still. Image 1 supplies the exact anime officer identity and navy-gold uniform. Image 2 supplies only a canted over-table camera and far right rose-pink chair. Image 3 supplies the simple golden stage prop design already seen earlier. Put the officer toward the back right by the rose chair, seated, with a playfully startled grin, legs in ivory trousers mostly obscured by the dark round table. His navy-and-gold glove-free hand reaches over the table toward the left foreground, carrying the single smooth solid round gold baton of Image 3, whose end is strongly foreshortened near camera. Warm amber stage light from beyond the left edge glows softly on the front of the prop and table. Keep the dark door and beige warm wall, replace markings with blank blur. One character, cel-shaded linework matching Image 1. No muzzle, realistic weapon, extra person or text.",
+      "imageSha256": "14566bcec193aaf44fd31b2e3bfc8ff3ef88e4e80f8b59381ca43790b1ced920",
+      "seed": 1235,
+      "firstRequest": {
+        "jobId": "video_gen_e5deef496cd14bc291b90736bf24ff2a:openai",
+        "requestSha256": "89d514cfeec860d743651d0aab17a3d0900c5486e92cf6708e4bcfb5bc6a9c80",
+        "prompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Begin on the navy officer leaning forward by the rose chair, then the canted camera pulls back to show his upper body and the dark table. The officer extends his arm as an abstract amber theatre flare passes through the left foreground. Follow the continuous camera move, matching the start, middle and end body positions. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+        "motionReferenceSha256": "b3ad7ace3db0de58c81c44fb19b4e1ac614a334c529e0710d8133efc19654d44",
+        "serviceStateBefore": "queued",
+        "serviceStateAfter": "cancelled",
+        "checkedAt": "2026-11-25T22:14:45.212898+00:00"
+      }
+    }
+  ]
+}
