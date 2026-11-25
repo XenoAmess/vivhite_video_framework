@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S02",
+  "startFrame": 40,
+  "endFrame": 64,
+  "firstAttempt": {
+    "jobId": "video_gen_147a693ac84341e8bdf889d98135f6d7:openai",
+    "requestSha256": "867ab5ed4334b7269bd2564387c58496a501c39e7f04fd43f392b9435c6252df",
+    "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Medium view through blurred foreground. The red-hooded performer comes into focus by the doorway and holds an offscreen gaze. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+    "seed": 1234,
+    "rawSha256": "397148520c8ed095a3295eb742ab920519247b16140c51116545ccf43072279b",
+    "cutSha256": "4dddbe58a4f7995cc550724b1a791503658083ddcd9025168e1d4175ab982d70",
+    "review": {
+      "cutSha256": "4dddbe58a4f7995cc550724b1a791503658083ddcd9025168e1d4175ab982d70",
+      "requestSha256": "867ab5ed4334b7269bd2564387c58496a501c39e7f04fd43f392b9435c6252df",
+      "originalSha256": "79297531fdf282ddd556dce28881b69ec0e326e582ed46d02527c64f64987fb8",
+      "decision": "rejected",
+      "reviewedFrames": 24,
+      "method": "assistant-frame-review",
+      "observations": "逐帧核对原片和候选 24 帧。虚人梦红兜帽、金发和左肩面具在主体位置清楚，但原镜从虚焦收至脸部与上身，候选始终是门框里的全身固定站姿。候选左右前景还多出两个黑衣人影，原镜的近前景是一个局部道具。拒收。",
+      "reviewedAt": "2026-11-25T20:12:40.766543+00:00"
+    }
+  },
+  "retakeAtCheckpoint": {
+    "status": "prepared",
+    "prompt": "One continuous anime chest-up shot of one person. <Video 1> controls only the fixed close framing and the change of focus: the central face starts a little soft and becomes sharp near the middle while the right edge foreground remains soft. <Picture 1> gives the red hood and gold-haired character identity. <Picture 2> is the shot composition to hold from the very first frame, showing only chest, head and shoulders. Match Picture 2 and keep this chest-up scale for the entire shot. The one visible character looks sternly ahead and shows a slight head movement as focus settles. There is an abstract, out-of-focus wooden edge at screen right. Exactly one character, no shoulders or faces at either foreground edge, no whole-body view, no clothing from the motion video, no new cuts, no text, no weapons, no dialogue.",
+    "seed": 1235,
+    "additionalImageSha256": "4f9b865c24fbc59561ebd053686551d627ebe6595250a1241ad0b001f8eac61c"
+  },
+  "workerRevisionSha256": "aa83ff19c90dafae621d25a53cba3cf3bdac1796954e8a0b623ac66d3ae9a4db"
+}

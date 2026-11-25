@@ -311,22 +311,6 @@ def generate(base, root, prepared):
                          for _,_,r in rows)
         for shot,attempt,receipt in rows:
             status = receipt['status']
-            if status == 'prepared' and unfinished < CAPACITY and not queue_full:
-                attempt.mkdir(parents=True,exist_ok=True)
-                try:
-                    if post(api,root,shot,attempt):
-                        unfinished += 1
-                        receipt.update(video.read(attempt/'job.json'))
-                        print(f"{shot['id']} {attempt.name} queued as {receipt['jobId']}",flush=True)
-                        waiting.add(video.queue_job_id(receipt['jobId']))
-                    else:
-                        queue_full = True
-                except (OSError,RuntimeError,ValueError) as error:
-                    # If POST was ambiguous, video.submit has already journaled it.
-                    print(f"{shot['id']} {attempt.name}: {error}",flush=True)
-                    if not (attempt/'job.json').exists():
-                        queue_full = True
-                continue
             if status in ('prepared','completed','failed','cancelled','submitting','submission-uncertain'):
                 continue
             identity = receipt['jobId']
@@ -346,6 +330,26 @@ def generate(base, root, prepared):
                 if remote['status'] in ('failed','cancelled'):
                     unfinished -= 1
                     print(f"{shot['id']} stopped with remote status {remote['status']}",flush=True)
+        # Collect finished jobs first, then fill the newly freed slots in shot
+        # order so an earlier retake cannot be starved by later prepared shots.
+        for shot,attempt,receipt in rows:
+            if unfinished >= CAPACITY or queue_full:
+                break
+            if receipt['status']!='prepared':
+                continue
+            attempt.mkdir(parents=True,exist_ok=True)
+            try:
+                if post(api,root,shot,attempt):
+                    unfinished += 1
+                    receipt.update(video.read(attempt/'job.json'))
+                    print(f"{shot['id']} {attempt.name} queued as {receipt['jobId']}",flush=True)
+                else:
+                    queue_full = True
+            except (OSError,RuntimeError,ValueError) as error:
+                # If POST was ambiguous, video.submit has already journaled it.
+                print(f"{shot['id']} {attempt.name}: {type(error).__name__}: {error}",flush=True)
+                if not (attempt/'job.json').exists():
+                    queue_full = True
         counts = {}
         for _,attempt,receipt in rows:
             status = video.read(attempt/'job.json')['status'] if (attempt/'job.json').exists() else receipt['status']
@@ -422,7 +426,7 @@ def run_scheduled(base, root, config):
                         return
                 generate(base,root,config)
             except Exception as error:
-                print(f'{video.now()} worker interrupted: {error}',flush=True)
+                print(f'{video.now()} worker interrupted: {type(error).__name__}: {error}',flush=True)
                 raise
 
 
