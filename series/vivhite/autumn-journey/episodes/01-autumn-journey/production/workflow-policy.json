@@ -9,7 +9,8 @@
     ],
     "draft": {
       "model": "fasth3-omni-bf16",
-      "api": "http://192.168.1.11:8001/v1",
+      "api": "http://192.168.1.11:8080/v1",
+      "legacyApi": "http://192.168.1.11:8001/v1",
       "size": "1344x768",
       "task": "ref2va",
       "numInferenceSteps": 8,
@@ -18,7 +19,8 @@
     "refinement": {
       "model": "open-h3-2k",
       "modelNameIsHistoricalApiIdentifier": true,
-      "api": "http://192.168.1.11:8002/v1",
+      "api": "http://192.168.1.11:8080/v1",
+      "legacyApi": "http://192.168.1.11:8002/v1",
       "endpoint": "/videos/regenerations",
       "size": "3840x2160",
       "sampler": "up3",
@@ -31,7 +33,9 @@
     },
     "newTwoKJobsAllowed": false,
     "historicalTwoKRuns": "Preserved, stopped, never automatically resumed",
-    "sourceDocument": "https://github.com/XenoAmess/local-model-operations/blob/main/deployments/video-generation/docs/open-h3-4k-http.md",
+    "sourceDocument": "https://github.com/XenoAmess/local-model-operations/blob/main/deployments/video-generation/docs/unified-model-service.md",
+    "native4kDocument": "https://github.com/XenoAmess/local-model-operations/blob/main/deployments/video-generation/docs/open-h3-4k-http.md",
+    "unifiedGatewayReadOnlyVerifiedOn": "2026-11-26",
     "liveModelSizesVerifiedOn": "2026-11-17"
   },
   "closingGeneration": {

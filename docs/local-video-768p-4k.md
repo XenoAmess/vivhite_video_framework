@@ -4,12 +4,14 @@
 
 ## 当前调用知识
 
+2026-11-26起，新任务统一发往 `http://192.168.1.11:8080/v1`，模型仍在局域网运行。网关接入 Bifrost 计量，并与 Qwen 和 Blender 共用持久队列及 GPU 调度器。旧8001／8002直连与统一入口共享视频任务和文件库，旧ID可在8080查询和下载。网关 `/v1/models` 公布注册能力 `video_generation`、`reference_image` 和 `video_regeneration_4k`。旧直连接口此前公布的36层解码器、具体尺寸及分流细节另见后端记录。 [统一模型服务](https://github.com/XenoAmess/local-model-operations/blob/main/deployments/video-generation/docs/unified-model-service.md)
+
 | 环节 | HTTP API | 实际模型ID | 必须使用的尺寸与参数 |
 | --- | --- | --- | --- |
-| 原始768P参考图生成 | `http://192.168.1.11:8001/v1/videos` | `fasth3-omni-bf16` | `1344x768`、`task=ref2va`、8步；运行时核实36层解码器 |
-| 原生4K视频再生成 | `http://192.168.1.11:8002/v1/videos/regenerations` | **`open-h3-2k`** | **`3840x2160`**、`sampler=up3`、当前种子1234；GPU单窗口；本期客户端 `--window 32 --poll-seconds 60` 预排队 |
+| 原始768P参考图生成 | `POST /v1/videos` | `fasth3-omni-bf16` | `1344x768`、`task=ref2va`、8步 |
+| 原生4K视频再生成 | `POST /v1/videos/regenerations` | **`open-h3-2k`** | **`3840x2160`**、`sampler=up3`、当前种子1234；GPU单窗口；《秋日旅程》历史批次预排队参数为 `--window 32 --poll-seconds 60` |
 
-4K服务沿用旧模型ID和端口，不要擅自改成不存在的 `open-h3-4k`，也不要省略尺寸让服务落回旧默认。2026-11-17本项目实际读取8002的 `/v1/models`，已看到 `3840x2160` 与单窗口能力声明；只读查询不是本项目4K成片验收。
+4K请求必须写出 `size: "3840x2160"`。2026-11-17本项目实际读取旧8002的 `/v1/models`，记录了 `3840x2160` 与单窗口能力声明。
 
 **2026-11-21更新：长镜头已改用整段生成。** 本次实际查询8002返回 `long_4k_strategy=full_sequence`、`long_4k_independent_window_fallback=false`。当前声明以规范化后超过124帧为长序列阈值，时间轴24fps，即超过约5.167秒；不能再把10秒、14秒源片按旧方案估成三个、四个拼接窗口。沿用原再生成HTTP请求，后端部署决定时间策略，没有新增已验证的客户端切窗参数。这里只使用原生3840×2160，不恢复旧2K路线。
 
@@ -21,7 +23,7 @@
 
 ## HTTP请求与文件保留
 
-先向8002的 `POST /v1/files` 上传实际审阅过的768P源片，再提交：
+先向统一入口的 `POST /v1/files` 上传实际审阅过的768P源片，再向 `/v1/videos/regenerations` 提交。
 
 ```json
 {
@@ -34,11 +36,11 @@
 }
 ```
 
-也可使用文档允许的 `input_video: {"job_id": "video_gen_实际任务ID"}`。本项目优先上传**实际采用且通过完整复核的本地源片**，因为纹理回贴、规范化等修订未必存在于原始服务器任务中；直接引用原任务会丢掉这些处理。上面提示词仅说明接口结构，正式任务仍使用逐镜最终计划和实际素材绑定。
+也可在 `input_video.job_id` 传原任务ID，包括带 `:openai` 的ID。本项目优先上传**实际采用且通过完整复核的本地源片**，因为纹理回贴、规范化等修订未必存在于原始服务器任务中；直接引用原任务会丢掉这些处理。上面提示词仅说明接口结构，正式任务仍使用逐镜最终计划和实际素材绑定。
 
-提交返回202后，使用 `GET /v1/videos/{id}` 轮询，完成后从 `GET /v1/videos/{id}/content` 下载。完整请求、上传哈希、任务ID、轮询、原始音视频、规范化源片、日志和失败材料均保留。POST超时不能盲目重提；先核对受理状态，避免重复任务。
+提交返回202后，用原样ID请求 `GET /v1/videos/{id}`，让网关跟踪终态并记录用量，完成后从 `GET /v1/videos/{id}/content` 下载。带 `:openai` 的终态响应若无文件哈希，客户端从 `GET /v1/queue/jobs/{原始ID}` 补取；本地文件名也用原始ID，兼容 Windows。完整请求、上传哈希、任务ID、轮询、原始音视频、规范化源片、日志和失败材料均保留。POST超时后先核对受理状态，避免重复任务。
 
-4K与768P共用GPU队列，按普通队列执行，GPU每次仅加载一个4K窗口，不能按两块GPU估算耗时。服务声明的`four_k_max_windows_per_load=1`是单次推理加载窗口数，不等于客户端只能排一个独立HTTP任务。
+GPU每次仅加载一个4K窗口。客户端提交窗口可包含多个HTTP任务；网关 `max_inflight` 也不能作为4K GPU并发数。调度优先考虑已驻留模型，默认保护时间为3600秒。当前模型无可执行工作时可以提前切换，其他模型有可执行工作且保护期结束时，调度器在当前任务自然结束后切换。 [统一调度说明](https://github.com/XenoAmess/local-model-operations/blob/main/deployments/video-generation/docs/unified-model-service.md#队列和-gpu-切换)
 
 2026-11-18用户先要求至少3个任务排队、完成后及时处理，随后要求评估并尽量排入全部剩余任务。[服务端队列文档](https://github.com/XenoAmess/local-model-operations/blob/main/deployments/video-generation/docs/video-http-queue.md)规定同模型最多32个未完成任务，超限返回429。排队保存上传文件及SQLite任务记录，前端和调度器不加载模型；排队本身不增加同时执行的GPU任务，但仍消耗存储，不能称为零成本。当前以`--window 32 --poll-seconds 60`填充允许的32个未完成名额，超出的剩余镜头随完成自动补入。单次GPU窗口、模型、原顺序不变，不插队。
 
@@ -47,6 +49,8 @@
 数日运行可使用本期已实测的[Windows独立执行器](autumn-journey-background-rendering.md)。它由按需任务承载，保留任务ID、冻结代码、下载与机器检查、图片Git检查点和技术合成，不依赖GPT对话存活；其自动恢复不等于自动通过内容审核。
 
 ## 已验证范围与恢复边界
+
+2026-11-26在本仓库以只读方式验证了统一入口的模型、服务状态和共享队列。旧14秒4K任务可查询；已有带 `:openai` 的832×480 Omni任务可查询并完整下载，文件SHA-256与原始队列收据一致，全量解码得到124帧／24fps。本次迁移没有新提交GPU任务。
 
 服务端[4K验收记录](https://github.com/XenoAmess/local-model-operations/blob/main/deployments/video-generation/deployment/video-queue/4k-validation.json)报告：首条完整样片为3840×2160、124帧、24fps、约5.167秒，完成下载、哈希、音轨及全量解码；端到端约77分47秒。该记录只有首、中、尾选帧查看，不能称为完整时序或画质对比验收；它也不是本片48镜的实测速度或确定交付时间。
 
@@ -63,7 +67,7 @@
 ## 本仓库制作入口
 
 - [`prepare_local_refinement.py`](../video-maker/tools/prepare_local_refinement.py)：实际768P交付及其绑定通过后，准备独立4K计划和完整已审源片，不提交任务。新计划明确写入3840×2160和单任务窗口，重新进行人格／披露审核。
-- [`local_video_pipeline.py`](../video-maker/tools/local_video_pipeline.py)：新再生成请求固定为UHD，拒绝新2K计划；核实实际服务尺寸声明。`--window`限制客户端未完成任务数，支持预排队，不改变服务端GPU加载窗口。完整下载和检查源片，不将HTTP成功自动写为内容通过。
+- [`local_video_pipeline.py`](../video-maker/tools/local_video_pipeline.py)：默认连接统一网关，可用 `VIVHITE_LOCAL_VIDEO_API` 或 `--api` 覆盖，命令行优先。启动读取 `/v1/models` 和 `/v1/service/status`，4K请求固定为UHD。`--window`限制客户端未完成任务数。已保存的旧8001／8002任务及文件上传收据可在同一部署的8080继续使用；恢复仍绑定原计划和请求。完整下载和检查源片，内容审核另行记录。
 - [`local_video_finisher.py`](../video-maker/tools/local_video_finisher.py)、[`reference_finisher.py`](../video-maker/tools/reference_finisher.py)：按实际计划装配原始768P或4K影片，绑定实际配乐和标题。既有数学视频1080P接口属于独立历史工作流，不据此新建本地2K生成。
 - [`inspect_local_video_film.py`](../video-maker/tools/inspect_local_video_film.py)：完整解码和画面轨核对。检测器使用缩小图输入，细小人物、印花及接缝仍需原生4K局部检查，不能靠检测器或放大后的768P截图代替。
 
@@ -72,7 +76,7 @@
 ```powershell
 video-maker/.venv/Scripts/python.exe video-maker/tools/local_video_pipeline.py `
   --episode <实际episode.json> --plan <已审4K计划.json> `
-  --directory <独立4K运行目录> --api http://192.168.1.11:8002/v1 `
+  --directory <独立4K运行目录> `
   --evidence <项目内检查图片目录> --face-model <实际YuNet权重> --window 32 --poll-seconds 60
 ```
 

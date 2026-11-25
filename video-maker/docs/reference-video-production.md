@@ -2,6 +2,8 @@
 
 `produce-reference` 为旅行等影像提供独立的参考图视频制作路径：Java 校验计划和实际参考图，运行人格／披露绑定检查，再调用 FastH3 Omni Ref2VA，保存异步任务、下载源视频、按导演时长裁剪并统一为 1080p30。数学动画与 TTS 路径继续使用原命令。
 
+下方 Java 用法用于复现历史 `fasth3-omni` 提供方。新本地生成任务使用后文的 BF16 工作流，通过 8080 统一网关提交。
+
 本 Java 入口输出 **无声画面装配中间文件** `picture-assembly.mp4`。它保留模型原始音视频作为源素材，画面装配阶段不接入未经审核的生成音轨。独立 `reference_finisher.py` 负责原创非语言音轨、镜内片名／署名和正式 MP4 合成；它另行检查实际最终计划和全部源文件的审核绑定。不得将无声中间文件标为正式成片。
 
 ## 计划与运行
@@ -17,7 +19,7 @@
 $episode = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/episode.json'
 $plan = 'series/vivhite/autumn-journey/episodes/01-autumn-journey/production-plan-v4.json'
 $output = '<仓库外的独立运行目录>'
-$apiBase = 'http://<模型服务器>:8001/v1'
+$apiBase = 'http://<旧式提供方>/v1'
 $python = 'video-maker/.venv/Scripts/python.exe'
 $jar = 'video-maker/target/video-maker-0.1.0-SNAPSHOT.jar'
 
@@ -79,7 +81,7 @@ video-maker/.venv/Scripts/python.exe video-maker/tools/reference_finisher.py fin
 
 ## BF16 768P 与逐镜原生4K接入
 
-`tools/local_video_pipeline.py` 对接用户提供的持久队列客户端契约：BF16模型名为 `fasth3-omni-bf16`，默认每次请求5秒、1344×768、8步；运行时通过 `/v1/models` 核实36层解码器。S20的10秒和S48的10／14／15秒均须显式声明时长例外，其他镜头仍为2–5秒；S48允许15秒源片裁为14秒成片片尾。场景图提供构图与外观参考，可另传设计母版；运动参考可选。发现旧视频的眼形或印花错误时，使用仅含场景和母版的图像参考计划重新生成，不能让错误视频继续指导外观。当前 OpenAPI 的 `task` 固定为 `ref2va`，没有独立首帧锁定参数；提示词要求从参考图构图开始，不等于接口保证严格锁定首帧。全程不上传人格正文。旧Java参考图入口继续保留原协议；本地生成式旅行视频后续采用[768P／4K规约](../../docs/local-video-768p-4k.md)，新任务不再走2K。
+`tools/local_video_pipeline.py` 默认连接 `http://192.168.1.11:8080/v1`，用 `/v1/models` 核实注册的参考图生成能力；网关目录只公布能力，旧直连目录才公布解码器层数。BF16模型名为 `fasth3-omni-bf16`，默认每次请求5秒、1344×768、8步。S20的10秒和S48的10／14／15秒均须显式声明时长例外，其他镜头仍为2–5秒；S48允许15秒源片裁为14秒成片片尾。场景图提供构图与外观参考，可另传设计母版；运动参考可选。发现旧视频的眼形或印花错误时，使用仅含场景和母版的图像参考计划重新生成，不能让错误视频继续指导外观。当前 OpenAPI 的 `task` 固定为 `ref2va`，首帧构图由参考图和提示词引导。提交的只有实际制作素材及提示词。新生成式旅行视频采用[768P／4K规约](../../docs/local-video-768p-4k.md)。
 
 ```powershell
 $episodeRoot = 'series/vivhite/autumn-journey/episodes/01-autumn-journey'
@@ -88,7 +90,7 @@ $plan = "$episodeRoot/production-plan-v5-bf16-768p-r2.json"
 $run = '<本轮独立运行目录>'
 $faceModel = '<YuNet 2023mar 权重>'
 # 正式生成前，实际审阅最终计划、每张场景图和每段运动参考，并导出全部素材的匹配收据。
-video-maker/.venv/Scripts/python.exe video-maker/tools/local_video_pipeline.py --episode $episode --plan $plan --directory $run --api 'http://<服务器>:8001/v1' --evidence "$episodeRoot/assets/generated/production-v5-bf16-001/review/video-768p" --face-model $faceModel --window 3
+video-maker/.venv/Scripts/python.exe video-maker/tools/local_video_pipeline.py --episode $episode --plan $plan --directory $run --evidence "$episodeRoot/assets/generated/production-v5-bf16-001/review/video-768p" --face-model $faceModel --window 3
 ```
 
 worker只依赖Python标准库进行HTTP上传、提交、轮询与下载；检查图像沿用可选OpenCV／NumPy／Pillow环境。它记录完整请求、实际上传文件指纹、上传回执、每次轮询、原始输出、服务器日志和下载校验。提交超时记为不确定，恢复时拒绝盲目重复提交；429才作为明确未受理而可重试。退出客户端不取消服务器任务，重跑读取已保存的任务ID；计划变更要求新运行目录。`--skip S43` 等参数只排除本客户端后续提交和轮询的镜头，不取消服务器任务；用于旧批次排除需要独立重做的场景，旧请求与计划指纹继续保留。生产运行须保存实际采用的worker副本及指纹，后续源码更新不改变运行中的引擎。
@@ -99,7 +101,7 @@ worker只依赖Python标准库进行HTTP上传、提交、轮询与下载；检�
 
 从多个已审核运行目录沿用相同源片时，本期 `production/materialize-sources-v6.py` 会保存原生成计划、任务、修订收据和实际视觉结论，并核对源片与全部证据字节。它不会把源片沿用写成重新观看或新模型生成。`source-imports.json` 如存在，会纳入最终计划的素材指纹绑定。S20唯一10秒例外也传入最终计划，成片检查允许这300帧，同时仍拒绝其他超时镜头。
 
-768P成片实际交付并通过绑定检查后，`prepare_local_refinement.py` 从全部已审阅源片准备4K输入和新计划；S20保留完整10秒，S48保留实际14或15秒，其余为完整5秒，新计划须再次独立审核。之后调用8002的 `POST /v1/videos/regenerations`：历史模型ID仍为 `open-h3-2k`，但尺寸必须为 `3840x2160`、`sampler=up3`，客户端 `--window 1`。4K以原生对齐画面计算后裁为UHD，不是普通空间放大，也不是完整MiniMax教师模型。每段结果重新检查、选择、合成和交付；当前已读服务验收仅覆盖约5秒完整样片，长源片的实际成败、窗口接缝与耗时须单独验证。两阶段共享GPU，不能把耗时按两块GPU并行计算。完整接口与恢复边界见[当前规约](../../docs/local-video-768p-4k.md)。
+768P成片实际交付并通过绑定检查后，`prepare_local_refinement.py` 从全部已审阅源片准备4K输入和新计划；S20保留完整10秒，S48保留实际14或15秒，其余为完整5秒，新计划须再次独立审核。之后调用统一网关的 `POST /v1/videos/regenerations`，使用模型ID `open-h3-2k`，显式指定 `3840x2160`、`sampler=up3`。4K以原生对齐画面计算后裁为UHD，每次由共享GPU执行一个4K窗口。每段结果重新检查、选择、合成和交付。接口、长镜头实测和恢复边界见[当前规约](../../docs/local-video-768p-4k.md)。
 
 历史初始预计节点 `production/schedule-768p-2k-v1.json` 仅作归档，不作为4K速度或后续执行依据。进度分别记录实际生成、语义接受和最终交付，不能将HTTP成功或仅源片到齐写成成片验收通过。
 

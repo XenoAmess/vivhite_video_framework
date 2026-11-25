@@ -7,6 +7,7 @@ import argparse
 from datetime import datetime, timezone
 import hashlib
 import json
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -18,6 +19,10 @@ import urllib.request
 import uuid
 
 from reference_finisher import run, sha
+
+
+DEFAULT_API = 'http://192.168.1.11:8080/v1'
+LEGACY_APIS = {'http://192.168.1.11:8001/v1', 'http://192.168.1.11:8002/v1'}
 
 
 def now():
@@ -147,7 +152,7 @@ class Api:
         if (parsed.scheme not in ('http','https') or not parsed.hostname or parsed.username
                 or parsed.password or parsed.query or parsed.fragment):
             raise ValueError('Use an HTTP(S) API root without credentials or query')
-        self.base = base.rstrip('/')
+        self.base = base.rstrip('/') + ('/v1' if not parsed.path.strip('/') else '')
         self.opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
 
     def request(self, method, path, body=None, headers=None, timeout=120):
@@ -176,6 +181,17 @@ class Api:
         body += path.read_bytes()+f'\r\n--{boundary}--\r\n'.encode('ascii')
         with self.request('POST','/files',body,{'Content-Type':f'multipart/form-data; boundary={boundary}'},300) as response:
             return json.load(response)
+
+
+def can_reuse_endpoint(saved, current):
+    # The documented LAN gateway shares the original task and upload database.
+    return saved == current or (current == DEFAULT_API and saved in LEGACY_APIS)
+
+
+def queue_job_id(identity):
+    if not isinstance(identity,str) or not re.fullmatch(r'[A-Za-z0-9_-]+(?::openai)?',identity):
+        raise ValueError('Invalid video task ID; reconcile the saved request with the server queue')
+    return identity.removesuffix(':openai')
 
 
 def payload_for(plan, shot, upload):
@@ -210,8 +226,7 @@ def submit(api, endpoint, payload, receipt_file, receipt):
         receipt.update(status='submission-uncertain',error=str(error))
         save(receipt_file,receipt)
         raise
-    if not re.fullmatch(r'[A-Za-z0-9_-]+',remote.get('id','')):
-        raise ValueError('Server did not return a valid task ID; saved POST must be reconciled')
+    queue_job_id(remote.get('id'))
     receipt.update(jobId=remote['id'],status=remote['status'],remote=remote)
     save(receipt_file,receipt)
     return True
@@ -220,9 +235,18 @@ def submit(api, endpoint, payload, receipt_file, receipt):
 def publish_result(api, remote, shot, directory, size):
     expected_frames = source_frame_count(shot)
     identity = remote['id']
-    raw = directory/'sources-raw'/f"{shot['id']}-{identity}.mp4"
+    queue_id = queue_job_id(identity)
+    raw = directory/'sources-raw'/f"{shot['id']}-{queue_id}.mp4"
     raw.parent.mkdir(exist_ok=True)
-    expected = remote.get('result',{}).get('sha256')
+    expected = (remote.get('result') or {}).get('sha256')
+    if queue_id != identity and not expected:
+        # Bifrost tracks completion under its suffixed ID and omits the file
+        # digest from that response. The underlying queue has the full result.
+        detail = api.json('GET',f'/queue/jobs/{queue_id}')
+        expected = (detail.get('result') or {}).get('sha256')
+        if detail.get('id') != queue_id or detail.get('status') != 'completed' or not expected:
+            raise ValueError('Completed gateway task is missing a matching queue receipt with SHA-256')
+        save(directory/'metadata'/f"{shot['id']}-queue-result.json",detail)
     if not raw.exists():
         partial = raw.with_suffix('.partial.mp4')
         with api.request('GET',f'/videos/{identity}/content',timeout=300) as response, partial.open('wb') as target:
@@ -253,10 +277,19 @@ def publish_result(api, remote, shot, directory, size):
 
 def validate_server_model(plan, models):
     actual = next((model for model in models['data'] if model['id']==plan['model']),None)
-    if actual is None or (plan['stage']=='draft' and actual.get('decoder_layers') != 36):
-        raise ValueError('Expected model/36-layer decoder is not reported by the actual endpoint')
-    if plan['stage']=='refine' and '3840x2160' not in actual.get('sizes',[]):
-        raise ValueError('The actual endpoint does not advertise native 4K output')
+    if actual is None or actual.get('configured') is False:
+        raise ValueError('Requested video model is not configured at the actual endpoint')
+    if plan['stage']=='draft':
+        if 'capabilities' not in actual or 'decoder_layers' in actual:
+            if actual.get('decoder_layers') != 36:
+                raise ValueError('Expected 36-layer decoder is not reported by the actual endpoint')
+        elif not {'video_generation','reference_image'} <= set(actual['capabilities']):
+            raise ValueError('The actual endpoint does not advertise reference image video generation')
+    else:
+        supports_4k = ('3840x2160' in actual['sizes'] if 'sizes' in actual
+                       else 'video_regeneration_4k' in actual.get('capabilities',[]))
+        if not supports_4k:
+            raise ValueError('The actual endpoint does not advertise native 4K output')
     return actual
 
 
@@ -278,16 +311,18 @@ def generate(args):
     api = Api(args.api)
     models = api.json('GET','/models')
     validate_server_model(plan,models)
-    for folder in ('jobs','requests','uploads','metadata','logs'):
-        (directory/folder).mkdir(parents=True,exist_ok=True)
-    save(directory/'metadata/models.json',models)
-    save(directory/'metadata/health-start.json',api.json('GET','/../health'))
     state_file = directory/'run.json'
     plan_hash = sha(plan_file)
     state = read(state_file) if state_file.exists() else {'startedAt':now(),'planSha256':plan_hash}
     if state['planSha256'] != plan_hash:
         raise ValueError('Use a new run directory for changed plans')
-    state.update(status='generating',stage=plan['stage'],model=plan['model'],workerSha256=sha(__file__))
+    if not can_reuse_endpoint(state.get('apiBase',api.base),api.base):
+        raise ValueError('Run belongs to another video service')
+    for folder in ('jobs','requests','uploads','metadata','logs'):
+        (directory/folder).mkdir(parents=True,exist_ok=True)
+    save(directory/'metadata/models.json',models)
+    save(directory/'metadata/health-start.json',api.json('GET','/service/status'))
+    state.update(status='generating',stage=plan['stage'],model=plan['model'],apiBase=api.base,workerSha256=sha(__file__))
     state['submissionWindow'] = args.window
     state['pollSeconds'] = args.poll_seconds
     save(state_file,state)
@@ -320,7 +355,7 @@ def generate(args):
                 raise ValueError('Invalid uploaded file identifier')
             record = {'sha256':digest,'server':api.base,'response':result,'uploadedAt':now()}
             save(cache,record)
-        if record['server'] != api.base:
+        if not can_reuse_endpoint(record['server'],api.base):
             raise ValueError('Upload cache belongs to another endpoint')
         return {'file_id':record['response']['id']}
 
@@ -369,8 +404,9 @@ def generate(args):
                     running += 1
                     print(f"{shot['id']} submitted {row['jobId']}",flush=True)
                     if bulk_queue and row['status']=='queued':
-                        waiting_ids.add(row['jobId'])
-                if row['status']=='queued' and row['jobId'] in waiting_ids:
+                        waiting_ids.add(queue_job_id(row['jobId']))
+                queue_id = queue_job_id(row['jobId'])
+                if row['status']=='queued' and queue_id in waiting_ids:
                     continue
                 remote = api.json('GET',f"/videos/{row['jobId']}")
                 with (directory/'logs'/f"{shot['id']}-polls.jsonl").open('a',encoding='utf-8') as log:
@@ -426,7 +462,8 @@ if __name__ == '__main__':
     parser.add_argument('--episode',required=True,type=Path)
     parser.add_argument('--plan',required=True,type=Path)
     parser.add_argument('--directory',required=True,type=Path)
-    parser.add_argument('--api',required=True)
+    parser.add_argument('--api',default=os.environ.get('VIVHITE_LOCAL_VIDEO_API') or DEFAULT_API,
+                        help=f'Video API base (overrides VIVHITE_LOCAL_VIDEO_API; default: {DEFAULT_API})')
     parser.add_argument('--evidence',required=True,type=Path)
     parser.add_argument('--face-model',required=True,type=Path)
     parser.add_argument('--window',type=int,default=None,choices=range(1,33),
@@ -434,6 +471,6 @@ if __name__ == '__main__':
     parser.add_argument('--limit',type=int)
     parser.add_argument('--order',default='')
     parser.add_argument('--skip',default='',help='Preserve but do not submit these shots; replacement plans are reviewed separately')
-    parser.add_argument('--poll-seconds',type=float,default=8)
+    parser.add_argument('--poll-seconds',type=float,default=60)
     args = parser.parse_args()
     generate(args)

@@ -156,6 +156,30 @@ class LocalPipelineTest(unittest.TestCase):
                     worker.generate(args)
                 assets.assert_not_called()
 
+    def test_gateway_model_capabilities_and_direct_model_details_are_validated(self):
+        draft = self.plan()
+        draft_model = {'id':draft['model'],'configured':True,
+                       'capabilities':['video_generation','reference_image','reference_video','reference_audio']}
+        refine = {**draft,'stage':'refine','model':'open-h3-2k'}
+        refine_model = {'id':refine['model'],'configured':True,
+                        'capabilities':['video_regeneration_2k','video_regeneration_4k'],'max_inflight':2}
+        worker.validate_server_model(draft,{'data':[draft_model,refine_model]})
+        worker.validate_server_model(refine,{'data':[draft_model,refine_model]})
+        worker.validate_server_model(draft,{'data':[{'id':draft['model'],'decoder_layers':36}]})
+        for plan,model in ((draft,{**draft_model,'configured':False}),
+                           (draft,{**draft_model,'capabilities':['video_generation']}),
+                           (draft,{**draft_model,'decoder_layers':24}),
+                           (refine,{**refine_model,'capabilities':['video_regeneration_2k']})):
+            with self.subTest(model=model),self.assertRaises(ValueError):
+                worker.validate_server_model(plan,{'data':[model]})
+
+    def test_only_the_known_legacy_service_can_reuse_ids_and_uploads_at_gateway(self):
+        for legacy in worker.LEGACY_APIS:
+            self.assertTrue(worker.can_reuse_endpoint(legacy,worker.DEFAULT_API))
+            self.assertFalse(worker.can_reuse_endpoint(worker.DEFAULT_API,legacy))
+        self.assertFalse(worker.can_reuse_endpoint('http://other.invalid:8001/v1',worker.DEFAULT_API))
+        self.assertTrue(worker.can_reuse_endpoint(worker.DEFAULT_API,worker.DEFAULT_API))
+
     def test_refinement_prefills_three_waiting_jobs_without_resubmitting_running_job(self):
         with tempfile.TemporaryDirectory() as temporary:
             directory = Path(temporary)
@@ -173,15 +197,20 @@ class LocalPipelineTest(unittest.TestCase):
                 'sourceSize':'3840x2160','shots':shots,'totalFrames':750}
             worker.save(directory/'plan.json',plan)
             worker.save(directory/'jobs/S01.json',{'shotId':'S01','status':'in_progress','jobId':'known-running'})
+            legacy = 'http://192.168.1.11:8002/v1'
+            worker.save(directory/'run.json',{'planSha256':worker.sha(directory/'plan.json'),'apiBase':legacy})
+            cached_sha = shots[1]['inputSourceSha256']
+            worker.save(directory/'uploads'/f'{cached_sha}.json',
+                        {'server':legacy,'sha256':cached_sha,'response':{'id':'file_cached_S02'}})
             posted = []
             class Queue:
-                base = 'http://unit.invalid/v1'
+                base = worker.DEFAULT_API
                 def upload(self,path):
                     return {'id':'file_'+path.stem}
                 def json(self,method,path,payload=None):
                     if path == '/models':
                         return {'data':[{'id':'open-h3-2k','sizes':['3840x2160'],'four_k_max_windows_per_load':1}]}
-                    if path == '/../health':
+                    if path == '/service/status':
                         return {'status':'ok'}
                     if method == 'POST':
                         if path != '/videos/regenerations':
@@ -191,7 +220,7 @@ class LocalPipelineTest(unittest.TestCase):
                     return {'id':path.rsplit('/',1)[-1],
                         'status':'in_progress' if path.endswith('/known-running') else 'queued'}
             args = SimpleNamespace(plan=directory/'plan.json',directory=directory,window=4,
-                episode=directory/'episode.json',root=directory,api='http://unit.invalid/v1',
+                episode=directory/'episode.json',root=directory,api=Queue.base,
                 order='',limit=None,skip='',poll_seconds=60)
             # Only the formal character gate is a unit stub. Real files, input
             # hashes, queue receipts, payloads and resume logic are exercised.
@@ -201,10 +230,11 @@ class LocalPipelineTest(unittest.TestCase):
                     worker.generate(args)
             self.assertEqual(len(posted),3)
             self.assertTrue(all(row['size'] == '3840x2160' and row['sampler'] == 'up3' for row in posted))
-            self.assertEqual([row['input_video']['file_id'] for row in posted],['file_S02','file_S03','file_S04'])
+            self.assertEqual([row['input_video']['file_id'] for row in posted],['file_cached_S02','file_S03','file_S04'])
             self.assertEqual(worker.read(directory/'jobs/S01.json')['jobId'],'known-running')
             self.assertFalse((directory/'jobs/S05.json').exists())
             self.assertEqual(worker.read(directory/'run.json')['pollSeconds'],60)
+            self.assertEqual(worker.read(directory/'run.json')['apiBase'],worker.DEFAULT_API)
 
     def test_bulk_backlog_obeys_capacity_and_keeps_known_ids_without_polling_waiting_jobs(self):
         for full in (False,True):
@@ -235,7 +265,7 @@ class LocalPipelineTest(unittest.TestCase):
                     def json(self,method,path,payload=None):
                         if path == '/models':
                             return {'data':[{'id':'open-h3-2k','sizes':['3840x2160']}]}
-                        if path == '/../health':
+                        if path == '/service/status':
                             return {'status':'ok'}
                         if path == '/queue':
                             gets.append(path)
@@ -280,7 +310,7 @@ class LocalPipelineTest(unittest.TestCase):
                     'prompt':'Transport fixture; no production approval.',
                     'inputSource':source.relative_to(directory).as_posix(),'inputSourceSha256':worker.sha(source)})
                 worker.save(directory/'jobs'/f'S{index:02}.json',
-                    {'shotId':f'S{index:02}','status':'queued','jobId':f'known-{index}'})
+                    {'shotId':f'S{index:02}','status':'queued','jobId':f'known-{index}:openai'})
             worker.save(directory/'plan.json',{**self.plan(),'stage':'refine','model':'open-h3-2k',
                 'width':3840,'height':2160,'sourceSize':'3840x2160','shots':shots})
             raw,source = directory/'raw-fixture.mp4',directory/'sources/S01.mp4'
@@ -293,12 +323,12 @@ class LocalPipelineTest(unittest.TestCase):
                     calls.append((method,path))
                     if path == '/models':
                         return {'data':[{'id':'open-h3-2k','sizes':['3840x2160']}]}
-                    if path == '/../health':
+                    if path == '/service/status':
                         return {'status':'ok'}
                     if path == '/queue':
                         return {'running':[],'queued':[{'id':'known-2'}]}
-                    if path == '/videos/known-1':
-                        return {'id':'known-1','status':'completed'}
+                    if path == '/videos/known-1:openai':
+                        return {'id':'known-1:openai','status':'completed'}
                     raise AssertionError('Unexpected request or duplicate submission')
             args = SimpleNamespace(plan=directory/'plan.json',directory=directory,window=32,
                 episode=directory/'episode.json',root=directory,api=Queue.base,
@@ -311,8 +341,8 @@ class LocalPipelineTest(unittest.TestCase):
                     worker.generate(args)
                 download.assert_called_once()
                 inspect.assert_called_once()
-            self.assertIn(('GET','/videos/known-1'),calls)
-            self.assertNotIn(('GET','/videos/known-2'),calls)
+            self.assertIn(('GET','/videos/known-1:openai'),calls)
+            self.assertNotIn(('GET','/videos/known-2:openai'),calls)
             self.assertTrue(all(method == 'GET' for method,path in calls))
             self.assertEqual(worker.read(directory/'jobs/S01.json')['status'],'completed')
             self.assertEqual(worker.read(directory/'jobs/S01.json')['sourceSha256'],worker.sha(source))
@@ -360,7 +390,19 @@ class LocalPipelineTest(unittest.TestCase):
             self.assertFalse(worker.submit(Full(),'/videos',{},Path(temporary)/'job.json',receipt))
             self.assertEqual(receipt['status'],'prepared')
 
-    def test_upload_and_health_use_real_http_and_correct_roots(self):
+    def test_gateway_submission_keeps_suffixed_id_in_receipt(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            class Gateway:
+                def json(self,*args):
+                    return {'id':'video_test:openai','status':'queued'}
+            path = Path(temporary)/'job.json'
+            self.assertTrue(worker.submit(Gateway(),'/videos',{},path,{'status':'prepared'}))
+            self.assertEqual(worker.read(path)['jobId'],'video_test:openai')
+            for invalid in ('video_test:other','../video_test:openai','video_test:openai/extra'):
+                with self.subTest(identity=invalid),self.assertRaises(ValueError):
+                    worker.queue_job_id(invalid)
+
+    def test_upload_and_service_status_use_unified_http_routes(self):
         seen = []
         class Handler(BaseHTTPRequestHandler):
             def log_message(self,*args):
@@ -376,13 +418,13 @@ class LocalPipelineTest(unittest.TestCase):
         thread = threading.Thread(target=server.serve_forever,daemon=True)
         thread.start()
         try:
-            api = worker.Api(f'http://127.0.0.1:{server.server_port}/v1')
-            self.assertEqual(api.json('GET','/../health')['status'],'ok')
+            api = worker.Api(f'http://127.0.0.1:{server.server_port}')
+            self.assertEqual(api.json('GET','/service/status')['status'],'ok')
             with tempfile.TemporaryDirectory() as temporary:
                 source = Path(temporary)/'reference.dat'
                 source.write_bytes(b'actual reference contents')
                 self.assertEqual(api.upload(source)['id'],'file_real')
-            self.assertEqual(seen[0],'/health')
+            self.assertEqual(seen[0],'/v1/service/status')
             self.assertEqual(seen[1][0],'/v1/files')
             self.assertIn(b'actual reference contents',seen[1][2])
             self.assertIn('multipart/form-data',seen[1][1])
@@ -398,10 +440,19 @@ class LocalPipelineTest(unittest.TestCase):
             contents = original.read_bytes()
             digest = worker.sha(original)
             class Download:
-                def request(self,*args,**kwargs):
+                def json(self,method,path):
+                    self.metadata_request = (method,path)
+                    return {'id':'video_test','status':'completed','result':{'sha256':digest}}
+                def request(self,method,path,**kwargs):
+                    self.download_request = (method,path)
                     return original.open('rb')
-            raw,source,probe = worker.publish_result(Download(),{'id':'video_test','result':{'sha256':digest}},
+            api = Download()
+            raw,source,probe = worker.publish_result(api,{'id':'video_test:openai','status':'completed'},
                                                      {'id':'S20A'},root,'64x32')
+            self.assertEqual(api.metadata_request,('GET','/queue/jobs/video_test'))
+            self.assertEqual(api.download_request,('GET','/videos/video_test:openai/content'))
+            self.assertEqual(worker.read(root/'metadata/S20A-queue-result.json')['result']['sha256'],digest)
+            self.assertEqual(raw.name,'S20A-video_test.mp4')
             self.assertEqual(raw.read_bytes(),contents)
             self.assertEqual(int(probe['streams'][0]['nb_read_frames']),124)
             actual = json.loads(worker.run(['ffprobe','-v','error','-count_frames','-show_streams','-of','json',str(source)]))

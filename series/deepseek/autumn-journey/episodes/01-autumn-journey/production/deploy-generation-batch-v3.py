@@ -3,13 +3,14 @@ from datetime import datetime, timezone
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 import re
 import shutil
 import subprocess
 
 
-def deploy(name):
+def deploy(name, api):
     if not re.fullmatch(r'[a-z0-9-]{1,24}', name):
         raise ValueError('Use a stable batch name')
     episode = Path(__file__).resolve().parent.parent
@@ -46,7 +47,7 @@ def deploy(name):
         'toolDirectories':[str(Path(shutil.which('ffmpeg')).parent)],
         'generationCommand':[str(python),'-X','utf8',str(directory/'runtime/worker-001/local_video_pipeline.py'),
             '--root',str(root),'--episode',str(episode/'episode.json'),'--plan',str(plan),
-            '--directory',str(directory),'--api','http://192.168.1.11:8001/v1',
+            '--directory',str(directory),'--api',api,
             '--evidence',str(episode/evidence),'--face-model',
             str(root.parent/'vivhite-analysis-output/models/opencv-yunet-2023mar/face_detection_yunet_2023mar.onnx'),
             '--window','32','--poll-seconds','60']}
@@ -70,4 +71,7 @@ def deploy(name):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--name', required=True)
-    deploy(parser.parse_args().name)
+    parser.add_argument('--api', default=os.environ.get('VIVHITE_LOCAL_VIDEO_API') or 'http://192.168.1.11:8080/v1',
+                        help='Video API base to freeze in the scheduled task (overrides VIVHITE_LOCAL_VIDEO_API)')
+    args = parser.parse_args()
+    deploy(args.name, args.api)
