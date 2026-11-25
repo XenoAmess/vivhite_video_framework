@@ -171,11 +171,15 @@ def latest(root, shot):
     active = sorted(path for path in parent.glob('attempt-[0-9][0-9][0-9]') if path.is_dir())
     return active[-1] if active else parent/'attempt-001'
 
-
-def retry(args, root, prepared):
-    shot = next((s for s in prepared['shots'] if s['id']==args.shot),None)
+def selected_shot(prepared, identity):
+    shot = next((s for s in prepared['shots'] if s['id']==identity),None)
     if shot is None:
         raise ValueError('Unknown shot')
+    return shot
+
+
+def retry(args, root, prepared):
+    shot = selected_shot(prepared,args.shot)
     current = latest(root,shot)
     receipt = video.read(current/'job.json')
     if receipt['status'] not in ('completed','failed','cancelled'):
@@ -188,6 +192,54 @@ def retry(args, root, prepared):
     video.save(next_attempt/'retry.json',{'prompt':prompt,'seed':args.seed,
                                          'previousAttempt':current.name,'recordedAt':video.now()})
     print(next_attempt)
+
+
+def review_binding(attempt, shot):
+    receipt = video.read(attempt/'job.json')
+    picture = attempt/'cut.mp4'
+    if (receipt['status']!='completed' or receipt['cutFrames']!=shot['frames']
+            or receipt['cutSha256']!=video.sha(picture)
+            or receipt['requestSha256']!=video.sha(attempt/'request.json')):
+        raise ValueError('The complete candidate and actual request must match the attempt receipt')
+    return {'cutSha256':receipt['cutSha256'],'requestSha256':receipt['requestSha256'],
+            'originalSha256':shot['original']['sha256']}
+
+
+def compare_shot(root, shot):
+    attempt = latest(root,shot)
+    binding = review_binding(attempt,shot)
+    original = check_asset(shot['original'])
+    candidate = attempt/'cut.mp4'
+    output = attempt/'comparison'
+    output.mkdir(exist_ok=True)
+    manifest = output/'frames.json'
+    count = (shot['frames']+15)//16
+    pages = sorted(output.glob('side-by-side-*.jpg'))
+    if not manifest.exists() or video.read(manifest)!=binding or len(pages)!=count:
+        views = ('[0:v]scale=232:132[left];[1:v]scale=232:132[right];'
+                 '[left][right]hstack=inputs=2,tile=4x4:padding=1:margin=1[review]')
+        ff('-y','-i',original,'-i',candidate,'-filter_complex',views,'-map','[review]',
+           '-q:v','2',output/'side-by-side-%02d.jpg')
+        if len(list(output.glob('side-by-side-*.jpg')))!=count:
+            raise ValueError('Comparison pages do not cover the whole shot')
+        video.save(manifest,binding)
+    print(output)
+
+
+def record_review(args, root, shot):
+    attempt = latest(root,shot)
+    report = attempt/'review.json'
+    if report.exists():
+        raise ValueError('Preserve this review and use a new attempt for a changed candidate')
+    binding = review_binding(attempt,shot)
+    check_asset(shot['original'])
+    if video.read(attempt/'comparison/frames.json')!=binding or args.frames!=shot['frames']:
+        raise ValueError('The source and candidate must be compared for every delivered frame')
+    notes = args.observations.read_text(encoding='utf-8').strip()
+    if not notes:
+        raise ValueError('Record what was actually observed in the reviewed frames')
+    video.save(report,{**binding,'decision':args.decision,'reviewedFrames':args.frames,
+                       'method':args.method,'observations':notes,'reviewedAt':video.now()})
 
 
 def uploaded(api, root, entry):
@@ -389,6 +441,14 @@ def main():
     ret.add_argument('--shot',required=True)
     ret.add_argument('--prompt-file',required=True,type=Path)
     ret.add_argument('--seed',required=True,type=int)
+    comparison = sub.add_parser('compare')
+    comparison.add_argument('--shot',required=True)
+    review = sub.add_parser('review')
+    review.add_argument('--shot',required=True)
+    review.add_argument('--decision',required=True,choices=('accepted','rejected'))
+    review.add_argument('--frames',required=True,type=int)
+    review.add_argument('--method',required=True,choices=('assistant-frame-review','human-playback-review'))
+    review.add_argument('--observations',required=True,type=Path)
     sub.add_parser('finish')
     args = parser.parse_args()
     root = args.directory.resolve()
@@ -409,6 +469,10 @@ def main():
             generate(args.api,root,config)
     elif args.command=='retry':
         retry(args,root,config)
+    elif args.command=='compare':
+        compare_shot(root,selected_shot(config,args.shot))
+    elif args.command=='review':
+        record_review(args,root,selected_shot(config,args.shot))
     else:
         finish(root,config)
 
