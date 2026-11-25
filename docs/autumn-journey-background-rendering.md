@@ -61,7 +61,7 @@
 - `recovery-test/`：实际中断实验前后记录；`attention.json`出现时应阅读具体失败，不把它视为通过。
 - `git-checkpoint.json`：已保存源片检查的提交与推送状态。
 
-[实时进度](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/run-progress-v11-4k.json)约每20秒更新，区分源片生成、内容审核、技术预览、正式影片和Release。其时间戳会在任务进行时持续改变，不要求GPT保持连接。[源片生成清单](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/source-generation-v11-4k.json)初始为空，随完整源片及其检查完成而更新。
+[v11归档快照](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/run-progress-v11-4k.json)记录原计划的48个已完成源片以及当时的45个已接受源片。若重新运行导出器查看历史数据，快照写到本机运行目录的 `run-progress-v11-4k.local.json`。最终交付见[结项记录](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/project-closeout-20261122.json)；每镜远端任务与检查结果见[源片生成清单](../series/vivhite/autumn-journey/episodes/01-autumn-journey/production/source-generation-v11-4k.json)。
 
 在本机重新按需启动相同任务，使用：
 

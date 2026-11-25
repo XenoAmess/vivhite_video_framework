@@ -1,4 +1,4 @@
-"""Export real native UHD milestones without granting semantic acceptance.
+"""Export native UHD milestones in the local run directory.
 
 Weights: reviewed inputs 5, downloaded sources 60, source acceptance 20,
 final encoding 5, encoded review 7, published release 3. GPL-3.0-only.
@@ -89,7 +89,7 @@ def export(base,episode_directory=EP,emit=True):
     technical = read(directory/'technical-preview/receipt.json')
     result['technicalPreviewEncoded'] = technical.get('status') == 'encoded-technical-checks-passed-awaiting-semantic-review'
     result['technicalPreviewIsFormalDelivery'] = False
-    destination = episode_directory/'production/run-progress-v11-4k.json'
+    destination = directory/'run-progress-v11-4k.local.json'
     partial = destination.with_name(destination.name+f'.{os.getpid()}.partial')
     partial.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     partial.replace(destination)
