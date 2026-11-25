@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S09",
+  "attempt": 2,
+  "startFrame": 254,
+  "endFrame": 273,
+  "jobId": "video_gen_6a85e05eb6464445ae4dee30b3acb778:openai",
+  "requestSha256": "7d1e7107640cd7d324939a6bf1db7bcfec7410433e3605aba55b21754f6ab045",
+  "renderPrompt": "One continuous cel-shaded anime shot with exactly one performer. <Video 1> gives the steep high angle and fast push-in during the crouch. <Picture 1> is the exact red-hooded identity, blond bangs, black clothing and single ivory left-shoulder mask. Start looking down at the whole crouching silhouette on the wood boards, with the knees flexed and one gloved hand stabilizing the body. The head turns toward screen right, then lifts and looks upward, eyes coming into clear focus as the camera moves closer. Finish at the tight scale, angle and expression of <Picture 2>, with red-amber sidelight and a leg still briefly visible at the edge. Preserve the motion and camera direction, one shot, one person, no visible weapons, text, or added symbols.",
+  "seed": 1235,
+  "rawSha256": "6a59ea639a083271282986f164bc5450a692020ed1857bcd6755265578f8c1bb",
+  "cutSha256": "f2704c12fb1fbaa309c1cb150dbf391e7a65da3323f62cb1c8efbfb77e9112f7",
+  "review": {
+    "cutSha256": "f2704c12fb1fbaa309c1cb150dbf391e7a65da3323f62cb1c8efbfb77e9112f7",
+    "requestSha256": "7d1e7107640cd7d324939a6bf1db7bcfec7410433e3605aba55b21754f6ab045",
+    "originalSha256": "9632b53013e1466e7d00d316cdb4de60170f4dbbe56fdcf304b6d005d716ae73",
+    "decision": "accepted",
+    "reviewedFrames": 19,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 254–272 帧及第二版全部 19 帧。虚人梦在木板地上保持深蹲，从垂着兜帽转为抬眼，俯拍连续推近，最后读得到红眼、金发与肩部面具。候选起镜比原片更高更远，肩膀的侧转较轻，保留蹲身、抬眼和推近的原镜顺序。画面全段为同一人物，未见额外切镜、人物或明显穿模。通过本镜画面审核。",
+    "reviewedAt": "2026-11-25T23:48:42.077802+00:00"
+  },
+  "anchorImagePrompt": "One 16:9 anime storyboard keyframe. Image 1 supplies identity only: adult blond character with red hood, dark top, red cloak with gold lining, small ivory theatrical mask at the left shoulder, red eyes. Image 2 supplies a steep downward camera with the wooden boards behind, a clear face tilted upward and dramatic red-amber sidelight. Show the red-hooded character deep in a crouch, shoulders turning toward frame right while the face looks up just below the lens with a determined, playful expression. The face in the upper-middle and shoulders fill the view, only a portion of the bent leg or wood floor around the lower edge. Warm light, cel-shaded style, full clothing, just one person, no effects, text or weapons."
+}
