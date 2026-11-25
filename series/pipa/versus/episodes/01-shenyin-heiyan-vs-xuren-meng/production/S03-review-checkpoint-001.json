@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S03",
+  "startFrame": 64,
+  "endFrame": 100,
+  "firstAttempt": {
+    "jobId": "video_gen_fdc38446aa604851b5ffd26333daf5b7:openai",
+    "requestSha256": "2587176ffdb498a165bd9ed5e246ada77500f778a34d408e23754d51d96a21d4",
+    "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Low three-quarter close-up of the officer tilting the head and glancing over with a comic smirk. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+    "seed": 1234,
+    "rawSha256": "e9567bd693cce5d9e2d89ec30cee19d2e916581f002c48cff1ebceb5629296bc",
+    "cutSha256": "38a8da037ba5bb49f416997e4a30b7e4358bd77d689cb32ff8f4f4df99be9e68",
+    "review": {
+      "cutSha256": "38a8da037ba5bb49f416997e4a30b7e4358bd77d689cb32ff8f4f4df99be9e68",
+      "requestSha256": "2587176ffdb498a165bd9ed5e246ada77500f778a34d408e23754d51d96a21d4",
+      "originalSha256": "d00c7b9a2262dbf0d3afc465c717ed1ae295e5b54cd8297642e3dddfbb428d81",
+      "decision": "rejected",
+      "reviewedFrames": 36,
+      "method": "assistant-frame-review",
+      "observations": "对照原片与候选的全部 36 帧。候选的神隐黑炎、军服金肩章和斜机位能辨认，后半有轻微笑容变化。原片镜头从侧脸特写拉开，人物靠到画面右侧、肩膀与手臂露出。候选全段以几乎同尺度的脸部特写为主，缺少拉远、偏移和身体动作，影响下一个剪点的连续性。拒收。",
+      "reviewedAt": "2026-11-25T20:23:56.615775+00:00"
+    }
+  },
+  "retakeAtCheckpoint": {
+    "status": "prepared",
+    "prompt": "Use <Video 1> to match the whole motion of this single Dutch-angle reaction. <Picture 1> is the exact navy-and-gold officer. The shot begins on a side-angle close-up, his face enlarged at frame right. His eyes look left and he tilts the head back, then the camera visibly pulls back through the middle of the shot until the upper torso and both epaulettes enter, adding parallax in the background. At the end hold the much wider canted framing, right-side position, visible shoulder and open-mouth expression seen in <Picture 2>. A blurred rounded blue theatrical lamp briefly crosses the lower-left foreground near the end. Keep the head and shoulder changing position throughout, rather than holding the face at one fixed scale. Exactly one anime character, one continuous shot, no words, no realistic weapon.",
+    "seed": 1235,
+    "additionalImageSha256": "9e74742eced41d69533c697b3482d6371cbe71dcdaac4819318f5277b6518631"
+  },
+  "calibrationRetake": {
+    "shot": "S01",
+    "jobId": "video_gen_190507f61e3947c8af5b4385c469075a:openai",
+    "requestSha256": "0f0565a6c25c7a3381c9e2297ae9946ec28e023e4bb62200f3beab28b0830be4",
+    "queueManagement": {
+      "at": "2026-11-26T04:25:36.0630108+08:00",
+      "shot": "S01",
+      "attempt": 2,
+      "jobId": "video_gen_190507f61e3947c8af5b4385c469075a:openai",
+      "allWaitingWasOwned": true,
+      "beforePosition": 31,
+      "afterPosition": 1,
+      "runningBefore": [
+        "video_gen_0acf108a99c14f9c98edd3dbcdbbc86b"
+      ],
+      "runningAfter": [
+        "video_gen_0acf108a99c14f9c98edd3dbcdbbc86b"
+      ],
+      "reason": "Validate camera composition retake early in this batch"
+    }
+  }
+}
