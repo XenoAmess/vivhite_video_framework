@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S04",
+  "attempt": 2,
+  "startFrame": 100,
+  "endFrame": 129,
+  "jobId": "video_gen_82598c67e2244b26bb870608459de4d1:openai",
+  "requestSha256": "2e3e4162bc7a7fa0f54028d0427e466842220e35180dacc2aea28b2e405a06dc",
+  "renderPrompt": "Use <Video 1> as the continuous timing and tilted side camera. <Picture 1> is the identity. <Picture 2> provides the starting right-side placement, tilted shoulder and warm wood interior. This shot MUST move through distinct poses. Begin with the officer on the right edge from the side, his open mouth and nose in three-quarter profile. Move camera closer across that face until only the right edge of the face and collar are visible. He turns eyes to screen left and tilts his chin upward, while a smooth glowing theatre lamp with no mechanisms slowly rises along the far left foreground. Finish with the face visibly tilted back in side profile and the lamp still on the far left. One continuous anime take of one person. Keep camera and body moving, preserve the slope of the wall, no fixed portrait, no dialogue, no real weapon.",
+  "seed": 1235,
+  "rawSha256": "534c4ef09becf3dc699bf78d909b8efe4d39ea117e3f68df91a86a82ef67199a",
+  "cutSha256": "f0fe9ad457192693162b1e00aeee48affc1b237eff02308b42ef76252af39e37",
+  "review": {
+    "cutSha256": "f0fe9ad457192693162b1e00aeee48affc1b237eff02308b42ef76252af39e37",
+    "requestSha256": "2e3e4162bc7a7fa0f54028d0427e466842220e35180dacc2aea28b2e405a06dc",
+    "originalSha256": "921eb15569fe19da9b0c169efaaf97ea10873e240ba9eddd72cc7531439af90a",
+    "decision": "accepted",
+    "reviewedFrames": 29,
+    "method": "assistant-frame-review",
+    "observations": "对照原片第 100–128 帧和第二版全部 29 帧。角色从右侧偏三分之二的脸部开始，镜头持续向人物局部推进，随后人物明显仰头，眼神跟随左前景上移的圆形蓝色舞台灯。斜线背景与 S03 末段连续。原镜左前景从第一帧已可见，这一版舞台灯从约后半进入，收尾时保留脸部右侧、道具左侧以及抬头动作。逐帧未见额外人物、切镜或明显穿模。通过本镜画面审核。",
+    "reviewedAt": "2026-11-25T22:29:32.058396+00:00"
+  },
+  "continuityAnchorImagePrompt": "One 16:9 clean anime storyboard frame showing the end of a canted close-up camera pullback. Image 1 is the only visual identity and clothes reference. Image 2 is the composition and cheeky expression reference. Draw the navy and gold anime character at the UPPER RIGHT of frame, head and torso on a strong diagonal, leaning toward screen left, with open-mouth comic reaction and his dark hair and gold-fringed shoulders clearly visible. His face is smaller than a face close-up, at most one quarter of the frame width. Dark wood and warm beige wall slant diagonally behind. The lower left foreground is occupied by a blurred, rounded, plainly fictional blue theatre-light prop, with no arms, no gun shape, no moving parts. In this keyframe just one person is visible, no lettering, no logos, no watermark. Crisp cel shading and warm red edge light."
+}
