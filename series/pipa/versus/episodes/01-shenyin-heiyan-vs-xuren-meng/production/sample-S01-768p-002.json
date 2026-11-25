@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "vivhite-local-video-technical-sample-1",
+  "artifact": "pipa-original-09-14-character-replacement-768p-5s.mp4",
+  "sha256": "e1e5ff4f98c8a9fd91a57fba672edf55a890a6837a13a08ccf6599b5dd421cbb",
+  "bytes": 3194472,
+  "model": "fasth3-omni-bf16",
+  "jobId": "video_gen_8cec2d3dfa674e3aa85ec8b1b56ddb74:openai",
+  "requestSha256": "90c3d0f075329aaf6efbd0632d88c295ee9b4b42608e67e9215a00aa25237fb2",
+  "rawSha256": "45b3f091c324535dbcf646286ea47046a08cd59113808b70f06579f23da4b06f",
+  "pictureSha256": "410d2d6dd9134fa5c168540a813bf665e4aaec55ccdcfefd9a0bf46d79be52d3",
+  "width": 1344,
+  "height": 768,
+  "fps": 24,
+  "frames": 120,
+  "seconds": 5,
+  "fullAudioVideoDecode": "passed",
+  "audio": {
+    "source": "BV14BeA6CEUb P1",
+    "startSeconds": 8.75,
+    "endSeconds": 13.75,
+    "kind": "reference-soundtrack-excerpt",
+    "sourceSha256": "82e2c5fd940646b64ad3470ee68337e3901c79cf636802132c532ac8a9e99314",
+    "preparedWavSha256": "6648994a45b08d0b47a2a418ebb78fa38a6fc68c0d06bf6ea214fc6065249dee",
+    "sampleRate": 48000,
+    "channels": 2
+  },
+  "status": "rejected-as-complete-character-replacement",
+  "humanPlaybackReview": false,
+  "createdUtc": "2026-11-25T19:29:27.230894+00:00",
+  "source": {
+    "videoId": "BV1pvY16QEwd",
+    "sourceStartSeconds": 9,
+    "sourceEndSeconds": 14,
+    "cutFrames": 120,
+    "width": 960,
+    "height": 540,
+    "sha256": "1763085369720901d57e9afe1ef282561a0a50fa4494c7c1e81fab12607f6a42"
+  },
+  "request": {
+    "model": "fasth3-omni-bf16",
+    "task": "ref2va",
+    "size": "1344x768",
+    "seconds": 5,
+    "num_inference_steps": 8,
+    "guidance_scale": 1,
+    "seed": 1234,
+    "prompt": "<Video 1> is the EXACT five-second motion, editing, and camera reference. Make a direct five-second anime character replacement of this clip, same sequence, shot cuts, camera angles, movement direction, performances and approximate timing. Use <Picture 2> for the black-suited dancer visible at the start, in the squat, and during the comic double-pat dance. Replace the original appearance with the long-blond-haired red-hooded performer with the ivory shoulder mask and dark outfit in <Picture 2>, including the red cape, and fully clothed throughout. The final surprised person by the pink chair is a DIFFERENT character, the dark-haired, blue-gray-eyed navy-and-gold officer of <Picture 1>, with the gold epaulettes and navy standing collar. Replace that final person with <Picture 1>. Maintain face and costume identity through all cuts. Match the original pullback through the warm room at 0–1.5 seconds, the high/low close views of the deep crouch and rise at 1.5–3.1 seconds, the recognizable comic double pat with both hands at 3.1–4.25 seconds, and the abrupt cut to the navy officer’s wide-eyed, open-mouth reaction at 4.25–5.0 seconds. Keep the animated body blocking and actual changes of camera view from <Video 1>. Two distinct characters appear in their respective shots, no additional people. Cel-shaded 2D animated look for the characters, keeping the warm wood interior, pink chair and overhead lighting from <Video 1>. Use only stylized light and dust accents at the opening. No screen text, no logos, no dialogue or soundtrack.",
+    "imageReferences": [
+      {
+        "path": "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "sha256": "fcc41595a2d072855f3ccbd12e94af4d3d658a9df665efc16a90bfad144abf99"
+      },
+      {
+        "path": "assets/generated/character-concepts-v2/xuren-meng.png",
+        "sha256": "9a8b1a2819e4c38a622aafddfb21b1f819537fe7800100c18346cbcfd16c2535"
+      }
+    ],
+    "videoReferenceSha256": "1763085369720901d57e9afe1ef282561a0a50fa4494c7c1e81fab12607f6a42"
+  },
+  "assistantVisualReview": {
+    "reviewedEncodedFrames": 120,
+    "method": "ordered contact sheets of every encoded frame",
+    "observedCutCandidatesSeconds": [
+      1.083,
+      2.25,
+      4
+    ],
+    "sourceCutCandidatesSeconds": [
+      2.375,
+      3.25,
+      4.208
+    ],
+    "observations": [
+      "The opening and early reaction retain the source characters in some frames.",
+      "The intended rear-facing pat was generated mostly as a front-facing hand gesture.",
+      "The final close-up does show the navy-and-gold character and the middle cut shows the crimson outfit."
+    ],
+    "followUp": "Split the original animation into individual source shots and render them independently."
+  }
+}
