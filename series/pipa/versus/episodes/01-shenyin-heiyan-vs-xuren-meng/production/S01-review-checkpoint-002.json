@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S01",
+  "startFrame": 0,
+  "endFrame": 40,
+  "attempt": 2,
+  "jobId": "video_gen_190507f61e3947c8af5b4385c469075a:openai",
+  "requestSha256": "0f0565a6c25c7a3381c9e2297ae9946ec28e023e4bb62200f3beab28b0830be4",
+  "renderPrompt": "One continuous 2D anime shot. <Video 1> specifies the continuous timing, camera move and gaze. <Picture 1> is the exact face, hair and navy military clothing. First frame MUST already be an extreme close-up of his face: the head fills most of the screen, his dark eyes glance sideways and he makes a small smug grin. The camera visibly pulls back from extreme close-up to chest-up, revealing the rose-pink chair and warm wall. During the pullback he leans sideways and his near arm rises from below frame, bringing a plainly fictional short theatre baton across the left foreground. End with the baton large and blurry in foreground and the navy-and-gold young adult seated behind, with a brief rack focus. Keep his upper body active, and keep the original camera pullback magnitude. One human character, no cut, no fixed full-body portrait, no real weapon, no text, and no dialogue. <Picture 2> shows the required opening face close-up and exact first camera scale. Use it to begin the shot.",
+  "seed": 1235,
+  "rawSha256": "5d3417f3ac0c052c6f0f1b9118435e8a705561c0b4e4727783c0cc10187f5eba",
+  "cutSha256": "970ff5a12067197478b826b3bf7013ccf0d0ba893e7901d50bd2328d66179d95",
+  "review": {
+    "cutSha256": "970ff5a12067197478b826b3bf7013ccf0d0ba893e7901d50bd2328d66179d95",
+    "requestSha256": "0f0565a6c25c7a3381c9e2297ae9946ec28e023e4bb62200f3beab28b0830be4",
+    "originalSha256": "b57da5f8a7493ecc68968dd1767e217cf80c91b35ad038504b1069f0b2c8640d",
+    "decision": "accepted",
+    "reviewedFrames": 40,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原镜与第 2 次候选，共 40 帧。神隐黑炎的黑发、蓝金军服与独坐粉椅贯穿全镜。开头脸部特写，随后连续拉到上半身，右臂把金色舞台棒从身边带起并伸到画面左前景，前后动作及结尾构图对应原镜。本版拉远较缓，右臂进入前景比原片约晚 3 帧，保持动作顺序与切点前的完整收势。逐帧未见多余角色、额外切镜和明显穿模。此结论只覆盖 S01 的无声画面。",
+    "reviewedAt": "2026-11-25T20:56:59.947480+00:00"
+  },
+  "retakeInputs": {
+    "prompt": "One continuous 2D anime shot. <Video 1> specifies the continuous timing, camera move and gaze. <Picture 1> is the exact face, hair and navy military clothing. First frame MUST already be an extreme close-up of his face: the head fills most of the screen, his dark eyes glance sideways and he makes a small smug grin. The camera visibly pulls back from extreme close-up to chest-up, revealing the rose-pink chair and warm wall. During the pullback he leans sideways and his near arm rises from below frame, bringing a plainly fictional short theatre baton across the left foreground. End with the baton large and blurry in foreground and the navy-and-gold young adult seated behind, with a brief rack focus. Keep his upper body active, and keep the original camera pullback magnitude. One human character, no cut, no fixed full-body portrait, no real weapon, no text, and no dialogue. <Picture 2> shows the required opening face close-up and exact first camera scale. Use it to begin the shot.",
+    "seed": 1235,
+    "additionalImages": [
+      {
+        "name": "S01-head-close.png",
+        "sha256": "0b549d85d54f3e975e3438b7e69a4a2bceb358afe1d88cacf90b8d48b1231128"
+      }
+    ]
+  },
+  "anchorImagePrompt": "A single 16:9 storyboard keyframe for the very beginning of a shot. Image 1 is the character identity and design. Image 2 is the exact face-close-up composition, eye direction, light and backdrop only. Use the anime character of Image 1 with the same dark tousled hair, slate blue eyes, small side-eye and closed-mouth smug half-smile, drawn in crisp simple cel shading. The face is centralized and fills nearly the frame’s image height, with just a sliver of his navy and gold standing collar visible at the bottom edge. Make it a genuine extreme close-up, with no visible hands or seated body. Warm beige softly blurred unlettered wall behind, slightly red light on one cheek, closely matching Image 2's position and light. No signs, no text, no weapons, no props, no framing borders."
+}

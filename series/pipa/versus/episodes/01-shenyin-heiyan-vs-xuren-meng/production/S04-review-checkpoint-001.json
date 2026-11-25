@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S04",
+  "startFrame": 100,
+  "endFrame": 129,
+  "attempt": 1,
+  "jobId": "video_gen_0acf108a99c14f9c98edd3dbcdbbc86b:openai",
+  "requestSha256": "0b1153471db5ee50def9ff7f320d38340d5f7aa07ed5327f9f352fdc068e7258",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Maintain the canted profile close-up, eyes following a harmless rounded theatrical prop in foreground, with no detailed mechanisms. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "fa44e6964fa86634559202b1a52fe280b6085b9cd92bfba705321dff9dd3080e",
+  "cutSha256": "1bdfcb52b901b05a4547c2195f798b69baa48ed2a4bee777e9ab1ab8a19ceaa4",
+  "review": {
+    "cutSha256": "1bdfcb52b901b05a4547c2195f798b69baa48ed2a4bee777e9ab1ab8a19ceaa4",
+    "requestSha256": "0b1153471db5ee50def9ff7f320d38340d5f7aa07ed5327f9f352fdc068e7258",
+    "originalSha256": "921eb15569fe19da9b0c169efaaf97ea10873e240ba9eddd72cc7531439af90a",
+    "decision": "rejected",
+    "reviewedFrames": 29,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照 29 帧。神隐黑炎和军服可辨，候选前景出现圆形道具并短暂移动。原片人物始终偏右，从侧脸进入更紧的侧脸取景，随后明显仰头并跟随左前景的动作。候选大部分是几乎不动的正面特写，侧脸、仰头和景别变化缺失，本次拒收。",
+    "reviewedAt": "2026-11-25T20:36:20.534324+00:00"
+  },
+  "retakeInputs": {
+    "prompt": "Use <Video 1> as the continuous timing and tilted side camera. <Picture 1> is the identity. <Picture 2> provides the starting right-side placement, tilted shoulder and warm wood interior. This shot MUST move through distinct poses. Begin with the officer on the right edge from the side, his open mouth and nose in three-quarter profile. Move camera closer across that face until only the right edge of the face and collar are visible. He turns eyes to screen left and tilts his chin upward, while a smooth glowing theatre lamp with no mechanisms slowly rises along the far left foreground. Finish with the face visibly tilted back in side profile and the lamp still on the far left. One continuous anime take of one person. Keep camera and body moving, preserve the slope of the wall, no fixed portrait, no dialogue, no real weapon.",
+    "seed": 1235,
+    "additionalImages": [
+      {
+        "name": "S03-end-scale.png",
+        "sha256": "9e74742eced41d69533c697b3482d6371cbe71dcdaac4819318f5277b6518631"
+      }
+    ]
+  }
+}

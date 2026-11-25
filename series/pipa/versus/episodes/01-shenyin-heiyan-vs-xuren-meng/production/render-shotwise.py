@@ -7,6 +7,7 @@ from pathlib import Path
 import re
 import sys
 import time
+import traceback
 
 import local_video_pipeline as video
 
@@ -49,13 +50,16 @@ def validate(plan, manifest):
             or plan['source']['storyFrameInterval'] != [0,plan['totalFrames']]):
         raise ValueError('The actual episode, authorization, size or source interval does not match')
     expected = 0
-    for index, shot in enumerate(plan['shots'],1):
-        if (shot['id'] != f'S{index:02}' or shot['startFrame'] != expected
+    previous_id = 'S00'
+    for shot in plan['shots']:
+        if (not re.fullmatch(r'S[0-9]{2}',shot['id']) or shot['id'] <= previous_id
+                or shot['startFrame'] != expected
                 or type(shot['endFrame']) is not int or shot['endFrame'] <= expected
                 or not shot['cast'] or len(set(shot['cast'])) != len(shot['cast'])
                 or not set(shot['cast']) <= set(plan['characters']) or not shot['direction'].strip()):
             raise ValueError('The shot list must cover a contiguous timeline with known visible roles')
         expected = shot['endFrame']
+        previous_id = shot['id']
     if expected != plan['totalFrames']:
         raise ValueError('The shots do not cover the full story')
 
@@ -367,11 +371,10 @@ def finish(root, prepared):
     for shot in prepared['shots']:
         attempt = latest(root,shot)
         picture = attempt/'cut.mp4'
-        receipt = video.read(attempt/'job.json')
         review = video.read(attempt/'review.json')
+        binding = review_binding(attempt,shot)
         if (review['decision']!='accepted' or review['reviewedFrames']!=shot['frames']
-                or review['requestSha256']!=receipt['requestSha256']
-                or review['cutSha256']!=receipt['cutSha256'] or video.sha(picture)!=review['cutSha256']):
+                or any(review.get(key)!=value for key,value in binding.items())):
             raise ValueError(f"Missing or stale visual acceptance for {shot['id']}")
         verify_picture(picture,shot['frames'],SIZE)
         films.append(picture)
@@ -427,6 +430,7 @@ def run_scheduled(base, root, config):
                 generate(base,root,config)
             except Exception as error:
                 print(f'{video.now()} worker interrupted: {type(error).__name__}: {error}',flush=True)
+                traceback.print_exc()
                 raise
 
 
