@@ -1,0 +1,47 @@
+{
+  "tool": "built-in imagegen",
+  "size": [
+    1024,
+    1536
+  ],
+  "requests": [
+    {
+      "result": "draft-shenyin-heiyan",
+      "inputs": [
+        "user-supplied shenyin-heiyan portrait"
+      ],
+      "transparentBackground": false,
+      "prompt": "Use case: stylized-concept. Create one clean head-to-toe character concept illustration for video reference. Image 1 is the sole identity, costume, palette and rendering-style reference, a cropped anime portrait. Show exactly that same fictional character: short very dark warm-brown tousled hair with distinctive pointed crown tufts and asymmetric sweeping bangs, slate-blue gray eyes, fine dark eyebrows, same youthful clean-shaven anime face and reserved closed-mouth expression. Preserve the recognizable visible deep navy standing collar with gold piping, the light inset at its center, and the pair of large oval gold fringed shoulder epaulettes as drawn in the source. Extend only the missing costume below the crop with an early French First Empire (roughly 1804–1815) officer-inspired cut: fitted navy wool habit with a waist seam, restrained brass buttons and piped cuffs, proper split long coat tails falling at the sides and behind, a modest glimpse of a pale waistcoat, fitted ivory breeches and smooth black knee-high riding boots. Keep tailoring and gold trim restrained and coherent with the existing gold epaulettes. His hair remains uncovered. One full figure only, neutral relaxed standing pose with both empty hands clearly visible, slightly three-quarter front, nearly straight-on camera and no foreshortening, head and boots both fully visible with even margins. Vertical composition with a uniform very light neutral gray studio backdrop. Crisp 2D anime contours and soft cel shading consistent with the reference. No typography, titles, framing borders, insignia lettering, historical emblems, additional objects, weapons, or extra body parts."
+    },
+    {
+      "result": "draft-xuren-meng",
+      "inputs": [
+        "user-supplied xuren-meng portrait"
+      ],
+      "transparentBackground": false,
+      "prompt": "Use case: stylized-concept. Create one clean head-to-toe character concept illustration for video reference. Image 1 is the sole reference for the single central fictional anime character and their clothing. Retain their narrow serious face with crimson eyes, straight long golden-blond hair framing the face with the long asymmetrical fringe crossing it, oversized deep crimson pointed hood, thick layered red scarf, broad deep red cloak and ochre-gold lining, charcoal fitted costume with the recognizable pale chevrons and small geometric openings at torso and flared sleeve, dark gloves and one red round-bead bracelet on each wrist. Keep the distinctive single small ivory theatrical mask with black graphic markings and red forehead lozenge as a separate ornament attached at the character's left shoulder (the right side of the original image). The mask does not cover the face. Extend the charcoal garment naturally below the crop into a long split coat panel, streamlined dark trousers and plain dark boots, with the crimson cloak draping naturally behind them. Preserve the original anime appearance, slender proportions and frontal gaze. Remove the background figures and scenery and omit the handheld jade prop, leaving both empty hands visible in an easy neutral standing pose. One figure only, slight three-quarter front, nearly straight-on camera, entire hair and hood to soles visible with even margins. Vertical composition with a uniform very light neutral gray studio backdrop. Crisp 2D anime linework and restrained cel shading. No lettering, titles, watermarks, panels, weapons or extra accessories."
+    },
+    {
+      "result": "xuren-meng.png",
+      "inputs": [
+        "draft-xuren-meng",
+        "draft-shenyin-heiyan",
+        "user-supplied xuren-meng portrait"
+      ],
+      "transparentBackground": false,
+      "sha256": "9a8b1a2819e4c38a622aafddfb21b1f819537fe7800100c18346cbcfd16c2535",
+      "prompt": "Use case: identity-preserve. Make a new, individual clean full-body anime concept image of the red-hooded character ONLY. Image 1 (red-hooded full-body concept) is the character and costume to revise. Image 2 (blue-uniform full-body concept) is the master for anatomy, pose, lens, margins, floor line and scale ONLY. Image 3 (original cropped red-hooded portrait) is the fidelity reference for the red-hooded face, hair and costume details. The two final character images will sit side by side in 1024×1536 images and must look like the same-height, same-build performers. Build the revised figure by following Image 2's human skeleton and scale under the clothing. Make the bare head and face clearly larger relative to the body than in Image 1. The actual anatomical head is almost the same height and width as Image 2's head; the hood is fitted around this head, not a separate tall point above it. Use the same lean build, youthful anime proportions, similar shoulder width, same torso-to-leg proportions, same modest stance width, and the same slightly bent, relaxed empty hands at the same height. Aim to align the eye line about 15% below the top, chin about 21%, shoulders about 24%, waist around 39%, fingers around 60%, knees around 70%, and boot soles around 97.5% of image height, based on Image 2. Nearly straight-on studio camera. Keep strictly Red Character identity: same long gold-blond fringe and straight strands, red eyes, small serious face, pointed deep red hood, layered thick red scarf and red cloak with ochre lining, charcoal split garment with signature pale chevrons and geometric cutouts, matching dark gloves, red beads at both wrists, and one small ivory theatrical mask with black pattern and red forehead lozenge fixed at the left shoulder (right side of the image), separate from the face. Have the cloak hang close to the sides and behind the legs, with its hem a little above the floor. The cloak should not flare massively sideways or pool across the floor. Flat very light neutral gray studio background, crisp anime cel shading to match the navy uniform image, clear silhouette, one character entirely in frame, no extra objects, no handheld prop, no weapons, no text, no watermarks. Preserve red palette and visual identity."
+    },
+    {
+      "result": "shenyin-heiyan.png",
+      "inputs": [
+        "draft-shenyin-heiyan",
+        "xuren-meng.png",
+        "user-supplied shenyin-heiyan portrait"
+      ],
+      "transparentBackground": false,
+      "sha256": "fcc41595a2d072855f3ccbd12e94af4d3d658a9df665efc16a90bfad144abf99",
+      "prompt": "Use case: identity-preserve. Produce a revised, stand-alone full-body character concept of the blue military-uniform character. Image 1 (blue uniform) is the costume, face and identity to retain. Image 2 (updated red hood) is an anatomy and scale template only. Image 3 (cropped original blue portrait) is the close-up identity reference. The two outputs will be displayed at exactly the same physical size, so create the blue character at the same character height, head-to-body ratio, slim build and shoulder/waist width as the RED template beneath its cape. Match the red figure's near-frontal lens, stance width, head center, crown height, shoulder joints, hips, knee height, wrist height and floor line. Relative to Image 1, make the entire blue head slightly smaller and higher, with a slightly longer neck-to-waist span and the shoulders and relaxed empty hands slightly higher, to match Image 2. Use these approximate anchors in the 1024×1536 frame: highest hair tufts y=24, pupils y=195, chin y=280, shoulder joints y=345, waist y=590, hands y=795 to 885, knees y=1080, soles y=1510. Keep the feet fully visible and camera nearly straight-on. Retain dark brown tousled hair and distinct crown tufts, slate-blue-gray eyes, asymmetric fringe, soft youthful face, neutral gaze, deep navy standing collar with gold edge, gold fringed epaulettes, navy wool coat with brass buttons and gold piping, tapered waist, split French First Empire officer-inspired coat tails, ivory waistcoat and fitted breeches, and black high boots. Do not borrow any red colors, hood, mask or cape from the scale reference. Plain light neutral gray background, a single person, relaxed standing pose, crisp 2D anime contours and calm cel shading, no objects, weapon, writing, or logo."
+    }
+  ]
+}

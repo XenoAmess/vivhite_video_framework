@@ -1,0 +1,14 @@
+# 《琵琶曲》神隐黑炎 vs 虚人梦
+
+当前交付为两张独立的全身角色概念图。图像采用同一画布尺寸、近正面自然站姿和浅灰背景，可并排对照或单独用作图像参考。
+
+| 角色 | 入库概念图 | 造型要点 |
+| --- | --- | --- |
+| 神隐黑炎 | [全身 PNG](assets/generated/character-concepts-v2/shenyin-heiyan.png) | 保留原图的深棕短发、蓝灰眼、深蓝金边立领与金色流苏肩章。参考法国第一帝国军服延伸出收腰长尾军礼服、浅色马甲和贴身马裤、黑色长靴。 |
+| 虚人梦 | [全身 PNG](assets/generated/character-concepts-v2/xuren-meng.png) | 保留金发红眼、深红兜帽披风、赭金内衬、几何镂空和左肩侧面具。双手空出，披风收近身体并离地。 |
+
+第二轮通过生成时交叉引用两人的全身图，统一身高、头身比及修长身材。并排核对眼线、下颌、肩腰、手腕和脚底。两张图均为内置 imagegen 直接输出的 1024×1536 PNG，采用原始文件字节入库。 [实际提示词与输入顺序](assets/generated/character-concepts-v2/generation-requests.json)
+
+神隐黑炎的军服补全部分参考法国第一帝国的长衣摆、马裤和靴型，照顾原图已有的深蓝和金色装饰。 [法国军事博物馆近卫军制服资料](https://www.musee-armee.fr/fileadmin-cru-1503318930/user_upload/Documents/Support-Visite-Fiches-Objets/Fiches-periode-napoleon/MA_grenadier-garde-imperiale.pdf) · [拿破仑基金会军服简介](https://www.napoleon.org/en/young-historians/napodoc/napoleons-grande-armee-2/)
+
+后续分镜中，神隐黑炎对应夸张开枪的一方，虚人梦对应拍屁股挑衅的一方。动画参考为 Kotte Animation 原片，重点分镜和配乐参考「成都超人 p01 原曲」。 [原动画素材 BV1pvY16QEwd](https://www.bilibili.com/video/BV1pvY16QEwd/) · [重点分镜与 BGM BV14BeA6CEUb](https://www.bilibili.com/video/BV14BeA6CEUb/)

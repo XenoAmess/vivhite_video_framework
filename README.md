@@ -32,7 +32,7 @@
 
 周边印花的首帧稳定、场景原图纹理回贴、慢放候选、全源帧复核与精确时长装配见[视频后处理方法与代码索引](docs/autumn-journey-video-postprocessing.md)，包含适用边界、实际案例和可复用命令。
 
-本地生成式视频的新任务使用统一入口 `http://192.168.1.11:8080/v1`，与其他本地模型共享队列并由 Bifrost 计量。旅行视频采用[原始768P与原生4K](docs/local-video-768p-4k.md)，4K沿用 `open-h3-2k` 模型ID，明确请求3840×2160，单任务执行。旧2K资料仅作归档。双角色参考图及琵琶演奏动作的选材和试镜方案见[《琵琶曲》制作调研](docs/pipa-music-video.md)。
+本地生成式视频的新任务使用统一入口 `http://192.168.1.11:8080/v1`，与其他本地模型共享队列并由 Bifrost 计量。旅行视频采用[原始768P与原生4K](docs/local-video-768p-4k.md)，4K沿用 `open-h3-2k` 模型ID，明确请求3840×2160，单任务执行。旧2K资料仅作归档。神隐黑炎和虚人梦的全身造型见[《琵琶曲》双角色二创](docs/pipa-music-video.md)。
 
 已完成[片尾修订 v7的原生768P成片](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/production-v7-768p.md)：48镜、201秒、1344×768／30fps，S20高山湖与S48片尾各连续10秒，其余镜头2–5秒。片尾前两行完全复用片头文字与样式，再缓慢浮现“献给世界上最可爱的你”；6030个最终帧完成解码与画面轨对照。[v7 GitHub Release](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/autumn-journey-v7-768p-20261117)供用户审阅。全部2K任务已按用户要求停止，不自动恢复；v6 Release、旧影片与中间材料完整保留。
 
