@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S01",
+  "startFrame": 0,
+  "endFrame": 40,
+  "firstAttempt": {
+    "jobId": "video_gen_d7221167c3c242068d370af4437e0c5a:openai",
+    "requestSha256": "272c441500899210ef350d9d874a144223e135231248788d73597ba1c34284f9",
+    "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Front view by the rose chair, tilt the chin from a neutral smirk into an exaggerated challenge. Preserve the camera distance and dark wood background. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+    "seed": 1234,
+    "rawSha256": "b4898291f539daab9a4bb286fc9aa108d3b083d9b9d62aa4261e4a81602d466e",
+    "cutSha256": "967b8e5539dfb8b2482b331259a009016467bc56b6ed02d468d05bfb93df71c4",
+    "review": {
+      "cutSha256": "967b8e5539dfb8b2482b331259a009016467bc56b6ed02d468d05bfb93df71c4",
+      "requestSha256": "272c441500899210ef350d9d874a144223e135231248788d73597ba1c34284f9",
+      "originalSha256": "b57da5f8a7493ecc68968dd1767e217cf80c91b35ad038504b1069f0b2c8640d",
+      "decision": "rejected",
+      "reviewedFrames": 40,
+      "method": "assistant-frame-review",
+      "observations": "逐帧核对原片与候选共 40 帧。候选全段都是较固定的正面坐姿中远景，深蓝军服、金肩章和角色外形清楚。原片开头脸部极近，随后拉到半身，角色偏身抬臂，末尾抬臂越过左前景并伴随焦点变化。候选未表现这三个连贯节拍，因此拒收。",
+      "reviewedAt": "2026-11-25T19:57:32.038229+00:00"
+    }
+  },
+  "retakeAtCheckpoint": {
+    "status": "prepared",
+    "prompt": "One continuous 2D anime shot. <Video 1> specifies the continuous timing, camera move and gaze. <Picture 1> is the exact face, hair and navy military clothing. First frame MUST already be an extreme close-up of his face: the head fills most of the screen, his dark eyes glance sideways and he makes a small smug grin. The camera visibly pulls back from extreme close-up to chest-up, revealing the rose-pink chair and warm wall. During the pullback he leans sideways and his near arm rises from below frame, bringing a plainly fictional short theatre baton across the left foreground. End with the baton large and blurry in foreground and the navy-and-gold young adult seated behind, with a brief rack focus. Keep his upper body active, and keep the original camera pullback magnitude. One human character, no cut, no fixed full-body portrait, no real weapon, no text, and no dialogue. <Picture 2> shows the required opening face close-up and exact first camera scale. Use it to begin the shot.",
+    "seed": 1235,
+    "additionalImageSha256": "0b549d85d54f3e975e3438b7e69a4a2bceb358afe1d88cacf90b8d48b1231128"
+  },
+  "workerRevisionSha256": "19985f1a13798ff30b7d0ab2b322d9a50f60d8edbbcf64c92a218256fbf5fcc2"
+}

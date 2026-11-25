@@ -184,12 +184,13 @@ def retry(args, root, prepared):
     receipt = video.read(current/'job.json')
     if receipt['status'] not in ('completed','failed','cancelled'):
         raise ValueError('A previous attempt is still active or its submission needs reconciliation')
-    prompt = args.prompt_file.read_text(encoding='utf-8').strip()
+    prompt = args.prompt_file.read_text(encoding='utf-8-sig').strip()
     if not prompt:
         raise ValueError('Provide the full new prompt')
     next_attempt = current.with_name(f'attempt-{int(current.name.removeprefix("attempt-"))+1:03}')
     next_attempt.mkdir()
     video.save(next_attempt/'retry.json',{'prompt':prompt,'seed':args.seed,
+                                         'additionalImages':[asset(path) for path in args.anchor],
                                          'previousAttempt':current.name,'recordedAt':video.now()})
     print(next_attempt)
 
@@ -235,7 +236,7 @@ def record_review(args, root, shot):
     check_asset(shot['original'])
     if video.read(attempt/'comparison/frames.json')!=binding or args.frames!=shot['frames']:
         raise ValueError('The source and candidate must be compared for every delivered frame')
-    notes = args.observations.read_text(encoding='utf-8').strip()
+    notes = args.observations.read_text(encoding='utf-8-sig').strip()
     if not notes:
         raise ValueError('Record what was actually observed in the reviewed frames')
     video.save(report,{**binding,'decision':args.decision,'reviewedFrames':args.frames,
@@ -259,10 +260,11 @@ def uploaded(api, root, entry):
 
 def post(api, root, shot, attempt):
     revision = shot if attempt.name=='attempt-001' else video.read(attempt/'retry.json')
+    references = [*shot['images'],*revision.get('additionalImages',[])]
     payload = {'model':'fasth3-omni-bf16','task':'ref2va','size':SIZE,'seconds':5,'num_inference_steps':8,
                'guidance_scale':1.0,'seed':revision['seed'],'prompt':revision['prompt'],
                'video_reference':[uploaded(api,root,shot['motion'])],
-               'image_reference':[uploaded(api,root,entry) for entry in shot['images']]}
+               'image_reference':[uploaded(api,root,entry) for entry in references]}
     path = attempt/'request.json'
     if path.exists() and video.read(path) != payload:
         raise ValueError('Preserve the exact request of each attempt')
@@ -441,6 +443,7 @@ def main():
     ret.add_argument('--shot',required=True)
     ret.add_argument('--prompt-file',required=True,type=Path)
     ret.add_argument('--seed',required=True,type=int)
+    ret.add_argument('--anchor',action='append',type=Path,default=[])
     comparison = sub.add_parser('compare')
     comparison.add_argument('--shot',required=True)
     review = sub.add_parser('review')
