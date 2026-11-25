@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S03",
+  "attempt": 2,
+  "startFrame": 64,
+  "endFrame": 100,
+  "jobId": "video_gen_53d43c4d006f4ecca38e2b39f6e664c3:openai",
+  "requestSha256": "061f5199c6f18f72e6e3b644c9aff563bd74afe8f74175901dffe2109a75dd92",
+  "renderPrompt": "Use <Video 1> to match the whole motion of this single Dutch-angle reaction. <Picture 1> is the exact navy-and-gold officer. The shot begins on a side-angle close-up, his face enlarged at frame right. His eyes look left and he tilts the head back, then the camera visibly pulls back through the middle of the shot until the upper torso and both epaulettes enter, adding parallax in the background. At the end hold the much wider canted framing, right-side position, visible shoulder and open-mouth expression seen in <Picture 2>. A blurred rounded blue theatrical lamp briefly crosses the lower-left foreground near the end. Keep the head and shoulder changing position throughout, rather than holding the face at one fixed scale. Exactly one anime character, one continuous shot, no words, no realistic weapon.",
+  "seed": 1235,
+  "rawSha256": "38a1d86d2e7733355b1be58f04c6ad75722b7597130624e78b15369e03e46961",
+  "cutSha256": "f1a62c19b0e486fc4da3aad276fdf62b820c8742ead7dc309f30fce0f75e22d1",
+  "review": {
+    "cutSha256": "f1a62c19b0e486fc4da3aad276fdf62b820c8742ead7dc309f30fce0f75e22d1",
+    "requestSha256": "061f5199c6f18f72e6e3b644c9aff563bd74afe8f74175901dffe2109a75dd92",
+    "originalSha256": "d00c7b9a2262dbf0d3afc465c717ed1ae295e5b54cd8297642e3dddfbb428d81",
+    "decision": "accepted",
+    "reviewedFrames": 36,
+    "method": "assistant-frame-review",
+    "observations": "对照原片第 64–99 帧及第二版全部 36 帧。神隐黑炎的侧面特写起镜，头部转向和视线偏移可见。镜头连续拉远到身体和金色肩章，人物留在画面右侧，后半有圆形蓝色舞台灯进入左前景，对应原镜收势的遮挡关系。第二版拉远开始较早，面部表情更偏惊讶，保留前后景关系和原镜末段的整体构图。未见额外人物、切镜或明显穿模。通过本镜画面审核。",
+    "reviewedAt": "2026-11-25T22:11:17.740165+00:00"
+  },
+  "anchorImagePrompt": "One 16:9 clean anime storyboard frame showing the end of a canted close-up camera pullback. Image 1 is the only visual identity and clothes reference. Image 2 is the composition and cheeky expression reference. Draw the navy and gold anime character at the UPPER RIGHT of frame, head and torso on a strong diagonal, leaning toward screen left, with open-mouth comic reaction and his dark hair and gold-fringed shoulders clearly visible. His face is smaller than a face close-up, at most one quarter of the frame width. Dark wood and warm beige wall slant diagonally behind. The lower left foreground is occupied by a blurred, rounded, plainly fictional blue theatre-light prop, with no arms, no gun shape, no moving parts. In this keyframe just one person is visible, no lettering, no logos, no watermark. Crisp cel shading and warm red edge light."
+}
