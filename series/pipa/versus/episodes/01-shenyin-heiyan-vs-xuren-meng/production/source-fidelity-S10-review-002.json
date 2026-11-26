@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S10",
+  "startFrame": 273,
+  "endFrame": 294,
+  "attempt": 2,
+  "jobId": "video_gen_33087ef718b34fce8bd6c98137330d60:openai",
+  "requestSha256": "1e86f3bf8b7683948ca696fbd467b4b0944726d4490117acad195925610c13d7",
+  "renderPrompt": "Edit only the original dancer in <Video 1>. The clip controls the exact continuous mock-dance movement, camera, timing and scene. <Picture 1> gives the fully clothed crimson-hooded blonde performer. Begin with the BODY ALWAYS FACING AWAY from the camera in the low squat of <Picture 2>. The lens sees the back of the hooded cloak and two bent legs, with only a little face turned over the shoulder. Follow the one hand rising and sweeping from the source, then the actual rise and forward lean with their back still toward camera. <Picture 3> gives the matching low rear view at the end. Keep the same low angle, ceiling circle light, dark panels, debris, doorway and shadows all the way through the shot. The original actions and their direction must occur at the same times. One performer, right arm and left arm with recognizable gloves, no new cut, no frontal torso at any time, no added staging, words or dialogue.",
+  "seed": 1235,
+  "rawSha256": "f089dae0c941a028d35e7f19f355b161d2b5994f52b7c4595521e3b1b611398c",
+  "cutSha256": "d62227fcd79f722a4d471dab48cfcb80b4824ef39ebfd8ecbb080a0330f4323f",
+  "review": {
+    "cutSha256": "d62227fcd79f722a4d471dab48cfcb80b4824ef39ebfd8ecbb080a0330f4323f",
+    "requestSha256": "1e86f3bf8b7683948ca696fbd467b4b0944726d4490117acad195925610c13d7",
+    "originalSha256": "9fcfcdfd799b1d7e0b0691d6c04e2555b162f5a1bd208497ff912607cb643da6",
+    "decision": "accepted",
+    "reviewedFrames": 21,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 273–293 帧及本镜全部 21 帧。二版全程背身，过肩回看、低蹲、右手上抬、向外扫手和起身前倾依次可见。定格比对确认顶灯、墙板、木门与地板和原片一致。等速版中段抬手和收手略滞后，从同一生成片按原动作节点重新取 21 个连续时间顺序的独立帧，保持原切点。披风覆盖左侧肩背，末帧俯身略浅，黑手套降低手掌与画面的反差。未见角色转为正面、额外镜头或人物。",
+    "reviewedAt": "2026-11-26T20:15:08.947705+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S10-source-rear-0273.png",
+      "shot": "S10",
+      "sourceFrame": 273,
+      "sha256": "b2dc3ca46c359356626ea39dd1bb78adc338785a434f4d5f4964041821adfbcb",
+      "prompt": "Replace the one fully dressed adult dancer in the first frame of this fictional stylized 3D film, preserving its very low view and dim set exactly. The figure's BACK faces the camera in a wide squat, knees bent with one toward the right; the head only looks back over a shoulder so a little face is visible above the back. The camera must continue seeing the back of the costume and red hood, not the front chest or a frontal pose. Put the crimson hood, blonde hair and gold-lined cape from image two on the same adult body with dark long trousers, gloves, red beads and one left shoulder ornament. Let the cape fall down one side to keep the source elbow, bent legs and black boots visible. The third image clarifies the back structure of this costume, ignoring its pose and room. Preserve the first source angle, shot's exact shape, red edging, acoustic panels, floor and side pads. No extra person or objects.",
+      "inputs": [
+        "anchor-originals/S10-source-0273.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "anchors/S19-source-rear-0479.png"
+      ],
+      "sourceStillSha256": "887911b5329466058f6a44d40f06d8d30ffb3347a3711182ed219acd70af6c86"
+    },
+    {
+      "shot": "S10",
+      "sourceFrame": 293,
+      "prompt": "Replace only the specified actor appearance and visible costume in image one, a single frame from a fictional animated film. Keep the exact original widescreen crop, pose, placement, subject scale, shallow or deep focus, set geometry, reflections and light. Match the source animated 3D material and dim red/ochre color. No new graphics or content. Replace the original single fully clothed adult in the nonsexual comedy choreography with the long-haired red-hooded performer in image two. Match the exaggerated forward lean and original low rear camera. Keep both legs covered, both hands in front of the camera as shown, and let the gold-trimmed red cape fall along the sides so both hands and knee positions remain legible. Exact dark panes, amber circle of ceiling light, wooden door, debris and white padded panels, with no set changes.",
+      "inputs": [
+        "anchor-originals/S10-source-0293.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ],
+      "sourceStillSha256": "43e03f355e4b2c27aa6937715c36caa183280d900cfe93b531edf242ae07c855",
+      "file": "S10-source-edit-0293.png",
+      "sha256": "aefde91f9b37afc15c53e0b1dc74e1703c96c06373506dc98b47b22b8c46f1d1"
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S10.mp4",
+    "inputSha256": "35155e2246dbc9f1dd2c3120c8889723562957ffc7e0d8eb679bdb3e1ebe1a87",
+    "preRetimeCutSha256": "c380c513eee247726c6c023e28767a4e1806169301bf8cd30cf5f50d58f8bd74",
+    "outputSha256": "d62227fcd79f722a4d471dab48cfcb80b4824ef39ebfd8ecbb080a0330f4323f",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      6,
+      12,
+      18,
+      24,
+      31,
+      42,
+      48,
+      56,
+      64,
+      70,
+      75,
+      82,
+      91,
+      96,
+      101,
+      105,
+      109,
+      113,
+      117,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,6)+eq(n\\,12)+eq(n\\,18)+eq(n\\,24)+eq(n\\,31)+eq(n\\,42)+eq(n\\,48)+eq(n\\,56)+eq(n\\,64)+eq(n\\,70)+eq(n\\,75)+eq(n\\,82)+eq(n\\,91)+eq(n\\,96)+eq(n\\,101)+eq(n\\,105)+eq(n\\,109)+eq(n\\,113)+eq(n\\,117)+eq(n\\,119),setpts=N/(24*TB)",
+    "reason": "Conform the hand rise, outward sweep, release and final forward bend to the timing of the original 21-frame shot.",
+    "coveredFrames": 21,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T20:15:08.286214+00:00"
+  }
+}
