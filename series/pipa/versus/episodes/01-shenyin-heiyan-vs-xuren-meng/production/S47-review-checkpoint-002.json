@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S47",
+  "startFrame": 1234,
+  "endFrame": 1256,
+  "attempt": 2,
+  "jobId": "video_gen_92fb8f6e5e7147a6964a233203170b6d:openai",
+  "requestSha256": "be38ab6a43d8603c32a78c5b3f7680997f53c3c4efaf847c54764800843960a6",
+  "renderPrompt": "One continuous hand-drawn anime reaction in a dim wood room. <Video 1> supplies only the lean, expression timing and the overhead push-in. <Picture 1> defines the navy-gold officer. <Picture 2> shows his final high-angle comic grimace and the same rose chair and dark divider. He starts visible from chest and upper legs, head turned upward. As the camera pushes closer and slightly right, he flicks his free elbow outward to screen left, clenches his teeth comically and looks straight up. The simple solid golden stage baton stays low by his far hip, angled away from the body, well below his face at all times. Focus on the comic facial expression and the camera move. Warm dark floor and walls, pink chair upper left, one person, no weapons, injury, text or extra cuts.",
+  "seed": 1235,
+  "rawSha256": "f9aafd61d88ffaf79c2c0208ec2d0105c6998db694a92b1119fd23b5368d7a20",
+  "cutSha256": "2935532614cb74affc67d1e496f035d9d8c9f6f11ae6c2549f148e74484d466a",
+  "review": {
+    "cutSha256": "2935532614cb74affc67d1e496f035d9d8c9f6f11ae6c2549f148e74484d466a",
+    "requestSha256": "be38ab6a43d8603c32a78c5b3f7680997f53c3c4efaf847c54764800843960a6",
+    "originalSha256": "c1dfcf8f0a9f9e6d182d76fd5a0c09960e27c55884c29548f759560cb380c6b9",
+    "decision": "accepted",
+    "reviewedFrames": 22,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 1234–1255 帧及候选全部 22 帧。粉椅保留在左上，连续俯拍推进可见。神隐黑炎先蹲身抬眼，随推近咬牙皱眉，伸出一只空手，圆头舞台棒在另一手低处停留。原片起镜已经较直、脸更靠前，候选从更低的姿态抬头；改用空掌完成向画外的动作。尾段仍保留清晰的神情与向上视线。全镜仅有指定角色，服装及室内位置连贯。",
+    "reviewedAt": "2026-11-26T13:36:31.956239+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S47-overhead-grimace.png",
+      "sha256": "3f5f669c5fec85967102a47b35950b373183744d6ded92987c15a51f40b76892",
+      "prompt": "Single widescreen cel-shaded anime storyboard frame for a comic dance beat. Keep exact adult dark-haired officer from Image 1. Image 2 supplies the same warm wooden room and rose upholstered chair. Strong tilted overhead view looking down from above his near shoulder, close with his navy and gold uniform, upper face and upper chest filling center-right. One pink chair on the upper-left, shadowy wooden floor left, tan wall at top, side of dark wooden room divider at right. The standing officer looks up at camera, eyebrows lowered and clenched teeth in a funny grumpy expression, dark brown tousled hair leaning sideways. His one free elbow bends out toward screen left just below shoulder height and the hand is open or relaxed. He holds the simple short blunt golden stage baton down by his far hip, angled away from his body, partly cropped. No other people, text, firearm or injury. Sharp expressive anime faces and dark amber wood tones, no modern spotlight.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "S43-reclining-reaction.png"
+      ]
+    }
+  ]
+}
