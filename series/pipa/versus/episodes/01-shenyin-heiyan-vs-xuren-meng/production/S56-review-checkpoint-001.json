@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S56",
+  "startFrame": 1431,
+  "endFrame": 1478,
+  "attempt": 1,
+  "jobId": "video_gen_8b58c0044b324d8daf4413c13e2f1dc3:openai",
+  "requestSha256": "dee64aa247337161f153116337085a1152775a2ac7c4bf0b6a9ce49949a056bd",
+  "renderPrompt": "One continuous closing anime shot. <Video 1> provides the high view, bodily motion and timing. <Picture 1> is the navy-and-gold officer seated low against the left wall. <Picture 2> is the crimson-hooded performer at center-right near the warm patterned folding screen. <Picture 3> shows the correct high angle and the deep bent-forward pose. The crimson performer begins bent, rises visibly as their knees straighten and the cape follows, pauses briefly, then bends forward again to complete the comic bow before the cut. The navy officer stays recognizably in the back left, low against the wall, watching and moving one open hand a little. Maintain the wood floor, patterned screen, separated positions, proportions and clothing in every frame. Hands empty, no extra people, shot cuts, text, dialogue or weapons.",
+  "seed": 1234,
+  "rawSha256": "0d4798985a87dd1c8c227fdaf39401eee52923b4cd3a6accc5aed232bfbb394c",
+  "cutSha256": "50c1df355f15e3af9d6404b273b213171eacd41591d551becbad047f373d3b19",
+  "review": {
+    "cutSha256": "50c1df355f15e3af9d6404b273b213171eacd41591d551becbad047f373d3b19",
+    "requestSha256": "dee64aa247337161f153116337085a1152775a2ac7c4bf0b6a9ce49949a056bd",
+    "originalSha256": "db8e8c503f558a7d07d4faa0fbb968ead74641c4ea839599b7dcb659df346745",
+    "decision": "rejected",
+    "reviewedFrames": 47,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 1431–1477 帧及候选全部 47 帧。保留屏风旁俯拍、右侧虚人梦和左后方神隐黑炎，候选也有起势、起身、再俯身。但原片约从本镜第 6 帧就伸直，候选到约第 25 帧才站直，第 39 帧才开始再次弯身；尾段朝屏风抬手的收势和相应推拉也缺失，站直时右肩可见额外白面饰。退回并补入原片前段站直的近景与尾段空手抬臂的俯拍构图。",
+    "reviewedAt": "2026-11-26T12:25:03.953735+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S56-two-person-closing.png",
+      "prompt": "Use case: a storyboard anchor for the closing beat of a fully clothed comic anime short, 16:9. Image 1 is the navy-and-gold officer identity. Image 2 is the crimson-hooded performer's identity and outfit. Image 3 gives solely the camera, body blocking and room layout. Keep a high tilted camera looking downward into a small warm wood-floor corner. Image 2 person fills the center-right foreground in a deep cartoon bow toward the folding screen, lower torso and boots fully clothed, knees bent, red cape lifting naturally from the back and keeping the feet readable. Blond hair falls from the crimson hood, left shoulder ivory mask attached. At the rear left, clearly separate and smaller from perspective, Image 1 officer with tousled dark hair and blue-gold coat and ivory trousers leans low against the beige wall on the floor, with one hand braced on the boards and his other hand loosely raised. Both are young adult fictional performers of similar slender proportions, same clean 2D anime cel shading and restrained warm light. Keep right-side green folding screen and a sliver of rose chair at far left. No object in hands, no extra character, no injury, no weapon, no text. One single frame, no panels.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/xuren-meng.png",
+        "S56-closing-original-pose.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "One uninterrupted high-angle anime take with the same shot trajectory and exact order of beats as <Video 1>. <Picture 1> gives the dark-haired officer in navy-gold and ivory trousers. He reclines very low at the left wall and stays there with a small open-hand reaction. <Picture 2> gives the blond actor in red-and-gold hood and cape, black gloves and precisely ONE ivory mask attached to the LEFT shoulder. In the foreground right they start in a low bow but already straighten during the FIRST FIFTH; push closer and pause in the raised posture of <Picture 3>. By the middle, bring the lens back down as they fold deeply and shift the nearer boot. In the final third, their empty right hand makes one distinct open-palmed upward flourish before lowering, with the screen-side arm and cape moving separately as in <Picture 4>. End still visibly bent beside the green botanical screen with both adults in the same continuous shot. Warm wood corner, ochre wall and screen; stable costumes, separated silhouettes, uncluttered hands. Do not mirror the mask or add new accessories. No extra person, cut, injury, weapon, text or dialogue.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T12:25:04.135494+00:00",
+    "images": [
+      {
+        "name": "S56-upright-early.png",
+        "sha256": "8bbe979fd8a81547375548a8e10a91833d6bfefffed8eb4cbeb25f33a8b17122",
+        "imagePrompt": "Create a single 16:9 storyboard frame in the same hand-drawn anime cel-shaded style as image 1. Keep its green botanical screen on the right, warm wood floor, ochre wall at left and the exact two fictional adult characters. Image 2 supplies ONLY the much closer, canted downward camera and posture for the early beat. At the right foreground, the blond performer in the red hood has already straightened up from a bow, head near the top of the image and torso tilted a little forward, feet steady and red gold-lined cape dropping naturally. They glance upward with a mischievous expression, hands empty near the hips. Show exactly one little ivory theatrical mask on the performer’s LEFT shoulder as in image 1. On the lower LEFT, the dark-haired navy-and-gold officer is separate, reclining very low along the floor where it meets the wall, posture loose as part of the comedy, face turned toward the performer, both in the same navy and red clothes as image 1. This is a closer camera view of the same set. The other image is solely a guide to silhouette, body blocking and camera height. Exactly two people and one mask total. No weapon, accessories in hands, injury, additional character, text, panels, or watermarks."
+      },
+      {
+        "name": "S56-final-bow-open-arm.png",
+        "sha256": "f75380728160857e4ba3663c57f8bbfe76f347ac45acc39ce1bc8e0499a64bf1",
+        "imagePrompt": "Create one 16:9 clean anime storyboard frame using image 1 for exact character designs and wood room with green botanical folding screen. Maintain its thin painted anime outlines, gold and crimson costume palettes and adult character proportions. Use image 2 ONLY for the camera and body pose toward the end of the same comic shot. From above and slightly tilted, show the blond red-hooded performer in the right foreground bowing almost horizontally toward the screen with their RIGHT arm raised diagonally forward to the right, empty gloved open palm, visible over their head on the right. The left arm stays low near the knee. The red gold-lined cape follows their back, blond locks hang forward; exactly one small ivory theater mask remains attached to their LEFT shoulder, never a second one. In the left background the navy-gold dark-haired officer reclines along the floor at the wall, one knee bent, an empty open hand steady on the floor, face turned to the other adult. Keep physical silhouettes separate and place the foreground boots half a step apart on the wood floor. It is a humorous curtain bow with a quick flourish, everyone safe and fully clothed. No held object, fighting, weapon, extras, text, panels or fake film marks."
+      }
+    ]
+  }
+}
