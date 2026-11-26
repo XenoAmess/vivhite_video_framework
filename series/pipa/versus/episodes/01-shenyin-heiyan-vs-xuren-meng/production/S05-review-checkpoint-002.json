@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S05",
+  "startFrame": 129,
+  "endFrame": 158,
+  "attempt": 2,
+  "jobId": "video_gen_8dbe65c85921443ea7195feb3eee0034:openai",
+  "requestSha256": "132921474c459c2449e4c785425868e1405712a6e2a521a62008bddb944d4c41",
+  "renderPrompt": "One uninterrupted tabletop insert for the whole clip. <Video 1> guides the movement and high close camera over the dark round wooden table. <Picture 1> supplies the officer’s gold-trimmed navy sleeve and ivory cuff only. <Picture 2> shows the required table framing, peaceful gold theatre baton and cuff. From screen right a navy sleeve carries the solid golden stage baton leftward, lowers it onto the dark wooden table and releases it with an open palm. The hand briefly draws back out of the crop; near the end another reach from the same right edge brushes the baton and rotates it a little on the tabletop. The downward-facing view stays tightly on the wood grain, sleeves, fingers and this one smooth, solid rounded prop for every frame. No full characters, face, duplicate, wine glass, window, camera cut, real weapon, or readable text. Keep the restrained warm red shadow and the source movement timing.",
+  "seed": 1235,
+  "rawSha256": "85d95bfd72cfba7ccd3fcb4728c0548cf990c1ec5a92a190aeb8f488c67abb0c",
+  "cutSha256": "6dc1bb65391591121378fba072e7d272eff6c873f23f70ba777630fe49ca6ef8",
+  "review": {
+    "cutSha256": "6dc1bb65391591121378fba072e7d272eff6c873f23f70ba777630fe49ca6ef8",
+    "requestSha256": "132921474c459c2449e4c785425868e1405712a6e2a521a62008bddb944d4c41",
+    "originalSha256": "8ff46e0dccdb7107f18898318b579dcbb0e81a7567a157df0bb21006c3f8ad0c",
+    "decision": "accepted",
+    "reviewedFrames": 29,
+    "method": "assistant-frame-review",
+    "observations": "已按原片第 129–157 帧检查本镜全部 29 帧。保留桌面俯拍和独立的放下、手掌打开离开、伸回并重新抓住三个动作。金色舞台棒和军服蓝金袖口全程都在同一张暖色木桌上，没有额外场景与人物。道具从裁切的右上边缘进入，较原镜约晚四帧完整入画；后半重新入画比原镜略晚，靠近尾帧才握住，桌上道具的旋转幅度较小。两次抓握和其间的停顿在原切点前可辨。",
+    "reviewedAt": "2026-11-26T03:09:46.782030+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S05-tabletop.png",
+      "prompt": "Use case: anime-storyboard for a continuous comic short. Image 1 supplies the high tabletop camera and restrained dark warm side lighting only. Image 2 supplies the single smooth brass-colored theatrical baton and the navy-and-gold cuff design only. Make a landscape 16:9 single anime keyframe, seen high from just above a dark round wooden table. Crop tight so the table occupies the frame; no person’s face, head, torso, window or other background is visible. A single open empty hand in a navy cuff with gold piping enters diagonally from the right. On the table just left of the hand, place the clearly harmless solid gold painted stage baton from Image 2, a single chunky tapered rounded cylinder like a miniature wooden baseball bat, rounded wide tip at the left, narrow wrapped grip at the right, no attachments. The hand has just released it onto the table. Warm restrained rim lighting and subtle wood grain, crisp 2D cel-shaded hand and navy cuff. No extra objects, people, weapons, drinking glasses, writing, panels, or text.",
+      "inputs": [
+        "S05-table-original-pose.png",
+        "S05-baton-continuity.png"
+      ]
+    }
+  ]
+}

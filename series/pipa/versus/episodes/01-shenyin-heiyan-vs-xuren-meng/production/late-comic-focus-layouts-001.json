@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "vivhite-pipa-layout-refinement-1",
+  "tool": "built-in imagegen",
+  "shots": [
+    {
+      "shot": "S42",
+      "anchorShot": "S42",
+      "anchorFrame": 1153,
+      "file": "S42-tabletop-focus.png",
+      "character": "shenyin-heiyan",
+      "inputSourceImage": "S42-calibration-source.png",
+      "imagePrompt": "Create a wider original cel-shaded anime film storyboard illustration. 16:9 landscape. Use the attached first still only to match the extremely low diagonal tabletop point of view, shallow focus, empty foreground silhouette placement and distant pink chair. Replace its foreground object completely with the second image's blunt gold, tapered decorative stage baton with a brown wrapped cylindrical handle. Show the round gold tip nearest the bottom-right camera and wrapped handle at left center. A single narrow shiny silhouette across the lower-right foreground, exactly a smooth solid golden theater prop, with zero firearm geometry or pieces. No hand touches it. The nearest gold prop is in focus on the warm dark wood surface. Behind the prop, softly blurred, the same navy-and-gold coat character from the third reference is visible about a third of the image height as he steps awkwardly backward, dark hair, pale trousers and gold shoulders, by a pink chair and warm wooden wall. Slightly dim interior, red edging across the upper left, ochre lighting, traditional hand-drawn anime planes, no words, no extra people.",
+      "videoPrompt": "Render one continuous, uninterrupted cel-shaded anime comedy shot. <Video 1> is the sole motion and camera timing guide. <Picture 1> is the same dark-haired officer in navy and gold, long ivory trousers and tall boots. <Picture 2> shows the exact low wooden tabletop, round-tipped solid gold stage baton, rose chair and focus split. Start at a low angle on the officer beside the red-edged doorway, with head and free arm moving into comic surprise. At about halfway, lower the view and rack focus onto the solid golden stage baton lying on the bottom-right tabletop. His softened figure remains in the same room behind it. Return enough focus to show him taking a wide, unsteady step, one leg rising and arms opening by the final frame. Keep the camera and timing from the supplied video, especially the near-to-far focus changes. Same lone character and background throughout, no weapon geometry, extra cut, text, dialogue, or other person.",
+      "imageSha256": "946fe3db0677b72a33f2b667e84d2fb379f9fc7d2a0ff033d1a53f91465a9512",
+      "seed": 1235,
+      "firstRequest": {
+        "jobId": "video_gen_6f95b0864efb473fa9dd169d2bcaf969:openai",
+        "requestSha256": "dec5a8ddb2492a6c1a5bda9459c993d5bd572b157abe1b745282a49c6379b30b",
+        "prompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Side low angle, officer twists suddenly and loses balance in an exaggerated but harmless stumble. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+        "motionReferenceSha256": "b81f8990cf368b871395ea804322a4f68fdd353fe489d7c58cba6b0fb116612b",
+        "serviceStateBefore": "queued",
+        "serviceStateAfter": "cancelled",
+        "checkedAt": "2026-11-26T03:10:14.743226+00:00"
+      }
+    },
+    {
+      "shot": "S43",
+      "anchorShot": "S43",
+      "anchorFrame": 1201,
+      "file": "S43-reclining-reaction.png",
+      "character": "shenyin-heiyan",
+      "inputSourceImage": "S43-calibration-source.png",
+      "imagePrompt": "Edit the first anime image. Preserve exact character, expression, navy-gold First Empire clothes, room, colors, camera, hands and seated pose. The item's design is the only change. Replace the small star-ended magic wand completely with the same plain round-tipped, thick golden stage baton in the second reference. Give it a smooth continuous solid taper and broad rounded gold end, brown grip, and no star or glow. Tilt it in the same direction as the original wand, without changing his grip. Preserve the image's widescreen frame and all other details, no lettering.",
+      "videoPrompt": "One uninterrupted cel-shaded anime comedy shot. <Video 1> supplies the swing in camera elevation, motion timing, and pose. <Picture 1> is the same fully dressed navy-and-gold officer with short dark hair, long ivory trousers and dark boots. <Picture 2> shows his correct final pose, rose chair to left, warm floorboards, raised left palm and plain round-tipped gold theater baton. Start high above as he lowers into a crouched off-balance step between the rose chair and folded screen. As he turns, drop the camera quickly to his face and pull closer. He lands sitting diagonally with one knee raised, smiles sheepishly, raises an open left hand, and holds the solid decoration from the reference up beside his chest. Preserve the down-and-up movement and render the final seated close-up before the cut. Only one person, no extra camera cuts, no weapons, no captions or dialogue.",
+      "imageSha256": "3f8c3d254a04c008b8b7173f6a328f3475ac3fd59cec9ab79951869b3f30e3aa",
+      "seed": 1235,
+      "firstRequest": {
+        "jobId": "video_gen_069cd660d1674ee498f24b448c5c510f:openai",
+        "requestSha256": "f15b6ff062f61f6fe42d1b24c0fa7dbf140fd6a79e92c2c8d4865ff15523af94",
+        "prompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. One continuous high camera view moves with the navy officer as he stumbles through the wooded-floor corner, catches himself by the rose chair, then leans sideways with one open hand raised as the framing moves lower and closer. Keep his ivory breeches and closed navy coat consistent through all positions. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+        "motionReferenceSha256": "34ff29bf42c68480e79908ef4f715f8f7504bccd84cc1f3e2a6df100f374a92e",
+        "serviceStateBefore": "queued",
+        "serviceStateAfter": "cancelled",
+        "checkedAt": "2026-11-26T03:10:14.771670+00:00"
+      }
+    }
+  ],
+  "imageRequests": [
+    {
+      "file": "S42-tabletop-focus.png",
+      "sha256": "946fe3db0677b72a33f2b667e84d2fb379f9fc7d2a0ff033d1a53f91465a9512",
+      "prompt": "Create a wider original cel-shaded anime film storyboard illustration. 16:9 landscape. Use the attached first still only to match the extremely low diagonal tabletop point of view, shallow focus, empty foreground silhouette placement and distant pink chair. Replace its foreground object completely with the second image's blunt gold, tapered decorative stage baton with a brown wrapped cylindrical handle. Show the round gold tip nearest the bottom-right camera and wrapped handle at left center. A single narrow shiny silhouette across the lower-right foreground, exactly a smooth solid golden theater prop, with zero firearm geometry or pieces. No hand touches it. The nearest gold prop is in focus on the warm dark wood surface. Behind the prop, softly blurred, the same navy-and-gold coat character from the third reference is visible about a third of the image height as he steps awkwardly backward, dark hair, pale trousers and gold shoulders, by a pink chair and warm wooden wall. Slightly dim interior, red edging across the upper left, ochre lighting, traditional hand-drawn anime planes, no words, no extra people.",
+      "inputs": [
+        "S42-calibration-source.png",
+        "S05-tabletop.png",
+        "S40-left-foreground-baton.png"
+      ]
+    },
+    {
+      "file": "S43-floor-reaction-initial.png",
+      "sha256": "2232d840e094a21f318903de62b1ab24de9a08c4013ce01e4f68083c5256dd86",
+      "prompt": "Storyboard frame for an original 2D cel-shaded anime comedy. 16:9 horizontal. Use the supplied anime concept sheet as the only design for the adult officer, and use the second attached still solely for diagonal camera angle and body placement. Smiling dark-brown tousled-haired officer with blue-gray eyes, full navy and gold First Empire coat with fringed gold epaulettes, full-length ivory trousers and high dark boots. Maintain his youthfully lean normal adult proportions. He is seated at a deep diagonal down at the floor after a clumsy dance step. His torso angles backward across center, one bent ivory trouser leg reaches bottom right, a raised open left hand is up at the right. He holds a short clearly magical stage wand, solid golden shaft topped by a large five-point blue crystal star. Keep the expression a sheepish big smile looking to upper left. Warm dim wooden room, corner of a single pink upholstered chair at lower left, a simple plain ochre rectangle on the wall and edge of a folding screen at the right. Clean expressive 2D anime shading, no captions, no extra characters, no weapons.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "S43-calibration-source.png"
+      ]
+    },
+    {
+      "file": "S43-reclining-reaction.png",
+      "sha256": "3f8c3d254a04c008b8b7173f6a328f3475ac3fd59cec9ab79951869b3f30e3aa",
+      "prompt": "Edit the first anime image. Preserve exact character, expression, navy-gold First Empire clothes, room, colors, camera, hands and seated pose. The item's design is the only change. Replace the small star-ended magic wand completely with the same plain round-tipped, thick golden stage baton in the second reference. Give it a smooth continuous solid taper and broad rounded gold end, brown grip, and no star or glow. Tilt it in the same direction as the original wand, without changing his grip. Preserve the image's widescreen frame and all other details, no lettering.",
+      "inputs": [
+        "S43-floor-reaction-initial.png",
+        "S05-tabletop.png"
+      ]
+    }
+  ]
+}
