@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S27",
+  "startFrame": 644,
+  "endFrame": 671,
+  "attempt": 2,
+  "jobId": "video_gen_34ad90f2cdb840b1b7b57d09a812fb6b:openai",
+  "requestSha256": "2842d58fbd70cec567a347c045cc66cf8367dc2243fc77a2a30a4e2eb092d14f",
+  "renderPrompt": "One continuous frontal anime shot with the same slight pullback and fast two-arm movement of <Video 1>. <Picture 1> identifies the only actor, the dark-haired officer in the exact navy-and-gold uniform. At the beginning his near forearms cross in front of the upper body, briefly obscuring part of the chest. He then opens and raises both arms widely, his expression broadening, and immediately extends BOTH OPEN EMPTY HANDS forward into the close left and right foreground. This moving nearer-hands view is <Picture 2>. Abstract amber light accentuates each movement and reaches its highest brightness when both palms come near. The hands keep changing distance during the late accents in the same rose-chair room; never hold a static spread-arm portrait. One person, no weapons, realistic attack, jump cut, text or dialogue.",
+  "seed": 1235,
+  "rawSha256": "fbc1604714ae1793f4df963959ef1e39a8d8c173f006c57aff92e1976e46f55d",
+  "cutSha256": "b7fb974a8dada181611e006a93c23405cb0dae00776bf7de8ca5847a87771e04",
+  "review": {
+    "cutSha256": "b7fb974a8dada181611e006a93c23405cb0dae00776bf7de8ca5847a87771e04",
+    "requestSha256": "2842d58fbd70cec567a347c045cc66cf8367dc2243fc77a2a30a4e2eb092d14f",
+    "originalSha256": "0aa5ad672e07e00d4546f8316123d921624f1ad73cdb51d9fab808c08050e644",
+    "decision": "accepted",
+    "reviewedFrames": 27,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原版第 644–670 帧，共 27 帧。神隐黑炎的双臂从胸前交叉，到过头展开，再同时伸向镜头，后半亮起暖色舞台光并有纸片飞过。重新抽帧使前伸和首次亮光对齐到本镜中段，加了轻微的起镜拉远。原镜后半景别更宽，密集强闪改成柔光与纸片；蓝金军服、双手和相同木墙全程可见。",
+    "reviewedAt": "2026-11-26T09:52:02.032091+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S27-two-open-palms.png",
+      "sha256": "c87236677db4fe5a6188a4607d472115401687201cbc11d397f27ed4faee0652",
+      "prompt": "Create one 16:9 anime storyboard keyframe for a young adult fictional officer's comic stage act. Image 1 is the exact identity, dark tousled hair, slate eyes and navy and gold coat, and Image 2 supplies only the centered framing and close hand perspective. Draw him in a warm small wood room with the rose chair behind him, a grin, arms both stretched forward and empty open palms large on each side of the near foreground. Two abstract soft amber stage-light blooms hang just above his open palms like a harmless theatrical effect, scattered paper squares catching the light. Do not place or depict any object in a hand. Keep the camera centered, whole face visible behind the hands, warmth dim behind amber highlights, true 2D anime cel shading. Only one character, no realistic weapons, no typography, logos or panels.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "S27-original-forward-pose.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "selectedModelFrames": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      21,
+      24,
+      27,
+      30,
+      34,
+      41,
+      48,
+      55,
+      62,
+      69,
+      77,
+      84,
+      92,
+      100,
+      107,
+      113,
+      119
+    ],
+    "samplingFilter": "select=eq(n\\,0)+eq(n\\,2)+eq(n\\,4)+eq(n\\,6)+eq(n\\,8)+eq(n\\,10)+eq(n\\,12)+eq(n\\,14)+eq(n\\,16)+eq(n\\,18)+eq(n\\,21)+eq(n\\,24)+eq(n\\,27)+eq(n\\,30)+eq(n\\,34)+eq(n\\,41)+eq(n\\,48)+eq(n\\,55)+eq(n\\,62)+eq(n\\,69)+eq(n\\,77)+eq(n\\,84)+eq(n\\,92)+eq(n\\,100)+eq(n\\,107)+eq(n\\,113)+eq(n\\,119),setpts=N/(24*TB)",
+    "filter": "zoompan=z='1+0.28*max(0,1-on/14)^1.22':x='(iw-iw/zoom)*0.50':y='(ih-ih/zoom)*0.32':d=1:s=1344x768:fps=24",
+    "samplingInput": "sources/S27.mp4",
+    "samplingInputSha256": "4cac91171253f79b45e5a2de32b0ac18a256a8ed01d9b8a486cde79487a58b37",
+    "intermediateResultSha256": "9e9688deb0af612c455ad34ac5f34cc152cf432e3a7addef02da297aae3610e2",
+    "usedInput": "cut-before-retime-with-pullback.mp4",
+    "inputSha256": "ac8371e2af6aa6ef70e36fe7ee0113067fda399ff9a561edd04be099bea77144",
+    "outputSha256": "b7fb974a8dada181611e006a93c23405cb0dae00776bf7de8ca5847a87771e04",
+    "tool": "ffmpeg",
+    "coveredFrames": 27,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T09:52:01.186787+00:00"
+  }
+}
