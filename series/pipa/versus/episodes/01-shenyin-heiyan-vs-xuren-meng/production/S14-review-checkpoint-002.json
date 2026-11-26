@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S14",
+  "startFrame": 338,
+  "endFrame": 357,
+  "attempt": 2,
+  "jobId": "video_gen_791b25af64c246ad8e922daadd4ba10a:openai",
+  "requestSha256": "a9d9cf799109e968ce297dbc30e22ef0534d71a788497a4446425c63ebae6ffe",
+  "renderPrompt": "One continuous canted anime shot. <Video 1> gives the side tabletop lens and the hand movement. <Picture 1> is the navy-and-gold officer identity, and <Picture 2> gives the framing and solid rounded gold stage baton. Keep him seated back right in the rose chair, behind a dark round table, with one arm extended across it to the left near foreground. Begin with the oversized blurred baton at left, then pull back smoothly to reveal the face while following his small comic gesture and the warm amber glow sweeping in from the left edge. No other character, cut, text, dialogue, visible weapons, or burst coming from the solid prop itself.",
+  "seed": 1235,
+  "rawSha256": "157258e54c72ac0b7ebd98e423bf372c450a23ddecf40df5887fd390665a7bd1",
+  "cutSha256": "9ed82907527182518d9dc822fb248db77dce84f174e34bc07021fadf7d3cc6b2",
+  "review": {
+    "cutSha256": "9ed82907527182518d9dc822fb248db77dce84f174e34bc07021fadf7d3cc6b2",
+    "requestSha256": "a9d9cf799109e968ce297dbc30e22ef0534d71a788497a4446425c63ebae6ffe",
+    "originalSha256": "b2913345e8356e40a687754cfd7d8dabafd86eb34692ce4eaf4a36ff249d6aeb",
+    "decision": "accepted",
+    "reviewedFrames": 19,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原版第 338–356 帧与候选全部 19 帧。保留圆桌前侧拍、左前景伸棒、右侧单人坐在粉椅上，以及从近处手臂拉出脸部的切点动作。原段几次左侧闪光由暖色环境灯光表现，已逐帧加入并检查；灯只抬亮左前景，保留角色表情。原镜中途的手腕摆幅较大，本版以持续伸臂和画面拉开表现，起镜脸部入画略晚。",
+    "reviewedAt": "2026-11-26T06:37:39.432068+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S14-table-baton.png",
+      "sha256": "14566bcec193aaf44fd31b2e3bfc8ff3ef88e4e80f8b59381ca43790b1ced920",
+      "prompt": "Single 16:9 anime storyboard still. Image 1 supplies the exact anime officer identity and navy-gold uniform. Image 2 supplies only a canted over-table camera and far right rose-pink chair. Image 3 supplies the simple golden stage prop design already seen earlier. Put the officer toward the back right by the rose chair, seated, with a playfully startled grin, legs in ivory trousers mostly obscured by the dark round table. His navy-and-gold glove-free hand reaches over the table toward the left foreground, carrying the single smooth solid round gold baton of Image 3, whose end is strongly foreshortened near camera. Warm amber stage light from beyond the left edge glows softly on the front of the prop and table. Keep the dark door and beige warm wall, replace markings with blank blur. One character, cel-shaded linework matching Image 1. No muzzle, realistic weapon, extra person or text.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "S14-stage-cut-source.png",
+        "S05-baton-continuity.png"
+      ],
+      "usedForRetry": true
+    }
+  ],
+  "postprocess": {
+    "usedInput": "cut-before-stage-wash.mp4",
+    "inputSha256": "6deb5c4da46e644bafc7a2535044d7c1c1b6bfdbea20e4556c0cc824c6bea454",
+    "outputSha256": "9ed82907527182518d9dc822fb248db77dce84f174e34bc07021fadf7d3cc6b2",
+    "tool": "ffmpeg",
+    "filter": "[0:v]split[base][reflect];[reflect]eq=brightness=0.30:gamma=1.13[lit];[base][lit]blend=all_expr='A+(B-A)*(exp(-(((X/W-0.09)/0.38)^2+((Y/H-0.56)/0.49)^2)))*(0.78*max(0,1-abs(N-8)/2)+0.66*max(0,1-abs(N-11)/1.6)+0.81*max(0,1-abs(N-14)/2)+0.91*max(0,1-abs(N-18)/2))'[picture]",
+    "visualEffect": "diffused amber stage washes from screen left",
+    "reason": "Use the source light beats as a diffused warm stage wash in the independently rendered shot.",
+    "coveredFrames": 19,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T06:37:38.767017+00:00"
+  }
+}
