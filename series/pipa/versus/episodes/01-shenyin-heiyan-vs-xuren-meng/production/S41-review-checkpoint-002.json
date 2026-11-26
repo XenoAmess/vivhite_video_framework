@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S41",
+  "startFrame": 1107,
+  "endFrame": 1125,
+  "attempt": 2,
+  "jobId": "video_gen_d5a5ecfbc5a24a9e87ca290b0cb47628:openai",
+  "requestSha256": "dcee3935c3bfbddfb3944d8e05449a5ce3b4d08c5c37524f5336ccba11d043b5",
+  "renderPrompt": "One unbroken cel-shaded anime shot following the source camera and gesture in <Video 1>. Keep <Picture 1>'s navy-and-gold adult officer and exactly the near worm's-eye framing, red-edged doorway, plain warm brown room and simple round-tipped golden theater baton in <Picture 2>. Camera stays just in front of his knees, cropping below mid-thigh and looking sharply up, with ivory trousers near the bottom and his head high near the top. Start with the free open palm near the right of the lens. In the same low framing he lowers that palm to the side of his waist, crosses the bent arm over the coat and turns visibly toward his left before the cut, with the other hand holding that single plain gold baton up. Show the gesture in motion, retain the doorway and wall, only one character, no new scene, spotlights, firearms, words or voices.",
+  "seed": 1235,
+  "rawSha256": "91c216d34d26c61a4d94bf9ee5a61bc951f79e679c96a061852283b55587adae",
+  "cutSha256": "b42a245a4a35f97fbd7c7aed609f2dae82c78b7b201de3286588df7c6454ea65",
+  "review": {
+    "cutSha256": "b42a245a4a35f97fbd7c7aed609f2dae82c78b7b201de3286588df7c6454ea65",
+    "requestSha256": "dcee3935c3bfbddfb3944d8e05449a5ce3b4d08c5c37524f5336ccba11d043b5",
+    "originalSha256": "8d175c6d829f5f3728fe4218c990060ce745163c000d8412155e4a2551dea41b",
+    "decision": "accepted",
+    "reviewedFrames": 18,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 1107–1124 帧及本镜全部 18 帧。保留红边门旁贴近腿部的仰拍。神隐黑炎持圆头金色舞台棒，另一只手先向镜头张开，再落至腰边，穿过身前并随身体转向画面左侧。调整同一模型输出的抽帧后，落手约在本镜第 4 帧，回转约在第 11 帧进入侧身，与原片相近。候选的腿部比例略大，手收在腰前结束，原片尾帧更向镜头侧展手。全镜造型及门框连续。",
+    "reviewedAt": "2026-11-26T13:20:00.646237+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S41-low-doorway-stance.png",
+      "sha256": "b42040c1df00778a7681df3c6079b8b4a3ed63f5a2d082f0621097a40176c72b",
+      "prompt": "One 16:9 hand-drawn anime storyboard frame. Match camera placement and stance from the first image ONLY, and the exact adult dark-haired officer, navy and gold First Empire uniform, warm room light and decorative golden baton from the second image. Extremely steep worm's-eye perspective from inches in front of his knees, close enough to cut off all boots and lower legs. Fully covered long ivory trousers rise large at the bottom, navy blue coat and gold shoulders at center, head small near the top center with tousled hair and slight surprise. His free palm opens on the right toward the lens, the other hand holds the previous image's plain solid tapered gold stage baton upright at the left. Use golden brown shadows with a close diagonal red-edged wooden door jamb across the left and a tan wooden wall and simple unlabeled rectangle on the right. Tight skewed basement framing, no full body, spotlight, neon lighting, theater, weapons, text, subtitles, or extra figures.",
+      "inputs": [
+        "S41-original-low-stance.png",
+        "S40-left-foreground-baton.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S41.mp4",
+    "inputSha256": "46cd39ed12fd50afa3c7814f6809abbd2638dd79c2fb3672fc62477c06348d75",
+    "preRetimeCutSha256": "d4b23a74e52f893c36308ce7f0e93df586333f264868f256a69fe7d6bd49a661",
+    "outputSha256": "b42a245a4a35f97fbd7c7aed609f2dae82c78b7b201de3286588df7c6454ea65",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      24,
+      49,
+      57,
+      64,
+      70,
+      76,
+      80,
+      85,
+      90,
+      94,
+      98,
+      102,
+      107,
+      111,
+      114,
+      117,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,24)+eq(n\\,49)+eq(n\\,57)+eq(n\\,64)+eq(n\\,70)+eq(n\\,76)+eq(n\\,80)+eq(n\\,85)+eq(n\\,90)+eq(n\\,94)+eq(n\\,98)+eq(n\\,102)+eq(n\\,107)+eq(n\\,111)+eq(n\\,114)+eq(n\\,117)+eq(n\\,119),setpts=N/(24*TB)",
+    "reason": "Resample the generated shot so the opening palm drops, then crosses the waist and turns on the source beat.",
+    "coveredFrames": 18,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T13:19:58.852052+00:00"
+  }
+}
