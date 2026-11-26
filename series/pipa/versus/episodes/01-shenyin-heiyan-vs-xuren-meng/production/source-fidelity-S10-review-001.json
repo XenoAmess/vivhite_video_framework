@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S10",
+  "startFrame": 273,
+  "endFrame": 294,
+  "attempt": 1,
+  "jobId": "video_gen_5c71fe54bef84b28a7ce3fa90cd1a67a:openai",
+  "requestSha256": "68dbc48c627cb0076c3012183b215ee03233468445fe1e52477e115f39b25629",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Retain the original low rear angle, ceiling light, padded side panels and floor. Match the squat, hand lift and forward bend in that order. The red cape follows the body and leaves both hands visible for the following cut. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. The ordered source-frame edits are <Picture 2> at source frame 293. The added source frame represents the low rear ending, immediately before the next shot.",
+  "seed": 1234,
+  "rawSha256": "37d479cb89f999255deeb4f74a02cd149c8c32f322ea2ccd0b64049b591de36d",
+  "cutSha256": "2c686cf757d3254d03784ed2c8a49bb0d6b807b7bd64b7735a46136e7571919c",
+  "review": {
+    "cutSha256": "2c686cf757d3254d03784ed2c8a49bb0d6b807b7bd64b7735a46136e7571919c",
+    "requestSha256": "68dbc48c627cb0076c3012183b215ee03233468445fe1e52477e115f39b25629",
+    "originalSha256": "9fcfcdfd799b1d7e0b0691d6c04e2555b162f5a1bd208497ff912607cb643da6",
+    "decision": "rejected",
+    "reviewedFrames": 21,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 273–293 帧及新版候选全部 21 帧。准确保留低机位、地板、圆顶灯、木门和两侧墙板，也保留抬手。原片起镜身体一直背对镜头，仅过肩回看，候选起始和抬手时却面对镜头，临近切点才转为背面。退回，分别使用与原片身体朝向一致的背身起镜及前倾尾部构图。",
+    "reviewedAt": "2026-11-26T19:05:33.579271+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S10",
+      "sourceFrame": 293,
+      "prompt": "Replace only the specified actor appearance and visible costume in image one, a single frame from a fictional animated film. Keep the exact original widescreen crop, pose, placement, subject scale, shallow or deep focus, set geometry, reflections and light. Match the source animated 3D material and dim red/ochre color. No new graphics or content. Replace the original single fully clothed adult in the nonsexual comedy choreography with the long-haired red-hooded performer in image two. Match the exaggerated forward lean and original low rear camera. Keep both legs covered, both hands in front of the camera as shown, and let the gold-trimmed red cape fall along the sides so both hands and knee positions remain legible. Exact dark panes, amber circle of ceiling light, wooden door, debris and white padded panels, with no set changes.",
+      "inputs": [
+        "anchor-originals/S10-source-0293.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ],
+      "sourceStillSha256": "43e03f355e4b2c27aa6937715c36caa183280d900cfe93b531edf242ae07c855",
+      "file": "S10-source-edit-0293.png",
+      "sha256": "aefde91f9b37afc15c53e0b1dc74e1703c96c06373506dc98b47b22b8c46f1d1"
+    }
+  ],
+  "followUp": {
+    "prompt": "Edit only the original dancer in <Video 1>. The clip controls the exact continuous mock-dance movement, camera, timing and scene. <Picture 1> gives the fully clothed crimson-hooded blonde performer. Begin with the BODY ALWAYS FACING AWAY from the camera in the low squat of <Picture 2>. The lens sees the back of the hooded cloak and two bent legs, with only a little face turned over the shoulder. Follow the one hand rising and sweeping from the source, then the actual rise and forward lean with their back still toward camera. <Picture 3> gives the matching low rear view at the end. Keep the same low angle, ceiling circle light, dark panels, debris, doorway and shadows all the way through the shot. The original actions and their direction must occur at the same times. One performer, right arm and left arm with recognizable gloves, no new cut, no frontal torso at any time, no added staging, words or dialogue.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T19:05:33.800105+00:00",
+    "images": [
+      {
+        "name": "S10-source-rear-0273.png",
+        "sha256": "b2dc3ca46c359356626ea39dd1bb78adc338785a434f4d5f4964041821adfbcb",
+        "imagePrompt": "Replace the one fully dressed adult dancer in the first frame of this fictional stylized 3D film, preserving its very low view and dim set exactly. The figure's BACK faces the camera in a wide squat, knees bent with one toward the right; the head only looks back over a shoulder so a little face is visible above the back. The camera must continue seeing the back of the costume and red hood, not the front chest or a frontal pose. Put the crimson hood, blonde hair and gold-lined cape from image two on the same adult body with dark long trousers, gloves, red beads and one left shoulder ornament. Let the cape fall down one side to keep the source elbow, bent legs and black boots visible. The third image clarifies the back structure of this costume, ignoring its pose and room. Preserve the first source angle, shot's exact shape, red edging, acoustic panels, floor and side pads. No extra person or objects."
+      },
+      {
+        "name": "S10-source-edit-0293.png",
+        "sha256": "aefde91f9b37afc15c53e0b1dc74e1703c96c06373506dc98b47b22b8c46f1d1",
+        "imagePrompt": "Replace only the specified actor appearance and visible costume in image one, a single frame from a fictional animated film. Keep the exact original widescreen crop, pose, placement, subject scale, shallow or deep focus, set geometry, reflections and light. Match the source animated 3D material and dim red/ochre color. No new graphics or content. Replace the original single fully clothed adult in the nonsexual comedy choreography with the long-haired red-hooded performer in image two. Match the exaggerated forward lean and original low rear camera. Keep both legs covered, both hands in front of the camera as shown, and let the gold-trimmed red cape fall along the sides so both hands and knee positions remain legible. Exact dark panes, amber circle of ceiling light, wooden door, debris and white padded panels, with no set changes."
+      }
+    ]
+  }
+}
