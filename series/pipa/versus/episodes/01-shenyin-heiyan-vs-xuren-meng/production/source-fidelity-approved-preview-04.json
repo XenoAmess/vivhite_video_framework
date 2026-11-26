@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "vivhite-pipa-approved-shots-preview-1",
+  "createdAt": "2026-11-26T19:16:03.037797+00:00",
+  "artifact": {
+    "sha256": "142c0698bf9f074ab76b78c111775bee080a110317b99d5cbcd2bad1b670ebc7"
+  },
+  "pictureSize": "1344x768",
+  "fps": 24,
+  "acceptedShots": 4,
+  "totalPlannedShots": 48,
+  "frames": 111,
+  "totalPlannedFrames": 1478,
+  "seconds": 4.625,
+  "intervals": [
+    {
+      "sourceFrames": [
+        0,
+        40
+      ],
+      "previewFrames": [
+        0,
+        40
+      ]
+    },
+    {
+      "sourceFrames": [
+        129,
+        158
+      ],
+      "previewFrames": [
+        40,
+        69
+      ]
+    },
+    {
+      "sourceFrames": [
+        254,
+        273
+      ],
+      "previewFrames": [
+        69,
+        88
+      ]
+    },
+    {
+      "sourceFrames": [
+        294,
+        317
+      ],
+      "previewFrames": [
+        88,
+        111
+      ]
+    }
+  ],
+  "soundtrackSha256": "eaf0822839c2d381f48f73b3015e67f659f9c63a6ae3baa3be1730968dab46fb",
+  "audioFadeAtOmittedIntervalsMilliseconds": 12,
+  "completeAudioVideoDecode": true,
+  "decodedPictureMatchesEveryAcceptedFrame": true,
+  "verifiedPresentationClock": true,
+  "shots": [
+    {
+      "shot": "S01",
+      "attempt": "attempt-001",
+      "sourceFrames": [
+        0,
+        40
+      ],
+      "cutSha256": "4fa4cedd0b9552a8cb344f02247471c4acec54b82e7757cba88ca377ed2296e3",
+      "requestSha256": "42804c712543d1825275583f60fc607c07218a90fbe01d875a466d2a9b50084c",
+      "originalSha256": "b57da5f8a7493ecc68968dd1767e217cf80c91b35ad038504b1069f0b2c8640d"
+    },
+    {
+      "shot": "S05",
+      "attempt": "attempt-001",
+      "sourceFrames": [
+        129,
+        158
+      ],
+      "cutSha256": "fce14f048af1887c0bbdb90d38984712235b3ffaa9517d9814d493a34909a527",
+      "requestSha256": "3bcbf3690aa2c7b8334ef97621c952acca3ff2bef796359aba067d4540c5d117",
+      "originalSha256": "8ff46e0dccdb7107f18898318b579dcbb0e81a7567a157df0bb21006c3f8ad0c"
+    },
+    {
+      "shot": "S09",
+      "attempt": "attempt-001",
+      "sourceFrames": [
+        254,
+        273
+      ],
+      "cutSha256": "21e288b752c815672226f520720509a6078bff7aad71e34aae0c313f11e8174f",
+      "requestSha256": "009872b4a16a1efc975f2a948b760401a387b700bd13dda6acf40c4506c16ac4",
+      "originalSha256": "9632b53013e1466e7d00d316cdb4de60170f4dbbe56fdcf304b6d005d716ae73"
+    },
+    {
+      "shot": "S11",
+      "attempt": "attempt-001",
+      "sourceFrames": [
+        294,
+        317
+      ],
+      "cutSha256": "394d516fd5ca7e806c6559a9d34aae64067eae0d05acbb533be5bcd6945ef114",
+      "requestSha256": "cf80922a441cbb17daefd1ecc3166f7d4850413a1e8fda6b48f11dd5b450177d",
+      "originalSha256": "d94c63a1bc1f964d68094eb21d5af6d0be44de2736605bdd8d0d5bbed597a902"
+    }
+  ],
+  "outputFile": "pipa-768p-approved-preview.mp4"
+}
