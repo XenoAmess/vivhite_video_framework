@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S35",
+  "startFrame": 878,
+  "endFrame": 946,
+  "attempt": 2,
+  "jobId": "video_gen_939fda7c82cf4f8e988ec36932aa5934:openai",
+  "requestSha256": "9e5a1cb569ccab1260e185b4f12fa9821ddc490138457229a552943a04dfccd2",
+  "renderPrompt": "One continuous dynamic anime camera take, <Video 1> tells the whole dance order and changing floor-level lens. <Picture 1> is the exact blond crimson-hooded performer and outfit. Start in the room wide from behind, both booted feet seen and arms spreading. Step left and right with knees bending, cape sweeps around the back while the lens comes near, then the dancer rotates to face diagonally toward camera and finishes in a wide stance, pointing one gloved hand well into the RIGHT foreground. <Picture 2> is the required last angle, distance, cape silhouette and near hand cue. Preserve this change from rear full-body to right-foreground gesture with the continuous wooden-room setting, not a static pointing portrait. One person, no extra cut, opaque foreground blob, realistic weapon, text or dialogue.",
+  "seed": 1235,
+  "rawSha256": "bc73ddcbfa2f9b75d85fe2bd324acff213af89f53002aa22be0a8fbc82b101ff",
+  "cutSha256": "2b12fc0eb082e0fb1973d327ebbb03cd2c112d1909ee623697b18758482e4252",
+  "review": {
+    "cutSha256": "2b12fc0eb082e0fb1973d327ebbb03cd2c112d1909ee623697b18758482e4252",
+    "requestSha256": "9e5a1cb569ccab1260e185b4f12fa9821ddc490138457229a552943a04dfccd2",
+    "originalSha256": "04058cdab3d258eb44ace786d8eafe7a0967472df7afafabaedb596c5219a6d1",
+    "decision": "accepted",
+    "reviewedFrames": 68,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 878–945 帧，共 68 帧。虚人梦以背身全身起镜，张臂、交叉移步、披风随转身展开，从背面低机位推近并转到正面，最后用一只手明确指向画面右前景。最后伸指与原片节拍相差约一帧，手部夸张近大远小，木屋、破损墙边和粉椅持续可见。原片中段一段短促腾跳改为较连续的移步，光效动作改为披风和角色动作；背身、转身与指向前景三阶段均保留。",
+    "reviewedAt": "2026-11-26T05:43:31.371460+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S35-pointing-dance-end.png",
+      "sha256": "22b655cd64d82e319f2a9f9786e3220872a8d48c26bcb95419693ba66f762c59",
+      "prompt": "One 16:9 anime storyboard keyframe for the end of a comic dance shot. Image 1 specifies the exact red-hooded outfit, red eyes, long golden hair, dark clothes and shoulder mask. Image 2 provides the medium-wide wood room camera and exaggerated final arm gesture only. One adult performer wearing the whole outfit, head and boots visible farther back in the middle of the frame with a playful determined face. They hold a wide planted dance stance and extend one gloved hand in a friendly pointing motion past the viewer to screen right. Let the hand look larger than the face through wide-lens foreshortening, red cloak sweeping behind. Rose chairs at the sides, dark warm wooden stage and a doorway to a deeper room. Clean cel shading. No other people, weapons, foreground graphic symbols or words.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/xuren-meng.png",
+        "S35-motion-calibration-source.png"
+      ],
+      "usedForRetry": true
+    }
+  ]
+}

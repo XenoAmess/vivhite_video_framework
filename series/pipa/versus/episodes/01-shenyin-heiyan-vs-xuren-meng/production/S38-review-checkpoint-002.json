@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S38",
+  "startFrame": 971,
+  "endFrame": 1063,
+  "attempt": 2,
+  "jobId": "video_gen_0122acd1c8d044e689d3c208808adaa6:openai",
+  "requestSha256": "893a02f5406767877f7f98eee6312174bf2bc8903770256094112828069e0e6a",
+  "renderPrompt": "A single continuous anime dance shot, use the camera and timing of <Video 1>. <Picture 1> gives the blond crimson-hooded performer, dark clothing, gold cloak lining and shoulder mask; <Picture 2> gives the wide canted scale of a step midway through the motion. Start close behind at floor height, then quickly pull out while staying behind or at the side. The dancer crosses and opens both arms and moves their weight from one boot to the other with broad, readable steps, briefly twisting their shoulders, cape resuming a red and gold silhouette behind and no second character. One leg reaches out visibly at the end while the same round amber light and rose chairs stay in the room. Do not hold the opening pose, insert another camera, add weapons, people, text or dialogue.",
+  "seed": 1235,
+  "rawSha256": "2dd043a28e0d5c94b7d62b0c62921b64d3e15a7ffb71b9066ad0a14b14078ce2",
+  "cutSha256": "48c0da72eb526f5221ac6744d484667ff16e35a7c174a8efa4776fee33bb1e9f",
+  "review": {
+    "cutSha256": "48c0da72eb526f5221ac6744d484667ff16e35a7c174a8efa4776fee33bb1e9f",
+    "requestSha256": "893a02f5406767877f7f98eee6312174bf2bc8903770256094112828069e0e6a",
+    "originalSha256": "a3fa0185a9ea0f99bcf41046fd6d162dc75f9c7303224adc279ebb3408304c52",
+    "decision": "rejected",
+    "reviewedFrames": 92,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原版第 971–1062 帧，共 92 帧。保留了暖木屋、低机位拉远和披风摆动。原镜中段有明显收臂并交叉的动作，多次转向、交换支撑脚，末段将一只靴子举向左前景再落下。候选大部分时间保持双臂横展，回转与收臂幅度不足，末段缺少伸腿入左前景。左右两肩一度都出现面具，偏离概念图，退回重做。",
+    "reviewedAt": "2026-11-26T06:01:59.835095+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S38-boot-left-end.png",
+      "sha256": "5246b695483cda8cdf3b1748a688e235034ae42e5ed39a010905678681a7c708",
+      "prompt": "One horizontal 16:9 keyframe in the cel-shaded anime style of Image 1. Keep its exact red hood and long gold-lined cape, blond hair, dark full trousers and flat boots, red beads, and just one ivory left-shoulder mask. Keep the same warm room with rose chair, amber circular ceiling lamp and dark torn wood arch. Image 2 is used ONLY to position the camera and set the full-body dance pose. View the dancer obliquely from behind, camera inches above the floor strongly tilted up. One planted boot in the lower-right supports the body. The other leg extends long toward the LOWER LEFT foreground with the boot visibly lifted a small distance above the boards, nearer to camera and larger. Arms now lowered beside the body, one glove close to the extended thigh, other at waist. The hooded dancer balances and cape falls back and to one side, never covering the foreground boot. Entire character from hood to boots recognizable, same costume, warm ceiling lighting with no impact sparks, text, other person or weapon.",
+      "inputs": [
+        "S38-low-cape-step.png",
+        "S38-original-left-boot-end.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Animate one continuous cel-shaded anime dance shot, using <Video 1> for all camera movement, rhythm and pose changes. <Picture 1> is the exact blond adult in a red hood and red-gold cloak, with only one ivory mask on the dancer's left shoulder. Start close at floor height from behind with arms down and the red cloak close to camera. Then rapidly pull out as the dancer takes wide left and right steps, briefly opens the arms, bends a knee, and shifts the supporting foot. At about two thirds of the shot, rotate the shoulders and pull BOTH forearms in and cross them close to the chest as in <Picture 2>, keeping the whole body visible under the round ceiling light. Clearly release the crossed arms and lower both hands. In the last fifth, keep the camera low and canted as the dancer balances on one boot, raises the opposite boot clearly toward the LOWER LEFT foreground exactly as <Picture 3>, then lowers it near the cut. The cloak follows behind and must leave the legs visible. One dancer and one continuous warm wood room with old rose chairs, no added cut, weapons, impacts, duplicate mask, text or dialogue.",
+    "seed": 1236,
+    "plannedAt": "2026-11-26T06:04:11.373731+00:00",
+    "images": [
+      {
+        "name": "S38-crossed-forearms-mid.png",
+        "sha256": "23c7de2269ad3fb637e21c6c01b82c71ac0cc576f19c45cc43251aece8ccc7d9",
+        "imagePrompt": "One horizontal 16:9 hand-drawn anime storyboard keyframe for the middle of a harmless dance. Image 1 defines the exact adult red-hooded performer and the warm wood room with a big round amber ceiling lamp, rose chairs and the same dark damaged arch behind. Image 2 is only the new stance and low camera position. Same red cloak with gold lining, long blond hair, dark full trousers, gloves, beaded wrists, boots, and only one ivory mask on the performer's left shoulder. Camera VERY low in the wood room aimed up at a three-quarter rear view. The character is rotating on two near-together feet and has just brought BOTH elbows inward and bent both forearms in front of the chest, briefly crossing the wrists as part of a turning dance, not extending the arms sideways. Show the clear bent elbow edges at both sides of the torso. Cape pulls toward one side, leaving boots visible, hood and face turned mostly away. A single subject, no realistic weapon, lighting impacts, text or panels."
+      },
+      {
+        "name": "S38-boot-left-end.png",
+        "sha256": "5246b695483cda8cdf3b1748a688e235034ae42e5ed39a010905678681a7c708",
+        "imagePrompt": "One horizontal 16:9 keyframe in the cel-shaded anime style of Image 1. Keep its exact red hood and long gold-lined cape, blond hair, dark full trousers and flat boots, red beads, and just one ivory left-shoulder mask. Keep the same warm room with rose chair, amber circular ceiling lamp and dark torn wood arch. Image 2 is used ONLY to position the camera and set the full-body dance pose. View the dancer obliquely from behind, camera inches above the floor strongly tilted up. One planted boot in the lower-right supports the body. The other leg extends long toward the LOWER LEFT foreground with the boot visibly lifted a small distance above the boards, nearer to camera and larger. Arms now lowered beside the body, one glove close to the extended thigh, other at waist. The hooded dancer balances and cape falls back and to one side, never covering the foreground boot. Entire character from hood to boots recognizable, same costume, warm ceiling lighting with no impact sparks, text, other person or weapon."
+      }
+    ]
+  }
+}
