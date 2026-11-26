@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S08",
+  "startFrame": 206,
+  "endFrame": 254,
+  "attempt": 3,
+  "jobId": "video_gen_a06e2688c65d46b380e5da0043e50fbe:openai",
+  "requestSha256": "18b9fff6ac24a15dc17e099285653b01e8ba93cba54dbb3db88b29a90a8fb802",
+  "renderPrompt": "Edit the one continuous original stylized 3D comedy shot in <Video 1>. <Picture 1> shows the opening close composition with the red-hooded adult's reacting face at center-right and the navy sleeve and existing dark prop crossing the near-left foreground. Keep that original hand, prop silhouette, focus and crop through the same portion as in the video. Follow the actual source motion: the red-hooded figure first faces camera and changes expression, then turns away as the camera widens, passing through the pose of <Picture 2>. Keep the same actor with black full-length trousers, red hood, draped cape and both gloves. Continue at the original time into the distant room composition of <Picture 3>. Keep precisely the original scene, room geometry, lens path, exposure, reflection, movement direction and timing of the existing animated light and airborne debris. Keep the source cut unbroken. The officer is only a cropped near-left cuff and hand where visible originally. The three pictures are before, during, and after the widening motion, with the same identities on the original camera track. No new scene detail, editorial cut, second visible face, added objects, text or speech.",
+  "seed": 1236,
+  "rawSha256": "98c4beb2c40aa67e7d365859d6f8a3b22fe13b16cbc37e68b669f1dc638fa88a",
+  "cutSha256": "27c0fbc3bc37d2b41e18638ee1a12946232109e0feec4ee14a97893e2a0bc470",
+  "review": {
+    "cutSha256": "27c0fbc3bc37d2b41e18638ee1a12946232109e0feec4ee14a97893e2a0bc470",
+    "requestSha256": "18b9fff6ac24a15dc17e099285653b01e8ba93cba54dbb3db88b29a90a8fb802",
+    "originalSha256": "8293b8da8482eaa808455e85c4e930bc2a8c3ea0c59d8c35d6e00c85034c33d4",
+    "decision": "accepted",
+    "reviewedFrames": 48,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 206–253 帧及最终全 48 帧。第三版从左前景保留原片暗色枪形道具和持道具手，神隐黑炎可见袖口为深蓝金边，虚人梦在近景转身、拉开、从远处重新入画，红兜帽和披风连贯。以同一次渲染取帧对齐原片第 227 帧的首个亮闪及近远变化。源片第 234–241 帧时脸与躯体被碎片、光尘遮住，使用这 8 帧原片特效画面保持同一次穿过墙面的运动，保留可见前景手、道具和原有颗粒。之后接同一渲染的远景。前几帧虚人梦比原片较早张嘴，收尾动作受红披风遮挡，远处散落碎片的个别位置有差别。全镜呈现原转身、道具、亮闪、墙面通过与远处收势，未新增镜头。",
+    "reviewedAt": "2026-11-26T21:29:31.095554+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S08",
+      "sourceFrame": 211,
+      "sourceStillSha256": "3f632631479667e839a2d804ef3278f7672dbffdadc2f8cfb5639f475c0c55a0",
+      "file": "S08-source-edit-0211.png",
+      "sha256": "3b69363ee943fcd443af483bba3b0d0fb3107941f07cb002e4b54f014ccf3c41",
+      "prompt": "Edit image one, keeping this exact tightly cropped stylized 3D comedy stage image. Lock the entire dark, blurry handled prop and the fingers at left as they appear in the first image, retaining the original cropping, size, position and focus. The only edit in that left region is the existing dark sleeve, changed to the navy coat cuff detail from image two. Match the original dim room, shadow, reddish side lighting, same perspective and face size. Replace the center-right actor with the adult blond red-hooded performer from image three in the exact same stance, open-mouthed reaction and viewpoint. Keep the fully dressed costume's dark underlayer, one pale shoulder mask and low-key red cloth. Preserve all objects, hands and positions from the first still. No extra actor, objects, graphics, or changed camera.",
+      "inputs": [
+        "anchor-originals/S08-source-0211.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    },
+    {
+      "shot": "S08",
+      "sourceFrame": 224,
+      "sourceStillSha256": "89d122810f5b569f3ad89b59b3bb2f2d31041cefa7dd19a38fa9e6030eb287bf",
+      "file": "S08-source-edit-0224.png",
+      "sha256": "f00686573ca9aba74bffd948aedeba3db4e63d8d69eeea45f7b66520dfd26943",
+      "prompt": "Restyle only the two visible costumes in this single frame of a fictional fully clothed stylized 3D stage comedy. Keep the exact original frame angle and crop, dim amber ceiling, botanical panel on left, and all existing foreground objects and hand shapes at left physically unchanged. Replace only the foreground sleeve cuff with the subtle navy-and-gold trim from image two. Further away, the fully clothed actor's back faces the low camera while turning from the source pose. Apply the red hood, trim, gloves, and red cape from image three, with black full-length trousers. Let the red fabric follow the same motion and fall over the silhouette naturally. Keep the same two visible positions and existing edge blur and shadows. The face remains out of shot in this camera crop. Preserve the source staged composition and do not invent accessories, new objects, lines or staging.",
+      "inputs": [
+        "anchor-originals/S08-source-0224.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    },
+    {
+      "shot": "S08",
+      "sourceFrame": 253,
+      "prompt": "Replace only the specified actor appearance and visible costume in image one, a single frame from a fictional animated film. Keep the exact original widescreen crop, pose, placement, subject scale, shallow or deep focus, set geometry, reflections and light. Match the source animated 3D material and dim red/ochre color. No new graphics or content. Image two gives the adult fair-haired actor in the crimson hood and cloak. They are small, deep at the far end of the room in the same spread-knee stance as the original actor, centered slightly right near the door. Red cloak extends just around their distant silhouette. Keep the door with its three existing symbols, irregular opening, chairs, dark floating fragments, wood floor and warm smoky light in their exact original locations. Keep this wide spatial composition and figure size.",
+      "inputs": [
+        "anchor-originals/S08-source-0253.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ],
+      "sourceStillSha256": "73469c57eb908564cda2b8f07a80c6819db0da2a8e5f99f7ff3a40b16cfeb2fb",
+      "file": "S08-source-edit-0253.png",
+      "sha256": "558760f87947b26224bb0f1a110906c7a5c0a835ea67a1b3fec84774c6972364"
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S08.mp4",
+    "inputSha256": "c6ae40c53d2a3daca6158664a1c671d6e81ece83a8576c8afe0d2cf5feca8a24",
+    "sourcePlateSha256": "8293b8da8482eaa808455e85c4e930bc2a8c3ea0c59d8c35d6e00c85034c33d4",
+    "selectedModelFramesBeforePlate": [
+      0,
+      5,
+      9,
+      14,
+      19,
+      23,
+      26,
+      28,
+      31,
+      35,
+      38,
+      41,
+      45,
+      47,
+      50,
+      53,
+      55,
+      58,
+      61,
+      63,
+      66,
+      69,
+      71,
+      73,
+      76,
+      78,
+      81,
+      82
+    ],
+    "originalEffectPlateShotFrames": [
+      28,
+      36
+    ],
+    "originalEffectPlateTimelineFrames": [
+      234,
+      242
+    ],
+    "selectedModelFramesAfterPlate": [
+      84,
+      87,
+      88,
+      90,
+      92,
+      95,
+      98,
+      102,
+      106,
+      110,
+      115,
+      119
+    ],
+    "filter": "[0:v]split=2[model_before][model_after];[model_before]select=eq(n\\,0)+eq(n\\,5)+eq(n\\,9)+eq(n\\,14)+eq(n\\,19)+eq(n\\,23)+eq(n\\,26)+eq(n\\,28)+eq(n\\,31)+eq(n\\,35)+eq(n\\,38)+eq(n\\,41)+eq(n\\,45)+eq(n\\,47)+eq(n\\,50)+eq(n\\,53)+eq(n\\,55)+eq(n\\,58)+eq(n\\,61)+eq(n\\,63)+eq(n\\,66)+eq(n\\,69)+eq(n\\,71)+eq(n\\,73)+eq(n\\,76)+eq(n\\,78)+eq(n\\,81)+eq(n\\,82),setpts=N/(24*TB),setsar=1[first];[1:v]trim=start_frame=28:end_frame=36,scale=1344:768:flags=lanczos,format=yuv420p,setsar=1,setpts=N/(24*TB)[bridge];[model_after]select=eq(n\\,84)+eq(n\\,87)+eq(n\\,88)+eq(n\\,90)+eq(n\\,92)+eq(n\\,95)+eq(n\\,98)+eq(n\\,102)+eq(n\\,106)+eq(n\\,110)+eq(n\\,115)+eq(n\\,119),setpts=N/(24*TB),setsar=1[last];[first][bridge][last]concat=n=3:v=1:a=0,setpts=N/(24*TB)[v]",
+    "coveredFrames": 48,
+    "previewSha256": "27c0fbc3bc37d2b41e18638ee1a12946232109e0feec4ee14a97893e2a0bc470",
+    "recordedAt": "2026-11-26T21:29:30.472554+00:00",
+    "preRetimeCutSha256": "ba2a348fe8a3ef5b73460f4c3852f81a0c2143a088690efe53ed1d986feaf12e",
+    "outputSha256": "27c0fbc3bc37d2b41e18638ee1a12946232109e0feec4ee14a97893e2a0bc470",
+    "tool": "ffmpeg",
+    "reason": "Align the original front-to-rear turn and light, and retain the original debris-obscured frames of the continuous camera move.",
+    "nativeSize": "1344x768",
+    "fps": 24
+  }
+}
