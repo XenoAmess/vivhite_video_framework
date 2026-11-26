@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S48",
+  "startFrame": 1256,
+  "endFrame": 1296,
+  "attempt": 1,
+  "jobId": "video_gen_45791ce71dea4ec995b83156c6bdc350:openai",
+  "requestSha256": "c472e435c38f61f9a4484316d15595bf9789783d57d83aeef219422aa5a8c1ed",
+  "renderPrompt": "One continuous anime shot with <Video 1> supplying the changing side angle by the same warm patterned folding screen. <Picture 1> is the dark-haired officer in navy and gold. <Picture 2> is the red-hooded blond performer in gold-lined cape. <Picture 3> provides their spatial positions and the room. Begin with the officer near the left corner as the performer passes to the right. The officer turns his face away, lifts one open hand near his eyes in surprise and slides down, while the red-hooded performer steps into his view from the right, leaning forward and pulling the cape with the turn. Follow the camera's track, keep both distinct silhouettes and matching adult proportions. No other person, cut, weapon, typography or dialogue.",
+  "seed": 1234,
+  "rawSha256": "9f812fe781d033ae4d8d8d56d113a3e9962eb6e073090529f3fe7f683148197d",
+  "cutSha256": "efd2e8bbca204eb6621aba1dadcd14da72810470d5ed55f62e7cdc174f4762a9",
+  "review": {
+    "cutSha256": "efd2e8bbca204eb6621aba1dadcd14da72810470d5ed55f62e7cdc174f4762a9",
+    "requestSha256": "c472e435c38f61f9a4484316d15595bf9789783d57d83aeef219422aa5a8c1ed",
+    "originalSha256": "a9d269630e17d8079fc683a346f09a36d5203c9e7f2d109453ed392f147159c5",
+    "decision": "rejected",
+    "reviewedFrames": 40,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原版第 1256–1295 帧共 40 帧。两人造型和屏风位置正确，右侧虚人梦有迈步、转身及前倾。左侧神隐黑炎在原片由靠近镜头坐低并向侧面滑落，末段才撑回；在候选中从起镜就坐好，只有小幅抬手和后仰。虚人梦的近身转动也推迟到约一半之后。双人动作的前后关系是此镜的主要内容，整镜退回。",
+    "reviewedAt": "2026-11-26T07:56:43.128784+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S48-screen-raised-knee-start.png",
+      "sha256": "80f180f04203252d0fe841b78321b7e8308611b247287174ed09f6a594f43b42",
+      "prompt": "One 16:9 cel-shaded anime storyboard frame at the START of the two-person movement in the attached room. Same two adults, warm wood floor, amber palm-pattern folding-screen left, dark hallway going back to the right, same navy-gold uniform and opaque red cloak costume. Change the camera to slightly above the shoulder of the navy officer and behind him. The officer is CLOSE LEFT with his back visible and face turned to the right. He is still UP on one bent knee with his torso leaning forward, ready to lose his balance backward, not resting against the screen or sitting. One open empty hand extends a little to the right, below shoulder level. In the RIGHT MIDGROUND the red-hooded blond has their back three quarters to camera, shoulders upright, one foot already moving to the right. Their crimson cape stays close around them, not obscuring the officer. Both visible and separate, no props, weapons, pointing, text or effects. Amber patterned screen and receding warm hallway clearly visible between the figures.",
+      "inputs": [
+        "S48-side-screen-two-person.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Animate one continuous anime shot using <Video 1> for the camera lowering and the two separate bodies moving in the same frame. <Picture 1> is the navy and gold officer, <Picture 2> is the red hooded blond performer, and <Picture 3> is the exact opening arrangement. At the start the navy officer is close at screen LEFT on a raised knee, back in three quarter view and torso leaning forward. The crimson performer is already upright to the right near the amber patterned folding screen. Within the first third, the red cloaked figure steps past and starts a forward bend on the RIGHT as the officer recoils to the LEFT. Show the officer's shoulder and torso descend and slide down beside the screen, going briefly very low, then visibly pushing one palm against the floor and raising his head a little by the end. He must NOT be in the seated or fallen pose throughout. The crimson performer continues their weight shift and tilt on the right, separate from him, as the camera lowers. Warm wood hallway, only these two people, empty hands throughout, no extra cut, weapon, text or dialogue.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T07:58:08.204282+00:00",
+    "images": [
+      {
+        "name": "S48-screen-raised-knee-start.png",
+        "sha256": "80f180f04203252d0fe841b78321b7e8308611b247287174ed09f6a594f43b42",
+        "imagePrompt": "One 16:9 cel-shaded anime storyboard frame at the START of the two-person movement in the attached room. Same two adults, warm wood floor, amber palm-pattern folding-screen left, dark hallway going back to the right, same navy-gold uniform and opaque red cloak costume. Change the camera to slightly above the shoulder of the navy officer and behind him. The officer is CLOSE LEFT with his back visible and face turned to the right. He is still UP on one bent knee with his torso leaning forward, ready to lose his balance backward, not resting against the screen or sitting. One open empty hand extends a little to the right, below shoulder level. In the RIGHT MIDGROUND the red-hooded blond has their back three quarters to camera, shoulders upright, one foot already moving to the right. Their crimson cape stays close around them, not obscuring the officer. Both visible and separate, no props, weapons, pointing, text or effects. Amber patterned screen and receding warm hallway clearly visible between the figures."
+      }
+    ]
+  }
+}
