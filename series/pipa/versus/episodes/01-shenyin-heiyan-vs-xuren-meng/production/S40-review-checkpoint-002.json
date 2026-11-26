@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S40",
+  "startFrame": 1078,
+  "endFrame": 1107,
+  "attempt": 2,
+  "jobId": "video_gen_83c9f1b9c1fb4463811e7e678ab8bcd3:openai",
+  "requestSha256": "dd80e5bfef45f037bf1092bd8b05e7cc2275c996895cd982bab3b84d4b910064",
+  "renderPrompt": "One continuous canted low-angle anime take matching <Video 1>. <Picture 1> gives the dark-haired navy-and-gold officer. Begin with him standing above the camera, lifting his gaze and opening his mouth in a short comic reaction. His near arm then rises from below the LEFT edge and brings the harmless solid rounded golden baton upright very close to the lens. End with that hand and baton strongly foreshortened on the left and his face visible behind it near center-right like <Picture 2>. Maintain the same warm painted wood room, red side light and camera position. The frame's layering and the raising movement must change visibly. One person, no speed lines, added stage, cut, realistic weapon, text or dialogue.",
+  "seed": 1235,
+  "rawSha256": "97a73dcc52ee9c52623b2581dd9b09c45146f5e6635d7fd04235f78c42bc8a82",
+  "cutSha256": "a9258736a89540d4bef9f4ef7ae9f28edb357b84c2491792efff81b98a7cc2f0",
+  "review": {
+    "cutSha256": "a9258736a89540d4bef9f4ef7ae9f28edb357b84c2491792efff81b98a7cc2f0",
+    "requestSha256": "dd80e5bfef45f037bf1092bd8b05e7cc2275c996895cd982bab3b84d4b910064",
+    "originalSha256": "f11549a8e548a6f17c2167d0ee37970f3d8949ced089832a0856ced3dec36ad3",
+    "decision": "accepted",
+    "reviewedFrames": 29,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 1078–1106 帧及本镜全部 29 帧。保留木屋内的仰拍、神隐黑炎抬头张嘴、抬手从左下进入并在镜头前举起圆头金色舞台棒的连贯动作。等速候选的手约晚四帧入画，调整同一模型文件的抽帧后，袖口在本镜第 9 帧入画，左前景在第 13 帧举稳，与源片的关键动作相邻。尾段手和表情清晰可见，原片尾段的背景脸部更虚，人头后仰也更大。全镜角色、服装、木屋和拍摄方向连贯。",
+    "reviewedAt": "2026-11-26T12:01:03.695810+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S40-left-foreground-baton.png",
+      "sha256": "0f4b527bacaa60ae77ba4b66cde5fc82d39d0bb78db89066cdc6386cf41f3b23",
+      "prompt": "A single 16:9 anime storyboard keyframe. Image 1 supplies the exact dark-haired officer identity with navy coat edged in gold. Image 2 supplies only the tilted low angle, camera distance, expression and dim warm room. Image 3 supplies the harmless smooth solid gold baton. The officer is standing and looking upward with a comically surprised open mouth. On the left, one of his hands rises much closer to the low camera with a blurred rounded solid gold theatre baton held upright. Make the foreground hand clearly larger than his face by perspective, keep the officer's upper body and face behind it on the right. The baton resembles a single round wooden club with no mechanisms. Dim warm wood and muted red side light, crisp anime cel shading for the actor. Exactly one person, no stage curtain, speed lines, weapons, text or added graphics.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "S40-original-low-foreground.png",
+        "S05-baton-continuity.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S40.mp4",
+    "inputSha256": "fa2f66e84218dfa111d08209d3fa055f2111669c2b92fc002b6408dc42166bad",
+    "preRetimeCutSha256": "665a5b1cd4944cbd8dec1864d7874de4f6559f06572f88c278cf4ef9d9793647",
+    "outputSha256": "a9258736a89540d4bef9f4ef7ae9f28edb357b84c2491792efff81b98a7cc2f0",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      5,
+      11,
+      17,
+      23,
+      29,
+      36,
+      44,
+      51,
+      55,
+      59,
+      62,
+      65,
+      68,
+      71,
+      74,
+      77,
+      80,
+      83,
+      87,
+      91,
+      95,
+      99,
+      103,
+      107,
+      111,
+      115,
+      117,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,5)+eq(n\\,11)+eq(n\\,17)+eq(n\\,23)+eq(n\\,29)+eq(n\\,36)+eq(n\\,44)+eq(n\\,51)+eq(n\\,55)+eq(n\\,59)+eq(n\\,62)+eq(n\\,65)+eq(n\\,68)+eq(n\\,71)+eq(n\\,74)+eq(n\\,77)+eq(n\\,80)+eq(n\\,83)+eq(n\\,87)+eq(n\\,91)+eq(n\\,95)+eq(n\\,99)+eq(n\\,103)+eq(n\\,107)+eq(n\\,111)+eq(n\\,115)+eq(n\\,117)+eq(n\\,119),setpts=N/(24*TB)",
+    "reason": "Resample the generated shot so the left foreground lift reaches the source beat without changing its frame count or perspective.",
+    "coveredFrames": 29,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T12:01:02.991559+00:00"
+  }
+}
