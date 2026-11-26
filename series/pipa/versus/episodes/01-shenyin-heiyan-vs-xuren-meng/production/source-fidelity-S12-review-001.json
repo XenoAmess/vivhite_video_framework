@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S12",
+  "startFrame": 317,
+  "endFrame": 338,
+  "attempt": 1,
+  "jobId": "video_gen_7746374b07264cb2bbf3f7fdeb2a41a6:openai",
+  "requestSha256": "f364307a6be45fd066a1c396af31ca3b7db1d6f4692d7a2aa1a5c131638b7135",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the pink chair, left opening and right wall in their original positions and lighting. Follow the original push into the open-mouth expression, then the rapid pullback with the original lower foreground silhouette and arm movement. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> shows the peak open-mouth expression in the middle of this shot, at source frame 327.",
+  "seed": 1234,
+  "rawSha256": "0a0db44ed4af55efc9f53a1206bb3351d079c691619552ea22334e58948afdbb",
+  "cutSha256": "d4b08baddfdaf900b3a6b264270e225df1fdfe5f9bb762204124ecb1342f4250",
+  "review": {
+    "cutSha256": "d4b08baddfdaf900b3a6b264270e225df1fdfe5f9bb762204124ecb1342f4250",
+    "requestSha256": "f364307a6be45fd066a1c396af31ca3b7db1d6f4692d7a2aa1a5c131638b7135",
+    "originalSha256": "66607994b1836a0868bdc5b7720eed9dce6bdc80212b7fd34f6544a1c3d57ae6",
+    "decision": "rejected",
+    "reviewedFrames": 21,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 317–337 帧及候选全 21 帧。候选保留倾斜低机位、粉椅、门、墙面以及推近后拉远的动作。起镜约 10 帧虽然换上了深蓝金边制服，脸和头发仍是原片演员，直到推至特写才切换角色。尾段拉远后，下缘的深色虚化前景也没有跟随原片。退回。从第 317 帧制作黑炎已经入镜的广角构图，与第 327 帧的反应特写一起作为返工约束。",
+    "reviewedAt": "2026-11-26T19:33:37.738013+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S12-source-edit-0327.png",
+      "shot": "S12",
+      "sourceFrame": 327,
+      "prompt": "Change only the face, hair and visible collar of the adult animated actor in the first, canted head-and-shoulders frame. The second image supplies the navy-and-gold officer identity with tousled dark brown hair and blue-gray eyes. Preserve the exact off-center low-angle camera, greatly exaggerated open-mouth comic surprise, sideways glance, raised blurred hand at left and tan wall with blurry original placard. Match the original soft red light in the left shadow and warm ochre bounce at right. Same simple stylized 3D animated film textures and image crop. Keep the actual existing background and its depth; no new graphics or people.",
+      "sha256": "a28090be1f84f4be911441fe34bc32802f39eba9502f90c3238c242c7dea0372",
+      "inputs": [
+        "anchor-originals/S12-source-0327.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ],
+      "sourceStillSha256": "760fd54561f19a33f56d58751e76201db96d43414b61af94988b8ac98428f67f"
+    }
+  ],
+  "followUp": {
+    "prompt": "Replace the one seated adult actor in <Video 1> with the dark-haired navy-and-gold character shown in <Picture 1>. From the very first wide frame the seated actor already has this character's same brown hair, face, gold-trimmed coat and full-length ivory trousers. <Picture 2> establishes the edited opening wide view; <Picture 3> establishes the same actor at the peak reaction close-up. Keep this identity stable as the source camera pushes in and pulls back. Match <Video 1> continuously for the tilted low lens, camera timing, arm position and movement, expression progression, subject size, lighting, pink chair, door, wall papers, and original dark out-of-focus foreground along the lower edge at the beginning and end. The original video controls the room and the wall papers throughout. Keep exactly one visible seated adult in the same position and outfit, no new cut, graphics, words or dialogue.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T19:33:37.895275+00:00",
+    "images": [
+      {
+        "name": "S12-source-open-0317.png",
+        "sha256": "6992dd61bca5fb62fb4b5456c1edb3e8fc8b8a56f4393c0a72c0717f15841c80",
+        "imagePrompt": "Edit image one, a single frame of a fictional stylized 3D comedy. Preserve the original 16:9 crop, tilted low wide camera, perspective, figure scale and pose, floor, pink upholstered armchair, dark red doorway on the left and the beige wall with its two papers, all lighting, reflections and focus. The first frame of the shot should already show the fully clothed adult character from image two in place of the lone actor sitting in the chair. Use the character's tousled brown hair and face, navy long-sleeve coat with restrained gold trim and shoulder tabs, ivory full-length trousers and dark boots. Image three shows the same new actor rendered in the scene at a different camera distance, use it only to match the appearance and 3D materials. Keep the wide opening face small at the same point and the same open-mouth expression and raised hand as image one. Reproduce the scene's low camera, foreground blur and the occluded natural pose at the original proportions. Only one visible adult character, fully dressed, same armchair position and original lighting, no extra content or typography."
+      },
+      {
+        "name": "S12-source-edit-0327.png",
+        "sha256": "a28090be1f84f4be911441fe34bc32802f39eba9502f90c3238c242c7dea0372",
+        "imagePrompt": "Change only the face, hair and visible collar of the adult animated actor in the first, canted head-and-shoulders frame. The second image supplies the navy-and-gold officer identity with tousled dark brown hair and blue-gray eyes. Preserve the exact off-center low-angle camera, greatly exaggerated open-mouth comic surprise, sideways glance, raised blurred hand at left and tan wall with blurry original placard. Match the original soft red light in the left shadow and warm ochre bounce at right. Same simple stylized 3D animated film textures and image crop. Keep the actual existing background and its depth; no new graphics or people."
+      }
+    ]
+  }
+}
