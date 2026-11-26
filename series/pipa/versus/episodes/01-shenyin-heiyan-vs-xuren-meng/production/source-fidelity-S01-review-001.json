@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S01",
+  "startFrame": 0,
+  "endFrame": 40,
+  "attempt": 1,
+  "jobId": "video_gen_e395635a9b0a4c7c8bb77689f73e14f5:openai",
+  "requestSha256": "42804c712543d1825275583f60fc607c07218a90fbe01d875a466d2a9b50084c",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the opening face size and ambivalent glance. Follow the source pullback and change of focus. Retain the source dark gun silhouette entering on the left and the actor out of focus behind it at the last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the re-identified opening close-up; <Picture 3> is the re-identified final foreground composition.",
+  "seed": 1234,
+  "rawSha256": "417cdb7161286142e9f77190738fe7aca7b2fde89fcfe6fe24d82f134dc404c4",
+  "cutSha256": "4fa4cedd0b9552a8cb344f02247471c4acec54b82e7757cba88ca377ed2296e3",
+  "review": {
+    "cutSha256": "4fa4cedd0b9552a8cb344f02247471c4acec54b82e7757cba88ca377ed2296e3",
+    "requestSha256": "42804c712543d1825275583f60fc607c07218a90fbe01d875a466d2a9b50084c",
+    "originalSha256": "b57da5f8a7493ecc68968dd1767e217cf80c91b35ad038504b1069f0b2c8640d",
+    "decision": "accepted",
+    "reviewedFrames": 40,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 0–39 帧及新版全部 40 帧。保留正面脸部特写、沿原方向拉到粉椅前半身、道具进入左前景与前实后虚的顺序。片中深色枪形道具、红色反光、粉椅、墙上纸张的位置和原片接近。神隐黑炎的发型、蓝金军服与肩章从起镜到尾部都可辨。原片开头的眼神更夸张，候选双眼同向，尾段背景人物比原片略清晰。未见额外切镜、改换场景或道具。",
+    "reviewedAt": "2026-11-26T18:02:13.284117+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S01-source-edit-0000.png",
+      "shot": "S01",
+      "sourceFrame": 0,
+      "sha256": "720bc5b4bf12ef2f885e704640410502021497692abd09e950158601b60cf0d9",
+      "prompt": "Edit the first frame of a fictional animated film. Use its original camera, crop, lens, perspective, set, fabric and wall textures, floor, shadows and lighting as a fixed plate. Use the second image solely for the actor design. Paint only the actor (or their clothing and hand if partly visible) into the original frame in the same stylized 3D film look, with similar body proportions. Keep the source scene's contrast and color, and keep the camera framing almost pixel-for-pixel. No extra scenery, glamor lighting, graphics, speed lines, or captions. In this tight initial close-up, substitute the original actor's face, dark-brown tousled hair, blue-gray eyes and blue-gold collar with the identity from image two. Keep the understated sly glance, face placement, eye line and remaining original background unchanged. Same warm dim practical light and horizontal framing.",
+      "inputs": [
+        "anchor-originals/S01-source-0000.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ],
+      "sourceStillSha256": "59079fea9fdab303e210ccc88164c60b3ef5e8e96448e60ad7169346d4a9faef"
+    },
+    {
+      "file": "S01-source-edit-0039.png",
+      "shot": "S01",
+      "sourceFrame": 39,
+      "sha256": "7408ced644105a9daa03c0df500b69d2bed06873c34479b7609689edd8356047",
+      "prompt": "Edit the first frame of a fictional animated film. Use its original camera, crop, lens, perspective, set, fabric and wall textures, floor, shadows and lighting as a fixed plate. Use the second image solely for the actor design. Paint only the actor (or their clothing and hand if partly visible) into the original frame in the same stylized 3D film look, with similar body proportions. Keep the source scene's contrast and color, and keep the camera framing almost pixel-for-pixel. No extra scenery, glamor lighting, graphics, speed lines, or captions. Keep the original dark handgun-shaped film prop in the original great near-foreground, in the same shape, angle, scale and photographic blur as image one. Replace the actor in the back with the adult navy-and-gold officer in image two, following exactly the source lean, pose and gaze. Retain the pink chair, the posters on the same wall, the existing depth of field and dark edges. This is one animated story frame and the prop is treated as a silhouette already in the supplied image.",
+      "inputs": [
+        "anchor-originals/S01-source-0039.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ],
+      "sourceStillSha256": "a3ecb1e3e8a39a3154a1e206ed17af191c2dce85ef7a758e74b405d5f62d4510"
+    }
+  ]
+}
