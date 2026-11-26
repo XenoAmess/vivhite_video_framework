@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S34",
+  "startFrame": 855,
+  "endFrame": 878,
+  "attempt": 1,
+  "jobId": "video_gen_8241424468fe408f863371ccc0a56224:openai",
+  "requestSha256": "4ecb1239286c3788cafc2dca2d374b10f82ea8ea01df013b82e3562456e99951",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Tilted side view of the navy officer sweeping an arm across the screen, with a broad amber theatrical light sweep. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "785d12574e6e76ac0558183d1af05dc018fde7243572c2513fe4b37e23482168",
+  "cutSha256": "8a3fb47182e7fe695b2507c1dd525e494bd41968849816680c3e8e04f8b76985",
+  "review": {
+    "cutSha256": "8a3fb47182e7fe695b2507c1dd525e494bd41968849816680c3e8e04f8b76985",
+    "requestSha256": "4ecb1239286c3788cafc2dca2d374b10f82ea8ea01df013b82e3562456e99951",
+    "originalSha256": "8c8827419a45e59e9370b3c5dfd597417a2926564dbfdaf45cb69a68b5704f5e",
+    "decision": "rejected",
+    "reviewedFrames": 23,
+    "method": "assistant-frame-review",
+    "observations": "对照原片第 855–877 帧和候选全部 23 帧。前段能认出神隐黑炎和蓝金服装。后半转入陌生灯光舞台，人物背对镜头，远处同时出现一个重复军服人物。原镜依次保持站立侧面姿势、手臂扫过左前景和同一木屋的暖光，候选的场景、出场人数与动作方向都没有延续。拒收本版。",
+    "reviewedAt": "2026-11-26T02:10:40.679098+00:00"
+  },
+  "followUp": {
+    "prompt": "Match the one continuous low canted side camera of <Video 1>. <Picture 1> is the exact short dark-haired officer in blue and gold. <Picture 2> is the original room and right-side blocking. He remains standing on the right side in a visible three-quarter profile, at first holding a simple gold baton low by his body. His other palm rises, then his near sleeve sweeps into the left foreground and leaves it again as the camera pulls a little wider. Warm reflected amber light crosses the LEFT of the image near the end, while his body, rose seat and wall stay sharply identifiable in the same wooden room. Keep variations in both hand positions. There is exactly one person. No change of angle into a back view, no stage or second figure, no weapons, logos, text or cut.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T02:11:42.791151+00:00",
+    "images": [
+      {
+        "name": "S34-navy-side-reach.png",
+        "sha256": "53171e634d3b919cac2baa8a03fcfcedb294949d4af394ea6093674cc2de0bfb",
+        "imagePrompt": "One 16:9 anime storyboard frame. Image 1 provides the exact officer's face, short dark hair and fitted gold-trimmed blue coat. Image 2 provides only the canted eye-level framing, sideward expression, furniture and warm red edge lighting. Image 3 provides the simple smooth solid gold stage baton. Show a single standing navy officer right of center, in medium three-quarter view with legs mostly cut off. He holds the short rounded gold baton diagonally downward while sweeping the other empty hand toward the left foreground, at the start of an exaggerated comic hand gesture. His face and shoulder lines stay visible and the low rose-colored sofa and doorway at the left remain in place. Warm wall and red side light, unmarked textures, crisp 2D linework. One person only, never show an auditorium, separate stage, real weapon, flame, text or graphics."
+      }
+    ]
+  }
+}

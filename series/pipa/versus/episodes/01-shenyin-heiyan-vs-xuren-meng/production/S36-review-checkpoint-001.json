@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S36",
+  "startFrame": 946,
+  "endFrame": 971,
+  "attempt": 1,
+  "jobId": "video_gen_3429498496274b33a7eb774c27ba3f9e:openai",
+  "requestSha256": "f9f462afa101a902d6b8ecf0a253a513aecb1f3a9f47d83fe7fabd6ff9589ab5",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Begin in a canted close-up on the navy officer's face as he shifts from comic smile to surprise. The camera continues pulling back behind the rose chair, revealing epaulettes and shoulders as he twists and opens his arms. A warm theatrical flare can wash across the foreground without becoming a different scene. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "75a96adcbd84c282fac824caeec285b0b0cf8eed5f837b6288a4e8039b76c523",
+  "cutSha256": "7f4274d703fb1148501405fbe29b0e0e59454b4f0f6b6ce7c2791317336febf5",
+  "review": {
+    "cutSha256": "7f4274d703fb1148501405fbe29b0e0e59454b4f0f6b6ce7c2791317336febf5",
+    "requestSha256": "f9f462afa101a902d6b8ecf0a253a513aecb1f3a9f47d83fe7fabd6ff9589ab5",
+    "originalSha256": "044700ac51eed51424ccdc5a8d8a6568225907334ba6782b75b94c3b896d4695",
+    "decision": "rejected",
+    "reviewedFrames": 25,
+    "method": "assistant-frame-review",
+    "observations": "对照校正后第 946–970 帧与候选全部 25 帧。蓝金服装和开头的张嘴反应可辨，随后镜头绕到人物背面，并进入带彩色帘幕和灯排的场地。原版保持木屋内从人物正面偏侧的反应，后拉后人物仍能看见正脸和前伸手势。场景、镜头方位以及末段动作与原镜不符。拒收，重试锁定同一室内的正面侧角。",
+    "reviewedAt": "2026-11-26T02:22:57.838895+00:00"
+  },
+  "followUp": {
+    "prompt": "One continuous cel-shaded anime shot. <Video 1> shows the exact initial facial movement and pullback to the wider view. <Picture 1> is the dark-haired officer in the blue-gold coat. Start with his face enlarged and occupying the center-right as he changes from an uneasy smile to a startled open mouth. Stay on the SAME FRONT three-quarter camera axis, pull back quickly without orbiting, reveal both gold shoulders, and let him twist one shoulder and extend one palm toward the left foreground. <Picture 2> is the room and target right-of-center framing after the pullback. At the end warm amber light washes across the left foreground, keeping the navy officer's face visible on the right. One same person, modest wooden room with the rose seat and dark doorway, no stage curtains, audience, back-angle cut, visible weapon, text or dialogue.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T02:22:58.021197+00:00",
+    "images": [
+      {
+        "name": "S34-navy-side-reach.png",
+        "sha256": "53171e634d3b919cac2baa8a03fcfcedb294949d4af394ea6093674cc2de0bfb",
+        "imagePrompt": "One 16:9 anime storyboard frame. Image 1 provides the exact officer's face, short dark hair and fitted gold-trimmed blue coat. Image 2 provides only the canted eye-level framing, sideward expression, furniture and warm red edge lighting. Image 3 provides the simple smooth solid gold stage baton. Show a single standing navy officer right of center, in medium three-quarter view with legs mostly cut off. He holds the short rounded gold baton diagonally downward while sweeping the other empty hand toward the left foreground, at the start of an exaggerated comic hand gesture. His face and shoulder lines stay visible and the low rose-colored sofa and doorway at the left remain in place. Warm wall and red side light, unmarked textures, crisp 2D linework. One person only, never show an auditorium, separate stage, real weapon, flame, text or graphics."
+      }
+    ]
+  }
+}
