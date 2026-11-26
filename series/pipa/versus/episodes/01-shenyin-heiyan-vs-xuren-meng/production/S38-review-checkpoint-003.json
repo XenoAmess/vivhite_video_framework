@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S38",
+  "startFrame": 971,
+  "endFrame": 1063,
+  "attempt": 3,
+  "jobId": "video_gen_218788d6b08346b192cd0e5e2aadf6b2:openai",
+  "requestSha256": "dbe0fc98352fb535c8933694777619ce466a088661a5516a7a239a07b99cdf8b",
+  "renderPrompt": "Animate one continuous cel-shaded anime dance shot, using <Video 1> for all camera movement, rhythm and pose changes. <Picture 1> is the exact blond adult in a red hood and red-gold cloak, with only one ivory mask on the dancer's left shoulder. Start close at floor height from behind with arms down and the red cloak close to camera. Then rapidly pull out as the dancer takes wide left and right steps, briefly opens the arms, bends a knee, and shifts the supporting foot. At about two thirds of the shot, rotate the shoulders and pull BOTH forearms in and cross them close to the chest as in <Picture 2>, keeping the whole body visible under the round ceiling light. Clearly release the crossed arms and lower both hands. In the last fifth, keep the camera low and canted as the dancer balances on one boot, raises the opposite boot clearly toward the LOWER LEFT foreground exactly as <Picture 3>, then lowers it near the cut. The cloak follows behind and must leave the legs visible. One dancer and one continuous warm wood room with old rose chairs, no added cut, weapons, impacts, duplicate mask, text or dialogue.",
+  "seed": 1236,
+  "rawSha256": "d5f47ec5ed13bbb3d3b3667fd5c57f633f0f5d9aa88722fc38b12523b3725ded",
+  "cutSha256": "81a9513ba4b4f2c51bc8b9b1a1e0671c914603d47dbac534c7cb0bf3a5836d7f",
+  "review": {
+    "cutSha256": "81a9513ba4b4f2c51bc8b9b1a1e0671c914603d47dbac534c7cb0bf3a5836d7f",
+    "requestSha256": "dbe0fc98352fb535c8933694777619ce466a088661a5516a7a239a07b99cdf8b",
+    "originalSha256": "a3fa0185a9ea0f99bcf41046fd6d162dc75f9c7303224adc279ebb3408304c52",
+    "decision": "accepted",
+    "reviewedFrames": 92,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 971–1062 帧及候选全部 92 帧。保留低机位由红披风近景拉到暖木屋全身后的张臂换步、中段转身收臂交叉、最后单靴支撑并向左前景伸另一靴。用同一模型输出重新抽帧，校正开头拉远和尾段伸腿，另在中段平滑推近再拉回。原片中段手臂的摆动次数更多，尾段靴子向下回落，本版收势延长；个别背身帧的小面具偏画面右肩，只见一个面具。后段相邻的 S39 仍需在整片核对时检查披风和视线衔接。",
+    "reviewedAt": "2026-11-26T15:18:01.787683+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S38-crossed-forearms-mid.png",
+      "sha256": "23c7de2269ad3fb637e21c6c01b82c71ac0cc576f19c45cc43251aece8ccc7d9",
+      "prompt": "One horizontal 16:9 hand-drawn anime storyboard keyframe for the middle of a harmless dance. Image 1 defines the exact adult red-hooded performer and the warm wood room with a big round amber ceiling lamp, rose chairs and the same dark damaged arch behind. Image 2 is only the new stance and low camera position. Same red cloak with gold lining, long blond hair, dark full trousers, gloves, beaded wrists, boots, and only one ivory mask on the performer's left shoulder. Camera VERY low in the wood room aimed up at a three-quarter rear view. The character is rotating on two near-together feet and has just brought BOTH elbows inward and bent both forearms in front of the chest, briefly crossing the wrists as part of a turning dance, not extending the arms sideways. Show the clear bent elbow edges at both sides of the torso. Cape pulls toward one side, leaving boots visible, hood and face turned mostly away. A single subject, no realistic weapon, lighting impacts, text or panels.",
+      "inputs": [
+        "S38-low-cape-step.png",
+        "S38-original-crossed-arms.png"
+      ]
+    },
+    {
+      "file": "S38-boot-left-end.png",
+      "sha256": "5246b695483cda8cdf3b1748a688e235034ae42e5ed39a010905678681a7c708",
+      "prompt": "One horizontal 16:9 keyframe in the cel-shaded anime style of Image 1. Keep its exact red hood and long gold-lined cape, blond hair, dark full trousers and flat boots, red beads, and just one ivory left-shoulder mask. Keep the same warm room with rose chair, amber circular ceiling lamp and dark torn wood arch. Image 2 is used ONLY to position the camera and set the full-body dance pose. View the dancer obliquely from behind, camera inches above the floor strongly tilted up. One planted boot in the lower-right supports the body. The other leg extends long toward the LOWER LEFT foreground with the boot visibly lifted a small distance above the boards, nearer to camera and larger. Arms now lowered beside the body, one glove close to the extended thigh, other at waist. The hooded dancer balances and cape falls back and to one side, never covering the foreground boot. Entire character from hood to boots recognizable, same costume, warm ceiling lighting with no impact sparks, text, other person or weapon.",
+      "inputs": [
+        "S38-low-cape-step.png",
+        "S38-original-left-boot-end.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "filter": "select='eq(n\\,0)+eq(n\\,2)+eq(n\\,5)+eq(n\\,7)+eq(n\\,9)+eq(n\\,11)+eq(n\\,14)+eq(n\\,16)+eq(n\\,17)+eq(n\\,18)+eq(n\\,20)+eq(n\\,21)+eq(n\\,22)+eq(n\\,23)+eq(n\\,25)+eq(n\\,26)+eq(n\\,27)+eq(n\\,28)+eq(n\\,30)+eq(n\\,31)+eq(n\\,32)+eq(n\\,33)+eq(n\\,35)+eq(n\\,36)+eq(n\\,37)+eq(n\\,38)+eq(n\\,39)+eq(n\\,40)+eq(n\\,41)+eq(n\\,43)+eq(n\\,44)+eq(n\\,45)+eq(n\\,46)+eq(n\\,47)+eq(n\\,48)+eq(n\\,49)+eq(n\\,51)+eq(n\\,52)+eq(n\\,53)+eq(n\\,54)+eq(n\\,55)+eq(n\\,56)+eq(n\\,58)+eq(n\\,59)+eq(n\\,60)+eq(n\\,61)+eq(n\\,62)+eq(n\\,63)+eq(n\\,64)+eq(n\\,65)+eq(n\\,66)+eq(n\\,67)+eq(n\\,68)+eq(n\\,69)+eq(n\\,70)+eq(n\\,71)+eq(n\\,72)+eq(n\\,73)+eq(n\\,74)+eq(n\\,75)+eq(n\\,76)+eq(n\\,77)+eq(n\\,78)+eq(n\\,79)+eq(n\\,80)+eq(n\\,81)+eq(n\\,82)+eq(n\\,83)+eq(n\\,84)+eq(n\\,86)+eq(n\\,87)+eq(n\\,88)+eq(n\\,89)+eq(n\\,90)+eq(n\\,92)+eq(n\\,93)+eq(n\\,95)+eq(n\\,96)+eq(n\\,98)+eq(n\\,99)+eq(n\\,101)+eq(n\\,103)+eq(n\\,104)+eq(n\\,106)+eq(n\\,108)+eq(n\\,109)+eq(n\\,111)+eq(n\\,112)+eq(n\\,114)+eq(n\\,116)+eq(n\\,117)+eq(n\\,119)',setpts=N/(24*TB),zoompan=z='1+0.31*pow(sin(PI*clip((on-23)/25,0,1)),2)':x='iw*0.51-iw/zoom*0.51':y='ih*0.18-ih/zoom*0.18':d=1:s=1344x768:fps=24",
+    "selectedModelFrames": [
+      0,
+      2,
+      5,
+      7,
+      9,
+      11,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27,
+      28,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      86,
+      87,
+      88,
+      89,
+      90,
+      92,
+      93,
+      95,
+      96,
+      98,
+      99,
+      101,
+      103,
+      104,
+      106,
+      108,
+      109,
+      111,
+      112,
+      114,
+      116,
+      117,
+      119
+    ],
+    "retimeBreakpoints": [
+      [
+        0,
+        0
+      ],
+      [
+        7,
+        16
+      ],
+      [
+        24,
+        37
+      ],
+      [
+        33,
+        47
+      ],
+      [
+        44,
+        60
+      ],
+      [
+        64,
+        80
+      ],
+      [
+        73,
+        90
+      ],
+      [
+        80,
+        101
+      ],
+      [
+        91,
+        119
+      ]
+    ],
+    "normalizedModelInput": "sources/S38.mp4",
+    "normalizedModelInputSha256": "679515df5f048df685e200aa10f44ae96af8f4eecc36ab1108ca427b86b346b2",
+    "visualEffect": "a temporary camera push-in and pullback during the body turn",
+    "usedInput": "cut-before-retime-and-camera.mp4",
+    "inputSha256": "a87a95c02c7a746a05a7c66e48101a12f5def9faa7d2698fda162125e6f0a509",
+    "outputSha256": "81a9513ba4b4f2c51bc8b9b1a1e0671c914603d47dbac534c7cb0bf3a5836d7f",
+    "tool": "ffmpeg",
+    "coveredFrames": 92,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T15:18:01.101556+00:00"
+  }
+}
