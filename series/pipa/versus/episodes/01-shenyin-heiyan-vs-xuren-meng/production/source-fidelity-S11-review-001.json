@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S11",
+  "startFrame": 294,
+  "endFrame": 317,
+  "attempt": 1,
+  "jobId": "video_gen_6ac8bcd5f02b44e9aff962e9c1f1df2d:openai",
+  "requestSha256": "cf80922a441cbb17daefd1ecc3166f7d4850413a1e8fda6b48f11dd5b450177d",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the existing close rear framing and wall panels; the fully clothed crimson performer performs the original two distinct hand contacts with their trousers, with a release between contacts and a wide arms-open ending. Keep the cloak to the sides so the contact gestures and their timing remain visible. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the corresponding source rear framing with the new performer at the opening frame.",
+  "seed": 1234,
+  "rawSha256": "1eaf810a15d5b3415e84026b2140368cb0fb089b14d989d62c26569ce21089d1",
+  "cutSha256": "394d516fd5ca7e806c6559a9d34aae64067eae0d05acbb533be5bcd6945ef114",
+  "review": {
+    "cutSha256": "394d516fd5ca7e806c6559a9d34aae64067eae0d05acbb533be5bcd6945ef114",
+    "requestSha256": "cf80922a441cbb17daefd1ecc3166f7d4850413a1e8fda6b48f11dd5b450177d",
+    "originalSha256": "d94c63a1bc1f964d68094eb21d5af6d0be44de2736605bdd8d0d5bbed597a902",
+    "decision": "accepted",
+    "reviewedFrames": 23,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 294–316 帧及新版全部 23 帧。保留背面近景、木门、两侧墙板、散落小块和原片光线。两次手部接触、第一次之后抬臂离开、第二次之后展开双臂可辨。重抽同一模型结果，使约第 13 帧的第二次接触与原片对齐，最后清楚张臂。红披风从两侧垂落，遮住部分上身，黑手套在黑裤上的反差较弱。全镜无新增场景、镜内剪切或原人物回跳。",
+    "reviewedAt": "2026-11-26T18:20:20.561774+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S11-source-edit-0294.png",
+      "shot": "S11",
+      "sourceFrame": 294,
+      "sha256": "e860e0f70552f6668c37e830706b9514866bc8f334bcb3cf1d69abd7c253303b",
+      "prompt": "Edit the first frame of a fictional animated film. Use its original camera, crop, lens, perspective, set, fabric and wall textures, floor, shadows and lighting as a fixed plate. Use the second image solely for the actor design. Paint only the actor (or their clothing and hand if partly visible) into the original frame in the same stylized 3D film look, with similar body proportions. Keep the source scene's contrast and color, and keep the camera framing almost pixel-for-pixel. No extra scenery, glamor lighting, graphics, speed lines, or captions. The long blond adult with the crimson hood and gold-lined cape takes the place of the one original actor. Preserve exactly the source's close rear canted framing, comic forward-bent posture and both gloved hands at the hips, fully clothed in long dark trousers. Let the red cape fold to the sides, leaving both hands and the existing silhouette readable. Keep the straight brown door, beige padded panels, floorboards and small scattered debris in their exact original places. The camera stays in this original rear view.",
+      "inputs": [
+        "anchor-originals/S11-source-0294.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ],
+      "sourceStillSha256": "3865d5cd3a25f2b7e6646c065a4944580d9401d2982ba307afe7d042f7017492"
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S11.mp4",
+    "inputSha256": "e7ecbb1e3f6dae7f80673321e395cb0fa9eb5e1cbad5991c4687e38e12bcf0a0",
+    "preRetimeCutSha256": "cf1e624143e35e78543aad67d4f26d48042c4f9336659684ddec48c3367cad7d",
+    "outputSha256": "394d516fd5ca7e806c6559a9d34aae64067eae0d05acbb533be5bcd6945ef114",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      7,
+      13,
+      20,
+      26,
+      34,
+      42,
+      48,
+      53,
+      57,
+      64,
+      70,
+      78,
+      81,
+      84,
+      89,
+      94,
+      100,
+      105,
+      109,
+      112,
+      116,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,7)+eq(n\\,13)+eq(n\\,20)+eq(n\\,26)+eq(n\\,34)+eq(n\\,42)+eq(n\\,48)+eq(n\\,53)+eq(n\\,57)+eq(n\\,64)+eq(n\\,70)+eq(n\\,78)+eq(n\\,81)+eq(n\\,84)+eq(n\\,89)+eq(n\\,94)+eq(n\\,100)+eq(n\\,105)+eq(n\\,109)+eq(n\\,112)+eq(n\\,116)+eq(n\\,119),setpts=N/(24*TB)",
+    "reason": "Resample the existing performance to match the original two contacts, hand release and wide ending.",
+    "coveredFrames": 23,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T18:20:19.181649+00:00"
+  }
+}

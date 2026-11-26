@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "vivhite-pipa-classic-source-fidelity-1",
+  "previewSourceIntervalFrames": [
+    216,
+    336
+  ],
+  "shots": [
+    {
+      "shot": "S08",
+      "sourceFrames": [
+        206,
+        254
+      ],
+      "motionSha256": "12f9a26ef62b6ef3c60630b034e0e0c3d7eb83e0ca4d97cdb5a398f71458e5e7",
+      "jobId": "video_gen_4fc5fc98932e4147ab2c3217909c6a95:openai",
+      "requestSha256": "63632213c789679f38fdf911c4e6d2a447e95d81cc74a28a9a0bcb2028d24a79",
+      "actualRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 1234,
+        "prompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the foreground silhouette on the left, the original angle, side of the frame and abrupt widening. Preserve the folding screen, irregular opening in the wall, both chairs, scattered pieces, and timed bright frames as they appear in the source. The crimson performer moves in the same direction and reaches the far side at the same moment. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. The ordered source-frame edits are <Picture 3> at source frame 206 and <Picture 4> at source frame 253. The first added source frame shows the opening close view with A at the left edge; the second added frame shows the final wide view with B at the far door.",
+        "video_reference": [
+          {
+            "file_id": "file_09ae102034e54a65bd6f17de7c142cff"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_12dcc52530c44ac0b846ea58b064647a"
+          },
+          {
+            "file_id": "file_c51fb1024bb9429a8469536ce9ab4ec9"
+          },
+          {
+            "file_id": "file_4cf93d4b21e84533af5b331d97e34292"
+          },
+          {
+            "file_id": "file_1e9e17bf5c8e43e393213d83421ce0fd"
+          }
+        ]
+      },
+      "submittedAt": "2026-11-26T18:19:23.720458+00:00",
+      "referenceImageSha256": [
+        "fcc41595a2d072855f3ccbd12e94af4d3d658a9df665efc16a90bfad144abf99",
+        "9a8b1a2819e4c38a622aafddfb21b1f819537fe7800100c18346cbcfd16c2535",
+        "2175640cebb12f1fc869d095a8fd44db32ba904e7e1a06d8a55c52e27a03805e",
+        "558760f87947b26224bb0f1a110906c7a5c0a835ea67a1b3fec84774c6972364"
+      ]
+    },
+    {
+      "shot": "S09",
+      "sourceFrames": [
+        254,
+        273
+      ],
+      "motionSha256": "3488ab1a9177d7b5444e0245adf199b92243507a0c8e7a1d8f8930e0260d8f6f",
+      "jobId": "video_gen_daeddac85e4f478c834f8e37631f2e38:openai",
+      "requestSha256": "009872b4a16a1efc975f2a948b760401a387b700bd13dda6acf40c4506c16ac4",
+      "actualRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 1234,
+        "prompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the original top-down angle, board direction, door, scraps and warm shadow; align the turn, glance and tightening crop to the exact same portion of the source shot. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. The ordered source-frame edits are <Picture 2> at source frame 272. The added source frame represents the tight overhead ending.",
+        "video_reference": [
+          {
+            "file_id": "file_a8794d9b97d8457694482c765f426c27"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_c51fb1024bb9429a8469536ce9ab4ec9"
+          },
+          {
+            "file_id": "file_72ba5099e71a48f0b3b0d749dd7bb28a"
+          }
+        ]
+      },
+      "submittedAt": "2026-11-26T18:19:26.032323+00:00",
+      "referenceImageSha256": [
+        "9a8b1a2819e4c38a622aafddfb21b1f819537fe7800100c18346cbcfd16c2535",
+        "b81ee6804e7c520ccb2de1c5a82ca1778dd8d9d8a96d079e68a4596f358a1b40"
+      ]
+    },
+    {
+      "shot": "S10",
+      "sourceFrames": [
+        273,
+        294
+      ],
+      "motionSha256": "dee71d9f27b2d6d36c1698af6a3cd7cb396fe861380c595c88b0012e88a101c3",
+      "jobId": "video_gen_5c71fe54bef84b28a7ce3fa90cd1a67a:openai",
+      "requestSha256": "68dbc48c627cb0076c3012183b215ee03233468445fe1e52477e115f39b25629",
+      "actualRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 1234,
+        "prompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Retain the original low rear angle, ceiling light, padded side panels and floor. Match the squat, hand lift and forward bend in that order. The red cape follows the body and leaves both hands visible for the following cut. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. The ordered source-frame edits are <Picture 2> at source frame 293. The added source frame represents the low rear ending, immediately before the next shot.",
+        "video_reference": [
+          {
+            "file_id": "file_dcd340765875422ea94c6459a7c1c380"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_c51fb1024bb9429a8469536ce9ab4ec9"
+          },
+          {
+            "file_id": "file_ce5229ae83bd4f6bb3ecad3cc2770dca"
+          }
+        ]
+      },
+      "submittedAt": "2026-11-26T18:19:27.532566+00:00",
+      "referenceImageSha256": [
+        "9a8b1a2819e4c38a622aafddfb21b1f819537fe7800100c18346cbcfd16c2535",
+        "aefde91f9b37afc15c53e0b1dc74e1703c96c06373506dc98b47b22b8c46f1d1"
+      ]
+    },
+    {
+      "shot": "S12",
+      "sourceFrames": [
+        317,
+        338
+      ],
+      "motionSha256": "97cab45cda85753601f89387949d0d593d79632eae2aba4e105c5cf03a445774",
+      "jobId": "video_gen_7746374b07264cb2bbf3f7fdeb2a41a6:openai",
+      "requestSha256": "f364307a6be45fd066a1c396af31ca3b7db1d6f4692d7a2aa1a5c131638b7135",
+      "actualRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 1234,
+        "prompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the pink chair, left opening and right wall in their original positions and lighting. Follow the original push into the open-mouth expression, then the rapid pullback with the original lower foreground silhouette and arm movement. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> shows the peak open-mouth expression in the middle of this shot, at source frame 327.",
+        "video_reference": [
+          {
+            "file_id": "file_39aa7dbbee68455f8cf4102bd8c8f2bf"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_12dcc52530c44ac0b846ea58b064647a"
+          },
+          {
+            "file_id": "file_44db44f120fa47bbbc7d981a6cc3d6a6"
+          }
+        ]
+      },
+      "submittedAt": "2026-11-26T18:19:28.546423+00:00",
+      "referenceImageSha256": [
+        "fcc41595a2d072855f3ccbd12e94af4d3d658a9df665efc16a90bfad144abf99",
+        "a28090be1f84f4be911441fe34bc32802f39eba9502f90c3238c242c7dea0372"
+      ]
+    }
+  ]
+}
