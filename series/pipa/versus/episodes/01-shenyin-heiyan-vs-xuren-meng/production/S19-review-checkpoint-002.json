@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S19",
+  "startFrame": 463,
+  "endFrame": 510,
+  "attempt": 2,
+  "jobId": "video_gen_bf18db895a2b476497a0d3bcabe5dacd:openai",
+  "requestSha256": "cb1c486f00d61cf6d98b199c627a8bab8a2e5debe532aa4be0f93b139026e765",
+  "renderPrompt": "One continuous cel-shaded anime shot with the low rear floor camera and precise movement from <Video 1>. <Picture 1> is the fully clothed red-hooded blond performer. After beginning close behind in a deep bent-knee stance, follow the dancer as they rotate away and make a quick backward-moving step down the room, with the exact red and gold cloak whipping to the side and one boot visibly in the air. <Picture 2> is the low rear camera, whole-body jump scale and wood setting during that move. As the camera opens reveal polished floorboards, rose chairs and the warm round lamp, with a few pieces of paper. Keep angles and movement continuous. One person only, no colored theater backdrop, marks, realistic weapon, text or cuts.",
+  "seed": 1235,
+  "rawSha256": "77780bb0b52e9c46d8ab42489e827852b0484c2e5029bc8a931cfe70626f4a18",
+  "cutSha256": "70e224c39a1c7eef800ba4bc0b7936d98dda8fd755c92ca97e3a844085090de1",
+  "review": {
+    "cutSha256": "70e224c39a1c7eef800ba4bc0b7936d98dda8fd755c92ca97e3a844085090de1",
+    "requestSha256": "cb1c486f00d61cf6d98b199c627a8bab8a2e5debe532aa4be0f93b139026e765",
+    "originalSha256": "55761f7441777fd49bc39d4909ce8943536999bdd0d1a8c8ce93e470d231e04d",
+    "decision": "rejected",
+    "reviewedFrames": 47,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原版第 463–509 帧，共 47 帧。候选中段可见后退、抬靴和披风旋动，红兜帽角色也正确。原片从贴近地板的背面仰拍起镜，随动作拉远后又快速贴近，在终点以更陡的近仰角结束。候选从向下看的高位起镜，后段停留在全身远景及抬脚姿势，缺少最后的近身推进和重心下落，退回整镜。",
+    "reviewedAt": "2026-11-26T08:17:23.130089+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S19-low-landing-end.png",
+      "sha256": "d845fe7cd916e6a12b4356867832968da44daf3b13ad3baf0fe17cd4849f16ba",
+      "prompt": "One widescreen 16:9 original cel-shaded anime film keyframe. Preserve Image 1's exact red hood, gold-lined cape, blond hair, opaque trousers, red wrist beads and dark boots, on the same warm wooden floors. Image 2 provides just the direction of the extremely low close camera and the finish of the dance. From slightly rear-right, lens at floor height tilted UP toward torso, a single performer fills the center, having landed after a step. One planted boot and the front knee partly cut off by the bottom of frame, torso bent forward, one open gloved hand lifts to frame LEFT and the other near the waist, cape swings over the back covering the rear. The wood room shows the edge of its worn arch on left, a simple rose chair edge on right, and the warm circle light cut by the top. Fully clothed stage dance, no weapon, concentrated body-part framing, impacts, injury, text, extra person, or captions.",
+      "inputs": [
+        "S19-rear-jump-step.png",
+        "S19-actual-floor-02.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "One uninterrupted cel-shaded anime dance shot. The same low rear camera closely follows the exact lens distance changes and stepping rhythm from <Video 1>. <Picture 1> defines the adult blond red-hooded performer in a long red and gold cloak, long trousers and boots. The very first frame begins low near the floor looking UP from behind, close to the two bent knees, like <Picture 2>. Never look down from overhead. The performer springs up, rotates slightly, shifts one boot behind the other and makes two quick backward-moving steps into the room, as the camera swings out enough to reveal the dancing feet. Then the performer comes nearer as the same camera pushes back in and lowers again, waist and shoulders travel down into a bent landing, one open hand lifts to the left and a boot plants clearly. End on the much closer low rear angle of <Picture 3>. Keep the exact order of pull-out, visible jump steps and return into a close landing. One performer, warm worn wood room and rose chair, a little airborne paper, light on the floor only, no impacts, weapon, other person, added cuts, text or dialogue.",
+    "seed": 1236,
+    "plannedAt": "2026-11-26T08:19:51.242866+00:00",
+    "images": [
+      {
+        "name": "S19-low-deep-bend-start.png",
+        "sha256": "2f50895ccf722d94e3dc2739b701f6debbc37c851f2215ce4fefb01d1a328630",
+        "imagePrompt": "One widescreen 16:9 original cel-shaded anime film storyboard. Match the adult gold-haired performer and opaque burgundy hood and long gold-lined cloak from Image 1; Image 2 supplies only camera altitude and bent-knee opening position. The first frame of a playful dance shows the performer from BEHIND in a short deep bend of BOTH knees, one boot slightly ahead and the weight low, preparing to spring back down the room. Camera is inches off the floor looking slightly upward, close enough that the hood is cropped above the frame but still showing the broad moving red cape and both bent booted legs. Warm brown wood room with slightly worn walls, floorboards visible beyond the feet and a faint pale panel in the background. Fully clothed opaque trousers and gloves, no body-impact lights, no weapons, writing, other characters or concentrated body-part framing. The whole silhouette and low floor perspective tell the movement."
+      },
+      {
+        "name": "S19-low-landing-end.png",
+        "sha256": "d845fe7cd916e6a12b4356867832968da44daf3b13ad3baf0fe17cd4849f16ba",
+        "imagePrompt": "One widescreen 16:9 original cel-shaded anime film keyframe. Preserve Image 1's exact red hood, gold-lined cape, blond hair, opaque trousers, red wrist beads and dark boots, on the same warm wooden floors. Image 2 provides just the direction of the extremely low close camera and the finish of the dance. From slightly rear-right, lens at floor height tilted UP toward torso, a single performer fills the center, having landed after a step. One planted boot and the front knee partly cut off by the bottom of frame, torso bent forward, one open gloved hand lifts to frame LEFT and the other near the waist, cape swings over the back covering the rear. The wood room shows the edge of its worn arch on left, a simple rose chair edge on right, and the warm circle light cut by the top. Fully clothed stage dance, no weapon, concentrated body-part framing, impacts, injury, text, extra person, or captions."
+      }
+    ]
+  }
+}
