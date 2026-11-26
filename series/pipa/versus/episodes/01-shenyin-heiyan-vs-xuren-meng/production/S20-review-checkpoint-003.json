@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S20",
+  "startFrame": 510,
+  "endFrame": 536,
+  "attempt": 3,
+  "jobId": "video_gen_0b9905a986274557813c1752ba8e6882:openai",
+  "requestSha256": "0e03f5a9df4a1d4174dc10e6e2116dcb4b2537d8a2d53aa46b4dcc853d0bed37",
+  "renderPrompt": "Make one continuous cel-shaded anime dance gesture with the overhead camera and timings of <Video 1>. <Picture 1> supplies the exact adult blond red hooded performer, dark gloves, long red-gold cape and one ivory left-shoulder mask. Start high-front and fairly close, torso still raised as one open palm sweeps high to screen left and the other comes forward lower right like <Picture 2>. In the first half, lower the body visibly onto one knee while BOTH wrists trace two alternating heights. Once kneeling, keep moving: one palm flicks briefly up by the face, then that arm sweeps down and across as the opposite arm lifts, and both forearms CROSS LOW in front of the waist as <Picture 3>. Clearly show both gloves crossing over opposing knees, elbows down in the final frames. Let the camera glide slightly closer during that last cross. Match the wood floor and rose chair, one fully clothed performer, no jump cut, additional scene, weapon, impact effects, captions or dialogue.",
+  "seed": 1236,
+  "rawSha256": "12e0d3eeff316c4d26794fb000c9b8a5a2739c9850e870f708dc27924920e57b",
+  "cutSha256": "49492c0f9970aee3e1577122e321c0ba84288748319c3cef267bb217283d6d69",
+  "review": {
+    "cutSha256": "49492c0f9970aee3e1577122e321c0ba84288748319c3cef267bb217283d6d69",
+    "requestSha256": "0e03f5a9df4a1d4174dc10e6e2116dcb4b2537d8a2d53aa46b4dcc853d0bed37",
+    "originalSha256": "49d22e184368f4d57192ef166e4c4aad2e7a6b8f9900dfb6689514eaadc3f476",
+    "decision": "accepted",
+    "reviewedFrames": 26,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 510–535 帧及候选全部 26 帧。保留高位斜拍、落低到膝姿、先后伸手收回，后半一只手从额侧扫下，与另一条前臂在腰膝前交错。中段双手分开和尾段两腕交叉都清楚，红色斗篷、红珠、左肩的唯一面具和木地板连贯。候选起镜更早进入膝姿，末段推近幅度较小，服装完整覆盖动作。全镜无额外人物、原角色残留或跳切。",
+    "reviewedAt": "2026-11-26T16:33:04.280351+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S20-staggered-palms-start.png",
+      "sha256": "bc38168451fb6f56fb15e56fedb6dd9b01f5271543ab9a7178b7793e9faa9004",
+      "prompt": "Widescreen anime storyboard for the first beat of a comic kneeling dance. Keep the fully clothed adult in the exact crimson hood, blond hair, one ivory mask on their left shoulder, red wrist beads, dark trousers and gold-lined cape from Image 1. Image 2 only supplies the high tilted camera angle and staggered reach. View from overhead and little forward, near upper-body framing on the character as they begin to sink down. Their face and shoulders are fully visible near center. One dark gloved open palm extends toward the upper-left foreground and the other palm toward the lower-right, visibly at two different heights. The torso remains higher than a finished kneel and the wrists have an animated bend. Same warm wood floor, dim wooden cabinet at left and pink chair edge at the rear right. Only one adult, no weapons, sparks, text, symbols, or panels.",
+      "inputs": [
+        "S20-overhead-kneeling.png",
+        "S20-open-cross-original-01.png"
+      ]
+    },
+    {
+      "file": "S20-crossed-waist-end.png",
+      "sha256": "8391c93210ddb4fac1b1affb7707b9e5093d47395d628636c367a07d59a66526",
+      "prompt": "Widescreen anime storyboard for the FINAL beat of the kneeling gesture, using the exact costume, adult pose identity and wood room from Image 1. Image 2 is ONLY the high camera close framing and the final crossed-arm position. From high slightly canted camera, the red-hooded blond dancer remains low with one knee down, head turns a little to the left, and both dark gloved forearms make a CLEAR X crossing low in front of the waist and knees, wrists near opposing thighs. One single ivory mask on the left shoulder and red beads on both wrists. Different silhouette from arms raised: elbows low, hands reaching sideways across the lap. Tight camera on chest and knees, head still partially visible, warm floor, dark wooden cabinet left and pink chair upper-right. Fully dressed original anime stage comedy, no weapons, effects, words, extra people, or panels.",
+      "inputs": [
+        "S20-overhead-kneeling.png",
+        "S20-open-cross-original-02.png"
+      ]
+    }
+  ]
+}
