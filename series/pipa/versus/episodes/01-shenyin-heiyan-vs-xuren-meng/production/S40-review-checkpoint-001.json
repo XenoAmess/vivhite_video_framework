@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S40",
+  "startFrame": 1078,
+  "endFrame": 1107,
+  "attempt": 1,
+  "jobId": "video_gen_45e6042caad845cda77320a8d8e25210:openai",
+  "requestSha256": "00386e4ef4d567d0519f7ef4b18876d38637912ccd2e1f09447be5927fe457e5",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Low-angle reaction of the officer tilting their head back and opening their mouth in comic disbelief. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "701ea1ebfdbde35656029fca371fd202004cefa74dd573badd8d1efc2b5e3932",
+  "cutSha256": "4f1d1ad93032a62e05aa81021f6424d82a3d1f949ae4347de3732e01b07a764d",
+  "review": {
+    "cutSha256": "4f1d1ad93032a62e05aa81021f6424d82a3d1f949ae4347de3732e01b07a764d",
+    "requestSha256": "00386e4ef4d567d0519f7ef4b18876d38637912ccd2e1f09447be5927fe457e5",
+    "originalSha256": "f11549a8e548a6f17c2167d0ee37970f3d8949ced089832a0856ced3dec36ad3",
+    "decision": "rejected",
+    "reviewedFrames": 29,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 1078–1106 帧及候选全部 29 帧。仰拍、抬头和短暂张嘴在第一版可见。原镜后半的左前景抬手、近大远小与焦点关系缺失，候选只延续静止半身景别，还加入放射线。该变化直接关系到下一镜的抬手，退回补上相同机位下的前景动作。",
+    "reviewedAt": "2026-11-26T02:47:42.381286+00:00"
+  },
+  "followUp": {
+    "prompt": "One continuous canted low-angle anime take matching <Video 1>. <Picture 1> gives the dark-haired navy-and-gold officer. Begin with him standing above the camera, lifting his gaze and opening his mouth in a short comic reaction. His near arm then rises from below the LEFT edge and brings the harmless solid rounded golden baton upright very close to the lens. End with that hand and baton strongly foreshortened on the left and his face visible behind it near center-right like <Picture 2>. Maintain the same warm painted wood room, red side light and camera position. The frame's layering and the raising movement must change visibly. One person, no speed lines, added stage, cut, realistic weapon, text or dialogue.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T02:48:38.136903+00:00",
+    "images": [
+      {
+        "name": "S40-left-foreground-baton.png",
+        "sha256": "0f4b527bacaa60ae77ba4b66cde5fc82d39d0bb78db89066cdc6386cf41f3b23",
+        "imagePrompt": "A single 16:9 anime storyboard keyframe. Image 1 supplies the exact dark-haired officer identity with navy coat edged in gold. Image 2 supplies only the tilted low angle, camera distance, expression and dim warm room. Image 3 supplies the harmless smooth solid gold baton. The officer is standing and looking upward with a comically surprised open mouth. On the left, one of his hands rises much closer to the low camera with a blurred rounded solid gold theatre baton held upright. Make the foreground hand clearly larger than his face by perspective, keep the officer's upper body and face behind it on the right. The baton resembles a single round wooden club with no mechanisms. Dim warm wood and muted red side light, crisp anime cel shading for the actor. Exactly one person, no stage curtain, speed lines, weapons, text or added graphics."
+      }
+    ]
+  }
+}
