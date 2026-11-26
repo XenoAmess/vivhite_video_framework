@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S42",
+  "startFrame": 1125,
+  "endFrame": 1174,
+  "attempt": 2,
+  "jobId": "video_gen_2efbdc13633344beb222e4ffa3a5d96f:openai",
+  "requestSha256": "86c42242713c6cfa11c9177e24b6ad63658635bd744ab7444744d95f8729ac3f",
+  "renderPrompt": "Render one continuous, uninterrupted cel-shaded anime comedy shot. <Video 1> is the sole motion and camera timing guide. <Picture 1> is the same dark-haired officer in navy and gold, long ivory trousers and tall boots. <Picture 2> shows the exact low wooden tabletop, round-tipped solid gold stage baton, rose chair and focus split. Start at a low angle on the officer beside the red-edged doorway, with head and free arm moving into comic surprise. At about halfway, lower the view and rack focus onto the solid golden stage baton lying on the bottom-right tabletop. His softened figure remains in the same room behind it. Return enough focus to show him taking a wide, unsteady step, one leg rising and arms opening by the final frame. Keep the camera and timing from the supplied video, especially the near-to-far focus changes. Same lone character and background throughout, no weapon geometry, extra cut, text, dialogue, or other person.",
+  "seed": 1235,
+  "rawSha256": "26a123d473d9df643b56b4121b17d7d75d1cf6359779da51ecfa7dacd84f9c30",
+  "cutSha256": "6120da3cf55a36e57bf79d652e3ebf9c86b6a2c6155fce17dcd6d09b5b2851ec",
+  "review": {
+    "cutSha256": "6120da3cf55a36e57bf79d652e3ebf9c86b6a2c6155fce17dcd6d09b5b2851ec",
+    "requestSha256": "86c42242713c6cfa11c9177e24b6ad63658635bd744ab7444744d95f8729ac3f",
+    "originalSha256": "a7f9996a598f961fbd5a3127df96c4990363827a9c308e9046a282c315e124cf",
+    "decision": "rejected",
+    "reviewedFrames": 49,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 1125–1173 帧及候选全部 49 帧。候选从神隐黑炎惊讶半身拉到桌面，圆头舞台棒与粉椅的前后层次和焦点变化清楚。原片约从第 43 帧突然向前跨过镜头，近侧裤腿及靴子到达画面右缘，同时张开双臂。候选只在后景抬了一下膝，前后的尺度关系没有变化。尾势也与下一镜俯拍张臂的起势相接，退回并补入仰视跨步的最后构图。",
+    "reviewedAt": "2026-11-26T12:44:09.940121+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S42-tabletop-focus.png",
+      "sha256": "946fe3db0677b72a33f2b667e84d2fb379f9fc7d2a0ff033d1a53f91465a9512",
+      "prompt": "Create a wider original cel-shaded anime film storyboard illustration. 16:9 landscape. Use the attached first still only to match the extremely low diagonal tabletop point of view, shallow focus, empty foreground silhouette placement and distant pink chair. Replace its foreground object completely with the second image's blunt gold, tapered decorative stage baton with a brown wrapped cylindrical handle. Show the round gold tip nearest the bottom-right camera and wrapped handle at left center. A single narrow shiny silhouette across the lower-right foreground, exactly a smooth solid golden theater prop, with zero firearm geometry or pieces. No hand touches it. The nearest gold prop is in focus on the warm dark wood surface. Behind the prop, softly blurred, the same navy-and-gold coat character from the third reference is visible about a third of the image height as he steps awkwardly backward, dark hair, pale trousers and gold shoulders, by a pink chair and warm wooden wall. Slightly dim interior, red edging across the upper left, ochre lighting, traditional hand-drawn anime planes, no words, no extra people.",
+      "inputs": [
+        "S42-calibration-source.png",
+        "S05-tabletop.png",
+        "S40-left-foreground-baton.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Render ONE continuous tilted tabletop shot following <Video 1> for each exact camera movement and beat, all the way to its last frame. <Picture 1> gives the short dark-haired officer in First Empire navy and gold, long ivory trousers and dark boots. Start looking up at him by the doorway with the red upper strip. Show his comic startled recoil and open arms. As in <Picture 2>, lower the lens and briefly rack focus onto the rounded solid golden stage baton resting untouched on the wood tabletop, with the officer and the rose chair softly behind it. During the LAST FIFTH the officer MUST suddenly lurch close and stride over the camera with both empty palms flung high, his nearer ivory trouser leg and boot filling the right foreground, other leg bent and his face visible high center-left. Use <Picture 3> for the exact extreme perspective and pose of that action, as the baton stays blurry and stationary at bottom. The forward wide stride connects directly to the next camera angle and must visibly happen before the end. Keep this single character, room and uninterrupted camera. No weapons, text, extra people, wipes or dialogue.",
+    "seed": 1236,
+    "plannedAt": "2026-11-26T12:44:10.230606+00:00",
+    "images": [
+      {
+        "name": "S42-tabletop-focus.png",
+        "sha256": "946fe3db0677b72a33f2b667e84d2fb379f9fc7d2a0ff033d1a53f91465a9512",
+        "imagePrompt": "Create a wider original cel-shaded anime film storyboard illustration. 16:9 landscape. Use the attached first still only to match the extremely low diagonal tabletop point of view, shallow focus, empty foreground silhouette placement and distant pink chair. Replace its foreground object completely with the second image's blunt gold, tapered decorative stage baton with a brown wrapped cylindrical handle. Show the round gold tip nearest the bottom-right camera and wrapped handle at left center. A single narrow shiny silhouette across the lower-right foreground, exactly a smooth solid golden theater prop, with zero firearm geometry or pieces. No hand touches it. The nearest gold prop is in focus on the warm dark wood surface. Behind the prop, softly blurred, the same navy-and-gold coat character from the third reference is visible about a third of the image height as he steps awkwardly backward, dark hair, pale trousers and gold shoulders, by a pink chair and warm wooden wall. Slightly dim interior, red edging across the upper left, ochre lighting, traditional hand-drawn anime planes, no words, no extra people."
+      },
+      {
+        "name": "S42-stride-over-lens.png",
+        "sha256": "8ee64bc83aac3eeedbf79bb1d62cfde81538219d013c09da28d6bdfa12daa6f2",
+        "imagePrompt": "A single 16:9 cel-shaded anime storyboard frame immediately after image 1, same officer, gold-trimmed navy coat, fringed shoulder epaulettes, long ivory breeches, tall dark boots and warm wooden room. The scene is an exaggerated comic stumble toward the camera. Use image 2 ONLY as a guide to the very low canted camera and foreshortened body pose. The officer is up in the air, arms open in surprise with empty palms, her or his torso and head much higher and smaller in the top center-left. One bent leg remains nearer the upper left, while their other trouser leg and boot reach diagonally toward and past the right edge, very large due to perspective. Match the readable silhouette of the striding legs in image 2; the officer has FULL length trousers and boots like image 1. Keep the gold stage baton from image 1 lying across the lower foreground wooden tabletop, unused and undisturbed, brown wrapped handle on the left and smooth solid rounded tip to the right, now softened in depth of field. Focus on the officer's wide pose, with the rose chair far behind and red edge light on the wooden doorway. Exactly one figure, no extra hand, weapons, letterforms, panels, or text."
+      }
+    ]
+  }
+}
