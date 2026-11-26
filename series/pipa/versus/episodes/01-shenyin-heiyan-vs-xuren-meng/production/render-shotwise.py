@@ -15,6 +15,7 @@ import local_video_pipeline as video
 
 SIZE = '1344x768'
 FPS = 24
+PICTURE_TIMESCALE = 12288
 MODEL_FRAMES = 120
 EPISODE = 'pipa/versus/01-shenyin-heiyan-vs-xuren-meng'
 CAPACITY = 32
@@ -77,7 +78,7 @@ def transcode_picture(source, output, filters, frames, size):
     partial = output.with_name(output.stem+f'.{time.time_ns()}.partial.mp4')
     ff('-n','-i',source,'-map','0:v:0','-an','-vf',filters,'-frames:v',frames,
        '-c:v','libx264','-preset','fast','-crf','17','-pix_fmt','yuv420p',
-       '-video_track_timescale','12288','-movflags','+faststart',partial)
+       '-video_track_timescale',PICTURE_TIMESCALE,'-movflags','+faststart',partial)
     verify_picture(partial,frames,size)
     partial.replace(output)
 
@@ -445,6 +446,33 @@ def generate(base, root, prepared):
         time.sleep(POLL_SECONDS)
 
 
+def write_picture_concat(path, clips):
+    lines = ['ffconcat version 1.0']
+    frames = elapsed = 0
+    for picture, count in clips:
+        frames += count
+        endpoint = (frames * 1_000_000 + FPS // 2) // FPS
+        seconds, micros = divmod(endpoint - elapsed, 1_000_000)
+        quoted = picture.as_posix().replace("'", "'\\''")
+        # MP4 container durations can be rounded to milliseconds. Use the
+        # cumulative frame clock for each boundary and keep the encoded frames.
+        lines.extend((f"file '{quoted}'", f'duration {seconds}.{micros:06d}'))
+        elapsed = endpoint
+    path.write_text('\n'.join(lines) + '\n', encoding='utf-8', newline='\n')
+
+
+def verify_picture_clock(path, frame_count):
+    result = json.loads(video.run([
+        'ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_packets',
+        '-show_entries', 'stream=time_base:packet=pts', '-of', 'json', str(path),
+    ], timeout=600))
+    ticks = PICTURE_TIMESCALE // FPS
+    expected = list(range(0, frame_count * ticks, ticks))
+    actual = sorted(int(packet['pts']) for packet in result['packets'])
+    if result['streams'][0]['time_base'] != f'1/{PICTURE_TIMESCALE}' or actual != expected:
+        raise ValueError('The assembled picture has uneven presentation timestamps')
+
+
 def finish(root, prepared):
     films = []
     for shot in prepared['shots']:
@@ -456,20 +484,20 @@ def finish(root, prepared):
                 or any(review.get(key)!=value for key,value in binding.items())):
             raise ValueError(f"Missing or stale visual acceptance for {shot['id']}")
         verify_picture(picture,shot['frames'],SIZE)
-        films.append(picture)
+        films.append((picture, shot['frames']))
     audio = check_asset(prepared['soundtrack'])
     if 'soundtrackTiming' in prepared:
         check_asset(prepared['soundtrackTiming'])
     concat = root/'approved-shots.ffconcat'
-    concat.write_text('ffconcat version 1.0\n'+'\n'.join(
-        "file '" + path.as_posix().replace("'","'\\''") + "'" for path in films)+'\n',encoding='utf-8')
+    write_picture_concat(concat, films)
     output = root/'pipa-768p.mp4'
     if output.exists():
         raise ValueError('This production has already been assembled')
     partial = root/f'pipa-768p-{time.time_ns()}.partial.mp4'
     seconds = prepared['totalFrames']/FPS
     ff('-n','-f','concat','-safe','0','-i',concat,'-i',audio,'-map','0:v:0','-map','1:a:0',
-       '-c:v','copy','-c:a','aac','-b:a','192k','-t',f'{seconds:.9f}','-movflags','+faststart',partial)
+       '-c:v','copy','-video_track_timescale',PICTURE_TIMESCALE,'-c:a','aac','-b:a','192k',
+       '-t',f'{seconds:.9f}','-movflags','+faststart',partial)
     ff('-xerror','-i',partial,'-f','null','-')
     streams = probe(partial)['streams']
     picture,sound = streams
@@ -477,6 +505,7 @@ def finish(root, prepared):
             or (picture['width'],picture['height'])!=(1344,768) or sound['codec_type']!='audio'
             or abs(float(sound['duration'])-seconds)>1/FPS):
         raise ValueError('The complete film does not match the reviewed timeline')
+    verify_picture_clock(partial, prepared['totalFrames'])
     video.save(root/'final-receipt.json',{'artifact':{'path':str(output),'sha256':video.sha(partial)},
                                          'frames':prepared['totalFrames'],
                                          'seconds':seconds,'audioVideoCompleteDecode':'passed',

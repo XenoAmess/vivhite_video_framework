@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S06",
+  "startFrame": 158,
+  "endFrame": 186,
+  "attempt": 3,
+  "jobId": "video_gen_70567a2937bf47149e13fd0b4ca7253c:openai",
+  "requestSha256": "23dd60ab1b83b3a84e0186452cad4ab88a7df600535684453a0b47ee732999db",
+  "renderPrompt": "Keep one continuous cel-shaded anime shot. Use <Video 1> to match the timing and relative positions. <Picture 1> defines the adult navy-and-gold officer. <Picture 2> is the near-left reaching pose at the start; <Picture 3> is the required final pose well to the right. A round wooden table fills the bottom in the same pink-chair room. A solid round-tipped gold stage baton is already lying on the table at frame one. The officer starts with his near arm extended left. He opens his fingers, flips that same hand palm-down, lowers it onto the solid golden baton, closes his fingers around it, and quickly sweeps it up off the table while turning his face and shoulders sharply to screen right. Finish with the officer lunging to the far-right edge, right-facing shoulders in profile, arm continuing out of frame, and the now empty tabletop filling the left foreground exactly as <Picture 3>. Turn decisively several frames before the cut. Keep a single person and the same camera and background. No added shots, real weapons, typography or voices.",
+  "seed": 1236,
+  "rawSha256": "1a8b3545bb374186c20eff40017e9cca89f84b45f5c8a1cad6166f8af9926e77",
+  "cutSha256": "2ab45ab24e9581d5e636ccfd2e2a34e70d4ef25b50bb63e7cf01ca5d85f2d3c1",
+  "review": {
+    "cutSha256": "2ab45ab24e9581d5e636ccfd2e2a34e70d4ef25b50bb63e7cf01ca5d85f2d3c1",
+    "requestSha256": "23dd60ab1b83b3a84e0186452cad4ab88a7df600535684453a0b47ee732999db",
+    "originalSha256": "f66a8a1573ed40a06ecf6abd412c166675eee6de6ae7b7fa7bf7935fc7c4eba2",
+    "decision": "accepted",
+    "reviewedFrames": 28,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 158–185 帧和本镜全部 28 帧。神隐黑炎在圆桌后向左前景伸手，金色舞台棒自起镜就在桌面；手掌翻下、手指合拢、棒离桌、头肩带手向画面右侧拧转、尾帧探出右边缘依次可见。连续保留粉椅和木屋。等速版抓取偏早，重新从同一输出抽取帧，使合掌时刻落在末段，和原片接近。候选人物在起段已经开掌，原片到末段才打开，转身的最终方向和切点姿态一致。",
+    "reviewedAt": "2026-11-26T04:47:03.763447+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S06-right-turn-end.png",
+      "sha256": "4bcc87ff5c2f947e60e95cfcbee8f918ad459b5208d7b3146948be83a2f7cbd9",
+      "prompt": "A single widescreen cel-shaded anime action keyframe, made by editing the anime image to match ONLY the final body position of the second image. Keep the exact navy-and-gold first-empire uniform, short tousled dark hair, tilted round dark brown table in the lower half, red window on left, plain warm brown wall and same pink chair. Keep the camera looking past the same round wood table, point of view very low. Move the character sharply to the far right of the frame, shown turning his back and right-facing profile to camera as he lunges right, torso bent diagonally and reaching his navy sleeve all the way offscreen to the right. His original facing and exaggerated huge hand at the left foreground have moved completely away from there. An expression of comic haste, slight movement in the hair and shoulder fringe. He has already scooped the plain rounded solid gold theatrical baton off the table, taking it with him past the lower right crop, so the tabletop foreground is empty. Show only one figure, no text, firearm, new location or panels. Match the tonal levels and film framing of the first picture.",
+      "inputs": [
+        "S06-table-reach.png",
+        "S06-original-right-turn.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S06.mp4",
+    "inputSha256": "e6a43c2b4161a8bc16c0ef93ebfd54f9f97ae14cc808d82fd32bdabe495af27c",
+    "preRetimeCutSha256": "42ea864296e59524f69721cc9772b951ea4f85f3b1942bcf07a82c0ecdda507c",
+    "outputSha256": "2ab45ab24e9581d5e636ccfd2e2a34e70d4ef25b50bb63e7cf01ca5d85f2d3c1",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      16,
+      20,
+      24,
+      28,
+      31,
+      34,
+      37,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      54,
+      57,
+      61,
+      66,
+      71,
+      77,
+      86,
+      93,
+      102,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,3)+eq(n\\,6)+eq(n\\,9)+eq(n\\,12)+eq(n\\,16)+eq(n\\,20)+eq(n\\,24)+eq(n\\,28)+eq(n\\,31)+eq(n\\,34)+eq(n\\,37)+eq(n\\,40)+eq(n\\,42)+eq(n\\,44)+eq(n\\,46)+eq(n\\,48)+eq(n\\,50)+eq(n\\,54)+eq(n\\,57)+eq(n\\,61)+eq(n\\,66)+eq(n\\,71)+eq(n\\,77)+eq(n\\,86)+eq(n\\,93)+eq(n\\,102)+eq(n\\,119),setpts=N/(24*TB)",
+    "reason": "Retain the opening hold and align the modeled palm turn, pickup and lunge with the original rhythm.",
+    "coveredFrames": 28,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T04:47:03.188970+00:00"
+  }
+}
