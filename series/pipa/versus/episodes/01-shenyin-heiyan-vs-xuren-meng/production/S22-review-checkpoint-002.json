@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S22",
+  "startFrame": 550,
+  "endFrame": 578,
+  "attempt": 2,
+  "jobId": "video_gen_5d1793c072b34b56b9b89aaa6d4161b8:openai",
+  "requestSha256": "d12e076900e7822ae327cabd451704faca8710567eaa7f70fc37fcd3ab1f2132",
+  "renderPrompt": "Single cel-shaded anime shot based on <Video 1>. <Picture 1> is the dark-haired young officer in the exact navy-and-gold military coat. In the first close framing his eyes widen, gaze darts and mouth opens visibly as shown in <Picture 2>. Let the expression change at once, then pull the lens back quickly with his rising body to reveal both gold shoulders and both arms spreading on either side. Continue to a wider front view by the rose chair and warm wall. End with the arms open and amber stage light glinting to either side. Keep the scale change and the actor's movement readable, one person, no cut, duplicated arms, realistic weapon, text, or dialogue.",
+  "seed": 1235,
+  "rawSha256": "394cdd86b9720b6ed4dc71cb5764766638739eee321d7f33a3c16126531e6d7e",
+  "cutSha256": "9db653573a422b08c82be1aad4a16aa1444b7d7c42edb9918fdc9270bc30f6d6",
+  "review": {
+    "cutSha256": "9db653573a422b08c82be1aad4a16aa1444b7d7c42edb9918fdc9270bc30f6d6",
+    "requestSha256": "d12e076900e7822ae327cabd451704faca8710567eaa7f70fc37fcd3ab1f2132",
+    "originalSha256": "88d896d18aaef4a82627a80e48a897dfad171b9f8971dabff28bed56481b2658",
+    "decision": "rejected",
+    "reviewedFrames": 28,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原版第 550–577 帧共 28 帧。第二版能看清惊讶与拉远，军服、粉椅和暖墙正确。原镜中段明显低头再站直，两手随抬肘伸到前景，光效紧接抬手出现。候选头部一直保持同一表情高位，双臂平伸到两侧，景别拉得过宽，末段仍把舞台灯变回原片中的枪形道具。动作方向、节拍和改编道具均退回。",
+    "reviewedAt": "2026-11-26T05:05:07.565192+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S22-front-lanterns-end.png",
+      "sha256": "05b9dad2d3e7b14a701cab9035ae8e249ce635162d54f4584234903c29470211",
+      "prompt": "One widescreen cel-shaded 2D anime storyboard frame in the same warm wood room as the attached reference, with the exact adult dark-haired officer in the navy coat with gilded fringed shoulders. Switch from the extreme close-up of the reference to a straight-on medium shot ending at the waist, camera a little below face height. He has just stood up and looks delightedly bewildered. The head stays upper-center. Bent elbows just to the sides of his chest, both of HIS forearms reach forward toward the camera. In each hand he openly cups a palm-sized ROUND golden lantern, a solid globe with a round blue glass lens and no projecting stem. Make two visible circles left and right close to camera, the reflection forming a few blue and warm amber rays like lights at a tiny theater. No flame, sparks or fireballs. Keep the hands near torso width, not spread to the edges, and the shoulders behind them in perspective. A pink armchair behind his waist, red-edged wood trim left, beige blank wall right with no writing. Warm lights and only one person, no weapon shapes, no captions, no multiple panels.",
+      "inputs": [
+        "S22-sudden-close-reaction.png",
+        "S12-reaction.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "One seamless cel-shaded anime shot matching the head motion and camera pull of <Video 1>. <Picture 1> supplies the adult navy and gold officer. Begin extremely tight like <Picture 2>, starting with side-eye and shifting from puzzled smile to a shocked open mouth. Before the midpoint, duck the head quickly downward, then rise again as the same camera pulls rapidly to a waist-up shot. The arms rise and extend forward, elbows remaining slightly bent, with the two plain round brass lanterns with blue circular lenses from <Picture 3> cupped in open hands toward the camera. The only props are those two smooth round light globes. After his hands are up, let the round lenses emit a few alternating abstract amber and blue beams near the camera, leaving the face in view. Finish at waist height with lanterns still held in front. Same warm wood, red door trim and pink chair, one character, no extra cut, text, or dialogue. Never reproduce any gun or firearm part from the motion video.",
+    "seed": 1236,
+    "plannedAt": "2026-11-26T05:06:04.907283+00:00",
+    "images": [
+      {
+        "name": "S22-sudden-close-reaction.png",
+        "sha256": "325f14252ab1cc7acf9f39cd60a0b40f395d1df8741012adb291a2b60378831c",
+        "imagePrompt": "A single wide 16:9 cropped anime reaction keyframe. Image 1 supplies the identical anime officer's dark tousled hair, slate-blue eyes, face and gold edged navy collar. Image 2 supplies the close reaction, eye line and lighting only. His open mouth and widening eyes show a harmless, exaggerated comedic startle as his gaze turns sideways. Frame so his head fills most of the image and only a little collar and shoulders show, warmly lit right side and faint red from the left. Same warm soft wall, no text or other objects. Keep linework and identity visually consistent. One character, no weapons or typography."
+      },
+      {
+        "name": "S22-front-lanterns-end.png",
+        "sha256": "05b9dad2d3e7b14a701cab9035ae8e249ce635162d54f4584234903c29470211",
+        "imagePrompt": "One widescreen cel-shaded 2D anime storyboard frame in the same warm wood room as the attached reference, with the exact adult dark-haired officer in the navy coat with gilded fringed shoulders. Switch from the extreme close-up of the reference to a straight-on medium shot ending at the waist, camera a little below face height. He has just stood up and looks delightedly bewildered. The head stays upper-center. Bent elbows just to the sides of his chest, both of HIS forearms reach forward toward the camera. In each hand he openly cups a palm-sized ROUND golden lantern, a solid globe with a round blue glass lens and no projecting stem. Make two visible circles left and right close to camera, the reflection forming a few blue and warm amber rays like lights at a tiny theater. No flame, sparks or fireballs. Keep the hands near torso width, not spread to the edges, and the shoulders behind them in perspective. A pink armchair behind his waist, red-edged wood trim left, beige blank wall right with no writing. Warm lights and only one person, no weapon shapes, no captions, no multiple panels."
+      }
+    ]
+  }
+}
