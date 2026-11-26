@@ -1,0 +1,648 @@
+{
+  "schemaVersion": "vivhite-shotwise-video-1",
+  "referenceFps": 24,
+  "outputFps": 24,
+  "width": 1344,
+  "height": 768,
+  "totalFrames": 1478,
+  "source": {
+    "videoId": "BV1pvY16QEwd",
+    "expectedSha256": "d9652f622a5043e270224f2a05a87cc7c9d851dd23bfba8d67e4fae3dc040e51",
+    "storyFrameInterval": [
+      0,
+      1478
+    ],
+    "sourceCredit": "Kotte Animation"
+  },
+  "soundtrack": {
+    "videoId": "BV14BeA6CEUb",
+    "part": 1,
+    "expectedSha256": "82e2c5fd940646b64ad3470ee68337e3901c79cf636802132c532ac8a9e99314",
+    "startSeconds": 0,
+    "endSeconds": 61.045,
+    "alignment": "fit continuous user-specified soundtrack to the original visual timeline"
+  },
+  "authorization": {
+    "basis": "User explicitly authorized this episode to use the two supplied appearance references and the specified roles.",
+    "scope": "pipa/versus/01-shenyin-heiyan-vs-xuren-meng",
+    "roles": {
+      "A": "shenyin-heiyan",
+      "B": "xuren-meng"
+    }
+  },
+  "characters": {
+    "A": {
+      "id": "shenyin-heiyan",
+      "reference": "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+      "appearance": "short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots"
+    },
+    "B": {
+      "id": "xuren-meng",
+      "reference": "assets/generated/character-concepts-v2/xuren-meng.png",
+      "appearance": "long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask"
+    }
+  },
+  "shots": [
+    {
+      "id": "S01",
+      "startFrame": 0,
+      "endFrame": 40,
+      "cast": [
+        "A"
+      ],
+      "description": "椅边正面，神隐黑炎由平静转成挑衅",
+      "direction": "Keep the opening face size and ambivalent glance. Follow the source pullback and change of focus. Retain the source dark gun silhouette entering on the left and the actor out of focus behind it at the last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the opening face size and ambivalent glance. Follow the source pullback and change of focus. Retain the source dark gun silhouette entering on the left and the actor out of focus behind it at the last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S02",
+      "startFrame": 40,
+      "endFrame": 64,
+      "cast": [
+        "B"
+      ],
+      "description": "虚人梦隔着前景进入中焦，凝视对方",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S03",
+      "startFrame": 64,
+      "endFrame": 100,
+      "cast": [
+        "A"
+      ],
+      "description": "偏低机位的侧脸，神隐黑炎歪头回望",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S04",
+      "startFrame": 100,
+      "endFrame": 129,
+      "cast": [
+        "A"
+      ],
+      "description": "神隐黑炎侧脸，视线随左前景的枪形道具抬高",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S05",
+      "startFrame": 129,
+      "endFrame": 158,
+      "cast": [
+        "A"
+      ],
+      "description": "暗色圆桌俯拍，枪形道具落桌、留在桌面并被拿起",
+      "direction": "Preserve the exact overhead dark round table, its thin red reflection, both original hand positions and all of the dark handheld screen prop through the visible tabletop movement. Match its original resting interval and the hand entering from the same edge; do not replace, stylize away or redesign it.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Preserve the exact overhead dark round table, its thin red reflection, both original hand positions and all of the dark handheld screen prop through the visible tabletop movement. Match its original resting interval and the hand entering from the same edge; do not replace, stylize away or redesign it. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S06",
+      "startFrame": 158,
+      "endFrame": 186,
+      "cast": [
+        "A"
+      ],
+      "description": "靠桌前倾，随后拧身准备起立",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S07",
+      "startFrame": 186,
+      "endFrame": 206,
+      "cast": [
+        "A"
+      ],
+      "description": "椅边起身，侧面机位保持原动作节奏",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S08",
+      "startFrame": 206,
+      "endFrame": 254,
+      "cast": [
+        "A",
+        "B"
+      ],
+      "description": "左前景与远处虚人梦呼应，镜头急拉并交代屋内碎片",
+      "direction": "Keep the foreground silhouette on the left, the original angle, side of the frame and abrupt widening. Preserve the folding screen, irregular opening in the wall, both chairs, scattered pieces, and timed bright frames as they appear in the source. The crimson performer moves in the same direction and reaches the far side at the same moment.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the foreground silhouette on the left, the original angle, side of the frame and abrupt widening. Preserve the folding screen, irregular opening in the wall, both chairs, scattered pieces, and timed bright frames as they appear in the source. The crimson performer moves in the same direction and reaches the far side at the same moment. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S09",
+      "startFrame": 254,
+      "endFrame": 273,
+      "cast": [
+        "B"
+      ],
+      "description": "虚人梦落地蹲身，俯拍推进到面部",
+      "direction": "Keep the original top-down angle, board direction, door, scraps and warm shadow; align the turn, glance and tightening crop to the exact same portion of the source shot.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the original top-down angle, board direction, door, scraps and warm shadow; align the turn, glance and tightening crop to the exact same portion of the source shot. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S10",
+      "startFrame": 273,
+      "endFrame": 294,
+      "cast": [
+        "B"
+      ],
+      "description": "贴地仰拍，虚人梦蹲身抬手，再起身前倾",
+      "direction": "Retain the original low rear angle, ceiling light, padded side panels and floor. Match the squat, hand lift and forward bend in that order. The red cape follows the body and leaves both hands visible for the following cut.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Retain the original low rear angle, ceiling light, padded side panels and floor. Match the squat, hand lift and forward bend in that order. The red cape follows the body and leaves both hands visible for the following cut. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S11",
+      "startFrame": 294,
+      "endFrame": 317,
+      "cast": [
+        "B"
+      ],
+      "description": "背面双手拍击，披风让开手部",
+      "direction": "Keep the existing close rear framing and wall panels; the fully clothed crimson performer performs the original two distinct hand contacts with their trousers, with a release between contacts and a wide arms-open ending. Keep the cloak to the sides so the contact gestures and their timing remain visible.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the existing close rear framing and wall panels; the fully clothed crimson performer performs the original two distinct hand contacts with their trousers, with a release between contacts and a wide arms-open ending. Keep the cloak to the sides so the contact gestures and their timing remain visible. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S12",
+      "startFrame": 317,
+      "endFrame": 338,
+      "cast": [
+        "A"
+      ],
+      "description": "粉椅旁神隐黑炎惊讶张嘴，镜头疾推再拉回",
+      "direction": "Keep the pink chair, left opening and right wall in their original positions and lighting. Follow the original push into the open-mouth expression, then the rapid pullback with the original lower foreground silhouette and arm movement.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the pink chair, left opening and right wall in their original positions and lighting. Follow the original push into the open-mouth expression, then the rapid pullback with the original lower foreground silhouette and arm movement. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S14",
+      "startFrame": 338,
+      "endFrame": 357,
+      "cast": [
+        "A"
+      ],
+      "description": "桌前偏侧角度，近处手臂伸出并出现原片闪光",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S15",
+      "startFrame": 357,
+      "endFrame": 385,
+      "cast": [
+        "B"
+      ],
+      "description": "近背视角，虚人梦弯膝转胯",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S16",
+      "startFrame": 385,
+      "endFrame": 433,
+      "cast": [
+        "B"
+      ],
+      "description": "低机位宽景，虚人梦张臂摇摆",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S17",
+      "startFrame": 433,
+      "endFrame": 463,
+      "cast": [
+        "A"
+      ],
+      "description": "粉椅前张口，原镜拉到桌边并伸手进入左前景",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S19",
+      "startFrame": 463,
+      "endFrame": 510,
+      "cast": [
+        "B"
+      ],
+      "description": "低角度中景，虚人梦扭身退到房间深处",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S20",
+      "startFrame": 510,
+      "endFrame": 536,
+      "cast": [
+        "B"
+      ],
+      "description": "较高角度，虚人梦落到一膝并抬手",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S21",
+      "startFrame": 536,
+      "endFrame": 550,
+      "cast": [
+        "B"
+      ],
+      "description": "换高位背视，虚人梦侧转迈步",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S22",
+      "startFrame": 550,
+      "endFrame": 578,
+      "cast": [
+        "A"
+      ],
+      "description": "脸部特写迅速拉远，神隐黑炎低头再抬起两臂",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S24",
+      "startFrame": 578,
+      "endFrame": 633,
+      "cast": [
+        "B"
+      ],
+      "description": "虚人梦伏地，先撑起再屈膝，镜头由高位降至背侧",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S26",
+      "startFrame": 633,
+      "endFrame": 644,
+      "cast": [
+        "B"
+      ],
+      "description": "地板贴近视角，靴子跨过画面",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S27",
+      "startFrame": 644,
+      "endFrame": 671,
+      "cast": [
+        "A"
+      ],
+      "description": "神隐黑炎正面对镜展开双臂，保留原片的闪光节拍",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S28",
+      "startFrame": 671,
+      "endFrame": 710,
+      "cast": [
+        "B"
+      ],
+      "description": "房间正面宽景，虚人梦站稳后抬臂",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S29",
+      "startFrame": 710,
+      "endFrame": 759,
+      "cast": [
+        "B"
+      ],
+      "description": "仰拍，虚人梦跳步抬腿",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S30",
+      "startFrame": 759,
+      "endFrame": 788,
+      "cast": [
+        "B"
+      ],
+      "description": "贴地运镜迅速拉开，虚人梦换脚落地并屈膝",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S32",
+      "startFrame": 788,
+      "endFrame": 824,
+      "cast": [
+        "B"
+      ],
+      "description": "高机位，虚人梦屈膝后向前展开动作",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S33",
+      "startFrame": 824,
+      "endFrame": 855,
+      "cast": [
+        "B"
+      ],
+      "description": "换仰角，虚人梦俯身后再次抬腿",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S34",
+      "startFrame": 855,
+      "endFrame": 878,
+      "cast": [
+        "A"
+      ],
+      "description": "神隐黑炎侧向大动作，前景被光扫过",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S35",
+      "startFrame": 878,
+      "endFrame": 946,
+      "cast": [
+        "B"
+      ],
+      "description": "虚人梦由背身张臂转体，向右前景甩臂并指向",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S36",
+      "startFrame": 946,
+      "endFrame": 971,
+      "cast": [
+        "A"
+      ],
+      "description": "神隐黑炎斜角表情，镜头由近拉到木门旁的半身",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S38",
+      "startFrame": 971,
+      "endFrame": 1063,
+      "cast": [
+        "B"
+      ],
+      "description": "虚人梦以背面为主，在房间跳步回转",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S39",
+      "startFrame": 1063,
+      "endFrame": 1078,
+      "cast": [
+        "B"
+      ],
+      "description": "虚人梦过肩回望",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S40",
+      "startFrame": 1078,
+      "endFrame": 1107,
+      "cast": [
+        "A"
+      ],
+      "description": "仰拍神隐黑炎抬头张口反应",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S41",
+      "startFrame": 1107,
+      "endFrame": 1125,
+      "cast": [
+        "A"
+      ],
+      "description": "低位全身，神隐黑炎摆开站姿",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S42",
+      "startFrame": 1125,
+      "endFrame": 1174,
+      "cast": [
+        "A"
+      ],
+      "description": "侧仰角，神隐黑炎急转并失去平衡",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S43",
+      "startFrame": 1174,
+      "endFrame": 1208,
+      "cast": [
+        "A"
+      ],
+      "description": "神隐黑炎从俯拍屈膝到坐地抬手，镜头连续降低",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S45",
+      "startFrame": 1208,
+      "endFrame": 1229,
+      "cast": [
+        "A",
+        "B"
+      ],
+      "description": "两人近距离交错，虚人梦和神隐黑炎各自保留造型",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S46",
+      "startFrame": 1229,
+      "endFrame": 1234,
+      "cast": [
+        "A",
+        "B"
+      ],
+      "description": "短促对切，前景红兜帽与后景军服",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S47",
+      "startFrame": 1234,
+      "endFrame": 1256,
+      "cast": [
+        "A"
+      ],
+      "description": "俯拍神隐黑炎后仰，粉椅在背景",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S48",
+      "startFrame": 1256,
+      "endFrame": 1296,
+      "cast": [
+        "A",
+        "B"
+      ],
+      "description": "屏风前虚人梦迈步，神隐黑炎朝左滑落并低姿撑身",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S50",
+      "startFrame": 1296,
+      "endFrame": 1314,
+      "cast": [
+        "A",
+        "B"
+      ],
+      "description": "低位视角，前景虚人梦回身观察",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S51",
+      "startFrame": 1314,
+      "endFrame": 1324,
+      "cast": [
+        "A",
+        "B"
+      ],
+      "description": "高位反切，神隐黑炎抬眼，虚人梦位于画面边缘",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S52",
+      "startFrame": 1324,
+      "endFrame": 1374,
+      "cast": [
+        "B"
+      ],
+      "description": "贴地仰视虚人梦转身，再竖指收势",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S53",
+      "startFrame": 1374,
+      "endFrame": 1402,
+      "cast": [
+        "A"
+      ],
+      "description": "神隐黑炎低位近景，从惊讶转为苦笑",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S54",
+      "startFrame": 1402,
+      "endFrame": 1415,
+      "cast": [
+        "A",
+        "B"
+      ],
+      "description": "肩后角度，两位角色交换视线",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S55",
+      "startFrame": 1415,
+      "endFrame": 1431,
+      "cast": [
+        "A",
+        "B"
+      ],
+      "description": "高位俯拍短反切，红袍在右下近景，神隐黑炎在左后方地面",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    },
+    {
+      "id": "S56",
+      "startFrame": 1431,
+      "endFrame": 1478,
+      "cast": [
+        "A",
+        "B"
+      ],
+      "description": "俯拍收尾，虚人梦弯身，神隐黑炎留在后景",
+      "direction": "Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame.",
+      "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue."
+    }
+  ],
+  "cutRevision": {
+    "version": 2,
+    "previousPlan": "shot-plan-v1.json",
+    "continuousPairsMerged": [
+      [
+        "S12",
+        "S13"
+      ],
+      [
+        "S17",
+        "S18"
+      ],
+      [
+        "S22",
+        "S23"
+      ],
+      [
+        "S24",
+        "S25"
+      ],
+      [
+        "S30",
+        "S31"
+      ],
+      [
+        "S36",
+        "S37"
+      ],
+      [
+        "S43",
+        "S44"
+      ],
+      [
+        "S48",
+        "S49"
+      ]
+    ],
+    "boundaryCorrections": [
+      {
+        "between": [
+          "S34",
+          "S35"
+        ],
+        "previousFrame": 874,
+        "correctedFrame": 878
+      },
+      {
+        "between": [
+          "S40",
+          "S41"
+        ],
+        "previousFrame": 1106,
+        "correctedFrame": 1107
+      }
+    ],
+    "reason": "Inspect adjacent frames at every planned boundary and keep continuous camera moves in one model input. Shot numbers from the first plan remain stable for already recorded production attempts."
+  },
+  "sourceFidelity": {
+    "supersedes": "shot-plan-v2.json",
+    "characterOnlyEdit": true,
+    "keepOriginalScreenProps": true,
+    "keepOriginalShotActionAndCamera": true,
+    "keepOriginalSetLightingAndEffects": true
+  }
+}

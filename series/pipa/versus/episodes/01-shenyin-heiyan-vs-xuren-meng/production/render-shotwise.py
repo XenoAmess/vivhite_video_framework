@@ -60,6 +60,9 @@ def validate(plan, manifest):
                 or not shot['cast'] or len(set(shot['cast'])) != len(shot['cast'])
                 or not set(shot['cast']) <= set(plan['characters']) or not shot['direction'].strip()):
             raise ValueError('The shot list must cover a contiguous timeline with known visible roles')
+        if 'renderPrompt' in shot and (not isinstance(shot['renderPrompt'], str)
+                                       or not shot['renderPrompt'].strip()):
+            raise ValueError(f"Provide non-empty prompt text for {shot['id']}")
         expected = shot['endFrame']
         previous_id = shot['id']
     if expected != plan['totalFrames']:
@@ -217,7 +220,7 @@ def prepare(args, root):
         if identifier in anchors:
             layouts.append(anchors[identifier])
             anchor_text = f' <Picture {len(layouts)}> shows the desired pose and framing for this same character.'
-        prompt = (
+        prompt = shot.get('renderPrompt') or (
             'Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. '
             'Follow the movement, viewpoint and camera direction from this source shot. Replace the original '
             '3D source characters in every frame, including the first and last frames. ' + role_text + anchor_text
@@ -523,7 +526,7 @@ def finish(root, prepared):
     video.save(root/'progress.json',{'at':video.now(),'totalShots':len(films),'status':'assembled'})
 
 
-def run_scheduled(base, root, config):
+def run_scheduled(base, root, config, *, assemble=True):
     import msvcrt
     with (root/'worker.lock').open('a+b') as lock, (root/'worker.log').open('a',encoding='utf-8',buffering=1) as log:
         if not lock.tell():
@@ -547,7 +550,7 @@ def run_scheduled(base, root, config):
                     done = [attempt/'job.json' for attempt in attempts]
                     terminal = ('completed','failed','cancelled','submitting','submission-uncertain')
                     if all(path.exists() and video.read(path)['status'] in terminal for path in done):
-                        if (not (root/'pipa-768p.mp4').exists()
+                        if (assemble and not (root/'pipa-768p.mp4').exists()
                                 and all((attempt/'review.json').exists()
                                         and video.read(attempt/'review.json').get('decision')=='accepted'
                                         for attempt in attempts)):
@@ -573,6 +576,8 @@ def main():
     render.add_argument('--api',default=video.DEFAULT_API)
     render.add_argument('--scheduled',action='store_true')
     render.add_argument('--tool-directory',type=Path)
+    render.add_argument('--shot',action='append',default=[],
+                        help='Render only the specified shots, in the given order, without full assembly')
     soundtrack = sub.add_parser('sync-soundtrack')
     soundtrack.add_argument('--timing',required=True,type=Path)
     ret = sub.add_parser('retry')
@@ -604,8 +609,12 @@ def main():
     if args.command=='render':
         if args.tool_directory:
             os.environ['PATH'] = str(args.tool_directory.resolve())+os.pathsep+os.environ.get('PATH','')
+        if args.shot:
+            if len(set(args.shot)) != len(args.shot):
+                parser.error('Each selected shot can appear only once')
+            config = {**config, 'shots': [selected_shot(config, identity) for identity in args.shot]}
         if args.scheduled:
-            run_scheduled(args.api,root,config)
+            run_scheduled(args.api,root,config,assemble=not args.shot)
         else:
             generate(args.api,root,config)
     elif args.command=='retry':

@@ -80,5 +80,25 @@ class RetryLayoutTest(unittest.TestCase):
                     self.assertEqual([{'file_id': 'same-source-shot'}], request['video_reference'])
 
 
+class RenderSelectionTest(unittest.TestCase):
+    def test_scheduled_calibration_keeps_requested_order_and_skips_final_assembly(self):
+        plan = {
+            'schemaVersion': 'vivhite-shotwise-prepared-1',
+            'plan': {},
+            'episode': {},
+            'shots': [{'id': 'S01'}, {'id': 'S05'}, {'id': 'S11'}],
+        }
+        with TemporaryDirectory(prefix='pipa-shot-selection-') as directory:
+            arguments = ['render-shotwise.py', '--directory', directory, 'render',
+                         '--scheduled', '--shot', 'S11', '--shot', 'S01']
+            with (patch.object(sys, 'argv', arguments), patch.object(worker.video, 'read', return_value=plan),
+                  patch.object(worker, 'check_asset'), patch.object(worker, 'run_scheduled') as scheduled):
+                worker.main()
+
+            selected = {**plan, 'shots': [{'id': 'S11'}, {'id': 'S01'}]}
+            scheduled.assert_called_once_with(worker.video.DEFAULT_API, Path(directory).resolve(),
+                                              selected, assemble=False)
+
+
 if __name__ == '__main__':
     unittest.main()

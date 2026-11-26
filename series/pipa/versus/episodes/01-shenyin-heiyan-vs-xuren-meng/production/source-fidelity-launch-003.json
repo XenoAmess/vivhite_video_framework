@@ -1,0 +1,245 @@
+{
+  "schemaVersion": "vivhite-pipa-source-fidelity-launch-1",
+  "workerSha256": "9e1d67159221ae5211e936d3ca1d533d043843f4fd509ba958aad8ebee23aa18",
+  "approvedPlanSha256": "2fd751e3291fba4f251f6b1468ab22217a595a6af723cf4b9f148d440fa9ff72",
+  "sourceCuts": 48,
+  "totalFrames": 1478,
+  "frozenPriorExecution": {
+    "schemaVersion": "vivhite-pipa-direction-supersession-1",
+    "reason": "User rejected preview fidelity and replacement of original screen props.",
+    "at": "2026-11-26T16:58:30.954764+00:00",
+    "fullAssemblyPaused": true,
+    "ownedQueueJobs": [
+      {
+        "shot": "S52",
+        "attempt": "attempt-002",
+        "jobId": "video_gen_cd580ef7f049440ab95b2139a0fdfe42:openai",
+        "requestSha256": "bc0b568e4ab1b7c206c8b05e7e8254550a48a1394144e14a50c3accd6940a4b5",
+        "before": "in_progress",
+        "after": "in_progress"
+      },
+      {
+        "shot": "S55",
+        "attempt": "attempt-002",
+        "jobId": "video_gen_f30e2c50eee2488d91ba13e414576a6d:openai",
+        "requestSha256": "b6b169e3d74461ecfff4d1fb5254a4b40cb0225bffcf60ceb6240b805acd82a7",
+        "before": "queued",
+        "after": "cancelled"
+      },
+      {
+        "shot": "S50",
+        "attempt": "attempt-002",
+        "jobId": "video_gen_de35af72534e4f3293597a3ff5a519f8:openai",
+        "requestSha256": "7a751413e7c5cfbb516a5c0de2925d16c1b36e6f8d0df3cf3c7c0c2126eb1dee",
+        "before": "queued",
+        "after": "cancelled"
+      },
+      {
+        "shot": "S56",
+        "attempt": "attempt-002",
+        "jobId": "video_gen_6d5c9e7c1cd74a3da9bc34d7d84f8314:openai",
+        "requestSha256": "cbac40d7b2d2c3d8cb84fccf2e18d9525ddab7dc7835f312b587e5b420452a0b",
+        "before": "queued",
+        "after": "cancelled"
+      },
+      {
+        "shot": "S42",
+        "attempt": "attempt-003",
+        "jobId": "video_gen_157db4d02cee4c1a94e2057fe15d0191:openai",
+        "requestSha256": "54ced24ce46285b1b5637d506e407a59bceb6f4b5db83b08bdf9cbbcf6c88686",
+        "before": "queued",
+        "after": "cancelled"
+      },
+      {
+        "shot": "S43",
+        "attempt": "attempt-003",
+        "jobId": "video_gen_5522c1b2953643c98bef7cdbe3f9c65f:openai",
+        "requestSha256": "4a582eef26b2df28b44428ee9d7e94a1ec76c9b02a523638b138d697db470fa8",
+        "before": "queued",
+        "after": "cancelled"
+      },
+      {
+        "shot": "S24",
+        "attempt": "attempt-004",
+        "jobId": "video_gen_f63ffc1bc3414a4ea92ec74c15265a5f:openai",
+        "requestSha256": "f30877624918f3fff9781977824b7bf217566181fd21b4547c71cd48ab32511a",
+        "before": "queued",
+        "after": "cancelled"
+      }
+    ],
+    "preservedReviewedShots": 40
+  },
+  "imageEditRequests": [
+    {
+      "file": "S01-source-edit-0000.png",
+      "shot": "S01",
+      "sourceFrame": 0,
+      "sha256": "720bc5b4bf12ef2f885e704640410502021497692abd09e950158601b60cf0d9",
+      "prompt": "Edit the first frame of a fictional animated film. Use its original camera, crop, lens, perspective, set, fabric and wall textures, floor, shadows and lighting as a fixed plate. Use the second image solely for the actor design. Paint only the actor (or their clothing and hand if partly visible) into the original frame in the same stylized 3D film look, with similar body proportions. Keep the source scene's contrast and color, and keep the camera framing almost pixel-for-pixel. No extra scenery, glamor lighting, graphics, speed lines, or captions. In this tight initial close-up, substitute the original actor's face, dark-brown tousled hair, blue-gray eyes and blue-gold collar with the identity from image two. Keep the understated sly glance, face placement, eye line and remaining original background unchanged. Same warm dim practical light and horizontal framing.",
+      "inputs": [
+        "anchor-originals/S01-source-0000.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ],
+      "sourceStillSha256": "59079fea9fdab303e210ccc88164c60b3ef5e8e96448e60ad7169346d4a9faef"
+    },
+    {
+      "file": "S01-source-edit-0039.png",
+      "shot": "S01",
+      "sourceFrame": 39,
+      "sha256": "7408ced644105a9daa03c0df500b69d2bed06873c34479b7609689edd8356047",
+      "prompt": "Edit the first frame of a fictional animated film. Use its original camera, crop, lens, perspective, set, fabric and wall textures, floor, shadows and lighting as a fixed plate. Use the second image solely for the actor design. Paint only the actor (or their clothing and hand if partly visible) into the original frame in the same stylized 3D film look, with similar body proportions. Keep the source scene's contrast and color, and keep the camera framing almost pixel-for-pixel. No extra scenery, glamor lighting, graphics, speed lines, or captions. Keep the original dark handgun-shaped film prop in the original great near-foreground, in the same shape, angle, scale and photographic blur as image one. Replace the actor in the back with the adult navy-and-gold officer in image two, following exactly the source lean, pose and gaze. Retain the pink chair, the posters on the same wall, the existing depth of field and dark edges. This is one animated story frame and the prop is treated as a silhouette already in the supplied image.",
+      "inputs": [
+        "anchor-originals/S01-source-0039.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ],
+      "sourceStillSha256": "a3ecb1e3e8a39a3154a1e206ed17af191c2dce85ef7a758e74b405d5f62d4510"
+    },
+    {
+      "file": "S05-source-edit-0129.png",
+      "shot": "S05",
+      "sourceFrame": 129,
+      "sha256": "95c3c4f3e1fae33d78bd6d8f790fa5dcf6e3523295e55aae49d885e80864bd0e",
+      "prompt": "Edit the first frame of a fictional animated film. Use its original camera, crop, lens, perspective, set, fabric and wall textures, floor, shadows and lighting as a fixed plate. Use the second image solely for the actor design. Paint only the actor (or their clothing and hand if partly visible) into the original frame in the same stylized 3D film look, with similar body proportions. Keep the source scene's contrast and color, and keep the camera framing almost pixel-for-pixel. No extra scenery, glamor lighting, graphics, speed lines, or captions. Preserve the dark glossy gun-shaped movie prop exactly as visibly framed in the supplied close-up, in the same position and diagonal on the dark tabletop. Keep the original hand's screen position and cropped composition; redraw its visible black sleeve as the navy-and-gold officer's sleeve from image two. Match the original shadows and red reflection. Keep everything else in this fixed overhead shot in the same place. Treat the dark prop as an existing on-screen silhouette and add no detail to it.",
+      "inputs": [
+        "anchor-originals/S05-source-0129.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ],
+      "sourceStillSha256": "4fc3a842adaa7c68ac01ac77c2c0f0b2c186b882769e055c917ef25a3b1f9e4b"
+    },
+    {
+      "file": "S11-source-edit-0294.png",
+      "shot": "S11",
+      "sourceFrame": 294,
+      "sha256": "e860e0f70552f6668c37e830706b9514866bc8f334bcb3cf1d69abd7c253303b",
+      "prompt": "Edit the first frame of a fictional animated film. Use its original camera, crop, lens, perspective, set, fabric and wall textures, floor, shadows and lighting as a fixed plate. Use the second image solely for the actor design. Paint only the actor (or their clothing and hand if partly visible) into the original frame in the same stylized 3D film look, with similar body proportions. Keep the source scene's contrast and color, and keep the camera framing almost pixel-for-pixel. No extra scenery, glamor lighting, graphics, speed lines, or captions. The long blond adult with the crimson hood and gold-lined cape takes the place of the one original actor. Preserve exactly the source's close rear canted framing, comic forward-bent posture and both gloved hands at the hips, fully clothed in long dark trousers. Let the red cape fold to the sides, leaving both hands and the existing silhouette readable. Keep the straight brown door, beige padded panels, floorboards and small scattered debris in their exact original places. The camera stays in this original rear view.",
+      "inputs": [
+        "anchor-originals/S11-source-0294.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ],
+      "sourceStillSha256": "3865d5cd3a25f2b7e6646c065a4944580d9401d2982ba307afe7d042f7017492"
+    }
+  ],
+  "initialJobs": [
+    {
+      "shot": "S05",
+      "jobId": "video_gen_64a774e8433348aaac8e3eaf45dba4f2:openai",
+      "kind": "queued",
+      "sourceFrames": [
+        129,
+        158
+      ],
+      "motionSha256": "55eb5a88b69415787a6e15fce7cc5363f519d79d61559b23b0fb6b5845b64f65",
+      "referenceImageSha256": [
+        "fcc41595a2d072855f3ccbd12e94af4d3d658a9df665efc16a90bfad144abf99",
+        "95c3c4f3e1fae33d78bd6d8f790fa5dcf6e3523295e55aae49d885e80864bd0e"
+      ],
+      "requestSha256": "3bcbf3690aa2c7b8334ef97621c952acca3ff2bef796359aba067d4540c5d117",
+      "submittedAt": "2026-11-26T17:05:17.341466+00:00",
+      "actualRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 1234,
+        "prompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Preserve the exact overhead dark round table, its thin red reflection, both original hand positions and all of the dark handheld screen prop through the visible tabletop movement. Match its original resting interval and the hand entering from the same edge; do not replace, stylize away or redesign it. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the corresponding source tabletop framing with corrected sleeve colors at the opening frame.",
+        "video_reference": [
+          {
+            "file_id": "file_6e9060bb55a7487e9a371345c5551f91"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_12dcc52530c44ac0b846ea58b064647a"
+          },
+          {
+            "file_id": "file_306707a124564205be6dddfc9f5f1ffa"
+          }
+        ]
+      }
+    },
+    {
+      "shot": "S01",
+      "jobId": "video_gen_e395635a9b0a4c7c8bb77689f73e14f5:openai",
+      "kind": "queued",
+      "sourceFrames": [
+        0,
+        40
+      ],
+      "motionSha256": "af18c4b2b455db60356d9ed541aacf2b7224aace52ac720a42b962e208d26819",
+      "referenceImageSha256": [
+        "fcc41595a2d072855f3ccbd12e94af4d3d658a9df665efc16a90bfad144abf99",
+        "720bc5b4bf12ef2f885e704640410502021497692abd09e950158601b60cf0d9",
+        "7408ced644105a9daa03c0df500b69d2bed06873c34479b7609689edd8356047"
+      ],
+      "requestSha256": "42804c712543d1825275583f60fc607c07218a90fbe01d875a466d2a9b50084c",
+      "submittedAt": "2026-11-26T17:05:17.449714+00:00",
+      "actualRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 1234,
+        "prompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the opening face size and ambivalent glance. Follow the source pullback and change of focus. Retain the source dark gun silhouette entering on the left and the actor out of focus behind it at the last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the re-identified opening close-up; <Picture 3> is the re-identified final foreground composition.",
+        "video_reference": [
+          {
+            "file_id": "file_37af4636eaea44169991d3521a90e506"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_12dcc52530c44ac0b846ea58b064647a"
+          },
+          {
+            "file_id": "file_ba6969a0bc8c4512abc58e6c115dad75"
+          },
+          {
+            "file_id": "file_5be353ec4b4e44dca0a09099c7532ac9"
+          }
+        ]
+      }
+    },
+    {
+      "shot": "S11",
+      "jobId": "video_gen_6ac8bcd5f02b44e9aff962e9c1f1df2d:openai",
+      "kind": "queued",
+      "sourceFrames": [
+        294,
+        317
+      ],
+      "motionSha256": "eb468a99f1bb43d306b36592999d6b2a4cd4232c4a47bb828462ed6b9190943c",
+      "referenceImageSha256": [
+        "9a8b1a2819e4c38a622aafddfb21b1f819537fe7800100c18346cbcfd16c2535",
+        "e860e0f70552f6668c37e830706b9514866bc8f334bcb3cf1d69abd7c253303b"
+      ],
+      "requestSha256": "cf80922a441cbb17daefd1ecc3166f7d4850413a1e8fda6b48f11dd5b450177d",
+      "submittedAt": "2026-11-26T17:05:17.542343+00:00",
+      "actualRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 1234,
+        "prompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the existing close rear framing and wall panels; the fully clothed crimson performer performs the original two distinct hand contacts with their trousers, with a release between contacts and a wide arms-open ending. Keep the cloak to the sides so the contact gestures and their timing remain visible. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the corresponding source rear framing with the new performer at the opening frame.",
+        "video_reference": [
+          {
+            "file_id": "file_ce922d4b0954482c94ad1867341d19be"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_c51fb1024bb9429a8469536ce9ab4ec9"
+          },
+          {
+            "file_id": "file_1f1ee8025c5140afa942070f323ad697"
+          }
+        ]
+      }
+    }
+  ]
+}
