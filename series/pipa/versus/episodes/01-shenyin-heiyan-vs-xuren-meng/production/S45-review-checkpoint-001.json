@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S45",
+  "startFrame": 1208,
+  "endFrame": 1229,
+  "attempt": 1,
+  "jobId": "video_gen_e57ad8d48fb440118d37c07aeb708911:openai",
+  "requestSha256": "9fd049cb6c9f917463671e7779f2fd2c750cf8aaf7e2e6383480f478e52f3652",
+  "renderPrompt": "One continuous cel-shaded anime shot. Use <Video 1> for the moving low-angle two-character staging. <Picture 1> is the tousled dark-haired officer in gold-trimmed navy and ivory; <Picture 2> is the golden-haired performer in crimson hood and cape with the ivory mask attached at the left shoulder. <Picture 3> provides the mid-shot eye lines and placement. The crimson performer stays center-left and turns their head over a shoulder, while the officer stays closer to camera in the lower right and shifts his position slightly. They briefly look toward each other, maintaining the same relative sizes and separated silhouettes throughout. Keep both fully clothed, hands empty and movement readable against the warm wooden room. No cut, extra person, floating symbols, realistic weapons, text or dialogue.",
+  "seed": 1234,
+  "rawSha256": "aff2c9f1b2cb95ba61e2a5c53474436ab0dcb5ded9d24a6aaa2f3d07ac6d4046",
+  "cutSha256": "011a9c6f9003e0683b71306bbaf89bb9a516491124b6e858506c1ca5345eae87",
+  "review": {
+    "cutSha256": "011a9c6f9003e0683b71306bbaf89bb9a516491124b6e858506c1ca5345eae87",
+    "requestSha256": "9fd049cb6c9f917463671e7779f2fd2c750cf8aaf7e2e6383480f478e52f3652",
+    "originalSha256": "d6128c9eb9b8fc2e44075b3b3ddfb1f4374546abb39a7dca5bb182b3ad157758",
+    "decision": "accepted",
+    "reviewedFrames": 21,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 1208–1228 帧及本镜全部 21 帧。低机位双人构图和红边木屋清楚，虚人梦在偏左中景先背身再过肩回望，神隐黑炎在右前景始终与其分开，随后右侧人物转头并张掌。等速版回望偏早，本版从同一模型文件密取起势和过肩的帧，使回头靠近原片中段。披风比原片占画面更多，右侧人物采用空手反应。镜内无额外人物和跳切，两位的发型、服装、肩部配件及相对站位可辨。",
+    "reviewedAt": "2026-11-26T04:23:42.227392+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S45-two-person-low.png",
+      "prompt": "Use case: 16:9 storyboard keyframe for an animated stage-comedy sequence. Use image 1 for the dark-haired blue-and-gold officer’s identity, image 2 for the blond performer in the crimson hood’s specific identity and costume, image 3 for the two-person canted low viewpoint and interior, with the object omitted. The crimson-hooded fully clothed performer is at center-left in the somewhat farther plane, back in three-quarter view, turning their head over their shoulder with raised brows. Keep the long blond hair, gold-lined red cape and little ivory theatre mask attached to that person's left shoulder. The navy officer is close to the lens on the right, cropped at chest and seen over his right shoulder, black hair, blue coat and gold epaulette crisp. He has an open empty hand near the bottom edge. The two lean slightly apart and look back at each other in a short startled comic beat. Same adult slender proportions, use camera perspective to give depth. Warm wood wall, deep red light and shadow, crisp simple anime linework matching the design sheets. No weapon or held prop, no foreground blocking the silhouettes, no text, no added people.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/xuren-meng.png",
+        "S45-closing-original-pose.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S45.mp4",
+    "inputSha256": "ddf525161d817c564c37f159d9d76963e3257128b1182be3f54226430517f057",
+    "preRetimeCutSha256": "8d0cde61cb4d8f647dd790560eb1bbd9b324925aef26e57b48e589190ba62056",
+    "outputSha256": "011a9c6f9003e0683b71306bbaf89bb9a516491124b6e858506c1ca5345eae87",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      19,
+      22,
+      26,
+      31,
+      38,
+      46,
+      54,
+      64,
+      76,
+      90,
+      104,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,2)+eq(n\\,4)+eq(n\\,6)+eq(n\\,8)+eq(n\\,10)+eq(n\\,12)+eq(n\\,14)+eq(n\\,16)+eq(n\\,19)+eq(n\\,22)+eq(n\\,26)+eq(n\\,31)+eq(n\\,38)+eq(n\\,46)+eq(n\\,54)+eq(n\\,64)+eq(n\\,76)+eq(n\\,90)+eq(n\\,104)+eq(n\\,119),setpts=N/(24*TB)",
+    "reason": "Resample the early motion of this single generated shot so the shoulder look falls near the source beat.",
+    "coveredFrames": 21,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T04:23:41.256389+00:00"
+  }
+}

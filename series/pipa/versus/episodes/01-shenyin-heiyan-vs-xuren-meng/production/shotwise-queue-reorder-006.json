@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "vivhite-pipa-owned-queue-reordering-1",
+  "at": "2026-11-26T04:15:56.689350+00:00",
+  "reason": "Validate the third S06 pickup and turn attempt early, before assembling the contiguous opening.",
+  "onlyProjectJobsWaiting": true,
+  "runningContinued": true,
+  "promoted": [
+    {
+      "shot": "S06",
+      "attempt": 3,
+      "jobId": "video_gen_70567a2937bf47149e13fd0b4ca7253c",
+      "positionBefore": 28,
+      "positionAfter": 1
+    }
+  ]
+}
