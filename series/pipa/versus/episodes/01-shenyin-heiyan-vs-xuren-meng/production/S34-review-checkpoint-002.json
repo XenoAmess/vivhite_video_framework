@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S34",
+  "startFrame": 855,
+  "endFrame": 878,
+  "attempt": 2,
+  "jobId": "video_gen_795c665c0fd745758deff3f63276eb2f:openai",
+  "requestSha256": "05c843aaf5b33ffadc91468f2708c748ac37ec711bf369e83f8e84cab17539b4",
+  "renderPrompt": "Match the one continuous low canted side camera of <Video 1>. <Picture 1> is the exact short dark-haired officer in blue and gold. <Picture 2> is the original room and right-side blocking. He remains standing on the right side in a visible three-quarter profile, at first holding a simple gold baton low by his body. His other palm rises, then his near sleeve sweeps into the left foreground and leaves it again as the camera pulls a little wider. Warm reflected amber light crosses the LEFT of the image near the end, while his body, rose seat and wall stay sharply identifiable in the same wooden room. Keep variations in both hand positions. There is exactly one person. No change of angle into a back view, no stage or second figure, no weapons, logos, text or cut.",
+  "seed": 1235,
+  "rawSha256": "4747bb296d04e431bce8ac0f0f7f7e5a17fcd26b1e949f18a16fe482f3a280ef",
+  "cutSha256": "1863676729de05e2ca9965c7e3a27af554c4a2afc80b7fa346e13c42bc5a1b83",
+  "review": {
+    "cutSha256": "1863676729de05e2ca9965c7e3a27af554c4a2afc80b7fa346e13c42bc5a1b83",
+    "requestSha256": "05c843aaf5b33ffadc91468f2708c748ac37ec711bf369e83f8e84cab17539b4",
+    "originalSha256": "8c8827419a45e59e9370b3c5dfd597417a2926564dbfdaf45cb69a68b5704f5e",
+    "decision": "accepted",
+    "reviewedFrames": 23,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原版第 855–877 帧，共 23 帧。始终为同一间木屋和右侧神隐黑炎，保留歪斜的侧视、左侧门框和逐步拉开到半身。手掌由侧面扫向左前近景再收回时，前后景变化清楚。原镜起手在脸边，候选起镜已经开掌，中段袖口更靠镜头。按原片后段节拍补了从左侧扫过的暖光，保留表情、蓝金军服和道具轮廓。",
+    "reviewedAt": "2026-11-26T11:23:56.704458+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S34-navy-side-reach.png",
+      "sha256": "53171e634d3b919cac2baa8a03fcfcedb294949d4af394ea6093674cc2de0bfb",
+      "prompt": "One 16:9 anime storyboard frame. Image 1 provides the exact officer's face, short dark hair and fitted gold-trimmed blue coat. Image 2 provides only the canted eye-level framing, sideward expression, furniture and warm red edge lighting. Image 3 provides the simple smooth solid gold stage baton. Show a single standing navy officer right of center, in medium three-quarter view with legs mostly cut off. He holds the short rounded gold baton diagonally downward while sweeping the other empty hand toward the left foreground, at the start of an exaggerated comic hand gesture. His face and shoulder lines stay visible and the low rose-colored sofa and doorway at the left remain in place. Warm wall and red side light, unmarked textures, crisp 2D linework. One person only, never show an auditorium, separate stage, real weapon, flame, text or graphics.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "S34-original-side-gesture.png",
+        "S05-baton-continuity.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "filter": "[0:v]split[base][reflect];[reflect]eq=brightness=0.28:gamma=1.1[lit];[base][lit]blend=all_expr='A+(B-A)*(exp(-(((X/W-(0.08+0.014*max(0,N-16)))/0.47)^2+((Y/H-0.40)/0.55)^2)))*(0.80*max(0,1-abs(N-17)/1.8)+0.64*max(0,1-abs(N-20)/1.35)+0.72*max(0,1-abs(N-22)/1.35))'[picture]",
+    "visualEffect": "warm stage light moving across the left side",
+    "usedInput": "cut-before-stage-wash.mp4",
+    "inputSha256": "99885b844b1fcd2a72b9439b02ea6bc2a5ab86d460da528aae3a605b04a79619",
+    "outputSha256": "1863676729de05e2ca9965c7e3a27af554c4a2afc80b7fa346e13c42bc5a1b83",
+    "tool": "ffmpeg",
+    "coveredFrames": 23,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T11:23:55.940735+00:00"
+  }
+}

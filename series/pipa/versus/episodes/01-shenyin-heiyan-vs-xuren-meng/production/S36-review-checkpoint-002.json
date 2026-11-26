@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S36",
+  "startFrame": 946,
+  "endFrame": 971,
+  "attempt": 2,
+  "jobId": "video_gen_206c9d569cc74dadbf6ef1a86cbdeac9:openai",
+  "requestSha256": "cd2ec1c00c786bba095e7dc7a6d3d31018f8b2d930c8f86b3eaffe8fae36c585",
+  "renderPrompt": "One continuous cel-shaded anime shot. <Video 1> shows the exact initial facial movement and pullback to the wider view. <Picture 1> is the dark-haired officer in the blue-gold coat. Start with his face enlarged and occupying the center-right as he changes from an uneasy smile to a startled open mouth. Stay on the SAME FRONT three-quarter camera axis, pull back quickly without orbiting, reveal both gold shoulders, and let him twist one shoulder and extend one palm toward the left foreground. <Picture 2> is the room and target right-of-center framing after the pullback. At the end warm amber light washes across the left foreground, keeping the navy officer's face visible on the right. One same person, modest wooden room with the rose seat and dark doorway, no stage curtains, audience, back-angle cut, visible weapon, text or dialogue.",
+  "seed": 1235,
+  "rawSha256": "a88b31b956e263d1059c747eb4e96430e92f81797109c4c6dc7be0e1aab48244",
+  "cutSha256": "e757296c6fd8c12eb0d0a286a758bc05608fb700c422c4cfd25010db3a797803",
+  "review": {
+    "cutSha256": "e757296c6fd8c12eb0d0a286a758bc05608fb700c422c4cfd25010db3a797803",
+    "requestSha256": "cd2ec1c00c786bba095e7dc7a6d3d31018f8b2d930c8f86b3eaffe8fae36c585",
+    "originalSha256": "044700ac51eed51424ccdc5a8d8a6568225907334ba6782b75b94c3b896d4695",
+    "decision": "accepted",
+    "reviewedFrames": 25,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原版第 946–970 帧，共 25 帧。保留歪斜近景中由侧眼微笑到张口惊讶、镜头拉到肩部和半身、左手向门边张开的顺序。木屋背景和同一身蓝金制服贯穿全镜。候选嘴部变化幅度稍小，尾段用随原片节拍波动的暖色灯光表现左侧的亮度变化。",
+    "reviewedAt": "2026-11-26T11:40:10.875695+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S34-navy-side-reach.png",
+      "sha256": "53171e634d3b919cac2baa8a03fcfcedb294949d4af394ea6093674cc2de0bfb",
+      "prompt": "One 16:9 anime storyboard frame. Image 1 provides the exact officer's face, short dark hair and fitted gold-trimmed blue coat. Image 2 provides only the canted eye-level framing, sideward expression, furniture and warm red edge lighting. Image 3 provides the simple smooth solid gold stage baton. Show a single standing navy officer right of center, in medium three-quarter view with legs mostly cut off. He holds the short rounded gold baton diagonally downward while sweeping the other empty hand toward the left foreground, at the start of an exaggerated comic hand gesture. His face and shoulder lines stay visible and the low rose-colored sofa and doorway at the left remain in place. Warm wall and red side light, unmarked textures, crisp 2D linework. One person only, never show an auditorium, separate stage, real weapon, flame, text or graphics.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "S34-original-side-gesture.png",
+        "S05-baton-continuity.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "filter": "[0:v]split[base][reflect];[reflect]eq=brightness=0.26:gamma=1.11[lit];[base][lit]blend=all_expr='A+(B-A)*(exp(-(((X/W-0.10)/0.42)^2+((Y/H-0.43)/0.50)^2)))*(0.69*max(0,1-abs(N-16)/1.45)+0.62*max(0,1-abs(N-19)/1.55)+0.71*max(0,1-abs(N-22)/1.45)+0.82*max(0,1-abs(N-25)/1.55))'[picture]",
+    "visualEffect": "diffused warm stage light from the left",
+    "usedInput": "cut-before-stage-wash.mp4",
+    "inputSha256": "18f7fc719479d20232e35fd1054e59520a19e34bd257bfab78d493a3ea3a214c",
+    "outputSha256": "e757296c6fd8c12eb0d0a286a758bc05608fb700c422c4cfd25010db3a797803",
+    "tool": "ffmpeg",
+    "coveredFrames": 25,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T11:40:09.969052+00:00"
+  }
+}
