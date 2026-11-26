@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S22",
+  "startFrame": 550,
+  "endFrame": 578,
+  "attempt": 3,
+  "jobId": "video_gen_2f554bdc54534c7a85f30cb9e45507a0:openai",
+  "requestSha256": "2dbf3a7bd0f124d84c81483c568c13f61434f2bdb1ee2fddaf9b267245d2e0ed",
+  "renderPrompt": "One seamless cel-shaded anime shot matching the head motion and camera pull of <Video 1>. <Picture 1> supplies the adult navy and gold officer. Begin extremely tight like <Picture 2>, starting with side-eye and shifting from puzzled smile to a shocked open mouth. Before the midpoint, duck the head quickly downward, then rise again as the same camera pulls rapidly to a waist-up shot. The arms rise and extend forward, elbows remaining slightly bent, with the two plain round brass lanterns with blue circular lenses from <Picture 3> cupped in open hands toward the camera. The only props are those two smooth round light globes. After his hands are up, let the round lenses emit a few alternating abstract amber and blue beams near the camera, leaving the face in view. Finish at waist height with lanterns still held in front. Same warm wood, red door trim and pink chair, one character, no extra cut, text, or dialogue. Never reproduce any gun or firearm part from the motion video.",
+  "seed": 1236,
+  "rawSha256": "28cc12680db407985499208aded214fac930032a170dd3547eef831b2cea3c06",
+  "cutSha256": "3e3a3a9b8f32592467d54b6de63171e1747e9eba3fa04b66c039ac1e1b2fc656",
+  "review": {
+    "cutSha256": "3e3a3a9b8f32592467d54b6de63171e1747e9eba3fa04b66c039ac1e1b2fc656",
+    "requestSha256": "2dbf3a7bd0f124d84c81483c568c13f61434f2bdb1ee2fddaf9b267245d2e0ed",
+    "originalSha256": "88d896d18aaef4a82627a80e48a897dfad171b9f8971dabff28bed56481b2658",
+    "decision": "accepted",
+    "reviewedFrames": 28,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 550–577 帧及候选全部 28 帧。神隐黑炎从近景斜视、张嘴到短暂低头，再迅速变成能看到双手的半身景别。按同一模型结果重新抽帧，低头在第 8 帧开始，景别变化靠近原片。后 12 帧按原镜的左右节拍给两盏圆形舞台灯加扩散暖光，保留可辨的脸和蓝金军服。原片尾段拉远更大、双臂伸得更开，候选以腰部以上的正面托灯收尾。本镜无其他角色和残留原人物。",
+    "reviewedAt": "2026-11-26T14:25:14.771833+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S22-sudden-close-reaction.png",
+      "sha256": "325f14252ab1cc7acf9f39cd60a0b40f395d1df8741012adb291a2b60378831c",
+      "prompt": "A single wide 16:9 cropped anime reaction keyframe. Image 1 supplies the identical anime officer's dark tousled hair, slate-blue eyes, face and gold edged navy collar. Image 2 supplies the close reaction, eye line and lighting only. His open mouth and widening eyes show a harmless, exaggerated comedic startle as his gaze turns sideways. Frame so his head fills most of the image and only a little collar and shoulders show, warmly lit right side and faint red from the left. Same warm soft wall, no text or other objects. Keep linework and identity visually consistent. One character, no weapons or typography.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "S22-motion-calibration-source.png"
+      ],
+      "usedForRetry": true
+    },
+    {
+      "file": "S22-front-lanterns-end.png",
+      "sha256": "05b9dad2d3e7b14a701cab9035ae8e249ce635162d54f4584234903c29470211",
+      "prompt": "One widescreen cel-shaded 2D anime storyboard frame in the same warm wood room as the attached reference, with the exact adult dark-haired officer in the navy coat with gilded fringed shoulders. Switch from the extreme close-up of the reference to a straight-on medium shot ending at the waist, camera a little below face height. He has just stood up and looks delightedly bewildered. The head stays upper-center. Bent elbows just to the sides of his chest, both of HIS forearms reach forward toward the camera. In each hand he openly cups a palm-sized ROUND golden lantern, a solid globe with a round blue glass lens and no projecting stem. Make two visible circles left and right close to camera, the reflection forming a few blue and warm amber rays like lights at a tiny theater. No flame, sparks or fireballs. Keep the hands near torso width, not spread to the edges, and the shoulders behind them in perspective. A pink armchair behind his waist, red-edged wood trim left, beige blank wall right with no writing. Warm lights and only one person, no weapon shapes, no captions, no multiple panels.",
+      "inputs": [
+        "S22-sudden-close-reaction.png",
+        "S12-reaction.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "filter": "[0:v]select=eq(n\\,0)+eq(n\\,6)+eq(n\\,12)+eq(n\\,18)+eq(n\\,24)+eq(n\\,32)+eq(n\\,42)+eq(n\\,48)+eq(n\\,53)+eq(n\\,56)+eq(n\\,59)+eq(n\\,62)+eq(n\\,65)+eq(n\\,68)+eq(n\\,71)+eq(n\\,74)+eq(n\\,77)+eq(n\\,80)+eq(n\\,83)+eq(n\\,86)+eq(n\\,90)+eq(n\\,94)+eq(n\\,98)+eq(n\\,102)+eq(n\\,106)+eq(n\\,110)+eq(n\\,114)+eq(n\\,119),setpts=N/(24*TB),split[base][reflect];[reflect]eq=brightness=0.43:gamma_r=1.06:gamma_b=0.88[lit];[base][lit]blend=all_expr='A+(B-A)*min(1,(exp(-(((X/W-0.29)/0.20)^2+((Y/H-0.57)/0.27)^2)))*(0.66*eq(N,17)+0.9*eq(N,18)+0.68*eq(N,19)+0.3*eq(N,20)+0.48*eq(N,21)+0.65*eq(N,22)+0.37*eq(N,23)+0.59*eq(N,24)+0.91*eq(N,25)+0.94*eq(N,26)+0.65*eq(N,27)+0.84*eq(N,28))+(exp(-(((X/W-0.71)/0.20)^2+((Y/H-0.56)/0.27)^2)))*(0.61*eq(N,17)+0.68*eq(N,18)+0.73*eq(N,19)+0.53*eq(N,20)+0.91*eq(N,21)+0.59*eq(N,22)+0.94*eq(N,23)+0.81*eq(N,24)+0.42*eq(N,25)+0.65*eq(N,26)+0.89*eq(N,27)+0.52*eq(N,28)))'[picture]",
+    "selectedModelFrames": [
+      0,
+      6,
+      12,
+      18,
+      24,
+      32,
+      42,
+      48,
+      53,
+      56,
+      59,
+      62,
+      65,
+      68,
+      71,
+      74,
+      77,
+      80,
+      83,
+      86,
+      90,
+      94,
+      98,
+      102,
+      106,
+      110,
+      114,
+      119
+    ],
+    "normalizedModelInput": "sources/S22.mp4",
+    "normalizedModelInputSha256": "796ed4c2493c0cf30430188dd6032bfa64a78465e24e4b49573022c8b78dfbda",
+    "visualEffect": "timed diffused amber light on both sides of the existing stage lamps",
+    "leftLampLevelsAtFrames16Through27": [
+      0.66,
+      0.9,
+      0.68,
+      0.3,
+      0.48,
+      0.65,
+      0.37,
+      0.59,
+      0.91,
+      0.94,
+      0.65,
+      0.84
+    ],
+    "rightLampLevelsAtFrames16Through27": [
+      0.61,
+      0.68,
+      0.73,
+      0.53,
+      0.91,
+      0.59,
+      0.94,
+      0.81,
+      0.42,
+      0.65,
+      0.89,
+      0.52
+    ],
+    "usedInput": "cut-before-retime-and-stage-wash.mp4",
+    "inputSha256": "2c78167d09bc133439b7bb51c22466fcdae1812eae189fde4648ab673da884a4",
+    "outputSha256": "3e3a3a9b8f32592467d54b6de63171e1747e9eba3fa04b66c039ac1e1b2fc656",
+    "tool": "ffmpeg",
+    "coveredFrames": 28,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T14:25:12.903031+00:00"
+  }
+}
