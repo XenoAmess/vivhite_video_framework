@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S53",
+  "startFrame": 1374,
+  "endFrame": 1402,
+  "attempt": 2,
+  "jobId": "video_gen_0d4f9bdf537a49529c7696c73675215a:openai",
+  "requestSha256": "48a3aa6a2334eba066be6bb04d1068fc9696ba8a5c527acb6c1f42c8f7c1bc9d",
+  "renderPrompt": "One continuous cel-shaded anime shot. Match the tilted downward camera and push into the face in <Video 1>. <Picture 1> defines the exact navy-and-gold officer. <Picture 2> is the same warm wood floor, pink chair at the left edge, torso low, propped on one hand, broad sheepish grin. Start looser, with him low beside the chair, torso oblique across the floor and mouth open in surprise. He props himself up slightly, eyes dart up-left, mouth closes into a brief embarrassed smile, then opens into a broad sheepish grin as the camera approaches his face and he leans back a little. Stay in this one room with one fully clothed figure, no new cut, props, captions or voices.",
+  "seed": 1235,
+  "rawSha256": "83154ba48d134113c60618d6e3b2c0ff0b350cc43e69e9ec3da6551e912e8a95",
+  "cutSha256": "d9e0b86a2e87bb30ebeaeb064a07c3b3ab0bed845b0fe14a57fd5f8af00741d8",
+  "review": {
+    "cutSha256": "d9e0b86a2e87bb30ebeaeb064a07c3b3ab0bed845b0fe14a57fd5f8af00741d8",
+    "requestSha256": "48a3aa6a2334eba066be6bb04d1068fc9696ba8a5c527acb6c1f42c8f7c1bc9d",
+    "originalSha256": "2deaad652057fdbdfbaa7b64350a8d4f61b0808cc90b46ab061185a0c81aa5e7",
+    "decision": "accepted",
+    "reviewedFrames": 28,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 1374–1401 帧及候选全部 28 帧。低姿斜拍保持粉椅在左侧，神隐黑炎支撑在木地板上，先张口惊讶、短暂放松、再抬眼尴尬地笑。尾段从肩部推到表情，笑意和向画外的眼神清楚。候选起镜的撑身较高，尾段脸部更近，原片的快速摆头较弱。无额外切镜、人物或角色服装变化。",
+    "reviewedAt": "2026-11-26T13:59:03.927617+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S53-floor-sheepish-grin.png",
+      "sha256": "0cc4d9447a165ad04ec2514cf2dada69fc9cc2d306d5746e9ff750e0c1fc53e5",
+      "prompt": "Single 16:9 hand-drawn anime storyboard frame. Draw the exact adult navy-and-gold officer with short dark tousled hair and blue-gray eyes from Image 1. Use Image 2 for the matching pink chair, paneled wooden floor, dim warmth and jacket design. Camera is high and tilted down toward his astonished face in a tight diagonal close-up. He is lying low on one hip on the dark wood floor, propping himself up on one palm, shoulders and ivory-trouser body trailing diagonally away toward the lower right. As he looks off to the upper left his mouth has opened into a wide sheepish grin, large eyes, raised cheeks. Head dominates the left middle, the top of one pink chair sits at the upper left border, floor and near-normal warm wood behind. Keep fully clothed anatomy and continuous anime cels. Empty hands, no lettering, no prop, no other figure or marks.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "S43-reclining-reaction.png"
+      ]
+    }
+  ]
+}
