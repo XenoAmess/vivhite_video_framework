@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S50",
+  "startFrame": 1296,
+  "endFrame": 1314,
+  "attempt": 1,
+  "jobId": "video_gen_30d8666d5c6843fb827d8267393ce4c6:openai",
+  "requestSha256": "12642f54122e36dac7c03ec2ab2b6989fc791c92ff76693322140a27bfa3ce3b",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> is the exact identity for long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Near-floor composition, the red-hooded performer turns in foreground, navy officer remains farther away near the rose chair. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "a4f19ab2d8a477f792b8915ccee4ffac1ac9340c6f2cdb81dcb15ea5e7fcdfb7",
+  "cutSha256": "04dea4afff17bb0426ba65e434747c65236ef5c9a85af96de903781f6756e583",
+  "review": {
+    "cutSha256": "04dea4afff17bb0426ba65e434747c65236ef5c9a85af96de903781f6756e583",
+    "requestSha256": "12642f54122e36dac7c03ec2ab2b6989fc791c92ff76693322140a27bfa3ce3b",
+    "originalSha256": "35b889b581cbf851323e5bf88efa32f291eb781e92896d8caac6383b08587fa7",
+    "decision": "rejected",
+    "reviewedFrames": 18,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原版第 1296–1313 帧，共 18 帧。原镜左侧虚人梦衣袖和身体裁切进入前景，右侧神隐黑炎贴地俯身，随后靠粉椅抬头回望。候选把军服人物移到中央并从头站立，红袍偏到右边，椅后的环境变成舞台帘，缺少俯身转抬头的主要动作，退回。",
+    "reviewedAt": "2026-11-26T09:11:16.723711+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S50-floor-left-cloak-right-officer.png",
+      "sha256": "6d7e6e4482f69f1af58d223923bd9eda05f870cdd0b253c9c5d5036335103939",
+      "prompt": "Single 16:9 cel-shaded anime storyboard frame at NEAR FLOOR camera altitude. Use the exact adult outfits from both references, dark-haired navy-gold officer and blond performer with red gold-edged hood and cloak. Change the original camera to looking LEVEL just above the wood floor. A small portion of the red cloaked performer's dark sleeve and crimson hem is large and softly cropped at the LEFT edge, only partly seen, without props. At screen RIGHT by the rose upholstered chair, the officer is down low, leaning forward on one palm and one knee in his navy coat, long ivory trousers and dark boots. He has just begun to lift his head to glance up-left at the red sleeve, mouth open with gentle comic surprise. Keep head and upper body on right side, legs mostly cropped, not standing. Warm wood, red-trimmed wood doorway, pink chair and off-white wall in the right rear, reflected warm room light. Exactly two people, no duplicate red cape, theater curtains, weapons, text, or panels.",
+      "inputs": [
+        "S46-over-hood-floor.png",
+        "S48-side-screen-two-person.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "One continuous short cel-shaded anime reverse shot. Use <Video 1> for the camera close to the wooden floor and the officer lifting his head. <Picture 1> is the navy and gold officer, <Picture 2> is the crimson-cloaked blonde performer, and <Picture 3> fixes the exact layout. A small blurred part of the red cloak and sleeve stays large at the left edge in the foreground and moves a little. Keep the officer on the right by the rose chair. He starts crouched with his head and chest lowered, one hand supporting his weight, then visibly lifts the head and looks up-left toward the red performer with a surprised expression. His upper body rises but he keeps one knee on the boards and does not stand. Keep both original screen positions and proportions, warm brown room and rose chair. Exactly two people, empty hands, no weapons, expressions drawn as floating marks, text or cuts.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T09:12:12.563607+00:00",
+    "images": [
+      {
+        "name": "S50-floor-left-cloak-right-officer.png",
+        "sha256": "6d7e6e4482f69f1af58d223923bd9eda05f870cdd0b253c9c5d5036335103939",
+        "imagePrompt": "Single 16:9 cel-shaded anime storyboard frame at NEAR FLOOR camera altitude. Use the exact adult outfits from both references, dark-haired navy-gold officer and blond performer with red gold-edged hood and cloak. Change the original camera to looking LEVEL just above the wood floor. A small portion of the red cloaked performer's dark sleeve and crimson hem is large and softly cropped at the LEFT edge, only partly seen, without props. At screen RIGHT by the rose upholstered chair, the officer is down low, leaning forward on one palm and one knee in his navy coat, long ivory trousers and dark boots. He has just begun to lift his head to glance up-left at the red sleeve, mouth open with gentle comic surprise. Keep head and upper body on right side, legs mostly cropped, not standing. Warm wood, red-trimmed wood doorway, pink chair and off-white wall in the right rear, reflected warm room light. Exactly two people, no duplicate red cape, theater curtains, weapons, text, or panels."
+      }
+    ]
+  }
+}
