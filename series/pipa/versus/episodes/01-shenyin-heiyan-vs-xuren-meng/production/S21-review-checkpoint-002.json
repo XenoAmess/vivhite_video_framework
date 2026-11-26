@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S21",
+  "startFrame": 536,
+  "endFrame": 550,
+  "attempt": 2,
+  "jobId": "video_gen_30bcef1efe244b1da20ffda166d129fd:openai",
+  "requestSha256": "9c535eb0ef883c3851e3e979ccd37cfad0c58127dd986d9e170921172ab15e3a",
+  "renderPrompt": "One continuous high three-quarter rear shot. <Video 1> supplies the exact body movement and camera. <Picture 1> is the fully dressed red-hooded, blond performer with dark trousers and gold-lined cape. Start already close to the ground in the rear-view crouch of <Picture 2>, both knees visibly bent and a gloved hand on the outer knee. Keeping the lens behind and above, let the dancer lean forward, shift weight and make one unmistakable step sideways across the timber boards, leaving the shoulders angled away as the cape follows. Show a different foot position by the end. Warm brown room with the same low cabinet and rose furniture. One person only, no frontal standing start, inserted cut, spotlight stage, realistic weapon, text or dialogue.",
+  "seed": 1235,
+  "rawSha256": "2fcac180a8d3f8eac4ebe85e44447cd43c5325472bd6cfaa844204e702854a62",
+  "cutSha256": "c611d9285243cc6be100a6c317fc8de5ed5bdb83c9afbd29339d88c2b8812b51",
+  "review": {
+    "cutSha256": "c611d9285243cc6be100a6c317fc8de5ed5bdb83c9afbd29339d88c2b8812b51",
+    "requestSha256": "9c535eb0ef883c3851e3e979ccd37cfad0c58127dd986d9e170921172ab15e3a",
+    "originalSha256": "a58aaa4fc3dda70042a04c4b8d9c9eb250ffc3317eb82be70d84795aa645f7cf",
+    "decision": "accepted",
+    "reviewedFrames": 14,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 536–549 帧，共 14 帧。保留背侧蹲姿、转离、伸展膝部并迈出一步，衣着、木地板与粉椅连续。对同一模型输出重抽帧，把迈步提前到后半开始，再由中段平滑推进，以保留原片由远到近的节拍。原镜后半机位更低，人物继续明显前屈。本版保持较高的背面角度，起身更直，落步可见。",
+    "reviewedAt": "2026-11-26T09:34:41.775736+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S21-rear-high-crouch.png",
+      "sha256": "761ac5f9123865389608e2461862a4b015ba948ef8fea059571af43491e2a829",
+      "prompt": "A single 16:9 cel-shaded storyboard keyframe of a fully dressed red-hooded adult playing a comic dance pose indoors. Image 1 supplies the exact red hood, long blond hair, gold-lined cape, fully covering charcoal trousers and flat dark boots. Use Image 2 solely for the high rear three-quarter lens and asymmetrical crouch. The camera looks down from behind the performer, so the hood's back and one side of the shoulder are visible, no face. They are crouching low with both knees bent and the body angled across the wooden planks, one hand on the outer knee to stabilize before stepping. Show one boot planted and the other knee pointing slightly left. The cape drapes down sides, flowing enough to reveal their kneeling pose without tight body emphasis. Warm small wooden room, low rose furniture in the back right. One performer only, no realistic weapons, props, marks or readable text.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/xuren-meng.png",
+        "S21-original-rear-crouch.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "selectedModelFrames": [
+      0,
+      14,
+      36,
+      62,
+      75,
+      87,
+      96,
+      103,
+      108,
+      111,
+      113,
+      115,
+      117,
+      119
+    ],
+    "samplingFilter": "select=eq(n\\,0)+eq(n\\,14)+eq(n\\,36)+eq(n\\,62)+eq(n\\,75)+eq(n\\,87)+eq(n\\,96)+eq(n\\,103)+eq(n\\,108)+eq(n\\,111)+eq(n\\,113)+eq(n\\,115)+eq(n\\,117)+eq(n\\,119),setpts=N/(24*TB)",
+    "filter": "zoompan=z='1+0.44*max(0,min(1,(on-2)/8))':x='(iw-iw/zoom)*0.10':y='(ih-ih/zoom)*0.18':d=1:s=1344x768:fps=24",
+    "samplingInput": "sources/S21.mp4",
+    "samplingInputSha256": "6a707584dacc7d2101aa92f252acdb9cac8457d20b64d7b3420c35602e9063d9",
+    "intermediateResultSha256": "e58ea39340cb50cebab2730ac3614b7970c47140e0338b76c8756e6e2e5eb536",
+    "usedInput": "cut-before-retime-with-push.mp4",
+    "inputSha256": "7eacd33e1364f197c6ce5dfe5f1147edba428c451585b4cfe39e058d8ad5b312",
+    "outputSha256": "c611d9285243cc6be100a6c317fc8de5ed5bdb83c9afbd29339d88c2b8812b51",
+    "tool": "ffmpeg",
+    "coveredFrames": 14,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T09:34:41.297978+00:00"
+  }
+}
