@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S07",
+  "startFrame": 186,
+  "endFrame": 206,
+  "attempt": 2,
+  "jobId": "video_gen_971c98c712d142c3ba5002eb055bc254:openai",
+  "requestSha256": "6df200edb66be6ebb7417d47498711e7d6f1f30267f611fd5f0945789894b5f7",
+  "renderPrompt": "One continuous anime shot, seated by the same rose chair for the entire clip. Follow <Video 1> for the close to wide canted camera and continuous movement. <Picture 1> is the exact dark-haired navy and gold officer. Begin with him folded forward near the right arm of the rose-pink chair, head down and both hands low, upper body filling the frame. As the camera turns and pulls wider he snaps his head and shoulders back toward screen left and lowers himself against the chair. One hand raises a solid rounded gold stage baton from below and reaches it out to the RIGHT foreground near the lens. His other hand opens loosely on the LEFT as he reclines. The last frames must match the canted pose and foreshortened gold baton on the right in <Picture 2>, held at that scale while his face remains behind. His body never stands fully. One character, no jump cut, drawn speed lines, extra prop, gun, text, or dialogue.",
+  "seed": 1235,
+  "rawSha256": "b92437e7b5be959ba21914b9f4bc0fa7f8c3fd99bfc4f23e0a70e7d7054798d4",
+  "cutSha256": "a12c42c4dad5972adecfd9524e1bae82861c23df9e7bba801f1e0a3e24594060",
+  "review": {
+    "cutSha256": "a12c42c4dad5972adecfd9524e1bae82861c23df9e7bba801f1e0a3e24594060",
+    "requestSha256": "6df200edb66be6ebb7417d47498711e7d6f1f30267f611fd5f0945789894b5f7",
+    "originalSha256": "b5c8564512d16601c74e305b4d318ba21bf8db1102347c56b0f44b20d7cab0c3",
+    "decision": "accepted",
+    "reviewedFrames": 20,
+    "method": "assistant-frame-review",
+    "observations": "已检查原片第 186–205 帧和调整后的全部 20 帧。暖屋、粉椅、单一角色和蓝金军服连续可见。候选沿用从俯身到抬头、镜头下移拉宽，再把道具送入右前景的动作顺序。首次等速抽样在机位变化处跳得太急，已从同一模型输出的快速运动段抽取更多中间帧，保留了前后帧数和切点。原镜的道具先越过肩头再伸出，本版从较低位置上举进入右前景，起镜更偏俯拍。调整后经过对照，机位变化、前景抬举和尾部收势齐全。",
+    "reviewedAt": "2026-11-26T03:48:02.937496+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S07-chair-end.png",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "S07-original-end.png",
+        "S05-baton-continuity.png"
+      ],
+      "submittedInRetake": true,
+      "prompt": "A single 16:9 keyframe for an animate stage-comedy close. Image 1 supplies the only anime character and fitted navy-and-gold officer outfit; Image 2 supplies only the tilted camera, foreshortening, hand placement and rose chair; Image 3 supplies only the simple smooth solid gold theater baton. Recreate the camera relationship with that unmistakably harmless rounded short golden baton in the right foreground, its wide rounded end aimed to frame right, its narrow grip in the character's visible near hand at center. The character is comparatively small behind his extended arm, seated leaning back in the rose-pink chair, other hand raised loosely and open, recognizable short dark tousled hair and ivory trousers. Warm wall completely unlettered. Maintain the Dutch angle; crisp cel-shaded 2D anime, only one character. The baton is one solid smooth tapered object, with no holes, triggers, attachments, flashes, or mechanisms. No actual weapons, logos, text, fake cut or speed-line graphics.",
+      "sha256": "ca5ee22061bb24835dfc9fc0a6a0df69374e275b087f8d01e741881c66b98ecf"
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S07.mp4",
+    "inputSha256": "e90a98989160ad2a593f8b10125da441ec1427a17f0596c6c904fb45eb6520e1",
+    "preRetimeCutSha256": "951aabe6f25e37cefc8ae6ac023b4e4663758933fa7d39c5f105ede0adc96976",
+    "outputSha256": "a12c42c4dad5972adecfd9524e1bae82861c23df9e7bba801f1e0a3e24594060",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      6,
+      12,
+      18,
+      24,
+      30,
+      37,
+      44,
+      51,
+      54,
+      56,
+      58,
+      60,
+      62,
+      65,
+      68,
+      73,
+      86,
+      102,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,6)+eq(n\\,12)+eq(n\\,18)+eq(n\\,24)+eq(n\\,30)+eq(n\\,37)+eq(n\\,44)+eq(n\\,51)+eq(n\\,54)+eq(n\\,56)+eq(n\\,58)+eq(n\\,60)+eq(n\\,62)+eq(n\\,65)+eq(n\\,68)+eq(n\\,73)+eq(n\\,86)+eq(n\\,102)+eq(n\\,119),setpts=N/(24*TB)",
+    "reason": "Sample the short original camera movement of this generated shot more densely to retain its visible transition.",
+    "coveredFrames": 20,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T03:48:02.438079+00:00"
+  }
+}
