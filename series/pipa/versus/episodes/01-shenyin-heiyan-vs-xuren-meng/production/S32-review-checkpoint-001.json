@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S32",
+  "startFrame": 788,
+  "endFrame": 824,
+  "attempt": 1,
+  "jobId": "video_gen_2fb41f7f3d60408fb6517fb9951918f9:openai",
+  "requestSha256": "54cbec36b8b5dc12a1d5538b199450e1dda23a2266a1ca331392572a5ed092a5",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. High camera, performer drops into a crouch then lunges and extends both hands playfully while keeping contact with the floor. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "045b9ba469ce4585d4f59d5c7420bd894e974aeb76e7a01e5bcc609253456580",
+  "cutSha256": "09afaa636b340a21de811c92b7d074131696bcea5630a14934a4a300bdc22b58",
+  "review": {
+    "cutSha256": "09afaa636b340a21de811c92b7d074131696bcea5630a14934a4a300bdc22b58",
+    "requestSha256": "54cbec36b8b5dc12a1d5538b199450e1dda23a2266a1ca331392572a5ed092a5",
+    "originalSha256": "88c7a42a2f1c7757912a5aa53f77f56dd75b73358b57fdd9b9242c9847f28f9e",
+    "decision": "accepted",
+    "reviewedFrames": 36,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 788–823 帧和候选全 36 帧。虚人梦在高位木板房间先屈膝，再抬肩、向外展开双手，身体转向一侧并向前靠近；尾段保留斜向俯拍和伸臂。候选的起镜角度较陡，部分手势从单手突出变为两手交替展开，保持屈膝、转身与展开的先后关系。红兜帽、金发与肩面具连续可见，未见额外人物、切镜或明显穿模。通过本镜画面审核。",
+    "reviewedAt": "2026-11-26T01:31:49.437342+00:00"
+  }
+}

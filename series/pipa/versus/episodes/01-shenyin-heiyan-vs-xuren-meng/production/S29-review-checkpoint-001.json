@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S29",
+  "startFrame": 710,
+  "endFrame": 759,
+  "attempt": 1,
+  "jobId": "video_gen_800e7eecff0a4633ba4857722a082bed:openai",
+  "requestSha256": "915da43693d12654f58f2473d779858d0f818862c70e83383824e95fd5f69d33",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Low camera, a nimble jump step with alternating knees and raised arms, red cloak lifting and settling. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "ba3f9b98b582c64e87d5fe55e660915239616f21b91335ed17706939155edb1c",
+  "cutSha256": "fcb35c670c0629d837a8c79f018231d4226d25efce3b86358e93873533a33a79",
+  "review": {
+    "cutSha256": "fcb35c670c0629d837a8c79f018231d4226d25efce3b86358e93873533a33a79",
+    "requestSha256": "915da43693d12654f58f2473d779858d0f818862c70e83383824e95fd5f69d33",
+    "originalSha256": "ca222fb34cc3e35ab21a7ce0d707364b12696a2894ae282a1c03e48e791f60c9",
+    "decision": "accepted",
+    "reviewedFrames": 49,
+    "method": "assistant-frame-review",
+    "observations": "对照原片第 710–758 帧和候选全部 49 帧。贴地仰拍、木板屋和暖色圆灯保持连续。虚人梦先伸臂，从低位起跳并换脚转身，披风随身体旋转，结尾单腿抬膝姿势与原镜下一切点对应。部分脚步幅度较轻，最后抬膝比原片晚约 3 帧。兜帽、金发、肩面具和黑色长靴可辨，未见额外人物、明显穿模或切镜。通过本镜画面审核。",
+    "reviewedAt": "2026-11-26T01:19:16.633338+00:00"
+  }
+}
