@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S10",
+  "attempt": 1,
+  "startFrame": 273,
+  "endFrame": 294,
+  "jobId": "video_gen_d5a337b82e8b4684be06652475ce584a:openai",
+  "requestSha256": "6be3530c20a751881b928afed93bdc849932a77585cd7983fffc86b6fe2a2b94",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Very low camera from behind or behind three-quarter. Red hood stays visible while the performer lifts one hand from a crouch, sweeps it outward and starts to rise. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "e571ec65dc2a7e0d5716547fd1fccd171d2f99ea030fff9578d5db46c9e167ee",
+  "cutSha256": "84a1ad2fe7e883a845737127deaa4e1304ca4d4ae56179373aa59fe4f38db2b3",
+  "review": {
+    "cutSha256": "84a1ad2fe7e883a845737127deaa4e1304ca4d4ae56179373aa59fe4f38db2b3",
+    "requestSha256": "6be3530c20a751881b928afed93bdc849932a77585cd7983fffc86b6fe2a2b94",
+    "originalSha256": "9fcfcdfd799b1d7e0b0691d6c04e2555b162f5a1bd208497ff912607cb643da6",
+    "decision": "accepted",
+    "reviewedFrames": 21,
+    "method": "assistant-frame-review",
+    "observations": "对照原片第 273–293 帧及候选全部 21 帧。保持贴地后方镜头、暖色圆灯和木板室内，红兜帽和金发始终朝离开镜头的方向。虚人梦先蹲身，再抬手、向画面右侧挥手，最后放下手并探身抬起躯干。披风盖住了原片中部分可见的膝部和脚部，起身幅度较小，主要手势和切入下一背面镜头的方向可读。画面连续，未见额外人物和切镜。通过本镜画面审核。",
+    "reviewedAt": "2026-11-26T00:01:24.173566+00:00"
+  }
+}
