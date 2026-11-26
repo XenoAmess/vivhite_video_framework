@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S06",
+  "startFrame": 158,
+  "endFrame": 186,
+  "attempt": 2,
+  "jobId": "video_gen_1d659fce448e476ea105844cf43edac1:openai",
+  "requestSha256": "3ed7d8f32e180cf94a1185358a4dc5340bba6b2aa01fec3b1ba9ffdecea5cfee",
+  "renderPrompt": "One continuous low medium shot, a fixed view past the dark round table and toward the single rose-pink chair. <Video 1> is the guide for the table gesture and abrupt final twist. <Picture 1> is the navy-and-gold officer identity. <Picture 2> shows the mandatory large foreground reach and right-of-center position by the rose chair. At the start he leans forward with his right hand already raised over the left side of the table and his left hand by his hip. Toward the end, his right arm reaches across the tabletop into the far left foreground beside one simple gold stage baton lying flat. Then his shoulders and chin snap toward screen right as he leaves the original center of the image, still partly in frame on the right. Follow this precise order and hold the left-to-right sweep, fixed lens, and rose chair throughout. One person only. Keep the distant dark drapery empty, no change of room, no centered back view, no weapons, added text or dialogue.",
+  "seed": 1235,
+  "rawSha256": "a0d6c91efefa4291e251ac9f0c7004245b6dd92aec7f9bff92470a46a77f1c29",
+  "cutSha256": "2b13f59c5fac57b054edc9df37f19f924714893e1292c56b33c9a909536db6e2",
+  "review": {
+    "cutSha256": "2b13f59c5fac57b054edc9df37f19f924714893e1292c56b33c9a909536db6e2",
+    "requestSha256": "3ed7d8f32e180cf94a1185358a4dc5340bba6b2aa01fec3b1ba9ffdecea5cfee",
+    "originalSha256": "f66a8a1573ed40a06ecf6abd412c166675eee6de6ae7b7fa7bf7935fc7c4eba2",
+    "decision": "rejected",
+    "reviewedFrames": 28,
+    "method": "assistant-frame-review",
+    "observations": "已逐帧对照原片第 158–185 帧，共 28 帧。第二版保留木屋、粉椅、桌前伸臂和正确的单人军服。原镜开头桌面有道具，第 20 帧起手掌明显翻转，接着抓取道具并带着肩、头迅速拧向画面右边。候选的道具约在本镜第 14 帧突然出现，手掌展开后长时间保持停在空中，结尾也没有抓起桌面道具，只在最后两帧向右轻微移位。关键动作和连接下一镜的收势缺失，退回重做。",
+    "reviewedAt": "2026-11-26T03:28:33.499196+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S06-right-turn-end.png",
+      "sha256": "4bcc87ff5c2f947e60e95cfcbee8f918ad459b5208d7b3146948be83a2f7cbd9",
+      "prompt": "A single widescreen cel-shaded anime action keyframe, made by editing the anime image to match ONLY the final body position of the second image. Keep the exact navy-and-gold first-empire uniform, short tousled dark hair, tilted round dark brown table in the lower half, red window on left, plain warm brown wall and same pink chair. Keep the camera looking past the same round wood table, point of view very low. Move the character sharply to the far right of the frame, shown turning his back and right-facing profile to camera as he lunges right, torso bent diagonally and reaching his navy sleeve all the way offscreen to the right. His original facing and exaggerated huge hand at the left foreground have moved completely away from there. An expression of comic haste, slight movement in the hair and shoulder fringe. He has already scooped the plain rounded solid gold theatrical baton off the table, taking it with him past the lower right crop, so the tabletop foreground is empty. Show only one figure, no text, firearm, new location or panels. Match the tonal levels and film framing of the first picture.",
+      "inputs": [
+        "S06-table-reach.png",
+        "S06-original-right-turn.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Keep one continuous cel-shaded anime shot. Use <Video 1> to match the timing and relative positions. <Picture 1> defines the adult navy-and-gold officer. <Picture 2> is the near-left reaching pose at the start; <Picture 3> is the required final pose well to the right. A round wooden table fills the bottom in the same pink-chair room. A solid round-tipped gold stage baton is already lying on the table at frame one. The officer starts with his near arm extended left. He opens his fingers, flips that same hand palm-down, lowers it onto the solid golden baton, closes his fingers around it, and quickly sweeps it up off the table while turning his face and shoulders sharply to screen right. Finish with the officer lunging to the far-right edge, right-facing shoulders in profile, arm continuing out of frame, and the now empty tabletop filling the left foreground exactly as <Picture 3>. Turn decisively several frames before the cut. Keep a single person and the same camera and background. No added shots, real weapons, typography or voices.",
+    "seed": 1236,
+    "plannedAt": "2026-11-26T03:29:24.835084+00:00",
+    "images": [
+      {
+        "name": "S06-table-reach.png",
+        "sha256": "dd9e52b2e46b535a4248b337bafb573af3b21a55e3e83ea4cb9073341a14b934",
+        "imagePrompt": "A single 16:9 cel-shaded anime storyboard image. Image 1 supplies the exact identity, short tousled dark hair and gold-trimmed navy Napoleonic-style coat; Image 2 supplies only the seat, camera, hand pose and warm room placement. The officer sits right of center by the rose-pink chair, leans slightly forward but keeps his left arm planted by his hip, and reaches his right open empty hand diagonally across the table toward the left foreground. Use exaggerated harmless foreshortening to make his open palm large in the foreground. A smooth, solid gold-color painted theatrical baton lies flat diagonally on the dark round tabletop; it resembles a tiny simple rounded wooden bat, no parts or mechanisms. Low medium camera remains across the table from the chair. Maintain the same drape, amber walls and muted red highlights and replace any lettering on the walls with a blurry nondescript texture. One person only. Crisp 2D lines, no standalone windows or other characters, no logos, text, or realistic weapons."
+      },
+      {
+        "name": "S06-right-turn-end.png",
+        "sha256": "4bcc87ff5c2f947e60e95cfcbee8f918ad459b5208d7b3146948be83a2f7cbd9",
+        "imagePrompt": "A single widescreen cel-shaded anime action keyframe, made by editing the anime image to match ONLY the final body position of the second image. Keep the exact navy-and-gold first-empire uniform, short tousled dark hair, tilted round dark brown table in the lower half, red window on left, plain warm brown wall and same pink chair. Keep the camera looking past the same round wood table, point of view very low. Move the character sharply to the far right of the frame, shown turning his back and right-facing profile to camera as he lunges right, torso bent diagonally and reaching his navy sleeve all the way offscreen to the right. His original facing and exaggerated huge hand at the left foreground have moved completely away from there. An expression of comic haste, slight movement in the hair and shoulder fringe. He has already scooped the plain rounded solid gold theatrical baton off the table, taking it with him past the lower right crop, so the tabletop foreground is empty. Show only one figure, no text, firearm, new location or panels. Match the tonal levels and film framing of the first picture."
+      }
+    ]
+  }
+}
