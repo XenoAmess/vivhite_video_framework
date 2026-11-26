@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S30",
+  "startFrame": 759,
+  "endFrame": 788,
+  "attempt": 1,
+  "jobId": "video_gen_25af0cb952034e1693437956f9de3417:openai",
+  "requestSha256": "e1a9857e992a0b1d4567bac928775cc690d78858bb86cd2ab0117d71ba1b6e36",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Begin very close behind the fully clothed crimson performer, then quickly pull out to a low three-quarter rear view. Their bent legs land on the floor on separate beats and step out into a broader stance. The cape stays recognizable from the front of the next shot; match the near-to-wide camera move on the source timing. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "3276a211e16c5977437083d496b1afd1fe1d3ba2f7fbe1e86b6cfd7d4b77eec6",
+  "cutSha256": "99684261a170ec1321613cb56f4a3ffad1ec26f289d17218a484e77a9f9faad6",
+  "review": {
+    "cutSha256": "99684261a170ec1321613cb56f4a3ffad1ec26f289d17218a484e77a9f9faad6",
+    "requestSha256": "e1a9857e992a0b1d4567bac928775cc690d78858bb86cd2ab0117d71ba1b6e36",
+    "originalSha256": "90795bb9e3ddfd1ebe0a07a72d0c451787011c59defa622a6da9dd77a100a3b9",
+    "decision": "rejected",
+    "reviewedFrames": 29,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照校正后第 759–787 帧与候选全部 29 帧。候选保留红兜帽背面、披风和由近拉开的基本轮廓。原镜在木房间完成落脚、站宽和双膝的连续起伏，候选全段换成钢架灯光和火光的场地，双脚展开后长期维持相同站姿，破坏与相邻舞步的环境和动作衔接。拒收本版。",
+    "reviewedAt": "2026-11-26T01:56:53.604280+00:00"
+  },
+  "followUp": {
+    "prompt": "One uninterrupted cel-shaded anime shot. Keep the actual movement and floor-height rear lens of <Video 1>. <Picture 1> supplies the fully clothed red-hooded performer. Begin close behind the back and cape, then rapidly pull back while the boots landing one after the other come into view. The dancer lands in a wide stance like <Picture 2>, dips both knees, briefly straightens, then dips and shifts weight again before the end. Keep the backs of hood and shoulders facing camera, keep both boots and their changes in angle legible through the moving cloak. The setting is the WARM SMALL WOODEN ROOM in <Picture 2>, with rose chair at left, cabinet at right and rough doorway at center. Only warm ceiling light and a little paper drifting. No steel arena, stage scaffolding, fire, neon, other person, realistic weapon, text, or inserted cut.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T01:58:04.232694+00:00",
+    "images": [
+      {
+        "name": "S30-low-rear-wide-landing.png",
+        "sha256": "437949515fd97e5eac3320052b2a312878675b79d365990c0cadeac04c853c28",
+        "imagePrompt": "Single 16:9 storyboard anchor, clean cel-shaded anime. Image 1 supplies the exact blond adult in the crimson hood, crimson-gold long cape, fully covering charcoal trousers and flat dark boots. Image 2 supplies only the room, warm light and very low camera. Use a full-body view from behind showing the entire hood, shoulders, both knees and boots. The performer has just planted both feet wide apart on the wooden floor, knees bent unevenly and shoulders leaning forward slightly after a comedic dance step. The cape lifts to one side enough to show both boots. Behind the performer, keep the low warm wooden room with a rose chair left, wood cabinet right, and a rough doorway deeper at center. Soft amber ceiling light, natural room shadows, no arena, crowd, bonfire, weapon, gunfire, graphic or text. One character."
+      }
+    ]
+  }
+}
