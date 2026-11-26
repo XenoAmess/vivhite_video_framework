@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S54",
+  "startFrame": 1402,
+  "endFrame": 1415,
+  "attempt": 1,
+  "jobId": "video_gen_f4941cadefdc4b21bbc1f9631f4b1b3f:openai",
+  "requestSha256": "0163df062418277c45949e10a0cfedf2b889bb46a476dad04b506f766b248116",
+  "renderPrompt": "One continuous cel-shaded anime shot. Use <Video 1> for the lower camera over the navy officer's shoulder and the direction of each movement. <Picture 1> supplies the navy officer with dark hair, low on the left, and <Picture 2> is the blond red-hooded performer on the right. <Picture 3> guides the color, two-person identity and patterned wooden partition. The navy officer turns his head to watch the red-cloaked performer, who shifts one boot, bends forward and starts turning by the folding screen. Keep the warm low angle, theatre-like comic timing and visible relationship between them. Exactly the two fully clothed characters, no extra cut, weapon, captions, or dialogue.",
+  "seed": 1234,
+  "rawSha256": "522711f033dd129340f930f1e8a039d069264cfcd24a752e133ae511719f38a7",
+  "cutSha256": "a07ae7bc511977c39d725b2389f37b13decaaa1bc6b10a6fe4617a6db1f2cc8c",
+  "review": {
+    "cutSha256": "a07ae7bc511977c39d725b2389f37b13decaaa1bc6b10a6fe4617a6db1f2cc8c",
+    "requestSha256": "0163df062418277c45949e10a0cfedf2b889bb46a476dad04b506f766b248116",
+    "originalSha256": "6e7223dd79000f833e7dabff83c2bf88b3432c5c9217efb3ff3fb506571641d2",
+    "decision": "accepted",
+    "reviewedFrames": 13,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原版第 1402–1414 帧，共 13 帧。保留屏风、左侧低坐的神隐黑炎及右侧虚人梦的站位。原候选的走位从前倾变成退出，将同一模型生成的 13 帧反向排列并轻微推进后，虚人梦先转脚再向前俯身，神隐黑炎末段看到变化后抬手。原镜最后俯身幅度更深，本段两人的姿势关系、视线和空间方向清楚。",
+    "reviewedAt": "2026-11-26T10:44:22.724865+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S48-side-screen-two-person.png",
+      "prompt": "One 16:9 cel-shaded storyboard keyframe for two fictional adult performers during a harmless stage cartoon. Image 1 supplies the navy-and-gold officer, Image 2 the blond crimson-hooded performer, Image 3 only the low tilted camera and the pattern of the folding screen. The dark-haired officer is on the LEFT, seated very low by the edge of the warm patterned screen with his shoulders leaning back and one open hand near his face in comical surprise. The red-hooded performer is center-right and farther back, leaning forward in a playful dance step, side and rear three-quarter view with the cloak visibly red and gold, firmly planted boots and dark trousers covering all the legs. Similar slight builds, their silhouettes clearly separate. Make the floor-level camera tilted, set the identical folding-screen pattern to the left and opening to a dim wood room at right. Soft amber and red room lighting. No extra actors, held object, weapons, marks or text.",
+      "sha256": "dd76d6d9497cd6ee0880ebc5f8cd6fcf038c525e8fa88249480009c763f0cbf2",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/xuren-meng.png",
+        "S48-two-person-source.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "filter": "reverse,setpts=N/(24*TB),zoompan=z='1.12+0.15*on/12':x='(iw-iw/zoom)*0.45':y='(ih-ih/zoom)*0.28':d=1:s=1344x768:fps=24",
+    "visualEffect": "restore approaching lean and tighten the short over-the-shoulder view",
+    "usedInput": "cut-before-reverse-and-reframe.mp4",
+    "inputSha256": "48dfaac01112ebe9bdf322e3322987f0ab71c97bb4d4da837ba1f3bd19c6e6c4",
+    "outputSha256": "a07ae7bc511977c39d725b2389f37b13decaaa1bc6b10a6fe4617a6db1f2cc8c",
+    "tool": "ffmpeg",
+    "coveredFrames": 13,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T10:44:21.954162+00:00"
+  }
+}
