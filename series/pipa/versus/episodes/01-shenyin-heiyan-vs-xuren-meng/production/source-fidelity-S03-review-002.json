@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S03",
+  "startFrame": 64,
+  "endFrame": 100,
+  "attempt": 2,
+  "jobId": "video_gen_c5ef923cce6b4c7f976125e1080db806:openai",
+  "requestSha256": "60afb19177b0ed64d49b846ce3bc4c5146f241fd8cda2b0bf7b313eacadeff58",
+  "renderPrompt": "Render this same animated film close-up as one continuous original shot. <Video 1> intentionally softens the old actor's face and costume region; use the exact movement of the head, the foreground objects and the camera in it. Reconstruct the same dark brown-haired adult across every frame in the navy collar and gold trim shown in the stills. <Picture 1> shows the very close opening face in right half with a closed off-center smile, full original lens tilt and just a small brightly lit fragment at lower left. As the lens follows the exact source timing, retain the gaze and mouth changes and the existing little dark shape with the red pinpoint at mid-shot shown in <Picture 2>. Preserve its appearance and timing only where shown in the original. The foreground prop rises and comes into the near left part of the source later as the camera pulls back. Use <Picture 3> for its late reflected shape and the same adult actor's navy shoulders at right. Keep the original red and blue reflections, soft foreground, room and camera. There is no additional actor, shot, caption or dialogue.",
+  "seed": 1235,
+  "rawSha256": "6abe71e2f95d97feaca2555ad8480fb9d54c202d967aa5a82d44d24a2fb0de1a",
+  "cutSha256": "692171a78ef0787122d389a3837c1a91aa965ceee2e7643b27d67c610122f7b5",
+  "review": {
+    "cutSha256": "692171a78ef0787122d389a3837c1a91aa965ceee2e7643b27d67c610122f7b5",
+    "requestSha256": "60afb19177b0ed64d49b846ce3bc4c5146f241fd8cda2b0bf7b313eacadeff58",
+    "originalSha256": "d00c7b9a2262dbf0d3afc465c717ed1ae295e5b54cd8297642e3dddfbb428d81",
+    "decision": "accepted",
+    "reviewedFrames": 36,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 64–99 帧与合成输出全部 36 帧。第二版保持黑炎短棕发、鼻眼方向、深蓝金边立领和肩饰，未见原演员回填。恢复右侧脸的贴近起镜、左下小反光、原有口边的小深色形状和红点、左前景道具依原镜顺序移入及视角拉开。从同一次渲染调整取帧，让口边变化和反光的出现更接近原片。个别帧反光更亮，后段嘴型及头部摆幅略有差别。全镜的角色身份、景别和道具形状连续。",
+    "reviewedAt": "2026-11-26T23:23:44.810411+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S03",
+      "sourceFrame": 64,
+      "sourceStillSha256": "0bc988785dea569edd50829c0108b90907fa2bb2a7d279eaa1dce5071592b88a",
+      "file": "S03-source-edit-0064.png",
+      "sha256": "8f9e06506aebdbf9109151b105a63fda71512a65ef12104d3cf59694c9904ca7",
+      "prompt": "Edit image one from a stylized fictional 3D comedy. Keep its exact extreme close crop, side angle, partially cropped black rim at bottom left, thin narrow flare and existing dark red room. The facial shape remains similarly stretched by the low camera. The eye looks to screen left and the tightly closed small smile follows the original. Replace the fully dressed adult's short dark hair and face with the dark brown tousled hair and slate-blue eyes from image two, and replace the existing collar with the navy collar with a little gold piping in the same corner. Image three gives the same cast identity already rendered in this room, but use the head size, camera and monochrome shadows from image one. Preserve the background, bottom-left object cropped exactly as it is, its light, and do not add any new objects, words, or actors.",
+      "inputs": [
+        "anchor-originals/S03-source-0064.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchors/S03-source-edit-0095.png"
+      ]
+    },
+    {
+      "shot": "S03",
+      "sourceFrame": 77,
+      "sourceStillSha256": "7aeeb48dce6dc0ebc4722e4266a4b018e31244bc84dcf526a8ece7fe2f7f4c48",
+      "file": "S03-source-edit-0077.png",
+      "sha256": "c5f1ea3408863e56a81aa31a73655522575e9be0ff467998e2dea2f5b422ad0e",
+      "prompt": "Replace just the hair, face, and costume of the adult actor in the first stylized 3D comedy frame, keeping its exact sideward tilt, chest crop, short, pursed mouth gesture, existing tiny dark emblem with a red pinpoint highlight by the mouth, and eyes angled toward screen left. Preserve the existing reflections and shapes at the lower-left edge, the crop, shadows, brown wall, red edge light and original room. Use the tousled short dark brown hair, gray-blue eye, and navy-gold coat from image two. Image three establishes the same adult actor in the same room, but preserve the tighter crop and pose at hand in image one. Keep the mouth shape, facial scale, and small physical shapes visible in the source at the same positions. No added objects, text, cuts or people.",
+      "inputs": [
+        "anchor-originals/S03-source-0077.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchors/S03-source-edit-0095.png"
+      ]
+    },
+    {
+      "shot": "S03",
+      "sourceFrame": 95,
+      "sourceStillSha256": "36da49236ad68ba685b34d6409262a3d8421261608ddaf455d0a1b9dc000b1ce",
+      "file": "S03-source-edit-0095.png",
+      "sha256": "12da83b42cc74862d0660369f4b7a6994cdeb69c218ccbc11de3b3bf2ef27d4c",
+      "prompt": "This is a single frame of a fictional stylized 3D animated film. Edit only the assigned person's face, hair and visible clothing in the first reference from the design in the second. Keep the first reference's camera, relative silhouette size, pose, surface texture, room layout, reflections, grain, exact lighting and all original objects. Keep existing foreground props as already drawn with original silhouette, scale and focus. Add no new content. Change the actor leaning in from the right to the same dark-haired officer in navy and gold, keeping the tilted amused expression and original body framing behind the blurred dark foreground. Keep the same near-focus composition and the object already occupying the left. The original ceiling red edge, pink chair and warm wall with paper remain in view exactly as they are.",
+      "inputs": [
+        "anchor-originals/S03-source-0095.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S03.mp4",
+    "inputSha256": "dd7388493015746d983a416dfe7e39c0d055be97e491e094b7e27bf2773d93be",
+    "preRetimeCutSha256": "d2769b59915506eee399e4a21bfa367784a8498eadfe4eb7911c75971abe029a",
+    "outputSha256": "692171a78ef0787122d389a3837c1a91aa965ceee2e7643b27d67c610122f7b5",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      16,
+      28,
+      29,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      45,
+      47,
+      50,
+      52,
+      55,
+      60,
+      66,
+      74,
+      77,
+      80,
+      83,
+      86,
+      90,
+      94,
+      97,
+      99,
+      101,
+      103,
+      105,
+      108,
+      111,
+      113,
+      115,
+      117,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,16)+eq(n\\,28)+eq(n\\,29)+eq(n\\,30)+eq(n\\,32)+eq(n\\,34)+eq(n\\,36)+eq(n\\,38)+eq(n\\,40)+eq(n\\,42)+eq(n\\,45)+eq(n\\,47)+eq(n\\,50)+eq(n\\,52)+eq(n\\,55)+eq(n\\,60)+eq(n\\,66)+eq(n\\,74)+eq(n\\,77)+eq(n\\,80)+eq(n\\,83)+eq(n\\,86)+eq(n\\,90)+eq(n\\,94)+eq(n\\,97)+eq(n\\,99)+eq(n\\,101)+eq(n\\,103)+eq(n\\,105)+eq(n\\,108)+eq(n\\,111)+eq(n\\,113)+eq(n\\,115)+eq(n\\,117)+eq(n\\,119),setpts=N/(24*TB)",
+    "reason": "Conform the facial reaction and the rise of the original foreground silhouette to the camera timing of this one shot.",
+    "coveredFrames": 36,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T23:23:44.043569+00:00"
+  }
+}

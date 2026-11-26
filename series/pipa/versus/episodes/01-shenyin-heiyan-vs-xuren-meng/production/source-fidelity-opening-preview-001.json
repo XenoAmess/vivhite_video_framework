@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "vivhite-pipa-source-fidelity-excerpt-1",
+  "size": "1344x768",
+  "fps": 24,
+  "frames": 158,
+  "seconds": 6.583333333333333,
+  "sourceIntervalFrames24Fps": [
+    0,
+    158
+  ],
+  "outputFile": "pipa-768p-preview.mp4",
+  "sha256": "24eddbaffdec6ee7c40daf3025e37e2e845b5102903feac31059a0099f07bf8f",
+  "verifiedPresentationClock": true,
+  "soundtrackSha256": "eaf0822839c2d381f48f73b3015e67f659f9c63a6ae3baa3be1730968dab46fb",
+  "shots": [
+    {
+      "shot": "S01",
+      "attempt": "attempt-001",
+      "startFrame": 0,
+      "endFrame": 40,
+      "cutSha256": "4fa4cedd0b9552a8cb344f02247471c4acec54b82e7757cba88ca377ed2296e3",
+      "requestSha256": "42804c712543d1825275583f60fc607c07218a90fbe01d875a466d2a9b50084c",
+      "originalSha256": "b57da5f8a7493ecc68968dd1767e217cf80c91b35ad038504b1069f0b2c8640d"
+    },
+    {
+      "shot": "S02",
+      "attempt": "attempt-001",
+      "startFrame": 40,
+      "endFrame": 64,
+      "cutSha256": "c3b5b36dc4b38bafee8ff9060939b79dffb9082d0c87a3568860c7b09e8a250b",
+      "requestSha256": "c8e585a555591e1f3b7fb0a3d9f8be6a17f51c2a6e00f6fd6cd45604e44d2a1b",
+      "originalSha256": "79297531fdf282ddd556dce28881b69ec0e326e582ed46d02527c64f64987fb8"
+    },
+    {
+      "shot": "S03",
+      "attempt": "attempt-002",
+      "startFrame": 64,
+      "endFrame": 100,
+      "cutSha256": "692171a78ef0787122d389a3837c1a91aa965ceee2e7643b27d67c610122f7b5",
+      "requestSha256": "60afb19177b0ed64d49b846ce3bc4c5146f241fd8cda2b0bf7b313eacadeff58",
+      "originalSha256": "d00c7b9a2262dbf0d3afc465c717ed1ae295e5b54cd8297642e3dddfbb428d81"
+    },
+    {
+      "shot": "S04",
+      "attempt": "attempt-002",
+      "startFrame": 100,
+      "endFrame": 129,
+      "cutSha256": "be054ec1c7c9d9a5b6100896e9c32495b92deab0a48385a4236cf682fde976f4",
+      "requestSha256": "f1eafef8e2aef093f9c062384575ec4ffc02b6136177c8ab6a86176ef6dea246",
+      "originalSha256": "921eb15569fe19da9b0c169efaaf97ea10873e240ba9eddd72cc7531439af90a"
+    },
+    {
+      "shot": "S05",
+      "attempt": "attempt-001",
+      "startFrame": 129,
+      "endFrame": 158,
+      "cutSha256": "fce14f048af1887c0bbdb90d38984712235b3ffaa9517d9814d493a34909a527",
+      "requestSha256": "3bcbf3690aa2c7b8334ef97621c952acca3ff2bef796359aba067d4540c5d117",
+      "originalSha256": "8ff46e0dccdb7107f18898318b579dcbb0e81a7567a157df0bb21006c3f8ad0c"
+    }
+  ],
+  "validation": {
+    "artifactSha256": "24eddbaffdec6ee7c40daf3025e37e2e845b5102903feac31059a0099f07bf8f",
+    "completeAudioVideoDecode": true,
+    "totalComparedFrames": 158,
+    "segments": [
+      {
+        "shot": "S01",
+        "sourceFrames": [
+          0,
+          40
+        ],
+        "decodedFramesMatchByHash": true
+      },
+      {
+        "shot": "S02",
+        "sourceFrames": [
+          40,
+          64
+        ],
+        "decodedFramesMatchByHash": true
+      },
+      {
+        "shot": "S03",
+        "sourceFrames": [
+          64,
+          100
+        ],
+        "decodedFramesMatchByHash": true
+      },
+      {
+        "shot": "S04",
+        "sourceFrames": [
+          100,
+          129
+        ],
+        "decodedFramesMatchByHash": true
+      },
+      {
+        "shot": "S05",
+        "sourceFrames": [
+          129,
+          158
+        ],
+        "decodedFramesMatchByHash": true
+      }
+    ],
+    "sourceCutFramesCompared": [
+      40,
+      64,
+      100,
+      129
+    ],
+    "soundtrackSourceSampleRange": [
+      0,
+      316000
+    ],
+    "soundtrackSamplesComparedPerChannel": 316000,
+    "soundtrackMinimumOneSecondCorrelationAtSameIndex": 0.997818
+  },
+  "adjacentCutsReviewedByAssistant": [
+    40,
+    64,
+    100,
+    129
+  ]
+}

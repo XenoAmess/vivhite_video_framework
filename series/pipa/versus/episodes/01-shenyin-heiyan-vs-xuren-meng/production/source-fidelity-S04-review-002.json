@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S04",
+  "startFrame": 100,
+  "endFrame": 129,
+  "attempt": 2,
+  "jobId": "video_gen_355e188c659f4826a94526ea2094f488:openai",
+  "requestSha256": "f1eafef8e2aef093f9c062384575ec4ffc02b6136177c8ab6a86176ef6dea246",
+  "renderPrompt": "Match the animated source <Video 1> as one uninterrupted camera move, with only one adult's face, hair, and navy gold-trimmed costume replaced. At the first frame, <Picture 1> shows the original tight tilted view, character at the right side bending forward and looking down toward the screen left off-axis foreground. Preserve the camera's immediate forward progression into <Picture 2>, its exact side-of-the-face cut and gaze. Then follow the original timing and framing as the lens rolls underneath into the late low-angle pose of <Picture 3>. Keep the same existing foreground prop shapes and reflected red and blue light exactly wherever the original depicts them, and preserve the continuous hand silhouette, color, set, shadows and blur from the source. Keep the one dark-haired character in navy and gold throughout all camera angles. No added props, graphics, dialogue, cuts or actors.",
+  "seed": 1235,
+  "rawSha256": "4a5ce1f9d9dfe3d7b69eb5aedc80f793cff624b50e85d67fe08f32dc65c000e1",
+  "cutSha256": "be054ec1c7c9d9a5b6100896e9c32495b92deab0a48385a4236cf682fde976f4",
+  "review": {
+    "cutSha256": "be054ec1c7c9d9a5b6100896e9c32495b92deab0a48385a4236cf682fde976f4",
+    "requestSha256": "f1eafef8e2aef093f9c062384575ec4ffc02b6136177c8ab6a86176ef6dea246",
+    "originalSha256": "921eb15569fe19da9b0c169efaaf97ea10873e240ba9eddd72cc7531439af90a",
+    "decision": "accepted",
+    "reviewedFrames": 29,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 100–128 帧及最终全 29 帧。二版保持黑炎的深棕短发、蓝金衣领和袖口，原片右侧俯向起镜、沿脸侧推进、红光和左前景枪形道具及向仰角过渡可见。按原片动作重取同一次渲染的帧，尾部四帧倒序取样使前景形状回到原片末端的方向。原片前中段的嘴部夸张度及末端镜头高度与候选有小差别，部分反光亮度也有变化。全镜角色、景别和主要动作连续，时点维持原样。",
+    "reviewedAt": "2026-11-26T23:48:44.531626+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S04",
+      "sourceFrame": 100,
+      "sourceStillSha256": "a336d390cd6df6731c0fa575fa96e71e6c0aafb7751dfb73d756d051d322541d",
+      "file": "S04-source-edit-0100.png",
+      "sha256": "f55f302ca9a32af81792173b4b07ba5839db021deb23da9af7838b56f10ef6b9",
+      "prompt": "Edit only the actor appearance in the first still from a stylized fictional 3D animated comedy. The face is on the extreme right at the original tilt, bending forward and looking down and left. Keep the original shape and exact position of everything forward of the wrist and the red-lit set. Replace the hair, visible face and dark sleeve cuff of the adult with the brown tousled-haired, slate-blue-eyed, navy and gold character in image two. Image three shows this same adult later in the scene for costume and material only. Keep the first image's shadows, exact profile crop and face size, head angle, and warm and red reflections. Do not change or add objects, graphics, faces, or new content.",
+      "inputs": [
+        "anchor-originals/S04-source-0100.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchors/S04-source-edit-0122.png"
+      ]
+    },
+    {
+      "shot": "S04",
+      "sourceFrame": 109,
+      "sourceStillSha256": "ff0844c68ebed5d4e72298a08247d29c5d0a02d9f7829f74491c54caef2217a5",
+      "file": "S04-source-edit-0109.png",
+      "sha256": "897b39cc2995d0b27cf45053762d056c3a264cb3f18077933a77c53045c96f64",
+      "prompt": "Make a character-only edit of the first image, a stylized fictional animated comedy. Keep the extremely tight tilted view, one eye visible at the same screen point, chin cropped along the lower-right region and the original gaze toward the lower left. Change the actor's visible face and hair to the dark brown tousled adult in image two, with the corresponding blue-gray eye, original facial position, perspective and expression. The third image shows the already designed actor further along the same action, for identity only. The first frame controls the stage and its existing shapes, light, focus, reflections and occlusion exactly. No new elements or added text.",
+      "inputs": [
+        "anchor-originals/S04-source-0109.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchors/S04-source-edit-0122.png"
+      ]
+    },
+    {
+      "shot": "S04",
+      "sourceFrame": 122,
+      "sourceStillSha256": "57834b85eb329b101a6c1476819fe8abea3be04d4649c29e44f7d52d62ffc53a",
+      "file": "S04-source-edit-0122.png",
+      "sha256": "f6a93257a5730e1198d69704048f753122d0e4c0413baea27033a0fc5bf7f78d",
+      "prompt": "This is a single frame of a fictional stylized 3D animated film. Edit only the assigned person's face, hair and visible clothing in the first reference from the design in the second. Keep the first reference's camera, relative silhouette size, pose, surface texture, room layout, reflections, grain, exact lighting and all original objects. Keep existing foreground props as already drawn with original silhouette, scale and focus. Add no new content. The navy-and-gold officer is cropped very closely at the right edge, from the same extreme low angle, looking toward the top-left foreground with his chin tilted as in the first image. Preserve the exact depth and red rim light, silhouette and blur of the dark object at left, and the original dark warm wood. The hand stays in the same pictured position.",
+      "inputs": [
+        "anchor-originals/S04-source-0122.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S04.mp4",
+    "inputSha256": "6a3cdf46251e4975e97c2262211010001d9f89be75826e1df855640fa7515f9c",
+    "preRetimeCutSha256": "de6f4ebfb572ba5e978c6b7e789aed847c794e5560096752c616a819a14c9849",
+    "outputSha256": "be054ec1c7c9d9a5b6100896e9c32495b92deab0a48385a4236cf682fde976f4",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      16,
+      25,
+      29,
+      34,
+      40,
+      46,
+      51,
+      57,
+      65,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      85,
+      86,
+      89,
+      94,
+      99,
+      107,
+      109,
+      111,
+      108,
+      105,
+      102,
+      99
+    ],
+    "filter": "[0:v]split=2[a][b];[a]select=eq(n\\,0)+eq(n\\,16)+eq(n\\,25)+eq(n\\,29)+eq(n\\,34)+eq(n\\,40)+eq(n\\,46)+eq(n\\,51)+eq(n\\,57)+eq(n\\,65)+eq(n\\,72)+eq(n\\,74)+eq(n\\,76)+eq(n\\,78)+eq(n\\,80)+eq(n\\,82)+eq(n\\,84)+eq(n\\,85)+eq(n\\,86)+eq(n\\,89)+eq(n\\,94)+eq(n\\,99)+eq(n\\,107)+eq(n\\,109)+eq(n\\,111),setpts=N/(24*TB)[lead];[b]select=eq(n\\,99)+eq(n\\,102)+eq(n\\,105)+eq(n\\,108),reverse,setpts=N/(24*TB)[return];[lead][return]concat=n=2:v=1:a=0,setpts=N/(24*TB)[v]",
+    "previewSha256": "be054ec1c7c9d9a5b6100896e9c32495b92deab0a48385a4236cf682fde976f4",
+    "sourceShotFrames": 29,
+    "reason": "Match the source camera path and foreground silhouette through the opening, extreme close-up and return to the final angle.",
+    "coveredFrames": 29,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T23:48:43.656364+00:00"
+  }
+}

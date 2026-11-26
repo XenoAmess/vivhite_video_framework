@@ -57,3 +57,5 @@ S12 第三版复现了推近和拉回，但近景开始回填原演员的脸和�
 S03 和 S04 首版分别核对了全 36 帧、29 帧。S03 首版中段回填原片演员，二版加入实际早、中、晚构图及从同一原镜制作的弱化外观运动参考。S04 保留演员与道具造型，运镜起势偏差较大，二版用俯向、沿脸推近、仰向三个源帧。S12 第四版和 S03 第二版都已实际受理，在只有本项目请求等待时分别依次调整。 [S03 复核和返工](source-fidelity-S03-review-001.json) · [S03 运动参考](source-fidelity-S03-motion-guide-001.json) · [S04 复核和返工](source-fidelity-S04-review-001.json) · [原队列及调整](source-fidelity-queue-reorder-003.json)
 
 新版经典 5 秒样片已输出，与原片 00:09.000–00:14.000 相同起止时点。独立验收的 S08–S12 保留四个原片切点，配乐为对应的 240,000 个立体声采样／声道。S12 取第四版前段和第一次渲染中已正确替换的后段，按原镜补足起始推近，保留黑炎造型与座椅拉远，结尾的暗色虚化前景比原片弱。8 镜共 225 帧通过，全片继续制作。 [S12 的逐帧验收和合成配方](source-fidelity-S12-review-004.json) · [经典段拼接与音画核对](source-fidelity-classic-preview-001.json)
+
+S03 与 S04 的第二版分别通过 36 帧及 29 帧全量对照。S03 取帧对齐从贴脸到拉开的动作，S04 取帧对齐由俯向到仰向的镜头，保留前景道具和反光。原片开头 0–157 帧的 S01–S05 已连续拼接，158 帧与通过版本逐帧同一，四处切点及指定配乐均已复核。至此 10 镜、290 帧通过。 [S03 二版](source-fidelity-S03-review-002.json) · [S04 二版](source-fidelity-S04-review-002.json) · [开头拼接验收](source-fidelity-opening-preview-001.json) · [S04 队列调整](source-fidelity-queue-reorder-004.json)
