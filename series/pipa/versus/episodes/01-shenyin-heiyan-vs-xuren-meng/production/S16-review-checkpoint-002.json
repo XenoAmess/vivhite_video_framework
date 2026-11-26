@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S16",
+  "startFrame": 385,
+  "endFrame": 433,
+  "attempt": 2,
+  "jobId": "video_gen_c85e9adab8134871a0d331818a3119bb:openai",
+  "requestSha256": "4b9ebdf7d2b03127ada33f7d292316c56f5e6827cb57e28eaf410b92819711eb",
+  "renderPrompt": "One continuous low sweeping anime shot. <Video 1> establishes the floor-level camera and timed shifts. <Picture 1> is the fully clothed red-hooded costume identity, and <Picture 2> shows the required initial rear wide camera, leg placement and hood. Begin in a wide view with the performer facing away and both bent knees visible. As the legs continue shifting left and right, the camera slides and tilts from low center toward a lower oblique angle. The shoulders tilt as one arm rises distinctly over the head at the end. Show both planted boots and cape responding to the movement. Warm overhead circle lamp and wooden set keep the same position, no other person, cut, printed graphics, weapon or words.",
+  "seed": 1235,
+  "rawSha256": "eab9fcf70b0efa387dc9999b47cb78950a7baf72f0dd3487200e4b2ffccbd11b",
+  "cutSha256": "356675627a217aa7e0eac9f4fb8c97720aba934d941288e048e14ca472c9edbc",
+  "review": {
+    "cutSha256": "356675627a217aa7e0eac9f4fb8c97720aba934d941288e048e14ca472c9edbc",
+    "requestSha256": "4b9ebdf7d2b03127ada33f7d292316c56f5e6827cb57e28eaf410b92819711eb",
+    "originalSha256": "e5ee1f21d70e8ad100d816790d7ab7e641e69a84caa442aef2c3495f325b6cb6",
+    "decision": "accepted",
+    "reviewedFrames": 48,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 385–432 帧，共 48 帧。保留了背身双膝弯曲、重心从一侧移回另一侧、后段抬臂伸向高处并推进到更陡仰角的顺序。红披风、金边、长发、深色靴子、圆顶灯及木墙贯穿镜头；后段较清楚地看到举过头顶再扫回身侧。抬臂比原片晚约几个帧，步幅和画面边缘的光效比原版收敛。",
+    "reviewedAt": "2026-11-26T07:12:07.951884+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S16-rear-wide-dance.png",
+      "sha256": "4846a5cdd5c8053294254d39c81f6cf62abd515fd360e29748f913d0417f08e3",
+      "prompt": "Single 16:9 anime storyboard frame of a comic stage dancer. Image 1 supplies the red hood, blond hair, dark trousers and gold lined red cape. Image 2 supplies the warm floor-level camera and broadly planted bent-knee dance silhouette. Show the view from behind and low, with the back seam of the red hood and boot heels clearly visible. Feet at each side and bent knees support a sideways weight shift, torso upright and one arm just starting to pull upward. Show the whole performer from hood to shoes plus the dark wooden room, simple doors and round amber overhead lamp. The gold-lined red cape swings asymmetrically to one side so both legs are visible. Keep proportion natural, action comedic, and the whole person fully clothed. No face in camera, no other person, realistic weapon, injury, text or floating graphic.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/xuren-meng.png",
+        "S16-stage-cut-source.png"
+      ],
+      "usedForRetry": true
+    }
+  ]
+}
