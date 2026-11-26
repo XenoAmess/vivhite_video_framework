@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S26",
+  "startFrame": 633,
+  "endFrame": 644,
+  "attempt": 2,
+  "jobId": "video_gen_6bac78fb672448a790b3f3ff6f8c7199:openai",
+  "requestSha256": "917c361c3ae55073b99ceaa4d894234c469ffe0bfdf57fb5680fe9f8bd5a7838",
+  "renderPrompt": "One continuous floor-level anime insert. Match the whole short step and fixed low camera of <Video 1>. <Picture 1> defines the red outfit, matte charcoal trousers and flat black boots; only those legs are visible. <Picture 2> is the required close-up framing. Look straight across the wooden boards almost at floor height as one black boot enters near from screen right, foreground toe partly cropped, touches the wood and passes the second boot; the second foot shifts behind it. Only the boots, shins and a sliver of swinging crimson cape hem are in frame the whole time, with the small rose chair and warm amber ceiling light soft in the rear. No face or other actor, jump cut, footwear switch, realistic weapons, marks or dialogue.",
+  "seed": 1235,
+  "rawSha256": "a966595ffe17e9f995d7c3691701cac9b397f928bbd9ef88875ca55cf3bf15b1",
+  "cutSha256": "a16d67216ed9e81080d6d10fe262b793d11767eca56ba7e0e30cddda74134118",
+  "review": {
+    "cutSha256": "a16d67216ed9e81080d6d10fe262b793d11767eca56ba7e0e30cddda74134118",
+    "requestSha256": "917c361c3ae55073b99ceaa4d894234c469ffe0bfdf57fb5680fe9f8bd5a7838",
+    "originalSha256": "08c95dec83ec984bc604be8277e7e717a1808e5a3a32546257f54e61ec46341e",
+    "decision": "accepted",
+    "reviewedFrames": 11,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 633–643 帧，共 11 帧。贴地机位、背景粉椅和暖顶灯连续。虚人梦的一只靴子从画面右边扫进近景，越过另一只，前靴近端着地时后靴稍起，红披风留在画面上缘。候选靴底落点比原片约晚一帧，近端更清楚可见，保持同一角色和动作方向。",
+    "reviewedAt": "2026-11-26T08:54:07.941562+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S26-crossing-boots-close.png",
+      "sha256": "c4c06ceba8675d52cba7d7eff3cbe2b94f23e5b235a637016c7eaf03f8cf2ef5",
+      "prompt": "One 16:9 storyboard keyframe drawn in the precise anime style of Image 1. Use Image 1 only for matte charcoal trouser leg, flat black leather boot shape and hem of the red cape. Use Image 2 only for the floor-level lens inches from the wood and the warm room. At this angle, show ONLY the lower shins and two dark flat-heeled boots crossing the foreground on a wooden floor in a deliberate comic footstep, one so near its toe is out of frame, with a distant pink chair and soft amber light behind. A tiny crimson cloak hem can move at the upper edge, but no face, upper body, walls full of signage, other people, weapons, texts or symbols. Warm dim continuity, graphic cel shading.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/xuren-meng.png",
+        "S26-second-act-source.png"
+      ],
+      "usedForRetry": true
+    }
+  ]
+}
