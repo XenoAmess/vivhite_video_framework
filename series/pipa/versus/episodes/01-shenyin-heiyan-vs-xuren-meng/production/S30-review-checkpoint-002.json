@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S30",
+  "startFrame": 759,
+  "endFrame": 788,
+  "attempt": 2,
+  "jobId": "video_gen_25a22f7c34f1434b9b89d729bfdf5cbd:openai",
+  "requestSha256": "311112f73d3404378df395fd6c38b8ded24cd29f364db98f118d5dcbf938f364",
+  "renderPrompt": "One uninterrupted cel-shaded anime shot. Keep the actual movement and floor-height rear lens of <Video 1>. <Picture 1> supplies the fully clothed red-hooded performer. Begin close behind the back and cape, then rapidly pull back while the boots landing one after the other come into view. The dancer lands in a wide stance like <Picture 2>, dips both knees, briefly straightens, then dips and shifts weight again before the end. Keep the backs of hood and shoulders facing camera, keep both boots and their changes in angle legible through the moving cloak. The setting is the WARM SMALL WOODEN ROOM in <Picture 2>, with rose chair at left, cabinet at right and rough doorway at center. Only warm ceiling light and a little paper drifting. No steel arena, stage scaffolding, fire, neon, other person, realistic weapon, text, or inserted cut.",
+  "seed": 1235,
+  "rawSha256": "db815e088fe457effb4765a7e48f3b68bc2993c326a1274f8463f1bd83e03f12",
+  "cutSha256": "923e7ceabfda248aa417b858d025a66f71a64502d12ea23bf942c96a28810bbe",
+  "review": {
+    "cutSha256": "923e7ceabfda248aa417b858d025a66f71a64502d12ea23bf942c96a28810bbe",
+    "requestSha256": "311112f73d3404378df395fd6c38b8ded24cd29f364db98f118d5dcbf938f364",
+    "originalSha256": "90795bb9e3ddfd1ebe0a07a72d0c451787011c59defa622a6da9dd77a100a3b9",
+    "decision": "accepted",
+    "reviewedFrames": 29,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原版第 759–787 帧，共 29 帧。近处红金披风迅速拉开到背面全身，两靴先并近后分开落地，膝部屈伸与两侧转重心、披风回摆相连。破损木墙和粉椅保持同一位置。候选后半景别略宽，部分尖锐亮光变成纸片和地面反光。",
+    "reviewedAt": "2026-11-26T11:00:30.494832+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S30-low-rear-wide-landing.png",
+      "sha256": "437949515fd97e5eac3320052b2a312878675b79d365990c0cadeac04c853c28",
+      "prompt": "Single 16:9 storyboard anchor, clean cel-shaded anime. Image 1 supplies the exact blond adult in the crimson hood, crimson-gold long cape, fully covering charcoal trousers and flat dark boots. Image 2 supplies only the room, warm light and very low camera. Use a full-body view from behind showing the entire hood, shoulders, both knees and boots. The performer has just planted both feet wide apart on the wooden floor, knees bent unevenly and shoulders leaning forward slightly after a comedic dance step. The cape lifts to one side enough to show both boots. Behind the performer, keep the low warm wooden room with a rose chair left, wood cabinet right, and a rough doorway deeper at center. Soft amber ceiling light, natural room shadows, no arena, crowd, bonfire, weapon, gunfire, graphic or text. One character.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/xuren-meng.png",
+        "S30-original-rear-room.png"
+      ]
+    }
+  ]
+}
