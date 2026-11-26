@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S11",
+  "attempt": 2,
+  "startFrame": 294,
+  "endFrame": 317,
+  "jobId": "video_gen_3fcc787638594012add28a27bac3c9ef:openai",
+  "requestSha256": "66959cadda6484c1a8bdd2c31f4f3327ddb3b1a76abb9e58f1635048f266af7b",
+  "renderPrompt": "One continuous fixed rear view in the ordinary small warm WOODEN back room in <Video 1>, <Picture 2> and <Picture 3>. Use <Picture 1> for the fully clothed red-hooded adult character. Keep the plain rectangular wood doors at the back, brown floorboards and one warm overhead lamp, without changing rooms or lighting color. The comic choreography has visibly different arm positions. Begin bent a little forward with each open gloved palm briefly on the back of their own trousers as in <Picture 2>. At about a third of the take, both hands separate and swing up and away. Just past the middle both hands return briefly for a second light comic tap, with both gloved palms making contact. Then the arms move out wide to either side, like <Picture 3>, and stay there for the last beat. Use the same timed gestures and camera distance shift from <Video 1>. The hood and upper back stay facing away, and fully clothed legs, shoulders and head stay legible. No stage curtains, bulbs, neon screen, colored spotlight beams, text, symbols, other people, or cut.",
+  "seed": 1235,
+  "rawSha256": "0be76c70c20c752121b3a7f2c5272156f2572cefbe44c0d00a6f2407568563f9",
+  "cutSha256": "470ccb877c82f48641b094f2b744ddef1bbda97b9e9c3dd8cebceb16129eb94a",
+  "review": {
+    "cutSha256": "470ccb877c82f48641b094f2b744ddef1bbda97b9e9c3dd8cebceb16129eb94a",
+    "requestSha256": "66959cadda6484c1a8bdd2c31f4f3327ddb3b1a76abb9e58f1635048f266af7b",
+    "originalSha256": "d94c63a1bc1f964d68094eb21d5af6d0be44de2736605bdd8d0d5bbed597a902",
+    "decision": "accepted",
+    "reviewedFrames": 23,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 294–316 帧及第二版全部 23 帧。镜头全程从背面呈现红兜帽、披风和虚人梦，暖色木板房间保持一致。开头双手碰到裤面，随后明显抬起离开，后半短暂再次接触，再伸开双臂收势。第二次接触比原片晚约 2 帧，采用稍远的全身景别，保留兜帽、双手和肩背，便于看清动作。未见额外人物、切镜或明显穿模。通过本镜画面审核。",
+    "reviewedAt": "2026-11-26T00:26:06.040831+00:00"
+  },
+  "layoutRecord": {
+    "file": "S11-rear-arms-open.png",
+    "prompt": "Edit the provided cel-shaded storyboard still to a different nonsexual comic dance pose in the same simple wooden room. Make a single 16:9 full-body landscape frame of the fully clothed red-hooded adult performer seen directly from behind. Keep exactly the same deep crimson hood, blond hair, patterned dark trousers, ankle boots with flat heels, gold-lined cloak and the small ivory shoulder ornament. The character now has BOTH ARMS EXTENDED STRAIGHT OUT at shoulder height, open empty palms toward the left and right edges, and is leaning forward a little as if ending a silly dance. Keep the backs of boots on the wooden planks. The cape is parted to either side; full hood, upper back, arms and boots all visible. Preserve the same rectangular wood doors, quiet amber overhead light and unadorned plank floor. No theatrical curtains, colored spotlights, decorative bulbs, light panels, text, symbols, weapons, or other people.",
+    "inputs": [
+      "S11-rear.png"
+    ],
+    "usedForRetry": true,
+    "sha256": "8a2f7629606d400334e2ccce3a568c9737cd794c10cf431d5dfe891d0c99a8ad"
+  }
+}
