@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S24",
+  "startFrame": 578,
+  "endFrame": 633,
+  "attempt": 3,
+  "jobId": "video_gen_4499dc65ea4a4973b76324b8cdc01359:openai",
+  "requestSha256": "5f7023c0fb2420553ddc51f6df96e74cf148811d1e73b139d5e675a2e838e896",
+  "renderPrompt": "One continuous cel-shaded anime shot, animated through two very distinct poses. <Video 1> gives the timing for elbows, knees and the downward circling camera. <Picture 1> defines the adult red-hooded blond performer in a long gold-lined cloak, dark gloves, trousers, red wrist beads and boots. Start on the same wooden floor in the prone position from <Picture 2>, hood facing away. During the first third visibly bend and extend the forearms and shift one boot. Plant the right palm, draw one knee underneath, and push the shoulders and hood UP off the floor. By the middle the chest is already lifted. Then continue turning the camera from the high angled shot down to the LOW REAR angle in <Picture 3> as the one knee remains planted and the left boot slides visibly outward. The back of the hood stays visible and the cape lifts as the torso rises. End in the raised one-knee pose with hand on wood. Keep the movement active and the camera continuous, one fully clothed character, warm wooden floor, drifting confetti and soft light across the floor, no weapons, extra figures, extra cuts, marks or dialogue.",
+  "seed": 1236,
+  "rawSha256": "5a18d2a42b45f31684c10498895b44adb9da527539370a9668c049c29ce2f9f8",
+  "cutSha256": "24455588cb1236ecfea8e849ff48c64cd74455e47304e24ecd55d7bc2e64aa62",
+  "review": {
+    "cutSha256": "24455588cb1236ecfea8e849ff48c64cd74455e47304e24ecd55d7bc2e64aa62",
+    "requestSha256": "5f7023c0fb2420553ddc51f6df96e74cf148811d1e73b139d5e675a2e838e896",
+    "originalSha256": "df0c1a71bcdd621ce1ec14b6a79fd4386c530508d85bb85318fc529a385c3038",
+    "decision": "rejected",
+    "reviewedFrames": 55,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 578–632 帧及候选全部 55 帧。第三版保留俯拍伏地、伸曲前臂、支臂抬肩和机位降到后侧。原片后半双膝动作清楚，双靴依次立住，人物向上撑出明显间隙并下沉后再次起身。候选的一条腿始终伸在左下，后半持续单膝贴地。这一差别影响紧随其后的贴地跨步。退回，补入双靴着地的高位撑身，沿用原镜机位和伏地起势。",
+    "reviewedAt": "2026-11-26T14:51:25.580624+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S24-prone-floor-pose.png",
+      "sha256": "9c0f4e9e3251570238526f7eb090c8b73e8171d4c55f2839bb7ae8eea1d4ab03",
+      "prompt": "Single wide 16:9 anime storyboard frame, high overhead view of a fully clothed stage performer playing a comic tumble. The crimson-hooded adult in Image 1 is the exact costume and identity. Use Image 2 solely as an overhead pose guide. They are lying FACE DOWN, stomach and chest toward the wooden stage floor, with the back of the red hood, back of shoulders and back of the red cape visible from above. Their face and eyes are completely hidden behind the hood and floor. One glove reaches upper right along the wood, the other arm is already bending to support the body. Their booted legs form an asymmetrical bend, one extending left and the other knee bent. The gold-lining edge of the red cape follows the back and parts at the sides, so the feet and near arm remain visible. Warm wood grain, a few small paper confetti squares and soft amber light. One character only, no injury, realistic weapon, graphics, text or panel.",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/xuren-meng.png",
+        "S24-motion-calibration-source.png"
+      ],
+      "usedForRetry": true
+    },
+    {
+      "file": "S24-rear-rise-end.png",
+      "sha256": "cd60540cd9c6ec0fb471d404d95c9070a0537a8f4e53d8f6fe72e530445be6b3",
+      "prompt": "Edit this single anime frame by moving the camera to a low rear viewpoint, behind the performer. Keep the EXACT same kneeling pose, split leg placement, gloved supporting palm, character costume, curtain of red and gold fabric, warm wood room, pinkish lighting, square paper pieces, and warm folding screen. The viewer now sees the back of the red hood, not the face or profile. Torso is raised and occupies the upper half of the picture. The extended left boot stays at the bottom left, the tucked knee near center, the supporting palm visible on the right. Keep the entire clothed adult, head, hands and both legs in a wider horizontal composition and floor perspective toward the folding screen. A film storyboard in the same 2D anime style, no lettering, no weapons, no another person.",
+      "inputs": [
+        "S24-rear-rise-side-draft.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "One uninterrupted cel-shaded 2D anime dance recovery. <Picture 1> is the blond crimson-hooded performer with red-gold cape, long dark trousers, gloves, red wrist beads and tall dark boots. <Video 1> gives the timing, rear camera descent and exact succession of three clear body states. From the high angle, begin nearly flat and face down like <Picture 2>; the forearms sweep outward and pull back during the first third. Plant a gloved palm and tuck one knee visibly beneath the body. THEN push the hips and chest well off the wood, bend BOTH knees and place BOTH boot soles wide apart on the floor in the middle-to-late movement, as <Picture 3> shows. The low rear lens follows the lift, and the cape swings out of the way so the space under the body and both moving legs are visible. Briefly lower and lift again, leaving the boots planted and ready for a step before the end. One continuous red-cloaked figure, warm wood floor and small amber confetti, flowing camera without cuts. The sole ivory mask stays attached to the far left shoulder, hidden from behind when needed. Empty hands, no duplicate limbs or accessories, no violence, weapon, source pixels, text or dialogue.",
+    "seed": 1237,
+    "plannedAt": "2026-11-26T14:51:26.119333+00:00",
+    "images": [
+      {
+        "name": "S24-prone-floor-pose.png",
+        "sha256": "9c0f4e9e3251570238526f7eb090c8b73e8171d4c55f2839bb7ae8eea1d4ab03",
+        "imagePrompt": "Single wide 16:9 anime storyboard frame, high overhead view of a fully clothed stage performer playing a comic tumble. The crimson-hooded adult in Image 1 is the exact costume and identity. Use Image 2 solely as an overhead pose guide. They are lying FACE DOWN, stomach and chest toward the wooden stage floor, with the back of the red hood, back of shoulders and back of the red cape visible from above. Their face and eyes are completely hidden behind the hood and floor. One glove reaches upper right along the wood, the other arm is already bending to support the body. Their booted legs form an asymmetrical bend, one extending left and the other knee bent. The gold-lining edge of the red cape follows the back and parts at the sides, so the feet and near arm remain visible. Warm wood grain, a few small paper confetti squares and soft amber light. One character only, no injury, realistic weapon, graphics, text or panel."
+      },
+      {
+        "name": "S24-both-boots-high.png",
+        "sha256": "d5e7e321a8ffe61e5a92b65bc189377ee7a2b97ec4670261ce3b15fa3f230986",
+        "imagePrompt": "Make one localized costume correction to this anime storyboard still. Remove the entire ivory theatre mask, its pin, and all ties visible at the right edge of the crimson hood; replace only that little area with the existing plain red fabric and blond hair with matching contours and lighting. The mask is attached to the hidden far shoulder and completely out of view at this camera angle. Preserve absolutely the same adult body pose, exact boot placements, both hands, red and gold cape silhouette, camera, wood floor, botanical screen, warm light, confetti, and painted outlines. No other changes, no text or graphic layers."
+      }
+    ]
+  }
+}
