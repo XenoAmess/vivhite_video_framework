@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S02",
+  "startFrame": 40,
+  "endFrame": 64,
+  "attempt": 1,
+  "jobId": "video_gen_3f291fce9c0341c7be6ebc97ac099f94:openai",
+  "requestSha256": "c8e585a555591e1f3b7fb0a3d9f8be6a17f51c2a6e00f6fd6cd45604e44d2a1b",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 54. Follow the original focus transition through the near-right dark prop to the red-hooded figure at center-left, retaining the exact doorway position.",
+  "seed": 1234,
+  "rawSha256": "043fdee400cfcafd6b993cb4f0f02d5a0471c8c95ed3b4c8598f2e032d689e28",
+  "cutSha256": "c3b5b36dc4b38bafee8ff9060939b79dffb9082d0c87a3568860c7b09e8a250b",
+  "review": {
+    "cutSha256": "c3b5b36dc4b38bafee8ff9060939b79dffb9082d0c87a3568860c7b09e8a250b",
+    "requestSha256": "c8e585a555591e1f3b7fb0a3d9f8be6a17f51c2a6e00f6fd6cd45604e44d2a1b",
+    "originalSha256": "79297531fdf282ddd556dce28881b69ec0e326e582ed46d02527c64f64987fb8",
+    "decision": "accepted",
+    "reviewedFrames": 24,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 40–63 帧与候选全 24 帧。原片右前景枪形道具、圆柱轮廓、红蓝反光、遮挡比例和房间位置保持一致。虚人梦从对焦前的微虚焦过渡到可辨认的近中景，金发、红兜帽、披风及左肩浅色面具保持一致。原镜数帧的眼神上扬在结尾仍可辨识。起镜时虚人梦略清晰，转焦幅度比原片稍小。整镜视角、调焦方向和前后景位置保持，未添加其他画面元素。",
+    "reviewedAt": "2026-11-26T20:56:50.682430+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S02",
+      "sourceFrame": 54,
+      "sourceStillSha256": "af081e9c0d50aa5b836b92b1b9f4d80369ae40fe7959c72fd97086789c7e4c0d",
+      "file": "S02-source-edit-0054.png",
+      "sha256": "66d1425e415e01a069fa20102b343797f77e5e4876a05c5bb632cde4409ac118",
+      "prompt": "This is a single frame of a fictional stylized 3D animated film. Edit only the assigned person's face, hair and visible clothing in the first reference from the design in the second. Keep the first reference's camera, relative silhouette size, pose, surface texture, room layout, reflections, grain, exact lighting and all original objects. Keep existing foreground props as already drawn with original silhouette, scale and focus. Add no new content. The actor in focus in the left middle of the image becomes the adult red-hooded blond performer. Preserve the neutral sideways stare, original details behind them, black-blue blurred shape at right foreground, dim ochre wall and red reflected edges. The red hood is deep crimson under the source lighting, and the cape follows the existing shoulders. Retain the same focal relationship.",
+      "inputs": [
+        "anchor-originals/S02-source-0054.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ]
+}

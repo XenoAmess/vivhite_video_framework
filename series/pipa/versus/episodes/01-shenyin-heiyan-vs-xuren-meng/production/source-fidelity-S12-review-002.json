@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S12",
+  "startFrame": 317,
+  "endFrame": 338,
+  "attempt": 2,
+  "jobId": "video_gen_a34284d21b744111864a756bf211f651:openai",
+  "requestSha256": "5c0b48ca7d569fdf50bf099cae95abaa7061e28dca501e49a002dff1b4f3b7a7",
+  "renderPrompt": "Replace the one seated adult actor in <Video 1> with the dark-haired navy-and-gold character shown in <Picture 1>. From the very first wide frame the seated actor already has this character's same brown hair, face, gold-trimmed coat and full-length ivory trousers. <Picture 2> establishes the edited opening wide view; <Picture 3> establishes the same actor at the peak reaction close-up. Keep this identity stable as the source camera pushes in and pulls back. Match <Video 1> continuously for the tilted low lens, camera timing, arm position and movement, expression progression, subject size, lighting, pink chair, door, wall papers, and original dark out-of-focus foreground along the lower edge at the beginning and end. The original video controls the room and the wall papers throughout. Keep exactly one visible seated adult in the same position and outfit, no new cut, graphics, words or dialogue.",
+  "seed": 1235,
+  "rawSha256": "e45172b28de282eaa78a194df2042fb07bd29b4f86e18fc5192d872cb0f9ff1f",
+  "cutSha256": "57d0322831ab5ba2d449d677813a195438139d6ca248ef14f8cdfe884ac9f133",
+  "review": {
+    "cutSha256": "57d0322831ab5ba2d449d677813a195438139d6ca248ef14f8cdfe884ac9f133",
+    "requestSha256": "5c0b48ca7d569fdf50bf099cae95abaa7061e28dca501e49a002dff1b4f3b7a7",
+    "originalSha256": "66607994b1836a0868bdc5b7720eed9dce6bdc80212b7fd34f6544a1c3d57ae6",
+    "decision": "rejected",
+    "reviewedFrames": 21,
+    "method": "assistant-frame-review",
+    "observations": "逐帧复核原片第 317–337 帧和第二版全部 21 帧。第二版从首帧就一致使用神隐黑炎的发型、制服和脸，粉椅、墙面和光色保留。原片第五帧已经推到脸部，接着短暂贴脸、由偏笑变张嘴且向广角拉回，第二版直到第十五帧才开始推近，尾帧仍然是面部近景，左手始终在类似张掌的位置。退回。第三次采用第 317 帧起镜、第 322 帧极近偏笑和第 334 帧回到中景这三个原片构图约束运动，仍使用完整原镜。",
+    "reviewedAt": "2026-11-26T20:40:47.357303+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S12",
+      "sourceFrame": 317,
+      "prompt": "Edit image one, a single frame of a fictional stylized 3D comedy. Preserve the original 16:9 crop, tilted low wide camera, perspective, figure scale and pose, floor, pink upholstered armchair, dark red doorway on the left and the beige wall with its two papers, all lighting, reflections and focus. The first frame of the shot should already show the fully clothed adult character from image two in place of the lone actor sitting in the chair. Use the character's tousled brown hair and face, navy long-sleeve coat with restrained gold trim and shoulder tabs, ivory full-length trousers and dark boots. Image three shows the same new actor rendered in the scene at a different camera distance, use it only to match the appearance and 3D materials. Keep the wide opening face small at the same point and the same open-mouth expression and raised hand as image one. Reproduce the scene's low camera, foreground blur and the occluded natural pose at the original proportions. Only one visible adult character, fully dressed, same armchair position and original lighting, no extra content or typography.",
+      "inputs": [
+        "anchor-originals/S12-source-0317.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchors/S12-source-edit-0327.png"
+      ],
+      "sourceStillSha256": "cd2a83fa9489bfb3d4517bf74251c0390263f60b384b080f60d876185f2e4740",
+      "inputSha256": [
+        "cd2a83fa9489bfb3d4517bf74251c0390263f60b384b080f60d876185f2e4740",
+        "fcc41595a2d072855f3ccbd12e94af4d3d658a9df665efc16a90bfad144abf99",
+        "a28090be1f84f4be911441fe34bc32802f39eba9502f90c3238c242c7dea0372"
+      ],
+      "file": "S12-source-open-0317.png",
+      "sha256": "6992dd61bca5fb62fb4b5456c1edb3e8fc8b8a56f4393c0a72c0717f15841c80"
+    },
+    {
+      "file": "S12-source-edit-0327.png",
+      "shot": "S12",
+      "sourceFrame": 327,
+      "prompt": "Change only the face, hair and visible collar of the adult animated actor in the first, canted head-and-shoulders frame. The second image supplies the navy-and-gold officer identity with tousled dark brown hair and blue-gray eyes. Preserve the exact off-center low-angle camera, greatly exaggerated open-mouth comic surprise, sideways glance, raised blurred hand at left and tan wall with blurry original placard. Match the original soft red light in the left shadow and warm ochre bounce at right. Same simple stylized 3D animated film textures and image crop. Keep the actual existing background and its depth; no new graphics or people.",
+      "sha256": "a28090be1f84f4be911441fe34bc32802f39eba9502f90c3238c242c7dea0372",
+      "inputs": [
+        "anchor-originals/S12-source-0327.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ],
+      "sourceStillSha256": "760fd54561f19a33f56d58751e76201db96d43414b61af94988b8ac98428f67f"
+    }
+  ],
+  "followUp": {
+    "prompt": "Use <Video 1> as the continuous original source plate and preserve its exact moving camera and one actor's performance. The three edited views are the beginning, early extreme close-up, and late retreat of that same shot. <Picture 1> opens in a wide low tilted composition showing the navy and gold adult at the pink chair; start the rapid push immediately. At approximately the first quarter of the source timing the same actor's face fills the frame, cut at chin, with the exaggerated crooked grin and side eyes of <Picture 2>. Allow the brows, eyes and mouth to change as his head tilts back and opens wide in the central phase of the source clip. Continue the original pullback before the last third. Pass the medium view and wide gesture of <Picture 3> at approximately four fifths, then keep pulling back to the original pink chair and blurred dark foreground while the actor moves with the clip. The perspective and size of the face must change in the film exactly as it does in the video. Keep the arm's original swing, wall, wall papers, door, light and shadow from the same original frames. The actor is the same dark-haired navy officer from beginning to end with long ivory trousers; no cuts, added set details, captions, or spoken material.",
+    "seed": 1237,
+    "plannedAt": "2026-11-26T20:40:47.510062+00:00",
+    "images": [
+      {
+        "name": "S12-source-open-0317.png",
+        "sha256": "6992dd61bca5fb62fb4b5456c1edb3e8fc8b8a56f4393c0a72c0717f15841c80",
+        "imagePrompt": "Edit image one, a single frame of a fictional stylized 3D comedy. Preserve the original 16:9 crop, tilted low wide camera, perspective, figure scale and pose, floor, pink upholstered armchair, dark red doorway on the left and the beige wall with its two papers, all lighting, reflections and focus. The first frame of the shot should already show the fully clothed adult character from image two in place of the lone actor sitting in the chair. Use the character's tousled brown hair and face, navy long-sleeve coat with restrained gold trim and shoulder tabs, ivory full-length trousers and dark boots. Image three shows the same new actor rendered in the scene at a different camera distance, use it only to match the appearance and 3D materials. Keep the wide opening face small at the same point and the same open-mouth expression and raised hand as image one. Reproduce the scene's low camera, foreground blur and the occluded natural pose at the original proportions. Only one visible adult character, fully dressed, same armchair position and original lighting, no extra content or typography."
+      },
+      {
+        "name": "S12-source-edit-0322.png",
+        "sha256": "56277edf16d1892f98c239a1da4284ed007bd1c75d256b04580eb4528246ca69",
+        "imagePrompt": "Edit the exact source frame in image one from a fictional 3D animated comedy, matching its extremely tight tilted facial crop and distorted near lens, facial position, broad crooked toothy grin and exaggerated sideways gaze. The full head should fill the same portion of the frame and be cut off at the chin and shoulder in precisely that same crop. Change just the adult actor to the tousled dark brown hair and slate-blue eyes from image two and a glimpse of navy collar with gold piping where the same collar is visible. Match the type of stylized shadow, reddish light from the left, out of focus beige wall and wall papers and the original depth of field. Use the same character already rendered in this room in image three for identity and materials only. Do not take the pose or camera from image three; use the actual cropped lens and grin in image one."
+      },
+      {
+        "name": "S12-source-edit-0334.png",
+        "sha256": "c7831ecb1598540838af1868c0a1052ca19504687bc593244118158b834f82a3",
+        "imagePrompt": "Only edit the actor in image one, a medium shot of a fully clothed adult in an animated 3D comedy. Retain the camera tilt, lens and exact left and right cropping, proportions in perspective, pose and motion blur. Keep the visible pink armchair, amber wall, its papers and nearby door in their original positions unchanged. Replace the hair and face and existing sleeve and jacket with the dark brown tousled hair, slate-blue eyes and navy coat with gold cuff and collar trim from image two. Retain the drawn-back sleeve to the left, a taut cropped sleeve at the right and the same openly grinning expression in image one, at its original frame location. Image three depicts this same new actor's identity in the room. Keep image one's original body angle and camera distance, lighting direction and animated materials. One adult, fully dressed, no new objects or type."
+      }
+    ]
+  }
+}

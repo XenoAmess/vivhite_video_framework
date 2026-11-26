@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "vivhite-pipa-owned-queue-reordering-1",
+  "at": "2026-11-27T04:57:15.7269785+08:00",
+  "reason": "Keep the two Pipa classic-excerpt retakes adjacent before first takes of the same project, while retaining S08 as the first Pipa retake.",
+  "onlyProjectJobsWaiting": true,
+  "runningContinued": true,
+  "priority": 100,
+  "promoted": [
+    {
+      "attempt": 3,
+      "positionBefore": 32,
+      "shot": "S12",
+      "jobId": "video_gen_09261ee065f24040aef271687898532f",
+      "positionAfter": 2
+    }
+  ]
+}
