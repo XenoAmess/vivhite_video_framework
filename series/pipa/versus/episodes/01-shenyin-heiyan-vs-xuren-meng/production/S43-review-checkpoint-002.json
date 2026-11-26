@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S43",
+  "startFrame": 1174,
+  "endFrame": 1208,
+  "attempt": 2,
+  "jobId": "video_gen_0f67a4d93f484bbd81c13d29dfcddcd7:openai",
+  "requestSha256": "fd2b220cd34fb42d93173f0385724b23b5e1a1c556a1987880d464282c7db255",
+  "renderPrompt": "One uninterrupted cel-shaded anime comedy shot. <Video 1> supplies the swing in camera elevation, motion timing, and pose. <Picture 1> is the same fully dressed navy-and-gold officer with short dark hair, long ivory trousers and dark boots. <Picture 2> shows his correct final pose, rose chair to left, warm floorboards, raised left palm and plain round-tipped gold theater baton. Start high above as he lowers into a crouched off-balance step between the rose chair and folded screen. As he turns, drop the camera quickly to his face and pull closer. He lands sitting diagonally with one knee raised, smiles sheepishly, raises an open left hand, and holds the solid decoration from the reference up beside his chest. Preserve the down-and-up movement and render the final seated close-up before the cut. Only one person, no extra camera cuts, no weapons, no captions or dialogue.",
+  "seed": 1235,
+  "rawSha256": "aa865f4166b1bc8c00912d31e42a8d580e83c2e66ee70b3f368ab26a90b9db77",
+  "cutSha256": "1e58b03214f24e8dcf6e1c127808adafe6757eaeeda68c14ce5284a5fe020af9",
+  "review": {
+    "cutSha256": "1e58b03214f24e8dcf6e1c127808adafe6757eaeeda68c14ce5284a5fe020af9",
+    "requestSha256": "fd2b220cd34fb42d93173f0385724b23b5e1a1c556a1987880d464282c7db255",
+    "originalSha256": "642b305a949c1103752da87d1bb123954ec6437ed6e303d5e20e75af7b189226",
+    "decision": "rejected",
+    "reviewedFrames": 34,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 1174–1207 帧及候选全部 34 帧。后半候选恢复了角色坐地、举圆头舞台棒和张掌笑的收势。前半出现原版三维角色与服装，约第 16 帧突然切成二维近景。原片在同一镜内从俯拍随动作平滑降机位。拒收本候选，补上相同粉椅和屏风里的俯拍膝姿，继续使用尾部坐姿图并要求从第一帧起完整重绘。",
+    "reviewedAt": "2026-11-26T13:01:51.382063+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S43-reclining-reaction.png",
+      "sha256": "3f8c3d254a04c008b8b7173f6a328f3475ac3fd59cec9ab79951869b3f30e3aa",
+      "prompt": "Edit the first anime image. Preserve exact character, expression, navy-gold First Empire clothes, room, colors, camera, hands and seated pose. The item's design is the only change. Replace the small star-ended magic wand completely with the same plain round-tipped, thick golden stage baton in the second reference. Give it a smooth continuous solid taper and broad rounded gold end, brown grip, and no star or glow. Tilt it in the same direction as the original wand, without changing his grip. Preserve the image's widescreen frame and all other details, no lettering.",
+      "inputs": [
+        "S43-floor-reaction-initial.png",
+        "S05-tabletop.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Draw a new continuous cel-shaded 2D anime shot from the first to the last frame. <Picture 1> is the sole character identity, short dark-haired officer in navy and gold with FULL LENGTH ivory trousers and tall dark boots throughout. Establish the overhead view of <Picture 2> immediately, one knee bent near the floor, empty spread hands between the rose chair and the folding screen, head lowered, solid rounded golden stage baton on the wood floor. <Video 1> supplies only the exact order and speed of the action and camera; do not reproduce any of its pixels or figures. Keep the camera moving smoothly as he dips, brings his near hand toward the prop and raises it. Arc continuously from overhead to a closer lower view as he settles on his side on the floor, one knee up. The same navy-gold officer ends with his entire sheepish smile visible, one empty open palm raised and the solid gold theatre baton held upright at his chest, like <Picture 3>. Match the moving body against consistent warm wood, chair at left and screen edge at right. Every frame, even the transitional frames, uses the same single painted officer and costume. No embedded video, 3D characters, costume changes, nudity, extra cuts, weapons, text or dialogue.",
+    "seed": 1236,
+    "plannedAt": "2026-11-26T13:01:51.586540+00:00",
+    "images": [
+      {
+        "name": "S43-overhead-kneel.png",
+        "sha256": "cef3da24211c82c29230f90a8e8cb8ed98986d57055880cf7301c19dbcce356c",
+        "imagePrompt": "Create a single widescreen hand-drawn anime storyboard frame that occurs one second before image 1. Image 1 has the exact dark-haired character, navy-and-gold First Empire uniform with gold fringed epaulettes, full-length ivory trousers, tall dark boots, room colors, chair and plain smooth gold stage baton. Image 2 supplies ONLY the cool canted overhead camera, layout and the body's placement. Look straight down at the same single adult officer beside the rose chair on the left, warm wood floor underneath and edge of the folded botanical screen at the right of frame. He is in an unsteady low one-knee crouch, knees folded under his long ivory trousers and navy tailcoat spreading across his back, dark hair visible from above with his head down. His left arm reaches up-left almost out of frame, and his right arm reaches over the wood floor toward the screen as he balances. The same solid round-tip golden theater baton with brown grip lies nearby on the floor, fully visible, no contact yet. Render all clothes, hands, boots, wooden floor and shadows as clean continuous cel-shaded painted shapes matching image 1, with the same perspective and pose as image 2. Exactly one fully dressed person, no original video figure, no bare legs, weapon, injury, second screen, panels, text or overlays."
+      },
+      {
+        "name": "S43-reclining-reaction.png",
+        "sha256": "3f8c3d254a04c008b8b7173f6a328f3475ac3fd59cec9ab79951869b3f30e3aa",
+        "imagePrompt": "Edit the first anime image. Preserve exact character, expression, navy-gold First Empire clothes, room, colors, camera, hands and seated pose. The item's design is the only change. Replace the small star-ended magic wand completely with the same plain round-tipped, thick golden stage baton in the second reference. Give it a smooth continuous solid taper and broad rounded gold end, brown grip, and no star or glow. Tilt it in the same direction as the original wand, without changing his grip. Preserve the image's widescreen frame and all other details, no lettering."
+      }
+    ]
+  }
+}
