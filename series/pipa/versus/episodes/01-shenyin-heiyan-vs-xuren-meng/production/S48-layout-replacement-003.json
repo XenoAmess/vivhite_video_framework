@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "vivhite-pipa-replacement-layout-1",
+  "frameRange": [
+    1256,
+    1296
+  ],
+  "supersededRequest": {
+    "shot": "S48",
+    "previousAttempt": "attempt-002",
+    "jobId": "video_gen_16bb333be52441bc8e32e67c871e5dad:openai",
+    "requestSha256": "414f618f50ef7efe06111f60ee7bc8e1734f938be9207e858fae2532a89a1b6d",
+    "motionReferenceSha256": "10e463ea8fe07a37ee86d906666ffb44954d08fffbf9a32dfd6017c0466385f5",
+    "removedPreparedLayout": "S48-side-screen-two-person.png",
+    "plannedReplacement": "S48-screen-raised-knee-start.png",
+    "serviceStateBefore": "queued",
+    "serviceStateAfter": "cancelled",
+    "reason": "The additive retry journal put the seated scene in Picture 3, where the prompt expects the raised opening pose.",
+    "checkedAt": "2026-11-26T08:41:57.670017+00:00"
+  },
+  "newRequest": {
+    "attempt": "attempt-003",
+    "jobId": "video_gen_1e1d4919590d49019ba1ca47de3b15f2:openai",
+    "requestSha256": "bef9fac69a54fee16da08a3e01139630ec3b3f0a7a7dc9c3883d9d6d5a610308",
+    "submittedAt": "2026-11-26T08:44:39.972065+00:00",
+    "stateWhenChecked": "queued",
+    "images": [
+      {
+        "image": "shenyin-heiyan.png",
+        "sha256": "fcc41595a2d072855f3ccbd12e94af4d3d658a9df665efc16a90bfad144abf99"
+      },
+      {
+        "image": "xuren-meng.png",
+        "sha256": "9a8b1a2819e4c38a622aafddfb21b1f819537fe7800100c18346cbcfd16c2535"
+      },
+      {
+        "image": "S48-screen-raised-knee-start.png",
+        "sha256": "80f180f04203252d0fe841b78321b7e8308611b247287174ed09f6a594f43b42"
+      }
+    ],
+    "seed": 1235,
+    "prompt": "Animate one continuous anime shot using <Video 1> for the camera lowering and the two separate bodies moving in the same frame. <Picture 1> is the navy and gold officer, <Picture 2> is the red hooded blond performer, and <Picture 3> is the exact opening arrangement. At the start the navy officer is close at screen LEFT on a raised knee, back in three quarter view and torso leaning forward. The crimson performer is already upright to the right near the amber patterned folding screen. Within the first third, the red cloaked figure steps past and starts a forward bend on the RIGHT as the officer recoils to the LEFT. Show the officer's shoulder and torso descend and slide down beside the screen, going briefly very low, then visibly pushing one palm against the floor and raising his head a little by the end. He must NOT be in the seated or fallen pose throughout. The crimson performer continues their weight shift and tilt on the right, separate from him, as the camera lowers. Warm wood hallway, only these two people, empty hands throughout, no extra cut, weapon, text or dialogue.",
+    "motionReferenceSha256": "10e463ea8fe07a37ee86d906666ffb44954d08fffbf9a32dfd6017c0466385f5"
+  }
+}

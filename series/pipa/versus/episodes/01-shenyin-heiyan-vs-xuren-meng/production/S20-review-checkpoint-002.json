@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S20",
+  "startFrame": 510,
+  "endFrame": 536,
+  "attempt": 2,
+  "jobId": "video_gen_3699387f49584372b0b8a052539720ea:openai",
+  "requestSha256": "8bef15fb4a20d3ccb3e71f234ead622fbae6168716fc0792323e667507c02072",
+  "renderPrompt": "One continuous high camera shot. <Video 1> provides the movement with the original timber room and kneeling timing. <Picture 1> is the blond red-hooded performer's identity. Begin with the body raised slightly and both arms hovering, then the performer sinks down onto one knee and lifts BOTH open gloved palms like <Picture 2>, caped shoulders shifting as the wrists swing clearly to two heights. Continue the same slightly canted high view to end on the kneel, with the bowed hood and same red cape, one knee clearly visible and one foot planted. Warm dark brown wood and a rose chair at the edge, only one performer, no text, extra furniture, weapons or cuts.",
+  "seed": 1235,
+  "rawSha256": "920e98c8b0b30aa9ce2782c7c8218709563f027611eb0a179d798c21192b29a1",
+  "cutSha256": "a8731e47bff56a38497396f10fd6436871bbc33b2f66d66237e56918f52e3c9d",
+  "review": {
+    "cutSha256": "a8731e47bff56a38497396f10fd6436871bbc33b2f66d66237e56918f52e3c9d",
+    "requestSha256": "8bef15fb4a20d3ccb3e71f234ead622fbae6168716fc0792323e667507c02072",
+    "originalSha256": "49d22e184368f4d57192ef166e4c4aad2e7a6b8f9900dfb6689514eaadc3f476",
+    "decision": "rejected",
+    "reviewedFrames": 26,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原版第 510–535 帧，共 26 帧。俯拍、红袍、地板和单膝落地正确。原镜跪下之后双手继续换位，最后一只手从脸侧扫下，两前臂在腰膝前交错，镜头略向人物推进。候选约从本镜第 14 帧起一直停在双肘抬起的同一姿势，没有末段扫手、交叉手臂和景别推进，退回。",
+    "reviewedAt": "2026-11-26T08:37:08.677726+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S20-crossed-waist-end.png",
+      "sha256": "8391c93210ddb4fac1b1affb7707b9e5093d47395d628636c367a07d59a66526",
+      "prompt": "Widescreen anime storyboard for the FINAL beat of the kneeling gesture, using the exact costume, adult pose identity and wood room from Image 1. Image 2 is ONLY the high camera close framing and the final crossed-arm position. From high slightly canted camera, the red-hooded blond dancer remains low with one knee down, head turns a little to the left, and both dark gloved forearms make a CLEAR X crossing low in front of the waist and knees, wrists near opposing thighs. One single ivory mask on the left shoulder and red beads on both wrists. Different silhouette from arms raised: elbows low, hands reaching sideways across the lap. Tight camera on chest and knees, head still partially visible, warm floor, dark wooden cabinet left and pink chair upper-right. Fully dressed original anime stage comedy, no weapons, effects, words, extra people, or panels.",
+      "inputs": [
+        "S20-overhead-kneeling.png",
+        "S20-open-cross-original-02.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Make one continuous cel-shaded anime dance gesture with the overhead camera and timings of <Video 1>. <Picture 1> supplies the exact adult blond red hooded performer, dark gloves, long red-gold cape and one ivory left-shoulder mask. Start high-front and fairly close, torso still raised as one open palm sweeps high to screen left and the other comes forward lower right like <Picture 2>. In the first half, lower the body visibly onto one knee while BOTH wrists trace two alternating heights. Once kneeling, keep moving: one palm flicks briefly up by the face, then that arm sweeps down and across as the opposite arm lifts, and both forearms CROSS LOW in front of the waist as <Picture 3>. Clearly show both gloves crossing over opposing knees, elbows down in the final frames. Let the camera glide slightly closer during that last cross. Match the wood floor and rose chair, one fully clothed performer, no jump cut, additional scene, weapon, impact effects, captions or dialogue.",
+    "seed": 1236,
+    "plannedAt": "2026-11-26T08:38:43.049207+00:00",
+    "images": [
+      {
+        "name": "S20-staggered-palms-start.png",
+        "sha256": "bc38168451fb6f56fb15e56fedb6dd9b01f5271543ab9a7178b7793e9faa9004",
+        "imagePrompt": "Widescreen anime storyboard for the first beat of a comic kneeling dance. Keep the fully clothed adult in the exact crimson hood, blond hair, one ivory mask on their left shoulder, red wrist beads, dark trousers and gold-lined cape from Image 1. Image 2 only supplies the high tilted camera angle and staggered reach. View from overhead and little forward, near upper-body framing on the character as they begin to sink down. Their face and shoulders are fully visible near center. One dark gloved open palm extends toward the upper-left foreground and the other palm toward the lower-right, visibly at two different heights. The torso remains higher than a finished kneel and the wrists have an animated bend. Same warm wood floor, dim wooden cabinet at left and pink chair edge at the rear right. Only one adult, no weapons, sparks, text, symbols, or panels."
+      },
+      {
+        "name": "S20-crossed-waist-end.png",
+        "sha256": "8391c93210ddb4fac1b1affb7707b9e5093d47395d628636c367a07d59a66526",
+        "imagePrompt": "Widescreen anime storyboard for the FINAL beat of the kneeling gesture, using the exact costume, adult pose identity and wood room from Image 1. Image 2 is ONLY the high camera close framing and the final crossed-arm position. From high slightly canted camera, the red-hooded blond dancer remains low with one knee down, head turns a little to the left, and both dark gloved forearms make a CLEAR X crossing low in front of the waist and knees, wrists near opposing thighs. One single ivory mask on the left shoulder and red beads on both wrists. Different silhouette from arms raised: elbows low, hands reaching sideways across the lap. Tight camera on chest and knees, head still partially visible, warm floor, dark wooden cabinet left and pink chair upper-right. Fully dressed original anime stage comedy, no weapons, effects, words, extra people, or panels."
+      }
+    ]
+  }
+}

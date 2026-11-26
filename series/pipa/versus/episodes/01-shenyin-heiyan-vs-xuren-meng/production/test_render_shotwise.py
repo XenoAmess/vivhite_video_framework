@@ -4,6 +4,7 @@ from pathlib import Path
 import sys
 from tempfile import TemporaryDirectory
 import unittest
+from unittest.mock import patch
 
 
 HERE = Path(__file__).resolve().parent
@@ -45,6 +46,38 @@ class PictureClockTest(unittest.TestCase):
             worker.verify_picture_clock(output, len(expected))
             self.assertEqual(338, len(expected))
             self.assertEqual(expected, picture_digests(output))
+
+
+class RetryLayoutTest(unittest.TestCase):
+    def test_replace_keeps_two_cast_images_and_removes_stale_layout(self):
+        shot = {
+            'id': 'S48',
+            'cast': ['A', 'B'],
+            'images': ['navy', 'red', 'seated'],
+            'motion': 'same-source-shot',
+        }
+        with TemporaryDirectory(prefix='pipa-retry-layout-') as directory:
+            root = Path(directory)
+            def mock_upload(api, run, name):
+                return {'file_id': name}
+
+            with patch.object(worker, 'uploaded', side_effect=mock_upload), patch.object(worker.video, 'submit'):
+                for number, replace, expected in (
+                    (2, False, ['navy', 'red', 'seated', 'kneeling']),
+                    (3, True, ['navy', 'red', 'kneeling']),
+                ):
+                    attempt = root / f'attempt-{number:03}'
+                    attempt.mkdir()
+                    worker.video.save(attempt / 'retry.json', {
+                        'prompt': 'Same original motion and cast',
+                        'seed': 1235,
+                        'additionalImages': ['kneeling'],
+                        'replacePreparedLayouts': replace,
+                    })
+                    worker.post(None, root, shot, attempt)
+                    request = worker.video.read(attempt / 'request.json')
+                    self.assertEqual(expected, [item['file_id'] for item in request['image_reference']])
+                    self.assertEqual([{'file_id': 'same-source-shot'}], request['video_reference'])
 
 
 if __name__ == '__main__':

@@ -258,11 +258,15 @@ def retry(args, root, prepared):
     prompt = args.prompt_file.read_text(encoding='utf-8-sig').strip()
     if not prompt:
         raise ValueError('Provide the full new prompt')
+    if args.replace_layouts and not args.anchor:
+        raise ValueError('Provide an anchor to replace the prepared layouts')
+    revision = {'prompt':prompt,'seed':args.seed,'additionalImages':[asset(path) for path in args.anchor],
+                'previousAttempt':current.name,'recordedAt':video.now()}
+    if args.replace_layouts:
+        revision['replacePreparedLayouts'] = True
     next_attempt = current.with_name(f'attempt-{int(current.name.removeprefix("attempt-"))+1:03}')
     next_attempt.mkdir()
-    video.save(next_attempt/'retry.json',{'prompt':prompt,'seed':args.seed,
-                                         'additionalImages':[asset(path) for path in args.anchor],
-                                         'previousAttempt':current.name,'recordedAt':video.now()})
+    video.save(next_attempt/'retry.json',revision)
     print(next_attempt)
 
 
@@ -331,7 +335,10 @@ def uploaded(api, root, entry):
 
 def post(api, root, shot, attempt):
     revision = shot if attempt.name=='attempt-001' else video.read(attempt/'retry.json')
-    references = [*shot['images'],*revision.get('additionalImages',[])]
+    prepared_images = shot['images']
+    if revision.get('replacePreparedLayouts'):
+        prepared_images = prepared_images[:len(shot['cast'])]
+    references = [*prepared_images,*revision.get('additionalImages',[])]
     payload = {'model':'fasth3-omni-bf16','task':'ref2va','size':SIZE,'seconds':5,'num_inference_steps':8,
                'guidance_scale':1.0,'seed':revision['seed'],'prompt':revision['prompt'],
                'video_reference':[uploaded(api,root,shot['motion'])],
@@ -573,6 +580,8 @@ def main():
     ret.add_argument('--prompt-file',required=True,type=Path)
     ret.add_argument('--seed',required=True,type=int)
     ret.add_argument('--anchor',action='append',type=Path,default=[])
+    ret.add_argument('--replace-layouts',action='store_true',
+                     help='Replace prepared layout images and keep the cast reference images')
     comparison = sub.add_parser('compare')
     comparison.add_argument('--shot',required=True)
     review = sub.add_parser('review')
