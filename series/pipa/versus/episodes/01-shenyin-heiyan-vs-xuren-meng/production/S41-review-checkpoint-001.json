@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S41",
+  "startFrame": 1107,
+  "endFrame": 1125,
+  "attempt": 1,
+  "jobId": "video_gen_724a694017354a269f22fdd526e0857a:openai",
+  "requestSha256": "deb637fa100f6ab53b464cd0a8234041adabeca615f3da1a3da6226c4548dd08",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Low full-body view of the fully dressed navy officer in ivory trousers, changing foot placement and spreading one hand. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "15d1ecc06290c330a9162b19f0108f42c1539d179c41941d7c69e552f5d961fd",
+  "cutSha256": "39c79eaba1128cdad7d29aac803d78978418dce49a12f009cce58d4d2b972b58",
+  "review": {
+    "cutSha256": "39c79eaba1128cdad7d29aac803d78978418dce49a12f009cce58d4d2b972b58",
+    "requestSha256": "deb637fa100f6ab53b464cd0a8234041adabeca615f3da1a3da6226c4548dd08",
+    "originalSha256": "8d175c6d829f5f3728fe4218c990060ce745163c000d8412155e4a2551dea41b",
+    "decision": "rejected",
+    "reviewedFrames": 18,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 1107–1124 帧，共 18 帧。候选从正面张开手掌、放手到腰侧，再屈肘转身，顺序尚在。但原片机位贴近人物、从膝腰附近大幅仰拍，左边有红边门框、右边是暖木墙。候选拉成远处全身，把原房间替换成有成排灯光和紫红帷幕的演出舞台，手中道具也跑偏。场景与相邻镜头无法连贯，退回重做。",
+    "reviewedAt": "2026-11-26T03:59:18.428639+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S41-low-doorway-stance.png",
+      "sha256": "b42040c1df00778a7681df3c6079b8b4a3ed63f5a2d082f0621097a40176c72b",
+      "prompt": "One 16:9 hand-drawn anime storyboard frame. Match camera placement and stance from the first image ONLY, and the exact adult dark-haired officer, navy and gold First Empire uniform, warm room light and decorative golden baton from the second image. Extremely steep worm's-eye perspective from inches in front of his knees, close enough to cut off all boots and lower legs. Fully covered long ivory trousers rise large at the bottom, navy blue coat and gold shoulders at center, head small near the top center with tousled hair and slight surprise. His free palm opens on the right toward the lens, the other hand holds the previous image's plain solid tapered gold stage baton upright at the left. Use golden brown shadows with a close diagonal red-edged wooden door jamb across the left and a tan wooden wall and simple unlabeled rectangle on the right. Tight skewed basement framing, no full body, spotlight, neon lighting, theater, weapons, text, subtitles, or extra figures.",
+      "inputs": [
+        "S41-original-low-stance.png",
+        "S40-left-foreground-baton.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "One unbroken cel-shaded anime shot following the source camera and gesture in <Video 1>. Keep <Picture 1>'s navy-and-gold adult officer and exactly the near worm's-eye framing, red-edged doorway, plain warm brown room and simple round-tipped golden theater baton in <Picture 2>. Camera stays just in front of his knees, cropping below mid-thigh and looking sharply up, with ivory trousers near the bottom and his head high near the top. Start with the free open palm near the right of the lens. In the same low framing he lowers that palm to the side of his waist, crosses the bent arm over the coat and turns visibly toward his left before the cut, with the other hand holding that single plain gold baton up. Show the gesture in motion, retain the doorway and wall, only one character, no new scene, spotlights, firearms, words or voices.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T04:00:09.941021+00:00",
+    "images": [
+      {
+        "name": "S41-low-doorway-stance.png",
+        "sha256": "b42040c1df00778a7681df3c6079b8b4a3ed63f5a2d082f0621097a40176c72b",
+        "imagePrompt": "One 16:9 hand-drawn anime storyboard frame. Match camera placement and stance from the first image ONLY, and the exact adult dark-haired officer, navy and gold First Empire uniform, warm room light and decorative golden baton from the second image. Extremely steep worm's-eye perspective from inches in front of his knees, close enough to cut off all boots and lower legs. Fully covered long ivory trousers rise large at the bottom, navy blue coat and gold shoulders at center, head small near the top center with tousled hair and slight surprise. His free palm opens on the right toward the lens, the other hand holds the previous image's plain solid tapered gold stage baton upright at the left. Use golden brown shadows with a close diagonal red-edged wooden door jamb across the left and a tan wooden wall and simple unlabeled rectangle on the right. Tight skewed basement framing, no full body, spotlight, neon lighting, theater, weapons, text, subtitles, or extra figures."
+      }
+    ]
+  }
+}

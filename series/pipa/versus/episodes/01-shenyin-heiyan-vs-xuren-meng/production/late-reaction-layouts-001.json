@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "vivhite-pipa-layout-refinement-1",
+  "tool": "built-in imagegen",
+  "shots": [
+    {
+      "shot": "S47",
+      "anchorShot": "S47",
+      "anchorFrame": 1244,
+      "file": "S47-overhead-grimace.png",
+      "character": "shenyin-heiyan",
+      "inputSourceImage": "S43-reclining-reaction.png",
+      "imagePrompt": "Single widescreen cel-shaded anime storyboard frame for a comic dance beat. Keep exact adult dark-haired officer from Image 1. Image 2 supplies the same warm wooden room and rose upholstered chair. Strong tilted overhead view looking down from above his near shoulder, close with his navy and gold uniform, upper face and upper chest filling center-right. One pink chair on the upper-left, shadowy wooden floor left, tan wall at top, side of dark wooden room divider at right. The standing officer looks up at camera, eyebrows lowered and clenched teeth in a funny grumpy expression, dark brown tousled hair leaning sideways. His one free elbow bends out toward screen left just below shoulder height and the hand is open or relaxed. He holds the simple short blunt golden stage baton down by his far hip, angled away from his body, partly cropped. No other people, text, firearm or injury. Sharp expressive anime faces and dark amber wood tones, no modern spotlight.",
+      "videoPrompt": "One continuous hand-drawn anime reaction in a dim wood room. <Video 1> supplies only the lean, expression timing and the overhead push-in. <Picture 1> defines the navy-gold officer. <Picture 2> shows his final high-angle comic grimace and the same rose chair and dark divider. He starts visible from chest and upper legs, head turned upward. As the camera pushes closer and slightly right, he flicks his free elbow outward to screen left, clenches his teeth comically and looks straight up. The simple solid golden stage baton stays low by his far hip, angled away from the body, well below his face at all times. Focus on the comic facial expression and the camera move. Warm dark floor and walls, pink chair upper left, one person, no weapons, injury, text or extra cuts.",
+      "imageSha256": "3f5f669c5fec85967102a47b35950b373183744d6ded92987c15a51f40b76892",
+      "seed": 1235,
+      "firstRequest": {
+        "jobId": "video_gen_9a3dfde4f23b4394b61c4222408f5dd0:openai",
+        "requestSha256": "92528be43c8932343b1ad983fcfbedfbf06f2b02f63e55056c63cd0ef902adfe",
+        "prompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Overhead reaction, the navy officer leans back, changes facial expression and looks up, chair visible in the correct corner. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+        "motionReferenceSha256": "83682db6644d4fb6c26ab373cc7f1b999368980a527b288062037574bd908261",
+        "serviceStateBefore": "queued",
+        "serviceStateAfter": "cancelled",
+        "checkedAt": "2026-11-26T04:02:09.638111+00:00"
+      }
+    },
+    {
+      "shot": "S53",
+      "anchorShot": "S53",
+      "anchorFrame": 1394,
+      "file": "S53-floor-sheepish-grin.png",
+      "character": "shenyin-heiyan",
+      "inputSourceImage": "S43-reclining-reaction.png",
+      "imagePrompt": "Single 16:9 hand-drawn anime storyboard frame. Draw the exact adult navy-and-gold officer with short dark tousled hair and blue-gray eyes from Image 1. Use Image 2 for the matching pink chair, paneled wooden floor, dim warmth and jacket design. Camera is high and tilted down toward his astonished face in a tight diagonal close-up. He is lying low on one hip on the dark wood floor, propping himself up on one palm, shoulders and ivory-trouser body trailing diagonally away toward the lower right. As he looks off to the upper left his mouth has opened into a wide sheepish grin, large eyes, raised cheeks. Head dominates the left middle, the top of one pink chair sits at the upper left border, floor and near-normal warm wood behind. Keep fully clothed anatomy and continuous anime cels. Empty hands, no lettering, no prop, no other figure or marks.",
+      "videoPrompt": "One continuous cel-shaded anime shot. Match the tilted downward camera and push into the face in <Video 1>. <Picture 1> defines the exact navy-and-gold officer. <Picture 2> is the same warm wood floor, pink chair at the left edge, torso low, propped on one hand, broad sheepish grin. Start looser, with him low beside the chair, torso oblique across the floor and mouth open in surprise. He props himself up slightly, eyes dart up-left, mouth closes into a brief embarrassed smile, then opens into a broad sheepish grin as the camera approaches his face and he leans back a little. Stay in this one room with one fully clothed figure, no new cut, props, captions or voices.",
+      "imageSha256": "0cc4d9447a165ad04ec2514cf2dada69fc9cc2d306d5746e9ff750e0c1fc53e5",
+      "seed": 1235,
+      "firstRequest": {
+        "jobId": "video_gen_cfe90d421eee4857b234c51f9ae6bb04:openai",
+        "requestSha256": "b87ec746313ac0774b2372db51e3e349bdf34621ae5f5e0fdd2222fbc8689bd0",
+        "prompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Close canted view of the navy officer near the floor, lips and eyebrows change from stunned surprise to an awkward smile. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+        "motionReferenceSha256": "ffa84d38400a1acbb12c300273d3786ff9e26a06a7046fb414299ae37c7de032",
+        "serviceStateBefore": "queued",
+        "serviceStateAfter": "cancelled",
+        "checkedAt": "2026-11-26T04:02:09.661735+00:00"
+      }
+    }
+  ]
+}
