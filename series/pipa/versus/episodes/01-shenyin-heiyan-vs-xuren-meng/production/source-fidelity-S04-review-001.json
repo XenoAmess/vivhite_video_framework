@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S04",
+  "startFrame": 100,
+  "endFrame": 129,
+  "attempt": 1,
+  "jobId": "video_gen_30c74805ca6c46a69d4c1bbdacdbe45b:openai",
+  "requestSha256": "a341ed23fcc476de36d6c3a789d1038b6a5ca9dcf96586d14ea12479f03979fb",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 122. Keep the source extremely low-angle view and the way the officer raises his chin behind the existing near-left object. Preserve the red reflections.",
+  "seed": 1234,
+  "rawSha256": "fcb00a0073aa9f3eb8596b885a6b15266165e88c20b7f444b991bf9ca7dc8f7d",
+  "cutSha256": "a04d3898dc5e6d3608fa29e6cfac865690dfe30ec3524f6ab9f000ec175927a3",
+  "review": {
+    "cutSha256": "a04d3898dc5e6d3608fa29e6cfac865690dfe30ec3524f6ab9f000ec175927a3",
+    "requestSha256": "a341ed23fcc476de36d6c3a789d1038b6a5ca9dcf96586d14ea12479f03979fb",
+    "originalSha256": "921eb15569fe19da9b0c169efaaf97ea10873e240ba9eddd72cc7531439af90a",
+    "decision": "rejected",
+    "reviewedFrames": 29,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 100–128 帧及候选全 29 帧。神隐黑炎造型全镜一致，原片道具的明显外观和红光保留。起镜位于较后的低机位姿势，前半段缺少原片向下看与沿脸侧连续推近的镜头走向，后半段转仰角及道具位置的顺序也有错位。退回。第二版使用源片第 100 帧起镜、第 109 帧沿脸极近及第 122 帧仰角的构图，继续提交同一原片动作。",
+    "reviewedAt": "2026-11-26T22:30:15.311359+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S04",
+      "sourceFrame": 122,
+      "sourceStillSha256": "57834b85eb329b101a6c1476819fe8abea3be04d4649c29e44f7d52d62ffc53a",
+      "file": "S04-source-edit-0122.png",
+      "sha256": "f6a93257a5730e1198d69704048f753122d0e4c0413baea27033a0fc5bf7f78d",
+      "prompt": "This is a single frame of a fictional stylized 3D animated film. Edit only the assigned person's face, hair and visible clothing in the first reference from the design in the second. Keep the first reference's camera, relative silhouette size, pose, surface texture, room layout, reflections, grain, exact lighting and all original objects. Keep existing foreground props as already drawn with original silhouette, scale and focus. Add no new content. The navy-and-gold officer is cropped very closely at the right edge, from the same extreme low angle, looking toward the top-left foreground with his chin tilted as in the first image. Preserve the exact depth and red rim light, silhouette and blur of the dark object at left, and the original dark warm wood. The hand stays in the same pictured position.",
+      "inputs": [
+        "anchor-originals/S04-source-0122.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Match the animated source <Video 1> as one uninterrupted camera move, with only one adult's face, hair, and navy gold-trimmed costume replaced. At the first frame, <Picture 1> shows the original tight tilted view, character at the right side bending forward and looking down toward the screen left off-axis foreground. Preserve the camera's immediate forward progression into <Picture 2>, its exact side-of-the-face cut and gaze. Then follow the original timing and framing as the lens rolls underneath into the late low-angle pose of <Picture 3>. Keep the same existing foreground prop shapes and reflected red and blue light exactly wherever the original depicts them, and preserve the continuous hand silhouette, color, set, shadows and blur from the source. Keep the one dark-haired character in navy and gold throughout all camera angles. No added props, graphics, dialogue, cuts or actors.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T22:30:15.440523+00:00",
+    "images": [
+      {
+        "name": "S04-source-edit-0100.png",
+        "sha256": "f55f302ca9a32af81792173b4b07ba5839db021deb23da9af7838b56f10ef6b9",
+        "imagePrompt": "Edit only the actor appearance in the first still from a stylized fictional 3D animated comedy. The face is on the extreme right at the original tilt, bending forward and looking down and left. Keep the original shape and exact position of everything forward of the wrist and the red-lit set. Replace the hair, visible face and dark sleeve cuff of the adult with the brown tousled-haired, slate-blue-eyed, navy and gold character in image two. Image three shows this same adult later in the scene for costume and material only. Keep the first image's shadows, exact profile crop and face size, head angle, and warm and red reflections. Do not change or add objects, graphics, faces, or new content."
+      },
+      {
+        "name": "S04-source-edit-0109.png",
+        "sha256": "897b39cc2995d0b27cf45053762d056c3a264cb3f18077933a77c53045c96f64",
+        "imagePrompt": "Make a character-only edit of the first image, a stylized fictional animated comedy. Keep the extremely tight tilted view, one eye visible at the same screen point, chin cropped along the lower-right region and the original gaze toward the lower left. Change the actor's visible face and hair to the dark brown tousled adult in image two, with the corresponding blue-gray eye, original facial position, perspective and expression. The third image shows the already designed actor further along the same action, for identity only. The first frame controls the stage and its existing shapes, light, focus, reflections and occlusion exactly. No new elements or added text."
+      },
+      {
+        "name": "S04-source-edit-0122.png",
+        "sha256": "f6a93257a5730e1198d69704048f753122d0e4c0413baea27033a0fc5bf7f78d",
+        "imagePrompt": "This is a single frame of a fictional stylized 3D animated film. Edit only the assigned person's face, hair and visible clothing in the first reference from the design in the second. Keep the first reference's camera, relative silhouette size, pose, surface texture, room layout, reflections, grain, exact lighting and all original objects. Keep existing foreground props as already drawn with original silhouette, scale and focus. Add no new content. The navy-and-gold officer is cropped very closely at the right edge, from the same extreme low angle, looking toward the top-left foreground with his chin tilted as in the first image. Preserve the exact depth and red rim light, silhouette and blur of the dark object at left, and the original dark warm wood. The hand stays in the same pictured position."
+      }
+    ]
+  }
+}

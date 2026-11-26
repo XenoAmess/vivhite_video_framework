@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-pipa-owned-queue-reordering-batch-1",
+  "events": [
+    {
+      "at": "2026-11-27T06:09:21.4026074+08:00",
+      "reason": "Validate the continuous original five-second Pipa excerpt by scheduling the S12 masked-motion retake before queued first takes of this same project.",
+      "onlyProjectJobsWaiting": true,
+      "runningContinued": true,
+      "promoted": [
+        {
+          "attempt": 4,
+          "positionBefore": 31,
+          "shot": "S12",
+          "jobId": "video_gen_dfb1df5f0fbc4c95b1ac0099d61d7b17",
+          "positionAfter": 1
+        }
+      ]
+    },
+    {
+      "at": "2026-11-27T06:30:43.6083102+08:00",
+      "reason": "Review the corrected opening shot motion and character before later first takes of this same project.",
+      "onlyProjectJobsWaiting": true,
+      "runningContinued": true,
+      "promoted": [
+        {
+          "attempt": 2,
+          "positionBefore": 31,
+          "shot": "S03",
+          "jobId": "video_gen_c5ef923cce6b4c7f976125e1080db806",
+          "positionAfter": 1
+        }
+      ]
+    }
+  ]
+}
