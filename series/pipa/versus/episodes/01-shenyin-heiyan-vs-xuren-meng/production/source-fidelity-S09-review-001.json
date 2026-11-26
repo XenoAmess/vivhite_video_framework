@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S09",
+  "startFrame": 254,
+  "endFrame": 273,
+  "attempt": 1,
+  "jobId": "video_gen_daeddac85e4f478c834f8e37631f2e38:openai",
+  "requestSha256": "009872b4a16a1efc975f2a948b760401a387b700bd13dda6acf40c4506c16ac4",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep the original top-down angle, board direction, door, scraps and warm shadow; align the turn, glance and tightening crop to the exact same portion of the source shot. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. The ordered source-frame edits are <Picture 2> at source frame 272. The added source frame represents the tight overhead ending.",
+  "seed": 1234,
+  "rawSha256": "1f134f02c43354c998e59c76cb26d42538b2e9e8fdef0f1cbf8341f2ead84abd",
+  "cutSha256": "21e288b752c815672226f520720509a6078bff7aad71e34aae0c313f11e8174f",
+  "review": {
+    "cutSha256": "21e288b752c815672226f520720509a6078bff7aad71e34aae0c313f11e8174f",
+    "requestSha256": "009872b4a16a1efc975f2a948b760401a387b700bd13dda6acf40c4506c16ac4",
+    "originalSha256": "9632b53013e1466e7d00d316cdb4de60170f4dbbe56fdcf304b6d005d716ae73",
+    "decision": "accepted",
+    "reviewedFrames": 19,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 254–272 帧及新版全部 19 帧。保留俯拍、相同斜角的木地板、房门、碎片和原片偏红的面光。虚人梦由低身转向，镜头随原片推进到仰视的眼神。红兜帽、金发和唯一左肩面具连续。披风使最初的转肩轮廓轻一些，尾部的抬眼和景别可辨，原片布景和亮度关系保留。",
+    "reviewedAt": "2026-11-26T18:46:57.366186+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S09",
+      "sourceFrame": 272,
+      "prompt": "Replace only the specified actor appearance and visible costume in image one, a single frame from a fictional animated film. Keep the exact original widescreen crop, pose, placement, subject scale, shallow or deep focus, set geometry, reflections and light. Match the source animated 3D material and dim red/ochre color. No new graphics or content. Replace the original actor with the blond adult in a red hood, dark clothes and gold-lined cape from image two. Preserve the close tilted bird's-eye view, crouched twisted body, turning face and upward sideways glance. Use the original patch of warm red light falling across the face and keep the door and visible floor fragments unchanged. Keep the character identity and placement in the overhead crop; keep the single ivory ornament on the left shoulder when visible.",
+      "inputs": [
+        "anchor-originals/S09-source-0272.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ],
+      "sourceStillSha256": "1289d2608f369ade037ed58a22da2e2235edaafa947e230ff6d81d73ef3fcb43",
+      "file": "S09-source-edit-0272.png",
+      "sha256": "b81ee6804e7c520ccb2de1c5a82ca1778dd8d9d8a96d079e68a4596f358a1b40"
+    }
+  ]
+}
