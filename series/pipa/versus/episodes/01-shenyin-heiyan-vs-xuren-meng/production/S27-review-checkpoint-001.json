@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S27",
+  "startFrame": 644,
+  "endFrame": 671,
+  "attempt": 1,
+  "jobId": "video_gen_c69faa8631fb4bc287483455b08f4879:openai",
+  "requestSha256": "342858d88b1bffcfb0e68340f706cd4dfefab467112e5432dc5fdce092514edd",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Frontal medium-to-wide view; the officer rapidly opens both arms in a theatrical flourish. Keep the face and cloth legible through abstract light. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "c37d298caff4978cba5b4b9f6e729e9e4af1d6a7ca0f82240bdf4c8507350060",
+  "cutSha256": "650d85b2794ad292eb0700a060720973cfa3c00bf9ef9fdcde24c756ff4e3871",
+  "review": {
+    "cutSha256": "650d85b2794ad292eb0700a060720973cfa3c00bf9ef9fdcde24c756ff4e3871",
+    "requestSha256": "342858d88b1bffcfb0e68340f706cd4dfefab467112e5432dc5fdce092514edd",
+    "originalSha256": "0aa5ad672e07e00d4546f8316123d921624f1ad73cdb51d9fab808c08050e644",
+    "decision": "rejected",
+    "reviewedFrames": 27,
+    "method": "assistant-frame-review",
+    "observations": "对照原片第 644–670 帧及候选全部 27 帧。人物、蓝金军装与房间可辨，开头有一次抬起双臂。原镜连续经过近前景遮挡、举臂，再将两手伸向近景，末段亮度随手势变化。候选在很早张开双臂后逐帧基本停在原地，其后的画面主要是飞散纸片，缺少向前的动作和灯光节拍。拒收，返工补手部和前景构图。",
+    "reviewedAt": "2026-11-26T00:52:04.724213+00:00"
+  },
+  "followUp": {
+    "prompt": "One continuous frontal anime shot with the same slight pullback and fast two-arm movement of <Video 1>. <Picture 1> identifies the only actor, the dark-haired officer in the exact navy-and-gold uniform. At the beginning his near forearms cross in front of the upper body, briefly obscuring part of the chest. He then opens and raises both arms widely, his expression broadening, and immediately extends BOTH OPEN EMPTY HANDS forward into the close left and right foreground. This moving nearer-hands view is <Picture 2>. Abstract amber light accentuates each movement and reaches its highest brightness when both palms come near. The hands keep changing distance during the late accents in the same rose-chair room; never hold a static spread-arm portrait. One person, no weapons, realistic attack, jump cut, text or dialogue.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T00:53:21.946682+00:00",
+    "images": [
+      {
+        "name": "S27-two-open-palms.png",
+        "sha256": "c87236677db4fe5a6188a4607d472115401687201cbc11d397f27ed4faee0652",
+        "imagePrompt": "Create one 16:9 anime storyboard keyframe for a young adult fictional officer's comic stage act. Image 1 is the exact identity, dark tousled hair, slate eyes and navy and gold coat, and Image 2 supplies only the centered framing and close hand perspective. Draw him in a warm small wood room with the rose chair behind him, a grin, arms both stretched forward and empty open palms large on each side of the near foreground. Two abstract soft amber stage-light blooms hang just above his open palms like a harmless theatrical effect, scattered paper squares catching the light. Do not place or depict any object in a hand. Keep the camera centered, whole face visible behind the hands, warmth dim behind amber highlights, true 2D anime cel shading. Only one character, no realistic weapons, no typography, logos or panels."
+      }
+    ]
+  }
+}

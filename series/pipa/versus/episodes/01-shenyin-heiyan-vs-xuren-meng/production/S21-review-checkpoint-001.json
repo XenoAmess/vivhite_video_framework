@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S21",
+  "startFrame": 536,
+  "endFrame": 550,
+  "attempt": 1,
+  "jobId": "video_gen_064c118d31264f948192a87dd9908548:openai",
+  "requestSha256": "4bfac790f52ab0b55b17827e1609eb881e536c1ca63a58330c7b06192f90250d",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Rear high-angle shot, performer turns away from the camera and steps to the side, full red silhouette and deliberate foot contact. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "6e372e6598ecd9974d62d6bb6e5dc051164fd9fb872db57e97b4aa331aecbfa5",
+  "cutSha256": "e0c1c70731ffae1d4f2264665bdf445ca4a2361ca423cfbc21864312b7eb6d19",
+  "review": {
+    "cutSha256": "e0c1c70731ffae1d4f2264665bdf445ca4a2361ca423cfbc21864312b7eb6d19",
+    "requestSha256": "4bfac790f52ab0b55b17827e1609eb881e536c1ca63a58330c7b06192f90250d",
+    "originalSha256": "a58aaa4fc3dda70042a04c4b8d9c9eb250ffc3317eb82be70d84795aa645f7cf",
+    "decision": "rejected",
+    "reviewedFrames": 14,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 536–549 帧及候选全部 14 帧。红兜帽、披风和木板房间保留，候选从正面转到背面。原镜开头已经是高位拍到的后侧蹲姿，随后弯身向侧迈步，结尾继续保持斜向身体。候选以直立正面起镜，几乎只原地转身，缺少蹲姿起镜和明显侧迈，影响与前镜跪姿的衔接。拒收本版。",
+    "reviewedAt": "2026-11-26T00:40:10.453684+00:00"
+  },
+  "followUp": {
+    "prompt": "One continuous high three-quarter rear shot. <Video 1> supplies the exact body movement and camera. <Picture 1> is the fully dressed red-hooded, blond performer with dark trousers and gold-lined cape. Start already close to the ground in the rear-view crouch of <Picture 2>, both knees visibly bent and a gloved hand on the outer knee. Keeping the lens behind and above, let the dancer lean forward, shift weight and make one unmistakable step sideways across the timber boards, leaving the shoulders angled away as the cape follows. Show a different foot position by the end. Warm brown room with the same low cabinet and rose furniture. One person only, no frontal standing start, inserted cut, spotlight stage, realistic weapon, text or dialogue.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T00:41:14.603478+00:00",
+    "images": [
+      {
+        "name": "S21-rear-high-crouch.png",
+        "sha256": "761ac5f9123865389608e2461862a4b015ba948ef8fea059571af43491e2a829",
+        "imagePrompt": "A single 16:9 cel-shaded storyboard keyframe of a fully dressed red-hooded adult playing a comic dance pose indoors. Image 1 supplies the exact red hood, long blond hair, gold-lined cape, fully covering charcoal trousers and flat dark boots. Use Image 2 solely for the high rear three-quarter lens and asymmetrical crouch. The camera looks down from behind the performer, so the hood's back and one side of the shoulder are visible, no face. They are crouching low with both knees bent and the body angled across the wooden planks, one hand on the outer knee to stabilize before stepping. Show one boot planted and the other knee pointing slightly left. The cape drapes down sides, flowing enough to reveal their kneeling pose without tight body emphasis. Warm small wooden room, low rose furniture in the back right. One performer only, no realistic weapons, props, marks or readable text."
+      }
+    ]
+  }
+}
