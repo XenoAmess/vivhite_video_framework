@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S05",
+  "startFrame": 129,
+  "endFrame": 158,
+  "attempt": 1,
+  "jobId": "video_gen_64a774e8433348aaac8e3eaf45dba4f2:openai",
+  "requestSha256": "3bcbf3690aa2c7b8334ef97621c952acca3ff2bef796359aba067d4540c5d117",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Preserve the exact overhead dark round table, its thin red reflection, both original hand positions and all of the dark handheld screen prop through the visible tabletop movement. Match its original resting interval and the hand entering from the same edge; do not replace, stylize away or redesign it. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the corresponding source tabletop framing with corrected sleeve colors at the opening frame.",
+  "seed": 1234,
+  "rawSha256": "c539e8b5899a93b401c9597f5e1aa6eacbc0a04f8c9fd17306f804b24b7e3190",
+  "cutSha256": "fce14f048af1887c0bbdb90d38984712235b3ffaa9517d9814d493a34909a527",
+  "review": {
+    "cutSha256": "fce14f048af1887c0bbdb90d38984712235b3ffaa9517d9814d493a34909a527",
+    "requestSha256": "3bcbf3690aa2c7b8334ef97621c952acca3ff2bef796359aba067d4540c5d117",
+    "originalSha256": "8ff46e0dccdb7107f18898318b579dcbb0e81a7567a157df0bb21006c3f8ad0c",
+    "decision": "accepted",
+    "reviewedFrames": 29,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 129–157 帧及新版候选全部 29 帧。保留了原片深色枪形道具、圆桌、红光、俯拍位置及桌面上的动作变化。开头可辨神隐黑炎蓝金军服袖口。用同一候选重抽帧后，手离开、留桌、回到画内的时刻贴近原片。尾段袖口大部分落在阴影，金边可见范围缩小，手的最后动作仍约晚一帧。全镜通过这次道具和布景校准。",
+    "reviewedAt": "2026-11-26T17:37:00.889816+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S05-source-edit-0129.png",
+      "shot": "S05",
+      "sourceFrame": 129,
+      "sha256": "95c3c4f3e1fae33d78bd6d8f790fa5dcf6e3523295e55aae49d885e80864bd0e",
+      "prompt": "Edit the first frame of a fictional animated film. Use its original camera, crop, lens, perspective, set, fabric and wall textures, floor, shadows and lighting as a fixed plate. Use the second image solely for the actor design. Paint only the actor (or their clothing and hand if partly visible) into the original frame in the same stylized 3D film look, with similar body proportions. Keep the source scene's contrast and color, and keep the camera framing almost pixel-for-pixel. No extra scenery, glamor lighting, graphics, speed lines, or captions. Preserve the dark glossy gun-shaped movie prop exactly as visibly framed in the supplied close-up, in the same position and diagonal on the dark tabletop. Keep the original hand's screen position and cropped composition; redraw its visible black sleeve as the navy-and-gold officer's sleeve from image two. Match the original shadows and red reflection. Keep everything else in this fixed overhead shot in the same place. Treat the dark prop as an existing on-screen silhouette and add no detail to it.",
+      "inputs": [
+        "anchor-originals/S05-source-0129.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ],
+      "sourceStillSha256": "4fc3a842adaa7c68ac01ac77c2c0f0b2c186b882769e055c917ef25a3b1f9e4b"
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S05.mp4",
+    "inputSha256": "27226cb667cc66caee04f5ddbfc3e727116363341069adafeed3fbf9a28dfa75",
+    "preRetimeCutSha256": "d616f93aba60158b2b641c074ba4f1c10f745d318ecf8db233b5cbc9e62f8a08",
+    "outputSha256": "fce14f048af1887c0bbdb90d38984712235b3ffaa9517d9814d493a34909a527",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      6,
+      12,
+      18,
+      24,
+      29,
+      35,
+      40,
+      46,
+      51,
+      56,
+      59,
+      62,
+      65,
+      69,
+      74,
+      78,
+      83,
+      87,
+      92,
+      96,
+      101,
+      104,
+      108,
+      111,
+      113,
+      115,
+      117,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,6)+eq(n\\,12)+eq(n\\,18)+eq(n\\,24)+eq(n\\,29)+eq(n\\,35)+eq(n\\,40)+eq(n\\,46)+eq(n\\,51)+eq(n\\,56)+eq(n\\,59)+eq(n\\,62)+eq(n\\,65)+eq(n\\,69)+eq(n\\,74)+eq(n\\,78)+eq(n\\,83)+eq(n\\,87)+eq(n\\,92)+eq(n\\,96)+eq(n\\,101)+eq(n\\,104)+eq(n\\,108)+eq(n\\,111)+eq(n\\,113)+eq(n\\,115)+eq(n\\,117)+eq(n\\,119),setpts=N/(24*TB)",
+    "reason": "Resample the generated table insert to match the source resting interval, re-entry and turn.",
+    "coveredFrames": 29,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-26T17:37:00.373277+00:00"
+  }
+}
