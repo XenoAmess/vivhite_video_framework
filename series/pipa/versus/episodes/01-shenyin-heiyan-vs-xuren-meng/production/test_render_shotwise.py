@@ -49,7 +49,7 @@ class PictureClockTest(unittest.TestCase):
 
 
 class RetryLayoutTest(unittest.TestCase):
-    def test_replace_keeps_two_cast_images_and_removes_stale_layout(self):
+    def test_image_replacement_preserves_the_source_clip_and_reference_order(self):
         shot = {
             'id': 'S48',
             'cast': ['A', 'B'],
@@ -62,17 +62,18 @@ class RetryLayoutTest(unittest.TestCase):
                 return {'file_id': name}
 
             with patch.object(worker, 'uploaded', side_effect=mock_upload), patch.object(worker.video, 'submit'):
-                for number, replace, expected in (
-                    (2, False, ['navy', 'red', 'seated', 'kneeling']),
-                    (3, True, ['navy', 'red', 'kneeling']),
+                for number, replacement, expected in (
+                    (2, {}, ['navy', 'red', 'seated', 'kneeling', 'wide']),
+                    (3, {'replacePreparedLayouts': True}, ['navy', 'red', 'kneeling', 'wide']),
+                    (4, {'replaceAllImages': True}, ['kneeling', 'wide']),
                 ):
                     attempt = root / f'attempt-{number:03}'
                     attempt.mkdir()
                     worker.video.save(attempt / 'retry.json', {
                         'prompt': 'Same original motion and cast',
                         'seed': 1235,
-                        'additionalImages': ['kneeling'],
-                        'replacePreparedLayouts': replace,
+                        'additionalImages': ['kneeling', 'wide'],
+                        **replacement,
                     })
                     worker.post(None, root, shot, attempt)
                     request = worker.video.read(attempt / 'request.json')

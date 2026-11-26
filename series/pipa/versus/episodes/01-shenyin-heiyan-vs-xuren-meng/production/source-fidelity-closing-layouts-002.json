@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "vivhite-pipa-source-fidelity-layouts-1",
+  "images": [
+    {
+      "shot": "S45",
+      "sourceFrame": 1218,
+      "sourceStillSha256": "0c75db3473c47bcc4f95936d336c578992fa6b21370052228149e5be3d609474",
+      "file": "S45-source-edit-1218.png",
+      "sha256": "db993f45b9912ab3027e5321739056eeca4d91406c1fa78a1209483cc4295081",
+      "prompt": "Edit the first still of a stylized fictional 3D comedy, changing only the actor designs. Preserve this exact close, tilted floor-height composition, dim room, warm reflections and the placement of its existing silver-colored stage prop in the foreground. The nearest cropped figure at the right in the dark jacket becomes the dark-haired actor in image two, with navy coat and restrained gold-trimmed detail. The other actor at center-left becomes the blond red-hooded person in image three. Keep their same bent stance facing away and only their head looking back over the shoulder as in the source. Let the cape drape near the sides, over the original fully covered dark trousers, keeping both figures' source silhouette, posture and scale. Preserve the prop, hands, camera occlusion, ambient lighting and spatial positions in the first image. Use the source's 3D textures, mood, and exact crop, with no added action, text, people or scenery.",
+      "inputs": [
+        "anchor-originals/S45-source-1218.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    },
+    {
+      "shot": "S51",
+      "sourceFrame": 1318,
+      "sourceStillSha256": "0bfee50b3a698f64ab7fde78c7fb826256deb1cc9d39b12647d279b4f6439f9d",
+      "file": "S51-source-edit-1318.png",
+      "sha256": "f7251b7cfe62ad63eb16c3de2f1c7d29d4831cebf5c7b7f7c2b86da4c1b24456",
+      "prompt": "Edit just the cast of this stylized fictional 3D comedy frame while retaining the exact steep overhead angle, hold on the pink armchair, red tabletop arc, floor grain, backdrop, source pose, lighting, and dimensions. The seated floor-level adult at lower right looks up in the source with a rounded surprised mouth and visible planted hand. Replace this person with the tousled dark brown-haired adult in image two, with navy and gold uniform, ivory full-length trousers, original hand and pose. The very large, blurred, cropped figure in front at lower left is the blonde red-hooded adult from image three, visible only as the existing blurred shoulder, hood edge and dark sleeve. Match the established foreground blur and its overlap, preserve both sizes, body orientations, existing scene objects and eye line, and add no further person or text.",
+      "inputs": [
+        "anchor-originals/S51-source-1318.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    },
+    {
+      "shot": "S53",
+      "sourceFrame": 1385,
+      "sourceStillSha256": "12eff171eab8c9e25bf3eaa6ec22c3d7a0db61600e8745a084a48b7299fa88c7",
+      "file": "S53-source-edit-1385.png",
+      "sha256": "debbc5da3c7fa7d16a148e2097c412d989135d2f9005260f8245974e65a98003",
+      "prompt": "Use the first image as the exact stylized 3D comedy scene. Edit only the one visible, fully clothed actor, preserving expression, pose, exact frame, lens, floor, chair, red and amber light, shadows and depth of field. Replace the adult's face and costume with the tousled brown hair, close blue-gray eyes, navy coat with gold collar and epaulette and full-length ivory trousers shown in image two. Maintain the original slightly uncomfortable, awkward comic look, the exact sideways eye direction and naturally skewed mouth, for the same view from above of the leaning actor braced at floor level. Keep the face's same source position and scale, full sleeves and trousers, and the heavily cropped pink chair at left. The rendering should inherit the original image's 3D materials and warm, slightly red lighting. One actor only and no new graphics or objects.",
+      "inputs": [
+        "anchor-originals/S53-source-1385.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ],
+  "plannedShotIds": [
+    "S45",
+    "S51",
+    "S53"
+  ],
+  "recordedAt": "2026-11-26T19:48:33.269426+00:00",
+  "renderPrompts": {
+    "S45": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 3> is the source-frame edit at 1218. At the single cut's middle, keep the original bent-back silhouette, the over-shoulder glance, and the right-foreground cropping on the dark-haired actor. Maintain the already visible stage prop and exact screen position as the source clip continues.",
+    "S51": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 3> is the source-frame edit at 1318. The source retains its brief high-angle eye-line exchange. Preserve the blurred near-left red figure, and the navy officer below the pink chair at right, braced on one hand and looking up. Match the fast expression change in the native cut.",
+    "S53": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 1385. Match the original move from the brief surprised look to the crooked, awkward expression, retaining the original sideways gaze, head height, floor angle, and warm shadow."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S08",
+  "startFrame": 206,
+  "endFrame": 254,
+  "attempt": 2,
+  "jobId": "video_gen_3719070ffcdc43cfa811b6d21377126c:openai",
+  "requestSha256": "c76fe959847632d14d09ff1a0016768cb4d511d876bc6af98cfb04828df26b0f",
+  "renderPrompt": "Edit one continuous shot from the supplied fictional 3D animated film. <Video 1> is the actual source for the full camera path and timing. <Picture 1> defines the dark haired navy-and-gold officer, visible only as his original near-left cropped arm. <Picture 2> defines the blond performer in the crimson hood and gold-lined cape. Replace the visible actors and clothes only. Keep the original near-left dark silhouette and turn, the rapidly widening view, the folding screen, the opening in the wall, the two chairs, flying debris, and the existing flashes, with the same positions, timings and focus. <Picture 3> shows the far room arrangement and the red-hooded figure's exact scale and late stance beside the far door. Keep the original shadow and surfaces from first to last frame. No new props, edits, captioning, background people or dialogue.",
+  "seed": 1235,
+  "rawSha256": "bf961487dd89b5f3b0b6a642ec29ef6bd5345a462b7d48055923fe1b747a416a",
+  "cutSha256": "729eee1d19c817a5112809f440003dd689999a0fc34ea82817737c7d29eec98c",
+  "review": {
+    "cutSha256": "729eee1d19c817a5112809f440003dd689999a0fc34ea82817737c7d29eec98c",
+    "requestSha256": "c76fe959847632d14d09ff1a0016768cb4d511d876bc6af98cfb04828df26b0f",
+    "originalSha256": "8293b8da8482eaa808455e85c4e930bc2a8c3ea0c59d8c35d6e00c85034c33d4",
+    "decision": "rejected",
+    "reviewedFrames": 48,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 206–253 帧与第二版全 48 帧。候选保留后段屏风、墙洞、粉椅、碎片及远处虚人梦造型。前半漏掉原片虚人梦迎面、背向和拉开距离的动作，起镜变成屏风占满画面和一条多出的制服轮廓，神隐黑炎手中的原始枪形道具没有连续保留。墙面变化提前约半秒，虚人梦远处才重新出现。退回。第三版分别约束近景反应、背向站姿和末端场景，只用同镜构图提供角色和服饰，同时沿用原片完整 48 帧的运动参考。",
+    "reviewedAt": "2026-11-26T19:48:14.276639+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S08",
+      "sourceFrame": 253,
+      "prompt": "Replace only the specified actor appearance and visible costume in image one, a single frame from a fictional animated film. Keep the exact original widescreen crop, pose, placement, subject scale, shallow or deep focus, set geometry, reflections and light. Match the source animated 3D material and dim red/ochre color. No new graphics or content. Image two gives the adult fair-haired actor in the crimson hood and cloak. They are small, deep at the far end of the room in the same spread-knee stance as the original actor, centered slightly right near the door. Red cloak extends just around their distant silhouette. Keep the door with its three existing symbols, irregular opening, chairs, dark floating fragments, wood floor and warm smoky light in their exact original locations. Keep this wide spatial composition and figure size.",
+      "inputs": [
+        "anchor-originals/S08-source-0253.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ],
+      "sourceStillSha256": "73469c57eb908564cda2b8f07a80c6819db0da2a8e5f99f7ff3a40b16cfeb2fb",
+      "file": "S08-source-edit-0253.png",
+      "sha256": "558760f87947b26224bb0f1a110906c7a5c0a835ea67a1b3fec84774c6972364"
+    }
+  ],
+  "followUp": {
+    "prompt": "Edit the one continuous original stylized 3D comedy shot in <Video 1>. <Picture 1> shows the opening close composition with the red-hooded adult's reacting face at center-right and the navy sleeve and existing dark prop crossing the near-left foreground. Keep that original hand, prop silhouette, focus and crop through the same portion as in the video. Follow the actual source motion: the red-hooded figure first faces camera and changes expression, then turns away as the camera widens, passing through the pose of <Picture 2>. Keep the same actor with black full-length trousers, red hood, draped cape and both gloves. Continue at the original time into the distant room composition of <Picture 3>. Keep precisely the original scene, room geometry, lens path, exposure, reflection, movement direction and timing of the existing animated light and airborne debris. Keep the source cut unbroken. The officer is only a cropped near-left cuff and hand where visible originally. The three pictures are before, during, and after the widening motion, with the same identities on the original camera track. No new scene detail, editorial cut, second visible face, added objects, text or speech.",
+    "seed": 1236,
+    "plannedAt": "2026-11-26T19:50:06.166624+00:00",
+    "images": [
+      {
+        "name": "S08-source-edit-0211.png",
+        "sha256": "3b69363ee943fcd443af483bba3b0d0fb3107941f07cb002e4b54f014ccf3c41",
+        "imagePrompt": "Edit image one, keeping this exact tightly cropped stylized 3D comedy stage image. Lock the entire dark, blurry handled prop and the fingers at left as they appear in the first image, retaining the original cropping, size, position and focus. The only edit in that left region is the existing dark sleeve, changed to the navy coat cuff detail from image two. Match the original dim room, shadow, reddish side lighting, same perspective and face size. Replace the center-right actor with the adult blond red-hooded performer from image three in the exact same stance, open-mouthed reaction and viewpoint. Keep the fully dressed costume's dark underlayer, one pale shoulder mask and low-key red cloth. Preserve all objects, hands and positions from the first still. No extra actor, objects, graphics, or changed camera."
+      },
+      {
+        "name": "S08-source-edit-0224.png",
+        "sha256": "f00686573ca9aba74bffd948aedeba3db4e63d8d69eeea45f7b66520dfd26943",
+        "imagePrompt": "Restyle only the two visible costumes in this single frame of a fictional fully clothed stylized 3D stage comedy. Keep the exact original frame angle and crop, dim amber ceiling, botanical panel on left, and all existing foreground objects and hand shapes at left physically unchanged. Replace only the foreground sleeve cuff with the subtle navy-and-gold trim from image two. Further away, the fully clothed actor's back faces the low camera while turning from the source pose. Apply the red hood, trim, gloves, and red cape from image three, with black full-length trousers. Let the red fabric follow the same motion and fall over the silhouette naturally. Keep the same two visible positions and existing edge blur and shadows. The face remains out of shot in this camera crop. Preserve the source staged composition and do not invent accessories, new objects, lines or staging."
+      },
+      {
+        "name": "S08-source-edit-0253.png",
+        "sha256": "558760f87947b26224bb0f1a110906c7a5c0a835ea67a1b3fec84774c6972364",
+        "imagePrompt": "Replace only the specified actor appearance and visible costume in image one, a single frame from a fictional animated film. Keep the exact original widescreen crop, pose, placement, subject scale, shallow or deep focus, set geometry, reflections and light. Match the source animated 3D material and dim red/ochre color. No new graphics or content. Image two gives the adult fair-haired actor in the crimson hood and cloak. They are small, deep at the far end of the room in the same spread-knee stance as the original actor, centered slightly right near the door. Red cloak extends just around their distant silhouette. Keep the door with its three existing symbols, irregular opening, chairs, dark floating fragments, wood floor and warm smoky light in their exact original locations. Keep this wide spatial composition and figure size."
+      }
+    ]
+  }
+}

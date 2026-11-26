@@ -261,12 +261,14 @@ def retry(args, root, prepared):
     prompt = args.prompt_file.read_text(encoding='utf-8-sig').strip()
     if not prompt:
         raise ValueError('Provide the full new prompt')
-    if args.replace_layouts and not args.anchor:
-        raise ValueError('Provide an anchor to replace the prepared layouts')
+    if (args.replace_layouts or args.replace_all_images) and not args.anchor:
+        raise ValueError('Provide an anchor to replace prepared references')
     revision = {'prompt':prompt,'seed':args.seed,'additionalImages':[asset(path) for path in args.anchor],
                 'previousAttempt':current.name,'recordedAt':video.now()}
     if args.replace_layouts:
         revision['replacePreparedLayouts'] = True
+    if args.replace_all_images:
+        revision['replaceAllImages'] = True
     next_attempt = current.with_name(f'attempt-{int(current.name.removeprefix("attempt-"))+1:03}')
     next_attempt.mkdir()
     video.save(next_attempt/'retry.json',revision)
@@ -336,12 +338,18 @@ def uploaded(api, root, entry):
     return {'file_id':response['id']}
 
 
+def reference_images(shot, revision):
+    prepared_images = shot['images']
+    if revision.get('replaceAllImages'):
+        prepared_images = []
+    elif revision.get('replacePreparedLayouts'):
+        prepared_images = prepared_images[:len(shot['cast'])]
+    return [*prepared_images, *revision.get('additionalImages', [])]
+
+
 def post(api, root, shot, attempt):
     revision = shot if attempt.name=='attempt-001' else video.read(attempt/'retry.json')
-    prepared_images = shot['images']
-    if revision.get('replacePreparedLayouts'):
-        prepared_images = prepared_images[:len(shot['cast'])]
-    references = [*prepared_images,*revision.get('additionalImages',[])]
+    references = reference_images(shot, revision)
     payload = {'model':'fasth3-omni-bf16','task':'ref2va','size':SIZE,'seconds':5,'num_inference_steps':8,
                'guidance_scale':1.0,'seed':revision['seed'],'prompt':revision['prompt'],
                'video_reference':[uploaded(api,root,shot['motion'])],
@@ -585,8 +593,11 @@ def main():
     ret.add_argument('--prompt-file',required=True,type=Path)
     ret.add_argument('--seed',required=True,type=int)
     ret.add_argument('--anchor',action='append',type=Path,default=[])
-    ret.add_argument('--replace-layouts',action='store_true',
-                     help='Replace prepared layout images and keep the cast reference images')
+    replacement = ret.add_mutually_exclusive_group()
+    replacement.add_argument('--replace-layouts',action='store_true',
+                             help='Replace prepared layout images and keep the cast reference images')
+    replacement.add_argument('--replace-all-images',action='store_true',
+                             help='Use only the supplied anchors as image references for this retry')
     comparison = sub.add_parser('compare')
     comparison.add_argument('--shot',required=True)
     review = sub.add_parser('review')
