@@ -269,6 +269,8 @@ def retry(args, root, prepared):
         revision['replacePreparedLayouts'] = True
     if args.replace_all_images:
         revision['replaceAllImages'] = True
+    if args.motion_guide:
+        revision['motionGuide'] = asset(args.motion_guide)
     next_attempt = current.with_name(f'attempt-{int(current.name.removeprefix("attempt-"))+1:03}')
     next_attempt.mkdir()
     video.save(next_attempt/'retry.json',revision)
@@ -352,7 +354,7 @@ def post(api, root, shot, attempt):
     references = reference_images(shot, revision)
     payload = {'model':'fasth3-omni-bf16','task':'ref2va','size':SIZE,'seconds':5,'num_inference_steps':8,
                'guidance_scale':1.0,'seed':revision['seed'],'prompt':revision['prompt'],
-               'video_reference':[uploaded(api,root,shot['motion'])],
+               'video_reference':[uploaded(api,root,revision.get('motionGuide',shot['motion']))],
                'image_reference':[uploaded(api,root,entry) for entry in references]}
     path = attempt/'request.json'
     if path.exists() and video.read(path) != payload:
@@ -593,6 +595,8 @@ def main():
     ret.add_argument('--prompt-file',required=True,type=Path)
     ret.add_argument('--seed',required=True,type=int)
     ret.add_argument('--anchor',action='append',type=Path,default=[])
+    ret.add_argument('--motion-guide',type=Path,
+                     help='Use an alternate motion reference derived from this source shot')
     replacement = ret.add_mutually_exclusive_group()
     replacement.add_argument('--replace-layouts',action='store_true',
                              help='Replace prepared layout images and keep the cast reference images')

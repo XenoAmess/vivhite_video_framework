@@ -62,10 +62,12 @@ class RetryLayoutTest(unittest.TestCase):
                 return {'file_id': name}
 
             with patch.object(worker, 'uploaded', side_effect=mock_upload), patch.object(worker.video, 'submit'):
-                for number, replacement, expected in (
-                    (2, {}, ['navy', 'red', 'seated', 'kneeling', 'wide']),
-                    (3, {'replacePreparedLayouts': True}, ['navy', 'red', 'kneeling', 'wide']),
-                    (4, {'replaceAllImages': True}, ['kneeling', 'wide']),
+                for number, overrides, expected_images, expected_motion in (
+                    (2, {}, ['navy', 'red', 'seated', 'kneeling', 'wide'], 'same-source-shot'),
+                    (3, {'replacePreparedLayouts': True}, ['navy', 'red', 'kneeling', 'wide'], 'same-source-shot'),
+                    (4, {'replaceAllImages': True}, ['kneeling', 'wide'], 'same-source-shot'),
+                    (5, {'motionGuide': 'masked-source-shot'}, ['navy', 'red', 'seated', 'kneeling', 'wide'],
+                     'masked-source-shot'),
                 ):
                     attempt = root / f'attempt-{number:03}'
                     attempt.mkdir()
@@ -73,12 +75,12 @@ class RetryLayoutTest(unittest.TestCase):
                         'prompt': 'Same original motion and cast',
                         'seed': 1235,
                         'additionalImages': ['kneeling', 'wide'],
-                        **replacement,
+                        **overrides,
                     })
                     worker.post(None, root, shot, attempt)
                     request = worker.video.read(attempt / 'request.json')
-                    self.assertEqual(expected, [item['file_id'] for item in request['image_reference']])
-                    self.assertEqual([{'file_id': 'same-source-shot'}], request['video_reference'])
+                    self.assertEqual(expected_images, [item['file_id'] for item in request['image_reference']])
+                    self.assertEqual([{'file_id': expected_motion}], request['video_reference'])
 
 
 class RenderSelectionTest(unittest.TestCase):
