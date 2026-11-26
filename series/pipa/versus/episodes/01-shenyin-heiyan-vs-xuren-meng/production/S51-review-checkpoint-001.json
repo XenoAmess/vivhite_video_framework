@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S51",
+  "startFrame": 1314,
+  "endFrame": 1324,
+  "attempt": 1,
+  "jobId": "video_gen_6c86c21c019b439eaf0e58a096ad16ce:openai",
+  "requestSha256": "35d7f315300353b40431c374ac28e10742d5de734bfbf1feab00f844ee8bfbbe",
+  "renderPrompt": "One steep overhead anime reverse shot, follow <Video 1> for the exact original eye movement. <Picture 1> identifies the dark-haired navy officer on the lower-right wooden floor and <Picture 2> identifies the cropped crimson hood and shoulder in the LOWER LEFT near foreground. <Picture 3> is the required high framing and lighting. Show the officer's hands braced and his surprised face looking up, chin going back slightly in the same position beside the rose-pink chair. Keep the crimson figure partly visible from behind, their edge at left as in the video. One continuous view, consistent clothes, two people only, no weapon, new room, marks, text or dialogue.",
+  "seed": 1234,
+  "rawSha256": "3c49767df261546f0781348f1b95fd5119b53cb65cc2d6214c15ada512a88e0f",
+  "cutSha256": "046c589bafbc831d0ab6b33327581a42c3176dcafb35c55dd6492f074f05e893",
+  "review": {
+    "cutSha256": "046c589bafbc831d0ab6b33327581a42c3176dcafb35c55dd6492f074f05e893",
+    "requestSha256": "35d7f315300353b40431c374ac28e10742d5de734bfbf1feab00f844ee8bfbbe",
+    "originalSha256": "d1215d5488c1a6878d1ece4bae6d83f668578494a8cee58173c5a4dd7da8f562",
+    "decision": "accepted",
+    "reviewedFrames": 10,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原版第 1314–1323 帧，共 10 帧。俯拍反切、左下裁切的红袍与右下撑地的神隐黑炎位置正确，粉椅和暗木地板延续。神隐黑炎保持低姿，用少量抬眼和张口回应左近景。候选比原镜略宽，左前景的红袍比原版更清楚，短反打保持原有切点。",
+    "reviewedAt": "2026-11-26T10:15:51.437275+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S51-overhead-reverse-two-person.png",
+      "prompt": "One wide 16:9 cel-shaded anime keyframe. Image 1 supplies only the identity of the navy and gold officer. Image 2 supplies only the other performer's crimson hood and gold-lined crimson cape. Image 3 contains only the very high downward camera pose and room framing to keep. Look down past the near red hood and shoulder, cut off at the lower-left foreground, toward the one navy officer by the wall in the lower-right and middle distance. The officer looks up with a comically surprised face, supported on one hand, wearing complete navy coat and ivory trousers. Rose-pink armchair back at the top, same dark wood boards and warm simple beige wall. No weapons, text, anatomy exaggeration or injury, just the two distinct characters and no other people.",
+      "sha256": "df95140b26ec6353b87a4202acc647a0b558631a056788f4b96a7e6f5e9f9a76",
+      "inputs": [
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/xuren-meng.png",
+        "S51-two-person-source.png"
+      ]
+    }
+  ]
+}
