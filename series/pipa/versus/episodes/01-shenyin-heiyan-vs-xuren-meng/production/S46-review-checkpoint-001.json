@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S46",
+  "startFrame": 1229,
+  "endFrame": 1234,
+  "attempt": 1,
+  "jobId": "video_gen_e95c4ea6d1cb4d1fb7cdc8a924987f46:openai",
+  "requestSha256": "d8ce01aa53113e79aaf8253c7a1aa62957c3651e807d58f63d27da790a2d3bc5",
+  "renderPrompt": "Render ONE continuous cel-shaded 2D anime shot, using <Video 1> as the motion and camera guide. Follow the movement, viewpoint and camera direction from this source shot. Replace the original 3D source characters in every frame, including the first and last frames. <Picture 1> is the exact identity for short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> is the exact identity for long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Brief over-the-shoulder film cut. Red-hooded silhouette in near field, navy officer in the farther plane. Keep the roles spatially distinct. Keep the same pose timing and camera, with no added cuts or stray characters. Fully clothed comic animation. Any stage prop is openly stylized, with abstract theatrical lighting. Keep each intended hairstyle and costume legible, including when a character is shown from behind. No added words, watermarks, subtitles or dialogue.",
+  "seed": 1234,
+  "rawSha256": "fe756da90e7e216b9152a13116e660b7f2ec2105f184b33f1195e376b695c7b2",
+  "cutSha256": "9b6ebe623f9d41241d36eef8bdac038dd809bd0aaef365f67c8e7cec4b84dd4b",
+  "review": {
+    "cutSha256": "9b6ebe623f9d41241d36eef8bdac038dd809bd0aaef365f67c8e7cec4b84dd4b",
+    "requestSha256": "d8ce01aa53113e79aaf8253c7a1aa62957c3651e807d58f63d27da790a2d3bc5",
+    "originalSha256": "b53ce20636ed0e38f435beedb5a67f89a4919f8a658f89f34dc29d15df8130ff",
+    "decision": "rejected",
+    "reviewedFrames": 5,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原版第 1229–1233 帧，共 5 帧。原镜为俯拍过肩反打，虚人梦占左近景边缘，神隐黑炎在右侧地面斜撑并抬眼。候选把两人排成正面站姿，前景又出现一个重复红兜帽，改成蓝帷幕背景。错误站位、重复角色和错景均在全镜持续，退回。",
+    "reviewedAt": "2026-11-26T06:19:01.550376+00:00"
+  },
+  "layouts": [
+    {
+      "file": "S46-over-hood-floor.png",
+      "sha256": "572719160d027daf7c148ce159534d3676cdd969865709acade4cc9dee980b17",
+      "prompt": "One 16:9 clean cel-shaded anime storyboard frame. Image 1 supplies ONLY the high over-the-shoulder camera and character positions. Images 2 and 3 supply the two exact fully clothed adult designs and warm wood room. A close crimson hood and the back of one red-cloaked shoulder with a little blond hair fill the LEFT edge and lower-left foreground, visibly cropped and slightly soft. That figure is turned away from the camera looking DOWN and to the RIGHT toward the floor. Only one other person appears: the navy and gold officer with dark brown hair, long ivory trousers and tall dark boots, lowered toward the wooden floor in the RIGHT background at a diagonal, one knee bent, one hand stabilizing himself, and face tilted back up toward the red shoulder. He wears a slightly comic surprised look. Keep both hands empty. Warm tan wall, wood floor, a cropped pink chair far left, and only these two figures. Match the high downward angle and severe near/far scale from the first image. No straight-line lineup, blue curtain, standing pose, weapons, lettering, or cutaway panels.",
+      "inputs": [
+        "S46-original-over-shoulder.png",
+        "S45-two-person-low.png",
+        "S53-floor-sheepish-grin.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "One extremely short, continuous over-the-shoulder anime reaction. Match <Video 1>'s high downward angle and restrained head and shoulder movement. <Picture 1> is the dark-haired navy-gold officer, on the wood floor at screen RIGHT with one knee bent and one hand on the floor. <Picture 2> is the red-caped blond performer, whose one cropped hood and shoulder occupy only the LEFT FOREGROUND. <Picture 3> defines these two relative positions and the warm light and rose chair. Keep exactly those two people. The hood shifts a little down-right as the lower officer looks up at the other person and shifts the raised forearm slightly. Preserve the steep near-to-far perspective, partial crop, low floor posture and warm wall throughout. Hands empty, no extra red figure, curtains, lineups, added cut, symbols, weapons, caption or dialogue.",
+    "seed": 1235,
+    "plannedAt": "2026-11-26T06:20:03.477970+00:00",
+    "images": [
+      {
+        "name": "S46-over-hood-floor.png",
+        "sha256": "572719160d027daf7c148ce159534d3676cdd969865709acade4cc9dee980b17",
+        "imagePrompt": "One 16:9 clean cel-shaded anime storyboard frame. Image 1 supplies ONLY the high over-the-shoulder camera and character positions. Images 2 and 3 supply the two exact fully clothed adult designs and warm wood room. A close crimson hood and the back of one red-cloaked shoulder with a little blond hair fill the LEFT edge and lower-left foreground, visibly cropped and slightly soft. That figure is turned away from the camera looking DOWN and to the RIGHT toward the floor. Only one other person appears: the navy and gold officer with dark brown hair, long ivory trousers and tall dark boots, lowered toward the wooden floor in the RIGHT background at a diagonal, one knee bent, one hand stabilizing himself, and face tilted back up toward the red shoulder. He wears a slightly comic surprised look. Keep both hands empty. Warm tan wall, wood floor, a cropped pink chair far left, and only these two figures. Match the high downward angle and severe near/far scale from the first image. No straight-line lineup, blue curtain, standing pose, weapons, lettering, or cutaway panels."
+      }
+    ]
+  }
+}
