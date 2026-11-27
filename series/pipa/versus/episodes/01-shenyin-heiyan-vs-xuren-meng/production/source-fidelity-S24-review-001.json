@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S24",
+  "startFrame": 578,
+  "endFrame": 633,
+  "attempt": 1,
+  "jobId": "video_gen_660fa86a503e46f5b15ee636bae0661e:openai",
+  "requestSha256": "43e626fe66af6549f3e0c315ef54b335e72635e154085d2c3335a75b1d3314f3",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 615. Retain the original near-overhead prone opening and the move into the low rear two-boot pose, including the source position and hand contact with the board floor. Both knees and boots participate in the lift as in the source.",
+  "seed": 1234,
+  "rawSha256": "00ebf322258babae45de745881c9d141399fed52e5bab09e3b79bff84bc470a2",
+  "cutSha256": "a5e5fd2d18680e66f8a4107ed21842f292f1f01c1c6dc794ec4be8d57afebb77",
+  "review": {
+    "cutSha256": "a5e5fd2d18680e66f8a4107ed21842f292f1f01c1c6dc794ec4be8d57afebb77",
+    "requestSha256": "43e626fe66af6549f3e0c315ef54b335e72635e154085d2c3335a75b1d3314f3",
+    "originalSha256": "df0c1a71bcdd621ce1ec14b6a79fd4386c530508d85bb85318fc529a385c3038",
+    "decision": "rejected",
+    "reviewedFrames": 55,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 578–632 帧与 S24 第一版，覆盖全部 55 帧，查看四页并排图。虚人梦的金发、红兜帽和披风、深色衣裤及可见的左肩面具保持可辨，木地板与背景碎片保留，能看出俯视过渡到后方低位的大致方向。\n起镜第 578–583 帧附近，原片已有前臂屈伸、下肢抖动和细亮线，候选的姿态连续数帧几乎相同，第一处清楚的闪光也偏晚。约第 602–605 帧，原片已经用手撑地上抬躯干，候选仍低伏。后半段原片持续移动重心并推入更近的背侧构图。第 626–632 帧，候选保留了比原片更多的双腿和靴子，构图近乎固定，末段几次明亮的短促光效也明显变弱。这些差异改变了起身时序、景别与收尾节奏，退回。",
+    "reviewedAt": "2026-11-27T05:14:42.264247+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S24",
+      "sourceFrame": 615,
+      "sourceStillSha256": "1ec39e2a7a6d286a4d550434a25fc131a8f40b131c7586d73eb838063417caf3",
+      "file": "S24-source-rear-0615.png",
+      "sha256": "caf71156e425ea365ba4ae2b203cb517cea1c584f0bb515b22fb0f865de293e4",
+      "prompt": "Replace the entire single adult performer in the first fictional 3D film image with the crimson-hooded blond character from image two, matching the exact posture and camera. This is a floor-level REAR VIEW, looking from behind the wide-planted boots and bent legs toward the far wall. The same single figure bends forward with one gloved palm on the wooden floor between the feet. The top of the single hood is farther away where the original head was. Only the back of the red hood and cape can be visible; the chest and face are away from camera, and the original black-haired head is completely replaced by the new hood. Keep the cape folded to one side so the space below the lifted hips and both wide dark-trousered legs are clear. Use the third image for the rear construction of the red mantle. Keep the original wood, padded wall, chair, golden historical scene light and framing in the first image. Exactly two boots, one head and no extra figure.",
+      "inputs": [
+        "anchor-originals/S24-source-0615.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "anchors/S11-source-edit-0294.png"
+      ]
+    }
+  ]
+}
