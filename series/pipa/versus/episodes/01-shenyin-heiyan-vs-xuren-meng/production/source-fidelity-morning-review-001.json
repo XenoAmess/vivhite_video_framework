@@ -1,0 +1,748 @@
+{
+  "schemaVersion": "vivhite-pipa-morning-review-1",
+  "checkedAt": "2026-11-28T07:02:57.7514391+08:00",
+  "approvedShots": 42,
+  "approvedFrames": 1191,
+  "reviewedShots": 7,
+  "reviewedFrames": 192,
+  "approvalAdded": {
+    "shots": 6,
+    "frames": 169
+  },
+  "reviews": [
+    {
+      "shot": "S34",
+      "sourceFrameInterval": [
+        855,
+        878
+      ],
+      "attempt": 3,
+      "status": "completed",
+      "requestSha256": "a3958240571f9338b372ecbed21db0851fd4fe3a32bc93806841903d79205244",
+      "modelRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 249680,
+        "prompt": "Use <Video 1> as the exact movement, lighting, props and camera reference for one continuous stylized 3D animation shot. Replace the existing adults with the role designs in the supplied images while retaining the original camera and full action timeline. <Picture 1> is the actual source start 855: the unoccupied hand is by the face. Begin its sweeping movement immediately. <Picture 2> is frame 860, below the face with the forearm already across the picture. Continue from side presentation into the near-to-far movement and the pose of <Picture 3> at frame 877. Keep the existing prop's shape, size and glare, original camera and pulses. Follow the source's short yellow bursts at the same instants through the ending; each visible beat and corresponding warmth must match the footage. The navy gold officer is the only actor throughout.",
+        "video_reference": [
+          {
+            "file_id": "file_f04b11649aea4349985d6eb0f9f4ba28"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_520575fcd87b4ffe8098def7573dd2c4"
+          },
+          {
+            "file_id": "file_a4bf7f0cda53430eb32eb3527c4ea9c0"
+          },
+          {
+            "file_id": "file_f1df0c569650461daa1657cf9f475ac6"
+          }
+        ]
+      },
+      "jobId": "video_gen_b8f5b706b499473c9ab4504b78a8149f:openai",
+      "rawSha256": "40c44c0ab9f1bf12dd190362d0002ad448792172cb7427d36592f6965a96b9fa",
+      "normalizedSha256": "ae88e15d31480961a8baac99cac82a6d0a28488877a3086676a1c51a46b20773",
+      "cutSha256": "0a502282d295a797f34d2f0978486e2f94014b84cf0f4271ee4beb91c5afe4a2",
+      "cutFrames": 23,
+      "review": {
+        "cutSha256": "0a502282d295a797f34d2f0978486e2f94014b84cf0f4271ee4beb91c5afe4a2",
+        "requestSha256": "a3958240571f9338b372ecbed21db0851fd4fe3a32bc93806841903d79205244",
+        "originalSha256": "8c8827419a45e59e9370b3c5dfd597417a2926564dbfdaf45cb69a68b5704f5e",
+        "decision": "rejected",
+        "reviewedFrames": 23,
+        "method": "assistant-frame-review",
+        "observations": "Compared all 23 paired frames (855-877). The hand sweep and first warm flashes improved. The camera then holds near the officer with the prop kept nearly horizontal, whereas the source advances the prop toward the lens, lowers its focus and pulls back to a visibly wider angle with a diagonal red beam. The return of the hand under the prop and the subsequent pulls around source 868-877 are missing. Some late light pulses also fall on other source frames.",
+        "reviewedAt": "2026-11-27T22:57:00.895426+00:00"
+      }
+    },
+    {
+      "shot": "S36",
+      "sourceFrameInterval": [
+        946,
+        971
+      ],
+      "attempt": 3,
+      "status": "completed",
+      "requestSha256": "17905ac55346a12fa50d0a516a8585101e74c800f1e2578f049baa16da092930",
+      "modelRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 834670,
+        "prompt": "Use <Video 1> as the exact movement, lighting, props and camera reference for one continuous stylized 3D animation shot. Replace the existing adults with the role designs in the supplied images while retaining the original camera and full action timeline. <Picture 1> is source frame 946 with the tight sideways glance. Keep the same scale and tipped head for the beginning. Briefly squint and then expand to the distinctive wide open comic mouth of <Picture 2> at 952. Do this before pulling away, before the foreground object enters. Follow the moving input through the change of the foreground prop, focus and body pose. <Picture 3> is the actual final flash at frame 970. The scattered brief flashes before it follow the exact timing as in the source. Preserve the dark-haired navy gold officer throughout and keep the warm room, props and original shadows.",
+        "video_reference": [
+          {
+            "file_id": "file_37214ccd115c4b8e8ddec970f687917f"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_7baeb571f3f841aa9d549404ee3c044a"
+          },
+          {
+            "file_id": "file_9cf29b173b554364a6f4986c97f03e83"
+          },
+          {
+            "file_id": "file_26c00e43311143f086cd95ab44d87617"
+          }
+        ]
+      },
+      "jobId": "video_gen_23ca64a262b14f3099eaf69f368a2a49:openai",
+      "rawSha256": "81260b00eda54e46be446c501feeeddbab07198b314653177b807fcbc531551f",
+      "normalizedSha256": "8ebd741d4811a0dfa46540a69bfd6c74e013a8199f6bfdab6fd70086886c3805",
+      "cutSha256": "42b322d28a15fbd268c27ca61b7e785812cf4672d5cad20dfb3d58534d4de6fc",
+      "cutFrames": 25,
+      "review": {
+        "cutSha256": "42b322d28a15fbd268c27ca61b7e785812cf4672d5cad20dfb3d58534d4de6fc",
+        "requestSha256": "17905ac55346a12fa50d0a516a8585101e74c800f1e2578f049baa16da092930",
+        "originalSha256": "044700ac51eed51424ccdc5a8d8a6568225907334ba6782b75b94c3b896d4695",
+        "decision": "accepted",
+        "reviewedFrames": 25,
+        "method": "assistant-frame-review",
+        "observations": "Compared all 25 frames (946-970) in the flash-timed take. The side glance, quick blink and open-mouth reaction lead to the camera pullback with the original foreground silhouette. The large warm flashes match the source beats at 961-962, 964, 967 and 969-970. The first flash is stronger and the early close-up color differs slightly while retaining the performance and camera path.",
+        "reviewedAt": "2026-11-27T22:57:01.148676+00:00"
+      },
+      "postprocess": {
+        "tool": "ffmpeg",
+        "sourceFrames": [
+          946,
+          971
+        ],
+        "normalizedModelSha256": "8ebd741d4811a0dfa46540a69bfd6c74e013a8199f6bfdab6fd70086886c3805",
+        "preRetimeCutSha256": "885c7ff23a0724e6c51a5970f2642070d829506a3852b68ca837d769145542d3",
+        "selectedModelFrames": [
+          0,
+          14,
+          22,
+          26,
+          30,
+          33,
+          37,
+          40,
+          43,
+          48,
+          53,
+          60,
+          66,
+          72,
+          85,
+          95,
+          98,
+          103,
+          108,
+          111,
+          114,
+          116,
+          119,
+          117,
+          118
+        ],
+        "filter": "select=eq(n\\,0)+eq(n\\,14)+eq(n\\,22)+eq(n\\,26)+eq(n\\,30)+eq(n\\,33)+eq(n\\,37)+eq(n\\,40)+eq(n\\,43)+eq(n\\,48)+eq(n\\,53)+eq(n\\,60)+eq(n\\,66)+eq(n\\,72)+eq(n\\,85)+eq(n\\,95)+eq(n\\,98)+eq(n\\,103)+eq(n\\,108)+eq(n\\,111)+eq(n\\,114)+eq(n\\,116)+eq(n\\,117)+eq(n\\,118)+eq(n\\,119),shuffleframes=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 24 22 23,setpts=N/(24*TB),setsar=1",
+        "previewSha256": "42b322d28a15fbd268c27ca61b7e785812cf4672d5cad20dfb3d58534d4de6fc",
+        "reason": "Align the blink, open mouth, lens pullback, restored foreground silhouette and first large flash.",
+        "nativeSize": "1344x768",
+        "fps": 24,
+        "outputSha256": "42b322d28a15fbd268c27ca61b7e785812cf4672d5cad20dfb3d58534d4de6fc"
+      }
+    },
+    {
+      "shot": "S50",
+      "sourceFrameInterval": [
+        1296,
+        1314
+      ],
+      "attempt": 2,
+      "status": "completed",
+      "requestSha256": "93ae2ecb961bd070d4896822e4e4caae77267a0563c3af1e18b651d4af969072",
+      "modelRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 610202,
+        "prompt": "Use <Video 1> as the exact pose, camera, cut, and lighting track for one continuous stylized 3D animation. Change the identities of the existing fully dressed adult actors to the role designs shown in the scene anchors. Keep original props, scene, framing, focus and all action phases. <Picture 1> is frame 1296. Keep the silver stage prop sharply focused and slanting down from the red sleeve at far left, with the navy officer still bent low and blurred at bottom right before the pink chair. The red actor is mostly outside the left edge. <Picture 2> at source frame 1304 shows the prop at a straighter angle and a change in the gaze and opening mouth of the right figure. The focus migrates modestly toward the right actor from start to finish in source order. <Picture 3> is source frame 1313 with the officer looking upward and the original depth relationship. Keep exactly two people, the original chair, lighting, and source crop. Continue the source motion, body posture and focus through all intermediate frames.",
+        "video_reference": [
+          {
+            "file_id": "file_3e1e2ae832604933b25f5098189ffb65"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_0758b293a5f743f8b929a7081430a0bb"
+          },
+          {
+            "file_id": "file_4ac8e001a69548e68217dc9ca0eb8c33"
+          },
+          {
+            "file_id": "file_c5c213add9f44d7ab071e872e5717f20"
+          }
+        ]
+      },
+      "jobId": "video_gen_da822a42b5ca480c9ec18691eee791d5:openai",
+      "rawSha256": "a555f43ae8e56d91524449b98cb1af557801b100e064f8aa9f04392712c26a10",
+      "normalizedSha256": "a96ef3711223c6191ddb85cdac21cc416ffc069d416ef8266b0fbcee204d61d7",
+      "cutSha256": "29610ef327702e5a623c40941c7deae3f0a02267f6982f921e99afb80d674420",
+      "cutFrames": 18,
+      "review": {
+        "cutSha256": "29610ef327702e5a623c40941c7deae3f0a02267f6982f921e99afb80d674420",
+        "requestSha256": "93ae2ecb961bd070d4896822e4e4caae77267a0563c3af1e18b651d4af969072",
+        "originalSha256": "35b889b581cbf851323e5bf88efa32f291eb781e92896d8caac6383b08587fa7",
+        "decision": "accepted",
+        "reviewedFrames": 18,
+        "method": "assistant-frame-review",
+        "observations": "Compared all 18 frames (1296-1313) in the normalized take. The silver foreground prop begins oblique, rotates nearer to vertical, and the initially soft rear officer lifts his head into focus beside the pink chair and opens his mouth. Both outfits remain visible. The amount of red mantle at the left and the contrast of the rack focus vary slightly.",
+        "reviewedAt": "2026-11-27T22:57:01.388800+00:00"
+      }
+    },
+    {
+      "shot": "S52",
+      "sourceFrameInterval": [
+        1324,
+        1374
+      ],
+      "attempt": 2,
+      "status": "completed",
+      "requestSha256": "78f2792e14d2cb441944d585f0fb9be16535de4423bef3884e115985dab05362",
+      "modelRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 730419,
+        "prompt": "Use <Video 1> as the exact pose, camera, cut, and lighting track for one continuous stylized 3D animation. Change the identities of the existing fully dressed adult actors to the role designs shown in the scene anchors. Keep original props, scene, framing, focus and all action phases. The real first source frame is 1324. The only performer is the crimson hooded character in dark tailored trousers, gloves and gold-trimmed mantle from the first instant, including when much of the head is cropped out. The reflected red stage object occupies the left foreground on the original trajectory. Keep the mantle away from the photographed silhouette and reflective edge of this object as the viewpoint tilts, the face first enters at top, and the far hand comes up. <Picture 1> is a costume and light reference at source time 1334, already ten frames into the original shot. Keep its small red side reflection from the thread of motion provided by the video, with the original object present through all appropriate frames. <Picture 2> is frame 1369 near the end with the gloved hand raised, the face angled toward the lower camera, and the warm patterned screen at left. Keep all original near-to-far camera motion and dark red lighting.",
+        "video_reference": [
+          {
+            "file_id": "file_0679f8d40db74f3084faa3bc4f9a09d5"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_cc127ad2c47b408abd248e4f985f3148"
+          },
+          {
+            "file_id": "file_3127ffff2eb54ede9a285f365d6d3b2b"
+          }
+        ]
+      },
+      "jobId": "video_gen_74ee8dfb36d447938e745956b65c509e:openai",
+      "rawSha256": "03f83e84b41450ae1db63d4adfed86db6890d48b2946742ba47632dce3b35ad1",
+      "normalizedSha256": "601f68c572f70fa6d00772fb0fd0fbf4325a0b1b0055c01affc34abcf6339c6a",
+      "cutSha256": "a7e2207c64c03636c9fa2e3e10fa52afc7c5a20f02a466e8f7b02e1aacdd8e73",
+      "cutFrames": 50,
+      "review": {
+        "cutSha256": "a7e2207c64c03636c9fa2e3e10fa52afc7c5a20f02a466e8f7b02e1aacdd8e73",
+        "requestSha256": "78f2792e14d2cb441944d585f0fb9be16535de4423bef3884e115985dab05362",
+        "originalSha256": "f16813752013aa96664055b978672404199b954d74bccd903d4c996e056bdf8c",
+        "decision": "accepted",
+        "reviewedFrames": 50,
+        "method": "assistant-frame-review",
+        "observations": "Compared all 50 frames (1324-1373) after retiming. From the very low crop the red-hooded actor comes into view, lifts the free forearm and one finger on the source beat, then holds the gesture through the approach. The foreground metallic reflections and the pink and gold lighting remain, with the mantle changing the shape of the lower silhouette.",
+        "reviewedAt": "2026-11-27T22:57:01.594965+00:00"
+      },
+      "postprocess": {
+        "tool": "ffmpeg",
+        "sourceFrames": [
+          1324,
+          1374
+        ],
+        "normalizedModelSha256": "601f68c572f70fa6d00772fb0fd0fbf4325a0b1b0055c01affc34abcf6339c6a",
+        "preRetimeCutSha256": "3eeaead7789ca270e23bd80c98807fba703ed7f6160eaa88e1a0edee58041412",
+        "selectedModelFrames": [
+          0,
+          4,
+          9,
+          14,
+          18,
+          22,
+          25,
+          28,
+          30,
+          32,
+          35,
+          38,
+          41,
+          44,
+          47,
+          50,
+          53,
+          56,
+          59,
+          63,
+          67,
+          69,
+          71,
+          73,
+          75,
+          76,
+          78,
+          80,
+          82,
+          84,
+          85,
+          87,
+          89,
+          91,
+          93,
+          95,
+          97,
+          99,
+          101,
+          103,
+          105,
+          107,
+          109,
+          111,
+          113,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "filter": "select=eq(n\\,0)+eq(n\\,4)+eq(n\\,9)+eq(n\\,14)+eq(n\\,18)+eq(n\\,22)+eq(n\\,25)+eq(n\\,28)+eq(n\\,30)+eq(n\\,32)+eq(n\\,35)+eq(n\\,38)+eq(n\\,41)+eq(n\\,44)+eq(n\\,47)+eq(n\\,50)+eq(n\\,53)+eq(n\\,56)+eq(n\\,59)+eq(n\\,63)+eq(n\\,67)+eq(n\\,69)+eq(n\\,71)+eq(n\\,73)+eq(n\\,75)+eq(n\\,76)+eq(n\\,78)+eq(n\\,80)+eq(n\\,82)+eq(n\\,84)+eq(n\\,85)+eq(n\\,87)+eq(n\\,89)+eq(n\\,91)+eq(n\\,93)+eq(n\\,95)+eq(n\\,97)+eq(n\\,99)+eq(n\\,101)+eq(n\\,103)+eq(n\\,105)+eq(n\\,107)+eq(n\\,109)+eq(n\\,111)+eq(n\\,113)+eq(n\\,115)+eq(n\\,116)+eq(n\\,117)+eq(n\\,118)+eq(n\\,119),setpts=N/(24*TB),setsar=1",
+        "previewSha256": "a7e2207c64c03636c9fa2e3e10fa52afc7c5a20f02a466e8f7b02e1aacdd8e73",
+        "reason": "Align the reveal under the shoulder and lift of the forearm and single finger.",
+        "nativeSize": "1344x768",
+        "fps": 24,
+        "outputSha256": "a7e2207c64c03636c9fa2e3e10fa52afc7c5a20f02a466e8f7b02e1aacdd8e73"
+      }
+    },
+    {
+      "shot": "S54",
+      "sourceFrameInterval": [
+        1402,
+        1415
+      ],
+      "attempt": 2,
+      "status": "completed",
+      "requestSha256": "b6a76573b0a6796bec83abf50f74b4abe07287d650c73c3b251e130636c0da92",
+      "modelRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 615477,
+        "prompt": "Use <Video 1> as the exact movement, lighting, props and camera reference for one continuous stylized 3D animation shot. Replace the existing adults with the role designs in the supplied images while retaining the original camera and full action timeline. The left actor is the dark-haired navy officer shown from behind and low, and the adult on the right is the crimson hooded blond dancer in dark clothes. Maintain both identities throughout. <Picture 1> is 1402, the relatively upright starting pose with one raised arm. <Picture 2> is 1409, already folding and allowing the red cloth to follow the motion. <Picture 3> is 1414, crouched toward the screen with the trailing leg and the hand reaching through the same right crop. Retain the patterned screen, shifts in the limb silhouettes, the existing prop's small red highlights and the low side angles from first to last. Keep the moving input's tempo and shortness, one continuous movement.",
+        "video_reference": [
+          {
+            "file_id": "file_177adcd0a9d942358f23544ad9b85a07"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_e5d78fa146b04fa0b607e0a541bf1245"
+          },
+          {
+            "file_id": "file_d17f86f2bc34417ea51e40502c6b8f1e"
+          },
+          {
+            "file_id": "file_7f54dbfdbc2d45a2bb20e5040d7826d1"
+          }
+        ]
+      },
+      "jobId": "video_gen_8dc6a8b7ed9f41d68205c49993f689b2:openai",
+      "rawSha256": "bcdb306f4432decbd6b6c52a76fa9296d208ff0fb9314f3e3a18833231489c88",
+      "normalizedSha256": "31fdf9f646170b9d488430d7ad6d5e45b78b13575886a8ceb21e84c5b8acba6b",
+      "cutSha256": "c85f0c0f3c764855bbeedb93ee096a4eeb361a4c355e8bd18e7f52a86fe951a9",
+      "cutFrames": 13,
+      "review": {
+        "cutSha256": "c85f0c0f3c764855bbeedb93ee096a4eeb361a4c355e8bd18e7f52a86fe951a9",
+        "requestSha256": "b6a76573b0a6796bec83abf50f74b4abe07287d650c73c3b251e130636c0da92",
+        "originalSha256": "6e7223dd79000f833e7dabff83c2bf88b3432c5c9217efb3ff3fb506571641d2",
+        "decision": "accepted",
+        "reviewedFrames": 13,
+        "method": "assistant-frame-review",
+        "observations": "Compared all 13 frames (1402-1414) after retiming. The dark navy officer remains in the left foreground looking up. On the right the red-hooded figure sweeps one arm to the side and quickly folds forward as the source does, with both adults distinct under the same warm red side light. The lowered hood covers a little more of the shoulder late in the take.",
+        "reviewedAt": "2026-11-27T22:57:01.787483+00:00"
+      },
+      "postprocess": {
+        "tool": "ffmpeg",
+        "sourceFrames": [
+          1402,
+          1415
+        ],
+        "normalizedModelSha256": "31fdf9f646170b9d488430d7ad6d5e45b78b13575886a8ceb21e84c5b8acba6b",
+        "preRetimeCutSha256": "304c8b11e2973b9502d714b07f83587523b1c5b28048aaf8616ba5c4762d876c",
+        "selectedModelFrames": [
+          0,
+          11,
+          24,
+          34,
+          44,
+          55,
+          65,
+          75,
+          85,
+          95,
+          104,
+          112,
+          119
+        ],
+        "filter": "select=eq(n\\,0)+eq(n\\,11)+eq(n\\,24)+eq(n\\,34)+eq(n\\,44)+eq(n\\,55)+eq(n\\,65)+eq(n\\,75)+eq(n\\,85)+eq(n\\,95)+eq(n\\,104)+eq(n\\,112)+eq(n\\,119),setpts=N/(24*TB),setsar=1",
+        "previewSha256": "c85f0c0f3c764855bbeedb93ee096a4eeb361a4c355e8bd18e7f52a86fe951a9",
+        "reason": "Align the bent body and quick arm sweep into the lower two-character pose.",
+        "nativeSize": "1344x768",
+        "fps": 24,
+        "outputSha256": "c85f0c0f3c764855bbeedb93ee096a4eeb361a4c355e8bd18e7f52a86fe951a9"
+      }
+    },
+    {
+      "shot": "S55",
+      "sourceFrameInterval": [
+        1415,
+        1431
+      ],
+      "attempt": 2,
+      "status": "completed",
+      "requestSha256": "038cd4f37b7bde3580a66696415f24e24fce59ff8993e54fd3bc7a9811490088",
+      "modelRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 902746,
+        "prompt": "Use <Video 1> as the exact movement, lighting, props and camera reference for one continuous stylized 3D animation shot. Replace the existing adults with the role designs in the supplied images while retaining the original camera and full action timeline. The source starts at 1415 with front crimson shoulder, the dark-haired navy adult in the distance supported on the floor, and no bright flash. Keep those identities for the entire shot. <Picture 1> is the actual brief warm flash at 1419, exactly four frames after the start, momentarily obscuring a small portion of the far figure. Use a single brief burst on that beat and preserve the recoil of the near object. <Picture 2> is frame 1421 when the light has returned to a smoky image. Then the far performer reclines and visibly brings one pale trouser leg in at right, spreading the supporting hand, as in <Picture 3> for frame 1430. Keep the source's location and size of the actors, crop, surrounding smoke, optical shift, wall, floor, chair and small near stage prop.",
+        "video_reference": [
+          {
+            "file_id": "file_40ce81330e5c4528909288949dfd7aeb"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_d291a5edbdf2442e97211211150673ea"
+          },
+          {
+            "file_id": "file_7c6276e52f934287971c26b5008d0bf7"
+          },
+          {
+            "file_id": "file_4896426ba8b04f639177d4f5852dace8"
+          }
+        ]
+      },
+      "jobId": "video_gen_72bacfb2f6e244fa9fb7e1043c0d0cfc:openai",
+      "rawSha256": "e6c83e1847f26c53322f34bfad6da9da3b5c6d5577095931f2d5672e30ef1cd8",
+      "normalizedSha256": "28ebe9f8aa5ec2986d4515a456966e432c8bb9d3aa2cbf972d2033f7efa996df",
+      "cutSha256": "3483ab2431826aa8f84fd2dd17fcc369bf9841e6d27b824aff1f84d3ca9c814f",
+      "cutFrames": 16,
+      "review": {
+        "cutSha256": "3483ab2431826aa8f84fd2dd17fcc369bf9841e6d27b824aff1f84d3ca9c814f",
+        "requestSha256": "038cd4f37b7bde3580a66696415f24e24fce59ff8993e54fd3bc7a9811490088",
+        "originalSha256": "7020a238488ef44c27b345d47307b4fdc2195e15a01ac280568e1bfe960a6f07",
+        "decision": "accepted",
+        "reviewedFrames": 16,
+        "method": "assistant-frame-review",
+        "observations": "Compared all 16 frames (1415-1430) after retiming. The overhead angle, the out-of-focus foreground red hood and the seated officer are preserved. A single bright impact at source 1419 replaces the two separated flashes of the baseline take. Smoke, raised leg and the open hand carry through the final pose. The initial reflection and the fall of the smoke are slightly softer.",
+        "reviewedAt": "2026-11-27T22:57:01.967940+00:00"
+      },
+      "postprocess": {
+        "tool": "ffmpeg",
+        "sourceFrames": [
+          1415,
+          1431
+        ],
+        "normalizedModelSha256": "28ebe9f8aa5ec2986d4515a456966e432c8bb9d3aa2cbf972d2033f7efa996df",
+        "preRetimeCutSha256": "ca2884d82507d06d22fc3cd10c00786a39d1aa0f0c6792d6c04c456a6e2da407",
+        "selectedModelFrames": [
+          14,
+          20,
+          28,
+          34,
+          58,
+          65,
+          71,
+          78,
+          84,
+          91,
+          97,
+          102,
+          107,
+          112,
+          116,
+          119
+        ],
+        "filter": "select=eq(n\\,14)+eq(n\\,20)+eq(n\\,28)+eq(n\\,34)+eq(n\\,58)+eq(n\\,65)+eq(n\\,71)+eq(n\\,78)+eq(n\\,84)+eq(n\\,91)+eq(n\\,97)+eq(n\\,102)+eq(n\\,107)+eq(n\\,112)+eq(n\\,116)+eq(n\\,119),setpts=N/(24*TB),setsar=1",
+        "previewSha256": "3483ab2431826aa8f84fd2dd17fcc369bf9841e6d27b824aff1f84d3ca9c814f",
+        "reason": "Use the later flash in the same take as the source impact and follow its uninterrupted smoke and recoil.",
+        "nativeSize": "1344x768",
+        "fps": 24,
+        "outputSha256": "3483ab2431826aa8f84fd2dd17fcc369bf9841e6d27b824aff1f84d3ca9c814f"
+      }
+    },
+    {
+      "shot": "S56",
+      "sourceFrameInterval": [
+        1431,
+        1478
+      ],
+      "attempt": 2,
+      "status": "completed",
+      "requestSha256": "8a12096d0572a6a65a5d963ed6a7a97e0cc6908210025d41a1529a2f40141d3b",
+      "modelRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 315706,
+        "prompt": "Use <Video 1> as the exact movement, lighting, props and camera reference for one continuous stylized 3D animation shot. Replace the existing adults with the role designs in the supplied images while retaining the original camera and full action timeline. <Picture 1> is 1431, the high side view with the head low and the officer already on the floor by the left wall. The foreground adult with crimson hood straightens immediately and reaches the upright posture of <Picture 2> at 1441. Continue, following the original change of supporting foot, fold forward, and both short hand motions. The rear wrist and the small original accessory read intermittently behind the body. Match the final lowering of the unoccupied hand toward the screen. <Picture 3> is the actual final frame 1477 with that hand lowered. Keep the navy officer on the original floor position with that original slight movement. Preserve the scene, faint palm-leaf shadows, floorboards, camera position and wardrobe. Keep both boots and knee motion discernible and do not freeze at any of the references.",
+        "video_reference": [
+          {
+            "file_id": "file_3bf1fdc99e264a9c8464f9fb3c7dbc9d"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_2cb3f7899ca4422188fdacdf430f6330"
+          },
+          {
+            "file_id": "file_cce3c8edc9c5450195c4234ab5ea737e"
+          },
+          {
+            "file_id": "file_bb6cec800cf64693bb5ff6dfcd8cfa14"
+          }
+        ]
+      },
+      "jobId": "video_gen_d75f8aca0e1b4a259a2297e643e44efc:openai",
+      "rawSha256": "fba0a60a9c80853d00bfc65078dbf6374fc455ffcfc7835c58b6f2991b7c5886",
+      "normalizedSha256": "90c64a05035888a13dc649f90006ed3fdfdcfbee7ff9814373d66ff052a618a9",
+      "cutSha256": "9457d786f30cc4bf617322d58b6db6d6755f7b8d5bd8123329d9f0ba112047f7",
+      "cutFrames": 47,
+      "review": {
+        "cutSha256": "9457d786f30cc4bf617322d58b6db6d6755f7b8d5bd8123329d9f0ba112047f7",
+        "requestSha256": "8a12096d0572a6a65a5d963ed6a7a97e0cc6908210025d41a1529a2f40141d3b",
+        "originalSha256": "db8e8c503f558a7d07d4faa0fbb968ead74641c4ea839599b7dcb659df346745",
+        "decision": "accepted",
+        "reviewedFrames": 47,
+        "method": "assistant-frame-review",
+        "observations": "Compared all 47 frames (1431-1477) after retiming the second take. The red-hooded actor straightens near 1435-1437, folds forward again, changes support between his boots and briefly moves the free hand toward the patterned screen before lowering it in the final frames. The navy officer stays by the left wall with small leg motion. The rear wrist and accessory appear intermittently and both roles remain distinct. The fall of the cloak softens some of the shorter foot and wrist motions.",
+        "reviewedAt": "2026-11-27T23:02:50.168475+00:00"
+      },
+      "postprocess": {
+        "tool": "ffmpeg",
+        "sourceFrames": [
+          1431,
+          1478
+        ],
+        "normalizedModelSha256": "90c64a05035888a13dc649f90006ed3fdfdcfbee7ff9814373d66ff052a618a9",
+        "preRetimeCutSha256": "1d59144ac248c5e1a736d8de6ef1412e895b4ceeace1a46d00becbad44d63529",
+        "selectedModelFrames": [
+          0,
+          11,
+          22,
+          25,
+          27,
+          30,
+          32,
+          34,
+          36,
+          38,
+          40,
+          43,
+          46,
+          49,
+          52,
+          54,
+          58,
+          62,
+          64,
+          66,
+          69,
+          70,
+          72,
+          74,
+          76,
+          79,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91,
+          93,
+          94,
+          96,
+          98,
+          100,
+          102,
+          103,
+          106,
+          110,
+          113,
+          114,
+          115,
+          116,
+          118,
+          119
+        ],
+        "filter": "select=eq(n\\,0)+eq(n\\,11)+eq(n\\,22)+eq(n\\,25)+eq(n\\,27)+eq(n\\,30)+eq(n\\,32)+eq(n\\,34)+eq(n\\,36)+eq(n\\,38)+eq(n\\,40)+eq(n\\,43)+eq(n\\,46)+eq(n\\,49)+eq(n\\,52)+eq(n\\,54)+eq(n\\,58)+eq(n\\,62)+eq(n\\,64)+eq(n\\,66)+eq(n\\,69)+eq(n\\,70)+eq(n\\,72)+eq(n\\,74)+eq(n\\,76)+eq(n\\,79)+eq(n\\,81)+eq(n\\,83)+eq(n\\,85)+eq(n\\,87)+eq(n\\,89)+eq(n\\,91)+eq(n\\,93)+eq(n\\,94)+eq(n\\,96)+eq(n\\,98)+eq(n\\,100)+eq(n\\,102)+eq(n\\,103)+eq(n\\,106)+eq(n\\,110)+eq(n\\,113)+eq(n\\,114)+eq(n\\,115)+eq(n\\,116)+eq(n\\,118)+eq(n\\,119),setpts=N/(24*TB),setsar=1",
+        "previewSha256": "9457d786f30cc4bf617322d58b6db6d6755f7b8d5bd8123329d9f0ba112047f7",
+        "reason": "Match the first straightening, second forward fold, alternating boots and final lowering of the hand.",
+        "nativeSize": "1344x768",
+        "fps": 24,
+        "outputSha256": "9457d786f30cc4bf617322d58b6db6d6755f7b8d5bd8123329d9f0ba112047f7"
+      }
+    }
+  ],
+  "serverFailure": {
+    "shot": "S28",
+    "attempt": 3,
+    "jobId": "video_gen_1f4f8cb0eeb1409187bd44de3fb82713:openai",
+    "requestSha256": "ad87848d64f84e8d8bd4a6fbfe930653532df74162294bb3b035704250dc24ef",
+    "status": "failed",
+    "errorCode": "inference_failed",
+    "reason": "CUDA out of memory"
+  },
+  "retakes": [
+    {
+      "shot": "S28",
+      "attempt": 4,
+      "status": "queued",
+      "requestSha256": "d4147aaa38a90d7c3c9ecd284e3019d96330d26f159431c3927d28e532d4e054",
+      "modelRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 539828,
+        "prompt": "Edit one continuous stylized 3D cut using <Video 1> for its exact camera, full body movement, scene, and amber light beats. <Picture 1> is source frame 671: keep the red-hooded performer close in the foreground and the tiny adult navy-and-gold officer near the pink chair seen through the broken wall. Keep that rear officer in the same spot and let the foreground actor and scenery occlude him exactly as in the video. <Picture 2> is frame 683 during the brief switch of feet. At frames 682-685 the red-cloaked adult lifts off the original foot, crosses, and lands onto the other foot; keep both ankles and boots clear. Follow the original pullback and arm sweep through the end, where the two forearms are extended forward, clear of the face. Keep the hood, dark practical trousers, boots, one ivory left shoulder mask where visible, original boards, props, and reddish lighting.",
+        "video_reference": [
+          {
+            "file_id": "file_2f85078ccf8f4061928e40423de5ea07"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_f3dc2e4861b04ce19c80af9d190bce88"
+          },
+          {
+            "file_id": "file_79ec4e5ca70745d2ab37233afa5e5e38"
+          }
+        ]
+      },
+      "jobId": "video_gen_b13bb1932f4f406f8df00cde3420d5e8:openai",
+      "references": [
+        {
+          "file": "S28-source-edit-0671.png",
+          "sourceFrame": 671,
+          "sha256": "a918283cb9ec96f212cb86eff225b3782f2a639e612d864f48372670e6a946fb"
+        },
+        {
+          "file": "S28-source-edit-0683.png",
+          "sourceFrame": 683,
+          "sha256": "b465700cd1a4ae81944979a16bbac7bed646fa2ea88221730d8acf41caaeba99"
+        }
+      ],
+      "motionInputSha256": "b1147e5b377a8bd78a961bc7d7aa8fb977bf30e18fac6ef46494d9c8c375219f"
+    },
+    {
+      "shot": "S34",
+      "attempt": 4,
+      "status": "queued",
+      "requestSha256": "739992357e1d88cf00c85d5a5a6452d3a6eb55655448da80f944fc1efdb191af",
+      "modelRequest": {
+        "model": "fasth3-omni-bf16",
+        "task": "ref2va",
+        "size": "1344x768",
+        "seconds": 5,
+        "num_inference_steps": 8,
+        "guidance_scale": 1.0,
+        "seed": 324706,
+        "prompt": "Use <Video 1> as the exact timing and camera reference for one continuous stylized 3D scene. The only performer is the same adult officer with dark-brown hair, navy coat and gold epaulettes. <Picture 1> is the close side opening at source 855 with the near hand beside the face and the original prop entering diagonally from the left. Sweep that hand down and across immediately at the source rate. As the shot starts to widen, the moving prop occupies the upper-left foreground, with the near hand returning underneath and the face smaller and farther to the right. This is <Picture 2> at frame 868. Continue the camera moving away rather than fixing the view at that hand pose. At <Picture 3>, the exact final frame 877, the diagonal red beam, bench, calendar, stance and upper legs are visible around the smaller standing actor and the dark near prop is soft. Keep the scene and face consistent through that larger change in scale and depth. Match the original short warm flashes at their source times through the last frame. This is a single camera move with the same lighting, props and stage.",
+        "video_reference": [
+          {
+            "file_id": "file_f04b11649aea4349985d6eb0f9f4ba28"
+          }
+        ],
+        "image_reference": [
+          {
+            "file_id": "file_520575fcd87b4ffe8098def7573dd2c4"
+          },
+          {
+            "file_id": "file_4a439ed29e344fefa48b495ab6cd7cf1"
+          },
+          {
+            "file_id": "file_f1df0c569650461daa1657cf9f475ac6"
+          }
+        ]
+      },
+      "jobId": "video_gen_b40caf0c7f90423c9f27c2021238a5b3:openai",
+      "references": [
+        {
+          "file": "S34-source-edit-0855.png",
+          "sourceFrame": 855,
+          "sha256": "1d9e9ae3c325f7084e39d342528324b649c95fa2153764b8f6d2a182cf7bbb7e"
+        },
+        {
+          "file": "S34-source-edit-0868.png",
+          "sourceFrame": 868,
+          "sha256": "e9977306c8fd067c00827f91359ce5870e99c04dfb0d89e70b58080302d39103"
+        },
+        {
+          "file": "S34-source-edit-0877.png",
+          "sourceFrame": 877,
+          "sha256": "acaecda78bf72f7ecc2cab838cdbf171e82c4b49117a8d3bbb2cfd95e846a763"
+        }
+      ],
+      "motionInputSha256": "9959188501852a7241c8f0399c496de0865c2f1a2f5542eea3872da8c88114b0"
+    }
+  ],
+  "newAnchors": [
+    {
+      "shot": "S34",
+      "sourceFrame": 868,
+      "file": "S34-source-edit-0868.png",
+      "sourceStillSha256": "227fa1eea7100a8b10927fcae7d62fc60a9a8a43fd5326e7358b61e0a095aef3",
+      "sha256": "e9977306c8fd067c00827f91359ce5870e99c04dfb0d89e70b58080302d39103",
+      "prompt": "Edit the first image as the exact intermediate frame of this fictional stylized 3D film shot, using image 2 only as a reference for the same adult actor's navy coat with gold epaulettes, dark-brown hair and pale trousers. Keep the dynamic foreshortening in image 1: the existing dark stage prop and warm-lit hand are much closer to the camera than the officer's face, which remains on the right and looks sideways. Keep the exact hand pose and support, dark blurred surfaces filling the upper left, red beam, red bench and rear wall. Preserve the motion softness in the near foreground and warm color cast at this moment of the pullback. Keep the figure at the same scale, with the navy sleeve wide at the lower right. Replace only the original adult face and costume with the design from image 2. Same landscape framing, 3D stylized lighting, no other people or new text.",
+      "inputs": [
+        "anchor-originals/S34-source-0868.png",
+        "anchors/S34-source-edit-0877.png"
+      ],
+      "tool": "built-in ImageGen"
+    }
+  ],
+  "queue": {
+    "at": "2026-11-28T07:02:57.7514391+08:00",
+    "accepted": 42,
+    "remainder": 6,
+    "running": 1,
+    "queued": 5,
+    "waitingForSource": 0,
+    "lastQueue": [
+      "S30",
+      "S34",
+      "S38",
+      "S42"
+    ],
+    "current": [
+      {
+        "shot": "S24",
+        "attempt": "attempt-003",
+        "id": "video_gen_997b6fd5be74445a9d0f24e8dededa28"
+      }
+    ],
+    "notOnActiveQueue": [],
+    "maintenance": false
+  },
+  "previewReceipt": "source-fidelity-approved-preview-42.json"
+}
