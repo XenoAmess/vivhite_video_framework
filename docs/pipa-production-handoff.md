@@ -8,7 +8,8 @@
 | --- | --- |
 | 逐镜验收 | 27／48 镜通过（56.25%），覆盖原片 701／1478 帧。通过镜头为 S01–S12、S14–S17、S20–S22、S26、S29、S33、S39、S45–S46、S51、S53。 |
 | 完整成片 | 等待全部镜头通过。 |
-| 最新已验收预览 | 原片开头 `[0,463)`，连续 16 镜、19.292 秒。463 个输出画面与通过版的解码哈希一致，15 个切点已对照，指定配乐覆盖每声道 926,000 个采样。 [本机 MP4](D:/workspace/vivhite-analysis-output/pipa/versus/01-shenyin-heiyan-vs-xuren-meng/full-768p-002-source-fidelity/previews/original-0000-0463-1795755438660068600/pipa-768p-preview.mp4) · [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-opening-preview-004.json) |
+| 全部通过镜头样片 | 11 月 27 日 23:32 合成，按原片顺序拼接 27 镜、701 帧，共 29.208 秒。画面和配乐同步跳过 8 处未完成区间。 [本机 MP4](D:/workspace/vivhite-analysis-output/pipa/versus/01-shenyin-heiyan-vs-xuren-meng/full-768p-002-source-fidelity/previews/approved-27-0701-1795793518646118600/pipa-768p-approved-preview.mp4) · [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-approved-preview-27.json) |
+| 开头连续预览 | 原片开头 `[0,463)`，连续 16 镜、19.292 秒。463 个输出画面与通过版的解码哈希一致，15 个切点已对照，指定配乐覆盖每声道 926,000 个采样。 [本机 MP4](D:/workspace/vivhite-analysis-output/pipa/versus/01-shenyin-heiyan-vs-xuren-meng/full-768p-002-source-fidelity/previews/original-0000-0463-1795755438660068600/pipa-768p-preview.mp4) · [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-opening-preview-004.json) |
 | 经典段样片 | 原片 00:09.000–00:14.000，S08–S12 连续 5 秒。 [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-classic-preview-001.json) |
 | S20–S22 样片 | 原片 `[510,578)`，连续 3 镜、2.833 秒。68 帧与通过版的解码哈希一致，已对照 2 个切点和每声道 136,000 个配乐采样。 [本机 MP4](D:/workspace/vivhite-analysis-output/pipa/versus/01-shenyin-heiyan-vs-xuren-meng/full-768p-002-source-fidelity/previews/original-0510-0578-1795792365501570000/pipa-768p-preview.mp4) · [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-S20-S22-preview-001.json) |
 
