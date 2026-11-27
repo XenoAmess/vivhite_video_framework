@@ -81,3 +81,5 @@ S28 的前景是虚人梦，原片第 671 帧可见破墙后粉椅附近的神�
 S15 第二版保留原片背身屈膝、转向斜侧和近远景变化。按原片取帧并微调前五帧的景别后，全部 28 帧通过。北京时间 11 月 27 日 12:02，累计 16 镜、439 帧通过，剩余 32 镜均已受理。S16 第二版执行，31 镜等待。 [S15 第二版与取帧记录](source-fidelity-S15-review-002.json) · [S16 调度记录](source-fidelity-queue-reorder-008.json)
 
 S29 按原片第 710 帧补录远处被遮挡的神隐黑炎并更换起镜构图。S34 使用同一原镜首尾两处构图锁定前景道具、抬手和拉远。S36 使用三处原镜构图锁定近景侧看、拉开和末帧光效。三镜均在执行前更换等待请求，改后的请求已经受理。S17 第二版在仅有本项目等待请求时移到队首，当前镜头继续执行。 [S29 远景角色与换队](source-fidelity-S29-queue-revision-002.json) · [S34 换队](source-fidelity-S34-queue-revision-001.json) · [S36 换队](source-fidelity-S36-queue-revision-001.json) · [S17 调度](source-fidelity-queue-reorder-009.json)
+
+S16 第二版保留背身体态和场景。按原片复核屈膝、抬手、手掌接触衣料和再抬手的时点，全部 48 帧通过。开头连续 15 镜已输出 18.042 秒预览，对照 433 帧、14 个原片切点和每声道 866,000 个配乐采样。全片累计 17 镜、487 帧通过。 [S16 复核与取帧记录](source-fidelity-S16-review-002.json) · [开头连续预览](source-fidelity-opening-preview-003.json)
