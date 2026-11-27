@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S21",
+  "startFrame": 536,
+  "endFrame": 550,
+  "attempt": 1,
+  "jobId": "video_gen_c4ceb320f47f43e688e1a4af9884d54d:openai",
+  "requestSha256": "6369fa50f1001665d3e8aaa2261645e93b133aa86eeeb418f825346d3bd1a361",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue.",
+  "seed": 1234,
+  "rawSha256": "a78915561bb71588b0b7082df61a72bf4e901191031b2568d48db8e07ed0acea",
+  "cutSha256": "381f9429ffdf874c77d391e47a6daa124f97e76a7e98a0e3002874a70021b341",
+  "review": {
+    "cutSha256": "381f9429ffdf874c77d391e47a6daa124f97e76a7e98a0e3002874a70021b341",
+    "requestSha256": "6369fa50f1001665d3e8aaa2261645e93b133aa86eeeb418f825346d3bd1a361",
+    "originalSha256": "a58aaa4fc3dda70042a04c4b8d9c9eb250ffc3317eb82be70d84795aa645f7cf",
+    "decision": "rejected",
+    "reviewedFrames": 14,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片 536–549 共 14 帧。原镜从高位背视开始，演员一手扶屈膝后朝远离镜头的方向侧转，随后镜头下降并靠近其后侧。首版保留木地板、柜子、粉椅边缘和光效，但虚人梦从第一帧到最后始终侧向镜头露面，起镜和收镜均改为正面。原片背身、屈膝和转体方向连续性缺失，退回。",
+    "reviewedAt": "2026-11-27T03:25:10.374119+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S21",
+      "sourceFrame": 536,
+      "file": "S21-source-edit-0536.png",
+      "sourceStillSha256": "ab2f84db21865cff486e9125bb13e77274034bc15565e9ca11bdd2ee1502119a",
+      "sha256": "cda01d62ce893fa487ff9596b6564ca4131e667e7b0e4785304e6861a6b66655",
+      "prompt": "Edit input 1, the exact first frame from an existing stylized 3D dance scene. Match its high rear camera, body placement, short crouch with the near palm planted on the bent knee, and proportions. Replace the matte black actor costume and dark-haired identity with the adult crimson-hooded character from input 2, using the rear cloth look from input 3. Show the same bent arms, knee and boots in the same positions. Use a crimson hood, side golden hair, dark matte trousers, black gloves and dark-red wrist beads, with the lined cloak draped to one side of the moving leg and a single ivory mask on the left shoulder only if visible. Respect the actor scale and crop. Keep the original wooden floor, cabinet, pink chair edge, torn panels, lighting, shadows and pre-existing fine light trails from input 1. Maintain a cinematic dim, warm 3D look and exact top-down rear perspective. Landscape 16:9.",
+      "inputs": [
+        "anchor-originals/S21-source-0536.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "anchors/S16-source-edit-0390.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Recast the one adult performer in this existing 3D animated dance cut while matching <Video 1> as the original camera, choreography and lighting throughout. <Picture 1> is the matching cast-replaced original frame 536 and defines the red hood, draped dark crimson cloak and its muted gold lining, dark trousers and gloves, red wrist beads and the single pale left shoulder mask. The camera begins high and behind the performer. The performer crouches with one hand on the bent knee, then shifts weight, steps and turns away as the camera lowers and draws closer behind him. Continue to use the rear silhouette of the hood and visible clothing folds as he leans; keep the original wooden floor, cupboard, other furniture and narrow light streaks in the source. Do not turn the actor's face toward the camera, duplicate the character or replace the camera and pose movement with a fixed character portrait. This is a single cut from beginning to end.",
+    "seed": 1235,
+    "plannedAt": "2026-11-27T03:25:11.825445+00:00",
+    "images": [
+      {
+        "name": "S21-source-edit-0536.png",
+        "sha256": "cda01d62ce893fa487ff9596b6564ca4131e667e7b0e4785304e6861a6b66655",
+        "imagePrompt": "Edit input 1, the exact first frame from an existing stylized 3D dance scene. Match its high rear camera, body placement, short crouch with the near palm planted on the bent knee, and proportions. Replace the matte black actor costume and dark-haired identity with the adult crimson-hooded character from input 2, using the rear cloth look from input 3. Show the same bent arms, knee and boots in the same positions. Use a crimson hood, side golden hair, dark matte trousers, black gloves and dark-red wrist beads, with the lined cloak draped to one side of the moving leg and a single ivory mask on the left shoulder only if visible. Respect the actor scale and crop. Keep the original wooden floor, cabinet, pink chair edge, torn panels, lighting, shadows and pre-existing fine light trails from input 1. Maintain a cinematic dim, warm 3D look and exact top-down rear perspective. Landscape 16:9."
+      }
+    ]
+  }
+}

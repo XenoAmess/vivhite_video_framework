@@ -31,7 +31,9 @@ def write_json(path, data):
 def run(argv, *, cwd=None, timeout=600):
     result = subprocess.run(argv, cwd=cwd, capture_output=True, timeout=timeout)
     if result.returncode:
-        raise RuntimeError(result.stderr.decode("utf-8", "replace")[-6000:])
+        summary = f"{Path(argv[0]).name} exited with status {result.returncode}"
+        diagnostics = result.stderr.decode("utf-8", "replace")[-6000:].strip()
+        raise RuntimeError(f"{summary}\n{diagnostics}" if diagnostics else summary)
     return result.stdout.decode("utf-8", "replace")
 
 
