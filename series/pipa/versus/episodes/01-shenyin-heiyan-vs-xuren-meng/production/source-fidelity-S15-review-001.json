@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S15",
+  "startFrame": 357,
+  "endFrame": 385,
+  "attempt": 1,
+  "jobId": "video_gen_0f9b5ac38ade483d8eb3e0f9c1fd69dc:openai",
+  "requestSha256": "67523f222c7242a3d2a3cedb09032c3b954046e63722b0f103fd871fccf436d9",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue.",
+  "seed": 1234,
+  "rawSha256": "232dd0de98dd9b671595cca7ae805cbad06bb9a54d07d7f702536a7d2e5543e2",
+  "cutSha256": "d8f939564ca51f6e9e388d9d957edd6ba2a167266352bd34c8c29b26eca6764a",
+  "review": {
+    "cutSha256": "d8f939564ca51f6e9e388d9d957edd6ba2a167266352bd34c8c29b26eca6764a",
+    "requestSha256": "67523f222c7242a3d2a3cedb09032c3b954046e63722b0f103fd871fccf436d9",
+    "originalSha256": "08adab261259a6d3ff8a5926743e7e35b96a1ec4338ce8ab4894811b5f619ace",
+    "decision": "rejected",
+    "reviewedFrames": 28,
+    "method": "assistant-frame-review",
+    "observations": "全 28 帧对照原片第 357–384 帧。保留木门、地板、红光及原片高亮效果，虚人梦外观可辨。首版人物一直朝向镜头，躯干几乎直立，只轻微张腿，缺失原片从背后低角度看到的弯膝、俯身和转身。退回。二版使用第 362 与 378 帧的背面构图，约束前后朝向及腿部姿势，并继续使用该镜原片参考。",
+    "reviewedAt": "2026-11-27T01:41:50.953116+00:00"
+  },
+  "followUp": {
+    "prompt": "Recast the single fully dressed actor in this source 3D animation shot. <Video 1> preserves the exact low rear camera, existing light glints and timing. <Picture 1> is the early back-facing bent stance and <Picture 2> is the late rear three-quarter crouch from that same shot. Keep the body facing away from the lens for the entire cut, with only the original glimpse of the side of the hood when the head turns; never straighten the hips, show a frontal torso or replace the original movement. Follow the original shoulder tilt, feet, bending knees, head and rear camera movement from first to last frame. The actor has dark full-length trousers, crimson hood and cape, long hair as visible, black gloves, red beads and one pale left-shoulder ornament where visible. The layers follow the original movement and keep the knees readable. Match the floor, wall pattern, door, cutoff at the bottom of the image and existing screen lights with no additions. No other actors or cuts, text or dialogue.",
+    "seed": 1235,
+    "plannedAt": "2026-11-27T01:41:51.457255+00:00",
+    "images": [
+      {
+        "name": "S15-source-edit-0362.png",
+        "sha256": "8cc38fc9fe37097653334555beecefebadd5fda622294c62043c2f598f121a31",
+        "imagePrompt": "Edit only the fully clothed adult dancer in image one, a scene from a stylized fictional 3D comedy. Preserve this exact low rear angle, lean and bent-leg stance. The dancer's back faces the lens, so only the far edge of the head is visible. Apply the crimson hood, dark full-length trousers, boots, red lining and gloves from image two. Image three clarifies how the same red cloak looks from behind, but follow the exact lens, posture and placement in image one. Keep the cloak narrow along the sides and back so the dancer's two legs and hand positions remain readable. Preserve the existing warm animated glints, floor debris, door, three wall signs, shadows, red reflection and room positions. Only the actor changes. One fully dressed dancer and no new graphics or objects."
+      },
+      {
+        "name": "S15-source-edit-0378.png",
+        "sha256": "bc7994460d793c489dcd1c91c56e41abf9226be7aca2918b4d235b4753e31783",
+        "imagePrompt": "Preserve the exact shot design of the first still from a stylized fictional 3D comedy. The one fully dressed adult body remains turned away, with one hand braced lower toward the left and the head only faintly visible at the same side angle. Restyle just that adult using the red hood and gold-lined crimson cape, dark boots and full-length trousers from image two, and the back design of the costume in image three. Maintain the original body, hands, knee positions and 3D perspective. Keep the same warm light streak already present in the first frame, tilted camera, room, wall surfaces, reflections and other lighting unchanged. Maintain the original framing and motion blur. Do not add any person, item, text, graphics, or new light streaks."
+      }
+    ]
+  }
+}

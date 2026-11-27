@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S07",
+  "startFrame": 186,
+  "endFrame": 206,
+  "attempt": 2,
+  "jobId": "video_gen_984ae933c17f4d339bb3bc9042d803e9:openai",
+  "requestSha256": "bdad694308dbaa1a3050ab2becee529bc37f5177aa921b6cb3415eee886ec7c8",
+  "renderPrompt": "Render one continuous stylized 3D animation shot following the exact camera and motion of <Video 1>. The original actor zones are soft in the supplied guide on purpose. Replace those regions with the dark-brown-haired adult wearing the same navy and gold coat, ivory full-length trousers and black tall boots across the three source-frame designs. Start at <Picture 1> in the same forward lean over the pink chair, with head low and arms in their original screen positions. Follow the exact turning and continuous sleeve movement through <Picture 2>. The actual cut ends with <Picture 3>, the navy sleeve, dark existing foreground silhouette, seated shape and pink upholstery together in the same tilted view. Keep <Video 1>'s original object positions and relative depth, lighting, focus and sequence. Preserve the chair, wall, the existing papers, dark foreground and original silhouette wherever visible. A single adult fully clothed throughout. No new actor, extra shot, held starting card, text, or dialogue.",
+  "seed": 1235,
+  "rawSha256": "9f05d3cb7f1b6aeda3b6ee58ca9ddde304a6b7a7e47139deab3b6b9df3cc6ca4",
+  "cutSha256": "4a6da6790879619eca8735d6e9ceaf7c00a946c2279965632d34cbd7093de765",
+  "review": {
+    "cutSha256": "4a6da6790879619eca8735d6e9ceaf7c00a946c2279965632d34cbd7093de765",
+    "requestSha256": "bdad694308dbaa1a3050ab2becee529bc37f5177aa921b6cb3415eee886ec7c8",
+    "originalSha256": "b5c8564512d16601c74e305b4d318ba21bf8db1102347c56b0f44b20d7cab0c3",
+    "decision": "rejected",
+    "reviewedFrames": 20,
+    "method": "assistant-frame-review",
+    "observations": "逐帧复核原片第 186–205 帧和第二版全部 20 帧。候选首段还原前俯和黑炎蓝金衣裤，尾段粉椅、倾斜机位、前景道具与角色造型也明确。相对第 11–16 帧仍有明显运动参考遮弱痕迹，人物头颈和主要服饰被模糊，动作相对原片偏后，整镜退回。第三版补原片第 195 和 197 帧的转身、交叠袖口构图，再与第 202 帧尾部构图组合重新渲染。",
+    "reviewedAt": "2026-11-27T01:24:06.022683+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S07",
+      "sourceFrame": 186,
+      "file": "S07-source-edit-0186.png",
+      "sourceStillSha256": "ab9a307514188dad1695aceb934f2f226c28f5a905599dccb99df7dd293294b8",
+      "sha256": "b49b0c9b40cc4c17ad1bb95b014cf88852ddbf56f50dcadd106decf775d71a67",
+      "prompt": "Edit only the one adult actor in this fictional stylized 3D animation still. Keep the exact canted camera and the same forward lean coming out of the pink armchair, head low and both arms at their sourced positions, retaining the chair fabric, wall and dark lower-left foreground. Replace the hair, face and clothing with the tousled dark-haired adult from image two, in a fully covered navy coat with subtle gold piping and shoulder tabs, ivory full-length trousers and tall dark boots. Image three shows the same actor in the same room in a later pose. Borrow its identity and 3D materials only. The first image controls this frame's camera, posture and exact object positions. Keep hands the same size and keep empty space empty. One fully dressed adult, no typography or added props.",
+      "inputs": [
+        "anchor-originals/S07-source-0186.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchors/S07-source-edit-0202.png"
+      ]
+    },
+    {
+      "shot": "S07",
+      "sourceFrame": 193,
+      "file": "S07-source-edit-0193.png",
+      "sourceStillSha256": "813835c01e7317cfe3e6c2065dffcaf70a857a839ab266d1258dc46484fc306c",
+      "sha256": "82c8bab67186aede8c44d585461730fc83dadc85abc56fd4833dc173033723a3",
+      "prompt": "Replace the one character in the first still from a fictional stylized 3D animation, using the tousled dark hair and exact navy-and-gold adult costume from image two and its same-scene appearance in image three. In the first source image the actor's torso and head lean and turn, an arm crosses the upper-left crop, and the fully dressed seated pose is framed by the original pink armchair on the right and the warm plaster wall. Keep the original head and arm locations, cropped hands, silhouette, perspective and their dark motion blur. Put ivory long trousers and high dark boots on the actor below the navy coat. Keep the original camera, all existing environment detail and light. Use image three only for identity, not its pose. One fully dressed adult, no additions.",
+      "inputs": [
+        "anchor-originals/S07-source-0193.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchors/S07-source-edit-0202.png"
+      ]
+    },
+    {
+      "shot": "S07",
+      "sourceFrame": 202,
+      "sourceStillSha256": "f6a16d5de232558cdc69faaf729e99c04d98853c5e26f3d3bee056a9a35bd32e",
+      "file": "S07-source-edit-0202.png",
+      "sha256": "b4b28b1f63d4e3af53d1584ff3cd9b87ddaa5a31c54317183955ee23c19b83af",
+      "prompt": "This is a single frame of a fictional stylized 3D animated film. Edit only the assigned person's face, hair and visible clothing in the first reference from the design in the second. Keep the first reference's camera, relative silhouette size, pose, surface texture, room layout, reflections, grain, exact lighting and all original objects. Keep existing foreground props as already drawn with original silhouette, scale and focus. Add no new content. The navy-gold officer is seated low beside the pink chair in a canted pullback, head and shoulders in the soft background and his original cropped hand visible at the right foreground. Keep the same dark gun-shaped on-screen prop at the right edge, as a visual object only, and maintain the existing focus transition, wall and red edge lights. Keep the officer's full-length ivory trousers and dark boots.",
+      "inputs": [
+        "anchor-originals/S07-source-0202.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Reconstruct the same fully clothed actor in every frame of the original animated shot, keeping the exact camera and action in <Video 1>. The actor is dark-brown-haired, with a navy coat, gold shoulder trim and cuffs, full-length ivory trousers and black boots. <Video 1> intentionally softens the old face and costume. Fill these regions with consistently rendered hair, face and coat, including in the rapid middle movement. <Picture 1> shows the original mid-rotation toward the left beside the pink chair. <Picture 2> shows the next point with both existing navy sleeves crossing above the face and its original occlusion. <Picture 3> shows the final framing with the same sitting position and the existing dark foreground shape on the right. Begin from the original forward lean and follow the video into, through and out of these poses with the actual sub-second camera movement. Keep the room, the warm wall, its papers, the pink chair, the visible props, the genuine hand positions and original DOF unchanged. Keep all clothing and face visible wherever the original actor is visible. A single adult, no copied blurry actor, added objects, extra cuts, captions or speech.",
+    "seed": 1236,
+    "plannedAt": "2026-11-27T01:24:06.216219+00:00",
+    "motionGuideSha256": "1059b966a5498203ae9af92678842d2abff126b79b0e4998ccbfe7d60d674d3e",
+    "images": [
+      {
+        "name": "S07-source-edit-0195.png",
+        "sha256": "010ac6423f4a29a582de6d2bb5e843fab24ae8651f1eb59afd89f86d4c27e923",
+        "imagePrompt": "Edit the fully dressed adult actor only in image one, a frame from a stylized fictional 3D animation. The head is small near upper left, glancing left as the body twists from the pink chair, while the already visible dark blurred sleeve occupies the near left-center view. Use the adult dark-brown-haired navy-and-gold design from image two and the same-scene identity in image three. Keep the actor's original twist direction and small visible hands, and replace the existing lower garments only with the same full-length ivory trousers and tall black boots. Maintain the exact width and height, camera, warm wall, red edge, pink chair, overhead papers, crop, lighting and softness of image one. Do not bring the character closer, sharpen the near sleeve, or add any objects, text, marks or people."
+      },
+      {
+        "name": "S07-source-edit-0197.png",
+        "sha256": "4507144ab231eee03c0de427fd073a4cec890c67e97ab7ef095328a66a851948",
+        "imagePrompt": "Create one character-only edit matching the first image, which controls every limb position and the original tilted frame. The second image gives the fully clothed adult character. The third image gives the same cast appearance in this crop but has an incorrectly beige sleeve. In the upper half of the frame, both limbs extending above and across the actor's head are his arms, and both are covered by matching dark navy sleeves with restrained gold cuffs. Match the two arm orientations and sleeve widths from the first source image, including the original degree of head occlusion. The only ivory fabric is at the actor's lap at the bottom edge. Use the first image's exact proportions, sleeve and hand screen positions, pink chair, plaster wall, papers and dim cinematic lighting. Keep dark motion blur in the original foreground. No new object, content, person or overlay."
+      },
+      {
+        "name": "S07-source-edit-0202.png",
+        "sha256": "b4b28b1f63d4e3af53d1584ff3cd9b87ddaa5a31c54317183955ee23c19b83af",
+        "imagePrompt": "This is a single frame of a fictional stylized 3D animated film. Edit only the assigned person's face, hair and visible clothing in the first reference from the design in the second. Keep the first reference's camera, relative silhouette size, pose, surface texture, room layout, reflections, grain, exact lighting and all original objects. Keep existing foreground props as already drawn with original silhouette, scale and focus. Add no new content. The navy-gold officer is seated low beside the pink chair in a canted pullback, head and shoulders in the soft background and his original cropped hand visible at the right foreground. Keep the same dark gun-shaped on-screen prop at the right edge, as a visual object only, and maintain the existing focus transition, wall and red edge lights. Keep the officer's full-length ivory trousers and dark boots."
+      }
+    ]
+  }
+}

@@ -61,3 +61,5 @@ S03 和 S04 首版分别核对了全 36 帧、29 帧。S03 首版中段回填原
 S03 与 S04 的第二版分别通过 36 帧及 29 帧全量对照。S03 取帧对齐从贴脸到拉开的动作，S04 取帧对齐由俯向到仰向的镜头，保留前景道具和反光。原片开头 0–157 帧的 S01–S05 已连续拼接，158 帧与通过版本逐帧同一，四处切点及指定配乐均已复核。至此 10 镜、290 帧通过。 [S03 二版](source-fidelity-S03-review-002.json) · [S04 二版](source-fidelity-S04-review-002.json) · [开头拼接验收](source-fidelity-opening-preview-001.json) · [S04 队列调整](source-fidelity-queue-reorder-004.json)
 
 S06 全 28 帧通过，保留桌面、前景道具、伸手转身动作和粉椅。S07 首版原演员回填，退回后以同一原镜的遮弱外观运动参考及三张源帧构图返工，已移到本项目等待队列首位。S14 按原片取帧校正光效的起点、亮闪节奏和末帧，全 19 帧通过。当前 12 镜、337 帧通过。 [S06 验收](source-fidelity-S06-review-001.json) · [S07 复核及返工](source-fidelity-S07-review-001.json) · [S07 运动参考](source-fidelity-S07-motion-guide-001.json) · [S14 验收](source-fidelity-S14-review-001.json) · [本项目队列调整](source-fidelity-queue-reorder-005.json)
+
+S07 第二版的前后段换角正确，第 197–202 帧附近仍可见运动参考的模糊痕迹，退回。第三版在同一原镜补入转身及两袖交叠的实际构图，已受理。S15 与 S16 首版均未保持原镜背面朝向和屈膝转身，分别逐帧核对了 28 帧与 48 帧。第二版分别使用同镜的两张与三张背面源帧构图，继续由队列补交。 [S07 第二版](source-fidelity-S07-review-002.json) · [S15 首版](source-fidelity-S15-review-001.json) · [S16 首版](source-fidelity-S16-review-001.json)

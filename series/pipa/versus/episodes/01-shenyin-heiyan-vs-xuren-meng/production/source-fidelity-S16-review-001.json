@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S16",
+  "startFrame": 385,
+  "endFrame": 433,
+  "attempt": 1,
+  "jobId": "video_gen_b7be178929334f42bc6c87c3fa07fbc4:openai",
+  "requestSha256": "6d3f7f1fa25566c37563f59a248e4c488d44d87f32c95c9dd6853332efa7ec46",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue.",
+  "seed": 1234,
+  "rawSha256": "b69a3b35986fda79c0cdef3b1249662a5a06cf85a432be28ba4e58d2961f529e",
+  "cutSha256": "fc83f8079be70c1143a8953e525231d24693bffe7edbc346fbbcf669a8747c4e",
+  "review": {
+    "cutSha256": "fc83f8079be70c1143a8953e525231d24693bffe7edbc346fbbcf669a8747c4e",
+    "requestSha256": "6d3f7f1fa25566c37563f59a248e4c488d44d87f32c95c9dd6853332efa7ec46",
+    "originalSha256": "e5ee1f21d70e8ad100d816790d7ab7e641e69a84caa442aef2c3495f325b6cb6",
+    "decision": "rejected",
+    "reviewedFrames": 48,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 385–432 帧与候选全部 48 帧。原片低位后视跟随侧倾、屈膝、换重心、前俯及抬手。候选仅保留窗板、门、顶灯和既有光效，前大半段虚人梦面向镜头且气势姿势近乎不动，到尾段才转背，缺少原片重心与两膝动作。退回。二版使用三张同镜背面构图锁定较早侧倾、低机位顶灯下前俯、尾段抬臂与原片遮挡关系。",
+    "reviewedAt": "2026-11-27T01:48:39.981501+00:00"
+  },
+  "followUp": {
+    "prompt": "Recast only the adult character in this one stylized 3D source shot. The backward-facing body, shoulder turns and pose from <Video 1> govern every frame. The body starts with the back to the lens in the wide bent stance of <Picture 1>; keep the head mostly out of sight as it changes weight across both legs. Use <Picture 2> for the moving forward bend at the original low lens under the circular ceiling light. <Picture 3> describes the same hooded adult when the body arches and the gloved hand rises in the last phase. Preserve the original crouch, rise, foot placement, hand order, camera pan and red and amber lights. The dark trousers and boots cover the body, with crimson hood and cape, gold lining, red wrist beads and gloves. The cape follows the motion but allows the original two knees and hand direction to remain clear. Retain only the visible light glints, ground material, door, wall and props already present in the source. No frontal torso, new actor, cut, graphics or dialogue.",
+    "seed": 1235,
+    "plannedAt": "2026-11-27T01:48:40.567130+00:00",
+    "images": [
+      {
+        "name": "S16-source-edit-0390.png",
+        "sha256": "a14d4ec9cb580fa2022f678d9641d6e40e07d835730465c0c828bc78c8aa223b",
+        "imagePrompt": "Replace only the one fully dressed adult in the first frame of this stylized fictional 3D animation. Use the dark full-length trousers, boots, crimson hood and gold-lined cape, dark gloves and wrist beads from image two. The third image establishes the same adult costume from behind. The source camera must stay behind the body, seeing the back of the cloak and no frontal torso. Keep the entire original tilted room, wall, floor, amber and red light, crop, source glints, debris and shadows. The camera, original hand and foot positions and the motion blur come from the first image. Match the low rear wide pose with both feet in original positions, one knee bent wide, torso tilting right and the turned head nearly out of sight. The original chair panels and wooden door must stay in place. Do not add objects or people."
+      },
+      {
+        "name": "S16-source-edit-0410.png",
+        "sha256": "c1a589a6b06e13d9848935e1c29e9df22481a41fdc82deada915133cf2aba979",
+        "imagePrompt": "Replace only the one fully dressed adult in the first frame of this stylized fictional 3D animation. Use the dark full-length trousers, boots, crimson hood and gold-lined cape, dark gloves and wrist beads from image two. The third image establishes the same adult costume from behind. The source camera must stay behind the body, seeing the back of the cloak and no frontal torso. Keep the entire original tilted room, wall, floor, amber and red light, crop, source glints, debris and shadows. The camera, original hand and foot positions and the motion blur come from the first image. The camera is low behind two spread, fully covered legs, looking up toward a round light, with the torso leaning forward. Match the original height, body proportions and stance. Let the red cape fall along the sides enough to keep the existing leg shapes visible. Dark covered silhouette with existing warm glints only."
+      },
+      {
+        "name": "S16-source-edit-0424.png",
+        "sha256": "9ce4987d7d23a17b6739ee2af007841cfa4104f5647995c9eec8a698113599b5",
+        "imagePrompt": "Replace only the one fully dressed adult in the first frame of this stylized fictional 3D animation. Use the dark full-length trousers, boots, crimson hood and gold-lined cape, dark gloves and wrist beads from image two. The third image establishes the same adult costume from behind. The source camera must stay behind the body, seeing the back of the cloak and no frontal torso. Keep the entire original tilted room, wall, floor, amber and red light, crop, source glints, debris and shadows. The camera, original hand and foot positions and the motion blur come from the first image. Keep the deep bend and the one raised gloved hand crossing the upper part of the tilted frame. Maintain the exact viewpoint from the rear as the arms finish the exaggerated movement. Keep clothing fully covering the body and legs, keep the original darkness and red reflection, and add no content."
+      }
+    ]
+  }
+}
