@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "vivhite-pipa-source-fidelity-queue-revision-1",
+  "shot": "S36",
+  "sourceFrameInterval": [
+    946,
+    971
+  ],
+  "originalSha256": "044700ac51eed51424ccdc5a8d8a6568225907334ba6782b75b94c3b896d4695",
+  "motionGuideSha256": "dfe7ad27cb197eba00c8324d6b9650d93cfcfb4486263e4fdad00a37268681ff",
+  "previous": {
+    "attempt": 1,
+    "jobId": "video_gen_953875e40bec4563a96de81c326bdca0:openai",
+    "prompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue.",
+    "requestSha256": "1ff3e03d65c189848c8906a8fe87e0cb587be932c88ecfd47c179197d61a9ae1",
+    "cancellation": {
+      "at": "2026-11-27T04:16:23.5967169Z",
+      "previousProjectSlot": 8,
+      "status": "cancelled",
+      "reason": "Bind the original close-up, middle pullback and late light cue to verified character edits before rendering.",
+      "dispatched": false
+    }
+  },
+  "replacement": {
+    "attempt": 2,
+    "jobId": "video_gen_efd4408a81ef4b1eb3c86fc4c83f5c1a:openai",
+    "prompt": "Recast the adult in one existing CGI shot, using <Video 1> for its exact camera pullback, side gaze, hair motion, shot timing and original lighting. All three images show this exact shot's one actor as the same dark-brown-haired navy-and-gold officer with pale trousers. <Picture 1> corresponds to very close tilted source frame 946 and the slight sideways smile. <Picture 2> corresponds to frame 958, the looser close-up with changing eye direction and an existing indistinct dark theatrical object in the lower left. <Picture 3> shows final source frame 970 with the wider tilted stage view, original dark foreground prop, warm glare and the officer clearly at the right. Keep the whole early part free of the later light effect. Reproduce the same late change in glare and framing, and maintain the identity of the officer in the early close-up and at the end. Preserve the original camera perspective, set, warm shadows, depth of field and physical silhouettes. No new cuts, props, people or room details.",
+    "requestSha256": "0f938f3626fdc4e5cb95a3811c967315758b3351f172d0549cb2f3b9388f4d51",
+    "submittedAt": "2026-11-27T04:18:33.038642+00:00",
+    "status": "queued",
+    "anchors": [
+      {
+        "shot": "S36",
+        "sourceFrame": 946,
+        "file": "S36-source-edit-0946.png",
+        "sourceStillSha256": "8b14c93796d8ec55a6efa7626b18d44a856c164667f1996e76b5f2c58d5037d3",
+        "sha256": "d402bd84ea8dcf1120199bc18f8129919c125c21c9e867d678e211cbe265c227",
+        "prompt": "Edit the exact scene and framing of image 1 as a frame of an existing warm 3D animated shot. Replace the pictured adult actor's head and clothes with the adult brown-haired navy-and-gold officer of image 2. Image 3 supplies only his recognizable modeled 3D face and slit side-lit eyes. Give the new character his proper dark brown tousled hair, slate irises, natural continuous face shading, natural teeth matching the grin, navy Napoleonic-style collar, gold trim and fringe only where the original crop allows. A face has sculpted 3D features and no original ink outlines. Keep the exact source lens angle and tilt, eye direction, head angle, background, depth, original near objects and warm red light. Landscape 16:9. Beginning is a tilted extreme close-up with a small crooked smile and eyes turned away. Preserve the large screen position and rotated angle of the cheek; the stage background stays soft and chiefly warm brown.",
+        "inputs": [
+          "anchor-originals/S36-source-0946.png",
+          "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+          "anchors/S22-source-edit-0550.png"
+        ]
+      },
+      {
+        "shot": "S36",
+        "sourceFrame": 958,
+        "file": "S36-source-edit-0958.png",
+        "sourceStillSha256": "894636426695fd8dc4709f3935acafb72ce6646f38d2169d166b0f1d0dff4dd3",
+        "sha256": "82a03a30b10b234ebd7f79b9eecab3e8bbe9821d11b8fc0a61e3c4f9c2e32110",
+        "prompt": "Edit the exact scene and framing of image 1 as a frame of an existing warm 3D animated shot. Replace the pictured adult actor's head and clothes with the adult brown-haired navy-and-gold officer of image 2. Image 3 supplies only his recognizable modeled 3D face and slit side-lit eyes. Give the new character his proper dark brown tousled hair, slate irises, natural continuous face shading, natural teeth matching the grin, navy Napoleonic-style collar, gold trim and fringe only where the original crop allows. A face has sculpted 3D features and no original ink outlines. Keep the exact source lens angle and tilt, eye direction, head angle, background, depth, original near objects and warm red light. Landscape 16:9. Here darker red side light strikes a wider right-of-centre head with a wider sideways toothy grin. The original gray and blue-black theatrical foreground prop is deliberately soft at lower left and remains at the same position, angle and blur. Preserve that depth relationship.",
+        "inputs": [
+          "anchor-originals/S36-source-0958.png",
+          "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+          "anchors/S22-source-edit-0550.png"
+        ]
+      },
+      {
+        "shot": "S36",
+        "sourceFrame": 970,
+        "file": "S36-source-edit-0970.png",
+        "sourceStillSha256": "d634640b9a8c42b6057fe81558a35d6e46864fb62df172d15bbec88eaa98bb0e",
+        "sha256": "558d610872a3da3b6d31ff652a3192f108f3c9f1ec0270133aabf6847a9e070b",
+        "prompt": "Edit image 1 as the exact finishing frame of an existing stylized 3D animated scene. Replace only the pictured adult actor with the fitted navy-and-gold Napoleonic officer from image 2, with dark ruffled brown hair, naturally modeled expression and pale trousers. The officer is at the same slightly far, tilted position toward the right in the composition, with the same pose, open grin and original dark theatrical foreground object. Preserve the source CGI bloom occupying the left area with its exact intensity, lighting and haze, as a photographic screen effect already in the image. Keep the original wall calendar, dark red furniture off to the left, lamp tone, shadows and lens focus. The scene remains at the same scale. No new effects. Landscape 16:9.",
+        "inputs": [
+          "anchor-originals/S36-source-0970.png",
+          "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+        ]
+      }
+    ]
+  }
+}

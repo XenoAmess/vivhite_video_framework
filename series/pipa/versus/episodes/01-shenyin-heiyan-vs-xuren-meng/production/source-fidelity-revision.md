@@ -79,3 +79,5 @@ S22 的画面核验在系统返回 `0xC000013A` 后中断两次。将 Windows �
 S28 的前景是虚人梦，原片第 671 帧可见破墙后粉椅附近的神隐黑炎，后段逐渐被前景遮挡。为覆盖两位演员，在首次执行前更换为三张原镜构图，服务已受理。S15 第二版调整到本项目队首并进入执行。 [S28 角色证据与换队记录](source-fidelity-S28-queue-revision-001.json) · [S15 队列记录](source-fidelity-queue-reorder-007.json)
 
 S15 第二版保留原片背身屈膝、转向斜侧和近远景变化。按原片取帧并微调前五帧的景别后，全部 28 帧通过。北京时间 11 月 27 日 12:02，累计 16 镜、439 帧通过，剩余 32 镜均已受理。S16 第二版执行，31 镜等待。 [S15 第二版与取帧记录](source-fidelity-S15-review-002.json) · [S16 调度记录](source-fidelity-queue-reorder-008.json)
+
+S29 按原片第 710 帧补录远处被遮挡的神隐黑炎并更换起镜构图。S34 使用同一原镜首尾两处构图锁定前景道具、抬手和拉远。S36 使用三处原镜构图锁定近景侧看、拉开和末帧光效。三镜均在执行前更换等待请求，改后的请求已经受理。S17 第二版在仅有本项目等待请求时移到队首，当前镜头继续执行。 [S29 远景角色与换队](source-fidelity-S29-queue-revision-002.json) · [S34 换队](source-fidelity-S34-queue-revision-001.json) · [S36 换队](source-fidelity-S36-queue-revision-001.json) · [S17 调度](source-fidelity-queue-reorder-009.json)

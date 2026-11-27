@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "vivhite-pipa-source-fidelity-queue-revision-1",
+  "shot": "S34",
+  "sourceFrameInterval": [
+    855,
+    878
+  ],
+  "originalSha256": "8c8827419a45e59e9370b3c5dfd597417a2926564dbfdaf45cb69a68b5704f5e",
+  "motionGuideSha256": "9959188501852a7241c8f0399c496de0865c2f1a2f5542eea3872da8c88114b0",
+  "previous": {
+    "attempt": 1,
+    "jobId": "video_gen_0c32ae23e7c64f889e69bc11c004b505:openai",
+    "prompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue.",
+    "requestSha256": "67798ee3d8673ab5a4e0ccb79308d2ca5014c74f8ed6942e643892573b6e9d77",
+    "cancellation": {
+      "at": "2026-11-27T04:12:41.7802595Z",
+      "previousProjectSlot": 7,
+      "status": "cancelled",
+      "reason": "Preserve the foreground prop and source pullback in a waiting shot using two verified frame edits of the same source.",
+      "dispatched": false
+    }
+  },
+  "replacement": {
+    "attempt": 2,
+    "jobId": "video_gen_00881510d58d428a9329f1daf6554fca:openai",
+    "prompt": "Recast this existing stylized 3D animated shot using <Video 1> as the exact shot, with original camera depth, one wide pullback and the original scene timed as in the reference. The sole actor is the adult brown-haired officer in both images, wearing the same navy-and-gold coat and pale trousers. <Picture 1> shows source frame 855, a close dark prop with cool blue highlights diagonally in the upper left, the officer's near palm raised beside his face, and the original warm red scenery. <Picture 2> is source frame 877 with pullback to a wider standing composition, the same dark foreground prop in soft focus, and the officer further right with a sideways grin. Between them preserve how the original palm and sleeve move through the frame and how the foreground prop travels, blurs and reflects the source light. Keep the original framing, reflection and dark silhouette, the dim room and red lamp, walls and furniture. Maintain the image identity all the way through. Do not bring a new prop, actor, cut or design into the scene.",
+    "requestSha256": "6e740909fa413504ae2a3f2789139e9583aeb9dd14990a50d76d8151d8c32178",
+    "submittedAt": "2026-11-27T04:14:21.964578+00:00",
+    "status": "queued",
+    "anchors": [
+      {
+        "shot": "S34",
+        "sourceFrame": 855,
+        "file": "S34-source-edit-0855.png",
+        "sourceStillSha256": "7a878e464bc1feb900c7eece5cbc4c83a92847b065730526f99f19333e0eeefe",
+        "sha256": "1d9e9ae3c325f7084e39d342528324b649c95fa2153764b8f6d2a182cf7bbb7e",
+        "prompt": "Edit input 1, a specific frame of an existing stylized 3D animation. Replace only the pictured adult actor's head and clothes with the adult dark-brown-haired officer from input 2. Use slate eyes, a navy Napoleonic coat with gold trim and subtle fringed epaulettes, ivory trousers and dark boots where visible. Keep the source tilt, lens blur, body pose, arms, hand positions, and the dark theatrical foreground prop at exactly the same screen position and silhouette. Keep the warm red side light, walls, pink chair edge, set dressing and original focus. Use the mood and rendering of the source, landscape 16:9. First frame has the dark prop running diagonally across the frame from the lower middle to the upper-left and a hand raised in front of the face toward the top centre-right. Match this camera-distance, foreshortening, precise placement and bounced cool light on the face.",
+        "inputs": [
+          "anchor-originals/S34-source-0855.png",
+          "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+        ]
+      },
+      {
+        "shot": "S34",
+        "sourceFrame": 877,
+        "file": "S34-source-edit-0877.png",
+        "sourceStillSha256": "d4961423dcebd06188b2d839c836f2324dee163b998ae5fddf212ac64dc943f4",
+        "sha256": "acaecda78bf72f7ecc2cab838cdbf171e82c4b49117a8d3bbb2cfd95e846a763",
+        "prompt": "Edit input 1, a specific frame of an existing stylized 3D animation. Replace only the pictured adult actor's head and clothes with the adult dark-brown-haired officer from input 2. Use slate eyes, a navy Napoleonic coat with gold trim and subtle fringed epaulettes, ivory trousers and dark boots where visible. Keep the source tilt, lens blur, body pose, arms, hand positions, and the dark theatrical foreground prop at exactly the same screen position and silhouette. Keep the warm red side light, walls, pink chair edge, set dressing and original focus. Use the mood and rendering of the source, landscape 16:9. Last frame pulls further back; the dark prop stays large and soft across the near left side. The actor's half-length figure at the right has turned with a wide, startled smile and a near sleeve extending forward. Keep the red-lit window and wall calendar, hands, darker shadows and background spacing.",
+        "inputs": [
+          "anchor-originals/S34-source-0877.png",
+          "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+        ]
+      }
+    ]
+  }
+}
