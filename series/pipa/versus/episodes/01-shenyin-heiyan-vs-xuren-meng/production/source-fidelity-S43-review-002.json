@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S43",
+  "startFrame": 1174,
+  "endFrame": 1208,
+  "attempt": 2,
+  "status": "completed",
+  "requestSha256": "98560a2f2f85b2b35662625f501707980d70d191954eb06e7279a71b20672e9a",
+  "modelRequest": {
+    "model": "fasth3-omni-bf16",
+    "task": "ref2va",
+    "size": "1344x768",
+    "seconds": 5,
+    "num_inference_steps": 8,
+    "guidance_scale": 1.0,
+    "seed": 416733,
+    "prompt": "Use <Video 1> as the exact pose, camera, cut, and lighting track for one continuous stylized 3D animation. Change the identities of the existing fully dressed adult actors to the role designs shown in the scene anchors. Keep original props, scene, framing, focus and all action phases. Frame 1174 in <Picture 1> starts above the crouch with spread arms and the dark prop on the floor. Immediately follow the source pivot and downward reach. At frame 1184 in <Picture 2> the performer has already swung down and lifted the existing prop off the floor. Once it is held, it leaves the floor and moves with that hand for the rest of the take. Sweep the camera from above onto the tilted low side view as the actor settles by the screen. The closed choreography ends in <Picture 3> at 1207: broad smile and raised separate hand, existing prop upright near the chest. Complete all intermediate motions in their source order. Preserve the source room, pink chair, calendar, warm shadow and screen.",
+    "video_reference": [
+      {
+        "file_id": "file_c7ecdda3b3724fffbc1366e32c209579"
+      }
+    ],
+    "image_reference": [
+      {
+        "file_id": "file_4cee469a38594716a8977bc58ffe84fd"
+      },
+      {
+        "file_id": "file_b6b76fcb3f0f40c49e942bf3241fb19e"
+      },
+      {
+        "file_id": "file_8a688641fa5a44d89a9fdab01d98407f"
+      }
+    ]
+  },
+  "jobId": "video_gen_2a8f89e3dcb34c1396160cd844ce1c96:openai",
+  "rawSha256": "bd814f7f200ccff54235e05313b2fb8268064d67c5775deab365df605c3f40ca",
+  "normalizedSha256": "6312daa6cb7c45a19b24d214a787ee1dc5ba21ea7752ca38dc0310e53833cd2c",
+  "cutSha256": "bbd4979d5c9acbebc9796a63c157b195c08dbe8d15c8b73886aa008b78deed9a",
+  "cutFrames": 34,
+  "review": {
+    "cutSha256": "bbd4979d5c9acbebc9796a63c157b195c08dbe8d15c8b73886aa008b78deed9a",
+    "requestSha256": "98560a2f2f85b2b35662625f501707980d70d191954eb06e7279a71b20672e9a",
+    "originalSha256": "642b305a949c1103752da87d1bb123954ec6437ed6e303d5e20e75af7b189226",
+    "decision": "accepted",
+    "reviewedFrames": 34,
+    "method": "assistant-frame-review",
+    "observations": "Compared all 34 frames (source 1174-1207) after retiming the second take. From above beside the palm-patterned screen and pink chair, the officer brings his arm down, takes up the existing prop, turns with one knee lifted, and ends with the prop raised, his free hand open and chin lifting. Prop pickup is now around source 1181, and the near pose is in place around 1190. The first overhead arm arc is shorter and the push inward is less pronounced than the original, with the whole motion and ending readable.",
+    "reviewedAt": "2026-11-27T18:29:41.704410+00:00"
+  },
+  "postprocess": {
+    "tool": "ffmpeg",
+    "sourceFrames": [
+      1174,
+      1208
+    ],
+    "normalizedModelSha256": "6312daa6cb7c45a19b24d214a787ee1dc5ba21ea7752ca38dc0310e53833cd2c",
+    "preRetimeCutSha256": "fdde9d716d820f3957f22fedd6bc00b790f1dd5ded80fbb922f812a8a831ef28",
+    "selectedModelFrames": [
+      0,
+      32,
+      38,
+      44,
+      50,
+      54,
+      58,
+      61,
+      64,
+      66,
+      69,
+      72,
+      75,
+      78,
+      81,
+      84,
+      87,
+      88,
+      90,
+      92,
+      94,
+      96,
+      97,
+      99,
+      101,
+      103,
+      105,
+      107,
+      109,
+      111,
+      113,
+      115,
+      117,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,32)+eq(n\\,38)+eq(n\\,44)+eq(n\\,50)+eq(n\\,54)+eq(n\\,58)+eq(n\\,61)+eq(n\\,64)+eq(n\\,66)+eq(n\\,69)+eq(n\\,72)+eq(n\\,75)+eq(n\\,78)+eq(n\\,81)+eq(n\\,84)+eq(n\\,87)+eq(n\\,88)+eq(n\\,90)+eq(n\\,92)+eq(n\\,94)+eq(n\\,96)+eq(n\\,97)+eq(n\\,99)+eq(n\\,101)+eq(n\\,103)+eq(n\\,105)+eq(n\\,107)+eq(n\\,109)+eq(n\\,111)+eq(n\\,113)+eq(n\\,115)+eq(n\\,117)+eq(n\\,119),setpts=N/(24*TB),setsar=1",
+    "previewSha256": "bbd4979d5c9acbebc9796a63c157b195c08dbe8d15c8b73886aa008b78deed9a",
+    "reason": "Align the overhead reach, prop pickup, push inward and lifted knee against the same source cut.",
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "outputSha256": "bbd4979d5c9acbebc9796a63c157b195c08dbe8d15c8b73886aa008b78deed9a"
+  },
+  "acceptedShots": 34,
+  "acceptedFrames": 960,
+  "queue": {
+    "at": "2026-11-28T02:29:58.4972375+08:00",
+    "accepted": 34,
+    "remainder": 14,
+    "running": 1,
+    "queued": 13,
+    "waitingForSource": 0,
+    "lastQueue": [
+      "S52",
+      "S54",
+      "S55",
+      "S56"
+    ],
+    "current": [
+      {
+        "shot": "S47",
+        "attempt": "attempt-002",
+        "id": "video_gen_4a01f2709b264ac7af87f6ad082e320a"
+      }
+    ],
+    "notOnActiveQueue": [],
+    "maintenance": false
+  }
+}
