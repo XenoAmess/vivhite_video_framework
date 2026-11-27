@@ -20,7 +20,7 @@
 
 视频创作材料按[系列 → 课题 → 多期](series/README.md)组织，当前课题为[数学教育系列 · 逆序数](series/math-education/inversion-count/README.md)：第一期保留已交付内容，第二期证明完整矩形棋盘结论，第三期从头证明 Wilson 一般图定理。案例材料已直接移动到各期目录，原模块下不保留兼容入口。
 
-[白绮艺术短片](series/vivhite/art-shorts/README.md)使用 Cubism 模型与原创图形排版制作动态海报。首期《余像》为 7.2 秒，2816×1024，30 fps。
+[白绮艺术短片](series/vivhite/art-shorts/README.md)用角色动画和原创图形排版制作动态海报。首期《余像》为 7.2 秒，2816×1024，30 fps，包含 Cubism 初版和重新绘制人物的修订版。
 
 内容子项目[白绮／秋日旅程](series/vivhite/autumn-journey/README.md)已于 **2026-11-22结项，用户表示满意**。最终交付为原始768P v12、原生4K v13及16:9／4:3两张bilibili封面，影片均为205秒／6150帧。经验教训、可复用流程及代码索引见[结项复盘](docs/autumn-journey-retrospective.md)，最新状态见[结项记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/project-closeout-20261122.json)。下文各版本的排队、未完成及待审描述保留为历史，不再作为当前任务。
 

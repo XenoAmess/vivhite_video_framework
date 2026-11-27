@@ -15,13 +15,18 @@ async function main() {
     const output = path.resolve(outputArg);
     const { chromium } = createRequire(path.join(runtime, "package.json"))("playwright-core");
     const plan = JSON.parse(await readFile(path.join(episode, "production-plan.json")));
+    const live2d = plan.schemaVersion === "vivhite-live2d-art-1";
     const routes = new Map([
         ["/pixi.js", path.join(runtime, "node_modules/pixi.js/dist/browser/pixi.min.js")],
-        ["/live2d.js", path.join(runtime, "node_modules/pixi-live2d-display/dist/cubism4.min.js")],
-        ["/core.js", path.join(runtime, "live2dcubismcore.min.js")],
         ["/artwork.js", path.join(episode, "artwork.js")],
         ["/production-plan.json", path.join(episode, "production-plan.json")],
     ]);
+    if (live2d) {
+        routes.set("/live2d.js", path.join(runtime, "node_modules/pixi-live2d-display/dist/cubism4.min.js"));
+        routes.set("/core.js", path.join(runtime, "live2dcubismcore.min.js"));
+    } else {
+        routes.set("/portrait.png", path.join(modelHome, "portrait.png"));
+    }
     const mimeTypes = {
         ".js": "text/javascript", ".json": "application/json", ".png": "image/png",
         ".moc3": "application/octet-stream",
@@ -32,12 +37,12 @@ async function main() {
             if (url.pathname === "/") {
                 response.setHeader("Content-Type", "text/html; charset=utf-8");
                 response.end('<!doctype html><meta charset="utf-8"><script src="/pixi.js"></script>' +
-                    '<script src="/core.js"></script><script src="/live2d.js"></script>' +
+                    (live2d ? '<script src="/core.js"></script><script src="/live2d.js"></script>' : '') +
                     '<script type="module" src="/artwork.js"></script>');
                 return;
             }
             let file = routes.get(url.pathname);
-            if (!file && url.pathname.startsWith("/model/")) {
+            if (!file && live2d && url.pathname.startsWith("/model/")) {
                 const requested = path.resolve(modelHome, decodeURIComponent(url.pathname.slice(7)));
                 if (requested.startsWith(modelHome + path.sep)) {
                     file = requested;
@@ -76,7 +81,7 @@ async function main() {
             throw new Error(setup.error);
         }
         console.log(JSON.stringify(setup.info));
-        const previewFrames = new Set([0, 45, 103, 150, plan.frameCount - 1]);
+        const previewFrames = new Set([0, 45, 103, Math.floor(plan.frameCount / 2), 150, plan.frameCount - 1]);
         for (let frame = 0; frame < plan.frameCount; frame++) {
             const capture = mode === "frames" || previewFrames.has(frame);
             const encoded = await page.evaluate(({ frame, capture }) => window.renderFrame(frame, capture),

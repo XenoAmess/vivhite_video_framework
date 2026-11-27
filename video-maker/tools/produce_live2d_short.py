@@ -1,4 +1,4 @@
-"""Check the art short's review, stage its Live2D inputs, and render a silent MP4."""
+"""Check an art short's review, stage its character art, and render a silent MP4."""
 
 import argparse
 import hashlib
@@ -64,32 +64,44 @@ def validate_media(path, plan):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    for name in ("episode", "archive", "runtime", "chrome", "output"):
+    for name in ("episode", "runtime", "chrome", "output"):
         parser.add_argument(f"--{name}", type=Path, required=True)
+    parser.add_argument("--plan", type=Path, help="Defaults to the episode's original production-plan.json")
+    sources = parser.add_mutually_exclusive_group(required=True)
+    sources.add_argument("--archive", type=Path, help="Original Live2D asset archive")
+    sources.add_argument("--portrait", type=Path, help="Transparent PNG for illustrated motion")
     args = parser.parse_args()
-    episode, archive, runtime, chrome, output = (
-        path.resolve() for path in (args.episode, args.archive, args.runtime, args.chrome, args.output)
+    episode, runtime, chrome, output = (
+        path.resolve() for path in (args.episode, args.runtime, args.chrome, args.output)
     )
+    source_plan = args.plan or episode.parent / "production-plan.json"
     output.mkdir(parents=True)
     inputs = output / "inputs"
     inputs.mkdir()
-    plan_path = Path(shutil.copyfile(episode.parent / "production-plan.json", inputs / "production-plan.json"))
-    artwork = Path(shutil.copyfile(episode.parent / "artwork.js", inputs / "artwork.js"))
-    archive = Path(shutil.copyfile(archive, inputs / "model.zip"))
+    plan_path = Path(shutil.copyfile(source_plan, inputs / "production-plan.json"))
+    artwork = Path(shutil.copyfile(source_plan.with_name("artwork.js"), inputs / "artwork.js"))
     plan = json.loads(plan_path.read_bytes())
-    if plan["schemaVersion"] != "vivhite-live2d-art-1":
-        raise ValueError("Unsupported art short production plan.")
-    if sha256(archive) != plan["modelArchiveSha256"]:
-        raise ValueError("Delta archive hash does not match the production plan.")
-    if sha256(runtime / "live2dcubismcore.min.js") != plan["coreSha256"]:
-        raise ValueError("Cubism Core hash does not match the production plan.")
+    live2d = plan["schemaVersion"] == "vivhite-live2d-art-1"
+    if live2d and args.archive:
+        asset = Path(shutil.copyfile(args.archive, inputs / "model.zip"))
+        if sha256(asset) != plan["modelArchiveSha256"]:
+            raise ValueError("Live2D archive hash does not match the production plan.")
+        if sha256(runtime / "live2dcubismcore.min.js") != plan["coreSha256"]:
+            raise ValueError("Cubism Core hash does not match the production plan.")
+    elif plan["schemaVersion"] == "vivhite-illustrated-art-1" and args.portrait:
+        asset = Path(shutil.copyfile(args.portrait, inputs / "portrait.png"))
+        if sha256(asset) != plan["portraitSha256"]:
+            raise ValueError("Portrait hash does not match the production plan.")
+    else:
+        raise ValueError("Choose --archive for a Live2D plan or --portrait for an illustrated plan.")
     run([
         sys.executable, str(REPO / "scripts/character_review.py"), "check",
         "--episode", str(episode), "--document", str(plan_path),
-        "--asset", str(archive), "--asset", str(artwork),
+        "--asset", str(asset), "--asset", str(artwork),
     ], 60)
-    model = output / "model"
-    stage_model(archive, plan["model"], model)
+    model = output / "model" if live2d else inputs
+    if live2d:
+        stage_model(asset, plan["model"], model)
     frames = output / "frames"
     run([
         "node", str(TOOLS / "render_live2d_frames.cjs"), str(runtime), str(inputs),

@@ -6,7 +6,7 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.maker`。
 
 旅行等无对白影像新增[参考图视频入口](docs/reference-video-production.md)：调用 FastH3 Omni Ref2VA、保留可恢复任务与失败材料、裁剪 2–10 秒镜头并装配画面。当前装配产物是待声音合成与语义验收的中间文件；远端生成状态见具体制作记录。
 
-无声动态海报使用 `tools/produce_live2d_short.py` 渲染 Live2D 参数动画与 Canvas 图层，通过人物审核绑定后逐帧合成 MP4。运行时设置、依赖和复现命令见[《余像》制作记录](../series/vivhite/art-shorts/episodes/01-afterimage/README.md)。
+无声动态海报使用 `tools/produce_live2d_short.py` 渲染 Live2D 参数动画或插画网格动画与 Canvas 图层，通过人物审核绑定后逐帧合成 MP4。运行时设置、依赖和复现命令见[《余像》初版](../series/vivhite/art-shorts/episodes/01-afterimage/README.md)与[修订 v2](../series/vivhite/art-shorts/episodes/01-afterimage/revision-2/README.md)。
 
 同一文档另列 BF16 原生1344×768与逐镜3840×2160重生成入口，以及印花细节检查和另存修订工具；当前[768P／4K规约](../docs/local-video-768p-4k.md)替代历史2K路线，4K仍沿用服务端历史模型ID并单任务执行。印花跟踪的 `--max-scale` 可显式适配已观察到的镜头推近，默认上限2.5倍；技术成功仍须实际逐帧检查，不能自动作为成片内容通过的结论。
 

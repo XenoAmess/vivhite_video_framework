@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "vivhite-illustrated-art-result-1",
+  "episode": "vivhite/art-shorts/01-afterimage",
+  "revision": 2,
+  "planSha256": "8b7927cbf326c638a34cb9ccea6a40211bc8e2c2844ac55358278ee4e5ec58a4",
+  "delivery": {
+    "filename": "afterimage.mp4",
+    "bytes": 7846118,
+    "sha256": "ecc4f125fd1b2cf5529792f8045adcd7dcb53f95e7df4c2153988f813988757f",
+    "width": 2816,
+    "height": 1024,
+    "durationSeconds": 7.2,
+    "fps": 30,
+    "frameCount": 216,
+    "videoCodec": "h264",
+    "pixelFormat": "yuv420p",
+    "audioTracks": 0,
+    "subtitleTracks": 0
+  },
+  "validation": {
+    "framesDecodedWithoutErrors": 216,
+    "frameTimestampsComparedToPlan": 216,
+    "uniqueScaledLumaFrames": 216,
+    "scaledLuma": {
+      "size": [320, 116],
+      "medianAdjacentFrameDifference": 0.3778,
+      "maxAdjacentFrameDifference": 0.4972,
+      "lastToFirstFrameDifference": 0.4062
+    },
+    "assistantVisualReview": {
+      "sceneIds": ["S01"],
+      "fullCanvasFrames": 216,
+      "handDetailSamplingFps": 10,
+      "nativeSizeKeyframe": 108,
+      "checked": ["侧身与伸臂剪影", "手腕与衣料动作", "指尖和星点间距", "公式与图例", "首尾循环"]
+    },
+    "humanReview": "pending"
+  }
+}
