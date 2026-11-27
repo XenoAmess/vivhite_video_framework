@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S32",
+  "startFrame": 788,
+  "endFrame": 824,
+  "attempt": 1,
+  "jobId": "video_gen_f879c1f8e18c4b189f90658341512c7e:openai",
+  "requestSha256": "b7fa60d4d4ca9a7a1ca6b177e39e704bbc5ea6adb0c2a4f568566b3585acfd14",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue.",
+  "seed": 1234,
+  "rawSha256": "68679a4f9deb6eae9cbda6e30c26b4693bc3536307d4ed6bc0baba01dbc6da1c",
+  "cutSha256": "10ca078f86f17abccc4c61d7836b6644eb6fc3b2fbfba80c4610bae97b4ccb30",
+  "review": {
+    "cutSha256": "10ca078f86f17abccc4c61d7836b6644eb6fc3b2fbfba80c4610bae97b4ccb30",
+    "requestSha256": "b7fa60d4d4ca9a7a1ca6b177e39e704bbc5ea6adb0c2a4f568566b3585acfd14",
+    "originalSha256": "88c7a42a2f1c7757912a5aa53f77f56dd75b73358b57fdd9b9242c9847f28f9e",
+    "decision": "rejected",
+    "reviewedFrames": 36,
+    "method": "assistant-frame-review",
+    "observations": "对照原片第 788–823 帧与 S32 第一版的三页并排，共 36 帧。替换为虚人梦贯穿全镜，金发、红兜帽、暗衣和左肩侧面具可辨。左侧覆布家具、右侧木板、末段粉色椅和相机连续升起的方向得到保留。原片第 791–794 帧已经下沉、身躯左倾并扫出右侧前臂，候选多留在开场两手搭腿的姿态，约第 796 帧才进入侧向动作。中段原片手掌张开及收回的几个落点也被延后或维持过久，约第 806–809 帧与第 812–816 帧可见。尾段高位视角及右伸手的构图大体对上。前段及中段节拍需要重做，退回。",
+    "reviewedAt": "2026-11-27T06:38:23.128454+00:00"
+  },
+  "followUp": {
+    "prompt": "Edit one continuous 3D animation shot using <Video 1> for the same poses, fast arm beats and continuous rise of the camera. Replace the actor throughout with a fully dressed blond adult in the red hood, gold-edged crimson mantle, dark outfit, fingered gloves and single left-shoulder mask seen in the pictures. <Picture 1> is the first frame 788, hands by the thighs. The bend, leftward lean and outward arm swing happen immediately. <Picture 2> is source frame 794, only a sixth of the way through, the hand at the right border already spread open and the other hand back by the red covered furnishing. Place this transition exactly as early as in the input. Continue the several quick opening and retraction beats of the glove, which must follow the moving input without a prolonged hold. The feet step, knees turn and the face tilts with the source. <Picture 3> is frame 823, the final high overhead view, arm out on the right with the palm open. Preserve the same continuous tilting and rising camera, frame edges, shadow, furniture, plank floor, debris, and existing warm glints.",
+    "seed": 345109,
+    "plannedAt": "2026-11-27T06:41:34.483802+00:00",
+    "images": [
+      {
+        "name": "S32-source-edit-0788.png",
+        "sha256": "b01705663cb8013d4976d306290a68bc9c244cc9db0eed94693ea44d6fd48000",
+        "imagePrompt": "Edit source input 1 for the exact existing frame of a warm, dark stylized CGI dance shot. Retain the original body pose, camera tilt, angle, focal depth, room, damaged wood floor, broken panels, chairs, red side light, and existing amber highlight flecks. Replace the one adult actor with input 2's adult blond dancer: deep red hood and cloak with a subdued gold edge, dark charcoal trousers, black boots and gloves, dark red wrist beads and one ivory mask on the dancer's left shoulder. Preserve the size and screen placement of the hands, feet and head and let the cloak trail behind the arms so the choreography remains legible. Keep the same furniture, aspect and framing. Landscape 16:9. The source beginning is a medium shot of the dancer in a near squat, leaning forward with both knees bent and one hand near each thigh, and a chair at lower left. Preserve the original black and warm red chiaroscuro and close crop."
+      },
+      {
+        "name": "S32-source-edit-0794.png",
+        "sha256": "50435761d5fb199d250c25c8617ea5124d1e65f77ff5b478cec027af8af9fc61",
+        "imagePrompt": "Edit image 1 directly for one exact pose inside a stylized 3D animated take. Change the one adult actor to the crimson-hooded blond dancer in image 2, keeping dark clothing, gloves, red wrist beads and a pale left shoulder mask when seen. Preserve the camera angle and wide framing, precise bent and leaning pose, head tilt and size, both arm locations, open gloved hand clipped at the right border and the hand near the red cloth at left. The lightweight mantle trails behind so the rightward swing reads. Preserve the dark warm shadows, room, red furniture, debris and small existing amber effects in the first image. Image 2 is solely costume/identity. Wide 16:9 with the first image's cinematic 3D materials."
+      },
+      {
+        "name": "S32-source-edit-0823.png",
+        "sha256": "cbfe2ee649128eee382794770883e46285b6860c4cc4837f41c50389db21f014",
+        "imagePrompt": "Edit source input 1 for the exact existing frame of a warm, dark stylized CGI dance shot. Retain the original body pose, camera tilt, angle, focal depth, room, damaged wood floor, broken panels, chairs, red side light, and existing amber highlight flecks. Replace the one adult actor with input 2's adult blond dancer: deep red hood and cloak with a subdued gold edge, dark charcoal trousers, black boots and gloves, dark red wrist beads and one ivory mask on the dancer's left shoulder. Preserve the size and screen placement of the hands, feet and head and let the cloak trail behind the arms so the choreography remains legible. Keep the same furniture, aspect and framing. Landscape 16:9. The source ending looks down from very high and very close, with the dancer still leaning, one arm reaching right, head angled down, and a pink chair at bottom right. Keep the overhead projected anatomy, the upright panel on the right, and the open hand inside the right half."
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S27",
+  "startFrame": 644,
+  "endFrame": 671,
+  "attempt": 1,
+  "jobId": "video_gen_95d040d0235c40ba823438a3802f18cb:openai",
+  "requestSha256": "4876d38d40745aa884e3ff67d88a4c2d1bee9133c8b630af81688de7f4c90218",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 656. Preserve the original hand positions, both original objects and the source foreground-to-background focus timing while the camera pulls to the center performer.",
+  "seed": 1234,
+  "rawSha256": "6f980594ed168754efd277d6a6d2b5d89ba777fb5b2dd00595b4288ffe42d9b3",
+  "cutSha256": "5b8982f0e05dce817b35dff604db6004afff74cd141027a5f68c8cc1fa623b6f",
+  "review": {
+    "cutSha256": "5b8982f0e05dce817b35dff604db6004afff74cd141027a5f68c8cc1fa623b6f",
+    "requestSha256": "4876d38d40745aa884e3ff67d88a4c2d1bee9133c8b630af81688de7f4c90218",
+    "originalSha256": "0aa5ad672e07e00d4546f8316123d921624f1ad73cdb51d9fab808c08050e644",
+    "decision": "rejected",
+    "reviewedFrames": 27,
+    "method": "assistant-frame-review",
+    "observations": "检查原片第 644–670 帧与 S27 第一版的两页并排，共 27 帧。前景两件道具在上、下交错，以及后景风扇、日历墙和原有景深可辨。候选起镜到约第 662 帧仍保留原片的脸、黑色衣服和浅色胸前条带，前景遮挡散开时尤其明显。约第 663 帧画面才跳到深蓝金边的神隐黑炎，动作却回到前段的举臂位置。原片最后仍向前伸臂并连续出现两处闪光和烟雾，候选最后几帧没有对应闪光。由于原演员残留和收尾动作改变，退回。",
+    "reviewedAt": "2026-11-27T06:38:22.559090+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S27",
+      "sourceFrame": 656,
+      "sourceStillSha256": "de9d8751a0facb89a3c15d51a1878c107c45f0c1951300668f7b7fe5e7f777c9",
+      "file": "S27-source-edit-0656.png",
+      "sha256": "c83855ff530e4e4302ff6a4846f7d28348ffdacf2e9fb0159c815e9e24debc0d",
+      "prompt": "Edit the assigned cast in the first 16:9 still from a stylized 3D fictional film, preserving camera orientation, crop, original figure placement, shadows, set, foreground and effects as shown. Use the other references only for the adult character designs. Match the dark source lighting and original 3D material. The dark-haired adult officer in navy and gold replaces the actor behind the broad soft foreground. Preserve the original dark props as they appear in the supplied image, the hands' screen silhouettes, the red-lit doorway, paper placards and corner fan. Match near-left blur and the original partially hidden actor placement.",
+      "inputs": [
+        "anchor-originals/S27-source-0656.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact time, position and focus reference for a single continuous 3D animation edit. The only actor visible is the dark-brown-haired performer in the deep navy uniform with antique-gold edging and shoulder trim, cream vest, and pale cuffs throughout every frame. <Picture 1> shows the actual first frame 644: the two original dark foreground props are horizontal at separate heights and partially obscure him, while the performer is already the navy-gold replacement. Follow the source as the foreground props separate and uncover his expression before sweeping outward and advancing toward the lens. <Picture 2> is source frame 656, the mid-shot swish and near-lens occlusion. The same actor stays at the original depth and scale. <Picture 3> is frame 665 in the final stretch, with the two bright orange-white stage flashes overlapping the foreground and lighting the same performer. Keep the motion moving forward through the closing frame and preserve the original short pulses, shadows and smoke. Keep the shape, position and occlusion of both existing props, the lens focus, source room, wall fan, chair, calendar, and exact camera route, original motion timing and the established effect positions. Every visible portion of the actor, including his face and costume, is replaced with the same performer starting from the first image.",
+    "seed": 610873,
+    "plannedAt": "2026-11-27T06:42:37.158368+00:00",
+    "images": [
+      {
+        "name": "S27-source-edit-0644.png",
+        "sha256": "d5e399920cc9cb6c569ceeb59aab030796652d512dcc2a9b1a15b89c32306e51",
+        "imagePrompt": "Edit image 1 directly as one frame in a stylized fictional 3D animation. Change the partly hidden adult actor to the same dark-brown-haired performer in the gold-trimmed navy coat with pale cuffs in image 2; image 2 is identity and costume reference only. Keep the same 16:9 composition, close foreground silhouette of the two paired dark stage props and the two hands, plus their scales, positions, occlusion and original shadow. Keep the original center line of the head in the background, its off-axis glance and slightly exaggerated stage reaction, the prop crossing in front of the lower face, and the exact shallow depth of field, tone and soft original highlights. Retain all of the original wall, original calendar and left curtain. Do not move the foreground props or add people."
+      },
+      {
+        "name": "S27-source-edit-0656.png",
+        "sha256": "c83855ff530e4e4302ff6a4846f7d28348ffdacf2e9fb0159c815e9e24debc0d",
+        "imagePrompt": "Edit the assigned cast in the first 16:9 still from a stylized 3D fictional film, preserving camera orientation, crop, original figure placement, shadows, set, foreground and effects as shown. Use the other references only for the adult character designs. Match the dark source lighting and original 3D material. The dark-haired adult officer in navy and gold replaces the actor behind the broad soft foreground. Preserve the original dark props as they appear in the supplied image, the hands' screen silhouettes, the red-lit doorway, paper placards and corner fan. Match near-left blur and the original partially hidden actor placement."
+      },
+      {
+        "name": "S27-source-edit-0665.png",
+        "sha256": "56cd4329e0d16cf3c4427a3d298d9b7e61e4c0bbd4afcb5f2c134852113996b6",
+        "imagePrompt": "Edit image 1 directly as a single frame from a stylized fictional 3D animation. Image 2 supplies the adult actor in the navy gold-trimmed long uniform with dark brown hair. Use the same actor and uniform in place of the source actor, matching exactly the head location, scale and expression. Preserve the original screenshot crop and perspective and the two bright orange-white stage flashes obscuring most of the hands and foreground props, with their silhouettes, soft smoke, warm light on the face, plus the original debris, wall fan, calendar, chair and background. Exactly the same timing pose and source scene, and the effects cover the same screen area. Wide 16:9."
+      }
+    ]
+  }
+}

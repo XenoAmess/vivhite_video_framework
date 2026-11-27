@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S19",
+  "startFrame": 463,
+  "endFrame": 510,
+  "attempt": 2,
+  "jobId": "video_gen_0228ddbdf9fa4a90b3ef9bebd2377e07:openai",
+  "requestSha256": "957753f231eac2de3cd9f2fba263931fa6e5564016054daa037bc52f2e6c00f1",
+  "renderPrompt": "Edit one continuous cut with <Video 1> as the exact shot, lens and time reference. Preserve the source's first rear framing near the floor and near the character: the actor fills the shot on frame 463 with the original cabinet and mattress visible between and around the feet. The shot pulls out into the irregular wall opening, then the character moves close to the floor lens again as indicated by the video time base. Replace the same dancer throughout with the blond adult in the crimson hood and cloak, subdued gold lining, dark tailored trousers, boots, gloves and wrist beads, and one ivory mask on the dancer's left shoulder only where it is visible. <Picture 1> represents the first expanding near composition at source frame 469. <Picture 2> represents the wide position at source frame 479. <Picture 3> represents the last very close back-lit composition at source frame 508. Follow both foot alternations and hands and the camera changes as in the original source, including the start and final low near-camera framing. Keep the original lighting, fixture, floor, furniture, rubble and existing light effects at their original timing. The performer faces away for the entire cut.",
+  "seed": 1235,
+  "rawSha256": "fd2bda920b2967bae355a7fe9fe2cefe25f19fae9cf21389891e7f188e89b13e",
+  "cutSha256": "e5af5c75fa6b529c5b08b63fb31331430425112a0d3fe1b7199172ae9d166fa3",
+  "review": {
+    "cutSha256": "e5af5c75fa6b529c5b08b63fb31331430425112a0d3fe1b7199172ae9d166fa3",
+    "requestSha256": "957753f231eac2de3cd9f2fba263931fa6e5564016054daa037bc52f2e6c00f1",
+    "originalSha256": "55761f7441777fd49bc39d4909ce8943536999bdd0d1a8c8ce93e470d231e04d",
+    "decision": "rejected",
+    "reviewedFrames": 47,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 463–509 帧及 S19 第二版上中下三页对照图，共 47 帧。单演员仍可辨为虚人梦，红兜帽、金发、深色长裤、左肩侧面具和金衬披风可见，木地板、破墙、帘幕、椅子及暖色短闪大体保留。\n原片第 463–466 帧为紧贴地板的背身近景，演员上身及双腿大幅出框，带有连续短闪并迅速拉远。候选这四帧一开始已处在较远的景别，前四五帧姿态几乎无变化，到第 468 帧附近突然切入更近的轮廓，再拉回较远景别。第 470–474 帧原片已抬起一脚并显出破墙，候选仍偏近且双脚基本着地。中段破墙展开可辨，双脚交替和抬手不同步，第 485–487 帧附近的支撑脚与原片不同。原片第 500 帧已进入收镜的近地动作，候选约到第 503–505 帧才推近。末帧已回到近处，但近身轮廓和短闪仍不一致。开头景别反向和动作节拍改变了这一个连续镜头，退回。",
+    "reviewedAt": "2026-11-27T06:36:08.457480+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S19",
+      "sourceFrame": 469,
+      "file": "S19-source-edit-0469.png",
+      "sourceStillSha256": "aeb7007f595b22fd9345fa690f13326570d4f6d492b5f4a3cda0a7a8536e138b",
+      "sha256": "9ff31e355a133760db9323662cc86ae7835dd97cdde0b74ddf3aa690415e2e0a",
+      "prompt": "Edit the first input as a specific frame of an existing stylized adult 3D dance scene. Preserve the same floor-level camera, position, original lens tilt, damaged room, warm overhead lamps, shadows, furniture and existing orange light streaks. Only replace the acting character with the adult dancer in the second image. Dress the actor in dark tailored trousers and boots with a deep crimson cloak that hangs over the back and outer legs, toned-down gold lining, dark gloves and a small string of red wrist beads when visible. Keep the character's limbs at their original positions and use normal adult proportions for the design. Maintain the source crop, dim depth, perspective, side lighting and the wooden set. Landscape 16:9. This early shot moment has two staggered boots, a slightly bent knee, a small hand gesture to the left, and an actor's head cropped above the frame. Preserve the opening's closer rear camera and the wooden cabinet between the legs. Use the cloak's folds to show his turning body while maintaining existing coverage.",
+      "inputs": [
+        "anchor-originals/S19-source-0469.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    },
+    {
+      "shot": "S19",
+      "sourceFrame": 479,
+      "sourceStillSha256": "e161e4595a1d8b14080eed29f189cb37a343ac5321e297d46b6cdb6827c4207f",
+      "file": "S19-source-rear-0479.png",
+      "sha256": "9a129363e9299cb4e9a574791df90d514932f89bdf9e13449a92f6d7a5d9d744",
+      "prompt": "Edit the first fictional 3D film frame by replacing its one adult dancer with the character from image two. It is a strictly rear view. The original black-clad figure faces the far wall with their back, hips and back of head toward the lens; retain that precise posture, body direction, one hand extended away from the camera, and bent knees. Keep exactly the same framing, scale, motion depth, jagged wall, chair, board lines, airborne details and the same existing warm lights. Change the near-facing back of the costume to the crimson and gold cape of the blond performer, with their back of hood visible and the front of torso and face hidden by the rear perspective. Both trousered legs and boots stay clearly visible below the cape. The ref in the third image shows the correctly drawn hood from behind. Exactly one adult figure, no chest view, no extra person or modified set.",
+      "inputs": [
+        "anchor-originals/S19-source-0479.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "anchors/S11-source-edit-0294.png"
+      ]
+    },
+    {
+      "shot": "S19",
+      "sourceFrame": 508,
+      "file": "S19-source-edit-0508.png",
+      "sourceStillSha256": "9e6dc4826ef88ccdde1fb7b783bb14c5e3c63d26f045b103c469d5291144bd3b",
+      "sha256": "306d2e2eb2ad65b9b59fb3f82485e870c742434ba1f4a85bd6983c395725e290",
+      "prompt": "First edit: Edit the first input as a specific frame of an existing stylized adult 3D dance scene. Preserve the same floor-level camera, position, original lens tilt, damaged room, warm overhead lamps, shadows, furniture and existing orange light streaks. Only replace the acting character with the adult dancer in the second image. Dress the actor in dark tailored trousers and boots with a deep crimson cloak that hangs over the back and outer legs, toned-down gold lining, dark gloves and a small string of red wrist beads when visible. Keep the character's limbs at their original positions and use normal adult proportions for the design. Maintain the source crop, dim depth, perspective, side lighting and the wooden set. Landscape 16:9. This is a close, floor-level ending view from behind an adult dancer stepping near the camera. The figure is leaning forward with one glove seen well above, his head largely hidden by the cloak and angle. Keep the background pink chair at the right, the tilted ceiling and silver-orange highlights. Render the cloak over the back with soft gold edge detail, and preserve exactly the source scale and lighting transitions.\nFollow-up edit: Edit the first image only. This is the final rear-view anchor of the cloaked adult dancer. Remove the pale mask painted on the screen-right shoulder, restoring the existing crimson cloth folds and shadow under it. The character's real mask is on the other shoulder and obscured by the far-side fabric and angle in this particular frame, so no visible mask in this still. Preserve the rest of the first image exactly, especially the original low back-lit camera, leaning pose, position, hand, clothing coverage, pink chair, room and fine light streaks. Keep the same warm palette, material, aspect ratio and framing.",
+      "inputs": [
+        "anchor-originals/S19-source-0508.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "anchors/not-used/S19-source-edit-0508-visible-right-mask.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Edit one continuous 3D animated take using the full <Video 1> as the exact camera and pose timeline. Replace the sole adult dancer from frame zero with the dark tailored trousers and crimson mantle with soft gold lining shown in the images; preserve the one left shoulder mask only where the angle actually reveals it. The short is always filmed from the rear. <Picture 1> is the actual first frame 463: very tight already in motion, the cut-off torso and bent knees dominate the frame; the hood and feet are offscreen. Pull back immediately as in the video, keeping the staggered first foot lift and arm reach. Reveal the irregular wall opening as the lens draws back. <Picture 2> is frame 479, near the first third, in the widest view with both boots and one raised hand. Continue to alternate the bent and supporting legs and match the arm changes from the moving input. Near the final quarter, go low and close again behind the figure as they lunge. <Picture 3> is source frame 508, near the end: a different tight composition looking toward the warm ceiling light and with the chair at the right. Keep these three views in this order, without a hold or a jump between them. Keep the original room, rug, floor, furniture, light beams, and brief amber glints at the source times. Use the same source shadows, 3D materials and timing to the end.",
+    "seed": 465930,
+    "plannedAt": "2026-11-27T06:38:22.342765+00:00",
+    "images": [
+      {
+        "name": "S19-source-edit-0463.png",
+        "sha256": "15ae08351dcb20ea765647379f37e004960eb16c4c1f14de82ecbaeb3544f35b",
+        "imagePrompt": "Edit image 1 directly as the opening frame for a 16:9 stylized 3D animated dance shot. Image 2 is a rear costume/material reference, and image 3 is a second rear costume reference. Replace only the existing, fully clothed adult character's dark costume in image 1 with the crimson fabric mantle with muted gold edge and dark tailored trousers seen in images 2 and 3. Keep the body silhouette and flexed knees, projected position, same amount of the lower legs off screen, and the entire original crop; the hood and face remain outside this opening frame as in image 1. This is an extremely low rear viewpoint. Let the red material drape close to the sides so the original movement silhouette reads. Exactly the same low lens and tightly cropped framing as image 1, with the floor, soft wooden cabinet, mattress, shadows, warm glint and existing thin theatrical light lines all in the same position. Render as a single frame with the same soft cinematic 3D materials and lighting as the edit target."
+      },
+      {
+        "name": "S19-source-rear-0479.png",
+        "sha256": "9a129363e9299cb4e9a574791df90d514932f89bdf9e13449a92f6d7a5d9d744",
+        "imagePrompt": "Edit the first fictional 3D film frame by replacing its one adult dancer with the character from image two. It is a strictly rear view. The original black-clad figure faces the far wall with their back, hips and back of head toward the lens; retain that precise posture, body direction, one hand extended away from the camera, and bent knees. Keep exactly the same framing, scale, motion depth, jagged wall, chair, board lines, airborne details and the same existing warm lights. Change the near-facing back of the costume to the crimson and gold cape of the blond performer, with their back of hood visible and the front of torso and face hidden by the rear perspective. Both trousered legs and boots stay clearly visible below the cape. The ref in the third image shows the correctly drawn hood from behind. Exactly one adult figure, no chest view, no extra person or modified set."
+      },
+      {
+        "name": "S19-source-edit-0508.png",
+        "sha256": "306d2e2eb2ad65b9b59fb3f82485e870c742434ba1f4a85bd6983c395725e290",
+        "imagePrompt": "First edit: Edit the first input as a specific frame of an existing stylized adult 3D dance scene. Preserve the same floor-level camera, position, original lens tilt, damaged room, warm overhead lamps, shadows, furniture and existing orange light streaks. Only replace the acting character with the adult dancer in the second image. Dress the actor in dark tailored trousers and boots with a deep crimson cloak that hangs over the back and outer legs, toned-down gold lining, dark gloves and a small string of red wrist beads when visible. Keep the character's limbs at their original positions and use normal adult proportions for the design. Maintain the source crop, dim depth, perspective, side lighting and the wooden set. Landscape 16:9. This is a close, floor-level ending view from behind an adult dancer stepping near the camera. The figure is leaning forward with one glove seen well above, his head largely hidden by the cloak and angle. Keep the background pink chair at the right, the tilted ceiling and silver-orange highlights. Render the cloak over the back with soft gold edge detail, and preserve exactly the source scale and lighting transitions.\nFollow-up edit: Edit the first image only. This is the final rear-view anchor of the cloaked adult dancer. Remove the pale mask painted on the screen-right shoulder, restoring the existing crimson cloth folds and shadow under it. The character's real mask is on the other shoulder and obscured by the far-side fabric and angle in this particular frame, so no visible mask in this still. Preserve the rest of the first image exactly, especially the original low back-lit camera, leaning pose, position, hand, clothing coverage, pink chair, room and fine light streaks. Keep the same warm palette, material, aspect ratio and framing."
+      }
+    ]
+  }
+}

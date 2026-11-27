@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S30",
+  "startFrame": 759,
+  "endFrame": 788,
+  "attempt": 1,
+  "jobId": "video_gen_1e52a1f05ff74b5092b88b4dfb0ea486:openai",
+  "requestSha256": "4ddfb89f0439ab3d4d374ca51c4d0a3c8adddb48df5fce5aefdffd4bd0d329dc",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue.",
+  "seed": 1234,
+  "rawSha256": "f962cd0591815e0fde8fc4159294f8104e462dae01de77986889b86719d24eaf",
+  "cutSha256": "7ba668a857102c4799a9c3eb7f9e78c17396443babbe6e409111a8ca0936de21",
+  "review": {
+    "cutSha256": "7ba668a857102c4799a9c3eb7f9e78c17396443babbe6e409111a8ca0936de21",
+    "requestSha256": "4ddfb89f0439ab3d4d374ca51c4d0a3c8adddb48df5fce5aefdffd4bd0d329dc",
+    "originalSha256": "90795bb9e3ddfd1ebe0a07a72d0c451787011c59defa622a6da9dd77a100a3b9",
+    "decision": "rejected",
+    "reviewedFrames": 29,
+    "method": "assistant-frame-review",
+    "observations": "对照原片第 759–787 帧与 S30 第一版的两页并排，共 29 帧。候选为虚人梦，金发、红兜帽、深色衣裤和侧面具可辨，左侧红椅、破墙、右侧矮柜和闪光仍出现。原镜由贴地极近的背身画面迅速拉远，露出分腿、双手搭在腰侧的姿态，末段在相同朝向内屈膝、侧移并重新近推。候选始终正面朝镜头，几乎站定。第 766–773 帧的开腿与拉远、第 778–785 帧的下沉及侧移均缺失，开头和结尾的近景也没有原来裁切。退回。",
+    "reviewedAt": "2026-11-27T06:38:22.807329+00:00"
+  },
+  "followUp": {
+    "prompt": "Edit <Video 1> as a single continuous 3D take. Use each image to replace its single adult dancer with a crimson back mantle with subdued gold edging, fitted dark trousers, black boots and gloves and red wrist beads. The camera stays low behind the dancer during the entire shot, with the head above the top edge throughout. <Picture 1> is the first source frame 759, extremely close and already moving. Immediately pull away with the video; show the feet separating, hands braced at the waist and elbows out. <Picture 2> is the mid-shot source frame 773 at the wide position. Keep the source rhythm of the split stance, knee flex, weight shift and lowered torso, then push closer behind the figure again. <Picture 3> is the last source frame 787 with the knees partly cropped and a crisp brief amber flash. The body stays facing away and acts throughout the frame sequence. Keep all the source furniture and scenery, including the red chair, broken wall and right-hand cabinet, as well as lighting, camera route and each established streak and bright flicker on the source beat.",
+    "seed": 870159,
+    "plannedAt": "2026-11-27T06:41:34.227272+00:00",
+    "images": [
+      {
+        "name": "S30-source-edit-0759.png",
+        "sha256": "1747c2da5e9e6df42ac1998cc9ef5ab0e3cf6430f53476aec6498f55874752eb",
+        "imagePrompt": "Edit image 1 directly as an opening frame for a staged low-angle 3D animation. Image 2 supplies the rear crimson fabric mantle and black trouser material from the middle of this shot. The current frame is very tight: only part of the same single fully clothed adult dancer's back and legs is in shot. Preserve exactly the silhouette, the position and angle of the bent legs, the original tight crop with the head and boots out of frame, and the placement of the off-screen limbs. Drape the red cloth around the outer side without changing the viewpoint. Keep the original blurry warm room, dark broken opening, lighting, orange flare and thin rays where they already appear. Change only the clothing materials to black trousers and crimson mantle with discreet muted gold edges. Match source stylized CGI and original 16:9 landscape framing."
+      },
+      {
+        "name": "S30-source-edit-0773.png",
+        "sha256": "4fb70a57680962a4224120e7bc3e0913ecaea2ec0c78b6c578545d0ca2c195cf",
+        "imagePrompt": "Edit input 1, a specific existing frame of a clothed adult character in a stylized 3D dance. Preserve the original camera plane, rear orientation, exact position, crop, actor scale, lens perspective, dark warm tones, wooden room and fine pre-existing light streaks. Change the actor's visible wardrobe to the crimson hooded dancer of input 2, with the established 3D fabric treatment of input 3. Use matte charcoal trousers, black boots and gloves where they are in frame, and a deep crimson and muted gold cloak draped to one side so it follows the motion. Keep all surfaces clothed and preserve the broad body gesture within the existing pose. Avoid inventing or exposing any unseen part of the character. No new effects or furniture. Landscape 16:9. Mid-shot broad low rear pose. Keep the same boot spaces, spread knees and both elbows out. Preserve the pink chair, dark broken wall opening, floor objects, and dresser. The hood is cropped near the top as the original head is."
+      },
+      {
+        "name": "S30-source-edit-0787.png",
+        "sha256": "a57ee4ec16bd70b56c62aea08cde4b29fd5ffa83c18d937258575be9cd512687",
+        "imagePrompt": "Edit image 1 directly as the final frame of a short stylized 3D animated dance shot. Image 2 is the rear costume reference only. Replace the existing single clothed adult from the first image with the matching crimson cloak, muted gold edge, charcoal trousers, dark gloves and red wrist beads. The dancer faces away with hands pressed at the sides and knees bent outward. Preserve the same rear three-quarter posture, silhouette and screen positions of both knees and hands. The head and boots are cropped out in this tighter ending. Keep original depth, lens, composition, broken wall, red chair, green cabinet, wood floor, orange flare and existing fine light streaks in the same positions as in image 1. One existing figure, wide 16:9."
+      }
+    ]
+  }
+}

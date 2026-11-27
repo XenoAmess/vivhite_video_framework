@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "vivhite-pipa-resumed-retakes-1",
+  "checkedAt": "2026-11-27T14:47:14.3730691+08:00",
+  "plannedShots": 48,
+  "acceptedShots": 18,
+  "acceptedFrames": 517,
+  "newlyReviewedCandidates": {
+    "shots": 5,
+    "frames": 207
+  },
+  "queue": {
+    "running": 1,
+    "queued": 29,
+    "waitingForSource": 0,
+    "current": [
+      {
+        "shot": "S38",
+        "attempt": "attempt-001",
+        "id": "video_gen_6f05dae10e5f48f2a6d8392222310493"
+      }
+    ],
+    "notOnActiveQueue": []
+  },
+  "retakes": [
+    {
+      "shot": "S19",
+      "sourceFrames": [
+        463,
+        510
+      ],
+      "attempt": 3,
+      "priorReview": "source-fidelity-S19-review-002.json",
+      "jobId": "video_gen_be034732b3014325bad7b3d7c3d8e2c8:openai",
+      "submittedAt": "2026-11-27T06:38:48.783389+00:00",
+      "localStatus": "queued",
+      "requestSha256": "a4821bda88a5c35ee398328484b600d1a1084683bf8f65a21565144de1c150ef",
+      "motionSha256": "537dd85f984ae69e1b2e5f7071c7ef425ff718ab08ca80fdd0d020e0a75e8137",
+      "seed": 465930,
+      "renderPrompt": "Edit one continuous 3D animated take using the full <Video 1> as the exact camera and pose timeline. Replace the sole adult dancer from frame zero with the dark tailored trousers and crimson mantle with soft gold lining shown in the images; preserve the one left shoulder mask only where the angle actually reveals it. The short is always filmed from the rear. <Picture 1> is the actual first frame 463: very tight already in motion, the cut-off torso and bent knees dominate the frame; the hood and feet are offscreen. Pull back immediately as in the video, keeping the staggered first foot lift and arm reach. Reveal the irregular wall opening as the lens draws back. <Picture 2> is frame 479, near the first third, in the widest view with both boots and one raised hand. Continue to alternate the bent and supporting legs and match the arm changes from the moving input. Near the final quarter, go low and close again behind the figure as they lunge. <Picture 3> is source frame 508, near the end: a different tight composition looking toward the warm ceiling light and with the chair at the right. Keep these three views in this order, without a hold or a jump between them. Keep the original room, rug, floor, furniture, light beams, and brief amber glints at the source times. Use the same source shadows, 3D materials and timing to the end.",
+      "imageReferences": [
+        {
+          "file": "S19-source-edit-0463.png",
+          "sourceFrame": 463,
+          "sha256": "15ae08351dcb20ea765647379f37e004960eb16c4c1f14de82ecbaeb3544f35b"
+        },
+        {
+          "file": "S19-source-rear-0479.png",
+          "sourceFrame": 479,
+          "sha256": "9a129363e9299cb4e9a574791df90d514932f89bdf9e13449a92f6d7a5d9d744"
+        },
+        {
+          "file": "S19-source-edit-0508.png",
+          "sourceFrame": 508,
+          "sha256": "306d2e2eb2ad65b9b59fb3f82485e870c742434ba1f4a85bd6983c395725e290"
+        }
+      ]
+    },
+    {
+      "shot": "S24",
+      "sourceFrames": [
+        578,
+        633
+      ],
+      "attempt": 2,
+      "priorReview": "source-fidelity-S24-review-001.json",
+      "jobId": "video_gen_3a2ab9e321cd4b739531ba4f6a98cb86:openai",
+      "submittedAt": "2026-11-27T06:36:47.654795+00:00",
+      "localStatus": "queued",
+      "requestSha256": "0dc40ea592d5fb49db6a15c3a5f7ec5ffcc99f8f814fe96c9be41be7669a8687",
+      "motionSha256": "47a8f63ada492ca5009cf688ccfb2c5d0468945251c26b8b6a381a1c839f020a",
+      "seed": 414726,
+      "renderPrompt": "Edit this one continuous stylized 3D animation cut using <Video 1> for the exact scene, camera and timing. Replace the single performer with the crimson-hooded blond adult in the supplied compositions. Keep the dark costume and boots, both gloved hands and red wrist beads, and one ivory mask on the left shoulder where visible. The only changes are the actor and clothing. Retain the floorboards, room geometry, chair, rubble, framing, warm lighting and every existing brief luminous streak or flash on the source beat. <Picture 1> is source frame 578, the actual opening overhead view with the body close to the floor. Start with the source's ongoing arm and leg motion and early flash. Match the original forearm changes and both palms' contact with the boards. <Picture 2> is source frame 600, during the push from the floor with the torso rising at the original rate. <Picture 3> is source frame 615, the intermediate low angle seen from behind, with both boots separated and one hand supporting the shifting weight. Continue that rise, weight shift and camera advance throughout the remaining source poses; the last seven source frames move in still closer, progressively cropping the legs and boots. Preserve the sharp brief highlights that punctuate the ending. The three images mark instants inside the single continuous shot; use the video to connect them and to finish the move past the third image. Keep source framing, momentum and flash timing through the first and last frame.",
+      "imageReferences": [
+        {
+          "file": "S24-source-edit-0578.png",
+          "sourceFrame": 578,
+          "sha256": "c29933a1b4def70550fdba67855ea8fc2f1e159eaf200eb58c5dbc9d943cc006"
+        },
+        {
+          "file": "S24-source-edit-0600.png",
+          "sourceFrame": 600,
+          "sha256": "a015daf142c32fa9f49c03e6d8fa9767bb903fe3f89dae100d118f4a907b14b1"
+        },
+        {
+          "file": "S24-source-rear-0615.png",
+          "sourceFrame": 615,
+          "sha256": "caf71156e425ea365ba4ae2b203cb517cea1c584f0bb515b22fb0f865de293e4"
+        }
+      ]
+    },
+    {
+      "shot": "S27",
+      "sourceFrames": [
+        644,
+        671
+      ],
+      "attempt": 2,
+      "priorReview": "source-fidelity-S27-review-001.json",
+      "jobId": "video_gen_483a9ceca0b24333a19de38b56c2f0c9:openai",
+      "submittedAt": "2026-11-27T06:43:21.835200+00:00",
+      "localStatus": "queued",
+      "requestSha256": "7bcd015f878e50fb486d3adf301cc1e312632b359f251f9950c1a0e0a3819b99",
+      "motionSha256": "f2a178b4e11d097fbdf1b83f89e49ee040e68dbf2f53f62c7e9e6f5e40341124",
+      "seed": 610873,
+      "renderPrompt": "Use <Video 1> as the exact time, position and focus reference for a single continuous 3D animation edit. The only actor visible is the dark-brown-haired performer in the deep navy uniform with antique-gold edging and shoulder trim, cream vest, and pale cuffs throughout every frame. <Picture 1> shows the actual first frame 644: the two original dark foreground props are horizontal at separate heights and partially obscure him, while the performer is already the navy-gold replacement. Follow the source as the foreground props separate and uncover his expression before sweeping outward and advancing toward the lens. <Picture 2> is source frame 656, the mid-shot swish and near-lens occlusion. The same actor stays at the original depth and scale. <Picture 3> is frame 665 in the final stretch, with the two bright orange-white stage flashes overlapping the foreground and lighting the same performer. Keep the motion moving forward through the closing frame and preserve the original short pulses, shadows and smoke. Keep the shape, position and occlusion of both existing props, the lens focus, source room, wall fan, chair, calendar, and exact camera route, original motion timing and the established effect positions. Every visible portion of the actor, including his face and costume, is replaced with the same performer starting from the first image.",
+      "imageReferences": [
+        {
+          "file": "S27-source-edit-0644.png",
+          "sourceFrame": 644,
+          "sha256": "d5e399920cc9cb6c569ceeb59aab030796652d512dcc2a9b1a15b89c32306e51"
+        },
+        {
+          "file": "S27-source-edit-0656.png",
+          "sourceFrame": 656,
+          "sha256": "c83855ff530e4e4302ff6a4846f7d28348ffdacf2e9fb0159c815e9e24debc0d"
+        },
+        {
+          "file": "S27-source-edit-0665.png",
+          "sourceFrame": 665,
+          "sha256": "56cd4329e0d16cf3c4427a3d298d9b7e61e4c0bbd4afcb5f2c134852113996b6"
+        }
+      ]
+    },
+    {
+      "shot": "S30",
+      "sourceFrames": [
+        759,
+        788
+      ],
+      "attempt": 2,
+      "priorReview": "source-fidelity-S30-review-001.json",
+      "jobId": "video_gen_646b3345061c47749f31a35b3a593afb:openai",
+      "submittedAt": "2026-11-27T06:42:21.285033+00:00",
+      "localStatus": "queued",
+      "requestSha256": "82d4e1dfdbbf8a4b82d4dcf344df7aa0af459800b9ed4570c685e33237a58587",
+      "motionSha256": "6324ab707f38c8f3b799c632453d1ba539d86cdef53aa96c382f04dff092f86c",
+      "seed": 870159,
+      "renderPrompt": "Edit <Video 1> as a single continuous 3D take. Use each image to replace its single adult dancer with a crimson back mantle with subdued gold edging, fitted dark trousers, black boots and gloves and red wrist beads. The camera stays low behind the dancer during the entire shot, with the head above the top edge throughout. <Picture 1> is the first source frame 759, extremely close and already moving. Immediately pull away with the video; show the feet separating, hands braced at the waist and elbows out. <Picture 2> is the mid-shot source frame 773 at the wide position. Keep the source rhythm of the split stance, knee flex, weight shift and lowered torso, then push closer behind the figure again. <Picture 3> is the last source frame 787 with the knees partly cropped and a crisp brief amber flash. The body stays facing away and acts throughout the frame sequence. Keep all the source furniture and scenery, including the red chair, broken wall and right-hand cabinet, as well as lighting, camera route and each established streak and bright flicker on the source beat.",
+      "imageReferences": [
+        {
+          "file": "S30-source-edit-0759.png",
+          "sourceFrame": 759,
+          "sha256": "1747c2da5e9e6df42ac1998cc9ef5ab0e3cf6430f53476aec6498f55874752eb"
+        },
+        {
+          "file": "S30-source-edit-0773.png",
+          "sourceFrame": 773,
+          "sha256": "4fb70a57680962a4224120e7bc3e0913ecaea2ec0c78b6c578545d0ca2c195cf"
+        },
+        {
+          "file": "S30-source-edit-0787.png",
+          "sourceFrame": 787,
+          "sha256": "a57ee4ec16bd70b56c62aea08cde4b29fd5ffa83c18d937258575be9cd512687"
+        }
+      ]
+    },
+    {
+      "shot": "S32",
+      "sourceFrames": [
+        788,
+        824
+      ],
+      "attempt": 2,
+      "priorReview": "source-fidelity-S32-review-001.json",
+      "jobId": "video_gen_e4f92467346f44a794726aa739c08d6e:openai",
+      "submittedAt": "2026-11-27T06:42:21.536260+00:00",
+      "localStatus": "queued",
+      "requestSha256": "1eef1bd26a632eb89c4df408b824335948a08456f4daaebf57551e4f1257f30f",
+      "motionSha256": "dc9529ae82ea5a3752ce7091d028e7e65ae76e1b878600b68af0c98e7b3a46df",
+      "seed": 345109,
+      "renderPrompt": "Edit one continuous 3D animation shot using <Video 1> for the same poses, fast arm beats and continuous rise of the camera. Replace the actor throughout with a fully dressed blond adult in the red hood, gold-edged crimson mantle, dark outfit, fingered gloves and single left-shoulder mask seen in the pictures. <Picture 1> is the first frame 788, hands by the thighs. The bend, leftward lean and outward arm swing happen immediately. <Picture 2> is source frame 794, only a sixth of the way through, the hand at the right border already spread open and the other hand back by the red covered furnishing. Place this transition exactly as early as in the input. Continue the several quick opening and retraction beats of the glove, which must follow the moving input without a prolonged hold. The feet step, knees turn and the face tilts with the source. <Picture 3> is frame 823, the final high overhead view, arm out on the right with the palm open. Preserve the same continuous tilting and rising camera, frame edges, shadow, furniture, plank floor, debris, and existing warm glints.",
+      "imageReferences": [
+        {
+          "file": "S32-source-edit-0788.png",
+          "sourceFrame": 788,
+          "sha256": "b01705663cb8013d4976d306290a68bc9c244cc9db0eed94693ea44d6fd48000"
+        },
+        {
+          "file": "S32-source-edit-0794.png",
+          "sourceFrame": 794,
+          "sha256": "50435761d5fb199d250c25c8617ea5124d1e65f77ff5b478cec027af8af9fc61"
+        },
+        {
+          "file": "S32-source-edit-0823.png",
+          "sourceFrame": 823,
+          "sha256": "cbfe2ee649128eee382794770883e46285b6860c4cc4837f41c50389db21f014"
+        }
+      ]
+    },
+    {
+      "shot": "S35",
+      "sourceFrames": [
+        878,
+        946
+      ],
+      "attempt": 2,
+      "priorReview": "source-fidelity-S35-review-001.json",
+      "jobId": "video_gen_418d410e713746c89b79cf92e546524b:openai",
+      "submittedAt": "2026-11-27T06:46:25.791791+00:00",
+      "localStatus": "queued",
+      "requestSha256": "b8297a3279881bdd7fa1cefd27cbbd048aa51ec7b579ee0887a5d439e2910334",
+      "motionSha256": "623e56fd5395e7c8a1882ba1aae8edcee6ee1c07b394265dbb5d01f05de1d4f3",
+      "seed": 740605,
+      "renderPrompt": "Edit this single continuous stylized 3D animation cut using <Video 1> as the exact pose, camera and light track. Replace the only dancer with the fully clothed blond adult performer in crimson hood, red mantle with subdued gold lining, charcoal trousers, boots and gloves with red wrist beads. The cape follows the source turn and is gathered high or drifts to one side so both legs, the step, and the through-view to the lamp remain legible; the mask is on the left shoulder and appears only when visible from that angle. <Picture 1> is the opening low rear composition at frame 878, where the lamp and chair sit to screen left. Keep the initial spread of both arms and crossing steps at the source times. <Picture 2> is frame 918 in the low rear stride with arms unevenly extended, legs separated and the room visible between them. Follow the very low approach, bend and subsequent turn from the motion source; maintain the same occlusion of the clothing on the limbs. Keep the arm high through the close section, then bring the pointing hand into the right foreground on the timing of the moving source. <Picture 3> is frame 936, within that final sequence; continue the pullback and late reframing as the hand holds its pointing gesture. Maintain source geometry, floor, broken wall, both red furnishings, cabinet, and the original glints and shadows.",
+      "imageReferences": [
+        {
+          "file": "S35-source-edit-0878.png",
+          "sourceFrame": 878,
+          "sha256": "c42d8367e512b9e6c68a5db6bb685a13f6a563007c370e871f16ca8ed7d344e2"
+        },
+        {
+          "file": "S35-source-edit-0918.png",
+          "sourceFrame": 918,
+          "sha256": "b9110237aea2a4ffb16830314321580a8b34a3e3469a1580a756452a25ff6238"
+        },
+        {
+          "file": "S35-source-edit-0936.png",
+          "sourceFrame": 936,
+          "sha256": "6a2ec3809cc6f6e12435ae37c70fe03fb046f5459d3fd9e2271bf79af84b3c13"
+        }
+      ]
+    }
+  ]
+}

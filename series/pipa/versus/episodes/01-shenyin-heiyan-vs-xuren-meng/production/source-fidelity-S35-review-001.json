@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S35",
+  "startFrame": 878,
+  "endFrame": 946,
+  "attempt": 1,
+  "jobId": "video_gen_a1c90879029e4693baa79cdf5a8057e5:openai",
+  "requestSha256": "54ceacae590b39461caf45655f37007c70dc344aa7eb2a86580b82c3413b2e84",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 936. Follow the original movement from wide rear posture through the turn, then extend the near arm and its apparent scale toward the right foreground at the same time.",
+  "seed": 1234,
+  "rawSha256": "64f9c94f07c9d30f1db71abedbb68ff2eeacfaa5cec5f51c822a5dd3caebfe72",
+  "cutSha256": "06b58550e6afce8937272f3fe02c527cff64c9faee992f37ba67f70dc36bf6e8",
+  "review": {
+    "cutSha256": "06b58550e6afce8937272f3fe02c527cff64c9faee992f37ba67f70dc36bf6e8",
+    "requestSha256": "54ceacae590b39461caf45655f37007c70dc344aa7eb2a86580b82c3413b2e84",
+    "originalSha256": "04058cdab3d258eb44ace786d8eafe7a0967472df7afafabaedb596c5219a6d1",
+    "decision": "rejected",
+    "reviewedFrames": 68,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 878–945 帧及 S35 第一版的五页并排，共 68 帧。虚人梦的红兜帽、披风、深色长裤及末段可见的金发与面具没有换回原演员。原片破墙、顶灯、红椅、矮柜、暖光和大部分短闪保留。前半段伸臂、转身与取景推进方向大体对应。\n候选的披风在前半段伸到脚边并遮住部分交叉步。约第 918–923 帧，原片靠近地板的机位已能由两条张开的腿看到中间的灯和破墙，候选大幅铺开的披风占据前景，遮挡两腿及腿间背景。约第 931–932 帧候选已将指向手定在画面右侧，原片到约第 933 帧才把这一手势带入画面。尾段原片继续拉远并调整角度，候选手的位置和景别变化偏小。因跨步被挡及收尾动作提前，退回。",
+    "reviewedAt": "2026-11-27T06:43:07.802916+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S35",
+      "sourceFrame": 936,
+      "sourceStillSha256": "40f1023fcab2ef27e6d66d53b51fc41786e573709c4d1ea6bfef194931452ffc",
+      "file": "S35-source-edit-0936.png",
+      "sha256": "6a2ec3809cc6f6e12435ae37c70fe03fb046f5459d3fd9e2271bf79af84b3c13",
+      "prompt": "Edit the assigned cast in the first 16:9 still from a stylized 3D fictional film, preserving camera orientation, crop, original figure placement, shadows, set, foreground and effects as shown. Use the other references only for the adult character designs. Match the dark source lighting and original 3D material. Use the crimson hood, gold-lined cape, blond hair and one left-shoulder mask from the reference. Keep the original wide side stance and the extraordinary perspective of the near hand taking up the right foreground. Keep both long-trousered legs and boots in their current stance. Preserve the old damaged room and pink seats, with the actor the same distance from the camera.",
+      "inputs": [
+        "anchor-originals/S35-source-0936.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Edit this single continuous stylized 3D animation cut using <Video 1> as the exact pose, camera and light track. Replace the only dancer with the fully clothed blond adult performer in crimson hood, red mantle with subdued gold lining, charcoal trousers, boots and gloves with red wrist beads. The cape follows the source turn and is gathered high or drifts to one side so both legs, the step, and the through-view to the lamp remain legible; the mask is on the left shoulder and appears only when visible from that angle. <Picture 1> is the opening low rear composition at frame 878, where the lamp and chair sit to screen left. Keep the initial spread of both arms and crossing steps at the source times. <Picture 2> is frame 918 in the low rear stride with arms unevenly extended, legs separated and the room visible between them. Follow the very low approach, bend and subsequent turn from the motion source; maintain the same occlusion of the clothing on the limbs. Keep the arm high through the close section, then bring the pointing hand into the right foreground on the timing of the moving source. <Picture 3> is frame 936, within that final sequence; continue the pullback and late reframing as the hand holds its pointing gesture. Maintain source geometry, floor, broken wall, both red furnishings, cabinet, and the original glints and shadows.",
+    "seed": 740605,
+    "plannedAt": "2026-11-27T06:45:47.662246+00:00",
+    "images": [
+      {
+        "name": "S35-source-edit-0878.png",
+        "sha256": "c42d8367e512b9e6c68a5db6bb685a13f6a563007c370e871f16ca8ed7d344e2",
+        "imagePrompt": "Edit image 1 directly as the opening frame of this stylized 3D dance shot. Replace its one fully clothed adult dancer with the character from image 2, seen from the back. Use crimson hood and mantle, muted gold seam, dark trousers and gloves. Image 2 gives fabric and design only. Keep the exact floor-level rear lens, head location, original bent elbows, separation of both legs, clipped boots and source silhouette. Let the mantle be gathered in folds above the thighs so the open space between both legs, each knee and the original room are visible. Keep ceiling, red chair at left, cabinet at right, broken wall and the warm lamp and bright line in exactly the same positions as in image 1. Match the source's dark 3D animation contrast and 16:9 frame."
+      },
+      {
+        "name": "S35-source-edit-0918.png",
+        "sha256": "b9110237aea2a4ffb16830314321580a8b34a3e3469a1580a756452a25ff6238",
+        "imagePrompt": "First edit: Edit image 1 directly as a single exact pose inside a stylized 3D dance shot. Replace the existing adult dancer with the fully clothed crimson-hooded adult from image 2, seen from below and behind, with the dark tailored trousers, dark boots and gloves, red wrist beads and rich crimson mantle. Image 2 is character reference only. Preserve the original bent arm reaching sideways, the other arm continuing upward past the edge, spread legs and matching foreshortening. The short gathered mantle folds narrowly across the upper back and swings along one side, leaving both legs distinct and the gap between them completely open onto the distant lamp and wall. Preserve all cropping, lens angle, wooden room, broken wall, red furniture, cabinet, existing amber glint and thin rays from the first image. Same landscape aspect and stylized 3D materials.\nFollow-up edit: Edit image 1, using image 2 to correct clothing orientation and image 3 for the exact pose. The camera sees the adult dancer's back during this part. Put continuous crimson fabric across the upper back, remove the front-facing tunic tails, hide the face and loose frontal strands with the outside back surface of the hood. The left shoulder mask is only on the outer left shoulder and mostly hidden from this rear angle; remove the mask on image right. Precisely follow the original image 3: bend the left elbow at screen left as shown and keep the other arm extending through the top of frame. Leave the wide gap between the legs open, with the mantle streaming to one side outside the gap. Keep the same low lens, cut-off legs, original dark broken wall, ceiling lamp, red furniture, cabinet and brief glow. This is the same one fully clothed dancer in a dark 16:9 stylized 3D animation."
+      },
+      {
+        "name": "S35-source-edit-0936.png",
+        "sha256": "6a2ec3809cc6f6e12435ae37c70fe03fb046f5459d3fd9e2271bf79af84b3c13",
+        "imagePrompt": "Edit the assigned cast in the first 16:9 still from a stylized 3D fictional film, preserving camera orientation, crop, original figure placement, shadows, set, foreground and effects as shown. Use the other references only for the adult character designs. Match the dark source lighting and original 3D material. Use the crimson hood, gold-lined cape, blond hair and one left-shoulder mask from the reference. Keep the original wide side stance and the extraordinary perspective of the near hand taking up the right foreground. Keep both long-trousered legs and boots in their current stance. Preserve the old damaged room and pink seats, with the actor the same distance from the camera."
+      }
+    ]
+  }
+}
