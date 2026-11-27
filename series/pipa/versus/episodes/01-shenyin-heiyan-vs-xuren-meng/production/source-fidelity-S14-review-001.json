@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S14",
+  "startFrame": 338,
+  "endFrame": 357,
+  "attempt": 1,
+  "jobId": "video_gen_6232c90087df4cafb6ebe8ce02aea9cf:openai",
+  "requestSha256": "7a158395e37baa0cfb8fc5611c519908bda61b9eb6464eed10efb4c1cce42e2f",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 352. Keep the source extreme near-left object, near-far focus and its intermittent warm frames in the existing original edit. The officer remains in the same position beside the rose chair.",
+  "seed": 1234,
+  "rawSha256": "6175c2bb63d3fa53f19c48e635dc43bf057ddbf6f8e66bf0103b4996f1310c26",
+  "cutSha256": "e550935ccbdddfb22f0aed40affe111ec0c9c6e70697a5cea39ddaa992ab110d",
+  "review": {
+    "cutSha256": "e550935ccbdddfb22f0aed40affe111ec0c9c6e70697a5cea39ddaa992ab110d",
+    "requestSha256": "7a158395e37baa0cfb8fc5611c519908bda61b9eb6464eed10efb4c1cce42e2f",
+    "originalSha256": "b2913345e8356e40a687754cfd7d8dabafd86eb34692ce4eaf4a36ff249d6aeb",
+    "decision": "accepted",
+    "reviewedFrames": 19,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 338–356 帧及最终全 19 帧。保持原片前景枪形道具、粉椅和黑炎后景的相对位置，保留最初窄亮闪、向上转过亮反光、随后回到前景暖亮光团的顺序和对应帧位。使用同一个渲染结果多取显著光效节点，去掉开头拖长的停留及最后一个模型无光帧。起镜的前景道具略小，末两帧光晕比原片集中。原片相同机位、动作节点和人物造型全程可辨。",
+    "reviewedAt": "2026-11-27T00:52:57.713674+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S14",
+      "sourceFrame": 352,
+      "sourceStillSha256": "1648aea6451a8b3e30f849910646f20cbee0ffb9dbecb1c64903fc40f7d025df",
+      "file": "S14-source-edit-0352.png",
+      "sha256": "6d3b723af79bcbbf3230cfcf0318cd8fc1635afc0687e132a0378b1eb86d80e5",
+      "prompt": "Edit only the character appearance in image one, a frame from a fictional stylized 3D animated film. Use image two for the exact fully dressed adult character design. Keep the first image's camera, dark source palette, actor placement and pose, environment, light, visible props and existing visual effects as actually pictured. Do not add elements or change the story frame. Use the navy-and-gold officer and dark brown hair for the actor seated farther back beside the pink chair, the original hand and arm silhouette behind the dark near-left object. Keep the same color and scale of the existing bright optical glow at far left. Preserve the exact foreground to background perspective of the rounded table, chair, shadows and tilted wall.",
+      "inputs": [
+        "anchor-originals/S14-source-0352.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S14.mp4",
+    "inputSha256": "1212a61c59d5c9f7d2026c31d180a0083970841cad1f4e476a4b3c4e26f453a4",
+    "preRetimeCutSha256": "b861e034b810a2dcb529ba63dbcdbc84f597e3ec6aa5701a7031e309ba89488a",
+    "outputSha256": "e550935ccbdddfb22f0aed40affe111ec0c9c6e70697a5cea39ddaa992ab110d",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      24,
+      28,
+      56,
+      60,
+      64,
+      68,
+      76,
+      80,
+      84,
+      91,
+      96,
+      100,
+      108,
+      112
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,4)+eq(n\\,8)+eq(n\\,12)+eq(n\\,16)+eq(n\\,24)+eq(n\\,28)+eq(n\\,56)+eq(n\\,60)+eq(n\\,64)+eq(n\\,68)+eq(n\\,76)+eq(n\\,80)+eq(n\\,84)+eq(n\\,91)+eq(n\\,96)+eq(n\\,100)+eq(n\\,108)+eq(n\\,112),setpts=N/(24*TB)",
+    "reason": "Conform the rendered light cues and camera motion to the original nineteen-frame shot.",
+    "coveredFrames": 19,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-27T00:52:57.132416+00:00"
+  }
+}

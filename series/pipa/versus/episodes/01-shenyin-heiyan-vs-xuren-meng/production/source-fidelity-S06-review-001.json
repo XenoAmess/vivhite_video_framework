@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S06",
+  "startFrame": 158,
+  "endFrame": 186,
+  "attempt": 1,
+  "jobId": "video_gen_e32c4166461c4c468eb5de78f0b0b0ef:openai",
+  "requestSha256": "ddc812e8b95a7dc5d3b3093500ebe1ad667c9bd8e714114d685ff45f170d179b",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 159 and <Picture 3> is the source-frame edit at 185. In this single shot the officer leans toward the round table and turns toward screen right. Match the visible prop movement and hands against the actual tabletop; keep the same pink chair and body orientation at the end.",
+  "seed": 1234,
+  "rawSha256": "0623d08bd45ff1d2b6fff59ef5f3a6c50e10534d5e6f7b5d2b7a253071dcc54c",
+  "cutSha256": "ea97159b38036ca5774a203155446b05a3e82cbe7c1793a85ea22211de9379b3",
+  "review": {
+    "cutSha256": "ea97159b38036ca5774a203155446b05a3e82cbe7c1793a85ea22211de9379b3",
+    "requestSha256": "ddc812e8b95a7dc5d3b3093500ebe1ad667c9bd8e714114d685ff45f170d179b",
+    "originalSha256": "f66a8a1573ed40a06ecf6abd412c166675eee6de6ae7b7fa7bf7935fc7c4eba2",
+    "decision": "accepted",
+    "reviewedFrames": 28,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 158–185 帧及候选全部 28 帧。黑炎保持同一短棕发、深蓝金边及肩饰，从桌面上方压手、张指、扫过桌面及转身的连续动作清楚。粉椅、墙上纸张、红门、桌面反光和原片枪形道具的遮挡与画面位置保留。候选的指尖进入桌面约早一帧，末尾发梢摆动略少，画面无额外角色或切点。",
+    "reviewedAt": "2026-11-27T00:15:17.621553+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S06",
+      "sourceFrame": 159,
+      "sourceStillSha256": "55073329a8d1839a99703dbca84b3cb582dda76c94af2b17e822c0c205699d7f",
+      "file": "S06-source-edit-0159.png",
+      "sha256": "dc53dc4f836398a7634957b07b35a27c431d71df17de8275998da055df21d1d2",
+      "prompt": "This is a single frame of a fictional stylized 3D animated film. Edit only the assigned person's face, hair and visible clothing in the first reference from the design in the second. Keep the first reference's camera, relative silhouette size, pose, surface texture, room layout, reflections, grain, exact lighting and all original objects. Keep existing foreground props as already drawn with original silhouette, scale and focus. Add no new content. The officer is in the same leaning front pose, looking downward with a sly smile in the pink chair. The fingers and the forearm reach into the same left lower corner. Keep the dark round tabletop, the original prop lying near the bottom edge, red edge-light and framed wall. Same cropped sleeve and elbows, dark brown hair and blue-gold uniform.",
+      "inputs": [
+        "anchor-originals/S06-source-0159.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    },
+    {
+      "shot": "S06",
+      "sourceFrame": 185,
+      "sourceStillSha256": "cdc077d087764f96965b6db5a2059d4e8e2e70abdf9e7c5b9de3e06142c429ad",
+      "file": "S06-source-edit-0185.png",
+      "sha256": "a8a65559321b14f3b49c869321fd899a53757f541ba3cb6564813380c1076cff",
+      "prompt": "This is a single frame of a fictional stylized 3D animated film. Edit only the assigned person's face, hair and visible clothing in the first reference from the design in the second. Keep the first reference's camera, relative silhouette size, pose, surface texture, room layout, reflections, grain, exact lighting and all original objects. Keep existing foreground props as already drawn with original silhouette, scale and focus. Add no new content. The dark-haired officer is turned quickly toward the right edge with the same stretched navy-sleeve silhouette and blurry dark hair tips. Maintain the camera across the dark round table, same pink chair, paper placards and red-framed left doorway. Keep the original blurred shape entering the edge of the frame and the exact room lighting. Do not add any object.",
+      "inputs": [
+        "anchor-originals/S06-source-0185.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ]
+}
