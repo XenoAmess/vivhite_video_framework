@@ -1,0 +1,323 @@
+{
+  "schemaVersion": "vivhite-pipa-evening-review-1",
+  "checkedAt": "2026-11-27T18:46:54.6030714+08:00",
+  "plannedShots": 48,
+  "plannedFrames": 1478,
+  "approvedShots": 21,
+  "approvedFrames": 553,
+  "approvedShotIds": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S20",
+    "S22",
+    "S45",
+    "S46",
+    "S51"
+  ],
+  "newReviews": {
+    "shots": 12,
+    "frames": 388,
+    "acceptedShots": 3,
+    "acceptedFrames": 36,
+    "rejectedShots": 9,
+    "rejectedFrames": 352
+  },
+  "reviews": [
+    {
+      "shot": "S38",
+      "review": "source-fidelity-S38-review-001.json",
+      "decision": "rejected",
+      "frames": 92
+    },
+    {
+      "shot": "S40",
+      "review": "source-fidelity-S40-review-001.json",
+      "decision": "rejected",
+      "frames": 29
+    },
+    {
+      "shot": "S41",
+      "review": "source-fidelity-S41-review-001.json",
+      "decision": "rejected",
+      "frames": 18
+    },
+    {
+      "shot": "S42",
+      "review": "source-fidelity-S42-review-001.json",
+      "decision": "rejected",
+      "frames": 49
+    },
+    {
+      "shot": "S43",
+      "review": "source-fidelity-S43-review-001.json",
+      "decision": "rejected",
+      "frames": 34
+    },
+    {
+      "shot": "S45",
+      "review": "source-fidelity-S45-review-001.json",
+      "decision": "accepted",
+      "frames": 21
+    },
+    {
+      "shot": "S46",
+      "review": "source-fidelity-S46-review-001.json",
+      "decision": "accepted",
+      "frames": 5
+    },
+    {
+      "shot": "S47",
+      "review": "source-fidelity-S47-review-001.json",
+      "decision": "rejected",
+      "frames": 22
+    },
+    {
+      "shot": "S48",
+      "review": "source-fidelity-S48-review-001.json",
+      "decision": "rejected",
+      "frames": 40
+    },
+    {
+      "shot": "S50",
+      "review": "source-fidelity-S50-review-001.json",
+      "decision": "rejected",
+      "frames": 18
+    },
+    {
+      "shot": "S51",
+      "review": "source-fidelity-S51-review-001.json",
+      "decision": "accepted",
+      "frames": 10
+    },
+    {
+      "shot": "S52",
+      "review": "source-fidelity-S52-review-001.json",
+      "decision": "rejected",
+      "frames": 50
+    }
+  ],
+  "retakes": [
+    {
+      "shot": "S38",
+      "attempt": 2,
+      "jobId": "video_gen_148f13670dfc454cb4de552b53fc3841:openai",
+      "submittedAt": "2026-11-27T10:45:19.686505+00:00",
+      "requestSha256": "5988baa8e9f4396e12ac83361a7f75893d4dad107b119342a2db21e2d1fd4aae",
+      "motionSha256": "2c0ce0b5e23614233dbfcd13d9328fef1dc3790f9c03f4b4d22d44da94f704c5",
+      "imageReferences": [
+        {
+          "file": "S38-source-edit-0977.png",
+          "sourceFrame": 977,
+          "sha256": "81c94177a2b57aecbc1f5d97123d485c45f80f50fc8137500244e57c731254f1"
+        },
+        {
+          "file": "S38-source-edit-1028.png",
+          "sourceFrame": 1028,
+          "sha256": "115579c15c1a424600b94081ea1c09d0746acf0696d7b4eb58648d987a448658"
+        },
+        {
+          "file": "S38-source-edit-1053.png",
+          "sourceFrame": 1053,
+          "sha256": "9cc07e581c28fae9b74b44bfd3e90cdacd7e15f7201e3f5cc76a85763511df57"
+        }
+      ]
+    },
+    {
+      "shot": "S40",
+      "attempt": 2,
+      "jobId": "video_gen_5250713265ad43a092bab4ff9af714be:openai",
+      "submittedAt": "2026-11-27T10:37:13.597807+00:00",
+      "requestSha256": "3825bc281efd4af839a37270928a3443bffbfb087de414fdfea24c209eada342",
+      "motionSha256": "817ac17f152499edd9715be9cd32a1f73c28bc1b86392be56e95edb6a4a242d0",
+      "imageReferences": [
+        {
+          "file": "S40-source-edit-1078.png",
+          "sourceFrame": 1078,
+          "sha256": "6b4433438e77ac8992257aac0cc3e5173f22937ba3a695249b07fdfd77149c18"
+        },
+        {
+          "file": "S40-source-edit-1106.png",
+          "sourceFrame": 1106,
+          "sha256": "57eb48ac36ee83e63282d90f7effa49c0ecc46266b67791f59cb3eda483aaefa"
+        }
+      ]
+    },
+    {
+      "shot": "S41",
+      "attempt": 2,
+      "jobId": "video_gen_90f0de5f5b0a411ebe2d1c2b46313a7e:openai",
+      "submittedAt": "2026-11-27T10:37:13.815965+00:00",
+      "requestSha256": "a16c792a4306f723bb5426c39227c9090a769d4510b89bdc7a15a6555e7154eb",
+      "motionSha256": "4cc434057087ea8f78559e33529ae5082f08e410807857e271eb46a886456389",
+      "imageReferences": [
+        {
+          "file": "S41-source-edit-1107.png",
+          "sourceFrame": 1107,
+          "sha256": "054267582b16132268439263df3802912ff8ffea7153829ddfeee164b7949538"
+        },
+        {
+          "file": "S41-source-edit-1124.png",
+          "sourceFrame": 1124,
+          "sha256": "e9f90b58fb58b0205856a3faa98cbe054102d79535f5aa8072f6159003090244"
+        }
+      ]
+    },
+    {
+      "shot": "S42",
+      "attempt": 2,
+      "jobId": "video_gen_9fb66beddf89487eac0ba96b5451e66c:openai",
+      "submittedAt": "2026-11-27T10:46:21.516727+00:00",
+      "requestSha256": "4fe6dafdfb22ecbb2249bbe2d97c26db79a4529aee4b5a5c483f9a8ff2fe500e",
+      "motionSha256": "b81f8990cf368b871395ea804322a4f68fdd353fe489d7c58cba6b0fb116612b",
+      "imageReferences": [
+        {
+          "file": "S42-source-edit-1125.png",
+          "sourceFrame": 1125,
+          "sha256": "7604b1689a6a41d073e037301f88dea0ea8492dc792a0aa2bf31146bf3553cb7"
+        },
+        {
+          "file": "S42-source-edit-1170.png",
+          "sourceFrame": 1170,
+          "sha256": "8fd24e2cc0f939f3bb45a09c6101eb9ec4fb3b30ecc6ab5a1f089641566f6f93"
+        }
+      ]
+    },
+    {
+      "shot": "S43",
+      "attempt": 2,
+      "jobId": "video_gen_2a8f89e3dcb34c1396160cd844ce1c96:openai",
+      "submittedAt": "2026-11-27T10:42:16.949696+00:00",
+      "requestSha256": "98560a2f2f85b2b35662625f501707980d70d191954eb06e7279a71b20672e9a",
+      "motionSha256": "34ff29bf42c68480e79908ef4f715f8f7504bccd84cc1f3e2a6df100f374a92e",
+      "imageReferences": [
+        {
+          "file": "S43-source-correct-arms-1174.png",
+          "sourceFrame": 1174,
+          "sha256": "6fe1f4d5f4437a71f82c56a2f1a459a27621cb00591a210965d7ef101ad2d94d"
+        },
+        {
+          "file": "S43-source-edit-1184.png",
+          "sourceFrame": 1184,
+          "sha256": "e538dd706bf523b1525dacd05f93ac256ef4830316c67ba203f36cd356937001"
+        },
+        {
+          "file": "S43-source-edit-1207.png",
+          "sourceFrame": 1207,
+          "sha256": "d030977d096bff62f047e9de0a2576f802091f52eebb9d8a53e8907b3dccf6a2"
+        }
+      ]
+    },
+    {
+      "shot": "S47",
+      "attempt": 2,
+      "jobId": "video_gen_4a01f2709b264ac7af87f6ad082e320a:openai",
+      "submittedAt": "2026-11-27T10:42:17.250757+00:00",
+      "requestSha256": "2a73a2cdab4527d76be978963ad61662a0a7e419e8377926b9dbcbf99ebb2cb5",
+      "motionSha256": "83682db6644d4fb6c26ab373cc7f1b999368980a527b288062037574bd908261",
+      "imageReferences": [
+        {
+          "file": "S47-source-edit-1234.png",
+          "sourceFrame": 1234,
+          "sha256": "1071d3e915d9bbc44cc3cdf1b2aa1ab776e401992a277a98ab1a134dcaab3820"
+        }
+      ]
+    },
+    {
+      "shot": "S48",
+      "attempt": 2,
+      "jobId": "video_gen_185af884ed09481e95bd87b1742f6e62:openai",
+      "submittedAt": "2026-11-27T10:46:22.661319+00:00",
+      "requestSha256": "fd8ca596d11030cdef94ccfdc4c58c133e9bd50894b587b0fb2990e87090c561",
+      "motionSha256": "10e463ea8fe07a37ee86d906666ffb44954d08fffbf9a32dfd6017c0466385f5",
+      "imageReferences": [
+        {
+          "file": "S48-source-edit-1256.png",
+          "sourceFrame": 1256,
+          "sha256": "975195ca48aadea1e3295427b10b467d20aaa86f9afbba4f4f9fb9da3137177d"
+        },
+        {
+          "file": "S48-source-edit-1266.png",
+          "sourceFrame": 1266,
+          "sha256": "00b5d9db2244a92a8f9bd396205d860f131e6481b953c4e037ad72c5664dc63b"
+        },
+        {
+          "file": "S48-source-edit-1295.png",
+          "sourceFrame": 1295,
+          "sha256": "cc61d96fdb55c930b306faa52ac2a7ac750266a005c27ca8370c953ff9f339b5"
+        }
+      ]
+    },
+    {
+      "shot": "S50",
+      "attempt": 2,
+      "jobId": "video_gen_da822a42b5ca480c9ec18691eee791d5:openai",
+      "submittedAt": "2026-11-27T10:46:23.090479+00:00",
+      "requestSha256": "93ae2ecb961bd070d4896822e4e4caae77267a0563c3af1e18b651d4af969072",
+      "motionSha256": "fb7cb554b6c4ab2427bf62003137b2e9e338d021d992369ad664d56a6da4239a",
+      "imageReferences": [
+        {
+          "file": "S50-source-edit-1296.png",
+          "sourceFrame": 1296,
+          "sha256": "94564c8a7e78532ebb8144cd4bbe77b8c8c79a1b5f10cd5582781e6f973ed402"
+        },
+        {
+          "file": "S50-source-edit-1304.png",
+          "sourceFrame": 1304,
+          "sha256": "5f51f834d9a0575a1b393de86ba0cbf3b58df8d8edb6b5648da8a0567bac6b26"
+        },
+        {
+          "file": "S50-source-edit-1313.png",
+          "sourceFrame": 1313,
+          "sha256": "5da0c34c52afac88e1350f3d3daddb284990149e3dcfb4f65c2502d0d1f6a927"
+        }
+      ]
+    },
+    {
+      "shot": "S52",
+      "attempt": 2,
+      "jobId": "video_gen_74ee8dfb36d447938e745956b65c509e:openai",
+      "submittedAt": "2026-11-27T10:46:24.393068+00:00",
+      "requestSha256": "78f2792e14d2cb441944d585f0fb9be16535de4423bef3884e115985dab05362",
+      "motionSha256": "cb2483e58f9f90796d88e545777b91a243fca29c9655a943989e8465c8d55435",
+      "imageReferences": [
+        {
+          "file": "S52-candidate-001-1334.png",
+          "sourceFrame": 1334,
+          "sha256": "fbbaa8e03558af0b0f184727ff8ca1b25f8b17a75bbd112601786fe9bb288ebe"
+        },
+        {
+          "file": "S52-source-edit-1369.png",
+          "sourceFrame": 1369,
+          "sha256": "984fe94df1c41f7893c3b4e7360d925653d813b3d6f38938e14af30ad70fbd2e"
+        }
+      ]
+    }
+  ],
+  "queue": {
+    "running": 1,
+    "queued": 26,
+    "waitingForSource": 0,
+    "current": [
+      {
+        "shot": "S53",
+        "attempt": "attempt-001",
+        "id": "video_gen_e7c045d8361b4c24812f27961a63f08f"
+      }
+    ],
+    "notOnActiveQueue": []
+  }
+}

@@ -6,12 +6,12 @@
 
 | 项目 | 交接记录 |
 | --- | --- |
-| 逐镜验收 | 18／48 镜通过（37.5%），覆盖原片 517／1478 帧。通过镜头为 S01–S12、S14–S17、S20、S22。 |
+| 逐镜验收 | 21／48 镜通过（43.75%），覆盖原片 553／1478 帧。通过镜头为 S01–S12、S14–S17、S20、S22、S45、S46、S51。 |
 | 完整成片 | 等待全部镜头通过。 |
 | 最新已验收预览 | 原片开头 `[0,463)`，连续 16 镜、19.292 秒。463 个输出画面与通过版的解码哈希一致，15 个切点已对照，指定配乐覆盖每声道 926,000 个采样。 [本机 MP4](D:/workspace/vivhite-analysis-output/pipa/versus/01-shenyin-heiyan-vs-xuren-meng/full-768p-002-source-fidelity/previews/original-0000-0463-1795755438660068600/pipa-768p-preview.mp4) · [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-opening-preview-004.json) |
 | 经典段样片 | 原片 00:09.000–00:14.000，S08–S12 连续 5 秒。 [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-classic-preview-001.json) |
 
-北京时间 2026-11-27 14:47 核对统一网关，剩余 30 镜均已受理，S38 在渲染，29 镜排队。S19 第三版及 S24、S27、S30、S32、S35 第二版已提交。S21 第二版沿用已有任务号。在本机，Windows 定时任务按原计划下载后续候选。 [六次返工的实际请求与队列收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-resumed-retakes-001.json)
+北京时间 2026-11-27 18:46 核对统一网关，剩余 27 镜均已受理，S53 在渲染，26 镜排队。晚间逐帧核对了 12 个候选的 388 帧。S45、S46、S51 通过，S38、S40–S43、S47、S48、S50、S52 的第二版已提交。S19 第三版及 S21 第二版在队列中。Windows 定时任务继续下载后续候选。 [晚间复核与九次返工](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-evening-review-001.json) · [前一批返工](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-resumed-retakes-001.json)
 
 ## 文件和生产入口
 
@@ -34,7 +34,7 @@ Get-Content -Encoding UTF8 "$r/worker.log" -Tail 20
 - `$r/prepared.json` 绑定定稿计划、原片切片、角色构图和配乐的路径及哈希。对齐后的 WAV 位于 `$previous/soundtrack-cut-sync-30f73ed6298c.wav`。旧版任务已退出生产，旧运行目录仍提供当前版使用的音频和源镜素材。
 - 角色以入库的两张全身图为准。神隐黑炎穿深蓝金边、长衣摆军服。虚人梦为金发、红兜帽、深色长裤，左肩侧面具随视角遮挡。两人保持接近的身高与头身比。 [角色图与生成记录](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/)
 - Windows 任务使用固定的 `worker-v13`。它约每 60 秒查询统一网关，按任务号下载并核对哈希，按原镜帧数处理切片。768P 模型为 `fasth3-omni-bf16`，服务端同模型最多 32 个未完成任务，GPU 一次运行一个镜头。成功下载的候选留给接手人逐镜审阅。 [统一网关和恢复方式](local-video-768p-4k.md)
-- `$r/shots/Sxx/attempt-NNN/` 汇集 `request.json`、`job.json`、`polls.jsonl`、`sources-raw/`、`sources/`、`cut.mp4`、`comparison/`、`review.json` 和适用的 `postprocess.json`。实际提示词、种子、参照顺序和远端任务号以每次请求收据为准。`$r/anchors/requests.json` 保留构图生成记录。接手后的台账为 `$r/cut-audit/production-ledger-resume-20261127.json`，14:47 的队列快照为同目录 `queue-after-resume-20261127.json`。
+- `$r/shots/Sxx/attempt-NNN/` 汇集 `request.json`、`job.json`、`polls.jsonl`、`sources-raw/`、`sources/`、`cut.mp4`、`comparison/`、`review.json` 和适用的 `postprocess.json`。实际提示词、种子、参照顺序和远端任务号以每次请求收据为准。`$r/anchors/requests.json` 保留构图生成记录。晚间台账为 `$r/cut-audit/production-ledger-evening-reviews-20261127.json`，队列快照为同目录 `queue-after-evening-reviews-20261127.json`。
 
 ## 接手后的逐镜验收
 

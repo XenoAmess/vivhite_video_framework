@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S45",
+  "startFrame": 1208,
+  "endFrame": 1229,
+  "attempt": 1,
+  "jobId": "video_gen_38d9cd063e0a42389bd81a5c517c3a67:openai",
+  "requestSha256": "6f29f7c357b5368fffcd6000a517b46098bca282cd2a84a09c487049a5d00530",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 3> is the source-frame edit at 1218. At the single cut's middle, keep the original bent-back silhouette, the over-shoulder glance, and the right-foreground cropping on the dark-haired actor. Maintain the already visible stage prop and exact screen position as the source clip continues.",
+  "seed": 1234,
+  "rawSha256": "5ccb4f827cb86c905864ae1035e53eaa4472553dc0cac8eabd2c94f99a86b116",
+  "cutSha256": "644d74d45dcde18fee71ac015b4d3a24c7e2827e3b70cad2384bf7bf90782caa",
+  "review": {
+    "cutSha256": "644d74d45dcde18fee71ac015b4d3a24c7e2827e3b70cad2384bf7bf90782caa",
+    "requestSha256": "6f29f7c357b5368fffcd6000a517b46098bca282cd2a84a09c487049a5d00530",
+    "originalSha256": "d6128c9eb9b8fc2e44075b3b3ddfb1f4374546abb39a7dca5bb182b3ad157758",
+    "decision": "accepted",
+    "reviewedFrames": 21,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 1208–1228 帧两页。斜向低机位、左侧门框、近景暖光与右侧银色舞台道具的位置和轮廓保留。虚人梦在左背对镜头，随后露出金发和侧脸看向神隐黑炎；神隐黑炎的深蓝肩线、金肩章、手和近景侧脸贯穿镜头。披风让背部轮廓稍宽。回头、道具随手轻移及收镜的方向与原片一致，21 帧通过。",
+    "reviewedAt": "2026-11-27T10:30:37.270377+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S45",
+      "sourceFrame": 1218,
+      "sourceStillSha256": "0c75db3473c47bcc4f95936d336c578992fa6b21370052228149e5be3d609474",
+      "file": "S45-source-edit-1218.png",
+      "sha256": "db993f45b9912ab3027e5321739056eeca4d91406c1fa78a1209483cc4295081",
+      "prompt": "Edit the first still of a stylized fictional 3D comedy, changing only the actor designs. Preserve this exact close, tilted floor-height composition, dim room, warm reflections and the placement of its existing silver-colored stage prop in the foreground. The nearest cropped figure at the right in the dark jacket becomes the dark-haired actor in image two, with navy coat and restrained gold-trimmed detail. The other actor at center-left becomes the blond red-hooded person in image three. Keep their same bent stance facing away and only their head looking back over the shoulder as in the source. Let the cape drape near the sides, over the original fully covered dark trousers, keeping both figures' source silhouette, posture and scale. Preserve the prop, hands, camera occlusion, ambient lighting and spatial positions in the first image. Use the source's 3D textures, mood, and exact crop, with no added action, text, people or scenery.",
+      "inputs": [
+        "anchor-originals/S45-source-1218.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ]
+}

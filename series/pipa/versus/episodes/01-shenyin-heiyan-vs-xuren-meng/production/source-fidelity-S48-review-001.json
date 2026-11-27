@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S48",
+  "startFrame": 1256,
+  "endFrame": 1296,
+  "attempt": 1,
+  "jobId": "video_gen_8f2a1d44109244559372170562cadd03:openai",
+  "requestSha256": "2b16490a0ba83ebfe81491000fc22a7e852145935b96bb4482edc52b5af5f401",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 3> is the source-frame edit at 1256. Preserve all original actor positions and the small dark prop between them. Follow the original move past the screen, low sideways slide and the leg or hand shift, without repositioning the camera.",
+  "seed": 1234,
+  "rawSha256": "70b3fa6d600e0fce94d4b6bc6526c2fa0787eb95669ddab444e111f96d301410",
+  "cutSha256": "7371a6806a39934e2cbdd0b18e54ae1abee5f7e52bb607aaf3dbe5aa6eb9e234",
+  "review": {
+    "cutSha256": "7371a6806a39934e2cbdd0b18e54ae1abee5f7e52bb607aaf3dbe5aa6eb9e234",
+    "requestSha256": "2b16490a0ba83ebfe81491000fc22a7e852145935b96bb4482edc52b5af5f401",
+    "originalSha256": "a9d269630e17d8079fc683a346f09a36d5203c9e7f2d109453ed392f147159c5",
+    "decision": "rejected",
+    "reviewedFrames": 40,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 1256–1295 帧三页。原片屏风窗纹、低光、红色轮廓光和先后分开的双人动作可辨。只有起初约五帧换角可靠，约第 1263–1291 帧大段回到了原演员的黑色衣形、原脸和无兜帽造型。最后四帧跳回了第一段的蹲姿双人构图，原片则延续左侧下沉、右侧站宽的动作。因长段残留和额外跳切退回。",
+    "reviewedAt": "2026-11-27T10:30:39.092033+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S48",
+      "sourceFrame": 1256,
+      "sourceStillSha256": "1b86a84825add713a50c242c00148b2ba64600877aa7c6a4488e2c90f439c13c",
+      "file": "S48-source-edit-1256.png",
+      "sha256": "975195ca48aadea1e3295427b10b467d20aaa86f9afbba4f4f9fb9da3137177d",
+      "prompt": "Edit only the specified adult actors in the first still from a stylized 3D animated film. Keep the original camera, existing objects, motion blur, proportions in perspective, room layout, light, shadow and framing as pictured. Replace each person and clothing with the supplied design matching exact source staging. Leave the original on-screen prop silhouettes where visible. No new visual elements. Match the original positioning by the green botanical folding screen. The low dark-haired actor in left foreground from image two wears a navy-and-gold coat and watches toward the right. The upright person in the right half from image three, seen partly from behind, wears the red hood, blond hair and cape. Preserve their original separation, the dark foreground object, shadows and the body scale.",
+      "inputs": [
+        "anchor-originals/S48-source-1256.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact pose, camera, cut, and lighting track for one continuous stylized 3D animation. Change the identities of the existing fully dressed adult actors to the role designs shown in the scene anchors. Keep original props, scene, framing, focus and all action phases. <Picture 1> is the start at source frame 1256. Actor A, the dark-brown-haired navy officer with gold trim and cream trousers, is at screen left and near. Actor B, blond in a crimson hooded mantle and dark trousers, is at right. Preserve each separate role and outfit through every phase. <Picture 2> is frame 1266: the left actor recoils with one near hand while the right actor straightens into a diagonal leg position. Continue the camera shifting down and sideways, the left actor moving downward and the right actor stepping wider. <Picture 3> is the final frame 1295: the officer bends low under the near lens, and the spread-leg red actor is partly clipped on the far right with a small existing red reflection. Keep the source's plant-pattern screen, dark red accents, motion blur and the original location and scale of each small visible prop. This is one continuous move from these three chronologically distinct compositions.",
+    "seed": 953601,
+    "plannedAt": "2026-11-27T10:45:20.076876+00:00",
+    "images": [
+      {
+        "name": "S48-source-edit-1256.png",
+        "sha256": "975195ca48aadea1e3295427b10b467d20aaa86f9afbba4f4f9fb9da3137177d",
+        "imagePrompt": "Edit only the specified adult actors in the first still from a stylized 3D animated film. Keep the original camera, existing objects, motion blur, proportions in perspective, room layout, light, shadow and framing as pictured. Replace each person and clothing with the supplied design matching exact source staging. Leave the original on-screen prop silhouettes where visible. No new visual elements. Match the original positioning by the green botanical folding screen. The low dark-haired actor in left foreground from image two wears a navy-and-gold coat and watches toward the right. The upright person in the right half from image three, seen partly from behind, wears the red hood, blond hair and cape. Preserve their original separation, the dark foreground object, shadows and the body scale."
+      },
+      {
+        "name": "S48-source-edit-1266.png",
+        "sha256": "00b5d9db2244a92a8f9bd396205d860f131e6481b953c4e037ad72c5664dc63b",
+        "imagePrompt": "Edit input 1 directly as the exact frame of a dark stylized 3D comedy animation, wide 16:9. The other images are character design references only. Replace each existing, fully clothed adult actor with the assigned reference while retaining the source screen coordinates, action and original light and focus. The navy officer has dark brown hair, gold epaulettes, cream trousers. The red performer has a crimson hood and mantle, dark trousers, black gloves and boots, with a pale left-shoulder mask where visible. Two existing actors in precisely their original positions. Screen left is the dark-haired navy officer from image 2, recoiling, the warm/red open hand near the lens filling the same area. Screen right is the crimson hood dancer from image 3, body leaning, one distinct dark-trousered leg extending diagonally down to screen right. Keep the hood turned away and pull the cape slim around the upper body to keep the legs visible. Preserve the bamboo-pattern screen, lighting, wood floor, heavy shadow and shot crop."
+      },
+      {
+        "name": "S48-source-edit-1295.png",
+        "sha256": "cc61d96fdb55c930b306faa52ac2a7ac750266a005c27ca8370c953ff9f339b5",
+        "imagePrompt": "First edit: Edit input 1 directly as the exact frame of a dark stylized 3D comedy animation, wide 16:9. The other images are character design references only. Replace each existing, fully clothed adult actor with the assigned reference while retaining the source screen coordinates, action and original light and focus. The navy officer has dark brown hair, gold epaulettes, cream trousers. The red performer has a crimson hood and mantle, dark trousers, black gloves and boots, with a pale left-shoulder mask where visible. Two existing actors, match placements exactly. The close crouched, blurred figure on the left is the dark-haired navy officer from image 2, pale trousers visible in deep shadow. The spread-leg figure on the right is the crimson hood dancer from image 3, dark trousers and cape tucked to the side, retaining the existing small red-lit object at the same position. Keep the same extreme floor-level crop, bold shadows, red lighting and patterned screen.\nFollow-up edit: Correct input 1 using input 2 as the exact original composition, crop and darkness. On screen right, crop the entire crimson performer's hood and head out through the top edge, exactly as input 2; show only the lower costume, the lowered gloved hand and the wide legs. Keep the tiny existing red-lit object small and obscured by the close dark silhouette on the left, matching input 2. On the left, the navy coat and cream trousers of the other actor remain soft and in deep shadow, with his head partly clipped by the top. Preserve both precise poses, the original screen, reflected red light and floor. Same low 16:9 3D animation shot."
+      }
+    ]
+  }
+}

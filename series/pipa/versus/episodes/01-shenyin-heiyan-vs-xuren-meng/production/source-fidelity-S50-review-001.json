@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S50",
+  "startFrame": 1296,
+  "endFrame": 1314,
+  "attempt": 1,
+  "jobId": "video_gen_0ad32779f6ca4892ae35f3f90fc6a4f3:openai",
+  "requestSha256": "ef38d9e20b7a429a328023dff4b4a970404ef1efdd0186a881edbe6194cba4f9",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 3> is the source-frame edit at 1304. Use the original pink-chair edge and low framing. The near red subject stays to the left, the navy officer on the right changes gaze from down to up in the source order.",
+  "seed": 1234,
+  "rawSha256": "9dbb0b9aec4a6d1bd960c433ee8146b3b7fe16c6115c665a3085dcadbc09aa15",
+  "cutSha256": "ec3adea7c978a7995a62ec2c84d1caaca12ee1dd68fbec3505695710b76ad1a2",
+  "review": {
+    "cutSha256": "ec3adea7c978a7995a62ec2c84d1caaca12ee1dd68fbec3505695710b76ad1a2",
+    "requestSha256": "ef38d9e20b7a429a328023dff4b4a970404ef1efdd0186a881edbe6194cba4f9",
+    "originalSha256": "35b889b581cbf851323e5bf88efa32f291eb781e92896d8caac6383b08587fa7",
+    "decision": "rejected",
+    "reviewedFrames": 18,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 1296–1313 帧两页。前景银色道具、后景粉椅、神隐黑炎的抬脸张口及两位角色造型可辨。原片第 1296 帧道具偏斜，随后落到更垂直的位置，约第 1301–1303 帧焦点由近处道具缓慢交给后景抬脸反应。候选的道具自首帧已接近垂直，人物脸从开头就清楚可见，末段仍维持相近焦点，近处左侧露出更多衣裤和面具。关键移焦和前景道具的起势缺失，退回。",
+    "reviewedAt": "2026-11-27T10:30:39.865857+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S50",
+      "sourceFrame": 1304,
+      "sourceStillSha256": "0cbac0f2d645494a946c0f34c30f253705977e047ee890e40cd80b9d60d276c2",
+      "file": "S50-source-edit-1304.png",
+      "sha256": "5f51f834d9a0575a1b393de86ba0cbf3b58df8d8edb6b5648da8a0567bac6b26",
+      "prompt": "Edit only the specified adult actors in the first still from a stylized 3D animated film. Keep the original camera, existing objects, motion blur, proportions in perspective, room layout, light, shadow and framing as pictured. Replace each person and clothing with the supplied design matching exact source staging. Leave the original on-screen prop silhouettes where visible. No new visual elements. The short brown-haired navy-and-gold officer from image two is low at the floor on the right with the same surprised open mouth and look toward the near-left actor beside the pink chair. The existing cropped near-left body is the crimson cloak and dark sleeve of the actor from image three. Keep the exact source foreground object and its blur and the warm floor and chair.",
+      "inputs": [
+        "anchor-originals/S50-source-1304.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact pose, camera, cut, and lighting track for one continuous stylized 3D animation. Change the identities of the existing fully dressed adult actors to the role designs shown in the scene anchors. Keep original props, scene, framing, focus and all action phases. <Picture 1> is frame 1296. Keep the silver stage prop sharply focused and slanting down from the red sleeve at far left, with the navy officer still bent low and blurred at bottom right before the pink chair. The red actor is mostly outside the left edge. <Picture 2> at source frame 1304 shows the prop at a straighter angle and a change in the gaze and opening mouth of the right figure. The focus migrates modestly toward the right actor from start to finish in source order. <Picture 3> is source frame 1313 with the officer looking upward and the original depth relationship. Keep exactly two people, the original chair, lighting, and source crop. Continue the source motion, body posture and focus through all intermediate frames.",
+    "seed": 610202,
+    "plannedAt": "2026-11-27T10:45:20.757952+00:00",
+    "images": [
+      {
+        "name": "S50-source-edit-1296.png",
+        "sha256": "94564c8a7e78532ebb8144cd4bbe77b8c8c79a1b5f10cd5582781e6f973ed402",
+        "imagePrompt": "First edit: Edit input 1 directly as the exact frame of a dark stylized 3D comedy animation, wide 16:9. The other images are character design references only. Replace each existing, fully clothed adult actor with the assigned reference while retaining the source screen coordinates, action and original light and focus. The navy officer has dark brown hair, gold epaulettes, cream trousers. The red performer has a crimson hood and mantle, dark trousers, black gloves and boots, with a pale left-shoulder mask where visible. Opening. Officer image 2 is crouched and looking down in the out-of-focus right background, mostly face hidden. Image 3 gives sleeve and cloth material only for the very tightly cropped crimson figure in the left foreground. Keep the exact near-field angle and sharply focused reflective silver prop in the first image, and preserve the same degree of left crop, showing only a small part of the cropped sleeve, never the hood or shoulder. Retain the original chair, dark floor, framing and relative depth.\nFollow-up edit: Edit input 2 directly as the actual first frame and use input 1 only for the two navy and crimson costume materials. Exactly two existing figures. The cropped sleeve of the crimson figure at far left remains at the very edge, with the original diagonal silver stage object sharp and the same size as input 2. The existing dark crouched figure in the LOWER RIGHT, directly in front of the pink chair, becomes the same navy-clad actor; keep the actor at that exact right-hand position, in the same downward bend with much of the head hidden and strong out-of-focus blur. Match input 2's room and crop. The empty midground left of the pink chair stays empty. Wide 16:9, same dark lighting."
+      },
+      {
+        "name": "S50-source-edit-1304.png",
+        "sha256": "5f51f834d9a0575a1b393de86ba0cbf3b58df8d8edb6b5648da8a0567bac6b26",
+        "imagePrompt": "Edit only the specified adult actors in the first still from a stylized 3D animated film. Keep the original camera, existing objects, motion blur, proportions in perspective, room layout, light, shadow and framing as pictured. Replace each person and clothing with the supplied design matching exact source staging. Leave the original on-screen prop silhouettes where visible. No new visual elements. The short brown-haired navy-and-gold officer from image two is low at the floor on the right with the same surprised open mouth and look toward the near-left actor beside the pink chair. The existing cropped near-left body is the crimson cloak and dark sleeve of the actor from image three. Keep the exact source foreground object and its blur and the warm floor and chair."
+      },
+      {
+        "name": "S50-source-edit-1313.png",
+        "sha256": "5da0c34c52afac88e1350f3d3daddb284990149e3dcfb4f65c2502d0d1f6a927",
+        "imagePrompt": "Edit input 1 directly as the exact frame of a dark stylized 3D comedy animation, wide 16:9. The other images are character design references only. Replace each existing, fully clothed adult actor with the assigned reference while retaining the source screen coordinates, action and original light and focus. The navy officer has dark brown hair, gold epaulettes, cream trousers. The red performer has a crimson hood and mantle, dark trousers, black gloves and boots, with a pale left-shoulder mask where visible. Final frame. In the right background the dark-haired navy officer from image 2 has raised his face from the crouch. Let the visible face be somewhat clearer than the opening in input 1, matching the original still's focus and the eyes looking up. Image 3 gives garment and glove material for the tightly cropped left foreground. Keep the same silver stage prop hanging at the original angle, screen location and scale and show just a narrow partial sleeve and fabric at far left. Retain the original optics, chair, field of view, and the original color and light."
+      }
+    ]
+  }
+}

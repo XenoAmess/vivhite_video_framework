@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S47",
+  "startFrame": 1234,
+  "endFrame": 1256,
+  "attempt": 1,
+  "jobId": "video_gen_9cb2f88f52054f7e96f97783cd646dc1:openai",
+  "requestSha256": "d30f9f4c475858fb1861ec1b75e1acee88eb058547e228a8e303e999d16f541c",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue.",
+  "seed": 1234,
+  "rawSha256": "062ec4da5f77334c292a87b7799b25724046eb7e5526ca4496a094d3c4f4e25a",
+  "cutSha256": "42c961c94bc7ab6ba384fa938e1ffbe5a6ed2cafddc3e2517d7352ed8939e423",
+  "review": {
+    "cutSha256": "42c961c94bc7ab6ba384fa938e1ffbe5a6ed2cafddc3e2517d7352ed8939e423",
+    "requestSha256": "d30f9f4c475858fb1861ec1b75e1acee88eb058547e228a8e303e999d16f541c",
+    "originalSha256": "c1dfcf8f0a9f9e6d182d76fd5a0c09960e27c55884c29548f759560cb380c6b9",
+    "decision": "rejected",
+    "reviewedFrames": 22,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 1234–1255 帧两页。俯视推近、道具从身侧抬至脸旁、粉椅和单人站位保留。原片约第 1238 帧开始明显皱眉、露齿和咬紧，形成后半镜的喜剧反应；神隐黑炎的眉眼和嘴形全段基本未变化，且脸部亮度平直。缺少主反应，退回。",
+    "reviewedAt": "2026-11-27T10:30:38.352308+00:00"
+  },
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact pose, camera, cut, and lighting track for one continuous stylized 3D animation. Change the identities of the existing fully dressed adult actors to the role designs shown in the scene anchors. Keep original props, scene, framing, focus and all action phases. Use <Picture 1> at the actual first source frame 1234. Follow the exact overhead movement and quick push closer. The one adult performer goes from an uneasy upward side glance to an unmistakable theatrical expression with compressed eyebrows, a cheek scrunch and bared tightly clenched teeth at the timing shown in the moving source around frame 1238. Maintain his identity, face proportions and uniform throughout. Keep the original object silhouette, hand pose, pink chair, dark screen, floor layout, and one side of the face lit in red, accenting the expressions. Finish with the source's held comic grimace and exact framing.",
+    "seed": 572054,
+    "plannedAt": "2026-11-27T10:42:05.240916+00:00",
+    "images": [
+      {
+        "name": "S47-source-edit-1234.png",
+        "sha256": "1071d3e915d9bbc44cc3cdf1b2aa1ab776e401992a277a98ab1a134dcaab3820",
+        "imagePrompt": "Edit input 1 directly as the exact frame of a dark stylized 3D comedy animation, wide 16:9. The other image is character design references only. Replace each existing, fully clothed adult actor with the assigned reference while retaining the source screen coordinates, action and original light and focus. Use the navy officer with dark-brown hair, gold epaulettes, cream trousers and dark boots. First frame, looking down at the uneasy adult performer as he rises. Preserve his upward sideways glance, the prop crossing low by the waist across the dark uniform, his bent knees and the original pink chair, wood floor and red reflection. Preserve negative space and offset framing."
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S41",
+  "startFrame": 1107,
+  "endFrame": 1125,
+  "attempt": 1,
+  "jobId": "video_gen_d3cbc36b8474447d9fc34ab3035e1404:openai",
+  "requestSha256": "994e0a3dea66d759e2827719c64c6a9d1ceeb84538eaf048658e328e47d6d7dc",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue.",
+  "seed": 1234,
+  "rawSha256": "38707f6325f2d26f85ba3e7ffb35f715562e3bf9871c9654cf3c45798f6d2d44",
+  "cutSha256": "143f672a8b5930b586696f3df2f63e61a51ed61d7f4d48840a418c4326c2a47a",
+  "review": {
+    "cutSha256": "143f672a8b5930b586696f3df2f63e61a51ed61d7f4d48840a418c4326c2a47a",
+    "requestSha256": "994e0a3dea66d759e2827719c64c6a9d1ceeb84538eaf048658e328e47d6d7dc",
+    "originalSha256": "8d175c6d829f5f3728fe4218c990060ce745163c000d8412155e4a2551dea41b",
+    "decision": "rejected",
+    "reviewedFrames": 18,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 1107–1124 帧两页。神隐黑炎的长蓝制服与浅色裤装贯穿全镜，红梁、斜置日历、仰视和手里小道具可辨。原片开掌在较早帧迅速降到腰侧并继续横扫，候选的前段下扫慢约数帧。原片最后两帧空手已经从腰侧重新举到阴影中的胸前，候选始终停在大腿前，肩身仍偏侧。漏掉末段动作，退回。",
+    "reviewedAt": "2026-11-27T10:30:35.113721+00:00"
+  },
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact pose, camera and depth-of-field track for one continuous stylized 3D animated cut. Fully replace the only adult actor with the dark-haired performer in a navy gold-edged long coat, gold epaulettes, cream trousers and dark boots. Keep the original crop, scene, shadows and motion timing. <Picture 1> is the actual opening frame 1107, with one open hand entering from above right and the other hand with the existing blue-lit stage prop. Keep the low camera tilted upward, red diagonal beam, fan and calendar. Match the immediate drop and sweep of the empty hand past the waist: do not hold the opening. Follow the turn of shoulders and hand near the thigh. <Picture 2> is frame 1124, the exact final beat: the empty hand has already returned up in front of the chest with fingers spread and the shadowed face is clipped by the top edge. Both hands complete their own source paths and the prop retains its original appearance and screen position.",
+    "seed": 664109,
+    "plannedAt": "2026-11-27T10:36:28.460352+00:00",
+    "images": [
+      {
+        "name": "S41-source-edit-1107.png",
+        "sha256": "054267582b16132268439263df3802912ff8ffea7153829ddfeee164b7949538",
+        "imagePrompt": "Edit input 1 directly as this exact landscape 16:9 frame of a stylized 3D film. Input 2 is appearance only. Replace its sole existing adult actor with the same short dark-brown haired adult in a dark navy gold-edged long officer's coat, gold fringe shoulders, cream trousers and black boots. Preserve all source set details, lens, perspective, shadow and light falloff. This is the opening. Preserve the perspective beneath the actor, the partly cropped raised hand at upper right, the other hand with the original blue-glinting stage prop at upper left, and the actor's open mouth, raised chin, gesture and legs. Preserve deep shadow, off-center camera angle, red diagonal trim at left, calendar and right fan."
+      },
+      {
+        "name": "S41-source-edit-1124.png",
+        "sha256": "e9f90b58fb58b0205856a3faa98cbe054102d79535f5aa8072f6159003090244",
+        "imagePrompt": "Edit input 1 directly as this exact landscape 16:9 frame of a stylized 3D film. Input 2 is appearance only. Replace its sole existing adult actor with the same short dark-brown haired adult in a dark navy gold-edged long officer's coat, gold fringe shoulders, cream trousers and black boots. Preserve all source set details, lens, perspective, shadow and light falloff. This is the final low-angle frame. The nearer bare hand rises in front of the chest with all visible fingers spread, while the other hand holds the existing dark prop behind and lower. Keep the original hand silhouette, partly clipped chin and head at upper edge, asymmetrical coat sides, legs and posture. Keep the exact calendar, red beam, crop, perspective and dark warm scene."
+      }
+    ]
+  }
+}

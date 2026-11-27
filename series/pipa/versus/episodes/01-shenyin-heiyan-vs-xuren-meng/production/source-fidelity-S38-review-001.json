@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S38",
+  "startFrame": 971,
+  "endFrame": 1063,
+  "attempt": 1,
+  "jobId": "video_gen_6f05dae10e5f48f2a6d8392222310493:openai",
+  "requestSha256": "c5373039287d5180dbbc4e2a7c8baf773542f6e43c473250e28433079b5e265b",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 1053. Follow the original low-camera variation and whole weight shift. Match the mid-shot arm changes and the final lower-left boot reach and recovery, keeping the background and existing effects.",
+  "seed": 1234,
+  "rawSha256": "d0f5686e9285cb1d2818dfa535e063f523aa3e17b53ea6a35568b39197fe8ede",
+  "cutSha256": "ee260dabbf2e0151d3c69151018a598cb97b3c2a24e7a4a06b97a4cb601f43a6",
+  "review": {
+    "cutSha256": "ee260dabbf2e0151d3c69151018a598cb97b3c2a24e7a4a06b97a4cb601f43a6",
+    "requestSha256": "c5373039287d5180dbbc4e2a7c8baf773542f6e43c473250e28433079b5e265b",
+    "originalSha256": "a3fa0185a9ea0f99bcf41046fd6d162dc75f9c7303224adc279ebb3408304c52",
+    "decision": "rejected",
+    "reviewedFrames": 92,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 971–1062 帧六页对照图。虚人梦、破墙、顶灯、红椅及橙色光线可辨。原片由贴地背身近景起镜并立即拉远。候选在第 971–975 帧先停在接近末段的踢腿构图，约第 976 帧才突然切回相对近的起势。第 1003–1026 帧原片先侧身抬臂、再向后退至灯下，候选长时间正对镜头且偏近。末段原片连贯伸腿，候选推迟到最后几帧并近乎定格。起镜顺序、朝向及步法时点改变，退回。",
+    "reviewedAt": "2026-11-27T10:30:33.518330+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S38",
+      "sourceFrame": 1053,
+      "sourceStillSha256": "ef237a5f50c2399fee20bed818d55fcc01d5552f496e65332738a08cfbadc941",
+      "file": "S38-source-edit-1053.png",
+      "sha256": "9cc07e581c28fae9b74b44bfd3e90cdacd7e15f7201e3f5cc76a85763511df57",
+      "prompt": "Edit the assigned cast in the first 16:9 still from a stylized 3D fictional film, preserving camera orientation, crop, original figure placement, shadows, set, foreground and effects as shown. Use the other references only for the adult character designs. Match the dark source lighting and original 3D material. Replace the original one performer from behind with the red-hooded adult, preserving back view, sharply low camera, floor line and visible location of both feet. One boot reaches toward the lower left foreground as in the first image; the other supports the body. Show the back of the hood and flowing cape, with appropriately long dark trousers. Keep the ceiling light, pink chair and existing background.",
+      "inputs": [
+        "anchor-originals/S38-source-1053.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact pose, camera, cut, and lighting track for one continuous stylized 3D animation. Change the identities of the existing fully dressed adult actors to the role designs shown in the scene anchors. Keep original props, scene, framing, focus and all action phases. The real start of Video 1 at source frame 971 is already moving in a close rear crop, with the hood and boots out of frame. Immediately pull back. <Picture 1> is at source frame 977, already six source frames from the start, the low rear wide step with the trailing foot, one arm high and the break in the wall now visible. Track the source steps, arm lift and turn continuously to the distant lamp. <Picture 2> is frame 1028, a distant pose under the lamp. Follow the quick remaining arm swings, pivot, low boot reaching to the left, and recovery. <Picture 3> is the early part of the final boot extension at frame 1053; never place it at the start. Keep the red hood and cloak back folds, dark trousers, gloves and boots. Preserve the room, shadows and source gold glints and all action beats.",
+    "seed": 351872,
+    "plannedAt": "2026-11-27T10:45:18.771010+00:00",
+    "images": [
+      {
+        "name": "S38-source-edit-0977.png",
+        "sha256": "81c94177a2b57aecbc1f5d97123d485c45f80f50fc8137500244e57c731254f1",
+        "imagePrompt": "First edit: Edit input 1 directly as the exact frame of a dark stylized 3D comedy animation, wide 16:9. The other image is character design references only. Replace each existing, fully clothed adult actor with the assigned reference while retaining the source screen coordinates, action and original light and focus. Use the red performer with a crimson hood and mantle, black trousers, gloves and boots. Early wide action as the camera pulls back. Maintain the ground-level rear view and the original wide step: one boot near screen-left chair, the other planted toward the right, one raised arm extending out of the top of the frame. The cape is secured across the back with a narrow loose end so both legs and footwear stay distinct. Keep the original warm glints, light streak and scene framing.\nFollow-up edit: Edit input 1 to correct the costume side on this back view. Input 2 is the exact source pose and crop. Input 3 shows the back of the same red costume. Place a continuous crimson cloak against the adult performer's upper back, obscuring loose frontal hair strands, front tunic flaps and the pale mask on the right of the image. Follow the original cropped head and raised arm, bent support leg and trailing boot at left, using the rear face of the boots. Keep the room, original low lens, broken wall, chair, and existing thin amber light exactly from image 2. Preserve the fully clothed dark trousers and narrow drape so both legs are clearly visible. Wide 16:9."
+      },
+      {
+        "name": "S38-source-edit-1028.png",
+        "sha256": "115579c15c1a424600b94081ea1c09d0746acf0696d7b4eb58648d987a448658",
+        "imagePrompt": "Edit input 1 directly as this exact landscape 16:9 frame of a stylized 3D film. Input 2 is appearance only. Replace its sole existing adult actor with the same blond adult in a crimson hood and muted gold-lined mantle, dark trousers, gloves and boots, with a single left-shoulder mask visible only from suitable angles. Preserve all source set details, lens, perspective, shadow and light falloff. This is the distant full body REAR view under the ceiling lamp. Preserve arms spread at the elbow on each side, boots close under the body with the same floor contact, camera tilt and proportions. Render one hooded figure seen from behind, with a red mantle draped at the side. Keep the distant room, floor, dome light, gray screen, red chair and draped furniture in exactly the same positions, and retain the source glint and streak."
+      },
+      {
+        "name": "S38-source-edit-1053.png",
+        "sha256": "9cc07e581c28fae9b74b44bfd3e90cdacd7e15f7201e3f5cc76a85763511df57",
+        "imagePrompt": "Edit the assigned cast in the first 16:9 still from a stylized 3D fictional film, preserving camera orientation, crop, original figure placement, shadows, set, foreground and effects as shown. Use the other references only for the adult character designs. Match the dark source lighting and original 3D material. Replace the original one performer from behind with the red-hooded adult, preserving back view, sharply low camera, floor line and visible location of both feet. One boot reaches toward the lower left foreground as in the first image; the other supports the body. Show the back of the hood and flowing cape, with appropriately long dark trousers. Keep the ceiling light, pink chair and existing background."
+      }
+    ]
+  }
+}

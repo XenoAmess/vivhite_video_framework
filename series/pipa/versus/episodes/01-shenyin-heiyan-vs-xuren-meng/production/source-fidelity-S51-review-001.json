@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S51",
+  "startFrame": 1314,
+  "endFrame": 1324,
+  "attempt": 1,
+  "jobId": "video_gen_587083f0205442a7a550dab7a7d7eb37:openai",
+  "requestSha256": "94a30ce02db73d8571a414e5e8898e3957bb2725f5a1c508af4832135308f1e9",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 3> is the source-frame edit at 1318. The source retains its brief high-angle eye-line exchange. Preserve the blurred near-left red figure, and the navy officer below the pink chair at right, braced on one hand and looking up. Match the fast expression change in the native cut.",
+  "seed": 1234,
+  "rawSha256": "a1035c0f268bb679e816d67ad4ed886d755b087082889ef3151fae8c74765e5d",
+  "cutSha256": "fdecbfdc1bb85cc2f2b2b34680eaebb58712397660f35bba7ed610b95c6f0fe0",
+  "review": {
+    "cutSha256": "fdecbfdc1bb85cc2f2b2b34680eaebb58712397660f35bba7ed610b95c6f0fe0",
+    "requestSha256": "94a30ce02db73d8571a414e5e8898e3957bb2725f5a1c508af4832135308f1e9",
+    "originalSha256": "d1215d5488c1a6878d1ece4bae6d83f668578494a8cee58173c5a4dd7da8f562",
+    "decision": "accepted",
+    "reviewedFrames": 10,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 1314–1323 帧十组。虚人梦的红衣与暗色肩部占据左前景，右下神隐黑炎望向上方，有递进的抬脸及短促开口，手势保持在身体左下方。粉椅、木板地面、左上红色弧边和俯拍的两人位置保留。原片表情更夸张，候选仍保留仰看与张口的反应节拍。通过。",
+    "reviewedAt": "2026-11-27T10:30:40.422419+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S51",
+      "sourceFrame": 1318,
+      "sourceStillSha256": "0bfee50b3a698f64ab7fde78c7fb826256deb1cc9d39b12647d279b4f6439f9d",
+      "file": "S51-source-edit-1318.png",
+      "sha256": "f7251b7cfe62ad63eb16c3de2f1c7d29d4831cebf5c7b7f7c2b86da4c1b24456",
+      "prompt": "Edit just the cast of this stylized fictional 3D comedy frame while retaining the exact steep overhead angle, hold on the pink armchair, red tabletop arc, floor grain, backdrop, source pose, lighting, and dimensions. The seated floor-level adult at lower right looks up in the source with a rounded surprised mouth and visible planted hand. Replace this person with the tousled dark brown-haired adult in image two, with navy and gold uniform, ivory full-length trousers, original hand and pose. The very large, blurred, cropped figure in front at lower left is the blonde red-hooded adult from image three, visible only as the existing blurred shoulder, hood edge and dark sleeve. Match the established foreground blur and its overlap, preserve both sizes, body orientations, existing scene objects and eye line, and add no further person or text.",
+      "inputs": [
+        "anchor-originals/S51-source-1318.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ]
+}

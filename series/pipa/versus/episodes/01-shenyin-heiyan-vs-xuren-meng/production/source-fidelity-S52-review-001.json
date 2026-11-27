@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S52",
+  "startFrame": 1324,
+  "endFrame": 1374,
+  "attempt": 1,
+  "jobId": "video_gen_eb85a60c91d44eb7b3a52fe050a8a932:openai",
+  "requestSha256": "f8d4fa4c377f7c77b612fb2f7da4e83148b89851bf9d994346f5b8bc61fb0df3",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 1369. Follow the original low-angle turn, the last raised finger and prior pose changes. Keep the same screen and shadows and follow the original timing.",
+  "seed": 1234,
+  "rawSha256": "9221517e7598d3951d0f52ab133588fa4a6ec7eacb94625b2951cd13f58f7914",
+  "cutSha256": "961e94205dd18f9c8bf295f50aaf850abc15b923a0825b1132539a4648311a30",
+  "review": {
+    "cutSha256": "961e94205dd18f9c8bf295f50aaf850abc15b923a0825b1132539a4648311a30",
+    "requestSha256": "f8d4fa4c377f7c77b612fb2f7da4e83148b89851bf9d994346f5b8bc61fb0df3",
+    "originalSha256": "f16813752013aa96664055b978672404199b954d74bccd903d4c996e056bdf8c",
+    "decision": "rejected",
+    "reviewedFrames": 50,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 1324–1373 帧四页，共 50 帧。原片低机位、植物纹屏风、侧红光和中后段抬指动作可辨。第 1324–1328 帧候选画面仍留有原片的黑蓝紧身衣和高光轮廓，至约第 1330–1332 帧才过渡到虚人梦的红兜帽、披风及暗色衣裤，且原片左下方延至中后段的红边反光物逐渐被候选披风盖过。首段换角和近景遮挡关系需要修正，退回。",
+    "reviewedAt": "2026-11-27T10:41:19.109217+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S52",
+      "sourceFrame": 1369,
+      "sourceStillSha256": "00518336133c59e8e7ee281d77284bfcaf020638fdb86d647c82cf3a0735058b",
+      "file": "S52-source-edit-1369.png",
+      "sha256": "984fe94df1c41f7893c3b4e7360d925653d813b3d6f38938e14af30ad70fbd2e",
+      "prompt": "Edit only the specified adult actors in the first still from a stylized 3D animated film. Keep the original camera, existing objects, motion blur, proportions in perspective, room layout, light, shadow and framing as pictured. Replace each person and clothing with the supplied design matching exact source staging. Leave the original on-screen prop silhouettes where visible. No new visual elements. From the very low rear angle, replace the blurring black figure with one fully clothed long-haired adult in a crimson hood with a black glove and red beads visible as their raised index finger points upward. Keep the twisting shoulders, source locations of the dark foreground forms and cropped botanical screen, with the same screen-space tilt and direction. Keep the ornamental cape on the back and the visible expression as someone looks over a shoulder.",
+      "inputs": [
+        "anchor-originals/S52-source-1369.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact pose, camera, cut, and lighting track for one continuous stylized 3D animation. Change the identities of the existing fully dressed adult actors to the role designs shown in the scene anchors. Keep original props, scene, framing, focus and all action phases. The real first source frame is 1324. The only performer is the crimson hooded character in dark tailored trousers, gloves and gold-trimmed mantle from the first instant, including when much of the head is cropped out. The reflected red stage object occupies the left foreground on the original trajectory. Keep the mantle away from the photographed silhouette and reflective edge of this object as the viewpoint tilts, the face first enters at top, and the far hand comes up. <Picture 1> is a costume and light reference at source time 1334, already ten frames into the original shot. Keep its small red side reflection from the thread of motion provided by the video, with the original object present through all appropriate frames. <Picture 2> is frame 1369 near the end with the gloved hand raised, the face angled toward the lower camera, and the warm patterned screen at left. Keep all original near-to-far camera motion and dark red lighting.",
+    "seed": 730419,
+    "plannedAt": "2026-11-27T10:45:53.904095+00:00",
+    "images": [
+      {
+        "name": "S52-candidate-001-1334.png",
+        "sha256": "fbbaa8e03558af0b0f184727ff8ca1b25f8b17a75bbd112601786fe9bb288ebe",
+        "imagePrompt": "Frame 10 (timeline 1334) extracted losslessly as PNG from the normalized first take. This frame retains the red reflection and already shows the replacement costume, unlike the start of the take."
+      },
+      {
+        "name": "S52-source-edit-1369.png",
+        "sha256": "984fe94df1c41f7893c3b4e7360d925653d813b3d6f38938e14af30ad70fbd2e",
+        "imagePrompt": "Edit only the specified adult actors in the first still from a stylized 3D animated film. Keep the original camera, existing objects, motion blur, proportions in perspective, room layout, light, shadow and framing as pictured. Replace each person and clothing with the supplied design matching exact source staging. Leave the original on-screen prop silhouettes where visible. No new visual elements. From the very low rear angle, replace the blurring black figure with one fully clothed long-haired adult in a crimson hood with a black glove and red beads visible as their raised index finger points upward. Keep the twisting shoulders, source locations of the dark foreground forms and cropped botanical screen, with the same screen-space tilt and direction. Keep the ornamental cape on the back and the visible expression as someone looks over a shoulder."
+      }
+    ]
+  }
+}

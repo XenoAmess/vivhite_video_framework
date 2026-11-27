@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S43",
+  "startFrame": 1174,
+  "endFrame": 1208,
+  "attempt": 1,
+  "jobId": "video_gen_4f76cca82c2141f88c072379034941f9:openai",
+  "requestSha256": "aeaed5faad40d5ccd4946f26bc46ca180d2c58d61979cfa9170c39303bdd15c4",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 1174. Begin with the exact overhead crouch and two spread arms. Keep the small object on the floor and follow the camera continuously down toward the seated expression as in the source.",
+  "seed": 1234,
+  "rawSha256": "172ee5b5b0d096d9f7ce1dfeb50c4f9b7134d648ea0e2b37354004a28d05bf33",
+  "cutSha256": "b3706b08554cf4062131cda5b8e2fc57b5485cefbb24c92ee2b32a421d11fa00",
+  "review": {
+    "cutSha256": "b3706b08554cf4062131cda5b8e2fc57b5485cefbb24c92ee2b32a421d11fa00",
+    "requestSha256": "aeaed5faad40d5ccd4946f26bc46ca180d2c58d61979cfa9170c39303bdd15c4",
+    "originalSha256": "642b305a949c1103752da87d1bb123954ec6437ed6e303d5e20e75af7b189226",
+    "decision": "rejected",
+    "reviewedFrames": 34,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 1174–1207 帧三页。人物替换及粉椅、木地板和屏风位置可辨。原片起镜俯拍，旋身俯下、伸臂取起落在地上的道具、转成侧仰的夸张张口和抬手；候选大半段停在俯身张臂，随后只抬头，地上道具没有随手带起，末段手势和明显的侧仰角也缺失。退回。",
+    "reviewedAt": "2026-11-27T10:30:36.736063+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S43",
+      "sourceFrame": 1174,
+      "sourceStillSha256": "2a3e3a9e35e9851fa579544f3e7961b7223c4ce4abfeaa6bd4f9b13f5cffa27b",
+      "file": "S43-source-correct-arms-1174.png",
+      "sha256": "6fe1f4d5f4437a71f82c56a2f1a459a27621cb00591a210965d7ef101ad2d94d",
+      "prompt": "Edit the first animated film image with exact camera and lighting. Image two defines the dark-haired adult blue-and-gold officer. In the original high camera he is partly knelt on two knees, with two arms extended along the line above the shoulders. The upper LEFT extension is his actual black sleeve and bare empty hand, not a leg. Redraw it as a continuous navy sleeve, gold cuff and visible open hand, matching the upper right arm anatomy, with two boots appearing only below the two bent ivory-trousered legs. The third image clarifies the kneeling joint layout and sole head visible from above; ignore its lighting and objects. Preserve the first frame's dark naturalistic 3D surfaces, pink chair, patterned screen and wood floor in their original position. One officer, exactly two legs, two arms with hands, no extra objects or persons.",
+      "inputs": [
+        "anchor-originals/S43-source-1174.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchor-originals/S43-pose-clarification.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact pose, camera, cut, and lighting track for one continuous stylized 3D animation. Change the identities of the existing fully dressed adult actors to the role designs shown in the scene anchors. Keep original props, scene, framing, focus and all action phases. Frame 1174 in <Picture 1> starts above the crouch with spread arms and the dark prop on the floor. Immediately follow the source pivot and downward reach. At frame 1184 in <Picture 2> the performer has already swung down and lifted the existing prop off the floor. Once it is held, it leaves the floor and moves with that hand for the rest of the take. Sweep the camera from above onto the tilted low side view as the actor settles by the screen. The closed choreography ends in <Picture 3> at 1207: broad smile and raised separate hand, existing prop upright near the chest. Complete all intermediate motions in their source order. Preserve the source room, pink chair, calendar, warm shadow and screen.",
+    "seed": 416733,
+    "plannedAt": "2026-11-27T10:42:04.782465+00:00",
+    "images": [
+      {
+        "name": "S43-source-correct-arms-1174.png",
+        "sha256": "6fe1f4d5f4437a71f82c56a2f1a459a27621cb00591a210965d7ef101ad2d94d",
+        "imagePrompt": "Edit the first animated film image with exact camera and lighting. Image two defines the dark-haired adult blue-and-gold officer. In the original high camera he is partly knelt on two knees, with two arms extended along the line above the shoulders. The upper LEFT extension is his actual black sleeve and bare empty hand, not a leg. Redraw it as a continuous navy sleeve, gold cuff and visible open hand, matching the upper right arm anatomy, with two boots appearing only below the two bent ivory-trousered legs. The third image clarifies the kneeling joint layout and sole head visible from above; ignore its lighting and objects. Preserve the first frame's dark naturalistic 3D surfaces, pink chair, patterned screen and wood floor in their original position. One officer, exactly two legs, two arms with hands, no extra objects or persons."
+      },
+      {
+        "name": "S43-source-edit-1184.png",
+        "sha256": "e538dd706bf523b1525dacd05f93ac256ef4830316c67ba203f36cd356937001",
+        "imagePrompt": "Edit input 1 directly as the exact frame of a dark stylized 3D comedy animation, wide 16:9. The other image is character design references only. Replace each existing, fully clothed adult actor with the assigned reference while retaining the source screen coordinates, action and original light and focus. Use the navy officer with dark-brown hair, gold epaulettes, cream trousers and dark boots. High oblique floor view. The actor has just reached the existing dark theatrical prop with the right-side hand. Keep the hand with the prop extended toward the bottom-right edge, knees bent, other arm low and out left, body leaning forward. Keep the foreground occlusion, floor reflections, pink chair fragment and the exact dark screen wall."
+      },
+      {
+        "name": "S43-source-edit-1207.png",
+        "sha256": "d030977d096bff62f047e9de0a2576f802091f52eebb9d8a53e8907b3dccf6a2",
+        "imagePrompt": "Edit input 1 directly as the exact frame of a dark stylized 3D comedy animation, wide 16:9. The other image is character design references only. Replace each existing, fully clothed adult actor with the assigned reference while retaining the source screen coordinates, action and original light and focus. Use the navy officer with dark-brown hair, gold epaulettes, cream trousers and dark boots. Final frame near the floor and tilted toward the actor, seated low. Retain all positions and expressions from input 1: upward glance, broad comic smile, head tilted back, one hand spread and raised at the right and the other holds the existing dark stage prop vertically by the torso. Keep the actor's original crop, wall, calendar and small part of the pink chair."
+      }
+    ]
+  }
+}

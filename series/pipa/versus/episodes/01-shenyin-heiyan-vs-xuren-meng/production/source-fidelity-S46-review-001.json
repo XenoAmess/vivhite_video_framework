@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S46",
+  "startFrame": 1229,
+  "endFrame": 1234,
+  "attempt": 1,
+  "jobId": "video_gen_1e54a5b53a6f4df5aa6607aa842cf333:openai",
+  "requestSha256": "cd37b05c1756fe788e50cb904867b5256a5bd192d759e9724ba4e05147400191",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 3> is the source-frame edit at 1231. Preserve the five-frame original reverse-shot construction, strong near-left red shoulder occlusion and the contrast with the low navy officer at right.",
+  "seed": 1234,
+  "rawSha256": "886b0c3c05a3a167c084730e4db64a8f436d63bce5a246d2341e43868f0cf730",
+  "cutSha256": "efaa41c65c8ef50beaf0e19f069f4fb3f0521706fa31516ea69aab4964c2b752",
+  "review": {
+    "cutSha256": "efaa41c65c8ef50beaf0e19f069f4fb3f0521706fa31516ea69aab4964c2b752",
+    "requestSha256": "cd37b05c1756fe788e50cb904867b5256a5bd192d759e9724ba4e05147400191",
+    "originalSha256": "b53ce20636ed0e38f435beedb5a67f89a4919f8a658f89f34dc29d15df8130ff",
+    "decision": "accepted",
+    "reviewedFrames": 5,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 1229–1233 帧，共五组。左前景仍为虚人梦的背侧肩头，红兜帽与淡色左肩面具可见。后景神隐黑炎保留单膝附近的低伏、仰视和右侧抬手，末帧下方道具与手开始上行。原片的椅边、木地板及高位过肩取景保留；披风带来的遮挡稍多，动作和两人的相对位置一致。通过。",
+    "reviewedAt": "2026-11-27T10:30:37.769525+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S46",
+      "sourceFrame": 1231,
+      "sourceStillSha256": "5b98c91fabda18a005feb87057d908b47054336cf09df918a17d3031ad5251f7",
+      "file": "S46-source-edit-1231.png",
+      "sha256": "1c496a0026fc4069025eba018ed854969684dbd2a15a846247d009cc2f142204",
+      "prompt": "Edit only the specified adult actors in the first still from a stylized 3D animated film. Keep the original camera, existing objects, motion blur, proportions in perspective, room layout, light, shadow and framing as pictured. Replace each person and clothing with the supplied design matching exact source staging. Leave the original on-screen prop silhouettes where visible. No new visual elements. The partly cropped near-left figure with head blurred and back to camera is the red-hooded blond adult from image three. The figure down on the floor at rear-right is the short dark-haired officer from image two, lying in the same pose with one hand up and wearing full-length ivory trousers and tall boots. Keep the strong original foreground occlusion and both eye lines. Two people.",
+      "inputs": [
+        "anchor-originals/S46-source-1231.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ]
+}

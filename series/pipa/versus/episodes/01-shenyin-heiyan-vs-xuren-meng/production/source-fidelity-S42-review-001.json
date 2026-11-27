@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S42",
+  "startFrame": 1125,
+  "endFrame": 1174,
+  "attempt": 1,
+  "jobId": "video_gen_7a48a6c346ab4fdea10be061187a7240:openai",
+  "requestSha256": "128e6f29c50eaccbddb912560f224446c2fb402b4d2984664dd6f35f5ed3111f",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 1170. Match the original focus change to the dark tabletop object and back to the foreground stride. The long boot enters the right edge at the same point as in the source.",
+  "seed": 1234,
+  "rawSha256": "b3b81ee20fc3e6857f6637b7e226b3755fc09b5439f1c769ac70bf5c439dfd64",
+  "cutSha256": "72039d2fcec08d0a5ba08e16891acf8ab124e60f243a2abe9fbb36409ea6601b",
+  "review": {
+    "cutSha256": "72039d2fcec08d0a5ba08e16891acf8ab124e60f243a2abe9fbb36409ea6601b",
+    "requestSha256": "128e6f29c50eaccbddb912560f224446c2fb402b4d2984664dd6f35f5ed3111f",
+    "originalSha256": "a7f9996a598f961fbd5a3127df96c4990363827a9c308e9046a282c315e124cf",
+    "decision": "rejected",
+    "reviewedFrames": 49,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 1125–1173 帧四页。神隐黑炎、后墙红梁、壁挂日历，以及桌边带反光的前景道具均保留。中段有前景接焦。动作和镜头下降普遍滞后约数帧，原片第 1166 帧前后已重新看清后景演员，候选仍留在前景特写。最后原片朝画外右侧蹬伸，腿跨越画幅右边缘，候选靴底留在画内且腿收得更短，影响下一个俯拍镜头接续。退回。",
+    "reviewedAt": "2026-11-27T10:30:35.978258+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S42",
+      "sourceFrame": 1170,
+      "sourceStillSha256": "f318dd917811619124d42d33776b490e05e7fc2882f58ef1e1ee1dcb36047321",
+      "file": "S42-source-edit-1170.png",
+      "sha256": "8fd24e2cc0f939f3bb45a09c6101eb9ec4fb3b30ecc6ab5a1f089641566f6f93",
+      "prompt": "Edit the assigned cast in the first 16:9 still from a stylized 3D fictional film, preserving camera orientation, crop, original figure placement, shadows, set, foreground and effects as shown. Use the other references only for the adult character designs. Match the dark source lighting and original 3D material. Replace the single adult actor with the navy-and-gold officer. Match the extreme low point of view and the stepping leg that comes much closer to lens on the right. He wears full length ivory trousers and high dark boots. Keep the other leg, high empty free hand, background poster, pink chair and large existing dark tabletop prop as framed, with original defocus. Preserve exact stage-comedy posture and original camera.",
+      "inputs": [
+        "anchor-originals/S42-source-1170.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact pose, camera, cut, and lighting track for one continuous stylized 3D animation. Change the identities of the existing fully dressed adult actors to the role designs shown in the scene anchors. Keep original props, scene, framing, focus and all action phases. <Picture 1> is the exact opening frame 1125, the dark-haired navy officer by the red trim, looking from the far side while the tabletop object is already low in the foreground and out of focus. Follow the original expression, arm, and camera drop to the table. At mid-shot the dark reflective object is in sharp focus and occupies the lower front of the image, the officer softer behind. Then the source recovers the actor's focus and follows his high stride. <Picture 2> corresponds to source frame 1170, just before the end. Continue that same forward extension across the last three frames. In the final frame 1173 the extended foot is outside the right edge, cropping the boot following the exact action in the source video. Keep both arms, both legs, two boots, all source framing and the tabletop object.",
+    "seed": 732050,
+    "plannedAt": "2026-11-27T10:45:19.393571+00:00",
+    "images": [
+      {
+        "name": "S42-source-edit-1125.png",
+        "sha256": "7604b1689a6a41d073e037301f88dea0ea8492dc792a0aa2bf31146bf3553cb7",
+        "imagePrompt": "Edit input 1 directly as this exact landscape 16:9 frame of a stylized 3D film. Input 2 is appearance only. Replace its sole existing adult actor with the same short dark-brown haired adult in a dark navy gold-edged long officer's coat, gold fringe shoulders, cream trousers and black boots. Preserve all source set details, lens, perspective, shadow and light falloff. This is the low-angle opening frame with the actor turned partly sideways and looking back, a hand down near the thigh. The blurry dark stage prop in the lower right foreground keeps its exact outline and out-of-focus appearance while the performer stays in the distant upper part. Preserve the camera roll, red wall trim and calendar and the original depth and warm room darkness."
+      },
+      {
+        "name": "S42-source-edit-1170.png",
+        "sha256": "8fd24e2cc0f939f3bb45a09c6101eb9ec4fb3b30ecc6ab5a1f089641566f6f93",
+        "imagePrompt": "Edit the assigned cast in the first 16:9 still from a stylized 3D fictional film, preserving camera orientation, crop, original figure placement, shadows, set, foreground and effects as shown. Use the other references only for the adult character designs. Match the dark source lighting and original 3D material. Replace the single adult actor with the navy-and-gold officer. Match the extreme low point of view and the stepping leg that comes much closer to lens on the right. He wears full length ivory trousers and high dark boots. Keep the other leg, high empty free hand, background poster, pink chair and large existing dark tabletop prop as framed, with original defocus. Preserve exact stage-comedy posture and original camera."
+      }
+    ]
+  }
+}
