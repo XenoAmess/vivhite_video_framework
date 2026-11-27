@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S53",
+  "startFrame": 1374,
+  "endFrame": 1402,
+  "attempt": 1,
+  "jobId": "video_gen_e7c045d8361b4c24812f27961a63f08f:openai",
+  "requestSha256": "a98810c2608f2f6c7a7e56e9c280f343a5a6fabd4870e316c139834a067508d2",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 1385. Match the original move from the brief surprised look to the crooked, awkward expression, retaining the original sideways gaze, head height, floor angle, and warm shadow.",
+  "seed": 1234,
+  "rawSha256": "c3985e9f4d238deb518e7275be467904d1ec2706ca73c536b34225fd9e31efef",
+  "cutSha256": "22b6eff0da16aa862a8bdf9e4c1ef39c26f7db42098c2168993797ce33115364",
+  "review": {
+    "cutSha256": "22b6eff0da16aa862a8bdf9e4c1ef39c26f7db42098c2168993797ce33115364",
+    "requestSha256": "a98810c2608f2f6c7a7e56e9c280f343a5a6fabd4870e316c139834a067508d2",
+    "originalSha256": "2deaad652057fdbdfbaa7b64350a8d4f61b0808cc90b46ab061185a0c81aa5e7",
+    "decision": "accepted",
+    "reviewedFrames": 28,
+    "method": "assistant-frame-review",
+    "observations": "两页对照初版及同一模型源的重新取帧版，覆盖原片第 1374–1401 帧。校准上看、闭眼、低头及转成开口笑的时点。神隐黑炎的深蓝制服、金肩章和棕发贯穿全镜，同时保留原片夸张表情线、俯视角度、暖红照明、木地板和粉椅。末段候选笑时的头略偏右，动作与反应节拍可对应。采用校准版。",
+    "reviewedAt": "2026-11-27T14:56:38.079095+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S53",
+      "sourceFrame": 1385,
+      "sourceStillSha256": "12eff171eab8c9e25bf3eaa6ec22c3d7a0db61600e8745a084a48b7299fa88c7",
+      "file": "S53-source-edit-1385.png",
+      "sha256": "debbc5da3c7fa7d16a148e2097c412d989135d2f9005260f8245974e65a98003",
+      "prompt": "Use the first image as the exact stylized 3D comedy scene. Edit only the one visible, fully clothed actor, preserving expression, pose, exact frame, lens, floor, chair, red and amber light, shadows and depth of field. Replace the adult's face and costume with the tousled brown hair, close blue-gray eyes, navy coat with gold collar and epaulette and full-length ivory trousers shown in image two. Maintain the original slightly uncomfortable, awkward comic look, the exact sideways eye direction and naturally skewed mouth, for the same view from above of the leaning actor braced at floor level. Keep the face's same source position and scale, full sleeves and trousers, and the heavily cropped pink chair at left. The rendering should inherit the original image's 3D materials and warm, slightly red lighting. One actor only and no new graphics or objects.",
+      "inputs": [
+        "anchor-originals/S53-source-1385.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "tool": "ffmpeg",
+    "sourceFrames": [
+      1374,
+      1402
+    ],
+    "normalizedModelSha256": "fa01639f77064bffda9302212de4f388b4f1528f1808d7418843b9fe99d53371",
+    "preRetimeCutSha256": "5e57e2b35981544baf59a4a23e2cc41ea937af6e37a12fe148e0dde063e7bb84",
+    "selectedModelFrames": [
+      0,
+      6,
+      12,
+      16,
+      21,
+      25,
+      29,
+      34,
+      48,
+      55,
+      61,
+      69,
+      73,
+      77,
+      82,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      99,
+      101,
+      105,
+      109,
+      112,
+      116,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,6)+eq(n\\,12)+eq(n\\,16)+eq(n\\,21)+eq(n\\,25)+eq(n\\,29)+eq(n\\,34)+eq(n\\,48)+eq(n\\,55)+eq(n\\,61)+eq(n\\,69)+eq(n\\,73)+eq(n\\,77)+eq(n\\,82)+eq(n\\,86)+eq(n\\,88)+eq(n\\,90)+eq(n\\,92)+eq(n\\,94)+eq(n\\,96)+eq(n\\,99)+eq(n\\,101)+eq(n\\,105)+eq(n\\,109)+eq(n\\,112)+eq(n\\,116)+eq(n\\,119),setpts=N/(24*TB),setsar=1",
+    "previewSha256": "22b6eff0da16aa862a8bdf9e4c1ef39c26f7db42098c2168993797ce33115364",
+    "reason": "Align the blink, dipped chin and broad smile with the upper-view original.",
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "outputSha256": "22b6eff0da16aa862a8bdf9e4c1ef39c26f7db42098c2168993797ce33115364"
+  }
+}

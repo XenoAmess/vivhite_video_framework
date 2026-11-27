@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S55",
+  "startFrame": 1415,
+  "endFrame": 1431,
+  "attempt": 1,
+  "jobId": "video_gen_164a3abada7049f086b8b314c6dbfa53:openai",
+  "requestSha256": "8a8682867ab74dd1d5304c4c7963006dbc333da2ea53ba9a1995f01806c56f1c",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 3> is the source-frame edit at 1421. Stay at the original high angle; the red figure stays in the right foreground and the navy officer on the left near the floor. Preserve the original dark prop at the same height in frame.",
+  "seed": 1234,
+  "rawSha256": "51fa571b4d9aa3eed35b9bbdc579e03498c50325cffc9027e2099273244bcf93",
+  "cutSha256": "a2b6eade525e43f235d2f5889d48b1670d606bf59c403d7b8df0b6d19895a4da",
+  "review": {
+    "cutSha256": "a2b6eade525e43f235d2f5889d48b1670d606bf59c403d7b8df0b6d19895a4da",
+    "requestSha256": "8a8682867ab74dd1d5304c4c7963006dbc333da2ea53ba9a1995f01806c56f1c",
+    "originalSha256": "7020a238488ef44c27b345d47307b4fdc2195e15a01ac280568e1bfe960a6f07",
+    "decision": "rejected",
+    "reviewedFrames": 16,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 1415–1430 帧，共 16 帧。左上粉椅、木地板、前后双角色以及中段烟雾整体保留。原片第 1419 帧的大亮闪晚到约一帧且明显偏弱，近处道具回抬也被滞后。约第 1425–1430 帧，原片后景演员后仰并把浅色裤腿抬入右侧，候选缺少这条腿的位置和轮廓。退回。",
+    "reviewedAt": "2026-11-27T14:56:40.811541+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S55",
+      "sourceFrame": 1421,
+      "sourceStillSha256": "bccb4cb1f4eeebaa3d108941ce0be4dd5e8e20ccf52696e1876dd6dbe784fb00",
+      "file": "S55-source-edit-1421.png",
+      "sha256": "6395dfc01d2979f179047cac724b6d28f9ed8daa4de94fac276db89c4b4f7f8f",
+      "prompt": "Edit only the specified adult actors in the first still from a stylized 3D animated film. Keep the original camera, existing objects, motion blur, proportions in perspective, room layout, light, shadow and framing as pictured. Replace each person and clothing with the supplied design matching exact source staging. Leave the original on-screen prop silhouettes where visible. No new visual elements. Keep the overhead view from the right. The closer figure with back partly blocking the lower-right foreground is from image three, with a red hood and cape replacing just the source clothing. The floor-level actor in the upper left is the navy-gold officer from image two with long pale trousers. Preserve the chair at left, the dark shape in the same foreground position and the spacing between both people. Same props, face directions and shadows as the original.",
+      "inputs": [
+        "anchor-originals/S55-source-1421.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact movement, lighting, props and camera reference for one continuous stylized 3D animation shot. Replace the existing adults with the role designs in the supplied images while retaining the original camera and full action timeline. The source starts at 1415 with front crimson shoulder, the dark-haired navy adult in the distance supported on the floor, and no bright flash. Keep those identities for the entire shot. <Picture 1> is the actual brief warm flash at 1419, exactly four frames after the start, momentarily obscuring a small portion of the far figure. Use a single brief burst on that beat and preserve the recoil of the near object. <Picture 2> is frame 1421 when the light has returned to a smoky image. Then the far performer reclines and visibly brings one pale trouser leg in at right, spreading the supporting hand, as in <Picture 3> for frame 1430. Keep the source's location and size of the actors, crop, surrounding smoke, optical shift, wall, floor, chair and small near stage prop.",
+    "seed": 902746,
+    "plannedAt": "2026-11-27T15:03:21.308916+00:00",
+    "images": [
+      {
+        "name": "S55-source-edit-1419.png",
+        "sha256": "8e7c1fb8d5b8965699dd8c65f19d4612fc9e41a83b55a7266a58b6a75dff03ae",
+        "imagePrompt": "Edit image 1 as the exact short theatrical flash frame of an existing 3D comedy animation. Image 2 gives the adult role designs only. In the foreground use the rear crimson mantle and gloves. The second adult kneeling by the pink chair wears the dark navy coat and pale trousers. Match the original silhouette and size of the bright brief patch of stage light, positioned high on the left and obscuring the rear face momentarily, with its warm reflected lighting. Keep the perspective, location of the actors, surrounding smoke and all set and props from image 1. Exactly two actors and the original 16:9 frame."
+      },
+      {
+        "name": "S55-source-edit-1421.png",
+        "sha256": "6395dfc01d2979f179047cac724b6d28f9ed8daa4de94fac276db89c4b4f7f8f",
+        "imagePrompt": "Edit only the specified adult actors in the first still from a stylized 3D animated film. Keep the original camera, existing objects, motion blur, proportions in perspective, room layout, light, shadow and framing as pictured. Replace each person and clothing with the supplied design matching exact source staging. Leave the original on-screen prop silhouettes where visible. No new visual elements. Keep the overhead view from the right. The closer figure with back partly blocking the lower-right foreground is from image three, with a red hood and cape replacing just the source clothing. The floor-level actor in the upper left is the navy-gold officer from image two with long pale trousers. Preserve the chair at left, the dark shape in the same foreground position and the spacing between both people. Same props, face directions and shadows as the original."
+      },
+      {
+        "name": "S55-source-edit-1430.png",
+        "sha256": "030d551402dd5d6310d17b0ff96c811aa196e57a7e2a9c22e51539a7b8901796",
+        "imagePrompt": "Edit image 1 as this exact final 16:9 CGI comedy frame. The closer actor at the bottom is the crimson mantle character from image 2. The far existing adult actor has the navy gold long coat with pale trousers. The rear figure is already thrown into a comic overbalance with one existing pale trouser leg lifted at upper right, partially occluded by the close actor and original stage prop. Preserve the leg and hand positions, the motion-soft face through the existing smoke, the prop rising in frame, the pink chair corner and high camera. Keep the original shadow and scene cropping."
+      }
+    ]
+  }
+}

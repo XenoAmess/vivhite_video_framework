@@ -6,12 +6,13 @@
 
 | 项目 | 交接记录 |
 | --- | --- |
-| 逐镜验收 | 21／48 镜通过（43.75%），覆盖原片 553／1478 帧。通过镜头为 S01–S12、S14–S17、S20、S22、S45、S46、S51。 |
+| 逐镜验收 | 27／48 镜通过（56.25%），覆盖原片 701／1478 帧。通过镜头为 S01–S12、S14–S17、S20–S22、S26、S29、S33、S39、S45–S46、S51、S53。 |
 | 完整成片 | 等待全部镜头通过。 |
 | 最新已验收预览 | 原片开头 `[0,463)`，连续 16 镜、19.292 秒。463 个输出画面与通过版的解码哈希一致，15 个切点已对照，指定配乐覆盖每声道 926,000 个采样。 [本机 MP4](D:/workspace/vivhite-analysis-output/pipa/versus/01-shenyin-heiyan-vs-xuren-meng/full-768p-002-source-fidelity/previews/original-0000-0463-1795755438660068600/pipa-768p-preview.mp4) · [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-opening-preview-004.json) |
 | 经典段样片 | 原片 00:09.000–00:14.000，S08–S12 连续 5 秒。 [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-classic-preview-001.json) |
+| S20–S22 样片 | 原片 `[510,578)`，连续 3 镜、2.833 秒。68 帧与通过版的解码哈希一致，已对照 2 个切点和每声道 136,000 个配乐采样。 [本机 MP4](D:/workspace/vivhite-analysis-output/pipa/versus/01-shenyin-heiyan-vs-xuren-meng/full-768p-002-source-fidelity/previews/original-0510-0578-1795792365501570000/pipa-768p-preview.mp4) · [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-S20-S22-preview-001.json) |
 
-北京时间 2026-11-27 18:46 核对统一网关，剩余 27 镜均已受理，S53 在渲染，26 镜排队。晚间逐帧核对了 12 个候选的 388 帧。S45、S46、S51 通过，S38、S40–S43、S47、S48、S50、S52 的第二版已提交。S19 第三版及 S21 第二版在队列中。Windows 定时任务继续下载后续候选。 [晚间复核与九次返工](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-evening-review-001.json) · [前一批返工](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-resumed-retakes-001.json)
+北京时间 2026-11-27 23:17 核对统一网关，剩余 21 镜均已受理。S24 在渲染，20 镜排队。S19 第三版在 S24 之后。新增验收通过 S21、S26、S29、S33、S39、S53，已为退回的 S28、S34、S36、S54–S56 重新排队。Windows 定时任务继续下载后续候选。 [本轮逐帧复核和六次返工](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-night-review-001.json) · [上一批晚间记录](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-evening-review-001.json)
 
 ## 文件和生产入口
 
@@ -34,12 +35,12 @@ Get-Content -Encoding UTF8 "$r/worker.log" -Tail 20
 - `$r/prepared.json` 绑定定稿计划、原片切片、角色构图和配乐的路径及哈希。对齐后的 WAV 位于 `$previous/soundtrack-cut-sync-30f73ed6298c.wav`。旧版任务已退出生产，旧运行目录仍提供当前版使用的音频和源镜素材。
 - 角色以入库的两张全身图为准。神隐黑炎穿深蓝金边、长衣摆军服。虚人梦为金发、红兜帽、深色长裤，左肩侧面具随视角遮挡。两人保持接近的身高与头身比。 [角色图与生成记录](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/)
 - Windows 任务使用固定的 `worker-v13`。它约每 60 秒查询统一网关，按任务号下载并核对哈希，按原镜帧数处理切片。768P 模型为 `fasth3-omni-bf16`，服务端同模型最多 32 个未完成任务，GPU 一次运行一个镜头。成功下载的候选留给接手人逐镜审阅。 [统一网关和恢复方式](local-video-768p-4k.md)
-- `$r/shots/Sxx/attempt-NNN/` 汇集 `request.json`、`job.json`、`polls.jsonl`、`sources-raw/`、`sources/`、`cut.mp4`、`comparison/`、`review.json` 和适用的 `postprocess.json`。实际提示词、种子、参照顺序和远端任务号以每次请求收据为准。`$r/anchors/requests.json` 保留构图生成记录。晚间台账为 `$r/cut-audit/production-ledger-evening-reviews-20261127.json`，队列快照为同目录 `queue-after-evening-reviews-20261127.json`。
+- `$r/shots/Sxx/attempt-NNN/` 汇集 `request.json`、`job.json`、`polls.jsonl`、`sources-raw/`、`sources/`、`cut.mp4`、`comparison/`、`review.json` 和适用的 `postprocess.json`。实际提示词、种子、参照顺序和远端任务号以每次请求收据为准。`$r/anchors/requests.json` 保留构图生成记录。最新台账为 `$r/cut-audit/production-ledger-night-reviews-20261127.json`，队列快照为同目录 `queue-after-night-reviews-20261127.json`。
 
 ## 接手后的逐镜验收
 
 1. 用队列检查脚本核对每镜的最新任务。运行或等待中的请求保留原任务号。服务端完成后，等定时任务下载并归一化，再查看本镜的逐帧对照。用 `progress.json` 的 `visualReviews` 统计通过镜头。若媒体校验中断，先读 `worker.log` 和任务收据，按原任务号恢复下载。已经完整解码的临时切片可按现有恢复脚本和历史记录复核。 [S21 恢复与返工记录](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-S21-review-001.json)
-2. 优先检查开头连续段的两个缺口。S19 第三版覆盖 `[463,510)`，用第 463、479、508 帧的构图检查贴地近景起势、向破墙拉远、换脚和贴地收镜。S21 第二版覆盖 `[536,550)`，重点核对高位背视的身体朝向。两镜通过后，可接上已通过的 S20 和 S22，连续预览到第 578 帧之前。源片 S28、S29 中被遮挡的远处神隐黑炎也在演员检查范围内。 [S19 第二版问题与返工](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-S19-review-002.json) · [S28 远景核对](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-S28-queue-revision-001.json) · [S29 远景核对](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-S29-queue-revision-002.json)
+2. 开头连续段尚缺 S19。第三版覆盖 `[463,510)`，用第 463、479、508 帧的构图检查贴地近景起势、向破墙拉远、换脚和贴地收镜。S19 通过后，可把现有开头接上 S20–S22，连续预览到第 578 帧之前。S28 第三版仍要核对粉椅附近被遮挡的神隐黑炎及第 683 帧附近的换脚。 [S19 第二版问题与返工](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-S19-review-002.json) · [S21 第二版通过](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-S21-review-002.json) · [S28 第二版复核](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-S28-review-002.json)
 3. 检查每页原片与候选并排图，覆盖本镜全部帧。检查两位应出现的角色及服饰、原演员残留、道具轮廓、布景、机位、动作阶段及光效时点。在观察文件写出实际核对范围和可见差异，再登记通过或退回。退回时用同一原镜的运动输入，针对失败处补相应源帧构图。能用同镜的生成帧校正时，保存取帧配方并重新对照全镜。每次尝试保留提示词、参照、种子、结果和判断。
 4. 例如，S19 的候选下载完成后，运行下面的命令生成对照。只有核对全 47 帧后才填写观察文件并提交实际决定。返工参数可用 `retry --help` 查看，现有定时任务会读取新尝试并使用后续空位。
 

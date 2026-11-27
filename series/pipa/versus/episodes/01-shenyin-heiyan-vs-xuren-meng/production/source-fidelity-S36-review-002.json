@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S36",
+  "startFrame": 946,
+  "endFrame": 971,
+  "attempt": 2,
+  "jobId": "video_gen_efd4408a81ef4b1eb3c86fc4c83f5c1a:openai",
+  "requestSha256": "0f938f3626fdc4e5cb95a3811c967315758b3351f172d0549cb2f3b9388f4d51",
+  "renderPrompt": "Recast the adult in one existing CGI shot, using <Video 1> for its exact camera pullback, side gaze, hair motion, shot timing and original lighting. All three images show this exact shot's one actor as the same dark-brown-haired navy-and-gold officer with pale trousers. <Picture 1> corresponds to very close tilted source frame 946 and the slight sideways smile. <Picture 2> corresponds to frame 958, the looser close-up with changing eye direction and an existing indistinct dark theatrical object in the lower left. <Picture 3> shows final source frame 970 with the wider tilted stage view, original dark foreground prop, warm glare and the officer clearly at the right. Keep the whole early part free of the later light effect. Reproduce the same late change in glare and framing, and maintain the identity of the officer in the early close-up and at the end. Preserve the original camera perspective, set, warm shadows, depth of field and physical silhouettes. No new cuts, props, people or room details.",
+  "seed": 1234,
+  "rawSha256": "09025184fa003d94e671a919a6811784cb966333745e36590b6291d3837e1938",
+  "cutSha256": "bbb26336220d6554d1f77d44ce73d9ba67e2fe53c8cabeb56888e7378dce6d00",
+  "review": {
+    "cutSha256": "bbb26336220d6554d1f77d44ce73d9ba67e2fe53c8cabeb56888e7378dce6d00",
+    "requestSha256": "0f938f3626fdc4e5cb95a3811c967315758b3351f172d0549cb2f3b9388f4d51",
+    "originalSha256": "044700ac51eed51424ccdc5a8d8a6568225907334ba6782b75b94c3b896d4695",
+    "decision": "rejected",
+    "reviewedFrames": 25,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 946–970 帧两页。神隐黑炎的侧视、深蓝服装、红光、原有道具及后景日历可辨。原片中段从短促眯眼切成明显张口，再抬动前景道具，候选四五帧起就拉开并较早露出道具，口形多为露齿微笑，缺少张大嘴的反应。多处短闪前移或错位，原片第 970 帧的强亮闪没有保留。退回。",
+    "reviewedAt": "2026-11-27T14:56:36.202402+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S36",
+      "sourceFrame": 946,
+      "file": "S36-source-edit-0946.png",
+      "sourceStillSha256": "8b14c93796d8ec55a6efa7626b18d44a856c164667f1996e76b5f2c58d5037d3",
+      "sha256": "d402bd84ea8dcf1120199bc18f8129919c125c21c9e867d678e211cbe265c227",
+      "prompt": "Edit the exact scene and framing of image 1 as a frame of an existing warm 3D animated shot. Replace the pictured adult actor's head and clothes with the adult brown-haired navy-and-gold officer of image 2. Image 3 supplies only his recognizable modeled 3D face and slit side-lit eyes. Give the new character his proper dark brown tousled hair, slate irises, natural continuous face shading, natural teeth matching the grin, navy Napoleonic-style collar, gold trim and fringe only where the original crop allows. A face has sculpted 3D features and no original ink outlines. Keep the exact source lens angle and tilt, eye direction, head angle, background, depth, original near objects and warm red light. Landscape 16:9. Beginning is a tilted extreme close-up with a small crooked smile and eyes turned away. Preserve the large screen position and rotated angle of the cheek; the stage background stays soft and chiefly warm brown.",
+      "inputs": [
+        "anchor-originals/S36-source-0946.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchors/S22-source-edit-0550.png"
+      ]
+    },
+    {
+      "shot": "S36",
+      "sourceFrame": 958,
+      "file": "S36-source-edit-0958.png",
+      "sourceStillSha256": "894636426695fd8dc4709f3935acafb72ce6646f38d2169d166b0f1d0dff4dd3",
+      "sha256": "82a03a30b10b234ebd7f79b9eecab3e8bbe9821d11b8fc0a61e3c4f9c2e32110",
+      "prompt": "Edit the exact scene and framing of image 1 as a frame of an existing warm 3D animated shot. Replace the pictured adult actor's head and clothes with the adult brown-haired navy-and-gold officer of image 2. Image 3 supplies only his recognizable modeled 3D face and slit side-lit eyes. Give the new character his proper dark brown tousled hair, slate irises, natural continuous face shading, natural teeth matching the grin, navy Napoleonic-style collar, gold trim and fringe only where the original crop allows. A face has sculpted 3D features and no original ink outlines. Keep the exact source lens angle and tilt, eye direction, head angle, background, depth, original near objects and warm red light. Landscape 16:9. Here darker red side light strikes a wider right-of-centre head with a wider sideways toothy grin. The original gray and blue-black theatrical foreground prop is deliberately soft at lower left and remains at the same position, angle and blur. Preserve that depth relationship.",
+      "inputs": [
+        "anchor-originals/S36-source-0958.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchors/S22-source-edit-0550.png"
+      ]
+    },
+    {
+      "shot": "S36",
+      "sourceFrame": 970,
+      "file": "S36-source-edit-0970.png",
+      "sourceStillSha256": "d634640b9a8c42b6057fe81558a35d6e46864fb62df172d15bbec88eaa98bb0e",
+      "sha256": "558d610872a3da3b6d31ff652a3192f108f3c9f1ec0270133aabf6847a9e070b",
+      "prompt": "Edit image 1 as the exact finishing frame of an existing stylized 3D animated scene. Replace only the pictured adult actor with the fitted navy-and-gold Napoleonic officer from image 2, with dark ruffled brown hair, naturally modeled expression and pale trousers. The officer is at the same slightly far, tilted position toward the right in the composition, with the same pose, open grin and original dark theatrical foreground object. Preserve the source CGI bloom occupying the left area with its exact intensity, lighting and haze, as a photographic screen effect already in the image. Keep the original wall calendar, dark red furniture off to the left, lamp tone, shadows and lens focus. The scene remains at the same scale. No new effects. Landscape 16:9.",
+      "inputs": [
+        "anchor-originals/S36-source-0970.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact movement, lighting, props and camera reference for one continuous stylized 3D animation shot. Replace the existing adults with the role designs in the supplied images while retaining the original camera and full action timeline. <Picture 1> is source frame 946 with the tight sideways glance. Keep the same scale and tipped head for the beginning. Briefly squint and then expand to the distinctive wide open comic mouth of <Picture 2> at 952. Do this before pulling away, before the foreground object enters. Follow the moving input through the change of the foreground prop, focus and body pose. <Picture 3> is the actual final flash at frame 970. The scattered brief flashes before it follow the exact timing as in the source. Preserve the dark-haired navy gold officer throughout and keep the warm room, props and original shadows.",
+    "seed": 834670,
+    "plannedAt": "2026-11-27T15:03:16.993160+00:00",
+    "images": [
+      {
+        "name": "S36-source-edit-0946.png",
+        "sha256": "d402bd84ea8dcf1120199bc18f8129919c125c21c9e867d678e211cbe265c227",
+        "imagePrompt": "Edit the exact scene and framing of image 1 as a frame of an existing warm 3D animated shot. Replace the pictured adult actor's head and clothes with the adult brown-haired navy-and-gold officer of image 2. Image 3 supplies only his recognizable modeled 3D face and slit side-lit eyes. Give the new character his proper dark brown tousled hair, slate irises, natural continuous face shading, natural teeth matching the grin, navy Napoleonic-style collar, gold trim and fringe only where the original crop allows. A face has sculpted 3D features and no original ink outlines. Keep the exact source lens angle and tilt, eye direction, head angle, background, depth, original near objects and warm red light. Landscape 16:9. Beginning is a tilted extreme close-up with a small crooked smile and eyes turned away. Preserve the large screen position and rotated angle of the cheek; the stage background stays soft and chiefly warm brown."
+      },
+      {
+        "name": "S36-source-edit-0952.png",
+        "sha256": "ea6b2b46b18494b40a494bec2b98faa14cbf1c4f909a1987a7324df9d481d0db",
+        "imagePrompt": "Edit just the existing face in the first close-up, matching precisely its head tilt, eyes side-glancing left, dramatic open mouth at this instant of comic surprise, strong blue-white light and soft warm surroundings. Keep the ID and navy-and-gold collar from the adult character of image 2, but do not copy his closed smile. Same size, exact screen position, hairline cropped by the upper edge and same 16:9 composition. Preserve stylized cinematic 3D rendering."
+      },
+      {
+        "name": "S36-source-edit-0970.png",
+        "sha256": "558d610872a3da3b6d31ff652a3192f108f3c9f1ec0270133aabf6847a9e070b",
+        "imagePrompt": "Edit image 1 as the exact finishing frame of an existing stylized 3D animated scene. Replace only the pictured adult actor with the fitted navy-and-gold Napoleonic officer from image 2, with dark ruffled brown hair, naturally modeled expression and pale trousers. The officer is at the same slightly far, tilted position toward the right in the composition, with the same pose, open grin and original dark theatrical foreground object. Preserve the source CGI bloom occupying the left area with its exact intensity, lighting and haze, as a photographic screen effect already in the image. Keep the original wall calendar, dark red furniture off to the left, lamp tone, shadows and lens focus. The scene remains at the same scale. No new effects. Landscape 16:9."
+      }
+    ]
+  }
+}

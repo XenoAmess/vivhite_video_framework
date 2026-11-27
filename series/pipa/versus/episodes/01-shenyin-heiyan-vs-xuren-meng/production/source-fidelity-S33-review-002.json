@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S33",
+  "startFrame": 824,
+  "endFrame": 855,
+  "attempt": 2,
+  "jobId": "video_gen_bd9d50ba491949598af2ecb6f347ab78:openai",
+  "requestSha256": "19b879c0d9fa4de081b8a412dbd33feab3d3f02d154193d631864aa610ab82a0",
+  "renderPrompt": "Use <Video 1> as the real base shot and time reference for one existing animated dance cut. Preserve the floor-level camera and the original rapid shift as the actor's left and right foot contact change. Change only the actor to the adult shown in all the stills: blond hair, deep crimson hood and cloak, muted golden lining, dark boots, gloves and trousers, dark red wrist beads, and one ivory mask on the left shoulder. <Picture 1> is the original frame 824, under the round lamp with crouched knees, upward head and one cupped hand extended. <Picture 2> is original frame 839 with the raised knee and different arm positions. <Picture 3> is original frame 854, the wide diagonal landing near the floor. Keep the ordering and timing of all three source poses. Carry the existing light streaks, original furniture and in-frame cuts of the limbs through the single shot. Use the same room geometry and original amount of motion blur.",
+  "seed": 1234,
+  "rawSha256": "c0c3218a4e454554e8f4d0f5386d68f66a27abc3d7c1b22d4718ee8b3d4cfd2e",
+  "cutSha256": "7ccc7ca9e86ceb723ff7fc28da6d613bc80931cf1cc35ec9f5a3b179a981d1ca",
+  "review": {
+    "cutSha256": "7ccc7ca9e86ceb723ff7fc28da6d613bc80931cf1cc35ec9f5a3b179a981d1ca",
+    "requestSha256": "19b879c0d9fa4de081b8a412dbd33feab3d3f02d154193d631864aa610ab82a0",
+    "originalSha256": "1337f41fcce9a787f248e49df0ad3323cf02b68372356e36d6476dd5fdba7c87",
+    "decision": "accepted",
+    "reviewedFrames": 31,
+    "method": "assistant-frame-review",
+    "observations": "原片第 824–854 帧与初步归一化、调整版分别全量对照。调整同一模型源内取帧时点后，侧掌转入交臂、抬膝、靴底擦过近处并落地的顺序与原片一致。红兜帽、侧面具、暖顶灯、左右软家具与贴地仰拍保留。候选的披风遮住部分腿线，落脚轮廓对应，可接受。采用调整版。",
+    "reviewedAt": "2026-11-27T14:56:33.572356+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S33",
+      "sourceFrame": 824,
+      "file": "S33-source-edit-0824.png",
+      "sourceStillSha256": "dbb79094e63704e7298be29b45b7b808297cccf3f88319a42193699a5fa8e454",
+      "sha256": "07f370db0e6a014c7eee1cfd15afd5917e8e69860f3534ec211a34ee76c2a476",
+      "prompt": "Edit input 1 directly, a single frame of the adult dancer in an existing stylized 3D animated scene. Match the exact camera against the floor, angle toward the round warm ceiling lamp and the way it backlights the dancer. Retain the stage position, cut-off limbs, poses, cast shadows, room furniture, orange light and existing fine CG streaks. Change the adult actor to input 2's crimson hooded dancer with blond hair, red cloak and muted gold lining, charcoal trousers, black gloves and boots and red wrist beads. The character has a single pale mask on the outside of the left shoulder. Keep the cloak behind limbs wherever needed to show their source placement. Use source-style CGI materials, muted hues, unchanged depth, same landscape 16:9. At this source start the dancer faces partly forward, squats with knees outward and tilts the head upward, one arm extended with the palm angled up. Much of the room and the dancer's feet are below the frame. Keep the composition from input 1.",
+      "inputs": [
+        "anchor-originals/S33-source-0824.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    },
+    {
+      "shot": "S33",
+      "sourceFrame": 839,
+      "file": "S33-source-edit-0839.png",
+      "sourceStillSha256": "64e60cf3d7af7c902276c64753e5437e6b9008dd0296d78c614d30d8210f3a4c",
+      "sha256": "a0ba460a92951fe20be5387325e35f8d40cd5a31eea47b59574cb5fc20e719e3",
+      "prompt": "Edit input 1 directly, a single frame of the adult dancer in an existing stylized 3D animated scene. Match the exact camera against the floor, angle toward the round warm ceiling lamp and the way it backlights the dancer. Retain the stage position, cut-off limbs, poses, cast shadows, room furniture, orange light and existing fine CG streaks. Change the adult actor to input 2's crimson hooded dancer with blond hair, red cloak and muted gold lining, charcoal trousers, black gloves and boots and red wrist beads. The character has a single pale mask on the outside of the left shoulder. Keep the cloak behind limbs wherever needed to show their source placement. Use source-style CGI materials, muted hues, unchanged depth, same landscape 16:9. This mid-shot moment has one knee high, arms spread, one hand above, and a motion-soft, strongly backlit face. Match exactly which foot is lifted and its orientation, and the abrupt perspective behind it.",
+      "inputs": [
+        "anchor-originals/S33-source-0839.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    },
+    {
+      "shot": "S33",
+      "sourceFrame": 854,
+      "file": "S33-source-edit-0854.png",
+      "sourceStillSha256": "85f8e1fe1c55455a382b16d14ae967b99db80e7b072fa49641cad0e74e583c0c",
+      "sha256": "2b3bef106b86c15651f83311f1c2cf2afb0a8af44090988ec875e5f0ed88d862",
+      "prompt": "Edit input 1 directly, a single frame of the adult dancer in an existing stylized 3D animated scene. Match the exact camera against the floor, angle toward the round warm ceiling lamp and the way it backlights the dancer. Retain the stage position, cut-off limbs, poses, cast shadows, room furniture, orange light and existing fine CG streaks. Change the adult actor to input 2's crimson hooded dancer with blond hair, red cloak and muted gold lining, charcoal trousers, black gloves and boots and red wrist beads. The character has a single pale mask on the outside of the left shoulder. Keep the cloak behind limbs wherever needed to show their source placement. Use source-style CGI materials, muted hues, unchanged depth, same landscape 16:9. The far end of the shot has the dancer turned side-back, feet grounded in a diagonal straddle, with one foot at the bottom-left near the camera, the other far back, and one arm raised. Keep the very low camera and the expanded floor with pink furniture at both edges.",
+      "inputs": [
+        "anchor-originals/S33-source-0854.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "tool": "ffmpeg",
+    "sourceFrames": [
+      824,
+      855
+    ],
+    "normalizedModelSha256": "5754e9547c7ef3a5eade1bbbe1270d9194f98c80a0d2320ea0b44f239c54a564",
+    "preRetimeCutSha256": "e71dbce569f9401c09853b104c602d550ca9fc571fc4c81aa5280f23f2a82756",
+    "selectedModelFrames": [
+      0,
+      22,
+      25,
+      27,
+      29,
+      32,
+      37,
+      41,
+      44,
+      49,
+      52,
+      55,
+      57,
+      59,
+      63,
+      65,
+      68,
+      77,
+      80,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      97,
+      101,
+      105,
+      110,
+      115,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,22)+eq(n\\,25)+eq(n\\,27)+eq(n\\,29)+eq(n\\,32)+eq(n\\,37)+eq(n\\,41)+eq(n\\,44)+eq(n\\,49)+eq(n\\,52)+eq(n\\,55)+eq(n\\,57)+eq(n\\,59)+eq(n\\,63)+eq(n\\,65)+eq(n\\,68)+eq(n\\,77)+eq(n\\,80)+eq(n\\,84)+eq(n\\,86)+eq(n\\,88)+eq(n\\,90)+eq(n\\,92)+eq(n\\,94)+eq(n\\,97)+eq(n\\,101)+eq(n\\,105)+eq(n\\,110)+eq(n\\,115)+eq(n\\,119),setpts=N/(24*TB),setsar=1",
+    "previewSha256": "7ccc7ca9e86ceb723ff7fc28da6d613bc80931cf1cc35ec9f5a3b179a981d1ca",
+    "reason": "Move the arm sweep, lifted knee and long boot landing to the matching source beats.",
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "outputSha256": "7ccc7ca9e86ceb723ff7fc28da6d613bc80931cf1cc35ec9f5a3b179a981d1ca"
+  }
+}

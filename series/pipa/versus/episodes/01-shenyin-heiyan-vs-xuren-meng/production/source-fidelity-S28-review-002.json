@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S28",
+  "startFrame": 671,
+  "endFrame": 710,
+  "attempt": 2,
+  "jobId": "video_gen_fd35244e4fc449d5821527b666c635d7:openai",
+  "requestSha256": "059cde7b1378a823030f84f4245d8ec580749c2a861174bcdea4e5a310098578",
+  "renderPrompt": "Use <Video 1> as the actual camera, focus, movement and lighting throughout this single existing fictional CGI shot. Recast the front adult performer as the blond dancer with a red hood and muted golden-lined cloak, black gloves and boots, red wrist beads and one ivory mask on the left shoulder. The far adult visible at the pink chair through the opening is a different role, the short brown-haired navy-and-gold officer with ivory trousers and dark boots. Keep that officer tiny, soft and at the same location, partly concealed as the front performer covers him. Keep the original existing prop silhouette, light and focus from the source only wherever the far actor is actually visible. <Picture 1> is source frame 671 with the foreground torso cropped at the top and the distant officer visible left of it. <Picture 2> is original frame 691, wide, with the front figure's asymmetric open hand positions and the far officer occluded. <Picture 3> is frame 708 with raised bent wrists and a small glimpse of the officer. Keep the full original pullback, arm beats, backdrop and dim practical light, keeping both actors the same scale as their original positions. Preserve the camera axis and source cut boundaries. Exactly these two distinct actors, no duplicating or foregrounding the distant figure.",
+  "seed": 1234,
+  "rawSha256": "83725617ed002ccb65a0ea264246068a3471d124f343ce618ab1e397741d3510",
+  "cutSha256": "187b14c2cf5e4c1c1267b6db8415a4b8d331f30ffafef74c05f334cc215e8a4b",
+  "review": {
+    "cutSha256": "187b14c2cf5e4c1c1267b6db8415a4b8d331f30ffafef74c05f334cc215e8a4b",
+    "requestSha256": "059cde7b1378a823030f84f4245d8ec580749c2a861174bcdea4e5a310098578",
+    "originalSha256": "b8561068ef41b9c6d418409e61c6d68548d245a840847067aa5fd9e39a4ea92e",
+    "decision": "rejected",
+    "reviewedFrames": 39,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 671–709 帧的初次归一化与同一模型源的取帧试版，各 39 帧，并查看候选首帧原尺寸。开场破墙深处的神隐黑炎有深蓝上衣、浅裤和金肩部，位置在原粉椅附近，由虚人梦和场景遮住。虚人梦的红披风与左肩面具保持。试版拉远和抬手较接近原片，但原片约第 682–685 帧有明显的起跳换脚和落脚，候选截取范围内缺足部离地的动作。最后原片双前臂向画面前方，候选靠近面部且前伸不足。退回并补足动作参照。",
+    "reviewedAt": "2026-11-27T15:02:04.372717+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S28",
+      "sourceFrame": 671,
+      "file": "S28-source-edit-0671.png",
+      "sourceStillSha256": "626a719f8b6e59eb1055d6971038a0c41e316f3bb2f8ef120d801ebaa7e7bbcf",
+      "sha256": "a918283cb9ec96f212cb86eff225b3782f2a639e612d864f48372670e6a946fb",
+      "prompt": "Edit source input 1 for an existing stylized 3D dance scene, preserving exact perspective, camera, lighting, original choreography pose, damaged wood room geometry, soft furniture, debris, depth and existing amber light streaks. The foreground adult dancer becomes input 2's crimson hooded, long blond adult with muted gold-lined red cloak, dark trousers, boots and gloves with red wrist beads, and one pale mask affixed to the left shoulder only where within the crop. Keep the dancer's position, size, pose and crop in the room. Match the warm dark 3D rendering. Wide 16:9. In this opening crop the dancer's head and shoulders are above the top edge. Maintain the near pose and the hand angled down beside the thigh. There is a second much smaller soft-focus actor aligned with the distant pink chair through the opening at screen left, so change this distant actor only to the navy-and-gold officer in image 3 with the same pale trousers, existing silhouette and placement. Keep this far figure indistinct and tiny, with the same depth and original light spot.",
+      "inputs": [
+        "anchor-originals/S28-source-0671.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    },
+    {
+      "shot": "S28",
+      "sourceFrame": 691,
+      "file": "S28-source-edit-0691.png",
+      "sourceStillSha256": "cdb7d4617e481dc4ea0546b0c44775143e68377cf18e6f2111fb9b38abc13971",
+      "sha256": "090a5ba78ed65605bf43565068730657ddfe6906048eb421a53e3be82a28f4e9",
+      "prompt": "First edit: Edit source input 1 for an existing stylized 3D dance scene, preserving exact perspective, camera, lighting, original choreography pose, damaged wood room geometry, soft furniture, debris, depth and existing amber light streaks. The foreground adult dancer becomes input 2's crimson hooded, long blond adult with muted gold-lined red cloak, dark trousers, boots and gloves with red wrist beads, and one pale mask affixed to the left shoulder only where within the crop. Keep the dancer's position, size, pose and crop in the room. Match the warm dark 3D rendering. Wide 16:9. This middle source view is wide and the foreground dancer stands in the center with arms staggered and both boots on the floor. Retain the wider broken wall, chair, wrapped fabric and mattress, and keep his pose. The main figure covers the distant background actor here, so no other actor is visible in this still.\nFollow-up edit: Edit this image only where the dancer's bare hand crosses in front of the upper abdomen. Make that hand wear the same close-fitting charcoal leather glove as the other visible hand. Keep exactly the fingers, pose, dark red wrist beads and scene of the supplied image, preserve everything else and keep the original landscape aspect ratio.",
+      "inputs": [
+        "anchor-originals/S28-source-0691.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "anchors/not-used/S28-source-edit-0691-bare-hand.png"
+      ]
+    },
+    {
+      "shot": "S28",
+      "sourceFrame": 708,
+      "file": "S28-source-edit-0708.png",
+      "sourceStillSha256": "5df66e75f4fa9636013ae3905a011b3786fe280fe56596cf4df439a5368a66f9",
+      "sha256": "acf17115785ab689efde16f40d66350cfa7774c2b9b19fbb48c55d4357a430bb",
+      "prompt": "First edit: Edit source input 1 for an existing stylized 3D dance scene, preserving exact perspective, camera, lighting, original choreography pose, damaged wood room geometry, soft furniture, debris, depth and existing amber light streaks. The foreground adult dancer becomes input 2's crimson hooded, long blond adult with muted gold-lined red cloak, dark trousers, boots and gloves with red wrist beads, and one pale mask affixed to the left shoulder only where within the crop. Keep the dancer's position, size, pose and crop in the room. Match the warm dark 3D rendering. Wide 16:9. In this ending view the foreground dancer stands centered and has bent wrists raised before the shoulders. The slightly visible tiny background actor through the wall opening is the officer in image 3, remaining at the same apparent scale and partly hidden by the foreground dancer. Do not bring the background figure forward or create a duplicate. Preserve the furniture and lighting exactly.\nFollow-up edit: Edit this existing warm animated composition only in the far background. Remove the brightly drawn duplicate navy-coated person immediately to the right of the foreground red cloak and restore the blank warm far wall there, as if hidden behind the cloak. The tiny indistinct sliver of the one distant actor near the opening just to the left of the red cloak is part of the source composition and stays blurry and partially obscured. Keep the foreground dancer, his two raised wrists, actual outfit and mask, all furniture, floor, room lighting and exact camera unchanged. There is one foreground dancer and only a sliver of one far officer. Do not add any characters.",
+      "inputs": [
+        "anchor-originals/S28-source-0708.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchors/not-used/S28-source-edit-0708-duplicate-officer.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact movement, lighting, props and camera reference for one continuous stylized 3D animation shot. Replace the existing adults with the role designs in the supplied images while retaining the original camera and full action timeline. <Picture 1> is the exact first frame 671. Immediately follow the original quick pullback. The foreground performer wears a crimson hood and mantle, black trousers and dark boots. The tiny defocused navy gold officer is at the far pink chair behind the broken wall. <Picture 2> is source frame 683, where the leading actor lifts a boot in the quick change of support, left of image, with one fist up and the other hand low. Reproduce the small airborne step and landing exactly from the video. Then both arms rise and extend toward camera in separate beats matching the original. <Picture 3> is source frame 708, near the end, showing the elbow height and both wrists extended. Keep the tiny background actor visible only through source gaps, including the pose in picture 2. Preserve the exact room, furniture, shadow, color and flashes, and keep the drape clear enough that both boot movements show.",
+    "seed": 720391,
+    "plannedAt": "2026-11-27T15:09:18.457456+00:00",
+    "images": [
+      {
+        "name": "S28-source-edit-0671.png",
+        "sha256": "a918283cb9ec96f212cb86eff225b3782f2a639e612d864f48372670e6a946fb",
+        "imagePrompt": "Edit source input 1 for an existing stylized 3D dance scene, preserving exact perspective, camera, lighting, original choreography pose, damaged wood room geometry, soft furniture, debris, depth and existing amber light streaks. The foreground adult dancer becomes input 2's crimson hooded, long blond adult with muted gold-lined red cloak, dark trousers, boots and gloves with red wrist beads, and one pale mask affixed to the left shoulder only where within the crop. Keep the dancer's position, size, pose and crop in the room. Match the warm dark 3D rendering. Wide 16:9. In this opening crop the dancer's head and shoulders are above the top edge. Maintain the near pose and the hand angled down beside the thigh. There is a second much smaller soft-focus actor aligned with the distant pink chair through the opening at screen left, so change this distant actor only to the navy-and-gold officer in image 3 with the same pale trousers, existing silhouette and placement. Keep this far figure indistinct and tiny, with the same depth and original light spot."
+      },
+      {
+        "name": "S28-source-edit-0683.png",
+        "sha256": "b465700cd1a4ae81944979a16bbac7bed646fa2ea88221730d8acf41caaeba99",
+        "imagePrompt": "Edit image 1 directly as a precise intermediate frame of a stylized 3D dance. Image 2 provides only the adult dressed performer in a gold-lined crimson hood and mantle, dark trousers, gloves and boots, with a pale left shoulder mask. Keep the foreground actor's exact leap and crossed-foot silhouette; his right boot on image left is lifting with knee bent and heel back, opposite boot lower, one fist raised and the other glove low. Keep cloak gathered at the sides so both boots and floor contacts read. The tiny existing adult at the pink chair in the distant wall opening is the dark-haired adult with navy gold shoulders and pale trousers seen in image 3. Match his tiny defocused scale and partial occlusion, no other figures or new props. Retain the exact plank floor, broken wall, furniture and existing lights. Wide 16:9."
+      },
+      {
+        "name": "S28-source-edit-0708.png",
+        "sha256": "acf17115785ab689efde16f40d66350cfa7774c2b9b19fbb48c55d4357a430bb",
+        "imagePrompt": "First edit: Edit source input 1 for an existing stylized 3D dance scene, preserving exact perspective, camera, lighting, original choreography pose, damaged wood room geometry, soft furniture, debris, depth and existing amber light streaks. The foreground adult dancer becomes input 2's crimson hooded, long blond adult with muted gold-lined red cloak, dark trousers, boots and gloves with red wrist beads, and one pale mask affixed to the left shoulder only where within the crop. Keep the dancer's position, size, pose and crop in the room. Match the warm dark 3D rendering. Wide 16:9. In this ending view the foreground dancer stands centered and has bent wrists raised before the shoulders. The slightly visible tiny background actor through the wall opening is the officer in image 3, remaining at the same apparent scale and partly hidden by the foreground dancer. Do not bring the background figure forward or create a duplicate. Preserve the furniture and lighting exactly.\nFollow-up edit: Edit this existing warm animated composition only in the far background. Remove the brightly drawn duplicate navy-coated person immediately to the right of the foreground red cloak and restore the blank warm far wall there, as if hidden behind the cloak. The tiny indistinct sliver of the one distant actor near the opening just to the left of the red cloak is part of the source composition and stays blurry and partially obscured. Keep the foreground dancer, his two raised wrists, actual outfit and mask, all furniture, floor, room lighting and exact camera unchanged. There is one foreground dancer and only a sliver of one far officer. Do not add any characters."
+      }
+    ]
+  }
+}

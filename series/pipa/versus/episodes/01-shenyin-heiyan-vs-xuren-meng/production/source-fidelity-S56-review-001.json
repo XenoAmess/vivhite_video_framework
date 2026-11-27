@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S56",
+  "startFrame": 1431,
+  "endFrame": 1478,
+  "attempt": 1,
+  "jobId": "video_gen_99c67f68b7a54ffe991c4e68465f71df:openai",
+  "requestSha256": "4f53f23c8157309898cf5809b4c8bcf0d886da8d80a90a1c6c0a77669fbfe493",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. <Picture 2> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. Keep the low rear character and foreground performer in their original position by the same wall and screen. Match the original first fifth rise, near pause and later deep bow with raised hand. <Picture 3> is the exact original late two-person position from frame 1469.",
+  "seed": 1234,
+  "rawSha256": "a8a6dde19bf4fb67804727c940c42dc25eb8db12d886935f9d2f3f316786eaa8",
+  "cutSha256": "e00b3273c6cc672f5960ace1812d87d94ec0dbc7abdd1e4d7221c0ea8c2287e6",
+  "review": {
+    "cutSha256": "e00b3273c6cc672f5960ace1812d87d94ec0dbc7abdd1e4d7221c0ea8c2287e6",
+    "requestSha256": "4f53f23c8157309898cf5809b4c8bcf0d886da8d80a90a1c6c0a77669fbfe493",
+    "originalSha256": "db8e8c503f558a7d07d4faa0fbb968ead74641c4ea839599b7dcb659df346745",
+    "decision": "rejected",
+    "reviewedFrames": 47,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照第 1431–1477 帧三页。地上的神隐黑炎和站起的虚人梦均正确换角，屏风和木板保持。原片第 1435–1437 帧已有迅速起身，候选俯身停留更久。第二段原片显出支撑脚交替、再弯腰和后手靠近背侧的小道具，候选的宽披风遮住不少肢体。原片最后数帧扬起的空手已经往下落，候选此时却一直在屏风前伸着。动作尾点不符，退回。",
+    "reviewedAt": "2026-11-27T14:56:41.918487+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S56",
+      "sourceFrame": 1469,
+      "sourceStillSha256": "16b312b33dae7eaaa40cf4f237e93c04de12d86ff01e8e9e8b273fa68c1b8e29",
+      "file": "S56-source-edit-1469.png",
+      "sha256": "9466dc917e98011209efff6487ffab89c6853ff1e0c2de03da7e288729eb033d",
+      "prompt": "Edit the assigned cast in the first 16:9 still from a stylized 3D fictional film, preserving camera orientation, crop, original figure placement, shadows, set, foreground and effects as shown. Use the other references only for the adult character designs. Match the dark source lighting and original 3D material. Image two is the blue-and-gold officer in the left background, reclining low in the original position, with ivory long trousers and one hand supporting him on the floor. Image three supplies the blond adult in the red hood bent deeply in the right foreground. Maintain the existing deep bow and the separate upward hand position, both fully clothed. Keep the original warm angled overhead camera, botanical screen geometry, shadows and wood, with two distinct characters in the same size ratio as the source.",
+      "inputs": [
+        "anchor-originals/S56-source-1469.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ],
+  "followUp": {
+    "prompt": "Use <Video 1> as the exact movement, lighting, props and camera reference for one continuous stylized 3D animation shot. Replace the existing adults with the role designs in the supplied images while retaining the original camera and full action timeline. <Picture 1> is 1431, the high side view with the head low and the officer already on the floor by the left wall. The foreground adult with crimson hood straightens immediately and reaches the upright posture of <Picture 2> at 1441. Continue, following the original change of supporting foot, fold forward, and both short hand motions. The rear wrist and the small original accessory read intermittently behind the body. Match the final lowering of the unoccupied hand toward the screen. <Picture 3> is the actual final frame 1477 with that hand lowered. Keep the navy officer on the original floor position with that original slight movement. Preserve the scene, faint palm-leaf shadows, floorboards, camera position and wardrobe. Keep both boots and knee motion discernible and do not freeze at any of the references.",
+    "seed": 315706,
+    "plannedAt": "2026-11-27T15:09:19.577661+00:00",
+    "images": [
+      {
+        "name": "S56-source-edit-1431.png",
+        "sha256": "c3e86d2c8156882facc86cb2cc90b7b3686fba650eaac4c99adcbd56f09d7c4b",
+        "imagePrompt": "Edit image 1 directly as the start of this 3D animated scene. Images 2 and 3 show the same two adult actors as wardrobe references. The officer in a navy gold coat and cream trousers is already on the floor by the left wall, same body position and both original arms. The blond dancer with crimson hood and close-draped cloak bends forward at the patterned divider. Match the original feet, low head, hands and cropped pose. One hand behind carries the same small red-reflecting stage accessory as already visible in image 1; the other hangs near the floor. Keep his black gloves, compact crimson drape and one left shoulder mask. Two actors, exactly two hands each. Retain the floorboards, shadows and real framing of image 1. Wide 16:9."
+      },
+      {
+        "name": "S56-source-upright-1441.png",
+        "sha256": "f1b732e1f1cadf202ec55a2825b0289003ff856664acbd8837d45b05f67094b3",
+        "imagePrompt": "Edit only the identities and garments of two fully dressed adults in the first stylized 3D animated scene. Keep camera position, exact canted angle, wall, green folding screen pattern, warm dim light, shadows, floor and original silhouette sizes. Image two supplies the navy and gold officer reclining very low at the left wall, with long ivory trousers and black boots. Image three supplies the crimson-hooded long-haired adult in the right foreground, straightening from a comic bow, face at the same near top position and feet under the same body. Keep the cheeky upward expression and one ivory ornament on the left shoulder, dark clothes and gold-lined red cape. Preserve source poses, positions, lighting and framing, with two adults only."
+      },
+      {
+        "name": "S56-source-edit-1477.png",
+        "sha256": "b74b2d460ff9bec4aa23b9825eeea1d7fe3454a1669917ffba1901552a12c16c",
+        "imagePrompt": "Edit image 1 as the actual final frame of this stylized 3D scene. The left adult lying on the floor is the navy-gold officer from image 2 in cream trousers, matching the original reclining head, hands and knees. The adult in front bends forward in the red hood and crimson mantle. Reproduce the original exact position and foreshortening of both legs and head. At this point the forward glove has already lowered and is near the decorative screen, not stretched out or above the shoulder. Give the mantle a compact drape so both footwear and the original hidden hand near the back read where visible. Keep palm shadows, floorboard angles, dark warm lighting and 16:9 crop."
+      }
+    ]
+  }
+}

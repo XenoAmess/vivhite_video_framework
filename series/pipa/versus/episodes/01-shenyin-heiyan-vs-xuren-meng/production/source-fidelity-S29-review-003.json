@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S29",
+  "startFrame": 710,
+  "endFrame": 759,
+  "attempt": 3,
+  "jobId": "video_gen_6cb66e23f49c47e1bbaa3c992bed3f57:openai",
+  "requestSha256": "89936fac21ac806f5710cd51a58958f79ef338b90f7a132f54931dc4c45b50b7",
+  "renderPrompt": "Use <Video 1> as the actual camera and performance reference of this one existing CGI cut. Recast the foreground dancer to the adult from the images in a crimson hood, red cloak with muted gold lining, blond hair, black boots and gloves, wrist beads and an ivory left shoulder mask. Use normal adult proportions and keep the moving performer in the original foot and hand positions. A tiny second adult is partially visible in the distant opening near the pink chair, especially at source frame 710. That figure is the adult navy officer with subtle gold trim. Keep him tiny and defocused only where that background silhouette is genuinely visible in the original and never bring him to the front or duplicate him. <Picture 1> is source frame 710, with the high palms, two wide boots and the far officer's small sliver. <Picture 2> is source frame 734, with the diagonal floor, lower hands and near lift. <Picture 3> is source frame 758 with one knee near the ceiling lamp and elbows bent. Retain the original alternating boot, posture and hand timing, camera scale and tilt, torn room, lamps, floor, chairs and existing visual effects. One continuous source shot with its actual timing.",
+  "seed": 1234,
+  "rawSha256": "269fb82bb880a2b239a67c338969a93b851567f30a73e7c54493ae4dcf9e0bf2",
+  "cutSha256": "525f1581dfd6da4d3bd907ea1494175f4962dbaac6ecbda7f627d0212e773258",
+  "review": {
+    "cutSha256": "525f1581dfd6da4d3bd907ea1494175f4962dbaac6ecbda7f627d0212e773258",
+    "requestSha256": "89936fac21ac806f5710cd51a58958f79ef338b90f7a132f54931dc4c45b50b7",
+    "originalSha256": "ca222fb34cc3e35ab21a7ce0d707364b12696a2894ae282a1c03e48e791f60c9",
+    "decision": "accepted",
+    "reviewedFrames": 49,
+    "method": "assistant-frame-review",
+    "observations": "对照第 710–758 帧四页，并额外查看首帧原尺寸画面。虚人梦从贴地仰视举手、迈步到最后向顶灯抬膝，单镜连续。远处神隐黑炎的深蓝和浅裤局部能在破口下方粉椅近旁辨认，随前景双腿、披风和倾斜机位变化被遮挡。末段膝盖到达高位略早，披风轮廓及部分短闪不同。低机位、运镜方向、落脚支撑、两角色分工与尾部姿态均保留，49 帧通过。",
+    "reviewedAt": "2026-11-27T14:56:32.490713+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S29",
+      "sourceFrame": 710,
+      "file": "S29-source-edit-0710-two-actors.png",
+      "sourceStillSha256": "c4474792dd3da58be30302d941fd7483bd0b1c957bceaaceef8b96c5bea71b19",
+      "sha256": "2e834fb7e3581c793ff3941da89d3c76d0fcbcbeb5f1308596c3319ea4d8064f",
+      "prompt": "Edit only the distant background in image 1. Image 2 is the original same frame. Just to the left of the foreground performer's left-on-screen boot, the original opening contains the tiny upper torso of a person partly covered by dark foreground at about 36 percent of the image width from the left and 86 percent down. Restore only that tiny, strongly defocused sliver at the same apparent size and position. It is the dark navy and gold officer seen near the pink chair in image 3, with an existing tiny light cue as in image 2. Keep the distant sliver less than four percent of the image height, obscured with no clear face or body. Preserve the foreground red-cloaked dancer, boot edge, lighting, all furniture, camera, depth of field and pose of image 1. Do not create any other person or larger background figure. Keep landscape 16:9.",
+      "inputs": [
+        "anchor-originals/S29-source-0710.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchors/S29-source-edit-0710.png",
+        "anchors/S28-source-edit-0671.png"
+      ]
+    },
+    {
+      "shot": "S29",
+      "sourceFrame": 734,
+      "file": "S29-source-edit-0734.png",
+      "sourceStillSha256": "4103d37ef6d568cfe771b6daf9d047b9ebcaf8e02d81fcf70d37261d32b4b407",
+      "sha256": "78f146e0606dab69f2334dbbe1a6fabd30cf974586af466d44b9f93338e9b5e1",
+      "prompt": "Edit source input 1 directly to make a source-matched cast replacement for one frame of an adult 3D animated dance. Input 2 supplies the dancer's crimson hood, long blond hair, red cloak with subdued gold lining, charcoal pants and boots, black gloves with dark red beads, and one ivory mask attached to the dancer's left shoulder. Use these clothes only on the character at the same original position and size. Match the first input's body pose and extreme floor-level camera closely, retaining each foot, arm, foreshortening and tilt. Keep every visible room feature, the broken ceiling, warm lamps, pink chair, wood boards, orange CG light streaks and established shadows from input 1. Dim, warm CGI, landscape 16:9. This middle pose is a low oblique three-quarter view, with the torso folded forward, arms down near the body, and the near boot lifted with the rear boot planted. Retain the asymmetry and tilted floor.",
+      "inputs": [
+        "anchor-originals/S29-source-0734.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    },
+    {
+      "shot": "S29",
+      "sourceFrame": 758,
+      "file": "S29-source-edit-0758.png",
+      "sourceStillSha256": "a174da0aa68893be6cd5a0a77d5aeb6a350348f6c385015c728e765e7362c677",
+      "sha256": "86c288fbda565c3a701444c29299c7d34f824d7c1636abed08c6526fcefc69a0",
+      "prompt": "Edit source input 1 directly to make a source-matched cast replacement for one frame of an adult 3D animated dance. Input 2 supplies the dancer's crimson hood, long blond hair, red cloak with subdued gold lining, charcoal pants and boots, black gloves with dark red beads, and one ivory mask attached to the dancer's left shoulder. Use these clothes only on the character at the same original position and size. Match the first input's body pose and extreme floor-level camera closely, retaining each foot, arm, foreshortening and tilt. Keep every visible room feature, the broken ceiling, warm lamps, pink chair, wood boards, orange CG light streaks and established shadows from input 1. Dim, warm CGI, landscape 16:9. Final pose has one knee raised almost to the bright ceiling lamp and both elbows out, hands softly flexed. Preserve how the projected knee overlaps the lamp and the other boot extends downward. Keep the hood position small above the arms.",
+      "inputs": [
+        "anchor-originals/S29-source-0758.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ]
+}

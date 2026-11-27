@@ -1,0 +1,296 @@
+{
+  "schemaVersion": "vivhite-pipa-night-review-1",
+  "checkedAt": "2026-11-27T23:17:46.2822783+08:00",
+  "plannedShots": 48,
+  "plannedFrames": 1478,
+  "approvedShots": 27,
+  "approvedFrames": 701,
+  "approvedShotIds": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S20",
+    "S21",
+    "S22",
+    "S26",
+    "S29",
+    "S33",
+    "S39",
+    "S45",
+    "S46",
+    "S51",
+    "S53"
+  ],
+  "newReviews": {
+    "shots": 12,
+    "frames": 311,
+    "acceptedShots": 6,
+    "acceptedFrames": 148,
+    "rejectedShots": 6,
+    "rejectedFrames": 163
+  },
+  "reviews": [
+    {
+      "shot": "S21",
+      "attempt": 2,
+      "decision": "accepted",
+      "frames": 14,
+      "review": "source-fidelity-S21-review-002.json",
+      "poseTimingAdjusted": true
+    },
+    {
+      "shot": "S26",
+      "attempt": 2,
+      "decision": "accepted",
+      "frames": 11,
+      "review": "source-fidelity-S26-review-002.json",
+      "poseTimingAdjusted": true
+    },
+    {
+      "shot": "S28",
+      "attempt": 2,
+      "decision": "rejected",
+      "frames": 39,
+      "review": "source-fidelity-S28-review-002.json"
+    },
+    {
+      "shot": "S29",
+      "attempt": 3,
+      "decision": "accepted",
+      "frames": 49,
+      "review": "source-fidelity-S29-review-003.json"
+    },
+    {
+      "shot": "S33",
+      "attempt": 2,
+      "decision": "accepted",
+      "frames": 31,
+      "review": "source-fidelity-S33-review-002.json",
+      "poseTimingAdjusted": true
+    },
+    {
+      "shot": "S34",
+      "attempt": 2,
+      "decision": "rejected",
+      "frames": 23,
+      "review": "source-fidelity-S34-review-002.json"
+    },
+    {
+      "shot": "S36",
+      "attempt": 2,
+      "decision": "rejected",
+      "frames": 25,
+      "review": "source-fidelity-S36-review-002.json"
+    },
+    {
+      "shot": "S39",
+      "attempt": 2,
+      "decision": "accepted",
+      "frames": 15,
+      "review": "source-fidelity-S39-review-002.json"
+    },
+    {
+      "shot": "S53",
+      "attempt": 1,
+      "decision": "accepted",
+      "frames": 28,
+      "review": "source-fidelity-S53-review-001.json",
+      "poseTimingAdjusted": true
+    },
+    {
+      "shot": "S54",
+      "attempt": 1,
+      "decision": "rejected",
+      "frames": 13,
+      "review": "source-fidelity-S54-review-001.json"
+    },
+    {
+      "shot": "S55",
+      "attempt": 1,
+      "decision": "rejected",
+      "frames": 16,
+      "review": "source-fidelity-S55-review-001.json"
+    },
+    {
+      "shot": "S56",
+      "attempt": 1,
+      "decision": "rejected",
+      "frames": 47,
+      "review": "source-fidelity-S56-review-001.json"
+    }
+  ],
+  "retakes": [
+    {
+      "shot": "S28",
+      "attempt": 3,
+      "jobId": "video_gen_1f4f8cb0eeb1409187bd44de3fb82713:openai",
+      "requestSha256": "ad87848d64f84e8d8bd4a6fbfe930653532df74162294bb3b035704250dc24ef",
+      "motionSha256": "b1147e5b377a8bd78a961bc7d7aa8fb977bf30e18fac6ef46494d9c8c375219f",
+      "imageReferences": [
+        {
+          "file": "S28-source-edit-0671.png",
+          "sourceFrame": 671,
+          "sha256": "a918283cb9ec96f212cb86eff225b3782f2a639e612d864f48372670e6a946fb"
+        },
+        {
+          "file": "S28-source-edit-0683.png",
+          "sourceFrame": 683,
+          "sha256": "b465700cd1a4ae81944979a16bbac7bed646fa2ea88221730d8acf41caaeba99"
+        },
+        {
+          "file": "S28-source-edit-0708.png",
+          "sourceFrame": 708,
+          "sha256": "acf17115785ab689efde16f40d66350cfa7774c2b9b19fbb48c55d4357a430bb"
+        }
+      ]
+    },
+    {
+      "shot": "S34",
+      "attempt": 3,
+      "jobId": "video_gen_b8f5b706b499473c9ab4504b78a8149f:openai",
+      "requestSha256": "a3958240571f9338b372ecbed21db0851fd4fe3a32bc93806841903d79205244",
+      "motionSha256": "9959188501852a7241c8f0399c496de0865c2f1a2f5542eea3872da8c88114b0",
+      "imageReferences": [
+        {
+          "file": "S34-source-edit-0855.png",
+          "sourceFrame": 855,
+          "sha256": "1d9e9ae3c325f7084e39d342528324b649c95fa2153764b8f6d2a182cf7bbb7e"
+        },
+        {
+          "file": "S34-source-edit-0860.png",
+          "sourceFrame": 860,
+          "sha256": "eef8314789e443f5c1689a7a1ceb4b1ac6f7a2c629e4c91b43ac115d6cb6a22d"
+        },
+        {
+          "file": "S34-source-edit-0877.png",
+          "sourceFrame": 877,
+          "sha256": "acaecda78bf72f7ecc2cab838cdbf171e82c4b49117a8d3bbb2cfd95e846a763"
+        }
+      ]
+    },
+    {
+      "shot": "S36",
+      "attempt": 3,
+      "jobId": "video_gen_23ca64a262b14f3099eaf69f368a2a49:openai",
+      "requestSha256": "17905ac55346a12fa50d0a516a8585101e74c800f1e2578f049baa16da092930",
+      "motionSha256": "dfe7ad27cb197eba00c8324d6b9650d93cfcfb4486263e4fdad00a37268681ff",
+      "imageReferences": [
+        {
+          "file": "S36-source-edit-0946.png",
+          "sourceFrame": 946,
+          "sha256": "d402bd84ea8dcf1120199bc18f8129919c125c21c9e867d678e211cbe265c227"
+        },
+        {
+          "file": "S36-source-edit-0952.png",
+          "sourceFrame": 952,
+          "sha256": "ea6b2b46b18494b40a494bec2b98faa14cbf1c4f909a1987a7324df9d481d0db"
+        },
+        {
+          "file": "S36-source-edit-0970.png",
+          "sourceFrame": 970,
+          "sha256": "558d610872a3da3b6d31ff652a3192f108f3c9f1ec0270133aabf6847a9e070b"
+        }
+      ]
+    },
+    {
+      "shot": "S54",
+      "attempt": 2,
+      "jobId": "video_gen_8dc6a8b7ed9f41d68205c49993f689b2:openai",
+      "requestSha256": "b6a76573b0a6796bec83abf50f74b4abe07287d650c73c3b251e130636c0da92",
+      "motionSha256": "64045b428cf9ff1b96a6a25f63cea31366e20c30369a2ef5155d95d1952ae5c7",
+      "imageReferences": [
+        {
+          "file": "S54-source-edit-1402.png",
+          "sourceFrame": 1402,
+          "sha256": "05143104b4ecd4e2232ff39c000b23a7411f18ac21dbf825e4b5f378c3ce75b9"
+        },
+        {
+          "file": "S54-source-edit-1409.png",
+          "sourceFrame": 1409,
+          "sha256": "77c45ccbc6c4ef9437602c66ac566adf7898b3ed057f0346f700ab40ddad7e1a"
+        },
+        {
+          "file": "S54-source-edit-1414.png",
+          "sourceFrame": 1414,
+          "sha256": "8b0a7f87acf3454c6ef5cbd6bf2de8935fcbbba7b1df8809b121d78c39263af3"
+        }
+      ]
+    },
+    {
+      "shot": "S55",
+      "attempt": 2,
+      "jobId": "video_gen_72bacfb2f6e244fa9fb7e1043c0d0cfc:openai",
+      "requestSha256": "038cd4f37b7bde3580a66696415f24e24fce59ff8993e54fd3bc7a9811490088",
+      "motionSha256": "e9bf2594707cfd6e0e2aebd685cd7ac91394a809b2f4d895686622f7f27edbf8",
+      "imageReferences": [
+        {
+          "file": "S55-source-edit-1419.png",
+          "sourceFrame": 1419,
+          "sha256": "8e7c1fb8d5b8965699dd8c65f19d4612fc9e41a83b55a7266a58b6a75dff03ae"
+        },
+        {
+          "file": "S55-source-edit-1421.png",
+          "sourceFrame": 1421,
+          "sha256": "6395dfc01d2979f179047cac724b6d28f9ed8daa4de94fac276db89c4b4f7f8f"
+        },
+        {
+          "file": "S55-source-edit-1430.png",
+          "sourceFrame": 1430,
+          "sha256": "030d551402dd5d6310d17b0ff96c811aa196e57a7e2a9c22e51539a7b8901796"
+        }
+      ]
+    },
+    {
+      "shot": "S56",
+      "attempt": 2,
+      "jobId": "video_gen_d75f8aca0e1b4a259a2297e643e44efc:openai",
+      "requestSha256": "8a12096d0572a6a65a5d963ed6a7a97e0cc6908210025d41a1529a2f40141d3b",
+      "motionSha256": "3855e0e78c9adf8c87893b8b72881c39f5be104924a49ced9fec708e7b726d01",
+      "imageReferences": [
+        {
+          "file": "S56-source-edit-1431.png",
+          "sourceFrame": 1431,
+          "sha256": "c3e86d2c8156882facc86cb2cc90b7b3686fba650eaac4c99adcbd56f09d7c4b"
+        },
+        {
+          "file": "S56-source-upright-1441.png",
+          "sourceFrame": 1441,
+          "sha256": "f1b732e1f1cadf202ec55a2825b0289003ff856664acbd8837d45b05f67094b3"
+        },
+        {
+          "file": "S56-source-edit-1477.png",
+          "sourceFrame": 1477,
+          "sha256": "b74b2d460ff9bec4aa23b9825eeea1d7fe3454a1669917ffba1901552a12c16c"
+        }
+      ]
+    }
+  ],
+  "queue": {
+    "running": 1,
+    "queued": 20,
+    "waitingForSource": 0,
+    "current": [
+      {
+        "shot": "S24",
+        "attempt": "attempt-002",
+        "id": "video_gen_3a2ab9e321cd4b739531ba4f6a98cb86"
+      }
+    ],
+    "notOnActiveQueue": []
+  },
+  "verifiedPreview": "source-fidelity-S20-S22-preview-001.json",
+  "previewCutObservations": "At source frame 536, the high seated angle cuts to the same red-clad performer from the rear with the existing light streak. At 550, the rear scene cuts to the navy officer close-up. Both boundaries were visually checked against the corresponding source cut."
+}

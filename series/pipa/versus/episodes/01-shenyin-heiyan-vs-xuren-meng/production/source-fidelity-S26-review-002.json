@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S26",
+  "startFrame": 633,
+  "endFrame": 644,
+  "attempt": 2,
+  "jobId": "video_gen_aff6127cb94e40878edd80144ed14ac0:openai",
+  "requestSha256": "48e9d70a843d374fd72a19f3d963b0bce78839283c093ae1fe4f8af77fc30bcd",
+  "renderPrompt": "Edit the visual appearance of just the footwear in this existing animated shot. Use <Video 1> as its exact floor-level movement and entire frame, keep both shoe positions, floor contact, local blur, warm reflected lights, broken room, round ceiling lights and the pink chair. <Picture 1> is original frame 633, with the dark leather boot near the centre and the far leg cut off on the right. <Picture 2> is original frame 643, with the other dark boot larger near the camera and the distant boot behind. Use the dark leather ankle boots and charcoal trousers shown in both images and follow the exact crossing of the two feet in the original video. The floor-level camera remains cropped below the knees for the entire shot. Keep original photographed scene perspective and colors. No face, torso, new object or added action enters frame.",
+  "seed": 1234,
+  "rawSha256": "dc29e43fef73e3cae79c9d04520fd90b5b597763506e981914d57cc8ebf8a25d",
+  "cutSha256": "15096695d95514933eeaab910e9baf31e088aa73ecdefc4da9facd8678be4a7f",
+  "review": {
+    "cutSha256": "15096695d95514933eeaab910e9baf31e088aa73ecdefc4da9facd8678be4a7f",
+    "requestSha256": "48e9d70a843d374fd72a19f3d963b0bce78839283c093ae1fe4f8af77fc30bcd",
+    "originalSha256": "08c95dec83ec984bc604be8277e7e717a1808e5a3a32546257f54e61ec46341e",
+    "decision": "accepted",
+    "reviewedFrames": 11,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 633–643 帧与第二版初次归一化及同源取帧校准版。开场于地板高度可见双靴、红椅、远灯和破墙。校准后，先松开原支撑再由另一只靴子穿过镜头，近靴触地后停住，远靴在后侧保持支撑。近靴趾部较原片略宽，贴地视角、两靴交叉关系和快切节奏均可对应。采用校准版。",
+    "reviewedAt": "2026-11-27T15:11:06.388090+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S26",
+      "sourceFrame": 633,
+      "file": "S26-source-edit-0633.png",
+      "sourceStillSha256": "ef844ef60ee7562519110ac3db7b481cb960e261d7e7ad561d6f21bfc173d121",
+      "sha256": "4ac9bb7f92caef3a7221bc16e563ce88db5f518ba37be9e683b51e5961ca08d9",
+      "prompt": "Edit only the cropped footwear and visible cuffs in source image 1, an animated 3D floor-level close-up. Match the plain black leather ankle boots and charcoal trousers seen at the bottom of character reference 2. Carry the dark natural appearance and subdued highlights through the exact positions of both feet. Preserve the source first image's crop entirely below the knees, ground contact, perspective, apparent depth of field, dark floor, pink chair at left, broken doorway, lamp reflections, and dim warm room light. Keep the fixed camera angle and existing motion softness. No other part of the character enters the image. Landscape 16:9. First frame: one foot is grounded near the center, the other leg is partly cropped at far right. Keep the original near boot pointing to screen left and the rest of the frame as it was.",
+      "inputs": [
+        "anchor-originals/S26-source-0633.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    },
+    {
+      "shot": "S26",
+      "sourceFrame": 643,
+      "file": "S26-source-edit-0643.png",
+      "sourceStillSha256": "cbc2be0986754d5c9b5a6b9fe27a05a1b19ee08b6d887f3d28ba706c62cf1f84",
+      "sha256": "e52cee4f14f97cbee7bd4fb8d8055713e9f586b7c23de847e555ce42fec55562",
+      "prompt": "Edit only the cropped footwear and visible cuffs in source image 1, an animated 3D floor-level close-up. Match the plain black leather ankle boots and charcoal trousers seen at the bottom of character reference 2. Carry the dark natural appearance and subdued highlights through the exact positions of both feet. Preserve the source first image's crop entirely below the knees, ground contact, perspective, apparent depth of field, dark floor, pink chair at left, broken doorway, lamp reflections, and dim warm room light. Keep the fixed camera angle and existing motion softness. No other part of the character enters the image. Landscape 16:9. Final frame: very close foot sweeps across the foreground into the bottom-left and bottom center, with the other foot lower in the background. Retain the exact original horizontal motion and source focal softness. The two lit round fixtures stay in their original positions through the gap between the two feet.",
+      "inputs": [
+        "anchor-originals/S26-source-0643.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "tool": "ffmpeg",
+    "sourceFrames": [
+      633,
+      644
+    ],
+    "normalizedModelSha256": "5a6b378b5a6d4abda5d10d7d951a70e7f202db75b1a363ef484ff9bbdafaea2f",
+    "preRetimeCutSha256": "28c50de03b1219acf8f6a6d316962cd8d460824232894120804107ebe8503fbf",
+    "selectedModelFrames": [
+      0,
+      34,
+      44,
+      47,
+      50,
+      55,
+      62,
+      69,
+      77,
+      87,
+      103
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,34)+eq(n\\,44)+eq(n\\,47)+eq(n\\,50)+eq(n\\,55)+eq(n\\,62)+eq(n\\,69)+eq(n\\,77)+eq(n\\,87)+eq(n\\,103),setpts=N/(24*TB),setsar=1",
+    "previewSha256": "15096695d95514933eeaab910e9baf31e088aa73ecdefc4da9facd8678be4a7f",
+    "reason": "Match heel release, close crossing boot, contact with the wooden boards and final planted toe.",
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "outputSha256": "15096695d95514933eeaab910e9baf31e088aa73ecdefc4da9facd8678be4a7f"
+  }
+}

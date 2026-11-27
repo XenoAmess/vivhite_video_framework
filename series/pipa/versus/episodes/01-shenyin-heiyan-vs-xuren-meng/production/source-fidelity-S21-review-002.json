@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S21",
+  "startFrame": 536,
+  "endFrame": 550,
+  "attempt": 2,
+  "jobId": "video_gen_08238487a9514921892d704ff479e4bb:openai",
+  "requestSha256": "994027a6ae068c7076c3e38586f5f967752bd777c53ff9cf0a0988d3fcc1a160",
+  "renderPrompt": "Recast the one adult performer in this existing 3D animated dance cut while matching <Video 1> as the original camera, choreography and lighting throughout. <Picture 1> is the matching cast-replaced original frame 536 and defines the red hood, draped dark crimson cloak and its muted gold lining, dark trousers and gloves, red wrist beads and the single pale left shoulder mask. The camera begins high and behind the performer. The performer crouches with one hand on the bent knee, then shifts weight, steps and turns away as the camera lowers and draws closer behind him. Continue to use the rear silhouette of the hood and visible clothing folds as he leans; keep the original wooden floor, cupboard, other furniture and narrow light streaks in the source. Do not turn the actor's face toward the camera, duplicate the character or replace the camera and pose movement with a fixed character portrait. This is a single cut from beginning to end.",
+  "seed": 1235,
+  "rawSha256": "19daf4f4231e6f3b71c6eb1d6aa03ba552eace81db28f10c8a0a12b91229efb7",
+  "cutSha256": "80860c72651ce5981a7c672e2794fb84cefc34d6968124c96e316312e31ca65b",
+  "review": {
+    "cutSha256": "80860c72651ce5981a7c672e2794fb84cefc34d6968124c96e316312e31ca65b",
+    "requestSha256": "994027a6ae068c7076c3e38586f5f967752bd777c53ff9cf0a0988d3fcc1a160",
+    "originalSha256": "a58aaa4fc3dda70042a04c4b8d9c9eb250ffc3317eb82be70d84795aa645f7cf",
+    "decision": "accepted",
+    "reviewedFrames": 14,
+    "method": "assistant-frame-review",
+    "observations": "对照第 536–549 帧，先看第二版的全部 14 帧，再核对从同一模型源逐帧取样的 14 帧。重排去掉起手前多余的蹲姿停顿，使压低、前倾、贴近与收尾站位跟随原片。虚人梦始终背身，侧面具在左肩，暖色短闪在起身阶段出现并在收镜前消失。木板、右侧柜子和后景碎片保留。披风使腿部遮挡多于原片，部分光纹角度不同，动作和运镜阶段仍可对应。采用校准版。",
+    "reviewedAt": "2026-11-27T14:56:31.701612+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S21",
+      "sourceFrame": 536,
+      "file": "S21-source-edit-0536.png",
+      "sourceStillSha256": "ab2f84db21865cff486e9125bb13e77274034bc15565e9ca11bdd2ee1502119a",
+      "sha256": "cda01d62ce893fa487ff9596b6564ca4131e667e7b0e4785304e6861a6b66655",
+      "prompt": "Edit input 1, the exact first frame from an existing stylized 3D dance scene. Match its high rear camera, body placement, short crouch with the near palm planted on the bent knee, and proportions. Replace the matte black actor costume and dark-haired identity with the adult crimson-hooded character from input 2, using the rear cloth look from input 3. Show the same bent arms, knee and boots in the same positions. Use a crimson hood, side golden hair, dark matte trousers, black gloves and dark-red wrist beads, with the lined cloak draped to one side of the moving leg and a single ivory mask on the left shoulder only if visible. Respect the actor scale and crop. Keep the original wooden floor, cabinet, pink chair edge, torn panels, lighting, shadows and pre-existing fine light trails from input 1. Maintain a cinematic dim, warm 3D look and exact top-down rear perspective. Landscape 16:9.",
+      "inputs": [
+        "anchor-originals/S21-source-0536.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "anchors/S16-source-edit-0390.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "tool": "ffmpeg",
+    "sourceFrames": [
+      536,
+      550
+    ],
+    "normalizedModelSha256": "5b2d60a19ba637ca356f7b96f5c635f71daab143e7101b320547701eefc2236f",
+    "preRetimeCutSha256": "aea2fa2d6fa8938c5bedd498cc73001b9730eaea1efb6476ddabf875cf14075f",
+    "selectedModelFrames": [
+      0,
+      39,
+      48,
+      53,
+      57,
+      84,
+      86,
+      91,
+      93,
+      95,
+      99,
+      104,
+      110,
+      116
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,39)+eq(n\\,48)+eq(n\\,53)+eq(n\\,57)+eq(n\\,84)+eq(n\\,86)+eq(n\\,91)+eq(n\\,93)+eq(n\\,95)+eq(n\\,99)+eq(n\\,104)+eq(n\\,110)+eq(n\\,116),setpts=N/(24*TB),setsar=1",
+    "previewSha256": "80860c72651ce5981a7c672e2794fb84cefc34d6968124c96e316312e31ca65b",
+    "reason": "Match the source crouch, forward rise, three flashes and rear-facing settle using the same take.",
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "outputSha256": "80860c72651ce5981a7c672e2794fb84cefc34d6968124c96e316312e31ca65b"
+  }
+}

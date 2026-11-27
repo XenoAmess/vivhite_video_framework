@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "vivhite-pipa-source-fidelity-excerpt-1",
+  "size": "1344x768",
+  "fps": 24,
+  "frames": 68,
+  "seconds": 2.8333333333333335,
+  "sourceIntervalFrames24Fps": [
+    510,
+    578
+  ],
+  "outputFile": "pipa-768p-preview.mp4",
+  "sha256": "4289e34916deb0728322c90014c35cd451460d8539dd6212749d4115978f2ba9",
+  "verifiedPresentationClock": true,
+  "soundtrackSha256": "eaf0822839c2d381f48f73b3015e67f659f9c63a6ae3baa3be1730968dab46fb",
+  "shots": [
+    {
+      "shot": "S20",
+      "attempt": "attempt-001",
+      "startFrame": 510,
+      "endFrame": 536,
+      "cutSha256": "a97f8785fa92e3913e339c608480b98ba582ebbcb93b64f8e8afefe37930aed3",
+      "requestSha256": "eaeaa3a3be11d15ca080703e56ea38aa3972983ec77c4597c1c3a6f773652f08",
+      "originalSha256": "49d22e184368f4d57192ef166e4c4aad2e7a6b8f9900dfb6689514eaadc3f476"
+    },
+    {
+      "shot": "S21",
+      "attempt": "attempt-002",
+      "startFrame": 536,
+      "endFrame": 550,
+      "cutSha256": "80860c72651ce5981a7c672e2794fb84cefc34d6968124c96e316312e31ca65b",
+      "requestSha256": "994027a6ae068c7076c3e38586f5f967752bd777c53ff9cf0a0988d3fcc1a160",
+      "originalSha256": "a58aaa4fc3dda70042a04c4b8d9c9eb250ffc3317eb82be70d84795aa645f7cf"
+    },
+    {
+      "shot": "S22",
+      "attempt": "attempt-001",
+      "startFrame": 550,
+      "endFrame": 578,
+      "cutSha256": "d56eced13b314a1f5323b61827b3801226f00b36a02a9c0adfed81dd8c7283c3",
+      "requestSha256": "22b0b2ebffc0c7cc0c82f0ddaa8e7b0b6dac73a17c3dd0e36063cce34934a056",
+      "originalSha256": "88d896d18aaef4a82627a80e48a897dfad171b9f8971dabff28bed56481b2658"
+    }
+  ],
+  "validation": {
+    "artifactSha256": "4289e34916deb0728322c90014c35cd451460d8539dd6212749d4115978f2ba9",
+    "completeAudioVideoDecode": true,
+    "totalComparedFrames": 68,
+    "segments": [
+      {
+        "shot": "S20",
+        "sourceFrames": [
+          510,
+          536
+        ],
+        "decodedFramesMatchByHash": true
+      },
+      {
+        "shot": "S21",
+        "sourceFrames": [
+          536,
+          550
+        ],
+        "decodedFramesMatchByHash": true
+      },
+      {
+        "shot": "S22",
+        "sourceFrames": [
+          550,
+          578
+        ],
+        "decodedFramesMatchByHash": true
+      }
+    ],
+    "sourceCutFramesCompared": [
+      536,
+      550
+    ],
+    "soundtrackSourceSampleRange": [
+      1020000,
+      1156000
+    ],
+    "soundtrackSamplesComparedPerChannel": 136000,
+    "soundtrackMinimumOneSecondCorrelationAtSameIndex": 0.999341
+  }
+}
