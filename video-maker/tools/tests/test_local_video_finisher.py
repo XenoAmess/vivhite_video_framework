@@ -14,6 +14,11 @@ from inspect_local_video_film import validate_timing
 
 
 class LocalFinisherTest(unittest.TestCase):
+    @unittest.skipUnless(sys.platform == 'win32', 'Windows console isolation')
+    def test_captured_media_subprocess_does_not_attach_to_a_console(self):
+        script = 'import ctypes; print(ctypes.windll.kernel32.GetConsoleWindow())'
+        self.assertEqual('0', worker.run([sys.executable, '-c', script]).strip())
+
     def test_only_declared_ten_second_s20_is_allowed_by_final_inspection(self):
         valid = {'fps':30,'shotDurationExceptions':{'S20':10},'shots':[{'id':'S20','seconds':10}]}
         validate_timing(valid)

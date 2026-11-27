@@ -29,7 +29,8 @@ def write_json(path, data):
 
 
 def run(argv, *, cwd=None, timeout=600):
-    result = subprocess.run(argv, cwd=cwd, capture_output=True, timeout=timeout)
+    creation_flags = getattr(subprocess, "CREATE_NO_WINDOW", 0)
+    result = subprocess.run(argv, cwd=cwd, capture_output=True, timeout=timeout, creationflags=creation_flags)
     if result.returncode:
         summary = f"{Path(argv[0]).name} exited with status {result.returncode}"
         diagnostics = result.stderr.decode("utf-8", "replace")[-6000:].strip()

@@ -73,3 +73,7 @@ S07 用同一原镜的第二版起镜和第三版后段重新取帧，全 20 帧
 S20 使用同一版的模型帧重新对齐俯拍镜头中的双手、落膝和交臂，全 26 帧通过。累计 14 镜、383 帧通过。S33 首个请求在执行前退出队列，加入原镜的低机位起势、抬膝和落脚三个构图后重新受理。 [S20 验收和实际取帧记录](source-fidelity-S20-review-001.json) · [S33 排队替换和三处构图](source-fidelity-S33-queue-revision-001.json)
 
 S21 首版改变了原片的背身方向。逐帧检查 14 帧后退回，第二版沿用同一原镜和高位背视的角色替换构图。对于下载后留下的临时成片，先用分辨率、24 fps、准确帧数和重新解码恢复，再继续视觉验收。外部进程报告追加实际程序名及退出状态，便于核对 FFmpeg 和 FFprobe 的后续错误。 [S21 首版与返工请求](source-fidelity-S21-review-001.json)
+
+S22 的画面核验在系统返回 `0xC000013A` 后中断两次。将 Windows 的媒体子进程改为无控制台启动，随后定时任务重新检查同一个服务端产物并完成下载。S22 使用同一模型原片取帧对齐低头、拉远和第 566 帧开始的闪光，全 28 帧通过。累计 15 镜、411 帧通过。 [Windows 退出状态](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) · [Python 子进程标志](https://docs.python.org/3.12/library/subprocess.html#subprocess.CREATE_NO_WINDOW) · [S22 验收与取帧](source-fidelity-S22-review-001.json)
+
+S28 的前景是虚人梦，原片第 671 帧可见破墙后粉椅附近的神隐黑炎，后段逐渐被前景遮挡。为覆盖两位演员，在首次执行前更换为三张原镜构图，服务已受理。S15 第二版调整到本项目队首并进入执行。 [S28 角色证据与换队记录](source-fidelity-S28-queue-revision-001.json) · [S15 队列记录](source-fidelity-queue-reorder-007.json)

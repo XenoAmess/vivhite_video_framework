@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S22",
+  "startFrame": 550,
+  "endFrame": 578,
+  "attempt": 1,
+  "jobId": "video_gen_7d8daca9945241a5ac6ba21fc9342424:openai",
+  "requestSha256": "22b0b2ebffc0c7cc0c82f0ddaa8e7b0b6dac73a17c3dd0e36063cce34934a056",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the officer: short dark-brown tousled hair, slate-blue eyes, navy and gold coat and fringed epaulettes, ivory trousers and dark boots. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 565. Preserve the original expression close-up, brief head dip and quick pullback. Match the two original dark prop silhouettes and the existing left-right light changes without extra elements.",
+  "seed": 1234,
+  "rawSha256": "7facaf452e785c1bdf955e0d76f6f262dc5077458bad48f2788333d3952c3c60",
+  "cutSha256": "d56eced13b314a1f5323b61827b3801226f00b36a02a9c0adfed81dd8c7283c3",
+  "review": {
+    "cutSha256": "d56eced13b314a1f5323b61827b3801226f00b36a02a9c0adfed81dd8c7283c3",
+    "requestSha256": "22b0b2ebffc0c7cc0c82f0ddaa8e7b0b6dac73a17c3dd0e36063cce34934a056",
+    "originalSha256": "88d896d18aaef4a82627a80e48a897dfad171b9f8971dabff28bed56481b2658",
+    "decision": "accepted",
+    "reviewedFrames": 28,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 550–577 帧及此版全部 28 帧。全镜保持神隐黑炎的棕发、深蓝金边军服和两件原片深色枪形道具，保留墙面、挂纸、右侧风扇和暗红室内光。使用同一次模型生成三段取帧，把抬眼近景、低头、拉开抬臂和两侧闪光排回原镜时序。第 563–565 帧取同一模型镜头中双臂已抬但未闪亮的三帧，首个显著闪光对应原片第 566 帧。后段左右光效方向对应，抬臂起势较短，主角最后仰头幅度比原片小。镜头造型、动作、切点及灯光节奏通过。",
+    "reviewedAt": "2026-11-27T03:46:08.405921+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S22",
+      "sourceFrame": 565,
+      "sourceStillSha256": "533a3fe695c7486a3384a71d3628e93bf7d4a6647a63b7a8a48bd828a90f4c21",
+      "file": "S22-source-edit-0565.png",
+      "sha256": "0e703af63d34629e1ba7b5fb0884e4da1339d2ecedd0d02263bd389549ff972b",
+      "prompt": "Edit only the character appearance in image one, a frame from a fictional stylized 3D animated film. Use image two for the exact fully dressed adult character design. Keep the first image's camera, dark source palette, actor placement and pose, environment, light, visible props and existing visual effects as actually pictured. Do not add elements or change the story frame. Replace the adult center actor with the navy-and-gold officer and his tousled dark hair, preserving the same two silhouettes already pictured on either side, both arms, near-to-far scale, dark ceiling, wall placards, and fan on the right. Match the original comic open face and width of the frame. The original dark film props retain their exterior shape as on-screen visuals.",
+      "inputs": [
+        "anchor-originals/S22-source-0565.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S22.mp4",
+    "inputSha256": "e87fe2121c6da64899e6647ce43640662336632f33643a38449ca60b80c25d52",
+    "preRetimeCutSha256": "7f8c743e03ee382084a6b3a60336a4f88ce3b2d85dd6acc733073ea4a94685e2",
+    "outputSha256": "d56eced13b314a1f5323b61827b3801226f00b36a02a9c0adfed81dd8c7283c3",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      7,
+      13,
+      20,
+      25,
+      35,
+      47,
+      51,
+      55,
+      57,
+      59,
+      61,
+      63,
+      111,
+      113,
+      115,
+      80,
+      81,
+      82,
+      84,
+      86,
+      89,
+      93,
+      97,
+      98,
+      100,
+      102,
+      103
+    ],
+    "segmentsInSourceTimelineOrder": [
+      [
+        0,
+        7,
+        13,
+        20,
+        25,
+        35,
+        47,
+        51,
+        55,
+        57,
+        59,
+        61,
+        63
+      ],
+      [
+        111,
+        113,
+        115
+      ],
+      [
+        80,
+        81,
+        82,
+        84,
+        86,
+        89,
+        93,
+        97,
+        98,
+        100,
+        102,
+        103
+      ]
+    ],
+    "filter": "[0:v]split=3[input0][input1][input2];[input0]select=eq(n\\,0)+eq(n\\,7)+eq(n\\,13)+eq(n\\,20)+eq(n\\,25)+eq(n\\,35)+eq(n\\,47)+eq(n\\,51)+eq(n\\,55)+eq(n\\,57)+eq(n\\,59)+eq(n\\,61)+eq(n\\,63),setpts=N/(24*TB),setsar=1[v0];[input1]select=eq(n\\,111)+eq(n\\,113)+eq(n\\,115),setpts=N/(24*TB),setsar=1[v1];[input2]select=eq(n\\,80)+eq(n\\,81)+eq(n\\,82)+eq(n\\,84)+eq(n\\,86)+eq(n\\,89)+eq(n\\,93)+eq(n\\,97)+eq(n\\,98)+eq(n\\,100)+eq(n\\,102)+eq(n\\,103),setpts=N/(24*TB),setsar=1[v2];[v0][v1][v2]concat=n=3:v=1:a=0,setpts=N/(24*TB)[v]",
+    "previewSha256": "d56eced13b314a1f5323b61827b3801226f00b36a02a9c0adfed81dd8c7283c3",
+    "reason": "Restore the source timing of the close reaction, brief dark raised appearance and subsequent light cues using frames of the same verified native model take.",
+    "coveredFrames": 28,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-27T03:46:06.185710+00:00"
+  }
+}
