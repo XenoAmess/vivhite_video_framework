@@ -77,3 +77,5 @@ S21 首版改变了原片的背身方向。逐帧检查 14 帧后退回，第二
 S22 的画面核验在系统返回 `0xC000013A` 后中断两次。将 Windows 的媒体子进程改为无控制台启动，随后定时任务重新检查同一个服务端产物并完成下载。S22 使用同一模型原片取帧对齐低头、拉远和第 566 帧开始的闪光，全 28 帧通过。累计 15 镜、411 帧通过。 [Windows 退出状态](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) · [Python 子进程标志](https://docs.python.org/3.12/library/subprocess.html#subprocess.CREATE_NO_WINDOW) · [S22 验收与取帧](source-fidelity-S22-review-001.json)
 
 S28 的前景是虚人梦，原片第 671 帧可见破墙后粉椅附近的神隐黑炎，后段逐渐被前景遮挡。为覆盖两位演员，在首次执行前更换为三张原镜构图，服务已受理。S15 第二版调整到本项目队首并进入执行。 [S28 角色证据与换队记录](source-fidelity-S28-queue-revision-001.json) · [S15 队列记录](source-fidelity-queue-reorder-007.json)
+
+S15 第二版保留原片背身屈膝、转向斜侧和近远景变化。按原片取帧并微调前五帧的景别后，全部 28 帧通过。北京时间 11 月 27 日 12:02，累计 16 镜、439 帧通过，剩余 32 镜均已受理。S16 第二版执行，31 镜等待。 [S15 第二版与取帧记录](source-fidelity-S15-review-002.json) · [S16 调度记录](source-fidelity-queue-reorder-008.json)

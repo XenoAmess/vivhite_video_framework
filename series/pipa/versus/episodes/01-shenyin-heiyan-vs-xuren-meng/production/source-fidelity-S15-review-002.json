@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S15",
+  "startFrame": 357,
+  "endFrame": 385,
+  "attempt": 2,
+  "jobId": "video_gen_a87dba539f7044c09be78e4a8f666d8e:openai",
+  "requestSha256": "63b3660c52fb90152fc956c5432cf5372e2f06da2d969db686426e41fc44b375",
+  "renderPrompt": "Recast the single fully dressed actor in this source 3D animation shot. <Video 1> preserves the exact low rear camera, existing light glints and timing. <Picture 1> is the early back-facing bent stance and <Picture 2> is the late rear three-quarter crouch from that same shot. Keep the body facing away from the lens for the entire cut, with only the original glimpse of the side of the hood when the head turns; never straighten the hips, show a frontal torso or replace the original movement. Follow the original shoulder tilt, feet, bending knees, head and rear camera movement from first to last frame. The actor has dark full-length trousers, crimson hood and cape, long hair as visible, black gloves, red beads and one pale left-shoulder ornament where visible. The layers follow the original movement and keep the knees readable. Match the floor, wall pattern, door, cutoff at the bottom of the image and existing screen lights with no additions. No other actors or cuts, text or dialogue.",
+  "seed": 1235,
+  "rawSha256": "4e8797f665785a2636a76164d92e6942f92cb09a3fa988b1a06c22d083918103",
+  "cutSha256": "a9615d667746a1bf07ebaa71c7978d4c5dbc73c26a27a52f1b3d4dd150aec845",
+  "review": {
+    "cutSha256": "a9615d667746a1bf07ebaa71c7978d4c5dbc73c26a27a52f1b3d4dd150aec845",
+    "requestSha256": "63b3660c52fb90152fc956c5432cf5372e2f06da2d969db686426e41fc44b375",
+    "originalSha256": "08adab261259a6d3ff8a5926743e7e35b96a1ec4338ce8ab4894811b5f619ace",
+    "decision": "accepted",
+    "reviewedFrames": 28,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 357–384 帧及本镜全部 28 帧。保持原镜背面低位，从近处拉到腿分开的屈膝姿态，随后从背面转向斜侧并收回近景。虚人梦红兜帽、暗裤、靴和红披风全镜一致，房门、木板和原光效方向保留。按原镜取帧，起镜五帧逐步从 1.18 倍回到原画幅，使近景开头衔接到较宽构图。披风遮挡了部分背部小幅度摆动，若干细小亮线的强弱不同，关键屈膝、转体、姿态和机位变化全数通过。",
+    "reviewedAt": "2026-11-27T04:02:00.604580+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S15",
+      "sourceFrame": 362,
+      "file": "S15-source-edit-0362.png",
+      "sourceStillSha256": "9f51eea58b2fc2be2d6b2b1e560a2fae926d6442f29676cc7c7fc092b4b7c8fb",
+      "sha256": "8cc38fc9fe37097653334555beecefebadd5fda622294c62043c2f598f121a31",
+      "prompt": "Edit only the fully clothed adult dancer in image one, a scene from a stylized fictional 3D comedy. Preserve this exact low rear angle, lean and bent-leg stance. The dancer's back faces the lens, so only the far edge of the head is visible. Apply the crimson hood, dark full-length trousers, boots, red lining and gloves from image two. Image three clarifies how the same red cloak looks from behind, but follow the exact lens, posture and placement in image one. Keep the cloak narrow along the sides and back so the dancer's two legs and hand positions remain readable. Preserve the existing warm animated glints, floor debris, door, three wall signs, shadows, red reflection and room positions. Only the actor changes. One fully dressed dancer and no new graphics or objects.",
+      "inputs": [
+        "anchor-originals/S15-source-0362.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "anchors/S10-source-rear-0273.png"
+      ]
+    },
+    {
+      "shot": "S15",
+      "sourceFrame": 378,
+      "file": "S15-source-edit-0378.png",
+      "sourceStillSha256": "63ec045286e8c45fb6454229404a2d691e133e0edb997243f6eb9edc071fb10b",
+      "sha256": "bc7994460d793c489dcd1c91c56e41abf9226be7aca2918b4d235b4753e31783",
+      "prompt": "Preserve the exact shot design of the first still from a stylized fictional 3D comedy. The one fully dressed adult body remains turned away, with one hand braced lower toward the left and the head only faintly visible at the same side angle. Restyle just that adult using the red hood and gold-lined crimson cape, dark boots and full-length trousers from image two, and the back design of the costume in image three. Maintain the original body, hands, knee positions and 3D perspective. Keep the same warm light streak already present in the first frame, tilted camera, room, wall surfaces, reflections and other lighting unchanged. Maintain the original framing and motion blur. Do not add any person, item, text, graphics, or new light streaks.",
+      "inputs": [
+        "anchor-originals/S15-source-0378.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "anchors/S10-source-rear-0273.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S15.mp4",
+    "inputSha256": "8d68acfad9c05eab36b0ff4530b0fcecfc3c1eb107de5fb06614f93933ed64e0",
+    "preRetimeCutSha256": "ae06655a5feea01258c60cf794b0d9d9670508ad0c515440dcd343b95a23aba8",
+    "outputSha256": "a9615d667746a1bf07ebaa71c7978d4c5dbc73c26a27a52f1b3d4dd150aec845",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      5,
+      10,
+      14,
+      18,
+      22,
+      27,
+      32,
+      37,
+      43,
+      48,
+      53,
+      57,
+      61,
+      66,
+      71,
+      75,
+      80,
+      85,
+      89,
+      93,
+      97,
+      101,
+      105,
+      109,
+      113,
+      116,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,5)+eq(n\\,10)+eq(n\\,14)+eq(n\\,18)+eq(n\\,22)+eq(n\\,27)+eq(n\\,32)+eq(n\\,37)+eq(n\\,43)+eq(n\\,48)+eq(n\\,53)+eq(n\\,57)+eq(n\\,61)+eq(n\\,66)+eq(n\\,71)+eq(n\\,75)+eq(n\\,80)+eq(n\\,85)+eq(n\\,89)+eq(n\\,93)+eq(n\\,97)+eq(n\\,101)+eq(n\\,105)+eq(n\\,109)+eq(n\\,113)+eq(n\\,116)+eq(n\\,119),zoompan=z='1+0.180*eq(in,0)+0.140*eq(in,1)+0.090*eq(in,2)+0.055*eq(in,3)+0.020*eq(in,4)':x='(iw-iw/zoom)*0.61':y='(ih-ih/zoom)*0.52':d=1:s=1344x768:fps=24,setsar=1,setpts=N/(24*TB)",
+    "reason": "Conform the close rear opening and weight shifts using frames from the same local model take, returning to the native framing as the source widens.",
+    "coveredFrames": 28,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-27T04:01:59.082617+00:00"
+  }
+}
