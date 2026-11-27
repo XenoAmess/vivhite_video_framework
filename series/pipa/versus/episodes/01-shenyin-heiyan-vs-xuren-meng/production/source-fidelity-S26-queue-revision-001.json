@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "vivhite-pipa-source-fidelity-queue-revision-1",
+  "shot": "S26",
+  "sourceFrameInterval": [
+    633,
+    644
+  ],
+  "originalSha256": "08c95dec83ec984bc604be8277e7e717a1808e5a3a32546257f54e61ec46341e",
+  "motionGuideSha256": "385f05fc034c175a25d6688abdd828a74e4a016ab01e8c09e3dc8399643d8d6d",
+  "previous": {
+    "attempt": 1,
+    "jobId": "video_gen_0298df2160e042b2b9e951a4ee4cfb08:openai",
+    "prompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue.",
+    "requestSha256": "7e79f63cca72946a97b64188270ff885344f294dda9ecc1f4c66a7d2769c28c1",
+    "cancellation": {
+      "at": "2026-11-27T04:36:57.3020058Z",
+      "previousProjectSlot": 2,
+      "status": "cancelled",
+      "reason": "Use the two original cropped boot compositions so this waiting floor-level insert preserves its framing and crossing movement.",
+      "dispatched": false
+    }
+  },
+  "replacement": {
+    "attempt": 2,
+    "jobId": "video_gen_aff6127cb94e40878edd80144ed14ac0:openai",
+    "prompt": "Edit the visual appearance of just the footwear in this existing animated shot. Use <Video 1> as its exact floor-level movement and entire frame, keep both shoe positions, floor contact, local blur, warm reflected lights, broken room, round ceiling lights and the pink chair. <Picture 1> is original frame 633, with the dark leather boot near the centre and the far leg cut off on the right. <Picture 2> is original frame 643, with the other dark boot larger near the camera and the distant boot behind. Use the dark leather ankle boots and charcoal trousers shown in both images and follow the exact crossing of the two feet in the original video. The floor-level camera remains cropped below the knees for the entire shot. Keep original photographed scene perspective and colors. No face, torso, new object or added action enters frame.",
+    "requestSha256": "48e9d70a843d374fd72a19f3d963b0bce78839283c093ae1fe4f8af77fc30bcd",
+    "submittedAt": "2026-11-27T04:38:13.405976+00:00",
+    "status": "queued",
+    "anchors": [
+      {
+        "shot": "S26",
+        "sourceFrame": 633,
+        "file": "S26-source-edit-0633.png",
+        "sourceStillSha256": "ef844ef60ee7562519110ac3db7b481cb960e261d7e7ad561d6f21bfc173d121",
+        "sha256": "4ac9bb7f92caef3a7221bc16e563ce88db5f518ba37be9e683b51e5961ca08d9",
+        "prompt": "Edit only the cropped footwear and visible cuffs in source image 1, an animated 3D floor-level close-up. Match the plain black leather ankle boots and charcoal trousers seen at the bottom of character reference 2. Carry the dark natural appearance and subdued highlights through the exact positions of both feet. Preserve the source first image's crop entirely below the knees, ground contact, perspective, apparent depth of field, dark floor, pink chair at left, broken doorway, lamp reflections, and dim warm room light. Keep the fixed camera angle and existing motion softness. No other part of the character enters the image. Landscape 16:9. First frame: one foot is grounded near the center, the other leg is partly cropped at far right. Keep the original near boot pointing to screen left and the rest of the frame as it was.",
+        "inputs": [
+          "anchor-originals/S26-source-0633.png",
+          "assets/generated/character-concepts-v2/xuren-meng.png"
+        ]
+      },
+      {
+        "shot": "S26",
+        "sourceFrame": 643,
+        "file": "S26-source-edit-0643.png",
+        "sourceStillSha256": "cbc2be0986754d5c9b5a6b9fe27a05a1b19ee08b6d887f3d28ba706c62cf1f84",
+        "sha256": "e52cee4f14f97cbee7bd4fb8d8055713e9f586b7c23de847e555ce42fec55562",
+        "prompt": "Edit only the cropped footwear and visible cuffs in source image 1, an animated 3D floor-level close-up. Match the plain black leather ankle boots and charcoal trousers seen at the bottom of character reference 2. Carry the dark natural appearance and subdued highlights through the exact positions of both feet. Preserve the source first image's crop entirely below the knees, ground contact, perspective, apparent depth of field, dark floor, pink chair at left, broken doorway, lamp reflections, and dim warm room light. Keep the fixed camera angle and existing motion softness. No other part of the character enters the image. Landscape 16:9. Final frame: very close foot sweeps across the foreground into the bottom-left and bottom center, with the other foot lower in the background. Retain the exact original horizontal motion and source focal softness. The two lit round fixtures stay in their original positions through the gap between the two feet.",
+        "inputs": [
+          "anchor-originals/S26-source-0643.png",
+          "assets/generated/character-concepts-v2/xuren-meng.png"
+        ]
+      }
+    ]
+  }
+}

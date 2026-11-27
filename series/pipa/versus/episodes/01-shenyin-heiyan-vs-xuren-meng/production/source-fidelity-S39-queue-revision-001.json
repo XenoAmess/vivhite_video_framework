@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "vivhite-pipa-source-fidelity-queue-revision-1",
+  "shot": "S39",
+  "sourceFrameInterval": [
+    1063,
+    1078
+  ],
+  "originalSha256": "148ccdbbb44e7999e322d81db678dab78a43e912f11e5ed60ea4d094c235c5c6",
+  "motionGuideSha256": "2b9f9f0d29ae5ebf0c03ec3533fd4db7da2baf49a2a9dc14f48e7edf467ade41",
+  "previous": {
+    "attempt": 1,
+    "jobId": "video_gen_f082f4acff2e4187ba567fa137c8bb56:openai",
+    "prompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue.",
+    "requestSha256": "4d02d82c8311708f3ec4aa1371ddcb32686ff1a2504357ec2485339f2d58f65f",
+    "cancellation": {
+      "at": "2026-11-27T04:35:25.3647821Z",
+      "previousProjectSlot": 8,
+      "status": "cancelled",
+      "reason": "Preserve the original rear-to-profile shoulder turn with two verified framing references before rendering.",
+      "dispatched": false
+    }
+  },
+  "replacement": {
+    "attempt": 2,
+    "jobId": "video_gen_ab9b1fca896746dc9e96b52b0ecb4d2d:openai",
+    "prompt": "Keep <Video 1> as the actual video reference for this exact 3D animated over-the-shoulder shot, from original frame 1063 through 1077. Replace the only adult with the blond red-hooded performer of both images. <Picture 1> is source frame 1063, showing the dark crimson cloak from behind under the lamp, the face turned away and his single pale mask on his actual left shoulder. <Picture 2> is source frame 1077, with the torso still facing away as the actor looks back over the same shoulder in a closer shot, partly hiding the accessory behind the fabric and crop. Preserve the source approach, relative brightness and blur of the lamp, broken wall, furnishings and background. His eyes and nose become visible only as his head turns near the end. Keep his torso rear-facing and express the same stern sideways look. Maintain the same character, garment and shoulder accessory throughout, without a second mask or a second character. Use exactly one consistent shot with the source depth and angle.",
+    "requestSha256": "ff6b06b758af3e893f2e9d65f3392b7cf13d2275e34b9a522d8d8ecae4be4027",
+    "submittedAt": "2026-11-27T04:37:10.465046+00:00",
+    "status": "queued",
+    "anchors": [
+      {
+        "shot": "S39",
+        "sourceFrame": 1063,
+        "file": "S39-source-edit-1063.png",
+        "sourceStillSha256": "2d21fba5d40cd2c5dc21d00a88bfcbf039f66d8b85cfac554dfcf8d19699beea",
+        "sha256": "29709c67ca4a424bddff5a0582de4c9e678ec1f68981d29d5590546fec6e9e14",
+        "prompt": "First edit: Edit source image 1 directly as an existing dark warm 3D animated shot. Recast the one adult as the blond hooded dancer of image 2 in a deep crimson hood and dark red cloak with subdued gold lining. The single small ivory mask belongs on the character's left shoulder, only visible when the shoulder angle reveals it. Keep the original framing, focus, identity-independent face expression and posing, the dark broken room, ceiling lamp, furniture, scene warm highlights and shadows as in input 1. Preserve the back-facing torso at the source screen position. Landscape 16:9. The beginning sees the back of both shoulders and hood with chin down and face completely facing away. The round bright lamp partly crops off across the top. Keep the broad back silhouette and edges of the pink furnishing at left, and let blonde hair be subtle or concealed from the back.\nFollow-up edit: Edit only the mask on the rear view of this animated character. The visible ivory mask is on the wrong shoulder at the right of the frame. Remove it from that part of the cloak and put its existing identical pale shape on the opposite shoulder at the image left edge of the upper body, the character's actual left shoulder. Keep only one mask, seen from a shallow rear angle and subdued by the warm overhead shadow. Restore dark red folds where it was. Maintain the tilted hood, exact rear shot, top lamp, background, draping, lighting, and poses fully unchanged.",
+        "inputs": [
+          "anchor-originals/S39-source-1063.png",
+          "assets/generated/character-concepts-v2/xuren-meng.png",
+          "anchors/not-used/S39-source-edit-1063-misplaced-shoulder-mask.png"
+        ]
+      },
+      {
+        "shot": "S39",
+        "sourceFrame": 1077,
+        "file": "S39-source-edit-1077.png",
+        "sourceStillSha256": "59e3a6788dee277f9fe9f3a602845fe51cb53a040f2ac5b32bbe85f189306799",
+        "sha256": "90b2447b67a6bbcc07a0d810e19225b7bb52e1bc7e9737119fa809a60d94949a",
+        "prompt": "First edit: Edit source image 1 directly as an existing dark warm 3D animated shot. Recast the one adult as the blond hooded dancer of image 2 in a deep crimson hood and dark red cloak with subdued gold lining. The single small ivory mask belongs on the character's left shoulder, only visible when the shoulder angle reveals it. Keep the original framing, focus, identity-independent face expression and posing, the dark broken room, ceiling lamp, furniture, scene warm highlights and shadows as in input 1. Preserve the back-facing torso at the source screen position. Landscape 16:9. The camera is closer at the end, with the performer's torso still turned away, but a stern modeled face looks backward over the shoulder in the upper centre. Reveal the single adult's recognizable blond hair and eyes through the narrow hood opening without turning the entire body. Preserve the warm shallow-focus doorway, original profile angle and strong depth, and keep any shoulder ornament below the face.\nFollow-up edit: Edit this one animated frame. Remove the pale mask currently visible at the far right of the picture and rebuild the original deep crimson shoulder cloth and fold in that area. The character is looking back with his torso turned away and the single left-shoulder accessory lies below the near folded fabric outside this close view, so it should be fully hidden. Keep the exact shoulder pose, face, hood, dark room, depth of field, composition and all other details.",
+        "inputs": [
+          "anchor-originals/S39-source-1077.png",
+          "assets/generated/character-concepts-v2/xuren-meng.png",
+          "anchors/not-used/S39-source-edit-1077-misplaced-shoulder-mask.png"
+        ]
+      }
+    ]
+  }
+}

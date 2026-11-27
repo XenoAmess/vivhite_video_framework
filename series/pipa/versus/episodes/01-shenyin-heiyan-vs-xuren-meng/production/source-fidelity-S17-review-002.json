@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S17",
+  "startFrame": 433,
+  "endFrame": 463,
+  "attempt": 2,
+  "jobId": "video_gen_052d0a0b0082401db992fc2b18eba788:openai",
+  "requestSha256": "958a9fc72a3dcfc954cf6842ae0a17bd6eca3510ddad42a96cc73e72d38c608f",
+  "renderPrompt": "Use <Video 1> only as the motion, camera, focus, room and lighting reference for this one existing fictional 3D shot. The blurred head and clothing areas on the guide require complete cast replacement. Rebuild the sole visible character as the same young adult brown-haired officer found in all three pictures, with a navy gold-trimmed Napoleonic coat, gold fringe, ivory trousers and dark boots. <Picture 1> is chronological frame 433, the close opening with open mouth, the foreground object low, and no warm flash. <Picture 2> is frame 441 of the same movement, the subtle grin, near open hand and growing blurred foreground object above the table. <Picture 3> is frame 452 after the recorded pullback and the first warm light changes, with the actual large dark prop silhouette where it appears in the source. Preserve the overall pullback, original pink chair, wall, paper, black table, red shadows and source depth of field. Keep the motion guide's exact visual rhythm of dark and lit frames and its existing later warm flashes. Continue the same officer appearance until the final frame. No blurred face patches, original actor, extra characters, cuts, props, or changes to the room.",
+  "seed": 1235,
+  "rawSha256": "0ce0f2416654f1a17458e85a9bec2f7f84d77639692a075e39104987540d0a39",
+  "cutSha256": "4524f23a12c7e04b9142c34024d578829c6e610735fc84d1538fa37bfbcb7af0",
+  "review": {
+    "cutSha256": "4524f23a12c7e04b9142c34024d578829c6e610735fc84d1538fa37bfbcb7af0",
+    "requestSha256": "958a9fc72a3dcfc954cf6842ae0a17bd6eca3510ddad42a96cc73e72d38c608f",
+    "originalSha256": "df131bc54351c319abec0eba00829b56fea1a214a421e8a25fbced3d64f32d4d",
+    "decision": "accepted",
+    "reviewedFrames": 30,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 433–462 帧和本镜全部 30 帧。换角后的黑炎从第一帧保持棕发、深蓝金边军服，粉椅、圆桌、墙面及枪形道具在原运镜关系内。按同一模型文件取帧调整张口、前景张掌、拉开和道具靠近，首个闪光对齐原片第 450 帧，随后的暗帧、主要亮闪和最后的亮尾保留。末几帧部分亮斑比原片宽，黑炎面部相对清晰。无遮弱运动参考残留和原演员回填。角色、景别和动作的全部 30 帧通过。",
+    "reviewedAt": "2026-11-27T04:56:36.821639+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S17",
+      "sourceFrame": 433,
+      "file": "S17-source-edit-0433.png",
+      "sourceStillSha256": "be222bd7fe4e90d0294b8ecffaf4679d34a50cf0acc8a592b77f0efa19eebdff",
+      "sha256": "f479db9e0fb2dd091546572704eea4ec21ad0e99465e7ad388bab3567e6f3056",
+      "prompt": "Edit input 1 as a source frame of an existing stylized 3D animation. Only change the seated adult actor's identity and clothing to the young adult officer in input 2: short dark brown tousled hair, gray blue eyes, a navy Napoleonic-style coat, gold-edged cuffs, fringed shoulder ornaments, and ivory trousers. Keep the warm dim 3D source palette, original set, existing pink chair, round foreground table and the exact camera crop, focus and visual continuity of input 1. Preserve the actor's screen positions, original proportions, original hands and expression. Preserve the existing dark theatrical prop's photographed shape and screen location as in input 1. No flash is visible in this source frame. Landscape 16:9. Start of the shot. The character is leaning forward, mouth open in a surprised shout and looking sideways. His nearer sleeve stretches toward the bottom on the right, and the far arm reaches toward the lower-left. His seated distance and the unchanged prop low in the composition are important.",
+      "inputs": [
+        "anchor-originals/S17-source-0433.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    },
+    {
+      "shot": "S17",
+      "sourceFrame": 441,
+      "file": "S17-source-edit-0441.png",
+      "sourceStillSha256": "e2d5b27684ecdd1a6e59639ac830a4eaeb24215cf1a9d19240014c199800a768",
+      "sha256": "e6fc44117981975eb83d278aa4660e6ec7c22e11a47baa3f814d511204f2e285",
+      "prompt": "Edit input 1 as a source frame of an existing stylized 3D animation. Only change the seated adult actor's identity and clothing to the young adult officer in input 2: short dark brown tousled hair, gray blue eyes, a navy Napoleonic-style coat, gold-edged cuffs, fringed shoulder ornaments, and ivory trousers. Keep the warm dim 3D source palette, original set, existing pink chair, round foreground table and the exact camera crop, focus and visual continuity of input 1. Preserve the actor's screen positions, original proportions, original hands and expression. Preserve the existing dark theatrical prop's photographed shape and screen location as in input 1. No flash is visible in this source frame. Landscape 16:9. As the original shot moves back from the character, he grins and a spread hand is raised at center-left. The existing dark object occupies and blurs the middle foreground, with the rim of the dark table below. Keep the same perspective and apparent size of each object.",
+      "inputs": [
+        "anchor-originals/S17-source-0441.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    },
+    {
+      "shot": "S17",
+      "sourceFrame": 452,
+      "sourceStillSha256": "67fe054b711707714eb9fda13ac003720df50297474836215357ff8442c05224",
+      "file": "S17-source-edit-0452.png",
+      "sha256": "32d761387ae179bcf8c9f9dd607707f4d7ee30adc54109e6437ce47089ea00ee",
+      "prompt": "Edit only the character appearance in image one, a frame from a fictional stylized 3D animated film. Use image two for the exact fully dressed adult character design. Keep the first image's camera, dark source palette, actor placement and pose, environment, light, visible props and existing visual effects as actually pictured. Do not add elements or change the story frame. Replace the same adult in the warm shadow behind the large blurred near-left foreground object. Put him in a fitted navy-and-gold coat, full-length pale trousers and boots. Use the same dark room, original color and motion blur, and the existing warm optical glow. Maintain the body's off-center location in the pink chair and the camera looking diagonally across the tabletop.",
+      "inputs": [
+        "anchor-originals/S17-source-0452.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S17.mp4",
+    "inputSha256": "8e52741cee1a20ee139742a567a39cad32c92040c219e0a81e3c7fe4450dbc6d",
+    "preRetimeCutSha256": "163181578751ba4e502e75138ffa401465effca59e9fd666d8bc49bf11b1b8bb",
+    "outputSha256": "4524f23a12c7e04b9142c34024d578829c6e610735fc84d1538fa37bfbcb7af0",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      6,
+      11,
+      14,
+      17,
+      21,
+      25,
+      30,
+      34,
+      41,
+      43,
+      46,
+      49,
+      54,
+      59,
+      62,
+      67,
+      70,
+      75,
+      79,
+      82,
+      85,
+      94,
+      96,
+      98,
+      101,
+      105,
+      107,
+      110,
+      113
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,6)+eq(n\\,11)+eq(n\\,14)+eq(n\\,17)+eq(n\\,21)+eq(n\\,25)+eq(n\\,30)+eq(n\\,34)+eq(n\\,41)+eq(n\\,43)+eq(n\\,46)+eq(n\\,49)+eq(n\\,54)+eq(n\\,59)+eq(n\\,62)+eq(n\\,67)+eq(n\\,70)+eq(n\\,75)+eq(n\\,79)+eq(n\\,82)+eq(n\\,85)+eq(n\\,94)+eq(n\\,96)+eq(n\\,98)+eq(n\\,101)+eq(n\\,105)+eq(n\\,107)+eq(n\\,110)+eq(n\\,113),setpts=N/(24*TB)",
+    "reason": "Align the seated expression, forward hand, foreground prop, dark interval and original light timing within one render.",
+    "coveredFrames": 30,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-27T04:56:35.812937+00:00"
+  }
+}

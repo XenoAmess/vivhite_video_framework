@@ -83,3 +83,7 @@ S15 第二版保留原片背身屈膝、转向斜侧和近远景变化。按原�
 S29 按原片第 710 帧补录远处被遮挡的神隐黑炎并更换起镜构图。S34 使用同一原镜首尾两处构图锁定前景道具、抬手和拉远。S36 使用三处原镜构图锁定近景侧看、拉开和末帧光效。三镜均在执行前更换等待请求，改后的请求已经受理。S17 第二版在仅有本项目等待请求时移到队首，当前镜头继续执行。 [S29 远景角色与换队](source-fidelity-S29-queue-revision-002.json) · [S34 换队](source-fidelity-S34-queue-revision-001.json) · [S36 换队](source-fidelity-S36-queue-revision-001.json) · [S17 调度](source-fidelity-queue-reorder-009.json)
 
 S16 第二版保留背身体态和场景。按原片复核屈膝、抬手、手掌接触衣料和再抬手的时点，全部 48 帧通过。开头连续 15 镜已输出 18.042 秒预览，对照 433 帧、14 个原片切点和每声道 866,000 个配乐采样。全片累计 17 镜、487 帧通过。 [S16 复核与取帧记录](source-fidelity-S16-review-002.json) · [开头连续预览](source-fidelity-opening-preview-003.json)
+
+S26 用同一原镜两张紧贴地面的靴子构图约束交叉步的景别。S39 用背开和过肩回看的两张构图约束转头，面具的位置随左肩与遮挡保持一致。两镜均在首个请求执行前更换参照，新的请求已经受理。 [S26 取景与换队](source-fidelity-S26-queue-revision-001.json) · [S39 取景与换队](source-fidelity-S39-queue-revision-001.json)
+
+S17 第二版从张口起镜到拉远亮尾均完成换角，按原片第 450 帧开始的亮闪时序重新取帧，全 30 帧通过。开头补成连续 16 镜，19.292 秒，逐帧比对 463 帧及 15 个切点，复核每声道 926,000 个指定配乐采样。至此 18／48 镜、517／1478 帧通过。 [S17 复核与取帧](source-fidelity-S17-review-002.json) · [开头连续预览](source-fidelity-opening-preview-004.json)
