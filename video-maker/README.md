@@ -8,6 +8,8 @@ Java 包前缀：`com.xenoamess.vivhite_video_framework.maker`。
 
 无声动态海报使用 `tools/produce_live2d_short.py` 渲染 Live2D 参数动画或插画网格动画与 Canvas 图层，通过人物审核绑定后逐帧合成 MP4。运行时设置、依赖和复现命令见[《余像》初版](../series/vivhite/art-shorts/episodes/01-afterimage/README.md)与[修订 v2](../series/vivhite/art-shorts/episodes/01-afterimage/revision-2/README.md)。
 
+长版动态海报使用 `tools/produce_music_visualizer.py` 分析音轨频带，以 WebGL 逐帧绘制，并用本机 Chromium 的 WebCodecs 按章编码。原 AAC 音轨直接封装，最后一帧的显示时长使两轨精确到同一采样终点。[《余像·潮汐》制作记录](../series/vivhite/art-shorts/episodes/01-afterimage/tide/README.md)
+
 同一文档另列 BF16 原生1344×768与逐镜3840×2160重生成入口，以及印花细节检查和另存修订工具；当前[768P／4K规约](../docs/local-video-768p-4k.md)替代历史2K路线，4K仍沿用服务端历史模型ID并单任务执行。印花跟踪的 `--max-scale` 可显式适配已观察到的镜头推近，默认上限2.5倍；技术成功仍须实际逐帧检查，不能自动作为成片内容通过的结论。
 
 `durable_video_controller.py`也支持原始768P图像参考批次：检查实际1344×768源片，将每镜新首帧指纹绑定到独立源片目录，下载、全解码并保存技术检查点。`generationOnly`只完成源片和检查点，不自动通过语义审核或发布影片。DeepSeek衍生片的独立部署、冻结执行器及使用边界见[实际制作记录](../series/deepseek/autumn-journey/episodes/01-autumn-journey/production/production-v1-768p.md)。

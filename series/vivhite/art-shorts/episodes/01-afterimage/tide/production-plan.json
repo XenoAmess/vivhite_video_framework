@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "vivhite-music-art-1",
+  "title": "白绮／余像·潮汐",
+  "width": 2112,
+  "height": 768,
+  "fps": 30,
+  "frameCount": 54143,
+  "bitrate": 5800000,
+  "audio": {
+    "title": "「水月与深蓝之树」官网主界面",
+    "source": "BV1Ce4y1k7pX_p1",
+    "sha256": "1cfe94177c458d6de8fcd3d0aaa6b347604c281f2f0fd9af41ea4ad142c6c0a1",
+    "durationSamples": 86628336,
+    "sampleRate": 48000,
+    "phraseSeconds": 22.281
+  },
+  "portraits": {
+    "reaching": {
+      "file": "afterimage-v2-reaching.png",
+      "sha256": "814fe6caddb14a31b5a08ffdeb179dc7c70699baeaa36103d639503918ffb40d",
+      "tip": [0.888, 0.086],
+      "head": [0.456, 0.198]
+    },
+    "rising": {
+      "file": "afterimage-tide-rising.png",
+      "sha256": "93565db24c339c3aa090c3cd1b93d59876efc786676e4875bd7ca706fba0a1e8",
+      "tip": [0.087, 0.023],
+      "head": [0.531, 0.212]
+    },
+    "returning": {
+      "file": "afterimage-tide-returning.png",
+      "sha256": "2d36b84fc44ea170fb51491d5eb9c86431527cc632a81d1cb9f0b642117f79bb",
+      "tip": [0.875, 0.807],
+      "head": [0.516, 0.228]
+    }
+  },
+  "screenText": {
+    "title": "余像",
+    "subtitle": "潮汐",
+    "character": "白绮  /  VIVHITE",
+    "plot": "李萨如图  /  3:2",
+    "equations": ["x = sin(3θ + φ)", "y = sin(2θ)"]
+  },
+  "narration": [],
+  "subtitles": [],
+  "chapters": [
+    {"id":"S01","title":"潮纹","startFrame":0,"endFrame":6016,"pose":"reaching","side":"right","portrait":[365,29,874],"plot":[1170,248,124,132],"paper":"#d8e7e2","ink":"#142039","light":"#85e0d5","accent":"#e6c591"},
+    {"id":"S02","title":"浮光","startFrame":6016,"endFrame":12032,"pose":"rising","side":"left","portrait":[180,12,771],"plot":[260,241,133,147],"paper":"#dcebed","ink":"#102a40","light":"#9fd7ff","accent":"#f4d4a3"},
+    {"id":"S03","title":"折射","startFrame":12032,"endFrame":18048,"pose":"reaching","side":"right","portrait":[324,9,986],"plot":[1214,245,116,155],"paper":"#ddd8ee","ink":"#24274a","light":"#b8b8ff","accent":"#ecdca7"},
+    {"id":"S04","title":"深庭","startFrame":18048,"endFrame":24064,"pose":"returning","side":"right","portrait":[304,12,903],"plot":[1154,248,133,154],"paper":"#c5cadc","ink":"#191933","light":"#bfb8f5","accent":"#efb4c7"},
+    {"id":"S05","title":"静湾","startFrame":24064,"endFrame":30079,"pose":"rising","side":"left","portrait":[216,38,724],"plot":[266,230,140,123],"paper":"#b9ded6","ink":"#15313c","light":"#aae4d0","accent":"#e6d28b"},
+    {"id":"S06","title":"逆流","startFrame":30079,"endFrame":36095,"pose":"rising","side":"left","portrait":[159,-1,865],"plot":[216,254,147,155],"paper":"#c4d5ee","ink":"#192249","light":"#90c6ff","accent":"#e1b3f6"},
+    {"id":"S07","title":"流银","startFrame":36095,"endFrame":42111,"pose":"returning","side":"right","portrait":[356,34,827],"plot":[1195,230,132,145],"paper":"#e9e2d9","ink":"#252a43","light":"#d6e2f8","accent":"#f4d8a4"},
+    {"id":"S08","title":"微明","startFrame":42111,"endFrame":48127,"pose":"reaching","side":"right","portrait":[359,27,897],"plot":[1193,229,126,144],"paper":"#ddd7e6","ink":"#29203f","light":"#d8c9f9","accent":"#ffcb9c"},
+    {"id":"S09","title":"回声","startFrame":48127,"endFrame":54143,"pose":"returning","side":"right","portrait":[320,16,879],"plot":[1133,252,150,155],"paper":"#c4d6dc","ink":"#15263d","light":"#c5eff2","accent":"#eed1a1"}
+  ]
+}

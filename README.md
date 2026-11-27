@@ -22,6 +22,8 @@
 
 [白绮艺术短片](series/vivhite/art-shorts/README.md)用角色动画和原创图形排版制作动态海报。首期《余像》为 7.2 秒，2816×1024，30 fps，包含 Cubism 初版和重新绘制人物的修订版。
 
+[《余像·潮汐》](series/vivhite/art-shorts/episodes/01-afterimage/tide/README.md)是同一主题的音乐长版，使用三种人物姿态，画面按用户给定的完整 30 分 04.757 秒音乐响应。
+
 内容子项目[白绮／秋日旅程](series/vivhite/autumn-journey/README.md)已于 **2026-11-22结项，用户表示满意**。最终交付为原始768P v12、原生4K v13及16:9／4:3两张bilibili封面，影片均为205秒／6150帧。经验教训、可复用流程及代码索引见[结项复盘](docs/autumn-journey-retrospective.md)，最新状态见[结项记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/project-closeout-20261122.json)。下文各版本的排队、未完成及待审描述保留为历史，不再作为当前任务。
 
 衍生项目[大肥鱼／秋日旅程](series/deepseek/autumn-journey/README.md)已完成768P v3审核影片：S37改为田边停步、保留整个支撑稳固的包与原手遮挡；S47沿椅面实际左移玩偶后松手。其余46镜、全部时长、字幕献词与配乐保持v2，仍为1344×768、30fps、205秒／6150帧。[影片与素材下载](https://github.com/XenoAmess/vivhite_video_framework/releases/tag/deepseek-autumn-journey-v3-768p-20261123)，待用户审核。生成及检查图上库，v1、v2和失败候选保留。

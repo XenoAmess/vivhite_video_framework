@@ -22,6 +22,8 @@
 
 Live2D 短片在独立本地浏览器中运行 [PixiJS](https://github.com/pixijs/pixijs) 6.5.10（MIT）、[pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) 0.4.0（MIT）和 [Playwright](https://github.com/microsoft/playwright) 1.58.2（Apache-2.0）。历史版本固定用于与模型和 Core 联调。传递依赖见 `video-maker/tools/live2d-runtime/package-lock.json`。Cubism Core 5.2 来自[上游 Web SDK 页面](https://www.live2d.com/en/sdk/download/web/)，适用 Live2D 的专有软件许可。浏览器和字体取自本地系统，角色模型存于私有角色库。
 
+音乐长版沿用 Playwright 与本机 Chromium，并使用 NumPy 做频带分析、WebGL 2 和 WebCodecs 绘制与编码。用户提供的《水月与深蓝之树》官网主界面 AAC 音轨来自其本地文件，项目 Git 仅保存来源 ID、时间轴和指纹。
+
 Python 完整实跑版本见 `video-analyzer/tools/requirements-lock.txt`；其中传递依赖的许可证以各安装包元数据为准。运行中模型会由上游缓存下载，本次未把模型文件写入 Git。默认模型别名不保证未来上游修订不变；要求位级复现时，应将 `asrModel` 改为固定的本地模型快照路径并保留其指纹。
 
 本例内容参考：白绮Infinity，BV1AV411V7SJ；表达方法参考：真理院七叶，BV1i4aS6SEBR。仓库保存原创改编稿及分析注释，不分发参考片的图像、音轨或完整原片字幕。新稿的配色、版式和声音安排是制作建议，不是对参考片素材的再授权。
