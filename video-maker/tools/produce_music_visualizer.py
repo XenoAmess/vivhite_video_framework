@@ -8,8 +8,6 @@ import subprocess
 import sys
 from pathlib import Path
 
-import numpy as np
-
 from produce_live2d_short import REPO, TOOLS, run, sha256
 
 
@@ -20,6 +18,8 @@ def probe(path):
 
 
 def audio_features(source, frame_count, fps):
+    import numpy as np
+
     rate = 12000
     window_size = 1024
     mono = np.frombuffer(subprocess.check_output([
@@ -49,13 +49,19 @@ def audio_features(source, frame_count, fps):
     return smooth.astype("<f4"), len(mono)
 
 
-def validate_timeline(plan, audio_stream):
+def validate_soundtrack(plan, audio_stream):
     rate, samples, fps = plan["audio"]["sampleRate"], plan["audio"]["durationSamples"], plan["fps"]
     if (audio_stream["codec_name"] != "aac" or int(audio_stream["sample_rate"]) != rate
             or audio_stream["time_base"] != f"1/{rate}" or int(audio_stream["duration_ts"]) != samples
-            or int(audio_stream["start_pts"]) != 0 or rate % fps or 12000 % fps
+            or int(audio_stream["start_pts"]) != 0 or rate % fps
             or plan["frameCount"] != math.ceil(samples * fps / rate)):
         raise ValueError("Soundtrack format or timeline differs from the production plan.")
+
+
+def validate_timeline(plan, audio_stream):
+    validate_soundtrack(plan, audio_stream)
+    if 12000 % plan["fps"]:
+        raise ValueError("The picture frame rate must divide the feature sample rate.")
     cursor = 0
     for chapter in plan["chapters"]:
         if chapter["startFrame"] != cursor or chapter["endFrame"] <= cursor:
@@ -72,25 +78,31 @@ def packet_streamhash(path):
     ], timeout=180).decode("ascii").strip()
 
 
-def mux_and_verify(timed, output, plan, sound):
-    chapters_file = output / "chapters.ffmeta"
+def mux_and_verify(timed, output, plan, sound, stem="afterimage-tide"):
     samples, rate, fps = plan["audio"]["durationSamples"], plan["audio"]["sampleRate"], plan["fps"]
     step = rate // fps
-    lines = [";FFMETADATA1"]
-    for chapter in plan["chapters"]:
-        start = chapter["startFrame"] * step
-        end = min(chapter["endFrame"] * step, samples)
-        lines.extend(["[CHAPTER]", f"TIMEBASE=1/{rate}", f"START={start}", f"END={end}",
-                      f"title={chapter['title']}"])
-    chapters_file.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+    chapters = plan["chapters"]
+    chapter_input = []
+    metadata = ["-map_metadata", "-1", "-map_chapters", "-1"]
+    if chapters:
+        chapters_file = output / "chapters.ffmeta"
+        lines = [";FFMETADATA1"]
+        for chapter in chapters:
+            start = chapter["startFrame"] * step
+            end = min(chapter["endFrame"] * step, samples)
+            lines.extend(["[CHAPTER]", f"TIMEBASE=1/{rate}", f"START={start}", f"END={end}",
+                          f"title={chapter['title']}"])
+        chapters_file.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+        chapter_input = ["-f", "ffmetadata", "-i", str(chapters_file)]
+        metadata = ["-map_metadata", "2", "-map_chapters", "2"]
     last = plan["frameCount"] - 1
     tail = samples - step * last
     trim = f"setts=duration=if(eq(N\\,{last})\\,{tail}\\,DURATION)"
-    candidate = output / "afterimage-tide.part.mp4"
+    candidate = output / f"{stem}.part.mp4"
     run([
         "ffmpeg", "-v", "error", "-xerror", "-i", str(timed), "-i", str(sound),
-        "-f", "ffmetadata", "-i", str(chapters_file), "-map", "0:v:0", "-map", "1:a:0", "-map_metadata", "2",
-        "-map_chapters", "2", "-metadata", f"title={plan['title']}", "-c", "copy",
+        *chapter_input, "-map", "0:v:0", "-map", "1:a:0", *metadata,
+        "-metadata", f"title={plan['title']}", "-c", "copy",
         "-bsf:v", trim, "-video_track_timescale", str(rate),
         "-movflags", "+faststart", str(candidate),
     ], 600)
@@ -98,6 +110,8 @@ def mux_and_verify(timed, output, plan, sound):
     if (video["codec_name"] != "h264" or video["pix_fmt"] != "yuv420p"
             or (video["width"], video["height"]) != (plan["width"], plan["height"])
             or video["r_frame_rate"] != f"{fps}/1" or int(video["nb_frames"]) != plan["frameCount"]
+            or video["time_base"] != f"1/{rate}" or audio["time_base"] != f"1/{rate}"
+            or int(video["start_pts"]) != 0 or int(audio["start_pts"]) != 0
             or int(video["duration_ts"]) != samples or int(audio["duration_ts"]) != samples):
         raise ValueError("Final MP4 dimensions, frame count or exact audiovisual duration did not match.")
     original_hash = packet_streamhash(sound)
@@ -106,7 +120,7 @@ def mux_and_verify(timed, output, plan, sound):
     chapter_tags = json.loads(subprocess.check_output([
         "ffprobe", "-v", "error", "-show_chapters", "-of", "json", str(candidate),
     ], timeout=60))["chapters"]
-    if [item["tags"]["title"] for item in chapter_tags] != [item["title"] for item in plan["chapters"]]:
+    if [item["tags"]["title"] for item in chapter_tags] != [item["title"] for item in chapters]:
         raise ValueError("Final chapter names do not match the plan.")
     progress = subprocess.check_output([
         "ffmpeg", "-v", "error", "-xerror", "-i", str(candidate), "-map", "0:v:0", "-map", "0:a:0",
@@ -115,7 +129,7 @@ def mux_and_verify(timed, output, plan, sound):
     last_decoded_count = int([line.split("=")[1] for line in progress.splitlines() if line.startswith("frame=")][-1])
     if last_decoded_count != plan["frameCount"] or not progress.rstrip().endswith("progress=end"):
         raise ValueError("Full audiovisual decode did not complete with the planned frame count.")
-    movie = candidate.rename(output / "afterimage-tide.mp4")
+    movie = candidate.rename(output / f"{stem}.mp4")
     return {
         "filename": movie.name, "sha256": sha256(movie), "bytes": movie.stat().st_size,
         "durationSamples": samples, "sampleRate": rate, "decodedFrames": last_decoded_count,

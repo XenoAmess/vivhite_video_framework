@@ -22,7 +22,7 @@
 
 [白绮艺术短片](series/vivhite/art-shorts/README.md)用角色动画和原创图形排版制作动态海报。首期《余像》为 7.2 秒，2816×1024，30 fps，包含 Cubism 初版和重新绘制人物的修订版。
 
-[《余像·潮汐》](series/vivhite/art-shorts/episodes/01-afterimage/tide/README.md)是同一主题的音乐长版，使用三种人物姿态，画面按用户给定的完整 30 分 04.757 秒音乐响应。
+[《余像·原构图循环版》](series/vivhite/art-shorts/episodes/01-afterimage/tide-loop/README.md)是同一主题的音乐长版，将 v2 原构图循环至用户给定的音轨终点，全长 30 分 04.757 秒。
 
 内容子项目[白绮／秋日旅程](series/vivhite/autumn-journey/README.md)已于 **2026-11-22结项，用户表示满意**。最终交付为原始768P v12、原生4K v13及16:9／4:3两张bilibili封面，影片均为205秒／6150帧。经验教训、可复用流程及代码索引见[结项复盘](docs/autumn-journey-retrospective.md)，最新状态见[结项记录](series/vivhite/autumn-journey/episodes/01-autumn-journey/production/project-closeout-20261122.json)。下文各版本的排队、未完成及待审描述保留为历史，不再作为当前任务。
 
