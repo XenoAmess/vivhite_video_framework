@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "vivhite-live2d-art-result-1",
+  "episode": "vivhite/art-shorts/01-afterimage",
+  "planSha256": "ff61da59c0c4973fab1e6895ed1998c5f8b5ee01b518c9bf95945adbe32be7ec",
+  "references": [
+    {
+      "sha256": "8138d86a4de14e8ee78e30ec1171d765a109e115552f8ec717fd6e720cb1b965",
+      "size": [2816, 1024],
+      "decodedFrames": 180
+    },
+    {
+      "sha256": "270a233ba43390fcc2b7575523e9bff47a7408dfabc126c140d3e6d6018678b0",
+      "size": [1920, 1080],
+      "decodedFrames": 180
+    },
+    {
+      "sha256": "6cfd7f1305ceccdcbd7945dc3c9b06f243337a8eeaa4606beefdf430576846cf",
+      "size": [2816, 1024],
+      "decodedFrames": 180
+    }
+  ],
+  "delivery": {
+    "filename": "afterimage.mp4",
+    "bytes": 5125060,
+    "sha256": "b71a08006a577dc052355ab4730fa512a377edcb2ab628ce236336905470eced",
+    "width": 2816,
+    "height": 1024,
+    "durationSeconds": 7.2,
+    "fps": 30,
+    "frameCount": 216,
+    "videoCodec": "h264",
+    "pixelFormat": "yuv420p",
+    "audioTracks": 0,
+    "subtitleTracks": 0
+  },
+  "validation": {
+    "framesDecodedWithoutErrors": 216,
+    "frameTimestampsComparedToPlan": 216,
+    "uniqueScaledLumaFrames": 216,
+    "scaledLuma": {
+      "size": [320, 116],
+      "medianAdjacentFrameDifference": 0.3899,
+      "maxAdjacentFrameDifference": 0.6101,
+      "lastToFirstFrameDifference": 0.2174
+    },
+    "assistantVisualReview": {
+      "sceneIds": ["S01"],
+      "characterCropFrames": 216,
+      "fullCanvasSamplingFps": 6,
+      "checked": ["两次眨眼", "手臂抬起和回落", "掌边光点和图表连动", "所有可见文字与公式", "循环首尾"]
+    },
+    "humanReview": "pending"
+  }
+}
