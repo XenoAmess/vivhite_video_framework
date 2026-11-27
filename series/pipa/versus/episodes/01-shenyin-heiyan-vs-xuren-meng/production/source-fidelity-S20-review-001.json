@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S20",
+  "startFrame": 510,
+  "endFrame": 536,
+  "attempt": 1,
+  "jobId": "video_gen_1921642707a74fbe8160f01eab9086d9:openai",
+  "requestSha256": "eaeaa3a3be11d15ca080703e56ea38aa3972983ec77c4597c1c3a6f773652f08",
+  "renderPrompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue. <Picture 2> is the source-frame edit at 534. Follow the source kneeling choreography, the sequence of high and low hands and the final arm crossing by the knees. Keep the existing high framing, wood floor and chair.",
+  "seed": 1234,
+  "rawSha256": "0ef0e1921abc80184e3c8c69d9d4e496bc0e7865d3075fd1f4d2204f07668b32",
+  "cutSha256": "a97f8785fa92e3913e339c608480b98ba582ebbcb93b64f8e8afefe37930aed3",
+  "review": {
+    "cutSha256": "a97f8785fa92e3913e339c608480b98ba582ebbcb93b64f8e8afefe37930aed3",
+    "requestSha256": "eaeaa3a3be11d15ca080703e56ea38aa3972983ec77c4597c1c3a6f773652f08",
+    "originalSha256": "49d22e184368f4d57192ef166e4c4aad2e7a6b8f9900dfb6689514eaadc3f476",
+    "decision": "accepted",
+    "reviewedFrames": 26,
+    "method": "assistant-frame-review",
+    "observations": "逐帧核对原片第 510–535 帧和交付的全部 26 帧。候选保持虚人梦的金发、红兜帽、左肩一张面具、暗色手套及裤靴，原片高机位和木地板、碎墙、左侧柜子及右侧粉椅均可辨。重新取同一镜的模型帧，依次对齐靠近镜头的双手、退后的屈膝、两手下落、侧转抬掌和交臂收势。中段披风让膝部的外轮廓更窄，几处手掌离身体的距离较小。逐帧对应下，角色、动作顺序和连续机位均通过。",
+    "reviewedAt": "2026-11-27T03:14:32.479599+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S20",
+      "sourceFrame": 534,
+      "sourceStillSha256": "f0ca26ec8e118a2c35d99499d44736bd59a5d794ddfc6e47806c8d17371e3055",
+      "file": "S20-source-edit-0534.png",
+      "sha256": "eb4d1035c517c62e1ba1feb98998cd211a8da6fc2212449a6defecdcb00aa6fa",
+      "prompt": "Edit only the character appearance in image one, a frame from a fictional stylized 3D animated film. Use image two for the exact fully dressed adult character design. Keep the first image's camera, dark source palette, actor placement and pose, environment, light, visible props and existing visual effects as actually pictured. Do not add elements or change the story frame. The red-hooded performer remains kneeling, head near the top crop and both forearms crossed closely in front at waist height. Keep the same shoulders, elbow placement, folded knees and background chair and wood. The red hood and gold lining follow the pose, gloved fingers visible as they cross. One mask stays on its original left shoulder.",
+      "inputs": [
+        "anchor-originals/S20-source-0534.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "usedInput": "sources/S20.mp4",
+    "inputSha256": "1506bb13224cc29d22bfe7ffdf26f955e4de662174d5304d759c2abeb3016057",
+    "preRetimeCutSha256": "ca9fce0431a01de10c924cc980695230e7b022ece53f0fcbdb981d39a7833db2",
+    "outputSha256": "a97f8785fa92e3913e339c608480b98ba582ebbcb93b64f8e8afefe37930aed3",
+    "tool": "ffmpeg",
+    "selectedModelFrames": [
+      0,
+      12,
+      18,
+      21,
+      27,
+      31,
+      34,
+      40,
+      44,
+      48,
+      56,
+      59,
+      62,
+      67,
+      73,
+      79,
+      84,
+      88,
+      93,
+      97,
+      102,
+      106,
+      110,
+      113,
+      116,
+      119
+    ],
+    "filter": "select=eq(n\\,0)+eq(n\\,12)+eq(n\\,18)+eq(n\\,21)+eq(n\\,27)+eq(n\\,31)+eq(n\\,34)+eq(n\\,40)+eq(n\\,44)+eq(n\\,48)+eq(n\\,56)+eq(n\\,59)+eq(n\\,62)+eq(n\\,67)+eq(n\\,73)+eq(n\\,79)+eq(n\\,84)+eq(n\\,88)+eq(n\\,93)+eq(n\\,97)+eq(n\\,102)+eq(n\\,106)+eq(n\\,110)+eq(n\\,113)+eq(n\\,116)+eq(n\\,119),setpts=N/(24*TB)",
+    "reason": "Align the paired hand gestures, knee drop, raised palm and crossed-arm closure to the timing of the original shot.",
+    "coveredFrames": 26,
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "recordedAt": "2026-11-27T03:14:29.999105+00:00"
+  }
+}
