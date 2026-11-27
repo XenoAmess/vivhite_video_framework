@@ -63,3 +63,5 @@ S03 与 S04 的第二版分别通过 36 帧及 29 帧全量对照。S03 取帧�
 S06 全 28 帧通过，保留桌面、前景道具、伸手转身动作和粉椅。S07 首版原演员回填，退回后以同一原镜的遮弱外观运动参考及三张源帧构图返工，已移到本项目等待队列首位。S14 按原片取帧校正光效的起点、亮闪节奏和末帧，全 19 帧通过。当前 12 镜、337 帧通过。 [S06 验收](source-fidelity-S06-review-001.json) · [S07 复核及返工](source-fidelity-S07-review-001.json) · [S07 运动参考](source-fidelity-S07-motion-guide-001.json) · [S14 验收](source-fidelity-S14-review-001.json) · [本项目队列调整](source-fidelity-queue-reorder-005.json)
 
 S07 第二版的前后段换角正确，第 197–202 帧附近仍可见运动参考的模糊痕迹，退回。第三版在同一原镜补入转身及两袖交叠的实际构图，已受理。S15 与 S16 首版均未保持原镜背面朝向和屈膝转身，分别逐帧核对了 28 帧与 48 帧。第二版分别使用同镜的两张与三张背面源帧构图，继续由队列补交。 [S07 第二版](source-fidelity-S07-review-002.json) · [S15 首版](source-fidelity-S15-review-001.json) · [S16 首版](source-fidelity-S16-review-001.json)
+
+S17 首版全 30 帧已对照。闪光提前到起镜，人物中后段回填原演员，退回。返工补足张口与抬手两张实际源帧构图，使用同一原镜弱化原演员细节的运动参考，保留桌椅、枪形道具的画面轮廓和后段光效时点。S29 在执行前撤下原排队请求，按同一原镜的抬手、俯身迈步与抬膝三处构图重新提交，统一网关已受理。 [S17 首版复核](source-fidelity-S17-review-001.json) · [S17 运动参考](source-fidelity-S17-motion-guide-001.json) · [S29 排队替换记录](source-fidelity-S29-queue-revision-001.json)

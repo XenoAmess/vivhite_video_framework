@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "vivhite-pipa-source-fidelity-queue-revision-1",
+  "shot": "S29",
+  "sourceFrameInterval": [
+    710,
+    759
+  ],
+  "originalSha256": "ca222fb34cc3e35ab21a7ce0d707364b12696a2894ae282a1c03e48e791f60c9",
+  "motionGuideSha256": "9b7ea06b206e28b4b2f2df91152ac657fd6252b5f3e175bdd1e626695e991687",
+  "previous": {
+    "attempt": 1,
+    "jobId": "video_gen_205f8c76b4a94c21acea44bd38e04e79:openai",
+    "prompt": "EDIT one existing fictional animated film shot. Treat <Video 1> as the actual source plate and time base. <Picture 1> gives the sole design of the crimson performer: long golden hair, crimson hood and gold-lined cape, dark trousers and gloves, red beads at both wrists and the ivory left-shoulder mask. Change only the depicted identities and their clothing. Keep the source stylized 3D animation materials, scene geometry, dark palette, lighting direction, depth of field, exact framing, camera route and pose timing. Keep the visible props and effects from the source wherever they occur. Maintain their screen silhouettes, reflections and positions. The two role designs have equivalent height and body proportions in the same camera plane. Keep this original single cut, camera path, background and all non-character screen elements. Match its existing action timing and pose changes from first to last frame. Use matching supplied source-frame edits, if present, only to identify the intended replacement design at their corresponding instants. Every visible actor must be the assigned replacement from the first frame through the last. No invented set, new props, newly introduced effects, added edits, text or dialogue.",
+    "requestSha256": "2c958c64c79329a879d23a3d5a63f833041859bdb9182ebb1898bea6cc06b613",
+    "cancellation": {
+      "at": "2026-11-27T02:00:14.0352543Z",
+      "previousProjectSlot": 9,
+      "status": "cancelled",
+      "reason": "Replace a waiting Pipa source-only layout with three verified same-shot pose references before dispatch.",
+      "dispatched": false
+    }
+  },
+  "replacement": {
+    "attempt": 2,
+    "jobId": "video_gen_7512f7831f3646879eea5c89aea06ff0:openai",
+    "prompt": "Render one replacement of this existing animated dance shot. Use <Video 1> as the source shot throughout. Keep the actual extreme floor-level views, changing scale and camera tilt, all foot and hand timing, dim practical room light, broken walls, overhead lamps, furniture, and the existing warm light streaks. Change the only actor to the adult blond dancer in a crimson hood and soft cloak with subdued gold lining, dark clothes and boots, dark gloves with red wrist beads, and one ivory mask on the character's left shoulder. <Picture 1> is source frame 710, with both boots apart and both hands raised near the lamp. <Picture 2> is source frame 734, from the same continuous camera move, with torso folded forward and an asymmetric step. <Picture 3> is source frame 758, with one knee lifted and both arms loosened overhead. These three images record different moments of the original choreography. Keep the original foot contact changes and final knee height, with the cloak trailing to the side of the feet. Keep pose and camera transitions continuous. Preserve spatial continuity of the original room. Output a single shot that follows <Video 1> from start to end.",
+    "requestSha256": "c0f91606a59b2736bb802609e0061ba4609a44e08f08380f79450808aae278fe",
+    "submittedAt": "2026-11-27T02:07:07.680456+00:00",
+    "status": "queued",
+    "anchors": [
+      {
+        "shot": "S29",
+        "sourceFrame": 710,
+        "file": "S29-source-edit-0710.png",
+        "sourceStillSha256": "c4474792dd3da58be30302d941fd7483bd0b1c957bceaaceef8b96c5bea71b19",
+        "sha256": "eced9c02441363e1ee80a8a4450c2c951e2f81be799e31588e09640255f726ca",
+        "prompt": "Edit source input 1 directly to make a source-matched cast replacement for one frame of an adult 3D animated dance. Input 2 supplies the dancer's crimson hood, long blond hair, red cloak with subdued gold lining, charcoal pants and boots, black gloves with dark red beads, and one ivory mask attached to the dancer's left shoulder. Use these clothes only on the character at the same original position and size. Match the first input's body pose and extreme floor-level camera closely, retaining each foot, arm, foreshortening and tilt. Keep every visible room feature, the broken ceiling, warm lamps, pink chair, wood boards, orange CG light streaks and established shadows from input 1. Dim, warm CGI, landscape 16:9. First frame, the dancer stands wide with hands raised past the overhead lamp and boots near both bottom edges. The upturned head is a small dark silhouette. Route the cloak down the side to leave both legs and their spacing clear.",
+        "inputs": [
+          "anchor-originals/S29-source-0710.png",
+          "assets/generated/character-concepts-v2/xuren-meng.png"
+        ]
+      },
+      {
+        "shot": "S29",
+        "sourceFrame": 734,
+        "file": "S29-source-edit-0734.png",
+        "sourceStillSha256": "4103d37ef6d568cfe771b6daf9d047b9ebcaf8e02d81fcf70d37261d32b4b407",
+        "sha256": "78f146e0606dab69f2334dbbe1a6fabd30cf974586af466d44b9f93338e9b5e1",
+        "prompt": "Edit source input 1 directly to make a source-matched cast replacement for one frame of an adult 3D animated dance. Input 2 supplies the dancer's crimson hood, long blond hair, red cloak with subdued gold lining, charcoal pants and boots, black gloves with dark red beads, and one ivory mask attached to the dancer's left shoulder. Use these clothes only on the character at the same original position and size. Match the first input's body pose and extreme floor-level camera closely, retaining each foot, arm, foreshortening and tilt. Keep every visible room feature, the broken ceiling, warm lamps, pink chair, wood boards, orange CG light streaks and established shadows from input 1. Dim, warm CGI, landscape 16:9. This middle pose is a low oblique three-quarter view, with the torso folded forward, arms down near the body, and the near boot lifted with the rear boot planted. Retain the asymmetry and tilted floor.",
+        "inputs": [
+          "anchor-originals/S29-source-0734.png",
+          "assets/generated/character-concepts-v2/xuren-meng.png"
+        ]
+      },
+      {
+        "shot": "S29",
+        "sourceFrame": 758,
+        "file": "S29-source-edit-0758.png",
+        "sourceStillSha256": "a174da0aa68893be6cd5a0a77d5aeb6a350348f6c385015c728e765e7362c677",
+        "sha256": "86c288fbda565c3a701444c29299c7d34f824d7c1636abed08c6526fcefc69a0",
+        "prompt": "Edit source input 1 directly to make a source-matched cast replacement for one frame of an adult 3D animated dance. Input 2 supplies the dancer's crimson hood, long blond hair, red cloak with subdued gold lining, charcoal pants and boots, black gloves with dark red beads, and one ivory mask attached to the dancer's left shoulder. Use these clothes only on the character at the same original position and size. Match the first input's body pose and extreme floor-level camera closely, retaining each foot, arm, foreshortening and tilt. Keep every visible room feature, the broken ceiling, warm lamps, pink chair, wood boards, orange CG light streaks and established shadows from input 1. Dim, warm CGI, landscape 16:9. Final pose has one knee raised almost to the bright ceiling lamp and both elbows out, hands softly flexed. Preserve how the projected knee overlaps the lamp and the other boot extends downward. Keep the hood position small above the arms.",
+        "inputs": [
+          "anchor-originals/S29-source-0758.png",
+          "assets/generated/character-concepts-v2/xuren-meng.png"
+        ]
+      }
+    ]
+  }
+}
