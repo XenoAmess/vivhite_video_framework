@@ -2,6 +2,8 @@
 
 原片还原版已合成，48 镜、1478 帧、61.583 秒，采用 1344×768、24 fps 与指定配乐。已完整解码并复核逐镜画面、47 处切点及全段音轨。 [本机成片](D:/workspace/vivhite-analysis-output/pipa/versus/01-shenyin-heiyan-vs-xuren-meng/full-768p-002-source-fidelity/pipa-768p.mp4) · [成片验收收据](production/source-fidelity-final-768p.json)
 
+两张 B 站封面沿用蓝金制服与红兜帽造型。16:9 版采用侧向对峙构图，1664×936。4:3 版采用近景双人像，1448×1086。 [16:9 JPEG](assets/generated/bilibili-covers-20261128-v1/cover-16x9.jpg) · [4:3 JPEG](assets/generated/bilibili-covers-20261128-v1/cover-4x3.jpg) · [生成提示词与检查记录](assets/generated/bilibili-covers-20261128-v1/generation-requests.json)
+
 两张独立的全身角色概念图采用同一画布尺寸、近正面自然站姿和浅灰背景，可并排对照或单独用作图像参考。
 
 | 角色 | 入库概念图 | 造型要点 |

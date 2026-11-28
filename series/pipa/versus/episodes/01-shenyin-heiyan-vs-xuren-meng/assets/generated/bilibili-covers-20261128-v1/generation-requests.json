@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "vivhite-pipa-bilibili-covers-1",
+  "tool": "built-in ImageGen",
+  "platformGuide": "https://www.bilibili.com/opus/1106096748969852979",
+  "coverTitle": "琵琶曲",
+  "coverSubtitle": "神隐黑炎 VS 虚人梦",
+  "referenceImages": [
+    {
+      "file": "../character-concepts-v2/shenyin-heiyan.png",
+      "role": "神隐黑炎的定稿外观与制服",
+      "sha256": "fcc41595a2d072855f3ccbd12e94af4d3d658a9df665efc16a90bfad144abf99"
+    },
+    {
+      "file": "../character-concepts-v2/xuren-meng.png",
+      "role": "虚人梦的定稿外观与服饰",
+      "sha256": "9a8b1a2819e4c38a622aafddfb21b1f819537fe7800100c18346cbcfd16c2535"
+    }
+  ],
+  "export": {
+    "tool": "FFmpeg",
+    "format": "JPEG",
+    "qualityArguments": [
+      "-q:v",
+      "2",
+      "-pix_fmt",
+      "yuvj444p"
+    ]
+  },
+  "covers": [
+    {
+      "ratio": "16:9",
+      "file": "cover-16x9.jpg",
+      "width": 1664,
+      "height": 936,
+      "bytes": 359492,
+      "sha256": "2b3175c0bfc936c31e2acedd9a86dcfc2c0c97e34c031cf013814c1e9d336804",
+      "generation": {
+        "sourceSize": [
+          1672,
+          941
+        ],
+        "sourceSha256": "cb7103cda47749be1f7de7b377279427c80b2f43733d4c13d7ae76b4d32b4bf5",
+        "prompt": "Use case: ads-marketing. Create one finished Bilibili thumbnail for the stylized 3D animation 《琵琶曲》 featuring 神隐黑炎 and 虚人梦. Image 1 is the identity and costume reference for 神隐黑炎: deep brown tousled hair, blue-grey eyes, tailored navy coat with gold piping, high collar and gold fringed epaulettes. Image 2 is the identity and costume reference for 虚人梦: long gold blond locks, red eyes, crimson hood, dark outfit and exactly one ivory mask clasped to his anatomical left shoulder (viewer-right in a frontal view). His own face and hooded eyes stay visible. Both references supply appearance. Style: polished cinematic 3D animation still with anime facial design, sculpted fabric, readable expression and filmic contrast. Set the existing two-character face-off in the movie's dim wood-panelled room. Use a broken wall opening and a hint of the faded red chair in the softened background. Restrained cold blue shadow and warm crimson/amber light, strong clear face lighting, sparse warm flecks. Keep both characters dignified and equally prominent. No weapons, muzzle flashes, violence, gore, instruments, platform logos, badges, borders, credits, extra figures, or watermark. Design two lines of actual integrated simplified Chinese display typography. Exact main line: “琵琶曲” (琵, 琶, 曲). Exact small line: “神隐黑炎 VS 虚人梦”. Use perfectly legible compact bold Song-style lettering for the main line, warm ivory, and a clear smaller ivory subtitle. No quote marks and no other text. Keep all words well away from the edges, high contrast, sharp and readable on a mobile thumbnail. Keep the artwork and typography composed in the central safe area.\nCanvas: 16:9 landscape, filled to all edges. Compose like a widescreen film one-sheet. Place the navy officer on the left third and the crimson hooded character on the right third, upper-body three-quarter angles angled toward one another. The upper two thirds form a broad composition with breathing space between the faces and an understated warm seam of depth in the middle. Put the title and matchup on two centered lines over the dark lower foreground, with the title near 73% of image height and the subtitle near 86%. Keep the bottom 8% and lower-right corner clear for interface overlays."
+      },
+      "crop": {
+        "left": 4,
+        "top": 2,
+        "right": 4,
+        "bottom": 3
+      }
+    },
+    {
+      "ratio": "4:3",
+      "file": "cover-4x3.jpg",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 414559,
+      "sha256": "7480b759d720e054d72ccad4890609aa7560e2c2355c72152a679c82bf3a3c4b",
+      "generation": {
+        "sourceSize": [
+          1448,
+          1086
+        ],
+        "sourceSha256": "0f2c764117395c52b1eec0a8c5a451255fbf9de6b577a2dc586c85e245347331",
+        "prompt": "Use case: ads-marketing. Create one finished Bilibili thumbnail for the stylized 3D animation 《琵琶曲》 featuring 神隐黑炎 and 虚人梦. Image 1 is the identity and costume reference for 神隐黑炎: deep brown tousled hair, blue-grey eyes, tailored navy coat with gold piping, high collar and gold fringed epaulettes. Image 2 is the identity and costume reference for 虚人梦: long gold blond locks, red eyes, crimson hood, dark outfit and exactly one ivory mask clasped to his anatomical left shoulder (viewer-right in a frontal view). His own face and hooded eyes stay visible. Both references supply appearance. Style: polished cinematic 3D animation still with anime facial design, sculpted fabric, readable expression and filmic contrast. Set the existing two-character face-off in the movie's dim wood-panelled room. Use a broken wall opening and a hint of the faded red chair in the softened background. Restrained cold blue shadow and warm crimson/amber light, strong clear face lighting, sparse warm flecks. Keep both characters dignified and equally prominent. No weapons, muzzle flashes, violence, gore, instruments, platform logos, badges, borders, credits, extra figures, or watermark. Design two lines of actual integrated simplified Chinese display typography. Exact main line: “琵琶曲” (琵, 琶, 曲). Exact small line: “神隐黑炎 VS 虚人梦”. Use perfectly legible compact bold Song-style lettering for the main line, warm ivory, and a clear smaller ivory subtitle. No quote marks and no other text. Keep all words well away from the edges, high contrast, sharp and readable on a mobile thumbnail. Keep the artwork and typography composed in the central safe area.\nCanvas: 4:3 landscape, filled to all edges. Recompose for the more compact format: closer chest-up portraits, the navy officer on the left and the crimson hooded character on the right, grouped toward the middle with shoulders nearly meeting and the faces clearly separated. Slightly varied head heights for contrast, both with readable eyes and the right character's shoulder ornament visible. Keep both heads and the mask within the central 80% width and leave the lower 27% as a darker intentional typography area. Put the title and matchup centered on two lines, title near 73% of image height, subtitle near 86%. Keep bottom and sides clear."
+      },
+      "crop": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    }
+  ],
+  "review": {
+    "decodedBothDeliverables": true,
+    "method": "assistant-image-review",
+    "thumbnailWidth": 320,
+    "observations": "已查看原图与两份交付 JPEG 的 320 像素宽预览。主标题、双方角色名、蓝金制服、红兜帽与单个肩部面具可辨。"
+  }
+}
