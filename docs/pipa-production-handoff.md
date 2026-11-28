@@ -6,13 +6,13 @@
 
 | 项目 | 交接记录 |
 | --- | --- |
-| 逐镜验收 | 42／48 镜通过（87.5%），覆盖原片 1191／1478 帧。本轮新增通过 S36、S50、S52、S54–S56。 |
+| 逐镜验收 | 44／48 镜通过（91.67%），覆盖原片 1275／1478 帧。本轮新增通过 S24、S30。 |
 | 完整成片 | 等待全部镜头通过。 |
-| 全部通过镜头样片 | 11 月 28 日 07:02 合成，按原片顺序拼接 42 镜、1191 帧，共 49.625 秒。开头 `[0,578)` 连续 24.083 秒，后段 `[1174,1478)` 从 S43 连续接到最后一帧，共 12.667 秒。画面和配乐同步跳过 6 处未完成区间。 [本机 MP4](D:/workspace/vivhite-analysis-output/pipa/versus/01-shenyin-heiyan-vs-xuren-meng/full-768p-002-source-fidelity/previews/approved-42-1191-1795820570466668400/pipa-768p-approved-preview.mp4) · [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-approved-preview-42.json) · [上版 36 镜收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-approved-preview-36.json) |
+| 全部通过镜头样片 | 11 月 28 日 08:18 合成，按原片顺序拼接 44 镜、1275 帧，共 53.125 秒。开头 `[0,671)` 连续接至 S27，共 27.958 秒。后段 `[1174,1478)` 已连续覆盖至最后一帧。画面和配乐同步跳过 4 处未完成区间。 [本机 MP4](D:/workspace/vivhite-analysis-output/pipa/versus/01-shenyin-heiyan-vs-xuren-meng/full-768p-002-source-fidelity/previews/approved-44-1275-1795825110267843100/pipa-768p-approved-preview.mp4) · [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-approved-preview-44.json) · [上版 42 镜收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-approved-preview-42.json) |
 | 经典段样片 | 原片 00:09.000–00:14.000，S08–S12 连续 5 秒。 [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-classic-preview-001.json) |
 | S20–S22 样片 | 原片 `[510,578)`，连续 3 镜、2.833 秒。68 帧与通过版的解码哈希一致，已对照 2 个切点和每声道 136,000 个配乐采样。 [本机 MP4](D:/workspace/vivhite-analysis-output/pipa/versus/01-shenyin-heiyan-vs-xuren-meng/full-768p-002-source-fidelity/previews/original-0510-0578-1795792365501570000/pipa-768p-preview.mp4) · [验收收据](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-S20-S22-preview-001.json) |
 
-北京时间 2026-11-28 07:02 核对统一网关，剩余 6 镜均已受理。S24 在渲染，S28、S30、S34、S38、S42 排队。S28 第三版因显存不足中断，第四版保留起镜和换脚两张构图并沿用原片运动。S34 第三版仍缺后半镜拉远，第四版补用第 868 帧构图。Windows 定时任务继续下载候选。 [本轮逐帧复核、两次返工及队列](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-morning-review-001.json)
+北京时间 2026-11-28 08:19 核对统一网关，剩余 4 镜均已受理。S42 在渲染，S28、S34、S38 排队。S38 第三版的近景显示脸上出现了第二个面具，第四版替换中段构图，保留肩饰和背身朝向。Windows 定时任务继续下载候选。 [本轮逐帧复核、返工及队列](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-late-morning-review-001.json)
 
 ## 文件和生产入口
 
@@ -35,24 +35,22 @@ Get-Content -Encoding UTF8 "$r/worker.log" -Tail 20
 - `$r/prepared.json` 绑定定稿计划、原片切片、角色构图和配乐的路径及哈希。对齐后的 WAV 位于 `$previous/soundtrack-cut-sync-30f73ed6298c.wav`。旧版任务已退出生产，旧运行目录仍提供当前版使用的音频和源镜素材。
 - 角色以入库的两张全身图为准。神隐黑炎穿深蓝金边、长衣摆军服。虚人梦为金发、红兜帽、深色长裤，左肩侧面具随视角遮挡。两人保持接近的身高与头身比。 [角色图与生成记录](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/assets/generated/character-concepts-v2/)
 - Windows 任务使用固定的 `worker-v13`。它约每 60 秒查询统一网关，按任务号下载并核对哈希，按原镜帧数处理切片。768P 模型为 `fasth3-omni-bf16`，服务端同模型最多 32 个未完成任务，GPU 一次运行一个镜头。成功下载的候选留给接手人逐镜审阅。 [统一网关和恢复方式](local-video-768p-4k.md)
-- `$r/shots/Sxx/attempt-NNN/` 汇集 `request.json`、`job.json`、`polls.jsonl`、`sources-raw/`、`sources/`、`cut.mp4`、`comparison/`、`review.json` 和适用的 `postprocess.json`。实际提示词、种子、参照顺序和远端任务号以每次请求收据为准。`$r/anchors/requests.json` 保留构图生成记录。最新台账为 `$r/cut-audit/production-ledger-morning-reviews-20261128.json`，队列快照为同目录 `queue-after-morning-reviews-20261128.json`。
+- `$r/shots/Sxx/attempt-NNN/` 汇集 `request.json`、`job.json`、`polls.jsonl`、`sources-raw/`、`sources/`、`cut.mp4`、`comparison/`、`review.json` 和适用的 `postprocess.json`。实际提示词、种子、参照顺序和远端任务号以每次请求收据为准。`$r/anchors/requests.json` 保留构图生成记录。最新台账为 `$r/cut-audit/production-ledger-late-morning-reviews-20261128.json`，队列快照为同目录 `queue-after-late-morning-reviews-20261128.json`。
 
 ## 接手后的逐镜验收
 
 1. 用队列检查脚本核对每镜的最新任务。运行或等待中的请求保留原任务号。服务端完成后，等定时任务下载并归一化，再查看本镜的逐帧对照。用 `progress.json` 的 `visualReviews` 统计通过镜头。若媒体校验中断，先读 `worker.log` 和任务收据，按原任务号恢复下载。已经完整解码的临时切片可按现有恢复脚本和历史记录复核。 [S21 恢复与返工记录](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-S21-review-001.json)
-2. S28 第四版核对粉椅附近被遮挡的神隐黑炎、第 683 帧附近的换脚及末段向前伸臂。S34 第四版核对第 868 帧起由近及远的构图变化、扫手和短闪。S38 第三版核对收腿，S42 第三版核对前景接焦和末帧脚部出画。 [S28、S34 实际请求](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-morning-review-001.json) · [S38、S42 实际请求](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-predawn-review-001.json)
+2. S28 第四版核对粉椅附近被遮挡的神隐黑炎、第 683 帧附近的换脚及末段向前伸臂。S34 第四版核对第 868 帧起由近及远的构图变化、扫手和短闪。S38 第四版核对第 1008 帧附近的抬掌和肩饰位置，并确认末段收腿。S42 第三版核对前景接焦和末帧脚部出画。 [S28、S34 实际请求](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-morning-review-001.json) · [S38 实际请求](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-late-morning-review-001.json) · [S42 实际请求](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-predawn-review-001.json)
 3. 检查每页原片与候选并排图，覆盖本镜全部帧。检查两位应出现的角色及服饰、原演员残留、道具轮廓、布景、机位、动作阶段及光效时点。在观察文件写出实际核对范围和可见差异，再登记通过或退回。退回时用同一原镜的运动输入，针对失败处补相应源帧构图。能用同镜的生成帧校正时，保存取帧配方并重新对照全镜。每次尝试保留提示词、参照、种子、结果和判断。
-4. S24 的候选下载完成后，运行下面的命令生成对照。核对全 55 帧后填写观察文件并登记实际决定。返工参数可用 `retry --help` 查看，现有定时任务会读取新尝试并使用后续空位。
+4. S42 的候选下载完成后，运行下面的命令生成对照。核对全 49 帧后填写观察文件并登记实际决定。返工参数可用 `retry --help` 查看，现有定时任务会读取新尝试并使用后续空位。
 
 ```powershell
-& $py -X utf8 $maker --directory $r compare --shot S24
+& $py -X utf8 $maker --directory $r compare --shot S42
 $decision = Read-Host '根据逐帧核对输入 accepted 或 rejected'
-& $py -X utf8 $maker --directory $r review --shot S24 --decision $decision --frames 55 `
-    --method assistant-frame-review --observations "$r/cut-audit/S24-attempt-003-observations.txt"
+& $py -X utf8 $maker --directory $r review --shot S42 --decision $decision --frames 49 `
+    --method assistant-frame-review --observations "$r/cut-audit/S42-attempt-003-observations.txt"
 & $py -X utf8 $maker --directory $r retry --help
 ```
-
-S24 第三版沿用原片 `[578,633)`，以第 578、600、632 帧锁定起镜、撑地和末段近景。出片后核对起镜前臂动作与早段闪光、第 602–605 帧的躯干抬升，以及末七帧的重心变化、推近和短闪。S30 第三版核对全镜背身、从第 759 帧极近景拉远再推进和屈膝侧移。 [S24 与 S30 实际请求](../series/pipa/versus/episodes/01-shenyin-heiyan-vs-xuren-meng/production/source-fidelity-overnight-review-001.json)
 
 ## 全片验收与交付
 
