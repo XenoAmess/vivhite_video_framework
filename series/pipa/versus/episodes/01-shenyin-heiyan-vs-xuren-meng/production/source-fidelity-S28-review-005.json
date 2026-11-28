@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "vivhite-shotwise-review-checkpoint-1",
+  "shot": "S28",
+  "startFrame": 671,
+  "endFrame": 710,
+  "attempt": 5,
+  "jobId": "video_gen_fba2279c1eec4e83a13304a8d6c40cfe:openai",
+  "requestSha256": "da98c1592fe927c912f1774998c574bb9e9437f3e6536f29c1bde7b220d5ebf4",
+  "renderPrompt": "Retarget this continuous 3D animation shot from <Video 1>. Keep the immediate pullback from the tight opening: use the original picture motion from the first instant and reach the full-body view during the first tenth of the clip. The background navy-and-gold officer by the pink chair remains a tiny defocused figure, partly occluded by the performer and wall. <Picture 1> is the early step at source frame 683, with the raised fist, clear boots and momentary change of support. This is an intermediate pose, not a held opening or ending. Follow the source actor's landing and next weight shift, then lift both arms overhead and swing the forearms toward the lens. <Picture 2> is the late pose at source frame 708: body upright with both boots planted and separated, both elbows forward and wrists below elbow height, clear of the face. Follow the continuing changes between frames rather than pausing on either reference. Keep the red hood, blond hair, black trousers and boots and a single ivory left shoulder accessory. Preserve the room, the original camera paths, the exact animation beats and scene lighting.",
+  "seed": 746285,
+  "rawSha256": "11a9ca45df16f7d5951aeb649b960fd37262168ae71e5f34c25274793291aecc",
+  "cutSha256": "affe3965970dd61465be2855f201e2006de0d30bb25fa738710cc5b0b58250ed",
+  "review": {
+    "cutSha256": "affe3965970dd61465be2855f201e2006de0d30bb25fa738710cc5b0b58250ed",
+    "requestSha256": "da98c1592fe927c912f1774998c574bb9e9437f3e6536f29c1bde7b220d5ebf4",
+    "originalSha256": "b8561068ef41b9c6d418409e61c6d68548d245a840847067aa5fd9e39a4ea92e",
+    "decision": "accepted",
+    "reviewedFrames": 39,
+    "method": "assistant-frame-review",
+    "observations": "逐帧对照原片第 671–709 帧、第五版初切和第二／五版取帧合成后的全 39 帧。第二版开场保留破墙深处粉椅附近的蓝金制服角色，拉远至全身后由前景和场景遮挡。第五版提供第 682–685 帧前后的抬靴、换脚与落地，以及举臂越过头顶、双前臂前伸和末帧双靴落地。查阅原尺寸首尾帧，虚人梦的兜帽、左肩单面具、手套和黑靴保持。换脚时披风摆幅较大，末段前臂动作幅度较小，短光丝的亮度略有出入。",
+    "reviewedAt": "2026-11-28T02:24:16.663353+00:00"
+  },
+  "layouts": [
+    {
+      "shot": "S28",
+      "sourceFrame": 683,
+      "file": "S28-source-edit-0683.png",
+      "sourceStillSha256": "15e8cbc90304e49945bf7706eed6a38d2d1e3d4d7d75aabbb872c70e62490c93",
+      "sha256": "b465700cd1a4ae81944979a16bbac7bed646fa2ea88221730d8acf41caaeba99",
+      "prompt": "Edit image 1 directly as a precise intermediate frame of a stylized 3D dance. Image 2 provides only the adult dressed performer in a gold-lined crimson hood and mantle, dark trousers, gloves and boots, with a pale left shoulder mask. Keep the foreground actor's exact leap and crossed-foot silhouette; his right boot on image left is lifting with knee bent and heel back, opposite boot lower, one fist raised and the other glove low. Keep cloak gathered at the sides so both boots and floor contacts read. The tiny existing adult at the pink chair in the distant wall opening is the dark-haired adult with navy gold shoulders and pale trousers seen in image 3. Match his tiny defocused scale and partial occlusion, no other figures or new props. Retain the exact plank floor, broken wall, furniture and existing lights. Wide 16:9.",
+      "inputs": [
+        "anchor-originals/S28-source-0683.png",
+        "anchors/S28-source-edit-0691.png",
+        "anchors/S28-source-edit-0671.png"
+      ]
+    },
+    {
+      "shot": "S28",
+      "sourceFrame": 708,
+      "file": "S28-source-edit-0708.png",
+      "sourceStillSha256": "5df66e75f4fa9636013ae3905a011b3786fe280fe56596cf4df439a5368a66f9",
+      "sha256": "acf17115785ab689efde16f40d66350cfa7774c2b9b19fbb48c55d4357a430bb",
+      "prompt": "First edit: Edit source input 1 for an existing stylized 3D dance scene, preserving exact perspective, camera, lighting, original choreography pose, damaged wood room geometry, soft furniture, debris, depth and existing amber light streaks. The foreground adult dancer becomes input 2's crimson hooded, long blond adult with muted gold-lined red cloak, dark trousers, boots and gloves with red wrist beads, and one pale mask affixed to the left shoulder only where within the crop. Keep the dancer's position, size, pose and crop in the room. Match the warm dark 3D rendering. Wide 16:9. In this ending view the foreground dancer stands centered and has bent wrists raised before the shoulders. The slightly visible tiny background actor through the wall opening is the officer in image 3, remaining at the same apparent scale and partly hidden by the foreground dancer. Do not bring the background figure forward or create a duplicate. Preserve the furniture and lighting exactly.\nFollow-up edit: Edit this existing warm animated composition only in the far background. Remove the brightly drawn duplicate navy-coated person immediately to the right of the foreground red cloak and restore the blank warm far wall there, as if hidden behind the cloak. The tiny indistinct sliver of the one distant actor near the opening just to the left of the red cloak is part of the source composition and stays blurry and partially obscured. Keep the foreground dancer, his two raised wrists, actual outfit and mask, all furniture, floor, room lighting and exact camera unchanged. There is one foreground dancer and only a sliver of one far officer. Do not add any characters.",
+      "inputs": [
+        "anchor-originals/S28-source-0708.png",
+        "assets/generated/character-concepts-v2/xuren-meng.png",
+        "assets/generated/character-concepts-v2/shenyin-heiyan.png",
+        "anchors/not-used/S28-source-edit-0708-duplicate-officer.png"
+      ]
+    }
+  ],
+  "postprocess": {
+    "tool": "ffmpeg",
+    "sourceFrames": [
+      671,
+      710
+    ],
+    "preConformCutSha256": "ca38c64b406f97576ee472a4c5210f5da9c5501190d245f4e0b714bb2b63944b",
+    "groups": [
+      {
+        "attempt": 2,
+        "frames": [
+          0,
+          14,
+          19,
+          23,
+          26,
+          29,
+          32,
+          35,
+          39,
+          43,
+          48
+        ]
+      },
+      {
+        "attempt": 5,
+        "frames": [
+          4,
+          8,
+          13,
+          17,
+          22,
+          27,
+          49,
+          56,
+          61,
+          68,
+          75,
+          81,
+          85,
+          90,
+          94,
+          97,
+          103,
+          105,
+          107,
+          108,
+          109,
+          110,
+          111,
+          113,
+          114,
+          116,
+          117,
+          119
+        ]
+      }
+    ],
+    "normalizedSources": {
+      "2": "1c3ebd956845f9cdf8976a772f2f173b151da9359bd72acf7c8a3d4380be9d47",
+      "5": "502c07f8c5baa25665c727b0ef512138e1d20688f9b86be4db0308563bd63cf5"
+    },
+    "reason": "Keep the original tight-to-wide opening and the occluded officer from take two, and use take five's change of support, landing, overhead lift and planted forward reach at the source beats.",
+    "nativeSize": "1344x768",
+    "fps": 24,
+    "encoding": "yuv420p / libx264 preset fast crf 17",
+    "outputSha256": "affe3965970dd61465be2855f201e2006de0d30bb25fa738710cc5b0b58250ed"
+  }
+}
